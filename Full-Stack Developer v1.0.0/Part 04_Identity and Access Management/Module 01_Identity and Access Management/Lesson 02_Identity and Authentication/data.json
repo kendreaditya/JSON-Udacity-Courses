@@ -1,0 +1,1635 @@
+{
+  "data": {
+    "lesson": {
+      "id": 850004,
+      "key": "0f6a882a-aff8-474a-b0ec-15a28f8c0c95",
+      "title": "Identity and Authentication",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Explore frequently used methods of identifying who is making requests on web systems. Implement modern software patterns to accomplish this goal across the stack.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/0f6a882a-aff8-474a-b0ec-15a28f8c0c95/850004/1579718386841/Identity+and+Authentication+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/0f6a882a-aff8-474a-b0ec-15a28f8c0c95/850004/1579718380718/Identity+and+Authentication+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 857083,
+          "key": "1b5e14f4-daa3-4850-aa9d-f89f79062bae",
+          "title": "Lesson Intro",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "1b5e14f4-daa3-4850-aa9d-f89f79062bae",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 859087,
+              "key": "21c4fbd5-06df-4a7f-a8fc-a0371c770322",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Identity and Authentication\n## Who are you?",
+              "instructor_notes": ""
+            },
+            {
+              "id": 864282,
+              "key": "70ec85c5-35c6-4d2a-b47e-6f1a44feefcb",
+              "title": "ND004 C03 L02 A00 Intro 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "X3a7uGXxhTM",
+                "china_cdn_id": "X3a7uGXxhTM.mp4"
+              }
+            },
+            {
+              "id": 898076,
+              "key": "9130ed4d-8b17-4475-a612-ea4f67d7dac6",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Authentication in the Digital World",
+              "instructor_notes": ""
+            },
+            {
+              "id": 898120,
+              "key": "aae9e94a-7dc8-4a2f-9cbc-fed7d269725c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Let's look at a brief overview of the concepts we'll be covering. If you don't understand all of the details given in this video at this stage, don't worry—we're going to go over all of this in much greater detail throughout the lesson!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 864283,
+              "key": "4cac54d8-3184-47ca-ad53-833d559ec626",
+              "title": "ND004 C03 L02 A02 System Diagram",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Y1X9yupVhG8",
+                "china_cdn_id": "Y1X9yupVhG8.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 858846,
+          "key": "84762640-4deb-4aed-8ab2-76adadf68eed",
+          "title": "Common Authentication Methods",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "84762640-4deb-4aed-8ab2-76adadf68eed",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 858847,
+              "key": "975d7f05-a8d5-4980-bfc3-ff1df153cf7e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Common Authentication Methods\n\n## Username and Passwords\nThis is the most common method of identifying users in the age of Software as a Service (Saas).",
+              "instructor_notes": ""
+            },
+            {
+              "id": 864351,
+              "key": "e01751a2-7294-4368-857f-b764feb1ec48",
+              "title": "ND004 C03 L02 A0X Usernames And Passwords",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Ccm4wie8qlA",
+                "china_cdn_id": "Ccm4wie8qlA.mp4"
+              }
+            },
+            {
+              "id": 859774,
+              "key": "e364e69e-09b2-4630-930e-fb83dfed1350",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### HTTP Status Codes\n\nTwo status codes which are important throughout this course are:\n\n- ##### 401 Unauthorized\nThe client must pass authentication before access to this resource is granted. The server cannot validate the identity of the requested party.\n\n- ##### 403 Forbidden\nThe client does not have permission to access the resource. Unlike 401, the server knows who is making the request, but that requesting party has no authorization to access the resource.\n\nFor a complete list of status codes, check out the [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 898077,
+              "key": "359093d9-f4b1-48b2-854a-b8f56845681d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Brief Intro to Problems with Passwords",
+              "instructor_notes": ""
+            },
+            {
+              "id": 864349,
+              "key": "239406a1-fb3a-41f9-9a27-6ca4aa7e4b07",
+              "title": "ND004 C03 L02 A0X Passwords Have Problems 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "i2PQhJpb_OI",
+                "china_cdn_id": "i2PQhJpb_OI.mp4"
+              }
+            },
+            {
+              "id": 859775,
+              "key": "481bfef1-188d-44f6-8432-8952bd2d37fa",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "As we discussed in the video, some issues with passwords are **outside of our control** as developers. Many issues come from user behavior that we cannot directly influence, such as:\n* Users forget their passwords\n* Users use simple passwords\n* Users use common passwords\n* Users repeat passwords\n* Users share passwords\n\nIn contrast, some issues are **within our control** as developers:\n* Passwords can be compromised\n* Developers can incorrectly check\n* Developers can cut corners\n\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 906481,
+          "key": "9c4bbe79-7936-492a-8526-f059387ee804",
+          "title": "Alternative Authentication Methods",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "9c4bbe79-7936-492a-8526-f059387ee804",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 908093,
+              "key": "c9547df1-57ef-4e46-b753-e7cb5a72db7c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Alternative Authentication Methods\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 908094,
+              "key": "d678c8bf-6ecb-4ead-80c7-02f68a957b4d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Single Sign-On (SSO)\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 908095,
+              "key": "fb1d21c4-3cb0-48f7-8506-5fc7b03ce04a",
+              "title": "ND004 C03 L02 A04.1 Alternative Authentication Methods 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "BYSKdCi7hUg",
+                "china_cdn_id": "BYSKdCi7hUg.mp4"
+              }
+            },
+            {
+              "id": 908097,
+              "key": "09c8319f-b3f1-430a-b7af-dcad5448e903",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Multi-Factor Authentication",
+              "instructor_notes": ""
+            },
+            {
+              "id": 908098,
+              "key": "1c2b7325-4978-401d-b9a7-c51dddfec789",
+              "title": "ND004 C03 L02 A04.3 Alternative Authentication Methods 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "LbbOQBZgRlU",
+                "china_cdn_id": "LbbOQBZgRlU.mp4"
+              }
+            },
+            {
+              "id": 908099,
+              "key": "aa0a7582-76c2-41be-b7fa-3def68cccef6",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Passwordless",
+              "instructor_notes": ""
+            },
+            {
+              "id": 908100,
+              "key": "4418fb89-5393-4a1f-bf99-0c2edac6c417",
+              "title": "ND004 C03 L02 A04.2 Alternative Authentication Methods 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "OCSFMzd6SX0",
+                "china_cdn_id": "OCSFMzd6SX0.mp4"
+              }
+            },
+            {
+              "id": 908101,
+              "key": "fc71e418-2e13-4603-8050-cda0e667bce4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Biometric Authentication",
+              "instructor_notes": ""
+            },
+            {
+              "id": 908102,
+              "key": "587335ad-ee51-479f-897b-a17f32b1f436",
+              "title": "ND004 C03 L02 A04.4 Alternative Authentication Methods 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "gSm18eliZ1E",
+                "china_cdn_id": "gSm18eliZ1E.mp4"
+              }
+            },
+            {
+              "id": 908103,
+              "key": "244aeea5-26f7-4a6a-a1a5-07714658b23a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## A Friendly Reminder of Risk",
+              "instructor_notes": ""
+            },
+            {
+              "id": 908104,
+              "key": "f634b296-f6a4-4f95-8086-db0a4f8135ec",
+              "title": "ND004 C03 L02 A04.5 Alternative Authentication Methods 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "4ZkB1OKkczw",
+                "china_cdn_id": "4ZkB1OKkczw.mp4"
+              }
+            },
+            {
+              "id": 908105,
+              "key": "2ed43cb3-285b-45af-a2be-5b401ca1136b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "These alternative methods are not sure proof. As with all systems presented, there are always still risks associated with the method. For example, multi-factor auth has and continues to be thwarted with malicious apps on android which used to be able to read SMS messages. Once this vulnerability was discovered, Google changed the permission system to access these messages. However, the adversaries found a new exploit, by [reading the message in the notification bar](https://www.welivesecurity.com/2019/06/17/malware-google-permissions-2fa-bypass/). By combining these methods, and thinking about the most critical parts of the system, you as the developer can minimize risk - but never truly eliminate it.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 908106,
+              "key": "0b1934d2-bab2-40cc-be1d-f757ab75271c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Additional Readings:\n- [Oath2](https://oauth.net/2/)\n- [Auth0 Identity Providers](https://auth0.com/docs/identityproviders)\n- [Google Identity Platform](https://developers.google.com/identity/)\n- [Magic Links](https://hackernoon.com/magic-links-d680d410f8f7)\n- [iOS Biometrics](https://developer.apple.com/documentation/localauthentication)\n- [Google Authenticator](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=en_US)\n- [Dance Dance Authentication](https://www.youtube.com/watch?v=VgC4b9K-gYU&feature=youtu.be) (Enjoy 😊)",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 857090,
+          "key": "319fa1ba-3d71-459e-870a-c5b601cdce23",
+          "title": "Third-Party Auth Systems",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "319fa1ba-3d71-459e-870a-c5b601cdce23",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 858857,
+              "key": "da2340c7-d273-4766-875f-bd0791e45c15",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Third-Party Auth Systems\n## Why Delegate the Responsibility?",
+              "instructor_notes": ""
+            },
+            {
+              "id": 898181,
+              "key": "512c01cc-a8c1-4153-bbc8-8c3117c63e09",
+              "title": "ND004 C03 L02 A05 Delegate 2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "BBkQ_9SSa88",
+                "china_cdn_id": "BBkQ_9SSa88.mp4"
+              }
+            },
+            {
+              "id": 859086,
+              "key": "43afa36c-0bda-4123-9a44-ae98922980ae",
+              "title": "Risk",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "43afa36c-0bda-4123-9a44-ae98922980ae",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "True or False: Working with a 3rd party auth system **eliminates** security risks:",
+                "answers": [
+                  {
+                    "id": "a1559923776318",
+                    "text": "True",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1559923815058",
+                    "text": "False",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 858860,
+              "key": "56f18c47-8995-49de-acf4-60b91d37b616",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Common Auth Services:\n- [Auth0](https://auth0.com) (We'll be using this throughout the course!)\n- [AWS Cognito](https://aws.amazon.com/cognito/)\n- [Firebase Auth](https://firebase.google.com/docs/auth)\n- [Okta](https://www.okta.com)",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 906486,
+          "key": "4bdfc24c-e822-42fe-994f-052de526036b",
+          "title": "Implementing Auth0",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "4bdfc24c-e822-42fe-994f-052de526036b",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 908110,
+              "key": "098bf6d8-9d90-4ac9-8252-3ca1729ed0d7",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Implementing Auth0",
+              "instructor_notes": ""
+            },
+            {
+              "id": 908111,
+              "key": "63db5a5e-bfa8-401b-b307-ce9530d42ff0",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Working with Auth0\nFollow along with the set up at [Auth0.com](https://auth0.com)!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 908114,
+              "key": "98e36ff4-172e-4959-adc8-021aa1c32a28",
+              "title": "ND004 C03 L02 A06.1 Setting Up Auth0 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Mikr9g_JBaE",
+                "china_cdn_id": "Mikr9g_JBaE.mp4"
+              }
+            },
+            {
+              "id": 908112,
+              "key": "864003dd-1908-4128-949f-e05e49fe55e9",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Using the Auth0 Authorization Code Flow with Hosted Login Pages",
+              "instructor_notes": ""
+            },
+            {
+              "id": 908115,
+              "key": "edc1020f-0e0b-4b55-a4f2-907119352357",
+              "title": "ND004 C03 L02 A06.2 Setting Up Auth0 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "_Fb0HKn0U2I",
+                "china_cdn_id": "_Fb0HKn0U2I.mp4"
+              }
+            },
+            {
+              "id": 908116,
+              "key": "89a3bbf8-8d9b-427d-8188-01ac7b07dc91",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### Auth0 Authorize Link\nThe complete documentation for the authorization code flow can be found in [Auth0's Documentation](https://auth0.com/docs/api/authentication#authorize-application). \nIt may help to fill in the url in the textbox below before copying it into your browser:\n<textarea style=\"width:100%; height:120px;\">\nhttps://{{YOUR_DOMAIN}}/authorize?audience={{API_IDENTIFIER}}&response_type=token&client_id={{YOUR_CLIENT_ID}}&redirect_uri={{YOUR_CALLBACK_URI}}\n</textarea>\n\n#### Integrating Auth0 With Your Frontend\n\nTo integrate Auth0 with your frontend you simply need to redirect your user to your Auth0 hosted login page and include a url to redirect them to upon completion.  This can be done using a simple html anchor link:\n```html\n<a href=\"{{AUTH0_AUTHORIZE_URL}}\">Login</a>\n```\n\nFor a more seamless user experience, you can (and should) set up a custom domain on Auth0 by following the instructions in their [docs](https://auth0.com/docs/custom-domains). This is also a good idea to minimize the risk of [Phishing Attacks](https://en.wikipedia.org/wiki/Phishing) by ensuring that your users do not accidentally enter their credentials into a login form that just looks like yours. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 908117,
+              "key": "a0d42290-2f5d-4158-8c3f-6ba27a51e248",
+              "title": "Try it yourself!",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "a0d42290-2f5d-4158-8c3f-6ba27a51e248",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Signup for a new account on [auth0.com](https://auth0.com)",
+                "Create a new Regular Web Application",
+                "Configure the Application Settings",
+                "Test out your Application Endpoint"
+              ],
+              "positive_feedback": "Well done.",
+              "video_feedback": null,
+              "description": "Follow these steps to set up a new Auth0 Account"
+            },
+            {
+              "id": 908119,
+              "key": "3b114981-ed86-4d36-a59e-30ce635e404c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Alternative Authentication Methods in Auth0",
+              "instructor_notes": ""
+            },
+            {
+              "id": 908118,
+              "key": "c756c13e-9d77-4b0b-a90d-52946ef76f79",
+              "title": "ND004 C03 L02 A06.3 Setting Up Auth0 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "ODZiEI2rJwA",
+                "china_cdn_id": "ODZiEI2rJwA.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 857084,
+          "key": "846d6ed1-148b-41c2-b0fc-364cb1fb938a",
+          "title": "JWT - JSON Web Tokens",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "846d6ed1-148b-41c2-b0fc-364cb1fb938a",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 858732,
+              "key": "0c1dc5d6-e4ff-419a-8142-68a3657d102b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# JSON Web Tokens (JWTs)\n\n## Intro to JWTs",
+              "instructor_notes": ""
+            },
+            {
+              "id": 864290,
+              "key": "c21a6485-48de-4e43-830a-8475900ea844",
+              "title": "ND004 C03 L02 A07 JSON Web Tokens 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "6TWWT1W_4D4",
+                "china_cdn_id": "6TWWT1W_4D4.mp4"
+              }
+            },
+            {
+              "id": 859089,
+              "key": "368b91ab-b36a-477c-9b9b-cb22a88c55bf",
+              "title": "Benefits of JWTs",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "368b91ab-b36a-477c-9b9b-cb22a88c55bf",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What are some benefits of JWTs?  \n(Select all that apply.)",
+                "answers": [
+                  {
+                    "id": "a1559929268026",
+                    "text": "Stateless",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1559929299165",
+                    "text": "Difficult to Fake",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1559929315623",
+                    "text": "Expensive to Compute",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1559929331828",
+                    "text": "Popular and easily implemented across platforms",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1559929356145",
+                    "text": "Flexible",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 906490,
+          "key": "e9a02c51-50d9-4b84-9aeb-3cac33d30b6e",
+          "title": "JWT - Datastructure",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "e9a02c51-50d9-4b84-9aeb-3cac33d30b6e",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 908136,
+              "key": "543281c1-a191-460f-ac5b-b61501316375",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# JWT - Datastructure",
+              "instructor_notes": ""
+            },
+            {
+              "id": 908120,
+              "key": "c30701b5-4f04-4592-b79d-459ebb47267a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Parts of a JSON Web Token",
+              "instructor_notes": ""
+            },
+            {
+              "id": 908121,
+              "key": "f01de71b-62bb-49f8-9fdf-f255b8c35375",
+              "title": "ND004 C03 L02 A08.1 Parts Of JWT 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "WRYsLYuvgoc",
+                "china_cdn_id": "WRYsLYuvgoc.mp4"
+              }
+            },
+            {
+              "id": 908122,
+              "key": "a2ce1ca7-1283-4072-86da-af01518bf52d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Including Data in Our JWT Payload",
+              "instructor_notes": ""
+            },
+            {
+              "id": 908123,
+              "key": "b95cb472-4fa3-449a-aa04-11abcd53a56e",
+              "title": "ND004 C03 L02 A08.1a Parts Of JWT",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "rz7saqU8d8Q",
+                "china_cdn_id": "rz7saqU8d8Q.mp4"
+              }
+            },
+            {
+              "id": 908124,
+              "key": "8325d68e-2679-45cb-b52a-5ac333f4bb97",
+              "title": "JWT Parts",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "8325d68e-2679-45cb-b52a-5ac333f4bb97",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which JWT part is responsible for containing information specific to the currently authenticated user?",
+                "answers": [
+                  {
+                    "id": "a1565217138492",
+                    "text": "Header",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1565217157618",
+                    "text": "Payload",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1565217158188",
+                    "text": "Signature",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 906492,
+          "key": "d2353499-1bd9-4e3d-bc11-0156561d30cb",
+          "title": "JWT - Validation",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d2353499-1bd9-4e3d-bc11-0156561d30cb",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 908128,
+              "key": "6aea896f-b8d3-45a1-9e83-800e07351bee",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# JWT - Validation",
+              "instructor_notes": ""
+            },
+            {
+              "id": 908129,
+              "key": "9990c14a-df5d-4948-9ba9-6076ad01865e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Validating JWT Authenticity",
+              "instructor_notes": ""
+            },
+            {
+              "id": 908132,
+              "key": "f9fa8dc4-0edc-473a-9e34-22884f8bf503",
+              "title": "ND004 C03 L02 A08.2 Parts Of JWT 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "SoT_ETc35vs",
+                "china_cdn_id": "SoT_ETc35vs.mp4"
+              }
+            },
+            {
+              "id": 908133,
+              "key": "a866696f-d64e-4b2b-8d08-86ebd7d28b0a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "If the signature strings match, we can trust that the data within the JWT is authentic.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 908134,
+              "key": "47b4d10a-4680-4c76-b175-c16b641b8730",
+              "title": "Payload Security",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "47b4d10a-4680-4c76-b175-c16b641b8730",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "True or False: The signature is used to help encrypt a JWT so it cannot be read without a key",
+                "answers": [
+                  {
+                    "id": "a1565217501999",
+                    "text": "True",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1565217513395",
+                    "text": "False",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 908135,
+              "key": "6c5be079-6332-45b7-88b2-dde21ca08ac7",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Additional Resources:\n- [JWT.io](https://jwt.io/introduction/) a useful guide and list of popular JSON Web Token implementations.\n- [Base64 Encoding](https://en.wikipedia.org/wiki/Base64)\n- [HMAC](https://en.wikipedia.org/wiki/HMAC) keyed-hash message authentication code",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 857085,
+          "key": "a0f32909-f902-44e7-bd30-ab011e14ed6b",
+          "title": "Practice - Generating and Verifying JWTs",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a0f32909-f902-44e7-bd30-ab011e14ed6b",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 859159,
+              "key": "ec0d6d32-2d16-4b50-8880-dd46aa7f018a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Practice - Generating and Verifying JWTs\n\nBelow is a Jupyter Notebook with some starter code you can use to practice generating and verifying JWTs. After the Notebook, you'll find some questions—see if you can answer them by using the starter code. If you get stuck, check out the JWT library [project page](https://pypi.org/project/jwt/).",
+              "instructor_notes": ""
+            },
+            {
+              "id": 858737,
+              "key": "dfe14ed4-b330-4d85-933b-3e0068d62de5",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r848940c858541xJUPYTERqdhs1cm1",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-j7jgq",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/JWT.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 859162,
+              "key": "a8c279cf-1015-4ec0-8046-23e729fb9a29",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In the question below, you'll find some JWTs. Which of these may have been tampered with?  \nThese were signed with the secret `learning`.  \n> **Note:** You can triple-click on the tokens given below and then copy and paste them into the notebook.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 858740,
+              "key": "824ff331-e2ab-49c9-833c-239705928fca",
+              "title": "Verifying JWTs",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "824ff331-e2ab-49c9-833c-239705928fca",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of these JWTs may have been tampered with?  \nThese were signed with the secret `learning`.  \n\n**Token 1**<pre><code>eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJwYXJrIjoiY2VudHJhbCBwYXJrIn0.H7sytXDEHK1fOyOYkII5aFfzEZqGIro0Erw_84jZuGc</code></pre>\n\n**Token 2**:<pre><code>eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJwYXJrIjoiYmF0dGVyeSBwYXJrIn0.bQEjsBRGfhKKEFtGhh83sTsMSXgSstFA_P8g2qV5Sns</pre></code>",
+                "answers": [
+                  {
+                    "id": "a1559583275029",
+                    "text": "*Token 1*",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1559583400253",
+                    "text": "*Token 2*",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 859161,
+              "key": "53b0e907-5356-48e7-8dfe-43fd522c5ab4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Now, see if you can decode the JWTs given below.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 858739,
+              "key": "0c28c3e5-31fc-455c-bf84-3796a2642f7c",
+              "title": "Match the Payload to the JWT",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "0c28c3e5-31fc-455c-bf84-3796a2642f7c",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "*Token A*:\n \n    eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJwYXJrIjoiY2VudHJhbCBwYXJrIn0.H7sytXDEHK1fOyOYkII5aFfzEZqGIro0Erw_84jZuGc\n\n*Token B*:\n \n    eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJwYXJrIjoidW5pb24gc3F1YXJlIn0.N3EaAHsrJ9-ls82LT8JoFTNpDK3wcm5a79vYkSn8AFY\n\n*Token C*:\n \n    eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJwYXJrIjoiYmF0dGVyeSBwYXJrIn0.bQEjsBRGfhKKEFtGhh83sTsMSXgSstFA_P8g2qV5Sns"
+                },
+                "concepts_label": "JWT",
+                "answers_label": "Payload",
+                "concepts": [
+                  {
+                    "text": "*Token A*",
+                    "correct_answer": {
+                      "id": "a1559582733317",
+                      "text": "{'park':'central park'}"
+                    }
+                  },
+                  {
+                    "text": "*Token B*",
+                    "correct_answer": {
+                      "id": "a1559582813743",
+                      "text": "{'park':'union square'}"
+                    }
+                  },
+                  {
+                    "text": "*Token C*",
+                    "correct_answer": {
+                      "id": "a1559582854521",
+                      "text": "{'park': 'battery park'}"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1559582733317",
+                    "text": "{'park':'central park'}"
+                  },
+                  {
+                    "id": "a1559582813743",
+                    "text": "{'park':'union square'}"
+                  },
+                  {
+                    "id": "a1559582854521",
+                    "text": "{'park': 'battery park'}"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 858738,
+              "key": "5f9bf4ce-3dde-4290-ba61-3026d5308dd2",
+              "title": "Encoding a JWT",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "5f9bf4ce-3dde-4290-ba61-3026d5308dd2",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Encode a JWT with the payload `{'school':'udacity'}` using the `HMAC SHA256` algorithm and `learning` as the secret.",
+                "matchers": [
+                  {
+                    "expression": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzY2hvb2wiOiJ1ZGFjaXR5In0.bqU44YxuQ7QDscIW2ZFAiTdSYGYUerj-Woe-3BJz1RI"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 859204,
+          "key": "87007dfe-8503-40ae-bc21-3ef608c1f45f",
+          "title": "Practice - Validating Auth0 Tokens",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "87007dfe-8503-40ae-bc21-3ef608c1f45f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 859206,
+              "key": "8241c47e-877c-43d8-b8cb-e0844be553dc",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Practice - Validating Auth0 Tokens\n\nBelow is a Jupyter Notebook with some starter code you can use to practice generating and verifying JWTs. After the Notebook, you'll find some questions—see if you can answer them by using the starter code. If you get stuck, check out the JWT library [project page](https://pypi.org/project/jwt/) and [Auth0's Quick Start Guide](https://auth0.com/docs/quickstart/backend/python/01-authorization).",
+              "instructor_notes": ""
+            },
+            {
+              "id": 859755,
+              "key": "be75e856-a2e8-40df-965b-070d302e6f22",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r848940c858541xJUPYTERqdhs1cm1",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-ww5ad",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Auth0.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 859756,
+              "key": "40acee13-44da-452b-992f-a64b15473beb",
+              "title": "Verifying and Decoding Auth0 JWTs",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "40acee13-44da-452b-992f-a64b15473beb",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Set configuration files with your Auth0 Account Settings",
+                "Login through your Auth0 sign on URL",
+                "Copy the JWT and assign it to the auth0JWT variable",
+                "Use the verify_decode_jwt method to verify and decode the auth0JWT variable"
+              ],
+              "positive_feedback": "Well done.",
+              "video_feedback": null,
+              "description": "Try the following in the notebook above using your Auth0 account set up in a prior exercise."
+            }
+          ]
+        },
+        {
+          "id": 857086,
+          "key": "215e03f8-4d18-44b0-9d02-b80f60c776ae",
+          "title": "Recap - Local Storage",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "215e03f8-4d18-44b0-9d02-b80f60c776ae",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 858786,
+              "key": "340b974a-3df3-4961-92c7-29d89ad1b787",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Storing Tokens in Web Browsers\n## Using Local Storage\n[Local Storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) is an implementation of a [key-value store](https://en.wikipedia.org/wiki/Key-value_database) which is accessible through a javascript interface in most modern browsers. It is a general purpose interface to store strings which will persist in memory from session to session. It is designed for smaller strings and alternative opensource systems like [localForage](https://github.com/localForage/localForage) exist for large amounts of data.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 864294,
+              "key": "553fa0e9-f1ff-413b-9b58-ce5b40b5d7d9",
+              "title": "ND004 C03 L02 A09.1 Local Storage 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "uOBGbP8B1yQ",
+                "china_cdn_id": "uOBGbP8B1yQ.mp4"
+              }
+            },
+            {
+              "id": 898085,
+              "key": "0950776c-c5cc-4567-8f83-e6724f9ee1a5",
+              "title": "What are Some Properties of Local Storage?",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "0950776c-c5cc-4567-8f83-e6724f9ee1a5",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following are properties of Local Storage?",
+                "answers": [
+                  {
+                    "id": "a1562158606295",
+                    "text": "Site Specific",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1562158641644",
+                    "text": "Persistent from Session to Session",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1562158644400",
+                    "text": "Public and accessible to anyone",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1562158679621",
+                    "text": "Cross browser compatible",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 906495,
+          "key": "16ce4887-86aa-4623-b796-5365da02651e",
+          "title": "Storing JWTs",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "16ce4887-86aa-4623-b796-5365da02651e",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 908137,
+              "key": "85578fb2-ebb7-4772-baa3-a01af1c71023",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Storing JWTs",
+              "instructor_notes": ""
+            },
+            {
+              "id": 908138,
+              "key": "8db1b3fa-4063-4cf8-995a-2c362c4d5b08",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Using Javascript to Store JWTs",
+              "instructor_notes": ""
+            },
+            {
+              "id": 908139,
+              "key": "96d16709-f4f5-413d-ae54-7d786d709635",
+              "title": "ND004 C03 L02 A09.2 Local Storage",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "WbDEQK3orJ0",
+                "china_cdn_id": "WbDEQK3orJ0.mp4"
+              }
+            },
+            {
+              "id": 908140,
+              "key": "d691f397-db1c-4c58-a08b-001cef5c152d",
+              "title": "Using Local Store",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "d691f397-db1c-4c58-a08b-001cef5c152d",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "We've stored a value in the localStore on the following site:\n[https://udacity.github.io/FSND/LocalStore/](https://udacity.github.io/FSND/LocalStore/index.html)\n\nGo to the above page and use the browser dev tools (either console or application storage) to find the value to the key `concept_quiz_keyword`. Copy and paste this value into this quiz!",
+                "matchers": [
+                  {
+                    "expression": "amazing"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 908141,
+              "key": "440c3019-c018-4e1e-ab60-257bbcb62e97",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Security Considerations of Local Storage\n### What could go wrong?",
+              "instructor_notes": ""
+            },
+            {
+              "id": 908142,
+              "key": "116093ea-a928-460f-befe-f9f57d53a90e",
+              "title": "ND004 C03 L02 A10.1 Security Considerations Of Local Storage",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "HANOhvWxXTI",
+                "china_cdn_id": "HANOhvWxXTI.mp4"
+              }
+            },
+            {
+              "id": 908143,
+              "key": "5741734e-467a-4396-aff6-34b5eee2c9aa",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### How Cross-Site Scripting Attacks (XSS) are Performed and Mitigated Techniques",
+              "instructor_notes": ""
+            },
+            {
+              "id": 908144,
+              "key": "53af6dd5-74f0-4767-83ba-a840b15bd402",
+              "title": "ND004 C03 L02 A10.2 Security Considerations Of Local Storage V3",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "dL-Wc0ZEcIQ",
+                "china_cdn_id": "dL-Wc0ZEcIQ.mp4"
+              }
+            },
+            {
+              "id": 908145,
+              "key": "129a46a7-eaa2-4756-8928-0cbeb73caba5",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this video, we discuss [Input Sanitation](https://wesbos.com/sanitize-html-es6-template-strings/). To clarify this concept, imagine a user submits HTML as part of their name in a form. When you later pull this information from your database and insert it into the HTML template for the website, the browser engine will [render](https://en.wikipedia.org/wiki/Browser_engine) this text on the page. However, if the text contains HTML like `<b>Gabe</b>` this would be interpreted in the browser as HTML and render as **Gabe**. This becomes a problem if malicious code, such as javascript, is saved in place of a valid string. In other words, this malicious text will be interpreted by the browser as code and executed on the client. [Input Sanitation](https://wesbos.com/sanitize-html-es6-template-strings/) transforms characters like `<` to `&lt;` which will not be interpreted as code and print as text (<). This step should *always* be performed on the server to prevent someone from sending the malicious text directly to your server using [curl](https://curl.haxx.se/) or [Postman](https://www.getpostman.com).\n\nWe also mentioned [NPM or Node Package Manager](https://www.npmjs.com) this is an online database of publicly submitted libraries you can use in your javascript projects. Other public databases of code libraries such as [PIP for Python](https://pypi.org/project/pip/) or [Brew for Mac](https://brew.sh/). Some care should be taken to ensure that these packages are compliant with your license and security policies and are monitored for security vulnerabilities. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 908146,
+              "key": "fc301b0c-466c-49ad-b3ed-02661e5a942e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Additional Reading\n- [Google Chrome](https://developer.chrome.com/apps/storage) Storage documentation\n- [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) LocalStorage Documentation \n\n#### Security Considerations of Local Storage\n- [Why Cookies Aren't Necessarily Safer](https://dev.to/jondubois/comment/373l)\n- [OWASP XSS Cheat Sheet](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.md)\n- [Using Refresh Tokens with Auth0](https://auth0.com/docs/tokens/refresh-token/current)\n- [HTTP Only Cookies](https://blog.codinghorror.com/protecting-your-cookies-httponly/)\n- [Getting Cookies in Flask](http://flask.pocoo.org/docs/1.0/quickstart/#cookies)\n\n#### Alternatives to LocalStorage\n- [localForage](https://localforage.github.io/localForage/) javascript library capable of more complex storage tasks.\n- [HttpOnly Cookies](https://www.owasp.org/index.php/HttpOnly) so javascript can't access the token at all.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 857088,
+          "key": "43f64499-9215-45eb-84c1-22a797d2dbbc",
+          "title": "Sending Tokens",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "43f64499-9215-45eb-84c1-22a797d2dbbc",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 858853,
+              "key": "0e33eecb-260b-4e80-b170-b8a70306bc21",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Sending Tokens with Requests\n\n## Accessing Authorization Headers in Flask",
+              "instructor_notes": ""
+            },
+            {
+              "id": 864299,
+              "key": "49fff21e-d2d6-438a-a173-5fda98e361b6",
+              "title": "ND004 C03 L02 A11.1 Sending Tokens 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "kbBdD73lYTE",
+                "china_cdn_id": "kbBdD73lYTE.mp4"
+              }
+            },
+            {
+              "id": 898089,
+              "key": "4f5ee180-bb06-4b85-824c-ca2b27df7c54",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Validating Auth Header Formats and Defining our Decorator\n> **NOTE**: This step does not validate if a JWT is authentic and has not been tampered with. We'll cover those checks in **Practice - Applying Skills in Flask**.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 864300,
+              "key": "8ae59a25-61c8-4351-82c1-21951037c339",
+              "title": "ND004 C03 L02 A11.2 Sending Tokens 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "v8DW_PdE48I",
+                "china_cdn_id": "v8DW_PdE48I.mp4"
+              }
+            },
+            {
+              "id": 858856,
+              "key": "d90df76c-7518-4249-a6fc-84c92fd6b7d3",
+              "title": "Formatting a Bearer Token String",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "d90df76c-7518-4249-a6fc-84c92fd6b7d3",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Enter the following JWT as the payload of a Bearer Authorization Header:\n```\neyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiZ2FiZSIsInNjaG9vbCI6InVkYWNpdHkiLCJyb2xlIjoiaW5zdHJ1Y3RvciJ9.T9hKh61bM-lFqvntAWrqPLWxAH-Ig0usQVwiVcJ1g5g\n```",
+                "matchers": [
+                  {
+                    "expression": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiZ2FiZSIsInNjaG9vbCI6InVkYWNpdHkiLCJyb2xlIjoiaW5zdHJ1Y3RvciJ9.T9hKh61bM-lFqvntAWrqPLWxAH-Ig0usQVwiVcJ1g5g"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 858784,
+              "key": "182966d6-e034-4693-b819-0d7edb69c580",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Sending Tokens from Popular Frontend Frameworks\n- [React + Redux - JWT Tutorial](https://jasonwatmore.com/post/2017/12/07/react-redux-jwt-authentication-tutorial-example) There are many ways to include JWTs in requests from frontend frameworks. Jason Watmore has many tutorials for your frontend flavor of choice.\n- [Angular Interceptors for Authorization Headers](https://medium.com/@ryanchenkie_40935/angular-authentication-using-the-http-client-and-http-interceptors-2f9d1540eb8)\n\n## Additional Reading\n- [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Authorization) Authorization Header Documentation.\n- [Postman Authorization](https://learning.getpostman.com/docs/postman/sending_api_requests/authorization/) Including authorization headers in postman requests.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 857089,
+          "key": "2534fdc2-5d89-45b1-9b55-b0bcb91d647a",
+          "title": "Practice - Sending Tokens",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "2534fdc2-5d89-45b1-9b55-b0bcb91d647a",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 859157,
+              "key": "24ec4668-77b4-466a-a93e-825d01d1befb",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Practice - Sending Tokens\nBelow is a uLab with some starter code you can use to practice receiving requests with headers. After the uLab, you'll find some questions—see if you can answer them by using the starter code. If you get stuck, check out the [Flask documentation](http://flask.pocoo.org/docs/1.0/api/).\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 859170,
+              "key": "fde08334-d139-4054-bd6d-97f5cc3ae09a",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r848940c857089xJUPYTERL23i7llbn",
+              "pool_id": "jupyterlab",
+              "view_id": "jupyter-lab-xc3gl",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "pageEnd": "",
+                    "pageStart": "",
+                    "allowSubmit": false,
+                    "defaultPath": "/",
+                    "actionButtonText": ""
+                  },
+                  "kind": "jupyter-lab"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 859171,
+              "key": "b87e2f43-0ac7-422d-817b-8d11b41c6f42",
+              "title": "Request Headers",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "b87e2f43-0ac7-422d-817b-8d11b41c6f42",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What is the token included in the request when you click the `Make GET /headers` button in the uLab above?",
+                "answers": [
+                  {
+                    "id": "a1560011084220",
+                    "text": "softwaresecret",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1560011119507",
+                    "text": "secretaccesstoken",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1560011120089",
+                    "text": "education",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 859205,
+          "key": "f5c8c8a6-b9f4-4df9-a034-353d2049c5ac",
+          "title": "Practice - Applying Skills in Flask",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "f5c8c8a6-b9f4-4df9-a034-353d2049c5ac",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 898090,
+              "key": "a9db90e6-2f49-4e7a-a226-3f489dc1f0fa",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Practice - Applying Skills in Flask",
+              "instructor_notes": ""
+            },
+            {
+              "id": 864304,
+              "key": "d9bde116-e6ad-4f01-b231-fb4c3af912a9",
+              "title": "ND004 C03 L02 A12 Practice - Applying Skills In Flask 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "30gU4qDPU9A",
+                "china_cdn_id": "30gU4qDPU9A.mp4"
+              }
+            },
+            {
+              "id": 864331,
+              "key": "49586c94-0f9f-4eea-a3dc-e25399bddc10",
+              "title": "Try it yourself!",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "49586c94-0f9f-4eea-a3dc-e25399bddc10",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Clone the **Basic Flask Auth** code: [https://github.com/udacity/FSND/tree/master/BasicFlaskAuth](https://github.com/udacity/FSND/tree/master/BasicFlaskAuth)",
+                "Replace all `@TODO` flags in the `app.py` file",
+                "Follow the instructions in the `README.md`",
+                "Use Postman to test the `/headers` with and without your JWT as a bearer token"
+              ],
+              "positive_feedback": "Well done!",
+              "video_feedback": null,
+              "description": "Follow along and run the code on your local machine:"
+            }
+          ]
+        },
+        {
+          "id": 857092,
+          "key": "61850262-6865-4889-a6b8-f8aeb87813c5",
+          "title": "Recap",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "61850262-6865-4889-a6b8-f8aeb87813c5",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 859117,
+              "key": "216d8fba-f30f-45e1-ab3f-9cf47f7956af",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Identity and Authentication\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 864305,
+              "key": "6fe13500-122d-46ef-b177-2e137868cc2d",
+              "title": "ND004 C03 L02 A13 Recap",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "sO8jC0E4QY4",
+                "china_cdn_id": "sO8jC0E4QY4.mp4"
+              }
+            },
+            {
+              "id": 859119,
+              "key": "348b0d81-8879-4b98-85ba-f325b5cc1ef6",
+              "title": "What is Authentication?",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "348b0d81-8879-4b98-85ba-f325b5cc1ef6",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Authentication systems attempt to answer which question?",
+                "answers": [
+                  {
+                    "id": "a1559936821318",
+                    "text": "Who is making the request?",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1559936839586",
+                    "text": "What is the request?",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1559936840302",
+                    "text": "Can the requester perform the action?",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 859120,
+              "key": "0a7e7a52-54b5-4b5a-aa2d-1401ad323113",
+              "title": "Tokens",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "0a7e7a52-54b5-4b5a-aa2d-1401ad323113",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Authentication Tokens (specifically JWTs) are used to:",
+                "answers": [
+                  {
+                    "id": "a1559936952921",
+                    "text": "Store large amounts of user data",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1559936972955",
+                    "text": "Carry claims in the form of a verifiable payload",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1559936985419",
+                    "text": "Perform authentication on requests after login",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 859121,
+              "key": "34935cb8-27dc-47d3-b41e-657c08a596cb",
+              "title": "Sending Tokens",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "34935cb8-27dc-47d3-b41e-657c08a596cb",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which is a valid authentication header when using JWTs\n> **Note:** the JWT string would replace `$TOKEN`",
+                "answers": [
+                  {
+                    "id": "a1559937155070",
+                    "text": "Token `$TOKEN`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1559937180390",
+                    "text": "Bearer `$TOKEN`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1559937182852",
+                    "text": "Auth `$TOKEN`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1559937213418",
+                    "text": "`$TOKEN`",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

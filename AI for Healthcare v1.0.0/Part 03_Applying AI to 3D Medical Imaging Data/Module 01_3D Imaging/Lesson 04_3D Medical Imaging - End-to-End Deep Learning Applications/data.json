@@ -1,0 +1,983 @@
+{
+  "data": {
+    "lesson": {
+      "id": 1015196,
+      "key": "bb342b71-8ca8-4e51-8309-6333cbea25a0",
+      "title": "3D Medical Imaging - End-to-End Deep Learning Applications",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "In this lesson, we cover the basics of building deep neural networks for 3D medical imaging (mostly segmentation & classification) and performance evaluation from a software and clinical perspective.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/bb342b71-8ca8-4e51-8309-6333cbea25a0/1015196/1590513989709/3D+Medical+Imaging+-+End-to-End+Deep+Learning+Applications+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/bb342b71-8ca8-4e51-8309-6333cbea25a0/1015196/1590513985742/3D+Medical+Imaging+-+End-to-End+Deep+Learning+Applications+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 1015193,
+          "key": "52bbcc3f-f2da-4c37-89b4-32a535a2c776",
+          "title": "Introduction",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "52bbcc3f-f2da-4c37-89b4-32a535a2c776",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1015179,
+              "key": "5c3278c0-a1b4-4d11-8273-48b723db32c0",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Introduction\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015148,
+              "key": "42c13d4c-750e-4e24-9f19-96cd92077888",
+              "title": "ND320 C3 L3 01 Welcome To The Lesson & Overview",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "EKyT8xP5lqc",
+                "china_cdn_id": "EKyT8xP5lqc.mp4"
+              }
+            },
+            {
+              "id": 1015153,
+              "key": "017d4ccb-98be-4988-8257-76bdd5bd2680",
+              "title": "Summary of Overview + Lesson Outline",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Conceptual map\n\nAs usual, let’s put the content of this lesson into the perspective of our conceptual map, highlighting the relevant concepts below.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015138,
+              "key": "d84d2d5d-ae22-4d9f-a452-6898ec26e8f7",
+              "title": "Conceptual Lesson Overview/Map",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9bf446_l3-course-overview/l3-course-overview.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/d84d2d5d-ae22-4d9f-a452-6898ec26e8f7",
+              "caption": "Lesson Overview (focus areas are highlighted with dark-blue color)",
+              "alt": "Deep Learning lesson conceptual map. Focus on: Classification, Segmentation, MRI, CT, NIFTI, DICOM",
+              "width": 1158,
+              "height": 1032,
+              "instructor_notes": null
+            },
+            {
+              "id": 1015156,
+              "key": "ccb7ff94-1cac-480c-90e5-2a948827d4ef",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Lesson Summary\n\n* In this lesson, we will do a quick refresher on how **convolutional neural networks** operate and specifically dive into the **different types of convolutions** that underlie the operation of these networks.  \n* We will talk about some ways to approach **segmentation and classification** problems.  \n* After that, we will jump in and **train our own segmentation network**.  \n* Then we will discuss some of the technical methods for **evaluating performance of CNNs for medical image analysis**, and talk about the clinical aspect of evaluating performance.   \n\nBut before we jump in, I would like to take a brief detour and align on the basic definitions. We will be using terms like Artificial Intelligence, Computer Vision, Deep Learning, Machine Learning, and it’s important to get on the same page with regards to how they are related. Here is a diagram that represents this:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015136,
+              "key": "099c111a-c818-4139-b6ed-f58a1faf5e3f",
+              "title": "AI/ML/CV",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9bf445_l3-ai-ml-dl-cv/l3-ai-ml-dl-cv.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/099c111a-c818-4139-b6ed-f58a1faf5e3f",
+              "caption": "Relationship between AI, ML, Deep Learning, Computer Vision",
+              "alt": "[AI_ML_DL_CV.png]\nRelationship between AI, ML, Deep Learning, Computer Vision",
+              "width": 713,
+              "height": 680,
+              "instructor_notes": null
+            },
+            {
+              "id": 1015143,
+              "key": "b76db375-2afe-4483-800d-0533e3e68685",
+              "title": "Summary 2",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "As discussed in the introductory lesson, **Artificial Intelligence** could be defined as “*Application of Machine Learning techniques to a real-world problem, improving human productivity and capability.*”. Artificial intelligence is a field that draws heavily upon the field of **Machine Learning**, which deals with building algorithms that do not have to be explicitly coded but rather can adjust parameters from data. Machine learning includes many tools and techniques for working with a vast variety of data and one of the techniques is the **Deep Learning**, which is all about building deep neural networks. \n\nHowever, to improve human productivity and capability, the field of AI relies on many other fields - such as robotics, HCI, systems design, cloud computing, and so on, including bioinformatics, as discussed in the previous lessons. Developing AI products for medical imaging relies heavily on the field of **Computer Vision**, which has been around for many decades, and which studies methods for automated image analysis. \n\nApplying deep learning techniques by using methods developed by computer vision scientists has resulted in many rapid advances, including the invention of **Convolutional Neural Networks** (CNN), which are the methods used for image analysis in this course.\n\nWe assume that you have basic familiarity with the principles underlying CNNs and the problems that CNNs can solve for general-purpose imaging - classification and segmentation in particular. In this lesson, we will provide a quick refresher on these two problems and will focus on how these problems are cast in the domain of 3D medical imaging.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1015182,
+          "key": "2e72adaf-8969-416d-982e-b4a121027865",
+          "title": "Classification",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "2e72adaf-8969-416d-982e-b4a121027865",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1015135,
+              "key": "8c2f5ad2-6e87-4c71-9d87-f6cdcdbcead8",
+              "title": "heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Classification: Introduction and Use Cases",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015157,
+              "key": "5daea4a5-f449-4f09-83d4-055e14f76ac6",
+              "title": "ND320 C3 L3 02 Classification And Object Detection Problems",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "M59z9er-w_E",
+                "china_cdn_id": "M59z9er-w_E.mp4"
+              }
+            },
+            {
+              "id": 1015142,
+              "key": "30726b75-135b-4f3d-bf5f-58c005a89937",
+              "title": "Which of these is a good use case for whole image classification?",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "30726b75-135b-4f3d-bf5f-58c005a89937",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which one of these is **not** a good use case for an object detection algorithm?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "Detecting hemorrhages in the brain for scans obtained in an emergency room setting.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "Detecting incidental findings on routine scans.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "Detecting pulmonary nodules on cancer screening scans.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1015144,
+              "key": "f5f96f53-f937-458a-95fd-e681348405a8",
+              "title": "Summary, Further Research, New Vocab Terms",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "We have seen some of the examples of problems that lend themselves well to solutions via automated classification or object detection algorithm. \n\n* Detecting **brain hemorrhages**, or bleedings in the brain is particularly important in emergency scenarios when brain damage can happen within minutes. Often, radiologists have a backlog of images that they are going through, and it is not obvious which ones should be prioritized. An algorithm that will spot time-critical conditions will help with such prioritization\n\n* Screening and monitoring scenarios, such as the presented scenario of **screening for lung nodules**, can be quite tedious because objects that are sought can hide well, and meticulous scrolling through slices is required. Pointing human attention to areas which are likely to be suspicious is helpful and saves time\n\n* The presented scenario of **incidental findings** deals with an interesting phenomenon of *selective attention* where humans tend to ignore certain stimuli when multiple are applied. Thus, even trained observers may ignore something otherwise quite obvious, like an adrenal cyst when they know that image was taken with the purpose of evaluating potential vertebral disc degeneration. The famous “[gorilla study](https://www.npr.org/sections/health-shots/2013/02/11/171409656/why-even-radiologists-can-miss-a-gorilla-hiding-in-plain-sight)” represents this marvelously. \n\n> **Note**: when choosing a medical imaging problem to be solved by machine learning, it is tempting to assume that automated detection of certain conditions would be the most valuable thing to solve. However, this is not usually the case. Quite often detecting if a condition is present is not so difficult for a human observer who is already looking for such a condition. Things that bring most value usually lie in the area of productivity increase. Helping prioritize the more important exams, helping focus the attention of a human reader on small things or speed up tedious tasks usually is much more valuable. Therefore it is important to understand the clinical use case that the algorithm will be used well and think of end-user value first.  \n\nWhen it comes to classification and object detection problems, the key to solving those is identifying relevant features in the images, or *feature extraction*. Not so long ago, machine learning methods relied on manual feature design. With the advent of CNNs, feature extraction is done automatically by the network, and the job of a machine learning engineer is to define the general shape of such features. As the name implies, features in Convolutional Neural Networks take the shape of *convolutions*. In the next section, let’s take a closer look at some of the types of convolutions that are used for 3D medical image analysis.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1015190,
+          "key": "470859d7-57a1-4964-a7d9-152814f4fa99",
+          "title": "Methods for Feature Extraction",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "470859d7-57a1-4964-a7d9-152814f4fa99",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1015139,
+              "key": "6c96b537-1cbf-4db6-b261-2d1d81a71fa5",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Methods for feature extraction",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015170,
+              "key": "2f975b2b-4d98-4871-b2aa-b7c29f242e94",
+              "title": "ND320 C3 L3 03 Methods For Feature Extraction",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "bqrpWKXTps8",
+                "china_cdn_id": "bqrpWKXTps8.mp4"
+              }
+            },
+            {
+              "id": 1015178,
+              "key": "6f79a451-21ef-4c83-81c5-a286d9a12fa9",
+              "title": "Video Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "We have discussed some methods for feature extraction such as 2D, 2.5D, and 3D convolutions. \n\nA convolution is an operation that applies a convolutional filter to each pixel of an image. A more detailed explanation could be found in [this great Wikipedia article](https://en.wikipedia.org/wiki/Kernel_(image_processing)#Convolution).\n\nA simple 2D convolution with a 3x3 kernel could be visualized by the following animation:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015150,
+              "key": "095fab40-d203-4aa8-a134-49ab02a0013a",
+              "title": "Convolution",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9bf445_l3-conv/l3-conv.gif",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/095fab40-d203-4aa8-a134-49ab02a0013a",
+              "caption": "Animation of image convolution with a 3x3 convolutional filter [[1,0,1],[0,1,0],[1,0,1]]",
+              "alt": "[conv.gif]\nAnimation of image convolution",
+              "width": 526,
+              "height": 384,
+              "instructor_notes": null
+            },
+            {
+              "id": 1015166,
+              "key": "05ccb858-60aa-4e03-bbdf-8ee5ac933bcf",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "We have just discussed several types of convolutions that could be used for feature extraction of 3D medical images:\n\n**2D Convolution** is an operation visualized in the image above, where a convolutional filter is applied to a single 2D image. Applying a 2D convolution approach to a 3D medical image would mean applying it to every single slice of the image. A neural network can be constructed to either process slices one at a time, or to stack such convolutions into a stack of 2D feature maps. Such an approach is fastest of all and uses least memory, but fails to use any information about the topology of the image in the 3rd dimension.\n\n**2.5D Convolution** is an approach where 2D convolutions are applied independently to areas around each voxel (either in neighboring planes or in orthogonal planes) and their results are summed up to form a 2D feature map. Such an approach leverages some dimensional information. \n\n**3D Convolution** is an approach where the convolutional kernel is 3 dimensional and thus combines information from all 3 dimensions into the feature map. This approach leverages the 3-dimensional nature of the image, but uses the most memory and compute resources. \n\nUnderstanding these is essential to being able to put together efficient deep neural networks where convolutions together with downsampling are used to extract higher-order semantic features from the image. \n\nNext up, we will take a closer look at how convolutions operate by running through a notebook and performing an exercise.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015137,
+              "key": "dfcf3fac-34e3-46d0-a440-d7f66b4f50e5",
+              "title": "How many bytes do you need for 2d conv?",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "dfcf3fac-34e3-46d0-a440-d7f66b4f50e5",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Assuming that you keep input and output images in memory, what is the minimum amount of memory in bytes that you need to allocate in order to compute a convolutional feature map of size 28x28 from an image of size 30x30 using a 3x3 convolutional kernel? Assume 16 bits per pixel and 16 bits for each parameter of the kernel.",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "3400",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "9",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "1684",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk4",
+                    "text": "1693",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1015194,
+          "key": "53d65a85-ef3f-4b9e-87cb-fd45dc92c72a",
+          "title": "Exercise 1: Fun with Convolutions",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "53d65a85-ef3f-4b9e-87cb-fd45dc92c72a",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1015181,
+              "key": "8ed97f77-f4c1-4b16-8747-9afd38b09372",
+              "title": "Intro",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Exercise 1: Fun with Convolutions\n\nIn this exercise, you will get a chance to write some PyTorch code to compute various types of convolutions in a Jupyter Notebook. But before playing with it, I would like to get you started and walk you through an introductory section of the notebook.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015147,
+              "key": "b9b5e251-5ca5-45a6-a3b0-fddb84b43338",
+              "title": "ND320 C3 L3 03.1 Exercise- Convolutions",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "EigHNL2UkGQ",
+                "china_cdn_id": "EigHNL2UkGQ.mp4"
+              }
+            },
+            {
+              "id": 1015167,
+              "key": "e8aa4760-4fe5-4fb6-9441-9dbb664d86ec",
+              "title": "Introduction",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Now that you have seen how to use PyTorch to apply a convolutional filter to a 2D image, I want you to try and implement several convolution operations and apply them to a 3D CT volume. As usual, use the workspace below to work on the exercise.\n\nThis workspace is a jupyter notebook but has GPU as an option for you to use. At the bottom left of that workspace you will be able to enable/disable GPU. You will only be allocated a set amount for the course so while you are just coding you should disable the code. And when you want to run any machine learning then you can run the GPU to speed that process up. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1018194,
+              "key": "fb6add63-42c2-4836-b765-9ac3072a0fcc",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1015194xJUPYTERrv1c2rqh",
+              "pool_id": "jupytergpu",
+              "view_id": "jupyter-ko8fg",
+              "gpu_capable": true,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda/",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Convolutions.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 1015160,
+              "key": "0300fd19-b2fa-40e0-ad57-f0b5c206fa23",
+              "title": "Solution summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "You can find the solution for the **Exercise 1: Fun with Convolutions** [here](https://github.com/udacity/nd320-c3-3d-med-imaging/tree/master/3d-imaging-end-to-end-deep-learning-applications/exercises/1-convolutions/solution).\nThe solution is presented as Jupyter Notebook with some additional inline comments. Note that there are some design decisions you could take with 2.5D convolutions - you can choose different patch size or choose to combine the neighboring slices differently. Ultimately, this is a compromise between memory use and the information that you give to your network. It is useful to track the number of trainable parameters of your network (which is largely driven by convolutional operations) to get an idea of total memory needed for training.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1015186,
+          "key": "356678a9-1503-4d58-9152-d0508e513706",
+          "title": "Classification: Summary",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "356678a9-1503-4d58-9152-d0508e513706",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1015159,
+              "key": "1cf2b15a-69ae-4318-8371-6a2c81a02b9c",
+              "title": "heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Classification: Summary\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015151,
+              "key": "f37d4cfa-cf7a-4cab-aee0-6c2355f97792",
+              "title": "Summary, Further Research, New Vocab Terms",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "This is the end of our section on classification and object detection.\n\nNote that we did not spend too much time on the actual methods for building networks for classification and object detection, and as you will see further in the lesson, there is more focus on segmentation, especially on performance metrics and coding exercises.  \n\nThe reason for that is that classification problems in 3D medical imaging can leverage a lot of techniques used for 2D image classification, and the course on AI for 2D medical image analysis, which is a part of this nanodegree, already provides an excellent deep dive into some of the approaches for classification and object detection problems. We talked about some of the differences between 2D and 3D classification problems such as 3D and 2.5D convolutions and hopefully, through our convolutions exercise, got you a feel of how these work and how you would code one yourself. But if you want to ground yourself better in applying CNNs for classification and object detection problems, I suggest going through the course on AI for 2D medical image analysis.\n\n\n# Further Resources\n\n* If you think you’re lost in convolutions - check out this [2D Visualization of a Convolutional Neural Network](https://www.cs.ryerson.ca/~aharley/vis/conv/flat.html) by Adam W. Harley. \n* [A guide to convolution arithmetic for deep learning](https://arxiv.org/pdf/1603.07285.pdf) is a great overview of the arithmetic of the various convolution operations.\n* The paper I had mentioned in the slides where the authors use 2.5D convolutions for a variety of pathology classifiers: [H. R. Roth et al., \"Improving Computer-Aided Detection Using Convolutional Neural Networks and Random View Aggregation,\" in IEEE Transactions on Medical Imaging, vol. 35, no. 5, pp. 1170-1181, May 2016.](https://arxiv.org/pdf/1505.03046.pdf)\n* Another paper by the same authors presenting a 2.5D convolutions approach for lymph node detection: [Roth, Holger R., et al. “A New 2.5D Representation for Lymph Node Detection Using Random Sets of Deep Convolutional Neural Network Observations.” Medical Image Computing and Computer-Assisted Intervention – MICCAI 2014 Lecture Notes in Computer Science, 2014, pp. 520–527., doi:10.1007/978-3-319-10404-1_65.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4295635/)\n* This paper is comparing 3D and 2D network architectures for lung nodule classification problem: [Kang G, Liu K, Hou B, Zhang N (2017) 3D multi-view convolutional neural networks for lung nodule classification. PLoS ONE 12(11): e0188290. https://doi.org/10.1371/journal.pone.0188290](https://doi.org/10.1371/journal.pone.0188290)\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1015185,
+          "key": "af19efea-b1b1-42e8-b141-570c165a73fb",
+          "title": "Segmentation",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "af19efea-b1b1-42e8-b141-570c165a73fb",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1015140,
+              "key": "3af4443d-45bb-4ec9-a3f8-cf86653476ed",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Segmentation: Introduction and Use Cases",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015162,
+              "key": "a3bc44bb-8871-494f-921c-e10de51b4fa8",
+              "title": "ND320 C3 L3 05 Segmentation Problems-",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "pLpFynZiiGk",
+                "china_cdn_id": "pLpFynZiiGk.mp4"
+              }
+            },
+            {
+              "id": 1015146,
+              "key": "1ee94cbd-6d98-4b74-a6a0-d2fe1add4295",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "We have discussed the problem statement for semantic segmentation and a few use cases for segmentation in 3D medical imaging:\n\n* **Longitudinal follow up**: Measuring volumes of things and monitoring how they change over time. These methods are very valuable in, e.g., oncology for tracking slow-growing tumors.\n* **Quantifying disease severity**: Quite often, it is possible to identify structures in the organism whose size correlates well with the progression of the disease. For example, the size of the hippocampus can tell clinicians about the progression of Alzheimer's disease.  \n\n* **Radiation Therapy Planning**: One of the methods of treating cancer is exposing the tumor to ionizing radiation. In order to target the radiation, an accurate plan has to be created first, and this plan requires careful delineation of all affected organs on a CT scan  \n\n* **Novel Scenarios**: Segmentation is a tedious process that is not quite often done in clinical practice. However, knowing the sizes and extents of the objects holds a lot of promise, especially when combined with other data types. Thus, the field of **radiogenomics** refers to the study of how the quantitative information obtained from radiological images can be combined with the genetic-molecular features of the organism to discover information not possible before. \n\nNow, let’s take a look at some of the methods that are commonly used for building segmentation CNNs.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1015187,
+          "key": "5d627dcc-e108-4df8-8ab6-5758549edde5",
+          "title": "Segmentation Methods",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5d627dcc-e108-4df8-8ab6-5758549edde5",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1015164,
+              "key": "079f500d-5cf1-4862-b38f-cca1eb50ade4",
+              "title": "heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Segmentation Methods",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015165,
+              "key": "a4c7bff4-e019-4e0e-8137-7041aad5cb5e",
+              "title": "ND320 C3 L3 06 Segmentation Methods",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "dKXvycB7d7k",
+                "china_cdn_id": "dKXvycB7d7k.mp4"
+              }
+            },
+            {
+              "id": 1015175,
+              "key": "74a4a926-57af-4388-9ef7-66461a480fd5",
+              "title": "Quiz: Can you identify a use case for segmentation in this clinical task?",
+              "semantic_type": "ReflectAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "74a4a926-57af-4388-9ef7-66461a480fd5",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "title": "Selecting the right method",
+                "semantic_type": "TextQuestion",
+                "evaluation_id": null,
+                "text": "A certain part of the population has risk factors that make them susceptible to early lung cancer - these could be things like smoking, routine exposure to certain substances or family history. A combination of these risk factors make people good candidates for routine lung cancer screening since early detection can lead to very positive outcomes. Routine lung cancer screening is done by taking a low-dose CT image and then looking for dense areas in the lungs, or *lung nodules*. Quite often, if lung nodules are found, they need to be monitored to see how they grow as the presence of nodules per se does not necessarily mean that intervention is needed. Most important question a radiologist would need to answer - which nodules have increased in size since the last time a scan was taken?\n\nWould a classification or segmentation algorithm be a good tool to assist the radiologist? Why?  \n\nWrite down your thoughts below."
+              },
+              "answer": {
+                "text": "Thanks for your response. The segmentation algorithm would make the radiologists’ job much easier since measuring volume needs accurate delineation of the extent of the nodules. However, in a comprehensive AI system, a classification or object detection algorithm may also assist in the screening process, providing a second read of the image and flagging those where nodules are initially found.",
+                "video": null
+              }
+            },
+            {
+              "id": 1015171,
+              "key": "9ef31e48-410a-4e5e-a02e-d172560e0554",
+              "title": "Summary & Exercise Instructions",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "A U-Net architecture has been very successful in analyzing 3D medical images and has spawned multiple offshoots. You will get a chance to get more familiar with it in the exercise that follows, but if you would like to understand the principles better, I recommend that you check out the webpage on U-net created by one of the authors of the original paper, Olaf Ronneberger: https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/index.html. You will find the link to the original paper and a few materials explaining how and why this architecture works.\n\nNow, let’s move on to the exercise where you will have a chance to train your own segmentation network.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1015184,
+          "key": "bb6b6edf-6752-4bc8-9d09-49260a461d92",
+          "title": "Exercise 2: Segmentation Hands On",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "bb6b6edf-6752-4bc8-9d09-49260a461d92",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1015155,
+              "key": "5e132dcc-a756-44f6-bc82-62193771c2f3",
+              "title": "Introduction",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Exercise 2: Segmentation Hands-On\nThis exercise will give you the chance to try out a segmentation network in action. I hope you like it!\n\nThis workspace is a jupyter notebook but has GPU as an option for you to use. At the bottom left of that workspace you will be able to enable/disable GPU. You will only be allocated a set amount for the course so while you are just coding you should disable the code. And when you want to run any machine learning then you can run the GPU to speed that process up. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1018197,
+              "key": "9873841b-8c56-4a5b-a4a9-f18df740cfad",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1015184xJUPYTER5nrrflie",
+              "pool_id": "jupytergpu",
+              "view_id": "jupyter-ngvas",
+              "gpu_capable": true,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda/",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Segmentation hands-on.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 1015141,
+              "key": "63c51fea-27ff-4738-958d-9cfaefccf5c3",
+              "title": "Closing Remarks",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "I hope you enjoyed the exercise. You can find the solution for the **Exercise 2: Segmentation Hands On** [here](https://github.com/udacity/nd320-c3-3d-med-imaging/tree/master/3d-imaging-end-to-end-deep-learning-applications/exercises/2-segmentation-hands-on/solution). If you managed to complete it - you are officially well versed with DICOM, NIFTI, and PyTorch to begin training and designing your own neural networks for medical imaging classification, object detection, and segmentation problems! However, a few important pieces remain. For example, you have noticed that we used simple cross-entropy loss as our cost function. Is this the best cost function possible? Also, after you have your segmentation - how do you efficiently compare it to your ground truth and evaluate performance? We will talk about these things further in this lesson.  \n\nA couple of final remarks below. \n\n# Further Resources\n\n- If you looked closer at the code for the segmentation network that you have trained in this exercise, you should have noticed the ConvTranspose2D layers and you might be wondering what those are. Remember the upsampling path in the U-net? This is how this upsampling is done. Going into details of those would be straying too far from this course, so if you are curious to learn more about transposed convolutions, how they work, and why, you can read up this blog post: [Up-sampling with Transposed Convolution](https://medium.com/activating-robotic-minds/up-sampling-with-transposed-convolution-9ae4f2df52d0) by Naoki Shibuya.\n- A deep dive into the general approach to building segmentation networks: [Long, Jonathan et al. “Fully convolutional networks for semantic segmentation.” 2015 IEEE Conference on Computer Vision and Pattern Recognition (CVPR) (2015): 3431-3440.](https://arxiv.org/pdf/1605.06211v1.pdf)\n- [A UNet page by the author, Olaf Ronneberger, with a nice video explaining its principles of operation](https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/index.html)\n- [UNet and overall CNN/DeepLearning content](http://deeplearning.net/tutorial/unet.html)\n- [Another great explanation of UNet](https://spark-in.me/post/unet-adventures-part-one-getting-acquainted-with-unet\n)\n- An overview of radiogenomics: [Bodalal, Z., Trebeschi, S., Nguyen-Kim, T.D.L. et al. Radiogenomics: bridging imaging and genomics. Abdom Radiol 44, 1960–1984 (2019). https://doi.org/10.1007/s00261-019-02028-w](https://link.springer.com/article/10.1007/s00261-019-02028-w)",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1015195,
+          "key": "0db6ae97-fed1-44e2-91d8-c33e7717d572",
+          "title": "Creating Ground Truth For Segmentation",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "0db6ae97-fed1-44e2-91d8-c33e7717d572",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1015174,
+              "key": "ee3612d1-410e-47c1-85e3-1cd21edb39ca",
+              "title": "heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Ground Truth for Segmentation",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015183,
+              "key": "c295f2a5-64b1-4afb-b05a-7133daa3242f",
+              "title": "ND320 C3 L3 07 Creating Ground Truth For Segmentation",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "bRaBYLk0dpQ",
+                "china_cdn_id": "bRaBYLk0dpQ.mp4"
+              }
+            },
+            {
+              "id": 1015169,
+              "key": "f359419a-70fb-4639-ba91-46792e521096",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Some of the challenges in creating the ground truth for segmentation have to do with the fact that it is rarely routinely created in clinical practice. Radiation oncology is one of the few fields where segmentation is generated as part of the treatment path, but normally segmentation projects require custom labeling efforts. \n\nOne of the things to keep in mind when dealing with a labeled (segmented) dataset is that interpretation of radiological images is ambiguous and quite often, two independent clinicians (observers) would not label things in the same way. This phenomenon is called Interobserver Variability and has been studied in the literature. \n\n- This is the paper that I have mentioned where the authors present results of measuring the variability between radiation oncologists segmenting structures in the head and neck region:  [Mukesh, M et al. “Interobserver variation in clinical target volume and organs at risk segmentation in post-parotidectomy radiotherapy: can segmentation protocols help?.” The British journal of radiology vol. 85,1016 (2012): e530-6. doi:10.1259/bjr/66693547](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3587102/)\n- While I worked on Microsoft’s Project InnerEye we also did our own IOV study for how conformant people are in contouring pelvic anatomy in prostate cancer patients, and included it into our paper which you can read here: [Macomber, M. W., Phillips, M., Tarapov, I., Jena, R., Nori, A., Carter, D., … Nyflot, M. J. (2018). Autosegmentation of prostate anatomy for radiation treatment planning using deep decision forests of radiomic features. Physics in Medicine & Biology, 63(23), 235002. doi: 10.1088/1361-6560/aaeaa4](https://www.researchgate.net/publication/328485616_Autosegmentation_of_prostate_anatomy_for_radiation_treatment_planning_using_deep_decision_forests_of_radiomic_features)\n\nWhen it comes to tooling for creating ground truth, [3D Slicer](https://www.slicer.org/) is a popular free tool used in the research community, and I will walk you through using it for creation and review of segmentation labels in the next lessons. [MITK](http://www.mitk.org/wiki/MITK) is another one. However, many medical imaging startups and larger companies use tools of their own.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1015188,
+          "key": "488f4d20-ebf1-4c9c-a9fb-8bb5e94b1fe4",
+          "title": "Evaluating Performance as Data Scientist",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "488f4d20-ebf1-4c9c-a9fb-8bb5e94b1fe4",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1015149,
+              "key": "90655381-0cb5-4d8b-aff8-ad0fa48f69e8",
+              "title": "heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Evaluating Performance as a Data Scientist",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015152,
+              "key": "e5634e4e-626e-4e44-a3c1-d00f43297092",
+              "title": "ND320 C3 L3 08 Performance Evaluation - Data Scientist Perspective",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "5IaZNkLiGKY",
+                "china_cdn_id": "5IaZNkLiGKY.mp4"
+              }
+            },
+            {
+              "id": 1015177,
+              "key": "e3675058-2480-4ebc-b9f8-116f2b16254c",
+              "title": "Video Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "We have discussed four metrics that you can use to evaluate the performance of your segmentation models. As usual, a great explanation of these can also be found on Wikipedia which I’m linking here if you are looking for additional details:\n\n* [Sensitivity and Specificity](https://en.wikipedia.org/wiki/Sensitivity_and_specificity)\n* [Dice Similarity Coefficient](https://en.wikipedia.org/wiki/S%C3%B8rensen%E2%80%93Dice_coefficient)\n* [Jaccard Index](https://en.wikipedia.org/wiki/Jaccard_index)\n* [Hausdorff Distance](https://en.wikipedia.org/wiki/Hausdorff_distance)\n\nNote these metrics as they are very handy as you are publishing your model’s validation reports, but also they could be used to construct more elaborate cost functions. We will take a closer look at how these metrics work, but for now, let’s see how clinicians think of performance. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015154,
+              "key": "3eaab75d-9cc1-49bd-8b83-19f80444c6d9",
+              "title": "Metric selection",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "3eaab75d-9cc1-49bd-8b83-19f80444c6d9",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "You're building a ML model to segment blood vessels in chest CT scans. Since blood vessels are only a few voxels in diameter, it's possible that the predicted shape might be very similar to ground truth but predicted voxels will not match GT precisely. Which of the following metrics would be best if you wanted to rate this type of prediction similarly to one that labels all the voxels precisely?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "Dice Similarity Coefficient",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "Sensitivity",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "Hausdorff Distance",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk4",
+                    "text": "Jaccard Index",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1015192,
+          "key": "4749a17e-cff2-4899-816a-484f702dbf97",
+          "title": "Evaluating Performance as a Clinician",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "4749a17e-cff2-4899-816a-484f702dbf97",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1015161,
+              "key": "6b36eb65-7fb5-4bc0-ba9e-fb4fa7211374",
+              "title": "Summary & Exercise Instructions",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Evaluating Performance as a Clinician\n\nBelow, Mazen will present a clinician’s perspective on assessing the performance of assistive systems in general, not only segmentation models. It is important to understand this perspective for a data scientist so that you can speak with clinicians in common terms.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015145,
+              "key": "3b51fe3d-7a61-4b26-80f8-d0cfde93c9a2",
+              "title": "ND320 C3 L3 09 Performance Evaluation",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "18c8fjD-EBQ",
+                "china_cdn_id": "18c8fjD-EBQ.mp4"
+              }
+            },
+            {
+              "id": 1015158,
+              "key": "9b449c72-5ac8-4a4b-bd5e-c06d265e3641",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Note how I am talking about performance in a different sense. As a clinician, I need to make decisions about the presence of conditions or selecting the course of treatment. For that, clinicians operate in terms of Likelihood Ratios. \n\nThe likelihood ratio for a diagnostic test result can be calculated if the predictive characteristics (sensitivity and specificity) of that test are known. Likelihood ratios are known for common diagnostic tests performed by humans (e.g., correctly identifying viral pneumonia from chest CT scans). This means that for example, your ML segmentation algorithm may be measuring the volume of a specific anomaly in the lung very accurately, but this measurement, while important to quantify the degree of lung involvement by some disease state, may be not specific at all for predicting whether that state is due to a viral pneumonia (e.g., presence of such anomalies could mean viral pneumonia, bacterial pneumonia or non-infectious causes like hemorrhage or edema). Thus, your algorithm with high Dice scores may end up being not very useful to solve a clinical task if the goal is a specific diagnosis.\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015180,
+              "key": "d95a8c39-61fb-4d1a-b1d8-5ca7fb8fcf2e",
+              "title": "Quiz - Evaluating Clinical Performance",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "d95a8c39-61fb-4d1a-b1d8-5ca7fb8fcf2e",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "In which of the following clinical scenarios would accurately measuring the volume of a disease state (and therefore having a high Dice score), be most relevant. ",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "Quantifying tumor burden over time in a patient with known cancer.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "Evaluating the presence or absence of pneumonia in an emergency room patient.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "Screening for lung cancer in a person with the appropriate risk factors.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk4",
+                    "text": "Determining whether a patient has torn their rotator cuff using data from a shoulder MRI.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1015191,
+          "key": "e8a976d7-06f1-4cb1-b8ef-44a6f8dd4ce2",
+          "title": "Exercise 3: Measuring Performance",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "e8a976d7-06f1-4cb1-b8ef-44a6f8dd4ce2",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1015176,
+              "key": "4b79dba0-adfc-4322-b1cc-f40cee167fa4",
+              "title": "Intro",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Exercise 3: Measuring Performance\n\nNow let’s get technical for a bit and take a crack at implementing algorithms for computing some of the performance metrics we have discussed. In the workspace below, you will find a Python file with instructions and a pair of NIFTI binary segmentation masks to compare.  \n\n\nThis workspace will use the GPU to access the environment, medai. You can also disable this when you are coding (and not running the code) or writing an explanation/notes.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1017954,
+              "key": "7c29c43b-f1e5-47b9-8abe-3e5bc31419e6",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1015191xREACTurarzl33",
+              "pool_id": "autonomousgpu",
+              "view_id": "react-x3ozu",
+              "gpu_capable": true,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/applications",
+                          "dest": "/opt/aihcnd-applications"
+                        },
+                        {
+                          "src": "/AIHCND/conda-envs/medai",
+                          "dest": "/root/miniconda3/envs/medai"
+                        }
+                      ]
+                    },
+                    "port": "3000",
+                    "ports": [
+                      3001,
+                      3002
+                    ],
+                    "userCode": "/root/miniconda3/bin/conda init bash > /dev/null\ngrep -qxF \"conda activate medai\" /root/.bashrc || echo \"conda activate medai\" >> /root/.bashrc",
+                    "openFiles": [
+                      "/home/workspace/measuring_performance.py"
+                    ],
+                    "showFiles": true,
+                    "allowClose": true,
+                    "allowSubmit": false,
+                    "terminalTitle": "BASH",
+                    "actionButtonText": "Go to Desktop",
+                    "openTerminalOnStartup": true
+                  },
+                  "kind": "react"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 1015173,
+              "key": "1f57195c-6822-4d44-b565-9f21768c6e64",
+              "title": "Summary, Further Research, New Vocab Terms",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Congratulations on completing the exercise! We hope you enjoyed it. If you are feeling adventurous, you can do an optional activity: go back to Exercise 2 from this lesson and try to replace the cross-entropy loss function that we have used to train our UNet with a metric you have just implemented. See how your performance and time to train changes, especially if you add more slices into your “training set”.\n\nIf you would like to explore the topic further, here is a paper with an excellent overview of various metrics for evaluation of 3D medical image segmentation: [Taha AA, Hanbury A. Metrics for evaluating 3D medical image segmentation: analysis, selection, and tool. BMC Med Imaging. 2015;15:29. Published 2015 Aug 12. doi:10.1186/s12880-015-0068-x](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4533825/)\n\nYou can find the solution for the **Exercise 3: Measuring Performance** [here](https://github.com/udacity/nd320-c3-3d-med-imaging/tree/master/3d-imaging-end-to-end-deep-learning-applications/exercises/3-performance-metrics/solution).\nNote how the Dice score and statistical accuracy measures have quite elegant expression in Python code.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1015189,
+          "key": "6dad7075-0a9f-4b11-8fa0-5bb04d1403bd",
+          "title": "Lesson Summary and Looking Beyond",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "6dad7075-0a9f-4b11-8fa0-5bb04d1403bd",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1015168,
+              "key": "ffb18d62-6db2-4d8d-bb28-d69448def112",
+              "title": "heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Machine Learning Methods Recap and Looking Beyond",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015172,
+              "key": "a768d323-bff0-483e-8d5d-31e884e580e6",
+              "title": "ND320 C3 L3 10 Summary",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "rOizCQRtcNk",
+                "china_cdn_id": "rOizCQRtcNk.mp4"
+              }
+            },
+            {
+              "id": 1015163,
+              "key": "50be42e0-4bb8-40bb-94a1-c6eff6775679",
+              "title": "Vocabulary Terms & Further Research",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Congratulations on completing our lesson on practical machine learning methods for 3D medical imaging analysis! The skills that you have learned through watching videos and doing exercises will help you in the final project where you will build your own AI system using a U-net implementation, and apply it to DICOM datasets. \n\nIn this lesson, we have covered the following:\n\n* A quick refresher on how convolutional neural networks operate and a took a closer look at the different types of convolutions that underlie the operation of these networks.  \n* Ways to approach segmentation and classification problems for 3D medical imaging\n* We did an exercise where we trained our own segmentation network on a medical imaging dataset \n* Technical methods for evaluating performance of CNNs for 3D medical image analysis, and talked about the clinical aspect of evaluating performance. \n\nBefore we are ready to implement the full-scale AI solution in the final project, there is one final set of concepts that I want you to get familiar with - how to integrate such algorithms into real-world systems, and what these real-world systems look like. This would be the topic of our next lesson.\n\n# Further Resources\n\n## More problems\nAs mentioned in my closing remarks, machine learning problems in 3D medical imaging do not boil down to only classification and segmentation. The two problems we’ve looked at here help you understand the principles, but there is so much more you can do. Here are some pointers for some amazing things people do with deep neural networks in 3D medical imaging:\n\n- Using deep learning to increase the resolution of low-res scans: [Chaudhari AS, Fang Z, Kogan F, et al. Super-resolution musculoskeletal MRI using deep learning. Magn Reson Med. 2018;80(5):2139–2154. doi:10.1002/mrm.27178](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6107420/)\n- GANs for synthetic MRI: [Frid-Adar, M., Diamant, I., Klang, E., Amitai, M., Goldberger, J., & Greenspan, H. (2018). GAN-based synthetic medical image augmentation for increased CNN performance in liver lesion classification. Neurocomputing, 321, 321–331. doi: 10.1016/j.neucom.2018.09.013](https://arxiv.org/pdf/1803.01229.pdf)\n- A survey of deep learning methods for medical image registration: [Haskins, G., Kruger, U. & Yan, P. Deep learning in medical image registration: a survey. Machine Vision and Applications 31, 8 (2020). https://doi.org/10.1007/s00138-020-01060-x](https://arxiv.org/abs/1903.02026)\n- Overview of opportunities for deep learning on MRIs: [Lundervold, A. S., & Lundervold, A. (2019). An overview of deep learning in medical imaging focusing on MRI. Zeitschrift Für Medizinische Physik, 29(2), 102–127. doi: 10.1016/j.zemedi.2018.11.002](https://www.sciencedirect.com/science/article/pii/S0939388918301181)\n\n## Tools and libraries\nWe tried to minimize the dependency on external libraries and focus on understanding some key concepts. At the same time, there are many tools that the community has developed, which will help you get moving faster with the tasks typical for medical imaging ML workflows. \n\nA few tools/repos worthy of attention are:\n\n- Fast.ai - python library for medical image analysis, with focus on ML: https://dev.fast.ai/medical.imaging\n- MedPy - a library for medical image processing with lots of various higher-order processing methods: https://pypi.org/project/MedPy/\n- Deepmedic, a library for 3D CNNs for medical image segmentation: https://github.com/deepmedic/deepmedic\n- Work by the German Cancer Research Institute:\n    - https://github.com/MIC-DKFZ/trixi - a boilerplate for machine learning experiment\n    - https://github.com/MIC-DKFZ/batchgenerators - tooling for data augmentation\n- A publication about a project dedicated to large-scale medical imaging ML model evaluation which includes a comprehensive overview of annotation tools and related problems (including inter-observer variability): https://link.springer.com/chapter/10.1007%2F978-3-319-49644-3_4\n\n## Books\nSome resources readily available online for free will help you grasp the basic concepts of computer vision and overall machine learning.\n\n- https://d2l.ai/ - deep learning with a special section on computer vision by Alexander Smola et al. Alexander has a strong history of publications on machine learning algorithms and statistical analysis and is presently serving as a director for machine learning at Amazon Web Services in Palo Alto, CA\n- http://www.mbmlbook.com/ - a book on general concepts of machine learning by Christopher Bishop et al. Christopher has a distinguished career as a machine learning scientist and presently is in charge of Microsoft Research lab in Cambridge, UK, where I had the honor to work on [project InnerEye](https://www.microsoft.com/en-us/research/project/medical-image-analysis/) for several years.\n\n## More notable papers\n\n- If you’re curious about segmentation space specifically, you may appreciate a foray into non-ML-based methods for segmentation. A couple of papers that can provide an introduction into that space are:  \n    - [Boykov, Y., & Jolly, M.-P. (2000). Interactive Organ Segmentation Using Graph Cuts. Medical Image Computing and Computer-Assisted Intervention – MICCAI 2000 Lecture Notes in Computer Science, 276–286. doi: 10.1007/978-3-540-40899-4_28](https://cs.uwaterloo.ca/~yboykov/Papers/miccai00.pdf)\n    - [Probabilistic Graphical Models for Medical Image Segmentation](https://www.researchgate.net/publication/280664591_Probabilistic_Graphical_Models_for_Medical_Image_Segmentation)\n- This GitHub repo provides an excellent overview of CNN-based seg methods for general image domain: https://github.com/mrgloom/awesome-semantic-segmentation\n\n\n# Vocabulary\n",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

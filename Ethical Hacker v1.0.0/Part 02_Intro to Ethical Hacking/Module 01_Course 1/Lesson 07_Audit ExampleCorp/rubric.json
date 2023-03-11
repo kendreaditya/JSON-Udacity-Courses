@@ -1,0 +1,229 @@
+{
+  "id": 2969,
+  "project_id": 777,
+  "upload_types": [
+    "file"
+  ],
+  "file_filter_regex": "\\A(?!(((.*/)?(__MACOSX|\\.git|node_modules|bower_components|jspm_packages|\\.idea|build|.ipynb_checkpoints|\\.Trash-0|logs)(\\Z|/))))((.*\\.(js|css|py|html|htm|txt|md|markdown|sql|swift|java|ts|gradle|xml|rst|yml|yaml|rmd|pdf|docx|h|H|hh|hxx|h\\+\\+|c|C|cc|cpp|cxx|c\\+\\+)\\Z)|((.*/)?(README|Readme|readme|Makefile)\\Z))",
+  "nomination_eligible": false,
+  "stand_out": "\r\n1. Use ExploitDB and Metasploit. Include your screenshots and analysis in a ***separate*** appendix at the end of the report.\r\n2. Set up a reverse shell in the target machine. Include a screenshot of your working shell in a ***separate*** appendix at the end of the report.\r\n3. Test Port 53. Report your findings in a ***separate*** appendix at the end of the report.\r\n",
+  "hide_criteria": false,
+  "created_at": "2020-10-14T20:37:16.246Z",
+  "updated_at": "2021-04-06T01:50:36.596Z",
+  "hashtag": "",
+  "max_upload_size_mb": 500,
+  "estimated_sla": null,
+  "project_assistant_enabled": false,
+  "available_for_cert_project": false,
+  "language": "en-us",
+  "ndkeys": [
+    "nd350-beta",
+    "nd350"
+  ],
+  "coursekeys": [],
+  "is_career": false,
+  "sections": [
+    {
+      "id": 6356,
+      "name": "Managing Vulnerability Lifecycle",
+      "created_at": "2020-10-24T15:44:32.705Z",
+      "updated_at": "2020-10-24T15:44:39.033Z",
+      "deleted_at": null,
+      "position": 0,
+      "rubric_id": 2969,
+      "rubric_items": [
+        {
+          "id": 18139,
+          "section_id": 6356,
+          "passed_description": "**Appendix C** of the report includes a screenshot of the automated Nessus scan, which shows at least one  **high** or **critical** vulnerability.\r\n\r\n\r\n**Appendix C** also includes a screenshot of the Faraday dashboard showing all of the vulnerabilities found.\r\n",
+          "exceeded_description": "",
+          "created_at": "2020-10-24T15:44:39.809Z",
+          "updated_at": "2021-01-29T03:55:26.184Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "Scan, analyze, and prioritize vulnerabilities",
+          "exceedable": false
+        },
+        {
+          "id": 18140,
+          "section_id": 6356,
+          "passed_description": "**Appendix A** of the report includes the calculation of the CVS Score for each of the  high/critical vulnerabilities including:\r\n- Attack Vector\r\n- CVSS Base Score\r\n- Impact Subscore\r\n- Exploitability Subscore\r\n- CVSS Temporal Score\r\n- CVSS Environmental Score\r\n- Modified Impact Subscore\r\n- Overall CVSS Score\r\n- Risk Rating\r\n",
+          "exceeded_description": "",
+          "created_at": "2020-10-24T15:45:28.059Z",
+          "updated_at": "2021-02-12T18:06:20.488Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 1,
+          "criteria": "Manage risk",
+          "exceedable": false
+        }
+      ]
+    },
+    {
+      "id": 6357,
+      "name": "Managing Security Awareness Programs",
+      "created_at": "2020-10-24T15:47:07.181Z",
+      "updated_at": "2020-10-24T15:47:15.257Z",
+      "deleted_at": null,
+      "position": 1,
+      "rubric_id": 2969,
+      "rubric_items": [
+        {
+          "id": 18142,
+          "section_id": 6357,
+          "passed_description": "**Appendix E** of the report includes a screenshot of data used for attacking the target machine.\r\n\r\nThe data has been cleaned and only includes meaningful results.\r\n",
+          "exceeded_description": "",
+          "created_at": "2020-10-24T15:47:18.265Z",
+          "updated_at": "2021-01-29T03:55:26.198Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "Emulate adversary activities and provide metrics for anticipating risk",
+          "exceedable": false
+        }
+      ]
+    },
+    {
+      "id": 6358,
+      "name": "OSINT - Public Exposure Audit",
+      "created_at": "2020-10-24T15:48:41.560Z",
+      "updated_at": "2020-10-24T15:48:50.672Z",
+      "deleted_at": null,
+      "position": 2,
+      "rubric_id": 2969,
+      "rubric_items": [
+        {
+          "id": 18144,
+          "section_id": 6358,
+          "passed_description": "**Appendix E** of the report includes one or more screenshots that show the source of  the information needed to successfully compromise the target machine.",
+          "exceeded_description": "",
+          "created_at": "2020-10-24T15:48:53.089Z",
+          "updated_at": "2021-01-29T03:55:26.202Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "Audit the organizational public exposure based on the OSINT framework",
+          "exceedable": false
+        }
+      ]
+    },
+    {
+      "id": 6359,
+      "name": "Auditing Systems & Applications",
+      "created_at": "2020-10-24T15:50:06.721Z",
+      "updated_at": "2020-10-24T15:50:21.048Z",
+      "deleted_at": null,
+      "position": 3,
+      "rubric_id": 2969,
+      "rubric_items": [
+        {
+          "id": 18145,
+          "section_id": 6359,
+          "passed_description": "The **Detailed Technical Reports** section includes two findings, which are rated **high** or **critical** on the service scoped via the automated scan.\r\n\r\nBoth findings should include\r\n- Vulnerability Description (from CVE details)\r\n- Analysis that describes the nature and severity of the threat in the current environment as well as any additional notes or observations \r\n- Recommendation to resolve the threat\r\n",
+          "exceeded_description": "",
+          "created_at": "2020-10-24T15:50:21.956Z",
+          "updated_at": "2021-02-12T18:25:33.108Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "Conduct an internal systems assessment",
+          "exceedable": false
+        },
+        {
+          "id": 18146,
+          "section_id": 6359,
+          "passed_description": "\r\n**Appendix D** of the report includes a screenshot of a terminal window on the Analyst machine that indicates a  successful compromise of web application(s) running on port 80,443 ",
+          "exceeded_description": "",
+          "created_at": "2020-10-24T15:52:22.682Z",
+          "updated_at": "2021-01-29T03:55:26.212Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 1,
+          "criteria": "Conduct an application audit",
+          "exceedable": false
+        },
+        {
+          "id": 18147,
+          "section_id": 6359,
+          "passed_description": "**Detailed Findings** section of the report includes step by step instructions for reproducing each  vulnerability.  \r\n\r\n**Appendix B**  includes the modified code used for any exploits.\r\n",
+          "exceeded_description": "",
+          "created_at": "2020-10-24T15:53:12.383Z",
+          "updated_at": "2021-01-29T03:55:26.216Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 2,
+          "criteria": "Provide  Proof of Concepts",
+          "exceedable": false
+        }
+      ]
+    },
+    {
+      "id": 6360,
+      "name": "Industry Standard Report",
+      "created_at": "2020-10-24T15:54:55.678Z",
+      "updated_at": "2020-10-24T15:55:14.708Z",
+      "deleted_at": null,
+      "position": 4,
+      "rubric_id": 2969,
+      "rubric_items": [
+        {
+          "id": 18148,
+          "section_id": 6360,
+          "passed_description": "Report contains a one-page summary of the **Security Posture** that includes:\r\n\r\n\r\n- Brief description of final threat\r\n- Charts showing information about the number and severity of vulnerabilities (from Faraday)\r\n- Qualitative overall security rating\r\n",
+          "exceeded_description": "",
+          "created_at": "2020-10-24T15:55:15.580Z",
+          "updated_at": "2021-01-29T03:55:26.224Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "Assess the Security Posture",
+          "exceedable": false
+        },
+        {
+          "id": 18149,
+          "section_id": 6360,
+          "passed_description": "Report contains a one-page **Executive Summary** that includes:\r\n\r\n- Context for the assessment\r\n- A high-level summary of assessment results\r\n- Observations made\r\n- Problems discovered\r\n- A proposed solution that is consistent with the organization's policies and processes\r\n",
+          "exceeded_description": "",
+          "created_at": "2020-10-24T15:55:16.572Z",
+          "updated_at": "2021-01-29T03:55:26.220Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "Write an Executive Summary",
+          "exceedable": false
+        },
+        {
+          "id": 18150,
+          "section_id": 6360,
+          "passed_description": "Report describes the testing methodology and lists all of the tools and websites used for the analysis.",
+          "exceeded_description": "",
+          "created_at": "2020-10-24T15:56:39.252Z",
+          "updated_at": "2021-02-12T18:27:05.927Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 1,
+          "criteria": "Describe testing methodology and tools used for analysis",
+          "exceedable": false
+        }
+      ]
+    }
+  ],
+  "project": {
+    "id": 777,
+    "name": "Audit ExampleCorp",
+    "nanodegree_key": "nd350",
+    "is_cert_project": false,
+    "audit_project_id": null,
+    "hashtag": null,
+    "audit_rubric_id": 2899,
+    "entitlement_required": false,
+    "is_career": false,
+    "recruitment_family_id": null,
+    "created_at": "2020-10-26T22:49:37.824Z",
+    "updated_at": "2021-04-28T12:25:58.648Z",
+    "price": "7.0",
+    "ungradeable_price": "3.0",
+    "audit_price": "0.0"
+  }
+}

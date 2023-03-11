@@ -1,0 +1,201 @@
+{
+  "id": 2593,
+  "project_id": 614,
+  "upload_types": [
+    "zip"
+  ],
+  "file_filter_regex": "\\A(?!(((.*/)?(__MACOSX|\\.git|node_modules|bower_components|jspm_packages|\\.idea|build|.ipynb_checkpoints|\\.Trash-0|logs)(\\Z|/))))((.*\\.(js|css|py|html|htm|txt|md|markdown|sql|swift|java|gradle|xml|rst|yml|yaml|rmd|pdf|docx)\\Z)|((.*/)?(README|Readme|readme|Makefile)\\Z))",
+  "nomination_eligible": false,
+  "stand_out": "1. Create endpoints to manage users using the Auth0 API\n* Barista access is limited (can do nothing)\n* Manager access is limited (can manage baristas)\n* Administrator access is limited (can manage baristas, managers)\n\n2. Deploy the service to a cloud provider such as elastic beanstalk or Heroku\n\n3. Configure Auth0 with multi-factor authentication or other social OpenIDs\n\n4. Modify the front end with some unique styles or functionality",
+  "hide_criteria": false,
+  "created_at": "2019-05-23T20:48:01.300Z",
+  "updated_at": "2020-03-02T09:27:35.185Z",
+  "hashtag": "",
+  "max_upload_size_mb": 500,
+  "estimated_sla": null,
+  "project_assistant_enabled": false,
+  "checkmate_enabled": false,
+  "checkmate_metadata": null,
+  "available_for_cert_project": false,
+  "classroom_node_id": 850762,
+  "classroom_project_key": "9201dbc0-4fce-45c4-95d8-b41ee9a8a7f0",
+  "language": "en-us",
+  "ndkeys": [
+    "nd004",
+    "nd004-beta",
+    "nd0044",
+    "nd0044-cn",
+    "nd0044-ent",
+    "nd0044-connect"
+  ],
+  "coursekeys": [],
+  "sections": [
+    {
+      "id": 5571,
+      "name": "Flask server setup",
+      "created_at": "2019-05-23T23:03:23.879Z",
+      "updated_at": "2019-05-23T23:03:51.550Z",
+      "deleted_at": null,
+      "position": 0,
+      "rubric_id": 2593,
+      "rubric_items": [
+        {
+          "id": 15995,
+          "section_id": 5571,
+          "passed_description": "All project code has been included in a single zip file.\n\nThe virtual env directory, pycache, and other local files are included in `.gitignore`.",
+          "exceeded_description": null,
+          "created_at": "2019-05-23T23:03:51.733Z",
+          "updated_at": "2019-06-12T00:32:51.830Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "The complete project has been submitted as a zip and demonstrates the ability to share code on git.",
+          "exceedable": false
+        },
+        {
+          "id": 15996,
+          "section_id": 5571,
+          "passed_description": "The code adheres to the [PEP 8 style guide](https://www.python.org/dev/peps/pep-0008/) and follows common best practices, including:\n* [Variable and function names are clear](https://www.python.org/dev/peps/pep-0008/#prescriptive-naming-conventions).\n* Endpoints are logically named.\n* Code is [commented appropriately](https://www.python.org/dev/peps/pep-0008/#comments).\n* The README file includes detailed instructions for scripts to install any project dependencies, and to run the development server.\n* Secrets are stored as environment variables.",
+          "exceeded_description": null,
+          "created_at": "2019-05-23T23:09:56.768Z",
+          "updated_at": "2019-07-03T18:18:00.046Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 1,
+          "criteria": "The project demonstrates coding best practices.",
+          "exceedable": false
+        },
+        {
+          "id": 15997,
+          "section_id": 5571,
+          "passed_description": "All `@TODO` flags in the *./backend/src/api.py* file have been completed.\n\nThe endpoints follow flask design principles, including `@app.route` decorators and request types.\n\nThe routes perform CRUD methods on the SQLite database using the simplified interface provided.\n\nBest efforts should be made to catch common errors with `@app.errorhandler` decorated functions.\n\nThe following endpoints are implemented:\n* `GET /drinks`\n* `GET /drinks-detail`\n* `POST /drinks`\n* `PATCH /drinks/<id>`\n* `DELETE /drinks/<id>`\n",
+          "exceeded_description": null,
+          "created_at": "2019-05-23T23:15:19.434Z",
+          "updated_at": "2019-06-27T21:39:49.145Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 2,
+          "criteria": "The project demonstrates an understanding of restful APIs.",
+          "exceedable": false
+        },
+        {
+          "id": 15998,
+          "section_id": 5571,
+          "passed_description": "The backend can be run with `flask run` and responds to all required REST requests.",
+          "exceeded_description": null,
+          "created_at": "2019-05-23T23:17:18.180Z",
+          "updated_at": "2019-06-27T21:39:49.157Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 3,
+          "criteria": "The project demonstrates the ability to build a functional backend.",
+          "exceedable": false
+        }
+      ]
+    },
+    {
+      "id": 5572,
+      "name": "Secure a REST API for applications",
+      "created_at": "2019-05-23T23:03:59.775Z",
+      "updated_at": "2019-05-23T23:04:18.977Z",
+      "deleted_at": null,
+      "position": 1,
+      "rubric_id": 2593,
+      "rubric_items": [
+        {
+          "id": 15999,
+          "section_id": 5572,
+          "passed_description": "Auth0 is set up and running at the time of submission.  \n\nAll required configuration settings are included in the `auth.py` file:\n* The Auth0 \n* Domain Name\n* The Auth0 Client ID\n",
+          "exceeded_description": null,
+          "created_at": "2019-05-23T23:17:34.348Z",
+          "updated_at": "2019-06-27T21:39:49.162Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "The project demonstrates an understanding of third-party authentication systems. ",
+          "exceedable": false
+        },
+        {
+          "id": 16001,
+          "section_id": 5572,
+          "passed_description": "A custom `@requires_auth` decorator is completed in `./backend/src/auth/auth.py`\n\nThe `@requres_auth` decorator should:\n* Get the Authorization header from the request.\n* Decode and verify the JWT using the Auth0 secret.\n* Take an argument to describe the action (i.e., `@require_auth(‘create:drink’`).\n* Raise an error if:\n  * The token is expired.\n  * The claims are invalid.\n  * The token is invalid.\n  * The JWT doesn’t contain the proper action (i.e. `create: drink`).",
+          "exceeded_description": null,
+          "created_at": "2019-05-23T23:17:41.879Z",
+          "updated_at": "2019-06-27T21:39:49.166Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 1,
+          "criteria": "The project demonstrates an understanding of JWTs and Role Based Authentication.",
+          "exceedable": false
+        },
+        {
+          "id": 16000,
+          "section_id": 5572,
+          "passed_description": "Roles and permission tables are configured in Auth0. The JWT includes the RBAC permission claims.\n\nBarista access is limited:\n* can get drinks\n* can get drink-details\n\nManager access is limited\n* can get drinks\n* can get drink details\n* can post drinks\n* can patch drinks\n* can delete drinks\n\nThe provided postman collection passes all tests when configured with valid JWT tokens.\n\nYou must export the postman collection to `./starter_code/backend/udacity-fsnd-udaspicelatte.postman_collection.json` with your JWTs configured by right-clicking the collection folder for barista and manager, navigating to the authorization tab, and including the JWT in the token field.",
+          "exceeded_description": null,
+          "created_at": "2019-05-23T23:17:41.398Z",
+          "updated_at": "2019-06-27T21:39:49.170Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 2,
+          "criteria": "The project demonstrates the ability to secure a system through an understanding of roles-based access control (RBAC) .",
+          "exceedable": false
+        }
+      ]
+    },
+    {
+      "id": 5573,
+      "name": "Front end",
+      "created_at": "2019-05-23T23:04:19.148Z",
+      "updated_at": "2019-05-23T23:05:10.594Z",
+      "deleted_at": null,
+      "position": 2,
+      "rubric_id": 2593,
+      "rubric_items": [
+        {
+          "id": 16004,
+          "section_id": 5573,
+          "passed_description": "The frontend has been configured with Auth0 variables and backend configuration.\n\nThe `./frontend/src/environment/environment.ts` file has been modified to include the student’s variables.",
+          "exceeded_description": null,
+          "created_at": "2019-05-24T00:47:29.666Z",
+          "updated_at": "2019-06-27T21:40:09.001Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "The project demonstrates an understanding of how to loosely uncouple authentication and REST services.",
+          "exceedable": false
+        },
+        {
+          "id": 16005,
+          "section_id": 5573,
+          "passed_description": "The frontend can be run locally with no errors with `ionic serve` and displays the expected results.",
+          "exceeded_description": null,
+          "created_at": "2019-05-24T00:47:30.766Z",
+          "updated_at": "2019-06-27T21:40:09.009Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 1,
+          "criteria": "The project demonstrates the ability to work across the stack.",
+          "exceedable": false
+        }
+      ]
+    }
+  ],
+  "project": {
+    "id": 614,
+    "name": "Coffee Shop Full Stack",
+    "nanodegree_key": "nd004",
+    "is_cert_project": false,
+    "audit_project_id": null,
+    "hashtag": null,
+    "audit_rubric_id": null,
+    "entitlement_required": false,
+    "is_career": false,
+    "recruitment_family_id": 11,
+    "created_at": "2019-05-24T00:50:21.979Z",
+    "updated_at": "2020-05-31T23:50:47.608Z",
+    "price": "7.0",
+    "ungradeable_price": "3.0",
+    "audit_price": null
+  }
+}

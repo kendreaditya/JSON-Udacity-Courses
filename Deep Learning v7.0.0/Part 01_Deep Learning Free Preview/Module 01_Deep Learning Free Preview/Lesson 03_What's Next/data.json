@@ -1,0 +1,143 @@
+{
+  "data": {
+    "lesson": {
+      "id": 436104,
+      "key": "8e830385-32be-40ef-a196-ae224897b4b8",
+      "title": "What's Next",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "To take your learning further, consider enrolling in the Deep Learning Nanodegree program.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": null,
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 262178,
+          "key": "eb539882-9057-4c4f-ad33-5eb23837474f",
+          "title": "Books to Read",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "eb539882-9057-4c4f-ad33-5eb23837474f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 262187,
+              "key": "0ed5414f-17b9-4118-a74b-4fc8b4cc15b9",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2017/January/588aca59_grokking-deep-learning/grokking-deep-learning.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/0ed5414f-17b9-4118-a74b-4fc8b4cc15b9",
+              "caption": "",
+              "alt": null,
+              "width": 399,
+              "height": 499,
+              "instructor_notes": null
+            },
+            {
+              "id": 262179,
+              "key": "79893164-9704-4714-80b2-d27e91865db4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Books to read\n\nWe believe that you learn best when you are exposed to multiple perspectives on the same idea. As such, we recommend checking out a few of the books below to get an added perspective on Deep Learning.\n\n* [Grokking Deep Learning](https://www.manning.com/books/grokking-deep-learning) by Andrew Trask. Use our exclusive discount code **traskud17** for 40% off. This provides a very gentle introduction to Deep Learning and covers the intuition more than the theory.\n\n\n* [Neural Networks And Deep Learning](http://neuralnetworksanddeeplearning.com/) by Michael Nielsen. This book is more rigorous than Grokking Deep Learning and includes a lot of fun, interactive visualizations to play with.\n\n\n* [The Deep Learning Textbook](http://www.deeplearningbook.org/) from Ian Goodfellow, Yoshua Bengio, and Aaron Courville. This online book contains a lot of material and is the most rigorous of the three books suggested.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 457147,
+          "key": "ac975af6-9269-4ade-a09b-00dee2279bc8",
+          "title": "Impact of Deep Learning",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "ac975af6-9269-4ade-a09b-00dee2279bc8",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 457154,
+              "key": "f81a00b3-7bbd-4488-ba28-9033b5902214",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## What difference could you make with deep learning?",
+              "instructor_notes": ""
+            },
+            {
+              "id": 457148,
+              "key": "d96db33d-8ae4-425d-b1a2-3ec3167cf3ef",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2017/November/59fce92f_90387176/90387176.jpeg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/d96db33d-8ae4-425d-b1a2-3ec3167cf3ef",
+              "caption": "",
+              "alt": "",
+              "width": 499,
+              "height": 501,
+              "instructor_notes": null
+            },
+            {
+              "id": 457149,
+              "key": "06f7a8eb-7e1a-4876-8597-a7448c35d8b3",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "I'm Alexis Cook, Instructor at Udacity! As you consider enrolling in the Deep Learning Nanodegree Foundations program, here's just one example of the impact you might make with what you learn:\n<br></br>\nLack of access to affordable, quality healthcare is a global problem. Many families live too far from the nearest medical office, while others cannot afford the price of a visit to the doctor. For those in difficult financial circumstances, it may be tempting to ignore early symptoms of disease and the need for medical care. These decisions can often mean the difference between life and death, as many medical conditions can only be successfully treated when discovered in their early stages. \n\nSkin cancer presents early warning signs in the form of suspicious marks or abnormal growths on the skin.  Without informed examination, it is unclear if an abnormal mole should be cause for concern or can be safely ignored.  For those with cancerous lesions, early detection is crucial: while the 5-year survival rates for skin cancer are high (about [98 percent](http://www.skincancer.org/skin-cancer-information/skin-cancer-facts)) when discovered in the early stages, the survival rate falls to 18 percent if discovered in the most advanced stages. \n\nInspired to solve this problem, Sebastian Thrun, the founder of Udacity, led a group of fellow professors and students as they created a [deep learning algorithm](https://news.stanford.edu/2017/01/25/artificial-intelligence-used-identify-skin-cancer/) to visually examine potential skin cancer indicators. Using only an image of the skin lesion, early testing has shown that the algorithm identifies cancer with accuracy that matches dermatologists. When deployed to mobile devices, it is possible that this algorithm will save countless lives, by removing barriers to early diagnosis. Detecting early-stage skin cancer would be as simple as taking a smartphone picture!\n\nAs a student In the Deep Learning Nanodegree Foundation program, you will hear first-hand from Sebastian how the Stanford lab designed and created this life-saving algorithm. You will explore cutting-edge techniques in deep learning, and then learn how to apply your expertise to tackle some of the world’s most important challenges.\n\nThe knowledge that you gain will apply to other arenas as well. For instance, after learning about convolutional neural networks, you can design your own algorithm to analyze medical images such as MRIs or X-rays. Or, you might instead be inspired by the power of recurrent neural networks and create an algorithm to predict disease from medical records.\n\nThe possibilities are endless! What will you create?\n\n\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 436105,
+          "key": "3469d4c0-3875-442c-83e7-bfd82c7cc7ec",
+          "title": "End of the Preview",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "3469d4c0-3875-442c-83e7-bfd82c7cc7ec",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 436106,
+              "key": "e57b44e0-6926-42d1-9eaa-442c4af656f2",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## You’ve reached the end of your free preview!\n\n\nWe hope you enjoyed experiencing our classroom and the wealth of content that awaits when you enroll. You can now enroll in the Deep Learning Nanodegree program.\n\n\n<center><a href=\"https://www.udacity.com/course/deep-learning-nanodegree--nd101?utm_source=udacity.com&utm_medium=classroompreview&utm_campaign=dlnd-fall-2017\" target=\"_blank\"><button style=\"box-sizing: border-box; border-radius: 4px; background: #02B3E4; border: none; height: 44px; padding: 0 25px; color: white; cursor: pointer; font-family: Open Sans,sans-serif; display: inline-block; border: none; font-size: 12px; letter-spacing: 1px; font-weight: 600; text-transform: uppercase;\">Enroll Now</button></a></center>\n<br></br>\n\nOnce you enroll, here are just some of the features and benefits you’ll enjoy:\n* Lessons on convolutional networks, PyTorch and other common deep learning frameworks, recurrent neural networks, autoencoders, generative adversarial networks, and deploying a model to be used in a web app.\n* Over 20 in-depth code exercises and 5 projects, designed to prepare you for advanced study and a rewarding career in the field of deep learning.\n* Guaranteed admission into our Self Driving Car Engineer, or Artificial Intelligence Nanodegree programs, where you’ll explore even more deep learning projects alongside groundbreaking new curriculum built with our pioneering industry collaborators.\n* ..and lots more! You can read more detail about our Deep Learning Nanodegree program [here](https://blog.udacity.com/2018/08/deep-learning-udacity-evolves.html).\n\n\n\n",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

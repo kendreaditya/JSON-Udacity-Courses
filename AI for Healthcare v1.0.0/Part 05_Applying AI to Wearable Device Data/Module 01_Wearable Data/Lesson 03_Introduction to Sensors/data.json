@@ -1,0 +1,1593 @@
+{
+  "data": {
+    "lesson": {
+      "id": 980567,
+      "key": "d7a821f4-d64c-402e-80b7-b293656119a8",
+      "title": "Introduction to Sensors",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "We cover the basics of the accelerometer, the PPG sensor, and the ECG sensor, as well as what these signals look like in typical environments and the types of noise that we will encounter.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/d7a821f4-d64c-402e-80b7-b293656119a8/980567/1584000525657/Introduction+to+Sensors+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/d7a821f4-d64c-402e-80b7-b293656119a8/980567/1584000521252/Introduction+to+Sensors+Subtitles.zip"
+          },
+          {
+            "name": "AIHCND-Wearable-Data-Course-Glossary",
+            "uri": "https://video.udacity-data.com/topher/2020/May/5ebb2d0c_aihcnd-wearable-data-glossary-v2/aihcnd-wearable-data-glossary-v2.pdf"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 980539,
+          "key": "5bc40cc9-b7e9-4fa2-bb91-b49376f945ff",
+          "title": "Introduction to Sensors",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5bc40cc9-b7e9-4fa2-bb91-b49376f945ff",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 980480,
+              "key": "fb8f5585-c416-4e1a-bf90-097950a1d587",
+              "title": "heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Introduction",
+              "instructor_notes": ""
+            },
+            {
+              "id": 980488,
+              "key": "f75a6809-0ff4-40d3-9754-015e7beb854d",
+              "title": "ND320 C4 L2 01 Introduction To Sensors",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "CBp-Ttcqu3k",
+                "china_cdn_id": "CBp-Ttcqu3k.mp4"
+              }
+            },
+            {
+              "id": 980492,
+              "key": "c5ff5fca-dd37-465e-93aa-6e0e19882f16",
+              "title": "Introduction to Sensors Recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\nSensors are how we measure physical quantities in the world around us. The name of the game for building any kind of sensor is to convert a physical phenomenon into an electrical one - be it a current or voltage - which can then be digitized and stored on a computer. The component that does this is called the transducer. \n\nThis is easy to see in this example of how a microphone works. A microphone is basically a drum attached to a coil of wire around a magnet. The drum moves in response to vibrations in the air or sound. As you may have learned in your physics class when the coil of wire moves back and forth over the magnet, the changing magnetic field induces a current in the wire. The A/C current creates an A/C voltage in the circuit that is then measured using an ADC.\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 980489,
+              "key": "e1c50555-bfea-4ef7-be93-d73e7efc511f",
+              "title": "microphone animation",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/March/5e7a3d43_nd320-c4-l2-microphone/nd320-c4-l2-microphone.gif",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/e1c50555-bfea-4ef7-be93-d73e7efc511f",
+              "caption": "Microphone Diagram",
+              "alt": "An audio wave hits a drum which oscillates in sync with the audio wave. The drum is attached to a circuit which produces and audio signal as a sine wave. ",
+              "width": 1920,
+              "height": 1080,
+              "instructor_notes": null
+            },
+            {
+              "id": 980495,
+              "key": "5048c6a5-1a09-46d7-ae58-0faa8c756240",
+              "title": "recap continued",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Specifics of how a sensor works is important for truly understanding the signal. You need to know how your accelerometer works to really understand what you’re seeing when you’re plotting an accelerometer trace or when thinking about how to design your algorithm.\n\nIn this lesson, we’ll learn how the three sensors work:\n- Inertial Measurement Unit (IMU)\n- Photoplethysmogram (PPG)\n- Electrocardiogram (ECG)  \n\nYou’ll understand the physical quantity being measured, become familiar with what these signals look like, and learn about common challenges and noise sources that arise when working with these signals.\n\n## Lesson Concepts\nThis lesson will describe the sensors and raw signals they collect. Sensors enable a set of algorithms that can compute derived metrics from each of these signals or multiple in combination.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 980490,
+              "key": "ada7c93a-ea4b-40ac-a89c-01c426f52ec4",
+              "title": "Overarching Concepts",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/March/5e7a3d49_nd320-c4-l2-sensor-and-algorithms/nd320-c4-l2-sensor-and-algorithms.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/ada7c93a-ea4b-40ac-a89c-01c426f52ec4",
+              "caption": "Sensor & Algorithms",
+              "alt": "The 3 types of sensors (IMU, PPG, and ECG) covered in this lesson and the algorithms that can be derived from those sensors.\n- An IMU sensor can inform an Activity Classification and Pulse Rate Estimation Algorithms. \n- A PPG sensor can inform a Pulse Rate Estimation Algorithm.\n- An ECG sensor can inform a Heart Beat Detection Algorithm which can look for specific heart anomalies/phenomenon like an Arrhythmia Detection Algorithm.",
+              "width": 840,
+              "height": 417,
+              "instructor_notes": null
+            },
+            {
+              "id": 980491,
+              "key": "f8979205-80ef-4c87-b879-0210d82ce076",
+              "title": "Lesson Outline",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Outline\n- Wrist Wearable Demo\n- IMU Sensor\n    - IMU Overview\n    - Accelerometer Deep Dive\n- PPG Sensor\n- ECG Sensor\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 980493,
+              "key": "04468833-e7e2-4edf-aa1c-cb55c748f661",
+              "title": "What are the three main sensors on a wrist-wearable?",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "04468833-e7e2-4edf-aa1c-cb55c748f661",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which sensor consists of LEDs and a photodetector?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "ECG",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "PPG",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "IMU",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 980497,
+              "key": "217bb674-c3b2-454d-b5f4-6d1fc8b99e68",
+              "title": "How many points of contact does an ECG sensor need?",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "217bb674-c3b2-454d-b5f4-6d1fc8b99e68",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "How many points of contact with the body does an ECG sensor need?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "1",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "2",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "3",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 980516,
+              "key": "9529d1ef-0093-4c41-b7f6-0970fe6e9aa9",
+              "title": "Which sensor does not need to be in contact with the wearer’s skin?",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "9529d1ef-0093-4c41-b7f6-0970fe6e9aa9",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which sensor does not need to be in contact with the wearer’s skin?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "IMU",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "PPG",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "ECG",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 980543,
+          "key": "03257003-8531-4961-b6d2-6707be4d6beb",
+          "title": "Inertial Measurement Unit",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "03257003-8531-4961-b6d2-6707be4d6beb",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 980500,
+              "key": "8182b557-22b6-4de5-b1bf-bc7287770115",
+              "title": "heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Inertial Measurement Unit (IMU)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 980496,
+              "key": "9a41cf92-b642-4e71-bf40-6384734330fe",
+              "title": "ND320 C4 L2 02 IMU Sensor",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "MLrzURDQURY",
+                "china_cdn_id": "MLrzURDQURY.mp4"
+              }
+            },
+            {
+              "id": 980503,
+              "key": "e0aa94ea-6697-46ca-817f-c42532591628",
+              "title": "IMU Sensor Recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\nThe **inertial measurement unit (IMU)** is an umbrella term for three specific sensors that describe motion, namely the accelerometer, gyroscope, and magnetometer. \n- The **accelerometer** measures linear acceleration. \n- The **gyroscope** measures angular velocity\n- The **magnetometer** measures absolute orientation. \n\nWhile an accelerometer might tell you that the device is moving to the left really fast, it won’t tell you which way left actually is. The magnetometer will tell you that moving to the left means going East. Each of these sensors has 3 channels of measurements, each in a perpendicular direction in 3D space and would be labeled x, y, and z. This would be like measuring the acceleration up and down, left and right, and forward and backward. Device manufacturers can orient their accelerometers however they want, so we can’t assume that the z-direction is the vertical direction.\n\nWe won’t be dealing with gyroscopes and magnetometers in this course, but we will look at accelerometers. The animation below is a model of an accelerometer. There is a mass attached to springs and the mass moves a plate between two capacitors inside a circuit. This changes the capacitance depending on the location of the plate. Because the displacement of the mass on a spring is proportional to the force it sees, the changing voltage in the circuit is proportional to force and acceleration. If you combine three of these circuits together perpendicularly, you can measure acceleration in 3 dimensions. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 980498,
+              "key": "6230e8d2-4479-4bf4-a8c1-b8a9674a2d88",
+              "title": "accelerometer animation",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/March/5e7a3d22_nd320-c4-l2-accelorometer/nd320-c4-l2-accelorometer.gif",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/6230e8d2-4479-4bf4-a8c1-b8a9674a2d88",
+              "caption": "Accelerometer Diagram",
+              "alt": "Accelerometer Diagram",
+              "width": 1920,
+              "height": 1080,
+              "instructor_notes": null
+            },
+            {
+              "id": 980481,
+              "key": "018a973e-17a4-48c1-8622-acd100f184eb",
+              "title": "recap continued",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "This also means that accelerometers are affected by gravity. For example, if we rotate our accelerometer 90 degrees, we can see gravity pulls the mass down and the accelerometer will see a voltage associated with 1 **g-force** or the magnitude of the acceleration due to Earth’s gravity. The accelerometer only measures 0 if it’s in free-fall.\n\nThis also means that when the device is stationary, you can measure its orientation. If all the acceleration is in the downward z-direction, then it’s flat on a table. Or if it’s all in the x-direction, then it’s tilted on its side. We’ll take a more in-depth look at this another phenomena in the next lesson where we look at accelerometer traces in detail.\n\nNot all accelerometers are implemented using this capacitor attached to a mass on a spring model, but they follow similar principles. For example, some accelerometers use a force sensitive resistor or a [piezoelectric crystal](https://blog.endaq.com/piezoelectric-accelerometers-how-they-work-and-where-to-buy) to modulate a voltage in response to an acceleration. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 980501,
+              "key": "b8f91ea9-1fb7-412f-85e2-f2e956b0b7d9",
+              "title": "Q: What will the accelerometer magnitude be when stationary?",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "b8f91ea9-1fb7-412f-85e2-f2e956b0b7d9",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What does the magnitude of an accelerometer read when it is stationary?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "0 g",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "1 g",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "\\sqrt(3) g",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk4",
+                    "text": "There is not enough information.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 980502,
+              "key": "3cd8010b-b9e9-402b-9889-a977247ce6f1",
+              "title": "Q: What will accelerometer magnitude be when in free fall?",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "3cd8010b-b9e9-402b-9889-a977247ce6f1",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What is the accelerometer magnitude in free-fall, with no air resistance?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "0 g",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "1 g",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "\\sqrt(3) g",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk4",
+                    "text": "10 g",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 980494,
+              "key": "00eca7a5-ca01-4cd7-b99b-8877ccee8ba1",
+              "title": "quiz",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "00eca7a5-ca01-4cd7-b99b-8877ccee8ba1",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What is the accelerometer magnitude in free-fall, at terminal velocity?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "0 g",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "1 g",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "\\sqrt{3} g",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk4",
+                    "text": "10 g",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 980499,
+              "key": "b749edfd-57e0-4b67-9a3b-48fe7efde641",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## New Vocabulary\n- **Inertial Measurement Unit (IMU)**: A collection of sensors that measure motion.\n- **Accelerometer**: A sensor that measures linear acceleration.\n- **Gyroscope**: A sensor that measures angular velocity.\n- **Magnetometer**: A sensor that measures magnetic forces.\n- **g-force**: The amount of acceleration on a body measured in units of acceleration due to gravity on earth (or roughly 9.8m/s^2).",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 980555,
+          "key": "917364ba-762e-4f05-bb12-82e16c2092a3",
+          "title": "Accelerometer Deep Dive",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "917364ba-762e-4f05-bb12-82e16c2092a3",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 980504,
+              "key": "1e7d1f15-fecd-460f-b9ff-a207f6d2e70d",
+              "title": "heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Accelerometer Deep-Dive",
+              "instructor_notes": ""
+            },
+            {
+              "id": 980505,
+              "key": "4c258868-d1fc-466d-9263-c6a3df9838f0",
+              "title": "ND320 C4 L2 03 Accelerometer Deep Dive",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "GfdLzQl3POk",
+                "china_cdn_id": "GfdLzQl3POk.mp4"
+              }
+            },
+            {
+              "id": 980506,
+              "key": "4bf20161-9113-4944-affa-299b9cecc227",
+              "title": "recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\nLet’s take a more in-depth look at the accelerometer. As a reminder, when we talk about accelerometer magnitude, this means the vector magnitude of the force on the accelerometer in 3D space, as given by this formula. \n\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1006861,
+              "key": "078e586a-d4d4-4f7f-95c2-c40172ebc4e0",
+              "title": "acc magnitude",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/March/5e7a3d1a_nd320-c4-l2-accelerometer-magnitude/nd320-c4-l2-accelerometer-magnitude.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/078e586a-d4d4-4f7f-95c2-c40172ebc4e0",
+              "caption": "Accelerometer magnitude is the square root of the sum of the squared value of movement in each of the 3 axes. ",
+              "alt": "The Accelerometer Magnitude equals the square root of the sum of the squared of movement in x, y, and z direction. ",
+              "width": 567,
+              "height": 63,
+              "instructor_notes": null
+            },
+            {
+              "id": 980550,
+              "key": "d8658c7f-2015-437e-9d7c-811c2485ebc4",
+              "title": "recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Take a look at this accelerometer trace when the wearer is at rest.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1006859,
+              "key": "80f14db6-761d-4688-845b-bcef7b0c6567",
+              "title": "at rest",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/March/5e7a3d18_nd320-c4-l2-acc-rest/nd320-c4-l2-acc-rest.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/80f14db6-761d-4688-845b-bcef7b0c6567",
+              "caption": "Accelerometer Magnitude - Wearer at Rest",
+              "alt": "Accelerometer Magnitude - Wearer at Rest",
+              "width": 1999,
+              "height": 1211,
+              "instructor_notes": null
+            },
+            {
+              "id": 980554,
+              "key": "7be24adb-e492-468b-83a1-10077da5c8c6",
+              "title": "recap - jogger",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "The accelerometer magnitude is close to 1 g, which means the total force on the accelerometer is only due to gravity. But if you look at the individual channels, they shift around. In the beginning, they all see the same amount of gravitational force, which means the device is tilted along each axis equally. But then after 15 seconds, the x and y channels drop and the z-channel rises to nearly 1g. This indicates the device has moved and is now lying flat, so only the z-channel feels the force of gravity. By strategically placing accelerometers on the body, you can use this technique to figure out things like posture or sleeping position.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1006860,
+              "key": "11d3ab98-4bf4-41cb-89bf-bd1a6fbc0a05",
+              "title": "jogging",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/March/5e7a3d17_nd320-c4-l2-acc-jogging/nd320-c4-l2-acc-jogging.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/11d3ab98-4bf4-41cb-89bf-bd1a6fbc0a05",
+              "caption": "Accelerometer Magnitude - Wearer is Jogging",
+              "alt": "Accelerometer Magnitude - Wearer is Jogging",
+              "width": 1999,
+              "height": 1187,
+              "instructor_notes": null
+            },
+            {
+              "id": 980552,
+              "key": "ea6e36d6-e446-4281-8d5d-eb52cf311714",
+              "title": "recap jog",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "This is a trace of someone who is jogging. Notice the very periodic shapes in each channel that indicate the cadence of the arm swing, which can be used to figure out how fast someone is walking. By analyzing the specific characteristics of the waveform, you can decompose each stride into various components.  \n  \nFor example, this paper decomposes the accelerometer trace from an ankle into various phases of the gait cycle.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1006858,
+              "key": "a1af96dc-db93-499b-9834-c08d24a41fbb",
+              "title": "gait cycle phase",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/March/5e7a3d28_nd320-c4-l2-gait-cycle-phase/nd320-c4-l2-gait-cycle-phase.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/a1af96dc-db93-499b-9834-c08d24a41fbb",
+              "caption": "Patterson M., Caulfield B. A novel approach for assessing gait using foot mounted accelerometers; Proceedings of 5th International ICST Conference on Pervasive Computing Technologies for Healthcare; Dublin, Ireland. 23–26 May 2011; pp. 218–221.",
+              "alt": "Gait Cycle Phases can be determined by the total acceleration. When the foot is flat, the total acceleration is 5 m/s/s. When the Heel is off the ground, small increases will occur, but with toe-off, the total acceleration will peak near to 20 m/s/s. The swing of the foot phase will be variable around 5 m/s/s. But as the foot strikes the ground, it will max out around 25 m/s/s and have some smaller spikes from 10 - 15 m/s/s as the foot is flat on the ground at 5 m/s/s.",
+              "width": 1444,
+              "height": 1186,
+              "instructor_notes": null
+            },
+            {
+              "id": 980551,
+              "key": "e20bb2d7-e7f5-4c8d-90a6-7c2f3f3a0c89",
+              "title": "recap gait",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Discriminating the gait phases like this is an important starting point for several applications such as recovery after an injury or treatment, the classification of daily activities, coaching athletes, and distinguishing between normal and pathological gait. Researchers have found that differences in each person’s gait mean that it can be used to identify individuals.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1006857,
+              "key": "b122bb7d-e498-4d13-88a3-0fd2ee94a2a7",
+              "title": "run with break",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/March/5e7a3d1a_nd320-c4-l2-acc-run-break/nd320-c4-l2-acc-run-break.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/b122bb7d-e498-4d13-88a3-0fd2ee94a2a7",
+              "caption": "Accelerometer Magnitude - Wearer is running with a break in between",
+              "alt": "Accelerometer Magnitude - Wearer is running with a break in between",
+              "width": 1999,
+              "height": 1160,
+              "instructor_notes": null
+            },
+            {
+              "id": 980553,
+              "key": "caa7367e-d9a7-466d-bed4-1217fac69f6d",
+              "title": "recap magnitude",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Here we see a zoomed-out view of the accelerometer trace over 2 minutes. We can see the wearer distinctly changing activities, going from jogging to still to jogging again. You can even tell that they are probably jogging on a treadmill as the speed slowly ramps up and down. And from the sharp cut-off around 50 seconds, maybe we can tell that they jumped off the treadmill or for some reason their treadmill session was cut short. I didn’t collect this dataset, so we can’t know for sure, but it’s interesting that we can learn this level of detail from just an accelerometer alone.  \n\n### Quiz\nReview the set of graphs to answer the following quiz. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 980519,
+              "key": "0613c0de-a8e7-47ac-b336-64e8ac4578b5",
+              "title": "Quiz plots",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/March/5e7a3d49_nd320-c4-l2-sample-acc/nd320-c4-l2-sample-acc.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/0613c0de-a8e7-47ac-b336-64e8ac4578b5",
+              "caption": "Sample accelerometer traces",
+              "alt": "There are 4 accelerometer traces labeled A, B, C, and D. Sample A has an accelerometer magnitude of 1.0 with a small disturbance of +/- 0.25 from about 17 to 22 second. Sample B has periodically occurring spikes of magnitude range of 2 that starter around a min from 0.5 and from about 5 seconds onward it would min at 1.0. Sample C has a spikey ",
+              "width": 1999,
+              "height": 1310,
+              "instructor_notes": null
+            },
+            {
+              "id": 1006864,
+              "key": "11a967ab-da24-4072-b13e-af7d6a176f1f",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "11a967ab-da24-4072-b13e-af7d6a176f1f",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Match the accelerometer traces above with the activity being done in each of the above image."
+                },
+                "concepts_label": "Sample Trace",
+                "answers_label": "Activity",
+                "concepts": [
+                  {
+                    "text": "A",
+                    "correct_answer": {
+                      "id": "a1584553499260",
+                      "text": "idle"
+                    }
+                  },
+                  {
+                    "text": "B",
+                    "correct_answer": {
+                      "id": "a1584553505019",
+                      "text": "Running"
+                    }
+                  },
+                  {
+                    "text": "C",
+                    "correct_answer": {
+                      "id": "a1584553505725",
+                      "text": "Walking"
+                    }
+                  },
+                  {
+                    "text": "D",
+                    "correct_answer": {
+                      "id": "a1584553506455",
+                      "text": "Broken Device"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1584553505019",
+                    "text": "Running"
+                  },
+                  {
+                    "id": "a1584553505725",
+                    "text": "Walking"
+                  },
+                  {
+                    "id": "a1584553499260",
+                    "text": "idle"
+                  },
+                  {
+                    "id": "a1584553506455",
+                    "text": "Broken Device"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 980510,
+              "key": "ee265c10-0172-4aca-b047-3d510c9b77f3",
+              "title": "Exercise Intro",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Exercise 1: Step Cadence\n\n## Instructions\n1. Complete the **Offline** or **Online** instructions below.\n2. Read through the whole `.ipynb`.\n3. Complete all the code cells that contain `## Your Code Goes Here`.\n\n#### Offline\n1. In the repo which you can access [here](https://github.com/udacity/nd320-c4-wearable-data-starter/tree/master/intro-to-sensors/exercises/1-step-cadence/) in the repo `/intro-to-sensors/exercises/1-step-cadence/` you should find the following files:\n - `1_step_cadence.ipynb`\n - `exercise1.npz`\n2. Open up the python notebook and associated files in your desired editor. \n\n**Note**: Instructions can be found in **Introduction to Wearable Data**'s Concept **Developer Workflow** for how to set up your local environment.\n\n#### Online\n1. Go to the next concept and the `1_plotting.ipynb` should be open and the workspace should already contain the appropriate `exercise1.npz` file.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 980512,
+          "key": "6420e48b-59b5-4a96-9784-d891162c0006",
+          "title": "Exercise 1: Step Cadence",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "6420e48b-59b5-4a96-9784-d891162c0006",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1006867,
+              "key": "1e0defb1-1ed6-4384-9d3d-6d83fa26df09",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c980512xJUPYTERj1gfe80v",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-je86m",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/1_step_cadence.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 980541,
+          "key": "a7c67df0-64b2-4c1e-8504-03e279727580",
+          "title": "Exercise 1: Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a7c67df0-64b2-4c1e-8504-03e279727580",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 980525,
+              "key": "5e5e17ad-8686-4615-b3f8-cd8301dc79cf",
+              "title": "heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "##  Exercise 1: Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 980513,
+              "key": "9af1f9cf-ef8e-4455-b990-967ee7b7b50f",
+              "title": "ND320 C4 L2 04 Exercise 1 Walkthrough",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "iG30q6U0TMM",
+                "china_cdn_id": "iG30q6U0TMM.mp4"
+              }
+            },
+            {
+              "id": 980511,
+              "key": "5cf47b5a-6b10-4d6a-8492-25af8a75d450",
+              "title": "IMU Further Research",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Further Resources\n\nThis paper describes using the orientation of accelerometers on the body to determine posture.   [Gjoreski, Hristijan & Gams, Matjaz. (2011). Activity/Posture Recognition using Wearable Sensors Placed on Different Body Locations. 10.2316/P.2011.716-067.](https://pdfs.semanticscholar.org/b8ac/6f5f1a3362f83aef7c75b0b75ab09e17a3c1.pdf).\n  \nA review of methods for segmenting the gait cycle.  \n[Taborri J, Palermo E, Rossi S, Cappa P. Gait Partitioning Methods: A Systematic Review. Sensors (Basel). 2016 Jan 6;16(1). doi: 10.3390/s16010066. Review. PubMed PMID: 26751449; PubMed Central PMCID: PMC4732099](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4732099/)\n\nGait cycle segmentation using an ankle based accelerometer.  \n[Patterson, Matt & Caulfield, Brian. (2011). A novel approach for assessing gait using foot mounted accelerometers. 2011 5th International Conference on Pervasive Computing Technologies for Healthcare and Workshops, PervasiveHealth 2011. 218 - 221. 10.4108/icst.pervasivehealth.2011.246061.](https://eudl.eu/pdf/10.4108/icst.pervasivehealth.2011.246061).\n\nAn article describing how changes in the gait cycle can be learned behavior. In this case, from prior KGB training.  \n[Araújo R, Ferreirai JJ, Antonini A, and Bloem B. (2015)  “Gunslinger’s gait”: a new cause of unilaterally reduced arm swing. The BMJ.](https://www.bmj.com/content/351/bmj.h6141)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 980524,
+              "key": "ac08bad4-3485-4c3d-a219-43a27a61c93e",
+              "title": "gait phases",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/March/5e7a3d29_nd320-c4-l2-gait-phases/nd320-c4-l2-gait-phases.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/ac08bad4-3485-4c3d-a219-43a27a61c93e",
+              "caption": "Source:   \n[Taborri J, Palermo E, Rossi S, Cappa P. Gait Partitioning Methods: A Systematic Review. Sensors (Basel). 2016 Jan 6;16(1). doi: 10.3390/s16010066. Review. PubMed PMID: 26751449; PubMed Central PMCID: PMC4732099](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4732099/)",
+              "alt": "A chart showing a gait separated from two to eight phases. And as we increase in the number of phases the breakdown of each of the phases increases. This shows how we can break down a gait and thus how we could recognize a gait in our data. ",
+              "width": 1614,
+              "height": 1156,
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 980566,
+          "key": "7ab1b6d5-a4e8-4c29-b36d-e3411c174959",
+          "title": "PPG Sensor",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "7ab1b6d5-a4e8-4c29-b36d-e3411c174959",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 980544,
+              "key": "ac6359b9-d4ba-4241-903d-761947d869fd",
+              "title": "heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Photoplethysmogram (PPG) Sensor",
+              "instructor_notes": ""
+            },
+            {
+              "id": 980486,
+              "key": "e0189e80-e81a-4e23-a3bd-735f2c601cb8",
+              "title": "ND320 C4 L2 05 PPG Sensor",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "PBrbk7-oPR4",
+                "china_cdn_id": "PBrbk7-oPR4.mp4"
+              }
+            },
+            {
+              "id": 980484,
+              "key": "f1b9594b-80f1-4a02-98d4-80226c2deb30",
+              "title": "PPG Sensor recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\nThe **photoplethysmogram (PPG)** optically measures blood flow at the wrist. The LEDs in a PPG sensor shine a typically green light into your skin and your red blood cells absorb that green light. The reflected light is then measured by the **photodetector**. When your heart beats and blood perfuses through the wrist, there are more red blood cells that absorb the green light and the photodetector sees a smaller signal. As the heart fills back up with blood and blood leaves your wrist, the more green light is reflected back and the photodetector reading goes up. This oscillating waveform can be used to detect pulse rate. See the illustration below.\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 980560,
+              "key": "79f6dec1-7c21-4e6e-b86e-64745a90886f",
+              "title": "PPG Sensor Diagram",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/March/5e7a3d46_nd320-c4-l2-ppg-sensor-diagram/nd320-c4-l2-ppg-sensor-diagram.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/79f6dec1-7c21-4e6e-b86e-64745a90886f",
+              "caption": "PPG Sensor Diagram",
+              "alt": "PPG Sensor Diagram",
+              "width": 1484,
+              "height": 576,
+              "instructor_notes": null
+            },
+            {
+              "id": 980556,
+              "key": "714c84f5-8135-4ffd-b0a3-ae87a9770288",
+              "title": "ppg + melanin",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "The trough corresponds to a peak in perfusion and occurs when the ventricles of the heart contract, called **systole**. The peak in the waveform occurs when there is the least amount of blood in the wrist or when the heart relaxes and fills with blood, called **diastole**.  \n  \n## Noise Sources\nThere are many other factors that affect the signal. \n\n### Melanin\nSkin absorbs light from the LEDs as well and darker skin absorbs more light. This causes a DC shift and a reduction in SNR in the PPG signal for people with darker skin. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 980561,
+              "key": "1bb4c150-f91f-4014-ba47-a74100408d0c",
+              "title": "Melanin",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/March/5e7a3d2a_nd320-c4-l2-melanin/nd320-c4-l2-melanin.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/1bb4c150-f91f-4014-ba47-a74100408d0c",
+              "caption": "Effect of Melanin",
+              "alt": "Effect of Melanin",
+              "width": 1506,
+              "height": 482,
+              "instructor_notes": null
+            },
+            {
+              "id": 980558,
+              "key": "7eaa8662-2ca6-40b9-ae5e-2270228bddb3",
+              "title": "arm motion",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Arm Motion\nBlood is a liquid and when you move your arm around, the blood inside moves as well. This is what the PPG signal looks like while running. You can see the cadence of the arm swing in the FFT of the PPG signal as well as in the accelerometer.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 980557,
+              "key": "cac9576c-58a2-429b-bad7-9e72da92494a",
+              "title": "Arm Motion",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/March/5e7a3d24_nd320-c4-l2-arm-motion/nd320-c4-l2-arm-motion.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/cac9576c-58a2-429b-bad7-9e72da92494a",
+              "caption": "Effect of Arm Motion",
+              "alt": "Effect of Arm Motion",
+              "width": 1502,
+              "height": 750,
+              "instructor_notes": null
+            },
+            {
+              "id": 980559,
+              "key": "b34a21b6-5c3a-4adf-bb73-f8dfef2f3315",
+              "title": "arm position",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Arm Position\nEven while at rest, if the position of the arm changes, blood flows into or out of the wrist. If you hang your arm down, more blood will flow into it and the DC level of the signal will slowly drop. If you raise your arm up, blood will flow out of your arm and the DC level will increase.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 980564,
+              "key": "900717d2-496c-4e9f-8896-4b95b43ed64d",
+              "title": "posture",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/March/5e7a3d45_nd320-c4-l2-posture/nd320-c4-l2-posture.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/900717d2-496c-4e9f-8896-4b95b43ed64d",
+              "caption": "Effect of Posture Change",
+              "alt": "Effect of Posture Change",
+              "width": 958,
+              "height": 602,
+              "instructor_notes": null
+            },
+            {
+              "id": 980563,
+              "key": "4871f694-02e5-4893-9624-f765149070cf",
+              "title": "finger mvt",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Finger Movement\nMoving your fingers around will cause a significant disturbance in the PPG signal because, as the tendons in your wrist move, they cause other structures to move around and may even shift the position of the sensor. All this motion will change the path that light takes to travel through the wrist and change the photodetector reading.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 980565,
+              "key": "72c5950c-b568-473e-863d-a1fcbefeeb3c",
+              "title": "finger mvt",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/March/5e7a3d27_nd320-c4-l2-finger-movement/nd320-c4-l2-finger-movement.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/72c5950c-b568-473e-863d-a1fcbefeeb3c",
+              "caption": "Effect of Finger Movement",
+              "alt": "Effect of Finger Movement",
+              "width": 936,
+              "height": 644,
+              "instructor_notes": null
+            },
+            {
+              "id": 980562,
+              "key": "d612029b-e2c4-4ab1-bf29-d616b15227d2",
+              "title": "recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "All these sources of noise make the PPG signal tricky to deal with, but now that you are aware of them, you can design algorithms that are robust to these events.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1006865,
+              "key": "479adae6-ecb6-49b7-8fb7-e9ccc56f5363",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "479adae6-ecb6-49b7-8fb7-e9ccc56f5363",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "What does each part of the PPG wave correspond to in a cardiac cycle?"
+                },
+                "concepts_label": "Part of a PPG",
+                "answers_label": "Cardiac Cycle",
+                "concepts": [
+                  {
+                    "text": "Peak",
+                    "correct_answer": {
+                      "id": "a1584553966698",
+                      "text": "Diastole"
+                    }
+                  },
+                  {
+                    "text": "Trough",
+                    "correct_answer": {
+                      "id": "a1584554003608",
+                      "text": "Systole"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1584553966698",
+                    "text": "Diastole"
+                  },
+                  {
+                    "id": "a1584554003608",
+                    "text": "Systole"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 980483,
+              "key": "1b681deb-deda-4979-a6b0-2583abd234f8",
+              "title": "heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## New Vocabulary\n- **Photoplethysmogram (PPG)**: the optical sensor used to measure pulse rate on a wearable device.\n- **Photodetector**: A sensor that measures light.\n- **Diastole**: The phase of the cardiac cycle where the heart relaxes and fills with blood.\n- **Systole**: The phase of the cardiac cycle where the ventricles contract and pump blood through the arteries.\n\n\n# Exercise 2: PPG Peaks\n\n## Instructions\n1. Complete the **Offline** or **Online** instructions below.\n2. Read through the whole `.ipynb`.\n3. Complete all the code cells that contain `## Your Code Goes Here`.\n\n#### Offline\n1. In the repo which you can access [here](https://github.com/udacity/nd320-c4-wearable-data-starter/tree/master/intro-to-sensors/exercises/2-ppg-peaks/) in the repo `/intro-to-sensors/exercises/2-ppg-peaks/` you should find the following files:\n - `2_ppg_peaks.ipynb`\n - `exercise2.npz`\n - `ppg_peaks.png`\n2. Open up the python notebook and associated files in your desired editor. \n\n**Note**: Instructions can be found in **Introduction to Wearable Data**'s Concept **Developer Workflow** for how to set up your local environment.\n\n#### Online\n1. Go to the next concept and the `2_ppg_peaks.ipynb` should be open and the workspace should already contain the appropriate `exercise2.npz` file. This one will also contain the `ppg_peaks.png` file for the instructions in markdown.\t",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 980482,
+          "key": "2a3a58b8-682b-48b0-8d41-8bd0247a34a6",
+          "title": "Exercise 2: PPG Peaks",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "2a3a58b8-682b-48b0-8d41-8bd0247a34a6",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1018620,
+              "key": "251d0d0b-8f2c-4e3b-bd28-1ab5a9c87232",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c980482xJUPYTERm8xli7l4",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-06gef",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/2_ppg_peaks.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 980538,
+          "key": "38914898-b43a-4bad-8b63-c46a9edab987",
+          "title": "Exercise 2: Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "38914898-b43a-4bad-8b63-c46a9edab987",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 980518,
+              "key": "6fb0c596-ac36-4470-976e-05b98254816a",
+              "title": "heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Exercise 2: Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 980522,
+              "key": "7d974bf8-667b-49c2-936e-27344ee23a9f",
+              "title": "ND320 C4 L2 06 Exercise 2 Walkthrough",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "V0Gpds9E848",
+                "china_cdn_id": "V0Gpds9E848.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 1006863,
+          "key": "3e41ac7a-3ff9-42f7-8594-e15376d834b9",
+          "title": "PPG SNR",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "3e41ac7a-3ff9-42f7-8594-e15376d834b9",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1020206,
+              "key": "533c3054-310b-4048-a81b-d4aff97a2197",
+              "title": "ppg snr 1",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Signal Quality Evaluation\nThe single most important factor that can make or break any algorithm you build is the underlying quality of the signal. As an algorithms engineer you may have the rare opportunity to influence the design of the hardware that will acquire the signal that will then be the input to your algorithms. Being able to provide actionable quantitative feedback for various hardware prototypes will provide endless returns down the line when you start building algorithms based on that hardware.\n\nWe can see an example of this kind of analysis in [this paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6651860/) where the researchers analyzed the effects of different mediums (water vs. air) and temperature on the PPG signal quality and pulse rate estimation from a smartphone sensor.\n\nFirst let’s look at the pulse rate algorithm accuracy.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1020205,
+              "key": "3b0d3df7-7304-46b1-a5bf-21dbd29218dd",
+              "title": "ppg snr image 1",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/May/5eb8ee6b_l2-ppg-snr-1/l2-ppg-snr-1.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/3b0d3df7-7304-46b1-a5bf-21dbd29218dd",
+              "caption": "Pulse rate accuracy acquired from smartphone PPG signals for varying temperature in dry (red) and underwater (blue) environments.",
+              "alt": "Pulse rate estimation accuracy vs. temperature and medium",
+              "width": 788,
+              "height": 495,
+              "instructor_notes": null
+            },
+            {
+              "id": 1020208,
+              "key": "6bc8c27b-c04d-4137-932e-b362117fdbcb",
+              "title": "ppg snr 2",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Pulse rate accuracy deteriorates at cooler temperatures and is worse underwater compared to in air.  \n  \nUsing a pulse rate algorithm’s accuracy is a great way to evaluate signal quality, especially if the primary thing you want to do with that signal is estimate pulse rate and if you have the algorithm on hand. However, using an algorithm to estimate signal quality can conflate the algorithm accuracy and its idiosyncrasies with the signal quality. Sometimes you may want to look directly at the signal characteristics themselves. Here, the researchers chose to look at signal amplitude.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1020207,
+              "key": "71beb9ba-2f1d-4c8f-bedb-51ac8ec92275",
+              "title": "ppg snr image 2",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/May/5eb8ee6b_l2-ppg-snr-2/l2-ppg-snr-2.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/71beb9ba-2f1d-4c8f-bedb-51ac8ec92275",
+              "caption": "Smartphone PPG signal amplitude for varying temperature in dry (red) and underwater (blue) environments.",
+              "alt": "PPG signal amplitude vs. temperature and medium",
+              "width": 756,
+              "height": 491,
+              "instructor_notes": null
+            },
+            {
+              "id": 1020209,
+              "key": "495b3c88-30f4-4527-aa4e-284c7b79b2eb",
+              "title": "ppg snr 3",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Again we observe that we get higher amplitudes in dry and warmer environments. This plot implies that a higher signal amplitude corresponds to higher signal quality. But as we have seen previously, with PPG signals, this is not always the case. Motion artifact and ambient light can cause high amplitude peaks in the signal that definitely do not correspond to signal quality. Optimizing for signal amplitude might mean that you build hardware that is extremely susceptible to motion artifacts.\n  \nIn the following exercise you will use a more holistic metric to evaluate PPG signal quality called the signal-to-noise ratio that avoids some of these problems.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1006862,
+              "key": "2cb2ee54-13f1-430e-9cd1-d691b5806396",
+              "title": "summary & Exercise",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Exercise 3: PPG SNR\n\n## Instructions\n1. Complete the **Offline** or **Online** instructions below.\n2. Read through the whole `.ipynb`.\n3. Complete all the code cells that contain `## Your Code Goes Here`.\n\n#### Offline\n1. In the repo which you can access [here](https://github.com/udacity/nd320-c4-wearable-data-starter/tree/master/intro-to-sensors/exercises/3-ppg-snr/) in the repo `/intro-to-sensors/exercises/2-ppg-snr/` you should find the following files:\n - `3_ppg_snr.ipynb`\n - `exercise3.npz`\n2. Open up the python notebook and associated files in your desired editor. \n\n**Note**: Instructions can be found in **Introduction to Wearable Data**'s Concept **Developer Workflow** for how to set up your local environment.\n\n#### Online\n1. Go to the next concept and the `3_ppg_snr.ipynb` should be open and the workspace should already contain the appropriate `exercise3.npz` file. This one will also contain the `ppg_peaks.png` file for the instructions in markdown.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 980514,
+          "key": "595c43a9-c3a6-4888-b156-1a88c5200a49",
+          "title": "Exercise 3: PPG SNR",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "595c43a9-c3a6-4888-b156-1a88c5200a49",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1018622,
+              "key": "29e70089-2841-4461-8632-4be80306049d",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c980514xJUPYTERosb0n2s1",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-g6rw6",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/3_ppg_snr.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 980540,
+          "key": "677ab7d3-4f32-4090-b939-be5f969a69ee",
+          "title": "Exercise 3: Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "677ab7d3-4f32-4090-b939-be5f969a69ee",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 980530,
+              "key": "1b9264aa-5124-4739-977c-33769e64618f",
+              "title": "ND320 C4 L2 07 Exercise 3 Walkthrough",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "gQUNhJk2doc",
+                "china_cdn_id": "gQUNhJk2doc.mp4"
+              }
+            },
+            {
+              "id": 980515,
+              "key": "07b956d4-62ea-4044-b796-b60483bfe6a9",
+              "title": "Further resources",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Further Resources\n- To learn more about the PPGs, you can look at this [Wikipedia Entry](https://en.wikipedia.org/wiki/Photoplethysmogram).  \n  \n- A dissertation on PPG processing techniques that includes an introduction that has great background information on the PPG signal in general. \n[Schäck, Tim. Photoplethysmography-Based Biomedical Signal Processing Darmstadt, Technische Universität Darmstadt, Jahr der Veröffentlichung der Dissertation auf TU prints: 2019 Tag der mündlichen Prüfung: 21.01.2019.](https://pdfs.semanticscholar.org/c1d1/318d4fa8c8c02b1eaae2ca50c16532b53e15.pdf).",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 980548,
+          "key": "b8d60b91-ae4b-488b-8379-99e6fe33f2b5",
+          "title": "ECG Sensor",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "b8d60b91-ae4b-488b-8379-99e6fe33f2b5",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 980537,
+              "key": "bb55096e-ac77-49eb-bc38-13173c794c50",
+              "title": "heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Electrocardiogram (ECG) Sensor",
+              "instructor_notes": ""
+            },
+            {
+              "id": 980527,
+              "key": "f521f9d7-cd2d-42db-9d33-f561e464baf1",
+              "title": "ND320 C4 L2 08 ECG Sensors",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "uSJb9ZBDTnU",
+                "china_cdn_id": "uSJb9ZBDTnU.mp4"
+              }
+            },
+            {
+              "id": 980517,
+              "key": "f9ebb026-5b03-4cbc-8225-82bc5525c0fd",
+              "title": "Recap of ECGs",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\n\n**Electrocardiograms (ECG or EKG)** measure the voltage across the chest, which is primarily due to the heart rhythm. ECGs are different from the other raw signals produced by a wearable in that cardiologists can use them in their raw, unprocessed form to diagnose heart problems like a previous heart attack or an irregular heart rhythm.\n\nThe ECG measures the voltage created by the electrical activity in the heart. A traditional ECG does this with electrodes on the chest. An **electrode** is a conductive pad that comes in contact with skin and a **lead** is the electrical potential difference between two electrodes. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 980545,
+              "key": "86a03568-44fc-455b-8f55-ead371dc0f75",
+              "title": "image",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/March/5e7a3d25_nd320-c4-l2-clinical-ecg/nd320-c4-l2-clinical-ecg.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/86a03568-44fc-455b-8f55-ead371dc0f75",
+              "caption": "Clinic ECG",
+              "alt": "Clinic ECG",
+              "width": 475,
+              "height": 393,
+              "instructor_notes": null
+            },
+            {
+              "id": 980533,
+              "key": "9af71a9b-351d-4ec4-bc8a-3728f7f3caa9",
+              "title": "recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Each pair of electrodes measures a slightly different voltage. The standard 12-lead ECG contains 12 different voltages across different axes of the body.\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 980520,
+              "key": "879a8a42-8b37-4c63-882c-cba966a6144b",
+              "title": "image",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/March/5e7a3d15_nd320-c4-l2-12-lead-ecg/nd320-c4-l2-12-lead-ecg.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/879a8a42-8b37-4c63-882c-cba966a6144b",
+              "caption": "12 Lead ECG",
+              "alt": "12 Lead ECG",
+              "width": 864,
+              "height": 350,
+              "instructor_notes": null
+            },
+            {
+              "id": 980528,
+              "key": "b7c61748-e28f-4082-bc5b-dbefdc6b45d0",
+              "title": "recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "The ECG has been “somewhat” wearable for a while. **Holter monitors** are ECG machines that are connected to a person’s chest in much the same way a tabletop machine is, but the recording device is portable and attached to the wearer’s hip. Holter monitors are worn during stress tests after a patient has been diagnosed or is suspected of having a heart condition or for short-term monitoring. They’re typically not worn for more than a few days. \n\nBeyond that, there are chest patches that only measure 1-lead of the 12 lead ECG. These chest patches can last from a few days to a couple of weeks. In 2011, Alivecor started making a handheld device that paired with an iPhone to take an ECG. Apple Watch and Verily’s Study Watch both have ECG sensors embedded into the hardware. On a wristwatch, the two electrodes are moved to the wrist and fingers on opposing hands. Because of this, the ECG cannot be monitored continuously and passively like the chest patch or Holter monitor or other sensors on a wearable. However, a wrist-watch can be worn for years, while a chest patch only lasts for a few weeks.\n\nIn lesson 4, we will go over the physiology of the heart and the characteristics of the ECG wave in greater detail.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 980546,
+              "key": "b5a27b3b-91d7-4d0f-836d-206a8a9175f5",
+              "title": "Quiz",
+              "semantic_type": "ReflectAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "b5a27b3b-91d7-4d0f-836d-206a8a9175f5",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "title": "Reflect",
+                "semantic_type": "TextQuestion",
+                "evaluation_id": null,
+                "text": "What is the difference between an ECG electrode and an ECG lead?"
+              },
+              "answer": {
+                "text": "A lead is a voltage channel. An electrode is a conductive contact on the skin. A lead is measured by taking the potential difference across a pair of electrodes.",
+                "video": null
+              }
+            },
+            {
+              "id": 980536,
+              "key": "22ef52e1-c4a6-46b4-9031-7c5b83ff19a7",
+              "title": "Free Response",
+              "semantic_type": "ReflectAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "22ef52e1-c4a6-46b4-9031-7c5b83ff19a7",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "title": "Reflect",
+                "semantic_type": "TextQuestion",
+                "evaluation_id": null,
+                "text": "What trade-off is being made between a 12-lead ECG, a Holter monitor, the Zio patch, and an Apple Watch ECG?"
+              },
+              "answer": {
+                "text": "The main trade-off being made between these devices is one of the density of ECG data vs. longitudinally of monitoring. A 12-lead ECG contains 12 channels of ECG signals, looking at multiple axes across the chest. However, it is only recorded for a few seconds to a minute while a patient is in a clinic. Holter monitors can measure an ECG for hours to a few days, but they typically only measure 3-5 leads of an ECG. The Zio patch measures 1 ECG leads for a couple of weeks, and a wrist-watch can measure 1 ECG lead intermittently over the years.\n\nEach of these points on the trade-off curve has different clinical utility. Wearables continue to try to make a case for their clinical utility and make inroads into clinical practice. ",
+                "video": null
+              }
+            },
+            {
+              "id": 980521,
+              "key": "5d5e0975-14ee-4e62-ad55-1872b4edc4e3",
+              "title": "ECG Sensor Further Resources",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Further Resources\n\nYou can learn more about the ECG in the [Wikipedia Entry](https://en.wikipedia.org/wiki/Electrocardiography)\n\n## New Vocabulary\n- **Electrocardiogram (ECG)**: A sensor that measures the electrical activity of the heart.\n- **Electrode**: Part of an ECG circuit. Conductive pads that make contact with the skin.\n- **Lead**: An electrical potential difference measured across two electrodes of an ECG circuit.\n- **Holder monitor**: A mobile ECG device that can measure continuously for typically 24 - 72 hours.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 980542,
+          "key": "16198f5f-511e-41a1-9696-d92f7dacf4df",
+          "title": "Apple Heart Study - Revisited",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "16198f5f-511e-41a1-9696-d92f7dacf4df",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 980532,
+              "key": "5684c257-42ea-49e3-9e11-466ac3808ae3",
+              "title": "heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# The Apple Heart Study - Revisited",
+              "instructor_notes": ""
+            },
+            {
+              "id": 980534,
+              "key": "54fb3e03-a90f-41ef-bbf9-3738b74892b9",
+              "title": "ND320 C4 L2 09 Apple Heart Study Part II",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "zaFuasewbE8",
+                "china_cdn_id": "zaFuasewbE8.mp4"
+              }
+            },
+            {
+              "id": 980523,
+              "key": "b62c6749-145f-4366-8ab2-6f65b48218b7",
+              "title": "recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Summary\nWearables allow us to collect more data under more conditions from more people. Typically we’d only measure ECGs from people that are suspected of having heart conditions. Now Apple Watch can measure and look for atrial fibrillation from its large, mostly healthy population. More research needs to be done into AF itself to really know how useful detecting it in this population actually is. For example, what does it mean when someone under 40 years old has AF. Are they actually at an increased risk of stroke? The Framingham study -- which found the association between AF and stroke -- was conducted in the 40s, 50s, and 60s when AF was diagnosed after coming to the hospital and taking an ECG. If a subject’s AF was not persistent enough to show up at that time, then it would go undiagnosed. In fact, for a lot of the stroke victims, it was unknown that they even had AF until after they came to the hospital for the stroke itself.\n\nAlthough the population of Framingham study was at a 4-5X increase in the risk of stroke from AF, it is unclear if the population that the Apple Watch is discovering AF for is also at this increased risk. What does it mean to the public health system when you're alerting all these people of AF just because you can monitor it more closely than you ever could before? And how should patients and their doctors respond when they discover AF? The Apple Heart Study paper mentions these concerns explicitly:\n\n> ...further studies are needed to better understand the public health implications of identifying irregular pulse in persons younger than 40 years of age.    \n\nand  \n> ...uncertainty remains about the benefits of diagnosing and treating asymptomatic atrial fibrillation...  \n\nWe have to address these concerns before we can really understand the value of using the Apple Watch as a screening or diagnostic tool.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 980549,
+          "key": "0a947518-b664-4981-89ae-3ab1b8a93a0d",
+          "title": "Recap: Introduction to Sensors",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "0a947518-b664-4981-89ae-3ab1b8a93a0d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 980531,
+              "key": "798afe02-cd65-458f-8791-dc5e893d4e3f",
+              "title": "heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Recap",
+              "instructor_notes": ""
+            },
+            {
+              "id": 980526,
+              "key": "18fb3b6f-69bd-4f30-8da4-3d3f3d6cf103",
+              "title": "ND320 C4 L2 10 Recap Intro To Sensors",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "9V-0O8RfVgw",
+                "china_cdn_id": "9V-0O8RfVgw.mp4"
+              }
+            },
+            {
+              "id": 980529,
+              "key": "55caf17f-c1ef-4c71-82e5-c873155f0055",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\n\nEvery time you interact with a new sensor type, it’s a good idea to become familiar with the sensor in this way. You should try to understand the physics that make the sensor work, explore real data from the sensor, and research what common noise sources are and the artifacts they produce in the signal. Seeing how your own body reacts with a sensor is a great way to get experience and build intuition when possible. Finally, examining the existing literature on your sensor and the conditions that you are using it in is critical for learning a larger picture of the sensor’s characteristics. \n\nIn this lesson, we learned how the three sensors we’re using in this course -- the IMU, PPG, and ECG sensors -- work. You now know what physical quantities are measured by each sensor, know what each sensor looks like, and learned about common challenges and noise sources that arise when working with these signals.\n\n### Outline\n- Wrist Wearable Demo\n- IMU Sensor\n   - IMU Overview\n   - Accelerometer Deep Dive\n- PPG Sensor\n- ECG Sensor",
+              "instructor_notes": ""
+            },
+            {
+              "id": 980535,
+              "key": "53de4618-5104-48aa-98a6-81ec379bf2b2",
+              "title": "Resources",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Further Resources\n\n### IMU\n- This paper describes using the orientation of accelerometers on the body to determine posture.   [Gjoreski, Hristijan & Gams, Matjaz. (2011). Activity/Posture Recognition using Wearable Sensors Placed on Different Body Locations. 10.2316/P.2011.716-067.](https://pdfs.semanticscholar.org/b8ac/6f5f1a3362f83aef7c75b0b75ab09e17a3c1.pdf).\n- A review of methods for segmenting the gait cycle.\n[Taborri J, Palermo E, Rossi S, Cappa P. Gait Partitioning Methods: A Systematic Review. Sensors (Basel). 2016 Jan 6;16(1). doi: 10.3390/s16010066. Review. PubMed PMID: 26751449; PubMed Central PMCID: PMC4732099](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4732099/)\n- Gait cycle segmentation using an ankle based accelerometer.\n[Patterson, Matt & Caulfield, Brian. (2011). A novel approach for assessing gait using foot mounted accelerometers. 2011 5th International Conference on Pervasive Computing Technologies for Healthcare and Workshops, PervasiveHealth 2011. 218 - 221. 10.4108/icst.pervasivehealth.2011.246061.](https://eudl.eu/pdf/10.4108/icst.pervasivehealth.2011.246061).\n- An article describing how changes in the gait cycle can be learned behavior. In this case, from prior KGB training.\n[Araújo R, Ferreirai JJ, Antonini A, and Bloem B. (2015)  “Gunslinger’s gait”: a new cause of unilaterally reduced arm swing. The BMJ.](https://www.bmj.com/content/351/bmj.h6141)  \n\n### PPG\n- To learn more about the PPGs, you can look at this [Wikipedia Entry](https://en.wikipedia.org/wiki/Photoplethysmogram)\n\n- A dissertation on PPG processing techniques that includes an introduction that has great background information on the PPG signal in general.\n[Schäck, Tim. Photoplethysmography-Based Biomedical Signal Processing Darmstadt, Technische Universität Darmstadt, Jahr der Veröffentlichung der Dissertation auf TU prints: 2019 Tag der mündlichen Prüfung: 21.01.2019.](https://pdfs.semanticscholar.org/c1d1/318d4fa8c8c02b1eaae2ca50c16532b53e15.pdf).\n\n### ECG  \n- You can learn more about the ECG in the [Wikipedia Entry](https://en.wikipedia.org/wiki/Electrocardiography)\n- Note: We’ll cover the ECG in more detail in lesson 4.\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 980547,
+              "key": "2eb2b723-6c0a-42da-b4cd-48601b901aec",
+              "title": "Glossary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Glossary  \n- **Inertial Measurement Unit (IMU)**: A collection of sensors that measure motion.  \n- **Accelerometer**: A sensor that measures linear acceleration.  \n- **Gyroscope**: A sensor that measures angular velocity.  \n- **Magnetometer**: A sensor that measures magnetic forces.  \n- **g-force**: The amount of acceleration on a body due to gravity.  \n- **Photoplethysmogram (PPG)**: the optical sensor used to measure pulse rate on a wearable device.\n- **Photodetector**: A sensor that measures light.  \n- **Diastole**: The phase of the cardiac cycle where the heart relaxes and fills with blood.  \n- **Systole**: The phase of the cardiac cycle where the ventricles contract and pump blood through the arteries.    \n- **Electrocardiogram (ECG)**: A sensor that measures the electrical activity of the heart.  \n- **Electrode**: Part of an ECG circuit. Conductive pads that make contact with the skin.  \n- **Lead**: An electrical potential difference measured across two electrodes of an ECG circuit.  \n- **Holter monitor**: A mobile ECG device that can measure continuously for typically 24 - 72 hours.",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

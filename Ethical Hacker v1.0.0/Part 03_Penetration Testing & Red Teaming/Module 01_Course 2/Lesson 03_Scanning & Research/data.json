@@ -1,0 +1,1979 @@
+{
+  "data": {
+    "lesson": {
+      "id": 1120028,
+      "key": "ee368548-aff9-4d0c-8fc8-1161a328416c",
+      "title": "Scanning & Research",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "In this lesson, we will use the information we obtained in reconnaissance to become informed and plan how to breach the target.",
+      "lesson_type": null,
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/ee368548-aff9-4d0c-8fc8-1161a328416c/1120028/1619795607209/Scanning+%26+Research+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/ee368548-aff9-4d0c-8fc8-1161a328416c/1120028/1619795601511/Scanning+%26+Research+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 1119957,
+          "key": "f769c8be-e3f7-4dde-a57c-c2459afd014c",
+          "title": "Introduction to Scanning & Researching",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "f769c8be-e3f7-4dde-a57c-c2459afd014c",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1119954,
+              "key": "d5d6c0a8-e3c0-40ad-8088-e5605297b997",
+              "title": "Introduction to Scanning & Researching Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Introduction to Scanning & Researching",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1119955,
+              "key": "622f13c9-4024-4a43-82cc-bfaf02f2798c",
+              "title": "ND350 C2 L2 A01 Intro To Scanning And Researching Video",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Qzv60gw9Ol0",
+                "china_cdn_id": "Qzv60gw9Ol0.mp4"
+              }
+            },
+            {
+              "id": 1123316,
+              "key": "cfecf140-7e92-4074-8c19-021bc282b052",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/February/603c0a50_l2-dam/l2-dam.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/cfecf140-7e92-4074-8c19-021bc282b052",
+              "caption": "What is a Vulnerability <br> Threat: The Water | Risk: Loss of Life & Property Damage | Vulnerability: A Crack in the Dam",
+              "alt": "Threat: The Water | Risk: Loss of Life & Property Damage | Vulnerability: A Crack in the Dam",
+              "width": 1154,
+              "height": 615,
+              "instructor_notes": null
+            },
+            {
+              "id": 1119956,
+              "key": "ab60d8cc-057e-4409-a578-79f2a6fe2d36",
+              "title": "Introduction to Scanning & Researching Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Objectives of Scanning and Researching:\n\n* How to Scan for Vulnerabilities\n\n* Research vulnerabilities on different databases (find exploits)",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1119959,
+          "key": "a5d068a4-fa43-4c90-a935-3412d52d3d32",
+          "title": "Quiz: Introduction to Scanning",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a5d068a4-fa43-4c90-a935-3412d52d3d32",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1123317,
+              "key": "2bd22fe0-1d79-47f4-8708-7cb402b1b4a6",
+              "title": null,
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "2bd22fe0-1d79-47f4-8708-7cb402b1b4a6",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following is a vulnerability?",
+                "answers": [
+                  {
+                    "id": "6bcc1c7a-4cf5-41ed-98e3-e2f02aa975f0",
+                    "text": "A hacker conducting social engineering on a target",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "5001af22-23c1-415b-b6e0-cf87057d1bad",
+                    "text": "Half of a building destroyed after an earthquake",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "9b7e3034-cbdd-46a7-8346-b469c4aac13a",
+                    "text": "An email server that does not implement SPF for preventing spoofed email",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "b9ebd4cd-0b46-430d-bc52-bafdbc4fff25",
+                    "text": "A payload that creates a backdoor connection",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1123318,
+              "key": "9df899cd-82ef-4575-b04b-a7acc41ec355",
+              "title": null,
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "9df899cd-82ef-4575-b04b-a7acc41ec355",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Vulnerability Scanning is similar to what? Chose the BEST answer.",
+                "answers": [
+                  {
+                    "id": "9a855dcf-abe9-406b-8926-188ef6b0e8bb",
+                    "text": "Covering tracks",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "6a886473-ad94-4be1-ad7c-b3a0ffa625c0",
+                    "text": "Gaining access",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "d3a0906a-a86d-402d-be34-f7447cbf4928",
+                    "text": "Passive recon",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "ee97ca9d-05dc-4ecf-be5b-dffd5ee2d24b",
+                    "text": "Active Recon",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a46f28d8-12cf-46ef-a2d5-63695300faa9",
+                    "text": "Physical Recon",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1123319,
+          "key": "8b6f9cda-bcc7-4504-af98-8c3d52860b1c",
+          "title": "Host Discovery and Port Scans",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "8b6f9cda-bcc7-4504-af98-8c3d52860b1c",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1123320,
+              "key": "835d6cc2-bd2c-4de8-8fdf-51c314f853d6",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Host Discovery and Port Scans",
+              "instructor_notes": null
+            },
+            {
+              "id": 1123321,
+              "key": "e242db68-1ffd-4d59-85bb-c206fc6423de",
+              "title": "ND350 C2 L2 A02 Host Discovery And Port Scans",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "3sB_cPaC2i0",
+                "china_cdn_id": "3sB_cPaC2i0.mp4"
+              }
+            },
+            {
+              "id": 1125649,
+              "key": "3e1bd9c5-d346-4e9c-803f-4f58a00cd054",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this lesson we were able to review the behavior of different protocols during a Host Discovery and Port scanning (details below):",
+              "instructor_notes": null
+            },
+            {
+              "id": 1172860,
+              "key": "5d108691-4236-45cd-80ff-f16c44629ba1",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Port Scanning\n\nThe scanning device will send a ping packet to the target at a particular port. If the target is listening on that port, it will send a response back to the scanning device. A response to the scanner confirms that the port is open.",
+              "instructor_notes": null
+            },
+            {
+              "id": 1123323,
+              "key": "a51b8097-cbe7-40ea-8839-40dccfbd7c89",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/February/603c10cf_l2-scan/l2-scan.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/a51b8097-cbe7-40ea-8839-40dccfbd7c89",
+              "caption": "",
+              "alt": "Hacker can ping Port x and Port X Responds or Not",
+              "width": 916,
+              "height": 367,
+              "instructor_notes": null
+            },
+            {
+              "id": 1172861,
+              "key": "78b0b851-f2f5-4375-a1fd-56ab4fe9cc77",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Port scanning can be of great benefit to a pen tester in the early stage of testing. For example if port 21 is discovered to be opened, the hacker understands that this is a port commonly used by the File Transfer Protocol (FTP). From there",
+              "instructor_notes": null
+            },
+            {
+              "id": 1123324,
+              "key": "f132de08-a036-4f8c-8d64-878023e6ed61",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/March/60590d3a_l2-scanning-and-researching/l2-scanning-and-researching.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/f132de08-a036-4f8c-8d64-878023e6ed61",
+              "caption": "Port Scanning Benefits",
+              "alt": "Firewall can be observed with port scanning",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1146890,
+              "key": "85f95e48-53a8-45b0-9a7d-415da4e0202f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Netdiscover & ARP\n\n**Netdiscover: **A tool that uses ARP ping to discover/map devices within a network environment.\n\n**Address Resolution Protocol (ARP)**: a protocol for mapping an Internet Protocol address (IP address) to a physical machine address (MAC Address).",
+              "instructor_notes": null
+            },
+            {
+              "id": 1146887,
+              "key": "d95faa73-e016-4aeb-bbfb-2d7c0d6d1389",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/February/603c110a_l2-scan-arp-scan/l2-scan-arp-scan.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/d95faa73-e016-4aeb-bbfb-2d7c0d6d1389",
+              "caption": "NetDiscovery and ARP for Host Discovery",
+              "alt": "NetDiscovery and ARP for Host Discovery",
+              "width": 988,
+              "height": 534,
+              "instructor_notes": null
+            },
+            {
+              "id": 1146892,
+              "key": "1cb652e7-7457-4ea2-805b-861403e6b5b8",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Internet Control Message Protocol (ICMP) Scan\n\nScanner that uses this protocol will send an ICMP echo request to the IP addresses on the LAN. An echo response packet means that there is a live host at that IP address. No response means that there is no one at that IP address, or your packet is being dropped by the device or a firewall.",
+              "instructor_notes": null
+            },
+            {
+              "id": 1146888,
+              "key": "547f0a81-6b0a-4361-8212-04b37c987953",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/February/603c1124_l2-scan-icmp/l2-scan-icmp.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/547f0a81-6b0a-4361-8212-04b37c987953",
+              "caption": "ICMP Scans",
+              "alt": "ICMP Scans",
+              "width": 1010,
+              "height": 543,
+              "instructor_notes": null
+            },
+            {
+              "id": 1146891,
+              "key": "351a37fa-dfc1-4140-ba3f-bda7c4607eb3",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## TCP & SYN Scan\n\n**Transmission Control Protocol (TCP) scan:** In this scan, your scanner will send sequence of packets to initiate a full TCP connect to the target hosts, completing the TCP three-way handshake each time. \n\n**Synchronize (SYN) scan**: The SYN scan is the half open scan where the three-way handshake is initiated but not completed.",
+              "instructor_notes": null
+            },
+            {
+              "id": 1146889,
+              "key": "1492a357-b8d6-44c5-8d16-559f76d158d0",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/February/603c1131_l2-scan-tcp-scan/l2-scan-tcp-scan.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/1492a357-b8d6-44c5-8d16-559f76d158d0",
+              "caption": "TCP and Syn Ping Scan",
+              "alt": "TCP and Syn Ping Scan",
+              "width": 1017,
+              "height": 541,
+              "instructor_notes": null
+            },
+            {
+              "id": 1170897,
+              "key": "8986ece1-69d0-4862-bc04-5c4a35d31d8e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Demo of scans we just learned about.",
+              "instructor_notes": null
+            },
+            {
+              "id": 1170898,
+              "key": "463b88aa-e8b7-4be7-b484-2cf2d03bd6c6",
+              "title": "ND350 C2 L2 A02b Host Discovery And Port Scans",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "pAgHe8_ot_4",
+                "china_cdn_id": "pAgHe8_ot_4.mp4"
+              }
+            },
+            {
+              "id": 1173857,
+              "key": "f11b2df8-595c-4c19-92f0-dad439d4d988",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this video, we demo how to run the following scans: \n\n```undefined\nARP Scan: nmap -sn x.x.x.x/24\nICMP Scan: nmap -sP x.x.x.x/24\nUDP Scan: nmap -sU x.x.x.x/24\nFull TCP Connect Scan: nmap -sT x.x.x.x/24\nSyn Scan: nmap -sS x.x.x.x/24\n```",
+              "instructor_notes": null
+            },
+            {
+              "id": 1123322,
+              "key": "d08eccef-8507-4550-a75f-c59d097f705e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Other Types of Scans\n\n* **User Datagram Protocol (UDP)**: Unlike TCP, UDP does not perform error checking by doing things like the three-way handshake. UDP packets are sent and they either make it to their destination or not.\n* **Filtered ports**: Usually means that the device or a firewall is designed to not respond to the port scan.\n* **NULL scan:** this scan will send a blank packet to the port of interest\n* **FIN Scan: **The FIN flag is a flag computer sends when they’re ready to close their TCP connection. So an unsolicited FIN flag to a port of interest may generate a response from a live host. \n* **XMAS SCAN**: this scan will send packets with the FIN, PSH and URG flag set. \n\n# Further Research\n\n* If you want to learn more about** TCP Flag Sets **check out this <a href=\"https://youtu.be/KMq9ADQRcc8\" target=\"_blank\">YouTube tutorial</a>.\n* If you want to learn more about a **Three way handshake** check out this <a href=\"https://youtu.be/N8IHfnEK69I\" target=\"_blank\">YouTube tutorial</a>.",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1123325,
+          "key": "fca54507-b676-4aa4-ac9b-8d22773e4b4e",
+          "title": "Quiz: Host Discovery and Port Scans",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "fca54507-b676-4aa4-ac9b-8d22773e4b4e",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1123327,
+              "key": "2e078650-3279-4fb1-9c20-10ed14988bd1",
+              "title": null,
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "2e078650-3279-4fb1-9c20-10ed14988bd1",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following protocol help link IP and MAC addresses together?",
+                "answers": [
+                  {
+                    "id": "ea8d9602-8d85-4bfc-9148-ea4aff2644a8",
+                    "text": "DNS",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a40673fa-4dff-4b50-b8be-0680b255479a",
+                    "text": "DHCP",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "1757cdf7-0fa7-4e2a-93f3-4bacfbe6160e",
+                    "text": "ARP",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "0471011a-e750-4a18-a20f-cee7bbfb28a9",
+                    "text": "HTTPS",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1123328,
+              "key": "ff465607-cf3d-4c07-9b42-5ff14191f953",
+              "title": null,
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "ff465607-cf3d-4c07-9b42-5ff14191f953",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following scans is also referred to as a stealth scan?",
+                "answers": [
+                  {
+                    "id": "b24b09f5-aeaa-433c-b202-0c4bf868a5fc",
+                    "text": "TCP",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "9387ee06-9bbc-4179-a825-b4011657327f",
+                    "text": "UDP",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "0bda10d3-6de3-441c-88ee-28d84e95042e",
+                    "text": "ARP ",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "03a00bb1-d695-447c-9677-c5e67e651dfd",
+                    "text": "SYN",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1123337,
+          "key": "4c18195c-b598-46ff-8207-77eca4a17c5d",
+          "title": "Vulnerability Scanning",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "4c18195c-b598-46ff-8207-77eca4a17c5d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1162999,
+              "key": "bc520e67-ee42-4deb-90b8-4ee27b21fa4d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Vulnerability Scanning",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1123338,
+              "key": "e0d1b264-7047-4bbe-a60d-749b2d2f32a1",
+              "title": "ND350 C2 L2 A03 Vulnerability Scanning",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "sMRessb_2tQ",
+                "china_cdn_id": "sMRessb_2tQ.mp4"
+              }
+            },
+            {
+              "id": 1123339,
+              "key": "11944ad2-f781-4d33-8c04-f26270bc1477",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "We reviewed the following: \n\n* **Basic network scans**: The scanner is essentially running scripts against the target device.  Often times you can customize the type of scripts you want to run. \n* **Credentialed scans**: the same as a network scan. The only difference is the scanner will have a service account that can log on to the target machine and run the plugins with access permissions. A credential scan is more intrusive but it will dig up more vulnerabilities than a non-credential scan.\n* **Web Application Scanning**: the scanner is searching a web application for vulnerabilities.  A unique type of web application scanning is call fuzzing. This is where the scanner sends a bunch of unexpected data onto a web page to see if the web app would respond in a way that can be exploited. The scripts that are ran in this case can either be preconfigured and sometimes its just randomly generated data.",
+              "instructor_notes": null
+            },
+            {
+              "id": 1162775,
+              "key": "7965d401-a237-49e3-8270-6e44cbaeb45a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "OWASP Top 10 is a very well known resources to identify and know mitigation of the most critical and current web application security risks .\n\n### OWASP Top 10 (2017)\n\n1. Injection\n1. Broken Authentication\n1. Sensitive Data Exposure\n1. XML External Entities (XXE)\n1. Broken Access Control\n1. Security Misconfiguration\n1. XSS\n1. Insecure Deserialization\n1. Using Components with Known Vulnerabilities\n1. Insufficient Logging and Monitoring",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1173810,
+              "key": "d205bbc6-e70c-4c34-b9a4-1b9ad0462fd2",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### N-Tier\n\nThis architecture requires multilayers where the application processing and data management function are physically separated. The N represents the amount of layers which the web application requires to function.",
+              "instructor_notes": null
+            },
+            {
+              "id": 1123351,
+              "key": "0451c411-20bb-4abc-ac72-2c4fe5c6d38f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Further Research\n\n* <a href=\"https://owasp.org/\" target=\"_blank\">Open Web Application Security Project (OWASP)</a>: The most recommended hub for developers to be informed on security practices for web applications.\n* If you want to learn more about N-tier architecture, check out this <a href=\"https://www.youtube.com/watch?v=KlHvRKSH4pk&amp;t=1s\" target=\"_blank\">YouTube</a> video.",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1123352,
+          "key": "39132fa5-a540-43bd-a376-455cc7229da8",
+          "title": "Quiz: Vulnerability Scans",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "39132fa5-a540-43bd-a376-455cc7229da8",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1123354,
+              "key": "366b52b0-506f-4a7c-bef0-70af9a6ca0a2",
+              "title": null,
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "366b52b0-506f-4a7c-bef0-70af9a6ca0a2",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following is NOT a type of vulnerability scan?",
+                "answers": [
+                  {
+                    "id": "5402b5c1-8ed8-470e-b6df-59be42e37e27",
+                    "text": "Credential scan",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "943947ab-53a9-4c4f-8326-3e9ec971d98d",
+                    "text": "Network scan",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a99ee8a9-6962-4359-9ce4-f70f6cb72750",
+                    "text": "Recon scan",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "483c07ca-cc8e-4b5d-adb4-d96a17ae9b55",
+                    "text": "Web app scan",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1123355,
+              "key": "aa5fb2b2-e5a0-4b64-804c-5ed81ebc7de0",
+              "title": null,
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "aa5fb2b2-e5a0-4b64-804c-5ed81ebc7de0",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What is nMap?",
+                "answers": [
+                  {
+                    "id": "0e9b31a6-81f7-4baf-8547-404397d8529c",
+                    "text": "A Vulnerability scanner accessible via GUI",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "d8bb1c3e-ce7e-4bd3-9815-501768c772b4",
+                    "text": "A Vulnerability scanner accessible via CLI",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "79e3fbf9-ed7f-4c37-bdb9-648f1fab9e2d",
+                    "text": "A card scanner accessible via GUI",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "c6c3bbd9-87d4-4ee4-b9b0-af90936ccc14",
+                    "text": "A card scanner accessible via CLI",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1119965,
+          "key": "876696c0-54fb-4024-9066-70333709e208",
+          "title": "Vulnerability Research",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "876696c0-54fb-4024-9066-70333709e208",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1119960,
+              "key": "b969e3a7-4811-4fbb-9b0b-d7ebb82ac9be",
+              "title": "Vulnerability Research Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Different Types of Vulnerability Databases",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1119961,
+              "key": "b6292cc8-4752-46ed-ae6e-895268048019",
+              "title": "ND350 C2 L2 A04 Vulnerability Research",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "vAlM6qH166c",
+                "china_cdn_id": "vAlM6qH166c.mp4"
+              }
+            },
+            {
+              "id": 1119962,
+              "key": "523bff98-422b-4d53-9931-995644adafdc",
+              "title": "Vulnerability Research Heading Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Different types of Vulnerability Databases are: \n\n* **Open Source**: Databases available to the public. The most popular is the Open Source Vulnerability Database (OSVDB). \n* **State Funded**: databases supported by national governments. The National Vulnerability Database (NVD) is a database supported by the National Institute of Standardized Technology (NIST). This database allows automation of vulnerability management through a variety of tools. It also offers the use of metrics for vulnerabilities by applying the Common Vulnerability Scoring System (CVSS). CVSS communicates the characteristics and severity of the vulnerability. The rating can be seen in the table below:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1162776,
+              "key": "1d7c095d-639d-4efa-b54e-7339a91bac7c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<div class=\"index-module--table-responsive--1zG6k\"><table class=\"index-module--table--8j68C index-module--table-striped--3HHC-\">\n<thead>\n<tr>\n<th>Rating</th>\n<th>CVSS Base Score</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>None</td>\n<td>0.0 - 0.09</td>\n</tr>\n<tr>\n<td>Low</td>\n<td>0.1 - 3.9</td>\n</tr>\n<tr>\n<td>Med</td>\n<td>4.0 - 6.9</td>\n</tr>\n<tr>\n<td>High</td>\n<td>7.0 - 8.9</td>\n</tr>\n<tr>\n<td>Crit</td>\n<td>9.0 - 10.0</td>\n</tr>\n</tbody>\n</table>\n</div>",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1162777,
+              "key": "fb729006-be32-489d-b9ba-071ef228fef1",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "* **Vulnerability Database as a Service**: Companies such as WhiteSource Lab offers access to open source security vulnerabilities reported from different communities, including OSVDB, NVD, security advisories, issue trackers, etc. WhiteSource uses metrics such CVE, CVSS , and other ways of sharing and prioritizing cybersecurity vulnerabilities. \n\n* **Security Advisories**: A publication usually made by the United States Computer Emergency Readiness Team (US-CERTS), however, nowadays many vendors like CISCO, Microsoft and Whats app will publish these kind of documents. \n\n* **Issue trackers**: An issue tracking system can be of different types as bug tracking, help desk, or service desk. However, most of them allow create tickets based on different issues categories. These kinds of databases are usually private.",
+              "instructor_notes": null
+            },
+            {
+              "id": 1119964,
+              "key": "a5945ba2-bf0b-4765-9048-d9d17d0f7373",
+              "title": "Vocab & Further Research",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## New Terms\n\n* **Common Vulnerability Enumeration (CVE)**: A unique identifier for the vulnerability. This is written out as a number with dashes on them : CVE – [year of discovery ] – [sequence number]\n\n* **Common Vulnerability Scoring System (CVSS)**: CVSS communicates the characteristics and severity of the vulnerability. The ratings are from 1 to 10 with ten being Critical\n\n\n\n## Further Research\n* [Security focus](https://www.securityfocus.com/) is a community that discusses cybersecurity.\n\n\nDatabases/Collections of Exploits\n* [Exploit db](https://www.exploit-db.com/) is a database of exploits that is commonly used by penetration testers and security experts. \n* [NVD](https://nvd.nist.gov/search) is government repository of exploits. \n* [CVE](https://cve.mitre.org/cve/search_cve_list.html) is a program to organize and catalog cybersecurity vulnerabilities.\n* [Vulndb](https://vuldb.com/) is a vulnerability database since 1970.\n\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1119967,
+          "key": "810e2bda-9c28-4915-b10c-d92b34b9d8d5",
+          "title": "Quiz: Vulnerability Research",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "810e2bda-9c28-4915-b10c-d92b34b9d8d5",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1123358,
+              "key": "3a5ef495-9059-4058-89e2-d0d7facd89f5",
+              "title": null,
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "3a5ef495-9059-4058-89e2-d0d7facd89f5",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following is NOT a Vulnerability Database?",
+                "answers": [
+                  {
+                    "id": "7e27cd79-08a6-4bbb-93bc-6c10c6602756",
+                    "text": "Mitre",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "8b4ad1d3-7426-427d-a1c9-3e14c3cb65e1",
+                    "text": "OSINT Framework",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "fbb77bd0-f57e-4fe0-99e4-48de3ca67455",
+                    "text": "Exploit Db",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "d436c991-b2a4-43f7-887b-c7727f2c1c41",
+                    "text": "NVD",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1123359,
+              "key": "12e7f33a-3410-419c-a8c0-e6b1418b4c07",
+              "title": null,
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "12e7f33a-3410-419c-a8c0-e6b1418b4c07",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "When running vulnerability scan on a new network, which of the following is the first step to take",
+                "answers": [
+                  {
+                    "id": "1d80b8d2-434f-44be-8d26-466868e940e5",
+                    "text": "Run a specialize scan based on the technology being used",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "b9447859-55af-45c7-bc2e-879345a409bc",
+                    "text": "Inject a backdoor payload",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "369b3158-8ad4-4561-b261-ae102eafc0bd",
+                    "text": "Run a host discovery scan ",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "4cc3a701-4b85-4927-9070-289aac85ac5d",
+                    "text": "Research all the vulnerabilities and memorize as many as possible",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1123361,
+              "key": "f066ee7a-0d4e-4af6-bb5f-637f69402414",
+              "title": null,
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "f066ee7a-0d4e-4af6-bb5f-637f69402414",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following is NOT a consideration for prioritizing vulnerabilities? Select the BEST answer.",
+                "answers": [
+                  {
+                    "id": "4b8a3237-4c71-4be8-ac79-0b2e56053f1b",
+                    "text": "Known exploits in the field",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "7712d5ba-920a-4685-a060-0aaabf7aca8f",
+                    "text": "Work around solutions in place ",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "7572d152-5918-41b9-b89f-b722d8c43781",
+                    "text": "Potential false positives ",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "ee91dac2-abb1-4bd6-ad27-d5b6316f987b",
+                    "text": "Potential false positives \nAssets scheduled for decommissioning in 12 months\n",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1119969,
+          "key": "d106c0c6-e730-4519-ac5a-3658c658ddb3",
+          "title": "Exercise: Vulnerability Research",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d106c0c6-e730-4519-ac5a-3658c658ddb3",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1119968,
+              "key": "f9a7ef79-c1fc-46d2-9255-13fe7bcb209f",
+              "title": "Vulnerability Research Heading Summary Excercis",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Exercise: Vulnerability Research",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1123363,
+              "key": "6d59721e-4eed-4cd1-8f7d-6961e673cf51",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "You run a vulnerability scan on a machine and discover xampp is installed. The screenshot below shows that XAMPP 1.7.3 was discovered. \n\nResearch vulnerabilities related to xampp version listed and see if there is a way for this vulnerability to be exploited.",
+              "instructor_notes": null
+            },
+            {
+              "id": 1162778,
+              "key": "57acaa06-8900-4cf0-8257-feb1f07e8ac7",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "``` \nroot@kali:~ nmap -A 10.0.2.15\nStart Nmap \n...\n| http-title: \t\t\tXAMPP\t\t1.7.3\n|_Requested resources was http://10.0.2.15/xampp/splash.php\n|_https-redirect: ERROR: Script execution failed (use -d to debug)\n106/tcp\t\topen \tpop3pw\t\t Mercury/32 poppass service\n135/tcp\t\topen\t msrpc\t\t  Mircosoft Windows RPC\n139/tcp\t\topen \tnetbios-ssn\tMicrosoft Windows netbios-ssn\n143/tcp \t   open \timap\t\t   Mercury/32 imapd 4.72\n...\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1173811,
+              "key": "d90c7897-12ff-4e4e-b75a-eb8b9a4372f5",
+              "title": "",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "d90c7897-12ff-4e4e-b75a-eb8b9a4372f5",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "1. What vulnerabilities did you discover on XAMPP 1.7.3?\n2. How can those vulnerabilities be exploited? ",
+                "matchers": [
+                  {
+                    "expression": "[^/s]+"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1119972,
+          "key": "66154867-bfeb-4fe4-93ff-bc341c9352cf",
+          "title": "Vulnerability Research Exercise Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "66154867-bfeb-4fe4-93ff-bc341c9352cf",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1119970,
+              "key": "5ae4164a-52b7-4a6e-9b2f-f1952996be21",
+              "title": "Exercise Solution Header",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Vulnerability Research Exercise Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1119971,
+              "key": "e6775148-636d-453d-a9e1-13f5cfb28ae5",
+              "title": "ND350 C2 L2 A05 Vulnerability Research Exercise Solution",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "95oYJk_DgCY",
+                "china_cdn_id": "95oYJk_DgCY.mp4"
+              }
+            },
+            {
+              "id": 1123366,
+              "key": "66171cd9-c8d7-4431-9b68-2be47bfb61e1",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "* For this exercise, my solution was to research Rapid 7 and MITRE vulnerability databases. \n* We discovered that this vulnerability (<a href=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-1078\" target=\"_blank\">CVE – 2005-1078</a>) can allow remote users to view the information about important system configurations.",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1119978,
+          "key": "79009c41-b692-4a5e-b9df-f9b6714bd252",
+          "title": "Simulation - Reconnaissance Results and Scanning Strategy with Team",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "79009c41-b692-4a5e-b9df-f9b6714bd252",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1119973,
+              "key": "ed52b176-4ae5-4b23-b657-9f84b2378af9",
+              "title": "Simulation - Reconnaissance Results and Scanning Strategy with Team  Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Simulation - Meeting with the Team to review recon result and discuss scanning strategy",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1119974,
+              "key": "208a10d2-67bc-473e-989e-fa298048b4fa",
+              "title": "Scanning & Research Simulation",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "8FNWXQJ0wzw",
+                "china_cdn_id": "8FNWXQJ0wzw.mp4"
+              }
+            },
+            {
+              "id": 1119976,
+              "key": "dd426f0d-c8d7-499c-a2fd-ced0fb1a2c36",
+              "title": "Simulation - Reconnaissance Results and Scanning Strategy with Team  Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<same as=\"\" video,=\"\" update=\"\">\n\n<ul>\n<li><p>Discuss success on physical and web based Recon</p></li>\n<li><p>Determine scans that ought to be performed internally </p></li>\n<li><p>Determine the type of scans that ought to be performed externally</p></li>\n</ul>\n</same>",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1123368,
+          "key": "4ae57f09-044f-40bc-8b15-eff506aec4bf",
+          "title": "Updating the Lab Environment",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "4ae57f09-044f-40bc-8b15-eff506aec4bf",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1123369,
+              "key": "ecfc78de-9336-47d8-b791-c6467067d229",
+              "title": "ND350 C2 L2 A06 Updating Your Environment",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "lbDJhmT1d1g",
+                "china_cdn_id": "lbDJhmT1d1g.mp4"
+              }
+            },
+            {
+              "id": 1123370,
+              "key": "05629dd9-3c72-47f4-99d6-c12569f38ce9",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Great News!! New Devices have been discovered!\n\n### Devices the we discovered in in the first Lesson are:\n\n|**Public Network** <br> (Internet) |**DMZ** <br> (Intranet)| **MZ** <br> (Internal Network) |\n|:--:|:--:|:--:|\n|Mypjbank.com | 1. Payroll Server (IP Address Unknown) <br> 2. Other Devices (Unknown) | Windows 10 Devices<br> (IP Address Unknown)  |\n\n### After running our host discovery scans we are able to update the Network with the following:\n\n|**Public Network** <br> (Internet) |**DMZ** <br> (Intranet)| **MZ** <br> (Internal Network)\n|:--:|:--:|:--:|\n|Mypjbank.com <br> **(74.208.236.247)** | 1. Payroll Server - **DMZIServer (10.1.0.7)** <br> 2. **Debianx64DMZOnCloudNew (10.1.0.12)** <br> 3. **Debianx64DMZwebCMSCloud (10.1.0.11)** <br> 4. **DNSServer (10.1.0.8)** | Windows 10 Devices <br> **(10.1.2.4)** |",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1123371,
+              "key": "d23973c4-9d68-466f-93f7-3def7b9f0d45",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/February/603c1ea5_l2-diagram-update/l2-diagram-update.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/d23973c4-9d68-466f-93f7-3def7b9f0d45",
+              "caption": "Updated Network Diagram",
+              "alt": "Updated Network Diagram",
+              "width": 928,
+              "height": 488,
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1119996,
+          "key": "6a4dace6-2de6-4c8c-8822-978d01670c25",
+          "title": "Lab - Network Scanning Part 1",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "6a4dace6-2de6-4c8c-8822-978d01670c25",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1119992,
+              "key": "b55f141f-a284-4444-8a2c-44688468176c",
+              "title": "Network Scanning Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Scanning the LAN",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1119993,
+              "key": "87c56f65-2280-4e98-935d-2b73227a3b8e",
+              "title": "ND350 C2 L2 A14 Network Scanning Pt1 Walkthrough",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Z8BOBoo7DGs",
+                "china_cdn_id": "Z8BOBoo7DGs.mp4"
+              }
+            },
+            {
+              "id": 1119994,
+              "key": "659b2569-c169-4578-b172-9236046792b9",
+              "title": "Network Scanning Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this video, we were able to run host discovery and vulnerability scans on using the following tools: \n\n* **Netdiscover**: Used to discover devices on the internal network\n* **NMAP Aggressive Scan**: This scan will uncover several things about your target device. This include, IP open ports, protocols, version number and more\n* **Directory Buster (aka Dirb)**: This tool will guess file directories on the target device using a wordlist. If the page guess resolves a real web page, dirb will output the directory path to the scanner.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1123374,
+          "key": "7cef7a04-cf9e-43bf-bdb2-7c1928c9e8ff",
+          "title": "Lab - Network Scanning Part 2",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "7cef7a04-cf9e-43bf-bdb2-7c1928c9e8ff",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1123375,
+              "key": "b0c95374-a203-4baa-8e00-667bf606f8d8",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Deeper Scanning",
+              "instructor_notes": null
+            },
+            {
+              "id": 1123376,
+              "key": "6292e4f1-2544-4718-913c-e7142c546d19",
+              "title": "ND350 C2 L2 A15 Network Scanning Pt2 Walkthrough",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "jmn2XbwKAbM",
+                "china_cdn_id": "jmn2XbwKAbM.mp4"
+              }
+            },
+            {
+              "id": 1123377,
+              "key": "4419928b-4192-4565-96c4-09c8cce07080",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Commands run in this lab include: \n\n* Host discovery: `nmap -sP 192.168.1.10`\n   * Here we can see that is host if up - the remote device is turned on.",
+              "instructor_notes": null
+            },
+            {
+              "id": 1125650,
+              "key": "e38a08d7-0805-43c5-ba5f-a9dfbf1927f5",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Host Discovery Scan with Nmap\n\n```\nroot@kali:/home/kali# nmap -sP 192.168.1.10\nStarting: Nmap 7.91 ( https://nmap.org ) at 2020-12-27 22:15 EST\nmass_dns: warning: Unable to determine any DNS servers. Reverse DNS is disabled. Try using --system-dns or specify valid serveres with --dns-servers \nNmap scan report for 192.168.1.10\nHost is up (0.0036s latency).\nNmap done: 1 IP address (1 host up) scanned in 0.30 seconds\n```\n\n* Syn Scan: `nmap -sS 192.168.1.10`\n   * Here we can see open ports and services on the target machine.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1125651,
+              "key": "99a47ad0-0f7d-4acb-a54c-b3c1e7889324",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "```\nroot@kali:/home/kali# nmap -sS 192.168.1.10\nStarting: Nmap 7.91 ( https://nmap.org ) at 2020-12-27 22:15 EST\nmass_dns: warning: Unable to determine any DNS servers. Reverse DNS is disabled. Try using --system-dns or specify valid serveres with --dns-servers \nNmap scan report for 192.168.1.10\nHost is up (0.0036s latency).\nNot shown: 996 closed ports\nPORT        STATE   SERVICE\n135/tcp     open     msrpc\n139/tcp     open     netbios-ssn\n445/tcp     open     microsoft-ds\n3389/tcp    open     ms-wbt-server\n```\n\n* Service Scan: `nmap -sS -P0 -sV -O 192.168.1.10`\n   * Here we can see open ports, services and versions of the target device\n   * We can also see that this is a Window machine",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1125652,
+              "key": "62a2caeb-1e6d-41f2-86c8-3c9aef653571",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "```\nroot@kali:/home/kali# nmap -sS -p0 -sV -0 192.168.1.10\nStarting: Nmap 7.91 ( https://nmap.org ) at 2020-12-27 22:15 EST\nmass_dns: warning: Unable to determine any DNS servers. Reverse DNS is disabled. Try using --system-dns or specify valid serveres with --dns-servers \nNmap scan report for 192.168.1.10\nHost is up (0.0036s latency).\nNot shown: 996 closed ports\nPORT        STATE   SERVICE            VERSIOn\n135/tcp     open     msrpc            Microsoft Windows RPC\n139/tcp     open     netbios-ssn    Microsoft Windows netbios-ssn\n445/tcp     open     microsoft-ds?\n3389/tcp    open     ms-wbt-server?\nNo exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).\nTCP/IP fingerprint:\nOS: SCAN ...\nOS: 243 ...\n...\n\nNetwork Distance: 2 hops\nService Info: OS: Windows; CPE:/o:microsoft:windows\n```\n\n* NMAP Scripting Engine Scan: `nmap --script vuln 192.168.1.10`\n   * This scan reveals open ports and services. \n   * It was also suppose to reveal potential vulnerabilities discovered. In this case, none was discovered.",
+              "instructor_notes": null
+            },
+            {
+              "id": 1162785,
+              "key": "351200d7-2b50-4ec1-8892-0be62979ab55",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n```\nroot@kali:/home/kali# nmap -script vuln 192.168.1.10\nStarting: Nmap 7.91 ( https://nmap.org ) at 2020-12-27 22:15 EST\nmass_dns: warning: Unable to determine any DNS servers. Reverse DNS is disabled. Try using --system-dns or specify valid serveres with --dns-servers \nNmap scan report for 192.168.1.10\nHost is up (0.0036s latency).\nNot shown: 996 closed ports\nPORT        STATE   SERVICE\n135/tcp     open     msrpc\n139/tcp     open     netbios-ssn\n445/tcp     open     microsoft-ds\n3389/tcp    open     ms-wbt-server\n|_sslv2-drown:\n\nHost script results:\n|_samba-vuln-cve-2012-1182: Could not negotiate a connection: SMB: Failed to recieeve bytes: ERROR\n|_smb-vuln-ms10-054: false\n|_smb-vuln-ms10-061: Could not negotiate a connection: SMB: Failed to recieve bytes: ERROR\n```",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1120000,
+          "key": "d2690959-13e5-45d5-a6db-e4d58a4f4d02",
+          "title": "Exercise: Network Scanning",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d2690959-13e5-45d5-a6db-e4d58a4f4d02",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1123383,
+              "key": "9866d4e6-c8b5-4401-a023-d826fea7cee0",
+              "title": "ND350 C2 L2 A16 Network Scanning Exercise",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "CA3JPq0ta9k",
+                "china_cdn_id": "CA3JPq0ta9k.mp4"
+              }
+            },
+            {
+              "id": 1123384,
+              "key": "a25543e3-bc7c-4ab4-acc1-060cd3d2ee62",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Visit the NMAP web page (<a href=\"https://nmap.org/book/nse-usage.html\" target=\"_blank\">https://nmap.org/book/nse-usage.html</a>). From your Kali-Intrernal VM, run at least one other NSE scan against the DMZIServer (10.1.0.7) and the Debianx64DMZwebCMSCloud (10.1.0.11).\n\n* Remember to use the following syntax: \n\n```\nnmap --script [script name] [target IP address]\n```\n\n* Review the scan result\n* Identify potential vulnerabilities to exploit later",
+              "instructor_notes": null
+            },
+            {
+              "id": 1142817,
+              "key": "69cffad4-0265-479b-9534-7b525f4a563b",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "pmicrosoft73ibivh0",
+              "pool_id": "microsoft",
+              "view_id": "microsoft-en7tv",
+              "gpu_capable": null,
+              "configuration": {
+                "partner": "microsoft",
+                "blueprint": {
+                  "kind": "partner-workspace"
+                },
+                "iframe_url": "",
+                "nutanix_pool_id": "",
+                "nutanix_windows_config_id": ""
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1120003,
+          "key": "a5b78f5b-d599-4158-be97-80395cd5ce8e",
+          "title": "Network Scanning Exercise Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a5b78f5b-d599-4158-be97-80395cd5ce8e",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1120001,
+              "key": "02a6f488-0d37-48a9-8da8-750bc8271026",
+              "title": "Header",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Network Scanning Exercise Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1120002,
+              "key": "9a157452-3afc-4cae-b120-3e98876fd731",
+              "title": "ND350 C2 L2 A17 Network Scanning Solution",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "iK4Hg-PHzNg",
+                "china_cdn_id": "iK4Hg-PHzNg.mp4"
+              }
+            },
+            {
+              "id": 1123387,
+              "key": "c6a575eb-d144-4658-a432-0e8fc9bdd666",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "For this exercise, I ran an NMAP Scripting Engine safe scan: \n\n```\nnmap --script safe 10.1.0.7 \nnmap --script safe 10.1.0.11\n```\n\nI found some interesting information on the DMZIServer: \n\n* Open Ports 80 (HTTP), 22 (SSH)\n   * Port 80 opened means there may be a web application on this site that is not encrypted. \n   * Port 22 means if we can obtain SSH credentials we can gain a shell connection to the target. \n* Apache 2.4.38\n   * we will need to research this Apache version for vulnerabilities that we may be able to exploit later",
+              "instructor_notes": null
+            },
+            {
+              "id": 1123386,
+              "key": "2927f521-1007-4474-867c-b92b9cb2d25f",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/February/602c5b3d_exercise-network-scanning/exercise-network-scanning.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/2927f521-1007-4474-867c-b92b9cb2d25f",
+              "caption": "nmap default scan of DMZIServer Part 1",
+              "alt": "nmap default scan output of nmap --script safe 10.1.0.7 and we can see 22/tcp open ssh",
+              "width": 902,
+              "height": 356,
+              "instructor_notes": null
+            },
+            {
+              "id": 1137589,
+              "key": "ff4889a0-2ae7-4f23-8efe-cf1820d75a73",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/February/602c5b86_exercise-network-scanning/exercise-network-scanning.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/ff4889a0-2ae7-4f23-8efe-cf1820d75a73",
+              "caption": "NMAP default scan of DMZIServer Part 2",
+              "alt": "Follow up to the previous image running nmap --script safe 10.2.0.7 and we find also 80/tcp open http with a Server: Apache/2.4.38 (Debian)",
+              "width": 720,
+              "height": 275,
+              "instructor_notes": null
+            },
+            {
+              "id": 1137583,
+              "key": "2d0d3190-6520-4aa1-a87c-dd93b97f3d2e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "I found some interesting information on the Debianx64DMZwebCMSCloud: \n\n* Open Ports 80 (HTTP), 22 (SSH)\n* Apache 2.4.38\n* WordPress 4.8.15\n* Open SSH 7.9",
+              "instructor_notes": null
+            },
+            {
+              "id": 1137587,
+              "key": "22b227ab-1cba-493d-8528-f291826b1936",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/February/602c5be4_exercise-network-scanning-2/exercise-network-scanning-2.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/22b227ab-1cba-493d-8528-f291826b1936",
+              "caption": "nmap default scan of Debianx64DMZwebCMSCloud Part 1",
+              "alt": "scan with nmap --script safe 10.1.0.11 that outputs 22/tcp open ssh with a _banner: SSH-2.0-OpenSSH_7.9p and 80/tcp open http",
+              "width": 887,
+              "height": 494,
+              "instructor_notes": null
+            },
+            {
+              "id": 1137588,
+              "key": "735b1c1d-893f-46d1-ae0c-5531a73fbf66",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/February/602c5a5c_exercise-network-scanning-3/exercise-network-scanning-3.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/735b1c1d-893f-46d1-ae0c-5531a73fbf66",
+              "caption": "nmap default scan of Debianx64DMZwebCMSCloud Part 2",
+              "alt": "Also the result of nmap --script safe 10.1.0.11 the port 80 also has a _http-generator: WordPress 4.8.15 with a Server: Apache/2.4.38 (Debian)",
+              "width": 962,
+              "height": 348,
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1123391,
+          "key": "f268d3a9-b632-44f5-93fa-b3bf7a0056e2",
+          "title": "Web Application Scanning Part 1",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "f268d3a9-b632-44f5-93fa-b3bf7a0056e2",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1123392,
+              "key": "9157056e-3027-4d33-ae0f-6a080dfc7057",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Using NMAP and DIRB",
+              "instructor_notes": null
+            },
+            {
+              "id": 1123393,
+              "key": "12e26011-f07d-472f-838f-ef4ec41b93e0",
+              "title": "ND350 C2 L2 A07 Web Application Scanning Pt 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "I25R6UrVHqo",
+                "china_cdn_id": "I25R6UrVHqo.mp4"
+              }
+            },
+            {
+              "id": 1125654,
+              "key": "357ad1d3-9ac9-44e9-88f5-b03ff5e93644",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In the following screenshots you can see what it looked like when I ran \n\n```undefined\nnmap -A mypjbank.com\n```\n\n\nAnd the vulnerabilities and information discovered: \n\n* IP Address: 74.208.238.247\n* Open Ports: 80 & 443\n* WordPress version",
+              "instructor_notes": null
+            },
+            {
+              "id": 1123395,
+              "key": "dea8729d-a92f-43f0-b7fa-18f21b487218",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/February/603c2e7b_l2-nmap-scan-of-pjbank/l2-nmap-scan-of-pjbank.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/dea8729d-a92f-43f0-b7fa-18f21b487218",
+              "caption": "",
+              "alt": null,
+              "width": 681,
+              "height": 557,
+              "instructor_notes": null
+            },
+            {
+              "id": 1146907,
+              "key": "124f963c-8060-4826-bef2-eaecac26b0dd",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/March/603c2e95_l2-nmap-scan-of-pjbank2/l2-nmap-scan-of-pjbank2.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/124f963c-8060-4826-bef2-eaecac26b0dd",
+              "caption": null,
+              "alt": null,
+              "width": 838,
+              "height": 219,
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1119984,
+          "key": "85d3f8a9-b3ae-4928-98b4-f6aae085d6f4",
+          "title": "Web Application Scanning Part 2",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "85d3f8a9-b3ae-4928-98b4-f6aae085d6f4",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1119979,
+              "key": "84a284f8-dd65-45c5-a61f-aba7d4a2d3f0",
+              "title": "Web Application Scanning Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Scanning with WPSCAN",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1119980,
+              "key": "fcd1391b-72eb-482e-98e4-1079a14074b4",
+              "title": "ND350 C2 L2 A08 Web Application Scanning Pt 2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "KI-sxYPRvpM",
+                "china_cdn_id": "KI-sxYPRvpM.mp4"
+              }
+            },
+            {
+              "id": 1119981,
+              "key": "d84de3f4-0457-43e6-8cda-96872215f55a",
+              "title": "Web Application Scanning Image",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "29.0",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/d84de3f4-0457-43e6-8cda-96872215f55a",
+              "caption": "",
+              "alt": "",
+              "width": 787,
+              "height": 512,
+              "instructor_notes": null
+            },
+            {
+              "id": 1119982,
+              "key": "7b6c29c5-eae4-430a-9da2-27f3ee1a5c09",
+              "title": "Web Application Scanning Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this video we were able to discover the following vulnerabilities against MyPJBank.com using the following WPScan command:\n\n`wpscan --url mypjbank.com`\n\n\n\nBelow are screenshot and some text explanations describing vulnerabilities discovered. see if you can find some vulnerabilities on your own that are not mentioned.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1146901,
+              "key": "e621a17c-26b8-4942-8451-3bcebf35517a",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/February/603c29fa_l2-wpscan1/l2-wpscan1.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/e621a17c-26b8-4942-8451-3bcebf35517a",
+              "caption": null,
+              "alt": null,
+              "width": 655,
+              "height": 861,
+              "instructor_notes": null
+            },
+            {
+              "id": 1146902,
+              "key": "7d6e24cc-e6fe-491b-b510-2aea7512c555",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/February/603c2a01_l2-wpscan2/l2-wpscan2.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/7d6e24cc-e6fe-491b-b510-2aea7512c555",
+              "caption": null,
+              "alt": null,
+              "width": 798,
+              "height": 712,
+              "instructor_notes": null
+            },
+            {
+              "id": 1172886,
+              "key": "c8da70d0-7a1e-4eba-8a73-f40d3d344c4b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Contact-Form-7 5.3 – Critical Vulnerability (CVE -2020-25213)\n\nThe File Manager (wp-file-manager) plugin before 6.9 for WordPress allows remote attackers to upload and execute arbitrary PHP code because it renames an unsafe example elFinder connector file to have the .php extension. This, for example, allows attackers to run the elFinder upload (or mkfile and put) command to write PHP code into the wp-content/plugins/wp-file-manager/lib/files/ directory. This was exploited in the wild in August and September 2020.\n\n### Elementor < 3.0.14 - SVG Upload Allowed by Default - Fixed in: 3.0.14\n\nThe plugin allowed SVG files to be uploaded by default, which might lead to security issues, such as Cross-Site Scripting",
+              "instructor_notes": null
+            },
+            {
+              "id": 1123388,
+              "key": "28e9666d-9992-4d80-af3c-47d27d868d05",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/February/603c2a0b_l2-wpscan3/l2-wpscan3.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/28e9666d-9992-4d80-af3c-47d27d868d05",
+              "caption": "",
+              "alt": null,
+              "width": 766,
+              "height": 916,
+              "instructor_notes": null
+            },
+            {
+              "id": 1172887,
+              "key": "fd226dd7-26c6-41cf-a524-475b498207ed",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Paid Membership Pro < 2.5.3 - Unauthorised Order Information Disclosure Fixed in: 2.5.3\n\nThe pmpro_get_order_json AJAX action, available to authenticated user did not check for authorization, allowing any authenticated users to retrieve arbitrary order information (such as customer names, email addresses, and order numbers) via the order_id parameter.",
+              "instructor_notes": null
+            },
+            {
+              "id": 1123389,
+              "key": "ae672531-5fff-4ec1-bd27-99ce2c9bac05",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/February/603c2a12_l2-wpscan4/l2-wpscan4.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/ae672531-5fff-4ec1-bd27-99ce2c9bac05",
+              "caption": "",
+              "alt": null,
+              "width": 775,
+              "height": 731,
+              "instructor_notes": null
+            },
+            {
+              "id": 1172888,
+              "key": "d84434ae-5498-427b-8e80-c879a7fcb18c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### WP Google Map Plugin < 4.1.5 - Authenticated SQL Injection\n\nWordPress Plugin WP Google Map is prone to an SQL injection vulnerability because it fails to sufficiently sanitize user-supplied data before using it in an SQL query.\n\nDescription: The Manage Locations page within the plugin settings was vulnerable to SQL Injection through a high privileged user (admin+).",
+              "instructor_notes": null
+            },
+            {
+              "id": 1146905,
+              "key": "97fca798-6560-4c6a-8e50-96b344e18da4",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/February/603c2a27_l2-wpscan5/l2-wpscan5.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/97fca798-6560-4c6a-8e50-96b344e18da4",
+              "caption": null,
+              "alt": null,
+              "width": 647,
+              "height": 772,
+              "instructor_notes": null
+            },
+            {
+              "id": 1146906,
+              "key": "06524792-db5b-4c12-b206-08f384f2de35",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/February/603c2a34_l2-wpscan6/l2-wpscan6.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/06524792-db5b-4c12-b206-08f384f2de35",
+              "caption": null,
+              "alt": null,
+              "width": 840,
+              "height": 282,
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1119988,
+          "key": "a229d690-207f-47b0-8a65-24b424deee38",
+          "title": "Exercise: Web Application Scanning",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a229d690-207f-47b0-8a65-24b424deee38",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1119987,
+              "key": "52f47336-11d0-4910-b9dd-384cb1a17936",
+              "title": "Web Application ScanningExcercise",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Discovering the File Manager Vulnerability",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1123398,
+              "key": "30a9d62e-c476-49d1-b943-969f28fe8403",
+              "title": "ND350 C2 L2 A09 Exercise- Web Application Scanning",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "jmfkMmWTVHU",
+                "china_cdn_id": "jmfkMmWTVHU.mp4"
+              }
+            },
+            {
+              "id": 1123399,
+              "key": "49720b09-b1c8-4501-9bbc-2750dd107017",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "This just in! Wordfence is a very popular Web Application Firewall service provider published on Sept. 4, 2020 that there has been an uptick in the Wordpress file manager plugins. File manager plugins allow users to easily manage files directly from Wordpress instead of going to the control panel. \n\nMiTRE have issued a CVE number (CVE-2020-25213) for this vulnerability. The Standard WP scan does not seem to pick up this type of plugin, so how do we know if it is even installed on our target site? Visit a Github repository and see if there is a READ ME file that can guide you on how to detect and exploit this vulnerability. \n\nAfter your research, use your Kali Machine to run the commands against mypjbank.com. \n\nDetermine the following: \n\n1. Is the file manager installed on the website?\n1. Is the version installed vulnerable?\n1. If it is vulnerable, how can you go about exploiting the vulnerability?",
+              "instructor_notes": null
+            },
+            {
+              "id": 1142818,
+              "key": "f5df8e33-f717-453d-831a-c1517fd28daf",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "pmicrosoft9ykgf5no",
+              "pool_id": "microsoft",
+              "view_id": "microsoft-plvkm",
+              "gpu_capable": null,
+              "configuration": {
+                "partner": "microsoft",
+                "blueprint": {
+                  "kind": "partner-workspace"
+                },
+                "iframe_url": "",
+                "nutanix_pool_id": "",
+                "nutanix_windows_config_id": ""
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1119991,
+          "key": "2b701882-f5b1-4b47-9f21-c36832be5cd9",
+          "title": "Web Application Scanning Exercise Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "2b701882-f5b1-4b47-9f21-c36832be5cd9",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1119989,
+              "key": "b2f78a52-9a9d-4290-94ea-e0be02e3fabb",
+              "title": "Exercise: DNS Recon Solution Header",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Web Application Scanning Exercise Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1119990,
+              "key": "0f6b57ae-a7f7-4f8e-86af-1763de2307a2",
+              "title": "ND350 C2 L2 A10 Web Application Scanning Exercise Solution",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "UapSk_cdZxk",
+                "china_cdn_id": "UapSk_cdZxk.mp4"
+              }
+            },
+            {
+              "id": 1123401,
+              "key": "cf66dc08-349d-48d3-8724-78c9ba45812c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Download and Install the Application\n\n1. ```\ngit clone <a href=\"https://github.com/mansoorr123/wp-file-manager-CVE-2020-25213.git--&gt;\" target=\"_blank\">https://github.com/mansoorr123/wp-file-manager-CVE-2020-25213.git</a>\n```\n\n1. ```\nchmod +x wp-file-manager-CVE-2020-25213/wp-file-manager-exploit.sh\n```\n\n\n### Check for the presence of file manager and the vulnerability\n\n```\n./wp-file-manager-exploit.sh --wp_url <a href=\"https://www.example.com/wordpress\" target=\"_blank\">https://www.example.com/wordpress</a> --check\n```\n\nExploitation command for the vulnerability\n\n```\n./wp-file-manager-exploit.sh --wp_url <a href=\"https://wordpress.example.com/\" target=\"_blank\">https://wordpress.example.com/</a> -f /tmp/php_hello.php –verbose\n```",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1120019,
+          "key": "31d9927c-e6a0-461b-a7e6-007fe33ca8c1",
+          "title": "Update Your Report",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "31d9927c-e6a0-461b-a7e6-007fe33ca8c1",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": {
+            "files": [
+              {
+                "name": "Lesson 2 - Scanning",
+                "uri": "https://video.udacity-data.com/topher/2021/March/603d7dcc_lesson-2-scanning/lesson-2-scanning.ctb"
+              }
+            ],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 1120016,
+              "key": "f34fe9c8-c345-41a7-9035-f45fe6c74818",
+              "title": "Update Your Report Instructions",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Update Your Report",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1120017,
+              "key": "003faed3-1a8f-4af3-9fdf-fee65fd5ca6d",
+              "title": "ND350 C2 L2 A11 Updating Your Report",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "X5jR4YjJ7I4",
+                "china_cdn_id": "X5jR4YjJ7I4.mp4"
+              }
+            },
+            {
+              "id": 1120018,
+              "key": "866cf390-9472-4523-99b6-ba6650b94bc3",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Looking forward to see what the rest of the team comes up with on their scanning. In the meantime, let’s go ahead and update our report on cherry tree….\n\nNote: A full copy of the cherry tree report is available below for download.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1162796,
+              "key": "bc0f27e1-0acd-4bbe-b181-cb7a07124167",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Outline of the Cherry Tree Up Until This Point\n\n* **Information Discovery - Recon**\n   * Physical Recon\n      * HQ - Address 2440 W El Camino Rea, Mountain View CA\n      * Location Layout\n         * Front Possible rear entrance\n         * Data center is on the 2nd Floor\n         * High Traffic Lobby and Cafeteria Area\n      * **Physical Security**\n         * Low Swing Turnstyle\n         * Two Cameras\n   * **Personnel Reconnaissance**\n      * Maintenance weekend ~15th of every month\n      * James McLovin and Janet Pierce socialize with one another on Twitter\n   * **Network Recon**\n      * Windows 10 are being used by employees\n      * **MYPJBank.com - 74.208.236.247**\n         * **Name Server**\n            * IP: 74.208.236.247\n            * DNS Information\n         * Open ports 80, 81, and 443\n         * Hosting Provider: IONOS (PaaS)\n         * Software Discovery\n* **Vulnerabilities Discovered**\n   * Physical - On Premise\n      * RFID Badges can be easily cloned\n      * Fed-Ex truck driver gained access without ID\n      * Typosquatting: Domain Names with similar spelling\n   * [NEW] **MYPJBank.com - 74.208.236.247**\n      * Contact-Form-7 5.3 - Critical Vulnerability (CV-E2020-25213)\n      * Paid Membership Pro < 2.5.3 - Unauthorized Order Information Disclosure Fixed in 2.5.3\n      * Elementor < 3.0.14 - SVG Upload Allowed by\n      * WP Google Map Plugin < 4.1.5 - Authenticated SQL Injection\n   *  [NEW] **Win 10 VM - 10.1.2.6**\n      * XAMPP - 1.7.3\n      * Apache 2.2.14\n      * Slow Loris DOS Attack - CVE: CVE-2007-6750\n      * SSL/TLS MITM Vulnerability (CCS Injection)\n      * SSL POODLE Information Leak - IDs: BID: 70574 CVE:VED-201403566\n      * Open Ports - 21, 22, 25, 79, 443, 445, 110, 106, 3389, 5357\n   *  [NEW] **DMZIServer - 10.1.0.7**\n      * Open Ports: 22 & 80\n      * Apache 2.4.38\n   *  [NEW] **Debianx64DMZwebC-MSCloud-10.1.0.11**\n      * Wordpress 4.8.15\n      * Apache 2.4.38\n   *  [NEW] **DNS Server -10.1.0.8**\n      * Open Ports - 80 & 53\n   *  [NEW] **Debianx64DMZOnCloudNew- 10.1.0.12**\n      * Open Ports - 20, 80, 139, 445, 111\n      * SAMBA 4.2.14\n      * Apache 2.4.10\n*  [NEW] Successful Exploits\n   * **DMZIServer - 10.1.0.7**\n      * Obtained SSH Keys: username: Admin123 \n       Password: Password123!",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1120023,
+          "key": "87a4c26d-8703-4ea7-96f3-145104a36f65",
+          "title": "It's Not Over Til It's Over",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "87a4c26d-8703-4ea7-96f3-145104a36f65",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1120020,
+              "key": "167857de-5d5c-440a-a670-5ddb535938f9",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## It's Not Over Til It's Over\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1120021,
+              "key": "b542a4ec-ab2a-4f9f-a7f9-16c5d416431a",
+              "title": "ND350 C2 L2 A12 It'S Not Over Til Its Over",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "4bvtIgxzLVs",
+                "china_cdn_id": "4bvtIgxzLVs.mp4"
+              }
+            },
+            {
+              "id": 1120022,
+              "key": "e081db56-e586-4510-8925-9249818db7c6",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "When scanning, you want to try out different scanners. That way you’ll get a more accurate and well rounded picture of your target. One scanner may miss a potential vulnerability and another would catch it. The same can be said about vulnerability databases. Remember to always keep your options open. And don't quit so easily. \n\nEven though we’ve concluded the recon, Scanning and Research Lessons, it does not mean we are done doing those things in our project. As we gain access in the next lesson there will be a need to run further scans or reconnaissance, and you’ll definitely need to research things as you go. \n\nThis is an iterative process and you will need to be agile to decide out what is best for a given situation. I hope this lesson have strengthened your foundational understanding so that you can make the best decisions.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1120027,
+          "key": "f40de2c6-cdba-4096-8280-b12f7ef7fb04",
+          "title": "Scanning and Researching Lesson Recap",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "f40de2c6-cdba-4096-8280-b12f7ef7fb04",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1120024,
+              "key": "8b5683e1-fa0d-466a-a5da-308c30a79bb6",
+              "title": "Summary Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Scanning and Researching Lesson Recap",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1120025,
+              "key": "e13b7da3-9455-4c2b-a79e-18676cfc8710",
+              "title": "ND350 C2 L2 A13 Lesson Recap",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "QoUBM5bSrL8",
+                "china_cdn_id": "QoUBM5bSrL8.mp4"
+              }
+            },
+            {
+              "id": 1120026,
+              "key": "432e142a-4c01-43db-bc24-e16666971c51",
+              "title": "Summary Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Congrats on completing your second lesson. We’ve listened to Lincoln and have taken the time to carefully sharpen our Ax. We’ve uncovered a lot about our target network and in the next lesson we will attempt to gain access. I’m sure we will make more discoveries in that phase as well. Let’s do a quick recap of what we were able to accomplish in this lesson: \n\nDifferentiate between the different types of scans\n\n* Host Discovery and port scan\n* Network Scanning (credentialed and non credentialed)\n* Web application Scanning\n* Other specialized scanners (i.e. Database scanners)\n\nIdentify different options to research vulnerabilities\n\n* Open Source \n* State funded \n* Vulnerability Database as a Service\n* Security Advisories\n* Issue Trackers\n* Conduct Host discovery scan (Netdiscover)\n* Conduct port scan NMAP\n* Conduct directory scans with DIRB\n* Conduct vulnerability scan with NMAP Scripting Engine (NSE)\n* Conduct web application scanning with NMAP, WP Scan and DIRB\n\n<lesson vocab=\"\" &=\"\" further=\"\" research=\"\"></lesson>",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "lesson_type",
+      "reason": "Obsolete"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "starter_files",
+      "reason": "prefer master_archive_id"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "starter_files",
+      "reason": "prefer master_archive_id"
+    }
+  ]
+}

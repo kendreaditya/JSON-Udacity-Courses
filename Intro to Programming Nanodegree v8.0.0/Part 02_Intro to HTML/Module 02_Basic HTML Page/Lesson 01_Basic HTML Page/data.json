@@ -1,0 +1,107 @@
+{
+  "data": {
+    "lesson": {
+      "id": 817302,
+      "key": "2dc8ae21-c7c7-4f36-b00c-3740dc34a3d4",
+      "title": "Basic HTML Page",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "In this first lab, you'll demonstrate your understanding of HTML basics by turning your notes from the lesson into a working HTML web page.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": null,
+      "project": null,
+      "lab": {
+        "id": 633738,
+        "key": "cac3743f-bad9-4f9a-bbcc-8c3a501e7c38",
+        "version": "1.0.0",
+        "locale": "en-us",
+        "estimated_session_duration": 60,
+        "duration": 10080,
+        "is_public": true,
+        "semantic_type": "Lab",
+        "title": "Basic HTML Page",
+        "evaluation_objective": "using HTML tags in a document",
+        "partners": null,
+        "overview": {
+          "title": "Use HTML to make a web page!",
+          "summary": "Create a simple web page and display it in your browser. You can use your notes file, or any HTML that you would like to write! Include at least one **hyperlink** and at least one **image**, including the required HTML attributes for these elements.",
+          "key_takeaways": [
+            "You can edit a web page in a text editor.",
+            "You can use HTML tags to structure your web page.",
+            "You can add images and links to your web page."
+          ],
+          "video": null
+        },
+        "details": {
+          "text": "After reading these instructions, click on the **Workspace** tab. You will see a text editor on the left and a web browser window on the right. You can create HTML in the text editor, and a moment later it will appear in the browser window. You don't need to save or refresh!\n\nIn order to pass this lab, you will need to submit a piece of HTML that contains at least two things:\n\n* A hyperlink (`a` element) that links to another web site.\n* An image (`img` element) that includes an image from another web site.\n\nIn the lessons, you have learned how to create these elements, including the required HTML attributes for images and for links.\n\nWhen you are done, click the **Run Code** button at the bottom of the workspace. This will run a test program that will check that your HTML contains the required elements."
+        },
+        "review_video": null,
+        "result": {
+          "state": "unsubmitted",
+          "skill_confidence_rating_after": null,
+          "skill_confidence_rating_before": null
+        },
+        "workspace": {
+          "id": 673533,
+          "key": "48cc8f3f-05e6-4964-ae25-6905e70d4a1b",
+          "title": null,
+          "semantic_type": "WorkspaceAtom",
+          "is_public": true,
+          "workspace_id": "labryxcvHk4XQ",
+          "pool_id": "webterminal",
+          "view_id": "html-live-Hy5vrJVX7",
+          "configuration": {
+            "id": "reserved",
+            "blueprint": {
+              "conf": {
+                "disk": null,
+                "openFiles": [
+                  "/home/workspace/index.html"
+                ],
+                "showFiles": false,
+                "allowClose": false,
+                "showEditor": true,
+                "allowSubmit": false,
+                "autoRefresh": true,
+                "previewFile": "/home/workspace/index.html"
+              },
+              "kind": "html-live"
+            },
+            "workspaceId": "reserved"
+          },
+          "starter_files": null
+        }
+      },
+      "concepts": [
+        {
+          "id": 673522,
+          "key": "ee832389-1e06-4584-9787-b26973f8c1b5",
+          "title": "About the Basic HTML Page lab",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "ee832389-1e06-4584-9787-b26973f8c1b5",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 674813,
+              "key": "e486b829-032b-4014-ab13-940413beca97",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Up ahead, you will be completing a *Lab*! Labs are similar to projects, but instead of being evaluated by a reviewer, they are automatically graded. \n\nThis lab is an opportunity for you to submit what you've written in your `notes.html` file, or write some new HTML to further practice the skills you've learned! \n\nYou will submit a basic HTML page with at least one **hyperlink** and one **image**, but you are welcome to include anything else you'd like! As long as you fulfill the requirements, there will be no penalty for additional features on the page. \n\nThe lab will look very similar to the workspaces you've seen so far, but when you run your code you'll receive a response: either that your HTML passed the specifications, or it didn't.\n\nIf your HTML *doesn't* pass, pay attention to the feedback written in **<span style=\"color: green; \"> <b> green </b>**, which are the parts of the lab that you've passed, and the feedback written in  **<span style=\"color: red; \"> <b> red </b>**, which are the parts of the lab that you didn't pass. When you've fixed all of issues described by the **<span style=\"color: red; \"> <b> red </b>** feedback, you'll be able to move on!\n\nIf you get stuck along the way, make sure to refer back to past videos and exercises, and ask questions in [Knowledge](https://knowledge.udacity.com) and your Study Group. ",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

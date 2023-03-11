@@ -1,0 +1,846 @@
+{
+  "data": {
+    "lesson": {
+      "id": 907742,
+      "key": "1e52ce88-a7af-43d0-8fc4-6e304e50ed0b",
+      "title": "Migrations",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Handle changes to your database schema over time using a version control system involving migration files.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/1e52ce88-a7af-43d0-8fc4-6e304e50ed0b/907742/1567115007005/Migrations+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/1e52ce88-a7af-43d0-8fc4-6e304e50ed0b/907742/1567115001742/Migrations+Subtitles.zip"
+          },
+          {
+            "name": "Todoapp-Migrations",
+            "uri": "https://video.udacity-data.com/topher/2019/August/5d5dec79_todoapp-migrations/todoapp-migrations.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 907739,
+          "key": "cd423d23-c7c5-41d5-96ff-a5b35c46bfb6",
+          "title": "Introduction (Migrations Part 1)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "cd423d23-c7c5-41d5-96ff-a5b35c46bfb6",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 907735,
+              "key": "f50154bd-6305-4c6e-ac2e-489e52e03c01",
+              "title": "Migrations Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Introduction (Migrations)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 909454,
+              "key": "4ed09346-bf78-483c-ab3b-05a90b332440",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Changing data schema",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907727,
+              "key": "e51cef96-f32e-44c2-b1af-45cd90653210",
+              "title": "ND004 C01 L06 01 Migrations",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Sr-QQluNUFo",
+                "china_cdn_id": "Sr-QQluNUFo.mp4"
+              }
+            },
+            {
+              "id": 907729,
+              "key": "15195c58-a10b-4f31-bad5-3cd8b9176225",
+              "title": "Migrations Recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Takeaways\n\n* **Migrations** deal with how we manage modifications to our data schema, over time.\n* Mistakes to our database schema are very expensive to make. The entire app can go down, so we want to\n  * quickly roll back changes, and\n  * test changes before we make them\n* A **migration** is a file that keep track of changes to our database schema (structure of our database).\n  * Offers **version control** on our schema.\n\n### Upgrades and rollbacks\n* Migrations stack together in order to form the latest version of our database schema\n* We can **upgrade** our database schema by **applying migrations**\n* We can **roll back** our database schema to a former version by reverting migrations that we applied",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907731,
+              "key": "26d7154d-659b-4098-888f-463dd98d476f",
+              "title": "Migrations Quiz",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "26d7154d-659b-4098-888f-463dd98d476f",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Doing a `git commit` for a Git version control system on files is similar to `_____` for a version control system (using migrations) on our data schema.",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "a migration rollback",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "applying a migration (a schema upgrade)",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1566433909738",
+                    "text": "A migration",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 907740,
+          "key": "7db2f374-30b2-4ac3-96d4-dfafb63f0c9f",
+          "title": "Migrations - Part 2",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "7db2f374-30b2-4ac3-96d4-dfafb63f0c9f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 907728,
+              "key": "ea85e7e6-0f25-45e8-9a45-83d2cf65d984",
+              "title": "Migrations - Part 2 Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Migrations - Part 2",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907730,
+              "key": "077b4b87-9e8c-42dc-b856-e4c2d07bb979",
+              "title": "ND004 C01 L06 02 Migrations Pt 2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "j1_unrCqU7k",
+                "china_cdn_id": "j1_unrCqU7k.mp4"
+              }
+            },
+            {
+              "id": 918880,
+              "key": "f6796cb9-6a71-4b81-b57b-d46f967beb6b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Takeaways\n\nMigrations\n* encapsulate a set of changes to our database schema, made over time.\n* are uniquely named\n* are usually stored as _local files_ in our project repo, e.g. a `migrations/` folder\n\n* There should be a 1-1 mapping between the changes made to our database, and the _migration files_ that exist in our migrations/ folder.\n* Our migrations files set up the tables for our database.\n* All changes made to our db should exist physically as part of migration files in our repository.\n\n### Migration command line scripts\n\nThere are generally 3 scripts needed, for\n* **migrate**: creating a migration script template to fill out; generating a migration file based on changes to be made\n* **upgrade**: applying migrations that hadn't been applied yet (\"upgrading\" our database)\n* **downgrade**: rolling back applied migrations that were problematic (\"downgrading\" our database)\n\n#### Migration library for Flask  + SQLAlchemy\n\n* [Flask-Migrate](https://flask-migrate.readthedocs.io) is our library for migrating changes using SQLAlchemy. It uses a library called [Alembic](https://alembic.sqlalchemy.org/en/latest/index.html) underneath the hood.\n\n##### Flask-Migrate & Flask-Script\n* **Flask-Migrate** (flask_migrate) is our migration manager for migrating SQLALchemy-based database changes\n\n* **Flask-Script**  (flask_script) lets us run migration scripts we defined, from the terminal\n\n#### Steps to get migrations going\n\n1. Initialize the migration repository structure for storing migrations\n2. Create a migration script (using Flask-Migrate)\n3. (Manually) Run the migration script (using Flask-Script)\n\n\n### Resources\n\n* [Flask-Migrate docs](https://flask-migrate.readthedocs.io)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907734,
+              "key": "d2c2a347-6a14-464f-8930-fec3a49b970a",
+              "title": "Migrations - Part 2 Recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Why use migrations?\n\nTo see why migrations are useful, let's go through a concrete example with the to-do app.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 916869,
+              "key": "32a0a9f2-d3ad-4f93-b2f8-f61d76158f75",
+              "title": "ND004 C01 L06 02.1 Migrations Pt 2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "3vlK5FUdW_I",
+                "china_cdn_id": "3vlK5FUdW_I.mp4"
+              }
+            },
+            {
+              "id": 918882,
+              "key": "e070a779-eef5-42d6-97c7-9c177974d893",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Takeaways\n\nWithout migrations:\n  * We do heavy-handed work, creating and recreating the same tables in our database even for minor changes\n  * We can lose existing data in older tables we dropped\n\nWith migrations:\n  *  Auto-detects changes from the old version & new version of the SQLAlchemy models\n  * Creates a migration script that resolves differences between the old & new versions\n  * Gives fine-grain control to change existing tables\n\nThis is much better, because\n  * We can keep existing schema structures, only modifying what needs to be modified\n  * We can keep existing data\n  * We isolate units of change in migration scripts that we can roll back to a “safe” db state\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907738,
+              "key": "46d60a6c-5116-4e18-9acd-55250f79967b",
+              "title": "Migrations - Part 2 Quiz",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "46d60a6c-5116-4e18-9acd-55250f79967b",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What is the library that Flask-Migrate uses underneath for running migrations?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "Flask-Script",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "SQLAlchemy",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566434717462",
+                    "text": "Alembic",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 918883,
+              "key": "acc71152-782b-4bb1-a07a-01fe9c6d57e3",
+              "title": "Migration changes",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "acc71152-782b-4bb1-a07a-01fe9c6d57e3",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "True/False: migrations are run automatically whenever we make changes to our data models.",
+                "answers": [
+                  {
+                    "id": "a1566434762307",
+                    "text": "True",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566434779892",
+                    "text": "False",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 918884,
+              "key": "90ea3f95-5555-411b-b1fe-cc2a536acefb",
+              "title": "Migrations Quiz",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "90ea3f95-5555-411b-b1fe-cc2a536acefb",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Migrations are:",
+                "answers": [
+                  {
+                    "id": "a1566434871234",
+                    "text": "declarations of our database tables and relationships",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566434903494",
+                    "text": "command line tools that allow us to upgrade or downgrade our database version",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566434904672",
+                    "text": "physical files typically stored in our local repository that captures sets of changes to our database schema",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 918885,
+              "key": "fb07ff92-ac7e-47bb-a1dc-99eb9fd2a287",
+              "title": "Flask-Script",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "fb07ff92-ac7e-47bb-a1dc-99eb9fd2a287",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Flask-Script is",
+                "answers": [
+                  {
+                    "id": "a1566435037180",
+                    "text": "an optional library not necessary for running migrations from Flask-Migrate",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566435072142",
+                    "text": "an essential library for running migrations from Flask-Migrate",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 907741,
+          "key": "1b51c655-65ed-43aa-9c91-130b2ee0636b",
+          "title": "Flask-Migrate - Part 1",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "1b51c655-65ed-43aa-9c91-130b2ee0636b",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 907736,
+              "key": "c67a6974-1820-4068-8572-43efe80320fa",
+              "title": "Flask-Migrate Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Flask-Migrate",
+              "instructor_notes": ""
+            },
+            {
+              "id": 916871,
+              "key": "6622e232-33d7-43b1-a46e-154d9f808b9b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "We want to allow the user to check or uncheck todo items in our Todo app, to mark them as completed or not. Right now, we don't have a concept of what \"completed\" means in our database, which models a Todo with a single property called \"description\". We'd like to extend the model to also include a boolean property called \"completed\" in order to allow for todos to be marked as completed or not by a user on our app.\n\nWhile we can do this totally using `psql` or another Postgres client to simply alter our table to add a new column using the `ALTER TABLE ADD COLUMN` command in SQL, we should use **migrations** to handle changes to our database schema for better maintainability and the ability to rollback quickly in case of issues.\n\nOver the next few pages, we'll walk through how to use Flask-Migrate to add a new `completed` column to our to-do model.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 916870,
+              "key": "da077fa7-2198-49f3-b2ca-738d1555c4b1",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Installing Flask-Migrate and Using the Documentation",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907732,
+              "key": "b5d39c86-c771-4394-b0fa-190c6be2dc65",
+              "title": "ND004 C01 L06 03 Flask-Migrate",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "bwPUM16rtFE",
+                "china_cdn_id": "bwPUM16rtFE.mp4"
+              }
+            },
+            {
+              "id": 916873,
+              "key": "3dc0e74f-1e77-47bd-ae6d-93b50974482a",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "3dc0e74f-1e77-47bd-ae6d-93b50974482a",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "I've got the documentation handy",
+                "I've installed Flask-Migrate"
+              ],
+              "positive_feedback": "Good—then let's get started!",
+              "video_feedback": null,
+              "description": "Have the documentation available as you work. Links:\n* [Flask-Migrate documentation](https://flask-migrate.readthedocs.io/en/latest/)\n* [Alembic documentation](https://alembic.sqlalchemy.org/en/latest/)\n\nNext, install Flask-Migrate by running:\n\n```bash\npip3 install Flask-Migrate\n```"
+            },
+            {
+              "id": 916874,
+              "key": "ac4f1199-4e45-49f0-b839-83ebcdef9989",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Importing the Migrate library and creating an instance of the `Migrate` class",
+              "instructor_notes": ""
+            },
+            {
+              "id": 916875,
+              "key": "3082ef57-8cdf-4841-9924-bf49a2fc3ee4",
+              "title": "ND004 C01 L06 03.1 Flask-Migrate",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "zGQP0Ry5WDk",
+                "china_cdn_id": "zGQP0Ry5WDk.mp4"
+              }
+            },
+            {
+              "id": 918887,
+              "key": "55254e88-5f69-42f4-a765-e0c882c02fc4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Follow along! Interactive Workspace\n\n* Install Flask-Migrate\n* Instantiate `migrate`\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 918888,
+              "key": "abad960b-67f4-47b9-ab91-64eddc952687",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r848940c907714xJUPYTERL1uvp3au1",
+              "pool_id": "flaskpostgres",
+              "view_id": "jupyter-lab-caebz",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "pageEnd": "",
+                    "pageStart": "",
+                    "allowSubmit": false,
+                    "defaultPath": "/",
+                    "actionButtonText": ""
+                  },
+                  "kind": "jupyter-lab"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 916876,
+          "key": "e1fc616d-d2a7-4d59-96e1-68e32f17ec72",
+          "title": "Flask-Migrate - Part 2",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "e1fc616d-d2a7-4d59-96e1-68e32f17ec72",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 916878,
+              "key": "51606197-9426-4668-b503-d2b48efb47c4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Flask_Migrate - Part 2\n\n## Creating the migrations directory structure using `flask db init`",
+              "instructor_notes": ""
+            },
+            {
+              "id": 918889,
+              "key": "708c5526-eaac-40c8-9c98-84831af4f59a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Follow along! Interactive Workspace\n\nFollow along the rest of the walk-throughs (below) to continue getting migrations set up on our Todo application.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 918890,
+              "key": "6b88ebeb-5a0a-4e72-b975-a0ee1d98e9c5",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r848940c907714xJUPYTERL1uvp3au1",
+              "pool_id": "flaskpostgres",
+              "view_id": "jupyter-lab-2iq36",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "pageEnd": "",
+                    "pageStart": "",
+                    "allowSubmit": false,
+                    "defaultPath": "/",
+                    "actionButtonText": ""
+                  },
+                  "kind": "jupyter-lab"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 918891,
+              "key": "6fb9685e-5edd-4a24-9b7a-fe1f76805696",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Walk-throughs",
+              "instructor_notes": ""
+            },
+            {
+              "id": 916879,
+              "key": "d5969fbe-c38a-441d-99ae-bdd9e1ee148b",
+              "title": "ND004 C01 L06 03.2 Flask-Migrate",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "lTgA05lcIHA",
+                "china_cdn_id": "lTgA05lcIHA.mp4"
+              }
+            },
+            {
+              "id": 916881,
+              "key": "48806fd5-da49-4db9-b3ff-b5bd9a02a808",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Syncing models using `flask db migrate`",
+              "instructor_notes": ""
+            },
+            {
+              "id": 916880,
+              "key": "732d774f-2e36-47f1-ba27-c95ea7f0982c",
+              "title": "ND004 C01 L06 03.3 Flask-Migrate",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "H-PWJ5p-SpM",
+                "china_cdn_id": "H-PWJ5p-SpM.mp4"
+              }
+            },
+            {
+              "id": 916882,
+              "key": "843374c4-b1cd-4a44-b44c-b78d6f979956",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n### To restart your postgres server\nIn case of an error with existing sessions or connections, you can stop your postgres server to close out existing connections, and then start it up again. Note that stopping a server does not affect the data inside it; they still persist.\n\nTo do so:\n\n#### On MacOS if you installed postgres using Homebrew,\n```sh\n$ brew services start postgresql\n$ brew services stop postgresql\n```\n\n#### Otherwise\n\nYou can call start and stop manually on your postgres server using [pg_ctl](https://www.postgresql.org/docs/10/app-pg-ctl.html), Postgres's application for starting, stopping, and controlling a Postgres server, included with every Postgres install:\n\nTo stop it, closing open connections, call\n```sh\n$ pg_ctl -D /usr/local/var/postgres stop\n```\n\nand to start it up again, call\n```sh\n$ pg_ctl -D /usr/local/var/postgres start\n```",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 916877,
+          "key": "426167de-1e81-48af-992c-be6d39cd0623",
+          "title": "Flask-Migrate - Part 3",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "426167de-1e81-48af-992c-be6d39cd0623",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 918893,
+              "key": "077f16e5-7e08-4055-8dde-d855332c8b83",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Follow along! Interactive Workspace\n\nFollow along the rest of the walk-throughs (below) to continue getting migrations set up on our Todo application.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 918892,
+              "key": "0fa4d73b-7d13-46f2-b5e1-ed36632fc8d2",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r848940c907714xJUPYTERL1uvp3au1",
+              "pool_id": "flaskpostgres",
+              "view_id": "jupyter-lab-h7qqm",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "pageEnd": "",
+                    "pageStart": "",
+                    "allowSubmit": false,
+                    "defaultPath": "/",
+                    "actionButtonText": ""
+                  },
+                  "kind": "jupyter-lab"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 918894,
+              "key": "9f8d9bd6-8dda-40f2-ad88-e552bea19bb9",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Walk-Throughs",
+              "instructor_notes": ""
+            },
+            {
+              "id": 916885,
+              "key": "e2f85510-8cc0-4b48-9732-8992246c8bae",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## `flask db upgrade` and `flask db downgrade`",
+              "instructor_notes": ""
+            },
+            {
+              "id": 916883,
+              "key": "0a756fd7-40c3-49e6-9c23-d30c6934b61b",
+              "title": "ND004 C01 L06 03.4 Flask-Migrate",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "sysYabvXRCs",
+                "china_cdn_id": "sysYabvXRCs.mp4"
+              }
+            },
+            {
+              "id": 916886,
+              "key": "984a7c0c-7fee-4a08-903b-2b29d493309c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Adding the `completed` column to test migration",
+              "instructor_notes": ""
+            },
+            {
+              "id": 916884,
+              "key": "bcfd7c50-831a-41bb-bf5f-7a1b1cfd6a1b",
+              "title": "ND004 C01 L06 03.5 Flask-Migrate",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "UVIhJ_qZzAA",
+                "china_cdn_id": "UVIhJ_qZzAA.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 916887,
+          "key": "c7de82c3-5561-4f47-a628-db3a71b12374",
+          "title": "Flask-Migrate - Part 4",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c7de82c3-5561-4f47-a628-db3a71b12374",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 918895,
+              "key": "0a815830-6fac-439a-995e-48e26b7cb311",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Follow along! Interactive Workspace\n\nFollow along the rest of the walk-throughs (below) to continue getting migrations set up on our Todo application.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 918896,
+              "key": "8c6270c8-c930-4548-8169-049eaa4e2067",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r848940c907714xJUPYTERL1uvp3au1",
+              "pool_id": "flaskpostgres",
+              "view_id": "jupyter-lab-0l6i6",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "pageEnd": "",
+                    "pageStart": "",
+                    "allowSubmit": false,
+                    "defaultPath": "/",
+                    "actionButtonText": ""
+                  },
+                  "kind": "jupyter-lab"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 916888,
+              "key": "391998dc-ee1f-41b9-802b-f8e3f35490e3",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Working with existing data",
+              "instructor_notes": ""
+            },
+            {
+              "id": 916890,
+              "key": "3f9517b2-6a86-4ed4-ac50-09cc979a10ae",
+              "title": "ND004 C01 L06 03.6 Flask-Migrate",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "2B4II_X-W0k",
+                "china_cdn_id": "2B4II_X-W0k.mp4"
+              }
+            },
+            {
+              "id": 916889,
+              "key": "1087627c-6797-408c-b184-a04e8ade31c1",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Review",
+              "instructor_notes": ""
+            },
+            {
+              "id": 916891,
+              "key": "516fe910-0183-4990-881d-fe9662e75990",
+              "title": "ND004 C01 L06 03.7 Flask-Migrate",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "xPafNHP6z94",
+                "china_cdn_id": "xPafNHP6z94.mp4"
+              }
+            },
+            {
+              "id": 918897,
+              "key": "5d7805ca-b57d-43e0-9b95-f46d50850591",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Takeaways\n\n### Overall Steps to Set Up & Run Migrations\n\n1. **Bootstrap database migrate commands**: link to the Flask app models and database, link to command line scripts for running migrations, set up folders to store migrations (as versions of the database)\n2. **Run initial migration to create tables for SQLAlchemy models**, recording the initial schema: ala git init && first git commit. Replaces use of db.create_all()\n3. **Migrate on changes to our data models**\n  * Make changes to the SQLAlchemy models\n  * Allow Flask-Migrate to auto-generate a migration script based on the changes\n  * Fine-tune the migration scripts\n  * Run the migration, aka “upgrade” the database schema by a “version”\n\n### It’s always helpful to read the docs!\n\n* [https://alembic.sqlalchemy.org/en/latest/](https://alembic.sqlalchemy.org/en/latest/)\n* [https://flask-migrate.readthedocs.io/en/latest/](https://flask-migrate.readthedocs.io/en/latest/)\n\n\n\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 907937,
+          "key": "e6fa53f0-132d-4a90-a5c6-19298ccdbdf9",
+          "title": "Recap",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "e6fa53f0-132d-4a90-a5c6-19298ccdbdf9",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 907938,
+              "key": "752a14e5-514c-4a51-a8d3-fe5b407e842e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Recap",
+              "instructor_notes": ""
+            },
+            {
+              "id": 918898,
+              "key": "23b733c5-3d7e-45c9-9c32-9e5bc52656ed",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## 💥 Boom! You're a rockstar!\n\nWe finished our lesson on migrations! Hooray! Let's recap.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907939,
+              "key": "96ead055-9a13-4410-b480-c7b92a6febf4",
+              "title": "ND004 C01 L06 04 Recap",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "0_IO2PL_ySo",
+                "china_cdn_id": "0_IO2PL_ySo.mp4"
+              }
+            },
+            {
+              "id": 918899,
+              "key": "fe40e56a-4031-4f79-a9ab-e97e8bd801aa",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Here's a link to a full solution\n\nFeel free to download it and use it to build out more of this application in the upcoming lesson.\n\n[Click here: todoapp-migrations.zip](https://video.udacity-data.com/topher/2019/August/5d5dec79_todoapp-migrations/todoapp-migrations.zip)",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

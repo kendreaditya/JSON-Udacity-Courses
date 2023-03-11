@@ -1,0 +1,886 @@
+{
+  "data": {
+    "lesson": {
+      "id": 907585,
+      "key": "56296e82-9c61-4aae-9df9-ab9027245ca0",
+      "title": "SQLAlchemy ORM in Depth",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Get to know Model.query and the SQLAlchemy Object Lifecycle to master how to query for and change records in a database.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/56296e82-9c61-4aae-9df9-ab9027245ca0/907585/1581172486927/SQLAlchemy+ORM+in+Depth+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/56296e82-9c61-4aae-9df9-ab9027245ca0/907585/1581172483957/SQLAlchemy+ORM+in+Depth+Subtitles.zip"
+          },
+          {
+            "name": "Query-Cheat-Sheet",
+            "uri": "https://video.udacity-data.com/topher/2019/August/5d5a52af_query-cheat-sheet/query-cheat-sheet.pdf"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 907582,
+          "key": "a39d4b7f-8ea2-4f00-afda-7a9730e5cf75",
+          "title": "Introduction",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a39d4b7f-8ea2-4f00-afda-7a9730e5cf75",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 907572,
+              "key": "ec82bc72-f232-40fc-8f7b-22f40b3a8780",
+              "title": "Overview Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Introduction: Lesson Overview",
+              "instructor_notes": ""
+            },
+            {
+              "id": 916840,
+              "key": "25de29eb-79bb-41fa-8a8a-47c6f19e79e5",
+              "title": "ND004 C01 L04 01 Overview - Interacting With SQLAlchemy ORM",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "tLhPw16OamI",
+                "china_cdn_id": "tLhPw16OamI.mp4"
+              }
+            },
+            {
+              "id": 917343,
+              "key": "3a6bae15-1150-4642-837a-05a626456984",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Let's get started with a preview\n\nIn the video below, we'll preview the methods and objects we'll learn throughout this lesson.\n\nDon't worry about knowing everything in depth just yet! ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907559,
+              "key": "a3d107b1-9b52-4edc-999a-e21fdc35644f",
+              "title": "ND004 C01 L04 01.1 Overview - Interacting With SQLAlchemy ORM",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "MQCeKfH8KaM",
+                "china_cdn_id": "MQCeKfH8KaM.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 907580,
+          "key": "4d39ccab-2adb-42fc-9198-30619e9ede5a",
+          "title": "Model.query",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "4d39ccab-2adb-42fc-9198-30619e9ede5a",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 907550,
+              "key": "54e5a19f-bffb-4418-9920-3eca36b8192e",
+              "title": "Model.query Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Model.query",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907573,
+              "key": "24495fe6-cff5-463a-9e39-43b2c7b993ed",
+              "title": "ND004 C01 L04 02 Model.Query",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Y7BcAESBGmM",
+                "china_cdn_id": "Y7BcAESBGmM.mp4"
+              }
+            },
+            {
+              "id": 917345,
+              "key": "6f1808d8-bc43-4865-a8ca-2dd36641074d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Takeaways\n\n* `db.Model.query` offers us the Query object. The Query object lets us generate `SELECT` statements that let us query and return slices of data from our database.\n* Query has method chaining.  You can chain one query method to another (indefinitely), getting back more query objects, until you chain it with a terminal method that returns a non-query object like `count()`, `all()`, `first()`, `delete()`, etc.\n* The Query object can be accessed on a model using either:\n  * `MyModel.query` directly on the model, or\n  * `db.session.query(MyModel)` using `db.session.query` instead. \n\n-----\n\n## Query Methods\n\nHere are some useful query methods to get to know.\n\n### Select records\n\n#### all()\n\n```\nMyModel.query.all()\n```\n\nsame as doing a `SELECT *`, fetching all records from the model's table. Returns a list of objects.\n\n#### first()\n\n```\nMyModel.query.first()\n```\n\nFetches just the first result. Returns either `None` or an object if found.\n\n\n### Filtering\n\n#### filter_by\n\n```\nMyModel.query.filter_by(my_table_attribute='some value')\n```\n\nSimilar to doing a  `SELECT * from ... WHERE` SQL statement for filtering data by named attributes.\n\n#### filter\n\nExamples:\n\n```\nMyModel.query.filter(MyOtherModel.some_attr='some value')\nOrderItem.query.filter(Product.id=3)\n```\n\nSimilar to `filter_by`, but instead, you specify attributes on a given Model. It is more flexible than using `filter_by` itself, and is especially useful when querying from a joined table where you want to filter by attributes that span across multiple models.\n\n#### Wait.. there's more to filtering!\n\nYou can filter on equality, inequality, like filtering (\"fuzzy\" string matching), IN, NOT IN, NULL, NOT NULL, etc. \nBe sure to check out the SQLAlchemy docs reference on [common filter operators here](https://docs.sqlalchemy.org/en/13/orm/tutorial.html#common-filter-operators).\n\n### Ordering\n\n#### order_by\n\n```\nMyModel.order_by(MyModel.created_at)\nMyModel.order_by(db.desc(MyModel.created_at))\n```\n\nTo order the results by a given attribute. Use `db.desc` to order in descending order.\n\n#### limit\n\n```\nOrder.query.limit(100).all()\n```\n\n`limit(max_num_rows)` limits the number of returned records from the query. ala `LIMIT` in SQL.\n\n### Aggregates\n\n#### count()\n\nExample:\n\n```\nquery = Task.query.filter(completed=True)\nquery.count()\n```\nReturns an integer set to the number of records that would have been returned by running the query.\n\n\n#### get(<id>)\nGet object by ID\n\n```\nmodel_id = 3\nMyModel.query.get(model_id)\n```\n\nReturns the object as a result of querying the model by its primary key.\n\n----\n\n## Bulk Deletes\n\nExample:\n\n```\nquery = Task.query.filter_by(category='Archived')\nquery.delete()\n```\n\n`delete()` does a bulk delete operation that deletes every record matching the given query.\n\n-----\n\n## Joined Queries\n\nExample:\n\n```\nDriver.query.join('vehicles')\n```\n\nQuery has a method `join(<table_name>)` for joining one model to another table.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917346,
+              "key": "09ff0d14-9ed3-4dae-8cdd-bea3d2790537",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Get this cheat sheet!\n\n[Click here](https://video.udacity-data.com/topher/2019/August/5d5a52af_query-cheat-sheet/query-cheat-sheet.pdf) to access a cheat sheet of handy SQLAlchemy Query methods to use.\n\n## Handy resources\n* [Docs for the SQLAlchemy Query API](https://docs.sqlalchemy.org/en/latest/orm/query.html)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 909419,
+              "key": "7c020dd3-0da4-45aa-a778-ec088bc9b3e2",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "7c020dd3-0da4-45aa-a778-ec088bc9b3e2",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Here are some of the most common common `Model.query` methods. Can you match each of them with the corresponding SQL statement?"
+                },
+                "concepts_label": "SQL Statement",
+                "answers_label": "ORM Method",
+                "concepts": [
+                  {
+                    "text": "```\nSELECT * from persons WHERE name = 'Amy';\n```",
+                    "correct_answer": {
+                      "id": "a1565466272855",
+                      "text": "`Person.query.filter_by(name=’Amy’)`"
+                    }
+                  },
+                  {
+                    "text": "```\nSELECT * from persons;\n```",
+                    "correct_answer": {
+                      "id": "a1565466354995",
+                      "text": "`Person.query.all()`"
+                    }
+                  },
+                  {
+                    "text": "```\nSELECT COUNT(*) FROM persons;\n```",
+                    "correct_answer": {
+                      "id": "a1565466357813",
+                      "text": "`Person.query.count()`"
+                    }
+                  },
+                  {
+                    "text": "```\nSELECT * from persons WHERE id = 1;\n```",
+                    "correct_answer": {
+                      "id": "a1565466428966",
+                      "text": "`Person.query.get(1)`"
+                    }
+                  },
+                  {
+                    "text": "```\nSELECT * from persons LIMIT 1;\n```",
+                    "correct_answer": {
+                      "id": "a1566200789903",
+                      "text": "`Person.query.limit(1).all()`"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1566200789903",
+                    "text": "`Person.query.limit(1).all()`"
+                  },
+                  {
+                    "id": "a1565466354995",
+                    "text": "`Person.query.all()`"
+                  },
+                  {
+                    "id": "a1565466428966",
+                    "text": "`Person.query.get(1)`"
+                  },
+                  {
+                    "id": "a1565466272855",
+                    "text": "`Person.query.filter_by(name=’Amy’)`"
+                  },
+                  {
+                    "id": "a1566200806420",
+                    "text": "`Person.query.first()`"
+                  },
+                  {
+                    "id": "a1565466357813",
+                    "text": "`Person.query.count()`"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 917347,
+              "key": "61cd2709-a334-4f74-aa4a-37bff9f45b9b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Practice\n\nEither on your own machine or in the interactive workspace below, practice using the Query object and gain familiarity with it.\n\nFirst, create a model and insert some records into the database table for it (e.g. using psql). Then, experiment with querying the data.\n\nLet's say you created a Users table with a `name` attribute. Example exercises you can do include:\n\n* Implement a query to filter all users by name 'Bob'.\n* Implement a LIKE query to filter the users for records with a name that includes the letter \"b\".\n* Return only the first 5 records of the query above.\n* Re-implement the LIKE query using case-insensitive search.\n* Return the _number_ of records of users with name 'Bob'.\n\n\n##### Example code\n\n```\nfrom flask import Flask\nfrom flask_sqlalchemy import SQLAlchemy\n\napp = Flask(__name__)\napp.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://my_user@localhost:5432/example'\napp.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False\ndb = SQLAlchemy(app)\n\nclass User(db.Model):\n  __tablename__ = 'users'\n  id = db.Column(db.Integer, primary_key=True)\n  name = db.Column(db.String(), nullable=False)\n\n  def __repr__(self):\n  \treturn f'<User {self.id}, {self.name}>'\n\n\ndb.create_all()\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917349,
+              "key": "ea6d3c1d-2cc5-4f73-9d49-ef30f18d8fe2",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Interactive Workspace\n\nBelow is an interactive workspace you can use to try out `Query` commands.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917348,
+              "key": "ae7880d7-be6e-4c60-8c16-c49497273d71",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r848940c909408xJUPYTERLx3z76ofp",
+              "pool_id": "flaskpostgres",
+              "view_id": "jupyter-lab-ney6k",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "pageEnd": "",
+                    "pageStart": "",
+                    "allowSubmit": false,
+                    "defaultPath": "/",
+                    "actionButtonText": ""
+                  },
+                  "kind": "jupyter-lab"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 907583,
+          "key": "3d37edd7-aab1-4664-bd73-dcd22b0333e2",
+          "title": "SQLAlchemy Object Lifecycle — Part 1",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "3d37edd7-aab1-4664-bd73-dcd22b0333e2",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 907558,
+              "key": "5695058f-667a-4771-8ae7-d310219e0638",
+              "title": "SQLAlchemy Object Lifecycle - Part 1 Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# SQLAlchemy Object Lifecycle — Part 1",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917517,
+              "key": "6bafef1f-268d-4e78-a82a-8b4f405be067",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Recall\nWe can insert new records into the database using SQLAlchemy by running\n\n```python\nperson = Person(name='Amy')\ndb.session.add(person)\ndb.session.commit()\n```\n\nwhich will build a transaction for inserting in a `person` instance in our model/table, and persist it to the database upon calling `commit()`.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907557,
+              "key": "8fc90222-9084-42c4-a97d-e45f00e6ec6c",
+              "title": "ND004 C01 L04 03 SQLAlchemy Object Lifecycle - Part 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "1zMqtV3Kv-0",
+                "china_cdn_id": "1zMqtV3Kv-0.mp4"
+              }
+            },
+            {
+              "id": 907575,
+              "key": "d7a95403-ca00-4494-aec9-993dc670fe22",
+              "title": "SQLAlchemy Object Lifecycle - Part 1 Recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Takeaways\n* Within a session, we create **transactions** every time we want to commit work to the database.\n* Proposed changes are not immediately committed to the database and instead go through stages to allow for undos.\n* The ability to _undo_ is allowed via `db.session.rollback()`\n\n### Stages:\n\n1. **Transient**: an object exists, it was defined.\n  ```\n  user1 = User(name='Amy')\n  ```\n  ...but not attached to a session (yet).\n\n2. **Pending**: an object was attached to a session. \"Undo\" becomes available via `db.session.rollback()`. Waits for a flush to happen\n\n3. **Flushed**: about ready to be committed to the database, translating actions into SQL command statements for the engine.\n\n4. **Committed**: manually called for a change to persist to the database (permanently); session's transaction is cleared for a new set of changes.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 918799,
+              "key": "f5fc0e7f-2ed8-48e6-be38-585ea9712c48",
+              "title": "Stage Quiz",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "f5fc0e7f-2ed8-48e6-be38-585ea9712c48",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Match the statement to the stage that an object would be in its lifecycle, if the statement was called"
+                },
+                "concepts_label": "Statement",
+                "answers_label": "Stage",
+                "concepts": [
+                  {
+                    "text": "db.session.add(widget)",
+                    "correct_answer": {
+                      "id": "a1566419947129",
+                      "text": "pending"
+                    }
+                  },
+                  {
+                    "text": "db.session.commit()",
+                    "correct_answer": {
+                      "id": "a1566419964278",
+                      "text": "committed"
+                    }
+                  },
+                  {
+                    "text": "widget = Widget(name='foo')",
+                    "correct_answer": {
+                      "id": "a1566419964924",
+                      "text": "transient"
+                    }
+                  },
+                  {
+                    "text": "db.session.delete(widget)",
+                    "correct_answer": {
+                      "id": "a1566419965605",
+                      "text": "pending"
+                    }
+                  },
+                  {
+                    "text": "widget.name = 'foo 2'",
+                    "correct_answer": {
+                      "id": "a1566419992462",
+                      "text": "pending"
+                    }
+                  },
+                  {
+                    "text": "db.session.rollback()",
+                    "correct_answer": {
+                      "id": "a1566419993264",
+                      "text": "transient"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1566419992462",
+                    "text": "pending"
+                  },
+                  {
+                    "id": "a1566419998703",
+                    "text": "pending"
+                  },
+                  {
+                    "id": "a1566419947129",
+                    "text": "pending"
+                  },
+                  {
+                    "id": "a1566419964924",
+                    "text": "transient"
+                  },
+                  {
+                    "id": "a1566419993264",
+                    "text": "transient"
+                  },
+                  {
+                    "id": "a1566420028053",
+                    "text": "committed"
+                  },
+                  {
+                    "id": "a1566420012910",
+                    "text": "transient"
+                  },
+                  {
+                    "id": "a1566419964278",
+                    "text": "committed"
+                  },
+                  {
+                    "id": "a1566419995742",
+                    "text": "flushed"
+                  },
+                  {
+                    "id": "a1566419965605",
+                    "text": "pending"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 918805,
+              "key": "295e2f87-0c59-4340-90e7-21c3f390a9b1",
+              "title": "Stage Q",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "295e2f87-0c59-4340-90e7-21c3f390a9b1",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Order the stages in correct order"
+                },
+                "concepts_label": "Stage Order",
+                "answers_label": "Stage",
+                "concepts": [
+                  {
+                    "text": "1st stage",
+                    "correct_answer": {
+                      "id": "a1566420830933",
+                      "text": "Transient"
+                    }
+                  },
+                  {
+                    "text": "2nd stage",
+                    "correct_answer": {
+                      "id": "a1566420843096",
+                      "text": "Pending"
+                    }
+                  },
+                  {
+                    "text": "3rd stage",
+                    "correct_answer": {
+                      "id": "a1566420844135",
+                      "text": "Flushed"
+                    }
+                  },
+                  {
+                    "text": "4th stage",
+                    "correct_answer": {
+                      "id": "a1566420845024",
+                      "text": "Committed"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1566420843096",
+                    "text": "Pending"
+                  },
+                  {
+                    "id": "a1566420845024",
+                    "text": "Committed"
+                  },
+                  {
+                    "id": "a1566420844135",
+                    "text": "Flushed"
+                  },
+                  {
+                    "id": "a1566420830933",
+                    "text": "Transient"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 918798,
+              "key": "279ff880-0b41-443d-a87c-d54c1b8e3cee",
+              "title": "",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "279ff880-0b41-443d-a87c-d54c1b8e3cee",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "During what stage(s) is `db.session.rollback()` available?",
+                "answers": [
+                  {
+                    "id": "a1566419886435",
+                    "text": "Transient",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566419899328",
+                    "text": "Pending",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1566419901842",
+                    "text": "Flushed",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566419905265",
+                    "text": "Committed",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 918800,
+              "key": "66afeeee-f8c0-4fc2-a508-017f6eedd199",
+              "title": "Stage Quiz 2",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "66afeeee-f8c0-4fc2-a508-017f6eedd199",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "When an object has been defined, it is in a `____` stage.",
+                "answers": [
+                  {
+                    "id": "a1566420119417",
+                    "text": "Transient",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1566420142099",
+                    "text": "Pending",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566420143004",
+                    "text": "Flushed",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566420143765",
+                    "text": "Committed",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 918801,
+              "key": "e3b38476-5e66-40cf-93d8-a1200a7b16dc",
+              "title": "Stage Quiz 3",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "e3b38476-5e66-40cf-93d8-a1200a7b16dc",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "When an object has been added on the database, it is in a `____` state.",
+                "answers": [
+                  {
+                    "id": "a1566420164076",
+                    "text": "Pending",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566420200964",
+                    "text": "Transient",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566420201540",
+                    "text": "Flushed",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566420202213",
+                    "text": "Committed",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 918802,
+              "key": "3907db18-4d36-452e-945b-570cb3ff5122",
+              "title": "Stage Quiz 4",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "3907db18-4d36-452e-945b-570cb3ff5122",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "When an object has been associated to a session, but not yet committed to a database, what stage(s) could it be in? Check all that apply",
+                "answers": [
+                  {
+                    "id": "a1566420295722",
+                    "text": "Transient",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566420300564",
+                    "text": "Pending",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1566420301134",
+                    "text": "Flushed",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1566420301734",
+                    "text": "Committed",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 918803,
+              "key": "5cc24117-d192-4c02-8222-e80a1bfe7c6d",
+              "title": "Stage Quiz 5",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "5cc24117-d192-4c02-8222-e80a1bfe7c6d",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What is the difference between a flush and a commit?",
+                "answers": [
+                  {
+                    "id": "a1566420338283",
+                    "text": "A flush persists changes to the database; a commit does not",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566420353049",
+                    "text": "A commit persists changes to the database; a flush does not",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1566420353650",
+                    "text": "None. They are the same thing",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 907581,
+          "key": "1b801a95-59f7-49fd-b5a2-0a2d451ceb7b",
+          "title": "SQLAlchemy Object Lifecycle — Part 2",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "1b801a95-59f7-49fd-b5a2-0a2d451ceb7b",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 907551,
+              "key": "a231dcdf-e0bc-4737-9e0f-d676d8b4b2fc",
+              "title": "SQLAlchemy Object Lifecycle - Part 2 Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# SQLAlchemy Object Lifecycle — Part 2",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907565,
+              "key": "ada7edd5-964f-4e42-8cfe-3f141ff72f66",
+              "title": "ND004 C01 L04 04 SQLAlchemy Object Lifecycle - Part 2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "GGGWgRLC80s",
+                "china_cdn_id": "GGGWgRLC80s.mp4"
+              }
+            },
+            {
+              "id": 907567,
+              "key": "e8c87750-cdfc-479b-acf7-56fb0c497292",
+              "title": "SQLAlchemy Object Lifecycle - Part 2 Recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Takeaways\n\n* A **flush** takes pending changes, and translates them into commands _ready_ to be committed. It occurs:\n\n1. when you call `Query`. Or\n2. on `db.session.commit()`\n\nA commit leads to persisted changes on the database + lets the db.session start with a new transaction.\n\nWhen a statement has been flushed already, SQLAlchemy knows not to do the work again of translating actions to SQL statements.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907570,
+              "key": "e3ebfa85-a83e-42a1-a1ec-43cbf8acd2f3",
+              "title": "SQLAlchemy Object Lifecycle - Part 2 Quiz",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "e3ebfa85-a83e-42a1-a1ec-43cbf8acd2f3",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "True/False: Commit will automatically flush pending changes for you.",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "True",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "False",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 918804,
+              "key": "f19bd8db-08db-4c0d-b1f0-70f80228ec80",
+              "title": "Flush Quiz",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "f19bd8db-08db-4c0d-b1f0-70f80228ec80",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Check all the instances when a flush would occur",
+                "answers": [
+                  {
+                    "id": "a1566420565635",
+                    "text": "`Person.query`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566420566246",
+                    "text": "`Person.query.all()`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1566420566725",
+                    "text": "`db.session.add(person)`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566420567296",
+                    "text": "`db.session.commit()`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1566420583732",
+                    "text": "`Person.query.filter_by(name='Bob')`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1566420685884",
+                    "text": "`Person(name='Bob')`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566420728472",
+                    "text": "`Person.query.first().delete()`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1566420742987",
+                    "text": "`db.session.delete(person)`",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 907584,
+          "key": "27192d70-28d0-4e91-8720-38f0bc9de90f",
+          "title": "Recap",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "27192d70-28d0-4e91-8720-38f0bc9de90f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 907562,
+              "key": "0890ebe3-95ff-4d7c-bb78-f9e8b0e71602",
+              "title": "Recap Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Recap",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907577,
+              "key": "01d23a71-97dd-4c23-a73a-590bf0acd54a",
+              "title": "ND004 C01 L04 05 Recap",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "h0b7_cdNeZE",
+                "china_cdn_id": "h0b7_cdNeZE.mp4"
+              }
+            },
+            {
+              "id": 907552,
+              "key": "d8a4ec70-fba0-47e5-9152-93fdc200f1b4",
+              "title": "Recap Recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Congratulations on another completed lesson!\n\nThis lesson helped solidify concepts to help you always understand the state of your database. Thinking in terms of an object's state will come in handy in the lessons to follow.\n\n## Next up\nFrom here, we'll be getting very project-oriented in building out CRUD applications, using everything we've learned so far about SQLAlchemy, SQLAlchemy ORM, Postgres, SQL, and relational databases to build out the frontend and backend components of a web application capable of creating, reading, updating, and deleting records on a connected database.",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

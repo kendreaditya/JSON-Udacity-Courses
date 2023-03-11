@@ -1,0 +1,477 @@
+{
+  "data": {
+    "lesson": {
+      "id": 817343,
+      "key": "754a89a3-b2f9-4b0b-879c-1a75fb5f976e",
+      "title": "Congratulations! What's next?",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Great work finishing the program! Here's some advice on next steps in your programming journey.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/754a89a3-b2f9-4b0b-879c-1a75fb5f976e/817343/1555957075062/Congratulations%21+What%27s+next%3F+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/754a89a3-b2f9-4b0b-879c-1a75fb5f976e/817343/1555957067925/Congratulations%21+What%27s+next%3F+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 817354,
+          "key": "fb790031-79b1-461f-81c1-8bde2280b9cb",
+          "title": "Congratulations! What's next?",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "fb790031-79b1-461f-81c1-8bde2280b9cb",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 817355,
+              "key": "5541342d-2f76-4bcd-8e67-1c88a6217a7c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Congratulations!\n\nCongratulations! After many hours of practice and a lot of hard work, you've learned a _ton_ about core programming concepts. This is a significant accomplishment and we hope that you feel proud of your new skills. You've earned them!\n\n## Skills\nWith the completion of this Nanodegree program, you should feel comfortable adding some new technical skills to your LinkedIn profile. Here are a few to get you started!\n\n* HTML\n* CSS\n* Python\n* JavaScript\n* Document Object Model (DOM)\n* Object-Oriented Programming (OOP)\n* Git\n* GitHub\n* Unix shell",
+              "instructor_notes": ""
+            },
+            {
+              "id": 817356,
+              "key": "4a906264-e7c0-4b41-a73b-72cd241911c5",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# What's next?\n\nYou probably took this program because there's somewhere you want to go with your programming. Maybe you're interested in becoming a Web developer, perhaps you want to break into the fascinating world of Artificial Intelligence—or maybe you're just exploring and don't yet know what you want to do. \n\nNow that you have a foundation in core programming skills, there are so many options open to you! During the rest of this lesson, we'll take a brief tour through some of Udacity's other programs, so that you can get a feeling for some of the areas you could now explore with your new programming skills.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 673631,
+          "key": "8f0fb0a4-5110-41c3-9240-34adcc496a1e",
+          "title": "Front-End Web Development",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "8f0fb0a4-5110-41c3-9240-34adcc496a1e",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 673664,
+              "key": "3ecf03f4-8329-4d6d-8301-e377298cb8ab",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## What is a Front-End Web Developer?\n\nA Front-End Web Developer is responsible for implementing visual elements that users see and interact with in a web application. They are usually supported by Back-End Web Developers, who are responsible for server-side application logic and integration of the work Front-End Developers do.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 673663,
+              "key": "df1990e9-8375-422f-944d-a25f8a5f313b",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2018/July/5b467cae_fend-hero/fend-hero.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/df1990e9-8375-422f-944d-a25f8a5f313b",
+              "caption": "",
+              "alt": "A design graphic showing a laptop screen with code on a black background",
+              "width": 1066,
+              "height": 681,
+              "instructor_notes": null
+            },
+            {
+              "id": 673634,
+              "key": "f20540c2-5f74-4ebe-9a05-17db12f44d26",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Front-End Nanodegree program Teaser\nBelow are a handful of videos from the Front-End Web Developer Nanodegree program. You can get a sense of the instruction material as well as see if Front-End Web Development is the field for you!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 673734,
+              "key": "582bc6c8-dae4-45de-9d60-e7a193b77b4e",
+              "title": "مرحباً",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "ctMd2-ixxMw",
+                "china_cdn_id": "ctMd2-ixxMw.mp4"
+              }
+            },
+            {
+              "id": 673735,
+              "key": "a7d29857-982b-4114-a563-e3faedf3f02c",
+              "title": "المشروعات",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "b6nZcSUcDz8",
+                "china_cdn_id": "b6nZcSUcDz8.mp4"
+              }
+            },
+            {
+              "id": 673736,
+              "key": "9974ebce-4fa9-40e4-bab6-a69489f1d547",
+              "title": "مدربوك",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "SFKphCz6UK8",
+                "china_cdn_id": "SFKphCz6UK8.mp4"
+              }
+            },
+            {
+              "id": 673737,
+              "key": "04cc1b1a-d946-4cba-a56a-9e63384137d4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Are You Hooked?\n\nFront-End Web Development is a great field to get into, especially now that you have a jumpstart in the fundamental skills like **HTML**, **CSS**, and **JavaScript**.\n\nIf you're interested, you can find more info on our Front-End program [here](https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001).\n\nOr head on over to the next page to see more opportunities for your future. \n\nThe world is your oyster.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 673644,
+          "key": "5d566cca-a485-49a8-885c-ec894ca06f75",
+          "title": "Data Analysis",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5d566cca-a485-49a8-885c-ec894ca06f75",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 673749,
+              "key": "89cc5859-4af4-4520-97a9-ddbfb4f1fffa",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## What is a Data Analyst?\n\nData analysis is a process of inspecting, cleansing, transforming, and modeling data with the goal of discovering useful information, suggesting conclusions, and supporting decision-making. The term data analysis is sometimes used as a synonym for data modeling.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 673801,
+              "key": "9e7a4dd9-e509-4aba-af44-826b789cf57c",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2018/July/5b419724_data-analyst-large/data-analyst-large.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/9e7a4dd9-e509-4aba-af44-826b789cf57c",
+              "caption": "",
+              "alt": "An Image showing two people looking intently at a wall full of information",
+              "width": 1096,
+              "height": 423,
+              "instructor_notes": null
+            },
+            {
+              "id": 673655,
+              "key": "15c98c94-a262-40d5-ac8c-98b3bfb1a39a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Data Analysis Nanodegree Program Teaser\nBelow are a handful of videos from the Data Analysis Nanodegree program. You can get a sense of the instruction material as well as see if Data Analysis is the field for you!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 673802,
+              "key": "9f95a2ff-831a-45f9-a33c-abf1316b74b2",
+              "title": "مرحبًا بك في DAND الفصل الأول",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Q1GEXzXXLN0",
+                "china_cdn_id": "Q1GEXzXXLN0.mp4"
+              }
+            },
+            {
+              "id": 673804,
+              "key": "e1a9bdc3-e94f-40ca-813d-944380ce922f",
+              "title": "حل المشكلات عن طريق محللي البيانات",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "zbjRiYSSR_Y",
+                "china_cdn_id": "zbjRiYSSR_Y.mp4"
+              }
+            },
+            {
+              "id": 673741,
+              "key": "e71fa34a-9d21-4154-831d-b9c5547456da",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Are You Hooked?\n\nData Analysis is a great field to get into, especially now that you have a jumpstart in fundamental skills like  **Python**.\n\nIf you're interested, you can find more info on our Data Analyst Nanodegree [here](https://www.udacity.com/course/data-analyst-nanodegree--nd002), or check out all of our data science programs [here](https://www.udacity.com/school-of-data-science).\n\nOr head on over to the next page to see more opportunities for your future!",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 673641,
+          "key": "1c6d4557-2e04-4d3c-9f0b-227ac6278eaf",
+          "title": "Android Mobile Development",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "1c6d4557-2e04-4d3c-9f0b-227ac6278eaf",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 673747,
+              "key": "cc0ede24-b734-474a-a079-3485fa0b52a9",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## What is an Android Mobile Developer?\n\nAn Android developer is in charge of developing applications for devices powered by the Android operating system. They have a strong understanding of the patterns and practices that revolve around such a platform. Moreover, they ensure the best possible performance, quality, and responsiveness of the application.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 673758,
+              "key": "f02bc99d-add0-4117-9d9c-bf82a2041ee3",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2017/August/5993f445_android-udacity-new/android-udacity-new.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/f02bc99d-add0-4117-9d9c-bf82a2041ee3",
+              "caption": "",
+              "alt": "The Android logo dressed in a graduation cap and gown pointing at a chalkboard with the Udacity logo.",
+              "width": 500,
+              "height": 500,
+              "instructor_notes": null
+            },
+            {
+              "id": 673652,
+              "key": "043ebe8c-f957-4d2f-b5e1-f9024826593c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Android Basics Nanodegree Program Teaser\nBelow are a handful of videos from the Android Basics Nanodegree program. If you're wondering why we're not pointing you directly to Android Developer, that's because it's essential to learn the fundamentals of programming with Java in order to succeed in our career-ready Android program. You can get a sense of the instruction material as well as see if Android Mobile Development is the field for you! ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 673759,
+              "key": "2716e7c5-968d-4f09-843a-ca22987d3b29",
+              "title": "Hello and Welcome!",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "zO9Bu0IwFTM",
+                "china_cdn_id": "zO9Bu0IwFTM.mp4"
+              }
+            },
+            {
+              "id": 673760,
+              "key": "bc7e3be3-c5dd-44fa-ba16-a7c101e6efd0",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "This next video is actually from our [Android Developer Nanodegree program](https://www.udacity.com/course/android-developer-nanodegree-by-google--nd801), but you'll get a glimpse at the instructors to look forward to if you choose to study Android with Udacity and Google.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 673761,
+              "key": "376989ba-8a1c-46b4-abda-68ca6fb6204b",
+              "title": "المقدمة",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "junCRL5Jm2w",
+                "china_cdn_id": "junCRL5Jm2w.mp4"
+              }
+            },
+            {
+              "id": 673739,
+              "key": "c0c6c25d-c563-46e7-b42b-b9f5ae70093d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Are You Hooked?\n\nAndroid Mobile Development is a great field to get into, especially now that you have a jumpstart in the fundamental skills of programming!\n\nIf you're interested, you can find more info on our Android Basics Nanodegree [here](https://www.udacity.com/course/android-basics-nanodegree-by-google--nd803) \n\nOr head on over to the next page to see more opportunities for your future!",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 673642,
+          "key": "9edc2490-8fe8-44f9-b23c-927648491a29",
+          "title": "iOS Mobile Development",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "9edc2490-8fe8-44f9-b23c-927648491a29",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 673748,
+              "key": "decac977-f62b-40f4-b98b-ccfc063dc6ea",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## What is an iOS Mobile Developer?\n\nAn iOS developer is responsible for developing applications for mobile devices powered by Apple's iOS operating system. Ideally, a good iOS developer is proficient with one of the two programming languages for this platform: Objective-C or Swift.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 673762,
+              "key": "5a15b192-2e28-42ac-9f73-1e99a43ac759",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2018/February/5a950a8c_iospreview/iospreview.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/5a15b192-2e28-42ac-9f73-1e99a43ac759",
+              "caption": "",
+              "alt": "A close-up image of an iPhone on a wooden table next to a laptop",
+              "width": 1200,
+              "height": 900,
+              "instructor_notes": null
+            },
+            {
+              "id": 673653,
+              "key": "aad18fa2-c3cc-444e-92be-f3fd7bd14331",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### iOS Developer Nanodegree Program Teaser\nBelow are a handful of videos from the iOS Developer Nanodegree program. You can get a sense of the instruction material as well as see if iOS Development is the field for you!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 673763,
+              "key": "70838d49-06bc-4135-9096-09c42189814b",
+              "title": "Welcome to the iOS Developer Nanodegree",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "sGUDejfUyeQ",
+                "china_cdn_id": "sGUDejfUyeQ.mp4"
+              }
+            },
+            {
+              "id": 673764,
+              "key": "bb1f876c-c8a8-4ab7-95b9-d9b5995e9db3",
+              "title": "The Apps You'll Build",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "OSEZdNY6LDs",
+                "china_cdn_id": "OSEZdNY6LDs.mp4"
+              }
+            },
+            {
+              "id": 673740,
+              "key": "fcb0206b-8c4f-4a6e-86f6-afbc23238082",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Are You Hooked?\n\niOS Development is a great field to get into, especially now that you have a jumpstart in the fundamental skills of programming!\n\nIf you're interested, you can find more info on our iOS Developer Nanodegree [here](https://www.udacity.com/course/ios-developer-nanodegree--nd003) and start your career path towards iOS Development.\n\nOr head on over to the next page to see more opportunities for your future!",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 673647,
+          "key": "a653e4e1-2bed-4960-bd66-2a8d7299640f",
+          "title": "The Options are Endless",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a653e4e1-2bed-4960-bd66-2a8d7299640f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 673751,
+              "key": "87409cea-b56e-4505-9be6-03c01504f57e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Where To Go From Here\n\nThose are just a few of the many options. Feel free to [browse our course catalog](https://www.udacity.com/courses/all) to get more ideas!\n\n\"Help! There are so many options. How do I choose?\"\n\nWe hear this *all* the time.\n\nWell, the good news is that you can change your mind if you begin pursuing a path that ends up not being a good fit for you. \n\nIt's more and more common for folks to have multiple careers in their lifetime. Perhaps you'll be a Data Analyst for 3 years. Then you'll jump into the world of Front-End Web Development for 5 years. And then end up creating Machine Learning algorithms for a gaming company the next 10 years. \n\nWhatever it is you choose to pursue, keep these three things in mind:\n\n1. Learning takes time and consistency — make a learning schedule!\n2. Someone has done it before — ask the internet!\n3. Be curious and continue to learn new things each and every day.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 673805,
+              "key": "83645b05-ddcf-4e24-9872-2027d808f338",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2018/May/5b03642b_udacitylogo/udacitylogo.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/83645b05-ddcf-4e24-9872-2027d808f338",
+              "caption": "",
+              "alt": "[Udacity logo]",
+              "width": 2400,
+              "height": 1260,
+              "instructor_notes": null
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

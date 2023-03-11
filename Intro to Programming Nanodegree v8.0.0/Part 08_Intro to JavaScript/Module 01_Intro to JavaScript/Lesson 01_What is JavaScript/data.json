@@ -1,0 +1,401 @@
+{
+  "data": {
+    "lesson": {
+      "id": 817330,
+      "key": "5c90de70-3b07-42fa-905f-dae984f5bdc4",
+      "title": "What is JavaScript?",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Learn the history of JavaScript and start writing your code immediately using the JavaScript console.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/5c90de70-3b07-42fa-905f-dae984f5bdc4/817330/1555957112148/What+is+JavaScript%3F+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/5c90de70-3b07-42fa-905f-dae984f5bdc4/817330/1555957109327/What+is+JavaScript%3F+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 195672,
+          "key": "921085c8-9e58-4c26-a729-f1406b49b504",
+          "title": "Intro to JavaScript",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "921085c8-9e58-4c26-a729-f1406b49b504",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 215871,
+              "key": "8c83e20b-923f-4929-a9a3-669bea065566",
+              "title": "Intro to JavaScript",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "cWOCLHmFvWw",
+                "china_cdn_id": "cWOCLHmFvWw.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 205386,
+          "key": "949b6d0e-9354-48af-8695-71cdfc8da96e",
+          "title": "History of JavaScript",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "949b6d0e-9354-48af-8695-71cdfc8da96e",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 252561,
+              "key": "9b8446aa-fce9-4018-a003-0d8d4d27b2a4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## History of JavaScript",
+              "instructor_notes": ""
+            },
+            {
+              "id": 232952,
+              "key": "b50d9606-c20f-419e-8f1a-95e01a43bb21",
+              "title": "History of JavaScript",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "EbqS33gGrj0",
+                "china_cdn_id": "EbqS33gGrj0.mp4"
+              }
+            },
+            {
+              "id": 252559,
+              "key": "a8e168e5-7937-4de3-bdb5-0b86d3aa416d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "> **TIP**: HTML and CSS are **markup languages**. Markup languages are used to describe and define elements within a document. JavaScript is a **programming language**. Programming languages are used to communicate instructions to a machine. Programming languages can be used to control the behavior of a machine and to express algorithms.\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015282,
+              "key": "d735e635-f13e-4b88-bf96-595e84684f0a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Read a little history of JavaScript [here](https://en.wikipedia.org/wiki/JavaScript#History). ",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 195673,
+          "key": "05cbaf59-8485-40a3-9bdc-d8e1aadc9e42",
+          "title": "The JavaScript Console",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "05cbaf59-8485-40a3-9bdc-d8e1aadc9e42",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 219826,
+              "key": "ce015322-f91e-4daa-af41-76008014a289",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## The JavaScript Console",
+              "instructor_notes": ""
+            },
+            {
+              "id": 216616,
+              "key": "b86c6e10-bd79-4b23-a738-c3e251d3f6ff",
+              "title": "The JavaScript Console",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "g1VZR1wZKrg",
+                "china_cdn_id": "g1VZR1wZKrg.mp4"
+              }
+            },
+            {
+              "id": 219824,
+              "key": "32475f32-f47f-4c18-88fb-00b439754a9e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "[Chrome Dev Tools Keyboard Shortcuts](https://developers.google.com/web/tools/chrome-devtools/shortcuts)",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 44391,
+          "key": "74478058180923",
+          "title": "Developer Tools on Different Browsers",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "74478058180923",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 21051,
+              "key": "7447805818",
+              "title": "Developer tools on different browsers",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Developer tools on different browsers\n\nDid you know, every modern web browser includes its own set of developer tools?\n\nIf you didn't, that's okay. Developer tools aren't always the easiest thing to find in your browser. So, we've decided to help you out by creating this guide to developer tools!\n\n### Instructions\n* <a href=\"#google\" target=\"_self\">Google Chrome</a>\n* <a href=\"#firefox\" target=\"_self\">Mozilla Firefox</a>\n* <a href=\"#explorer\" target=\"_self\">Internet Explorer</a>\n* <a href=\"#edge\" target=\"_self\">Microsoft Edge</a><a name=\"google\"></a><!-- don't move this -->\n* <a href=\"#safari\" target=\"_self\">Safari</a>\n* <a href=\"#opera\" target=\"_self\">Opera</a>\n\n### Google Chrome\n\nThe Chrome DevTools are a set of web authoring and debugging tools built into Google Chrome. Use the DevTools to iterate, debug and profile your site. [Learn more about Chrome DevTools here](https://developers.google.com/web/tools/chrome-devtools/).\n\nTo open Chrome DevTools, either right-click on any page element and select `Inspect` or open the Chrome settings menu in the top-right corner of your browser window and select `More Tools > Developer Tools`. Alternatively, you can use the shortcuts: \n<a name=\"firefox\"></a> <!-- don't move this. -->\n* `Command + Option + i` (Mac)\n* `Ctrl + Shift + i` (Windows/Linux).\n\n### Mozilla Firefox\n\nFirefox Developer Tools allow you to examine, edit, and debug HTML, CSS, and JavaScript on the desktop and on mobile. Also, you can download a version of of Firefox called Firefox Developer Edition that is tailored for developers, featuring the latest Firefox features and experimental developer tools. [Learn more about Mozilla Firefox DevTools here](https://developer.mozilla.org/en-US/docs/Tools).\n\nTo open Firefox Developer Tools, either right-click on any page element and select `Inspect Element` or open the Firefox settings menu in the top-right corner of your browser window and select `Developer`. Alternatively, you can use the shortcuts:\n<a name=\"explorer\"></a><!-- don't move this -->\n* `Command + Option + i` (Mac)\n* `Ctrl + Shift + i` (Windows/Linux).\n\n### Internet Explorer\n\nIf you use Internet Explorer, then you can access F12 developer tools by simply pressing `F12`. The features vary between versions, but starting at Internet Explorer 8 remain pretty consistent. Below, we've linked to documentation for each version, but if you've upgraded to Microsoft Edge, then check the next section.\n\n- [Internet Explorer 8](https://msdn.microsoft.com/en-us/library/dd565628.aspx)\n- [Internet Explorer 9](https://msdn.microsoft.com/en-us/library/gg589512.aspx)<a name=\"edge\"></a> <!-- don't move this -->\n- [Internet Explorer 10](https://msdn.microsoft.com/en-us/library/hh673549.aspx)\n- [Internet Explorer 11](https://msdn.microsoft.com/en-us/library/bg182636.aspx)\n\n### Microsoft Edge\nMicrosoft Edge introduces great new improvements to the F12 developer tools seen in Internet Explorer. The new tools are built in TypeScript, and are always running, so no reloads are required. In addition, F12 developer tools documentation is now fully available on [GitHub](https://github.com/MicrosoftDocs/edge-developer).\n<a name=\"safari-browser\"></a><!-- don't move this -->\n\nJust like Internet Explorer, to open developer tools in Microsoft Edge simply press `F12`.\n\n[Learn more about Microsoft Edge DevTools here](https://dev.windows.com/en-us/microsoft-edge/platform/documentation/f12-devtools-guide/).\n\n### Safari\n\nFor any Mac users, Safari includes Web Inspector, a powerful tool that makes it easy to modify, debug, and optimize a website for peak performance and compatibility on both platforms. [Learn more about Safari Web Inspector here](https://developer.apple.com/safari/tools/).\n\nTo access Safari's Web Development Tools, enable the Develop menu in Safari’s Advanced preferences. <a name=\"opera-browser\"></a><!-- don't move -->Once enabled, you can right-click on any page element and select `Inspect Element` to open Web Development Tools or use the shortcut `Command + Option + i`.\n\n### Opera\nOpera is a fast, lean and powerful web browser. you can open Developer tools in Opera using the following keyboard shortcuts:\n* `Command + Option + i` (Mac)\n* `Ctrl + Shift + i` (Windows/Linux). \n\nAlternatively, you can target a specific element by right-clicking in the page and selecting `Inspect Element`.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 195674,
+          "key": "70143306-a72c-4983-827a-3fb3af787977",
+          "title": "console.log",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "70143306-a72c-4983-827a-3fb3af787977",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 252564,
+              "key": "24f67170-1d6b-4350-988f-8d8cf94061c7",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## console.log",
+              "instructor_notes": ""
+            },
+            {
+              "id": 230099,
+              "key": "e511f9b8-9d75-42e2-88fb-0e6665375f12",
+              "title": "console.log",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "CFhvAptATI0",
+                "china_cdn_id": "CFhvAptATI0.mp4"
+              }
+            },
+            {
+              "id": 195708,
+              "key": "df7c0b91-4022-4c81-b1d0-34b1e20822d4",
+              "title": "Developer tools allow you to debug",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "`console.log` is used to display content to the **JavaScript console**. Run the following code in the console:\n\n```js\nconsole.log(\"hiya friend!\");\n```\n> **Prints:** \"hiya friend!\"\n\nFor Chrome users, if you don't see the output, click *“Default levels”* in the console and make sure that *\"Info\"* is checked. Congratulations! You performed the `log` action on the debugging `console`.\n\nThe message you’ve logged is \"hiya friend!\". `hiya friend!` is a **string** (a sequence of characters).\n\n## Optional demo example\n\nLet’s use `console.log` to do something a little more interesting. Here’s a block of JavaScript code that loops through the numbers 0 through 9 and prints them out to the console:\n\n```js\nfor (var i = 0; i < 10; i++) {\n  console.log(i);\n}\n```\n> **Prints**:<br>\n> 0<br>\n> 1<br>\n> 2<br>\n> 3<br>\n> 4<br>\n> 5<br>\n> 6<br>\n> 7<br>\n> 8<br>\n> 9<br>\n\nThis is called a **loop**. \n\nBased on this loop's settings, any code written inside the curly brackets `{...}` will be repeated 10 times. In this case, `console.log` is printing out the value of `i` each time the loop runs. Don't worry if you're not sure about what the syntax means at this point. You will learn more about how and when to use loops later in this course. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 208343,
+              "key": "11f121a8-2907-40d0-ae8b-a0be0c13b4be",
+              "title": "12_Img_gif Of What Happened (BETA)",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "<div style=\"text-align: center; color: #afafaf; font-size: 14px; margin-top: 15px;\">A JavaScript loop that loops through the numbers 0 through 9.</div>",
+              "video": {
+                "youtube_id": "0X5gTBlR49I",
+                "china_cdn_id": "0X5gTBlR49I.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 195675,
+          "key": "0f5b4af1-c639-4cf1-85e7-933f31ad823a",
+          "title": "JavaScript Demo",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "0f5b4af1-c639-4cf1-85e7-933f31ad823a",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 195714,
+              "key": "4cc8c4e3-6c7f-4dcf-a277-c6fa8ed5bafc",
+              "title": "So you saw how to use",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## JavaScript demo\n\nSo you saw how to use `console.log` to print a message to the JavaScript console. Now, let’s see how you can use the console as a sandbox to test a new line of JavaScript in the browser.\n\nOpen [the following site](https://daringfireball.net/projects/markdown/) in a new tab and in that tab also open up developer tools. Then paste the following code:\n\n```\ndocument.getElementsByTagName(\"h1\")[0].style.color = \"#ff0000\";\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 205390,
+              "key": "b3f3673a-ae9b-4dc2-afc0-abb9de85ee4c",
+              "title": "JavaScript and the Web Quiz",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "b3f3673a-ae9b-4dc2-afc0-abb9de85ee4c",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What happened when you ran that line of code in the JavaScript console?\n",
+                "answers": [
+                  {
+                    "id": "a1478751096584",
+                    "text": "The heading disappeared",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1478751128407",
+                    "text": "The heading changed to red",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1478751137021",
+                    "text": "All the text on the page turned red",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1478751157602",
+                    "text": "Nothing happened",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 195716,
+              "key": "a5977308-6f5c-4251-989a-6fe0eb9ebdcb",
+              "title": "Styling elements of the page ",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Styling elements on the page is great, but you could also do that by just modifying the CSS. What makes JavaScript so special in this case? Refresh the page, then paste this line of code in the JavaScript console.\n\n```\ndocument.body.addEventListener('click', function () {\n     var myParent = document.getElementsByTagName(\"h1\")[0]; \n     var myImage = document.createElement(\"img\");\n     myImage.src = 'https://thecatapi.com/api/images/get?format=src&type=gif';\n     myParent.appendChild(myImage);\n     myImage.style.marginLeft = \"160px\";\n});\n```\n\nIf you’re confused because nothing happened. Don’t worry. Click somewhere on the page to see the effect. You can refresh the page to return the page its original state.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 205392,
+              "key": "7d89ce61-3ddf-4a65-ad39-e33e8962fafb",
+              "title": "JavaScript and the Web Quiz (Follow-up)",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "7d89ce61-3ddf-4a65-ad39-e33e8962fafb",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What happens when you run the code from above in the JavaScript console _and then click on the page_?\n",
+                "answers": [
+                  {
+                    "id": "a1478751387040",
+                    "text": "The heading changed to red",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1478751453940",
+                    "text": "A banner flies across the screen",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1478751475322",
+                    "text": "An image is added to the page",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1478751506214",
+                    "text": "Nothing happened",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 208345,
+              "key": "b591dfbb-5bc9-4132-9477-dd8c65c3ba6c",
+              "title": "17_Img_gif The Working Site (BETA)",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "<div style=\"text-align: center; color: #afafaf; font-size: 14px; margin-top: 15px;\">When you click, cat gifs will be added to the webpage 🐱 !</div>",
+              "video": {
+                "youtube_id": "gl-1VJ8Pcro",
+                "china_cdn_id": "gl-1VJ8Pcro.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 195676,
+          "key": "e4c262e3-ff1c-451b-b455-562d76d22efb",
+          "title": "Summary",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "e4c262e3-ff1c-451b-b455-562d76d22efb",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 232953,
+              "key": "72f9451a-721b-45d0-bfba-0958956fca91",
+              "title": "Lesson 1 Summary",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "OtdKOJo6hNw",
+                "china_cdn_id": "OtdKOJo6hNw.mp4"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

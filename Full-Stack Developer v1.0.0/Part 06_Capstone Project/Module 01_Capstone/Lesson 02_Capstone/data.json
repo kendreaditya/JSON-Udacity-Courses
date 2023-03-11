@@ -1,0 +1,61 @@
+{
+  "data": {
+    "lesson": {
+      "id": 922007,
+      "key": "1761f959-830f-495b-9610-54da073a5cee",
+      "title": "Capstone",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": null,
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": null,
+      "project": {
+        "key": "302f4d89-5031-418b-a368-6001ed705a62",
+        "version": "1.0.0",
+        "locale": "en-us",
+        "duration": 30240,
+        "semantic_type": "Project",
+        "title": "Capstone Project",
+        "description": "Please submit your project with the following:\n- Github repo (or Zip file) with:\n  - README which includes:\n   - URL where the application is hosted\n   - Instructions to set up authentication \n\nYou can find the starter code for the project at this [link](https://github.com/udacity/FSND/tree/master/projects/capstone/starter)\n\nYour project should meet all rubric requirements to pass the project. The link is provided here: [Project Rubric](https://review.udacity.com/#!/rubrics/2682/view).",
+        "is_public": true,
+        "summary": null,
+        "forum_path": "",
+        "rubric_id": "2682",
+        "terminal_project_id": null,
+        "resources": null,
+        "image": null
+      },
+      "lab": null,
+      "concepts": [
+        {
+          "id": 942796,
+          "key": "7640c062-8035-4663-a56a-ecdcacecfac6",
+          "title": "Instructions",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "7640c062-8035-4663-a56a-ecdcacecfac6",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 942806,
+              "key": "a0354493-5d76-4924-9a1c-7cdc68260083",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Two sets of specifications have been created for this project. The first set is general and not domain specified. This is for students who want to practice and have their own topic they want to use as the content for the project. Students who may not have their own idea can use the Casting Agency specifications to have slightly more structure when you get started. \n\n## General Specifications\n- Models will include at least… \n  - Two classes with primary keys at at least two attributes each \n  - [Optional but encouraged] One-to-many or many-to-many relationships between classes\n- Endpoints will include at least…\n  - Two GET requests\n  - One POST request\n  - One PATCH request\n  - One DELETE request\n- Roles will include at least… \n  - Two roles with different permissions \n  - Permissions specified for all endpoints \n- Tests will include at least…. \n  - One test for success behavior of each endpoint \n  - One test for error behavior of each endpoint \n  - At least two tests of RBAC for each role\n\n## Casting Agency Specifications\n- The Casting Agency models a company that is responsible for creating movies and managing and assigning actors to those movies. You are an Executive Producer within the company and are creating a system to simplify and streamline your process. \n\n- Models: \n  - Movies with attributes title and release date \n  - Actors with attributes name, age and gender\n- Endpoints: \n  - GET /actors and /movies \n  - DELETE /actors/<id> and /movies/<id>  \n  - POST /actors and /movies and \n  - PATCH /actors/<id> and /movies/<id>  \n- Roles: \n  - Casting Assistant \n   - Can view actors and movies\n  - Casting Director \n   - All permissions a Casting Assistant has and… \n   - Add or delete an actor from the database \n   - Modify actors or movies\n  - Executive Producer\n   - All permissions a Casting Director has and…  \n   - Add or delete a movie from the database\n- Tests:\n  - One test for success behavior of each endpoint \n  - One test for error behavior of each endpoint \n  - At least two tests of RBAC for each role\n",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,892 @@
+{
+  "data": {
+    "lesson": {
+      "id": 778947,
+      "key": "1d4ddf44-8b8e-4b2c-9534-1aa3f1556f25",
+      "title": "Deep Convolutional GANs",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "In this lesson you'll implement a Deep Convolution GAN to generate complex color images of house numbers.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/1d4ddf44-8b8e-4b2c-9534-1aa3f1556f25/778947/1546641933061/Deep+Convolutional+GANs+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/1d4ddf44-8b8e-4b2c-9534-1aa3f1556f25/778947/1546641929429/Deep+Convolutional+GANs+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 778971,
+          "key": "99068fc1-4f75-4bae-97b5-324fa9999aa7",
+          "title": "Deep Convolutional GANs",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "99068fc1-4f75-4bae-97b5-324fa9999aa7",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 783203,
+              "key": "737565c4-9cb2-49d6-88de-54dbcdffba46",
+              "title": "Deep Convolutional GANs RENDER V1 V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "s_ZdpYxPayM",
+                "china_cdn_id": "s_ZdpYxPayM.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 778974,
+          "key": "595716e5-e461-449c-b9a4-eef40c5c7725",
+          "title": "DCGAN, Discriminator",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "595716e5-e461-449c-b9a4-eef40c5c7725",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 783204,
+              "key": "f90279c4-5f2e-4eb9-b464-dde5f2c17d29",
+              "title": "DC GAN Architecture Discriminator RENDER V1 1 V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "5qVHECEB6H0",
+                "china_cdn_id": "5qVHECEB6H0.mp4"
+              }
+            },
+            {
+              "id": 782267,
+              "key": "d1603f24-70fe-4259-846d-83b854ae2318",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### DCGAN Paper\n\nIt's always good to take a look at the original paper when you can. Many papers discuss both the theory and training details of deep learning networks, and you can read the DCGAN paper, [Unsupervised Representational Learning with Deep Convolutional Generative Adversarial Networks, at this link](https://arxiv.org/pdf/1511.06434.pdf). I especially like the section they have on model architectures, which is pasted for convenience as an image, below.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 782268,
+              "key": "276f600c-0243-4ca3-8f97-761af4202e96",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2018/November/5be79687_screen-shot-2018-11-10-at-6.39.49-pm/screen-shot-2018-11-10-at-6.39.49-pm.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/276f600c-0243-4ca3-8f97-761af4202e96",
+              "caption": "Architecture guidelines for stable DCGANs.",
+              "alt": "",
+              "width": 500,
+              "height": 546,
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 778975,
+          "key": "d204c2a3-1106-40a7-999d-c8c9118a18ab",
+          "title": "DCGAN Generator",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d204c2a3-1106-40a7-999d-c8c9118a18ab",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 783305,
+              "key": "a40162ce-24a5-44cf-9adb-4c309f411c78",
+              "title": "DCGAN Architecture Generator RENDER V1 V3",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "2Nhg5VxbAdo",
+                "china_cdn_id": "2Nhg5VxbAdo.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 778976,
+          "key": "4b59dff3-47de-41ed-96ec-9f694e22ceab",
+          "title": "What is Batch Normalization?",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "4b59dff3-47de-41ed-96ec-9f694e22ceab",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 780857,
+              "key": "57aa8958-4975-4071-b20e-447a554e8018",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# What is Batch Normalization?\n\nBatch normalization was introduced in Sergey Ioffe's and Christian Szegedy's 2015 paper [Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift](https://arxiv.org/pdf/1502.03167.pdf). The idea is that, instead of just normalizing the inputs to the network, we normalize the inputs to every layer *within* the network.\n\n### Batch Normalization\nIt's called \"batch\" normalization because, during **training**, we normalize each layer's inputs by using the *mean* and *standard deviation* (or variance) of the values in the current batch. These are sometimes called the **batch statistics**.\n\n> Specifically, batch normalization normalizes the output of a previous layer by **subtracting the batch mean and dividing by the batch standard deviation**.\n\nWhy might this help? Well, we know that normalizing the inputs to a network helps the network learn and converge to a solution. However, a network is a series of layers, where the output of one layer becomes the input to another. That means we can think of any layer in a neural network as the _first_ layer of a smaller network.\n\n### Normalization at Every Layer\n\nFor example, imagine a 3 layer network.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 780876,
+              "key": "52b4a303-2640-475b-a653-e4b0fe2b0fd6",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2018/November/5be3855d_3-layers/3-layers.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/52b4a303-2640-475b-a653-e4b0fe2b0fd6",
+              "caption": "3 layer network",
+              "alt": "",
+              "width": 320,
+              "height": 798,
+              "instructor_notes": null
+            },
+            {
+              "id": 780858,
+              "key": "8b16a00e-9f13-45bb-a443-e66f6e08ecf3",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Instead of just thinking of it as a single network with inputs, layers, and outputs, think of the output of layer 1 as the input to a two layer network. This two layer network would consist of layers 2 and 3 in our original network. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 780879,
+              "key": "5386849e-d38d-4be9-943c-e0e1de365d18",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2018/November/5be38631_2-layers/2-layers.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/5386849e-d38d-4be9-943c-e0e1de365d18",
+              "caption": "2 layer network",
+              "alt": "",
+              "width": 320,
+              "height": 689,
+              "instructor_notes": null
+            },
+            {
+              "id": 780859,
+              "key": "044832ab-807a-4f81-b217-6beb524a31e7",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Likewise, the output of layer 2 can be thought of as the input to a single layer network, consisting only of layer 3.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 780880,
+              "key": "985cbd9f-6ec4-444b-a1f7-547c1f68cb4c",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2018/November/5be38649_one-layer/one-layer.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/985cbd9f-6ec4-444b-a1f7-547c1f68cb4c",
+              "caption": "One layer network",
+              "alt": "",
+              "width": 200,
+              "height": 598,
+              "instructor_notes": null
+            },
+            {
+              "id": 780860,
+              "key": "3732a82b-2895-47ee-95ef-b7205f5a2d36",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "When you think of it like this - as a series of neural networks feeding into each other - then it's easy to imagine how normalizing the inputs to each layer would help. It's just like normalizing the inputs to any other neural network, but you're doing it at **every layer (sub-network)**.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 780863,
+              "key": "57b92919-dd02-402d-a241-da3a1d8ff779",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Internal Covariate Shift\n\nBeyond the intuitive reasons, there are good mathematical reasons to motivate batch normalization. It helps combat what the authors call **internal covariate shift**. \n\n>In this case, internal covariate shift refers to the change in the distribution of the inputs to different layers. It turns out that training a network is most efficient when the distribution of inputs to each layer is similar!\n\nAnd batch normalization is one method of standardizing the distribution of layer inputs. This discussion is best handled [in the paper](https://arxiv.org/pdf/1502.03167.pdf) and in [Deep Learning](http://www.deeplearningbook.org), a book you can read online written by Ian Goodfellow, Yoshua Bengio, and Aaron Courville. Specifically, check out the batch normalization section of [Chapter 8: Optimization for Training Deep Models](http://www.deeplearningbook.org/contents/optimization.html).",
+              "instructor_notes": ""
+            },
+            {
+              "id": 780916,
+              "key": "62d69c33-0f84-4566-8617-1e50a8e2f27e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "---\n# The Math\n\nNext, let's do a deep dive into the math behind batch normalization. This is not critical for you to know, but it may help your understanding of this whole process!\n\n## Getting the mean and variance\n\nIn order to normalize the values, we first need to find the average value for the batch. If you look at the code, you can see that this is not the average value of the batch _inputs_, but the average value coming _out_ of any particular layer before we pass it through its non-linear activation function and then feed it as an input to the _next_ layer.\n\nWe represent the average as **mu_B** <div class=\"mathquill\"> \\mu_B </div> which is simply the sum of all of the values,  **x_i** divided by the number of values, **m**.\n\n <div class=\"mathquill\">\n\\mu_B \\leftarrow \\frac{1}{m}\\sum_{i=1}^m x_i\n</div>\n\nWe then need to calculate the variance, or mean squared deviation, represented as  <div class=\"mathquill\">\\sigma_{B}^{2}</div> \n\nIf you aren't familiar with statistics, that simply means for each value **x_i**, we subtract the average value (calculated earlier as **mu_B**), which gives us what's called the \"deviation\" for that value. We square the result to get the squared deviation. Sum up the results of doing that for each of the values, then divide by the number of values, again **m**, to get the average, or mean, squared deviation.\n\n <div class=\"mathquill\">\n\\sigma_{B}^{2} \\leftarrow \\frac{1}{m}\\sum_{i=1}^m (x_i - \\mu_B)^2\n</div>\n\n## Normalizing output values\n\nOnce we have the mean and variance, we can use them to normalize the values with the following equation. For each value, it subtracts the mean and divides by the (almost) standard deviation. (You've probably heard of standard deviation many times, but if you have not studied statistics you might not know that the standard deviation is actually the square root of the mean squared deviation.)\n\n <div class=\"mathquill\">\n\\hat{x_i} \\leftarrow \\frac{x_i - \\mu_B}{\\sqrt{\\sigma_{B}^{2} + \\epsilon}}\n</div>\n\nAbove, we said \"(almost) standard deviation\". That's because the real standard deviation for the batch is calculated by  <div class=\"mathquill\">\\sqrt{\\sigma_{B}^{2}}</div>\n\nbut the above formula adds the term epsilon before taking the square root. The epsilon can be any small, positive constant, ex. the value `0.001`. It is there partially to make sure we don't try to divide by zero, but it also acts to increase the variance slightly for each batch. \n\nWhy add this extra value and mimic an increase in variance? Statistically, this makes sense because even though we are normalizing one batch at a time, we are also trying to estimate the population distribution – the total training set, which itself an estimate of the larger population of inputs your network wants to handle. The variance of a population is _typically_ higher than the variance for any sample taken from that population, especially when you use a small sample size (a small sample is more likely to include values near the peak of a population distribution), so increasing the variance a little bit for each batch helps take that into account. \n\nAt this point, we have a normalized value, represented as  <div class=\"mathquill\">\\hat{x_i}</div>\n\nBut rather than use it directly, we multiply it by a **gamma** value, and then add a **beta** value. Both gamma and beta are learnable parameters of the network and serve to scale and shift the normalized value, respectively. Because they are learnable just like weights, they give your network some extra knobs to tweak during training to help it learn the function it is trying to approximate.  \n\n<div class=\"mathquill\">\ny_i \\leftarrow \\gamma \\hat{x_i} + \\beta\n</div>\n\nWe now have the final batch-normalized output of our layer, which we would then pass to a non-linear activation function like sigmoid, tanh, ReLU, Leaky ReLU, etc. In the original batch normalization paper, they mention that there might be cases when you'd want to perform the batch normalization _after_ the non-linearity instead of before, but it is difficult to find any uses like that in practice.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 782222,
+              "key": "63dc4d66-05bf-45d7-b5a1-889c16592aa1",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### Next, take a look at the effect of batch normalization, by applying it to a PyTorch model!",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 780849,
+          "key": "dbe8345b-96d5-4889-97d6-569e9b588c0b",
+          "title": "Pre-Notebook: Batch Norm",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "dbe8345b-96d5-4889-97d6-569e9b588c0b",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 782215,
+              "key": "eabd5724-4936-4f6d-81d2-42ee55ecd141",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Notebook: Batch Normalization\n\nAfter learning about batch normalization and how it works, add it to a simple model and see how it improves convergence.\n\nThe next notebook will show you how a simple MNIST classification model improves with the addition of batch normalization layers. It is suggested that you read through the text in the notebook and run each cell to see the effects of batch normalization. You're also encouraged to create tests of your own with even more complex networks!\n\nTo open this notebook, you have two options:\n>- Go to the next page in the classroom (recommended).\n- Clone the repo from [Github](https://github.com/udacity/deep-learning-v2-pytorch) and open the notebook **Batch_Normalization.ipynb** in the **batch-norm** folder.  You can either download the repository with `git clone https://github.com/udacity/deep-learning-v2-pytorch.git`, or download it as an archive file from [this link](https://github.com/udacity/deep-learning-v2-pytorch/archive/master.zip).\n\n# Instructions\n\n* This is an example notebook, please carefully read the text in the notebook and run each cell to see how two different models (one with and one without batch normalization) perform",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 780851,
+          "key": "0771d95f-dbb8-47f1-a06b-a15d6850a2bb",
+          "title": "Notebook: Batch Norm",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "0771d95f-dbb8-47f1-a06b-a15d6850a2bb",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 782224,
+              "key": "28ebe485-6703-4343-82b7-da239c73b38c",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r633452c780851xJUPYTER8t0s349w",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-oqhaf",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Batch_Normalization.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 778977,
+          "key": "ee902b80-208f-41a7-9111-03bfe1333cdd",
+          "title": "Benefits of Batch Normalization",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "ee902b80-208f-41a7-9111-03bfe1333cdd",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 782219,
+              "key": "e3378b19-d499-4632-83c4-64cb35119aec",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Adding Batch Normalization Layers to a PyTorch Model\n\nIn the last notebook, you saw how a model with batch normalization applied reached a lower training loss and higher test accuracy!  There are quite a few comments in that code, and I just want to recap a few of the most important lines.\n\nTo add batch normalization layers to a PyTorch model:\n* You add batch normalization to layers inside the` __init__` function.\n* Layers with batch normalization do not include a bias term. So, for linear or convolutional layers, you'll need to set `bias=False` if you plan to add batch normalization on the outputs.\n* You can use PyTorch's [BatchNorm1d] function to handle the math on linear outputs *or* [BatchNorm2d] for 2D outputs, like filtered images from convolutional layers.\n* You add the batch normalization layer *before* calling the activation function, so it always goes layer > batch norm > activation.\n\nFinally, when you tested your model, you set it to `.eval()` mode, which ensures that the batch normalization layers use the *population*rather than the *batch* mean and variance (as they do during training).",
+              "instructor_notes": ""
+            },
+            {
+              "id": 780886,
+              "key": "f5bee40d-fc7d-4746-b57c-65f07791dda3",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2018/November/5be38916_screen-shot-2018-11-07-at-4.53.24-pm/screen-shot-2018-11-07-at-4.53.24-pm.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/f5bee40d-fc7d-4746-b57c-65f07791dda3",
+              "caption": "Batch normalization benefits",
+              "alt": "",
+              "width": 400,
+              "height": 536,
+              "instructor_notes": null
+            },
+            {
+              "id": 782221,
+              "key": "b207ec9a-dd6a-4b24-8ef5-651096f379b0",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### The takeaway\n\nBy using batch normalization to normalize the inputs at each layer of a network, we can make these inputs more consistent and thus reduce oscillations that may happen in gradient descent calculations. This helps us build deeper models that also converge faster!\n\n> Take a look at the [PyTorch BatchNorm2d documentation](https://pytorch.org/docs/stable/nn.html#batchnorm2d) to learn more about how to add batch normalization to a model, and how data is transformed during training (and evaluation).",
+              "instructor_notes": ""
+            },
+            {
+              "id": 780882,
+              "key": "73cd994f-b8f2-43a0-9745-7b974c69a8db",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Benefits of Batch Normalization\n\nBatch normalization optimizes network training. It has been shown to have several benefits:\n1. **Networks train faster** – Each training _iteration_ will actually be slower because of the extra calculations during the forward pass and the additional hyperparameters to train during back propagation. However, it should converge much more quickly, so training should be faster overall. \n2. **Allows higher learning rates** – Gradient descent usually requires small learning rates for the network to converge. And as networks get deeper, their gradients get smaller during back propagation so they require even more iterations. Using batch normalization allows us to use much higher learning rates, which further increases the speed at which networks train. \n3. **Makes weights easier to initialize** – Weight initialization can be difficult, and it's even more difficult when creating deeper networks. Batch normalization seems to allow us to be much less careful about choosing our initial starting weights.  \n4. **Makes more activation functions viable** – Some activation functions do not work well in some situations. Sigmoids lose their gradient pretty quickly, which means they can't be used in deep networks. And ReLUs often die out during training, where they stop learning completely, so we need to be careful about the range of values fed into them. Because batch normalization regulates the values going into each activation function, non-linearlities that don't seem to work well in deep networks actually become viable again.  \n5. **Simplifies the creation of deeper networks** – Because of the first 4 items listed above, it is easier to build and faster to train deeper neural networks when using batch normalization. And it's been shown that deeper networks generally produce better results, so that's great.\n6. **Provides a bit of regularization** – Batch normalization adds a little noise to your network. In some cases, such as in Inception modules, batch normalization has been shown to work as well as dropout. But in general, consider batch normalization as a bit of extra regularization, possibly allowing you to reduce some of the dropout you might add to a network. \n7. **May give better results overall** – Some tests seem to show batch normalization actually improves the training results. However, it's really an optimization to help train faster, so you shouldn't think of it as a way to make your network better. But since it lets you train networks faster, that means you can iterate over more designs more quickly. It also lets you build deeper networks, which are usually better. So when you factor in everything, you're probably going to end up with better results if you build your networks with batch normalization.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 778978,
+          "key": "4f7eee6d-5132-46b7-8a5a-1fa8c461e92c",
+          "title": "DCGAN Notebook & Data",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "4f7eee6d-5132-46b7-8a5a-1fa8c461e92c",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 783224,
+              "key": "a0a74f65-fae3-417d-90dd-e5cc50cd889e",
+              "title": "4 DCGAN Notebook Data V1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "4_OnTTDSFPo",
+                "china_cdn_id": "4_OnTTDSFPo.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 778980,
+          "key": "5468f860-ab5e-49ff-ac4d-1119de4fb442",
+          "title": "Pre-Notebook: DCGAN, SVHN",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5468f860-ab5e-49ff-ac4d-1119de4fb442",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 782229,
+              "key": "4c953196-50e9-4642-9b3b-4ea7d2b4c645",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Notebook: DCGAN, SVHN\n\nNow you have all the information you need to implement a deep convolutional GAN, capable of generating more complex images! The next notebook is all about building a DCGAN that can generate new images that look like house addresses from the Google Streetview dataset, SVHN.\n\n**It's suggested that you open the notebook in a new, working tab and continue working on it as you go through the instructional videos in this tab.** This way you can toggle between learning new skills and coding/applying new skills.\n\nTo open this notebook, you have two options:\n>- Go to the next page in the classroom (recommended).\n- Clone the repo from [Github](https://github.com/udacity/deep-learning-v2-pytorch) and open the notebook **DCGAN_Exercise.ipynb** in the **dcgan-svhn** folder.  You can either download the repository with `git clone https://github.com/udacity/deep-learning-v2-pytorch.git`, or download it as an archive file from [this link](https://github.com/udacity/deep-learning-v2-pytorch/archive/master.zip).\n\n# Instructions\n\n* Load in SVHN data\n* Pre-process that data, scaling the pixel values to a desired range\n* Define two adversarial networks; a Discriminator and Generator that utilize convolutional or transpose convolutional layers\n* Train the networks and generate new images\n\nThis is a self-assessed lab. If you need any help or want to check your answers, feel free to check out the solutions notebook in the same folder, or by clicking [here](https://github.com/udacity/deep-learning-v2-pytorch/blob/master/dcgan-svhn/DCGAN_Solution.ipynb).",
+              "instructor_notes": ""
+            },
+            {
+              "id": 782232,
+              "key": "2cb49ea7-2e09-405f-9d15-4f8cf32d2e39",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### GPU Workspaces\n\nThe next workspace is **GPU-enabled**, which means you can select to train on a GPU instance. The recommendation is this:\n* Load in data, test functions and models (checking parameters and doing a short training loop) while in CPU (non-enabled) mode\n* When you're ready to extensively train and test your model, **enable** GPU to quickly train the model!\n\nAll models and data they see as input will have to be moved to the GPU device, so take note of the relevant movement code in the model creation and training process.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 778981,
+          "key": "6de54fde-8314-4f6b-9c86-db561bfee5a5",
+          "title": "Notebook: DCGAN, SVHN",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "6de54fde-8314-4f6b-9c86-db561bfee5a5",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 779688,
+              "key": "2c38acca-500f-4c0e-bf33-cc228c36e8f2",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r633452c778981xJUPYTER9o8b6iq5",
+              "pool_id": "jupytergpu",
+              "view_id": "jupyter-1vi1j",
+              "gpu_capable": true,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/DCGAN_Exercise.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 778979,
+          "key": "025eef1b-40cc-4111-83e8-3bd66b6d1d76",
+          "title": "Scaling, Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "025eef1b-40cc-4111-83e8-3bd66b6d1d76",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 783225,
+              "key": "334472dc-eba2-41e0-943a-66f5580dac22",
+              "title": "5 Scaling Solution V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Aqru1dIMLzU",
+                "china_cdn_id": "Aqru1dIMLzU.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 778982,
+          "key": "22a9ab62-016d-43c6-a606-7948cdb1e2c7",
+          "title": "Discriminator",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "22a9ab62-016d-43c6-a606-7948cdb1e2c7",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 783226,
+              "key": "f84df99d-d7c2-4a42-a757-985317dba0c8",
+              "title": "6 Discriminator V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "bBE-f30JT5I",
+                "china_cdn_id": "bBE-f30JT5I.mp4"
+              }
+            },
+            {
+              "id": 782917,
+              "key": "8cc24a25-e73e-41a7-a174-730ee5c483dd",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Why no `bias`?\n\nThe reason there is no `bias` for our convolutional layers is because we have batch normalization applied to their outputs. The goal of batch normalization is to get outputs with:\n* mean = 0\n* standard deviation = 1\n\nSince we want the mean to be 0, we do *not* want to add an offset (bias) that will deviate from 0. We want the outputs of our convolutional layer to rely only on the coefficient weights.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 778984,
+          "key": "d9c0b495-be67-4755-8c11-d6711de660fc",
+          "title": "Discriminator, Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d9c0b495-be67-4755-8c11-d6711de660fc",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 783227,
+              "key": "5216d886-957c-4d32-81c4-a282a1dfd849",
+              "title": "7 Discriminator Solution V1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "D3E0BDwb2pY",
+                "china_cdn_id": "D3E0BDwb2pY.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 778986,
+          "key": "fc608842-2b8d-4662-9978-7e61a7f561b5",
+          "title": "Generator",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "fc608842-2b8d-4662-9978-7e61a7f561b5",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 783228,
+              "key": "5f945f5c-3a94-47c2-874e-c4adfa014a18",
+              "title": "8 Generator V1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "zRajfkO-J7s",
+                "china_cdn_id": "zRajfkO-J7s.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 778987,
+          "key": "c30a8d26-eb25-42c5-a70f-d72ec3e76bed",
+          "title": "Generator, Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c30a8d26-eb25-42c5-a70f-d72ec3e76bed",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 783229,
+              "key": "262312b4-048b-4996-9c67-ba8ed0836b3d",
+              "title": "9 Generator Solution V1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "cznaE5TlKEo",
+                "china_cdn_id": "cznaE5TlKEo.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 778989,
+          "key": "e5dd394f-ee44-4415-9b85-f742e85fe2d9",
+          "title": "Optimization Strategy",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "e5dd394f-ee44-4415-9b85-f742e85fe2d9",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 783230,
+              "key": "16e806bb-05cf-46ca-b95c-3168dac44cfd",
+              "title": "10 Optimization Strategy V1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "US0HjU0alv4",
+                "china_cdn_id": "US0HjU0alv4.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 778990,
+          "key": "4f56bfbf-0ac3-4271-b929-98939f6a63aa",
+          "title": "Optimization Solution & Samples",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "4f56bfbf-0ac3-4271-b929-98939f6a63aa",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 783232,
+              "key": "2a3496f5-9334-4f8c-a91d-a9f107a0f2e3",
+              "title": "11 Optimization Solution Sampling V1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "mJyeXSClnmw",
+                "china_cdn_id": "mJyeXSClnmw.mp4"
+              }
+            },
+            {
+              "id": 782237,
+              "key": "a91bc651-543c-4338-b795-d7d469bb33cd",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Forgotten: Scaling Step!\n\nIn the above training code, I forgot to include the scaling function for our real training images! Before passing in the images to our discriminator there should be a scaling step:\n```python\n# important rescaling step\nreal_images = scale(real_images)\n```\n\nThis has been fixed in the exercise and solution notebooks in the classroom and the Github repository.\n\n**You should see a smoother decrease in Generator loss** (as pictured below) with the addition of this line of code *and* slightly different-looking generated, sample images.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 782918,
+              "key": "9df0356d-6ba3-4cac-b1d9-cb00278764f9",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2018/November/5bea0fba_screen-shot-2018-11-12-at-3.41.20-pm/screen-shot-2018-11-12-at-3.41.20-pm.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/9df0356d-6ba3-4cac-b1d9-cb00278764f9",
+              "caption": "Actual training loss",
+              "alt": "",
+              "width": 400,
+              "height": 534,
+              "instructor_notes": null
+            },
+            {
+              "id": 782919,
+              "key": "6a928331-01ee-4a98-88e7-aca1ef3fab07",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In hindsight, I should have known that something was wrong with my training process due to the increasing and slightly unstable Generator loss in this video! For me, this is a good lesson in using a mix of intuition and training results to double check my work.\n\nThe correct scaling code and solution has been fixed in the in-classroom code and in [the Github repo](https://github.com/udacity/deep-learning-v2-pytorch/blob/master/dcgan-svhn/DCGAN_Solution.ipynb).",
+              "instructor_notes": ""
+            },
+            {
+              "id": 782920,
+              "key": "7f96becd-8ac7-4b48-9363-702bcab8bc94",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## GANs for Illuminating Model Weaknesses\n\nGANs are not only used for image generation, they are also used to find weaknesses in existing, trained models. The adversarial examples that a generator learns to make, can be designed to _trick_ a pre-trained model. Essentially, small perturbations in images can cause a classifier (like AlexNet or a known image classifier) to fail pretty spectacularly!\n> [This OpenAI blog post](https://blog.openai.com/adversarial-example-research/) details how adversarial examples can be used to \"attack\" existing models, and discusses potential security issues. And one example of a perturbation that causes misclassification can be seen below.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 782921,
+              "key": "dd2d6490-b843-4622-b67d-6dfedff8844b",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2018/November/5bea117c_screen-shot-2018-11-12-at-3.47.20-pm/screen-shot-2018-11-12-at-3.47.20-pm.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/dd2d6490-b843-4622-b67d-6dfedff8844b",
+              "caption": "",
+              "alt": "Image of a panda misclassified as an ape.",
+              "width": 400,
+              "height": 472,
+              "instructor_notes": null
+            },
+            {
+              "id": 782925,
+              "key": "5653a4da-af6d-4f5a-a732-e8193082ec90",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Adding a small amount of noise to an image of a panda causes a model to misclassify it as a [gibbon](https://en.wikipedia.org/wiki/Gibbon), which is a kind of ape. One of the interesting parts of this is the model's confidence. With this noise it is **99.3**% confident that this is an image of a gibbon, when we can pretty clearly see that it is a panda!",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 782927,
+          "key": "62376c83-5039-4204-9cfb-c7812ef77e9c",
+          "title": "Other Applications of GANs",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "62376c83-5039-4204-9cfb-c7812ef77e9c",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 782928,
+              "key": "5fa2f278-64b0-4bdd-a638-ca9ba6024b78",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Other Interesting Applications of GANs\n\nSo far, you've seen a lot of examples of how GANs might be used for image generation and transformation. GANs are a relatively new formulation and so there are some really exciting research directions that include GANs. I didn't have time to cover them all in video, so I wanted to highlight a few of my favorite examples, here, and link to some resources that I've found helpful! **This page is for those who are interested in learning more about GANs and curious to learn about semi-supervised learning.**",
+              "instructor_notes": ""
+            },
+            {
+              "id": 783014,
+              "key": "11357718-28cf-4581-a519-221236789402",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### 1. Semi-Supervised Learning\n\nSemi-supervised models are used when you only have a *few* labeled data points. The motivation for this kind of model is that, we increasingly have a lot of raw data, and the task of labelling data is tedious, time-consuming, and often, sensitive to human error. Semi-supervised models give us a way to learn from a large set of data with only a few labels, and they perform surprisingly well even though the amount of labeled data you have is relatively tiny. Ian Goodfellow has put together a video on this top, which you can see, below.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 783017,
+              "key": "bae9a303-deb5-48bc-a5b3-b1e83344e42c",
+              "title": "Semi-Supervised Learning",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "_LRpHPxZaX0",
+                "china_cdn_id": "_LRpHPxZaX0.mp4"
+              }
+            },
+            {
+              "id": 783021,
+              "key": "bd1b4a65-e80a-4810-a950-016dd86dd0e1",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Semi-Supervised Learning in PyTorch\n\nThere is a readable implementation of a semi-supervised GAN in [this Github repository](https://github.com/Sleepychord/ImprovedGAN-pytorch). If you'd like to implement this in code, I suggest reading through that code!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 783457,
+              "key": "7d8841c4-74b7-4463-9975-6563ebf7a1ec",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### 2. Domain Invariance\n\nConsider [this car classification example](https://arxiv.org/abs/1709.02480). From the abstract, researchers (Timnit Gebru, et. al) wanted to:\n> develop a computer vision pipeline to predict income, per capita carbon emission, crime rates and other city attributes from a single source of publicly available visual data. We first detect cars in 50 million images across 200 of the largest US cities and train a model to predict demographic attributes using the detected cars. To facilitate our work, we have collected the largest and most challenging fine-grained dataset reported to date consisting of over 2600 classes of cars comprised of images from Google Street View and other web sources, classified by car experts to account for even the most subtle of visual differences.\n\nOne interesting thing to note is that these researchers obtained some manually-labeled Streetview data *and* data from other sources. I'll call these image sources, domains. So Streetview is a domain and another source, say cars.com is separate domain. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 783458,
+              "key": "e48a62cf-8b80-4bcd-bfc7-1e56c952efe2",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2018/November/5beb5911_screen-shot-2018-11-13-at-3.06.36-pm/screen-shot-2018-11-13-at-3.06.36-pm.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/e48a62cf-8b80-4bcd-bfc7-1e56c952efe2",
+              "caption": "Different image sources for the paper, \n[Fine-Grained Car Detection for Visual Census Estimation](https://arxiv.org/abs/1709.02480)",
+              "alt": "",
+              "width": 600,
+              "height": 794,
+              "instructor_notes": null
+            },
+            {
+              "id": 783459,
+              "key": "e956dbee-d644-4330-91ed-4e648f51f6b6",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "The researchers then had to find a way to combine what they learned from these multiple sources! They did this with the use of multiple classifiers; adversarial networks that do *not* include a Generator, just two classifiers.\n>* One classifier is learning to recognize car types\n* And another is learning to classify whether a car image came from Google Streetview *or* cars.com, given the extracted features from that image\n\nSo, the first classier’s job is to classify the car image correctly *and* to **trick the second classifier** so that the second classifier cannot tell whether the extracted image features indicate an image from the Streetview or cars.com domain!\n\nThe idea is: if the second classifier cannot tell which domain the features are from, then this indicates that these features are shared among the two domains, and you’ve found features that are **domain-invariant**.\n\nDomain-invariance can be applied to a number of applications in which you want to find features that are invariant between two different domains. These can be image domains or domains based on different population demographics and so on. This is also sometimes referred to as [adversarial feature learning](https://arxiv.org/pdf/1705.11122.pdf).",
+              "instructor_notes": ""
+            },
+            {
+              "id": 783449,
+              "key": "ef90ac41-67a3-46e2-85f8-a4ffbf44996c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### 3. Ethical and Artistic Applications: Further Reading\n\n* [Ethical implications of GANs](https://www.newyorker.com/magazine/2018/11/12/in-the-age-of-ai-is-seeing-still-believing) and when \"fake\" images can give us information about reality.\n* [Do Androids Dream in Balenciaga?](https://www.ssense.com/en-us/editorial/fashion/do-androids-dream-of-balenciaga-ss29) note that the author briefly talks about generative models having artistic potential rather than ethical implications, but the two go hand in hand. The generator, in this case, will recreate what it sees on the fashion runway; typically thin, white bodies that do not represent the diversity of people in the world (or even the diversity of people who buy Balenciaga).",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

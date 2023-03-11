@@ -1,0 +1,2297 @@
+{
+  "data": {
+    "lesson": {
+      "id": 907674,
+      "key": "53139bef-389d-4d0a-b7b6-e4bb4bd0ef0c",
+      "title": "SQLAlchemy Basics",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Learn to use SQLAlchemy and SQLAlchemy ORM to work with a relational database in Python.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/53139bef-389d-4d0a-b7b6-e4bb4bd0ef0c/907674/1581172500402/SQLAlchemy+Basics+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/53139bef-389d-4d0a-b7b6-e4bb4bd0ef0c/907674/1581172494475/SQLAlchemy+Basics+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 907660,
+          "key": "98895b2f-4fd4-44e7-bba7-7995602b9cf8",
+          "title": "Introduction",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "98895b2f-4fd4-44e7-bba7-7995602b9cf8",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 907596,
+              "key": "2952507d-a217-4d95-bdad-e8fec7d6f6b8",
+              "title": "Lesson Overview Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Introduction",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907587,
+              "key": "763e7836-d7b5-4533-8b49-07a67febe234",
+              "title": "ND004 C01 L03 01 Lesson Overview",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "scjKnJFSblY",
+                "china_cdn_id": "scjKnJFSblY.mp4"
+              }
+            },
+            {
+              "id": 917400,
+              "key": "a445e927-9bfb-4b95-b592-cae8fd2c4fd1",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Takeaways + A Note on ORMS\n\n#### SQLAlchemy\n\n* SQLAlchemy is the most popular open-source library for working with relational databases from Python.\n* It is one type of **ORM** library, AKA an **Object-Relational Mapping** library, which provides an interface for using [object oriented programming](https://www.quora.com/What-is-object-oriented-programming?share=1) to interact with a database.\n\nOther ORM libraries that exist across other languages include popular choices like javascript libraries [Sequelize](https://sequelize.org/) and [Bookshelf.js](https://bookshelfjs.org/) for NodeJS applications, the ruby library [ActiveRecord](https://guides.rubyonrails.org/active_record_basics.html), which is used inside [Ruby on Rails](https://rubyonrails.org/), and [CakePHP](https://book.cakephp.org/3/en/orm.html) for applications written on PHP, amongst many other such ORMs.\n\n> ##### Note on ORMs: are they a \"best practice\"?\n>\n> Using an ORM to interact with your database is simply _one of many_ valid approaches for how you can add additional layers of abstraction to your web application to interact with a database more easily. There are other kinds of query builder libraries you can use that are between talking to a database directly (with a database driver library like pyscopg2), and using an ORM. An ORM is considered to be the highest level of abstraction you can add to a web application for database management. Query Builder libraries are somewhere in the middle. There are many mixed opinions about whether ORMs are a best practice approach in all cases, [such as this opinion on \"Why you should avoid ORMs\"](https://blog.logrocket.com/why-you-should-avoid-orms-with-examples-in-node-js-e0baab73fa5/).\n>\n> Thankfully, SQLAlchemy happens to offer multiple levels of abstraction you can prefer, between the database driver and the ORM, so you can customize the development of your web application to your own liking. The many granular levels of abstraction that SQLAlchemy offers, which we will touch upon in the next lesson, is one of the reasons that has led to its widespread popularity and diverse ways of using the library and approaching your database programming.\n\nSQLAlchemy:\n\n* Features **function-based query construction**: allows SQL clauses to be built via Python functions and expressions.\n\n* **Avoid writing raw SQL**. It generates SQL and Python code for you to access tables, which leads to less database-related overhead in terms of the volume of code you need to write overall to interact with your models.\n\n* Moreover, you can  **avoid sending SQL to the database on every call**. The SQLAlchemy ORM library features **automatic caching**, caching collections and references between objects once initially loaded.\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 909317,
+              "key": "a306ee16-1f3c-4a1e-ace0-62acbedb3453",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "a306ee16-1f3c-4a1e-ace0-62acbedb3453",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What is SQLAlchemy?",
+                "answers": [
+                  {
+                    "id": "a1565380786203",
+                    "text": "A dialect (flavor) of SQL",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1565380794399",
+                    "text": "A dialect (flavor) of JavaScript",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1565380795011",
+                    "text": "A JavaScript library for writing SQL statements",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1565380823994",
+                    "text": "A Python library for working with relational databases",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 909319,
+              "key": "8488371f-910f-4d79-99da-f08188e204cb",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "8488371f-910f-4d79-99da-f08188e204cb",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What does **ORM** stand for?",
+                "answers": [
+                  {
+                    "id": "a1565381003431",
+                    "text": "Object Reference Mapping",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1565381022251",
+                    "text": "Organized Relational Mapping",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1565381022946",
+                    "text": "Organized Reticulated Mapping",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1565381119594",
+                    "text": "Object Relational Mapping",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 909320,
+              "key": "e4cf4afd-dbe9-40ba-b885-f9f7af9386dc",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "e4cf4afd-dbe9-40ba-b885-f9f7af9386dc",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What does an ORM do?",
+                "answers": [
+                  {
+                    "id": "a1565381222925",
+                    "text": "Maps tables and columns to class objects and attributes.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1565381249769",
+                    "text": "Maps methods and functions to classes and objects.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1565381250641",
+                    "text": "Maps syntax structure to code semantics.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1565381285273",
+                    "text": "Maps tables to columns and objects to classes.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 909321,
+              "key": "1f45a051-0d4d-451c-9729-708de8450984",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "1f45a051-0d4d-451c-9729-708de8450984",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "An ORM allows you to…",
+                "answers": [
+                  {
+                    "id": "a1565381388246",
+                    "text": "Interact with a database using an object-oriented language like Python, rather than writing raw SQL.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1565381475799",
+                    "text": "Interact with a database using SQL, rather than having to code in an object-oriented language like Python.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 909322,
+              "key": "f34a017a-023f-4679-a956-81e2b49de481",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "f34a017a-023f-4679-a956-81e2b49de481",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Suppose you have the following code for querying a database:\n\n```\nCREATE TABLE products (\n  id INTEGER PRIMARY KEY,\n  description VARCHAR NOT NULL\n);\n```\n\nWould this query work with any database management system you're working with?",
+                "answers": [
+                  {
+                    "id": "a1565381710288",
+                    "text": "Yes—this code will work in any essentially any system",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1565381810107",
+                    "text": "No—this code will only work in some systems",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 909318,
+              "key": "64d04679-82f1-4b76-967f-35dc0430cb6f",
+              "title": "",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "64d04679-82f1-4b76-967f-35dc0430cb6f",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Select all of the reasons to use SQLALchemy over writing raw SQL:",
+                "answers": [
+                  {
+                    "id": "a1565380948420",
+                    "text": "Write less bug-prone code",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1565380960186",
+                    "text": "Work entirely in Python",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1565380960778",
+                    "text": "Avoid using relational databases",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566186707422",
+                    "text": "Be able to switch database systems easily without rewriting code",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1566186735672",
+                    "text": "Avoid establishing connections with the database to interact with it",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 907664,
+          "key": "d35f8053-b340-4943-8198-fde03807a8bb",
+          "title": "Layers of Abstraction",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d35f8053-b340-4943-8198-fde03807a8bb",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 907590,
+              "key": "c6141192-f5c9-473e-abb0-c80e25c20dc5",
+              "title": "in SQLAlchemy Intro",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# SQLAlchemy's Layers of Abstraction\n\nSQLAlchemy is broken down into various layers of abstraction. Let's go through each layer in depth.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907599,
+              "key": "67bffffd-c5eb-48b1-bc22-c9aba0b2ea2f",
+              "title": "ND004 C01 L03 02 Layers Of Abstraction",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "mMjnm0g0Rs8",
+                "china_cdn_id": "mMjnm0g0Rs8.mp4"
+              }
+            },
+            {
+              "id": 917308,
+              "key": "21a7c4ab-80f4-406f-ba70-fa6cebbd0b5a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Takeaways\n\n* Without SQLAlchemy, we'd only use a DBAPI to establish connections and execute SQL statements. Simple, but not scalable as complexity grows.\n* SQLAlchemy offers several layers of abstraction and convenient tools for interacting with a database.\n\n#### SQLAlchemy vs psycopg2\n\n* SQLAlchemy **generates** SQL statements\n* psycopg2 directly **sends** SQL statements to the database.\n* SQLAlchemy depends on psycopg2 or other database drivers to communicate with the database, under the hood.\n\n### SQLALchemy lets you traverse through all 3 layers of abstraction to interact with your database.\n\n* Can stay on the ORM level\n* Can dive into database operations to run customized SQL code specific to the database, on the Expressions level.\n* Can write raw SQL to execute, when needed, on the Engine level.\n\t* Can more simply use `psycopg2` in this case\n\n\n### Good Design Practice (Opinion)\n\nHere's my opinion on interacting with databases using good design practice.\n\n* Keep your code Pythonic. Work in classes and objects as much as possible.\n\t* Makes switching to a different backend easy in the feature.\n* Avoid writing raw SQL until absolutely necessary\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917309,
+              "key": "ea3f14b2-b268-4e5a-a391-ff6e37a26287",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In the next series of videos, we'll go over every layer of abstraction in SQLAlchemy and what they offer.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917310,
+              "key": "8ce390c3-5834-4882-bd1f-ff2e299d35aa",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2019/August/5d5a1ede_sqla/sqla.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/8ce390c3-5834-4882-bd1f-ff2e299d35aa",
+              "caption": "",
+              "alt": "",
+              "width": 800,
+              "height": 800,
+              "instructor_notes": null
+            },
+            {
+              "id": 917311,
+              "key": "84a7d8e9-5d8d-4a32-8018-95d390e41262",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Layers of SQLAlchemy\n\n1. DBAPI\n2. The Dialect\n3. The Connection Pool\n4. The Engine\n5. SQL Expressions\n6. SQLAlchemy ORM (optional)\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 907663,
+          "key": "e71f2b13-557b-4228-b10a-a14cdd25b06f",
+          "title": "The Dialect",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "e71f2b13-557b-4228-b10a-a14cdd25b06f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 907604,
+              "key": "3768575d-8fc8-4825-9c71-3b2a0537b39b",
+              "title": "The Dialect Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# The Dialect",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907612,
+              "key": "beb2fbd3-3d99-4eee-b7da-18584d00b223",
+              "title": "ND004 C01 L03 03 The Dialect",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "q-gA2rSOMqI",
+                "china_cdn_id": "q-gA2rSOMqI.mp4"
+              }
+            },
+            {
+              "id": 917312,
+              "key": "e6df1c39-e08e-42fb-87d5-990f682c742a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Resources\n\n[SQLAlchemy Docs on the Dialect](https://docs.sqlalchemy.org/en/latest/dialects/)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 909316,
+              "key": "31cd5672-18f9-4fa5-a2ad-a5967ece3ec6",
+              "title": "",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "31cd5672-18f9-4fa5-a2ad-a5967ece3ec6",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "In SQLAlchemy, the **dialect** layer…  \n(Select all that apply)",
+                "answers": [
+                  {
+                    "id": "a1565380339951",
+                    "text": "Allows us to forget about the database system (e.g., SQLite vs. Postgres) we’re using",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1565380378222",
+                    "text": "Helps avoid opening and closing connections for every data change",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1565380471347",
+                    "text": "Handles dropped connections",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1565380474827",
+                    "text": "Helps avoid doing very many small calls to the DB",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 907662,
+          "key": "5138da64-a3a2-40c2-baeb-f14d35caad99",
+          "title": "The Connection Pool",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5138da64-a3a2-40c2-baeb-f14d35caad99",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 907601,
+              "key": "2e88c834-5543-4b20-8fe7-c3e143427e7c",
+              "title": "The Connection Pool Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# The Connection Pool",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907609,
+              "key": "06473891-b362-45cd-9143-3bad3ae15e84",
+              "title": "ND004 C01 L03 04 The Connection Pool",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "IkCbPp3RIr8",
+                "china_cdn_id": "IkCbPp3RIr8.mp4"
+              }
+            },
+            {
+              "id": 917313,
+              "key": "8a8a13a7-00f9-44b6-b15d-959768f9de31",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Resources\n\n[SQLAlchemy Docs on its Connection Pooling](https://docs.sqlalchemy.org/en/latest/core/pooling.html)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 909315,
+              "key": "839f33d4-cfc4-4332-a02e-d51c2e3a19e8",
+              "title": "",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "839f33d4-cfc4-4332-a02e-d51c2e3a19e8",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "In SQLAlchemy, the **connection pool**…  \n(Select all that apply.)",
+                "answers": [
+                  {
+                    "id": "a1565380048950",
+                    "text": "Allows us to forget about the database system (e.g., SQLite vs. Postgres) we’re using",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1565380142872",
+                    "text": "Handles dropped connections",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1565380143474",
+                    "text": "Avoids doing very many small calls to the DB",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1565380144053",
+                    "text": "Avoids opening and closing connections for every data change",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 907673,
+          "key": "f97ef8f6-dbb0-41fa-a379-dd733c7b714d",
+          "title": "The Engine",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "f97ef8f6-dbb0-41fa-a379-dd733c7b714d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 907635,
+              "key": "146302a7-c042-4b88-958d-df3574c96e0f",
+              "title": "The Engine Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# The Engine",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907606,
+              "key": "d0475a23-301b-497a-96df-b42ccf0a98e3",
+              "title": "ND004 C01 L03 05 The Engine",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "URsjk8PVmVY",
+                "china_cdn_id": "URsjk8PVmVY.mp4"
+              }
+            },
+            {
+              "id": 907597,
+              "key": "4f506ef9-4def-4c5f-a0f0-c27ca9ae7d9a",
+              "title": "The Engine Recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Takeaways\n\n### The Engine\n* 1 of 3 main layers for how you may choose to interact with the database.\n* Is the lowest level layer of interacting with the database, and is much like using the DBAPI directly. Very similar to using psycopg2, managing a connection directly.\n\nMoreover,\n* The Engine in SQLAlchemy refers to both itself, the Dialect and the Connection Pool, which all work together to interface with our database.\n* A connection pool gets automatically created when we create a SQLAlchemy engine.\n\n## Resources\n\n[SQLAlchemy Docs on the Engine](https://docs.sqlalchemy.org/en/latest/core/engines.html).",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907629,
+              "key": "e7add3d5-40a8-42aa-8792-c8955db23977",
+              "title": "The Engine Quiz",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "e7add3d5-40a8-42aa-8792-c8955db23977",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "We use an engine to interact with our database, much like how we would interact with a:",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "Connection Pool",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "Dialect",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566187965034",
+                    "text": "DBAPI",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1566187968400",
+                    "text": "Postgres server",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 907626,
+              "key": "6ba73aec-b424-4b1e-8d14-1f525b8b419f",
+              "title": "The Engine Quiz 2",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "6ba73aec-b424-4b1e-8d14-1f525b8b419f",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "True/False: the engine is the highest level layer of abstraction offered in SQLAlchemy for interacting with a database.",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "True",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "False",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 907670,
+          "key": "b8631b04-3fbe-4392-b850-d95d343f0ba9",
+          "title": "SQL Expressions",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "b8631b04-3fbe-4392-b850-d95d343f0ba9",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 907614,
+              "key": "b2f99504-af4f-450e-947f-9732c54a300c",
+              "title": "SQL Expressions Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# SQL Expressions",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907644,
+              "key": "e8a092d8-8584-4eae-b7a5-636951e89c89",
+              "title": "ND004 C01 L03 06 SQL Expressions",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "HBH0b5n7bpU",
+                "china_cdn_id": "HBH0b5n7bpU.mp4"
+              }
+            },
+            {
+              "id": 907638,
+              "key": "e37bb1e9-639b-4880-8acf-2d248f121561",
+              "title": "SQL Expressions Recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Takeaways\n\n* Instead of sending raw SQL (using the Engine), we can compose python objects to compose SQL expressions, instead.\n* SQL Expressions still involves using and knowing SQL to interact with the database.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907594,
+              "key": "f27f52bc-ba19-4d5d-8b36-d7d3492397b7",
+              "title": "SQL Expressions Quiz",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "f27f52bc-ba19-4d5d-8b36-d7d3492397b7",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Why would we want to use SQL Expressions to compose python objects and expressions for writing SQL?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "We can avoid knowing SQL to interact with a relational database",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "We can avoid doing SQL query string composition",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1566188260289",
+                    "text": "We can map relational database tables and rows to python classes and objects",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 907666,
+          "key": "179abc49-581c-448e-92af-65a4bf580774",
+          "title": "SQLAlchemy ORM",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "179abc49-581c-448e-92af-65a4bf580774",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 907610,
+              "key": "40e68480-3f91-4b90-a1cc-c86fe1ad6230",
+              "title": "SQLAlchemy ORM Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# SQLAlchemy ORM",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907617,
+              "key": "6ff6d83f-d94c-4d60-be20-3fd36cf92e1c",
+              "title": "ND004 C01 L03 07 SQLAlchemy ORM",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "i6wHcLo1Cxo",
+                "china_cdn_id": "i6wHcLo1Cxo.mp4"
+              }
+            },
+            {
+              "id": 907619,
+              "key": "7a6f8233-c530-47d3-8464-769353ab11b6",
+              "title": "SQLAlchemy ORM Recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Takeaways\n\n### SQLAlchemy ORM\n* Lets you compose SQL expressions by mapping python classes of objects to tables in the database\n* Is the highest layer of abstraction in SQLALchemy.\n* Wraps the SQL Expressions and Engine to work together to interact with the database\n* Will be used in this course, so we can know how to use ORM libraries in general.\n\nMoreover, SQLAlchemy is split into two libraries:\n\n* SQLAlchemy Core\n* SQLAlchemy ORM (Object Relational Mapping library). SQLALchemy ORM is offered as an _optional_ library, so you don't have to use the ORM in order to use the rest of SQLAlchemy.\n\t* The ORM uses the Core library inside\n\t* The ORM lets you **map** from the *database schema* to the *application's Python objects*\n\t* The ORM persists objects into corresponding database tables\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917314,
+              "key": "ebb96b10-5104-4791-b491-46fb2794f9e6",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## SQLAlchemy Layers of Abstraction Overview (Diagram)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 909384,
+              "key": "8d57b12e-6799-4eec-bf60-5df0f043d779",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2019/August/5d4de779_sqlalchemy-layers-of-abstraction/sqlalchemy-layers-of-abstraction.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/8d57b12e-6799-4eec-bf60-5df0f043d779",
+              "caption": "",
+              "alt": "Diagram showing SQLAlchemy layers of abstraction",
+              "width": 880,
+              "height": 456,
+              "instructor_notes": null
+            },
+            {
+              "id": 909385,
+              "key": "6f2daedb-e16a-4561-8679-05174f36056b",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "6f2daedb-e16a-4561-8679-05174f36056b",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Below are some of SQLAlchemy's layers of abstraction—can you match the description with the name?"
+                },
+                "concepts_label": "Description",
+                "answers_label": "Which layer of abstraction?",
+                "concepts": [
+                  {
+                    "text": "Lowest layer of abstraction; looks a lot like interacting directly with a DB-API",
+                    "correct_answer": {
+                      "id": "a1565387214859",
+                      "text": "The **engine** layer"
+                    }
+                  },
+                  {
+                    "text": "Makes it possible to interact with any database management system, regardless of the SQL flavor used.",
+                    "correct_answer": {
+                      "id": "a1565387228598",
+                      "text": "The **dialect** layer"
+                    }
+                  },
+                  {
+                    "text": "Avoids opening and closing connections for every data change",
+                    "correct_answer": {
+                      "id": "a1565387229253",
+                      "text": "The **connection pool** layer"
+                    }
+                  },
+                  {
+                    "text": "Lets you compose SQL statements by building Python objects",
+                    "correct_answer": {
+                      "id": "a1565387230150",
+                      "text": "The **SQL expressions** layer"
+                    }
+                  },
+                  {
+                    "text": "Highest level of abstraction; maps classes to tables.",
+                    "correct_answer": {
+                      "id": "a1565387231446",
+                      "text": "The **ORM** layer"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1565387214859",
+                    "text": "The **engine** layer"
+                  },
+                  {
+                    "id": "a1565387229253",
+                    "text": "The **connection pool** layer"
+                  },
+                  {
+                    "id": "a1565387228598",
+                    "text": "The **dialect** layer"
+                  },
+                  {
+                    "id": "a1565387231446",
+                    "text": "The **ORM** layer"
+                  },
+                  {
+                    "id": "a1565387230150",
+                    "text": "The **SQL expressions** layer"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 909381,
+          "key": "5302cfb9-668f-4794-b4cb-46efed1e1b39",
+          "title": "Mapping Between Tables and Classes",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5302cfb9-668f-4794-b4cb-46efed1e1b39",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 909382,
+              "key": "323d8d17-1b09-4a60-90b7-1d3da81854b4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Mapping Between Tables and Classes",
+              "instructor_notes": ""
+            },
+            {
+              "id": 909383,
+              "key": "3106d5d8-0c03-40a2-b106-240400ac6da4",
+              "title": "ND004 C01 L03 08 Mapping Between Tables And Classes",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "CF_tkEnIv44",
+                "china_cdn_id": "CF_tkEnIv44.mp4"
+              }
+            },
+            {
+              "id": 909386,
+              "key": "7855d3b5-054a-461f-b6d4-ea56fd40e0f5",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "7855d3b5-054a-461f-b6d4-ea56fd40e0f5",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "On the left is a SQL statement. See if you can match it with the corresponding class, object, or attribute."
+                },
+                "concepts_label": "SQL",
+                "answers_label": "SQLAlchemy class",
+                "concepts": [
+                  {
+                    "text": "```\nCREATE TABLE tweets (\n  id INTEGER PRIMARY KEY,\n  content VARCHAR(140) NOT NULL\n);\n```",
+                    "correct_answer": {
+                      "id": "a1565388392720",
+                      "text": "```\nclass Tweet:\n  def __init__(self, content):\n    self.content = content\n```"
+                    }
+                  },
+                  {
+                    "text": "```\nINSERT INTO tweets (content) VALUES ('hey!');\n```",
+                    "correct_answer": {
+                      "id": "a1565388484534",
+                      "text": "```\ntweet = Tweet(content='hey!')\n```"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1566188790973",
+                    "text": "```\ntweet = { 'content': 'hey!' }\n```"
+                  },
+                  {
+                    "id": "a1565388484534",
+                    "text": "```\ntweet = Tweet(content='hey!')\n```"
+                  },
+                  {
+                    "id": "a1565388392720",
+                    "text": "```\nclass Tweet:\n  def __init__(self, content):\n    self.content = content\n```"
+                  },
+                  {
+                    "id": "a1566188768427",
+                    "text": "```\nclass Tweets:\n  def __init__(self, name):\n    self.name = name\n```"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 909387,
+              "key": "fe96908c-99bd-449b-96f8-af7db099ad46",
+              "title": "ORM Match Quiz",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "fe96908c-99bd-449b-96f8-af7db099ad46",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "See if you can remember which of these things map to one another:"
+                },
+                "concepts_label": "This…",
+                "answers_label": "…maps to this",
+                "concepts": [
+                  {
+                    "text": "**Tables** map to…",
+                    "correct_answer": {
+                      "id": "a1565388556240",
+                      "text": "classes"
+                    }
+                  },
+                  {
+                    "text": "**Table records** map to…",
+                    "correct_answer": {
+                      "id": "a1565388631049",
+                      "text": "objects"
+                    }
+                  },
+                  {
+                    "text": "**Table columns** map to…",
+                    "correct_answer": {
+                      "id": "a1565388652430",
+                      "text": "attributes"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1566188845340",
+                    "text": "data"
+                  },
+                  {
+                    "id": "a1565388652430",
+                    "text": "attributes"
+                  },
+                  {
+                    "id": "a1565388631049",
+                    "text": "objects"
+                  },
+                  {
+                    "id": "a1566188838785",
+                    "text": "rows"
+                  },
+                  {
+                    "id": "a1566188850646",
+                    "text": "dictionaries"
+                  },
+                  {
+                    "id": "a1565388556240",
+                    "text": "classes"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 916808,
+          "key": "2ac2b208-4b0e-46c9-ba7e-2be921b96109",
+          "title": "Hello App with Flask-SQLAlchemy - Part 1",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "2ac2b208-4b0e-46c9-ba7e-2be921b96109",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 916810,
+              "key": "71e5e462-0a38-42e8-bd64-81f7e5d404d2",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Hello App with Flask-SQLAlchemy - Part 1",
+              "instructor_notes": ""
+            },
+            {
+              "id": 916809,
+              "key": "9769f610-1a7e-4fdf-ba1d-d621df734369",
+              "title": "ND004 C01 L03 09 Hello App With Flask-SQLAlchemy",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "ebh6kcfC_vo",
+                "china_cdn_id": "ebh6kcfC_vo.mp4"
+              }
+            },
+            {
+              "id": 917315,
+              "key": "7c7e25f9-3e3a-49fa-93af-ff9e247d05b9",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Resources\n\n* [Flask Docs](https://flask.palletsprojects.com) under \"Quickstart\"\n* [Flask-SQLAlchemy Docs](http://flask-sqlalchemy.palletsprojects.com) under \"Quickstart\"",
+              "instructor_notes": ""
+            },
+            {
+              "id": 916811,
+              "key": "706ec851-c43c-4732-bedd-be2d72225206",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "706ec851-c43c-4732-bedd-be2d72225206",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "To install *Flask*, go to your terminal and run `pip3 install flask`.",
+                "To install *Flask-SQLAlchemy*, run `pip3 install flask-sqlalchemy`"
+              ],
+              "positive_feedback": "Great—then let's get started!",
+              "video_feedback": null,
+              "description": "Before going further, you'll want to be sure you've got both Flask and Flask-SQLAlchemy installed via your terminal.\n\n> **Note:** If `pip3` does not work, try `pip`."
+            },
+            {
+              "id": 916812,
+              "key": "87aa5124-8396-4853-bb64-3647505be354",
+              "title": "ND004 C01 L03 09.1 Hello App With Flask-SQLAlchemy",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "YbJKcTt_Gd8",
+                "china_cdn_id": "YbJKcTt_Gd8.mp4"
+              }
+            },
+            {
+              "id": 917316,
+              "key": "77bb398c-ee1c-4b21-a273-a82d6f2764b6",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Initializing the app\n\n`app = Flask(__name__)` sets the name of your app to the name of your module (\"app\" if \"app.py\" is the name of your file).\n\n\n### Using @app.route\n\n```\n@app.route('/')\ndef index():\n  ...\n```\nIn this case, @app.route is a Python _decorator_. Decorators take functions and returns another function, usually extending the input function with additional (\"decorated\") functionality. @app.route is a decorator that takes an input function `index()` as the callback that gets invoked when a request to route `/` comes in from a client.\n\nSee: [this primer on decorators from Real Python](https://realpython.com/primer-on-python-decorators/#decorators-with-arguments).\n\n### Running the flask app\n\nTo start the server,\n\n* We run a flask app defined at `app.py` with `FLASK_APP=app.py flask run`\n  * `FLASK_APP` must be set to the server file path with an equal sign in between. No spaces. `FLASK_APP = app.py` will _not_ work. These flags have to be set exactly as expected, as `FLAG=value`.\n* To enable live reload, set `export FLASK_ENV=development` in your terminal session to enable debug mode, prior to running `flask run`. Or call it together with flask run:\n\n  ```\n  $ FLASK_APP=app.py FLASK_DEBUG=true flask run\n  ```\n\n\n##### Alternative approach to run a Flask app: using `__main__`\n\nInstead of using `$ flask run`, we could have also defined a method\n\n```\nif __name__ == '__main__':\n  app.run()\n```\n\nat the bottom of our `app.py` script, and then called `$ python3 app.py` in our terminal to invoke `app.run()` and run the flask app this way.\n\nWhen we call a script this way, using `$ python script.py`, the script's `__name__` gets set to `__main__` by the Python interpreter, which then runs through executing all code found in the script. When it reaches the end, and finds `if __name__ == 'main'`, it evaluates this to `True` and therefore calls `app.run()` at the end, running the Flask app.\n\nBoth approaches to running your server are valid and neither way is better than the other.\n\n\n#### Note: different versions of flask take `FLASK_APP=app.py` versus `FLASK_APP=app`, etc.\n\nCheck out the docs on the [Flask CLI](https://flask.palletsprojects.com/en/1.0.x/cli/) to understand the various options for pointing `FLASK_APP` to your flask application.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917318,
+              "key": "a378f527-85f1-4646-84fe-dcadf8fef855",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Let's try this! Options to follow along\n\nOver the next 5 parts of this lesson, try following along and doing the steps of each exercise for yourself, so you can gain hands-on coding experience working with Flask, Postgres, and SQLAlchemy. You can try everything in the provided workspaces, or you can follow along using your own local environment (or try both, if you want extra practice!). You can find the solution code both in the workspaces, as well as in the walkthrough screencasts.\n\n\n## Workspace Option\n\nComplete Exercise 1 in the interactive workspace below.\n\n### Exercise 1\n\n* Write a Flask App that outputs 'Hello World!' when you run the application.\n\n* Run the application using `FLASK_APP=app flask run`, in debug mode. \n\n* Try using the method outlined above to run the application using `$ python3 app.py` instead, using the `if __name__ == '__main__':` method.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917317,
+              "key": "b471bb3c-e873-416f-b535-3e256ef02f1e",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r848940c916808xJUPYTERLkogjss4b",
+              "pool_id": "flaskpostgres",
+              "view_id": "jupyter-lab-nxxrc",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "pageEnd": "",
+                    "pageStart": "",
+                    "allowSubmit": false,
+                    "defaultPath": "/",
+                    "actionButtonText": ""
+                  },
+                  "kind": "jupyter-lab"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 907672,
+          "key": "86d59d1d-6b21-479f-b1a6-2ecfe983736d",
+          "title": "Connecting to the Database",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "86d59d1d-6b21-479f-b1a6-2ecfe983736d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 907641,
+              "key": "743dbca0-691a-4d42-bbdc-1963dd5e297b",
+              "title": "Hello App with Flask-SQLAlchemy Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Hello App with Flask-SQLAlchemy",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907615,
+              "key": "f3679523-f89b-4fd6-85eb-6d088f177275",
+              "title": "ND004 C01 L03 10 Hello App With Flask-SQLAlchemy",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "gsoMl7suqEY",
+                "china_cdn_id": "gsoMl7suqEY.mp4"
+              }
+            },
+            {
+              "id": 909391,
+              "key": "1879e260-671b-4a04-828e-54e04edd5b4f",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2019/August/5d4df44e_database-connection-uri-parts/database-connection-uri-parts.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/1879e260-671b-4a04-828e-54e04edd5b4f",
+              "caption": "",
+              "alt": "Diagram showing parts of a database connection URI",
+              "width": 819,
+              "height": 340,
+              "instructor_notes": null
+            },
+            {
+              "id": 909390,
+              "key": "185a56d7-8a43-4ac0-b6a7-a42b986e6391",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "185a56d7-8a43-4ac0-b6a7-a42b986e6391",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Here's an example URI:\n```text\n'postgresql://myusername:mypassword@localhost:5432/mydatabase'\n```\nCan you name each part?"
+                },
+                "concepts_label": "Part of URI",
+                "answers_label": "Name",
+                "concepts": [
+                  {
+                    "text": "`postgresql`",
+                    "correct_answer": {
+                      "id": "a1565389484842",
+                      "text": "dialect"
+                    }
+                  },
+                  {
+                    "text": "`myusername`",
+                    "correct_answer": {
+                      "id": "a1565389555118",
+                      "text": "username"
+                    }
+                  },
+                  {
+                    "text": "`mypassword`",
+                    "correct_answer": {
+                      "id": "a1565389643431",
+                      "text": "password (optional)"
+                    }
+                  },
+                  {
+                    "text": "`localhost`",
+                    "correct_answer": {
+                      "id": "a1565389653858",
+                      "text": "host address"
+                    }
+                  },
+                  {
+                    "text": "`5432`",
+                    "correct_answer": {
+                      "id": "a1565389657803",
+                      "text": "port"
+                    }
+                  },
+                  {
+                    "text": "`mydatabase`",
+                    "correct_answer": {
+                      "id": "a1565389666839",
+                      "text": "database name"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1565389643431",
+                    "text": "password (optional)"
+                  },
+                  {
+                    "id": "a1565389555118",
+                    "text": "username"
+                  },
+                  {
+                    "id": "a1565389484842",
+                    "text": "dialect"
+                  },
+                  {
+                    "id": "a1565389666839",
+                    "text": "database name"
+                  },
+                  {
+                    "id": "a1565389657803",
+                    "text": "port"
+                  },
+                  {
+                    "id": "a1565389653858",
+                    "text": "host address"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 916813,
+              "key": "9d85155f-41b5-40de-9194-7a433098a138",
+              "title": "ND004 C01 L03 10.1 Hello App With Flask-SQLAlchemy",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "TlIfjqw3XII",
+                "china_cdn_id": "TlIfjqw3XII.mp4"
+              }
+            },
+            {
+              "id": 917322,
+              "key": "12cddc10-c118-4438-b5a5-8094fca7ec1e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Code\n\n```\nfrom flask import Flask\nfrom flask_sqlalchemy import SQLAlchemy\n\napp = Flask(__name__)\napp.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://udacitystudios@localhost:5432/example'\ndb = SQLAlchemy(app)\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907622,
+              "key": "de81cffa-4fd6-40f3-9a40-bd16b002753d",
+              "title": "Hello App with Flask-SQLAlchemy Recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Let's practice. Complete Exercise 2.\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917319,
+              "key": "f4e13952-0aa1-41a6-987b-f0e05fb122bd",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r848940c916808xJUPYTERLkogjss4b",
+              "pool_id": "flaskpostgres",
+              "view_id": "jupyter-lab-6k8i6",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "pageEnd": "",
+                    "pageStart": "",
+                    "allowSubmit": false,
+                    "defaultPath": "/",
+                    "actionButtonText": ""
+                  },
+                  "kind": "jupyter-lab"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 916829,
+          "key": "479a78e4-0724-4061-87c8-10f1a6b71a3b",
+          "title": "db.Model and Defining Models",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "479a78e4-0724-4061-87c8-10f1a6b71a3b",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 916830,
+              "key": "8c30a2f9-d916-4c46-91d3-bfca90db5f69",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# db.Model and defining models",
+              "instructor_notes": ""
+            },
+            {
+              "id": 916831,
+              "key": "71576db9-53ef-43ca-a8a5-2de64a84b330",
+              "title": "ND004 C01 L03 11 SQLAlchemy(App) Db.Model And Db.Create All()",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "sh5HxcC80n4",
+                "china_cdn_id": "sh5HxcC80n4.mp4"
+              }
+            },
+            {
+              "id": 917320,
+              "key": "215fa4a9-8254-42bf-b45b-b54236b4bbe9",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Takeaways\n\nGiven an instance of the SQLAlchemy class from Flask-SQLAlchemy,\n```\ndb = SQLAlchemy(app)\n```\n\n* db is an interface for interacting with our database\n* `db.Model` lets us create and manipulate **data models**\n* `db.session` lets us create and manipulate **database transactions**",
+              "instructor_notes": ""
+            },
+            {
+              "id": 916832,
+              "key": "46a3fa43-61a3-4a2f-8c5e-6984c5dc0827",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Hello App with Flask-SQLAlchemy continued\n\n### Creating a `person` class with `db.Model`",
+              "instructor_notes": ""
+            },
+            {
+              "id": 916833,
+              "key": "4b51b45f-1a75-4276-82d6-cc1d3fc7a296",
+              "title": "ND004 C01 L03 11.1 SQLAlchemy(App) Db.Model And Db.Create All()",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "KKvyF_Wgmjo",
+                "china_cdn_id": "KKvyF_Wgmjo.mp4"
+              }
+            },
+            {
+              "id": 917321,
+              "key": "bc5655e1-728c-456a-87c2-ef0e270ecb4a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Takeaways\n\n##### Declaring classes\n* `class MyModel(db.Model)` will inherit from `db.Model`\n* By inheriting from `db.Model`, we map from our classes to tables via SQLAlchemy ORM\n\n##### Defining columns\n* Within our class, we declare attributes equal to `db.Column(...)`\n* `db.Column` takes `<datatype>, <primary_key?>, <constraint?>, <default?>`\n\n##### Table naming\n* By default, SQLAlchemy will pick the name of the table for you, setting it equal to the lower-case version of your class's name. Otherwise, we set the name of the table using `__tablename__ = 'my_custom_table_name'`.\n\n## Code\n\n```\nfrom flask import Flask\nfrom flask_sqlalchemy import SQLAlchemy\n\napp = Flask(__name__)\napp.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://udacitystudios@localhost:5432/example'\ndb = SQLAlchemy(app)\n\nclass Person(db.Model):\n  __tablename__ = 'persons'\n  id = db.Column(db.Integer, primary_key=True)\n  name = db.Column(db.String(), nullable=False)\n```",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 907667,
+          "key": "b5e57117-4055-411e-8ef3-748e85971cad",
+          "title": "Syncing Models, db.create_all()",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "b5e57117-4055-411e-8ef3-748e85971cad",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 916814,
+              "key": "cf51b32f-02c2-4a73-a86c-a45d35a7e944",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# `db.create_all()`",
+              "instructor_notes": ""
+            },
+            {
+              "id": 916818,
+              "key": "fdf0b401-ac8a-45ae-9cdf-51c9a1e480c9",
+              "title": "ND004 C01 L03 11.2 SQLAlchemy(App) Db.Model And Db.Create All()",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "MlHPACF45HM",
+                "china_cdn_id": "MlHPACF45HM.mp4"
+              }
+            },
+            {
+              "id": 907624,
+              "key": "70f01b75-64ea-419a-9864-0e0cb075a6c0",
+              "title": "SQLAlchemy(app) db.Model and db.create_all()",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Checking that the `person` model has been created as a table in the database",
+              "instructor_notes": ""
+            },
+            {
+              "id": 916822,
+              "key": "ed94a242-57ac-469e-a989-4a0d83e8b988",
+              "title": "ND004 C01 L03 11.3 SQLAlchemy(App) Db.Model And Db.Create All()",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "PluHiX28wEI",
+                "china_cdn_id": "PluHiX28wEI.mp4"
+              }
+            },
+            {
+              "id": 916825,
+              "key": "07d639a6-183b-4e7e-8ffb-f3f4f96aa819",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Auto-incrementing",
+              "instructor_notes": ""
+            },
+            {
+              "id": 916826,
+              "key": "0fac4fe1-b124-401d-9b89-31d7a5fc95f3",
+              "title": "ND004 C01 L03 11.4 SQLAlchemy(App) Db.Model And Db.Create All()",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "bqcJc-bpQwQ",
+                "china_cdn_id": "bqcJc-bpQwQ.mp4"
+              }
+            },
+            {
+              "id": 907632,
+              "key": "e07c532b-b939-4f5a-b351-d3c4e5b3586d",
+              "title": "SQLAlchemy(app) db.Model and db.create_all()",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "e07c532b-b939-4f5a-b351-d3c4e5b3586d",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What command do we run to creates tables for SQLAlchemy models?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "db.model()",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "db.Model",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566194032172",
+                    "text": "db.sync()",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566194036024",
+                    "text": "db.create_all()",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 917323,
+              "key": "9971ffc8-4920-4f33-877d-57c5f75bd79a",
+              "title": "T/F",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "9971ffc8-4920-4f33-877d-57c5f75bd79a",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "If the table `user` already exists in our database, and a `class User(db.Model)` was defined, and `db.create_all()` was run, then",
+                "answers": [
+                  {
+                    "id": "a1566194090229",
+                    "text": "the table `user` gets dropped and recreated with the schema from `class User`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566194171088",
+                    "text": "No new tables get created",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1566194188845",
+                    "text": "A table `users` gets created and added to the database",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 917325,
+              "key": "bb03e93d-2114-4bc6-a7bc-6799ac230f46",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Let's practice. Complete Exercise 3.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917324,
+              "key": "eb220a24-0d8b-48c7-8d6e-83d9b301dd18",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r848940c916808xJUPYTERLkogjss4b",
+              "pool_id": "flaskpostgres",
+              "view_id": "jupyter-lab-g0ln0",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "pageEnd": "",
+                    "pageStart": "",
+                    "allowSubmit": false,
+                    "defaultPath": "/",
+                    "actionButtonText": ""
+                  },
+                  "kind": "jupyter-lab"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 916819,
+          "key": "46ffc4b1-9741-42d2-adc5-5302b001b1b5",
+          "title": "Inserting Records, Using Debug Mode",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "46ffc4b1-9741-42d2-adc5-5302b001b1b5",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 916820,
+              "key": "6ac95038-c50f-4644-ac8f-dd6d1d857132",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Inserting Records and Using Debug Mode\n\nWe'll finish off creating a Hello App that says hello to our name by inserting a record into the persons table in our database, and showing the person's name on the index route.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 916836,
+              "key": "61f59231-1b79-4aa0-8176-d1645bb1bf02",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Inserting a record",
+              "instructor_notes": ""
+            },
+            {
+              "id": 916835,
+              "key": "7f9a99e1-a88c-4261-8d55-2b0985cf58e1",
+              "title": "ND004 C01 L03 11.5 SQLAlchemy(App) Db.Model And Db.Create All()",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "3GfJVGrlv6k",
+                "china_cdn_id": "3GfJVGrlv6k.mp4"
+              }
+            },
+            {
+              "id": 917326,
+              "key": "122468e2-46fb-441f-ace7-9011de49c63a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Code\n\n```\n@app.route('/')\ndef index():\n  person = Person.query.first()\n  return 'Hello ' + person.name\n```\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 916837,
+              "key": "6a1adfe9-9d3a-46b7-b386-d046154a430b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Screencast cont'd (introducing debug mode)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 916838,
+              "key": "7c107d93-b238-4681-8788-6457a386479a",
+              "title": "ND004 C01 L03 11.6 SQLAlchemy(App) Db.Model And Db.Create All()",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "af6shF20lHk",
+                "china_cdn_id": "af6shF20lHk.mp4"
+              }
+            },
+            {
+              "id": 917327,
+              "key": "fd7019ac-ac2b-41ee-a09c-5da2c8086ac7",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Takeaways\n\n```\nFLASK_DEBUG=true\n```\n\nwill set debug mode to ON, which will automatically restart the server whenever we make changes to our application.\n\nWe can set this in-line with our `flask run` command,\n\n```\n$ FLASK_DEBUG=true flask run\n```\n\nor export it ahead of time in our terminal session on a separate line before we run the server,\n\n```\n$ export FLASK_DEBUG=true\n$ flask run\n```\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917329,
+              "key": "454bc36f-cefd-42a0-9cd2-cdb96f5984ba",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Now we have everything we need to complete our Hello SQLAlchemy app. Now complete Exercise 4.\n\n### Starter Code for `app.py`\n\n```\nfrom flask import Flask\nfrom flask_sqlalchemy import SQLAlchemy\n\napp = Flask(__name__)\napp.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://udacitystudios@localhost:5432/example'\napp.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False\ndb = SQLAlchemy(app)\n\nclass Person(db.Model):\n  __tablename__ = 'persons'\n  id = db.Column(db.Integer, primary_key=True)\n  name = db.Column(db.String(), nullable=False)\n\ndb.create_all()\n\n@app.route('/')\ndef index():\n  return 'Hello World!'\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917328,
+              "key": "e11cdc29-f394-4c71-9651-c436e419bad2",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r848940c916808xJUPYTERLkogjss4b",
+              "pool_id": "flaskpostgres",
+              "view_id": "jupyter-lab-qim1w",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "pageEnd": "",
+                    "pageStart": "",
+                    "allowSubmit": false,
+                    "defaultPath": "/",
+                    "actionButtonText": ""
+                  },
+                  "kind": "jupyter-lab"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 909408,
+          "key": "a4681db5-4589-42e1-bf76-e2805140f940",
+          "title": "Experimenting in Interactive Mode",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a4681db5-4589-42e1-bf76-e2805140f940",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 909412,
+              "key": "71c779ea-613e-4239-9462-89e4f95ffbbb",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Experimenting in Interactive Mode\n\nWe can experiment with our app using the [interactive mode](https://docs.python.org/3/tutorial/interpreter.html#interactive-mode) of the Python interpreter.\n\nYou've undoubtedly used Python interactive mode before, which you can get to by simply starting your terminal and entering `python3`:\n\n```text\n$ python3\nPython 3.7.3 (default, Mar 27 2019, 16:54:48) \n[Clang 4.0.1 (tags/RELEASE_401/final)] :: Anaconda, Inc. on darwin\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> \n```\n\nLet's see how we can use this to experiment with our SQLAlchemy apps!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 909409,
+              "key": "3cbd183d-36c6-457b-86da-7b3ce546c5b1",
+              "title": "ND004 C01 L03 12 SQLAlchemy(App) Db.Model And Db.Create All() Part 2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "a5bg0qw5LXM",
+                "china_cdn_id": "a5bg0qw5LXM.mp4"
+              }
+            },
+            {
+              "id": 917330,
+              "key": "1ffe42f6-a843-4f0b-976d-e9dfc3f62b69",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Code\n\n```\nfrom flask import Flask\nfrom flask_sqlalchemy import SQLAlchemy\n\napp = Flask(__name__)\napp.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://udacitystudios@localhost:5432/example'\napp.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False\ndb = SQLAlchemy(app)\n\nclass Person(db.Model):\n  __tablename__ = 'persons'\n  id = db.Column(db.Integer, primary_key=True)\n  name = db.Column(db.String(), nullable=False)\n\ndb.create_all()\n\n@app.route('/')\ndef index():\n  person = Person.query.first()\n  return 'Hello ' + person.name\n\n```\n\n## Follow along",
+              "instructor_notes": ""
+            },
+            {
+              "id": 909411,
+              "key": "8d00e04a-36e0-44bf-ac76-c8192ee5fc10",
+              "title": "Follow along",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "8d00e04a-36e0-44bf-ac76-c8192ee5fc10",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Rename your app from `flask-hello-app.py` to `flask_hello_app.py` (replace the dashes with underscores, so that we can import it with Python)",
+                "Go to your terminal and enter Python interactive mode by entering `python3`",
+                "Import the app by running `import flask_hello_app` (notice that there is no `.py` at the end when we are importing!).",
+                "If you get the deprecation warning, modify the app to set `app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False`",
+                "Try importing again—you should now get a successful import with no errors or warnings"
+              ],
+              "positive_feedback": "**Great!**\n\nNow let's see what we can do from interactive mode.",
+              "video_feedback": null,
+              "description": "Before going further, be sure you've tried the following:"
+            },
+            {
+              "id": 917331,
+              "key": "42b2d20e-92e6-4971-a0d0-fdd4381876e2",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Code\n\nTry running this yourself in the terminal.\n\n```\n$ python3\n>>> from flask_hello_app import Person, db\n>>> Person.query.all()\n>>> Person.query.first()\n>>> query = Person.query.filter(Person.name == 'Amy')\n>>> query.first()\n>>> query.all()\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 909413,
+              "key": "3aca5b65-4b1b-45d3-9eaf-aa8206b219e0",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Debugging",
+              "instructor_notes": ""
+            },
+            {
+              "id": 909410,
+              "key": "f0197b52-709c-46c7-8257-217a5bfda431",
+              "title": "ND004 C01 L03 13 SQLAlchemy(App) Db.Model And Db.Create All() Part 3",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "_z7EO2Yex_w",
+                "china_cdn_id": "_z7EO2Yex_w.mp4"
+              }
+            },
+            {
+              "id": 917332,
+              "key": "a185a9be-bed4-4de2-b542-e90b85a8195f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Code\n\n```\nfrom flask import Flask\nfrom flask_sqlalchemy import SQLAlchemy\n\napp = Flask(__name__)\napp.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://udacitystudios@localhost:5432/example'\napp.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False\ndb = SQLAlchemy(app)\n\nclass Person(db.Model):\n  __tablename__ = 'persons'\n  id = db.Column(db.Integer, primary_key=True)\n  name = db.Column(db.String(), nullable=False)\n\n  def __repr__(self):\n    return f'<Person ID: {self.id}, name: {self.name}>'\n\ndb.create_all()\n\n@app.route('/')\ndef index():\n  person = Person.query.first()\n  return 'Hello ' + person.name\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917333,
+              "key": "2b85a125-c1fb-48a4-8c3e-cc56406d2931",
+              "title": "Try this on your own machine",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "2b85a125-c1fb-48a4-8c3e-cc56406d2931",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Define a __repr__ method on your SQLAlchemy model",
+                "Customize the returned string to include useful attributes, like ID and name, of the model",
+                "Open python3 in your terminal",
+                "Query and print objects from the database",
+                "Exit the python3 terminal",
+                "In your app, change the __repr__ string returned",
+                "Re-enter the python3 terminal, query and print objects from the database, and see the newly used string representations"
+              ],
+              "positive_feedback": "Awesome! Great job on doing this practice.",
+              "video_feedback": null,
+              "description": "Here's what you can try to practice printing debugging statements"
+            },
+            {
+              "id": 917350,
+              "key": "a0f6c0fa-498f-4d66-bca2-f3c2e46ac857",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Now try this: create records in python's interactive mode using `db.session.add()`\n\nThere's another way of inserting records into our database, rather than entering a client like psql and using `INSERT INTO` SQL commands: we can call `db.session` from SQLAlchemy to create records using instances of our defined SQLAlchemy models.\n\nIn interactive mode, import `db` and your `Person` model.\n\n```bash\n$ cd YOUR_PROJECT_DIRECTORY\n$ python3\n>>> from flask_hello_app import db, Person\n```\n\nThen, create an instance of a `Person`, setting its attributes, and setting it equal to a variable `person`\n\n```python\n>>> person = Person(name='Amy')\n```\n\nWe're going to call `db.session.add()`, a method on the Session interface in SQLAlchemy, to add this object to a session,\n\n```python\n>>> db.session.add(person)\n```\n\nThis will queue up a `INSERT INTO persons (name) VALUES ('Amy');` statement in a **transaction** that is managed by `db.session`.\n\nWe can then call `db.session.commit()`\n\n```python\n>>> db.session.commit()\n```\n\nand that person record will now exist in our `persons` table, within our database! You can double-check this in psql by running a `SELECT * from persons;` command from psql.\n\n### In summary\n\nWe can insert new records into the database using SQLAlchemy by running\n\n```python\nperson = Person(name='Amy')\ndb.session.add(person)\ndb.session.commit()\n```\n\nwhich will build a transaction for inserting in a `person` instance in our model/table, and persist it to the database upon calling `commit()`.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917334,
+              "key": "1a6ffb36-40b6-4786-b55f-104ed4f06e0d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Workspace Option\n\nYou can try out these steps using the interactive workspace below, instead of using your own machine.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917335,
+              "key": "9eb60b20-fc5e-4c2a-8066-8714253b7cee",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r848940c909408xJUPYTERLx3z76ofp",
+              "pool_id": "flaskpostgres",
+              "view_id": "jupyter-lab-am12w",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "pageEnd": "",
+                    "pageStart": "",
+                    "allowSubmit": false,
+                    "defaultPath": "/",
+                    "actionButtonText": ""
+                  },
+                  "kind": "jupyter-lab"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 907669,
+          "key": "52fee593-aa2b-4b27-88cd-17783c144004",
+          "title": "SQLAlchemy Data Types",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "52fee593-aa2b-4b27-88cd-17783c144004",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 907636,
+              "key": "02b17c79-3152-4144-b6cc-bad95cc1efaf",
+              "title": "SQLAlchemy data types Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# SQLAlchemy Data Types",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907659,
+              "key": "86291bf8-61f2-40ea-bac1-8dc7567749f3",
+              "title": "ND004 C01 L03 14 SQLAlchemy Data Types",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "NjqwuCiUgts",
+                "china_cdn_id": "NjqwuCiUgts.mp4"
+              }
+            },
+            {
+              "id": 907656,
+              "key": "9ee818fa-454c-4349-97c9-66148c8c0441",
+              "title": "SQLAlchemy data types Recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Resources\n\n* [Flask-SQLAlchemy: Declaring Models](https://flask-sqlalchemy.palletsprojects.com/en/2.x/models/)\n* [Getting Started with PostgreSQL Data Types](http://www.postgresqltutorial.com/postgresql-data-types/)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917336,
+              "key": "d2f1dc11-df00-42d6-8884-22e50d9f0ba2",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2019/August/5d5a43a0_screen-shot-2019-08-18-at-11.36.57-pm/screen-shot-2019-08-18-at-11.36.57-pm.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/d2f1dc11-df00-42d6-8884-22e50d9f0ba2",
+              "caption": "SQLAlchemy data types. Source: https://flask-sqlalchemy.palletsprojects.com/en/2.x/models/",
+              "alt": "",
+              "width": 847,
+              "height": 333,
+              "instructor_notes": null
+            },
+            {
+              "id": 917337,
+              "key": "b6418e48-d127-4d9e-a264-e5df87cc0624",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Flask-SQLAlchemy data types generally map to SQLAlchemy's library of data types.\n\nCheck out the SQLAlchemy docs on [Column and Data Types](https://docs.sqlalchemy.org/en/latest/core/types.html) to learn more.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907647,
+              "key": "f3a14c08-0c6c-462a-a43e-87a0ecc6d84f",
+              "title": "SQLAlchemy data types Quiz",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "f3a14c08-0c6c-462a-a43e-87a0ecc6d84f",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What does `db.String()` in `name = db.Column(db.String())` do?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "Sets a data type to an empty string",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "Sets a data type of string with variable length",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1566196756390",
+                    "text": "Sets a data type of string that defaults to empty",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 907671,
+          "key": "169f1035-8de2-41e3-bab2-5509469ccbae",
+          "title": "SQLAlchemy Constraints",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "169f1035-8de2-41e3-bab2-5509469ccbae",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 907654,
+              "key": "b1bf44cf-9601-48f1-9390-a9b0e76ef83f",
+              "title": "SQLAlchemy constraints Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# SQLAlchemy Constraints",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907642,
+              "key": "6f8f4094-7174-42e1-aeb1-85da46a0f5c6",
+              "title": "ND004 C01 L03 15 SQLAlchemy Constraints",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "orGz6Dx57-8",
+                "china_cdn_id": "orGz6Dx57-8.mp4"
+              }
+            },
+            {
+              "id": 907643,
+              "key": "6bf5eaed-109c-4926-b0b3-97b53b8a4182",
+              "title": "SQLAlchemy constraints Recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Takeaways\n\n* Column constraints ensure data integrity across our database, allowing for database accuracy and consistency.\n* Constraints are conditions on your column, that provide checks on the data's validity. It does not allow data that violates constraints to be inserted into the database (it will raise an error if you attempt to).\n* In SQLAlchemy, constraints are set in `db.Column()` after setting the data type.\n  * `nullable=False` is equivalent to `NOT NULL` in SQL\n  * `unique=True` is equivalent to `UNIQUE` in SQL\n\nExample\n\n```\nclass User(db.Model):\n  ...\n  name = db.Column(db.String(), nullable=False, unique=True)\n```\n\n### Implementing a check constraint\n\nExample of how you would implement a constraint on an integer: using `db.CheckConstraint`\n\n```\nclass Product(db.Model):\n  ...\n  price = db.Column(db.Float, db.CheckConstraint('price>0'))\n```\nThis ensures that no `product` goes into the table with a nonpositive price value.\n\n\n### Resources\n* [SQLAlchemy Constraints Docs](https://docs.sqlalchemy.org/en/latest/core/constraints.html). Constraints available in SQLAlchemy are (generally) available in Flask-SQLAlchemy, and exposed by `db.<sqlalchemy_method_or_interface>`.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917338,
+              "key": "e3c29e0e-8c3c-48e1-b4be-12b9091afe50",
+              "title": "Constraints",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "e3c29e0e-8c3c-48e1-b4be-12b9091afe50",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Match the SQL constraint to the SQLAlchemy ORM Constraint option"
+                },
+                "concepts_label": "SQL",
+                "answers_label": "SQLAlchemy ORM",
+                "concepts": [
+                  {
+                    "text": "NOT NULL",
+                    "correct_answer": {
+                      "id": "a1566197162875",
+                      "text": "nullable=False"
+                    }
+                  },
+                  {
+                    "text": "UNIQUE",
+                    "correct_answer": {
+                      "id": "a1566197192988",
+                      "text": "unique=True"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1566197189607",
+                    "text": "nullable=True"
+                  },
+                  {
+                    "id": "a1566197192988",
+                    "text": "unique=True"
+                  },
+                  {
+                    "id": "a1566197205288",
+                    "text": "constraint=\"not_null\""
+                  },
+                  {
+                    "id": "a1566197199134",
+                    "text": "constraint=\"unique\""
+                  },
+                  {
+                    "id": "a1566197162875",
+                    "text": "nullable=False"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 907668,
+          "key": "9b0ec32b-dfa4-4f5f-98bf-8108f8c31d74",
+          "title": "Recap",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "9b0ec32b-dfa4-4f5f-98bf-8108f8c31d74",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 907650,
+              "key": "8a8e21e1-5419-44d4-bd43-61c9ce38464c",
+              "title": "Recap Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### We've reached the end of this lesson! Congratulations!\n\nLet's recap what we've learned...",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907639,
+              "key": "ca01d795-11df-441f-aba3-5e4dd7db9c8d",
+              "title": "ND004 C01 L03 17 Lesson Recap",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "mueAE7foF7o",
+                "china_cdn_id": "mueAE7foF7o.mp4"
+              }
+            },
+            {
+              "id": 917339,
+              "key": "255c655f-1a80-481d-878b-cbdf79e25bc5",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2019/August/5d5a4854_sqlalchemy-layers/sqlalchemy-layers.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/255c655f-1a80-481d-878b-cbdf79e25bc5",
+              "caption": "SQLAlchemy Core versus SQLAlchemy ORM",
+              "alt": "",
+              "width": 1210,
+              "height": 688,
+              "instructor_notes": null
+            },
+            {
+              "id": 917340,
+              "key": "95408f41-e153-46cd-a868-4ab38ef01cbb",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2019/August/5d5a48b0_screen-shot-2019-08-18-at-11.58.46-pm/screen-shot-2019-08-18-at-11.58.46-pm.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/95408f41-e153-46cd-a868-4ab38ef01cbb",
+              "caption": "SQLAlchemy layers and responsibilities",
+              "alt": "",
+              "width": 1061,
+              "height": 529,
+              "instructor_notes": null
+            },
+            {
+              "id": 917341,
+              "key": "819c18f1-46a7-4455-969b-74bbdd065366",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2019/August/5d5a48fb_screen-shot-2019-08-18-at-11.59.53-pm/screen-shot-2019-08-18-at-11.59.53-pm.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/819c18f1-46a7-4455-969b-74bbdd065366",
+              "caption": "",
+              "alt": "",
+              "width": 1053,
+              "height": 523,
+              "instructor_notes": null
+            },
+            {
+              "id": 917342,
+              "key": "9eaf5d60-244f-47ab-95ab-03942905b30c",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2019/August/5d5a4906_screen-shot-2019-08-19-at-12.00.00-am/screen-shot-2019-08-19-at-12.00.00-am.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/9eaf5d60-244f-47ab-95ab-03942905b30c",
+              "caption": "",
+              "alt": "",
+              "width": 1066,
+              "height": 545,
+              "instructor_notes": null
+            },
+            {
+              "id": 917401,
+              "key": "234f4a42-7d66-4278-89c8-922e8be53257",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Handy Resources on SQLAlchemy\n\n* Bookmark this: [SQLAlchemy Cheat Sheet](https://github.com/crazyguitar/pysheeet/blob/master/docs/notes/python-sqlalchemy.rst#set-a-database-url)\n* [Using PostgreSQL through SQLAlchemy](https://www.compose.com/articles/using-postgresql-through-sqlalchemy/)",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

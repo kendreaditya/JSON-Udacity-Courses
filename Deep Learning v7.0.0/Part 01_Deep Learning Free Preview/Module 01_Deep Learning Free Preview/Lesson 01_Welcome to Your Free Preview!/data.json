@@ -1,0 +1,504 @@
+{
+  "data": {
+    "lesson": {
+      "id": 713869,
+      "key": "96bccd46-2870-4f74-93c4-7c4c8f212242",
+      "title": "Welcome to Your Free Preview!",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Get introduced to the program, discover the services we provide, and learn about the incredible projects you'll build.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/96bccd46-2870-4f74-93c4-7c4c8f212242/713869/1536689351206/Welcome+to+Your+Free+Preview%21+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/96bccd46-2870-4f74-93c4-7c4c8f212242/713869/1536689346496/Welcome+to+Your+Free+Preview%21+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 436063,
+          "key": "f15a92c9-aedd-4590-981e-e3d32e797e7f",
+          "title": "Welcome to the Preview",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "f15a92c9-aedd-4590-981e-e3d32e797e7f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 436064,
+              "key": "18636e4d-664f-4cd9-885f-08fe4993cfa3",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<strong><center>Welcome to the free preview of the Deep Learning Nanodegree program!</strong></center>\n\n*Please note that this version of the free preview displays content and services released before September 11, 2018. We will keep this free preview up until September 30, 2018. Our team is working on the updated version and will release once ready. Please refer to your syllabus should you have questions about content in the version you signed up for. Thank you for your understanding.*\n\n*If you enrolled to Deep Learning Nanodegree program on or after 8/15/2018, the content shown in this free preview isn't the version you will see in classroom. For the most updated content and service offering, please refer to https://www.udacity.com/course/deep-learning-nanodegree--nd101*\n\n-----------------------------------------------------------------------------------------\n\nWe know you may be curious about the content and experience of the program, so we created this mini experience as a way for you to get a taste for what to expect in the degree as a whole. Here you'll be able to preview content from the first week of class. \n\nAfter you look through all the material, we hope you are excited to join us in the actual classroom. When you're ready, visit [www.udacity.com/deep-learning](www.udacity.com/deep-learning) to enroll today.\n\nWe'll see you in class! \n\nThe Deep Learning Nanodegree Foundation Team",
+              "instructor_notes": ""
+            },
+            {
+              "id": 442067,
+              "key": "c99d21bf-c9e9-4127-b91f-ded753321983",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2017/November/59fa1be8_convolutional-networks/convolutional-networks.gif",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/c99d21bf-c9e9-4127-b91f-ded753321983",
+              "caption": "",
+              "alt": "",
+              "width": 480,
+              "height": 270,
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 682386,
+          "key": "011a6f15-64ac-43d3-9d2c-7aa1eccf2812",
+          "title": "Welcome to the Deep Learning Nanodegree Program",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "011a6f15-64ac-43d3-9d2c-7aa1eccf2812",
+            "completed_at": "2020-05-27T00:34:04.813Z",
+            "last_viewed_at": "2020-05-27T00:34:04.554Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 713729,
+              "key": "2e310693-2b2b-4da9-b3d5-d4a05e2d4652",
+              "title": "Welcome Video 180905 V1 RENDER V2 1 Wtitles",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "5U9tUZR3j9s",
+                "china_cdn_id": "5U9tUZR3j9s.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 682387,
+          "key": "259ece74-622b-4b24-99a2-b9937c457814",
+          "title": "Meet Your Instructors",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "259ece74-622b-4b24-99a2-b9937c457814",
+            "completed_at": "2020-05-27T00:34:37.653Z",
+            "last_viewed_at": "2020-05-27T00:34:37.611Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 713730,
+              "key": "3caa95ab-d023-4070-8398-ce0b2f832298",
+              "title": "Meet Your Instructors V3",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "I1VodFLH5qo",
+                "china_cdn_id": "I1VodFLH5qo.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 713530,
+          "key": "0dbb5edf-9124-495e-abab-9ec478d4bf60",
+          "title": "Program Structure",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "0dbb5edf-9124-495e-abab-9ec478d4bf60",
+            "completed_at": "2020-05-27T00:35:31.041Z",
+            "last_viewed_at": "2020-05-27T00:35:30.725Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 713531,
+              "key": "864c8cb5-a38e-4269-a205-e6becdfb47a3",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Program Structure\n\nThe Deep Learning Nanodegree program is divided into five parts, giving you a thorough understanding of deep learning, and covering some of the major topics. \n\n---\n## Introduction\nThe first part is an introduction to the program as well as a couple lessons covering tools you'll be using. You'll also get a chance to apply some deep learning models to do cool things like transferring the style of artwork to another image.\n\nWe’ll start off with a simple introduction to linear regression and machine learning. This will give you the vocabulary you need to understand recent advancements, and make clear where deep learning fits into the broader picture of machine learning techniques.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 713532,
+              "key": "a75bc449-a35b-42c0-a0e2-d5abad881b1d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "----\n## Neural Networks\n\nIn this part, you'll learn how to build a simple neural network from scratch using python. We'll cover the algorithms used to train networks such as gradient descent and backpropagation.\n\nThe **first project** is also available this week. In this project, you'll predict bike ridership using a simple neural network.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 713533,
+              "key": "41c34a9e-3771-4c6a-83ea-52af6905eaf9",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2018/September/5b96d3c7_screen-shot-2018-09-10-at-1.27.33-pm/screen-shot-2018-09-10-at-1.27.33-pm.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/41c34a9e-3771-4c6a-83ea-52af6905eaf9",
+              "caption": "Multi-layer neural network with some inputs and a single output. Image from [Stanford's cs231n course](http://cs231n.github.io/convolutional-networks/).",
+              "alt": "",
+              "width": 500,
+              "height": 794,
+              "instructor_notes": null
+            },
+            {
+              "id": 713535,
+              "key": "4b5c3ea6-88d1-4aae-92a1-07327d19d357",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### Sentiment Analysis\nYou'll also learn about model evaluation and validation, an important technique for training and assessing neural networks. We also have guest instructor Andrew Trask, author of [Grokking Deep Learning](https://www.manning.com/books/grokking-deep-learning), developing a neural network for processing text and predicting sentiment. The exercises in each chapter of his book are also available in his [Github repository](https://github.com/iamtrask/Grokking-Deep-Learning).",
+              "instructor_notes": ""
+            },
+            {
+              "id": 713536,
+              "key": "963666ac-3dd0-4227-9fd3-3d67cad0ffe1",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### Deep Learning with PyTorch\n\nThe last lesson will be all about using the deep learning framework, PyTorch. Here, you'll learn how to use the Tensor datatype, and the foundational knowledge you'll need to define and train your own deep learning models in PyTorch!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 713537,
+              "key": "a1207e9b-4a16-4bb8-9aef-1339825d5d63",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2018/September/5b96d4d9_pytorch-logo-dark/pytorch-logo-dark.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/a1207e9b-4a16-4bb8-9aef-1339825d5d63",
+              "caption": "PyTorch logo",
+              "alt": "",
+              "width": 300,
+              "height": 214,
+              "instructor_notes": null
+            },
+            {
+              "id": 713538,
+              "key": "a0f147c6-e91b-4cfa-8c4a-3ecbf34cf873",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "---\n## Convolutional Networks\n\nConvolutional networks have achieved state of the art results in computer vision. These types of networks can detect and identify objects in images. You'll learn how to build convolutional networks in PyTorch.\n\nYou'll also get the **second project,** where you'll build a convolutional network to classify dog breeds in pictures.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 713539,
+              "key": "9a2fb182-20ad-4f83-9d96-376f2159ca43",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2018/September/5b96d517_screen-shot-2018-09-10-at-1.33.11-pm/screen-shot-2018-09-10-at-1.33.11-pm.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/9a2fb182-20ad-4f83-9d96-376f2159ca43",
+              "caption": "Structure of a convolutional neural network.",
+              "alt": "",
+              "width": 500,
+              "height": 866,
+              "instructor_notes": null
+            },
+            {
+              "id": 713540,
+              "key": "b9a9f361-5f22-4ffa-8cf8-01764208fe97",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "You'll also use convolutional networks to build an _autoencoder_, a network architecture used for image compression and denoising. Then, you'll use a pre-trained neural network, to classify images the network has never seen before, a technique known as _transfer learning_.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 713541,
+              "key": "b2e8feaf-dde6-4f80-a011-a9e4c6e164d8",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "---\n## Recurrent Neural Networks\n\nIn this part, you’ll learn about Recurrent Neural Networks (RNNs) — a type of network architecture particularly well suited to data that forms sequences like text, music, and time series data. You'll build a recurrent neural network that can generate new text character by character.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 713587,
+              "key": "158b6223-dddb-4a18-b698-46b8f3a88973",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2018/September/5b96e4fc_screen-shot-2018-09-10-at-2.41.04-pm/screen-shot-2018-09-10-at-2.41.04-pm.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/158b6223-dddb-4a18-b698-46b8f3a88973",
+              "caption": "Examples of input/output sequence types.",
+              "alt": "",
+              "width": 600,
+              "height": 506,
+              "instructor_notes": null
+            },
+            {
+              "id": 713588,
+              "key": "c17a7b39-b310-4c17-b468-bf5d0d6d7a16",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### Natural Language Processing \n\nThen, you'll learn about word embeddings and implement the [Word2Vec](https://en.wikipedia.org/wiki/Word2vec) model, a network that can learn about semantic relationships between words. These are used to increase the efficiency of networks when you're processing text.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 713589,
+              "key": "5ebc7acc-a23b-4daf-9a39-a2b2c91707e3",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "You'll combine embeddings and an RNN to predict the sentiment of movie reviews, an example of common tasks in natural language processing.\n\nIn the **third project**, you'll use what you've learned here to generate new TV scripts from provided, existing scripts. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 713590,
+              "key": "64420030-2c15-48c4-900a-352232a1ef2a",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2018/September/5b96e67c_screen-shot-2018-09-10-at-2.47.28-pm/screen-shot-2018-09-10-at-2.47.28-pm.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/64420030-2c15-48c4-900a-352232a1ef2a",
+              "caption": "An example RNN structure in which an encoder represents the question: \"how are you?\" and a decoder generates the answer: \"I am good\"",
+              "alt": "",
+              "width": 600,
+              "height": 770,
+              "instructor_notes": null
+            },
+            {
+              "id": 713595,
+              "key": "c732a8c9-91c4-4b63-bd70-17fea947e13e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "---\n## Generative Adversarial Networks\n\nGenerative adversarial networks (GANs) are one of the newest and most exciting deep learning architectures, showing incredible capacity for understanding real-world data. In this part, you'll learn about and implement GANs for a variety of tasks. You'll even see how to code a [CycleGAN](https://github.com/junyanz/CycleGAN) for generating images, and learn from one of the creators of this formulation, Jun-Yan Zhu, a researcher at [MIT's CSAIL](https://www.csail.mit.edu/).",
+              "instructor_notes": ""
+            },
+            {
+              "id": 713596,
+              "key": "f2c24bd9-ba72-4884-a0bf-bd129c5c806d",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2018/September/5b96e7c1_screen-shot-2018-09-10-at-2.52.51-pm/screen-shot-2018-09-10-at-2.52.51-pm.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/f2c24bd9-ba72-4884-a0bf-bd129c5c806d",
+              "caption": "Examples of image-to-image translation done by [CycleGAN and Pix2Pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) formulations.",
+              "alt": "",
+              "width": 600,
+              "height": 612,
+              "instructor_notes": null
+            },
+            {
+              "id": 713607,
+              "key": "03e6ed50-d8a9-4fd7-a939-8ea7accab659",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "The inventor of GANs, Ian Goodfellow, will show you how GANs work and how to implement them. Then, in the **fourth project,** you'll use a deep convolutional GAN to generate completely new images of human faces.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 713608,
+              "key": "e12ccf6e-d2da-4352-a64f-17426fd0a7c9",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2018/September/5b96e835_screen-shot-2018-09-10-at-2.54.49-pm/screen-shot-2018-09-10-at-2.54.49-pm.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/e12ccf6e-d2da-4352-a64f-17426fd0a7c9",
+              "caption": "Low-res, GAN-generated images of faces.",
+              "alt": "",
+              "width": 200,
+              "height": 550,
+              "instructor_notes": null
+            },
+            {
+              "id": 713611,
+              "key": "d5320407-3e96-4627-a8e7-59f7dc473e55",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "---\n## Deploying Machine Learning Models\n\nAs more and more companies look to build AI products, there is a growing demand for engineers who are able to deploy machine learning models to global audiences. In this part, you’ll get experience deploying a model so that it can be accessed via a web app and respond to user input.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 713618,
+              "key": "b3ff8540-0377-4f07-a08e-eb14aa56fc27",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2018/September/5b96ea51_screen-shot-2018-09-10-at-3.03.48-pm/screen-shot-2018-09-10-at-3.03.48-pm.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/b3ff8540-0377-4f07-a08e-eb14aa56fc27",
+              "caption": "Image of a cloud service connecting data to a laptop.",
+              "alt": "",
+              "width": 300,
+              "height": 734,
+              "instructor_notes": null
+            },
+            {
+              "id": 713615,
+              "key": "e7f71721-f856-4bf1-a810-ec29d9d1386d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "You'll also learn to monitor a model using PyTorch and [Amazon's SageMaker](https://aws.amazon.com/sagemaker/). In the **fifth project**, you will deploy your own PyTorch sentiment analysis model and create a gateway for accessing this model from a website.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 713626,
+              "key": "0effa500-970f-47ee-81ce-304cb3cd4fa9",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "---\n## Projects You Will Build\n\nThe five projects you'll complete in this course are perhaps the most important part of your learning journey. They give you the chance to apply what you've learned and even share your work with friends or potential employers! These projects are designed to be challenging and interesting, as such, you may not always pass on the first attempt, but, if you are enrolled in our complete program, you will get feedback from a real person; a Udacity reviewer. This reviewer will help you figure out what could be improved in your code and you can submit your code again until you pass the project.\n\nHere are the five projects, listed for convenience:\n\n>1. Predicting Bike-Sharing Data\n2. Dog Breed Classifier\n3. Generate TV Scripts\n4. Generate Faces\n3. Deploy a Sentiment Analysis Model\n\nYou are also encouraged to keep a public portfolio of completed project code on a personal Github or write a blog posts about your problem-solving approach.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 713627,
+              "key": "fdfd9e71-6d2b-4df7-afa7-4f0a035eb052",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Deadlines\nWe provide deadlines for these projects to help you stay on track. You will find these deadlines posted in the classroom. The deadlines aren't mandatory, and there are no consequences for missing them. But, do try to stick to them so you complete the program in time.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 262156,
+          "key": "bfe1675b-e196-452f-91dd-f7bfccfdc166",
+          "title": "Prerequisites",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "bfe1675b-e196-452f-91dd-f7bfccfdc166",
+            "completed_at": "2020-05-27T00:36:56.812Z",
+            "last_viewed_at": "2020-05-27T00:36:56.759Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 262160,
+              "key": "3423097a-c3bb-430b-85b3-3fb800d2021f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Prerequisites\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 262162,
+              "key": "f8f166d6-3c7e-451b-ba61-a4316407089f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "We've designed this program such that you only require the following prerequisite knowledge:\n\n* Required\n    * [Intermediate Python experience](https://www.udacity.com/course/programming-foundations-with-python--ud036).\n* Optional\n    * [Multivariable Calculus](https://www.khanacademy.org/math/multivariable-calculus) and [Linear Algebra](https://www.khanacademy.org/math/linear-algebra) if possible.\n\nThat being said, we've included a lot of the detailed mathematics for those of you who do want to go in depth and understand the theory behind these concepts. Such content is optional and shouldn't prevent you from doing the projects. However, it is encouraged for a theoretical understanding.\n\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 262775,
+          "key": "1e2438e3-5667-40fc-829a-3101177a23f1",
+          "title": "Getting Set Up",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "1e2438e3-5667-40fc-829a-3101177a23f1",
+            "completed_at": "2020-05-27T00:37:11.284Z",
+            "last_viewed_at": "2020-05-27T15:56:34.568Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 442031,
+              "key": "e13fd4b0-dd4d-4f86-977c-0358e8f34ad1",
+              "title": "Getting-Setup",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "1SuxTnuQkeE",
+                "china_cdn_id": "1SuxTnuQkeE.mp4"
+              }
+            },
+            {
+              "id": 262777,
+              "key": "449f43df-49e6-4ab6-8381-971560a6de41",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "If you haven't used Numpy, Pandas, or Matplotlib before, please take our [Intro to Data Analysis](https://www.udacity.com/course/intro-to-data-analysis--ud170) course. These are the main tools for working with and visualizing data in Python, so you'll need some experience with them.",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

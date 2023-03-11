@@ -1,0 +1,1556 @@
+{
+  "data": {
+    "lesson": {
+      "id": 899825,
+      "key": "37cec828-a108-4013-96e7-645495aed9a0",
+      "title": "Endpoints and Payloads",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "In this lesson, you'll learn about how Flask is extensible in itself to handle different kinds of methods, more complex endpoints, and to return formatted data to the client. ",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/37cec828-a108-4013-96e7-645495aed9a0/899825/1579890246564/Endpoints+and+Payloads+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/37cec828-a108-4013-96e7-645495aed9a0/899825/1579890242275/Endpoints+and+Payloads+Subtitles.zip"
+          },
+          {
+            "name": "Setup",
+            "uri": "https://video.udacity-data.com/topher/2020/January/5e2b3ce0_setup/setup.sql"
+          },
+          {
+            "name": "Books",
+            "uri": "https://video.udacity-data.com/topher/2020/January/5e2b3cef_books/books.psql"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 899820,
+          "key": "42afc505-dc2a-4857-967d-203b7fd7ddff",
+          "title": "Overview",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "42afc505-dc2a-4857-967d-203b7fd7ddff",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 899799,
+              "key": "26ea046f-177b-4615-b7af-b82350fcd0b2",
+              "title": "Lesson Intro",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Overview",
+              "instructor_notes": ""
+            },
+            {
+              "id": 899803,
+              "key": "6f9671c6-4564-4057-be4e-b4ae388dc36c",
+              "title": "FSND C2 L3 A01 Lesson Intro",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "yw8dQyi_Mxk",
+                "china_cdn_id": "yw8dQyi_Mxk.mp4"
+              }
+            },
+            {
+              "id": 917263,
+              "key": "0aa90b50-9b02-457d-8a10-7f3a1a6e1941",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In the last lesson, you gained an understanding of HTTP and the ability to set up a basic Flask app. In this lesson, you'll learn about how to extend the Flask microframework so that we can:\n* Organize API Endpoints\n* Handle Cross-Origin Resource Sharing (CORS)\n* Parse the request path and body\n* Use POST, PATCH, and DELETE requests in Flask\n* Handle errors\n\nTo accomplish this, we'll need to use a new library, called *Flask-CORS*",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 899822,
+          "key": "cff97098-b597-425a-99e0-7e06d245355d",
+          "title": "Organizing API endpoints",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "cff97098-b597-425a-99e0-7e06d245355d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 899798,
+              "key": "9451e4d9-58c3-4db3-96ce-42bfc778f45f",
+              "title": "Organizing API endpoints",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Organizing API Endpoints",
+              "instructor_notes": ""
+            },
+            {
+              "id": 899809,
+              "key": "a56e59b7-8c99-4b54-8fc9-75a26affdf74",
+              "title": "FSND C2 L3 A02 Organizing API Endpoints",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "jvlXKosZylQ",
+                "china_cdn_id": "jvlXKosZylQ.mp4"
+              }
+            },
+            {
+              "id": 906236,
+              "key": "7df5c778-dc4e-4903-bb02-54421ec9e9aa",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "When organizing API endpoints, they should be based on the resources instead of on actions. The request methods will determine what action should be taken at a given URL endpoint. Your entire API's scheme should be consistent, clear and concise. Below are the principles and examples from the video, for your reference:\n\n## Principles\n- **Should be intuitive**\n- **Organize by resource**\n    - Use nouns in the path, not verbs\n    - The method used will determine the operation taken  \n    - GOOD: \n        - https://example.com/posts\n    - BAD: \n        - https://example.com/get_posts\n- **Keep a consistent scheme**\n    - Plural nouns for collections\n    - Use parameters to specify a specific item\n    - GOOD: \n        - https://example.com/entrees\n        - https://example.com/entrees/5\n    - BAD: \n        - https://example.com/entree\n        - https://example.com/entree_five\n- **Don’t make them too complex or lengthy**\n    - No longer than `collection/item/collection`\n    - GOOD: \n        - https://example.com/entrees/5/reviews\n    - BAD: \n        - https://example.com/entrees/5/customers/4/reviews\n\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 906237,
+              "key": "7c3ff04f-e418-4767-9b01-c9955b03398c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Methods & Endpoints Review\nThe request method used will determine the operation performed for the given resource URI. Though your API documentation should explain exactly what operation is performed and data returned via the response, it should be intuitive for anyone using your API, such as in the example below. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 906239,
+              "key": "0ee14949-d877-4211-a3b2-93f674a60461",
+              "title": "FSND C2 L3 A03 Methods And Endpoints Review",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "KVQI49a9Ao4",
+                "china_cdn_id": "KVQI49a9Ao4.mp4"
+              }
+            },
+            {
+              "id": 899815,
+              "key": "34cbe734-8bd3-43d2-93b3-20efb5e63120",
+              "title": "Organizing API endpoints Quiz",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "34cbe734-8bd3-43d2-93b3-20efb5e63120",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which endpoint is correctly formatted to complete operations on all movies of genre id `1`?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "genre/1/movies",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "genres/movies/1",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "genres/1/movies",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk4",
+                    "text": "movies/genres/1",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 899816,
+              "key": "7bd27c54-9b4a-4e29-9680-46299d7e2eab",
+              "title": "Organizing API endpoints Quiz 2",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "7bd27c54-9b4a-4e29-9680-46299d7e2eab",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which method—endpoint combination should you use to create a new movie of genre `1`? ",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "GET genres/1/movies",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "POST genres/1",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "PATCH genres/1/movies",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk4",
+                    "text": "POST genres/1/movies",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 900466,
+              "key": "7877c192-5075-4a70-abb4-67a80b5485ed",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "7877c192-5075-4a70-abb4-67a80b5485ed",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "The following API endpoints are poorly formatted. Match each endpoint with the principle of API endpoints that it violates. "
+                },
+                "concepts_label": "Endpoint",
+                "answers_label": "Principle",
+                "concepts": [
+                  {
+                    "text": "`https://sample.com/students/5/submit`",
+                    "correct_answer": {
+                      "id": "a1563389542408",
+                      "text": "Use nouns in the path, not verbs"
+                    }
+                  },
+                  {
+                    "text": "`https://sample.com/student/23/exam`",
+                    "correct_answer": {
+                      "id": "a1563389578661",
+                      "text": "Plural nouns for collections"
+                    }
+                  },
+                  {
+                    "text": "`https://sample.com/student1`",
+                    "correct_answer": {
+                      "id": "a1563389579302",
+                      "text": "Use parameters to specify a specific item"
+                    }
+                  },
+                  {
+                    "text": "`https://sample.com/students/1/exams/8/results`",
+                    "correct_answer": {
+                      "id": "a1563389579815",
+                      "text": "Endpoints should not be lengthy or complex"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1563389579815",
+                    "text": "Endpoints should not be lengthy or complex"
+                  },
+                  {
+                    "id": "a1563389578661",
+                    "text": "Plural nouns for collections"
+                  },
+                  {
+                    "id": "a1563389542408",
+                    "text": "Use nouns in the path, not verbs"
+                  },
+                  {
+                    "id": "a1563389579302",
+                    "text": "Use parameters to specify a specific item"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 900467,
+              "key": "06c7b979-5ec1-4150-b68a-2a48942381da",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "06c7b979-5ec1-4150-b68a-2a48942381da",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following endpoint-method combinations would raise an error? ",
+                "answers": [
+                  {
+                    "id": "a1563389933434",
+                    "text": "POST /messages/1",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1563389954198",
+                    "text": "PATCH  /messages/1",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1563389954725",
+                    "text": "DELETE /messages",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1563389955239",
+                    "text": "PUT /messages",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 900468,
+              "key": "70fc2705-c27e-4272-8003-7fc836c61e4c",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "70fc2705-c27e-4272-8003-7fc836c61e4c",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following endpoint-method combinations would you use to make a partial update to all reactions to message 47? ",
+                "answers": [
+                  {
+                    "id": "a1563390061758",
+                    "text": "PATCH /messages/47/reactions",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1563390095492",
+                    "text": "PUT /messages/47/reactions",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1563390096067",
+                    "text": "POST /messages/47/reactions",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1563390096597",
+                    "text": "GET /messages/47/reactions",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 900469,
+              "key": "cdc4137b-53de-4008-b497-735cc77a878b",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "cdc4137b-53de-4008-b497-735cc77a878b",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following endpoint-method combinations would you use to make a new reaction to message 47?",
+                "answers": [
+                  {
+                    "id": "a1563390181943",
+                    "text": "PATCH /messages/47/reactions",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1563390204961",
+                    "text": "PUT /messages/47/reactions",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1563390211862",
+                    "text": "POST /messages/47/reactions",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1563390212384",
+                    "text": "GET /messages/47/reactions",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 900470,
+              "key": "67f8081e-27b6-42a5-901e-e3473ccf51b6",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "67f8081e-27b6-42a5-901e-e3473ccf51b6",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following endpoint-method combinations updates the entirety of the representations of the reactions to message 47? ",
+                "answers": [
+                  {
+                    "id": "a1563390252066",
+                    "text": "PATCH /messages/47/reactions",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1563390291865",
+                    "text": "PUT /messages/47/reactions",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1563390292347",
+                    "text": "POST /messages/47/reactions",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1563390292829",
+                    "text": "GET /messages/47/reactions",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 917267,
+          "key": "20503fe1-ec10-4138-9ecd-9737c280e18c",
+          "title": "CORS",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "20503fe1-ec10-4138-9ecd-9737c280e18c",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 917268,
+              "key": "a39449f0-caf4-47f6-b1c4-955c84b62984",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# CORS",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917269,
+              "key": "c0c477d9-2614-4b18-aacf-13d312720a20",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "If you've had a little experience as a web developer, you may have seen an error in the browser:\n\n`No 'Access-Control-Allow-Origin' header is present on the requested resource`\n\nThis error is all about **Cross-Origin Resource Sharing** or **CORS**. Let's see what that's all about.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917272,
+              "key": "da659b40-c5fe-4437-9507-f08138123b38",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## The same-origin policy and CORS",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917270,
+              "key": "4b677bfa-9ea0-47a0-840a-8355a824dd0d",
+              "title": "FSND C2 L3 A04 CORS",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "ehkKIqZftrc",
+                "china_cdn_id": "ehkKIqZftrc.mp4"
+              }
+            },
+            {
+              "id": 917271,
+              "key": "f5678fbe-aaff-4ecb-9abf-9ba9c9b44791",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "The **same-origin policy** is a concept of web security that allows scripts in Webpage 1 to access data from Webpage 2 only if they share the same domain. This means that the above error will be raised in the following cases:\n- Different domains\n- Different subdomains (`example.com` and `api.example.com`)\n- Different ports (`example.com` and `example.com:1234`)\n- Different protocols (`http://example.com` and `https://example.com`)\n\nThis is not, however, to say that it is really an error. *It is behaving exactly as it should.* This policy is there to protect you and your users. For instance, attackers may embed malicious scripts in advertisements. This policy prevents those scripts from successfully making requests to your bank's website as you access the website hosting the advertisement. \n\nIf you're sending any requests beyond very simple GET or POST requests, then before your actual request is sent, the browser sends a preflight OPTIONS request to the server. If CORS is not enabled, then the browser will not respond properly and the actual request will not be sent. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917276,
+              "key": "903a5e68-273c-4ab9-a647-1fdb3ce3a504",
+              "title": "CORS Quiz",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "903a5e68-273c-4ab9-a647-1fdb3ce3a504",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Select the requests that *are* cross-domain.",
+                "answers": [
+                  {
+                    "id": "a1566166052575",
+                    "text": "`example.com` and `api.example.com`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1566166064625",
+                    "text": "`example.com` and `example.com/entrees`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566166065225",
+                    "text": "`https://example.com` and `http://example.com`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1566166066064",
+                    "text": "`example.com` and `example.com:3000`",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 917273,
+              "key": "b6eaea99-934f-4ece-a7e3-60060ca681ef",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## CORS headers",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917274,
+              "key": "b64b62b0-a56f-42ed-a09e-89d768302811",
+              "title": "FSND C2 L3 A05 CORS Header",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "WLi2n2XEUZs",
+                "china_cdn_id": "WLi2n2XEUZs.mp4"
+              }
+            },
+            {
+              "id": 917275,
+              "key": "add440ab-5917-4e90-bcc8-bbea96bffae7",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In order for the requests to be processed properly, CORS utilizes headers to specify what the server will allow: \n-  Access-Control-Allow-Origin\n    - What client domains can access its resources. For any domain use *\n- Access-Control-Allow-Credentials\n    - Only if using cookies for authentication - in which case its value must be true \n- Access-Control-Allow-Methods\n    - List of HTTP request types allowed \n- Access-Control-Allow-Headers\n    - List of http request header values the server will allow, particularly useful if you use any custom headers ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917277,
+              "key": "b977d3e4-575f-4d98-ad56-ad6d455abb9d",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "b977d3e4-575f-4d98-ad56-ad6d455abb9d",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "I'm working on a project and decide to set the Access-Control-Allow-Origin header to `*`. What is my reasoning for doing so? ",
+                "answers": [
+                  {
+                    "id": "a1566166310247",
+                    "text": "Allow websites including an asterisk to access my API ",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566166321099",
+                    "text": "Allow any website to access my API",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1566166321644",
+                    "text": "Allow websites coming from the same origin to access my API",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566166323577",
+                    "text": "Allow `http` and `https` websites to access my API",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 899823,
+          "key": "56008375-e597-42db-92e9-60e40b0c99b9",
+          "title": "Flask-CORS",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "56008375-e597-42db-92e9-60e40b0c99b9",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 899812,
+              "key": "0cde6bca-80c6-4d85-8dce-7e3965561e9c",
+              "title": "CORS",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Flask-CORS\nWelcome to your first Flask extension! [Flask-CORS](https://flask-cors.readthedocs.io/en/latest/) is the extension for handling CORS and its installation and usage are very simple.\n\nIn the workspace below, you'll find the basic code for enabling Flask-CORS on a simple application. If you hover the mouse over the code that is underlined in green, you'll see there are short movie explanations you can play for each of them.\n\nUsing the explanations in the workspace, see if you can answer the quiz that follows it.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 906210,
+              "key": "3075939a-c9ff-4155-bd63-38ddeddbadfd",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r848940c899823xJUPYTERi5y8ngkd",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-nsdzz",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/flask-cors.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 900822,
+              "key": "4b4cbb6b-2557-44f2-b0ca-9192aa0541e6",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "4b4cbb6b-2557-44f2-b0ca-9192aa0541e6",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Match the line of code with the relevant kind of Flask-CORS implementation "
+                },
+                "concepts_label": "Code",
+                "answers_label": "Flask-CORS behavior",
+                "concepts": [
+                  {
+                    "text": "`CORS(app)`",
+                    "correct_answer": {
+                      "id": "a1563653926024",
+                      "text": "Basic Initialization"
+                    }
+                  },
+                  {
+                    "text": "`@cross_origin()`",
+                    "correct_answer": {
+                      "id": "a1563653992701",
+                      "text": "Route Specific Usage"
+                    }
+                  },
+                  {
+                    "text": "`cors = CORS(app, resources={r\"/api/*\": {\"origins\": \"*\"}})`",
+                    "correct_answer": {
+                      "id": "a1563653993295",
+                      "text": "Resource Specific Usage"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1563653926024",
+                    "text": "Basic Initialization"
+                  },
+                  {
+                    "id": "a1563653993295",
+                    "text": "Resource Specific Usage"
+                  },
+                  {
+                    "id": "a1563653992701",
+                    "text": "Route Specific Usage"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 917282,
+              "key": "2f1400c6-c316-4393-ba8f-e1f0b1b08f79",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this next video, we'll walk through how to implement all of the above code in your local environment, and get a little more in-depth about how it works. For additional practice, you may want to follow along using your own code editor and terminal. There's also a text summary below the video for your reference.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917281,
+              "key": "c7b5567f-f2df-4cdc-b527-782fd630b556",
+              "title": "FSND C2 L3 A06 Flask CORS Summary",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "-nO0JJeIXhA",
+                "china_cdn_id": "-nO0JJeIXhA.mp4"
+              }
+            },
+            {
+              "id": 899805,
+              "key": "bf11f888-430f-4bfa-b183-1818c880e46d",
+              "title": "Flask CORS Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "For your reference, here is a summary of all the steps we took (and the code we used) in the video.\n\n## Installation\nIn order to install Flask-CORS simply run\n```\npip3 install -U flask-cors\n```\n\n## Initialization \nOnce Flask-CORS is installed, you simply import the CORS function and call it with your app instance as a parameter. This will intialize Flask-CORS will all default options. \n\n```\nfrom flask_cors import CORS\n\napp = Flask(__name__, instance_relative_config=True)\nCORS(app)\n```\n\n## Resource-Specific Usage\nThere are multiple options you can use to specify your Flask-CORS behavior. One typical one is resources, which contains a dictionary whose keys are regular expressions and values are dictionary or kwargs\n\n```\ncors = CORS(app, resources={r\"/api/*\": {\"origins\": \"*\"}})\n```\n\n## Route-Specific Usage\nIf you need to enable CORS on a given route, like those non-simple requests, you can use `@cross_origin()` to enable it.\n\n```\n@app.route(\"/hello\")\n@cross_origin()\ndef get_greeting():\n    return jsonify({'message':'Hello, World!'})\n```",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 899824,
+          "key": "f51a76f8-1662-4c0e-9c25-fc0537847e4e",
+          "title": "Flask Part II",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "f51a76f8-1662-4c0e-9c25-fc0537847e4e",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 899806,
+              "key": "57b5cfcd-fdeb-4da9-be50-de72b777ac98",
+              "title": "Flask Part II",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Flask Part II\nNow that we're ready to make non-simple requests, we'll learn about and practice making complex GET requests and additional requests (POST, PATCH, and DELETE), using CORS and basic error handling. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 899804,
+              "key": "e55321bb-d0a0-478d-9b4e-ade105b8bb40",
+              "title": "FSND C2 L3 A07 Flask Part 2 Intro",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "TuqChg89WKw",
+                "china_cdn_id": "TuqChg89WKw.mp4"
+              }
+            },
+            {
+              "id": 899802,
+              "key": "e915a426-a332-482c-91cd-5241a78ef40b",
+              "title": "Flask Route Decorator",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Flask Route Decorator\nYou've already seen the ` @app.route` decorator used in its most basic form like so:\n```\n@app.route('/hello')\ndef get_greeting():\n    return jsonify({'message':'Hello, World!'})\n```\n\nIn addition, the ` @app.route` decorator can handle Variable Rules and multiple HTTP methods \n\n## Variable Rules\nIn our endpoint naming scheme we follow `collection/item/collection`. In order to handle that variable item. In order to handle that variability in Flask, you add a ` <variable_name>` within the path argument of the `@app.route` decorator, which is then passed to the function as a keyword argument variable_name. \n\nYou can also specify the type of the argument by using `<converter:variable_name>` syntax. \n\n```\n@app.route('/entrees/<int:entree_id>')\ndef retrieve_entree(entree_id):\n    return 'Entree %d' % entree_id\n\n```\n\n\n## HTTP Methods\nBy default, the ` @app.route` decorator answers only get requests. In order to enable more requests types, pass the method parameter to the decorate including a list of string methods. \n\n```\n@app.route('/hello', methods=['GET', 'POST'])\ndef greeting():\n    if request.method == 'POST':\n        return create_greeting()\n    else:\n        return send_greeting()\n```\n\nOPTIONS requests are automatically implemented and HEAD is also automatically implemented if GET is present. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 899814,
+              "key": "83c96d42-a648-4529-a660-b64c10bd06df",
+              "title": "FSND C2 L3 A08 Flask Pagination Example Part 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "sYDfHTT8DsM",
+                "china_cdn_id": "sYDfHTT8DsM.mp4"
+              }
+            },
+            {
+              "id": 899819,
+              "key": "d513171a-89a2-4bad-b48f-98e835a3642a",
+              "title": "Flask Pagination Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Pagination in Flask\nWhen handling large collections of data, attempting to serialize and send all of that data to the frontend will slow down the response and rendering to the client. \n\nA common way to handle this issue is to paginate the data you're sending, and send it in chunks instead. Similar to variables discussed above, flask can handle request arguments to get additional request conditions such as page or search terms. \n\n## Query Parameters\n\nThe below examples show the format of query parameters. When writing query parameters convention dictates that:\n- A question mark precedes the query parameters\n- Parameters are in key=value pairs with an equal sign in between the key and value\n- Sets of parameters are separated by an ampersand\n\n```\nwww.example.com/entrees?page=1\n\nwww.example.com/entrees?page=1&allergens=peanut\n```\n\n## Request Arguments\n\nIn flask, when a request is received with query params the route in the @app.route decorator remains the same and the request object arguments contains the parameter. You access it as shown below. `request.args` is a Python dictionary so we use the `get` method to access the value and provide a default value, in this case 1. \n\n```\n@app.route('/entrees', methods=['GET'])\n  def get_entrees():\n    page = request.args.get('page', 1, type=int)\n```\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 899800,
+              "key": "ee1d38e1-4025-4a04-8a03-97fbc0c5e397",
+              "title": "Flask Part II Quiz",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "ee1d38e1-4025-4a04-8a03-97fbc0c5e397",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What is missing from the following code? \n```\n@app.route('/books/<int:book_id>')\ndef retrieve_book():\n    return 'Book %d' % book_id\n```",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "Function argument `book`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "Returning a JSON object",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "Function argument `book_id`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk4",
+                    "text": "A query parameter",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 899807,
+              "key": "66cfee7a-5055-4220-b18b-7c32e7d84fb8",
+              "title": "Flask Part II Quiz 2",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "66cfee7a-5055-4220-b18b-7c32e7d84fb8",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Choose all correct ways to write an @app.route decorator for get requests in flask",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "@app.route(methods=['GET'])",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "@app.route('/')",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "@app.route('/quiz', methods=['GET', ‘POST’])",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk4",
+                    "text": "@app.route('/quiz, methods=['PATCH'], ['POST'])",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 900804,
+              "key": "62fa30b8-b457-4b71-8c7e-00eea1af2bfe",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "62fa30b8-b457-4b71-8c7e-00eea1af2bfe",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Match the sample app.route decorators with the concepts they demonstrate. "
+                },
+                "concepts_label": "Sample Decorator",
+                "answers_label": "Concept",
+                "concepts": [
+                  {
+                    "text": "```\n@app.route('/students')\n```",
+                    "correct_answer": {
+                      "id": "a1563636029815",
+                      "text": "Basic app.route"
+                    }
+                  },
+                  {
+                    "text": "```\n@app.route('/students/<int:student_id>')\n```",
+                    "correct_answer": {
+                      "id": "a1563636889329",
+                      "text": "Variable Rules"
+                    }
+                  },
+                  {
+                    "text": "```\n@app.route('/students',  methods=['GET', 'POST'])\n```",
+                    "correct_answer": {
+                      "id": "a1563636890178",
+                      "text": "Method Specification"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1563636029815",
+                    "text": "Basic app.route"
+                  },
+                  {
+                    "id": "a1563636889329",
+                    "text": "Variable Rules"
+                  },
+                  {
+                    "id": "a1563636890178",
+                    "text": "Method Specification"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 900808,
+              "key": "c8d8705d-4c24-4730-9590-f4c3c7c3c038",
+              "title": "",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "c8d8705d-4c24-4730-9590-f4c3c7c3c038",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following paths including query params are formatted correctly?",
+                "answers": [
+                  {
+                    "id": "a1563640762077",
+                    "text": "www.sample.com/students/?page=2",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1563640786328",
+                    "text": "www.sample.com/students/3/notes?page=2",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1563640786827",
+                    "text": "www.sample.com/students?page=2age=12",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1563640787408",
+                    "text": "www.sample.com/students?page=2&age=12",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 900810,
+              "key": "9dfc7154-f1ec-416b-ae0b-cebfcff9f091",
+              "title": "",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "9dfc7154-f1ec-416b-ae0b-cebfcff9f091",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "For the following app.route, which of the following lines are correct ways to get the query parameter values?\n```\n@app.route('/students', methods=['GET'])\ndef get_students():\n  # your code here\n```",
+                "answers": [
+                  {
+                    "id": "a1563643013269",
+                    "text": "page = request.args.get('page', 1, type=int)",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1563643429386",
+                    "text": "page = request.args.get('page', 1)",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1563643434816",
+                    "text": "age = request.args.get('age')",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1563643461598",
+                    "text": "age = request.args.get('age', 1, type=int)",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 900805,
+              "key": "8c88ee09-4f1f-4bb1-a304-751fa80b40a8",
+              "title": "",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "8c88ee09-4f1f-4bb1-a304-751fa80b40a8",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Write a basic `app.route` decorator that DOES NOT use variable rules or method specification. ",
+                "matchers": [
+                  {
+                    "expression": "/@app.route\\(\\'\\/\\w*(\\/*\\w*)\\'\\)"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 900806,
+              "key": "082fd3e0-9607-4340-bd99-2b94ba04656a",
+              "title": "",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "082fd3e0-9607-4340-bd99-2b94ba04656a",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Write an `app.route` decorator that uses ONLY method specification, NOT variable rules. ",
+                "matchers": [
+                  {
+                    "expression": "@app.route\\(\\'(\\/\\w*)*\\'\\,\\s*methods\\=\\[(\\s*\\'[A-Z]*\\'\\,*)+\\]\\)"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 900807,
+              "key": "ef655cc7-1e43-4726-a1b9-70f38ccf670b",
+              "title": "",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "ef655cc7-1e43-4726-a1b9-70f38ccf670b",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Write an `app.route` decorator that uses ONLY variable rules, NOT method specification. ",
+                "matchers": [
+                  {
+                    "expression": "@app.route\\(\\'(\\/\\w*)*\\<[a-z]+\\:[a-z]+\\_*[a-z]*\\>\\'\\)"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 900809,
+              "key": "f5a13545-0bb7-4e7f-a35a-61a86cb93ae8",
+              "title": "",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "f5a13545-0bb7-4e7f-a35a-61a86cb93ae8",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Write a path that starts with www.example.com and includes two query parameters of your choice. ",
+                "matchers": [
+                  {
+                    "expression": "www.example.com\\?([a-z]+\\=[a-z]+)\\&([a-z]+\\=[a-z]+)"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 899808,
+              "key": "037dd013-7e87-4378-8338-f3aefbe40041",
+              "title": "FSND C2 L3 A09 Flask Pagination Example Part 2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "OG3ofmI73B0",
+                "china_cdn_id": "OG3ofmI73B0.mp4"
+              }
+            },
+            {
+              "id": 906246,
+              "key": "2f12015b-759f-4eca-ae68-87458cc1022b",
+              "title": "FSND C2 L3 A10 Flask Pagination Summary",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "VXUfv2pcsXI",
+                "china_cdn_id": "VXUfv2pcsXI.mp4"
+              }
+            },
+            {
+              "id": 906381,
+              "key": "3b23b0ee-8e92-4d3e-b635-8f22d79519de",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r848940c899824xJUPYTERLd0mlzjj1",
+              "pool_id": "jupyterlab",
+              "view_id": "jupyter-lab-32f4u",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "pageEnd": "",
+                    "pageStart": "",
+                    "allowSubmit": false,
+                    "defaultPath": "/",
+                    "actionButtonText": ""
+                  },
+                  "kind": "jupyter-lab"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 899821,
+          "key": "585ed114-2509-4fcb-9f7f-94cf23da764f",
+          "title": "Error Handling",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "585ed114-2509-4fcb-9f7f-94cf23da764f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 899811,
+              "key": "91bd0ef2-d844-43e6-94a6-5049c30010ea",
+              "title": "Error Handling",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Error Handling Intro",
+              "instructor_notes": ""
+            },
+            {
+              "id": 899817,
+              "key": "71934b87-fa26-400c-8a88-384babb19d6c",
+              "title": "FSND C2 L3 A15 Error Handling Part 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "jwQhPIaQpgg",
+                "china_cdn_id": "jwQhPIaQpgg.mp4"
+              }
+            },
+            {
+              "id": 906247,
+              "key": "fc0cac5b-ce49-42c9-aa1f-864bfe2831dc",
+              "title": "FSND C2 L3 A16 Error Handling Part 2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "P7lkioo-igM",
+                "china_cdn_id": "P7lkioo-igM.mp4"
+              }
+            },
+            {
+              "id": 906248,
+              "key": "7d38807f-5605-4f01-ba1b-19e465d378d1",
+              "title": "FSND C2 L3 A17 Error Handling Part 3",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "xpo0ooa0U7A",
+                "china_cdn_id": "xpo0ooa0U7A.mp4"
+              }
+            },
+            {
+              "id": 917289,
+              "key": "c7330fe7-a60d-45b9-a573-546a47abdea9",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "When you use the abort method, the default response is not digestible for the client or user.  \n```\nabort(404)\n\n<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2 Final//EN\">\n<title>404 Not Found</title>\n<h1>Not Found</h1>\n<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>\n```\n\nIn addition, we want to ensure all of our server responses have consistent formatting and that we provide adequate information to the client regarding the error. The `@app.errorhandler` decorator allows you to specify the behavior for expected errors. \nWhen using this decorator take into consideration:\n- passing the status code or Python error as an argument to the decorator\n- logical naming of the function handler\n- consistent formatting and messaging of the JSON object response\n\n```\n@app.errorhandler(404)\ndef not_found(error):\n    return jsonify({\n        \"success\": False, \n        \"error\": 404,\n        \"message\": \"Not found\"\n        }), 404\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 900811,
+              "key": "9bcd534a-6e0d-4ee8-9cf7-5a9ec3cccfcc",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "9bcd534a-6e0d-4ee8-9cf7-5a9ec3cccfcc",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Calls to `abort` automatically return errors in what data format? ",
+                "answers": [
+                  {
+                    "id": "a1563643600322",
+                    "text": "HTML",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1563643618448",
+                    "text": "JSON",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1563643620882",
+                    "text": "XML",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1563643637793",
+                    "text": "PDF",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 900812,
+              "key": "7cd54f01-3fee-4e33-b5c8-78604dd68f2b",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "7cd54f01-3fee-4e33-b5c8-78604dd68f2b",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What's missing from or wrong with the following code? \n\n```\n  @app.errorhandler()\n  def unprocessable(error):\n    return jsonify({\n      \"success\": False, \n      \"error\": 422,\n      \"message\": \"unprocessable\"\n      }), 422\n```",
+                "answers": [
+                  {
+                    "id": "a1563643712963",
+                    "text": "`app.errorhandler` is missing an argument, namely the status code ",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1563643789221",
+                    "text": "The error code needs to be returned to the response",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1563643865952",
+                    "text": "A message is missing from the response body",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1563643881894",
+                    "text": "The response is not being returned as a JSON object",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 900813,
+              "key": "73d83d4f-7f0f-40a2-b0c2-e2e52b4edfd0",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "73d83d4f-7f0f-40a2-b0c2-e2e52b4edfd0",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What's missing from or wrong with the following code? \n\n```\n  @app.errorhandler(422)\n  def unprocessable(error):\n    return jsonify({\n      \"success\": False, \n      \"message\": \"unprocessable\"\n      })\n```",
+                "answers": [
+                  {
+                    "id": "a1563644057268",
+                    "text": "`app.errorhandler` is missing an argument, namely the status code ",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1563644075131",
+                    "text": "The error code needs to be returned to the response",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1563644075717",
+                    "text": "A message is missing from the response body",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1563644076281",
+                    "text": "The response is not being returned as a JSON object",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 900814,
+              "key": "033ad681-e5f4-4bb3-81a5-2f8e4cba39ac",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "033ad681-e5f4-4bb3-81a5-2f8e4cba39ac",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What's missing from or wrong with the following code? \n\n```\n  @app.errorhandler(422)\n  def unprocessable(error):\n    return jsonify({\n      \"success\": False, \n      \"error\": 422,\n      }), 422\n```",
+                "answers": [
+                  {
+                    "id": "a1563644155092",
+                    "text": "`app.errorhandler` is missing an argument, namely the status code ",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1563644181699",
+                    "text": "The error code needs to be returned to the response",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1563644182278",
+                    "text": "A message is missing from the response body",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1563644182768",
+                    "text": "The response is not being returned as a JSON object",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 906249,
+          "key": "7e11dc46-bb98-4c88-8e25-a3acad76b31f",
+          "title": "Flask Error Handling",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "7e11dc46-bb98-4c88-8e25-a3acad76b31f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 906250,
+              "key": "fb631c79-6020-49c0-8bad-c2f3e1d9005d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Flask Error Handling",
+              "instructor_notes": ""
+            },
+            {
+              "id": 906251,
+              "key": "972b6126-f3a8-4cff-bdcd-b753c0ed0042",
+              "title": "FSND C2 L3 A18 Flask Error Handling Part 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "TTuRlTDQBUY",
+                "china_cdn_id": "TTuRlTDQBUY.mp4"
+              }
+            },
+            {
+              "id": 906380,
+              "key": "7f665e65-703f-4fec-9d39-999d64f867c7",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r848940c906249xJUPYTERLncwpc6tn",
+              "pool_id": "jupyterlab",
+              "view_id": "jupyter-lab-frdwe",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "pageEnd": "",
+                    "pageStart": "",
+                    "allowSubmit": false,
+                    "defaultPath": "/",
+                    "actionButtonText": ""
+                  },
+                  "kind": "jupyter-lab"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 906252,
+              "key": "3161eee1-b2d3-4138-b867-48c8d993b0d8",
+              "title": "FSND C2 L3 A19 Flask Error Handling Part 2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "o2eKa6vFA80",
+                "china_cdn_id": "o2eKa6vFA80.mp4"
+              }
+            },
+            {
+              "id": 906253,
+              "key": "afc73db5-69fb-4090-ae5b-010abdfe5c47",
+              "title": "FSND C2 L3 A20 Flask Error Handling Part 3",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "9mFeYHbiyH8",
+                "china_cdn_id": "9mFeYHbiyH8.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 906254,
+          "key": "aa9add91-cee6-411c-a535-631be7a5b713",
+          "title": "Review",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "aa9add91-cee6-411c-a535-631be7a5b713",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 906255,
+              "key": "da288c61-cbb0-4f68-81b7-2cffd73381ec",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Review",
+              "instructor_notes": ""
+            },
+            {
+              "id": 906263,
+              "key": "d9ba4dc3-279e-4071-9a01-cddd4ac9031a",
+              "title": "FSND C2 L3 A21 Lesson Outro",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "m-P0CuSxrTM",
+                "china_cdn_id": "m-P0CuSxrTM.mp4"
+              }
+            },
+            {
+              "id": 917264,
+              "key": "f5348fa0-bb51-479c-ace6-602a6dc2b281",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this lesson we learned how to extend our functionality using *Flask-CORS*, so that we could:\n* Organize API Endpoints\n* Handle Cross-Origin Resource Sharing (CORS)\n* Parse the request path and body\n* Use POST, PATCH, and DELETE requests in Flask\n* Handle errors\n\nNext up, we'll dive into testing, and how we can use unit tests to make the process of testing much faster.",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

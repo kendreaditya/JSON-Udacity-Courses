@@ -1,0 +1,610 @@
+{
+  "data": {
+    "lesson": {
+      "id": 1051110,
+      "key": "af94e7d5-4890-456d-8e30-365f3d2bddff",
+      "title": "Red Teaming Operations",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "This project will have you go through modern penetration tester and red teamer methodologies. You will create a documentation and testing efforts to generate a report in a timely fashion.",
+      "lesson_type": null,
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/af94e7d5-4890-456d-8e30-365f3d2bddff/1051110/1619795647677/Red+Teaming+Operations+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/af94e7d5-4890-456d-8e30-365f3d2bddff/1051110/1619795644414/Red+Teaming+Operations+Subtitles.zip"
+          },
+          {
+            "name": "RedTeamOperations-StarterTemplate.docx",
+            "uri": "https://video.udacity-data.com/topher/2020/August/5f47135d_redteamoperations-startertemplate/redteamoperations-startertemplate.docx"
+          },
+          {
+            "name": "Guest",
+            "uri": "https://video.udacity-data.com/topher/2020/December/5fd8ecb2_guest/guest.ovpn"
+          },
+          {
+            "name": "WSTG - Latest   OWASP",
+            "uri": "https://video.udacity-data.com/topher/2021/March/604ab269_wstg-latest-owasp/wstg-latest-owasp.html"
+          },
+          {
+            "name": "GIT Source Code ExposurBlog",
+            "uri": "https://video.udacity-data.com/topher/2021/March/604b7e16_git-source-code-exposurblog/git-source-code-exposurblog.html"
+          },
+          {
+            "name": "Local Lab Preparation Instructions For Project",
+            "uri": "https://video.udacity-data.com/topher/2021/March/604fadc9_local-lab-preparation-instructions-for-project/local-lab-preparation-instructions-for-project.pdf"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": {
+        "key": "95eb58e1-0f8c-421b-b5eb-90ad64299492",
+        "version": "1.0.0",
+        "locale": "en-us",
+        "duration": 40320,
+        "semantic_type": "Project",
+        "title": "Red Teaming Operations",
+        "description": "## Project Summary\nYou have gone on a journey through modern penetration tester and red teamer methodologies. You have performed a penetration test against PJBank CISO's virtual operations. And in doing so created a report that documents your procedures , including annotated screenshots, findings, and policy-specific recommendations for your submission.\n\n## Submission Checklist\nBefore you submit, check if the following have been completed:  \n\n|    | |\n|-------------------------|--------------------------------------------------------------------------------------------------------------|\n| <input type=\"checkbox\"> | Everything in the [Rubric](https://review.udacity.com/#!/rubrics/2891/view) is complete. |\n| <input type=\"checkbox\"> | A completed **RedTeamOperations.pdf** report.|\n| | | |\n\n**Note**: The checklist above won't save your checkmarks, so do this right before you plan to submit.\n\n## Ready to Submit?\nOnce you have all the items above completed, you can click the submit button. Follow the directions to submit your project as a single pdf file. ",
+        "is_public": true,
+        "summary": null,
+        "forum_path": "",
+        "rubric_id": "2891",
+        "terminal_project_id": null,
+        "resources": null,
+        "image": null
+      },
+      "lab": null,
+      "concepts": [
+        {
+          "id": 1051084,
+          "key": "7d823ba3-1c5d-435e-b77c-165c11c27244",
+          "title": "Red Teaming Operations",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "7d823ba3-1c5d-435e-b77c-165c11c27244",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1051080,
+              "key": "411d587a-724b-4bda-a573-02b6bec37dff",
+              "title": "Red Teaming Operations Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Red Teaming Operations Project Overview",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1051081,
+              "key": "942160a4-64f2-4f8b-8d26-30a1ea8af2f8",
+              "title": "ND350 C2 L6 A01 Project- Red Teaming Operations",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "uPbUXcPJWFI",
+                "china_cdn_id": "uPbUXcPJWFI.mp4"
+              }
+            },
+            {
+              "id": 1051083,
+              "key": "6384d000-f2cf-4004-b506-c478db692a80",
+              "title": "Red Teaming Operations Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "This project will take you on a journey through modern penetration tester and red teamer methodologies. This project will reinforce skills demonstrated throughout the course and challenge you to be efficient with documentation and testing efforts to generate a report in a timely fashion. The reporting process will also help the student understand the many business applications of security testing.\n\nYou will perform a penetration test against PJBank CISO's virtual operations.\n\nThis includes:\n- **Organizational Reconnaissance** - Identifying where the organization's website is hosted, the platform on which it is hosted, and any DNS records of interest.\n- **Network Scanning** - The target company will provide a virtual machine intended for production point of sale and customer interaction. This virtual machine is to be scanned heavily to gather as much intelligence as possible.\n- **Vulnerability and Exploit Research** - You will spend time investigating software version discoveries for known vulnerabilities and any published exploit code. \n- **System Exploitation** - You will exploit two specific vulnerabilities on the system, though more exist. These vulnerabilities may compound on each other and lead to other mistakes made by the developers. \n- **Produce a Meaningful Report** - You will craft a single report that speaks to multiple audiences, some technical, some non-technical. This report will include an executive summary, significant findings, and reproducible methodology.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1051103,
+          "key": "a97121cc-7546-468d-a677-abe416bb42e1",
+          "title": "Environment, Setup, and Templates",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a97121cc-7546-468d-a677-abe416bb42e1",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": {
+            "files": [
+              {
+                "name": "Local Lab Preparation Instructions For Projectv2",
+                "uri": "https://video.udacity-data.com/topher/2021/March/605d2b66_local-lab-preparation-instructions-for-projectv2/local-lab-preparation-instructions-for-projectv2.pdf"
+              }
+            ],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 1051099,
+              "key": "3d43c4df-4915-438a-8a6d-9a23e1f8fd5c",
+              "title": "Environments Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Environment, Setup, and Templates",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1057496,
+              "key": "79a18035-ecbb-45a0-964c-793598ec955e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Templates\n\nThere is a template available for creating the final report you will submit at the end of this project. You can work with either of the formats below. You can take the templates and use them in another desired Word Processor and Spreadsheet program.\n\n<div class=\"index-module--table-responsive--1zG6k\"><table class=\"index-module--table--8j68C index-module--table-striped--3HHC-\">\n<thead>\n<tr>\n<th style=\"text-align:center\">Needed Programs</th>\n<th style=\"text-align:center\">File Names</th>\n<th style=\"text-align:center\">Online</th>\n<th style=\"text-align:center\">On Your Computer</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align:center\">Word Processor</td>\n<td style=\"text-align:center\">PJ Bank Project Report Template</td>\n<td style=\"text-align:center\"><a target=\"_blank\" href=\"https://docs.google.com/document/d/1Ijhb_JLj7I16CMmr857ikOIEUjv_ivVV487ns1BUbms/copy\">Google Docs</a></td>\n<td style=\"text-align:center\"><a target=\"_blank\" href=\"https://video.udacity-data.com/topher/2021/March/6060b3e6_pj-bank-project-report-template/pj-bank-project-report-template.docx\">Microsoft Word</a><br></td>\n</tr>\n</tbody>\n</table>\n</div>\n\nPlease make a copy or download the starter template.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1158063,
+              "key": "6f4b991c-de92-4d19-bbe5-33f6fb40275d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Here is What we Know about the network:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1173123,
+              "key": "a9477f36-998b-4cc0-afa4-f52b64a5aa22",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<div class=\"index-module--table-responsive--1zG6k\"><table class=\"index-module--table--8j68C index-module--table-striped--3HHC-\">\n<thead>\n<tr>\n<th style=\"text-align:center\"><strong>MZ</strong></th>\n<th style=\"text-align:center\"><strong>Public</strong></th>\n<th style=\"text-align:center\"><strong>DMZ</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align:center\">Win 10</td>\n<td style=\"text-align:center\">Learnaboutsecurity.com</td>\n<td style=\"text-align:center\">Test Server (DMZIServer)</td>\n</tr>\n<tr>\n<td style=\"text-align:center\">Kali-Internal</td>\n<td style=\"text-align:center\">Kali</td>\n<td style=\"text-align:center\">Training Server (Debian64DMZOnCloudNew)</td>\n</tr>\n</tbody>\n</table>\n</div>",
+              "instructor_notes": null
+            },
+            {
+              "id": 1158064,
+              "key": "559a260e-4ec1-4ac2-a4b4-ecf884aaaccd",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/March/605bb23d_lab-network-diagram-v2/lab-network-diagram-v2.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/559a260e-4ec1-4ac2-a4b4-ecf884aaaccd",
+              "caption": "",
+              "alt": "Network Diagram of Given",
+              "width": 586,
+              "height": 315,
+              "instructor_notes": null
+            },
+            {
+              "id": 1158079,
+              "key": "c0062bda-6637-43dd-9284-6b4ae7394655",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Options for accessing your Lab Environment:\n\n### Option 1 (Preferred): Cloud Access\n\nYou are provided a workspace where you can gain access to the virtual machines in your lab environment. \n\n### Option 2: Build out your own local Environment\n\n**THIS INSTRUCTION IS OPTIONAL AND COMPLIMENTARY WITH THE PENETRATION TESTING & RED TEAMING COURSE.**\n\nThis is an environment that we have designed for you to complete your project locally. You have been provided with a cloud-lab environment, so you don’t have to worry about developing you lab locally or having a high performance physical machine with admin permissions. The local lab build out instruction is optional and only for those that wish to establish a lab environment their physical device. **We do not provide technical support for the local environment.**\n\n**Instructions for building your lab locally can be found below.**",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1051094,
+          "key": "c6e89a07-2f35-45e7-984b-cc0a8ff85556",
+          "title": "Instructions",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c6e89a07-2f35-45e7-984b-cc0a8ff85556",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": {
+            "files": [
+              {
+                "name": "WSTG - Latest   OWASP",
+                "uri": "https://video.udacity-data.com/topher/2021/March/604ab269_wstg-latest-owasp/wstg-latest-owasp.html"
+              },
+              {
+                "name": "GIT Source Code ExposurBlog",
+                "uri": "https://video.udacity-data.com/topher/2021/March/604b7e16_git-source-code-exposurblog/git-source-code-exposurblog.html"
+              }
+            ],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 1051089,
+              "key": "35477f8e-b9d8-4510-b74a-d5740a1a65e3",
+              "title": "Instructions Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Instructions",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1051092,
+              "key": "7cd8e30c-3807-4114-bca5-071871c06405",
+              "title": "Instructions Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Phase One: Reconnaissance\n\nThe PJBank CISO authorized the development of a cybersecurity training program in an effort to improve their network security posture. The infrastructure that supports this training program has four components: \n\n1. The Debian server in the DMZ (DMZIServer | 10.1.0.7)\n1. A web Application Server in the DMZ (Debianx64DMZOnCloudNew | 10.1.0.12)\n1. The Internal Network Device (employee workstation) in the MZ (Win-10 | 10.1.2.4)\n1. A public web server <a href=\"https://learnaboutsecurity.com/\" target=\"_blank\">\"Learn About Security\"</a> (Learnaboutsecurity.com)\n\nThe external component provides general training information and links to third party training platforms like Udacity.com. This component is internet accessible and can be reached at learnaboutsecurity.com.\n\nThe internal component consists of a web Server - with a SQL Database backed located in the DMZ (Debianx64DMZOnCloudNew). This server is used for employee training. There is also a Debian Server that is used as a test server (DMZIServer | 10.1.0.7). Finally, there is a Win-10 device that the employees use to access the training application. \n\nAll devices can be accessed from the Kali-internal machine (10.1.2.5).\n\nGreat News! PJ Bank CISO was so impressed with your team’s performance, they decided to extend your contract term. Your new assignment is to test the new training program platform for security weaknesses. \n\nThe reconnaissance operations will include checking for public sources of information about <a href=\"https://learnaboutsecurity.com/\" target=\"_blank\">\"Learn About Security\"</a>. You will need to: \n\n* Identify where the public website is hosted\n* Identify which email provider the company uses (if any)\n* Confirm any content management system (CMS) deployed on the web servers (DMZ and Public)\n* Identify Software and services being used on the targets\n\nAnnotation, documentation, reporting, and screenshots collection as you go is strongly encouraged. The process of reporting as you go will ensure you stay within the time bounds of the contract.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1163408,
+              "key": "40b8c957-e1a2-4378-a8ed-ecaf21c2f5db",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Phase Two: Scanning the environments\n\nNext, you will need to complete vulnerability scans against  the public website (learnaboutsecurity.com), the DMZ servers (DMZIServer and Debianx64DMZOnCloudNew), and the employee workstation (Win-10).\n\n* Scan for open ports\n* Scan for running services\n* Scan for sensitive files \n\nAs you scan for sensitive data, you learn that the PJ Bank security team are STILL using Git Hub to store their source code. You also recall reading a blog (attached below) about how there is a hidden folder that stores access credentials by default (a copy of the web article is attached below). You should be able to reveal sensitive data by: \n\n* Running a directory scan (dirb) against DMZIServer using the Udacity wordlist\n* Reveal root access to the DMZIserver",
+              "instructor_notes": null
+            },
+            {
+              "id": 1106627,
+              "key": "84560575-38bb-48cb-a516-dabc06c6bec8",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Phase Three: Vulnerability Research\n\nIn this third phase,  Let's say you discover the PJ Bank security team made patch updates to the DMZIServer after the last pen-test because it was riddled with vulnerabilities. If you recall from the lesson this is the same server that hosted the payroll application. Since it is also being used as a test machine for the training application, it can be targeted during this project.\n\nYou also recall reading an OWASP article (attached below) that discussed how system admins store snapshots of servers while they're in a vulnerable state. If the security team saved a snapshot of the server, it would follow the organization file naming convention: snapshot.march.tar.gz. Snapshots are also usually kept in the opt folder. For this phase, use the root credentials your collected in phase 1 to complete the following: \n\n* Read the OWASP web article attached below.\n* Exfiltrate march snapshot from the DMZIServer. \n   * hint: You can find it in the /opt/snapshot directory.\n\nIn addition to this research software versions that you might discover on the test server (DMZIServer), payroll server (Debianx64DMZOnCloudNew) and employee workstation (Win10), Once you discover a vulnerability, research ways to exploit them.  Hint: One of those vulnerable software should be the Xampp service you started. \n\nAgain, you are urged to follow reporting best practices and document most steps throughout the investigation, research, and exploitation phases of this test. \n\n### Phase Four: Exploitation of the Identified Vulnerabilities\n\nA vulnerability on one of the machine is an outdated version of Xampp. The next page provides you with a video tutorial on how to exploit it. Exploit this vulnerability to gain access on the vulnerable machine.  \n\nThe SSH credentials for the payroll server (Debianx64DMZOnCloudNew) can be cracked as well. From the course, we know the username is admin123, we just need to try and crack the password. Use the Hydra tool against the Udacity wordlist (/usr/share/wordlist/Udacity.txt)  to crack the password and gain ssh access. If you are not sure what syntax to use to run the password crack, use the help (-h) command or research the world wide web. \n\nThere are two major items to accomplish in this phase:\n\n1. Gain unauthenticated access to the employee workstation (win-10) by exploiting a vulnerable application.\n1. Crack the SSH root credentials to the payroll server (Debianx64DMZOnCloudNew), then demonstrate data exfiltration\n\nOptionally, feel free to conduct other exploits that you have learned in this course. \n\n### Phase Five: Reporting\n\nYou should produce methodology, screenshots, and documentation through the assessment. However, the final phase of this assessment is to produce a report that can be interpreted by executives, understood by the points of contact, and reproduced by the technical personnel assigned. \n\n**Significant Vulnerabilities** should be designated as they are discovered, added to the Executive Summary and guidance provided for remediation.",
+              "instructor_notes": null
+            },
+            {
+              "id": 1051091,
+              "key": "0ca7dfe9-0ca4-4778-a96e-13efca1b0e13",
+              "title": "Submission Instructions",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Submitting Your Project\n\nAfter you have completed your investigation you will need to create a report that contains the following sections and covers everything in the <a href=\"https://review.udacity.com/#!/rubrics/2891/view\" target=\"_blank\">rubric</a>:\n\n* Security Engagement Summary\n   * Engagement Overview\n   * Scope\n   * Risk Analysis\n   * Recommendations\n* Significant Vulnerabilities Summary\n   * High Risk Vulnerabilities\n   * Medium Risk Vulnerabilities\n   * Low Risk Vulnerabilities\n* Significant Vulnerability Detail\n   * Software Version Management\n* Appendix A: Security Analysis Methodology\n   * Virtual Machine and Vulnerable Applications\n   * Assessment Tools Selection\n   * Red Team Operations Assessment\n      * Organizational Reconnaissance\n      * Nmap Scanning\n      * Exploit Development / Procurement\n      * System Exploitation\n      * Lateral Movement / Customer Data Discovery",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1051093,
+              "key": "cc60a69b-fc50-4f40-9a42-32a53a550255",
+              "title": "Scaffolding and Advice for students",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Helpful Advice\n\nReport as you test. If you scan something with Nmap, include the command. Take a screenshot of the results - even if not much (if anything) was discovered). This is your evidence as a penetration tester of what you did and what the results were.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1163244,
+          "key": "e43e50b1-a443-45c5-9e7f-8126a1c6cf96",
+          "title": "Exploiting with XAMPP",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "e43e50b1-a443-45c5-9e7f-8126a1c6cf96",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1163246,
+              "key": "d12dbe90-3ddc-4ede-9c2c-acf8cb185acf",
+              "title": "Gaining Remote Access  Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Exploiting Xampp",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1163247,
+              "key": "3b153529-0fd2-4ecc-aec4-3ea1d145f2f8",
+              "title": "ND350 C2 L3 A25 On Premise Application Exploitation V1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "6AlR7tYK8Y0",
+                "china_cdn_id": "6AlR7tYK8Y0.mp4"
+              }
+            },
+            {
+              "id": 1163390,
+              "key": "3d397d99-75f6-4705-bce3-85373bc51542",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# IMPORTANT: READ ME!\n\nPrior to exploiting Xampp, you will first need to ensure the service is running on the win10 machine. You can do so by completing the following steps:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1163391,
+              "key": "8c741fd9-8d32-4f28-ab2f-da10f6f83cf9",
+              "title": null,
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "8c741fd9-8d32-4f28-ab2f-da10f6f83cf9",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "IMPORTANT: READ ME! \nPrior to exploiting Xampp, you will first need to ensure the service is running on the win10 machine. You can do so by completing the following steps:\n",
+                "answers": [
+                  {
+                    "id": "f3d9cf17-1d15-4034-a340-d80aea52761a",
+                    "text": "\nRDP into the Win-10 Machine\n",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "f87d21d0-9f78-4dee-90af-ea6e9a70c0ba",
+                    "text": "Open the Xampp Control Panel. The application icon is on the desktop",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "19fbc74c-33b2-42e3-be87-0ab516ec1c21",
+                    "text": "Start all Services (see screenshot below)",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1163392,
+              "key": "8ea726a3-6f51-4bef-b44a-cb205c8e1b56",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/March/605b9cbb_image-1/image-1.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/8ea726a3-6f51-4bef-b44a-cb205c8e1b56",
+              "caption": "Start Xampp services",
+              "alt": null,
+              "width": 440,
+              "height": 377,
+              "instructor_notes": null
+            },
+            {
+              "id": 1163248,
+              "key": "d8883bfa-96e7-434b-887d-26fb99fee862",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Steps involve with exploiting Xampp:\n\n1. Run Metasploit Framework\n\n   * msfconsole\n\n2. Go into the xampp exploit mode\n\n   * use windows/http/xampp_webdav_upload_php\n\n3. Set a different payload because the default payload may not work\n   * set payload payload/reverse_php\n\n4. Set lhost, lport and rhosts\n\n5. Run",
+              "instructor_notes": null
+            },
+            {
+              "id": 1173902,
+              "key": "2ab4e4bf-7b6e-4126-8d0b-c105b103ac91",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Observe, Below you can see the reverse TCP handler started and the payload is uploaded and executed. Note, the last command output indicated a session (session 1) has started.",
+              "instructor_notes": null
+            },
+            {
+              "id": 1163249,
+              "key": "cd84c697-7cbf-4671-9cc6-478f0cd55c56",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/March/603da263_l3-xampp/l3-xampp.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/cd84c697-7cbf-4671-9cc6-478f0cd55c56",
+              "caption": "Running XAMPP ",
+              "alt": "Output of running XAMPP",
+              "width": 649,
+              "height": 280,
+              "instructor_notes": null
+            },
+            {
+              "id": 1173909,
+              "key": "0b4263ad-312d-4b33-9db8-775c71db7b18",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Observe, Below you can see that a remote session is active. When I typed `IPconfig`, the output shows the adapter configuration for my target device.",
+              "instructor_notes": null
+            },
+            {
+              "id": 1163250,
+              "key": "6cafad4b-cfc6-46fd-960e-e6d4df8cf07b",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/March/603da32a_l3-xampp2/l3-xampp2.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/6cafad4b-cfc6-46fd-960e-e6d4df8cf07b",
+              "caption": "Running XAMPP Continued",
+              "alt": "Continued output of running XAMPP from previous screenshot",
+              "width": 642,
+              "height": 417,
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1051098,
+          "key": "855b390e-8c1b-49b5-a554-27aed324f1bd",
+          "title": "Quiz: Penetration and Red Teaming Operations",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "855b390e-8c1b-49b5-a554-27aed324f1bd",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1057492,
+              "key": "1cbb4acd-e686-4e0d-af6d-4252c9adf644",
+              "title": "",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "1cbb4acd-e686-4e0d-af6d-4252c9adf644",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "A playbook for common tactics used in penetration testing could be called what?",
+                "matchers": [
+                  {
+                    "expression": "\\W*(methodology)\\W*"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1057493,
+              "key": "4b9b3d64-3530-4753-8ee9-d82a343fda47",
+              "title": "",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "4b9b3d64-3530-4753-8ee9-d82a343fda47",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What is the first and foremost step in red teaming?",
+                "matchers": [
+                  {
+                    "expression": "\\W*(always reconnaissance)\\W*"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1057494,
+              "key": "c19dcb9e-ba88-434e-87c7-9596aa993e9b",
+              "title": "",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "c19dcb9e-ba88-434e-87c7-9596aa993e9b",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which phase of the testing is most likely to affect change at an organization?",
+                "matchers": [
+                  {
+                    "expression": "\\W*(reporting)\\W*"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1057495,
+              "key": "c84bc383-a940-4776-b9e3-115f0c5cee6f",
+              "title": "",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "c84bc383-a940-4776-b9e3-115f0c5cee6f",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "During which phase of testing should the attacker practice \"Situational Awareness\"?",
+                "matchers": [
+                  {
+                    "expression": "\\W*(every single one)\\W*"
+                  },
+                  {
+                    "expression": "\\W*(every single time)\\W*"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1051106,
+          "key": "e007642a-29e6-4ec9-85a7-7aa4a3e569b3",
+          "title": "Project Workspace",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "e007642a-29e6-4ec9-85a7-7aa4a3e569b3",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1162407,
+              "key": "911d56f2-c8f4-4cec-9f64-5d8bed070aa8",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "pmicrosofthee3q82l",
+              "pool_id": "microsoft",
+              "view_id": "microsoft-wrh5h",
+              "gpu_capable": null,
+              "configuration": {
+                "partner": "microsoft",
+                "blueprint": {
+                  "kind": "partner-workspace"
+                },
+                "iframe_url": "",
+                "nutanix_pool_id": "",
+                "nutanix_windows_config_id": ""
+              },
+              "starter_files": null
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "lesson_type",
+      "reason": "Obsolete"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "starter_files",
+      "reason": "prefer master_archive_id"
+    }
+  ]
+}

@@ -1,0 +1,2418 @@
+{
+  "data": {
+    "lesson": {
+      "id": 817317,
+      "key": "1813b06e-010d-433d-acc4-493f5d3a86b5",
+      "title": "Python at Home",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Install Python on your own computer so you can write code anytime!",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/1813b06e-010d-433d-acc4-493f5d3a86b5/817317/1555957099519/Python+at+Home+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/1813b06e-010d-433d-acc4-493f5d3a86b5/817317/1555957095735/Python+at+Home+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 508583,
+          "key": "422d592d-e295-4f27-a39a-2d401c428f0f",
+          "title": "Installing Python",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "422d592d-e295-4f27-a39a-2d401c428f0f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 674946,
+              "key": "1f158c75-81c5-49a3-b4c5-1bce967994af",
+              "title": "Python: Welcome to python at home",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "qSFulFUdJHo",
+                "china_cdn_id": "qSFulFUdJHo.mp4"
+              }
+            },
+            {
+              "id": 508584,
+              "key": "6f64a4c0-7d11-485b-8af4-ecfab2c02324",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Which _version_ of Python?\nPython has been improved many times since it was first created, and that means there's more than one version of Python available. It's important to make sure you get the right version installed, because code that is written for one version may run differently (or fail to run) on another version.\n\nEach version of Python is given a three-part version number, as in _Python 2.7.9_ or _Python 3.6.2_. The different parts of the version number indicate how big a change was. The first number indicates that there was a major change, while the second and third numbers indicate more minor changes. \n\nFor example, in _Python 2.7.9_, the major version is **2**, while in _Python 3.6.2_, the major version is **3**.\n\nIn this course, you'll need to have some flavor of Python **3.6** or later.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 628342,
+              "key": "83deca0b-dbd9-4b4b-9eaf-802e82c08c7e",
+              "title": "",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "83deca0b-dbd9-4b4b-9eaf-802e82c08c7e",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of these versions of Python could you use in this course?\n\nCheck **all** correct answers.",
+                "answers": [
+                  {
+                    "id": "a1526523001893",
+                    "text": "3.6.5",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1526523045739",
+                    "text": "2.5.3",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1526523108435",
+                    "text": "3.7.0",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1540836671581",
+                    "text": "3.2.1",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 770988,
+              "key": "6d411605-ef8d-483f-8ea6-b22b0f467710",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Mac vs. Linux vs. Windows\nThe installation instructions are a bit different depending on which operating system you're on. The next couple of pages give instructions for **Mac** and **Windows**; you can skip to whichever page is appropriate for you. Current **Linux** operating systems such as Ubuntu or Linux Mint come with a current Python 3 already installed (but you should check to make sure it is 3.6 or later).",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 513857,
+          "key": "7e8fa2fa-24de-4114-bbf0-2514f47dfa0a",
+          "title": "Windows",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "7e8fa2fa-24de-4114-bbf0-2514f47dfa0a",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 674948,
+              "key": "ef7c1460-9314-4765-a9c8-1dd1879f1c75",
+              "title": "Python: Install on windows",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "mMFWk8poeEo",
+                "china_cdn_id": "mMFWk8poeEo.mp4"
+              }
+            },
+            {
+              "id": 771010,
+              "key": "6d2fbe3e-001d-4b67-9c81-1f6fe805ad73",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "6d2fbe3e-001d-4b67-9c81-1f6fe805ad73",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "During installation, I checked the option **Add Python to environment variables**",
+                "When I run `python` (or `python3`) in the shell, it shows that I have Python 3.6 or later installed"
+              ],
+              "positive_feedback": "**Great!**",
+              "video_feedback": null,
+              "description": ""
+            },
+            {
+              "id": 771017,
+              "key": "b29082f1-6d0e-498f-867e-e7045f62c603",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "If you're having trouble getting Python installed, here are some things you can try:\n1. Try Googling the problem you're having. You'll often see results from great question-and-answer sites like [Stack Overflow](https://stackoverflow.com/), where someone has posted about a similar problem.\n2. Try searching for the issue you're having in [Knowledge](https://knowledge.udacity.com/). If you don't find a question related to your issue, try posting your own.\n3. Try asking your mentor or fellow students for help.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 513855,
+          "key": "525cac1d-a538-4a5d-8169-7ab1c12c2998",
+          "title": "Mac",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "525cac1d-a538-4a5d-8169-7ab1c12c2998",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 674949,
+              "key": "41260dde-92bf-43ad-8389-a96e8d23a603",
+              "title": "Python: Install on mac",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "NAKB-xSDcL8",
+                "china_cdn_id": "NAKB-xSDcL8.mp4"
+              }
+            },
+            {
+              "id": 534627,
+              "key": "c6c9f678-cfe9-4bf8-83b1-e30c62615a76",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "c6c9f678-cfe9-4bf8-83b1-e30c62615a76",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "I now have some version of Python 3.6 or later on my computer!"
+              ],
+              "positive_feedback": "**Great!**",
+              "video_feedback": null,
+              "description": ""
+            },
+            {
+              "id": 771033,
+              "key": "8d21f5db-3091-410b-a52e-2cb4507fcc74",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "If you're having trouble getting Python installed, here are some things you can try:\n1. Try Googling the problem you're having. You'll often see results from great question-and-answer sites like [Stack Overflow](https://stackoverflow.com/), where someone has posted about a similar problem.\n2. Try searching for the issue you're having in [Knowledge](https://knowledge.udacity.com/). If you don't find a question related to your issue, try posting your own.\n3. Try asking your mentor or fellow students for help.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 531201,
+          "key": "33abc51a-b5aa-476d-ba22-266b46fd756c",
+          "title": "Python in the terminal",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "33abc51a-b5aa-476d-ba22-266b46fd756c",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": {
+            "files": [
+              {
+                "name": "Greeting",
+                "uri": "https://video.udacity-data.com/topher/2018/February/5a85fbbc_greeting/greeting.py"
+              }
+            ],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 674955,
+              "key": "82346f34-1913-4afe-b8a2-7160810efe30",
+              "title": "Python: Running python from the terminal",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "6SnlDref900",
+                "china_cdn_id": "6SnlDref900.mp4"
+              }
+            },
+            {
+              "id": 531254,
+              "key": "7eb2afa4-3681-4f33-99f1-080fcabf981c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Here's the file for you to download: [greeting.py](https://s3.amazonaws.com/video.udacity-data.com/topher/2018/February/5a85fbbc_greeting/greeting.py).\n\n>**Note:** In some browsers, clicking on the link opens the file in a *new browser tab*, instead of *downloading* it. If that happens, you can get the file by **right-clicking the link** and selecting **Save As ... **",
+              "instructor_notes": ""
+            },
+            {
+              "id": 778486,
+              "key": "4fe3f04f-fe83-4b20-ac0f-cd39c2bba514",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "----\n<div id=\"spoiler-alert\" style=\"background-color: #FDF8E4;\">\n<span style=\"padding-top: 8px; padding-left: 8px; padding-right: 8px; display: block;\"><h1 style=\"margin: 0;\"> ⚠️ **Caution for Git Bash users:**</h1></span>\n<span style=\"padding: 8px; display: block;\">\nIf you're using Git Bash, you may find that when you enter `python greeting.py`, nothing happens—instead of running the program, Git Bash simply displays a blank line and then just sits there. If you encounter this problem, **restart Git Bash** and then run this line:\n\n```bash\nalias python='winpty python'\n```\n(Make sure there are no spaces around the `=` operator!)\n\nAfter this, running `python greeting.py` should work. *Note that this will only work for the currently running Git Bash session—so you'll need to run the above `alias` line each time you start Git Bash.*\n</span>\n</div>\n----\n----",
+              "instructor_notes": ""
+            },
+            {
+              "id": 778490,
+              "key": "0d73158f-297a-4acb-ba7e-f299a77b8b9a",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "0d73158f-297a-4acb-ba7e-f299a77b8b9a",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Download the file (above).",
+                "Use `cd` to navigate to wherever the file is located (e.g., `cd Downloads`).",
+                "Use `ls` to confirm that the file is there.",
+                "Use `python greeting.py` (or `python3 greeting.py`) to run the program using Python!"
+              ],
+              "positive_feedback": "**Great!**",
+              "video_feedback": null,
+              "description": "If you haven't already, go ahead and try running `greeting.py` in your own terminal."
+            },
+            {
+              "id": 531256,
+              "key": "11343c95-530c-4da4-85f8-2998843020d0",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "11343c95-530c-4da4-85f8-2998843020d0",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "When you ran `python greeting.py`, what did it do?",
+                "answers": [
+                  {
+                    "id": "a1517526650854",
+                    "text": "It printed a list of animals, from Aardvark to Zonkey.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1517526744982",
+                    "text": "It asked for my name and then said hello to me!",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1517526865269",
+                    "text": "It said \"Hello, Udacity student!\"",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 778498,
+              "key": "1fff9065-2a5a-4de0-8d22-9d00cb45e956",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "1fff9065-2a5a-4de0-8d22-9d00cb45e956",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Now  that you've tried running `greeting.py`, open it up so that you can see the code. You can use the same code editor that you wrote your HTML and CSS in before (like *Atom*, *Sublime Text*, *VS Code*, etc.).\n\nWhat's the first line of code in the file?",
+                "answers": [
+                  {
+                    "id": "a1541195182810",
+                    "text": "`input = name(\"What's your name?\")`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1541195211217",
+                    "text": "`name = input(\"What's your name?\")`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1541195279260",
+                    "text": "`input(\"What's your name?\")`",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 531257,
+              "key": "984e7946-c825-4388-9e84-5f93667d15f9",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "As you can see, the file is simply a text file that has been given the **.py** file extension in order to indicate that it contains Python code.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 778504,
+              "key": "05c4a8d4-21b5-4b21-b5e1-95c00d890b8b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Now, it's important to get comfortable making changes and then running the code to see the effects of those changes (you'll learn a lot by playing with the code in this way!).",
+              "instructor_notes": ""
+            },
+            {
+              "id": 531585,
+              "key": "7e4ad0b6-0bb5-4866-84b4-d87c76d6ff07",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "7e4ad0b6-0bb5-4866-84b4-d87c76d6ff07",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Make a change to the code.",
+                "Save the file.",
+                "Run the program again to see the change."
+              ],
+              "positive_feedback": "**Good!**\n\nFeel free to experiment some more! You can always use **Undo**  to go back.",
+              "video_feedback": null,
+              "description": "Try modifying the code in the file by adding another print statement, like this: \n\n```python\nname = input(\"What's your name?\")\nprint(\"Hello,\", name, \"!\")\nprint(\"Nice to meet you!\")\n```\n\nNow **save the file** and then go back to the Terminal and try running the program again:\n\n```bash\n$ python greeting.py\n```\n\nThe program should run again, this time showing the change you made."
+            },
+            {
+              "id": 778505,
+              "key": "f6b4e723-ff3e-4d26-ba63-af6035f21c33",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "This process—editing a file in your code editor and then running it in the terminal—is  a common workflow for programmers.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 778495,
+              "key": "ceea268c-a670-4cb0-82d7-d8d0f359db4c",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "ceea268c-a670-4cb0-82d7-d8d0f359db4c",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "One of the most common mistakes that can happen in this workflow is **forgetting to save the file before running it**. What do you think would happen if you did that?",
+                "answers": [
+                  {
+                    "id": "a1541194557827",
+                    "text": "It would crash the terminal.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1541194679394",
+                    "text": "It would crash the code editor.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1541194695483",
+                    "text": "It would run the older version of the code, from the last time the file was saved.",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 778496,
+              "key": "68085793-6fdf-4158-b145-59f7b114318a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "... and that can be very confusing! If you don't realize what happened, **you may think that the changes you made to the code didn't work**, but it's really just because you forgot to save the file.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 778518,
+          "key": "a0b5dcb9-f031-4b02-8472-ffd9c5dafdd1",
+          "title": "The input function",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a0b5dcb9-f031-4b02-8472-ffd9c5dafdd1",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 778521,
+              "key": "95b950db-1e8e-4eda-84af-7a3e0c5f67f8",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# The `input` function\n\nHere's the code you just ran, from **greeting.py**:\n\n```python\nname = input(\"What's your name?\")\nprint(\"Hello,\", name, \"!\")\n```\nThis has two really handy functions that we haven't seen before: `input` and `print`. \n\n> **Note:** `input` and `print` are examples of what we would call **built-in** functions—that is, they are functions that are built into Python. In practical terms, this means that when you install Python, the code for these functions comes with it.\n>\n>The thinking is that since pretty much everyone who uses Python needs to be able to get input and print things, it makes sense to have these functions already defined and provided as part of the language.\n>\n>Programming languages often come with a whole set of such built-in functions, in order to make it easier to do things that you would commonly want to do. \n\nFirst, let's check out how `input` works.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 778520,
+              "key": "14d1ad99-0b57-4cb6-a904-03770de2ac84",
+              "title": "Python: Taking user input",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "ob82UJe3CJg",
+                "china_cdn_id": "ob82UJe3CJg.mp4"
+              }
+            },
+            {
+              "id": 778530,
+              "key": "534573a6-c9e5-4c4c-9c74-26cb5b35c65d",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "534573a6-c9e5-4c4c-9c74-26cb5b35c65d",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Let's review something about functions that can be pretty confusing.\n\n`input(\"What's your name?\")`\n\nIs this code the actual `input` function itself?",
+                "answers": [
+                  {
+                    "id": "a1541200751636",
+                    "text": "Yes—that line of code is the function itself.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1541200794433",
+                    "text": "No—that line is just a function *call*. The actual code for the `input` function is hidden away behind the scenes.",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 778529,
+              "key": "7e1a277a-4062-416e-8f21-23f4ce1b7b91",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "7e1a277a-4062-416e-8f21-23f4ce1b7b91",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Suppose that we run this code:\n\n```python\nname = input(\"What's your name?\")\n```\nAnd in response, the user enters `John`.\n\nCan you match each piece of the code with its description?"
+                },
+                "concepts_label": "Description",
+                "answers_label": "Code",
+                "concepts": [
+                  {
+                    "text": "The function *call*.",
+                    "correct_answer": {
+                      "id": "a1541199941145",
+                      "text": "`input()`"
+                    }
+                  },
+                  {
+                    "text": "The *argument* that gets passed to the function.",
+                    "correct_answer": {
+                      "id": "a1541200044523",
+                      "text": "`\"What's your name?\"`"
+                    }
+                  },
+                  {
+                    "text": "The value that gets *returned* by the function.",
+                    "correct_answer": {
+                      "id": "a1541200064968",
+                      "text": "`\"John\"`"
+                    }
+                  },
+                  {
+                    "text": "The variable to which we are assigning the returned value.",
+                    "correct_answer": {
+                      "id": "a1541200530846",
+                      "text": "`name`"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1541200064968",
+                    "text": "`\"John\"`"
+                  },
+                  {
+                    "id": "a1541200530846",
+                    "text": "`name`"
+                  },
+                  {
+                    "id": "a1541199941145",
+                    "text": "`input()`"
+                  },
+                  {
+                    "id": "a1541200044523",
+                    "text": "`\"What's your name?\"`"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 778533,
+              "key": "8594a980-2694-4fac-b050-714bc1218772",
+              "title": "",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "8594a980-2694-4fac-b050-714bc1218772",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Here's another example of the `input` function:\n\n```python\nx = input(\"Please enter a number.\")\n```\n\nWhat can we say about this code?\n\n(Check **all** the correct options.)",
+                "answers": [
+                  {
+                    "id": "a1541211443107",
+                    "text": "It calls the `input` function.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1541211497777",
+                    "text": "It passes the `input` function a message (that it will display in the terminal).",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1541211498464",
+                    "text": "It assigns the returned value to the variable `x`.",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 778534,
+              "key": "98eb38f9-e2c9-4490-83ab-d76a5741e3b6",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "98eb38f9-e2c9-4490-83ab-d76a5741e3b6",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Can you call the `input` function without passing it any arguments? Like this:\n\n```python\ninput()\n```",
+                "answers": [
+                  {
+                    "id": "a1541211629140",
+                    "text": "Yes—it will still work.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1541211664018",
+                    "text": "No—you must give an argument when calling this function.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 778519,
+          "key": "7bb52ac3-7678-4456-9d35-dfbc3e2ccaa3",
+          "title": "The print function",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "7bb52ac3-7678-4456-9d35-dfbc3e2ccaa3",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 778535,
+              "key": "e0e976d0-bbf9-469e-8f7b-da13e1a217ec",
+              "title": "Python: Printing",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "j9kFaTroG-Y",
+                "china_cdn_id": "j9kFaTroG-Y.mp4"
+              }
+            },
+            {
+              "id": 778536,
+              "key": "9a9966ce-db63-47a5-b204-ff47071b3774",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Let's try out some different `print` statements, and also make sure that you're comfortable creating a new Python file on your computer.\n\nMaking your own Python file is easy—all you have to do is create a new file in your code editor and then save it with a name that ends in the **.py** file extension.\n\nGo ahead and create a new file called **printing.py**.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 778537,
+              "key": "aff4b803-4dc5-4b9f-9ca7-729ee1adeba9",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "aff4b803-4dc5-4b9f-9ca7-729ee1adeba9",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Save the file with the name **printing.py**.",
+                "Be sure to put it in a convenient location on your computer.",
+                "In the terminal, use `cd` to move to that location.",
+                "Use `ls` to check that you're in the same folder as the file."
+              ],
+              "positive_feedback": "**Great!**",
+              "video_feedback": null,
+              "description": ""
+            },
+            {
+              "id": 778540,
+              "key": "52b1caad-4a58-4731-899d-b877a7608bbb",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "52b1caad-4a58-4731-899d-b877a7608bbb",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "After adding the code, be sure to **save** the file.",
+                "**Run** the file from your terminal using `python printing.py`"
+              ],
+              "positive_feedback": "You've printed your first `Hello world!`\n\nYou're now officially a programmer. 😁",
+              "video_feedback": null,
+              "description": "Now, add this `print` function call to your file:\n\n```python\nprint(\"Hello world!\")\n```"
+            },
+            {
+              "id": 778541,
+              "key": "999dab14-15d7-425d-9803-88a60285feac",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "999dab14-15d7-425d-9803-88a60285feac",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Here are some different things you can try printing.\n\nTry to predict what each one will do—then add it to your **printing.py** file to see if your prediction is correct."
+                },
+                "concepts_label": "Code",
+                "answers_label": "What does it print?",
+                "concepts": [
+                  {
+                    "text": "`print(2 + 2)`",
+                    "correct_answer": {
+                      "id": "a1541214381017",
+                      "text": "4"
+                    }
+                  },
+                  {
+                    "text": "`print(\"2 + 2\")`",
+                    "correct_answer": {
+                      "id": "a1541214513119",
+                      "text": "2 + 2"
+                    }
+                  },
+                  {
+                    "text": "`print(\"2\" + \"2\")`",
+                    "correct_answer": {
+                      "id": "a1541214513783",
+                      "text": "22"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1541214513119",
+                    "text": "2 + 2"
+                  },
+                  {
+                    "id": "a1541214513783",
+                    "text": "22"
+                  },
+                  {
+                    "id": "a1541214381017",
+                    "text": "4"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 778542,
+              "key": "9d5dd773-73a5-461c-83ad-7b9ce8158787",
+              "title": "Python: Printing 2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "iKeHgxNXs6w",
+                "china_cdn_id": "iKeHgxNXs6w.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 534635,
+          "key": "99158f3f-eecd-4ce9-9746-50365b2c1d85",
+          "title": "Interactive mode",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "99158f3f-eecd-4ce9-9746-50365b2c1d85",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 674965,
+              "key": "76a467fc-ce01-488d-80be-5214b3c52963",
+              "title": "Python: Using the interactive interpreter",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "1xyX3ez2mX0",
+                "china_cdn_id": "1xyX3ez2mX0.mp4"
+              }
+            },
+            {
+              "id": 534637,
+              "key": "aeb87ad8-5bc6-4189-8542-6a6705a239d3",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Go ahead and try starting **interactive mode** in your terminal now. Simply enter the `python` or `python3` command by itself, and you should see something that looks like this:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 534638,
+              "key": "02a616bf-a2d6-46a2-a580-d533b96d8157",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2018/February/5a7a05e8_python-interactive-mode-terminal-01/python-interactive-mode-terminal-01.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/02a616bf-a2d6-46a2-a580-d533b96d8157",
+              "caption": "",
+              "alt": "A screenshot of the Python interactive mode.",
+              "width": 585,
+              "height": 142,
+              "instructor_notes": null
+            },
+            {
+              "id": 534639,
+              "key": "7c6c7414-e521-4b52-abdd-3094aaa26dc4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Try typing `2 + 2` and pressing Enter. The terminal should display `4` on the next line:\n\n```text\n>>> 2 + 2\n4\n```\n\nNotice that the expression (`2 + 2`) is first _evaluated_ and then the resulting value (`4`) is displayed.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 534651,
+              "key": "a9036424-0389-4cd8-aa81-126e1bf0a89f",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "a9036424-0389-4cd8-aa81-126e1bf0a89f",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Let's experiment! What do you get when you enter each of these expressions in Python's **interactive mode**?"
+                },
+                "concepts_label": "Expression",
+                "answers_label": "Result",
+                "concepts": [
+                  {
+                    "text": "`2 * 3`",
+                    "correct_answer": {
+                      "id": "a1517948230052",
+                      "text": "` 6 `"
+                    }
+                  },
+                  {
+                    "text": "`2 * 'three'`",
+                    "correct_answer": {
+                      "id": "a1517948387411",
+                      "text": "`'threethree'`"
+                    }
+                  },
+                  {
+                    "text": "`'two' + 'three'`",
+                    "correct_answer": {
+                      "id": "a1517948460188",
+                      "text": "`'twothree'`"
+                    }
+                  },
+                  {
+                    "text": "`12/2`",
+                    "correct_answer": {
+                      "id": "a1517948555021",
+                      "text": "`6.0`"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1517948387411",
+                    "text": "`'threethree'`"
+                  },
+                  {
+                    "id": "a1517948555021",
+                    "text": "`6.0`"
+                  },
+                  {
+                    "id": "a1517948230052",
+                    "text": "` 6 `"
+                  },
+                  {
+                    "id": "a1517948460188",
+                    "text": "`'twothree'`"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 778602,
+              "key": "d861e5fb-c50b-45cf-909b-887a59cd3eac",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "d861e5fb-c50b-45cf-909b-887a59cd3eac",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "How do you cycle through things you've recently entered in interactive mode?",
+                "answers": [
+                  {
+                    "id": "a1541266240845",
+                    "text": "The **tab** key.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1541266283073",
+                    "text": "The **a** and **z** keys.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1541266309762",
+                    "text": "The **up arrow** and **down arrow** keys.",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 778603,
+              "key": "4eff9cb1-39e1-438a-83a5-924d3886ab4a",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "4eff9cb1-39e1-438a-83a5-924d3886ab4a",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "How do you get out of interactive mode (and return to the main shell prompt)?",
+                "answers": [
+                  {
+                    "id": "a1541266454806",
+                    "text": "Use `exit()`, **Ctrl-D** (Mac) or **Ctrl-Z** (Windows).",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1541266593407",
+                    "text": "Use `exit()`, **Ctrl-Q** (Mac) or **Ctrl-E** (Windows).",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1541266645934",
+                    "text": "Simply press the **q** key.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 778608,
+              "key": "188ac86c-28d9-46da-926e-274184791afa",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Interactive mode is also often called \"the interpreter\"\n\nYou'll often see Python's _interactive mode_ called \"the interactive mode of the interpreter\" or simply \"the interpreter\". Why? Because when you're running interactive mode, that's what you're interacting _with_!\n\nWe haven't talked about this, but the Python **interpreter** is the thing that actually reads and runs your code. So when you're in interactive mode, you're _interacting_ with the _interpreter_.\n\nIn practical terms, you'll most often hear programming tutorials say things like \"open up the Python interpreter\" or \"give this code a try in the interpreter\". When you see that, don't get confused—they're usually just referring to interactive mode.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 778604,
+              "key": "355b6544-c7e8-40a7-85b2-4e1cd617fc03",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "355b6544-c7e8-40a7-85b2-4e1cd617fc03",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Suppose you come back to your terminal after taking a break—and can't remember whether it's running the Python interactive interpreter. What's one way you could tell?",
+                "answers": [
+                  {
+                    "id": "a1541267312191",
+                    "text": "During interactive mode, the terminal prompt changes to `$`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1541267328776",
+                    "text": "During interactive mode, the terminal prompt changes to `>>>`",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 778605,
+              "key": "67ef205d-89e9-49a3-b380-a7a65f9f4b18",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "67ef205d-89e9-49a3-b380-a7a65f9f4b18",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Your friend comes to you and says they tried to run a command in their terminal and couldn't get it to work. When you look at their terminal, you see this:\n\n```text\n>>> ls\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nNameError: name 'ls' is not defined\n```\n\nWhat happened?",
+                "answers": [
+                  {
+                    "id": "a1541267619796",
+                    "text": "They tried to run a shell command from the Python interactive interpreter.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1541267673717",
+                    "text": "They tried to run a Python function without first starting up the Python interactive interpreter.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 778606,
+              "key": "78daabc6-03b8-4b0e-9a1a-ac844afabc1c",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "78daabc6-03b8-4b0e-9a1a-ac844afabc1c",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Your friend comes to you with another problem. This time, their terminal looks like this:\n\n```text\n$ print(\"Hello world!\")\n-bash: !\": event not found\n```\nWhat happened?",
+                "answers": [
+                  {
+                    "id": "a1541267843593",
+                    "text": "They tried to run a shell command from the Python interactive interpreter.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1541267937743",
+                    "text": "They tried to run a Python function without first starting up the Python interactive interpreter.",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 778607,
+              "key": "496e6eca-b96b-49bc-94ee-4736492b0bda",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "It's important to remember that BASH and Python are two separate programming languages. You can interact with both of them from your terminal, but you have to remember which you're dealing with at any given time. If you try to run a shell command while you're in Python, you'll get an error. And if you try to run a Python command while you're in the shell, you'll also get an error! ",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 778616,
+          "key": "455d6662-f7ec-44a7-b552-299ec0fce27c",
+          "title": "Compound statements in interactive mode",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "455d6662-f7ec-44a7-b552-299ec0fce27c",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 778620,
+              "key": "eeeabbec-650e-47b3-8fe3-30738e844c22",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Compound statements in interactive mode\n\nSo far, we've just run single lines of code in interactive mode. But you can run compound statements too—like `for` loops and `if` tests.\n\nWe'll use the turtle to demonstrate this.\n\n> **Note:** Some computers occasionally have trouble running turtles from the terminal. If you're unable to get it working, don't worry—it's not a critical part of this course. However, you should still read through this page so that you're familiar with how to use compound statements in the interpreter.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 778617,
+              "key": "8053e187-f82b-47b0-bbfd-86c0aac04cbe",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## 🐢 Turtles in the terminal!\n\nYou can use the terminal to draw with turtles, just like you did in the workspaces earlier. In fact, you can even do this in interactive mode!\n\nThe only real difference is that, in interactive mode, you have to enter one line at a time. First, import the turtle module:\n\n```text\n>>> import turtle\n```\nSince it's just importing the module, you won't see any visible output in the terminal as a result of running this statement. But now that the turtle module is available, we can start doing things with turtles!\n\nFirst, we have to create a new turtle and assign it to a variable. So type this in and press Enter:\n\n```text\n>>> amy = turtle.Turtle()\n```\n\nAs soon as you enter this line, you should see a new window pop open:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 778618,
+              "key": "d534add4-4604-4e75-9597-99a6373ee3d4",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2018/February/5a7a742f_turtle-canvas/turtle-canvas.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/d534add4-4604-4e75-9597-99a6373ee3d4",
+              "caption": "",
+              "alt": "A blank turtle canvas.",
+              "width": 360,
+              "height": 697,
+              "instructor_notes": null
+            },
+            {
+              "id": 778619,
+              "key": "4ea40492-f109-4e80-9a48-6f5aee868656",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "**Note:** If you *close* this window, you'll have to create another turtle to get the window back. \n\nYou can now navigate the turtle around the screen using the standard commands—you just have to enter them one line at a time. For example, here's how to get the turtle to draw a square:\n\n```text\n>>> amy.forward(100)\n>>> amy.right(90)\n>>> amy.forward(100)\n>>> amy.right(90)\n>>> amy.forward(100)\n>>> amy.right(90)\n>>> amy.forward(100)\n```\n\nRemember, you can use the up arrow and down arrow keys to look through previous commands.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 778621,
+              "key": "dd7b3c07-a2f9-4c06-89be-c2e0f70b1148",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Compound statements",
+              "instructor_notes": ""
+            },
+            {
+              "id": 778622,
+              "key": "1243f43f-8f50-4b92-8288-717a6be4d257",
+              "title": "Python: Using the interactive interpreter 2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "4kVZefAHXLs",
+                "china_cdn_id": "4kVZefAHXLs.mp4"
+              }
+            },
+            {
+              "id": 778623,
+              "key": "4ad0586b-6be9-4a50-b988-f1e42aab92a2",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Unfortunately, if you make a mistake when defining a compound statement in interactive mode (like forgetting to put a colon `:` at the end of the first line), you usually have to start over from the beginning. This is why interactive mode is generally only good for experimenting with short pieces of code.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 778624,
+              "key": "9ec36345-dedd-43b4-a1cf-6a60bfbfacbb",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "9ec36345-dedd-43b4-a1cf-6a60bfbfacbb",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "I've successfully used a compound statement in interactive mode!"
+              ],
+              "positive_feedback": "**Mission accomplished!** 😎",
+              "video_feedback": null,
+              "description": "If you haven't already, go ahead and have the turtle draw something using a `for` loop (like Karl did in the video).\n\n(This is really just to make sure you're comfortable using compound statements in interactive mode.)"
+            }
+          ]
+        },
+        {
+          "id": 778641,
+          "key": "b1eeee9a-8685-4ed4-a186-07ae99369033",
+          "title": "Using print to debug",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "b1eeee9a-8685-4ed4-a186-07ae99369033",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 778643,
+              "key": "4316ac97-da54-410d-996f-4c9966ba8a1d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Using `print` to debug\n\nLike we've mentioned before, one of the challenges in writing code is that there's all this stuff that goes on in the background—stuff that happens in the computer's memory, but that you can't see in your code.\n\nFor example, consider the loop we just looked at:\n\n```python\n>>> for length in range(10):\n...     dizzy.forward(length*10)\n...     dizzy.right(90)\n\n```\n\nThe `length` variable is getting assigned all these different numbers, but we can't see them—and that can make it very hard to understand what a `for` loop is really doing. But there's a way we can get some insight into this using the `print` function.\n\nTry running the loop again, but this time, add a `print` statement on the second line. Like this:\n\n```python\n>>> for length in range(10):\n...     print(length) # Add this line!\n...     dizzy.forward(length*10)\n...     dizzy.right(90)\n```\n\nRun it and see what happens!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 778642,
+              "key": "c2940dce-d59f-4efe-a8ce-89d85d7c6d8d",
+              "title": "Python: Using print to debug",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "aoHvDpPIuNM",
+                "china_cdn_id": "aoHvDpPIuNM.mp4"
+              }
+            },
+            {
+              "id": 778644,
+              "key": "2cb0896c-2cfa-49aa-ba02-fa3de3d7ff80",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## `print` is your friend\nA lot of bugs have to do with problems like this—where you think a variable has one value, but it really has some other value.\n\n> **Debugging tip:** Whenever there's a variable in your code and you want to check what value it is referring to, you can use the `print` function.\n\nSimply add a line of code in which you call the `print` function and pass it the variable you're wondering about. The value that the variable refers to will then get printed to the terminal.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 542521,
+          "key": "253fd6ee-dffa-48c4-a803-bc520b110f7a",
+          "title": "Functions revisited",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "253fd6ee-dffa-48c4-a803-bc520b110f7a",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 543068,
+              "key": "00561ea5-5a17-431d-8c5e-c526dbc59eb4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Functions revisited\n\nWhen you start using functions in the terminal, there are some things that can get a little confusing. In this section, we'll review function syntax and then show you some of these potentially confusing issues.\n\n## Defining functions\n\nWe recently learned about the `input` and `print` functions. If you remember, these are both _built-in_ functions. That means we can _call_ them, but we don't get to see the code that defines them.\n\nBut earlier in the course, we defined some of our own functions ...",
+              "instructor_notes": ""
+            },
+            {
+              "id": 543069,
+              "key": "29275bfc-cfc2-4d40-8fea-bcf53d499131",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "29275bfc-cfc2-4d40-8fea-bcf53d499131",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Here's an example of a function definition:\n\n```python\ndef say_hello():\n    return \"Hello!\"\n```\n\nWhat does each part do?"
+                },
+                "concepts_label": "Piece of code",
+                "answers_label": "What it does",
+                "concepts": [
+                  {
+                    "text": "`say_hello`",
+                    "correct_answer": {
+                      "id": "a1518307778600",
+                      "text": "Names the functiion"
+                    }
+                  },
+                  {
+                    "text": "`( )`",
+                    "correct_answer": {
+                      "id": "a1518307973264",
+                      "text": "Says what arguments the function takes."
+                    }
+                  },
+                  {
+                    "text": "`return \"Hello!\"`",
+                    "correct_answer": {
+                      "id": "a1518308510431",
+                      "text": "Gives the value to return when the function is called."
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1518308510431",
+                    "text": "Gives the value to return when the function is called."
+                  },
+                  {
+                    "id": "a1518307778600",
+                    "text": "Names the functiion"
+                  },
+                  {
+                    "id": "a1518307973264",
+                    "text": "Says what arguments the function takes."
+                  }
+                ]
+              }
+            },
+            {
+              "id": 778632,
+              "key": "6931053d-2357-47c5-8b01-e4ea853805c8",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "6931053d-2357-47c5-8b01-e4ea853805c8",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Create a new file in your text editor and save it with the name **function_review.py**.",
+                "Type the function definition (from the quiz above) into the file."
+              ],
+              "positive_feedback": "**Good!**",
+              "video_feedback": null,
+              "description": "Now let's try this function definition out in a file on your computer ..."
+            },
+            {
+              "id": 778631,
+              "key": "8b33750d-9f28-4c5a-8968-2b1457752c33",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n> **Note:** You can also copy and paste the code, but typing it out is better practice for remembering the syntax. You should also be aware that copying and pasting can sometimes introduce small errors into the code that are difficult to detect (such as an extra space that messes up Python's indenting!).\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 543073,
+              "key": "cf8c3362-9141-459d-8569-4f79b4c29ff1",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "cf8c3362-9141-459d-8569-4f79b4c29ff1",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "If we run this code right now, it won't do much of anything—it's just the code that *defines* the function. Remember, in order to get the function to run, we have to _call_ the function.\n\nWhich of these should we use to call the `say_hello` function?",
+                "answers": [
+                  {
+                    "id": "a1518310062031",
+                    "text": "`say_hello`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1518310095454",
+                    "text": "`say_hello()`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1518310105946",
+                    "text": "`say_hello():`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1518310124422",
+                    "text": "`say_hello(\"Hello!\")`",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 543074,
+              "key": "8bf4364b-6dc9-4b70-b03d-8fb193fc2e12",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Your code should now look like this:\n\n```python\ndef say_hello():\n    return \"Hello!\"\n\nsay_hello()\n```\n\nMake sure to save the file when you're finished adding the code to it—but don't run it yet. It's good to try to predict what your code will do before you run it.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 543071,
+              "key": "62694d20-4947-48a2-86dc-6b65cde58902",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "62694d20-4947-48a2-86dc-6b65cde58902",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What do you think will happen if you try to run this code now?",
+                "answers": [
+                  {
+                    "id": "a1518309055583",
+                    "text": "It will fail to run, and the terminal will display an error message.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1518309245598",
+                    "text": "It will run without errors, and \"Hello!\" will appear in the terminal.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1518309293063",
+                    "text": "It will run without errors, but \"Hello!\" will not appear in the terminal.",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 543075,
+              "key": "ef853449-1b75-4fc5-932c-9df4d85cb421",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Although the function will be called and will return a value (`\"Hello!\"`), we still won't see anything happen in the terminal. The function returned a value, but we didn't *do* anything with that value.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 543077,
+              "key": "924e15b3-2e61-4158-87ba-18de3fb21499",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "924e15b3-2e61-4158-87ba-18de3fb21499",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Which of these pieces of code could we add to our program to get \"Hello!\" to show up in the terminal? Indicate which options would work and which would not."
+                },
+                "concepts_label": "Code",
+                "answers_label": "Does it work?",
+                "concepts": [
+                  {
+                    "text": "```python\ngreeting = say_hello()\n```",
+                    "correct_answer": {
+                      "id": "a1518312296664",
+                      "text": "Doesn't work"
+                    }
+                  },
+                  {
+                    "text": "```python\ngreeting = say_hello()\nprint(greeting)\n```",
+                    "correct_answer": {
+                      "id": "a1518312405552",
+                      "text": "Works"
+                    }
+                  },
+                  {
+                    "text": "```python\nprint(say_hello())\n```",
+                    "correct_answer": {
+                      "id": "a1518312473834",
+                      "text": "Works"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1518312296664",
+                    "text": "Doesn't work"
+                  },
+                  {
+                    "id": "a1518312473834",
+                    "text": "Works"
+                  },
+                  {
+                    "id": "a1518312405552",
+                    "text": "Works"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 543078,
+              "key": "aef19406-4527-4c70-8a2f-6cec5bcb7dea",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "As we saw earlier, we can use the `print` function to output values to the terminal. So one approach we can take is to first assign the returned value to a variable:\n\n```python\ngreeting = say_hello()\n```\n\nAnd then print the value stored within that variable:\n\n```python\nprint(greeting)\n```\n\nOr, we can just put one function call inside another, like this:\n\n```python\nprint(say_hello())\n```\n\nThe inner function call, `say_hello()` will get evaluated first, and will return `\"Hello!\"`, so that the above line effectively turns into:\n\n```python\nprint(\"Hello!\")\n```\n\nThis _call_ to the `print` function then runs, and prints `\"Hello!\"` to the terminal. **Using the output from one function as the input to another function is something you'll see a lot of!**",
+              "instructor_notes": ""
+            },
+            {
+              "id": 778633,
+              "key": "43501ea6-707f-4193-b990-292179a6ed75",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "43501ea6-707f-4193-b990-292179a6ed75",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Here's a pretty extreme (and abstract) example (just to show another example of how you can take the return value of one function and use it as the input to another).\n\nWithout knowing what the functions `move` and `shake` do, which **one** line of code below will have the same effect as these three lines of code?\n```python\na = move(23)\nb = shake(a)\nprint(b)\n```",
+                "answers": [
+                  {
+                    "id": "a1541280278601",
+                    "text": "`move(shake(print(23)))`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1541280387575",
+                    "text": "`print(move(shake(23)))`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1541280388080",
+                    "text": "`print(shake(move(23)))`",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 543079,
+              "key": "dd2e2230-99eb-4543-8feb-9c50114f1b25",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "dd2e2230-99eb-4543-8feb-9c50114f1b25",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "As a reminder, what would happen if we added a second `return` to our function definition? Like this:\n\n```python\ndef say_hello():\n    return \"Hello!\"\n    return \"Goodbye!\"\n\nprint(say_hello())\n```",
+                "answers": [
+                  {
+                    "id": "a1518313772158",
+                    "text": "Only `\"Hello!\"` would get printed to the terminal.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1518313805667",
+                    "text": "Both `\"Hello!\"` and `\"Goodbye!\"`would get printed to the terminal.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1518313837513",
+                    "text": "The code would fail to run, and the terminal would display an error message.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 543080,
+              "key": "711d7af8-9adc-4ff1-b0e1-278beb5ea48a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "We’re done playing with this function for now (but we'll come back to it later), so let’s comment it out:\n\n```python\n#def say_hello():\n#    return \"Hello!\"\n#    return \"Goodbye!\"\n\n#print(say_hello())\n```\n\n## Printing from inside a function\n\nOne thing that can get a little confusing is that we can call the `print` function from inside a function definition. Add this code to the **function_review.py** file:\n\n```python\ndef confuse():\n    print (\"bears\")\n    return 42\n\nconfuse()\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 543082,
+              "key": "411a228a-6808-4c42-9757-39a669d6a38d",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "411a228a-6808-4c42-9757-39a669d6a38d",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What will appear in the terminal when this code gets run?",
+                "answers": [
+                  {
+                    "id": "a1518315282684",
+                    "text": "Only `bears`.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1518315322825",
+                    "text": "Only `42`.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1518315343147",
+                    "text": "Both `bears` and `42`.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1518315351626",
+                    "text": "Neither `bears` nor `42`",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 543083,
+              "key": "9c6178c3-909c-49d6-ad17-562a925f40ff",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "When we call the `confuse` function, `42` gets returned to the place in the code where we called the function. But notice that we are not printing this returned value. The value gets returned, but nothing gets done with that returned value.\n\nSo, the string `\"bears\"` got printed to the terminal, even though it wasn't a returned value. And `42` did not appear in the terminal, because it was simply returned, but nothing was done with the returned value.\n\nThe point of this is to show you that **you can print values to the terminal from within functions, and this is a separate action from returning a value!** Both are useful things to do, depending on what you're trying to accomplish with your program.\n\nAgain, go ahead and comment-out the `confuse` function so that we can disable it without deleting it.\n\n## No returned value\n\nHere's something we haven't tried yet: What happens if we _call_ a function and try to print the returned value, but the function doesn't return a value? Let's try it and see.\n\nAdd this code to the **function_review.py** file:\n\n```python\ndef more_confused():\n    2 + 2\n\nprint(more_confused())\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 543088,
+              "key": "0e566ba1-cef4-404c-b7a4-f1c8329f860b",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "0e566ba1-cef4-404c-b7a4-f1c8329f860b",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Try running the code in the terminal.\n\nWhat happened?",
+                "answers": [
+                  {
+                    "id": "a1518316366754",
+                    "text": "It printed `2 + 2`.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1518316396704",
+                    "text": "It printed `4`.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1518316415807",
+                    "text": "It didn't print anything at all.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1518316425222",
+                    "text": "It printed the word `None`.",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 543086,
+          "key": "0023a543-1bef-44a4-b603-3c4bdcadf8e0",
+          "title": "Functions in interactive mode",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "0023a543-1bef-44a4-b603-3c4bdcadf8e0",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 543090,
+              "key": "60978972-eb5b-47ad-b9b3-23a525edf22b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Functions in interactive mode\n\nWe saw earlier that you can write compound statements in interactive mode. We tried this with loops—now let’s try it with function definitions.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 778640,
+              "key": "e8a10ec3-ad89-4e65-98f1-284490c76df7",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "e8a10ec3-ad89-4e65-98f1-284490c76df7",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Start interactive mode.",
+                "Enter the function definition, one line at a time.",
+                "Be sure to indent the second line by four spaces.",
+                "As before, hit Enter one extra time when you're finished defining the function, so that you return to the `>>>` prompt.",
+                "Finally, call the function by running `say_hello()`."
+              ],
+              "positive_feedback": "**Great!**",
+              "video_feedback": null,
+              "description": "Go ahead and try it with the same simple function we wrote earlier:\n\n```text\n>>> def say_hello():\n...     return \"Hello!\"\n...\n>>>\n```"
+            },
+            {
+              "id": 543107,
+              "key": "afc15f13-88ce-4252-8521-8162b748fb87",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "afc15f13-88ce-4252-8521-8162b748fb87",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Earlier, we called `say_hello()` from a file—and we saw that simply calling the function did not display anything in the terminal, because we needed to `print` the returned value to get it to show up.\n\nWhat happened when you called the `say_hello()` function in interactive mode? Did it do something different?",
+                "answers": [
+                  {
+                    "id": "a1518319538601",
+                    "text": "Yes—`'Hello!'` was displayed in the terminal.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1518319807050",
+                    "text": "No—it did the same thing as before (nothing was displayed in the terminal).",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1518319819883",
+                    "text": "An error was displayed in the terminal.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 543111,
+              "key": "96e7c859-7ea9-451d-9e6a-801984fc2938",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "This is one of the things that is useful about running code in interactive mode: **Anytime you enter a statement or expression, interactive mode will display the returned value.** This let's you get a little more insight into what's happening with your code.\n\nHowever, this behavior can be a bit confusing when you are also using `print` at the same time. As an example, let's define the `confuse` function (that we used earlier) in interactive mode.\n\n```text\n>>> def confuse():\n...     print(\"bears\")\n...     return 42\n...\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 543114,
+              "key": "585a9ccd-33a2-4cc9-850a-abdfa7a8b5be",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "585a9ccd-33a2-4cc9-850a-abdfa7a8b5be",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Call the `confuse` function:\n\n```bash\n>>> confuse()\n```\n\nWhat happened?",
+                "answers": [
+                  {
+                    "id": "a1518320760137",
+                    "text": "Only `bears` appeared in the terminal, just like before.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1518320821519",
+                    "text": "Only `42` appeared in the terminal.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1518320822687",
+                    "text": "Both `bears` and `42` appeared in the terminal.",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 543117,
+              "key": "2a7b370e-b8ea-44ac-8356-b782a7ba1cd6",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Like we saw earlier, there is a difference between **returning a value** and **printing a value**. There's also a difference in how these things behave depending on whether you're running them from a **file** or from **interactive mode**. In interactive mode, you'll see values that get printed _and also_  any returned values (even when they aren't printed).",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 778645,
+          "key": "5530cd88-2f04-4424-a95d-7598ff90b6e2",
+          "title": "Type errors",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5530cd88-2f04-4424-a95d-7598ff90b6e2",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 778646,
+              "key": "ad2c66dd-4804-43f5-94d3-c62b176b28d6",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Type errors\n\nYou've already had some experience dealing with errors when you were working in the workspace earlier.\nWhen you’re running Python in the terminal, it will display error messages in a very similar way. Let’s see what that looks like.\n\nGo into interactive mode in Python. First, let’s try something we know will work:\n\n```bash\n>>> 2 + 3\n5\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 778647,
+              "key": "25fcc49e-5e88-48d6-8c1d-9cc2882b223e",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "25fcc49e-5e88-48d6-8c1d-9cc2882b223e",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Let’s review a little vocabulary (we’ll need it in a moment). You may remember that expressions like `2 + 3` or `9 / 3` are made up of **operands** and **operators**. Do you remember which are which?"
+                },
+                "concepts_label": "Piece of code",
+                "answers_label": "Operator or operand?",
+                "concepts": [
+                  {
+                    "text": "+",
+                    "correct_answer": {
+                      "id": "a1541294368781",
+                      "text": "Operator"
+                    }
+                  },
+                  {
+                    "text": "/",
+                    "correct_answer": {
+                      "id": "a1541294381605",
+                      "text": "Operator"
+                    }
+                  },
+                  {
+                    "text": "9",
+                    "correct_answer": {
+                      "id": "a1541294382467",
+                      "text": "Operand"
+                    }
+                  },
+                  {
+                    "text": "2",
+                    "correct_answer": {
+                      "id": "a1541294383341",
+                      "text": "Operand"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1541294368781",
+                    "text": "Operator"
+                  },
+                  {
+                    "id": "a1541294383341",
+                    "text": "Operand"
+                  },
+                  {
+                    "id": "a1541294381605",
+                    "text": "Operator"
+                  },
+                  {
+                    "id": "a1541294382467",
+                    "text": "Operand"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 778648,
+              "key": "ad6cacb9-05a5-427a-a5c5-4260cb1267a7",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Now try this:\n\n```text\n>>> 2 + \"fish\"\n```\n\nYou should get this error message:\n\n```text\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nTypeError: unsupported operand type(s) for +: 'int' and 'str'\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 778649,
+              "key": "fc2db8c7-d2dc-48b3-8fd5-e2a04f88908b",
+              "title": "",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "fc2db8c7-d2dc-48b3-8fd5-e2a04f88908b",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "This looks like a lot of information. Let’s focus on the last line:\n\n```text\nTypeError: unsupported operand type(s) for +: 'int' and 'str'\n```\n\nHmmm, what could that mean? Here are some statements about the code and the error—check **all** of the statements that you think might be true.",
+                "answers": [
+                  {
+                    "id": "a1541294494207",
+                    "text": "In `2 + \"fish\"`, `2` and `\"fish\"` are both _operands_.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1541294501278",
+                    "text": "`2` is an _integer_ and `\"fish\"` is a _string_.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1541294501877",
+                    "text": "The error is saying that the `+` operator can't add a `string` to an `integer`.",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 778650,
+              "key": "84a1a4ea-6197-4884-af64-9f6854627823",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Notice that the last line of the error begins with a label that describes the sort of error it is—in this case, it is a `TypeError`.\n\n>A **type error** is simply an error that involves the _type_ of data being manipulated. In other words, it happens when the code is trying to do something with an object, but there’s a problem with the data type of that object.\n\nAs we just saw, the `+` operator was trying to add two operands together, but those operands were of different data types (one was a number and one was a string).",
+              "instructor_notes": ""
+            },
+            {
+              "id": 778656,
+              "key": "18b89db2-2f6f-42d4-a7a8-8807539d6ba1",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## A typical example with `input`\n\nEarlier, we used the `input` function to ask the user for their name:\n\n```python\nname = input(\"What's your name?\")\n```\n\nAnother common thing you might like to do with the `input` function is ask the user for a number:\n\n```python\nn = input(\"Please enter a number:\")\n```\nGo ahead and try running this line in interactive mode. When it asks for a number, give it one.\n\n```text\n>>> n = input(\"Please enter a number:\")\nPlease enter a number:4\n```\n\nYou can then check that the `n` variable really does have a number in it:\n\n```text\n>>> n\n'4'\n```\n\nSo far, so good!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 778657,
+              "key": "3194532d-a687-4350-b2b2-dcdf0b97cb85",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "3194532d-a687-4350-b2b2-dcdf0b97cb85",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Now let's try to do something with that number. Run this line of code:\n\n```text\nn + 2\n```\n\nWhat happens?",
+                "answers": [
+                  {
+                    "id": "a1541295381807",
+                    "text": "It adds `2` to the value `4` and displays the result: `6`.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1541295493958",
+                    "text": "It throws a **TypeError**, just like we got with `2 + \"fish\"`.",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 778658,
+              "key": "29b07f4f-06e7-4a12-8782-9a268b1f80ae",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "29b07f4f-06e7-4a12-8782-9a268b1f80ae",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Based on what you just saw, take a shot at answering this question:\n\nWhen the `input` function returns a value, that value is always of a particular data type. What type do you think it is?",
+                "answers": [
+                  {
+                    "id": "a1541295647298",
+                    "text": "`input` always returns an **integer**.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1541295715585",
+                    "text": "`input` always returns an **list**.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1541295717913",
+                    "text": "`input` always returns a **string**.",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 778659,
+              "key": "63aa08ac-2527-4842-8aa3-3e0f1a3db4bf",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "We're bringing this up because it's a very common scenario in which you might run into a **TypeError**\n\nSo how do you get around this problem? One approach is to use a function we haven't seen before— the `int` function. In this case, we might use the `int` function like this:\n\n```text\n>>> n = int(input(\"Please enter a number:\"))\nPlease enter a number:4\n```\n\nThis takes the string returned by the `input` function, and passes it to the `int` function. The `int` function takes that string and converts it to an integer.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 778660,
+              "key": "b9fe1516-adc9-4d40-a1a0-4a6632cd7a58",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "b9fe1516-adc9-4d40-a1a0-4a6632cd7a58",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Give this a try for yourself!\n\n```text\n>>> n = int(input(\"Please enter a number:\"))\nPlease enter a number:4\n>>> n + 2\n```\n\nNow what do you get?",
+                "answers": [
+                  {
+                    "id": "a1541296446645",
+                    "text": "It adds `2` to the value `4` and displays the result: `6`.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1541296481315",
+                    "text": "It still throws a **TypeError**, just like before.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 778661,
+              "key": "0e283ffe-a19b-4fdb-bbe9-b531be679a51",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Keep all of this in mind, because we'll come back to the `int` function more in the next lesson—along with it's counterpart, the `str` function!",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 542523,
+          "key": "de4fa8b2-4d4c-40fb-83c3-1b7597496583",
+          "title": "Line numbers and tracebacks",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "de4fa8b2-4d4c-40fb-83c3-1b7597496583",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": {
+            "files": [
+              {
+                "name": "broken02.py",
+                "uri": "https://video.udacity-data.com/topher/2018/July/5b4c1d41_broken02/broken02.py"
+              },
+              {
+                "name": "broken01.py",
+                "uri": "https://video.udacity-data.com/topher/2018/October/5bd25f31_broken01/broken01.py"
+              }
+            ],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 675370,
+              "key": "5905de12-719e-46d8-a22e-de895a45acc4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Line numbers and tracebacks\n\nLet's get some more practice dealing with errors in the terminal. In particular, we'll look at two helpful features that you'll often see in the errors you get: **Line numbers** and **tracebacks**.\n\n## Errors and line numbers\nFor this exercise, download this Python file: [broken01.py](https://s3.amazonaws.com/video.udacity-data.com/topher/2018/October/5bd25f31_broken01/broken01.py)\n\nMake sure you’ve quit interactive mode, and then run the file: \n\n```text\npython broken01.py\n```\n\nIt should ask you for your name. And when you provide a name, it should trigger the following error:\n\n```text\nTraceback (most recent call last):\n  File \"broken01.py\", line 2, in <module>\n    print(\"Hello,\", name, \"!\")\nNameError: name 'name' is not defined\n```\n\nOpen the **broken01.py** file in your text editor and see if you can figure out what's wrong with the code.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 549232,
+              "key": "23b11167-03b1-40da-b8d2-83b8e46d7b76",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "23b11167-03b1-40da-b8d2-83b8e46d7b76",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which line has a mistake?",
+                "answers": [
+                  {
+                    "id": "a1518658815457",
+                    "text": "Line 1",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1518658822446",
+                    "text": "Line 3",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 769858,
+              "key": "d9d1fffa-26ae-48b6-9fc8-34a64a202cbe",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "d9d1fffa-26ae-48b6-9fc8-34a64a202cbe",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Here are some revised lines of code that attempt to fix the problem. Which of these will make the code run without an error?",
+                "answers": [
+                  {
+                    "id": "a1540513977642",
+                    "text": "Change **Line 2** to `print(\"Hello,\", username, \"!\")`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1540513990152",
+                    "text": "Change **Line 1** to`name = input(\"What's your name?\")`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1540513990688",
+                    "text": "Change **Line 1** to`input(\"What's your name?\")`",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 549184,
+              "key": "a2d16a92-c5be-4e2d-9059-a1031a2b387a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Notice that the line number given by the error message wasn’t actually the line that needed to be changed. When you're first learning to program, this can be super confusing!\n\nThe reason is because **line numbers identify where Python _detected_ a problem, but that’s not always the line where the problem is.** Sometimes a problem in one spot will not immediately cause the program to crash—but eventually that mistake leads to a crash on a different line.\n\nEven when that’s the case, the line number still gives you a starting point. In this case, the error tells us that it had a problem when trying to run line 2 because the variable used on that line hadn’t been defined yet. Based on this information, you can then figure out that there’s probably a mistake in the variable definition—which is on line 1.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 778668,
+              "key": "2d1d0d1b-acae-47ee-82ed-953ca59693f5",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Tracebacks\n\nLet’s look at some more broken code. Download the file [broken02.py](https://s3.amazonaws.com/video.udacity-data.com/topher/2018/July/5b4c1d41_broken02/broken02.py) and run it in the terminal. You should get the following error:\n\n```text\nTraceback (most recent call last):\n  File \"broken02.py\", line 5, in <module>\n    if coinflip() == 'heads':\n  File \"broken02.py\", line 2, in coinflip\n    return random.choice(['heads', 'tails'])\nNameError: name 'random' is not defined\n```\nYikes! This seems like kind of a scary error message—there's a lot of information here. We'll walk you through what's happening and how to read this error message, but first take a shot at it yourself. \n\nOpen the **broken02.py** file in your code editor and check it out. Then look at the error message again and see if you can guess what might be causing the trouble.\n\n(This is one of those cases where we are trying to get you thinking about the problem, but it's truly OK if you don't fully understand it—we'll walk through an explanation in a moment.)\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 549237,
+              "key": "95ae1848-5d8e-447a-adef-b93c95c78381",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "95ae1848-5d8e-447a-adef-b93c95c78381",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What do you think we could do to fix the error?",
+                "answers": [
+                  {
+                    "id": "a1518660252136",
+                    "text": "Add the line `import random` at the top of the file.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1518660302223",
+                    "text": "Remove `random` from **Line 2** (so that it becomes `return choice(['heads', 'tails'])`)",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 674974,
+              "key": "56728a74-5210-4d59-897c-48e4db878963",
+              "title": "Python: Traceback",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "UscqKmmKLpo",
+                "china_cdn_id": "UscqKmmKLpo.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 542848,
+          "key": "4fceef74-74e4-4c3e-b150-5ded2e7f3591",
+          "title": "Importing things",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "4fceef74-74e4-4c3e-b150-5ded2e7f3591",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 674976,
+              "key": "92b835d1-3fae-42a5-a73c-399b4c5cf2b5",
+              "title": "Python: Importing your own code",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "b94UNRKfXQw",
+                "china_cdn_id": "b94UNRKfXQw.mp4"
+              }
+            },
+            {
+              "id": 778669,
+              "key": "72076a00-ace9-497b-bdc1-22c56f739b00",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "72076a00-ace9-497b-bdc1-22c56f739b00",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "In your code editor, **create a new file** named **chance.py**.",
+                "**Add the code** shown in the video (if you want an extra challenge, see how much of it you can write without looking back at the video!).",
+                "Remember to **save the file**!",
+                "`cd` to the location where you saved the file.",
+                "`import` the module you just created! (Remember, don't add the `.py` when importing!)"
+              ],
+              "positive_feedback": "**Nice work!**",
+              "video_feedback": null,
+              "description": "Go ahead and create your own copy of the `chance.py` file, and then import it like Karl did above."
+            },
+            {
+              "id": 543119,
+              "key": "d10d0c2f-66e8-4c81-beec-b4fa94d9293e",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "d10d0c2f-66e8-4c81-beec-b4fa94d9293e",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Now that you've imported the `chance` module, you can call the functions that are inside of it. Which of these lines do you think you should use to call the `coin_flip` function?",
+                "answers": [
+                  {
+                    "id": "a1518321894164",
+                    "text": "`coin_flip()`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1518321954931",
+                    "text": "`chance.coin_flip()`",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 543120,
+              "key": "edcfa62e-ec80-47b9-8f1f-96d1beb819a8",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Notice that this is the same as when we call methods from the `random` module. We can't just type `choice()` or `randint()`—we have to specify `random.choice()` and `random.randint()`.\n\nThis is called **dot notation**. The period `.` is used to say where something is located. So a line like `chance.die_roll()` is saying \"call the `die_roll()` function, which is located _inside_ the `chance` module.\"\n\nWith *built-in* functions, Python already knows where to find them, so that's why we don't need to do this with functions like `print` or `input`.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 543121,
+              "key": "381a7455-f420-4373-adc0-888f156b1c25",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "381a7455-f420-4373-adc0-888f156b1c25",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Just for fun, here's something else you can try importing:\n\n```bash\n>>> import antigravity\n```\n\nWhat happened?",
+                "answers": [
+                  {
+                    "id": "a1518323003610",
+                    "text": "It made all of the windows float up and off my screen.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1518323037199",
+                    "text": "It opened my web browser and went to a web comic about Python.",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 778670,
+              "key": "9cce6969-3980-4643-b94b-f4e5d569df1a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "And that's it for this lesson! You've accomplished some pretty major things here. You've gotten Python set up on your own machine, and you now know how to create and run programs using your own code editor and terminal. That's the same way professional developers write and run their code!\n\nAs usual, when you click the **Next** button, you'll be asked for your feedback on the lesson. We really do read all your comments—both positive and negative. So please do let us know how things went! 😊",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

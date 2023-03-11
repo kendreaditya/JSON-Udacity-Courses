@@ -1,0 +1,1795 @@
+{
+  "data": {
+    "lesson": {
+      "id": 817335,
+      "key": "3992a4de-de84-4dea-b797-f99a6e1ba47d",
+      "title": "Arrays",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Learn how to use Arrays to store complex data in your JavaScript programs.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/3992a4de-de84-4dea-b797-f99a6e1ba47d/817335/1549165116865/Arrays+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/3992a4de-de84-4dea-b797-f99a6e1ba47d/817335/1549165112227/Arrays+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 215792,
+          "key": "23f94405-123c-4132-adc4-bef0f5544663",
+          "title": "Intro to Arrays",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "23f94405-123c-4132-adc4-bef0f5544663",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 230442,
+              "key": "0f5dfe31-a592-4fe0-8c26-11f9e43fe337",
+              "title": "Intro to Arrays",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "1_4ZZsXEgc4",
+                "china_cdn_id": "1_4ZZsXEgc4.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 215794,
+          "key": "7ee1d112-4230-4dfe-8269-f0f77cbabc24",
+          "title": "Donuts to Code",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "7ee1d112-4230-4dfe-8269-f0f77cbabc24",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 253421,
+              "key": "6aa31b0b-4288-49c4-b780-7f540eec5eff",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Donuts to Code",
+              "instructor_notes": ""
+            },
+            {
+              "id": 230443,
+              "key": "180f4014-27a2-4a40-ac51-872aae805fcf",
+              "title": "Donuts to Code",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "*The keyboard shortcuts are specific to the editor, as well as the platform you are using. Every editor has its own set of keyboard shortcuts bound to a particular language.* For example, if you are using Visual Studio Code or Sublime Text as an editor, you can find the default shortcuts within the editor's menu options. ",
+              "video": {
+                "youtube_id": "6cgh1yS0NV8",
+                "china_cdn_id": "6cgh1yS0NV8.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 217717,
+          "key": "e19441c7-39f6-4df8-9e72-d73fbac1f7e3",
+          "title": "Creating an Array",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "e19441c7-39f6-4df8-9e72-d73fbac1f7e3",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 217744,
+              "key": "802efba0-1606-4f5f-8048-ae1622f596c9",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Arrays\n\nAn **array** is useful because it stores multiple values into a single, organized data structure. You can define a new array by listing values separated with commas between square brackets `[]`.\n\n```js\n// creates a `donuts` array with three strings\nvar donuts = [\"glazed\", \"powdered\", \"jelly\"];\n```\n\nBut strings aren’t the only type of data you can store in an array. You can also store numbers, booleans… and really anything!\n\n```js\n// creates a `mixedData` array with mixed data types\nvar mixedData = [\"abcd\", 1, true, undefined, null, \"all the things\"];\n```\n\nYou can even store an array in an array to create a **nested array**!\n\n```js\n// creates a `arraysInArrays` array with three arrays\nvar arraysInArrays = [[1, 2, 3], [\"Julia\", \"James\"], [true, false, true, false]];\n```\n\nNested arrays can be particularly hard to read, so it's common to write them on one line, using a newline after each comma:\n\n```js\nvar arraysInArrays = [\n  [1, 2, 3], \n  [\"Julia\", \"James\"], \n  [true, false, true, false]\n];\n```\n\nLater in this lesson, we’ll look into some unique situations where nested arrays can be useful.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 217745,
+              "key": "21899f9c-e443-46d5-b565-d56511acae50",
+              "title": "Mismatched Arrays",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "21899f9c-e443-46d5-b565-d56511acae50",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Select the valid arrays from the list below.",
+                "answers": [
+                  {
+                    "id": "a1480647550862",
+                    "text": "[\"pi\" \"pi\" \"pi\" \"pi\"]",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1480647571779",
+                    "text": "[33, 91, 13, 9, 23]",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1480647578594",
+                    "text": "[null, \"\", undefined, []]",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1480647585819",
+                    "text": "[3.14, \"pi\", 3, 1, 4, \"Yum, I like pie!\"]",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1480647591627",
+                    "text": "true, 2, \"Pie is good!\"",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1480647596427",
+                    "text": "[33; 91; 13; 9; 23]",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1480647606467",
+                    "text": "{33, 91, 13, 9, 23}",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 217718,
+          "key": "b2c54392-dd05-4f68-9116-813086cf1125",
+          "title": "Accessing Array Elements",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "b2c54392-dd05-4f68-9116-813086cf1125",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 254103,
+              "key": "0aa72e37-21c7-4525-ac3e-f5f6ac2e211c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Accessing Array Elements",
+              "instructor_notes": ""
+            },
+            {
+              "id": 230444,
+              "key": "cf72e30b-9eee-4e42-9789-0a6ad738af6c",
+              "title": "Accessing Array Elements",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "EUxXk35AN3A",
+                "china_cdn_id": "EUxXk35AN3A.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 217719,
+          "key": "5e34b2b4-b6da-4c90-8263-17be965b3cfa",
+          "title": "Array Index",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5e34b2b4-b6da-4c90-8263-17be965b3cfa",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 217746,
+              "key": "e114b593-aea4-4aad-b243-7ec902cfbc6a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Indexing\n\nRemember that elements in an array are indexed starting at the position `0`. To access an element in an array, use the name of the array immediately followed by square brackets containing the index of the value you want to access.\n\n```js\nvar donuts = [\"glazed\", \"powdered\", \"sprinkled\"];\nconsole.log(donuts[0]); // \"glazed\" is the first element in the `donuts` array\n```\n> **Prints:** \"glazed\"\n\nOne thing to be aware of is if you try to access an element at an index that does not exist, a value of undefined will be returned back.\n\n```js\nconsole.log(donuts[3]); // the fourth element in `donuts` array does not exist!\n```\n> **Prints:** undefined",
+              "instructor_notes": ""
+            },
+            {
+              "id": 217743,
+              "key": "301bc941-5da3-42fc-9d56-983d213c47b4",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/December/583fa854_donut-out-of-bounds/donut-out-of-bounds.jpeg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/301bc941-5da3-42fc-9d56-983d213c47b4",
+              "caption": "Avoid accessing elements outside the bounds of an array. If you try to, the missing element will be returned back as `undefined` !",
+              "alt": "Image showing 3 donuts in spaces 0, 1, and 2, and showing a red X through the space 3",
+              "width": 1433,
+              "height": 530,
+              "instructor_notes": null
+            },
+            {
+              "id": 217747,
+              "key": "d448445f-9466-497c-b217-99915a58f25e",
+              "title": "Using Array Indices",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "d448445f-9466-497c-b217-99915a58f25e",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Take a look at the following `donuts` array.\n\n```js\nvar donuts = [\"glazed\", \"chocolate frosted\", \"Boston cream\", \"powdered\", \"sprinkled\", \"maple\", \"coconut\", \"jelly\"];\n```\n\nWhat line of code would you use to select the `\"coconut\"` donut from the `donuts` array?",
+                "answers": [
+                  {
+                    "id": "a1480648106001",
+                    "text": "donuts[0]",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1480648173335",
+                    "text": "donuts[4]",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1480648174038",
+                    "text": "donuts[6]",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1480648174671",
+                    "text": "donuts[7]",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 217749,
+              "key": "3a88fc83-cf49-40d1-9417-8434617edbb1",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Finally, if you want to change the value of an element in array, you can do so by setting it equal to a new value.\n\n```js\ndonuts[1] = \"glazed cruller\"; // changes the second element in the `donuts` array to \"glazed cruller\"\nconsole.log(donuts[1]); \n```\n> **Prints:** \"glazed cruller\"",
+              "instructor_notes": ""
+            },
+            {
+              "id": 217750,
+              "key": "c2f4d819-3954-4158-948e-c7943fc86e00",
+              "title": "Changing Value at an Index",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "<div style=\"text-align: center; color: #afafaf; font-size: 14px; margin-top: 15px;\">Change the value of an element by setting it equal to a new value.<div>",
+              "video": {
+                "youtube_id": "XuicmH9zDFs",
+                "china_cdn_id": "XuicmH9zDFs.mp4"
+              }
+            },
+            {
+              "id": 217751,
+              "key": "bc59e12d-1798-4ced-a669-af8ffaa1670f",
+              "title": "What does the array look like?",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "bc59e12d-1798-4ced-a669-af8ffaa1670f",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "We’ve decided to replace some of donuts in the `donuts` array.\n\n```js\nvar donuts = [\"glazed\", \"chocolate frosted\", \"boston cream\", \"powdered\", \"sprinkled\", \"maple\", \"coconut\", \"jelly\"];\n\n\ndonuts[2] = \"cinnamon twist\";\ndonuts[4] = \"salted caramel\";\ndonuts[5] = \"shortcake eclair\";\n```\n\nWhat does the `donuts` array look like after the following changes?",
+                "answers": [
+                  {
+                    "id": "a1480648567292",
+                    "text": "[\"glazed\", \"chocolate frosted\", \"cinnamon twist\", \"salted caramel\", \"shortcake eclair\", \"maple\", \"coconut\", \"jelly\"]",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1480648603994",
+                    "text": "[\"glazed\", \"cinnamon twist\", \"boston cream\", \"salted caramel\", \"shortcake eclair\", \"maple\", \"coconut\", \"jelly\"]",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1480648604529",
+                    "text": "[\"glazed\", \"chocolate frosted\", \"cinnamon twist\", \"powdered\", \"salted caramel\", \"shortcake eclair\", \"coconut\", \"jelly\"]",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1480648605000",
+                    "text": "[\"glazed\", \"cinnamon twist\", \"boston cream\", \"powdered\", \"salted caramel\", \"shortcake eclair\", \"coconut\", \"jelly\"]",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 217753,
+          "key": "c7572c91-7faa-4f14-8e77-884ccc469883",
+          "title": "Quiz: UdaciFamily (6-1)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c7572c91-7faa-4f14-8e77-884ccc469883",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 218359,
+              "key": "88656cdb-843a-4dbd-b451-2c88340feea4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Directions:\n\nCreate an array called `udaciFamily` and add \"Julia\", \"James\", and your name to the array. Then, print the `udaciFamily` to the console using `console.log`.\n\n## Your Code:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 218360,
+              "key": "1e26ae54-1dfd-4e33-b71a-d6d7992886da",
+              "title": "",
+              "semantic_type": "QuizAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "user_state": {
+                "node_key": "1e26ae54-1dfd-4e33-b71a-d6d7992886da",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "instruction": null,
+              "question": {
+                "title": "",
+                "semantic_type": "ProgrammingQuestion",
+                "evaluation_id": "4831336701493248",
+                "initial_code_files": [
+                  {
+                    "text": "/*\n * Programming Quiz: UdaciFamily (6-1)\n */\n\n/*\n * QUIZ REQUIREMENTS\n * - Your code should have a variable `udaciFamily`\n * - The variable `udaciFamily` should be an array containing the values `\"Julia\"`, `\"James\"`, and one other name\n * - Your code should print `udaciFamily` to the console\n * - BE CAREFUL ABOUT THE EXACT WORDS TO BE PRINTED.\n */\n\n\n// your code goes here\n",
+                    "name": "StudentMain.js"
+                  }
+                ]
+              },
+              "answer": null
+            },
+            {
+              "id": 1014288,
+              "key": "d3409916-f2ea-47c0-ad06-851d1f2a3074",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<font color=\"#000066\"> Note - We check your solution against a limited set of ***test-cases*** that check the minimum requirements, as mentioned in the quiz. Give the exercise a strong effort, trying to pass all test cases, before comparing your code with the solution. </font>",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014289,
+              "key": "635f3770-f187-4862-bb98-0d15f0bbf702",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n<div id=\"spoiler_1\" style=\"display:none\">\n#### <font color=\"green\">Here is one of the possible solutions:</font>\n\n```Javascript\n\n// You can create an arrray in different ways\n// Method 1\n// var udaciFamily = new Array(\"Julia\", \"James\", \"Yourname\"); \n\n// Method 2\nvar udaciFamily = [\"Julia\", \"James\", \"Yourname\"]; \n\n// Iterate over the array elements\n// We can find the size of an array using its `length` property\n// Remember that the indexing of elements in an array starts from 0\nfor (var index = 0; index<udaciFamily.length; index++){\n    console.log(udaciFamily[index]);\n}\n```\n</div>\n<button type=\"button\" id=\"myButton1\" onclick=\"if(document.getElementById('spoiler_1') .style.display=='none') {document.getElementById('spoiler_1') .style.display=''}else{document.getElementById('spoiler_1') .style.display='none'}if (document.getElementById('myButton1').innerHTML=='Show Solution') {document.getElementById('myButton1').innerHTML='Hide Solution';}else{document.getElementById('myButton1').innerHTML = 'Show Solution';}\">Show Solution</button>\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 217752,
+          "key": "cb825759-f27d-4a88-90a7-032a1ea4bc09",
+          "title": "Quiz: Building the Crew (6-2)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "cb825759-f27d-4a88-90a7-032a1ea4bc09",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 218357,
+              "key": "16a5519d-a251-4486-873f-759ce5daf6a3",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "The space western TV drama [Firefly](https://en.wikipedia.org/wiki/Firefly_%28TV_series%29) premiered in the United States on September 20, 2002. Although the show only featured fourteen episodes and was canceled during its first season, it continues to remain popular today with a growing fan base. In the show, the captain [Mal](https://en.wikipedia.org/wiki/Malcolm_Reynolds), played by [Nathan Fillion](https://en.wikipedia.org/wiki/Nathan_Fillion), leads a crew of renegades on the spaceship Serenity.\n\n## Directions:\n\nCreate an array called `crew` to organize the Serenity’s crew and set it equal to the variables below . You don't need to type out the actual strings, just use the provided variables.\n\n```js\nvar captain = \"Mal\";\nvar second = \"Zoe\";\nvar pilot = \"Wash\";\nvar companion = \"Inara\";\nvar mercenary = \"Jayne\";\nvar mechanic = \"Kaylee\";\n```\n\nThen, print the `crew` array to the console.\n\n## Your Code:\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 218358,
+              "key": "dee728e8-dcea-4605-8253-97ad12c1e0a0",
+              "title": "",
+              "semantic_type": "QuizAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "user_state": {
+                "node_key": "dee728e8-dcea-4605-8253-97ad12c1e0a0",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "instruction": null,
+              "question": {
+                "title": "",
+                "semantic_type": "ProgrammingQuestion",
+                "evaluation_id": "5923099402960896",
+                "initial_code_files": [
+                  {
+                    "text": "/*\n * Programming Quiz: Building the Crew (6-2)\n */\n\n/*\n * QUIZ REQUIREMENTS\n * - Your code should have a variable `crew`\n * - The variable `crew` should be an array containing the Serenity\\'s crew\n * - Your code should print `crew` to the console as an array. Do not iterate over the elements. \n * - BE CAREFUL ABOUT THE PUNCTUATION AND THE EXACT WORDS TO BE PRINTED.\n */\n \nvar captain = \"Mal\";\nvar second = \"Zoe\";\nvar pilot = \"Wash\";\nvar companion = \"Inara\";\nvar mercenary = \"Jayne\";\nvar mechanic = \"Kaylee\";\n\n// your code goes here\n",
+                    "name": "StudentMain.js"
+                  }
+                ]
+              },
+              "answer": null
+            },
+            {
+              "id": 1014290,
+              "key": "887e137e-a11f-4480-8a37-4827840e3115",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<font color=\"#000066\"> Note - We check your solution against a limited set of ***test-cases*** that check the minimum requirements, as mentioned in the quiz. Give the exercise a strong effort, trying to pass all test cases, before comparing your code with the solution. </font>",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014291,
+              "key": "94593938-8c24-4827-a49f-f3d37a56725f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n<div id=\"spoiler_1\" style=\"display:none\">\n#### <font color=\"green\">Here is one of the possible solutions:</font>\n\n```Javascript\nvar crew = new Array(captain, second, pilot, companion, mercenary, mechanic);\n\n// Another method\n// var crew = [captain, second, pilot, companion, mercenary, mechanic];\n\n// Print\nconsole.log(crew);\n```\n</div>\n<button type=\"button\" id=\"myButton1\" onclick=\"if(document.getElementById('spoiler_1') .style.display=='none') {document.getElementById('spoiler_1') .style.display=''}else{document.getElementById('spoiler_1') .style.display='none'}if (document.getElementById('myButton1').innerHTML=='Show Solution') {document.getElementById('myButton1').innerHTML='Hide Solution';}else{document.getElementById('myButton1').innerHTML = 'Show Solution';}\">Show Solution</button>\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 217754,
+          "key": "50758680-b82e-413e-8ac8-cc7dd006d435",
+          "title": "Quiz: The Price is Right (6-3)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "50758680-b82e-413e-8ac8-cc7dd006d435",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 218361,
+              "key": "d007b29b-e1f2-4bec-ab48-c340330d2236",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Directions:\n\nStarting with this array of `prices`, change the prices of the 1st, 3rd, and 7th elements in the array.\n\n```js\nvar prices = [1.23, 48.11, 90.11, 8.50, 9.99, 1.00, 1.10, 67.00];\n```\n\n> **TIP:** The 1st element of any array has an index of 0.\n\nAfterwards, print out the `prices` array to the console.\n\n## Your Code:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 218362,
+              "key": "12b3effb-0c9a-4d92-9ccd-f72f3d0a5dcb",
+              "title": "",
+              "semantic_type": "QuizAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "user_state": {
+                "node_key": "12b3effb-0c9a-4d92-9ccd-f72f3d0a5dcb",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "instruction": null,
+              "question": {
+                "title": "",
+                "semantic_type": "ProgrammingQuestion",
+                "evaluation_id": "5221495557193728",
+                "initial_code_files": [
+                  {
+                    "text": "/*\n * Programming Quiz: The Price is Right (6-3)\n */\n/*\n * QUIZ REQUIREMENTS\n * - Your code should have a variable `prices`\n * - The variable `prices` should be an array having different values for the 1st, 3rd, and 7th elements\n * - Your code should print `prices` to the console as an array. Do not iterate over the elements. \n */\n \nvar prices = [1.23, 48.11, 90.11, 8.50, 9.99, 1.00, 1.10, 67.00];\n\n// your code goes here\n",
+                    "name": "StudentMain.js"
+                  }
+                ]
+              },
+              "answer": null
+            },
+            {
+              "id": 1014292,
+              "key": "b05d164d-107b-425f-85aa-791cbc0f48ef",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<font color=\"#000066\"> Note - We check your solution against a limited set of ***test-cases*** that check the minimum requirements, as mentioned in the quiz. Give the exercise a strong effort, trying to pass all test cases, before comparing your code with the solution. </font>",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014293,
+              "key": "fdd6584d-ea4a-4e71-8d04-56934cc24c00",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n<div id=\"spoiler_1\" style=\"display:none\">\n#### <font color=\"green\">Here is one of the possible solutions:</font>\n\n```Javascript\nfor (var index = 0; index<prices.length; index++){\n    //change the value of first element\n    if(index===0){\n        prices[index]=11;\n    }\n    //change the value of third element\n    else if(index===2){\n        prices[index]=33;\n    }\n    //change the value of seventh element\n    else if(index===6){\n        prices[index]=77;\n    }\n}\nconsole.log(prices);\n```\n</div>\n<button type=\"button\" id=\"myButton1\" onclick=\"if(document.getElementById('spoiler_1') .style.display=='none') {document.getElementById('spoiler_1') .style.display=''}else{document.getElementById('spoiler_1') .style.display='none'}if (document.getElementById('myButton1').innerHTML=='Show Solution') {document.getElementById('myButton1').innerHTML='Hide Solution';}else{document.getElementById('myButton1').innerHTML = 'Show Solution';}\">Show Solution</button>\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 217530,
+          "key": "1d5940a5-2d6c-4924-9fee-bf29131bcfa9",
+          "title": "Array Properties and Methods",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "1d5940a5-2d6c-4924-9fee-bf29131bcfa9",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 254106,
+              "key": "acd62ab8-46a9-421a-826f-07cd9ebb9d23",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Array Properties and Methods",
+              "instructor_notes": ""
+            },
+            {
+              "id": 230445,
+              "key": "c779e7a6-9283-416f-a1e1-fc6c1e6d355b",
+              "title": "Array Properties and Methods",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "as8rA3uSObQ",
+                "china_cdn_id": "as8rA3uSObQ.mp4"
+              }
+            },
+            {
+              "id": 220571,
+              "key": "33274c35-6cc8-41df-8e25-0afc7b6ef449",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "> **TIP:** JavaScript provides a large number of built-in methods for modifying arrays and accessing values in an array, check out the [MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array), or type `[]`. into the JavaScript console for a list of all the available Array methods.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 217569,
+          "key": "ee6614aa-9c44-424c-832b-b7534eb7164e",
+          "title": "Length",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "ee6614aa-9c44-424c-832b-b7534eb7164e",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 217755,
+              "key": "18e35309-3d84-4956-b2c5-9710f36718d3",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Array.length\n\nYou can find the **length** of an array by using its `length` property.\n\n```js\nvar donuts = [\"glazed\", \"powdered\", \"sprinkled\"];\nconsole.log(donuts.length);\n```\n> **Prints:** 3\n\nTo access the `length` property, type the name of the array, followed by a period `.` (you’ll also use the period to access other properties and methods), and the word `length`. The `length` property will then return the **number of elements** in the array.\n\n> **TIP:** Strings have a `length` property too! You can use it to get the length of any string. For example, `\"supercalifragilisticexpialidocious\".length` returns `34`.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 217756,
+              "key": "1d5124a8-a22f-4158-8627-9e85f9ae447a",
+              "title": "Length of Array of Arrays",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "1d5124a8-a22f-4158-8627-9e85f9ae447a",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What is the length of the following `inventory` array?\n\n```js\nvar inventory = [\n  [\"gold pieces\", 25],\n  [\"belt\", 4],\n  [\"ring\", 1],\n  [\"shoes\", 2]\n];\n```",
+                "answers": [
+                  {
+                    "id": "a1480649024815",
+                    "text": "1",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1480649043885",
+                    "text": "4",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1480649044364",
+                    "text": "8",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1480649044836",
+                    "text": "32",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 217722,
+          "key": "efeb60e4-d525-401b-b4c3-1bf02d3bfb3f",
+          "title": "Push",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "efeb60e4-d525-401b-b4c3-1bf02d3bfb3f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 217728,
+              "key": "f9a63567-5057-431e-8d02-7323a75771d8",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "So you can find length of an array, but what if you want to modify an array?\n\nThankfully, arrays have quite a few built-in methods for adding and removing elements from an array. The two most common methods for modifying an array are `push()` and `pop()`.\n\n## Push\n\n You can use the `push()` method to add elements to the _end of an array_.\n\nFor example, imagine the following spread of donuts.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 217725,
+              "key": "b86acc0a-5cfa-4fb1-be72-57bd9effaa2d",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/December/58405293_donut-spread/donut-spread.jpeg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/b86acc0a-5cfa-4fb1-be72-57bd9effaa2d",
+              "caption": "A spread of donuts. Yummy!",
+              "alt": "An image showing 6 varieties of donuts",
+              "width": 1830,
+              "height": 423,
+              "instructor_notes": null
+            },
+            {
+              "id": 217757,
+              "key": "db7d876c-55b4-4cac-b357-51e333588340",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "You can represent the spread of donuts using an array.\n\n```js\nvar donuts = [\"glazed\", \"chocolate frosted\", \"Boston creme\", \"glazed cruller\", \"cinnamon sugar\", \"sprinkled\"];\n```\n\nThen, you can _push_ donuts onto the end of the array using the `push()` method.\n\n```js\ndonuts.push(\"powdered\"); // pushes \"powdered\" onto the end of the `donuts` array\n```\n> **Returns: ** 7<br>\n**donuts array:** [\"glazed\", \"chocolate frosted\", \"Boston creme\", \"glazed cruller\", \"cinnamon sugar\", \"sprinkled\", \"powdered\"]",
+              "instructor_notes": ""
+            },
+            {
+              "id": 217726,
+              "key": "bbb696e6-e4f6-4df7-b3ee-ab2289c88592",
+              "title": "Push",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "<div style=\"text-align: center; color: #afafaf; font-size: 14px; margin-top: 15px;\">Using the `push()` method pushes elements onto the end of an array.</div>",
+              "video": {
+                "youtube_id": "at5iFx9hPAc",
+                "china_cdn_id": "at5iFx9hPAc.mp4"
+              }
+            },
+            {
+              "id": 217758,
+              "key": "6bab9ae7-ebd7-4529-af55-27612e19c159",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Notice, with the `push()` method you need to pass the value of the element you want to add to the end of the array. Also, the `push()` method returns the length of the array after an element has been added.\n\n```js\nvar donuts = [\"glazed\", \"chocolate frosted\", \"Boston creme\", \"glazed cruller\", \"cinnamon sugar\", \"sprinkled\"];\ndonuts.push(\"powdered\"); // the `push()` method returns 7 because the `donuts` array now has 7 elements\n```\n> **Returns:** 7",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 217723,
+          "key": "fe49c9d5-259b-4a9e-99c7-dbce52a009cf",
+          "title": "Pop",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "fe49c9d5-259b-4a9e-99c7-dbce52a009cf",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 217729,
+              "key": "02b51e66-3d20-4576-b955-7c2100530a1a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Pop\n\nAlternatively, you can use the `pop()` method to remove elements from the _end of an array_.\n\n```js\nvar donuts = [\"glazed\", \"chocolate frosted\", \"Boston creme\", \"glazed cruller\", \"cinnamon sugar\", \"sprinkled\", \"powdered\"];\n\ndonuts.pop(); // pops \"powdered\" off the end of the `donuts` array\ndonuts.pop(); // pops \"sprinkled\" off the end of the `donuts` array\ndonuts.pop(); // pops \"cinnamon sugar\" off the end of the `donuts` array\n```\n> **Returns: ** \"cinnamon sugar\"<br>\n**donuts array:** [\"glazed\", \"chocolate frosted\", \"Boston creme\", \"glazed cruller\"]",
+              "instructor_notes": ""
+            },
+            {
+              "id": 217727,
+              "key": "e497a9e0-5d6a-4351-8a99-c930a83fe2c2",
+              "title": "Pop",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "<div style=\"text-align: center; color: #afafaf; font-size: 14px; margin-top: 15px;\">Using the `pop()` method pops elements off the end of an array.</div>",
+              "video": {
+                "youtube_id": "Q61vAPvAuLY",
+                "china_cdn_id": "Q61vAPvAuLY.mp4"
+              }
+            },
+            {
+              "id": 217759,
+              "key": "c3fd7187-15f1-4d78-bf4b-31e7150cbff3",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "With the `pop()` method you don’t need to pass a value; instead, `pop()` will always remove the last element from the end of the array. Also, `pop()` returns the element that has been removed in case you need to use it.\n\n```js\nvar donuts = [\"glazed\", \"chocolate frosted\", \"Boston creme\", \"glazed cruller\", \"cinnamon sugar\", \"sprinkled\", \"powdered\"];\ndonuts.pop(); // the `pop()` method returns \"powdered\" because \"powdered\" was the last element on the end of `donuts` array\n```\n> **Returns:** \"powdered\"",
+              "instructor_notes": ""
+            },
+            {
+              "id": 217760,
+              "key": "3c901e28-0fa0-45c9-b19b-f85a20ca58bb",
+              "title": "Push and Pop",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "3c901e28-0fa0-45c9-b19b-f85a20ca58bb",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "We’ve decided to replace some of the donuts in the `donuts` array.\n\n```js\nvar donuts = [\"glazed\", \"strawberry frosted\", \"powdered\", \"Boston creme\"];\n\ndonuts.pop();\ndonuts.pop();\ndonuts.pop();\ndonuts.push(\"maple walnut\");\ndonuts.pop();\ndonuts.push(\"sprinkled\");\n```\n\nWhat does the `donuts` array look like after the following changes?",
+                "answers": [
+                  {
+                    "id": "a1480649915020",
+                    "text": "[\"sprinkled\", \"Boston Creme\"]",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1480649984698",
+                    "text": "[\"glazed\", \"sprinkled\"]",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1480649985522",
+                    "text": "[\"maple walnut\", \"sprinkled\"]",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1480649986027",
+                    "text": "[\"sprinkled\", \"maple walnut\"]",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 217724,
+          "key": "716d162c-2fe8-46cc-8267-ec81669e7789",
+          "title": "Splice",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "716d162c-2fe8-46cc-8267-ec81669e7789",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 217761,
+              "key": "d05f29ef-7220-42f3-94e5-688c7e8836aa",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Splice\n\n`splice()` is another handy method that allows you to add and remove elements from anywhere within an array.\n\nWhile `push()` and `pop()` limit you to adding and removing elements from _the end of an array_, `splice()` lets you specify the index location to add new elements, as well as the number of elements you'd like to delete (if any).\n\n```js\nvar donuts = [\"glazed\", \"chocolate frosted\", \"Boston creme\", \"glazed cruller\"];\ndonuts.splice(1, 1, \"chocolate cruller\", \"creme de leche\"); // removes \"chocolate frosted\" at index 1 and adds \"chocolate cruller\" and \"creme de leche\" starting at index 1\n```\n> **Returns**:  [\"chocolate frosted\"] <br>\n> **donuts** array after calling the splice() method: [\"glazed\", \"chocolate cruller\", \"creme de leche\", \"Boston creme\", \"glazed cruller\"]\n\n**Following is the syntax of `splice()` method**:\n`arrayName.splice(arg1, arg2, item1, ....., itemX);` where, \n* `arg1` = Mandatory argument. Specifies the starting index position to add/remove items. \n<font color=red>You can use a negative value to specify the position from the end of the array</font> e.g., -1 specifies the last element.\n\n* `arg2` = Optional argument. Specifies the count of elements to be removed. If set to 0, no items will be removed.\n\n* `item1, ....., itemX` are the items to be added at index position arg1\n\n`splice()` method returns the item(s) that were removed. \n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 217731,
+              "key": "4dbc5da8-c607-4a38-ad47-6ae5725b0c30",
+              "title": "Splice",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "<div style=\"text-align: center;\"><font color=\"#000066\"> Note - This video does not have an audio. It was created as a visual to aid learning. </font> </div><div style=\"text-align: center; color: #afafaf; font-size: 14px; margin-top: 15px;\">Using the `splice()` method adds and removes elements from any location in an array.</div>",
+              "video": {
+                "youtube_id": "x7VmszJALtM",
+                "china_cdn_id": "x7VmszJALtM.mp4"
+              }
+            },
+            {
+              "id": 217762,
+              "key": "bc80c2af-e48f-422e-a00c-d0d57dd374e2",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "`splice()` is an incredibly powerful method that allows you to manipulate your arrays in a variety of ways. Any combination of adding or removing elements from an array can all be done in one simple line of code.\n\nTake a look at the [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice) to see a long list of example code snippets demonstrating the power of `splice()` and then try the next set of programming quizzes.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 217763,
+              "key": "dd92ab63-87c2-41c3-81d6-7434f40658ca",
+              "title": "Splice Splice Baby",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "dd92ab63-87c2-41c3-81d6-7434f40658ca",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "We’ve decided to replace some of the donuts in the `donuts` array.\n\n```js\nvar donuts = [\"cookies\", \"cinnamon sugar\", \"creme de leche\"];\n\ndonuts.splice(-2, 0, \"chocolate frosted\", \"glazed\");\n```\n\nWhat does the `donuts` array look like after the following changes?",
+                "answers": [
+                  {
+                    "id": "a1480650297310",
+                    "text": "[\"cookies\", \"chocolate frosted\", \"glazed\", \"cinnamon sugar\", \"creme de leche\"]",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1480650314115",
+                    "text": "[\"chocolate frosted\", \"glazed\", \"cookies\", \"cinnamon sugar\", \"creme de leche\"]",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1480650314803",
+                    "text": "[\"chocolate frosted\", \"glazed\"]",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1480650315234",
+                    "text": "[\"cookies\", \"cinnamon sugar\", \"creme de leche\", \"chocolate frosted\", \"glazed\"]",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 217765,
+          "key": "fac8e631-f0e4-46d5-8b24-1b5df5f2bffc",
+          "title": "Quiz: Colors of the Rainbow (6-4)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "fac8e631-f0e4-46d5-8b24-1b5df5f2bffc",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 218363,
+              "key": "fd063b0c-56ad-42e0-9f12-6700a6fbca97",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Directions:\n\nJames was creating an array with the colors of the rainbow, and he forgot some colors. The standard rainbow colors are usually listed in this order:\n\n```\nvar rainbow = [\"Red\", \"Orange\", \"Yellow\", \"Green\", \"Blue\", \"Purple\"];\n```\n\nbut James had this:\n\n```\nvar rainbow = [\"Red\", \"Orange\", \"Blackberry\", \"Blue\"];\n```\n\nUsing only the `splice()` method, insert the missing colors into the array, and remove the color `\"Blackberry\"` by following these steps:\n\n1. Remove `\"Blackberry\"`\n2. Add `\"Yellow\"` and `\"Green\"`\n3. Add `\"Purple\"`\n\n## Your Code:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 218364,
+              "key": "db283941-8aa4-4896-a536-7f80182baa69",
+              "title": "",
+              "semantic_type": "QuizAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "user_state": {
+                "node_key": "db283941-8aa4-4896-a536-7f80182baa69",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "instruction": null,
+              "question": {
+                "title": "",
+                "semantic_type": "ProgrammingQuestion",
+                "evaluation_id": "5089674420944896",
+                "initial_code_files": [
+                  {
+                    "text": "/*\n * Programming Quiz: Colors of the Rainbow (6-4)\n *\n * Use only the splice() method to modify the rainbow variable:\n *  - remove \"Blackberry\"\n *  - add \"Yellow\" and \"Green\"\n *  - add \"Purple\"\n */\n\nvar rainbow = ['Red', 'Orange', 'Blackberry', 'Blue'];\n\n// your code goes here\n",
+                    "name": "StudentMain.js"
+                  }
+                ]
+              },
+              "answer": null
+            },
+            {
+              "id": 1014295,
+              "key": "9ac0dd19-226e-4b61-a8d2-1dabdeab6790",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<font color=\"#000066\"> Note - We check your solution against a limited set of ***test-cases*** that check the minimum requirements, as mentioned in the quiz. Give the exercise a strong effort, trying to pass all test cases, before comparing your code with the solution. </font>",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014297,
+              "key": "4f8fe753-f95c-4d66-bf07-8689c486f352",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n<div id=\"spoiler_1\" style=\"display:none\">\n#### <font color=\"green\">Here is one of the possible solutions:</font>\n\n```Javascript\n// From index position 2, remove 1 element. Afterwards, add all the elements mentioned in the argument.\nrainbow.splice(2, 1, \"Yellow\", \"Green\");\n\n// From index position 5, remove 0 elements. This means, no removal of any element. \n// Afterwards, add all the elements mentioned in the argument.\nrainbow.splice(5, 0, \"Purple\");\n\n// Did you noticed that the above method call is equivalent to adding an element at a specific index in the array?\n\n//Print\nconsole.log(rainbow);\n```\n</div>\n<button type=\"button\" id=\"myButton1\" onclick=\"if(document.getElementById('spoiler_1') .style.display=='none') {document.getElementById('spoiler_1') .style.display=''}else{document.getElementById('spoiler_1') .style.display='none'}if (document.getElementById('myButton1').innerHTML=='Show Solution') {document.getElementById('myButton1').innerHTML='Hide Solution';}else{document.getElementById('myButton1').innerHTML = 'Show Solution';}\">Show Solution</button>\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 217766,
+          "key": "2ddb79f7-d339-482e-a136-a25ef430f597",
+          "title": "Quiz: Quidditch Cup (6-5)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "2ddb79f7-d339-482e-a136-a25ef430f597",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 218365,
+              "key": "38301d04-1124-427d-9824-bd2f5fed1fe4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In the [Harry Potter](https://en.wikipedia.org/wiki/Harry_Potter) novels, children attending the [Hogwarts School of Witchcraft and Wizardry](https://en.wikipedia.org/wiki/Hogwarts) belong to one of four houses: Gryffindor, Hufflepuff, Ravenclaw, or Slytherin. Each year, the houses assemble a [Quidditch](https://en.wikipedia.org/wiki/Quidditch) team of seven players to compete for the coveted Quidditch Cup.\n\nConsider the following array.\n\n```js\nvar team = [\"Oliver Wood\", \"Angelina Johnson\", \"Katie Bell\", \"Alicia Spinnet\", \"George Weasley\", \"Fred Weasley\", \"Harry Potter\"];\n```\n\n## Directions:\n\nCreate a function called `hasEnoughPlayers()` that takes the `team` array as an argument and returns `true` or `false` depending on if the array has at least seven players. \n\n## Your Code:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 218366,
+              "key": "bb5775d3-2f4a-4286-b004-68edd0d5d044",
+              "title": "",
+              "semantic_type": "QuizAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "user_state": {
+                "node_key": "bb5775d3-2f4a-4286-b004-68edd0d5d044",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "instruction": null,
+              "question": {
+                "title": "",
+                "semantic_type": "ProgrammingQuestion",
+                "evaluation_id": "4775468706430976",
+                "initial_code_files": [
+                  {
+                    "text": "/*\n * Programming Quiz: Quidditch Cup (6-5)\n */\n/*\n * QUIZ REQUIREMENTS\n * - Your code should have a function `hasEnoughPlayers()`\n * - Your function `hasEnoughPlayers()` should accept one parameter\n * - Your function `hasEnoughPlayers()` should return the expected output - a Boolean value - true or false\n * - Return true if the array size is atleast 7, otherwise false. \n */\n \n// your code goes here\n\nvar team = [\"Oliver Wood\", \"Angelina Johnson\", \"Katie Bell\", \"Alicia Spinnet\", \"George Weasley\", \"Fred Weasley\", \"Harry Potter\"];\nconsole.log(hasEnoughPlayers(team));\n",
+                    "name": "StudentMain.js"
+                  }
+                ]
+              },
+              "answer": null
+            },
+            {
+              "id": 1014523,
+              "key": "58ac44b9-3274-4b7a-b0f7-17f547139f82",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<font color=\"#000066\"> Note - We check your solution against a limited set of ***test-cases*** that check the minimum requirements, as mentioned in the quiz. Give the exercise a strong effort, trying to pass all test cases, before comparing your code with the solution. </font>",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014524,
+              "key": "ac5c300a-a55b-4aa6-a44a-8f6412372379",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n<div id=\"spoiler_1\" style=\"display:none\">\n#### <font color=\"green\">Here is one of the possible solutions:</font>\n\n```Javascript\n\nvar team = [\"Oliver Wood\", \"Angelina Johnson\", \"Katie Bell\", \"Alicia Spinnet\", \"George Weasley\", \"Fred Weasley\", \"Harry Potter\"];\n\nfunction hasEnoughPlayers(arrayInstance) {\n    if (arrayInstance.length >= 7)\n        return true; // true is a boolean value. Do not return a string \"true\"\n    else \n        return false; // false is also a boolean value. Do not return a string \"false\"\n}\nconsole.log(hasEnoughPlayers(team));\n\n```\n</div>\n<button type=\"button\" id=\"myButton1\" onclick=\"if(document.getElementById('spoiler_1') .style.display=='none') {document.getElementById('spoiler_1') .style.display=''}else{document.getElementById('spoiler_1') .style.display='none'}if (document.getElementById('myButton1').innerHTML=='Show Solution') {document.getElementById('myButton1').innerHTML='Hide Solution';}else{document.getElementById('myButton1').innerHTML = 'Show Solution';}\">Show Solution</button>\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 217767,
+          "key": "b9d9a6fa-549e-4b97-867e-142f386e3711",
+          "title": "Quiz: Joining the Crew (6-6)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "b9d9a6fa-549e-4b97-867e-142f386e3711",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 218367,
+              "key": "c8dd756e-89e4-4a0b-82c1-a0cbbcdd8ae5",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Directions:\n\nIn an earlier exercise, you created a `crew` array to represent Mal’s crew from the hit show Firefly.\n\n```js\nvar captain = \"Mal\";\nvar second = \"Zoe\";\nvar pilot = \"Wash\";\nvar companion = \"Inara\";\nvar mercenary = \"Jayne\";\nvar mechanic = \"Kaylee\";\n\nvar crew = [captain, second, pilot, companion, mercenary, mechanic];\n```\n\nLater in the show, Mal takes on three new crew members named `\"Simon\"`, `\"River\"`, and `\"Book\"`. Use the `push()` method to add the three new crew members to the `crew` array.\n\n```js\nvar doctor = \"Simon\";\nvar sister = \"River\";\nvar shepherd = \"Book\";\n```\n\n## Your Code:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 218368,
+              "key": "3e60c2c2-7df2-4bf0-9939-6c367d536a10",
+              "title": "",
+              "semantic_type": "QuizAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "user_state": {
+                "node_key": "3e60c2c2-7df2-4bf0-9939-6c367d536a10",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "instruction": null,
+              "question": {
+                "title": "",
+                "semantic_type": "ProgrammingQuestion",
+                "evaluation_id": "6579519924338688",
+                "initial_code_files": [
+                  {
+                    "text": "/*\n * Programming Quiz: Joining the Crew (6-6)\n */\n/*\n * QUIZ REQUIREMENTS\n * - Your code should have a variable `crew`\n * - Your `crew` array should contain the Serenity\\'s original crew and the three new crew members\n * - Your code should use the `push()` method to add new members to the `crew` array\n * - Print the array on the console at the end\n */\n\n\nvar captain = \"Mal\";\nvar second = \"Zoe\";\nvar pilot = \"Wash\";\nvar companion = \"Inara\";\nvar mercenary = \"Jayne\";\nvar mechanic = \"Kaylee\";\n\nvar crew = [captain, second, pilot, companion, mercenary, mechanic];\n\nvar doctor = \"Simon\";\nvar sister = \"River\";\nvar shepherd = \"Book\";\n\n// your code goes here\n",
+                    "name": "StudentMain.js"
+                  }
+                ]
+              },
+              "answer": null
+            },
+            {
+              "id": 1014525,
+              "key": "a6e59dea-9c83-448f-8b22-dc9393b45f4f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<font color=\"#000066\"> Note - We check your solution against a limited set of ***test-cases*** that check the minimum requirements, as mentioned in the quiz. Give the exercise a strong effort, trying to pass all test cases, before comparing your code with the solution. </font>",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014526,
+              "key": "76e1ad15-439b-4a03-9677-d31019ba85da",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n<div id=\"spoiler_1\" style=\"display:none\">\n#### <font color=\"green\">Here is one of the possible solutions:</font>\n\n```Javascript\n\n// your code goes here\ncrew.push(doctor); // \"Simon\" gets added at the end of the array\n// We have intentionally not captured the return of the push() method\n\ncrew.push(sister); // \"River\" gets added at the end of the array\ncrew.push(shepherd); // \"Book\" gets added at the end of the array\n\nconsole.log(crew);\n\n```\n</div>\n<button type=\"button\" id=\"myButton1\" onclick=\"if(document.getElementById('spoiler_1') .style.display=='none') {document.getElementById('spoiler_1') .style.display=''}else{document.getElementById('spoiler_1') .style.display='none'}if (document.getElementById('myButton1').innerHTML=='Show Solution') {document.getElementById('myButton1').innerHTML='Hide Solution';}else{document.getElementById('myButton1').innerHTML = 'Show Solution';}\">Show Solution</button>\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 220353,
+          "key": "5c23d91d-3125-4887-8076-bd7d34c04953",
+          "title": "Quiz: Checking out the Docs (6-7)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5c23d91d-3125-4887-8076-bd7d34c04953",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 220458,
+              "key": "5302c628-41f0-4610-a953-a950308132bd",
+              "title": "Manipulating Arrays",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "5302c628-41f0-4610-a953-a950308132bd",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Use the [MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) to determine which of these methods would be best for reversing elements in this array:\n\n```js\nvar reverseMe = [\"h\", \"e\", \"l\", \"l\", \"o\"];\n```\n",
+                "answers": [
+                  {
+                    "id": "a1481240090500",
+                    "text": "pop()",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1481240094154",
+                    "text": "push()",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1481240099955",
+                    "text": "reverse()",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1481240104560",
+                    "text": "shift()",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1481240128303",
+                    "text": "splice()",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 220460,
+              "key": "c7c79b78-5fb4-4493-9e2f-f3e84b380829",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "c7c79b78-5fb4-4493-9e2f-f3e84b380829",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What would be the best array method to sort the elements in this array:\n```js\nvar sortMe = [2, 1, 10, 7, 6];\n```",
+                "answers": [
+                  {
+                    "id": "a1481240294090",
+                    "text": "concat()",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1481240417932",
+                    "text": "join()",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1481240422135",
+                    "text": "unshift()",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1481240433399",
+                    "text": "sort()",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1481240437109",
+                    "text": "organize()",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 220463,
+              "key": "b11093ac-aaac-479c-a8f2-9866b34be1c4",
+              "title": "Removing the first element",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "b11093ac-aaac-479c-a8f2-9866b34be1c4",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Consider the following array, `removeFirstElement`:\n\n```\nvar removeFirstElement = [\"a\", \"b\", \"c\"];\n```\n\nLet's say that you want to modify (i.e., _mutate_) `removeFirstElement` by removing the _first_ element within it. Which method(s) could you use?",
+                "answers": [
+                  {
+                    "id": "a1481240777934",
+                    "text": "pop()",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1481240834601",
+                    "text": "push()",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1481240837653",
+                    "text": "shift()",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1481240840388",
+                    "text": "unshift()",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1481240844531",
+                    "text": "splice()",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1481240849071",
+                    "text": "slice()",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 220464,
+              "key": "0f9a5481-6593-47b6-8ab9-f761ae866dab",
+              "title": "Array to String",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "0f9a5481-6593-47b6-8ab9-f761ae866dab",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What method would be best for changing this array into a string?\n\n```js\nvar turnMeIntoAString = [\"U\", \"d\", \"a\", \"c\", \"i\", \"t\", \"y\"];\n```",
+                "answers": [
+                  {
+                    "id": "a1481241299288",
+                    "text": "join()",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1481241391897",
+                    "text": "concat()",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1481241413852",
+                    "text": "fill()",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1481241440780",
+                    "text": "copyWithin()",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 261259,
+              "key": "c2c5e0bc-619c-4f4a-ae90-68fe77940975",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "> **Have questions?** Head to [Discourse](https://macdiscussions.udacity.com/) for discussion with the Udacity Community.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 217739,
+          "key": "6757b9ef-9576-4a54-9f17-ab0853d07be1",
+          "title": "Array Loops",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "6757b9ef-9576-4a54-9f17-ab0853d07be1",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 217768,
+              "key": "2ec1e6b1-bf3c-4655-883d-589fd97d1b81",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Array Loops\n\nOnce the data is in the array, you want to be able to efficiently access and manipulate each element in the array without writing repetitive code for each element.\n\nFor instance, if this was our original donuts array:\n\n```\nvar donuts = [\"jelly donut\", \"chocolate donut\", \"glazed donut\"];\n```\n\nand we decided to make all the same donut types, but only sell them as _donut holes_ instead, we could write the following code:\n\n```\ndonuts[0] += \" hole\";\ndonuts[1] += \" hole\";\ndonuts[2] += \" hole\";\n```\n> **donuts array:** [\"jelly donut hole\", \"chocolate donut hole\", \"glazed donut hole\"]\n\nBut remember, you have another powerful tool at your disposal, **loops**!\n\nTo loop through an array, you can use a variable to represent the index in the array, and then loop over that index to perform whatever manipulations your heart desires.\n\n```js\nvar donuts = [\"jelly donut\", \"chocolate donut\", \"glazed donut\"];\n\n// the variable `i` is used to step through each element in the array\nfor (var i = 0; i < donuts.length; i++) {\n    donuts[i] += \" hole\";\n    donuts[i] = donuts[i].toUpperCase();\n}\n```\n> **donuts array:** [\"JELLY DONUT HOLE\", \"CHOCOLATE DONUT HOLE\", \"GLAZED DONUT HOLE\"]\n\nIn this example, the variable `i` is being used to represent the index of the array. As `i` is incremented, you are stepping over each element in the array starting from `0` until `donuts.length - 1` (`donuts.length` is out of bounds).",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 217738,
+          "key": "718ad8c4-01b0-4146-824d-d2876d7d1089",
+          "title": "The forEach Loop",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "718ad8c4-01b0-4146-824d-d2876d7d1089",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 259519,
+              "key": "d0e26d8d-fb7e-4a17-94ad-cc1ea04ec214",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## The forEach() loop",
+              "instructor_notes": ""
+            },
+            {
+              "id": 259520,
+              "key": "d7640c03-19e1-4ad8-ac7d-b02ecbba7abc",
+              "title": "The forEach Loop",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "BsEdgtnaTzk",
+                "china_cdn_id": "BsEdgtnaTzk.mp4"
+              }
+            },
+            {
+              "id": 217769,
+              "key": "733d6681-a4df-4b74-9f4f-a19b28248307",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Arrays have a set of special methods to help you iterate over and perform operations on collections of data. You can view the MDN Documentation list of Array methods [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array), but a couple big ones to know are the `forEach()` and `map()` methods.\n\nThe `forEach()` method gives you an alternative way to iterate over an array, and manipulate each element in the array with an inline function expression.\n```\nvar donuts = [\"jelly donut\", \"chocolate donut\", \"glazed donut\"];\n\ndonuts.forEach(function(donut) {\n  donut += \" hole\";\n  donut = donut.toUpperCase();\n  console.log(donut);\n});\n```\n> **Prints:**<br>\nJELLY DONUT HOLE<br>\nCHOCOLATE DONUT HOLE<br>\nGLAZED DONUT HOLE\n\nNotice that the `forEach()` method iterates over the array without the need of an explicitly defined index. In the example above, `donut` corresponds to the element in the array itself. This is different from a `for` or `while` loop where an index is used to access each element in the array:\n\n```js\nfor (var i = 0; i < donuts.length; i++) {\n  donuts[i] += \" hole\";\n  donuts[i] = donuts[i].toUpperCase();\n  console.log(donuts[i]);\n}\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 434384,
+              "key": "02da3d9a-7ee3-48f5-ad16-a214ccd99eac",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Parameters\n\nThe function that you pass to the `forEach()` method can take up to three parameters. In the video, these are called `element`, `index`, and `array`, but you can call them whatever you like.\n\nThe `forEach()` method will call this function once _for each_ element in the array (hence the name `forEach`.) Each time, it will call the function with different arguments. The `element` parameter will get the _value_ of the array element. The `index` parameter will get the _index_ of the element (starting with zero). The `array` parameter will get a reference to the whole array, which is handy if you want to modify the elements.\n\nHere's another example:\n\n```js\nwords = [\"cat\", \"in\", \"hat\"];\nwords.forEach(function(word, num, all) {\n  console.log(\"Word \" + num + \" in \" + all.toString() + \" is \" + word);\n});\n```\n\n> **Prints:**  \n> Word 0 in cat,in,hat is cat  \n> Word 1 in cat,in,hat is in  \n> Word 2 in cat,in,hat is hat\n\nOn the next page, you'll do a quiz that uses the `forEach()` method to modify an array.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 220384,
+          "key": "4c880baa-e51b-4b8e-bea0-50c5849688dd",
+          "title": "Quiz: Another Type of Loop (6-8)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "4c880baa-e51b-4b8e-bea0-50c5849688dd",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 220401,
+              "key": "6234d5d4-dfc1-4f9c-b1f1-89049ef5b6f1",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Directions:\n\nUse the array's `forEach()` [method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) to loop over the following array and add `100` to each of the values if the value is divisible by `3`. \n\n```js\nvar test = [12, 929, 11, 3, 199, 1000, 7, 1, 24, 37, 4, 19, 300, 3775, 299, 36, 209, 148, 169, 299, 6, 109, 20, 58, 139, 59, 3, 1, 139];\n```\n\nRemember that the \"Test Run\" button will display any logged content, so feel free to use `console.log()` to test your code.\n\n\n## Your Code:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 220470,
+              "key": "233fe7e3-0302-4d48-a1fc-cdedc618a430",
+              "title": "",
+              "semantic_type": "QuizAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "user_state": {
+                "node_key": "233fe7e3-0302-4d48-a1fc-cdedc618a430",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "instruction": null,
+              "question": {
+                "title": "",
+                "semantic_type": "ProgrammingQuestion",
+                "evaluation_id": "4978036342652928",
+                "initial_code_files": [
+                  {
+                    "text": "/*\n * Programming Quiz: Another Type of Loop (6-8)\n * QUIZ REQUIREMENTS\n * Use the existing `test` variable and write a `forEach` loop\n * that adds 100 to each number that is divisible by 3.\n *\n * Things to note:\n *  - Inside the loop, you must use an `if` statement to verify code is divisible by 3\n *  - Inside the loop, you can updade an element ONLY by using the arrayName[index]\n *  - Outside the loop, you can use `console.log` to verify the `test` variable \n */\n\nvar test = [12, 929, 11, 3, 199, 1000, 7, 1, 24, 37, 4,\n    19, 300, 3775, 299, 36, 209, 148, 169, 299,\n    6, 109, 20, 58, 139, 59, 3, 1, 139\n];\n\n// Write your code here\n",
+                    "name": "StudentMain.js"
+                  }
+                ]
+              },
+              "answer": null
+            },
+            {
+              "id": 1014539,
+              "key": "7fd37daa-5ee2-49e6-851e-5664301221ec",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<font color=\"#000066\"> Note - We check your solution against a limited set of ***test-cases*** that check the minimum requirements, as mentioned in the quiz. Give the exercise a strong effort, trying to pass all test cases, before comparing your code with the solution. </font>",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014540,
+              "key": "8dda710d-0580-4518-9444-0d715195edca",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n<div id=\"spoiler_1\" style=\"display:none\">\n#### <font color=\"green\">Here is one of the possible solutions:</font>\n\n```Javascript\n\n// You can test your code with a smaller array first\n// var test = [12, 29, 11, 3];\n\n// Write your code here\ntest.forEach(function(item, index){\n    if(item%3===0){\n        // The commented statements below would not be able to change the value of item\n        // because the `item` is a COPY of actual element, while actual is test[index]\n        // item = item + 100;\n        // console.log(\"The updated element is \"+item+\" and actual is \"+test[index]);\n        test[index]=test[index]+100;\n    }\n    //else \n    //    console.log(\"Element \"+item+\" is not divisible by 3\");\n});\nconsole.log(test);\n```\n</div>\n<button type=\"button\" id=\"myButton1\" onclick=\"if(document.getElementById('spoiler_1') .style.display=='none') {document.getElementById('spoiler_1') .style.display=''}else{document.getElementById('spoiler_1') .style.display='none'}if (document.getElementById('myButton1').innerHTML=='Show Solution') {document.getElementById('myButton1').innerHTML='Hide Solution';}else{document.getElementById('myButton1').innerHTML = 'Show Solution';}\">Show Solution</button>\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 217733,
+          "key": "097cea31-4721-4887-adef-80e4354dc310",
+          "title": "Map",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "097cea31-4721-4887-adef-80e4354dc310",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 259521,
+              "key": "831bf0fd-90e8-4b91-ad4f-502a69055553",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Map",
+              "instructor_notes": ""
+            },
+            {
+              "id": 268317,
+              "key": "d98ac2fb-5664-405c-824b-4ab25112ac84",
+              "title": "L6-Map-Screencast V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "b44QS_uiIE0",
+                "china_cdn_id": "b44QS_uiIE0.mp4"
+              }
+            },
+            {
+              "id": 217770,
+              "key": "24b5887b-b174-40f5-9cf5-2903f462a8e4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Using `forEach()` will not be useful if you want to permanently modify the original array. `forEach()` always returns `undefined`. However, creating a new array from an existing array is simple with the powerful `map()` method.\n\nWith the `map()` [method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map), you can take an array, perform some operation on each element of the array, and return a new array.\n\n```js\nvar donuts = [\"jelly donut\", \"chocolate donut\", \"glazed donut\"];\n\nvar improvedDonuts = donuts.map(function(donut) {\n  donut += \" hole\";\n  donut = donut.toUpperCase();\n  return donut;\n});\n```\n> **donuts array:** [\"jelly donut\", \"chocolate donut\", \"glazed donut\"]<br>\n> **improvedDonuts array:** [\"JELLY DONUT HOLE\", \"CHOCOLATE DONUT HOLE\", \"GLAZED DONUT HOLE\"]\n\nOh man, did you just see that? The `map()` method accepts one argument, a function that will be used to manipulate each element in the array. In the above example, we used a function expression to pass that function into `map()`. This function is taking in one argument, `donut` which corresponds to each element in the `donuts` array. You no longer need to iterate over the indices anymore. `map()` does all that work for you.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 217772,
+          "key": "fc5ae6f0-2cf3-4e44-a1dc-4df1e66a7ddb",
+          "title": "Quiz: I Got Bills (6-9)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "fc5ae6f0-2cf3-4e44-a1dc-4df1e66a7ddb",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 218369,
+              "key": "cdfc1bb2-890d-4426-afe3-84fdad0eb406",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Directions:\n\nUse the `map()` [method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) to take the array of bill amounts shown below, and create a second array of numbers called `totals` that shows the bill amounts with a 15% tip added.\n\n```js\nvar bills = [50.23, 19.12, 34.01, 100.11, 12.15, 9.90, 29.11, 12.99, 10.00, 99.22, 102.20, 100.10, 6.77, 2.22];\n```\n\nPrint out the new `totals` array using `console.log`.\n\n> **TIP:** Check out the `toFixed()` method for numbers to help with [rounding](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed) the values to a maximum of 2 decimal places. Note, that the method returns a string to maintain the \"fixed\" format of the number. So, if you want to convert the string back to a number, you can **cast** it or convert it back to a number:\n\n```\nNumber(\"1\");\n```\n> **Returns:** 1\n\n## Your Code:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 218370,
+              "key": "5ff84ad6-c107-40f4-8da5-29f0e17febf5",
+              "title": "",
+              "semantic_type": "QuizAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "user_state": {
+                "node_key": "5ff84ad6-c107-40f4-8da5-29f0e17febf5",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "instruction": null,
+              "question": {
+                "title": "",
+                "semantic_type": "ProgrammingQuestion",
+                "evaluation_id": "6454855545782272",
+                "initial_code_files": [
+                  {
+                    "text": "/*\n * Programming Quiz: I Got Bills (6-9)\n *\n * Use the .map() method to take the bills array below and create a second array\n * of numbers called totals. The totals array should contains each amount from the\n * bills array but with a 15% tip added. Log the totals array to the console.\n *\n * For example, the first two entries in the totals array would be:\n *\n * [57.76, 21.99, ... ]\n *\n * Things to note:\n *  - each entry in the totals array must be a number\n *  - each number must have an accuracy of two decimal points\n */\n \n /*\n * QUIZ REQUIREMENTS\n * - Your code should have the variables `bills` and `totals`\n * - Your `bills` array should call the `map()` method and store the return of `map()` in the `totals` array\n * - Your `totals` array should be an array of numbers\n * - Your code should print the `totals` array to the console\n * - The output must be as described above. \n */\n\nvar bills = [50.23, 19.12, 34.01,\n    100.11, 12.15, 9.90, 29.11, 12.99,\n    10.00, 99.22, 102.20, 100.10, 6.77, 2.22\n];\n",
+                    "name": "StudentMain.js"
+                  }
+                ]
+              },
+              "answer": null
+            },
+            {
+              "id": 1014541,
+              "key": "ee2a6e24-6dc8-4bc6-a171-ff536fbff7b9",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<font color=\"#000066\"> Note - We check your solution against a limited set of ***test-cases*** that check the minimum requirements, as mentioned in the quiz. Give the exercise a strong effort, trying to pass all test cases, before comparing your code with the solution. </font>",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014542,
+              "key": "bee2a185-166b-4446-862f-0bc13acd2e5a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n<div id=\"spoiler_1\" style=\"display:none\">\n#### <font color=\"green\">Here is one of the possible solutions:</font>\n\n```Javascript\nvar bills = [50.23, 19.12, 34.01,\n    100.11, 12.15, 9.90, 29.11, 12.99,\n    10.00, 99.22, 102.20, 100.10, 6.77, 2.22\n];\nvar totals = bills.map(function (element) {\n    element *= 1.15;\n    element = element.toFixed(2);\n    element = Number(element);\n    \n    return element;\n});\n\n\n/*\n// Method 2\nvar totals = bills.map(function(element) {\n    element *= 1.15;\n    return Number(element.toFixed(2));\n});\n*/\nconsole.log(totals);\n```\n</div>\n<button type=\"button\" id=\"myButton1\" onclick=\"if(document.getElementById('spoiler_1') .style.display=='none') {document.getElementById('spoiler_1') .style.display=''}else{document.getElementById('spoiler_1') .style.display='none'}if (document.getElementById('myButton1').innerHTML=='Show Solution') {document.getElementById('myButton1').innerHTML='Hide Solution';}else{document.getElementById('myButton1').innerHTML = 'Show Solution';}\">Show Solution</button>\n\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 217732,
+          "key": "3d429608-a1ed-4c0d-9c99-5e9466d8c36e",
+          "title": "Arrays in Arrays",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "3d429608-a1ed-4c0d-9c99-5e9466d8c36e",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 254315,
+              "key": "6a34b631-5a59-4599-815f-60c01983277e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Arrays in Arrays",
+              "instructor_notes": ""
+            },
+            {
+              "id": 230448,
+              "key": "f83fe40b-6886-4030-9d7c-3300a8f7df6d",
+              "title": "Arrays in Arrays",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "C8LbKZIP-mI",
+                "china_cdn_id": "C8LbKZIP-mI.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 217734,
+          "key": "5cec93c6-27bb-4a81-94f1-b71685e5134d",
+          "title": "2D Donut Arrays",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5cec93c6-27bb-4a81-94f1-b71685e5134d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 217735,
+              "key": "d45d99eb-9257-4089-9b87-4e72f7fd86a5",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## 2D Donut Arrays\n\nOftentimes, donuts are arranged in a grid like this:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 217736,
+              "key": "928f6406-c5f7-41e9-8c05-f411a7f25645",
+              "title": "Grid of Donuts",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "<div style=\"text-align: center; color: #afafaf; font-size: 14px; margin-top: 15px;\">A box of donuts can resemble a two dimensional grid with rows and columns.</div>",
+              "video": {
+                "youtube_id": "Xpmgf3wctak",
+                "china_cdn_id": "Xpmgf3wctak.mp4"
+              }
+            },
+            {
+              "id": 217771,
+              "key": "a88aded5-11a2-44ca-9d69-a27e85901e83",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "You could use an array of arrays that has the name of each donut associated with its position in the box.\n\nHere's an example:\n\n```js\nvar donutBox = [\n  [\"glazed\", \"chocolate glazed\", \"cinnamon\"],\n  [\"powdered\", \"sprinkled\", \"glazed cruller\"],\n  [\"chocolate cruller\", \"Boston creme\", \"creme de leche\"]\n];\n```\n\nIf you wanted to loop over the donut box and display each donut (along with its position in the box!) you would start with writing a `for` loop to loop over each row of the box of donuts:\n\n```js\nvar donutBox = [\n  [\"glazed\", \"chocolate glazed\", \"cinnamon\"],\n  [\"powdered\", \"sprinkled\", \"glazed cruller\"],\n  [\"chocolate cruller\", \"Boston creme\", \"creme de leche\"]\n];\n\n// here, donutBox.length refers to the number of rows of donuts\nfor (var row = 0; row < donutBox.length; row++) {\n  console.log(donutBox[row]);\n}\n```\n> **Prints:**<br>\n[\"glazed\", \"chocolate glazed\", \"cinnamon\"]<br>\n[\"powdered\", \"sprinkled\", \"glazed cruller\"]<br>\n[\"chocolate cruller\", \"Boston creme\", \"creme de leche\"]\n\nSince each row is an array of donuts, you next need to set up an inner-loop to loop over each cell in the arrays.\n\n```js\nfor (var row = 0; row < donutBox.length; row++) {\n  // here, donutBox[row].length refers to the length of the donut array currently being looped over\n  for (var column = 0; column < donutBox[row].length; column++) {\n    console.log(donutBox[row][column]);\n  }\n}\n```\n> **Prints:**<br>\n\"glazed\"<br>\n\"chocolate glazed\"<br>\n\"cinnamon\"<br>\n\"powdered\"<br>\n\"sprinkled\"<br>\n\"glazed cruller\"<br>\n\"chocolate cruller\"<br>\n\"Boston creme\"<br>\n\"creme de leche\"",
+              "instructor_notes": ""
+            },
+            {
+              "id": 217737,
+              "key": "5eb14887-4fab-42d9-9157-844a63aa39e8",
+              "title": "Grid of Donuts + Array",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "<div style=\"text-align: center; color: #afafaf; font-size: 14px; margin-top: 15px;\">In this loop, the outer loop cycles rows and the inner loops cycles through columns.</div>",
+              "video": {
+                "youtube_id": "3qNwFnQBWtI",
+                "china_cdn_id": "3qNwFnQBWtI.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 220352,
+          "key": "037baa90-8a32-414b-a801-1d45dce44874",
+          "title": "Quiz: Nested Numbers (6-10)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "037baa90-8a32-414b-a801-1d45dce44874",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 220402,
+              "key": "39d46f72-0eb7-44e8-8bda-1df9a9a22e9f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Directions:\n\nUse a nested `for` loop to take the `numbers` array below and replace all of the values that are divisible by `2` (even numbers) with the string \"even\" and all other numbers with the string \"odd\".\n\n```js\nvar numbers = [\n    [243, 12, 23, 12, 45, 45, 78, 66, 223, 3],\n    [34, 2, 1, 553, 23, 4, 66, 23, 4, 55],\n    [67, 56, 45, 553, 44, 55, 5, 428, 452, 3],\n    [12, 31, 55, 445, 79, 44, 674, 224, 4, 21],\n    [4, 2, 3, 52, 13, 51, 44, 1, 67, 5],\n    [5, 65, 4, 5, 5, 6, 5, 43, 23, 4424],\n    [74, 532, 6, 7, 35, 17, 89, 43, 43, 66],\n    [53, 6, 89, 10, 23, 52, 111, 44, 109, 80],\n    [67, 6, 53, 537, 2, 168, 16, 2, 1, 8],\n    [76, 7, 9, 6, 3, 73, 77, 100, 56, 100]\n];\n```\n\n## Your Code:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 220481,
+              "key": "4d8b20fb-683e-4e36-9191-46b05f3d81df",
+              "title": "",
+              "semantic_type": "QuizAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "user_state": {
+                "node_key": "4d8b20fb-683e-4e36-9191-46b05f3d81df",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "instruction": null,
+              "question": {
+                "title": "",
+                "semantic_type": "ProgrammingQuestion",
+                "evaluation_id": "5219458601844736",
+                "initial_code_files": [
+                  {
+                    "text": "/*\n * Programming Quiz: Nested Numbers (6-10)\n * QUIZ REQUIREMENTS\n *   - The `numbers` variable is an array of arrays.\n *   - Use a nested `for` loop to cycle through `numbers`.\n *   - Convert each even number to the string \"even\"\n *   - Convert each odd number to the string \"odd\"\n */\n\n\nvar numbers = [\n    [243, 12, 23, 12, 45, 45, 78, 66, 223, 3],\n    [34, 2, 1, 553, 23, 4, 66, 23, 4, 55],\n    [67, 56, 45, 553, 44, 55, 5, 428, 452, 3],\n    [12, 31, 55, 445, 79, 44, 674, 224, 4, 21],\n    [4, 2, 3, 52, 13, 51, 44, 1, 67, 5],\n    [5, 65, 4, 5, 5, 6, 5, 43, 23, 4424],\n    [74, 532, 6, 7, 35, 17, 89, 43, 43, 66],\n    [53, 6, 89, 10, 23, 52, 111, 44, 109, 80],\n    [67, 6, 53, 537, 2, 168, 16, 2, 1, 8],\n    [76, 7, 9, 6, 3, 73, 77, 100, 56, 100]\n];\n\n// your code goes here\n",
+                    "name": "StudentMain.js"
+                  }
+                ]
+              },
+              "answer": null
+            },
+            {
+              "id": 1014543,
+              "key": "b6ee4916-3172-4103-82a9-a2cb84862962",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<font color=\"#000066\"> Note - We check your solution against a limited set of ***test-cases*** that check the minimum requirements, as mentioned in the quiz. Give the exercise a strong effort, trying to pass all test cases, before comparing your code with the solution. </font>",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014544,
+              "key": "a2349ab5-17b0-4e55-81fc-9ab552ffeb56",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n<div id=\"spoiler_1\" style=\"display:none\">\n#### <font color=\"green\">Here is one of the possible solutions:</font>\n\n```Javascript\n// Let i represents a sub-array\nfor(var i=0; i<numbers.length; i++){\n    \n    // Let j represents the length of a sub-array \n    for(var j=0; j<numbers[i].length; j++){\n        if(numbers[i][j]%2===0)\n            numbers[i][j]=\"even\";\n        else\n            numbers[i][j]=\"odd\";\n    }\n}\n\n// Print the final array\nconsole.log(numbers);\n```\n</div>\n<button type=\"button\" id=\"myButton1\" onclick=\"if(document.getElementById('spoiler_1') .style.display=='none') {document.getElementById('spoiler_1') .style.display=''}else{document.getElementById('spoiler_1') .style.display='none'}if (document.getElementById('myButton1').innerHTML=='Show Solution') {document.getElementById('myButton1').innerHTML='Hide Solution';}else{document.getElementById('myButton1').innerHTML = 'Show Solution';}\">Show Solution</button>\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 217714,
+          "key": "4782aad9-1b35-4d55-907b-b85c5c4dc5f1",
+          "title": "Lesson 6 Summary",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "4782aad9-1b35-4d55-907b-b85c5c4dc5f1",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 230449,
+              "key": "0d99ef18-a335-4317-9d37-a3482e4dc1cd",
+              "title": "Lesson 6 Summary",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "hdAcIDTomJs",
+                "china_cdn_id": "hdAcIDTomJs.mp4"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

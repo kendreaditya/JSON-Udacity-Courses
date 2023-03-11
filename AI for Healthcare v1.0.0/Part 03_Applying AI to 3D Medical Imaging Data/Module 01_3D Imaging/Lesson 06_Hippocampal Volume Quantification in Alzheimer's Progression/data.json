@@ -1,0 +1,586 @@
+{
+  "data": {
+    "lesson": {
+      "id": 966817,
+      "key": "7a995cd8-87f2-4ec2-a334-46a483e9a9f7",
+      "title": "Hippocampal Volume Quantification in Alzheimer's Progression",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "In this project, you will curate a dataset of brain MRIs, train a segmentation on a CNN, and integrate this into a clinical network to quantify hippocampal volume for Alzheimer's progression. ",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": null,
+      "project": {
+        "key": "0a5f1abb-85d6-41ff-aa4e-25b9a628f4f6",
+        "version": "1.0.0",
+        "locale": "en-us",
+        "duration": 30240,
+        "semantic_type": "Project",
+        "title": "Hippocampal Volume Quantification in Alzheimer's Progression",
+        "description": "## Project Summary\nYou have worked with 3D Medical images to curate a dataset of brain MRIs, trained a segmentation on a convolutional neural network, and integrated all of this into a clinical network to quantify hippocampal volume for Alzheimer's progression detection or monitoring. \n\n## Submission Checklist\nBefore you submit, check if the following have been completed:  \n**Note**: The checklist above won't save your checkmarks so do this right before you plan to submit. \n\n| | |\n|-------------------------|--------------------------------------------------------------------------------------------------------------|\n| <input type=\"checkbox\"> | Everything in the [Rubric](https://review.udacity.com/#!/rubrics/2788/view) is complete. |\n| |The following are in **Section 1**'s `/section1/out/` folder/directory. |\n| <input type=\"checkbox\"> | Curated dataset with labels, as collection of NIFTI files.|\n| <input type=\"checkbox\"> | A Python Notebook or Python File with the results of your Exploratory Data Analysis.|\n| | The following are in **Section 2**'s `/section2/out/` folder/directory. |\n| <input type=\"checkbox\"> | Functional code that trains the segmentation model.|\n| <input type=\"checkbox\"> |Test report with Dice scores on test set (can be json file). |\n| <input type=\"checkbox\"> |Screenshots from your Tensorboard (or other visualization engine) output.|\n| <input type=\"checkbox\"> |Your trained model PyTorch parameter file (model.pth)|\n|| The following are in **Section 3**'s `/section3/out/` folder/directory. |\n| <input type=\"checkbox\"> | Code that runs inference on a DICOM volume and produces a DICOM report.|\n| <input type=\"checkbox\"> | A report.dcm file with a sample report.|\n| <input type=\"checkbox\"> | Screenshots of your report shown in the OHIF viewer. |\n| <input type=\"checkbox\"> | 1-2 page Validation Plan.|\n| | | |\n\n## Ready to Submit?\nOnce you have all the items above completed, you can click the submit button. Follow the directions to submit your project in one of the following ways:\n* Submit a zip file \n* Submit a Github repo\n\n**Note**: If you used the Workspace/Online option, you can download the folder or use your Github as a submission.",
+        "is_public": true,
+        "summary": null,
+        "forum_path": "",
+        "rubric_id": "2788",
+        "terminal_project_id": null,
+        "resources": null,
+        "image": null
+      },
+      "lab": null,
+      "concepts": [
+        {
+          "id": 968477,
+          "key": "439f2d99-dc60-463a-955a-f7f180e783f9",
+          "title": "Project Overview",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "439f2d99-dc60-463a-955a-f7f180e783f9",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 970124,
+              "key": "2700aba5-c995-413b-8dcd-9b2a6424e314",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Quantifying Hippocampus Volume for Alzheimer's Progression\n\n## Background\nAlzheimer's disease (AD) is a progressive neurodegenerative disorder that results in impaired neuronal (brain cell) function and eventually, cell death. AD is the most common cause of dementia. Clinically, it is characterized by memory loss, inability to learn new material, loss of language function, and other manifestations.\n\nFor patients exhibiting early symptoms, quantifying disease progression over time can help direct therapy and disease management.\n\nA radiological study via MRI exam is currently one of the most advanced methods to quantify the disease. In particular, the measurement of hippocampal volume has proven useful to diagnose and track progression in several brain disorders, most notably in AD. Studies have shown a reduced volume of the hippocampus in patients with AD.\n\nThe hippocampus is a critical structure of the human brain (and the brain of other vertebrates) that plays important roles in the consolidation of information from short-term memory to long-term memory. In other words, the hippocampus is thought to be responsible for memory and learning (that's why we are all here, after all!)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 970125,
+              "key": "360de49a-6458-4d87-b833-b5ce69a12cfc",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/March/5e813bf9_hippocampus-small/hippocampus-small.gif",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/360de49a-6458-4d87-b833-b5ce69a12cfc",
+              "caption": "<b>Hippocampus</b> <br> <small>Source: Life Science Databases (LSDB). Hippocampus. Images are from Anatomography maintained by Life Science Databases (LSDB). (2010). CC-BY-SA 2.1jp. [Link](https://commons.wikimedia.org/wiki/File:Hippocampus_small.gif) </small>",
+              "alt": "",
+              "width": 400,
+              "height": 400,
+              "instructor_notes": null
+            },
+            {
+              "id": 970126,
+              "key": "46f8bea5-17cc-44df-af1a-d4f5df78e588",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Humans have two hippocampi, one in each hemisphere of the brain. They are located in the medial temporal lobe of the brain. Fun fact - the word \"hippocampus\" is roughly translated from Greek as \"horselike\" because of the similarity to a seahorse observed by one of the first anatomists to illustrate the structure, but you can also see the comparison in the following image.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 970128,
+              "key": "1c4d8517-eb31-4800-8a8b-4bd60c79a721",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/March/5e813bf7_hippocampus-and-seahorse-cropped/hippocampus-and-seahorse-cropped.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/1c4d8517-eb31-4800-8a8b-4bd60c79a721",
+              "caption": "<b>Seahorse & Hippocampus</b> <br> <small>Source: Seress, Laszlo. Laszlo Seress' preparation of a human hippocampus alongside a sea horse. (1980). CC-BY-SA 1.0. [Link](https://commons.wikimedia.org/wiki/File:Hippocampus_and_seahorse.JPG) </small>",
+              "alt": "",
+              "width": 500,
+              "height": 1,
+              "instructor_notes": null
+            },
+            {
+              "id": 970127,
+              "key": "17206c4a-0a7b-4c5b-802c-032ef3b05fa4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "According to [Nobis et al., 2019](https://www.sciencedirect.com/science/article/pii/S2213158219302542), the volume of hippocampus varies in a population, depending on various parameters, within certain boundaries, and it is possible to identify a \"normal\" range taking into account age, sex and brain hemisphere.\n\nYou can see this in the image below where the right hippocampal volume of women across ages 52 - 71 is shown. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 970130,
+              "key": "c8b47575-1583-48d8-b0c8-034f2bbe500d",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/March/5e813c01_nomogram-fem-right/nomogram-fem-right.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/c8b47575-1583-48d8-b0c8-034f2bbe500d",
+              "caption": "<b>Nomogram - Female, Right Hippocampus Volume, Corrected for Head Size</b> <br> <small>Source: Nobis, L., Manohar, S.G., Smith, S.M., Alfaro-Almagro, F., Jenkinson, M., Mackay, C.E., Husain, M. Hippocampal volume across age: Nomograms derived from over 19,700 people in UK Biobank. Neuroimage: Clinical, 23(2019), pp. 2213-1582.</small>",
+              "alt": "",
+              "width": 300,
+              "height": 1,
+              "instructor_notes": null
+            },
+            {
+              "id": 970129,
+              "key": "f1cb6bb9-615b-47e2-b505-a5fc2c7c4dc9",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "There is one problem with measuring the volume of the hippocampus using MRI scans, though - namely, the process tends to be quite tedious since every slice of the 3D volume needs to be analyzed, and the shape of the structure needs to be traced. The fact that the hippocampus has a non-uniform shape only makes it more challenging. Do you think you could spot the hippocampi in this axial slice below?",
+              "instructor_notes": ""
+            },
+            {
+              "id": 970132,
+              "key": "119fa0bd-b0d7-4746-b5f7-738805696736",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e95548d_mri/mri.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/119fa0bd-b0d7-4746-b5f7-738805696736",
+              "caption": "Axial slice of an MRI image of the brain",
+              "alt": "",
+              "width": 400,
+              "height": 405,
+              "instructor_notes": null
+            },
+            {
+              "id": 970131,
+              "key": "4a054383-876c-4093-807b-9fdb5dadd573",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "As you might have guessed by now, we are going to build a piece of AI software that could help clinicians perform this task faster and more consistently.\n\nYou have seen throughout the course that a large part of AI development effort is taken up by curating the dataset and proving clinical efficacy. In this project, we will focus on the technical aspects of building a segmentation model and integrating it into the clinician's workflow, leaving the dataset curation and model validation questions largely outside the scope of this project.\n\n## What You Will Build\n\nIn this project you will build an end-to-end AI system which features a machine learning algorithm that integrates into a clinical-grade viewer and automatically measures hippocampal volumes of new patients, as their studies are committed to the clinical imaging archive.\n\nFortunately you won't have to deal with full heads of patients. Our (fictional) radiology department runs a HippoCrop tool which cuts out a rectangular portion of a brain scan from every image series, making your job a bit easier, and our committed radiologists have collected and annotated a dataset of relevant volumes, and even converted them to NIFTI format!\n\nYou will use the dataset that contains the segmentations of the right hippocampus and you will use the U-Net architecture to build the segmentation model.\n\nAfter that, you will proceed to integrate the model into a working clinical PACS such that it runs on every incoming study and produces a report with volume measurements.\n\n## The Dataset\n\nWe are using the \"Hippocampus\" dataset from the [Medical Decathlon competition](http://medicaldecathlon.com/). This dataset is stored as a collection of NIFTI files, with one file per volume, and one file per corresponding segmentation mask. The original images here are T2 MRI scans of the full brain. As noted, in this dataset we are using cropped volumes where only the region around the hippocampus has been cut out. This makes the size of our dataset quite a bit smaller, our machine learning problem a bit simpler and allows us to have reasonable training times. You should not think of it as \"toy\" problem, though. Algorithms that crop rectangular regions of interest are quite common in medical imaging. Segmentation is still hard.\n\n## The Programming Environment\n\nYou will have two options for the environment to use throughout this project:\n\n### Udacity Workspaces\n\nThese are setup environments that contains all you need from the **Local Environment** section below that you can run directly on your web browser.\n\n### Local Environment\n\nIf you would like to run the project locally, you would need a Python 3.7+ environment with the following libraries for the first two sections of the project:\n\n* [PyTorch](https://pytorch.org/) (preferably with CUDA)\n* [nibabel](https://nipy.org/nibabel/)\n* [matplotlib](https://matplotlib.org/users/installing.html)\n* [numpy](https://numpy.org/)\n* [pydicom](https://pydicom.github.io/pydicom/stable/tutorials/installation.html)\n* [Pillow](https://pillow.readthedocs.io/en/stable/installation.html) (should be installed with pytorch)\n* [tensorboard](https://pypi.org/project/tensorboard/)\n\nIn the 3rd section of the project we will be working with three software products for emulating the clinical network. You would need to install and configure:\n\n* [Orthanc server](https://www.orthanc-server.com/download.php) for PACS emulation\n* [OHIF zero-footprint web viewer](https://docs.ohif.org/development/getting-started.html) for viewing images. Note that if you deploy OHIF from its github repository, at the moment of writing the repo includes a yarn script (`orthanc:up`) where it downloads and runs the Orthanc server from a Docker container. If that works for you, you won't need to install Orthanc separately.\n* If you are using Orthanc (or other DICOMWeb server), you will need to configure OHIF to read data from your server. OHIF has instructions for this: https://docs.ohif.org/configuring/data-source.html\n* In order to fully emulate the Udacity workspace, you will also need to configure Orthanc for auto-routing of studies to automatically direct them to your AI algorithm. For this you will need to take the script that you can find at `section3/src/deploy_scripts/route_dicoms.lua` and install it to Orthanc as explained on this page: https://book.orthanc-server.com/users/lua.html\n* [DCMTK tools](https://dcmtk.org/) for testing and emulating a modality. Note that if you are running a Linux distribution, you might be able to install dcmtk directly from the package manager (e.g. `apt-get install dcmtk` in Ubuntu)\n\nYou can look at the rubric for this project [here](https://review.udacity.com/#!/rubrics/2788/view). Let's get started!",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 970121,
+          "key": "6d708d89-88c9-45be-9d01-dceb7171a91e",
+          "title": "Section 1: Curating a Dataset of Brain MRIs",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "6d708d89-88c9-45be-9d01-dceb7171a91e",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 970133,
+              "key": "be41637b-dc64-4151-ad6d-87a4cef8e616",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Section 1: Curating a Dataset of Brain MRIs",
+              "instructor_notes": ""
+            },
+            {
+              "id": 970135,
+              "key": "65d23888-630b-41a4-af7d-c299cb9eaaf2",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/March/5e813c00_slicer/slicer.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/65d23888-630b-41a4-af7d-c299cb9eaaf2",
+              "caption": "",
+              "alt": "3D Slicer screenshot",
+              "width": 1445,
+              "height": 996,
+              "instructor_notes": null
+            },
+            {
+              "id": 970134,
+              "key": "9bca0077-7034-4cb5-80af-9eefc5aa517a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "You will perform this in the following section **Workspace for Section 1**. This workspace has a Python virtual environment called **medai** which is set up with everything that you need to train your ML model. This workspace also has a GPU which will speed up your training process quite significantly.\n\nThe data is located in `/data/TrainingSet` directory [here](https://github.com/udacity/nd320-c3-3d-imaging-starter/tree/master/data/TrainingSet).\n\nIn the project directory called `section1` you will find a Python Notebook that has a few instructions in it that will help you inspect the dataset, understand the clinical side of the problem a bit better, and get it ready for consumption by your algorithm in **Section 2**. The notebook has 2 types of comments:\n- Comments marked with `# TASK: `are tasks, instructions, or questions you **have** to complete.\n- Comments not marked are not mandatory but are suggestions, questions, or background that will help you get a better understanding of the subject and apply your newly acquired medical imaging dataset EDA skills.\n\n## Instructions\n\nOnce you complete the tasks, copy the following to the directory `section1/out`:\n\n1. Curated dataset with labels, as collection of NIFTI files. Amount of training image volumes should be the same as the amount of label volumes.\n2. A Python Notebook with the results of your Exploratory Data Analysis. If you prefer to do it in raw Python file, that is also acceptable - in that case put the .py file there, making sure that you copy Task descriptions from the notebook into your comments.\n\n## Udacity Workspace Notes\nAlways run the workspace with GPU on to be in the correct environment. This will also let you access the **Desktop** when you hit the button at the bottom right-hand corner. \n\n#### Jupyter Notebooks\nIn any terminal use the following command and find the URL contained in the box created by the asterisks(*):  \n```bash launch_jupyter.sh```\n\n#### View Slicer\nWhen you enter the Desktop you should find a Slicer icon on the left-hand column. If you double click on that it should start-up Slicer. \n\n#### Download the curated dataset\n1. Navigate to the folder with the curated dataset in `/out` in the folder panel.\n2. Right click the folder in the folder panel on the right side of the workspace.\n3. Select **Download**.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1003639,
+          "key": "7ac41333-ad64-43e8-98c3-2bae9572c4e6",
+          "title": "Workspace for Section 1",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "7ac41333-ad64-43e8-98c3-2bae9572c4e6",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1003644,
+              "key": "2052dbbb-0c91-4016-99fa-52beb4f1f777",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1003639xREACTc74riak6",
+              "pool_id": "autonomousgpu",
+              "view_id": "react-9mkwn",
+              "gpu_capable": true,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/applications",
+                          "dest": "/opt/aihcnd-applications"
+                        },
+                        {
+                          "src": "/AIHCND/conda-envs/medai",
+                          "dest": "/root/miniconda3/envs/medai"
+                        },
+                        {
+                          "src": "/AIHCND/data",
+                          "dest": "/data/"
+                        }
+                      ]
+                    },
+                    "port": 3000,
+                    "ports": [
+                      3001
+                    ],
+                    "userCode": "/root/miniconda3/bin/conda init bash > /dev/null\ngrep -qxF \"conda activate medai\" /root/.bashrc || echo \"conda activate medai\" >> /root/.bashrc",
+                    "openFiles": [],
+                    "showFiles": true,
+                    "allowClose": true,
+                    "allowSubmit": false,
+                    "terminalTitle": "BASH",
+                    "actionButtonText": "Go to Desktop",
+                    "openTerminalOnStartup": true
+                  },
+                  "kind": "react"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 970122,
+          "key": "40e42897-cdc5-4608-8d74-777a2d0874c8",
+          "title": "Section 2: Training a Segmentation CNN",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "40e42897-cdc5-4608-8d74-777a2d0874c8",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 970136,
+              "key": "c80c33a1-f038-412c-9529-8c84f3e94e20",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Section 2: Training a segmentation CNN",
+              "instructor_notes": ""
+            },
+            {
+              "id": 970138,
+              "key": "080b2c4b-f8f0-4b34-a9e4-9fb7cc7b1e4b",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/March/5e813bfb_loss/loss.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/080b2c4b-f8f0-4b34-a9e4-9fb7cc7b1e4b",
+              "caption": "",
+              "alt": "Tensorflow plot of loss over batches",
+              "width": 1520,
+              "height": 642,
+              "instructor_notes": null
+            },
+            {
+              "id": 970137,
+              "key": "69ca6b17-b5f1-48c0-8dcb-7681a0cda2a9",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "You will perform this in the following section **Workspace for Section 2**. This workspace will have the same environment as **Workspace for Section 1** and will have everything that you need to train the machine learning model for segmentation.\n\nIn the directory called `section2/src` you will find the source code that forms the framework for your machine learning pipeline.\n\nYou will be using [PyTorch](https://pytorch.org/) to train the model, similar to exercises in the Segmentation & Classification Lesson, and we will be using [Tensorboard](https://www.tensorflow.org/tensorboard/) to visualize the results.\n\nYou will use the script `run_ml_pipeline.py` to kick off your training pipeline. You can do so right now! The script will not get far, though. It only contains the skeleton of the final solution and a lot of comments. You will need to follow the instructions inside the code files to complete the section and train your model. Same convention is used as in Section 1:\n\n* Comments that start with `# TASK` are tasks, instructions, or questions you **have** to complete\n* All other types of comments provide additional background, questions or contain suggestions to make your project stand out.\n\nYou will need to complete all the instructional comments in the code in order to complete this section. You can do this in any order, but it makes most sense to start with the code in `run_ml_pipeline.py`.\n\nThe code has hooks to log progress to Tensorboard. In order to see the Tensorboard output you need to launch Tensorboard executable from the same directory where `run_ml_pipeline.py` is located using the following command:\n\n> `tensorboard --logdir runs --bind_all`\n\nAfter that, Tensorboard will write logs into directory called `runs` and you will be able to view progress by opening the browser and navigating to default port 6006 of the machine where you are running it.\n\n## Instructions\n\nOnce you complete this section, copy the following to the directory `section2/out`:\n\n1. Functional code that trains the segmentation model\n1. Test report with Dice scores on test set (can be json file). Your final average Dice with the default model should be around .90\n1. Screenshots from your Tensorboard (or other visualization engine) output, showing Train and Validation loss plots, along with images of the predictions that your model is making at different stages of training\n1. Your trained model PyTorch parameter file (model.pth)\n\n### Stand-out Suggestions\nOptionally, you can look into the following to make your project stand out. Put the deliverables in the output directory.\n\n* Can you write a 1-page email explaining what your algorithm is doing to a clinician who will be trying it out, but whom you never met? Make sure you include performance characteristics with some images. Try using their language and think of what would be the important information that they are looking for?\n* Implement additional metrics in the test report such as Jaccard score, sensitivity or specificity. Think of what additional metrics would be relevant.\n* In our dataset we have labels of 2 classes - anterior and posterior segments of the hippocampus. Can you train a version of model that segments the structure as a whole, only using one class? Is the performance better, the same or worse?\n* Write up a short report explaining requirements for your training process (compute, memory) and suggestions for making it more efficient (model architecture, data pipeline, loss functions, data augmentation). What kind of data augmentations would NOT add value?\n* What are best and worst performing volumes? Why do you think that's the case?\n\n## Udacity Workspace Notes\nAlways run the workspace with GPU on to be in the correct environment. This will also let you access the **Desktop** when you hit the button at the bottom right-hand corner. <br>\n**NOTE** The workspace can time out while you are running your training job if you do not work with the workspace for 2 - 5 minutes. If you find that your training process taking longer than that, either reduce the number of epochs or run any command in the terminal, like `ls` to keep the workspace active.\n\n#### Upload the dataset\n1. Click on the **+** at the upper right hand corner of the folder panel in the workspace. \n2. Select **Upload File** to upload the zipped dataset.\n3. Run the command `tar xf <filename>` to unzip the dataset.  \n\n#### Download the Trained Model/Code\n1. Navigate to the location of the model parameter file `model.pth` you want to download in the folder panel.\n2. Right click the file in the folder panel on the left side of the workspace.\n3. Select **Download**.`\n\n#### View Slicer\nWhen you enter the Desktop you should find a Slicer icon on the left-hand column. If you double click on that it should start-up Slicer. \n\n#### Tensorboard\n1. Make sure you enable GPU.\n2. In a terminal move to the src directory through `cd src` \n3. Then run the following command to start tensorboard`tensorboard --logdir runs --bind_all`\n4. The output should have a URL\n5. Copy that URL \n6. Open the Desktop with the **Desktop** button at the bottom right hand corner and copy the URL. (It will look something like `http://f8196ac7f2cc:6006/`) \n7. If not already open, open a browser.\n8. On the left hand side there will be an arrow, if you click the arrow, a sidebar that will popup.\n9. Click on the 2nd icon on the sidebar which is a clipboard and paste the URL here. \n10. In the address bar you can right click and select **Paste & Go**.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 966819,
+          "key": "910ef641-ddea-42e5-bf97-26f19b0870d0",
+          "title": "Workspace for Section 2",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "910ef641-ddea-42e5-bf97-26f19b0870d0",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 966821,
+              "key": "c4b9ee69-a839-47f0-948f-1f9480ca3977",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c966819xREACTcnntqpn8",
+              "pool_id": "autonomousgpu",
+              "view_id": "react-jsm77",
+              "gpu_capable": true,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/applications",
+                          "dest": "/opt/aihcnd-applications"
+                        },
+                        {
+                          "src": "/AIHCND/conda-envs/medai",
+                          "dest": "/root/miniconda3/envs/medai"
+                        }
+                      ]
+                    },
+                    "port": "3000",
+                    "ports": [
+                      3001,
+                      3002
+                    ],
+                    "userCode": "/root/miniconda3/bin/conda init bash > /dev/null\ngrep -qxF \"conda activate medai\" /root/.bashrc || echo \"conda activate medai\" >> /root/.bashrc",
+                    "openFiles": [
+                      "/home/workspace/out/README.md"
+                    ],
+                    "showFiles": true,
+                    "allowClose": true,
+                    "allowSubmit": false,
+                    "terminalTitle": "BASH",
+                    "actionButtonText": "Go to Desktop",
+                    "openTerminalOnStartup": true
+                  },
+                  "kind": "react"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 970123,
+          "key": "1a98af0e-f5d8-4791-b5e2-6ca26795a87e",
+          "title": "Section 3: Integrating into a Clinical Network",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "1a98af0e-f5d8-4791-b5e2-6ca26795a87e",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1008858,
+              "key": "38127e42-f8ae-41ad-b922-12db04a99cb5",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Section 3: Integrating into a Clinical Network",
+              "instructor_notes": ""
+            },
+            {
+              "id": 970140,
+              "key": "4d635471-de0a-43a8-95d5-92bff05bcbbc",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/March/5e813bff_ohif/ohif.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/4d635471-de0a-43a8-95d5-92bff05bcbbc",
+              "caption": "",
+              "alt": "A hippocampus segmentation report in OHIF viewer",
+              "width": 1102,
+              "height": 746,
+              "instructor_notes": null
+            },
+            {
+              "id": 970139,
+              "key": "738e05c0-6fcf-4372-ab8d-913c732b83a4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this final section you will use some of the work you did for Section 2 to create an AI product that can be integrated into a clinical network and provide the auto-computed information on the hippocampal volume to the clinicians. While hospital integrations are typically handled by hospital IT staff, it will help tremendously if you can talk the same language with the people who will operate your model, and will have a feel for how clinical radiological software works. These skills will also help you debug your model in the field.\n\nYou will perform this section in a different workspace than the previous two sections: **Workspace for Section 3**. This workspace is a simpler hardware, with no GPU, which is more representative of a clinical environment. This workspace also has a few tools installed in it, which is replicates the following clinical network setup:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 970142,
+              "key": "816061d9-5b15-4ca8-9c61-74f13847754d",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/March/5e813bfd_network-setup/network-setup.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/816061d9-5b15-4ca8-9c61-74f13847754d",
+              "caption": "Network setup emulated by Workspace 2",
+              "alt": "",
+              "width": 645,
+              "height": 524,
+              "instructor_notes": null
+            },
+            {
+              "id": 970141,
+              "key": "735dbb9a-5f5c-4f9d-899e-951138f5888f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Specifically, we have the following software in this setup:\n\n* MRI scanner is represented by a script `section3/src/deploy_scripts/send_volume.sh`. When you run this script it will simulate what happens after a radiological exam is complete, and send a volume to the clinical PACS. Note that scanners typically send entire studies to archives.\n*PACS server is represented by [Orthanc](http://orthanc-server.com/) deployment that is listening to DICOM DIMSE requests on port 4242. Orthanc also has a DicomWeb interface that is exposed at port 8042, prefix /dicom-web. There is no authentication and you are welcome to explore either one of the mechanisms of access using a tool like curl or Postman. Our PACS server is also running an auto-routing module that sends a copy of everything it receives to an AI server. See instructions ad the end of this page on how to launch if you are using the Udacity Workspace.  \n* Viewer system is represented by [OHIF](http://ohif.org/). It is connecting to the Orthanc server using DicomWeb and is serving a web application on port 3000. Again, see instructions at the end of this page if you are using the Udacity Workspace.\n* AI server is represented by a couple of scripts. `section3/src/deploy_scripts/start_listener.sh` brings up a DCMTK's `storescp` and configures it to just copy everything it receives into a directory that you will need to specify by editing this script, organizing studies as one folder per study. HippoVolume.AI is the AI module that you will create in this section.\n\nIf you want to replicate this environment on your local machine, you will find instructions in the Project Overview concept.\n\nAs with Section 2, in the directory called `section3/src` you will find the source code that forms the skeleton of the HippoVolume.AI module.\n\n`inference_dcm.py` is the file that you will be working on. It contains code that will analyze the directory of the AI server that contains the routed studies, find the right series to run your algorithm on, will generate report, and push it back to our PACS.\n\nNote that in real system you would architect things a bit differently. Probably, AI server would be a separate piece of software that would monitor the output of the listener, and would manage multiple AI modules, deciding which one to run, automatically. In our case, for the sake of simplicity, all code sits in one Python script that you would have to run manually after you simulate an exam via the `send_volume.sh` script - `inference_dcm.py`. It combines the functions of processing of the listener output and executing the model, and it does not do any proper error handling :)\n\nAs before, you will need to follow the instructions inside the code files to complete the section and create your AI module. Same convention is used as in Sections 1 and 2: comments that start with `# TASK` instruct you to create certain code snippets, and all other types of comments provide background or stand-out suggestions.\n\nYou will need to complete all the instructional comments in the code in order to complete this section. You can do this in any order, but it makes most sense to start with the code in `inference_dcm.py`.\n\nOnce you complete the code, you can test it by running\n> `deploy_scripts/send_volume.sh`\n\nwhich will simulate a completion of MRI study and sending of patient data to our PACS, and then following that by running `inference_dcm.py`\n\nThe `send_volume.sh` script needs to be run from directory `section3/src` (because it relies on relative paths). If you did everything correctly, an MRI scan will be sent to the PACS and to your module which will compute the volume, prepare the report and push it back to the PACS so that it could be inspected in our clinical viewer.\n\nAt this point, go to *[YOUR IP ADDRESS]*:3000 (can be another port if you are using Udacity Workspace) which brings up our OHIF viewer. You should be able to inspect your report in all its glory, in the context of a radiological study presented to a radiologist in a clinical viewer!\n\nThe study that `send_result.sh` sends, and a few other sample studies are located in `/data/TestVolumes`. Feel free to modify the script to try out your algorithm with other volumes.\n\n> Note, that the DICOM studies used for inferencing this section have been created artificially, and while full-brain series belong to the same original study, this is not the study from which the hippocampus crop is taken.\n\nNow that you have built a radiological AI system and given it to clinicians, you can start collecting data on how your model performs in the real world. If you (or the company you work for) intends to commercialize your technology, you will have to clear the regulatory bar. As we have discussed in our final lesson, an important contribution of an AI engineer to this endeavor is helping execute the clinical validation by contributing to a validation plan. Your final task in this course is to write a draft of such plan (shoot for 1-2 pages for this exercise). Remember - clinical validation is all about proving that your technology performs the way you claim it does. If you are saying that it can measure hippocampal volume, your validation needs prove that it actually does, and establish the extents to which your claim is true. Your validation plan needs to define how you would prove this, and establish these extents.\n\nFor the purpose of this exercise, assume that you have access to any clinical facility and patient cohorts you need, and that you have all the budget in the world. In your plan, touch on at least the following:\n\n* Your algorithm relies upon certain \"ground truth\" - how did you define your ground truth? How will you prove that your method of collecting the ground truth is robust and represents the population that you claim this algorithm is good for?\n* How do you define accuracy of your algorithm and how do you measure it with respect to real world population? Check out the [calculator and report from HippoFit](http://www.smanohar.com/biobank/calculator.html) for some inspiration.\n* How do you define what data your algorithm can operate on?\n\nThere is no right answer here - think of these and other questions that would come up during validation of such algorithm. Thinking of such things early on will help you build better algorithms in the first place.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1020097,
+              "key": "4fe167b5-f2e9-4ad9-8cb4-1c078ff93f99",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Instructions\n\nOnce you complete this section, copy the following into directory `section3/out`:\n\n1. Code that runs inference on a DICOM volume and produces a DICOM report\n1. A report.dcm file with a sample report\n1. Screenshots of your report shown in the OHIF viewer\n1. 1-2 page Validation Plan\n\n### Stand-out Suggestions\nOptionally, look into the following to explore the subject deeper and make your project stand out. Put the deliverables in the output directory.\n\n* Can you propose a better way of filtering a study for correct series?\n* Can you think of what would make the report you generate from your inference better? What would be the relevant information that you could present which would help a clinician better reason about whether your model performed well or not?\n* Try to construct a fully valid DICOM as your model output (per [DICOM PS3.3#A8](http://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.8)) with all relevant fields. Construction of valid DICOM has a very calming effect on the mind and body.\n* Try constructing a DICOM image with your segmentation mask as a separate image series so that you can overlay it on the original image using the clinical image viewer and inspect the predicted volume better. Note that OHIF does not support overlaying - try using Slicer 3D or Radiant (Fusion feature). Include screenshots.\n\n## Udacity Workspace Notes\nAlways run the workspace with GPU on to be in the correct environment. This will also let you access the **Desktop** when you hit the button at the bottom right-hand corner.  \n\n#### Upload the Trained Model\n1. Click on the + at the upper right hand corner of the folder panel.\n2. One of the options is to upload a file which you can use to upload your model (.pth file) from the previous section and any other content you would like to bring over.\n\n#### Running Shell Scripts inside the Workspace\nIn this exercise, you will need to run shell scripts from the `deploy_scripts` folder. These scripts won't work inside Udacity Workspace if you try to run the .sh files directly. In order to run these scripts from the Udacity Workspace you will need to copy the lines from within the .sh files, paste them into your terminal and run from there.\n\n#### Access Orthanc and OHIF\nBefore starting to work on the tasks in this workspace you should launch Orthanc and OHIF and here are the steps: \n1. Open a terminal and enter the following: <br> `bash launch_orthanc.sh` or `./launch_orthanc.sh`. **Don't close this terminal**\n2. Wait for it to complete, with the last line being something like <br>`W0509 05:38:21.152402 main.cpp:719] Orthanc has started` and/or you can verify that Orthanc is working by running `echoscu 127.0.0.1 4242 -v` in a new terminal.\n3. Open a **new** terminal and enter the following <br>`bash launch_OHIF.sh` or `./launch_OHIF.sh`. **Don't close this terminal**\n4. Wait for it to complete, with the last line being something like <br> `@ohif/viewer: ℹ ｢wdm｣: Compiled with warnings.`\n5. Find the URL contained in the box created by the asterisks(*) something like `https://r956022c966822xREACTd39eg6mx-3005.udacity-student-workspaces.com ` by scrolling up\n6. Paste that URL into your browser to access orthanc and OHIF",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 966822,
+          "key": "8db8a89e-48e1-461c-b412-3131fbe214d5",
+          "title": "Workspace  for Section 3",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "8db8a89e-48e1-461c-b412-3131fbe214d5",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 966823,
+              "key": "ab6e1ad0-64c7-4de7-9032-029053e4339c",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c966822xREACTd39eg6mx",
+              "pool_id": "autonomousgpu",
+              "view_id": "react-y6i6p",
+              "gpu_capable": true,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/applications",
+                          "dest": "/opt/aihcnd-applications"
+                        },
+                        {
+                          "src": "/AIHCND/conda-envs/medai",
+                          "dest": "/root/miniconda3/envs/medai"
+                        },
+                        {
+                          "src": "/AIHCND/data",
+                          "dest": "/data"
+                        }
+                      ]
+                    },
+                    "port": 3000,
+                    "ports": [
+                      3001,
+                      3005
+                    ],
+                    "userCode": "/root/miniconda3/bin/conda init bash > /dev/null\ngrep -qxF \"conda activate medai\" /root/.bashrc || echo \"conda activate medai\" >> /root/.bashrc",
+                    "openFiles": [],
+                    "showFiles": true,
+                    "allowClose": true,
+                    "allowSubmit": false,
+                    "terminalTitle": "",
+                    "actionButtonText": "Go to Desktop",
+                    "openTerminalOnStartup": true
+                  },
+                  "kind": "react"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 968849,
+          "key": "44a82c77-ed18-468f-8c9b-68b00639dae9",
+          "title": "Closing Remarks",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "44a82c77-ed18-468f-8c9b-68b00639dae9",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 968850,
+              "key": "ea66f4f2-3d6d-44db-9616-9738938adbd0",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Closing Remarks\n\nIf you were able to get here after completing all the tasks above - congratulations! You have gone through the challenging process of integrating knowledge of clinical context, data analysis, machine learning systems, and medical imaging networking to create a fully functional AI module for a radiological system.\n\nArmed with this knowledge you will be able to get quickly started with a vast majority of problems in 3D radiological imaging space, and even transfer this knowledge over to non-radiological modalities that generate 3D images.\n\nAt the moment of writing in 2020, medical imaging AI is a very rapidly growing space, and the potential of the field is staggering. We are only starting to get access to good clinical datasets, the ImageNets of medical imaging is yet to come, clinician researchers are just starting to wrap their heads around what is possible with machine-learning-based technology and tools are becoming better every day. Information flow between data scientists and clinicians is key to unlocking the potential of medical AI and helping clinicians reduce the amount of mundane work, become more precise, efficient, and less stressed. This is just the beginning.\n\n## Further Resources\n\nIf you are curious to learn more about the space and see what others are doing, here are a few useful resources, companies and societies to watch for.\n\n### Conferences and professional societies\n\n* [MICCAI Society](http://www.miccai.org/) hosts an annual conference dedicated to medical imaging and related fields, and also hosts a number of challenges. One that has consistently generated good volumetric datasets is called [BRATS](http://braintumorsegmentation.org/)\n* [Radiological Society of North America](https://www.rsna.org/) is a renowned organization that unifies medical imaging professionals around the globe. In addition to hosting the eponymous largest medical imaging conference in the world it has been turning more attention to AI recently, and hosted interesting medical imaging competitions within its \"[AI challenge](https://www.rsna.org/en/education/ai-resources-and-training/ai-image-challenge)\" program. Last year's challenged featured a classification problem for CT imaging (although with the focus on 2D methods)\n* [SIIM](https://siim.org/page/meetings) is a society that focuses on medical imaging informatics and it has recently started running a machine learning sub-conference called C-MIMI\n\n### Academia\n\nIt wouldn't be much of an overstatement to say that almost every academic medical center in the world is running some sort of a medical imaging AI program. These are all very interesting since they are rooted in clinical expertise and benefit from access to data. They vary in size and often are a part of larger, disease-specific programs. A couple efforts worthy of noting are:\n\n* [Center for Clinical Data Science](https://www.ccds.io/) by Parthers Healthcare\n* [Stanford's AIMI](https://aimi.stanford.edu/)\n* [National Consortium of Intelligent Medical Imaging](https://www.medsci.ox.ac.uk/research/networks/national-consortium-of-intelligent-medical-imaging), kicked off by the University of Oxford and the UK's National Health Service\n\n### Startups\n\nThere are plenty and there will be more. Some choose to pursue a clinical workflow, some focus on application of particular machine learning technique and some capitalize on existing clinical footprint and invest in platforms that accelerate others' efforts. Some established players are:\n\n* [Cortechslabs](https://www.cortechslabs.com/) - focuses on quantitative analysis of brain images. Of particular note is the software called [Neuroquant](https://www.cortechslabs.com/products/neuroquant/) which uses deep learning to produce reports with MRI-based volumetric measurements of structures inside brain that are related to age-related neurodegenerative disorders such as Alzheimer's. Sounds familiar? :)\n* [Mirada Medical](https://mirada-medical.com/) - Oxford-based company that advanced a field of radiation oncology with its deep-learning-based segmentation models\n* [Arterys](https://www.arterys.com/) - Silicon Valley startup that was the first to obtain an FDA clearance for a deep learning medical imaging suite for oncology.\n* [Enlitic](https://www.enlitic.com/) - San Francisco-based company aiming at diagnostic use cases that accelerate radiologic workflow\n* [Nuance](https://www.nuance.com/healthcare/diagnostics-solutions/ai-marketplace.html) is a Boston-based company that produces a well established platform of choice for radiological dictation. Recently the company focused a lot of effort on a marketplace for medical imaging AI solutions where startups that do not quite have Nuance's reach can deploy their software.\n* [Terarecon](https://www.terarecon.com/envoyai/exchange) - similarly to Nuance, this Californian company started in core diagnostic radiology and expanded with an AI marketplace offering branded \"EnvoyAI\"\n\n### Big Tech\n\nSome big cloud providers are eyeing the space closely, and running their own programs and projects related to medical imaging.\n\n* Microsoft Research has a [project InnerEye](https://www.microsoft.com/en-us/research/project/medical-image-analysis/) that for the past 10+ years has been exploring the use of machine learning for a variety of medical imaging applications. One of the instructors of this course had the honor of spending a significant part of his career as a team member here.\n* Google DeepMind is a group within Google doing some cutting-edge AI research, including [some work on medical imaging](https://deepmind.com/blog/article/ai-uclh-radiotherapy-planning). We can credit them with the contribution to the invention of the U-net which has been prominently featured in this course.",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

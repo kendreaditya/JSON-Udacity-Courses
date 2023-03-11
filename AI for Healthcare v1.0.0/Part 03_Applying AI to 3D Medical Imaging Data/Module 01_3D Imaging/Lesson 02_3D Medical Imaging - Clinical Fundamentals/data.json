@@ -1,0 +1,1867 @@
+{
+  "data": {
+    "lesson": {
+      "id": 1014921,
+      "key": "d8617924-a6e1-4c49-9bdb-3388e95fc3b7",
+      "title": "3D Medical Imaging - Clinical Fundamentals",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "In this lesson, we cover the basic terminology and concepts related to 3D medical imaging. We will look at the problem space from a clinical standpoint and learn how CT and MR scanners produce images.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/d8617924-a6e1-4c49-9bdb-3388e95fc3b7/1014921/1590513954745/3D+Medical+Imaging+-+Clinical+Fundamentals+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/d8617924-a6e1-4c49-9bdb-3388e95fc3b7/1014921/1590513948614/3D+Medical+Imaging+-+Clinical+Fundamentals+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 1014899,
+          "key": "f48dcedb-0972-4ebd-bca5-7f190adce9c5",
+          "title": "Introduction",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "f48dcedb-0972-4ebd-bca5-7f190adce9c5",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1014809,
+              "key": "a020e8dc-0b1c-4beb-b902-df03a0a91b5d",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Clinical Background and Physics of 3D Medical Imaging - Introduction",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014823,
+              "key": "1675155e-ebf1-4ac0-a4f1-bc1a43248807",
+              "title": "ND320 C3 L1 01 Welcome To The Lesson & Overview",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "e_tZLickMSY",
+                "china_cdn_id": "e_tZLickMSY.mp4"
+              }
+            },
+            {
+              "id": 1014818,
+              "key": "4aba5d6a-9c16-4457-b6b4-582eed55e2ef",
+              "title": "Conceptual map overview",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Conceptual map\n\nLet’s return to the conceptual map introduced in the previous lesson and highlight the areas that we will touch on in this lesson.\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014817,
+              "key": "ff99be62-917a-49e8-866d-c5494ddaf162",
+              "title": "Conceptual Lesson Overview/Map",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9bf43c_l1-course-overview/l1-course-overview.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/ff99be62-917a-49e8-866d-c5494ddaf162",
+              "caption": "Lesson Overview (focus areas are highlighted with dark-blue color)",
+              "alt": "[cut from course concepts.png]\nClinical Background Lesson conceptual map. Focus on: MRI, CT, Diagnostic Assistance, Quantitative Radiology, Productivity Improvement",
+              "width": 1154,
+              "height": 1042,
+              "instructor_notes": null
+            },
+            {
+              "id": 1014831,
+              "key": "0727c802-b75e-4260-a9da-3e79a558a650",
+              "title": "Lesson Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Lesson Summary\n\nIn this lesson, we will have Mazen share his perspective on the following:\n- What are 3D medical images?\n- Who uses 3D medical images?\n- Why are they being used?\n- Some example clinical scenarios\n\nAfter that, we will have you perform an **exercise** on picking a suitable problem for an AI project by tapping into publicly available medical resources.\n\nThen, we will go into some technical details and cover:\n- Physical principles of CT scanners and then perform an **exercise** on computing a sinogram\n- Physical principles of MR scanners\n- Cover basic 3D imaging tasks:\n    - Multi-planar reconstruction\n    - 3D reconstruction\n    - Windowing\n    - Registration\n\nWe will finish the lesson by having you perform an **exercise** where you will write code to do a 3D reconstruction of a 3D medical volume.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1014901,
+          "key": "391331c7-b016-4e59-ae15-f0221c9f8202",
+          "title": "What are 3D Medical Images?",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "391331c7-b016-4e59-ae15-f0221c9f8202",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1014827,
+              "key": "0f0a5a88-f7de-4828-b08b-57fc0f550ddf",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this video, we’ll learn what 3D medical images are and how they are different from other types of medical images. We’ll also learn about some of the **imaging modalities** that generate them. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014832,
+              "key": "9b9335b0-98e9-444c-a50c-789f4e151b6d",
+              "title": "ND320 C3 L1 02 What Are 3D Medical Images-",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "dB42CFoCWIA",
+                "china_cdn_id": "dB42CFoCWIA.mp4"
+              }
+            },
+            {
+              "id": 1014820,
+              "key": "ca838f6d-36eb-4acb-9a5f-f7a8828d2dc0",
+              "title": "What are 3D Medical Images?Examples Check for Understanding",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "ca838f6d-36eb-4acb-9a5f-f7a8828d2dc0",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Of the following modalities, select those that generate 3D medical images.",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "CT",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "MRI",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "SPECT",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk4",
+                    "text": "Radiography",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk5",
+                    "text": "Ultrasound",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1014816,
+              "key": "83b11c8b-d189-4b86-8c09-c5979dda0c1d",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Now we have a grasp of what 3D medical images are, and what modalities generate them. In the next video, we’ll discuss why we would use them over other types of medical imaging. \n\n### New Vocab\n- **Imaging modality**: a device used to acquire a medical image\n- **MRI scanner**: Magnetic Resonance Imaging scanner\n\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1014902,
+          "key": "34fba241-897f-4c22-bd14-22f1d7ba3148",
+          "title": "Why use 3D Medical Images?",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "34fba241-897f-4c22-bd14-22f1d7ba3148",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1014836,
+              "key": "dbd9f6eb-c8ea-4aa5-9e88-1a54a274b36e",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this video, we’ll learn why we would use 3D medical images over other types of medical imaging, highlighting some important factors to consider when choosing the appropriate imaging modality for a given clinical problem. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014828,
+              "key": "5dbe19d1-ef6d-48ac-8da0-8a8c46cbde85",
+              "title": "ND320 C3 L1 03 Why Use 3D Medical Images-",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "wqHedjEWPjI",
+                "china_cdn_id": "wqHedjEWPjI.mp4"
+              }
+            },
+            {
+              "id": 1014819,
+              "key": "b26a9914-a339-4c40-ba9d-984f6bb52ed8",
+              "title": "Why use 3D Medical Images?",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "b26a9914-a339-4c40-ba9d-984f6bb52ed8",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "You are trying to choose the appropriate imaging modality to maximize the intensity differences between a liver tumor and the normal background tissue. What imaging parameter are you attempting to optimize?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "Spatial Resolution",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "Contrast Resolution",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "Radiation Dose",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk4",
+                    "text": "Acquisition Time",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1014825,
+              "key": "a1ceeead-8ae6-4298-8db6-cdd6d901a734",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "We’ve covered why we would use 3D medical images, and discussed some important considerations when choosing the appropriate imaging modality for a given problem. Next up, we’ll learn about who uses 3D medical images in day-to-day practice.  \n\n### New Vocabulary\n- **Contrast resolution**: the ability of an imaging modality to distinguish between differences in image intensity\n- **Spatial resolution**: the ability of an imaging modality to differentiate between smaller objects",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1014910,
+          "key": "caed5f9f-737d-4421-87a1-d540adfebc7a",
+          "title": "Who uses 3D Medical Images?",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "caed5f9f-737d-4421-87a1-d540adfebc7a",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1014834,
+              "key": "8ddb1e9b-4a2c-44a8-834e-86ad2f82e0bf",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this video, we’ll learn about the end-users of 3D medical images, and describe some common ways they would use the images in practice. For the purpose of the lesson, we bin these users into archetypal roles, which while simplified, will provide us with a useful framework. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014829,
+              "key": "dfc0df72-76cf-4201-93b5-63f288bf77e3",
+              "title": "ND320 C3 L1 04 Who Uses 3D Medical Images-",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "jWNmHfbOIb4",
+                "china_cdn_id": "jWNmHfbOIb4.mp4"
+              }
+            },
+            {
+              "id": 1014830,
+              "key": "46fedd46-4911-4feb-9fec-3ee2e78887e4",
+              "title": "Who uses 3D Medical Images?",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "46fedd46-4911-4feb-9fec-3ee2e78887e4",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "A clinician is planning on using MRI data during an operation to guide them to the correct location of a tumor and avoid any critical anatomy. Which clinical archetype best fits this scenario?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "Primary Care",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "Specialist",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "Surgeon or Proceduralist",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk4",
+                    "text": "Diagnostic Radiologist",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1014826,
+              "key": "59f89beb-987a-40bc-bc3f-83271378cca4",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "We’ve now seen some of the most common end-users of 3D medical imaging. Next up, we’ll integrate all of this information in some example clinical scenarios and learn some rudimentary clinical decision-making skills. ",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1014906,
+          "key": "39b489c1-711a-4796-a8d6-64892ec4cd2b",
+          "title": "Example Clinical Scenario",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "39b489c1-711a-4796-a8d6-64892ec4cd2b",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1014813,
+              "key": "7ede18a8-00e6-4cdc-8859-3074cc330d8b",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this video, we’ll cover how the information from imaging studies is incorporated into the clinical decision-making process, and ultimately influences the course of a patient’s treatment. We’ll do so by going over three example clinical scenarios, and introducing the concept of the likelihood ratio. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014840,
+              "key": "cc27a147-a924-4d31-8f8d-28267b1b2dd9",
+              "title": "ND320 C3 L1 05 Example Clinical Scenario 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "BA7lAQiDA6k",
+                "china_cdn_id": "BA7lAQiDA6k.mp4"
+              }
+            },
+            {
+              "id": 1014956,
+              "key": "9a4aa404-c54b-45d9-8eda-039030c0e610",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "9a4aa404-c54b-45d9-8eda-039030c0e610",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Match the diagnostic performance metric with its correct definition. "
+                },
+                "concepts_label": "Definition",
+                "answers_label": "Metric",
+                "concepts": [
+                  {
+                    "text": "\nA diagnostic performance metric used to determine whether a test result usefully changes the probability that a condition/disease is present.",
+                    "correct_answer": {
+                      "id": "a1587279854725",
+                      "text": "Likelihood Ratio"
+                    }
+                  },
+                  {
+                    "text": "The probability of a test being positive, given that a patient has the underlying disease/condition.",
+                    "correct_answer": {
+                      "id": "a1587279903244",
+                      "text": "Sensitivity"
+                    }
+                  },
+                  {
+                    "text": "The probability of a test being negative, given that a patient does not have the underlying disease/condition.",
+                    "correct_answer": {
+                      "id": "a1587279904029",
+                      "text": "Specificity"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1587279904029",
+                    "text": "Specificity"
+                  },
+                  {
+                    "id": "a1587279978028",
+                    "text": "Accuracy"
+                  },
+                  {
+                    "id": "a1587279978921",
+                    "text": "Dice"
+                  },
+                  {
+                    "id": "a1587279854725",
+                    "text": "Likelihood Ratio"
+                  },
+                  {
+                    "id": "a1587279903244",
+                    "text": "Sensitivity"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1014838,
+              "key": "9d7ac384-9ecd-43f8-824b-044e67948cae",
+              "title": "ND320 C3 L1 06 Example Clinical Scenario 2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "OEpr6ONXW8E",
+                "china_cdn_id": "OEpr6ONXW8E.mp4"
+              }
+            },
+            {
+              "id": 1014846,
+              "key": "4fac8d64-49e2-4249-bc72-81b957da916f",
+              "title": "Summary + Exercise Instructions",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Good work, you’ve started to integrate the information from all the prior videos while exploring some example clinical cases, and have seen how imaging can influence clinical-decision making. You’ve also been introduced to the likelihood ratio, a crucial diagnostic performance metric used to determine whether a test result usefully changes the probability that a condition/disease is present. Next up, you’ll further practice integrating this information in the given exercise. ",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1014903,
+          "key": "b04e689b-b8af-43b5-b3cf-f8e1d959801e",
+          "title": "Exercise 1: Choosing a Clinical Problem",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "b04e689b-b8af-43b5-b3cf-f8e1d959801e",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1014839,
+              "key": "2f807a8b-aa84-4f8b-8284-9fd98608da03",
+              "title": "Exercise intro",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Exercise 1: Choosing a clinical problem and framing it as a machine learning task.\nIn this exercise, you will practice how to choose a clinical problem to tackle, explore how to research some basic facts about the disease, and frame the clinical problem as a machine learning task.\n## Part 1: Choosing a clinical case.\nExciting clinical problems abound in the realm of Healthcare AI. To help you narrow down some potential ideas, we will use the American College of Radiology Data Science Institute (ACR DSI) curated list of use cases. Alternatively, you may explore any clinical problem of your choosing without using the database if you already had something in mind. Please note that some use cases in the ACR DSI database can seem overwhelming or obscure without some background medical knowledge. If this is the case, simply choose something that’s more intuitive. A few good starting examples include: \n- Acute Appendicitis.\n- Aging Brain – Dementia.\n- Incidental Pulmonary Nodules on CT.\nYour task for this first part is to choose a case. If you choose to use the ACR DSI database, submit the link that points to your use case. If using any other resources, please submit an image capture or PDF of a medical or AI journal article that explores this problem within the context of machine learning.\n\n## Part 2: Background research.\nTo deliver an algorithm that performs well in a clinical setting, it can be extremely beneficial to have some rudimentary understanding of the disease or situation you are addressing. To do so, engaging in some background research to build your foundation will be crucial. For this part of the exercise, find a review article from the PubMed database describing the problem. Ask yourself, “what is the current gold standard for confirming or ruling out the presence of this disease/state”. Understanding the current gold standard/ground truth test will be a critical benchmark when testing any algorithm you develop. Submit a screen capture or PDF of the article to receive credit for this portion.\n\n## Part 3: Framing the problem as a machine learning task.\nWith some background knowledge of the disease or condition at hand, as well as how it is currently ruled in or out, consider how the task could be framed as a machine learning problem. We will be going over this in much more detail in the respective lesson of this course, but some early exposure will be useful. For example, solving the problem of autonomously detecting one or more lung nodules could be framed as an object detection task. Measuring changes in tumor volume over time may be best framed as a segmentation task. Etc. Submit a short paragraph detailing how you would frame your clinical problem of choice as a machine learning task, and explain your rationale.\n\n**Below you will find a workspace with a Jupyter Notebook where you can record the answers to each part of this exercise listed above.**",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014966,
+              "key": "aa5441ce-4efa-4c11-9621-54db13e3020d",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1014903xJUPYTERh18xon5l",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-0c6rd",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/1-ai-definition-problem.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1014898,
+          "key": "e545ef14-2d30-4223-be0d-cd24c9aa9847",
+          "title": "Exercise 1: Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "e545ef14-2d30-4223-be0d-cd24c9aa9847",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1014858,
+              "key": "6f67a492-3ae5-4cda-941c-8daa5b658ead",
+              "title": "Summary + Solution",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Good work. In this exercise you’ve practiced some crucial skills you’ll use often -  how to choose a clinical problem, researching basic facts about the disease, and framing the clinical problem as a machine learning task.\nThere is no single right answer to the exercise, here is a sample solution below. \n\n### Lesson 1 Exercise – Sample Solution \n\n#### Part 1: Choosing a clinical case.\nI chose to focus on the case  - [COVID-19 Compatible Chest CT Pattern](https://www.acrdsi.org/DSI-Services/Define-AI/Use-Cases/COVID-19-Compatible-Chest-CT-Pattern). \t\n\n#### Part 2: Background research.\nI then focused on [Performance of radiologists in differentiating COVID-19 from viral pneumonia on chest CT](https://pubs.rsna.org/doi/10.1148/radiol.2020200823) paper by Bai, H.X., Hsieh, B., et. al. for my background research.\n\n#### Part 3: Framing the problem as a machine learning task. \nPer the ACR-DSI, the assigned task is to provide a likelihood of a diagnosis compatible with COVID-19 using chest CT data. I believe an initial step in solving this clinical problem, determining whether any abnormal findings are present on a chest CT, would be well-framed as an object detection task. The output would be a bounding box delineating the areas of abnormality that could indicate viral pneumonia. Based on recent literature, such findings could include consolidation, bilateral and peripheral disease, linear opacities, “crazy-paving” patterns, and the “reverse halo” sign. While these findings are not-specific for COVID-19, their detection could guide the ordering clinician to be more vigilant in follow-up testing for the disease. A negative STAT rapid influenza/RSV PCR tests and positive Real-Time Reverse Transcriptase Polymerase Chain Reaction (rRT-PCR) would confirm the diagnosis. ",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1020127,
+          "key": "c00548ff-6543-4115-addf-b0296f453489",
+          "title": "Clinical Section Outro",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c00548ff-6543-4115-addf-b0296f453489",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1020122,
+              "key": "db301ac6-622c-4ff2-8927-9b34cbfff39c",
+              "title": "ND320 C3 L1 07 Mazen Outro",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "-HS5lxHHSfg",
+                "china_cdn_id": "-HS5lxHHSfg.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 1014900,
+          "key": "23e69e45-ff28-439f-bf0c-4d142d5802f8",
+          "title": "Physical Principles of CT Scanners",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "23e69e45-ff28-439f-bf0c-4d142d5802f8",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1014844,
+              "key": "193e9015-681e-4656-b82b-aa3372d8fd98",
+              "title": "heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Getting technical\n\nIn this and the following section, let’s get a bit more technical and try to understand how the data from 3D imaging modalities (the clinical term for “scanner”) is produced.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014843,
+              "key": "bfeb4a7c-97ca-470e-9d57-99ddbce96c08",
+              "title": "ND320 C3 L1 08 Ivan Intro",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "3uoHmcjruzQ",
+                "china_cdn_id": "3uoHmcjruzQ.mp4"
+              }
+            },
+            {
+              "id": 1014815,
+              "key": "8edf5960-ea5a-4cac-87a4-405d28e26a62",
+              "title": "Physical Principles of CT scanner Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Physical Principles of operation of a CT scanner\n\nLet’s take a look at what is a **CT scanner** and how it operates",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014812,
+              "key": "733d1c79-84ae-484b-9e18-eb46b57b76aa",
+              "title": "ND320 C3 L1 09 Physical Principles Of CT Scanner",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "VOQZng6b9Vo",
+                "china_cdn_id": "VOQZng6b9Vo.mp4"
+              }
+            },
+            {
+              "id": 1014854,
+              "key": "061c9521-a661-4c15-83b2-1827c5208a16",
+              "title": "X-rays",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## X-rays\n\nThe main operating agents of a CT scanner are X-rays, which are a form of electromagnetic radiation. A reminder on electromagnetic spectrum below:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014865,
+              "key": "c5199265-0efd-410e-81c8-16b5b0419e83",
+              "title": "X-rays",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9bf43d_l1-em-spectrum/l1-em-spectrum.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/c5199265-0efd-410e-81c8-16b5b0419e83",
+              "caption": "Electromagnetic spectrum",
+              "alt": "Electromagnetic spectrum\n\nem_spectrum.png",
+              "width": 1181,
+              "height": 632,
+              "instructor_notes": null
+            },
+            {
+              "id": 1014860,
+              "key": "a71a292d-ee7d-4c4c-b4cd-f822273e3f6f",
+              "title": "Physical Principles of CT Scanners",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "X-rays are a form of ionizing radiation, which means that they carry enough energy to detach electrons from atoms. This presents certain health risks, but the short wavelength of this part of the electromagnetic spectrum allows the radiation to interact with the many structures that compose a human body, thus allowing us to measure the amount of photons that reach detectors and make deductions about the structures that were in the way of photons as they were traveling from the source to the detector, with a high precision.\n\n## CT scanners\n\nAs you have seen, the CT scanner operates by projecting X-rays through the subject’s body. \n\nX-rays get absorbed or scattered by the anatomy and thus detectors measure the amount of this attenuation that happens along each path that the ray is taking. A collimator shapes the beam and ensures that the X-rays only pass through a narrow slice of the object being imaged. Rotation of a source inside a gantry makes sure that projections happen from different angles so that we can get a good 2D representation of the slice. The moving table ensures that multiple such slices are imaged. A collection of slices makes up a 3-dimensional CT image.\n\nIn the exercise that follows we will look closer at how the formation of 2D slices works in a CT scanner.\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014847,
+              "key": "6f88a9ab-8efd-4247-b99e-fe4da6eb38b4",
+              "title": "Acting agent of a CT scanner",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "6f88a9ab-8efd-4247-b99e-fe4da6eb38b4",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What are the main acting agents of a CT scanner?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "Photons",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "Visible light",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "Electromagnetic waves",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk4",
+                    "text": "Gamma-rays",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk5",
+                    "text": "X-rays",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1020123,
+              "key": "ebd15d24-1274-4dff-a9e9-7e4b6fd2a197",
+              "title": "Summary & Vocab",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### New Vocabulary\n- **CT scanner**: computed tomography scanner",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1014905,
+          "key": "af5ad06d-7049-489c-985a-b4ab9feadef3",
+          "title": "Exercise 2: Computing a Sinogram",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "af5ad06d-7049-489c-985a-b4ab9feadef3",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1014841,
+              "key": "308b4c64-7194-4711-8ead-08ba67b6eeb5",
+              "title": "Intro",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Exercise 2: Computing a Sinogram\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014864,
+              "key": "f5c496f6-9386-4911-9711-c5e961e3ca5f",
+              "title": "ND320 C3 L1 10 Exercise- Compute A Sinogram - Intro",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Ch0gnb4sGiY",
+                "china_cdn_id": "Ch0gnb4sGiY.mp4"
+              }
+            },
+            {
+              "id": 1014837,
+              "key": "fbdfe775-abd6-4098-9c6d-3c110f02f959",
+              "title": "Exercise walkthrough description",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Before we jump into the exercise which is presented as a Jupyter Notebook, let me walk you through the first portion of this notebook as I think it is important to get some key concepts right. You have access to the same notebook in the workspace, so if you prefer to skip the video and jump right into code, feel free to do so.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014851,
+              "key": "b7436fde-b897-4a96-b30c-f70fe1652683",
+              "title": "ND320 C3 L1 10.1 Exercise- CT Backprojection Solution Walkthrough",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "qULC4H62aig",
+                "china_cdn_id": "qULC4H62aig.mp4"
+              }
+            },
+            {
+              "id": 1016306,
+              "key": "8af29c01-5908-4168-ac4c-05135a9c2514",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1014905xJUPYTERug2f79lt",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-28zky",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Exercise. CT backprojection.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1020126,
+          "key": "417b48a2-8df3-4b12-b7dc-d11d94dd4200",
+          "title": "Exercise 2: Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "417b48a2-8df3-4b12-b7dc-d11d94dd4200",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1014811,
+              "key": "baee1462-b195-4439-b32e-34363cd8cb9b",
+              "title": "ND320 C3 L1 11 Exercise- Compute A Sinogram - Solution",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "wsxt6ZxCRYs",
+                "china_cdn_id": "wsxt6ZxCRYs.mp4"
+              }
+            },
+            {
+              "id": 1014872,
+              "key": "081dd723-070f-4d25-93c5-b32892582f86",
+              "title": "Outro",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "First, apologies: I misspoke in the video above around the 0:22 mark where I say that “detector” is a single point. Of course, I meant “source”, when referring to the fact that in the real CT scanner the X-rays are cast in a fan shape from a very small area of the X-ray tube.\n\nI hope this exercise was useful and helped you get a grasp on how a CT scanner is functioning. Note that in the exercise you have seen how a backprojection algorithm is used to build a single 2D slice through a patient’s body. Transition to 3D is made by stacking multiple such slices which are acquired in a relatively rapid succession (a few slices per second).\n\nYou can find the solution to this exercise in the repo [here](https://github.com/udacity/nd320-c3-3d-med-imaging/blob/master/clinical-background/exercises/2-ct-backprojection/solution/Exercise.%20CT%20backprojection.ipynb).\n\n### New Vocab\n- **Sinogram**: “raw” data generated by CT scanner. Images need to be reconstructed from it",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1014915,
+          "key": "80c65406-5fd7-401b-8eab-13bf074a9a26",
+          "title": "CT Scanners: Summary",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "80c65406-5fd7-401b-8eab-13bf074a9a26",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1014856,
+              "key": "46962c49-79d8-411f-955e-a657ed44bb7a",
+              "title": "ND320 C3 L1 12 CT Scanners- Exercise Summary, Hounsfield Units",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "h6sXx2wziXE",
+                "china_cdn_id": "h6sXx2wziXE.mp4"
+              }
+            },
+            {
+              "id": 1014885,
+              "key": "b01560c4-2d1f-4af0-a0ed-ae9572b789ea",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this module, we have covered the basics of the operation of CT scanner and have gone through an exercise that lets us take a glimpse at what is actually happening when a CT scanner is reconstructing an image. \n\nYou have seen how the nature of CT data acquisition - the fact that we are effectively measuring *radiodensity* of biological material - allows us to define a consistent way of associating intensities of pixels in a CT scan slice with the physical density of a structure that is being imaged. \n\nThis allows us to guarantee a great degree of consistency among all CT scanners, and thus allow us to have the Hounsfield Scale, named after Sir Godfrey Hounsfield who invented modern CT scanners in the 1970s. \n\nHounsfield Scale maps tissue types to pixel values of CT scans and is essential to understanding CT scans.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014850,
+              "key": "c543fff3-235b-42b0-b6f6-83fc4b45815b",
+              "title": "HU scale",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9bf443_l1hu-scale/l1hu-scale.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/c543fff3-235b-42b0-b6f6-83fc4b45815b",
+              "caption": "Hounsfield Unit Scale",
+              "alt": "Hounsfield Scale",
+              "width": 1920,
+              "height": 1080,
+              "instructor_notes": null
+            },
+            {
+              "id": 1014814,
+              "key": "ec186e22-2866-4d81-8d21-dd5772c46c99",
+              "title": "CT Scanners - knowledge check",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "ec186e22-2866-4d81-8d21-dd5772c46c99",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What are the detectors in a CT scanner measuring?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "Voxel intensity",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "Amount of photons passing through the body attenuated by material between the emitter and detector",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "Amount of living tissue inside the body",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk4",
+                    "text": "Metabolic activity",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1014859,
+              "key": "9af3f716-0782-47d7-9837-3c063d7bc70c",
+              "title": "Summary 2",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "If you want to understand the physics of CT scanners a bit further, let me point you to some interesting resources. \n\n# Further Resources\n\n* Wikipedia offers a [very comprehensive description of how CT scanners work](https://en.wikipedia.org/wiki/CT_scan), it’s a great resource to get the next level of depth.\n\n* An excellent resource that covers some of the basics of CT physics in more depth, as well as offers a little backprojection simulator: http://xrayphysics.com/ctsim.html  \n\n* A paper on using deep learning methods directly on sinograms: [Man, Quinten De, et al. “A Two-Dimensional Feasibility Study of Deep Learning-Based Feature Detection and Characterization Directly from CT Sinograms.” American Association of Physicists in Medicine (AAPM), 2019](https://aapm.onlinelibrary.wiley.com/doi/full/10.1002/mp.13640)  \n\n* A playlist of YouTube videos on CT physics for physicians from the University of Queensland: https://www.youtube.com/watch?v=lbn-IMjF_Uc&list=PL_iaBDDMPsLdxqNDMgAe7ceBMn5FSfpk3",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1014916,
+          "key": "8c677220-8ade-45c0-a2fb-2c7e7d96764a",
+          "title": "Physical Principles of MR Scanners",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "8c677220-8ade-45c0-a2fb-2c7e7d96764a",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1014884,
+              "key": "981bd3bf-8c3b-4e81-ad4a-b7d9c01ee0ff",
+              "title": "Physical Principles of MR scanners Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Physical principles of MR scanners\n\nMR (magnetic resonance) scanner is arguably quite a bit more complex from the underlying computation and physics standpoint than a CT machine, and also quite a bit more flexible. \n\nLet me take you through a very basic introduction into how these wonderful machines operate and produce images.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014871,
+              "key": "5d1f4120-d30c-492f-9ee7-e55d5a7a0366",
+              "title": "ND320 C3 L1 13 Physical Principles Of MR Scanners",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "R_erN8yoQCQ",
+                "china_cdn_id": "R_erN8yoQCQ.mp4"
+              }
+            },
+            {
+              "id": 1014887,
+              "key": "8f706fb5-2fa3-4528-abe3-ee82d4dddbf0",
+              "title": "Disclaimer",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "> *I have to mention that the explanation of the MR scanner operation that I provide here is quite a bit simplified. It is sufficient for you to understand where the data is coming from and why it looks the way it does, but understanding the details of how exactly biological tissue types are localized in 3D space by the MR scanner requires more of a digression into physics and quantum mechanics than we wanted to have in this course. If you have further questions on how it all comes together, we will have links at the end of this section which will help you explore further.*\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1014920,
+          "key": "0b3c6e1a-2ae1-435f-9764-78ab788ee614",
+          "title": "MRI: Gradients & RF Pulses",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "0b3c6e1a-2ae1-435f-9764-78ab788ee614",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1014852,
+              "key": "eeea0fe7-4aa2-4743-9703-5b99950cd57d",
+              "title": "Intro",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Gradients and RF pulses",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014866,
+              "key": "5204c576-7682-4335-bf3c-269f09ec27dd",
+              "title": "ND320 C3 L1 13.1 Gradients And RF Pulses",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Tz_8uV0MIjQ",
+                "china_cdn_id": "Tz_8uV0MIjQ.mp4"
+              }
+            },
+            {
+              "id": 1014897,
+              "key": "1d71feb3-8dd4-4a58-9a49-754b85b997e6",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Summary\n\nMR scanner leverages a basic physical property of protons (charged elementary particles that make up atoms) to align themselves along the vector of magnetic fields. This effect is particularly pronounced in protons that make up hydrogen atoms. Hydrogen atoms make up water molecules, and water makes up to 50-70% of a human body. \n\nThe thing with protons is that they possess a property called spin which could be thought of as spinning around an axis. In a normal environment, the direction of this axis is randomly distributed across different protons. In the presence of a strong magnetic field, though, the proton spins get aligned along the direction of the magnetic field, and start precessing (think of what a spinning top that’s lost some of its momentum is doing):",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014886,
+              "key": "f2fdef8d-142c-4412-9e16-dc53ed5919dc",
+              "title": "Proton precession",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9bf442_l1-proton/l1-proton.gif",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/f2fdef8d-142c-4412-9e16-dc53ed5919dc",
+              "caption": "A proton orienting its spin and precessing along the lines of a magnetic field.",
+              "alt": "Proton.gif\nA proton orienting itself along the lines of a magnetic field",
+              "width": 600,
+              "height": 338,
+              "instructor_notes": null
+            },
+            {
+              "id": 1014880,
+              "key": "8fab0aee-b808-4b99-8406-83d7815102b8",
+              "title": "Summary cont",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "> Fun fact: “strong magnetic field” means really strong. Look up “[MRI metal chair experiment](https://www.youtube.com/watch?v=6BBx8BwLhqg)” on YouTube to get a sense of what that is like. Such a static magnet can rip metal from a patient’s body - that is why anyone going into a scan will get asked if they have any magnetic implants and will be asked to remove any jewelry. That is also why certain patients (e.g. with metal shards left over from a trauma) would not be able to get imaged in an MRI scanner.\n\nWhen an external radiofrequency pulse is applied, of a frequency proportional to the frequency of precession, the protons respond to this pulse in unison, or *resonate*, and flip the orientation of their spins. Once this pulse is gone, they return to their original orientation (along the static magnetic field). \n\nThe way in which protons return to their original orientation is different and depends on the tissue type that protons are a part of.\n\nSince many protons are returning to their original orientation at once, they generate electrical currents in the coils that are placed nearby. Due to the resonance effect these currents are not insignificant and can be measured - these measurements constitute the data about the tissue being studied which is collected by the MRI scanner.\n\nGradient fields are used to vary the static magnetic field, and thus precession frequency, spatially. This allows the MR scanner to isolate a part of the body (i.e. a slice) that is being imaging. Further gradient fields are used to isolate information coming from specific locations within a slice. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014845,
+              "key": "1f10bb4b-7e30-4a35-9152-3a92e30ad405",
+              "title": "EM fields",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9bffe5_l1-em-fields/l1-em-fields.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/1f10bb4b-7e30-4a35-9152-3a92e30ad405",
+              "caption": "Electromagnetic fields of an MR scanner",
+              "alt": "Electromagnetic fields of an MR scanner",
+              "width": 882,
+              "height": 485,
+              "instructor_notes": null
+            },
+            {
+              "id": 1014855,
+              "key": "5f5d5ccb-9019-4212-ae52-518b5ef9c97f",
+              "title": "What is MR scanner measuring?",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "5f5d5ccb-9019-4212-ae52-518b5ef9c97f",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What do MR and CT scanners have in common?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "They emit ionizing radiation",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "They use strong static magnets",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "They have a donut-shaped “gantry” where the imaged part of the body needs to go",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1014904,
+          "key": "8ec4e145-f2b5-4fe3-9042-adcf41a69d94",
+          "title": "MRI: K-space, Reconstruction, T1 and T2",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "8ec4e145-f2b5-4fe3-9042-adcf41a69d94",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1014848,
+              "key": "df2ab34e-da80-49b1-a8ae-f785b6982fb4",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# K-space, reconstruction, T1 and T2 pulse sequences",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014868,
+              "key": "7974a7db-0b78-4566-92aa-f990773d6168",
+              "title": "ND320 C3 L1 14 K-Space, Reconstruction, T1 And T2 Sequences",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "G-VNEofjQaI",
+                "china_cdn_id": "G-VNEofjQaI.mp4"
+              }
+            },
+            {
+              "id": 1014867,
+              "key": "78cc0736-27ab-4023-b681-b2ab3684f318",
+              "title": "What happens during reconstruction of a captured MR signal?",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "78cc0736-27ab-4023-b681-b2ab3684f318",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Why do MR scanners have different pulse sequences?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "Because this is how we can vary what types of tissue exhibit the highest signal",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "To satisfy requirements of reconstruction pipelines",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "To accommodate different patient types",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk4",
+                    "text": "So that we can leverage our ability to control magnetic fields inside the MR scanner in order to focus on relevant aspects of the anatomy or pathology",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1014857,
+              "key": "04f03169-f0ec-4db9-8ffe-0f816493c697",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Summary\n\n## K-space and Reconstruction\nThe currents measured by RF coils get turned into a digital format, and represented as vectors in “**K-space**”. The concept of K-space goes back to the wave theory in physics and basically defines a space of vectors that describe characteristics of electromagnetic waves. \n\nIn our case, these wave vectors carry information about the characteristics of the matter in the space that has been measured. Essentially, these vectors record the spatial frequency of signal intensity, and thus, through the process that involves an Inverse Fourier Transform and a lot of de-noising and other optimizations, get turned into a familiar 2D image that represents a slice through a human body with different anatomy having different pixel intensity. This process is referred to as **image reconstruction** in MR physics. Typically, image reconstruction is performed on a computer that is directly embedded into an MR scanner, and the problem of optimizing or scaling image reconstruction alone is a very interesting one.\n\n> If you are familiar with Fourier Transforms, but the concept of “spatial frequency” still seems way too mind-boggling - don’t worry, it could be. However, image analysis through FTs is a common technique in image processing. I have a link to some good materials on the subject later which will hopefully help you understand this concept a bit better if you are interested.\n\nSimilar to a CT scan, multiple slices imaged with a pre-set spatial interval through a human body are combined to obtain the 3D image. Note, however, that due to greater control over the electromagnetic fields, MR scanners can obtain data directly for a 3D volume in a single “sweep”, without having to go slice-by-slice.\n\n## Pulse Sequences\nWe can vary the combination of gradient fields, RF pulses, and aspects of the signal that is getting measured. Together, these are called a **pulse sequence**. \n\nTwo very common sequences are called “T1-weighted” and “T2-weighted” sequences (technically - these two are looking at different aspects of the same combination of electromagnetic fields). T1 produces greater contrast resolution for fat, and T2 produces greater detail in fluids. Quite often, a contrast medium is used along with a T1 sequence to make certain structures stand out. Thus, the gadolinium agent is often used in neuroradiology to improve the visibility of things like tumors and hemorrhages.\n\nMany more sequences exist, including many which are proprietary to scanner manufacturers, and there is a field of medical physics that deals exclusively with pulse sequence design.\n\n### New Vocabulary\n- **K-space data**: “raw” data generated by an MRI scanner. Images need to be reconstructed from it",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1014908,
+          "key": "e52eed6f-5cac-47fb-9cfa-ab51dc1a211f",
+          "title": "MR Scanners: Summary",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "e52eed6f-5cac-47fb-9cfa-ab51dc1a211f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1014890,
+              "key": "fece7d62-54b8-4fba-b424-c766553b9771",
+              "title": "ND320 C3 L1 15 MRI Summary",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "PjJWKGkEr-4",
+                "china_cdn_id": "PjJWKGkEr-4.mp4"
+              }
+            },
+            {
+              "id": 1014853,
+              "key": "9689b498-3a98-493d-9365-7ec68af42e19",
+              "title": "What serves as Hounsfield Scale for MRI data?",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "9689b498-3a98-493d-9365-7ec68af42e19",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What serves as the Hounsfield Scale for MRI data?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "Pulse sequence",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "K-space",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "Nothing",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1014849,
+              "key": "2d665a9f-2438-4014-8c0d-9832f32da6f5",
+              "title": "Physical Principles of MR scanners Recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this section, we took a glimpse at how MRI scanners operate. \n\nAs you have seen, MRI scanners are probably some of the most complex inventions made by humankind. The design of one touches on hard problems in the fields of robotics, quantum physics, signal processing, mechanical, electrical, and software engineering. \n\nMRI scanners are very versatile machines that can provide great non-invasive insight into what is happening inside a human body, and they lend themselves to a lot of interesting AI problems. \n\n# Further Resources\n\n* Facebook’s research on using AI to accelerate the MRI reconstruction process: [Overview](https://ai.facebook.com/blog/accelerating-mri-reconstruction/) and a paper about [fastMRI: An Open Dataset and Benchmarks for Accelerated MRI](https://arxiv.org/pdf/1811.08839.pdf).\n\n* If you want to understand details of MR physics better, here is a paper on the subject, oriented at clinicians: [Ridgway, J. P. (2010). Cardiovascular magnetic resonance physics for clinicians: part I. Journal of Cardiovascular Magnetic Resonance, 12(1). doi: 10.1186/1532-429x-12-71](https://www.researchgate.net/publication/49645994_Cardiovascular_magnetic_resonance_physics_for_clinicians_Part_I).\n\n* If you would like to understand the process of MRI image reconstruction a bit better, here is an excellent in-depth overview: [Hansen, M. S., & Kellman, P. (2014). Image reconstruction: An overview for clinicians. Journal of Magnetic Resonance Imaging, 41(3), 573–585. doi: 10.1002/jmri.24687](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4276738/).\n\n* Finally, if you want to try and wrap your head around spatial frequency decomposition for image analysis, here is a good overview from the University of New Mexico: https://www.cs.unm.edu/~brayer/vision/fourier.html",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1014907,
+          "key": "e3dd37af-1b43-43a2-b232-d56683587627",
+          "title": "Common 3D imaging data tasks",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "e3dd37af-1b43-43a2-b232-d56683587627",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1014888,
+              "key": "bd07dd4e-3156-44a5-b33f-247f239b0d04",
+              "title": "ND320 C3 L1 16 Common 3D Imaging Data Tasks - Intro",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "ukhHF9rtzTE",
+                "china_cdn_id": "ukhHF9rtzTE.mp4"
+              }
+            },
+            {
+              "id": 1014870,
+              "key": "887dc11d-c7ff-4f8b-9a27-789c849bb15f",
+              "title": "Intro",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "The concepts that we will touch upon in this final portion of the lesson: Windowing, Multi-planar reconstruction (MPR), 3D reconstruction, and registration, are common to many problems that involve viewing or processing 3D medical images. We will introduce them here and will keep coming back to them as we progress through the content.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1014909,
+          "key": "b1ccf8d6-155f-4cc4-8545-c85f92c6613e",
+          "title": "3D Imaging Tasks: Windowing",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "b1ccf8d6-155f-4cc4-8545-c85f92c6613e",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1014861,
+              "key": "8888f118-221a-4c88-8476-73dd5ddd16d1",
+              "title": "ND320 C3 L1 16.1 Common 3D Imaging Data Tasks - Windowing",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "ieW5Lf0EqLw",
+                "china_cdn_id": "ieW5Lf0EqLw.mp4"
+              }
+            },
+            {
+              "id": 1014893,
+              "key": "36dd3512-795d-49dc-aef2-1572c61a1f22",
+              "title": "Quiz",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "36dd3512-795d-49dc-aef2-1572c61a1f22",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Assume your CT scanner will generate discrete HU between +3,073 and -1,024. If you want to represent each pixel as a grayscale value, what is the minimum amount of bits you need to store the original value?",
+                "matchers": [
+                  {
+                    "expression": "^(12)$"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1014874,
+              "key": "4d703d1e-87be-4856-a654-4250c7c39654",
+              "title": "outro",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "As you have seen, **windowing** is a fairly straightforward color mapping procedure. An interesting thing to keep in mind about windowing is that historically we have been mapping linear scales in which scanners acquire data to the linear grayscale which has the limitation of being only able to display 255 colors. People have been coming up with ideas on how to circumvent this limitation. \n\nOne such idea was building special medical monitors that use more than 8 bits per single color channel or are optimized specifically for grayscale representations (e.g., look up Barco monitors that have 10- and 12-bit grayscale technology). If you think that HDR TVs are new, think again - the medical imaging industry has been building those for decades!\n\nAnother idea would be trying to use all colors of the display or somehow optimizing the representation to fit the grayscale range better. We will post a link to some interesting experiments in this area in the next lesson, once you’ve had the chance to learn how medical images are stored.\n\n### New Vocab\n- **Windowing**: mapping high dynamic range of medical images onto the screen-space gray color scale",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1014919,
+          "key": "f969c989-1740-468b-8d14-753f864405a6",
+          "title": "3D Imaging Tasks: MPR",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "f969c989-1740-468b-8d14-753f864405a6",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1014879,
+              "key": "d249c443-9f23-47f0-bd5f-8bcd3d0772ea",
+              "title": "ND320 C3 L1 16.2 Common 3D Imaging Data Tasks - Multi-Planar Reconstruct",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "UqS55yUuMUk",
+                "china_cdn_id": "UqS55yUuMUk.mp4"
+              }
+            },
+            {
+              "id": 1014862,
+              "key": "d594ab29-0061-435d-9afd-a21d1beeebe0",
+              "title": "Most likely primary plane for CT",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "d594ab29-0061-435d-9afd-a21d1beeebe0",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "In an abdominal CT scan (where an area between pelvis and head is imaged), using a CT scanner similar to what has been shown earlier in this lesson, what is the most likely primary image acquisition plane?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "Sagittal",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "Coronal",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "Axial",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1020125,
+              "key": "d520740b-6990-4587-b3e5-038c10b2b627",
+              "title": "summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "We just learned about **multi-planar reconstruction**. This is where we'd take a primary plane and use it to construct additional cardinal planes. \n\n### New Vocabulary\n- **MPR**: multi-planar reconstruction - extraction of non-primary imaging planes from a 3D volume",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1014911,
+          "key": "6d57f89f-87b2-472d-8d55-cab13d383781",
+          "title": "3D Imaging Tasks: 3D Reconstruction",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "6d57f89f-87b2-472d-8d55-cab13d383781",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1014878,
+              "key": "a6f7ed59-e8f2-43d0-b504-12c96ecf67e2",
+              "title": "ND320 C3 L1 16.3 Common 3D Imaging Data Tasks - 3d Reconstruct",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "_pjKdwndpZ8",
+                "china_cdn_id": "_pjKdwndpZ8.mp4"
+              }
+            },
+            {
+              "id": 1014957,
+              "key": "15ff43ed-2751-4111-8c34-0e79c89b82f8",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "15ff43ed-2751-4111-8c34-0e79c89b82f8",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Okay, the term “reconstruction” has been mentioned quite a lot in this lesson, in various contexts. Let’s try to organize those by matching up different types of reconstructions with the purpose that they serve."
+                },
+                "concepts_label": "Task",
+                "answers_label": "Reconstruction Type",
+                "concepts": [
+                  {
+                    "text": "Creating a 2D image from k-space data",
+                    "correct_answer": {
+                      "id": "a1587280206670",
+                      "text": "MRI data reconstruction\n"
+                    }
+                  },
+                  {
+                    "text": "Extracting a 2D image in coronal plane from an image which has been acquired in sagittal",
+                    "correct_answer": {
+                      "id": "a1587280291477",
+                      "text": "Multi-planar reconstruction\n"
+                    }
+                  },
+                  {
+                    "text": "Creating a 2D image from a sinogram\n",
+                    "correct_answer": {
+                      "id": "a1587280292208",
+                      "text": "CT image reconstruction through filtered backprojection\n"
+                    }
+                  },
+                  {
+                    "text": "Creating a 3D volume from CT data",
+                    "correct_answer": {
+                      "id": "a1587280302279",
+                      "text": "3D reconstruction"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1587280291477",
+                    "text": "Multi-planar reconstruction\n"
+                  },
+                  {
+                    "id": "a1587280302279",
+                    "text": "3D reconstruction"
+                  },
+                  {
+                    "id": "a1587280292208",
+                    "text": "CT image reconstruction through filtered backprojection\n"
+                  },
+                  {
+                    "id": "a1587280206670",
+                    "text": "MRI data reconstruction\n"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1020124,
+              "key": "b76fe73c-8352-48af-b7e4-abb1226e8445",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "As you have seen, **3D reconstruction** is creating a 3D image or individual voxels using 2D slices. And we learned about the 2 major methods to do this, either surface meshes or volume meshes. Most 3D medical images will use volume meshes. \n\n### New Vocab\n- **3D reconstruction**: constructing a 3D model from multiple slices of 3D medical imaging data",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1014918,
+          "key": "ea1961c2-4c32-4d08-bff9-9de584145788",
+          "title": "3D Imaging Tasks: Registration",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "ea1961c2-4c32-4d08-bff9-9de584145788",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1014873,
+              "key": "11dc0ef6-176d-48cf-aa6f-c0e0d849fa7a",
+              "title": "ND320 C3 L1 16.4 Common 3D Imaging Data Tasks - Registration",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "OexOaHsHkwA",
+                "china_cdn_id": "OexOaHsHkwA.mp4"
+              }
+            },
+            {
+              "id": 1014883,
+              "key": "82871829-1a2a-42dd-93a8-ae99e5a5d10e",
+              "title": "Quiz",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "82871829-1a2a-42dd-93a8-ae99e5a5d10e",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What is the objective of medical image registration?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "Bring two images into the same **patient-centric** coordinate system",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "Bring two images into the same **scanner-centric** coordinate system",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "Ensure that the image is properly saved in the storage system",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk4",
+                    "text": "Show the images on the screen in proper order",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1014895,
+              "key": "2706114e-2609-4275-84e8-6fef7c81a673",
+              "title": "ND320 C3 L1 16.5 Common 3D Imaging Data Tasks - Outro",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "yvLRj8vd9ms",
+                "china_cdn_id": "yvLRj8vd9ms.mp4"
+              }
+            },
+            {
+              "id": 1014869,
+              "key": "af9b5439-d1d6-4d3d-969d-913fd31aba91",
+              "title": "Summary + Instructions",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this concept, we have learned about some common 3D imaging tasks such as:\n\n* Windowing\n* Multi-planar Registration\n* 3D reconstruction\n* Registration\n\nNow we are invited to do an exercise where you will implement a simple 3D reconstruction algorithm.\n\n### New Vocabulary\n- **Registration**: bringing two different images into same patient-centric coordinate space",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1014914,
+          "key": "abbbe971-b69c-413c-a8a0-5456f2c36140",
+          "title": "Exercise 3: Volumetric Rendering",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "abbbe971-b69c-413c-a8a0-5456f2c36140",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1014896,
+              "key": "5265b79d-c955-4616-992f-f86eb8292fe7",
+              "title": "Intro",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Exercise 3: Volumetric Rendering",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014876,
+              "key": "8a26e946-1efe-4292-b7cd-9b8f585069b6",
+              "title": "ND320 C3 L1 17 Exercise Intro",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "oqsqRDqbJh4",
+                "china_cdn_id": "oqsqRDqbJh4.mp4"
+              }
+            },
+            {
+              "id": 1018599,
+              "key": "9eafd19d-71c9-42f9-8592-a2950ef10946",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1014914xJUPYTERuaho1yim",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-34fom",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Exercise. Volumetric rendering.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1014917,
+          "key": "277664f8-3787-4c6b-b282-5f7e918890d0",
+          "title": "Exercise 3: Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "277664f8-3787-4c6b-b282-5f7e918890d0",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1014891,
+              "key": "9e2c2b14-e638-4360-89f6-aeee158aee90",
+              "title": "Intro",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Exercise 3: Solution\n\nI hope you enjoyed the exercise and have some thoughts on what the mystery volume was. \n\nLet me walk you through the solution and what we have been dealing with in this exercise, as it is important to have certain things sink in.\n\nYou can also find the solution in this repo [here](https://github.com/udacity/nd320-c3-3d-med-imaging/blob/master/clinical-background/exercises/3-volume-rendering/solution/Exercise.%20Volumetric%20rendering.ipynb).",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014877,
+              "key": "7c6c3281-3f85-4dc5-9e43-114f5bb31ab1",
+              "title": "ND320 C3 L1 18 Exercise - Volumetric Rendering Solution Walkthrough",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "OapVS7XeJwo",
+                "china_cdn_id": "OapVS7XeJwo.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 1014913,
+          "key": "d0128e66-c2b5-4788-93e0-7ca1cda31c98",
+          "title": "3D Imaging Tasks: Summary",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d0128e66-c2b5-4788-93e0-7ca1cda31c98",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1014889,
+              "key": "decb2ca7-eed1-4b33-8c84-1e234df57621",
+              "title": "Intro",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Common 3D Imaging Tasks: Recap\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014875,
+              "key": "a0339b7c-f7da-4f81-9d54-d93e55dfbbd7",
+              "title": "Summary",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "FUvJZrfMv0I",
+                "china_cdn_id": "FUvJZrfMv0I.mp4"
+              }
+            },
+            {
+              "id": 1014894,
+              "key": "8de44d9a-af8c-44bf-b8fd-c1dbc3f3efd5",
+              "title": "Summary + Solution",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Summary\n\nWe have touched on some of the most typical tasks that you would likely need to deal with when working with 3D imaging data. \n\nYou will probably use **3D reconstruction** to visualize your volumes. Typically 3D reconstruction capabilities are incorporated into medical imaging viewers and range from basic to very elaborate. In later lessons, we will take a look at some of the tools that you can leverage for this. \n\n**Multi-planar reconstruction** is something that you will do naturally as you will want to extract slices from volumes. MPR is something that any 3D medical image viewer can do, but a data scientist would likely be dealing with cuts through different planes a lot too. We will see examples of MPR further in this course, and you will be writing your own code to do this.\n\n**Windowing** task would have you map 10 or more bits of grayscale to the 256 colors your screen could display (or maybe the RGB colorspace). Windowing is the very standard very basic operation of any medical image viewer (not only 3D one)\n\n**Registration** will pop up if you are looking at tasks that involve combining data from multiple imaging modalities or change of structures in the same patient over time. Registration on its own is not a strictly defined task. There are options - you need to decide e.g. if distances should be preserved in the moving image, or if parallel lines need to be preserved, but the image can be shrunken or expanded. Because of such tradeoffs, registration is always defined within a context of a clinical task. Registration sometimes is available in more advanced image viewers, and there are also tools and libraries that you can lean upon to do it programmatically\n\nAn interesting thing about registration is that it can be formulated as an optimization problem. This problem is quite well studied and has some good analytical solutions, but can also be addressed by deep learning methods. \n\n# Further Resources\n\n* A great overview of registration, methods, and various issues: [Alam, Fakhre & Ur Rahman, Sami & Din, Aziz & Qayum, Fawad. (2018). Medical image registration: Classification, applications and issues. Journal of Postgraduate Medical Institute. 32. 300-3007.](https://www.researchgate.net/publication/329363455_Medical_image_registration_Classification_applications_and_issues) \n* A couple of papers looking at registration as an optimization problem and applying deep learning methods:\n  * [Song G, Han J, Zhao Y, Wang Z, Du H. A Review on Medical Image Registration as an Optimization Problem. Curr Med Imaging Rev. 2017;13(3):274–283. doi:10.2174/1573405612666160920123955](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5543570/)\n  * [Haskins G, Kruger U, Yan P. (2020). Deep Learning in Medical Image Registration: A Survey. Retrieved Mar 2020 from the arXiv database](https://arxiv.org/pdf/1903.02026.pdf). \n* Siemens Healthineers is doing some great research around the photorealistic rendering of medical volumes. Check out their related webpage to see some of the very compelling ways to do 3D reconstruction: https://www.siemens-healthineers.com/medical-imaging-it/advanced-visualization-solutions/syngovia-cinematic",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1014912,
+          "key": "a957e006-98d8-4cec-a11a-1776a21bc741",
+          "title": "Lesson Summary",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a957e006-98d8-4cec-a11a-1776a21bc741",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1014882,
+              "key": "4162a92e-93bb-48e4-9acd-ab42d423e903",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Clinical Recap",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014881,
+              "key": "e3171680-5e07-4623-8cb3-ea87e903e971",
+              "title": "ND320 C3 L1 19 Lesson Outro",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "LfswIFRepUU",
+                "china_cdn_id": "LfswIFRepUU.mp4"
+              }
+            },
+            {
+              "id": 1014892,
+              "key": "2a4a8b18-e404-4590-a9dc-303d5de8e8be",
+              "title": "Vocabulary Terms & Further Research",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Congrats, this was a lot of material that hopefully put you on a good track to comprehend the context of the problems you would be working with, and start digging deeper into data and machine learning techniques. \n\nIn this lesson we have covered the following topics:\n\n- What are 3D medical images?\n- Who uses 3D medical images?\n- Why are they being used?\n- Some example clinical scenarios\n\nAfter that, we did an exercise on picking a suitable problem for an AI project by tapping into publicly available medical resources.\n\nThen, we jumped into some technical details and covered:\n- Physical principles of CT scanners along with an exercise on computing a sinogram\n- Physical principles of MR scanners\n- Covered basic 3D imaging tasks:\n    - Multi-planar reconstruction\n    - 3D reconstruction\n    - Windowing\n    - Registration\n",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

@@ -1,0 +1,1256 @@
+{
+  "data": {
+    "lesson": {
+      "id": 899346,
+      "key": "7a6747f4-af9c-46f4-81c3-915829f59f4d",
+      "title": "Deployment",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Deploy into Kubernetes using continuous delivery",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/7a6747f4-af9c-46f4-81c3-915829f59f4d/899346/1579645820106/Deployment+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/7a6747f4-af9c-46f4-81c3-915829f59f4d/899346/1579645816398/Deployment+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 899337,
+          "key": "8764ae2f-204e-4039-9240-e22807eac583",
+          "title": "Intro and Overview",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "8764ae2f-204e-4039-9240-e22807eac583",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 899281,
+              "key": "fbe3d3dd-0fc7-4d1f-8c6d-d8886c609220",
+              "title": "Header",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Introduction and Overview",
+              "instructor_notes": ""
+            },
+            {
+              "id": 899288,
+              "key": "599cb754-c91c-4499-8f88-1e1ca2bf5a83",
+              "title": "FSND C4 L2 A01 Introduction And Overview",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "jJCOmXZYalE",
+                "china_cdn_id": "jJCOmXZYalE.mp4"
+              }
+            },
+            {
+              "id": 899291,
+              "key": "f521465d-200a-49f1-aaeb-ad4e59462499",
+              "title": "Overview",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Lesson Overview\n\nIn the previous lesson, you learned about Docker containers as a tool to bundle your application with its environment and dependencies. The next step in building a scalable web application is to deploy your container to the cloud. But it isn’t sufficient to just deploy the single container - you will also need to specify how the scaling of that container will take place. \n\nTo manage scaling - spinning up new container instances and shutting them down as they are no longer needed - you will use a _container orchestration service_. There are several options for container orchestration, and in this course we will focus on [Kubernetes](https://kubernetes.io/).\n\nTo round out the production pipeline of your application, you will also learn about some tools to automate the process of building, testing, and deploying your code when you make changes. Automatically building and testing your code when changes are made is called [_continuous integration_](https://en.wikipedia.org/wiki/Continuous_integration). Continuous integration combined with automated deployment is referred to as [_continous delivery_](https://en.wikipedia.org/wiki/Continuous_delivery).\n\nIn this lesson, you will:\n- Learn how to deploy a containerized app using AWS’ Kubernetes service: [EKS](https://aws.amazon.com/eks/).\n- Create a continuous delivery pipeline with [AWS CodePipeline](https://aws.amazon.com/codepipeline/).\n- Set up continuous integration with [AWS CodeBuild](https://aws.amazon.com/codebuild/).",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 899339,
+          "key": "1217326f-4459-4d24-8a19-b2f74c11fae8",
+          "title": "Kubernetes",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "1217326f-4459-4d24-8a19-b2f74c11fae8",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 899287,
+              "key": "b3bf5e00-0d64-4c4a-a03c-e72c65f313c2",
+              "title": "Kubernetes Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Kubernetes",
+              "instructor_notes": ""
+            },
+            {
+              "id": 899297,
+              "key": "65a73bfb-3aec-4231-afa4-8e2b583c0f92",
+              "title": "FSND C4 L2 A02 Kubernetes",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "c-8aBC7WScI",
+                "china_cdn_id": "c-8aBC7WScI.mp4"
+              }
+            },
+            {
+              "id": 899294,
+              "key": "e4a2f607-0d4d-4645-aed3-60afe281681f",
+              "title": "Kubernetes Recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": " ## Kubernetes\n\nRunning an application in a single container alone doesn’t leverage the full power of containerization. One of the major strengths of using containers is the ease of scaling container instances up and down to meet demands, known as _horizontal scaling_.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 928445,
+              "key": "d229d484-e284-4093-bd09-d23814631f29",
+              "title": "Horizontal Scaling",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2019/September/5d719c67_l2-deployment/l2-deployment.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/d229d484-e284-4093-bd09-d23814631f29",
+              "caption": "Horizontal scaling using containers",
+              "alt": "Horizontal scaling using containers",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 928444,
+              "key": "281b8191-1378-4b57-b033-dfb88f8ef69c",
+              "title": "Kubernetes",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Orchestration platforms automate the deployment and scaling of multiple containers. [Kubernetes](https://kubernetes.io/) is one of the most popular platforms of this type, and the platform you will be using. Up next, you will learn some basic Kubernetes concepts and terminology so you’ll be ready to use container orchestration in your project.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 928442,
+          "key": "dbecadf4-04ab-40c5-8049-6ff8a8032a3f",
+          "title": "Kubernetes Concepts",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "dbecadf4-04ab-40c5-8049-6ff8a8032a3f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 899289,
+              "key": "1f239746-eb14-4721-8be0-6e543cce97d1",
+              "title": "Kubernetes Concepts",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Kubernetes Concepts",
+              "instructor_notes": ""
+            },
+            {
+              "id": 899290,
+              "key": "9bdaeaea-2033-46e8-96c2-a6a5139fd470",
+              "title": "FSND C4 L2 A03 Kubernetes Concepts",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "whLoZNRlLNI",
+                "china_cdn_id": "whLoZNRlLNI.mp4"
+              }
+            },
+            {
+              "id": 899293,
+              "key": "d804e721-20e3-4c57-accf-4d4b30ddce00",
+              "title": "Kubernetes Concepts",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Kubernetes Concepts\n- _Cluster_: A group of machines running Kubernetes\n- _Master_: The system which controls a Kubernetes cluster. You will typically interact with the master when you communicate with a cluster. The master includes an api, scheduler, and management daemon.\n- _Nodes_: The machines in a cluster. These can be virtual, physical, or a combination of both.\n- _Pods_: A deployment of an application. This consists of a container, it’s storage resources, and a unique IP address. Pods are not persistent, and may be brought up and down by the master during scaling.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 899296,
+              "key": "6bea6e77-8eec-4fb1-88b1-246a1f4d0335",
+              "title": "Kubernetes Concepts",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2019/September/5d71adc3_image2/image2.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/6bea6e77-8eec-4fb1-88b1-246a1f4d0335",
+              "caption": "Kubernetes clusters consist of a master system, nodes, pods, and services.",
+              "alt": "Kubernetes clusters consist of a master system, nodes and pods",
+              "width": 768,
+              "height": 500,
+              "instructor_notes": null
+            },
+            {
+              "id": 928449,
+              "key": "ff11df08-8804-44c4-ae8f-452e64e03a15",
+              "title": "Kubernetes Service",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In order to have a persistent way to communicate with ephemeral pods, a higher-level service abstraction is provided. Additionally, in order to have a persistent way to store data, volumes can be attached to pods.\n\n- _Service_: An abstraction for communicating with a set of pods",
+              "instructor_notes": ""
+            },
+            {
+              "id": 928448,
+              "key": "57c82a00-56ae-437c-b208-6ec7c08a328b",
+              "title": "Kubernetes Service",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2019/September/5d71ad55_l2-deployment-2/l2-deployment-2.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/57c82a00-56ae-437c-b208-6ec7c08a328b",
+              "caption": "A service and attached volume",
+              "alt": "Kubernetes pods with a connected service and volume",
+              "width": 685,
+              "height": 379,
+              "instructor_notes": null
+            },
+            {
+              "id": 928446,
+              "key": "e4417069-4b13-4844-ad32-1fe4e1ab03de",
+              "title": "Kubernetes Quiz",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Kubernetes Quiz",
+              "instructor_notes": ""
+            },
+            {
+              "id": 899299,
+              "key": "ab93ae2b-0ddb-4232-ac8a-485112be7015",
+              "title": "Kubernetes Concepts",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "ab93ae2b-0ddb-4232-ac8a-485112be7015",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which Kubernetes object defines a persistent way to communicate with a set of Pods?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "Kubernetes Pod’s unique IP",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "Kubernetes Service",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "Kubernetes Node",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 928441,
+              "key": "a24e9a2d-c37a-4094-9615-238916bd0767",
+              "title": "Further Research",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Further Research\n\n- [General Kubernetes documentation](https://kubernetes.io/docs/home/)\n- [Kubernetes volumes documentation](https://kubernetes.io/docs/concepts/storage/volumes/)",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 928443,
+          "key": "e0252aee-3de1-4a6a-b413-2c91b2c44074",
+          "title": "EKS: Kubernetes on AWS",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "e0252aee-3de1-4a6a-b413-2c91b2c44074",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 899329,
+              "key": "0aa14bb8-0957-457f-899f-3f66b45a1bf6",
+              "title": "Kubernetes on AWS",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# EKS: Kubernetes as a managed service on AWS",
+              "instructor_notes": ""
+            },
+            {
+              "id": 899312,
+              "key": "5463f360-f35b-422c-98c9-6ad302b5790b",
+              "title": "FSND C4 L2 A04 EKS Kubernetes As A Service",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "60kEJbFeEAM",
+                "china_cdn_id": "60kEJbFeEAM.mp4"
+              }
+            },
+            {
+              "id": 899282,
+              "key": "13956884-a97a-45bf-9d68-94c6bb433e72",
+              "title": "EKS: Kubernetes as a service Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Amazon Elastic Kubernetes Service (EKS)\n- A managed Kubernetes service\n- Control layer runs the master system\n- Secure networks are set up automatically\n- You only setup Nodes, Pods, and Services\n\n## EKS Quizzes",
+              "instructor_notes": ""
+            },
+            {
+              "id": 899298,
+              "key": "d92504f7-5a6a-45b7-b15a-8878fe3cd1c3",
+              "title": "Kubernetes Quiz",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "d92504f7-5a6a-45b7-b15a-8878fe3cd1c3",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "EKS ensures greater reliability by:",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "Automatically using multiple availability zones",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "Using one node per service",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "Limiting one Pod per service",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk4",
+                    "text": "Limiting one Node per cluster",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 899305,
+              "key": "7ea59d03-fc7e-4d9a-8f3d-bff8483b26be",
+              "title": "Kubernetes Quiz 2",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "7ea59d03-fc7e-4d9a-8f3d-bff8483b26be",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Choose all statements that are true",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "EKS is managed kubernetes",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "EKS automatically manages control nodes",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "EKS simplifies setting up cluster by using automatic database creation",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 899317,
+              "key": "756f70f5-7712-4355-a676-444432af83ee",
+              "title": "Kubernetes Further Research",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Further Research\n\n- [Information about EKS](https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html)",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 899344,
+          "key": "05902002-26ad-4f29-8a46-cdad67523905",
+          "title": "AWSCLI",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "05902002-26ad-4f29-8a46-cdad67523905",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 899309,
+              "key": "a37bdfb9-49ee-496a-a81d-c96beb51501c",
+              "title": "awscli",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## awscli: \n\nIn this course, you will be interacting with AWS EKS and other AWS services mostly through the command line interface. To do this, you will need to install and configure a few command line tools. The first of these is [awscli](https://aws.amazon.com/cli/) which is the official AWS command line tool.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 899307,
+              "key": "770e653a-a540-4d02-b080-aa6ccd4e3282",
+              "title": "FSND C4 L2 A05 Setting Up AWSCLI",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "5_gSHBYI32U",
+                "china_cdn_id": "5_gSHBYI32U.mp4"
+              }
+            },
+            {
+              "id": 899315,
+              "key": "6d221928-4243-410a-9ac1-a33db6b4bd58",
+              "title": "AWSCLI",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Install and try awscli\n- To install in a python virtual environment run `pip install awscli --upgrade` , for other environments see installation instructions [here](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html).\n- Generate keys at the IAM console [here](https://console.aws.amazon.com/iam/home#/users).\n- Run `aws configure` with the keys from above to setup your profile.\n- Check that your profile is set: `aws configure list`.\n- For troubleshooting, have a look at the documentation [here](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html).\n- To test you installation, try listing your S3 buckets: `aws s3 ls`. This will show all of the S3 buckets in your account.\n\n## awscli Quiz",
+              "instructor_notes": ""
+            },
+            {
+              "id": 899336,
+              "key": "6213952a-453b-47b1-996b-de31e08b2ddf",
+              "title": "awscli",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "6213952a-453b-47b1-996b-de31e08b2ddf",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "awscli is used to:",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "Interact with AWS services from the command line",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "Generate access keys in the IAM console",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "Interact with multiple cloud providers, such as AWS, Azure, and GCloud",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 899341,
+          "key": "bb2c08fc-06c0-4d5b-a8e7-e4c4e52a6308",
+          "title": "Installing eksctl",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "bb2c08fc-06c0-4d5b-a8e7-e4c4e52a6308",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 899331,
+              "key": "eff62874-6484-469f-8829-ad6cb90e7d19",
+              "title": "eksctl",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## eksctl: A command line tool which greatly simplifies EKS cluster creation",
+              "instructor_notes": ""
+            },
+            {
+              "id": 899302,
+              "key": "a6e264a5-adcc-4c94-97e0-fe2fbe62638e",
+              "title": "FSND C4 L2 A06 Eksctl",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "T0siGTkuDBw",
+                "china_cdn_id": "T0siGTkuDBw.mp4"
+              }
+            },
+            {
+              "id": 899320,
+              "key": "96b6f21a-e129-4c5c-bb8a-b3cf219ac3e7",
+              "title": "recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## eksctl Installation\n- Latest Linux: \n```\ncurl --silent --location \"https://github.com/weaveworks/eksctl/releases/download/latest_release/eksctl_$(uname -s)_amd64.tar.gz\" | tar xz -C /tmp\nsudo mv /tmp/eksctl /usr/local/bin\n```\n- Mac using [Homebrew](https://brew.sh/):\n```\nbrew tap weaveworks/tap\nbrew install weaveworks/tap/eksctl\n```\n- Windows using [Chocolatey](https://chocolatey.org/):\n```\nchocolatey install eksctl\n```\n\nFor more installation information see the installation instructions [here](https://eksctl.io/introduction/installation/).",
+              "instructor_notes": ""
+            },
+            {
+              "id": 899323,
+              "key": "53fcea61-14c8-4fa4-8134-7851f8eaa5d3",
+              "title": "EKSCTL Problem set",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "53fcea61-14c8-4fa4-8134-7851f8eaa5d3",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "eksctl is a command line tool designed to simplify",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "Managing Pods and Services",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "Creating EKS clusters",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "Interacting with all of AWS",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 899338,
+          "key": "a967854d-a9e2-49c7-8cfc-8534faf9fd07",
+          "title": "Installing kubectl",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a967854d-a9e2-49c7-8cfc-8534faf9fd07",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 899295,
+              "key": "4caf01a8-9dfc-4a17-9827-1f9f555b305c",
+              "title": "kubectl",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## kubectl: A commandline tool for interacting with kubernetes clusters",
+              "instructor_notes": ""
+            },
+            {
+              "id": 899284,
+              "key": "d4f153fc-b9c9-47dd-a120-7e91056b9b77",
+              "title": "FSND C4 L2 A07 Kubectl",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Rbs6u1BEtwk",
+                "china_cdn_id": "Rbs6u1BEtwk.mp4"
+              }
+            },
+            {
+              "id": 899285,
+              "key": "77c2fb27-e685-4bd0-b52a-34ee96c2471e",
+              "title": "recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n## Installation instructions:\nInstallation instructions for kubectl can be found [here](https://kubernetes.io/docs/tasks/tools/install-kubectl/).\n\n## More Information:\nAdditional information about kubectl syntax and available commands can be found [here](https://kubernetes.io/docs/reference/kubectl/overview/).\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 899283,
+              "key": "74800b07-d13f-47de-a3aa-4deaa8a55141",
+              "title": "Kubectl Problem Set",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "74800b07-d13f-47de-a3aa-4deaa8a55141",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Kubectl can be used to",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "Check status of pods in a Kubernetes cluster",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "Check the contents of a S3 bucket",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "Easily set up an EKS cluster and it’s associated services",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 899343,
+          "key": "ab69039b-0393-4233-8c51-0de2314f0517",
+          "title": "Creating an EKS Cluster",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "ab69039b-0393-4233-8c51-0de2314f0517",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 899286,
+              "key": "e96b87d1-49ec-4d1c-91ea-d387750d7dc6",
+              "title": "Header",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Creating an EKS Cluster",
+              "instructor_notes": ""
+            },
+            {
+              "id": 899318,
+              "key": "aef8adc5-914a-48f7-8cd1-c8fb8cfa0d4d",
+              "title": "FSND C4 L2 A08 Creating A Cluster",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "hg7wU0DsvN0",
+                "china_cdn_id": "hg7wU0DsvN0.mp4"
+              }
+            },
+            {
+              "id": 899322,
+              "key": "570b5ee3-759f-4a5c-a33d-5a1bbbea53ee",
+              "title": "Creating a cluster",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "To clarify, there are two consoles in AWS that can be used to manage EKS services: the [EKS console](https://us-east-2.console.aws.amazon.com/eks/home?region=us-east-2#/clusters), and the [CloudFormation console](https://us-east-2.console.aws.amazon.com/cloudformation/\n). [CloudFormation](https://aws.amazon.com/cloudformation/) allows you provision all the infrastructure resources that you will need using simple text files, and we will be using CloudFormation going forward in the course.\n\n## Creating an EKS Cluster\n- Create the cluster: `eksctl create cluster --name eksctl-demo`\n- Go to the [CloudFormation console](https://us-east-2.console.aws.amazon.com/cloudformation/\n) to view progress. If you don’t see any progress, be sure that you are viewing clusters is the same region that they are being created. For example, if `eksctl` is using region `us-west-2`, you’ll need to set the region to “US West (Oregon)” in the dropdown menu in the upper right of the console.\n- Once the status is ‘CREATE_COMPLETE’, check the health of your clusters nodes: `kubectl get nodes`\n- From the CloudFormation console, select your stack and choose delete from the actions menu, or delete using eksctl: `eksctl delete cluster eksctl-demo`.\n\n## Summary of Command Line Tools\n\nNote that you have now been introduced to three command line tools that you can use to work with AWS EKS services:\n- AWSCLI: This tool allows you to interact with a wide variety of AWS services, not just EKS. Although there are aws commands to create or modify EKS services, this is a much more manual approach than using the other options.\n- eksctl: This command line tool allows you to run commands against a kubernetes cluster. This is the best tool for creating or deleting clusters from the command line, since it will take care of all associated resources for you.\n- kubectl: This tool is used to interact with an existing cluster, but can’t be used to create or delete a cluster.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 899332,
+              "key": "4664f18b-28c0-42dc-9ce1-0dd340e7f87e",
+              "title": "creating cluster",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "4664f18b-28c0-42dc-9ce1-0dd340e7f87e",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which command creates an EKS cluster with default values, including nodes and vpc?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "`eksctl create cluster`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "`aws eks create-cluster`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "`kubectl create cluster`",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 899335,
+              "key": "50abbf52-0b48-4406-be5d-3a357ce21ae6",
+              "title": "creating cluster",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "50abbf52-0b48-4406-be5d-3a357ce21ae6",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which command would you use to get the status of the nodes in your cluster?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "`eksctl get nodes`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "`kubectl get nodes`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "`aws configure`",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 906691,
+              "key": "d41f57c8-12fb-4ad9-90d9-8090d7c3ce6e",
+              "title": "creating cluster",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "d41f57c8-12fb-4ad9-90d9-8090d7c3ce6e",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "How do you delete a cluster along with all of its associated resources?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "Delete it in the EKS console",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "Delete its stack in the CloudFormation console",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "Delete its stack using `eksctl delete cluster`",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 899326,
+              "key": "b9324355-7d9b-44a7-a134-8493d665bef7",
+              "title": "Delete Cluster Task",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "b9324355-7d9b-44a7-a134-8493d665bef7",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "I have deleted the cluster created in the steps above either with `eksctl delete` or  using the CloudFormation console."
+              ],
+              "positive_feedback": "Great work! Clusters are not free to run, so you want to be sure to delete unused clusters to avoid incurring costs.",
+              "video_feedback": null,
+              "description": "Delete the EKS Cluster"
+            },
+            {
+              "id": 899330,
+              "key": "76114f37-6603-4684-a8bd-0ef9e3fe6ae9",
+              "title": "Summary creating clusters",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Creating a EKS Cluster: Key Points\n- eksctl makes it easy to create a cluster and all of the resources needed to use it\n- kubectl communicates the clusters master system and can be used to interact with nodes, pods, and services\n- When deleting a cluster, use `eksctl delete` or the CloudFormation console to avoid leaving dangling resources",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 899342,
+          "key": "0a604d5e-ea95-403c-83ab-8a70b9ae14bf",
+          "title": "CodePipeline",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "0a604d5e-ea95-403c-83ab-8a70b9ae14bf",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 899311,
+              "key": "dd1da849-2a18-453b-af4a-90bf09a7a337",
+              "title": "Codepipeline",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# CodePipeline\n\n## Continuous Delivery: Automating the preparation of code for release",
+              "instructor_notes": ""
+            },
+            {
+              "id": 899300,
+              "key": "61b5c756-3a6b-46f1-8639-9f7106a66f13",
+              "title": "FSND C4 L2 A09 What Is Contiuous Delivery",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "nEOvFS6XNMQ",
+                "china_cdn_id": "nEOvFS6XNMQ.mp4"
+              }
+            },
+            {
+              "id": 899325,
+              "key": "a84145a7-2913-46b0-b6c7-f5a615966c9d",
+              "title": "continuous delivery",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Continuous Delivery\n- Used for small incremental releases or frequent releases\n- Automates code compilation, testing and packaging\n- May involve human QA before final release or automated release to production",
+              "instructor_notes": ""
+            },
+            {
+              "id": 899308,
+              "key": "5c660a52-a034-4e8c-9fe3-36a8fc4ea2f7",
+              "title": "continuous delivery",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "5c660a52-a034-4e8c-9fe3-36a8fc4ea2f7",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which is an advantage of continuous delivery?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "Tests are easier to write when your codebase is small",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "Customer feedback can happen sooner if releases are more frequent",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 899334,
+              "key": "1454360b-f26c-47d6-b13b-a03cd0c0fa49",
+              "title": "CodePipeline",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## CodePipeline: Continuous delivery as a managed service.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 899316,
+              "key": "0a62cc7f-03d2-42ad-8191-2e8341f8b129",
+              "title": "FSND C4 L2 A10 CodePipeline",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "KRKzHojqrWU",
+                "china_cdn_id": "KRKzHojqrWU.mp4"
+              }
+            },
+            {
+              "id": 899301,
+              "key": "5343b91b-5e31-4052-9615-656c136749c2",
+              "title": "CodePipeline recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## CodePipeline\n- Controls the release process through user defined pipelines\n- Pipelines are created either through the CodePipeline console or using awscli\n- Pipelines watch a source code repository, changes to this repository trigger pipeline action\n- Pipelines are made up of stages\n- Each stage consists of one or more actions\n- There are actions to define the source repository, as well as instructions for testing, building, deploying and options for approval\n- Pipelines can be managed and viewed in the [CodePipeline console](https://us-east-2.console.aws.amazon.com/codesuite/codepipeline/pipelines/)\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 899324,
+              "key": "18bc9d5b-f9ad-4a62-9cf4-b8af51f2c46f",
+              "title": "Example Pipeline",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2019/July/5d30dd3e_image1/image1.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/18bc9d5b-f9ad-4a62-9cf4-b8af51f2c46f",
+              "caption": "An example pipeline",
+              "alt": "Pipelines consist of stage containing actions and transition in between",
+              "width": 960,
+              "height": 720,
+              "instructor_notes": null
+            },
+            {
+              "id": 899333,
+              "key": "6358a3df-7299-4669-a3c6-521b920a8051",
+              "title": "CodePipeline Quiz",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "6358a3df-7299-4669-a3c6-521b920a8051",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "A CodePipeline stage is limited to a single action",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "True",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "False",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 899321,
+              "key": "634e53a6-6c76-4dcc-8bea-752ff5f9853f",
+              "title": "CodePipeline Quiz",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "634e53a6-6c76-4dcc-8bea-752ff5f9853f",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "There are CodePipeline actions designed to",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "Define a source code repository",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "Define how to run tests",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "Define how to deploy",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk4",
+                    "text": "Define a build process",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk5",
+                    "text": "Define an approval process",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 906717,
+              "key": "0b4dbd41-3bcd-40d6-847d-20e413efda74",
+              "title": "Code Pipeline Resources",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Additional Information\nYou can find additional information about CodePipeline [here](https://docs.aws.amazon.com/codepipeline/latest/userguide/concepts.html).\nFor more information on CloudFormation templates see: [Working with CloudFormation Templates](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-guide.html).",
+              "instructor_notes": ""
+            },
+            {
+              "id": 906892,
+              "key": "a97119b4-6c8f-42e7-a7c3-c98885d9227a",
+              "title": "CloudFormation Template",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "When you create a CodePipeline pipeline you should do so in the context of a CloudFormation stack. CloudFormation is a service for managing the creation of Amazon resources. Resources created together are grouped in a stack. This makes it easy to see related resources in the CloudFormation console. \nCloudFormation stacks are defined in template files. These files define all of the resources for your stack. CodeFormation templates contain sections for  resources used in a stack and parameters to be set when the stack is created. A great way to get started with CloudFormation is to use one of the [sample templates](https://aws.amazon.com/cloudformation/aws-cloudformation-templates/). There are instructions for trying a sample template [here](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/GettingStarted.Walkthrough.html). This walks you through using a sample template to setup and tear down the resources necessary to run a wordpress site.\n\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 899340,
+          "key": "67b3f3bc-82e9-413c-ab10-779e21ba60da",
+          "title": "CodeBuild",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "67b3f3bc-82e9-413c-ab10-779e21ba60da",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 899328,
+              "key": "d0233018-ba0d-44e2-8e3c-7314426e1a53",
+              "title": "CodeBuild",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# CodeBuild: An AWS Continuous Integration service\n\n## Continuous Integration: The first part of Continuous Delivery",
+              "instructor_notes": ""
+            },
+            {
+              "id": 899310,
+              "key": "ff3e9abd-579f-43aa-a480-b46077da4bba",
+              "title": "FSND C4 L2 A11 CodeBuild",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "I9KyZwS3QCU",
+                "china_cdn_id": "I9KyZwS3QCU.mp4"
+              }
+            },
+            {
+              "id": 899306,
+              "key": "5adda743-d03b-44d2-9594-a7a8d8f3ed8e",
+              "title": "Codebuild recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## CodeBuild Recap\n- Continuous Integration: frequent check-ins to a central repository which trigger automated builds and tests\n- CodeBuild: A fully managed continuous integration system offered by AWS\n- Codebuild can be added as an action to a CodePipeline stage\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 906716,
+              "key": "52bb68f8-1bd6-4b9b-8103-4a86caa1e871",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2019/July/5d40e0e0_l2-deployment-1/l2-deployment-1.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/52bb68f8-1bd6-4b9b-8103-4a86caa1e871",
+              "caption": "CodeBuild can be added to a continuous delivery pipeline to handle continuous integration.",
+              "alt": "",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 899292,
+              "key": "0c0d8fcc-2cd2-4ae0-8db9-16c539270411",
+              "title": "CodeBuild",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "0c0d8fcc-2cd2-4ae0-8db9-16c539270411",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "One of the motivations for Continuous Integration is to:",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "Catch bugs earlier in the development process",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "Release the developer from the burden of bug fixing",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 899327,
+              "key": "045b9500-336d-412a-aad6-2daedd0e4568",
+              "title": "CodeBuild",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "045b9500-336d-412a-aad6-2daedd0e4568",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "CodeBuild is designed to do the following",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "Compile code",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "Run tests",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "Define a source repository",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk4",
+                    "text": "Create deployable packages",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 899314,
+              "key": "549e0745-b25c-45b2-914a-93513c110f5d",
+              "title": "More resources",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Additional Resources\n- General information about CodeBuild can be found [here](https://aws.amazon.com/codebuild/).\n- AWS instructions on how to create a pipeline with CodeBuild and CodePipeline can be found [here](https://docs.aws.amazon.com/codebuild/latest/userguide/how-to-create-pipeline.html).\n- Documentation on Buildspec files can be found [here](https://docs.aws.amazon.com/codebuild/latest/userguide/build-spec-ref.html)\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 906891,
+              "key": "8c86c467-f184-4f7d-bc3a-ebdcd15ca4c5",
+              "title": "Build Spec File",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "The instructions that a CodeBuild stage will follow are put in a build spec file named `buildspec.yml`. This file contains all of the commands that the build will run and any related settings. This file should be placed at the root of your project directory.  Amazon supplies [CodeBuild samples](https://docs.aws.amazon.com/codebuild/latest/userguide/samples.html), you can see examples of build spec files there. The sample for a simple Docker custom image has the build spec:\n\n```\nversion: 0.2\n\nphases:\n  install:\n    commands:\n      - nohup /usr/local/bin/dockerd --host=unix:///var/run/docker.sock --host=tcp://127.0.0.1:2375 --storage-driver=overlay2&\n      - timeout 15 sh -c \"until docker info; do echo .; sleep 1; done\"\n  pre_build:\n    commands:\n      - docker build -t helloworld .\n  build:\n    commands:\n      - docker images\n      - docker run helloworld echo \"Hello, World!\" \n```\nYou can see that it is divided into the phases ‘install’, ‘pre_build’, and ‘build’. Each phase contains commands, which are the same commands you would use to run Docker locally.  You can read about the build spec syntax [here](https://docs.aws.amazon.com/codebuild/latest/userguide/build-spec-ref.html#build-spec-ref-syntax)",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 899345,
+          "key": "50954a6d-66b9-427a-8e4f-7f2545870c61",
+          "title": "Summary",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "50954a6d-66b9-427a-8e4f-7f2545870c61",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 899319,
+              "key": "e7a5c76b-8b8c-46c1-ab5d-3e9ffcc143e3",
+              "title": "## Deployment Lesson Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Deployment Lesson Summary",
+              "instructor_notes": ""
+            },
+            {
+              "id": 899304,
+              "key": "49f82635-d131-429e-8cc5-03f5bc4a7ac9",
+              "title": "FSND C4 L2 A12 Lesson Summary",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "rTY1E8D18nw",
+                "china_cdn_id": "rTY1E8D18nw.mp4"
+              }
+            },
+            {
+              "id": 899303,
+              "key": "80c19f49-3982-4a12-ac1e-39cb33ee49a0",
+              "title": "recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Deployment Concepts\n\nThroughout this lesson, you’ve learned about the following concepts:\n\n- Kubernetes: A container orchestration system\n- EKS: Kubernetes as a service\n- awscli: a command line tool for interacting with AWS services\n- eksctl: a command line tool for creating EKS clusters and their associated services\n- kubectl: a command line tool for interfacing with a Kubernetes cluster\n- Continuous Delivery: A software deployment practice involving Continuous Integration along with automated deployments\n- Continuous Integration: A development practice combining pushing frequent small code changes alone with automated testing and build\n- CodePipeline: An AWS service for designing and running continuous delivery pipelines\n- CodeBuild: An AWS service for implementing continuous integration\n\nGreat work on your progress so far! In the next lesson, you put all of these concepts together to deploy an application for your project!",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

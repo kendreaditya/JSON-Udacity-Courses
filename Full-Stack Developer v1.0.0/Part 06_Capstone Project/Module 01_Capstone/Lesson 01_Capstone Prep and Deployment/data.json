@@ -1,0 +1,317 @@
+{
+  "data": {
+    "lesson": {
+      "id": 947876,
+      "key": "22de0129-9744-4580-894b-a9cfd1083375",
+      "title": "Capstone Prep and Deployment",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "In this lesson you’ll be introduced to the Capstone project and Heroku, a new tool you’ll use to deploy your API. ",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": null,
+      "resources": null,
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 947875,
+          "key": "ba5b80c9-aae9-42bd-98cf-9faddade53e6",
+          "title": "Introduction to FSND Capstone",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "ba5b80c9-aae9-42bd-98cf-9faddade53e6",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 947855,
+              "key": "6cf4788f-781d-43b7-bf86-491d349afe0d",
+              "title": "So you think you're ready for the Capstone?",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# So You Think You're Ready for Capstone\nWelcome to Capstone! Before we dive into the project, take stock of all you've learned through the course of this nanodegree. In this Capstone project, you'll be challenged to use all of the concepts and the skills taught in the courses to build an API from start to finish and host it. \n\nBelow are the skills you've learned summarized. Note which elements feel comfortable for you and which you may feel less sure of. Those that you are comfortable with, consider this an opportunity to confirm that your ability with that skill. For those that you are less confident in, this is an opportunity to reinforce those skills and walk away very confident in them. \n\n- Coding in Python 3\n- Relational Database Architecture\n- Modeling Data Objects with SQLAlchemy\n- Internet Protocols and Communication\n- Developing a Flask API\n- Authentication and Access\n- Authentication with Auth0\n- Authentication in Flask\n- Role-Based Access Control (RBAC)\n- Testing Flask Applications\n- Deploying Applications \n\n#### Using This Lesson\nIn various parts of this lesson, you can just read through the information or try it out using a simple sample project that will be linked. Take the path that works best for you and reference the information whenever you need to. \n\nWith our toolbox in hand, let's see what we're getting into with this Capstone!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 947853,
+              "key": "e1ec0300-d366-4e41-ba4f-7d2a189ea1ae",
+              "title": "Rubric Overview",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Rubric\nThe [rubric](https://review.udacity.com/#!/rubrics/2682/view) includes five sections that map to each of the four courses you took in Nanodegree and a fifth regarding Code Quality & Documentation. Before starting the project, ensure you've reviewed the rubric and are clear on the expectations. Review it again before submitting your capstone.\n\n### General Specifications\nFor the Capstone, you'll notice that the project has two sets of *Specifications*. The Capstone is domain-unspecific, meaning that you can choose to create your API with regards to any topic. You'll build it from the ground up - from the data model to the users and permissions. We purposefully included this section to challenge you to choose some data and think through how it should be modeled and made accessible via your API. \n\nThe general specifications do include requirements for the complexity of the application. For instance, you must include at least two classes in your models. You should feel free to exceed these specifications if you are so inspired!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 947867,
+              "key": "8fa145ed-5cca-4db0-8532-6a2f2a809a0c",
+              "title": "(Optional) Casting Agency Specs",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### (Optional) Casting Agency Specs\nIn addition to the general specs, we provided specifications for a *Casting Agency* project that meets the general specs. It details exactly how the API should be structured: models, attributes, endpoints, roles, permissions, and tests. If you find yourself stumped about the content of your API, feel free to use the Casting Agency specs or modify them as you wish!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 947854,
+              "key": "f93085f4-d73d-48af-845f-f18d55a483ab",
+              "title": "Deploying and Hosting Your Capstone Project",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Deploying and Hosting Your Capstone\n\nDuring the last course, you learned how to containerize your application with Docker and deploy it to AWS EKS. In this Capstone, we'll introduce you to a new tool to deploy your application - Heroku. Heroku is a cloud platform you can use for free and is a popular tool for smaller companies, those not using AWS, and personal projects. \n\nPrior to starting the Capstone, we'll talk about Heroku, learn how to configure an application for Heroku and deploy it to the cloud platform. Let's go!",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 947873,
+          "key": "df94a430-2ccd-4489-b318-4062e8c2df24",
+          "title": "Introduction to Heroku",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "df94a430-2ccd-4489-b318-4062e8c2df24",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 947868,
+              "key": "140e3537-0819-434b-839a-e416d7eb5eb7",
+              "title": "What is Heroku?",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## What is Heroku?\nHeroku is a cloud platform where developers host applications, databases and other services in several languages including Ruby, Java, Node.js, Scala, Clojure, Python, PHP, and Go. Developers use Heroku to deploy, manage, and scale applications. \n\nIt is easy and flexible to use. It’s almost as straightforward as pushing a repository to Github, plus a few extra commands. Due to this ease of use, it's often used by small development firms, entrepreneurs and individual programmers to host their applications. Heroku is also free, with paid specialized memberships, and most services such as a database offer a free tier. \n\nWant to learn a little more? Start [here](https://www.heroku.com/platform). ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 947859,
+              "key": "a171ded7-35d9-47b8-9ded-94823039ecf9",
+              "title": "Getting Started on Heroku",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Getting Started on Heroku\nBefore we can do anything with Heroku, we need to do two things. First, we need to create an account with Heroku [here](https://signup.heroku.com/) and then we need to download the Heroku CLI (Command Line Interface) in order to run commands from the terminal that enable us to create a Heroku application and manage it. \n\nAfter you create your account, install Heroku with Homebrew by running:\n\n```\nbrew tap heroku/brew && brew install heroku\n```\n\nIf you need alternate instructions for the download they can be found [here](https://devcenter.heroku.com/categories/command-line). You can verify the download by typing `which heroku`. \n\nOnce you have the Heroku CLI you can start to run Heroku commands! Enter `heroku login` and then provide your authentication information. Now you can start running Heroku commands for your account and applications. \n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 947857,
+              "key": "0f4a0c63-a239-4981-b631-992d9d313bb3",
+              "title": "Heroku CLI",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "0f4a0c63-a239-4981-b631-992d9d313bb3",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "I created my Heroku account",
+                "I downloaded the Heroku CLI",
+                "I logged into Heroku in the terminal"
+              ],
+              "positive_feedback": "You could now create an app from the command line! But before you do, let’s talk about how to configure an application. ",
+              "video_feedback": null,
+              "description": "Before moving forward, set up your machine for Heroku: "
+            }
+          ]
+        },
+        {
+          "id": 947872,
+          "key": "2b3b2652-1a36-4ca5-a9f9-e92472dfaea6",
+          "title": "Deployment Configuration",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "2b3b2652-1a36-4ca5-a9f9-e92472dfaea6",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 947856,
+              "key": "b4d0e277-999f-44c0-a9ce-e7f191082082",
+              "title": "Introduction to Heroku Deployment",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Introduction to Heroku Deployment\nIn the last course, you learned how to deploy applications to AWS EKS. Because Heroku is so easy to use, we'll be able to get you up and running with Heroku a bit faster. Though Heroku is easy to use, it will require us to make some updates to how we structure our application so Heroku can build and run the application properly. \n\nIn this section, we'll discuss how to build and configure your application such that it runs properly on Heroku. Here's a sneak peek of what that entails:\n- Creating and updating a `requirements.txt` file to install dependencies\n- Setting up your environment variables\n- Using a `Procfile`, using gunicorn to run the application\n\nWe'll also discuss creating and managing your database in the next concept.\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 947866,
+              "key": "48abb0a2-84bd-4c38-97af-f6210b75acc0",
+              "title": "Installing Dependencies",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Installing Dependencies\nDeploying an application to Heroku is as simple as pushing that repository to Heroku, just like Github. Heroku does a lot of things behind the scenes for us when we push a repository - including installing dependencies. For a Python application, Heroku looks for a `requirements.txt` file that needs to include all of your dependencies. \n\n*If you want to follow along* using the sample project, fork and clone it from this [link](https://github.com/udacity/FSND/tree/master/projects/capstone/heroku_sample/starter) before continuing. The sample project is live at [https://sample-cem.herokuapp.com/](https://sample-cem.herokuapp.com/). Try endpoints `/` and `/coolkids`.\n\nIn order to save our package requirements we'll use the following command: \n```\npip freeze > requirements.txt\n```\n\nPip freezing is a process in which pip reads versions of all packages in the current virtual environment and saves them to a text file. In our case, this the text file that Heroku will use to install dependencies. \n\nBe advised: the requirements.txt file does not automatically update if you install a new library. It's like a snapshot - any changes after aren't reflected in a past snapshot. You'll want to ensure `requirements.txt` is up to date before pushing your app to Heroku. \n\nIf you want to learn more about pip, check out this segment of [Websauna documentation](https://websauna.org/docs/tutorials/deployment/freeze.html).",
+              "instructor_notes": ""
+            },
+            {
+              "id": 947863,
+              "key": "7a557483-7956-4503-aaa9-cce3068038f1",
+              "title": "Environment Configuration",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Environment Configuration \nIn previous projects, you used a bash file to set up local environment variables. You'll do the same here. We want them all contained in the same kind of file for easier transfer later to the Heroku interface. \n\nIf you're following along in the project, use `touch setup.sh` and set up all of your environment variables in that file. \n\nMost of the work we do for Heroku will be in our application files or the command line. In order to give you some familiarity with the web interface, we'll set up the environment variables there, after we deploy our application. For now, check out the screenshot below to get used to the interface. Once you're in a project's settings, you'll see an option to `Reveal Config Vars`. Once you click on that, a table similar to that you see below will appear. Here, you define your variables just as you did in the `setup.sh` file, just without the equals signs! ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 947877,
+              "key": "d489f8a0-c04f-41aa-888a-cbd4fcef084b",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2019/September/5d92608a_heroku-configuration-settings/heroku-configuration-settings.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/d489f8a0-c04f-41aa-888a-cbd4fcef084b",
+              "caption": "After hitting `Reveal Config Vars` you’ll see a table like this where you can define environment variables for your hosted Heroku app. ",
+              "alt": "Heroku Configuration Vars",
+              "width": 512,
+              "height": 275,
+              "instructor_notes": null
+            },
+            {
+              "id": 947865,
+              "key": "f877f331-9332-4ece-8921-42f1a06deff3",
+              "title": "Gunicorn for Heroku",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Gunicorn\n\nGunicorn is a pure-Python HTTP server for WSGI applications. We'll be deploying our applications using the Gunicorn webserver. \n\nFirst, we need to install gunicorn using `pip install gunicorn`. Next `touch Procfile` to create the file. \n\nProcfile is exceedingly simple. It only needs to include one line to instruct Heroku correctly for us: `web: gunicorn app:app`. Just make sure your app is housed in `app.py` as it is in the sample project. Go ahead and make those updates to the sample project if you're following along. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 947862,
+              "key": "4bb3fb6b-7678-4bf9-bd65-426368600c41",
+              "title": "Process Check",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "4bb3fb6b-7678-4bf9-bd65-426368600c41",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What’s the correct command to run after each time you install or update a package?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "pip freeze",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "source setup.sh",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "heroku add requirements.txt",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk4",
+                    "text": "pip freeze > requirements.txt",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 947870,
+          "key": "4cccdb28-f803-428e-9e50-416fdf628477",
+          "title": "Database Migrations",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "4cccdb28-f803-428e-9e50-416fdf628477",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 947860,
+              "key": "617b5be3-9b52-44d7-8c42-db957696577f",
+              "title": "DB Migrations for Heroku",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Database Manage & Migrations on Heroku\nIn the data modeling course, you learned how to use migrations to manage your database schema and changes that you make to it. Heroku can run all your migrations to the database you have hosted on the platform, but in order to do so, your application needs to include a `manage.py` file. \n\nWe'll need three new packages in the file. Run the following commands to install them:\n\n```\npip install flask_script\npip install flask_migrate\npip install psycopg2-binary\n```\n\nThe `manage.py` file will contain the following code: \n\n```Python\nfrom flask_script import Manager\nfrom flask_migrate import Migrate, MigrateCommand\n\nfrom app import app\nfrom models import db\n\nmigrate = Migrate(app, db)\nmanager = Manager(app)\n\nmanager.add_command('db', MigrateCommand)\n\n\nif __name__ == '__main__':\n    manager.run()\n```\n\nNow we can run our local migrations using our `manage.py` file, to mirror how Heroku will run behind the scenes for us when we deploy our application:\n\n```\npython manage.py db init\npython manage.py db migrate\npython manage.py db upgrade\n```\n\nThose last commands are the essential process that Heroku will run to ensure your database is architected properly. We, however, won't need to run them again unless we're testing the app locally. \n\n*REMINDER:* Because you installed new packages you need to use freeze again to update the `requirements.txt` file. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 947878,
+              "key": "f1695bbd-2843-4fcd-b64f-0ad97b5012c3",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2019/September/5d9260c3_folder-structure/folder-structure.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/f1695bbd-2843-4fcd-b64f-0ad97b5012c3",
+              "caption": "Before moving forward, make sure that your file structure matches that above if you’re working on the sample project. ",
+              "alt": "Setup.sh file Requirements.txt file Procfile Models.py file Manage.py file App.py file .gitignore file Migrations folder _pycache_ folder",
+              "width": 594,
+              "height": 458,
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 947874,
+          "key": "5b622b9e-a897-49ab-9ce7-684bec9636db",
+          "title": "Deploy and Test!",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5b622b9e-a897-49ab-9ce7-684bec9636db",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 947858,
+              "key": "5979b55f-8a2f-4c24-b758-b8ea8343626a",
+              "title": "Deploying",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Deploying to Heroku \nAlright, it's the moment of truth! Now that you've learned how to configure an application for Heroku, you'll go ahead and deploy your application so you can access it from the cloud, as well as share it with others. \n\n#### Create Heroku app\nIn order to create the Heroku app run `heroku create name_of_your_app`. The output will include a *git url* for your Heroku application. Copy this as, we'll use it in a moment. \n\nNow if you check your Heroku Dashboard in the browser, you'll see an application by that name. But it doesn't have our code or anything yet - it's completely empty. Let's get our code up there. \n\n#### Add git remote for Heroku to local repository\nUsing the *git url* obtained from the last step, in terminal run: `git remote add heroku heroku_git_url`.\n\n#### Add postgresql add on for our database\nHeroku has an addon for apps for a postgresql database instance. Run this code in order to create your database and connect it to your application: `heroku addons:create heroku-postgresql:hobby-dev --app name_of_your_application`\n\nBreaking down the `heroku-postgresql:hobby-dev` section of this command, heroku-postgresql is the name of the addon. `hobby-dev` on the other hand specifies the tier of the addon, in this case the free version which has a limit on the amount of data it will store, albeit fairly high. \n\nRun `heroku config --app name_of_your_application` in order to check your configuration variables in Heroku. You will see DATABASE_URL and the URL of the database you just created. That's excellent, but there were a lot more environment variables our apps use. \n\n#### Go fix our configurations in Heroku \nIn the browser, go to your Heroku Dashboard and access your application's settings. Reveal your config variables and start adding all the required environment variables for your project. For the purposes of the sample project, just add one additional one - ‘EXCITED’ and set it to `true` or `false` in all lowercase. \n\n#### Push it! \nPush it up! `git push heroku master`\n\n#### Run migrations\nOnce your app is deployed, run migrations by running: `heroku run python manage.py db upgrade --app name_of_your_application`\n\n#### That's it! \nAnd now you have a live application! Open the application from your Heroku Dashboard and see it work live! Make additional requests using curl or Postman as you build your application and make more complex endpoints. \n\nNow you are ready to dive in to the Capstone. Good luck, fullstack developers! Have fun with it! ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 947871,
+              "key": "7b34c15f-ea5c-44bf-92aa-9c90514cdc48",
+              "title": "Troubleshooting Heroku",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Troubleshooting\nHaving trouble with Heroku? Start with these resources:\n- [Deployment Docs](https://devcenter.heroku.com/categories/deployment)\n- [Getting Started with Python](https://devcenter.heroku.com/articles/getting-started-with-python)",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

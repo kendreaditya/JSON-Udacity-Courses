@@ -1,0 +1,130 @@
+{
+  "data": {
+    "lesson": {
+      "id": 898151,
+      "key": "af04d96a-6182-43a0-af07-157d1bd389d0",
+      "title": "Project: Fyyur",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "In this project, you'll demonstrate your new SQL and data modeling skills by creating a site to help coordinate bookings between artists and venues.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/af04d96a-6182-43a0-af07-157d1bd389d0/898151/1581172404444/Project%3A+Fyyur+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/af04d96a-6182-43a0-af07-157d1bd389d0/898151/1581172401994/Project%3A+Fyyur+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": {
+        "key": "65571c98-fc9d-41e9-8817-83f8ee564546",
+        "version": "1.0.0",
+        "locale": "en-us",
+        "duration": 30240,
+        "semantic_type": "Project",
+        "title": "Fyyur: Artist Booking Site",
+        "description": "While working on the project, you should have created your own copy of the project repository. To submit the project, zip this entire repo and upload the zip file.\n\nBefore submitting, be sure to check out the [rubric](https://review.udacity.com/#!/rubrics/2653/view) to confirm that your project meets all the required specs. \n\nYou will get an email as soon as your reviewer has feedback for you! Due to the high volume of submissions we receive, please allow up to 7 business days for your evaluation to be returned (however, usually your project will be reviewed within 24 hours). ",
+        "is_public": true,
+        "summary": null,
+        "forum_path": "",
+        "rubric_id": "2653",
+        "terminal_project_id": null,
+        "resources": null,
+        "image": null
+      },
+      "lab": null,
+      "concepts": [
+        {
+          "id": 898183,
+          "key": "7107ad1d-63ca-4cb8-a9ae-bb3ffc1847b8",
+          "title": "Project Instructions",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "7107ad1d-63ca-4cb8-a9ae-bb3ffc1847b8",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 898184,
+              "key": "90f534f0-eef1-4570-bffd-3217133484a5",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Fyyur: Artist Booking Site\nWe’d like to create a booking site Fy-yur that facilitates bookings between artists who can play at venues, and venues who want to book artists.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 916929,
+              "key": "c5d1250c-5069-4f3d-8803-4d6af96b3a7f",
+              "title": "ND004 C01 L07 16 Project Intro",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "chKjWT4gqlo",
+                "china_cdn_id": "chKjWT4gqlo.mp4"
+              }
+            },
+            {
+              "id": 898186,
+              "key": "a6b30416-439f-4994-8bb6-f1c67ee51f16",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Instructions",
+              "instructor_notes": ""
+            },
+            {
+              "id": 898187,
+              "key": "3e22b9ed-937b-49a1-bcfa-a0b2f3a57ff5",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "3e22b9ed-937b-49a1-bcfa-a0b2f3a57ff5",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Make a copy of the repository on your own GitHub account, so that you can work on this copy.",
+                "Open the README files contained in the repo and follow the instructions; these contain details on exactly what to do to complete the project.",
+                "Check out the project [rubric](https://review.udacity.com/#!/rubrics/2653/view) to see exactly what your reviewer will be looking for when they grade your project.",
+                "Zip your entire project."
+              ],
+              "positive_feedback": "**Great!**\n\nTime to submit your project... see the next page for the submission link!",
+              "video_feedback": null,
+              "description": "You can find all of the starter code, along with detailed instructions for how to carry out the project, at [this GitHub repository](https://github.com/udacity/FSND/tree/master/projects/01_fyyur/starter_code).\n\nHere's how to get started:"
+            },
+            {
+              "id": 898188,
+              "key": "36760546-3c3b-440d-8b8a-a0e0ad9a8641",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Once you're ready, you can submit your project on the next page.",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

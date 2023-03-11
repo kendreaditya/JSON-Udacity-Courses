@@ -1,0 +1,372 @@
+{
+  "data": {
+    "lesson": {
+      "id": 850002,
+      "key": "62b3047a-77bf-4334-9eab-dd988f95dd20",
+      "title": "Foundation",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Set the groundwork for understanding information security and refresh your understanding of the technologies used in future lessons.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/62b3047a-77bf-4334-9eab-dd988f95dd20/850002/1579648968306/Foundation+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/62b3047a-77bf-4334-9eab-dd988f95dd20/850002/1579648965573/Foundation+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 857103,
+          "key": "7e6aee90-126e-4016-b644-a12be47e55c7",
+          "title": "Course Intro",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "7e6aee90-126e-4016-b644-a12be47e55c7",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 859125,
+              "key": "517be5b5-3c00-40cf-97d9-7c22df165fff",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Identity and Access Management\n## The building blocks of a secure system",
+              "instructor_notes": ""
+            },
+            {
+              "id": 898180,
+              "key": "71968873-5f9a-422f-afc3-1728dcc30b44",
+              "title": "ND004 C03 L01 A01 Intro 2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "fDe1k499NNk",
+                "china_cdn_id": "fDe1k499NNk.mp4"
+              }
+            },
+            {
+              "id": 859127,
+              "key": "b4d1be02-7a21-416e-abda-915e1301f58c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## This course will cover\n- Authentication systems - design, implementation, and use of third party services.\n- Common vulnerabilities while working with passwords and how to avoid these pitfalls.\n- Authorization systems - design and implementation for backend and frontend.\n- Basic security best practices and key principals to keep in mind.\n\n## Prerequisite expectations\nWe expect that you have pre-existing knowledge in the following areas. We've included a few Recap concepts to help refresh your memory for this course. \n- Basic frontend or backend implementation (e.g. Javascript/HTML/Python/Flask)\n- Network communication (i.e., HTTP)\n- Structured Query Language (SQL) using SQLAlchemy\n- API Development (REST)\n\n## This course will *not* cover\n- Advanced security principals.\n- Penetration testing, red teaming, vulnerability detection.\n- \"Hacking\" and tools and systems to perform nefarious actions.\n- DevOps, Deployments, Scaling or maintaining these systems in the cloud",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 859122,
+          "key": "d3073583-a757-4176-a0c4-93f45d25e60f",
+          "title": "Recap - HTTP, Flask, and Postman",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d3073583-a757-4176-a0c4-93f45d25e60f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 859128,
+              "key": "71c445ac-b17e-4e88-a371-27fafc30ca70",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Flask API Server Recap\n> **Recap** - The material covered in this concept is a refresher and should not be new. If you've never seen this material before, it may be wise to look back on a previous course on Python, API Development or Flask.\n\n## HTTP Request-Response Handling",
+              "instructor_notes": ""
+            },
+            {
+              "id": 864276,
+              "key": "f1cc2da3-a788-43d6-96f2-5e721d0dec61",
+              "title": "ND004 C03 L01 A02 Flask API Server Recap 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "bX7kKwoO4pc",
+                "china_cdn_id": "bX7kKwoO4pc.mp4"
+              }
+            },
+            {
+              "id": 859174,
+              "key": "d5f8fc1c-db4b-48dc-93c4-4b5b6d6f6433",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### HTTP Status Codes\n\nTwo status codes which are important throughout this course are:\n\n- ##### 401 Unauthorized\nThe client must pass authentication before access to this resource is granted. The server cannot validate the identity of the requested party.\n\n- ##### 403 Forbidden\nThe client does not have permission to access the resource. Unlike 401, the server knows who is making the request, but that requesting party has no authorization to access the resource.\n\nFor a complete list of status codes, check out the [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 859130,
+              "key": "51bdff13-b4e8-4402-9daf-519bb360b428",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Flask - A Python Framework for Server Development\nFlask is a popular framework for developing \"microservices\" or \"small-in-scope\" web servers. It provides all of the interfaces for you to build an HTTP server out of the box with little boilerplate. Check out the [Flask docs](http://flask.pocoo.org/) to learn more.\n\n> We'll be using code available in the FSND repo. Follow along [here](https://github.com/udacity/FSND/tree/master/FlaskRecap).",
+              "instructor_notes": ""
+            },
+            {
+              "id": 864277,
+              "key": "45f967d5-cad5-4cb4-9d91-849763aeb45d",
+              "title": "ND004 C03 L01 A03.1 Flask And Postman Recap 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "vE1dF_bsiRw",
+                "china_cdn_id": "vE1dF_bsiRw.mp4"
+              }
+            },
+            {
+              "id": 859175,
+              "key": "dda23bd3-c774-4ea5-8e1e-458848ca8b56",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Postman - HTTP API Development GUI\nPostman provides useful tools to help you develop and test APIs. You can download and learn more at [Postman's website](https://www.getpostman.com/).",
+              "instructor_notes": ""
+            },
+            {
+              "id": 864278,
+              "key": "1fefb86d-56fe-4544-9cc5-0b91e7352313",
+              "title": "ND004 C03 L01 A03.2 Flask And Postman Recap",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "AnPFYzLpRKE",
+                "china_cdn_id": "AnPFYzLpRKE.mp4"
+              }
+            },
+            {
+              "id": 859177,
+              "key": "5516c712-a122-4187-8323-88ef9138c34a",
+              "title": "Try It Yourself!",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "5516c712-a122-4187-8323-88ef9138c34a",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Clone the Repo and follow the `README` instructions for set up",
+                "Run the Flask Server",
+                "Download and install [Postman](https://www.getpostman.com/)",
+                "Import and Run the Postman Collection"
+              ],
+              "positive_feedback": "Good practice!",
+              "video_feedback": null,
+              "description": "We've included all code in this concept in the following repo:\nhttps://github.com/udacity/FSND/tree/master/FlaskRecap\n\nTry the following:"
+            }
+          ]
+        },
+        {
+          "id": 859156,
+          "key": "6f949cc1-43f9-4bf9-bce2-7b9f0358d6b8",
+          "title": "Recap - SQLAlchemy",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "6f949cc1-43f9-4bf9-bce2-7b9f0358d6b8",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 859881,
+              "key": "48884868-1054-4720-8bb2-021c02599cc6",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Recap - Databases and SQLAlchemy\n\n> **Recap** - The material covered in this concept is a refresher and should not be new. If you've never seen this material before, it may be wise to look back on a previous course on Python, Structured Query Language  (SQL) for Relational Databases, or SQLAlchemy.\n\n## Storing Persistent Data\nWe often need to store data from session to session. This is most commonly done using a dedicated system called a [Database](https://en.wikipedia.org/wiki/Database). Within this course, we'll use a tool called [SQLAlchemy](https://www.sqlalchemy.org/) which is an Object Relational Mapper (ORM) to interface with a simple SQLLite3 database using a few lines of code.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 864280,
+              "key": "e0909e84-e826-4660-aa57-b895e802088f",
+              "title": "ND004 C03 L01 A04 SQL Alchemy Recap",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "zVZaKDSKH04",
+                "china_cdn_id": "zVZaKDSKH04.mp4"
+              }
+            },
+            {
+              "id": 859882,
+              "key": "67bf6f37-1561-4b7b-b518-c19164ea2907",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Try It Yourself!\nWe've included a notebook below for you to define and play with models in SQLAlchemy.\n\n> **Remember** any text with dotted underlines in the notebook include a recording to help you understand. Hover over and click play movie to hear this recording!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 859877,
+              "key": "60caceb2-010d-4a0d-b5b7-d61a78d8a510",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r848940c859124xJUPYTERwm1h12hi",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-4g64j",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/SQLAlchemy.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 859879,
+              "key": "95df04d6-6581-4de3-82e1-35fa34830260",
+              "title": "Password from User Table",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "95df04d6-6581-4de3-82e1-35fa34830260",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "The notebook above includes an SQLite database file called `database.db` in the same directory as the notebook. \n\nUse this database file and the code provided to load the correct database file and find the password for the username `Abe`. \n\n>*Tip*: make sure you execute the first code block in the notebook to copy the stubbed database file.\n\nWhat is Abe's password:",
+                "answers": [
+                  {
+                    "id": "a1560803340075",
+                    "text": "codeallday",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1560803426732",
+                    "text": "learnmoreskills",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1560803427248",
+                    "text": "badpassword",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 858854,
+          "key": "07ba544e-8b01-454e-94e1-76f83a50b52b",
+          "title": "Recap - Python Decorators",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "07ba544e-8b01-454e-94e1-76f83a50b52b",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 859133,
+              "key": "f2d9a2ad-65fa-42ad-a999-28e3d5f5b3bb",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Recap - Python Decorators\n> **Recap** - The material covered in this concept is a refresher and should not be new. It covers some advanced Python that you may have forgotten. If you're new to Python, it may be wise to look back on a previous course on Python before continuing.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 864281,
+              "key": "dd2640db-9deb-4530-bcea-53fb86d65445",
+              "title": "ND004 C03 L01 A05 Python Decorator",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "ghved6sS1hI",
+                "china_cdn_id": "ghved6sS1hI.mp4"
+              }
+            },
+            {
+              "id": 859788,
+              "key": "57887f0c-4510-4960-892e-841eb3bbeae6",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Try It Yourself!\nWe've included a notebook for you to define and use simple decorators. \n> **Remember** any text with dotted underlines in the notebook include a recording to help you understand. Hover over and click play movie to hear this recording!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 859179,
+              "key": "af63faee-68bb-4503-8a82-817f5d99cbac",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r848940c859124xJUPYTERwm1h12hi",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-wp9hf",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Decorators.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

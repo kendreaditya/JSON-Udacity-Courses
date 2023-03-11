@@ -1,0 +1,353 @@
+{
+  "data": {
+    "lesson": {
+      "id": 846417,
+      "key": "f92c1c0b-a5ae-4cd5-8ebc-6c0980db1ddf",
+      "title": "Welcome and Orientation",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "In this lesson, we'll introduce you to your instructors, give you an overview of what you'll be learning, and tell you how to get help and support when you need it.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/f92c1c0b-a5ae-4cd5-8ebc-6c0980db1ddf/846417/1556891769878/Welcome+and+Orientation+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/f92c1c0b-a5ae-4cd5-8ebc-6c0980db1ddf/846417/1556891765116/Welcome+and+Orientation+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 673806,
+          "key": "77e3233f-9486-4089-8401-80863f76c8f2",
+          "title": "Welcome to the program!",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "77e3233f-9486-4089-8401-80863f76c8f2",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 675845,
+              "key": "c348d05f-d004-494b-a488-ed072ff1335a",
+              "title": "Welcome To IPND!",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "nLm-UTW4QTI",
+                "china_cdn_id": "nLm-UTW4QTI.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 673807,
+          "key": "5b7f7763-e95e-4029-9535-c06fc53c092b",
+          "title": "Meet your instructors",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5b7f7763-e95e-4029-9535-c06fc53c092b",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 675843,
+              "key": "4c9ae9bf-e16d-434a-aeef-ca050b1a9063",
+              "title": "Who Are Your Instructors",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "CX-CgSnwEdQ",
+                "china_cdn_id": "CX-CgSnwEdQ.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 673808,
+          "key": "d44aae8f-92f1-4614-8b9f-5a07c9ff8c7f",
+          "title": "What you'll build",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d44aae8f-92f1-4614-8b9f-5a07c9ff8c7f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 675844,
+              "key": "3c224e95-f178-4cdd-b543-714b73dfa4da",
+              "title": "Completing Your Journey",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "ayWd2FCHiiA",
+                "china_cdn_id": "ayWd2FCHiiA.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 848438,
+          "key": "748b10d8-862a-4358-b086-3e23c60f6303",
+          "title": "Student Hub",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "748b10d8-862a-4358-b086-3e23c60f6303",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 848446,
+              "key": "00061450-1c1a-4e8a-9974-643fff980afa",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Student Hub\n\n[**Student Hub**](https://study-hall.udacity.com) is your real-time collaboration platform where you can communicate with Udacity Community Managers and staff, as well as chat with peers from your Nanodegree Program. It operates similarly to Slack, and is your main community space. \n\nYou can access Student Hub by clicking **“Peer Chat”** under the Help section in your classroom! ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 848447,
+              "key": "7a72a1ec-68df-4d07-b78b-c0f71d3e8f5d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Peer Collaboration\n\nStudent Hub provides different channels for you to collaborate with your fellow students and alumni. You can ask them questions, share interesting articles, or just drop in to offer your fellow students some motivation!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 848458,
+              "key": "e6e7cb0d-bfbf-4e6a-897a-464e00944adc",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### Communities\n\nUdacity Community channels are shared rooms between all Udacity students to help you correspond with the broader community. Please note that the community channels do not have technical mentors present. However, you can receive help from mentors in [**Knowledge**](https://knowledge.udacity.com/)!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 848448,
+              "key": "b04f9bea-da19-49db-bf64-b640ffdafce6",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### Peer Project Channels\n\nIn your Peer Project Channels, you can connect with all students in your Nanodegree program. There is a channel for each of the projects in your Nanodegree program with helpful links, tips and tricks, and other information!\n\nIn the member lists, you can identify your peers who have passed that particular project by a green checkmark that's been added to their names in the right-side panel.\n\nPlease note that project channels do not have technical mentors present.\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 848454,
+              "key": "60398e47-adb7-4c55-bead-0c20fee297c8",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2019/May/5cdc8422_student-hub-projects/student-hub-projects.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/60398e47-adb7-4c55-bead-0c20fee297c8",
+              "caption": "Project channels are provided for discussion on specific projects.",
+              "alt": "Project channels are provided for discussion on specific projects.",
+              "width": 250,
+              "height": 200,
+              "instructor_notes": null
+            },
+            {
+              "id": 848455,
+              "key": "9dbdf3aa-b205-40c3-8b5b-b4f90b149961",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### Direct Messages\n\nThe last section of Student Hub houses any direct message conversations you may be a part of. You can send a fellow student a direct message by clicking on their name, and then `Send Direct Message` in the side-bar.\n\nPro-tip: You can also see some stats on your fellow students' projects and Nanodegree programs by clicking on their name as well!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 848456,
+              "key": "f0a5fe20-4c02-4426-aef5-209ab782b56b",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2019/May/5cdc8454_student-hub-direct-messages/student-hub-direct-messages.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/f0a5fe20-4c02-4426-aef5-209ab782b56b",
+              "caption": "Direct messages will populate once you send your first one!",
+              "alt": "Direct messages will populate once you send your first one!",
+              "width": 250,
+              "height": 40,
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 782140,
+          "key": "6324e0bb-4deb-41b3-b605-99e07af894cc",
+          "title": "Knowledge",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "6324e0bb-4deb-41b3-b605-99e07af894cc",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 782143,
+              "key": "b7eae8bf-cfd8-483a-94c0-5a2c42bb5085",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Technical Support on Knowledge \n\n__Technical Mentor Support__: is provided through our [Knowledge](https://knowledge.udacity.com/) platform. On Knowledge, you can search for answers to questions similar to yours or post new questions related to your project or lessons. __Udacity’s expert technical mentors answer all-new questions.__   \n\n\n### How to Use Knowledge \n\nTo ensure you’re getting the quality and prompt support you need, it’s helpful to follow these best practices and guidelines for Knowledge.   ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 782153,
+              "key": "5285c5e2-ef55-449e-adc2-e371868c8d44",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/May/5ebeb959_knowledge1/knowledge1.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/5285c5e2-ef55-449e-adc2-e371868c8d44",
+              "caption": "",
+              "alt": "",
+              "width": 1213,
+              "height": 674,
+              "instructor_notes": null
+            },
+            {
+              "id": 782162,
+              "key": "da55f0de-be25-4a92-affb-8cb41f7b8bb1",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "- __Search for Similar Existing Questions__:\nwith tens of thousands of students enrolled in Nanodegree programs, many of your questions may have already been asked and answered. To look for existing answers to similar questions that may provide the immediate support you need, use the __filter on the left side of your screen__ to select your Nanodegree and related project or write in the key terms related to your question in the __search bar__ at the top of the page.      \n\n\n- __Ask a New Question__: \nif you want to ask a new question, select “Ask a Mentor” at the top of the page. Kindly remember that Knowledge is for technical questions only; for other types of support and feedback, please write to support at support@udacity.com.      \n\n\nWhen you ask a new question, the platform immediately assigns it to one of our expert mentors spread across the globe to ensure prompt replies. Of note, when a mentor answers your question, you will see “Mentor” next to their name to differentiate their support from comments your fellow learners may also provide.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1021276,
+              "key": "47c27989-94d3-4457-b13f-4c3906d3b788",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/May/5ebeb9eb_k2/k2.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/47c27989-94d3-4457-b13f-4c3906d3b788",
+              "caption": "",
+              "alt": "",
+              "width": 678,
+              "height": 716,
+              "instructor_notes": null
+            },
+            {
+              "id": 782144,
+              "key": "4fba6d8a-8806-404f-ba00-397c887f02d5",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "If you don't see your question, simply create a new post. You are likely to get an answer within 24 hours and you'll be helping future students who may encounter the same problem. \n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1021274,
+              "key": "cb7b3337-6a88-4101-a128-cf7174273be8",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### How to Ask a Good Question?  \n\nStudents that follow these tips typically receive the strongest initial support and avoid back-and-forth with mentors:   \n\n- __Ask Specific Questions__: if you have closely related questions that form part of a general theme, it’s okay to ask them all together. But consider using bullet points to separately list each of the questions in your post. Keeping your questions organized helps ensure mentors provide clear answers to each specific question. If your questions are less closely connected, it’s best to submit new, separate questions for each one.        \n\n\n- __Provide Details and Links:__ explaining what (if anything) you’ve already attempted to solve the problem helps mentors know where to start when answering your question. Likewise, if your question is not related specifically to a project, but rather to an exercise, quiz, or lesson, it’s helpful to include information such as lesson or quiz name, screenshots, and classroom links.  \n\n> Overall the key to asking a good question is to imagine yourself trying to answer your own question. Imagine you were coming to it without any prior knowledge. Does the question make complete sense? Or are there gaps around the context?    \n\n\n- __Start with a Clear Question Title__: attempt to summarize your entire question in one sentence. You may even write the title at the end, just before posting the question. This will help you summarize the issue before you include details in the question itself.      \n\n\n- __Share Code Correctly__:  by using the “Code Block” option to properly format your code. If your question concerns a piece of external code, include a link to the file on Github.    \n\n> In fact, Github lets you create a link to a specific line in a file.  To do so, just click to the left of the line number, and then select _copy permalink_ in the ellipsis that appears in the margin. Paste the _permalink_ right into the Github box on your question submission form.       \n\n\n- __Figuring out Errors__: if your question is about an error message or stack trace, include the entire error message, by either formatting the error message using the “Code Block” option or creating a Gist or a Paste on Pastebin, and including a link to it in the description.    \n\n\n- __Avoid Screenshots of Code or Error Messages__: do not use screenshots of code or error messages. They are hard to read and the text cannot be copied to debug it.   \n\n\n\nIf you receive a helpful answer, kindly select it as the “accepted answer.” For questions from other students, if you see other helpful answers kindly select the “upvote” option. Conversely, if you don’t think an answer strongly answers a question, select the “downvote” option. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1021272,
+              "key": "46f5fa58-aca4-4dd9-939e-727eef2908aa",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/May/5ebeb997_image2/image2.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/46f5fa58-aca4-4dd9-939e-727eef2908aa",
+              "caption": "",
+              "alt": "",
+              "width": 970,
+              "height": 474,
+              "instructor_notes": null
+            },
+            {
+              "id": 1021270,
+              "key": "9baa39bb-8719-4581-a54f-f808b0682405",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Getting Additional Support\n\nAt times, students want support from a different mentor. As everyone learns differently, we want to make this a simple process for learners like you.    \n\n\nIf you receive an answer that you are not satisfied with and want a different mentor to chime in, kindly select the option at the top of the page in Knowledge. If you reply directly in the comments section, without clicking on the link at the top of the page, your question will not be answered by another mentor.\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1021269,
+              "key": "ba6a2c71-518a-4894-93fd-f0e7e36ba15a",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/May/5ebeb954_lastimage/lastimage.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/ba6a2c71-518a-4894-93fd-f0e7e36ba15a",
+              "caption": "",
+              "alt": "",
+              "width": 1433,
+              "height": 408,
+              "instructor_notes": null
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

@@ -1,0 +1,2009 @@
+{
+  "data": {
+    "lesson": {
+      "id": 1004963,
+      "key": "e8ba701a-3efd-4d33-8e73-cbb55ab9a311",
+      "title": "EHR Transformations & Feature Engineering ",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "In this lesson, you'll gain skills in feature engineering and transformation of EHR.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "AI in EHR Course Glossary",
+            "uri": "https://video.udacity-data.com/topher/2020/April/5e9cfa84_ai-ehr-course-glossary/ai-ehr-course-glossary.pdf"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 1005473,
+          "key": "3306dae9-fbca-4e06-a00c-49bcdf9e6099",
+          "title": "EHR Transformations & Feature Engineering Overview",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "3306dae9-fbca-4e06-a00c-49bcdf9e6099",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1005474,
+              "key": "9e9b2fbc-2a8b-4e9f-8d4c-7056e2edd24a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# EHR Transformations & Feature Engineering Overview",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1005475,
+              "key": "19ac0f90-8770-457e-a1fe-6dbdb42f738c",
+              "title": "ND320 AIHCND C01 L03 A01 Lesson Overview V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "EW-4zem6IUY",
+                "china_cdn_id": "EW-4zem6IUY.mp4"
+              }
+            },
+            {
+              "id": 1005477,
+              "key": "a7958a30-ca4d-430b-972a-b07ae02add7c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Transformations and Feature Engineering Overview\nThis lesson is divided into 3 parts:\n\n1.  EHR Dataset Levels\n\nIn this part, there are three levels - line, encounter, and longitudinal.  By the end of this section, you will be able to identify the level of your dataset as well as conduct tests and transform your data. \n\n2. Dataset Splitting Without Data Leakage\n\nIn this part, you will learn about dataset splitting without Data leakage, which can be a major issue in EHR datasets. By the end of part two, you will be able to implement some basic tests to help prevent issues when splitting data. \n\n3. Feature Engineering with Tensorflow\n\nFinally, we will cover Feature Engineering with Tensorflow. In this part, we will cover ETL (Extract, Transform, Load) using TensorFlow. This will allow you to scalably process and transform your data for modeling. You will also be able to transform datasets using the TF Feature Column API for both numerical and categorical features. The Feature Column API can be extremely useful for transforming datasets at scale and building some unique feature types. \n\nLet's get started! \n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1005476,
+              "key": "8ece0a80-4dec-441e-aaaf-43be32a38a01",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9089dd_l3-ehr-data-transformations-and-tensorflow-feature-engineering/l3-ehr-data-transformations-and-tensorflow-feature-engineering.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/8ece0a80-4dec-441e-aaaf-43be32a38a01",
+              "caption": "Transformations and Feature Engineering Overview",
+              "alt": "Transformations and Feature Engineering Overview",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1005478,
+          "key": "cfa9ae5d-50fc-45e0-9145-b158a80e6717",
+          "title": "EHR Dataset Levels",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "cfa9ae5d-50fc-45e0-9145-b158a80e6717",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1005479,
+              "key": "eb50b7cd-ca2e-4818-9c90-8bd2f0532949",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# EHR Dataset Levels",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1005480,
+              "key": "c8ede99c-f086-4c1f-ba21-21ca87aa232c",
+              "title": "ND320 AIHCND C01 L03 A02 EHR Dataset Levels",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "7LMBCNn_3l0",
+                "china_cdn_id": "7LMBCNn_3l0.mp4"
+              }
+            },
+            {
+              "id": 1005481,
+              "key": "c90fa065-e683-4ec4-a79b-99d70963ac4c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## EHR Dataset Levels Key Points\nWith EHR datasets, there are three levels.\n- Line\n- Encounter\n- Longitudinal.  \n\nThese levels are extremely important in healthcare data, and being able to identify and work with data at the correct level will ensure that you start with the correct data type and dataset to feed to your models. \n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1012016,
+              "key": "ade14b78-feac-4eb5-8d1a-b4e5bbe6530b",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e908a09_l3-ehr-data-transformations-and-tensorflow-feature-engineering-1/l3-ehr-data-transformations-and-tensorflow-feature-engineering-1.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/ade14b78-feac-4eb5-8d1a-b4e5bbe6530b",
+              "caption": "Overview of the Three Levels",
+              "alt": "Overview of the Three Levels",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1013997,
+              "key": "5ee39902-d5ba-43a2-843f-8053fecb9a47",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Line Level\n**Line Level**: A denormalized or disaggregated representation of all the things that might happen in a medical visit or encounter. \n\nThink of a visit to the doctor for bronchitis.\n\nYour line-level data entries could be:\n- A diagnosis code of bronchitis\n- A medication code for a cough suppressant \n- A procedure code for a test for bronchitis\nand a line could be a diagnosis or medication that was prescribed. Another line could include information on a lab test that the doctor ordered for informing the diagnosis.\n\n### Encounter Level\n**Encounter Level**: Also known as the visit level, which is the aggregated information from the previously mentioned line level for one encounter. This information can be collapsed into a single row or arrays. \n\nUsing the example above, the encounter level for that visit would include the diagnosis code of bronchitis, medication code for a cough suppressant, and the procedure code for a test for bronchitis in one array or list.\n\n### Longitudinal Level \n**Longitudinal Level**: Also known as the patient level view. This level aggregates the patient history and can show how the culmination of visits/encounter lead to some clinical impact. \n\nContinuing with our example above if the patient contracts bronchitis often, over a series of years, we might gain some insights into a possible autoimmune disease or know exactly what to prescribe the patient when they start seeing symptoms.  \n\nNow that you have a basic understanding of the different levels we'll explore them a bit more with examples. \n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1012017,
+              "key": "7ab39b6d-22a2-4cab-b782-53624e2eb0f9",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e908a2f_l3-ehr-data-transformations-and-tensorflow-feature-engineering-2/l3-ehr-data-transformations-and-tensorflow-feature-engineering-2.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/7ab39b6d-22a2-4cab-b782-53624e2eb0f9",
+              "caption": "Example Overview of Dataset Levels",
+              "alt": "Example Overview of Dataset Levels",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1014114,
+              "key": "ed8efd33-73cb-42a6-8d52-9e98746d4db6",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## EHR Dataset Levels Continued\nAs stated above, EHR records are commonly represented at one of the following three levels: line, encounter, and longitudinal levels. Let's review this one more time with the visual above. \n\nPatient A had an Encounter on January 20th of 2019, where they had 3 different codes produced. Patient A also had another encounter on March 20th of 2019 with its own set of codes. All together these encounters and line-level codes add up to the Longitudinal Level of knowledge we have on that particular patient. \n\nThe Longitudinal view is an important level for aggregating the patient history and is where you connect information across visits/encounters and rolls up information to determine trends across time.\n\n### Why are EHR levels important?\nUsing the wrong EHR dataset level can lead to major errors with building models because data preparation is done with faulty assumptions and lead to serious error. \nFor example, a common cause is the duplication of encounter information when you take a line-level dataset and treat it as an encounter level dataset. \n\n#### Example:\nA particular encounter might have 50 lines and that might be treated inadvertently as 50 distinct encounters when it is actually one encounter. This has the effect of upsampling certain common values for that encounter in your dataset, but also creates a great deal of noise since those 50 lines might have only slight differences. \n\nFurther, selecting the wrong encounter from the patient record can often occur and there might be a case where you only want the earliest or latest visit or state for a patient or time step for your model.  This can cause many issues that might not become apparent until the modeling or deployment phases of your project\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1012018,
+              "key": "23094ffa-e6af-492c-b515-512dbf306aff",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e908a65_l3-ehr-data-transformations-and-tensorflow-feature-engineering-3/l3-ehr-data-transformations-and-tensorflow-feature-engineering-3.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/23094ffa-e6af-492c-b515-512dbf306aff",
+              "caption": "How do you know which level you are at?",
+              "alt": "How do you know which level you are at?",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1014115,
+              "key": "45af4d83-048a-41ef-b042-7be3381b9054",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## How do you know the dataset level for your data?\nThis is actually fairly easy if you collect some key metrics from your dataset and there are different ways to do this but I provided a few simple ways to do below.\n1. The total number of rows in the dataset. This is a simple calculation with  `len()`\n2. The number of unique encounters or visits. You can calculate this by finding the field(s) that give the identity of a unique encounter using `nunique()`.\n\n### Example\n```python\ntotal_rows = len(fake_df)\ntotal_encounters = fake_df['encounter'].nunique()\n```\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1012019,
+              "key": "831fc29f-579b-44b7-a7af-0027f6f2566c",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e908a84_l3-ehr-data-transformations-and-tensorflow-feature-engineering-4/l3-ehr-data-transformations-and-tensorflow-feature-engineering-4.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/831fc29f-579b-44b7-a7af-0027f6f2566c",
+              "caption": "Line Level",
+              "alt": "Line Level",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1014116,
+              "key": "2caa77e3-e7a7-44d8-988e-546643c21a71",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "From here we do some simple calculations to figure out our dataset level.\n\nIf the total number of rows is greater than the number of unique encounters, it is at the line level.\n\nAgain using our example from above:\n```python\ntotal_rows = len(fake_df)\ntotal_unique_encounters = len(fake_df['encounter'].nunique())\n```\nif the output was\n- `total_rows = 43464`\n- ` total_unique_encounters = 3259`\n\nWe could find out using\n- `print(total_rows > total_unique_encounters)` would evaluate to `True`\n\nTherefore this dataset would be at the line level.\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1012020,
+              "key": "d12756af-c709-4550-9da8-376fe8721f10",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e908aa3_l3-ehr-data-transformations-and-tensorflow-feature-engineering-5/l3-ehr-data-transformations-and-tensorflow-feature-engineering-5.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/d12756af-c709-4550-9da8-376fe8721f10",
+              "caption": "Encounter Level",
+              "alt": "Encounter Level",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1014118,
+              "key": "2c3b1f59-de71-49b3-8361-c441c70aaa59",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "If the total number of rows is equal to the number of unique encounters, it is at the encounter level.\n\nAgain using our example from above:\n```python\ntotal_rows = len(fake_df)\ntotal_unique_encounters = len(fake_df['encounter'].nunique())\n```\nif the output was\n- `total_rows = 3464`\n- ` total_unique_encounters = 3464`\n\nWe could find out using\n- `print(total_rows == total_unique_encounters)` would evaluate to `True`\n\nTherefore this dataset would be at the encounter level.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1012021,
+              "key": "0650fce2-9127-4b17-8179-4de6bc77b9f9",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e908adf_l3-ehr-data-transformations-and-tensorflow-feature-engineering-6/l3-ehr-data-transformations-and-tensorflow-feature-engineering-6.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/0650fce2-9127-4b17-8179-4de6bc77b9f9",
+              "caption": "Longitudinal Level",
+              "alt": "Longitudinal Level",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1014119,
+              "key": "0717cb9b-a156-4966-85b3-e0356cdd0c50",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Longitudinal Level\nFor the longitudinal or patient level, you will see multiple encounters grouped under a patient and you might not even see the encounter id field since this information is collapsed/aggregated under a unique patient id. In this case, the total number of rows should equal the total number of unique patients. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014621,
+              "key": "cf6cddb1-45af-4351-8946-93574acabad9",
+              "title": "EHR Dataset Levels",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "cf6cddb1-45af-4351-8946-93574acabad9",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Match the correct Dataset Level to example or definition."
+                },
+                "concepts_label": "Example/Definition",
+                "answers_label": "Dataset Level",
+                "concepts": [
+                  {
+                    "text": "Gives the whole view of the patient.",
+                    "correct_answer": {
+                      "id": "a1587143803185",
+                      "text": "Longitudinal"
+                    }
+                  },
+                  {
+                    "text": "027004Z (AKA Heart Surgery)",
+                    "correct_answer": {
+                      "id": "a1587143992051",
+                      "text": "Line"
+                    }
+                  },
+                  {
+                    "text": "Has all of the codes for a given visit to a healthcare provider",
+                    "correct_answer": {
+                      "id": "a1587144069826",
+                      "text": "Encounter"
+                    }
+                  },
+                  {
+                    "text": "Is the code for a procedure, medication, or diagnosis",
+                    "correct_answer": {
+                      "id": "a1587144121716",
+                      "text": "Line"
+                    }
+                  },
+                  {
+                    "text": "`Example Output`: [procedure_1,2 ],[diagnosis_1,2,3][medication_12,3,4,5]",
+                    "correct_answer": {
+                      "id": "a1587144328543",
+                      "text": "Encounter"
+                    }
+                  },
+                  {
+                    "text": "Would be grouped by `\"patient_id\"`",
+                    "correct_answer": {
+                      "id": "a1587144472135",
+                      "text": "Longitudinal"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1587143803185",
+                    "text": "Longitudinal"
+                  },
+                  {
+                    "id": "a1587144121716",
+                    "text": "Line"
+                  },
+                  {
+                    "id": "a1587144472135",
+                    "text": "Longitudinal"
+                  },
+                  {
+                    "id": "a1587144328543",
+                    "text": "Encounter"
+                  },
+                  {
+                    "id": "a1587144069826",
+                    "text": "Encounter"
+                  },
+                  {
+                    "id": "a1587143992051",
+                    "text": "Line"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1014626,
+              "key": "9da3a00f-ca63-4d2e-9f6e-99e05b9d7888",
+              "title": "Line Level",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "9da3a00f-ca63-4d2e-9f6e-99e05b9d7888",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following would tell you that your data is at the line level?",
+                "answers": [
+                  {
+                    "id": "a1587145278039",
+                    "text": "`total_rows > total_unique_encounters` = `True`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587145377160",
+                    "text": "`total_rows > total_unique_encounters` = `False`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587145428564",
+                    "text": "`total_rows == total_unique_encounters` = `True`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587145454968",
+                    "text": "`total_rows == total_unique_encounters` = `False`",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1014627,
+              "key": "b54630a7-6372-4f4d-bdbf-3c8c0d0be90c",
+              "title": "Encounter Level Quiz",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "b54630a7-6372-4f4d-bdbf-3c8c0d0be90c",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following would let you know that your data is likely at the encounter level?",
+                "answers": [
+                  {
+                    "id": "a1587146621256",
+                    "text": "total rows = 4783, unique rows = 1254",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587146734125",
+                    "text": "`total_rows == total_unique_encounters` = `True`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587146752476",
+                    "text": "`total_rows > total_unique_encounters` = `True`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587146770565",
+                    "text": "total rows = 745,838, unique encounters = 745,838",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1014628,
+              "key": "9e9a0d46-dcfe-491e-accb-a2495abe4403",
+              "title": "Reflect",
+              "semantic_type": "ReflectAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "9e9a0d46-dcfe-491e-accb-a2495abe4403",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "title": null,
+                "semantic_type": "TextQuestion",
+                "evaluation_id": null,
+                "text": "Why is it so important to make sure your dataset is a the correct level **before** using it to build a model?"
+              },
+              "answer": {
+                "text": "The incorrect dataset level can lead to major errors with building models because data preparation was done with faulty assumptions. This could lead duplication of encounter information. \n\nAlso the selecting the wrong or random encounter from the patient record can have a large negative effect on your model that you won't see until deployment.\n\nThese are only a few  potential problems, you may come up with some others as well! Thanks for completing this.",
+                "video": null
+              }
+            }
+          ]
+        },
+        {
+          "id": 1005744,
+          "key": "906a7254-1ef6-47c9-8442-a9982addf173",
+          "title": "Encounter Representation",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "906a7254-1ef6-47c9-8442-a9982addf173",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1005745,
+              "key": "32ea04a6-0949-4dbd-98cb-7aba8cbd59bc",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Encounter Representation",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1005757,
+              "key": "e78f8c77-3b74-44cc-941f-4398f0fc8cfa",
+              "title": "ND320 AIHCND C01 L03 A03 Encounter Representation V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "sX_vtuLykGw",
+                "china_cdn_id": "sX_vtuLykGw.mp4"
+              }
+            },
+            {
+              "id": 1005758,
+              "key": "adbd0862-5d5e-4d2f-afb1-4e8e87d9edf3",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Encounter Representation Key Points\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1012078,
+              "key": "723464bd-1908-49cb-b256-cc68db72697d",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e90ab5b_l3-ehr-data-transformations-and-tensorflow-feature-engineering-9/l3-ehr-data-transformations-and-tensorflow-feature-engineering-9.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/723464bd-1908-49cb-b256-cc68db72697d",
+              "caption": "What is an Encounter? [Encounter Definitions](https://www.hl7.org/fhir/encounter-definitions.html)",
+              "alt": "What is an Encounter?",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1012081,
+              "key": "acf04501-6ea5-4e72-9d77-7b8e96f13b9e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "[**Encounter**](https://www.hl7.org/fhir/encounter-definitions.html): “An interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.”\n\n### What is an encounter? \nThe definition of an encounter commonly used for EHR records comes from the Health Level Seven International  (HL7), the organization that sets the international standards for healthcare data. As the definition states, it is essentially an interaction between a patient and a healthcare professional(s). \nIt usually refers to doctors visits and hospital stays. \n### How do we aggregate line level at encounter level?\n1. Create a column list for the columns you would use to group. Likely these would be:\n  - \"encounter_id\"\n  - \"patient_id\"\n  - \"principal_diagnosis_code\"\n\n2. Create column list for the other columns not in the grouping\n3. Transform your data into a new dataframe. You can use `groupby()` and `agg()` functions for this\n4. Then you can do a quick inspection of the result by grabbing one of the patient records and to compare the output of the original dataframe and the newly transformed encounter dataframe.\n\n**Note**: The data used in the walkthrough was created just to show you how this would work. You'll practice this more in later exercises as well. \n\n#### Additional Resources\n- [Encounter Definitions](https://www.hl7.org/fhir/encounter-definitions.html)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014117,
+              "key": "173d6ce3-df2c-460d-ac16-e5ede19ba3bd",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1005763xJUPYTER6a8aqesz",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-luszz",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Lesson_3_lesson_concepts.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1005759,
+          "key": "c33cf4f5-e2f0-44aa-8c12-db17b80cf289",
+          "title": "Longitudinal Representation",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c33cf4f5-e2f0-44aa-8c12-db17b80cf289",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1005760,
+              "key": "197eb9b7-2776-4f43-b828-897a33b22cde",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Longitudinal Representation",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1005761,
+              "key": "9ca12204-4139-43e2-ad93-1d161a941cde",
+              "title": "ND320 AIHCND C01 L03 A04 Longitudinal Representation",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "2yzNq6BQk4w",
+                "china_cdn_id": "2yzNq6BQk4w.mp4"
+              }
+            },
+            {
+              "id": 1016089,
+              "key": "ccabc3d1-92c1-4920-bcbe-3c06f093d699",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "*Note: Typo at 3:00 should read \"Google\".",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1005762,
+              "key": "12eb3f8f-7ec4-4fb8-8cfc-1928f2818296",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Longitudinal Representation Key Points\n**Longitudinal Representation**: Patient History\n\n### What is a longitudinal data representation? \nAnother way to view it is a patient history representation. It is basically a way to aggregate all of the visits/encounters that a patient may have in the healthcare system. Having all of this information is ideal to best analyze and diagnose correctly, but the reality is that patient records do not always come cleanly organized and aggregated correctly, in real-world datasets. Luckily, we can use the line and encounter levels to help with that!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1012082,
+              "key": "52f81ef7-e125-4872-adca-71006cbdfa3c",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e90abf8_l3-ehr-data-transformations-and-tensorflow-feature-engineering-7/l3-ehr-data-transformations-and-tensorflow-feature-engineering-7.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/52f81ef7-e125-4872-adca-71006cbdfa3c",
+              "caption": "Longitudinal Representation Example",
+              "alt": "Longitudinal Representation Example",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1014124,
+              "key": "6365c1b5-a596-4a3e-9f0f-99a097a41ce8",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Combining patients together into a dataset and finding a way to aggregate and represent the visits across a patient is the key to being able to unlock powerful insights and analysis.\n\n### Challenges and Benefits of Using the Longitudinal Level\n#### Challenges:\n- Scaling with this type of data requires vast resources\n- Data representation and preparation requires more preparation and validation\n- Training vs production/deployment data differences can cause major issues with model predictions\n\n**Example**: You train this great Model, and it has fantastic results! \n\nHowever, the data you used for this model had an implicit assumption that you were unaware of :\n\n*Only the label for the last encounter for a patient history would be included.* \n\nYou think that you can always transform the data in production. Right?\n\n**Reality**: You have put your model into production and things start going haywire. \n\nYou are not getting the same results that you anticipated from your trained model. Even with some cross-validation and other augmentation methods, you still see significant model drift. After some analysis of the production data pipeline, you find out that the production use case has an **Encounter selected at random** from the patient history and information has been duplicated by accident because the information was not leveled correctly.\n\nFrom this example, you can see how important it is to make sure you, or your data team, have properly aggregated the data. \n\n#### Benefits:\nEven though data preparation and validation are more difficult, there are significant benefits to using a longitudinal representation as it allows you to use a full patient history.  This helps to better model changes in state over time. When you can also aggregate other patients longitudinal data together, you can achieve some unbelievable results.\n\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1012083,
+              "key": "c4d7f822-2087-40b6-8f36-38f5ca5e3153",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e90ac1f_l3-ehr-data-transformations-and-tensorflow-feature-engineering-8/l3-ehr-data-transformations-and-tensorflow-feature-engineering-8.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/c4d7f822-2087-40b6-8f36-38f5ca5e3153",
+              "caption": "Deep Learning Potential Importance",
+              "alt": "Deep Learning Potential Importance",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1014269,
+              "key": "dc9ab78c-d925-4851-87a0-f4a802ede7c5",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "To further illustrate the importance of having a strong EHR longitudinal data representation, you can look through the links in this section about Google creating a data representation to feed into deep learning models from the Fast Healthcare Interoperability Resources or **FHIR** standards. \n\nIn Google's [*Nature*](https://www.nature.com/articles/s41746-018-0029-1) article, they highlighted the aforementioned challenges with building a longitudinal representation. The 216K+ patients in the dataset were extrapolated to 46B data points!  Now imagine attempting to scale this even further with more patients or other types of data like genomic data, clinical trial data, etc. This is where resources like cloud computing have become critical, but even these can be strained with this much data.\n\nAs most practitioners know, the data preparation stage is one of the most time consuming, but impactful parts of a data science project. The representation and deep learning models outperformed clinically used traditional predictive models in **ALL** cases. It is still early days for the healthcare industry as they have just started to consider using deep learning and still barriers exist in using them due to concerns about interpretability. Hopefully, with more studies like this, critical attention to detail and eye on data security and privacy we can bring this practice to the forefront in healthcare.\n\n#### Additional Links\n- [Google's Nature Paper](https://www.nature.com/articles/s41746-018-0029-1)\n- [Google's Patent](https://patents.google.com/patent/US20160042124)\n- [FHIR](https://www.hl7.org/fhir/overview.html)\n- [FHIR Overview](https://datica.com/blog/what-is-fhir/)\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014636,
+              "key": "51b91d11-9a10-4729-9a1b-4e00a181a1ab",
+              "title": "Longitudinal Level",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "51b91d11-9a10-4729-9a1b-4e00a181a1ab",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What are some of the challenges with longitudinal datasets?",
+                "answers": [
+                  {
+                    "id": "a1587147540821",
+                    "text": "Scaling the collection and processing of this data can be resource intensive.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587147602485",
+                    "text": "Data cleaning and inspection are key parts of utilizing this data representation.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587147767672",
+                    "text": "There can be differences between training and production data, which can cause major issues.",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1014637,
+              "key": "56342c79-6b21-4c86-8c9a-67b651a66803",
+              "title": "Reflect",
+              "semantic_type": "ReflectAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "56342c79-6b21-4c86-8c9a-67b651a66803",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "title": null,
+                "semantic_type": "TextQuestion",
+                "evaluation_id": null,
+                "text": "While creating and working with longitudinal datasets can be a challenge, there is tremendous value to using this level. Go to [arXiv](https://arxiv.org/search/?query=longitudinal+ehr&searchtype=all&source=header) and search for longitudinal and EHR? Any interesting papers? Select one and share what you found interesting about it.\n"
+              },
+              "answer": {
+                "text": "I searched and found this paper from the University of Cambridge and UCLA called [A Bayesian Approach to Modelling Longitudinal Data in Electronic Health Records](https://arxiv.org/pdf/1912.09086.pdf). This paper was very interesting for not only its content but also how many of the topics it includes ties in with the content in this course. I provided a few snippets below but feel free to read the whole paper now that you are have some knowledge about longitudinal EHR data!\n\n- Missing data mentioned - In the \"Informative Missing Values\" section on page 3, it shares how missing values could indicate decision made by clinicians that could provide implicit information about a patient. This ties back to our understanding of MCAR, MAR, MNAR. \n- Demographics - It mentions \" fixed demographic information \" in the abstract and wanted to note this since this implies that there was some demographic analysis to \"fix\" the right groups for building the model and ties in with our lesson earlier on this topic.\n- Uses Bayesian method because it has the advantage of providing uncertainty estimates. This ties into what we will cover later when we learn about how to use Tensorflow Probability to build uncertainty estimation into our models.",
+                "video": null
+              }
+            }
+          ]
+        },
+        {
+          "id": 1005763,
+          "key": "840e71dd-7d9a-4800-a4f3-e366fdf16da5",
+          "title": "How to Convert to Longitudinal Level",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "840e71dd-7d9a-4800-a4f3-e366fdf16da5",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1009446,
+              "key": "55691e9d-9f31-434c-bdb9-0c334b5e9f20",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# How to Convert to Longitudinal Level",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009447,
+              "key": "0ba32b9d-db95-4cfb-a1ab-930d7955cd59",
+              "title": "ND320 AIHCND C01 L03 A05 Convert Longitudinal V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "5pZsu0pSrXw",
+                "china_cdn_id": "5pZsu0pSrXw.mp4"
+              }
+            },
+            {
+              "id": 1009448,
+              "key": "dcaef54c-dbea-4d40-a40f-d0fa2f9540bf",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Converting Encounter to Longitudinal Representation Key Points\n**Note**: In this walkthrough, we continued to use the synthetic dataset from the previous walkthrough.\n\n1. Inspect the data!\n\nRemember that when working with longitudinal data it is vitally important that we inspect the data.\n\n2. Create a new dataframe that groups the data by \"patient_id\". Again you can use `groupby()` and `agg()` methods.\n\n3. Inspect and compare the data again by selecting a single patient and compare the \"encounter\", \"principal_diagnosis\", and \"procedure_codes\".\n\nYou should see all of these codes represented in arrays/lists for each patient. \n\n#### Example:\n```python\n list(longitudinal_example_patient_history['encounter_id'].values)\n```\nOutput:  [['encounter_id_2352', 'encounter_id_7434','encounter_id_1393']]\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1013673,
+              "key": "4306df61-f1c2-4d02-a0c9-80d99ab3c26d",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1005763xJUPYTER6a8aqesz",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-2sd8k",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Lesson_3_lesson_concepts.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1009449,
+          "key": "4b95324f-95b2-4025-8e6b-8452122ed34d",
+          "title": "Select Last Encounter Exercise",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "4b95324f-95b2-4025-8e6b-8452122ed34d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1013674,
+              "key": "7e355a6c-136f-47dc-9fb5-b17535ba6173",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1009449xJUPYTER9jo5ulyd",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-isthw",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Lesson_EHR_DT_FE_Exercise_1_Starter_Code.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1005765,
+          "key": "92e54b18-2368-42d8-9ef5-5e3e6c3e9474",
+          "title": "Select Last Encounter Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "92e54b18-2368-42d8-9ef5-5e3e6c3e9474",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1009450,
+              "key": "7912067f-e801-49e6-9d2a-702c00452f32",
+              "title": "ND320 AIHCND C01 L03 A06 Longitudinal Representation Solution",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Xmg0lCaQMD4",
+                "china_cdn_id": "Xmg0lCaQMD4.mp4"
+              }
+            },
+            {
+              "id": 1013675,
+              "key": "6a242c30-0e41-49e2-bdbb-66aa8717847f",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1005765xJUPYTERf7ls78gz",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-se0h9",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Lesson_EHR_Data_Transformations_Feature_Engineering_exercises_solutions.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1005767,
+          "key": "0054fbd5-5779-4a32-b10d-5fb066203aee",
+          "title": "Dataset Splitting Without Data Leakage",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "0054fbd5-5779-4a32-b10d-5fb066203aee",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1005768,
+              "key": "cb5494b8-4c23-4b1f-84f6-7f5da26abe6b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Dataset Splitting Without Data Leakage",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1005769,
+              "key": "1064d23c-ae51-4ffd-bfc3-3dad37759899",
+              "title": "ND320 AIHCND C01 L03 A07 Dataset Splitting Without Data Leakage",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "QuxCwVxMA8s",
+                "china_cdn_id": "QuxCwVxMA8s.mp4"
+              }
+            },
+            {
+              "id": 1012086,
+              "key": "66ccae06-db4c-42e7-ac08-22d33f7ba842",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Data Splitting Key Points\nThis may seem like a trivial topic, however, it is actually something that is often done incorrectly and can lead to significant downstream issues later. \n\nImagine that you spent significant time working on a model only to find out that your results are invalid because the data was not prepared correctly. This sometimes happens due to a rush to process data without enough testing and validation of the data and steps before modeling. \n\n### Challenges:\n**Data Leakage**: Inadvertently sharing data between test and training datasets. \n\nData leakage is a massive problem as your model will perform fantastically during training and fail miserably in production. \n\nAn example of where this can occur is when you have a longitudinal dataset and you use different patient encounters across different splits. You may inadvertently leak in information about the patient into your training data that you will be testing on. Essentially giving your model some of the answers. So preventing data leakage is very important to ensure your mode can generalize in production.\n\n#### Additional Resources\n- [Kaggle Preventing Data Leakage](https://www.kaggle.com/alexisbcook/data-leakage)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1012087,
+              "key": "f86aeec6-f8e9-4e84-8ce3-2390ffe5a949",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e90acc5_l3-ehr-data-transformations-and-tensorflow-feature-engineering-10/l3-ehr-data-transformations-and-tensorflow-feature-engineering-10.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/f86aeec6-f8e9-4e84-8ce3-2390ffe5a949",
+              "caption": "Representative Splitting",
+              "alt": "Representative Splitting",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1014272,
+              "key": "7052f439-5595-482b-bc5b-68c027bbcbb0",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Challenges continued\n\n**Representative Splitting**: Having accurate labels and demographics in your data splits that reflect the real world.\nA major challenge for most machine learning problems is a generalization and building a dataset that is representative. \nCommon errors that can occur include:\n- Non-representative distribution of your label across the splits \n- Non-representative demographics \n\n**Example**: Only female patients in training and male in testing \n\nThis would introduce some unintended biases and issues in your model for procedures that are gender-specific.\n\n### Testing and Validating Dataset Splitting\nIt is important to have some ways to assess whether you have split your data right. \n\nHere are a few ways to do this. \n\n1. Assess to make sure that a single patient's data is not in more than one partition to avoid possible data leakage. \n2. Check that the total number of unique patients **across the splits** is equal to the total number of unique patients in the **original dataset**. This ensures no patient information lost in the splitting and that the counts are correct. \n3.  Check that the total number of rows in **original dataset** should be equal to the sum of rows across **all three dataset partitions**.\n\n`len(original_df) == len(train_df) + len(val_df) + len(test_df)` should evaluate to `True`.\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014638,
+              "key": "5a8a9cb3-cc1f-437e-a9c9-92e278ebfb58",
+              "title": "Dataset Splitting",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "5a8a9cb3-cc1f-437e-a9c9-92e278ebfb58",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following are true about dataset splitting?",
+                "answers": [
+                  {
+                    "id": "a1587148121758",
+                    "text": "If not done properly you can inadvertently leak data into training.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587148189431",
+                    "text": "It is not important to make sure that your data is split representatively across your partitions.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587148257440",
+                    "text": "Having representative data across your partitions will ensure your model generalizes better in production.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587148372259",
+                    "text": "Having mostly red blocks in one partition and mostly green circles in another is an example of a representative dataset split.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1014639,
+              "key": "f6e4d122-2167-4a70-b721-8c5b7910527f",
+              "title": "Dataset Splitting Part 2",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "f6e4d122-2167-4a70-b721-8c5b7910527f",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following will be helpful in knowing that we have split our dataset well?",
+                "answers": [
+                  {
+                    "id": "a1587148764905",
+                    "text": "Checking the length of the original dataset is equal to the split partitions.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587148917724",
+                    "text": "Making sure all of our partitions are the same length?",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587148936888",
+                    "text": "Making sure that the length of the original dataset is equal to the sum of the lengths of the split partitions.",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1014643,
+              "key": "aaed5c32-42ce-465a-9573-68c9168c00a1",
+              "title": "Dataset Splitting Part 3",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "aaed5c32-42ce-465a-9573-68c9168c00a1",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following should you do to verify your dataset splits are done correctly?",
+                "answers": [
+                  {
+                    "id": "a1587149277085",
+                    "text": "Explore your data before and after the splits.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587149371277",
+                    "text": "Check that a single patient's data is not in more than one partition ",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587149412686",
+                    "text": "Check that the total number of unique patients across the splits is equal to the total number of unique patients in the original dataset. ",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587149486483",
+                    "text": "Check that the length of the original dataset is equal to the sum of the lengths of the split partitions.",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1009451,
+          "key": "f5da4566-116d-40b6-89ab-19cfba7d7f04",
+          "title": "How to Split Dataset at Patient Level",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "f5da4566-116d-40b6-89ab-19cfba7d7f04",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1009452,
+              "key": "a6d7827f-2290-4764-bffa-e718111bb82c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# How to Split Dataset at Patient Level",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009453,
+              "key": "b6afe850-a5e1-4d57-9411-6285eaaf4693",
+              "title": "ND320 AIHCND C01 L03 A08 How To Split Dataset Without Data Leakage",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "PRrmAYz7sRU",
+                "china_cdn_id": "PRrmAYz7sRU.mp4"
+              }
+            },
+            {
+              "id": 1013935,
+              "key": "bf6941c4-a3aa-4eb9-9dab-b4833f66c30f",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1005763xJUPYTER6a8aqesz",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-kkn72",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Lesson_3_lesson_concepts.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1005770,
+          "key": "5fe6adcf-67ed-4f6a-84d2-00042fc244c5",
+          "title": "Data Splitting Exercise",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5fe6adcf-67ed-4f6a-84d2-00042fc244c5",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1013936,
+              "key": "e3cdfb95-8792-413f-9055-dd1853613442",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1009449xJUPYTER9jo5ulyd",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-oz9xj",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Lesson_EHR_DT_FE_Exercise_2_Starter_Code.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1009455,
+          "key": "1e78d77d-4021-4f5e-bf3a-69d5d68b2a4e",
+          "title": "Data Splitting Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "1e78d77d-4021-4f5e-bf3a-69d5d68b2a4e",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1009456,
+              "key": "c223467d-17ca-41be-a410-ab31ef4558f6",
+              "title": "ND320 AIHCND C01 L03 A09 Dataset Splitting Without Data Leakage Quiz Solution",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "rQW214mrZMM",
+                "china_cdn_id": "rQW214mrZMM.mp4"
+              }
+            },
+            {
+              "id": 1013937,
+              "key": "f7406b6b-428b-4538-9746-fcad36a1538c",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1005765xJUPYTERf7ls78gz",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-h5rx7",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Lesson_EHR_Data_Transformations_Feature_Engineering_exercises_solutions.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1005772,
+          "key": "c5ee1aa2-9532-468c-a214-fd626c851744",
+          "title": "ETL with TensorFlow Dataset API",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c5ee1aa2-9532-468c-a214-fd626c851744",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1005773,
+              "key": "6e77df14-67c9-42ce-9c93-ff35f1caee42",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# ETL with TensorFlow Dataset API",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1005774,
+              "key": "7560ab90-1ae3-4774-93bb-1ae453963786",
+              "title": "ND320 AIHCND C01 L03 A10 ETL With Tensorflow Dataset API",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "zoEkxDWEd8Y",
+                "china_cdn_id": "zoEkxDWEd8Y.mp4"
+              }
+            },
+            {
+              "id": 1005775,
+              "key": "84ed82f9-62d9-4467-ab40-d9f54bace8a8",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## ETL with TensorFlow Dataset API Key Points\n\n### Why use Tensorflow(TF) Dataset API for ETL?\nTF Dataset API: `tf.data.Dataset`\n1. Process your input data in a distributed format.\n2. It can be batched and processed in parallel on GPU/TPUs.\n3.  API builds iterators to batch process and prevents memory loss\n\n**Important Note**: TF Dataset API cannot accept mixed data types. You may need to remove or convert null values.\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1013938,
+              "key": "4359323a-2ba3-4840-b6c3-2bfca2efd9a2",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1005763xJUPYTER6a8aqesz",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-o9nly",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Lesson_3_lesson_concepts.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 1014647,
+              "key": "1bfda405-7036-43a2-a4bd-592adbb48c15",
+              "title": "TF Dataset API",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "1bfda405-7036-43a2-a4bd-592adbb48c15",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "True or False, the TF Dataset API can handle mixed data types?",
+                "answers": [
+                  {
+                    "id": "a1587149738378",
+                    "text": "False",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587149775389",
+                    "text": "True",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1009457,
+          "key": "94e8379b-64a9-4198-9975-90d0fd0d3d75",
+          "title": "Numerical Features & Feature Column API",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "94e8379b-64a9-4198-9975-90d0fd0d3d75",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1009458,
+              "key": "7909ec58-49ee-4907-be6e-0f8773344309",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Transform/Preprocess Numerical Features with Feature Column API",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009459,
+              "key": "a8ed0081-3bfe-44d3-bf1e-ec63a9440975",
+              "title": "ND320 AIHCND C01 L03 A11 Transform Preprocess Numerical Features With Feature Column API",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "OYOViyAohDg",
+                "china_cdn_id": "OYOViyAohDg.mp4"
+              }
+            },
+            {
+              "id": 1009460,
+              "key": "6133da84-a6c5-4b8d-99ea-cb934d89a531",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## TensorFlow Feature Column API Key Points\nThe TensorFlow Feature Column API  helps make data preprocessing easier by abstracting away some of the work for things like normalization in numerical features. If you have done this type of work in Scikit Learn or Pyspark, you might appreciate the work this API does for you when it comes to preparing features for modeling. It also has the ability to add less common features like cross features and shared embeddings. \n#### Additional Resources\n- [TensorFlow Feature Column API](https://www.tensorflow.org/api_docs/python/tf/feature_column)\n- [Learn more about Cross Features](https://developers.google.com/machine-learning/crash-course/feature-crosses/video-lecture)\n- [TensorFlow Cross Features](https://www.tensorflow.org/api_docs/python/tf/feature_column/crossed_column)\n- [TensorFlow Shared Emeddings](https://www.tensorflow.org/api_docs/python/tf/feature_column/shared_embeddings)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1012283,
+              "key": "e8dd5ce9-4687-4f77-b716-0ab3fe0311f1",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e90d94a_l3-ehr-data-transformations-and-tensorflow-feature-engineering-11/l3-ehr-data-transformations-and-tensorflow-feature-engineering-11.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/e8dd5ce9-4687-4f77-b716-0ab3fe0311f1",
+              "caption": "Transform/Preprocess Numerical Features",
+              "alt": "Transform/Preprocess Numerical Features",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1014391,
+              "key": "7f3a3455-3f46-4406-9f27-19165ffcac3c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Numerical Features and TensorFlow Feature Columns API\nTo use the TensorFlow Feature Columns with numerical features we need to do the following:\n1. Identify the fields with numerical features.\n2. Use the TensorFlow Dataset API to load the dataset.\n3. Create your own custom normalizer function like a z-score\n```python\ndef z_score_normalizer(args):\n    return z_score_normalization\n```\n4. Use the TensorFlow numeric_column feature and pass in the z_score_normalizer function to the normalizer_fn argument.\n  - `tf.feature_column.numerical_column(column_name,  normalizer_fn=z_score_normalizer)`\n5. Let the TensorFlow Feature Column API do it's magic!\n\n#### Additional Resources\n-[Normalize Features in TensorFlow](https://towardsdatascience.com/how-to-normalize-features-in-tensorflow-5b7b0e3a4177)\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1013939,
+              "key": "4d85ea1e-1993-4449-a606-493645be5cbf",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1005763xJUPYTER6a8aqesz",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-hpdbd",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Lesson_3_lesson_concepts.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 1014661,
+              "key": "cead83a1-1cfd-453e-af68-f800e86bd6d5",
+              "title": "Numerical Features",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "cead83a1-1cfd-453e-af68-f800e86bd6d5",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following is true about the numerical features in the TF Feature Column API?",
+                "answers": [
+                  {
+                    "id": "a1587152519740",
+                    "text": "You must use a z-score for a normalizer function.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587152761610",
+                    "text": "You must identify the fields with numerical features.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587152865082",
+                    "text": "You should use the TensorFlow Dataset API to convert the dataset to Tensorflow tensors for the TF Feature Column API.",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1005786,
+          "key": "569a81f9-6f8f-4683-87de-9c4cdc69c0f1",
+          "title": "Numerical Feature Column API Exercise",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "569a81f9-6f8f-4683-87de-9c4cdc69c0f1",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1013940,
+              "key": "2fe28a7b-c0f4-4c9c-abc4-4f3187118bea",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1009449xJUPYTER9jo5ulyd",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-gyu6y",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Lesson_EHR_DT_FE_Exercise_3_Starter_Code.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1005787,
+          "key": "6298c51b-6734-4ded-85ff-d17d0efad783",
+          "title": "Numerical Features Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "6298c51b-6734-4ded-85ff-d17d0efad783",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1005788,
+              "key": "2f1420cc-7294-40d9-bdd6-d9cd24ad3b04",
+              "title": "ND320 AIHCND C01 L03 A12 Numerical Features Exercise Solution",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "hk0VHAEZdA4",
+                "china_cdn_id": "hk0VHAEZdA4.mp4"
+              }
+            },
+            {
+              "id": 1013941,
+              "key": "dc5b976f-5013-45e0-a0ae-86d258fe8a7d",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1005765xJUPYTERf7ls78gz",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-q3t1l",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Lesson_EHR_Data_Transformations_Feature_Engineering_exercises_solutions.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1005789,
+          "key": "c96753b9-ca70-453f-a155-fd72b7f7cbcf",
+          "title": "Categorical Features & Feature Column API",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c96753b9-ca70-453f-a155-fd72b7f7cbcf",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1005790,
+              "key": "d32dc575-85b3-434a-95b2-06b70565fa98",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Categorical Features & Feature Column API",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1005791,
+              "key": "90eb87ec-ea1f-4770-83be-06975b753e76",
+              "title": "ND320 AIHCND C01 L03 A13 Transform Preprocess Categorical Features With Feature Column API",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "ymL-vyz-RoU",
+                "china_cdn_id": "ymL-vyz-RoU.mp4"
+              }
+            },
+            {
+              "id": 1005792,
+              "key": "b4a86b6f-a777-4755-bc26-a319d12a4533",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## TensorFlow Feature Column API for Categorical Features Key Points\nFor building categorical features with the TensorFlow Features Column API, we follow the following steps:\n1. Select the categorical feature columns.\n2. Create a vocabulary text file with all of the unique values for a given categorical feature and add a placeholder value for out of vocabulary(OOV) values in the first row.\n  - **Note**: For columns with a small number of features, you probably don't need to do this step and can instead pass an array/list to the  [categorical_column_with_vocabulary_list function](https://www.tensorflow.org/api_docs/python/tf/feature_column/categorical_column_with_vocabulary_list).\n  - The creation of a separate vocabulary file method is particularly great for features with high cardinality. It can also allow you to use other tools like SQL to generate these vocab files with more massive datasets and decouple this process if you are already creating these for data profiling purposes.\n3. Create your new feature by passing the vocabulary feature to the final derived feature. This can be an embedding or one-hot encoded feature. In this example, we created a one-hot encoding feature with the [indicator column function](https://www.tensorflow.org/api_docs/python/tf/feature_column/indicator_column).\n\nExample: \n```python\nprincipal_diagnosis_vocab = tf.feature_column.categorical_column_with_vocabulary_file(\n            key=\"PRINCIPAL_DIAGNOSIS_CODE\", vocabulary_file = vocab_files_list[0], num_oov_buckets=1)\n```\n\n#### Additional Resources\n- [Tensorflow Feature Column API Categorical Features](https://www.tensorflow.org/api_docs/python/tf/feature_column/categorical_column_with_vocabulary_file)\n- [TensorFlow One-hot Encoding](https://www.tensorflow.org/api_docs/python/tf/one_hot)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1013942,
+              "key": "b713d0bc-6dbc-4213-ba7b-a59b0008b800",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1005763xJUPYTER6a8aqesz",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-f1glw",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Lesson_3_lesson_concepts.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 1014662,
+              "key": "313277f2-e098-4d9b-8f78-690f5e5c5c0b",
+              "title": "Categorical Feature Columns",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "313277f2-e098-4d9b-8f78-690f5e5c5c0b",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following is/are true about working with categorical features and the TensorFlow Dataset API? ",
+                "answers": [
+                  {
+                    "id": "a1587154735331",
+                    "text": "`categorical_example_df['PRINCIPAL_DIAGNOSIS_CODE'].nunique()` = `3929` Use a vocab file!",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587155004280",
+                    "text": "`categorical_example_df['PRINCIPAL_DIAGNOSIS_CODE'].nunique()` = `7` Use a vocab file!",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587155088344",
+                    "text": "When you build your TF dataset, you should pass a predictor field which is also know as the label.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587155335984",
+                    "text": "You can only create a one-hot encoding as a feature.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1009461,
+          "key": "78b23140-9b6f-49d4-add5-f2490380be0d",
+          "title": "Categorical Features Exercise",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "78b23140-9b6f-49d4-add5-f2490380be0d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1013943,
+              "key": "0118a304-fdd5-4c1e-aade-e8ebcab0eb59",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1009449xJUPYTER9jo5ulyd",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-n58pd",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Lesson_EHR_DT_FE_Exercise_4_Starter_Code.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1005793,
+          "key": "0c2dc2b1-36ca-4623-b791-0fdf24031128",
+          "title": "Categorical Features with Feature Column API Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "0c2dc2b1-36ca-4623-b791-0fdf24031128",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1005794,
+              "key": "ef0e3cae-1786-4796-9495-0bdc808f276d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Categorical Features with Feature Column API Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1012251,
+              "key": "279fea53-33e5-49b8-8542-cd2c7a605f61",
+              "title": "ND320 AIHCND C01 L03 A14 Categorical Features With Feature Column API Exercise Solution",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "V6u7dPTsxYI",
+                "china_cdn_id": "V6u7dPTsxYI.mp4"
+              }
+            },
+            {
+              "id": 1013944,
+              "key": "f29aab85-c920-49de-9964-a88ac2c2a41e",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1005765xJUPYTERf7ls78gz",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-cvlcj",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Lesson_EHR_Data_Transformations_Feature_Engineering_exercises_solutions.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1005795,
+          "key": "982f9ac0-04b6-4fcd-98ab-204c8c636844",
+          "title": "Transformations and Feature Engineering Recap",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "982f9ac0-04b6-4fcd-98ab-204c8c636844",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1005796,
+              "key": "a31cea40-cfe5-43f9-9dc0-5c2304d9c86d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Transformations and Feature Engineering Recap",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009462,
+              "key": "f76fed6e-40c6-4212-86e4-db34a316747e",
+              "title": "ND320 AIHCND C01 L03 A16 Lesson Overview",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Yi5teA3-VwQ",
+                "china_cdn_id": "Yi5teA3-VwQ.mp4"
+              }
+            },
+            {
+              "id": 1009464,
+              "key": "595cb482-b938-4a1f-804c-4ab99c46783b",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e90d989_l3-ehr-data-transformations-and-tensorflow-feature-engineering-12/l3-ehr-data-transformations-and-tensorflow-feature-engineering-12.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/595cb482-b938-4a1f-804c-4ab99c46783b",
+              "caption": "",
+              "alt": "",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1009463,
+              "key": "57b0802e-9ffc-4256-8ebe-5c34d9b60c36",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Transformations and Feature Engineering Recap\nFantastic Job! You are 75% of the way through this course!\n\nIn this lesson you learned:\n-  to identify and conduct tests to determine the correct EHR dataset level. You learned to differentiate between the line, encounter, and longitudinal levels. This skill will ensure that as we build our models, you are using the right data level.\n- conducted some basic tests while splitting data like a lumberjack preventing Data leakage which can be a major issue in EHR datasets.\n- engineered features with Tensorflow. In this part, you performed ETL with the Dataset API. You also transformed datasets using the TF Feature Column API for both numerical and categorical features. \n\nYou can now use the Feature Column API for transforming datasets at scale and building some unique feature types. \n\nAmazing job! The next lesson will be even more fun as we start building our machine learning models!\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015063,
+              "key": "8775a616-bcac-4973-a98c-e8c212edf144",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Lesson Key Terms\n| Key Term| Definition|\n|-------------------------------|--------------------------------|\n|Line Level| A denormalized representation of all the things that might happen in a medical visit or encounter. |\n|Encounter Level| Also known as the visit level, which is the aggregated information from the previously mentioned line level for one encounter. This information can be collapsed into a single row or arrays.|\n|Longitudinal Level:|Also known as the patient level view. This level aggregates the patient history and can show how the culmination of visits/encounter lead to some clinical impact. |\n|[Encounter](https://www.hl7.org/fhir/encounter-definitions.html)| “An interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.”|\n",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

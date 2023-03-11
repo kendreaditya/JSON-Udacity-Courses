@@ -1,0 +1,374 @@
+{
+  "data": {
+    "lesson": {
+      "id": 899852,
+      "key": "1de68fcc-5fec-422c-b1a9-69deba3e3d04",
+      "title": "API Documentation",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "To round out the course, students will consider and write API documentation and project documentation so their projects can be hosted, shared, and used by other developers with clarity. ",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/1de68fcc-5fec-422c-b1a9-69deba3e3d04/899852/1581172472445/API+Documentation+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/1de68fcc-5fec-422c-b1a9-69deba3e3d04/899852/1581172469365/API+Documentation+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 899849,
+          "key": "434d8a78-81f5-4ac3-a6a3-5f38d1fe9990",
+          "title": "Overview",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "434d8a78-81f5-4ac3-a6a3-5f38d1fe9990",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 899838,
+              "key": "c877c3f4-0df7-4a20-8263-c36637d669e6",
+              "title": "Section Intro",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Overview",
+              "instructor_notes": ""
+            },
+            {
+              "id": 899848,
+              "key": "9fd9a59f-6333-4f83-87f7-ec1ea1baad91",
+              "title": "FSND C2 L5 A01 Lesson Intro",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Au1u_BntJ-w",
+                "china_cdn_id": "Au1u_BntJ-w.mp4"
+              }
+            },
+            {
+              "id": 921979,
+              "key": "740b8af9-c350-4cc2-9196-06286053cfe0",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Now that you've learned the ins and outs of creating a RESTful API, you'll learn about how to make your API accessible and usable for other developers. In this course we will cover:\n\n- Good vs. Bad API Documentation\n- Practice writing API Documentation\n- Project Documentation\n\nFinally, you'll complete some preparation for your final project in which you'll use all your skills to demonstrate your ability as an API developer. \n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 917390,
+          "key": "7c126215-d166-485e-826d-a9c65dbad545",
+          "title": "Documentation Examples",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "7c126215-d166-485e-826d-a9c65dbad545",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 917392,
+              "key": "19f7d9c8-1db5-41c7-810a-7a537461cfb7",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# API Documentation — Examples",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917395,
+              "key": "6bffff70-9a6e-4564-a4e3-81702b99ded1",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Google Maps API",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917391,
+              "key": "55356721-fe5c-429b-a8ff-c0baa3e12bca",
+              "title": "FSND C2 L5 A02 API Good Documentation",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "mYfct4MTbnY",
+                "china_cdn_id": "mYfct4MTbnY.mp4"
+              }
+            },
+            {
+              "id": 917393,
+              "key": "db142664-39de-4035-a7ff-4eeaf2adc6b7",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Stripe API",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917394,
+              "key": "d14ab785-7fb4-42a7-8c36-f83c7aafcb30",
+              "title": "FSND C2 L5 A03 API Good Documentation - Stripe API",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "q-HbZhaL2Vg",
+                "china_cdn_id": "q-HbZhaL2Vg.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 917396,
+          "key": "c1d94a9d-b8cc-424e-8632-2ce4f340c64e",
+          "title": "Best Practices",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c1d94a9d-b8cc-424e-8632-2ce4f340c64e",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 917397,
+              "key": "bf7d37a0-8ee4-4a02-87f3-5b9c56c3c4cc",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Best Practices",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917398,
+              "key": "6432c5a8-2c8b-4c2f-9b86-5ea8f0c749fa",
+              "title": "FSND C2 L5 A04 API Good Documentation - Best Practices",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "VfXjRMTbCaE",
+                "china_cdn_id": "VfXjRMTbCaE.mp4"
+              }
+            },
+            {
+              "id": 917399,
+              "key": "66b76655-945c-452e-bb2f-a39f021733c0",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Good API documentation\n\nGood API documentation allows any developer considering the API to quickly understand the purpose of the API, the data it works with, and how to send requests and parse the responses. Some documentation, particularly for large projects, even host samples you can run within the documentation to see the API in action. For the purposes of this course, you don't need to implement interactivity, but you will provide examples that can be run by someone viewing your documentation. \n\nHere's a recap (for your reference) of the components that are typically included in good API documentation:\n\n- Introduction\n- Getting Started\n    - Base URL\n    - API Keys /Authentication (if applicable)\n- Errors\n    - Response codes\n    - Messages\n    - Error types\n- Resource endpoint library\n    - Organized by resource\n    - Include each endpoint\n    - Sample request \n    - Arguments including data types\n    - Response object including status codes and data types ",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 917260,
+          "key": "d3ba679a-0b7e-4fd5-8504-03028ec8ee57",
+          "title": "API Documentation Lab ",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d3ba679a-0b7e-4fd5-8504-03028ec8ee57",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 917261,
+              "key": "eaaf27ed-5425-470a-9b89-975aca6010f9",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r848940c917260xJUPYTERLrapcyn36",
+              "pool_id": "jupyterlab",
+              "view_id": "jupyter-lab-e43bs",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "pageEnd": "",
+                    "pageStart": "1",
+                    "allowSubmit": false,
+                    "defaultPath": "/",
+                    "actionButtonText": ""
+                  },
+                  "kind": "jupyter-lab"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 917403,
+              "key": "64749fc1-d0cb-4ad1-9892-481282fe40c2",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Solution walkthrough",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917402,
+              "key": "a6d98a60-5dc2-4459-84f1-160962899b69",
+              "title": "FSND C2 L5 A05 Project Documentation - Read Me",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "3p0DYYnl0NY",
+                "china_cdn_id": "3p0DYYnl0NY.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 917404,
+          "key": "2f7b248a-6631-42ae-9eef-64075b771cfc",
+          "title": "Project Documentation",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "2f7b248a-6631-42ae-9eef-64075b771cfc",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 917405,
+              "key": "ce271507-421f-4c34-960a-0589be00e114",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Project Documentation",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917409,
+              "key": "17fa7c29-64ae-4639-bb73-b16a0d3209e6",
+              "title": "FSND C2 L5 A06 Project Documentation Copy 01",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "YYiVlkWsEOE",
+                "china_cdn_id": "YYiVlkWsEOE.mp4"
+              }
+            },
+            {
+              "id": 917408,
+              "key": "1011b690-6d47-44f7-9ccd-a466e289c240",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "All good, well-documented projects have a README.md file that should clearly explain the project and how to get started with it to any developers who may want to use or contribute to the project. Depending on your personal style preferences and project type, the structure and exact contents will differ, but the structure below is a good starting place.\n\n- **Project Title**\n    - Description of project and motivation\n    - Screenshots (if applicable), with captions\n    - Code Style if you are following particular style guides\n\n- **Getting Started**\n    - Prerequisites & Installation, including code samples for how to download all pre-requisites\n    - Local Development, including how to set up the local development environment and run the project locally\n    - Tests and how to run them\n\n- **API Reference.** If the API documentation is not very long, it can be included in the README \n\n- **Deployment** (if applicable)\n\n- **Authors**\n\n- **Acknowledgements**\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 917410,
+          "key": "65277b47-bf8b-4b79-9edd-d54dc566c71d",
+          "title": "Project Documentation Lab",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "65277b47-bf8b-4b79-9edd-d54dc566c71d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 917413,
+              "key": "6d320843-d455-43a8-8b14-6b41820f9462",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r848940c917410xJUPYTERLe8g7ukpx",
+              "pool_id": "jupyterlab",
+              "view_id": "jupyter-lab-lpx7q",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "pageEnd": "",
+                    "pageStart": "1",
+                    "allowSubmit": false,
+                    "defaultPath": "/",
+                    "actionButtonText": ""
+                  },
+                  "kind": "jupyter-lab"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 917412,
+              "key": "88c057ce-f057-4ea9-a604-ac3223f418cc",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Solution walkthrough",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917411,
+              "key": "333020cb-5901-4a73-aace-d5d3518817db",
+              "title": "FSND C2 L5 A07 Project Documentation Summary",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "CJaPSJ7jzv0",
+                "china_cdn_id": "CJaPSJ7jzv0.mp4"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

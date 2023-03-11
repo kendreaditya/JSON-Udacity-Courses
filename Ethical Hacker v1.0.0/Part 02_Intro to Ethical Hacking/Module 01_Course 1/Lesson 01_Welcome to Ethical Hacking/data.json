@@ -1,0 +1,839 @@
+{
+  "data": {
+    "lesson": {
+      "id": 1089394,
+      "key": "ee11944d-da71-4095-bdc1-19cc608efe4a",
+      "title": "Welcome to Ethical Hacking",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Meet the instructor, get an overview of the course and start learning about why Ethical Hacking is such an exciting field.  Let's get started!",
+      "lesson_type": null,
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/ee11944d-da71-4095-bdc1-19cc608efe4a/1089394/1614205764142/Welcome+to+Ethical+Hacking+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/ee11944d-da71-4095-bdc1-19cc608efe4a/1089394/1614205760792/Welcome+to+Ethical+Hacking+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 1089338,
+          "key": "96c1be21-3265-4a09-879d-811b12770770",
+          "title": "Meet Your Instructor",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "96c1be21-3265-4a09-879d-811b12770770",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089335,
+              "key": "d7f8abc1-8956-4872-bed2-89f69e9b7ff5",
+              "title": "Meet Your Instructor Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Meet Your Instructor Sagar Bansal",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089336,
+              "key": "2042b49f-cb0f-4b33-948d-b4d176aec022",
+              "title": "ND350 EHND C1 L0 A01 Meet Your Instructor V3",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "DHQGE40htuU",
+                "china_cdn_id": "DHQGE40htuU.mp4"
+              }
+            },
+            {
+              "id": 1121485,
+              "key": "83a954ff-d207-4d5c-9eff-a6c086725247",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### My Background\n\n* Started with a business degree\n* Learned that information security is my passion\n* Holdover a dozen certifications including  C|CISO, C)ISSO, L|PT (Master)\n* Certified in 28 Industry tools including Core Impact, Faraday, and BlockAPT\n* Chairman of Bansal X Group of Companies\n\n### What Do I Do?\n\n* Assist Global 2000 organizations, defense bodies, and intelligence agencies with their information security programs\n* Host conferences including HIB, BSides Haryana\n* Advisory Board Member\n   * Executive advisory board - International, Nulearn\n   * Former TVM advisory board - APAC, EC-Council\n   * Former C|EH advisory board - IMEA, EC-Council\n\n### As An Educator\n\n* Master CEI - Certified EC-Council Instructor\n* Amazon best selling author - Pentest Secrets (13th-17th Oct 2020)\n* Reached over a million people through social media\n* Taught more than 35K+ infosec professionals\n* And now, it's time to teach you!",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1089347,
+          "key": "1f9ac7ae-3902-4536-a49a-2b619abb3618",
+          "title": "Course Overview",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "1f9ac7ae-3902-4536-a49a-2b619abb3618",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089339,
+              "key": "fdf9d0fc-bc54-47af-a9c1-f51476817414",
+              "title": "Course Outline Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Our Journey In This Course",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089340,
+              "key": "eb46cf97-67cd-49fa-ab29-2af8ec9dd750",
+              "title": "ND350 EHND C1 L0 A02 Course Overview V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Pu41L_dhxvs",
+                "china_cdn_id": "Pu41L_dhxvs.mp4"
+              }
+            },
+            {
+              "id": 1121522,
+              "key": "bbe29009-2ba6-4856-8dd1-408dce702a5a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "This course is divided into five lessons:\n\n* Vulnerability Management\n* System Auditing\n* Application Auditing\n* Social Engineering\n* OSINT",
+              "instructor_notes": null
+            },
+            {
+              "id": 1121523,
+              "key": "2f0e5f10-c8cd-4896-a9c5-16bbf1b6646e",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/December/5fe22bde_1/1.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/2f0e5f10-c8cd-4896-a9c5-16bbf1b6646e",
+              "caption": "What We Will Cover In This Course",
+              "alt": "What We Will Cover In This Course",
+              "width": 1746,
+              "height": 335,
+              "instructor_notes": null
+            },
+            {
+              "id": 1089342,
+              "key": "e70264a6-beb8-4c13-9b97-f4bae9ac107a",
+              "title": "Course Outline Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Lesson 1 - Vulnerability Management.\n\nVulnerabilities are the weaknesses in our systems which hackers use to attack the system. We'll start this lesson by learning how to scan for vulnerabilities using automated tools. Then we will learn how to manage any found vulnerabilities in a central dashboard, prioritize them based on risk levels, and track response efforts and management decisions. We'll also learn how to manually calculate risk scores and assign risk ratings to the vulnerabilities.  We'll conclude the lesson with a discussion of false positives and false negatives.\n\n### Lesson 2 - System Auditing\n\nIn this lesson, we will learn how to read a test scope document and start gathering information about our target system. We will learn how to research the vulnerabilities find their exploits and how to validate the vulnerabilities by executing an exploit. Then we’ll learn how to prepare a report on our findings. We will end this lesson with a discussion about why some exploits are intentionally written with bugs. \n\n### Lesson 3 - Application Auditing.\n\nWe will start learning about application auditing by looking at the OWASP Web Security Testing Guide and how it can be used in our testing.  Next, we will learn how to send requests to a  web application and analyze the response that comes back. We will use semi-automated tools to increase the efficiency and accuracy of our tests. We'll also use fully automated tools to perform specific tasks to create output we can use in further testing. Finally, we'll look at other systems and products that are vulnerable to hacking.\n\n### Lesson 4 - Social Engineering\n\nIn this lesson, we will take a look at the human side of Ethical Hacking.  We will begin with a discussion of five opportunities in human psychology that hackers use to manipulate our employees. Then we will learn how to perform an enterprise-level phishing simulation and create malware. We will also learn how to create an effective landing page for social engineering attempts. We will wrap up our lesson with a discussion about the ethics of social engineering.\n\n### Lesson 5 - Open Source Intelligence (OSINT)\n\nWe'll start gathering open-source intelligence by using Exploratory Link Analysis.  Next, we'll learn how to do data mining. After we have gathered information, we will start grouping information and building links using a tool called Maltego. Then we will learn how to analyze the links and relationships we have established to create new information and draw conclusions based on the information we have uncovered. We will end the lesson with a brief discussion about using OSINT to uncover a hacker's identity.\n\n### By the end of this course, you will be able to\n\n* Manage the vulnerability lifecycle including scanning, analyzing, prioritizing, and managing risk.\n* Conduct an internal system and application audit based on international standards and methodologies.\n* Write industry-standard reports.\n* Manage an organization’s security awareness programs by emulating adversary activities and provide metrics for anticipating risk.\n* Audit the organization’s public exposure based on open-source intelligence.\n\n<hr>",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1089351,
+          "key": "907adf45-7025-4bf3-bd0c-f39acc771d8d",
+          "title": "Prerequisites",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "907adf45-7025-4bf3-bd0c-f39acc771d8d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089348,
+              "key": "e1f546bb-cb76-4d43-be53-5478546b2594",
+              "title": "Prerequisites Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Let's Confirm That You Are Prepared For This Course!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089349,
+              "key": "c5384555-24d8-4eb0-abb7-15d7834ec08f",
+              "title": "ND350 EHND C1 L0 A03 Prerequisites V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "37YDzpAIWfs",
+                "china_cdn_id": "37YDzpAIWfs.mp4"
+              }
+            },
+            {
+              "id": 1124239,
+              "key": "54cf8262-e9d5-472e-ba32-15c9717aeda1",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "There are some prerequisite concepts that you should understand before starting this course to ensure that you have a successful experience with the material. In addition, there are some other concepts that are not necessarily required for this course but will be helpful as you continue in your Ethical Hacking career. \n\n### Essential Security Concepts\n\nYou should have a basic understanding of the <a href=\"https://sagarbansal.com/how-do-you-define-security-cia-aic-triad/\" target=\"_blank\">**CIA Triad:**</a>\n\n* Confidentiality: protects our data against unauthorized access\n* Integrity:  protects our data and systems against any unauthorized alterations\n* Availability: protects our data and systems against unauthorized destruction or other disruptions to an authorized user's access \n\nThese three are the most fundamental goals of security. \n\nYou should also understand <a href=\"https://sagarbansal.com/how-do-any-security-mechanisms-work-iaaa/\" target=\"_blank\">**IAAA**</a> which is an acronym for \n\n* **Identification:** a user must have an identity like a username. \n* **Authentication:** a user should be able to prove the identity using authentication methods like a password.\n* **Authorization: **a system should check for access rights before granting the user access. \n* **Auditing: **everything the user does should be securely logged.\n\n#### Not Required But Helpful To Know\n\n* <a href=\"https://blog.finjan.com/what-is-non-repudiation/\" target=\"_blank\">Non-repudiation</a>\n* <a href=\"https://www.manageengine.com/application-control/principle-of-least-privilege.html\" target=\"_blank\">Least privileges</a>\n* <a href=\"https://security.berkeley.edu/need-know-access-control-guideline\" target=\"_blank\">Need-to-know</a>\n* <a href=\"https://blog.eccouncil.org/what-is-defense-in-depth/\" target=\"_blank\">Defense in depth</a>",
+              "instructor_notes": null
+            },
+            {
+              "id": 1124278,
+              "key": "31dc634e-7be3-48e1-bcfc-029da01e1358",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Core Technologies\n\nYou should also be aware of these core technologies:  \n\n* <a href=\"https://www.tecmint.com/linux-directory-structure-and-important-files-paths-explained/\" target=\"_blank\">Linux file structure</a>\n* <a href=\"https://www.geeksforgeeks.org/layers-of-osi-model/\" target=\"_blank\">Open Systems Interconnection (OSI) model</a>\n* <a href=\"https://www.geeksforgeeks.org/tcp-ip-model/\" target=\"_blank\">Transmission Control Protocol/Internet Protocol (TCP-IP) Model</a>\n* <a href=\"https://www.geeksforgeeks.org/tcp-3-way-handshake-process/\" target=\"_blank\">Three-way handshake</a>\n* <a href=\"https://medium.com/searchencrypt/what-is-encryption-how-does-it-work-e8f20e340537#:~:text=Encryption%20is%20a%20process%20that,%2C%20or%20decrypt%2C%20the%20information.\" target=\"_blank\">Encryption</a>\n* <a href=\"https://hackernoon.com/cryptographic-hashing-c25da23609c3#:~:text=Hashing%20is%20a%20method%20of,is%20always%20the%20same%20length.\" target=\"_blank\">Hashing</a>\n* <a href=\"https://us.norton.com/internetsecurity-malware-what-is-antivirus.html\" target=\"_blank\">Antivirus</a>\n* <a href=\"https://www.compuquip.com/blog/the-different-types-of-firewall-architectures\" target=\"_blank\">Firewall</a>\n\n#### Not Required But Helpful To Know\n\n* Windows, macOS, Android, and IOS file structure\n* <a href=\"https://www.thesslstore.com/blog/difference-encryption-hashing-salting/\" target=\"_blank\">Password salting</a>\n* <a href=\"https://www.docusign.com/how-it-works/electronic-signature/digital-signature/digital-signature-faq\" target=\"_blank\">Digital Signatures</a>\n* <a href=\"https://blog.keyfactor.com/digital-signature-vs-digital-certificate\" target=\"_blank\">Digital Certificates</a>\n* <a href=\"https://www.barracuda.com/glossary/intrusion-prevention-system\" target=\"_blank\">Intrusion Prevention System (IPS)</a>\n* <a href=\"https://digitalguardian.com/blog/what-data-loss-prevention-dlp-definition-data-loss-prevention\" target=\"_blank\">Data Loss Prevention (DLP)</a>\n* <a href=\"https://www.csoonline.com/article/2124604/what-is-siem-software-how-it-works-and-how-to-choose-the-right-tool.html\" target=\"_blank\">Security Information and Event Management (SIEM) </a>\n* <a href=\"https://medium.com/@marcoessomba/strengthening-your-cyber-defence-using-the-power-of-automation-a7dc318ea51a\" target=\"_blank\">Security Orchestration, Automation, and Response (SOAR)</a>",
+              "instructor_notes": null
+            },
+            {
+              "id": 1124279,
+              "key": "f39b08ce-1106-49be-8944-a5591d9ad220",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Commands & Code\n\n* <a href=\"https://www.udacity.com/course/linux-command-line-basics--ud595\" target=\"_blank\">Linux command line basics</a>\n* Programming fundamentals for at least one language: \n   * Python (preferred)\n   * C/C++\n   * Ruby\n   * Java\n\n#### Not Required But Helpful To Know\n\n* Windows CMD basics\n* Programming fundamentals \n   * SQL\n   * PHP \n   * Perl\n   * JavaScript\n\nThis course has a steep learning curve and we will be moving fairly quickly. \n\n**If you are not confident in your mastery of all of the required pre-requisites, now is a good place to take a break and review the necessary material.** We'll be here for you when you get back!",
+              "instructor_notes": null
+            },
+            {
+              "id": 1121493,
+              "key": "b6c46de9-99d3-4958-8027-4f4cf645e40a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Software and Hardware Requirements\n\n* Operating system - Windows, macOS or Linux\n* Processor\n   * Minimum speed - 2 GHz \n   * Virtualization support\n   * 64-bit instruction set\n* 8GB of RAM\n* 100GB of free storage space\n\n#### Not Required But Helpful\n\n* 16GB of RAM\n* SSD drive",
+              "instructor_notes": null
+            },
+            {
+              "id": 1124280,
+              "key": "6cb21383-4a17-44ca-88e5-2218f03f9fa9",
+              "title": "I am confident that I am prepared for this course",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "6cb21383-4a17-44ca-88e5-2218f03f9fa9",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "I am familiar with CIA Triad and IAAA",
+                "I understand the file structure of the Linux operating system",
+                "I understand networking concepts including TCP-IP, OSI model and three-way handshake",
+                "I am familiar with encryption and hashing",
+                "I know about antivirus and firewall software",
+                "I understand how to use a Linux terminal",
+                "I have basic programming skills in at least one language",
+                "I have access to a computer that meets the software and hardware requirements for the course"
+              ],
+              "positive_feedback": "Congratulations! You are ready to begin the course.",
+              "video_feedback": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "id": 1089359,
+          "key": "04c75fb4-ec87-4564-bdc5-b1c8bc2a6fd0",
+          "title": "Introduction to Ethical Hacking",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "04c75fb4-ec87-4564-bdc5-b1c8bc2a6fd0",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1125675,
+              "key": "b634eb74-34df-4499-9ad4-32dd5a820c4a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Introduction to Ethical Hacking",
+              "instructor_notes": null
+            },
+            {
+              "id": 1089353,
+              "key": "2b1b7602-9fdc-45f3-a64a-dda75d5116c3",
+              "title": "ND350 EHND C1 L0 A04 Introduction To Ethical Hacking V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "4RO1-OOflfI",
+                "china_cdn_id": "4RO1-OOflfI.mp4"
+              }
+            },
+            {
+              "id": 1121500,
+              "key": "abc483cb-0702-4842-9634-27fe50ef7f51",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "We live in a world where everything is connected to the internet - our businesses, our homes, our phones, our cars, and sometimes even our light bulbs! \n\nAll of these connections involve data that is passed from one system to another. This data can be very valuable and it can be very tempting for bad actors to steal, destroy, or manipulate this data for nefarious purposes. \n\nThe cost of a breach is can be high, so organizations need to protect their data.  The best way to do this involves continuous testing, patching, and monitoring. \n\nOrganizations hire people who continuously test the systems and spot weaknesses that a malicious hacker may take advantage of. They find the weakness and help mitigate it, and keep watch for new issues.\n\nThis is what Ethical Hacking is all about!",
+              "instructor_notes": null
+            },
+            {
+              "id": 1121643,
+              "key": "40d6a490-face-4f97-b06b-e3201896d1c6",
+              "title": null,
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "40d6a490-face-4f97-b06b-e3201896d1c6",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Is it possible to hack an airplane?",
+                "answers": [
+                  {
+                    "id": "ed61e4db-fe14-45d4-9e94-3b84cbc8e9cf",
+                    "text": "Yes",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "567eff99-3205-4a4e-a0a9-d8089687d97c",
+                    "text": "No",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1089367,
+          "key": "566fd680-6d95-4b56-aee5-c075bffd4fdc",
+          "title": "Stakeholders",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "566fd680-6d95-4b56-aee5-c075bffd4fdc",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089360,
+              "key": "b4ba6101-420a-48a0-81e2-c531b74d4c23",
+              "title": "Business Stakeholders Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Who Cares About Ethical Hacking?",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089361,
+              "key": "b96e5347-2aba-4adc-b8d5-31d7e23badaf",
+              "title": "ND350 EHND C1 L0 A05 Stakeholders",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "xiZYn-LlMIY",
+                "china_cdn_id": "xiZYn-LlMIY.mp4"
+              }
+            },
+            {
+              "id": 1121502,
+              "key": "436f865f-f78e-439f-8412-84bebd0740e1",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Key Stakeholders\n\n* Shareholders\n* Management\n* Employees\n* Customers\n* Suppliers\n* Competitors\n\n### Primary Teams that Ethical Hackers Work With\n\n* **CISO**: makes the major decisions relating to ethical hacking activities in the organization\n* **GRC team**: assists CISO by handling the day to day decision-making activities subject to ethical hacking\n* **Red Team:**  continuously tests the systems against various testing methodologies and new techniques\n* **Audit team**:  performs audits on systems to check if they meet the required security requirements of the business\n* **Blue team**: fixes the issues found by implementing various security mechanisms.\n* **Incident Response team**: handles the breaches as they occur \n* **Forensics team**:  works on analyzing how and why the breach happened\n\n### Other Sources of Information that Ethical Hackers Need\n\n* **HR department**: information about employees\n* **IT department**:  information about IT assets\n* **Legal department**:  information about current applicable laws and compliance requirements\n* **IAM department**:  information about the access rights of people\n* **Developers**:  information about the application code \n* **System architects**: information about system configurations",
+              "instructor_notes": null
+            },
+            {
+              "id": 1121631,
+              "key": "1410ec5a-8f6c-4a6b-9259-61435d139ab1",
+              "title": null,
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "1410ec5a-8f6c-4a6b-9259-61435d139ab1",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "How could a breach negatively affect competitors?",
+                "answers": [
+                  {
+                    "id": "5c534218-a30d-41c4-8fcc-14f883371415",
+                    "text": "Costs of doing business may increase",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "23eee1d9-be10-4cc2-ae94-0ab0bbb32c41",
+                    "text": "Customers may not trust the breached business",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "271c9f20-6867-4348-af5b-0b231e5b31ad",
+                    "text": "The stock market may discount the sector",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "d10ba837-f900-434f-a847-0051eaf4eba7",
+                    "text": "Stricter government regulations may be imposed",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1123294,
+              "key": "6395f26f-7a52-4465-9308-6ac1de361744",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### New Terms\n\n<div class=\"index-module--table-responsive--1zG6k\"><table class=\"index-module--table--8j68C index-module--table-striped--3HHC-\">\n<thead>\n<tr>\n<th>Term</th>\n<th>Definition</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Blue Team</td>\n<td>The team tasked with implementing security controls to secure the organization</td>\n</tr>\n<tr>\n<td>Chief Information Security Officer (CISO)</td>\n<td>The highest-ranking security role in an organization. The CISO is typically a C-suite executive, but some organizations have a non-executive CISO with a title like Director of Security</td>\n</tr>\n<tr>\n<td>Governance, Risk, and Compliance (GRC)</td>\n<td>The team that coordinates the organization's risk management and regulatory compliance efforts.</td>\n</tr>\n<tr>\n<td>Identity and Access Management (IAM)</td>\n<td>The team responsible for ensuring that every user's identity and access to the resources are managed securely</td>\n</tr>\n<tr>\n<td>Red Team</td>\n<td>The team tasked with continuously trying new methods and techniques to find vulnerabilities in existing security controls.</td>\n</tr>\n</tbody>\n</table>\n</div>",
+              "instructor_notes": null
+            },
+            {
+              "id": 1089366,
+              "key": "bb47293a-cdd5-4856-aa49-42bd9f9ab7c9",
+              "title": "Business Stakeholders Heading Further Reading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Further Reading\n\nIf you want to learn more about the impact of data breaches, see the numbers shared in highlights from the <a href=\"https://www.ibm.com/security/digital-assets/cost-data-breach-report/#/\" target=\"_blank\">IBM Security: Cost of a Data Breach Report</a>",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1089374,
+          "key": "322f49e5-2abf-421b-a8c2-41330da3a8be",
+          "title": "History of Ethical Hacking",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "322f49e5-2abf-421b-a8c2-41330da3a8be",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089368,
+              "key": "fd840d8d-96df-4462-be73-33c8f9e86cf7",
+              "title": "History of Ethical Hacking Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# How It All Started",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089369,
+              "key": "0c0d31eb-a533-4b39-8f37-7d61d0acb71e",
+              "title": "ND350 EHND C1 L0 A05b History Of Ethical Hacking",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "RDdEqMcUyQ0",
+                "china_cdn_id": "RDdEqMcUyQ0.mp4"
+              }
+            },
+            {
+              "id": 1121635,
+              "key": "90a9d632-e6e3-43ae-8a03-95fd090a2604",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Hacking Did Not Start With Computers",
+              "instructor_notes": null
+            },
+            {
+              "id": 1121636,
+              "key": "f311b9e8-5a5c-4b8e-91ba-ff5db2a167e4",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/December/5fe244ce_2/2.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/f311b9e8-5a5c-4b8e-91ba-ff5db2a167e4",
+              "caption": "",
+              "alt": "Hacking started with Train Sets in the 60's, Telephones in the '70s and Cybercrime in the 80s",
+              "width": 900,
+              "height": 267,
+              "instructor_notes": null
+            },
+            {
+              "id": 1121501,
+              "key": "6bcd1d53-798b-4b00-bfbc-b47baff121ec",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In 1961 MIT Researchers hacked a toy train set to change its functionality.  This was the start of hacking!  It was only later that they started hacking their very expensive mainframe computers. \n\nIn the 1970s,  there wasn't an internet to hack and computers were used only by large businesses and government organizations.  Hackers targeted telephone systems to get free phone calls because telephone service was extremely expensive.\n\nIn the 1980s computers became more common.  The internet was primarily used for research and defense purposes but as it expanded, so did cybercrime. Governments began to take action and laws like the U.S Computer Fraud and Abuse Act. Laws prohibited unauthorized computer access and made hacking a serious crime.",
+              "instructor_notes": null
+            },
+            {
+              "id": 1121637,
+              "key": "01c93a4c-39c9-4928-9266-3d9faa2ace7e",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/December/5fe244ff_3/3.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/01c93a4c-39c9-4928-9266-3d9faa2ace7e",
+              "caption": "",
+              "alt": "Internet crime and arrests in '90s and More Hacking after 2000,  and Ethical Hackers emerged to help",
+              "width": 885,
+              "height": 273,
+              "instructor_notes": null
+            },
+            {
+              "id": 1121638,
+              "key": "4d98b87a-1fb9-4fd8-88bb-e85a82312d9c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In the 1990s internet usage became more common.  As more people started to use the internet, criminal activity increased too. Hackers like Kevin Mitnick and Robert Morris were arrested for crimes including hacking into computer systems to steal proprietary code.\n\nAs the internet expanded further in the 2000s, major e-commerce, search engine, and social media platforms were attacked.  Even the International Space Station was breached. \n\nEventually, organizations became concerned about protecting their systems from hacking. They started to hire Ethical Hackers to be the good guys fighting the bad actors.\n\nMany legendary good guy hackers initially started as malicious actors and were sent to prison. When they came out of prison, they started to use their hacking skills to protect systems instead of hacking them.  Their efforts made the cyber world a better place for everyone.",
+              "instructor_notes": null
+            },
+            {
+              "id": 1089373,
+              "key": "160028d4-aea2-4d2b-b0e7-5012b2fea008",
+              "title": "History of Ethical Hacking Further Reading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Further Reading\n\n* There were 75 major breaches between 2004-2010 and even more since then. Read about them on Wikipedia:  <a href=\"https://en.wikipedia.org/wiki/List_of_data_breaches\" target=\"_blank\">List of data breaches</a>\n* Kevin Mitnick is known as the world's most famous hacker. He started out as a cybercriminal but later become a top security consultant. You can read his story on Wikipedia: <a href=\"https://en.wikipedia.org/wiki/Kevin_Mitnick\" target=\"_blank\">Kevin Mitnick</a>\n* Hacking the phone system is also called Phreaking.  Read more about it here: <a href=\"https://www.britannica.com/topic/phreaking\" target=\"_blank\">Britannica.com - Phreaking</a>\n* You can read about the great MIT Train hack here: <a href=\"https://alum.mit.edu/slice/happy-60th-birthday-word-hack\" target=\"_blank\">Happy 60th Birthday to the Word \"Hack\"</a>\n* The world's first computer worm was created in 1988. Known as the Morris Worm, it infected computers all over the internet. Read more about the story including the arrest of its creator in this FBI report:  <a href=\"https://www.fbi.gov/news/stories/morris-worm-30-years-since-first-major-attack-on-internet-110218\" target=\"_blank\">**The Morris Worm**</a>\n* Here is an interesting article in The New Yorker discussing how the definition of the term \"hack\" has changed  over time: <a href=\"https://www.newyorker.com/tech/annals-of-technology/a-short-history-of-hack\" target=\"_blank\">A Short History of \"Hack\"</a>\n* Want to hear more about DDoS attacks? This article from Cloudflare describes some of the most famous ones: <a href=\"https://www.cloudflare.com/learning/ddos/famous-ddos-attacks/\" target=\"_blank\">Famous DDoS attacks</a>",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1089380,
+          "key": "d8a6a5ef-4303-4def-8700-27e02b93068b",
+          "title": "Tools & Environment",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d8a6a5ef-4303-4def-8700-27e02b93068b",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089375,
+              "key": "53e361b2-1f55-43b0-bc36-05fa78c17083",
+              "title": "Tools & Environment Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Getting Set Up For the Course",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089376,
+              "key": "c299f98b-1179-4523-88e0-d8d0d41085ad",
+              "title": "ND350 EHND C1 L0 A06 Environment Setup Part 1 V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "eSXH39M3wbk",
+                "china_cdn_id": "eSXH39M3wbk.mp4"
+              }
+            },
+            {
+              "id": 1124320,
+              "key": "6cf6c9f8-edf5-4762-9caf-724217461682",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this course, we will be using some code that could be dangerous if it is run on a real machine.\n\nThe code we will be using code can \n\n* cause overheating\n* crash programs\n* corrupt the operating system\n\nIn addition, legal issues can arise if you intentionally or unintentionally harm other people’s devices using the tools and skills you will learn in this course.\n\nTo avoid these risks we will be using virtual machines for the exercises and the project in this course.  The virtual machines will provide a safe and legal environment to learn and practice your hacking skills.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1125184,
+              "key": "edf93eae-5d7a-4930-b4a3-8d5837a7d754",
+              "title": "ND350 EHND C1 L0 A06 Environment Setup Part 2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "febPhpA_IR0",
+                "china_cdn_id": "febPhpA_IR0.mp4"
+              }
+            },
+            {
+              "id": 1125304,
+              "key": "8fea11a5-fe59-4ec0-b307-abb95ce5b155",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Steps To Set Up The Course Environment\n\n1. Download and install <a href=\"https://www.virtualbox.org/wiki/Downloads\" target=\"_blank\">VirtualBox</a>\n1. Create a NAT network by selecting **File > Preferences > Network**:  \n   * Name - `ExampleCorpNet`\n   * CIDR - `10.10.10.0/24` \n1. Download the virtual machines (see links below)\n1. Import the course `.ova` files by selecting **File > Import Appliance**\n1. Configure the network settings in each machine by selecting **Machine > Settings > Network > Adapter 1 **and choosing the NAT network you just created \n\n### Course Virtual Machines Download Links\n\n* Analyst machine - <a href=\"https://udacity-ehnd.s3-us-west-2.amazonaws.com/Ethical+Hacker/Analyst.ova\" target=\"_blank\">Analyst.ova</a>\n* TestLab Machine - <a href=\"https://udacity-ehnd.s3-us-west-2.amazonaws.com/Ethical+Hacker/TestLab.ova\" target=\"_blank\">TestLab.ova</a>\n* SBvA Machine - <a href=\"https://udacity-ehnd.s3-us-west-2.amazonaws.com/Ethical+Hacker/SBVA.ova\" target=\"_blank\">SBVA.ova</a>\n\nThere is another VM for the project that you can download later.\n\n**Note: **the `.ova` files are very large and may take a long time to download if you have a slow internet connection.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1119675,
+              "key": "b789b2a2-deff-48b8-becc-8b6d81aad596",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Troubleshooting  If the VM Won't Launch on  macOs\n\nIf the VM aborts shortly after startup, try starting VirtualBox using the terminal: \n\n```\nsudo virtualbox\n```\n\nIf that doesn't work, try these steps:\n\n* Import the virtual machine using **File** > **Import Appliance. **Choose **Expert Mode** and uncheck the box for **Import hard drives as VDI**\n* After the import, edit the virtual machine setting using **Settings** > **Display** > **Screen **and increase the **Video Memory**",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089379,
+              "key": "90ad9305-e3b7-4196-bd5a-63c5c78852d3",
+              "title": "Tools and Environment Checklist",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "90ad9305-e3b7-4196-bd5a-63c5c78852d3",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Install VirtualBox",
+                "Create a NAT Network named `ExampleCorpNet` with a CIDR of `10.10.10.0/24`",
+                "Download all of the virtual machines",
+                "Import the virtual machines into VirtualBox",
+                "Configure the network settings for each virtual machine"
+              ],
+              "positive_feedback": "Nice work! After completing these steps you should be all set.",
+              "video_feedback": null,
+              "description": ""
+            }
+          ]
+        },
+        {
+          "id": 1089385,
+          "key": "269854a1-8134-462c-b5f9-b3d33ee0f7b8",
+          "title": "Project: Audit ExampleCorp",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "269854a1-8134-462c-b5f9-b3d33ee0f7b8",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089381,
+              "key": "49f3135a-2ac1-4e30-b650-8a3a067b311e",
+              "title": "Project: Audit ExampleCorp Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Audit ExampleCorp",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089382,
+              "key": "93075cc8-e3b8-4378-8320-23b1b6bee6e1",
+              "title": "ND350 EHND C1 L0 A07 Project Audit ExampleCorp",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "tGUQieXF7L8",
+                "china_cdn_id": "tGUQieXF7L8.mp4"
+              }
+            },
+            {
+              "id": 1121504,
+              "key": "f50f16e7-c04b-4e75-9021-036d89e23c20",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "At the end of this course, you will be doing a complete audit for a company called **ExampleCorp. **The project will involve:\n\n* Social Engineering\n* Open-source intelligence\n* Vulnerability assessment using automated tools \n* Manual auditing of systems and apps\n\nThe project won't be easy because it will test a lot of the skills you will be developing in this course including:\n\n* Chaining vulnerabilities together, \n* Modifying exploit code\n* Reading documentation to learn new tests\n* Preparing an industry-standard report\n\nThis project might sound challenging, now, but by the end of the course, you will be completely ready for it.  \n\nI think you'll be amazed by how much you learn.",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1089390,
+          "key": "10657516-764e-4e2a-8704-3eeb823ab112",
+          "title": "Lesson Recap",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "10657516-764e-4e2a-8704-3eeb823ab112",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089386,
+              "key": "f084c463-e8fa-4621-a055-454cf2939876",
+              "title": "Lesson Recap Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Lesson Recap",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089387,
+              "key": "271669ce-bfc2-468e-97d7-3b9f8c1e98b4",
+              "title": "ND350 EHND C1 L0 A08 Lesson Recap",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "LmcLzmKrn5w",
+                "china_cdn_id": "LmcLzmKrn5w.mp4"
+              }
+            },
+            {
+              "id": 1124414,
+              "key": "b3ff1ef8-27ce-4d79-9543-5ac0a5d79d5b",
+              "title": "Lesson Recap Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "This was an introduction lesson and we focused on five topics:\n\n### Course Overview\n\nWe discussed the five lessons in this course and the key topics that we will cover in each lesson.\n\n### Prerequisites\n\nWe reviewed the pre-requisites that you will need to be successful in the course and discussed some additional things you should know to be a successful ethical hacker.\n\n### Introduction, History & Stakeholders\n\nWe discussed the concept of ethical hacking and how it has evolved as an industry, from the year 1961 to all the way to this century. We also learned about various stakeholders who share a joint interest with us.      \n\n### Environment Setup\n\nWe reviewed the steps to set up the working environment for this course, including Virtualbox and the four virtual machines we will be using.\n\n### Course Project\n\nWe ended this lesson by taking a quick peek at the Final Project and how it will tie together and apply the concepts that you will learn throughout this course.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1124677,
+              "key": "8177113b-85a6-43c3-a571-df496443001b",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/January/5ffa937e_0/0.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/8177113b-85a6-43c3-a571-df496443001b",
+              "caption": "Where We Are In This Course",
+              "alt": "Where We Are In This Course",
+              "width": 1050,
+              "height": 194,
+              "instructor_notes": null
+            },
+            {
+              "id": 1121505,
+              "key": "f77f2bf8-9dce-489e-951b-ce16e5646abd",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### In The Next Lesson, We Will Focus On:\n\n* Vulnerability Scanning\n* Prioritization and Response\n* Vulnerability Scoring\n* Game of False Results",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1089393,
+          "key": "e7abcf3f-a0cd-4bd8-a401-47c3e53ae86d",
+          "title": "Good Luck!",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "e7abcf3f-a0cd-4bd8-a401-47c3e53ae86d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1125673,
+              "key": "df7d9dba-cc9e-4f75-ac53-3af29e1149ff",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Let's Get Started",
+              "instructor_notes": null
+            },
+            {
+              "id": 1089392,
+              "key": "ff811002-f3f7-4b1b-80f3-c3c8d565ea63",
+              "title": "ND350 EHND C1 L0 A09 Good Luck",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "nFkzPxETrzU",
+                "china_cdn_id": "nFkzPxETrzU.mp4"
+              }
+            },
+            {
+              "id": 1124679,
+              "key": "b9824c72-4874-4d51-a3fb-7c2441d32945",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Every day I get emails from students all over the world sharing their success stories,\n\nBecoming an Ethical Hacker is an amazing experience. It is a  journey that you to complete, a path that you have to walk on and I will be there with you as you pursue your dreams.\n\n\n\nI wish you best of luck for this course.\n\nLet’s get started!",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1123295,
+          "key": "b053bd20-42f6-42f4-8f52-f2da7142788c",
+          "title": "Glossary",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "b053bd20-42f6-42f4-8f52-f2da7142788c",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1125172,
+              "key": "52812b92-defd-4cda-90fe-ccee72d24706",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "| Term | Definition |\n|-|-|\n| Blue Team | The team tasked with implementing security controls to secure the organization | \n| Chief Information Security Officer (CISO) | The highest-ranking security role in an organization. The CISO is typically a C-suite executive, but some organizations have a non-executive CISO with a title like Director of Security | \n| Governance, Risk, and Compliance (GRC) | The team that coordinates the organization's risk management and regulatory compliance efforts. | \n| Identity and Access Management (IAM) | The team responsible for ensuring that every user's identity and access to the resources are managed securely | \n| Red Team | The team tasked with continuously trying new methods and techniques to find vulnerabilities in existing security controls. | ",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "lesson_type",
+      "reason": "Obsolete"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

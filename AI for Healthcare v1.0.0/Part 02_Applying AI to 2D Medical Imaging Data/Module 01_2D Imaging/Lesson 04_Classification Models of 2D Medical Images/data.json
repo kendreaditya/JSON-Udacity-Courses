@@ -1,0 +1,2330 @@
+{
+  "data": {
+    "lesson": {
+      "id": 1007531,
+      "key": "5f4b34f1-86c8-4be5-921c-2bb2578918b7",
+      "title": "Classification Models of 2D Medical Images",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "In this lesson, we'll dive deep into classification tasks for 2D medical imaging using different machine learning models. and we will talk about pre-process data, train, test, and validate models.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": null,
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 1007650,
+          "key": "5a733ae3-13e8-48b8-b6d4-3e93bf6521f7",
+          "title": "Models for Classification of 2D Medical Images",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5a733ae3-13e8-48b8-b6d4-3e93bf6521f7",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007651,
+              "key": "35ac0cd8-1bde-4d17-83dc-f9d82d98b8a4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Models for Classification of 2D Medical Images",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009786,
+              "key": "f8ca66fe-c1a2-4f21-a1fa-ff54ec05b6a4",
+              "title": "ND320 C2 L3 01 Developing Models For Classification Of 2D Medical Images Video",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "SNS2VdIjNpI",
+                "china_cdn_id": "SNS2VdIjNpI.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 1007652,
+          "key": "a0d24f1f-6d57-477f-a096-8e2d2b7a592a",
+          "title": "Lesson Outline",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a0d24f1f-6d57-477f-a096-8e2d2b7a592a",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007653,
+              "key": "4b32bdc7-1ae4-43d1-9425-b6f552b9e755",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Lesson Outline",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009789,
+              "key": "522a52db-7cfd-437c-ae90-81e655ffe7f4",
+              "title": "ND320 C2 L3 02 Lesson Outline Video",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "mIgHpAbiEJE",
+                "china_cdn_id": "mIgHpAbiEJE.mp4"
+              }
+            },
+            {
+              "id": 1009790,
+              "key": "85c321d2-6ed6-4e4d-ab61-0cf62b680349",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9b4f84_l3-outline/l3-outline.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/85c321d2-6ed6-4e4d-ab61-0cf62b680349",
+              "caption": "",
+              "alt": "",
+              "width": 778,
+              "height": 276,
+              "instructor_notes": null
+            },
+            {
+              "id": 1009791,
+              "key": "f7d00c67-0bb6-4ac3-a836-95855611d197",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Note\nIn this lesson, we are going to focus on CNNs for classification tasks. We won’t talk too much about segmentation and localization, but we’ll lay a lot of the foundational work for you to be able to tackle those on your own outside of this course. \n\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1007654,
+          "key": "4f04f9dc-8da1-49e8-80bb-8482a19e07ae",
+          "title": "Big Picture",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "4f04f9dc-8da1-49e8-80bb-8482a19e07ae",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007655,
+              "key": "4de5aaf0-3fb7-4d2e-b813-e1ef7bd48143",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Big Picture",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009792,
+              "key": "ea22dca3-bb5e-49b5-9e87-3c28874bca7b",
+              "title": "ND320 C2 L3 03 Big Picture Video",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "J73Gsx04OCc",
+                "china_cdn_id": "J73Gsx04OCc.mp4"
+              }
+            },
+            {
+              "id": 1009794,
+              "key": "2b76cbc1-bfd2-4f65-9f04-d2594c17aabc",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\nThe big picture with this lesson is to understand _how and why_ those exact same CNNs for non-medical images are useful for medical images, but also, what the extra work algorithm developers need to do to re-purpose them for clinical use.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1007656,
+          "key": "3357dd5b-0e3e-439b-bdd5-9eff8c275b04",
+          "title": "Intuition about Classification Model Development",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "3357dd5b-0e3e-439b-bdd5-9eff8c275b04",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007657,
+              "key": "aad4b3b4-1a85-4539-bb9d-7024ff06979a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Intuition about Classification Model Development",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009796,
+              "key": "b5a0013d-167c-4395-a729-7c7a986697e4",
+              "title": "ND320 C2 L3 04 Developing Your Intuition About Classification Model Development Video",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "TtBz1XCXdzA",
+                "china_cdn_id": "TtBz1XCXdzA.mp4"
+              }
+            },
+            {
+              "id": 1009797,
+              "key": "90b3aa03-bf14-4465-8559-e7fa9d15ae10",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\nOne of the key intuitions you will start to develop as you spend more and more time with medical images is a sense of _whether or not_ you need deep learning to do the tasks that you want to do. If you find you do need deep learning, you’ll also start to develop an intuition about _how to efficiently_ build, train, and/or fine-tune CNN architectures for your classification tasks. \n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1007658,
+          "key": "f767ea8b-cbf2-4e74-a0a8-ea87bffc9d23",
+          "title": "Differentiate Between Models",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "f767ea8b-cbf2-4e74-a0a8-ea87bffc9d23",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007659,
+              "key": "6c8fc3db-fa2e-45ee-a97c-98624ab42b99",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Differentiate Between Models\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009800,
+              "key": "2c6afcb1-90dd-4dd4-b341-68be141924dc",
+              "title": "ND320 C2 L3 05 Differentiating Between Types Of Models Walkthrough Pt 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "nRqfnjPO8X8",
+                "china_cdn_id": "nRqfnjPO8X8.mp4"
+              }
+            },
+            {
+              "id": 1014758,
+              "key": "bf00230f-4ed7-491a-a7d0-b8f240aac1f4",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9b563b_l3-mldl/l3-mldl.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/bf00230f-4ed7-491a-a7d0-b8f240aac1f4",
+              "caption": "",
+              "alt": "",
+              "width": 762,
+              "height": 404,
+              "instructor_notes": null
+            },
+            {
+              "id": 1015320,
+              "key": "aaaf7e71-25c9-4e19-ba8c-38d526af59a1",
+              "title": "ND320 C2 L3 06 Differentiating Between Types Of Models Walkthrough Pt 2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "0JGyf23SrZU",
+                "china_cdn_id": "0JGyf23SrZU.mp4"
+              }
+            },
+            {
+              "id": 1015321,
+              "key": "86f16ba5-df02-45a2-8d57-1a4a8c3703cd",
+              "title": "ND320 C2 L3 07 Differentiating Between Types Of Models Walkthrough Pt 3",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "WblSZZgZEOQ",
+                "china_cdn_id": "WblSZZgZEOQ.mp4"
+              }
+            },
+            {
+              "id": 1009801,
+              "key": "2defdcf7-84a2-46ec-a5c2-286326e79b38",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\n### ML vs. DL\nThe biggest difference between ML and DL is the concept of **feature selection.** Classical machine learning algorithms require predefined features in images. And, it takes up a lot of time and effort to design features. When deep learning came along, it was so groundbreaking because it worked to discover important features, taking this burden off of the algorithm researchers. \n\n#### Ostu's method\nIt’s often used for background extraction and classification. It takes the intensity distribution of an image and searches it to find the intensity threshold that minimizes the variance in each of the two classes. Once it discovers that threshold, it considers every pixel on one side of that image to be one class and on the other side to be another class.\n\n#### Convolutional neural network (CNN)\nThere are several sets of _convolutional layers_ in a CNN model. Each layer is made up of a set of _filters_ that are looking for features. Layers that come early in a CNN model look for very simple features such as directional lines and layers that come later look for complex features such as shapes. \n\nNote that the input image size must match the size of the _first_ set of convolutional layers. \n\n#### U-Net\nU-Net is used for _segmentation_ problems and it is more commonly used in 3D medical imaging. It's important to note that a limitation of 2D imaging is the inability to measure the _volume_ of structures. 2D medical imaging only measures the area with respect to the angle of the image taken, which limits its utility in segmenting the whole area.\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1007660,
+          "key": "78662d81-bcae-4109-bd47-cbcead313079",
+          "title": "Differentiate Between Models Quizzes",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "78662d81-bcae-4109-bd47-cbcead313079",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007661,
+              "key": "5f415002-1a3d-4324-860d-2f46f728ed2f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Differentiate Between Models Quizzes",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009805,
+              "key": "2364f8b1-b43b-4ba7-bd6f-e0d92aeb7178",
+              "title": "Choosing the appropriate type of algorithm",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "2364f8b1-b43b-4ba7-bd6f-e0d92aeb7178",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "A clinician wants assistance from an algorithm to draw their eye to areas of concern on mammograms, what type of algorithm would be most useful?",
+                "answers": [
+                  {
+                    "id": "a1585934778696",
+                    "text": "classification",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1585934804057",
+                    "text": " CNN",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1585934808632",
+                    "text": "localization",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587163818056",
+                    "text": "U-Net",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587163828430",
+                    "text": "segmentation",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1014685,
+              "key": "8aaf7f99-e4a1-48c0-9843-b06020561b9b",
+              "title": "Deep learning",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "8aaf7f99-e4a1-48c0-9843-b06020561b9b",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following is **false** about deep learning? ",
+                "answers": [
+                  {
+                    "id": "a1587164187760",
+                    "text": "In deep learning, there are architectures specifically for classification problems",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587164225168",
+                    "text": "In deep learning, researchers build model architectures",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587164244240",
+                    "text": "In deep learning, researchers choose features about images",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587164348475",
+                    "text": "In deep learning, entire images can be fed into network architectures",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1007662,
+          "key": "e18c0906-de15-4ef7-a8de-fc5ff6f47535",
+          "title": "Differentiate Between Models Exercise",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "e18c0906-de15-4ef7-a8de-fc5ff6f47535",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007663,
+              "key": "c2ecb1af-5a52-4bfa-99be-84a465e6ba1d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Differentiate Between Models Exercise\n\nMachine learning algorithms aren't always complex, and they can have use cases at many different stages of medical imaging analysis, starting at pre-processing. In this exercise, you'll implement a simple algorithm called Otsu's algorithm that just implements image intensity thresholding to segment breast tissue from the background of an image. \n\nNext, you'll use these masks to extract the image intensity distributions for two types of breasts: fatty and dense. These are standard classifications of breast tissue that radiologists make for all mammography studies. Using image intensity to classify breast tissue type is yet another implementation of Otsu's algorithm. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1007848,
+              "key": "b6e46074-b164-4770-9c26-4014dc05119d",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1007662xJUPYTERjkiwfvwv",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-9nz05",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1007664,
+          "key": "635508cd-4eae-46b4-9b1f-1df35ce40d57",
+          "title": "Differentiate Between Models Exercise Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "635508cd-4eae-46b4-9b1f-1df35ce40d57",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007665,
+              "key": "74eefebc-75d3-4a72-897b-1831d2e04723",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Differentiating Between Types of Models Exercise Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009808,
+              "key": "5b11fb83-a897-4070-b2e3-b43eb896ba4c",
+              "title": "ND320 C2 L3 08 Differentiating Between Types Of Models Exercise Solution Video",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "dGrp1mlL3Bk",
+                "china_cdn_id": "dGrp1mlL3Bk.mp4"
+              }
+            },
+            {
+              "id": 1009809,
+              "key": "cc90b6b9-7039-4962-8b2b-bcd3a674c8ec",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\nFirst, I used Otsu’s method to extract background pixels from all of my images using a threshold intensity value of 50. This allowed me to look at the _intensity distributions_ for breast tissue ONLY in fatty tissues or ONLY in dense tissue. I then used ```scipy.stats.mode``` to identify the mode (peak) of each type of tissue’s intensity distribution. \n\nHere, fatty tissue had a peak at 140 and dense tissue had a peak at 176. \n\nI then looped through all of the fatty/dense images and again using Otsu’s method with an intensity threshold of 50 to extract background. I then calculated _how far_ each image’s peak was from the peaks of the fatty and dense tissue distributions. Finally, which difference is _smaller_ determines what type of tissue my image most likely is. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009810,
+              "key": "45fb893c-1ecb-4be7-b783-52ba7ef3ecb8",
+              "title": "Reflect",
+              "semantic_type": "ReflectAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "45fb893c-1ecb-4be7-b783-52ba7ef3ecb8",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "title": null,
+                "semantic_type": "TextQuestion",
+                "evaluation_id": null,
+                "text": "Were there places where Otsu's method failed? Why do you think it failed? "
+              },
+              "answer": {
+                "text": "Otsu's method fails when the intensity distributions of the two classes can't be clearly separated. ",
+                "video": null
+              }
+            },
+            {
+              "id": 1008309,
+              "key": "d488c17a-77de-406a-8143-8af800f61115",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1007664xJUPYTERy59ublpr",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-d533c",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1007666,
+          "key": "678c028b-f57a-49b4-9248-17b587234fd4",
+          "title": "Split Dataset for Model Development",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "678c028b-f57a-49b4-9248-17b587234fd4",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007667,
+              "key": "6b324fe8-6708-44af-a965-86a2be96bf23",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Split Dataset for Model Development\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009811,
+              "key": "ea075645-2e07-46bc-aff5-41507d741423",
+              "title": "ND320 C2 L3 09 Splitting Your Dataset For Model Development Walkthrough",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "cOnrDodXOxo",
+                "china_cdn_id": "cOnrDodXOxo.mp4"
+              }
+            },
+            {
+              "id": 1019323,
+              "key": "f2649d1f-0b4d-401d-a509-9a323eb3eba4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Note: the train_test_split package comes from a sklearn package: `sklearn.model_selection.train_test_split`",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009813,
+              "key": "8c0c44f8-65e7-462c-b1d1-044857eeefe0",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9b5bdf_l3-split/l3-split.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/8c0c44f8-65e7-462c-b1d1-044857eeefe0",
+              "caption": "",
+              "alt": "",
+              "width": 1368,
+              "height": 736,
+              "instructor_notes": null
+            },
+            {
+              "id": 1020093,
+              "key": "78ad2424-b9e4-4ba3-80e2-6c45f191bbb7",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Split data using `train_test_split` with Sklearn",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014760,
+              "key": "08e1c1db-8fa5-4bd1-88a6-07ce0ce7d4b4",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/May/5eb60740_l3-code/l3-code.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/08e1c1db-8fa5-4bd1-88a6-07ce0ce7d4b4",
+              "caption": "",
+              "alt": "",
+              "width": 630,
+              "height": 174,
+              "instructor_notes": null
+            },
+            {
+              "id": 1009812,
+              "key": "58a7a479-57f2-4aa1-b1b4-48c86444370d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\nYou need to split your data into two sets before feeding it into the model. \n- A training set: DL algorithm will use this data to learn the features that differentiate between your classes.\n- A validation set: the algorithm will _never_ use this set for learning. This is the set to determine if the algorithm is actually learning to discriminate between your classes.\n\nThe general rule of thumb is to split your data 80 in the training set and 20 in the validation set. The data should be split to maximize the _prevalence_ of positive cases (i.e make sure 80% of your positive cases end up in the training set and 20% in the validation set). \n\nWe want to have a _balanced_ training set so that the model has an equal number of cases in each class to learn. Even if one class is really rare in the wild. We want to have an _imbalanced_ validation set to reflect the real-world situation.  \n\nFor all other variables in your dataset such as age, sex, and race, the distribution should follow the _same_ distribution as your original _full_ dataset. \n\n**Note:** an image should NEVER be used for both training and validation.\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1007668,
+          "key": "f2b5af5e-f767-4418-9ff3-c3a6c4e652fc",
+          "title": "Split Dataset for Model Development Quizzes",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "f2b5af5e-f767-4418-9ff3-c3a6c4e652fc",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007669,
+              "key": "d24c5ab6-4fad-4825-a727-1ede537d0917",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Split Dataset for Model Development Quizzes",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014686,
+              "key": "561dc3bb-b843-4847-aefc-ad121c901175",
+              "title": "Training set composition ",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "561dc3bb-b843-4847-aefc-ad121c901175",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "If I am training a CNN to classify between no tumor, benign tumor, and malignant tumor on mammograms, what should be the makeup of my **training ** dataset for each of those three types? ",
+                "answers": [
+                  {
+                    "id": "a1587164484737",
+                    "text": "50% no tumor, 25% benign tumor, 25% malignant tumor",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587164528781",
+                    "text": "33.33% no tumor, 33.33% benign tumor, 33.33% malignant tumor",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587164554486",
+                    "text": "25% no tumor, 50% benign tumor, 25% malignant tumor.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587164570703",
+                    "text": "40% no tumor, 40% benign tumor, 20% malignant tumor",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587164592121",
+                    "text": "Whatever prevalence distribution I would see clinically",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1014689,
+              "key": "8db3b78f-fd47-43eb-8b07-5b8dc57f6b7a",
+              "title": "Splitting training and validation data",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "8db3b78f-fd47-43eb-8b07-5b8dc57f6b7a",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "I have 1,000 images that I can use to train and validate a CNN on to classify between the presence or absence of calcifications in a mammogram. In the real world, calcifications are only prevalent about 30% of the time, and my dataset of 1,000 images reflects this. In order to maximize my data and throw away as little as possible, how should I split my data using the 80-20 split rule? ",
+                "answers": [
+                  {
+                    "id": "a1587164696853",
+                    "text": "270 images with calcifications in my training set, 30 with calcifications in my validation set",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587164755747",
+                    "text": "60 images with calcifications in my training set, 240 with calcifications in my validation set",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587164757650",
+                    "text": "150 images with calcifications in my training set, 150 with calcifications in my validation set",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587164758368",
+                    "text": "240 images with calcifications in my training set, 60 with calcifications in my validation set",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1007670,
+          "key": "0f4ad850-c9e1-4dfd-924c-0bf83635a03b",
+          "title": "Split Dataset for Model Development Exercise",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "0f4ad850-c9e1-4dfd-924c-0bf83635a03b",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007671,
+              "key": "dab40219-c415-4170-a218-dbeaca18097f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Split Dataset For Model Development Exercise\nIn this exercise, we're going to prepare a dataset to be fed into a classification model for training. You're given a dataframe with image labels for 5,000 chest x-rays. Your goal is to prepare a training and a validation dataset for an algorithm that predicts the presence of a Pneumothorax (collapsed lung).  Remember, we want our model to see an equal amount of positive and negative cases when it's training, but when we evaluate its performance, we should be looking at a class balance or imbalance that is more reflective of the real world. In this exercise, \n\nYou will notice that Pneumothorax isn't a very common finding in this dataset, so you'll want to maximize your data so that you can use all of the true Pneumothorax cases in training. Given the large class imbalances, however, you may end up throwing away images that don't contain Pneumothorax.\n\nHere's an assumption you can make when creating your validation set: Despite the large imbalance of Pneumothorax in this dataset, in the **actual clinical setting** where you want to deploy your algorithm, the prevalence of Pneumothorax will be about **20%**. This is because patients are only being x-rayed based on their clinical symptoms that make Pneumothorax highly likely.\n\nThe final output of this exercise should be two dataframes: one containing data for training your algorithm, and one containing data for validating your algorithm.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1007850,
+              "key": "3a9bf892-c658-4259-865e-364f26ef8818",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1007670xJUPYTERw3nzknev",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-jtnhq",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1007672,
+          "key": "aeeb6199-ede6-4b7e-862c-8b8008ed9b7c",
+          "title": "Split Dataset for Model Development Exercise Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "aeeb6199-ede6-4b7e-862c-8b8008ed9b7c",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007673,
+              "key": "c4665137-9cc9-4cb0-a65b-700eb155a4e6",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Split Dataset for Model Development Exercise Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1008310,
+              "key": "f0b3eb64-6f5b-41ee-a964-ce8f46a69a75",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1007672xJUPYTERp7s12i50",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-53spa",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1007674,
+          "key": "03acae42-a7da-465a-b5b7-037775a90fc8",
+          "title": "Obtaining a Gold Standard",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "03acae42-a7da-465a-b5b7-037775a90fc8",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007675,
+              "key": "b530a6d4-6b0d-4e8b-8eee-f4f2b72e7350",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Obtaining a Gold Standard",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009821,
+              "key": "cd1aa4d9-4ce5-46e2-822f-843c63fa60e6",
+              "title": "ND320 C2 L3 11 Obtaining A Gold Standard Walkthrough Pt 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "I7MNFTnFZjA",
+                "china_cdn_id": "I7MNFTnFZjA.mp4"
+              }
+            },
+            {
+              "id": 1015862,
+              "key": "ef6c6cfc-96b8-45e6-85c3-6624af30b34a",
+              "title": "ND320 C2 L3 11.1 Obtaining A Gold Standard Walkthrough Pt 2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Y1YtgNaJUwA",
+                "china_cdn_id": "Y1YtgNaJUwA.mp4"
+              }
+            },
+            {
+              "id": 1009822,
+              "key": "18dc3dd3-b11f-428b-b115-4bd6a848d9e4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\n#### Gold standard\nThe _gold standard_ for a particular type of data refers to the method that detects disease with the _highest_ sensitivity and accuracy. Any new method that is developed can be compared to this to determine its performance. The gold standard is different for different diseases.\n#### Ground truth\nOften times, the gold standard is unattainable for an algorithm developer. So, you still need to establish the _ground truth_ to compare your algorithm.\n\nGround truths can be created in many different ways. Typical sources of ground truth are \n- Biopsy-based labeling. **Limitations:** difficult and expensive to obtain. \n- NLP extraction. **Limitations:** may not be accurate.\n- Expert (radiologist) labeling. **Limitations:** expensive and requires a lot of time to come up with labeling protocols.\n- Labeling by another state-of-the-art algorithm. **Limitations:** may not be accurate.\n\n#### Silver standard\nThe silver standard involves hiring _several_ radiologists to each make their own diagnosis of an image. The final diagnosis is then determined by a _voting_ system across all of the radiologists’ labels for each image. Note, sometimes radiologists’ experience levels are taken into account and votes are weighted by years of experience. \n\n\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1007676,
+          "key": "a30fd9d8-7659-4598-83e0-2337c9e52bea",
+          "title": "Obtaining a Gold Standard Quizzes",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a30fd9d8-7659-4598-83e0-2337c9e52bea",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007677,
+              "key": "8d1b0385-892c-4778-b243-93ea6145b10b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Obtaining a Gold Standard Quizzes",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009823,
+              "key": "5e3438a6-9872-4ac0-b949-8f80e34ea674",
+              "title": "Obtaining a ground truth",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "5e3438a6-9872-4ac0-b949-8f80e34ea674",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of these is not a method for obtaining a ground truth? ",
+                "answers": [
+                  {
+                    "id": "a1585938042677",
+                    "text": "Asking several radiologists to label images and taking the majority vote",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587165842090",
+                    "text": "Using a biopsy sample",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587165848785",
+                    "text": "Asking the patient what their diagnosis was",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587165861513",
+                    "text": "NLP-extracting labels from reports",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1014708,
+              "key": "c1fb15ae-eb71-4276-996f-a0dbbb549681",
+              "title": "Ground truth v. gold standard",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "c1fb15ae-eb71-4276-996f-a0dbbb549681",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Given these three radiologist labels, set of patient symptoms and clinical history, and biopsy sample, what would be the ground truth for this study if we were labeling for presence or absence of pneumonia? \n\n* **Radiologist 1:** pneumonia\n\n* **Radiologist 2:** pneumonia\n\n* **Radiologist 3:** pneumonia\n\n* **Biopsy:** no pneumonia\n\n* Patient has a clinical history of pneumonia\n\n\n\n",
+                "answers": [
+                  {
+                    "id": "a1587167601283",
+                    "text": "Pneumonia",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587167615776",
+                    "text": "No pneumonia",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1014764,
+              "key": "bdd7f786-ebd5-4cea-ab68-c472056088df",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Explanation\nIf such biopsy data is available, this would really be the 'gold standard' because human radiologists can make mistakes. If biopsy data is not available, though, we'd probably want to create a silver standard using a weighted combo of radiologist labels and their experience levels or just a voting-based label from each of the 3 radiologists' labels for each image.\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1007678,
+          "key": "f61d9300-415d-4248-bd58-729ef376b4aa",
+          "title": "Obtaining a Gold Standard Exercise",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "f61d9300-415d-4248-bd58-729ef376b4aa",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007679,
+              "key": "36669ead-c11c-403d-88fd-0d0db5b8a812",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Obtaining a Gold Standard Exercise\n\nIn this exercise, you'll be given labels for 60 mammograms that contain a suspicious mass. Anytime this occurs in a clinical setting, the patient is sent for a mass biopsy to determine if the mass is benign or cancerous. The radiologist can still make a judgment about whether to mass appears malignant or not based on how it appears in the image. \n\nSometimes in algorithmic development settings, we are only able to obtain radiologist reports and we are not able to obtain biopsy reports for all studies. Since the true gold standard label is the biopsy result, it helps to get several opinions from different radiologists on the image appearance to make a more robust ground truth assessment in the absence of biopsy data. \n\nHere, you are provided with labels from three different radiologists who have the following levels of clinical experience: \n* Rad1 = 5 years\n* Rad2 = 10 years\n* Rad3 = 15 years\n\nIn this exercise, create three 'ground truths', you can label benign as 1 and malignant as 0:\n\n1. Using biopsy labels (true gold standard)\n2. Using a voting system between the three radiologists \n3. Using a weighted voting system with experience levels between the three radiologists\n\nAssess how 2 & 3 compare to 1: if the ground truths from 2 & 3 agree with 1.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1007851,
+              "key": "c7623974-cd73-4ed7-9c6d-5776e10b455a",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1007678xJUPYTER3ri039fc",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-i9pik",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1007680,
+          "key": "cca13e15-23a5-407c-b419-b03af846f3cc",
+          "title": "Obtaining a Gold Standard Exercise Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "cca13e15-23a5-407c-b419-b03af846f3cc",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007681,
+              "key": "c86c6442-9af4-4622-ab3a-4f9162ac5e80",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Obtaining a Gold Standard Exercise Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1008311,
+              "key": "a10d2774-441e-4cb3-b8a3-53cf9f062504",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1007680xJUPYTER62zthkyt",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-49ok8",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1007682,
+          "key": "93f5a8cb-0731-4074-b926-dbd4db994d2d",
+          "title": "Image Pre-processing for Model Training",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "93f5a8cb-0731-4074-b926-dbd4db994d2d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007683,
+              "key": "66c00e8b-3cc6-4400-8fa8-26f74e299380",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Image Pre-processing for Model Training",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009831,
+              "key": "114bdbc7-2169-49bb-9e5a-e02aedd1f69c",
+              "title": "ND320 C2 L3 13 Image Pre-Processing For Model Training Walkthrough",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "B7yst-GFLXY",
+                "china_cdn_id": "B7yst-GFLXY.mp4"
+              }
+            },
+            {
+              "id": 1014766,
+              "key": "466c63cb-6c6f-41a0-85be-d48913ec50c9",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9b9369_l3-goals/l3-goals.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/466c63cb-6c6f-41a0-85be-d48913ec50c9",
+              "caption": "",
+              "alt": "",
+              "width": 650,
+              "height": 258,
+              "instructor_notes": null
+            },
+            {
+              "id": 1014767,
+              "key": "8d6ffeca-d19d-4399-9e3f-276f596c00d8",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9b9375_l3-augm/l3-augm.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/8d6ffeca-d19d-4399-9e3f-276f596c00d8",
+              "caption": "",
+              "alt": "",
+              "width": 548,
+              "height": 348,
+              "instructor_notes": null
+            },
+            {
+              "id": 1014768,
+              "key": "47e62402-246d-49f9-9359-5eb940974537",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9b9381_l3-resize/l3-resize.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/47e62402-246d-49f9-9359-5eb940974537",
+              "caption": "",
+              "alt": "",
+              "width": 720,
+              "height": 158,
+              "instructor_notes": null
+            },
+            {
+              "id": 1009832,
+              "key": "f1398f01-8dcb-445f-b763-d3185c944abd",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\n#### Intensity normalization\nIntensity normalization is good practice and should always be done prior to using data for training. Making all of your intensity values fall within a small range that is close to zero helps the weights on our convolutional filters stay under control \n\nThere are two types of normalization that you can perform. \n-  zero-meaning: subtract that mean intensity value from every pixel.\n- standardization: subtract the mean from each pixel and divide by the image’s standard deviation. \n\n#### Image augmentation\nImage augmentation allows us to create different versions of the original data. Keras provides ```ImageDataGenerator``` package for image augmentation.\n\n**Note:** not all image augmentation method is appropriate for medical imaging. A vertical flip should never be applied. And validation data should NEVER be augmented.\n\n#### Image resize\nCNNs have an input layer that specifies the size of the image they can process. Keras ```flow_from_directory ``` have a ```target_size``` parameter to resize image.\n\n\n\n\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1007684,
+          "key": "85e4c7a8-f87d-44a9-99bf-18fb0d3b37c3",
+          "title": "Image Pre-processing for Model Training Quizzes",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "85e4c7a8-f87d-44a9-99bf-18fb0d3b37c3",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007685,
+              "key": "503a20aa-287b-4bf1-a014-88b84e350cc9",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Image Pre-processing for Model Training Quizzes",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014709,
+              "key": "dfb07f5d-652b-4535-a86d-a1d5f3a5d55a",
+              "title": "Applying augmentation ",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "dfb07f5d-652b-4535-a86d-a1d5f3a5d55a",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following splits of your data should have augmentation performed on them?",
+                "answers": [
+                  {
+                    "id": "a1587167839684",
+                    "text": "Training data",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587167854988",
+                    "text": "Validation data",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587167857426",
+                    "text": "All data",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1009834,
+              "key": "7da9fbb8-8112-41d3-ace5-e829dc6ed798",
+              "title": "",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "7da9fbb8-8112-41d3-ace5-e829dc6ed798",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following types of augmentation would _not_ be appropriate for deep learning with medical imaging? ",
+                "answers": [
+                  {
+                    "id": "a1585945087774",
+                    "text": "vertical flip",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587167917056",
+                    "text": "horizontal flip",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587167923310",
+                    "text": "90 degree rotation",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587167932244",
+                    "text": "10% zoom",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587167938222",
+                    "text": "20 degree rotation",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1007686,
+          "key": "1cf2be64-514b-4162-b37c-945265c7ee43",
+          "title": "Image Pre-processing for Model Training Exercise",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "1cf2be64-514b-4162-b37c-945265c7ee43",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007687,
+              "key": "7594936f-81c0-4e8f-8938-6ea84128f92c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Image Pre-processing for Model Training Exercise\n\nIn Exercise 1, we experimented with some smoothing and with Otsu's method for some basic image preprocessing. There are other types of image pre-processing that become important when we start using deep learning. While pre-processing is classically thought of as being useful for cleaning up images by removing artifacts and smoothing out noise, there's another purpose for pre-processing that's more specific to deep learning. That purpose is to expand our set of training data, and it is accomplished by a process called _image augmentation._ This process takes a set of real images that you have selected for training and creates augmented copies of them to make the set larger, but also to expand the range and variety of the training data that your model will see. \n\nIn this exercise, you'll use Keras' built-in ImageDataGenerator class to perform augmentation on a set of mammography images to transform those images into a wider variety of appearances for training a future model. Note that there is an infinite number of ways that you can augment an image, and the ways in which you do this should reflect what's _possible_ to see in the real world. \n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1007861,
+              "key": "b78ad767-68c6-41bc-b582-2bc16d83758e",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1007686xJUPYTERtdfk5iu7",
+              "pool_id": "jupyterbyocgpu",
+              "view_id": "jupyter-qxoav",
+              "gpu_capable": true,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1007688,
+          "key": "abd238b9-cc03-47f0-89dd-e3dc1fc3b789",
+          "title": "Image Pre-processing for Model Training Exercise Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "abd238b9-cc03-47f0-89dd-e3dc1fc3b789",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007689,
+              "key": "9493fda3-6ec8-44a9-b2ec-816fb7b00c87",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Image Pre-processing for Model Training Exercise Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009837,
+              "key": "01c4f719-b2ab-4faa-932b-46ca1a83f010",
+              "title": "ND320 C2 L3 14 Image Pre-Processing For Model Training Exercise Solution Video",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "eeGUYyYukm8",
+                "china_cdn_id": "eeGUYyYukm8.mp4"
+              }
+            },
+            {
+              "id": 1009838,
+              "key": "42f65d15-b255-4196-8203-f3383d813090",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\nIn this exercise, I used a function called ```flow_from_dataframe``` instead of ```flow_from_directory```. This is easier because I had all of my image file paths stored in a dataframe, and is identical in function to ```flow_from_directory```. This may be a handy tool in your project. \n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1008312,
+              "key": "8ea52e4c-acaf-46bf-9db4-a51284cd22bb",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1007688xJUPYTER89omnahw",
+              "pool_id": "jupyterbyocgpu",
+              "view_id": "jupyter-6shgi",
+              "gpu_capable": true,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1007690,
+          "key": "d4e2d085-266c-4646-b8fc-4a69b304358f",
+          "title": "Fine-tuning CNNs for Classification",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d4e2d085-266c-4646-b8fc-4a69b304358f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007691,
+              "key": "4e6ec805-bbe9-4634-b02b-33970b934f7a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Fine-tuning CNNs for Classification",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009839,
+              "key": "fd9cd2cc-3346-4dc7-8115-38e4f900588b",
+              "title": "ND320 C2 L3 15 Fine-Tuning CNNs For 2D Medical Image Classification Walkthrough Pt 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "K9OnKsO9Wj4",
+                "china_cdn_id": "K9OnKsO9Wj4.mp4"
+              }
+            },
+            {
+              "id": 1015322,
+              "key": "df704445-b2a1-4385-b29f-753d84753757",
+              "title": "ND320 C2 L3 16 Fine-Tuning CNNs For 2D Medical Image Classification Walkthrough Pt 2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "5N2yR83RTG0",
+                "china_cdn_id": "5N2yR83RTG0.mp4"
+              }
+            },
+            {
+              "id": 1014770,
+              "key": "695e9f2d-32dc-4a4b-9a1b-6554a4513472",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9b95c6_l3-fine/l3-fine.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/695e9f2d-32dc-4a4b-9a1b-6554a4513472",
+              "caption": "",
+              "alt": "",
+              "width": 720,
+              "height": 390,
+              "instructor_notes": null
+            },
+            {
+              "id": 1014771,
+              "key": "b67c4864-ab1b-4ba4-87f1-ffd23b14a16b",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9b95d1_l3-freeze/l3-freeze.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/b67c4864-ab1b-4ba4-87f1-ffd23b14a16b",
+              "caption": "",
+              "alt": "",
+              "width": 1000,
+              "height": 510,
+              "instructor_notes": null
+            },
+            {
+              "id": 1009863,
+              "key": "fe570129-e32b-4f47-85cc-f849e8beae9f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\n#### Fine-tuning\nThe first several layers of filters trained are only going to learn line- and shape-based features because their visual fields are so small. We can reuse or freeze the pre-trained weights of the first few layers and only need to train filter weights to detect higher-order features that are more relevant to your specific use cases. We call this process that only makes adjustment of weights in the last a few layers _fine-tuning_. \n\nOne of the key pieces of fine-tuning is the last layer. We need to adjust the dimension of the last layer to match our specific use cases. We can also add new layers to train from scratch.\n\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1007692,
+          "key": "a8a483b5-5247-4766-817b-534c52a90e8e",
+          "title": "Fine-tuning CNNs for Classification Quizzes",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a8a483b5-5247-4766-817b-534c52a90e8e",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007693,
+              "key": "36f542bf-c6bc-490e-9bfa-9317ddde3588",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Fine-tuning CNNs for Classification Quizzes",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014746,
+              "key": "cd80ee4c-d880-48a1-8075-8edfcf46d853",
+              "title": "Fine-tuning existing architectures",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "cd80ee4c-d880-48a1-8075-8edfcf46d853",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following parameters of a layer in a CNN network that was built in Keras would I adjust in order to freeze or unfreeze it? ",
+                "answers": [
+                  {
+                    "id": "a1587228629183",
+                    "text": "layer.freezable",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587228680186",
+                    "text": "layer.fine_tunable",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587228689111",
+                    "text": "layer.trainable",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587228695800",
+                    "text": "layer.augmentable",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1014745,
+              "key": "f8db68e8-bee0-43c9-b482-6723cf44bb09",
+              "title": "Adding Layers to a Network",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "f8db68e8-bee0-43c9-b482-6723cf44bb09",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "If I want to fine-tune a network that originally was created to classify between 250 different types of vegetables, to instead classify between 15 different types of bone abnormalities, what would be the dimensions of my final layer of the fine-tuned network? ",
+                "answers": [
+                  {
+                    "id": "a1587228359826",
+                    "text": "1 x 1 x 250",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587228444865",
+                    "text": "1 x 1 x 15",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587228452925",
+                    "text": "1 x 250 x 15",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587228478060",
+                    "text": "15 x 15 x 15",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1007694,
+          "key": "9de38d8b-08e9-4d25-9d63-5a7952a12945",
+          "title": "Fine-tuning CNNs for Classification Exercise",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "9de38d8b-08e9-4d25-9d63-5a7952a12945",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007695,
+              "key": "243f4e9e-8ab9-46db-ad35-9b6b4e8f3247",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Fine-tuning CNNs for Classification Exercise\n\nIn this exercise, we'll focus on how to take an existing CNN architecture with weights that have been optimized for a general image classification task, and fine-tune it for a specific medical imaging task. \n\nWe'll work with the VGG16 architecture, using weights that have been trained in ImageNet. We'll walk through three different ways to use its architecture and fine-tune it to be used for classification of dense vs. fatty breast tissue on mammogram images. \n\nThe three scenarios for you to try are the following: \n\n1. Freeze all layers except for the final convolutional layer of VGG16\n2. Freeze all layers except the final convolutional layer of VGG16, and add several dense (fully connected) layers\n3. Freeze all layers except the final convolutional layer of VGG16, and add several dense (fully connected) layers with dropout\n\n**Note:** the purpose of this exercise is *not* to get great performance. We are not providing you nearly enough training and testing data for that. The purpose of this exercise is to get familiar with different ways to fine-tune existing architectures. To that end, just run each model architecture for 5 epochs or so with the small amount of training and validation data. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1007853,
+              "key": "9a876c65-d7b5-4cd9-850b-20672acab4d8",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1007694xJUPYTER0510j73m",
+              "pool_id": "jupyterbyocgpu",
+              "view_id": "jupyter-z9zdb",
+              "gpu_capable": true,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1007696,
+          "key": "ac2b714b-cef0-4e2e-b21d-4bc0278046c1",
+          "title": "Fine-tuning CNNs for Classification Exercise Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "ac2b714b-cef0-4e2e-b21d-4bc0278046c1",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007697,
+              "key": "5669bb39-3cbf-4274-bb74-f736397a4d5e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Fine-tuning CNNs for Classification Exercise Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1008313,
+              "key": "135f1cc6-a0b6-4f60-9548-a8c21b34f75d",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1007696xJUPYTERcrxcm1s6",
+              "pool_id": "jupyterbyocgpu",
+              "view_id": "jupyter-tani4",
+              "gpu_capable": true,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1007698,
+          "key": "9398154b-2f8c-4701-8915-05e1980a4663",
+          "title": "Evaluating Your Model",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "9398154b-2f8c-4701-8915-05e1980a4663",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007699,
+              "key": "970bc0b6-ef68-41bb-aea0-4f32dc84e20a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Evaluating Your Model",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009895,
+              "key": "31cc7a14-89c4-4b7a-a02f-43fff9bc16a5",
+              "title": "ND320 C2 L3 18 Evaluating Your Model Walkthrough Pt 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "LEvBfBersuE",
+                "china_cdn_id": "LEvBfBersuE.mp4"
+              }
+            },
+            {
+              "id": 1014775,
+              "key": "310433d5-d132-4f6b-8783-7b08214c0393",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9b9af0_l3-loss/l3-loss.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/310433d5-d132-4f6b-8783-7b08214c0393",
+              "caption": "",
+              "alt": "",
+              "width": 912,
+              "height": 504,
+              "instructor_notes": null
+            },
+            {
+              "id": 1015323,
+              "key": "80cd3e84-e1ce-4346-b33b-e3d6e6ed79b0",
+              "title": "ND320 C2 L3 19 Evaluating Your Model Walkthrough Pt 2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "JPUNuZP564Y",
+                "china_cdn_id": "JPUNuZP564Y.mp4"
+              }
+            },
+            {
+              "id": 1020382,
+              "key": "b663573b-da6d-4f55-8aa7-2ab3f68f514d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Note: The `history.history` function stores the loss value. Then you can use your choice of plot function such as `matplotlib.pyplot.plot`to plot the loss values.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014776,
+              "key": "c435de73-7ebb-4434-80e6-392f0a7c99ec",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9b9aff_l3-over/l3-over.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/c435de73-7ebb-4434-80e6-392f0a7c99ec",
+              "caption": "",
+              "alt": "",
+              "width": 770,
+              "height": 392,
+              "instructor_notes": null
+            },
+            {
+              "id": 1014777,
+              "key": "1f72c523-a507-4687-aa31-dbd3699c95ff",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9b9b26_l3-plot/l3-plot.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/1f72c523-a507-4687-aa31-dbd3699c95ff",
+              "caption": "",
+              "alt": "",
+              "width": 728,
+              "height": 274,
+              "instructor_notes": null
+            },
+            {
+              "id": 1014778,
+              "key": "fc1a6618-f62c-41d7-92ff-709eefc53149",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9b9b4a_l3-batch/l3-batch.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/fc1a6618-f62c-41d7-92ff-709eefc53149",
+              "caption": "",
+              "alt": "",
+              "width": 738,
+              "height": 150,
+              "instructor_notes": null
+            },
+            {
+              "id": 1014779,
+              "key": "59974110-14b9-44ac-8d98-04610af4fbf2",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9b9b5b_l3-lr/l3-lr.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/59974110-14b9-44ac-8d98-04610af4fbf2",
+              "caption": "",
+              "alt": "",
+              "width": 780,
+              "height": 150,
+              "instructor_notes": null
+            },
+            {
+              "id": 1014780,
+              "key": "07d400c9-ff46-4359-917d-0e24feaaede1",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9b9b68_l3-drop/l3-drop.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/07d400c9-ff46-4359-917d-0e24feaaede1",
+              "caption": "",
+              "alt": "",
+              "width": 500,
+              "height": 100,
+              "instructor_notes": null
+            },
+            {
+              "id": 1009922,
+              "key": "dee5a21b-5873-4220-bcdb-82c2273a6fd4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\n#### Loss and loss function\nEach time the entire training data is passed through the CNN, we call this one _epoch_. At the end of each epoch, the model has a _loss function_ to calculate how _different_ its prediction from the ground truth of the _training image_, this difference is the _training loss_. The network then uses the training loss to _update_ the weights of filters. This technique is called _back-propogation_.\n\nAt the end of each epoch, we also use that loss function to evaluate the loss on the validation set and obtain a _validation loss_ that measures how the prediction matches the _validation data_. But we _don’t_ update weights using validation loss. The validation set is just to test the performance of the model.\n\nIf the loss is small, it means the model did well classifying the images that it saw in that epoch. \n\n#### Overfitting\nIf the training loss keeps going down while the validation loss stops decreasing after a few epochs, we call the model is _overfitting_. It suggests the model is still learning how to better classify the training data but NOT the validation data.\n\n#### Prevent overfitting\nTo avoid overfitting, we can A) changing your model’s architecture, or B) changing some of the parameters. Some parameters you can change are:\n- Batch size\n- Learning rate\n- Dropout\n- More variation on training data\n\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1007700,
+          "key": "f50c1220-f2c2-48b4-a4e9-9374a43f91e6",
+          "title": "Evaluating Your Model Quizzes",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "f50c1220-f2c2-48b4-a4e9-9374a43f91e6",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007701,
+              "key": "296db800-c236-4688-9f90-5e61a9525843",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Evaluating Your Model Quizzes",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014747,
+              "key": "89252219-11b6-44e7-81ac-54fd6986c326",
+              "title": "Overfitting",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "89252219-11b6-44e7-81ac-54fd6986c326",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "In which of the following situations is your model overfitting by epoch 20? ",
+                "answers": [
+                  {
+                    "id": "a1587228813542",
+                    "text": "Training loss and validation loss both continue to decrease after epoch 20",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587228869909",
+                    "text": "Training accuracy is increasing, but validation accuracy is steady at epoch 20",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587228884459",
+                    "text": "Training loss is decreasing, but validation accuracy is decreasing at epoch 20",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587228924966",
+                    "text": "Training loss is decreasing but validation loss is increasing at epoch 20 ",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1009923,
+              "key": "e0e5b31c-8bb1-44d4-8827-576da32d37ee",
+              "title": "Avoiding overfitting",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "e0e5b31c-8bb1-44d4-8827-576da32d37ee",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following are valid techniques to avoid overfitting?",
+                "answers": [
+                  {
+                    "id": "a1585955339683",
+                    "text": "Changing my learning rate",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587229050716",
+                    "text": "Adding dropout",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587229066932",
+                    "text": "Changing my training batch size",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587229074439",
+                    "text": "Changing the amount of training augmentation ",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1007702,
+          "key": "263d31de-4223-4c48-9d33-b5c14fe5a0e8",
+          "title": "Evaluating Your Model Exercise",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "263d31de-4223-4c48-9d33-b5c14fe5a0e8",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007703,
+              "key": "3e28267d-419b-4677-88df-4023f9c7b204",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Evaluating Your Model Exercise\n\nNow that you've learned how to build CNN architectures and fine-tune them, let's learn more about how to evaluate their performance over training epochs. This is important in helping us know if our model is learning, and when to stop training. \n\nWe'll continue building off of the previous exercises, with the image augmentation code and one model architecture already written for you in the notebook below. Your job in this exercise is to build a function that will plot the training history to look at how: \n* Training loss\n* Validation loss\n* Training accuracy\n* Validation accuracy\nChange over the course of your training epochs. \n\nOnce you build this function, change the parameters of your model (learning rate and amount of dropout) to see how your model performance curves differ with different parameters. \n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1007854,
+              "key": "04a2ac09-9802-424e-b313-db7882088a22",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1007702xJUPYTERhhin8odb",
+              "pool_id": "jupyterbyocgpu",
+              "view_id": "jupyter-ouqpi",
+              "gpu_capable": true,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1007704,
+          "key": "00205cc0-3857-4965-aead-06422552af5f",
+          "title": "Evaluating Your Model Exercise Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "00205cc0-3857-4965-aead-06422552af5f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007705,
+              "key": "53f02742-523e-4729-a23d-484abbcbd68b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Evaluating Your Model Exercise Solution\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1008314,
+              "key": "6fbd8e65-ed3a-4391-9ad7-2a7b329f7fe6",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1007704xJUPYTERk33nq70k",
+              "pool_id": "jupyterbyocgpu",
+              "view_id": "jupyter-vq7cp",
+              "gpu_capable": true,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1007708,
+          "key": "fcfb27d3-ece0-468c-9bff-5684fe8c9ab4",
+          "title": "Final Review",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "fcfb27d3-ece0-468c-9bff-5684fe8c9ab4",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007709,
+              "key": "de8b0ae7-25b5-4c6f-b804-c48af2bc0375",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Final Review",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009929,
+              "key": "023152ac-ed0f-4873-9cdd-33faccca70e5",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Glossary\n- **Training set:** Set of data that your ML or DL model uses to learn its parameters, usually 80% of your entire dataset\n- **Validation set:** Set of data that the algorithm developer uses to establish whether or not their algorithm is learning the correct features and parameters\n- **Gold standard:** The method that detects your disease with the highest sensitivity and accuracy.\n- **Ground truth:** A label used to compare against your algorithm's output and establish its performance\n- **Silver standard:** A method to create a ground truth that takes into account several different label sources\n- **Image augmentation:** The process of altering training data slightly to expand the training dataset\n- **Fine-tuning:** The process of using an existing algorithm's architecture and weights created for a different task, and re-training them for a new task\n- **Batch size:** The number of images used at a time to train an algorithm\n- **Epoch:** A single run of sending the entire set of training data through an algorithm\n- **Learning rate:** The speed at which your optimizer function moves towards a minimum by updating algorithm weights through back-propagation\n- **Overfitting:** A phenomenon that happens when an algorithm specifically learns features of a training dataset that do not generalize beyond that specific dataset",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1007710,
+          "key": "6fdc8fd6-6187-406a-beaf-df9a8067924f",
+          "title": "Lesson Conclusion",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "6fdc8fd6-6187-406a-beaf-df9a8067924f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007711,
+              "key": "dee376d7-b4fe-421d-9120-58a6b9de2566",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Lesson Conclusion",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015324,
+              "key": "a1eaa100-fba8-4198-b468-f41c4a1f07c8",
+              "title": "ND320 C2 L3 22 Lesson Conclusion",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "HvY3ibMRetY",
+                "china_cdn_id": "HvY3ibMRetY.mp4"
+              }
+            },
+            {
+              "id": 1014783,
+              "key": "2b5d5c19-f43b-4580-8bde-5f41b1cdf02a",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9b9c6b_l3-con/l3-con.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/2b5d5c19-f43b-4580-8bde-5f41b1cdf02a",
+              "caption": "",
+              "alt": "",
+              "width": 784,
+              "height": 346,
+              "instructor_notes": null
+            },
+            {
+              "id": 1014763,
+              "key": "07a10f6d-a742-4902-a2c8-2c13e368dacc",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Further Reading:\n\n- This is a nice [overview](https://medium.com/@hbyacademic/otsu-thresholding-4337710dc519) of Otsu's method with some visual examples\n- See here for Keras' [documentation](https://keras.io/preprocessing/image/) for image pre-processing tools, including ImageDataGenerator\n- If you need or want more practice with deep learning, generalized beyond medical imaging, I highly recommend [this course](https://course.fast.ai/) by Jeremy Howard\n- If you're interested in learning more about the human visual system and how it inspired CNNs, I recommend checking out two of the foundational papers in the field by Hubel and Wiesel written in [1959](https://physoc.onlinelibrary.wiley.com/doi/pdf/10.1113/jphysiol.1959.sp006308) and [1962](https://physoc.onlinelibrary.wiley.com/doi/pdf/10.1113/jphysiol.1962.sp006837)",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

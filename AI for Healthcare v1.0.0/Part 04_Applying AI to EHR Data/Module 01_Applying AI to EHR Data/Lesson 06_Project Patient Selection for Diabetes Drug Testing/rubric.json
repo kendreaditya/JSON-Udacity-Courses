@@ -1,0 +1,223 @@
+{
+  "id": 2795,
+  "project_id": 719,
+  "upload_types": [
+    "repo",
+    "zip"
+  ],
+  "file_filter_regex": "\\A(?!(((.*/)?(__MACOSX|\\.git|node_modules|bower_components|jspm_packages|\\.idea|build|.ipynb_checkpoints|\\.Trash-0|logs)(\\Z|/))))((.*\\.(js|css|py|html|htm|txt|md|markdown|sql|swift|java|ts|gradle|xml|rst|yml|yaml|rmd|pdf|docx|h|H|hh|hxx|h\\+\\+|c|C|cc|cpp|cxx|c\\+\\+)\\Z)|((.*/)?(README|Readme|readme|Makefile)\\Z))",
+  "nomination_eligible": true,
+  "stand_out": "1. Students can tune the TF Probability library to show and rank uncertainty estimates.\n2. Students can use cross-feature columns.\n3. Students can use ICD groupings to reduce dimensionality. \n4. Students can build a more complex representation of the data - e.g. conditional probability matrix, pre-trained embeddings, etc.\n5. Students uses Tensorflow Data Validation Visualizations to analyze which fields have a high amount of missing/null values or high cardinality.",
+  "hide_criteria": false,
+  "created_at": "2020-02-07T17:21:11.831Z",
+  "updated_at": "2020-05-20T18:44:55.772Z",
+  "hashtag": "",
+  "max_upload_size_mb": 500,
+  "estimated_sla": null,
+  "project_assistant_enabled": false,
+  "checkmate_enabled": false,
+  "checkmate_metadata": null,
+  "available_for_cert_project": false,
+  "classroom_node_id": 970023,
+  "classroom_project_key": "5a595df0-2bf6-4e67-97f9-7bf9b9ea4e92",
+  "language": "en-us",
+  "ndkeys": [
+    "nd320-beta",
+    "nd320",
+    "nd320-ent"
+  ],
+  "coursekeys": [],
+  "sections": [
+    {
+      "id": 5971,
+      "name": "Exploratory Data Analysis",
+      "created_at": "2020-02-10T15:43:00.379Z",
+      "updated_at": "2020-05-11T04:45:25.529Z",
+      "deleted_at": null,
+      "position": 0,
+      "rubric_id": 2795,
+      "rubric_items": [
+        {
+          "id": 17137,
+          "section_id": 5971,
+          "passed_description": "The project correctly identified which field(s) has/have a high amount of missing/zero values.\n\nThe project correctly identified which field(s) has/have a Gaussian distribution shape based on the histogram analysis.\n\nThe project correctly identified fields with high cardinality. \n\nThe project justified why these fields had high cardinality.\n\nThe project correctly describes the distributions for age and gender.\n\n**Optional**: The project uses Tensorflow Data Validation Visualizations to analyze which fields have a high amount of missing/null values or high cardinality.",
+          "exceeded_description": null,
+          "created_at": "2020-02-10T15:43:11.873Z",
+          "updated_at": "2020-03-12T21:16:38.883Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "The project uses visualizations to analyze which fields have a high amount of missing/null values or high cardinality.",
+          "exceedable": false
+        },
+        {
+          "id": 17138,
+          "section_id": 5971,
+          "passed_description": "The project correctly identifies whether to include/exclude payer_code and weight fields.\n\nThe project justified why these fields should be included/excluded by using supporting data analysis.\n",
+          "exceeded_description": null,
+          "created_at": "2020-02-10T15:43:45.877Z",
+          "updated_at": "2020-02-10T15:44:39.509Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 1,
+          "criteria": "The project selects features based on exploratory data analysis.",
+          "exceedable": false
+        }
+      ]
+    },
+    {
+      "id": 5970,
+      "name": "Data Preparation",
+      "created_at": "2020-02-10T15:37:39.036Z",
+      "updated_at": "2020-05-11T04:45:25.534Z",
+      "deleted_at": null,
+      "position": 1,
+      "rubric_id": 2795,
+      "rubric_items": [
+        {
+          "id": 17134,
+          "section_id": 5970,
+          "passed_description": "The project uses the correct level(s) for the given EHR dataset (line, encounter, patient)  and transforms, aggregates and filters appropriately.",
+          "exceeded_description": null,
+          "created_at": "2020-02-10T15:37:56.953Z",
+          "updated_at": "2020-02-10T15:39:12.990Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "The project uses the correct level(s) for the given EHR dataset (line, encounter, patient)  and transforms, aggregates and filters appropriately.",
+          "exceedable": false
+        },
+        {
+          "id": 17135,
+          "section_id": 5970,
+          "passed_description": "The project correctly maps NDC codes to generic drug names and prints out the correct mappings in the notebook.",
+          "exceeded_description": null,
+          "created_at": "2020-02-10T15:38:21.910Z",
+          "updated_at": "2020-02-10T15:43:00.099Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 1,
+          "criteria": "The project correctly reduces dimensionality for a dataset containing a high cardinality code set field.",
+          "exceedable": false
+        },
+        {
+          "id": 17136,
+          "section_id": 5970,
+          "passed_description": "The project has correctly split the original dataset into train, validation, and test datasets. \n\nThe projects dataset splits do not contain patient or encounter data leakage.\n\nThe Projects code passes the Encounter Test.\n",
+          "exceeded_description": null,
+          "created_at": "2020-02-10T15:41:32.610Z",
+          "updated_at": "2020-02-10T15:43:00.103Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 2,
+          "criteria": "The project dataset has been split correctly for EHR machine learning models.",
+          "exceedable": false
+        }
+      ]
+    },
+    {
+      "id": 5972,
+      "name": "Feature Engineering",
+      "created_at": "2020-02-10T15:44:49.891Z",
+      "updated_at": "2020-02-10T15:45:00.205Z",
+      "deleted_at": null,
+      "position": 2,
+      "rubric_id": 2795,
+      "rubric_items": [
+        {
+          "id": 17140,
+          "section_id": 5972,
+          "passed_description": "The project correctly completes the categorical feature transformer boilerplate function.\n\nThe project successfully uses this function to transform the demo dataset with at least one new categorical feature.\n",
+          "exceeded_description": null,
+          "created_at": "2020-02-10T15:45:00.404Z",
+          "updated_at": "2020-02-10T15:45:47.319Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "The project correctly creates categorical features using Tensorflow’s feature column API for transforming the data.",
+          "exceedable": false
+        },
+        {
+          "id": 17141,
+          "section_id": 5972,
+          "passed_description": "The project correctly completes the numerical feature transformer boilerplate function.\n\nThe project successfully uses this function to transform the demo dataset with at least one new numerical feature.\n\nThe project's transformer function correctly incorporates the provided z-score normalizer function for normalization or another custom normalizer.\n",
+          "exceeded_description": null,
+          "created_at": "2020-02-10T15:45:47.503Z",
+          "updated_at": "2020-02-10T15:46:25.096Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 1,
+          "criteria": "The project correctly creates numerical features using Tensorflow’s feature column API for transforming the data.",
+          "exceedable": false
+        }
+      ]
+    },
+    {
+      "id": 5973,
+      "name": "Model Building and Analysis",
+      "created_at": "2020-02-10T15:46:33.040Z",
+      "updated_at": "2020-02-10T15:46:42.922Z",
+      "deleted_at": null,
+      "position": 3,
+      "rubric_id": 2795,
+      "rubric_items": [
+        {
+          "id": 17142,
+          "section_id": 5973,
+          "passed_description": "The project has prepared the regression model predictions for TF Probability and binary classification outputs by doing the following:\nCorrectly utilized TF Probability to provide mean and standard deviation prediction outputs\nCreated an output prediction dataset that has the labels correctly mapped to a binary prediction and actual value. \n",
+          "exceeded_description": null,
+          "created_at": "2020-02-10T15:46:43.237Z",
+          "updated_at": "2020-02-10T15:47:17.601Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "The project correctly utilizes the regression model predictions for uncertainty estimation and classification output analysis.",
+          "exceedable": false
+        },
+        {
+          "id": 17143,
+          "section_id": 5973,
+          "passed_description": "The model has been evaluated across the following classification metrics: AUC, F1, precision, and recall.\n\nStudents have completed both questions for the model summary and address bias-variance tradeoff in regard to this problem.\n",
+          "exceeded_description": null,
+          "created_at": "2020-02-10T15:47:17.827Z",
+          "updated_at": "2020-02-10T15:47:53.974Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 1,
+          "criteria": "The project correctly evaluates the model predictions across key classification metrics.",
+          "exceedable": false
+        },
+        {
+          "id": 17144,
+          "section_id": 5973,
+          "passed_description": "The project contains a bias report with the following:\n- A visualization of at least two key metric(s) for patient selection\n- A visualization showing at least one reference group fairness example and its comparison on at least one metric (e.g. TPR).\n- Justification for analysis made about at least one visualization\n",
+          "exceeded_description": null,
+          "created_at": "2020-02-10T15:47:54.186Z",
+          "updated_at": "2020-02-10T15:48:45.438Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 2,
+          "criteria": "The project utilizes the Aequitas toolkit to correctly create a bias report for race and gender on a provided dataset with some justification for their analysis. ",
+          "exceedable": false
+        }
+      ]
+    }
+  ],
+  "project": {
+    "id": 719,
+    "name": "AI and EHR",
+    "nanodegree_key": "nd320",
+    "is_cert_project": false,
+    "audit_project_id": null,
+    "hashtag": null,
+    "audit_rubric_id": null,
+    "entitlement_required": false,
+    "is_career": false,
+    "recruitment_family_id": 1,
+    "created_at": "2020-03-14T02:15:26.723Z",
+    "updated_at": "2020-05-31T12:20:16.008Z",
+    "price": "10.5",
+    "ungradeable_price": "3.0",
+    "audit_price": null
+  }
+}

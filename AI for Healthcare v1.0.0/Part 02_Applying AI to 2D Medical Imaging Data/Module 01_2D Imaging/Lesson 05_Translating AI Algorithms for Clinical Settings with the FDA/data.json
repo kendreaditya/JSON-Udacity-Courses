@@ -1,0 +1,1467 @@
+{
+  "data": {
+    "lesson": {
+      "id": 1007532,
+      "key": "7d14ac87-b711-44a9-95b7-0c79ae6c8d25",
+      "title": "Translating AI Algorithms for Clinical Settings with the FDA",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "In this lesson, you will learn about how your work fits into the bigger picture, and how it’s regulated by the FDA, which is an often-overlooked, but incredibly important.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": null,
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 1007712,
+          "key": "73702ad4-da6c-4969-be54-a4ae439383e0",
+          "title": "Translating Algorithm into a Clinical Setting with the FDA ",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "73702ad4-da6c-4969-be54-a4ae439383e0",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007713,
+              "key": "76fcd092-33fd-4d33-909b-4214c52c5986",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Translating Algorithm into a Clinical Setting with the FDA ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009930,
+              "key": "4ccc2066-a335-4a6c-9a64-6402fb52d72e",
+              "title": "ND320 C2 L4 01 Translating Your Algorithm Into A Clinical Setting With The FDA",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "YBElx0lBnOk",
+                "china_cdn_id": "YBElx0lBnOk.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 1007714,
+          "key": "22e3e479-b45b-458d-b6a0-109d104c58da",
+          "title": "Lesson Outline",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "22e3e479-b45b-458d-b6a0-109d104c58da",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007715,
+              "key": "564784e3-4640-48fc-91dc-f7742dc42cfa",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Lesson Outline",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009932,
+              "key": "c5c3c5c4-6819-4b52-81c5-edbe20fbbbff",
+              "title": "ND320 C2 L4 02 Lesson Outline Video",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "47PiR8U2Td4",
+                "china_cdn_id": "47PiR8U2Td4.mp4"
+              }
+            },
+            {
+              "id": 1009933,
+              "key": "7979d56d-ca32-4fb0-955d-3af6a04def0d",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9b9d0c_l4-overview/l4-overview.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/7979d56d-ca32-4fb0-955d-3af6a04def0d",
+              "caption": "",
+              "alt": "",
+              "width": 786,
+              "height": 208,
+              "instructor_notes": null
+            },
+            {
+              "id": 1009934,
+              "key": "613b17ba-2e04-428d-bfa6-5292c97e9b2a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\nIn today’s lesson, we’ll start with a high-level overview of the FDA regulatory process and talk about the intended use followed by a discussion on how to identify and disclose algorithmic limitations. Then, we’ll talk about performance statistics that you will want to use when labeling your device. And finally, how to build an FDA validation plan. ",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1007716,
+          "key": "a2d89af8-380e-4fb2-8f3c-5b173f41c8f7",
+          "title": "Big Picture",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a2d89af8-380e-4fb2-8f3c-5b173f41c8f7",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007717,
+              "key": "f8e84f81-5552-468d-91e3-ff37cdc618da",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Big Picture",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009935,
+              "key": "864c9193-64c8-496f-b82e-e2993351f83b",
+              "title": "ND320 C2 L4 03 Big Picture Video",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "AV1cBTAReCY",
+                "china_cdn_id": "AV1cBTAReCY.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 1007720,
+          "key": "c8caca94-2178-43af-97eb-5b63a131d2db",
+          "title": "Intended Use and Indications for Use",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c8caca94-2178-43af-97eb-5b63a131d2db",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007721,
+              "key": "008e0aef-c26e-4eba-b57e-003df4e77200",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Intended Use and Indications for Use",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009943,
+              "key": "35a6247c-4a67-4899-8197-6572569d356e",
+              "title": "ND320 C2 L4 05 Intended Use And Indications For Use Walkthrough Pt 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "aNl6MP1TNNk",
+                "china_cdn_id": "aNl6MP1TNNk.mp4"
+              }
+            },
+            {
+              "id": 1014784,
+              "key": "923395c7-4091-4f2c-80df-1084d21ecad4",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9b9f9c_l1-stakeholderfda/l1-stakeholderfda.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/923395c7-4091-4f2c-80df-1084d21ecad4",
+              "caption": "",
+              "alt": "",
+              "width": 844,
+              "height": 404,
+              "instructor_notes": null
+            },
+            {
+              "id": 1015325,
+              "key": "a0532d4c-b9ed-4c54-ac68-3120f4bdd34d",
+              "title": "ND320 C2 L4 06 Intended Use And Indications For Use Walkthrough Pt 2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "nY0Kf_pXzPY",
+                "china_cdn_id": "nY0Kf_pXzPY.mp4"
+              }
+            },
+            {
+              "id": 1020389,
+              "key": "b28a6403-4761-4e62-a57a-0b5fcad9ea7b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Typo in the video: it is '510k' not '501k'",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015326,
+              "key": "12b65f83-916a-4d2e-b53a-7a9fb0b4d923",
+              "title": "ND320 C2 L4 07 Intended Use And Indications For Use Walkthrough Pt 3",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "j3v_wjG9GPI",
+                "china_cdn_id": "j3v_wjG9GPI.mp4"
+              }
+            },
+            {
+              "id": 1009944,
+              "key": "eea7a396-8859-4015-ad13-9a0aeb3c18b3",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\n#### Intended use\nThe FDA will require you to provide an intended use statement and an indication for use statement. The intended use statement tells the FDA exactly _what_ your algorithm is used for. Not what it could be used for. And FDA will use this statement to define the risk and class of your algorithm. \n\n#### Indication for use\nYou can use the indications for use statement to make more _specific suggestions_ about how your algorithm could be used.  Indications for use statement describes precise situations and reasons _where and why_ you would use this device. \n\n\n\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1007722,
+          "key": "9ad03b70-ed2a-4e8f-929f-d651f921fe82",
+          "title": "Intended Use and Clinical Impact Quizzes",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "9ad03b70-ed2a-4e8f-929f-d651f921fe82",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007723,
+              "key": "f97d9c98-41d0-4da4-b30e-5960b237e196",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Intended Use and Clinical Impact Quizzes",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014751,
+              "key": "8b9d597f-e1ca-4706-a543-3adda667356d",
+              "title": "Intended Use",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "8b9d597f-e1ca-4706-a543-3adda667356d",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following are _true_ about your Intended Use statement?  ",
+                "answers": [
+                  {
+                    "id": "a1587229225823",
+                    "text": "The intended use statement should be concise",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587229274629",
+                    "text": "The intended use statement states _what_ your device does",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587229292323",
+                    "text": "The intended use statement describes specific situations where you would use your device",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587229548556",
+                    "text": "The intended use statement is tied directly to your device's risk category",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1009948,
+              "key": "2afdcc5d-7177-4cec-8786-486b82f71930",
+              "title": "Regulatory Pathways",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "2afdcc5d-7177-4cec-8786-486b82f71930",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following could be a reason why an algorithm would need to go down the PMA pathway with the FDA? ",
+                "answers": [
+                  {
+                    "id": "a1585956641792",
+                    "text": "It is viewed as a low risk, Class I device, and there is a predicate",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587229319460",
+                    "text": "It is viewed as a medium risk, Class II device, and there is a predicate",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587229320341",
+                    "text": "It is viewed as a low risk, Class I device, but there is no predicate",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587229321019",
+                    "text": "It is a viewed as medium risk, Class II device, but there is no predicate",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1007724,
+          "key": "bb720e09-3065-4d3a-b444-36fb988b2cf5",
+          "title": "Intended Use and Clinical Impact Exercise",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "bb720e09-3065-4d3a-b444-36fb988b2cf5",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007725,
+              "key": "6c4b194e-8bcb-4671-9979-8c732a607b6d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Intended Use and Clinical Impact Exercise\n\nIn this exercise, you are given a dataframe that contains the demographics of a random sample of patients that a classification algorithm was trained on. Consider this random sample to be representative of the whole training population. This algorithm reads in screening mammography studies and determines if any image in the study is abnormal. The claimed intended use of this algorithm is that it assists in the detection of normal studies, with an indication for use of removal from a radiologist's priority queue, and to flag potentially abnormal studies for earlier reads. \n\nThe demographic data in the dataframe contains the following information for the patients on whom this algorithm was trained: \n\n* Age\n* Gender\n* Race\n* Number of prior positive (abnormal) mammography screens\n* Type of mammography scanner used to acquire their images \n\nExplore the demographic data to generate a description of who the appropriate population is and what clinical conditions are indicated for the clinical use of this algorithm. \n\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1007862,
+              "key": "93154452-ce95-443d-b1c4-56f4ddbf45fc",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1007724xJUPYTERuucy2ace",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-l7guj",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1007726,
+          "key": "c6b2299a-22ed-452e-b014-d85ca8ff73b7",
+          "title": "Intended Use and Clinical Impact Exercise Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c6b2299a-22ed-452e-b014-d85ca8ff73b7",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007727,
+              "key": "81283b4d-8871-4092-a3c2-6f6e999971d8",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Intended Use and Clinical Impact Exercise Solution\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1008316,
+              "key": "91c11dd1-f0af-4df1-9f82-f240561c288c",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1007726xJUPYTERa2fbfpzf",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-musgj",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1007728,
+          "key": "df9c27c2-7b64-4f36-8e31-45d1c2999bbb",
+          "title": "Algorithmic Limitations",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "df9c27c2-7b64-4f36-8e31-45d1c2999bbb",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007729,
+              "key": "21dd1f65-11ac-40cd-aceb-da0fb330039f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Algorithmic Limitations",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009954,
+              "key": "8db4fd92-4ecb-4977-8499-0533e27f4324",
+              "title": "ND320 C2 L4 09 Algorithmic Limitations Walkthrough",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "2_TffCcvthY",
+                "china_cdn_id": "2_TffCcvthY.mp4"
+              }
+            },
+            {
+              "id": 1015861,
+              "key": "353865fc-1d62-4645-9401-4401b51bc262",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "**Note**: the first example is more like a constraint than a limitation.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014785,
+              "key": "3f5a5fe8-9f20-4f62-bac3-80afd40906b9",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\n#### Algorithm limitations\nWhen the FDA talks about limitations, they want to know more about scenarios where your algorithm is not safe and effective to use. In other words, they want to know where our algorithm will _fail_.\n\n#### Computational limitations\nIf your algorithm needs to work in an emergency workflow, you need to consider computational limitations and inform the FDA that the algorithm does not achieve fast performance in the absence of certain types of computational infrastructure. This would let your end consumers know if the device is right for them.\n\n#### Medical device reporting\nAfter your algorithm is cleared by the FDA and released,\nthe FDA has a system called _Medical Device Reporting_ to continuously monitor. Any time one of your end-users discovers a malfunction in your software, they report this back to you, the manufacturer, and you are required to report it back to the FDA. Depending on the severity of the malfunction, and whether or not it is life-threatening, the FDA will either completely recall your device or require you to update its labeling and explicitly state new limitations that have been encountered.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1007730,
+          "key": "4958d6be-46c5-4485-8dc2-34e1747fc832",
+          "title": "Algorithmic Limitations Quizzes",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "4958d6be-46c5-4485-8dc2-34e1747fc832",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007731,
+              "key": "5a90c9cf-a61e-4893-b531-46e61afce177",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Algorithmic Limitations Quizzes",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009959,
+              "key": "a76e0ea3-ed66-4fd8-a436-e8e82c84b4a2",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "a76e0ea3-ed66-4fd8-a436-e8e82c84b4a2",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What is the method that the FDA uses to continuously monitor your device after it has been released to the world? ",
+                "answers": [
+                  {
+                    "id": "a1585956960543",
+                    "text": "Medical Device Reporting",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587229811788",
+                    "text": "The Continuous Device Monitoring Program",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587229824798",
+                    "text": "The FDA's Complaint Department",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587229836118",
+                    "text": "Medical Malfunction Tracking",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1009960,
+              "key": "685b5741-1faa-489c-9de6-80b449d50483",
+              "title": "Algorithmic Limitations",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "685b5741-1faa-489c-9de6-80b449d50483",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following could be considered a limitation of your algorithm (check all that apply)? ",
+                "answers": [
+                  {
+                    "id": "a1585956986244",
+                    "text": "Algorithm was only trained on patients from 20-70 years old",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587229922598",
+                    "text": "Algorithm has substantially lower performance in the presence of other diseases",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587229936026",
+                    "text": "Algorithm cannot perform without a GeForce GTX 1060 GPU",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587229970301",
+                    "text": "Algorithm was only trained on caucasian patients",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1007732,
+          "key": "01b38aff-985c-4dd2-961a-5378025b730d",
+          "title": "Algorithmic Limitations Exercise",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "01b38aff-985c-4dd2-961a-5378025b730d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007733,
+              "key": "aa67d4cb-0eec-4893-94ea-eaa9faf2db1a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Algorithmic Limitations Exercise\n\nIn this exercise, you'll receive a dataframe that contains ground truth labels for 128 chest x-rays that can have any of the following disease labels: \n* Pneumonia\n* Atelectasis\n* Effusion\n* Infiltration\n* Pneumothorax\n* Cardiomegaly\n* Mass\n* Nodule\n\nThe final column in the dataframe is a classification algorithm's assessment of whether or not there is _pneumonia_ in the image. This algorithm's clinical intended use is for the detection of pneumonia on chest x-rays. In this exercise, you will assess the algorithm's performance specifically in the presence of the other diseases, and determine if there are any diseases that significantly impact the algorithm's performance and that should be listed as limitations of the algorithm. \n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1007863,
+              "key": "77716aed-fce3-4bea-b616-5f6dcda667a4",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1007732xJUPYTER907zbd6n",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-mq9qz",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1007734,
+          "key": "099f10a5-156d-44da-be46-def78ed97136",
+          "title": "Algorithmic Limitations Exercise Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "099f10a5-156d-44da-be46-def78ed97136",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007735,
+              "key": "c6e0e6f0-36da-4ceb-9c00-9a1ff62e4cff",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Algorithmic Limitations Exercise Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1008317,
+              "key": "656e3016-2f23-4283-89ae-e2619936f49d",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1007734xJUPYTER6by9kxou",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-atox7",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1007736,
+          "key": "453a4e07-8266-4c58-8ced-882a3cb9dd37",
+          "title": "Translate Performance into Clinical Utility",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "453a4e07-8266-4c58-8ced-882a3cb9dd37",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007737,
+              "key": "8f43d20a-04ea-4776-ae37-d41b9b126ee3",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Translate Performance into Clinical Utility",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009964,
+              "key": "b000dde5-b7f8-44a6-92b9-e2cbdf0ce04e",
+              "title": "ND320 C2 L4 11 Translate Performance Statistics Into Clinical Utility Walkthrough Pt 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "uzO_dx7nzeQ",
+                "china_cdn_id": "uzO_dx7nzeQ.mp4"
+              }
+            },
+            {
+              "id": 1014788,
+              "key": "c9ed0ece-e822-46f1-8a2f-0567047a23fe",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9ba677_l4-pre/l4-pre.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/c9ed0ece-e822-46f1-8a2f-0567047a23fe",
+              "caption": "",
+              "alt": "",
+              "width": 520,
+              "height": 302,
+              "instructor_notes": null
+            },
+            {
+              "id": 1015327,
+              "key": "e3c627b8-fdd8-4e43-af55-e19cedcc7274",
+              "title": "ND320 C2 L4 12 Translate Performance Statistics Into Clinical Utility Walkthrough Pt 2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "7O2wX27ZTs8",
+                "china_cdn_id": "7O2wX27ZTs8.mp4"
+              }
+            },
+            {
+              "id": 1014789,
+              "key": "97531ff8-cded-4a53-9f09-9d21a2c4d9f6",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9ba683_l4-prc/l4-prc.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/97531ff8-cded-4a53-9f09-9d21a2c4d9f6",
+              "caption": "",
+              "alt": "",
+              "width": 926,
+              "height": 600,
+              "instructor_notes": null
+            },
+            {
+              "id": 1014790,
+              "key": "a2064ca9-e4ce-4534-8f94-1cbf563d1ae3",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9ba68d_l4-f1/l4-f1.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/a2064ca9-e4ce-4534-8f94-1cbf563d1ae3",
+              "caption": "",
+              "alt": "",
+              "width": 330,
+              "height": 76,
+              "instructor_notes": null
+            },
+            {
+              "id": 1009965,
+              "key": "1c457378-3d22-459d-a400-0b8b4b9142e6",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\n#### Precision\nPrecision looks at the number of positive cases accurately identified by an algorithm divided by all of the cases identified as positive by the algorithm _no matter whether they are identified right or wrong_. This metric is also commonly referred to as the positive predictive value.\n\n#### Precision and recall\nA high precision test gives you more confidence that a positive test result is actually positive since a high precision test has low false positive. This metric, however, does not take false negatives into account. So a high precision test could still miss a lot of positive cases. Because of this, high-precision tests don’t necessarily make for great stand-alone diagnostics but are beneficial when you want to _confirm_ a suspected diagnosis. \n\nWhen a high recall test returns a negative result, you can be confident that the result is truly negative since a high recall test has low false negatives. Recall does not take false positives into account though, so you may have high recall but are still labeling a lot of negative cases as positive. Because of this, high recall tests are good for things like screening studies, where you want to make sure someone _doesn’t_ have a disease or worklist prioritization where you want to make sure that people _without_ the disease are being de-prioritized.\n\nOptimizing one of these metrics usually comes at the expense of sacrificing the other. \n\n#### Threshold\nCNN models output a probability ranging from 0-1 that indicates how likely the image belongs to a class. We will need a cut-off value called threshold to assist in making the decision if the probability is high enough to belong to one class. Recall and precision vary when a different threshold is chosen.\n\n#### Precision-recall curve\nPrecision-recall curve plots recall in the x-axis and precision in the y-axis. Each point along the curve represents precision and recall under a different threshold value.\n\n#### F1 score\nFor binary classification problems, the F1 score combines both precision and recall. F1 score allows us to better measure a test’s accuracy when there are class _imbalances_. Mathematically, it is the harmonic mean of precision and recall. \n\n\n\n\n\n\n\n\n\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1007738,
+          "key": "a81c2c68-1736-4ec8-8e2e-9d19747d800c",
+          "title": "Translate Performance into Clinical Utility Quizzes",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a81c2c68-1736-4ec8-8e2e-9d19747d800c",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007739,
+              "key": "01f81265-5184-4ca4-98be-375ede64844b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Translate Performance into Clinical Utility Quizzes",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009967,
+              "key": "9590ac63-2f64-406b-8806-542862504dbd",
+              "title": "Performance Statistics",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "9590ac63-2f64-406b-8806-542862504dbd",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Match the following performance statistics with their appropriate clinical situations"
+                },
+                "concepts_label": "Performance Statistic",
+                "answers_label": "Clinical Situation",
+                "concepts": [
+                  {
+                    "text": "Precision",
+                    "correct_answer": {
+                      "id": "a1585957373758",
+                      "text": "Confirming a diagnosis"
+                    }
+                  },
+                  {
+                    "text": "Recall",
+                    "correct_answer": {
+                      "id": "a1585957420046",
+                      "text": "Screening studies"
+                    }
+                  },
+                  {
+                    "text": "Accuracy",
+                    "correct_answer": {
+                      "id": "a1587230233248",
+                      "text": "Diagnosing a disease that has 50% prevalence"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1587230233248",
+                    "text": "Diagnosing a disease that has 50% prevalence"
+                  },
+                  {
+                    "id": "a1585957373758",
+                    "text": "Confirming a diagnosis"
+                  },
+                  {
+                    "id": "a1585957420046",
+                    "text": "Screening studies"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1014752,
+              "key": "636c7bdc-5d60-4786-8163-8105a0f6cd9d",
+              "title": "F1 Score",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "636c7bdc-5d60-4786-8163-8105a0f6cd9d",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following is _not_ taken into account in the F1 score?",
+                "answers": [
+                  {
+                    "id": "a1587230401603",
+                    "text": "TN",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587230440974",
+                    "text": "FN",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587230444487",
+                    "text": "TP",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587230446839",
+                    "text": "FP",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1007740,
+          "key": "9562602a-6ee8-42ac-9d57-02632db39595",
+          "title": "Translate Performance into Clinical Utility Exercise",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "9562602a-6ee8-42ac-9d57-02632db39595",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007741,
+              "key": "d10a772a-30af-4333-9555-fbdc1dae66b8",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Translate Performance into Clinical Utility Exercise\n\nThe output of the last layer of your CNN will output a _probability_ that an image belongs to a given class. The last step in assessing the performance of your model is choosing the appropriate cut-off threshold for this probability value such that the model behaves in a way that is clinically optimal. Changing this threshold will change the true positive, false positive, false negative, and true negative rates, which we learned about in Lesson 1. This will, in turn, change the _precision_ and _recall_ of our model. Precision and recall are important concepts in clinical testing, and usually, one is optimized at the expense of another. \n\nIn this exercise, you'll be given a dataframe with ground truth labels as well as probabilities output by an algorithm that you developed to classify images as having a malignant tumor or not. Your job is to generate a Precision-Recall curve as well as an optional ROC AUC curve with the data in this dataframe. \n\nOnce you create these curves, choose two different thresholds: one that favors precision and one that favors recall. Use these thresholds to calculate two separate F1 scores. Then, also calculate the _accuracy_ of your algorithm using these two different thresholds and think about why accuracy is or is not a good choice of performance statistic for your data. \n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1007864,
+              "key": "c42bed00-3377-4333-bd93-9e8917d667c7",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1007740xJUPYTERlhbc9shc",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-n0inh",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1007742,
+          "key": "d7522cc3-6e34-493e-8a5f-d5d5ff0bd313",
+          "title": "Translate Performance into Clinical Utility Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d7522cc3-6e34-493e-8a5f-d5d5ff0bd313",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007743,
+              "key": "2b6f521d-3b72-42f1-bde4-09fe579bcd8b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Translate Performance into Clinical Utility Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1008318,
+              "key": "60963f49-f7d9-4591-b942-90a38072ee6e",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1007742xJUPYTERtjxas2u1",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-yfd5j",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1007744,
+          "key": "f77a9787-4260-47e6-8aea-7071a4d10c3b",
+          "title": "Designing an FDA Validation Plan",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "f77a9787-4260-47e6-8aea-7071a4d10c3b",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007745,
+              "key": "fc13f610-0f0a-4337-83a1-eb44a4c760c1",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Designing an FDA Validation Plan",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009971,
+              "key": "d5d5b95f-f2b8-4064-a9a3-17b9789b6c5d",
+              "title": "ND320 C2 L4 14 Designing An FDA Validation Plan Walkthrough",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "qCBH4bEEgDQ",
+                "china_cdn_id": "qCBH4bEEgDQ.mp4"
+              }
+            },
+            {
+              "id": 1014793,
+              "key": "4615306a-8a30-4b91-a226-7990976f79c0",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9ba9c8_l4-fda/l4-fda.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/4615306a-8a30-4b91-a226-7990976f79c0",
+              "caption": "",
+              "alt": "",
+              "width": 792,
+              "height": 372,
+              "instructor_notes": null
+            },
+            {
+              "id": 1009973,
+              "key": "0d0c02f0-9791-4849-970a-970a68f45ad2",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\n### FDA validation plan\n#### FDA validation set \nYou'll need to perform a standalone clinical assessment of your tool that uses an _FDA validation set_ from a real-world _clinical setting_ to prove to the FDA that your algorithm works. You will run this FDA validation set through your algorithm just ONCE.\n\nYou’ll need to identify a clinical partner who you can work with to gather the “BEST” data for your validation plan. This partner will collect data from a real-world clinical setting that you describe so that you can then see how your algorithm performs under these specifications. \n\n#### Collect the FDA validation set\nYou need to identify a clinical partner to gather the FDA validation set. First, you need to describe who you want the data from. Second, you need to specify what types of images you’re looking for.\n\n#### Establish the ground truth\nYou need to gather the ground truth that can be used to compare the model output tested on the FDA validation set. \nThe choice of your ground truth method ties back to your _intended use_ statement. Depending on the intended use of the algorithm, the ground truth can be very different.\n\n#### Performance standard\nFor your validation plan, you need evidence to support your reasoning. As a result, you need a performance standard. This step usually involves a lot of literature searching.\n\nDepending on the use case for your algorithm, part of your validation plan may need to include assessing _how fast_ your algorithm can read a study.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1007746,
+          "key": "7756f2f8-9aaa-4eb5-a1e2-33e3c07cf32d",
+          "title": "Designing an FDA Validation Plan Quizzes",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "7756f2f8-9aaa-4eb5-a1e2-33e3c07cf32d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007747,
+              "key": "b00b0fb8-2575-4e59-87ac-57f2be301182",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Designing an FDA Validation Plan Quizzes",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009974,
+              "key": "a5658299-16f8-46f0-9084-634e73346d9f",
+              "title": "Validation Dataset",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "a5658299-16f8-46f0-9084-634e73346d9f",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "How many times is your algorithm run on your clinically-obtained FDA Validation Dataset?",
+                "answers": [
+                  {
+                    "id": "a1585958158459",
+                    "text": "Once",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587230965075",
+                    "text": "At the end of every training epoch",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587230974678",
+                    "text": "This dataset is used for algorithm training",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587230983572",
+                    "text": "Your algorithm is never run on this dataset",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1009975,
+              "key": "861b22a1-607a-4723-b62c-21b152df5058",
+              "title": "Performance Standard",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "861b22a1-607a-4723-b62c-21b152df5058",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Given the following radiologist F1 scores that you obtained from the literature, what would be a reasonable F1 score to hold your algorithm to on the Validation Dataset for submitting to the FDA? \n\n* **Study 1:** 0.35\n* **Study 2:** 0.50\n* **Study 3:** 0.45",
+                "answers": [
+                  {
+                    "id": "a1585958179179",
+                    "text": "0.35",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587230846370",
+                    "text": "0.43",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587230865994",
+                    "text": "0.6",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587230871729",
+                    "text": "0.25",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1007748,
+          "key": "25b37f67-eea3-48b6-9102-c4c80f2ac95f",
+          "title": "Designing an FDA Validation Plan Exercise",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "25b37f67-eea3-48b6-9102-c4c80f2ac95f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007749,
+              "key": "e8b0873a-6094-4b8f-b8f7-32e62a3fa15d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Designing an FDA Validation Plan Exercise\n\nYou just learned about how to design a validation plan for an algorithm that's been developed for 2D medical imaging. This is the _final_ exercise of this course, and so this exercise will try to synthesize a lot of what you've learned and prepared you for your final project. Below are intended use statements with some indications for use and algorithmic limitations of two separate algorithms, both used for screening mammography studies. \n\n### Algorithm A:\n\n**Intended Use:** Assisting a radiologist with _classifying breast density_\n\n**Indications for Use:** indicated for use in screening mammography studies in women of ages 40-80. _Not_ indicated for use in women with artificial implants. \n\n_Hint:_ Breast density falls into four categories: A, B, C, D and can only be determined from an image. It is notoriously difficult to determine breast density on a mammography study, but that's because there is no \"correct\" answer. It's a sliding scale that radiologists tend to disagree on when a patient is right on the border between two density levels. Also, in the real world, breast densities A & D are both about 10% prevalent, while breast densities B & C are both about 40% prevalent. \n\n### Algorithm B: \n\n**Intended Use:** Assisting a radiologist with identifying _breast abnormalities_. \n\n**Indications for Use:** indicated for use in screening mammography studies in women for ages 40-80. _Not_ indicated for women with a prior history of breast cancer. \n\n_Hint:_ Radiologists are _really_ good at detecting a wide range of abnormalities on screening mammograms, and a radiologists' read is considered the gold standard for determining 'normal' vs. 'abnormal' for an imaging study. \n\n\n### In the free response section, compare and contrast how you would do the following for your FDA validation plan for each of the two algorithms: \n\n* Define the clinical population needed for the validation data set that you obtain from your clinical partner\n* Choose the method of obtaining a ground truth\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1020381,
+              "key": "4762509e-40c5-4241-8c70-ef0ebbbf8313",
+              "title": "Reflect",
+              "semantic_type": "ReflectAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "4762509e-40c5-4241-8c70-ef0ebbbf8313",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "title": null,
+                "semantic_type": "TextQuestion",
+                "evaluation_id": null,
+                "text": "Input your answer here."
+              },
+              "answer": {
+                "text": "See the solution for more information.",
+                "video": null
+              }
+            }
+          ]
+        },
+        {
+          "id": 1007750,
+          "key": "b56dcc54-ca01-43f3-bed2-9f3f7f878012",
+          "title": "Designing an FDA Validation Plan Exercise Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "b56dcc54-ca01-43f3-bed2-9f3f7f878012",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007751,
+              "key": "93ae44fe-3b95-4782-b9e9-8dcfc60da619",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Designing an FDA Validation Plan Exercise Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009978,
+              "key": "f23b67a8-3dca-430b-9469-30ca9ecad8d0",
+              "title": "ND320 C2 L4 15 Designing An FDA Validation Plan Exercise Solution Video",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "KoKfda3UzWg",
+                "china_cdn_id": "KoKfda3UzWg.mp4"
+              }
+            },
+            {
+              "id": 1009979,
+              "key": "384921d5-60b5-4496-9d06-41841f8eb348",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary \nFor both algorithms, I would want to collect a validation set that was made up of screening mammography studies only for women between the ages of 40 and 80. \n\nTo validate algorithm A, however, I would want to make sure that there were no implants, and I would also want to make sure that the distribution of breast densities A, B, C, and D was reflective of the distribution of those densities that are seen in the real world. \n\nTo validate algorithm B, I would want to make sure that my validation data set did not contain any women who had a prior history of breast cancer. \n\nThe silver standard approach of using several radiologists would be more optimal for Algorithm A because I gave you the hint that it’s really hard for radiologists to agree on breast density labels. \n\nFor Algorithm B, a single radiologist’s labels would probably suffice, because I gave you the hint that they’re really good at labeling ‘normal’ v. ‘abnormal.’ \n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1007754,
+          "key": "43b3c65f-9cfb-4d5b-bce8-600aaa346508",
+          "title": "Final Review",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "43b3c65f-9cfb-4d5b-bce8-600aaa346508",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007755,
+              "key": "c52750f9-6071-4248-a7ff-791e571d2636",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Final Review",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009988,
+              "key": "7b7ed819-3c81-4692-ac6c-95c5ec1b3f3f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Glossary\n\n- **Intended Use:** A statement given to the FDA that concisely describes _what_ your algorithm does\n- **510(k):** An FDA regulatory pathway for medical devices of all three risk categories that is appropriate when a predicate device exists\n- **PMA:** An FDA regulatory pathway for Class II and III devices that is mandated when a predicate device does not exist\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1007756,
+          "key": "9bd04bd9-a6e8-4f98-b27e-6132d9987f5d",
+          "title": "Lesson Conclusion",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "9bd04bd9-a6e8-4f98-b27e-6132d9987f5d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007757,
+              "key": "1ca4f9e9-d3a6-45e1-9148-478bd5e7d28f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Lesson Conclusion",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009989,
+              "key": "de26a1aa-ff48-43ab-b1be-61e7ac6a1ccf",
+              "title": "ND320 C2 L4 17 Lesson Conclusion Video",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "RA55OpH2uY8",
+                "china_cdn_id": "RA55OpH2uY8.mp4"
+              }
+            },
+            {
+              "id": 1014794,
+              "key": "672d8f75-0e8d-457b-ac8d-4c1aab3ab7f4",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9baaa9_l4-con/l4-con.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/672d8f75-0e8d-457b-ac8d-4c1aab3ab7f4",
+              "caption": "",
+              "alt": "",
+              "width": 404,
+              "height": 192,
+              "instructor_notes": null
+            },
+            {
+              "id": 1009992,
+              "key": "0b999a48-2102-44d5-9a77-8a856f5adcc7",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Further reading \n\n- The FDA's [website](https://www.fda.gov/medical-devices/digital-health/software-medical-device-samd) should be your go-to for how they view software as a medical device\n- [Greenlight Guru](https://www.greenlight.guru/blog) produces an excellent blog about the FDA process for medical devices\n- Qualio produces a Quality Management System (QMS) for actually getting through the FDA process and their [blog](https://www.qualio.com/blog) is also a great resource",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

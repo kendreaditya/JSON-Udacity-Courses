@@ -1,0 +1,3373 @@
+{
+  "data": {
+    "lesson": {
+      "id": 817323,
+      "key": "c9880fb0-2df6-4ea2-ae1f-3fec7361a4f6",
+      "title": "Working with Files",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Learn to work with files on your disk using Python code: listing files in a directory, moving files around, and reading & writing the contents of text files.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/c9880fb0-2df6-4ea2-ae1f-3fec7361a4f6/817323/1549164577710/Working+with+Files+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/c9880fb0-2df6-4ea2-ae1f-3fec7361a4f6/817323/1549164572780/Working+with+Files+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 831890,
+          "key": "cc9e2bf5-65d8-45d0-b79d-aab24d356a7a",
+          "title": "Important note",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "cc9e2bf5-65d8-45d0-b79d-aab24d356a7a",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 831891,
+              "key": "5d4e505d-82ea-4ab1-bead-b6daceae192d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# ⚠️ Important note\n\nWelcome to **Intro to Python, Part 3**! This section of the program will cover some more advanced programming concepts and it will definitely help you learn some key skills that you'll need as a developer.\n\nThat said, this section is **optional**, meaning **you do not need to complete Python, Part 3 in order to graduate**. You can either go through this content now, or you can skip it and come back later after you've finished the rest of the program—whatever you prefer!\n\nAt the end of this section, you'll find an optional project called *Rock, Paper, Scissors*. Although the project is optional (not required for graduation), you'll still get a full code review from one of our expert reviewers if you choose to submit it. This is a great way to go beyond the requirements and take your Python skills to the next level.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 640825,
+          "key": "47feb201-2fc6-4d15-8825-5eee4462527d",
+          "title": "Files with Python",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "47feb201-2fc6-4d15-8825-5eee4462527d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 785277,
+              "key": "ffda40ae-ba3c-4155-93b9-b20eb717ccbc",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": " ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 673765,
+              "key": "f098ef83-e6ad-48ae-8723-d9db7239136c",
+              "title": "Python: Welcome to files with python",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "DrmZ4SL6NCo",
+                "china_cdn_id": "DrmZ4SL6NCo.mp4"
+              }
+            },
+            {
+              "id": 785203,
+              "key": "17d89b08-c60f-4114-ab5f-544d1f36ccdd",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "17d89b08-c60f-4114-ab5f-544d1f36ccdd",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Variables and files are kind of similar. For example, files and variables both involve data (such as text) that exists in storage on your computer. Also, files and variables both have *names*, which you can use to access the data they contain.\n\nBut they're also different in important ways. For each of the below descriptions, does it better describe **variables** or **files**?"
+                },
+                "concepts_label": "Description",
+                "answers_label": "Variable or file?",
+                "concepts": [
+                  {
+                    "text": "Persistent. Lives in permanent storage.",
+                    "correct_answer": {
+                      "id": "a1542973440044",
+                      "text": "File"
+                    }
+                  },
+                  {
+                    "text": "Ephemeral. Exists temporarily in memory.",
+                    "correct_answer": {
+                      "id": "a1542973466581",
+                      "text": "Variable"
+                    }
+                  },
+                  {
+                    "text": "Internal to one specific program.",
+                    "correct_answer": {
+                      "id": "a1542973508579",
+                      "text": "Variable"
+                    }
+                  },
+                  {
+                    "text": "Can be used by more than one program.",
+                    "correct_answer": {
+                      "id": "a1542973552211",
+                      "text": "File"
+                    }
+                  },
+                  {
+                    "text": "Exists in a directory and has a path describing its location.",
+                    "correct_answer": {
+                      "id": "a1542973806582",
+                      "text": "File"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1542973806582",
+                    "text": "File"
+                  },
+                  {
+                    "id": "a1542973508579",
+                    "text": "Variable"
+                  },
+                  {
+                    "id": "a1542973466581",
+                    "text": "Variable"
+                  },
+                  {
+                    "id": "a1542973440044",
+                    "text": "File"
+                  },
+                  {
+                    "id": "a1542973552211",
+                    "text": "File"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 640826,
+          "key": "a1a7f100-fcca-4075-baac-4c25e047d30b",
+          "title": "The photos problem",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a1a7f100-fcca-4075-baac-4c25e047d30b",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 676162,
+              "key": "f67c02d0-449f-4eb9-8acc-eeaef90e636e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": " ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 673766,
+              "key": "88d3e3f6-75e4-4b9c-97a1-11aa454126b9",
+              "title": "Python: The photos problem",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "0E5emNEtN-o",
+                "china_cdn_id": "0E5emNEtN-o.mp4"
+              }
+            },
+            {
+              "id": 785279,
+              "key": "4131c6ee-1032-4f86-a7a6-a3ecf40b8777",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "We'll be working on Kelly's Photos problem for about the first half of this lesson. \n\nYou'll learn the most if you follow along with us, building up your own version of the program as we go over each part.\n\nFirst, download [this zip file](https://s3.amazonaws.com/video.udacity-data.com/topher/2018/November/5bf9cb20_photos/photos.zip). Inside, you'll find a **Photos** folder, with a bunch of image files inside. (In reality, they're just empty files—but they'll work fine for what we're doing.) ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785280,
+              "key": "1b75ace2-3c6c-4224-9e50-ca5bf1ccc3c4",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "1b75ace2-3c6c-4224-9e50-ca5bf1ccc3c4",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Download the *photos.zip* file from the above link.",
+                "Create a new file in your code editor and save it with the name `organize_photos.py`.",
+                "Open the zip file and move the *Photos* directory to the same folder where you saved `organize_photos.py`."
+              ],
+              "positive_feedback": "Great, sounds like you're all set up!",
+              "video_feedback": null,
+              "description": ""
+            },
+            {
+              "id": 785331,
+              "key": "fb31b780-ce53-4e7f-bec9-4e37ca5ef010",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "When you're done, your code file and the Photos folder should be in the same location:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785332,
+              "key": "398d1b7a-0cc5-49e0-8545-1b06e028e940",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2018/November/5bfad2d9_organize-photos-cropped/organize-photos-cropped.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/398d1b7a-0cc5-49e0-8545-1b06e028e940",
+              "caption": "",
+              "alt": "Screenshot showing organize_photos.py and the Photos folder in the same directory.",
+              "width": 316,
+              "height": 141,
+              "instructor_notes": null
+            },
+            {
+              "id": 785333,
+              "key": "a5e87aa3-f9ac-4fb1-8b4b-4bafc96e71e2",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "This is to make sure that when we write the code it has the correct file path and can locate the Photos folder. (We *could* place them in different folders, but then we would have to use a more complicated file path.)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785282,
+              "key": "c2ee5cf0-782e-4443-b321-8120c8f5d4d9",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Periodically, we'll tell you to add code to the `organize_photos.py` file, and eventually this will be your own version of the program—which you can try out with the photos you downloaded.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 665208,
+          "key": "996520ea-0ecf-4f0e-ab0d-8f11ed831d1c",
+          "title": "Planning the solution to the photos problem",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "996520ea-0ecf-4f0e-ab0d-8f11ed831d1c",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 676163,
+              "key": "3c810ef5-52e5-4b64-83e5-5d39a69c6752",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": " ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 673768,
+              "key": "f7f2dd22-386b-4251-b46f-595c7a0e0c15",
+              "title": "Python: Planning the solution to the photos problem",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "z5vmzOemnD8",
+                "china_cdn_id": "z5vmzOemnD8.mp4"
+              }
+            },
+            {
+              "id": 785283,
+              "key": "4bf09472-22f3-41f9-831c-1f9b1442ebfe",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "If that seemed like a lot, don't worry—it's just an overview. We will walk you through each step in detail.\n\nLike Kelly described in the video, here are the main things that the `organize_photos.py` program will need to do by the time we're done with it:\n\n1. Get a list of the file names\n2. Extract the place names from the file names\n3. Make a directory for each place name\n4. Move files into the right directories\n\nBut before we get started writing this code, there are a few more tools we'll need. We'll go over these on the next several pages, and then come back to this list and start working on the solution.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 640827,
+          "key": "f69f44d3-cdab-4d75-992b-3b0848441325",
+          "title": "The os module",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "f69f44d3-cdab-4d75-992b-3b0848441325",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 673769,
+              "key": "512ffafb-1c4e-461a-8f8c-074e1fd2a6b4",
+              "title": "Python: The os module",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "OV9OczW4MeY",
+                "china_cdn_id": "OV9OczW4MeY.mp4"
+              }
+            },
+            {
+              "id": 785223,
+              "key": "3dfc83b5-e2d8-4579-8ae2-ca68a2232e5a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## A note on programming documentation\nDocumentation for programming languages is often super wordy and hard to understand. You may find that you often see entire paragraphs that seem to be completely made up of jargon and terms you've never even heard of! This can be intimidating, to the extent that it even makes some folks question whether they \"have the brain\" to be a programmer.\n\nUnderstand that this is a normal experience when you're starting out. As you get more experienced as a programmer, more and more of the jargon will be familiar to you. But also, you'll just come to be less intimidated by it. You'll gradually start to get a knack for locating the information you need for whatever problem you're trying to solve—even when there's some terminology you aren't familiar with.\n\nIn this next exercise, you'll be looking up some functions that we'll need for the *photos* problem. The main idea is *not* to test you on your ability to understand the descriptions of the functions—it's just to get you a tiny bit more familiar with where you would find this info if you were doing this on your own. Nobody remembers every function or command in a language, and professional developers reference documentation all the time.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 674579,
+              "key": "73a70ed4-8f71-4aeb-ab9e-8f7ea97229f4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "**Tip:** In case you're not already familiar with it, one of the most useful tools to have when you're trying to find something in documentation is the Web Browser's **Find** function.  The quickest way to access it is to press **Ctrl + F** on Windows, or **⌘F** (**Command + F**) on Mac. You can type the word you're looking for, and the *Find* function will locate it on the current page. Give it a try with this next exercise.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 671824,
+              "key": "6eadf201-a49e-45de-aa30-727fde921680",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "6eadf201-a49e-45de-aa30-727fde921680",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Head over to the [documentation](https://docs.python.org/3/library/os.html?highlight=os#module-os) and then use your browser's **Find** tool to search for the functions below. \n\nWhich of them are real functions that exist in the documentation? And what does each of them do?"
+                },
+                "concepts_label": "Activity",
+                "answers_label": "Function name",
+                "concepts": [
+                  {
+                    "text": "Make a new directory",
+                    "correct_answer": {
+                      "id": "a1530905303657",
+                      "text": "`os.mkdir`"
+                    }
+                  },
+                  {
+                    "text": "List files in a directory",
+                    "correct_answer": {
+                      "id": "a1530905354967",
+                      "text": "`os.listdir`"
+                    }
+                  },
+                  {
+                    "text": "Move a file from one directory to another",
+                    "correct_answer": {
+                      "id": "a1530905371217",
+                      "text": "`os.rename`"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1530905391154",
+                    "text": "`os.arrange`"
+                  },
+                  {
+                    "id": "a1530905387162",
+                    "text": "`os.create`"
+                  },
+                  {
+                    "id": "a1530905371217",
+                    "text": "`os.rename`"
+                  },
+                  {
+                    "id": "a1530905303657",
+                    "text": "`os.mkdir`"
+                  },
+                  {
+                    "id": "a1530905354967",
+                    "text": "`os.listdir`"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 640829,
+          "key": "38b0dd51-fc10-4cc1-a2e7-28191fd3bf31",
+          "title": "Functions on files and directories",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "38b0dd51-fc10-4cc1-a2e7-28191fd3bf31",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 673771,
+              "key": "5ce01a27-a4b6-4208-9376-e572c00c8bf7",
+              "title": "Python: Functions on files and directories",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "emrOq6uWqVo",
+                "china_cdn_id": "emrOq6uWqVo.mp4"
+              }
+            },
+            {
+              "id": 644151,
+              "key": "7faf6837-55fb-4780-a4b5-541ec1cfa02d",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "7faf6837-55fb-4780-a4b5-541ec1cfa02d",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Start the python interpreter by running `python3`.",
+                "Import the `os` module.",
+                "Use `os.listdir()` to list the contents of the working directory (the directory you are currently inside).",
+                "Use `os.listdir(\"Photos\")` to list the contents of the `Photos` directory.",
+                "Use `os.mkdir(\"Documents\")` to create a new directory. Then use `os.listdir()` to make sure you can see the new directory.",
+                "Use `os.rename(\"my_file.txt\", \"Documents/my_file.txt\")` to move `my_file.txt` to the `Documents` directory you just made. Again, use `os.listdir(\"Documents\")` to check that it now contains `new_file.txt`."
+              ],
+              "positive_feedback": "**Nice work!**",
+              "video_feedback": null,
+              "description": "Below is a terminal that has some directories associated with it. These directories are actually stored on a Udacity web server, but they will work the same as if you were using your own terminal to look at directories on your  own computer.\n\nHere are some things you can try to see how the `os` functions work:\n\n(If you get stuck on anything, the solution is below.)"
+            },
+            {
+              "id": 785244,
+              "key": "773c417d-c5e0-4ab8-a04b-78bc418a0549",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r613901c640829xREPLmg2cp17r",
+              "pool_id": "webterminal",
+              "view_id": "repl-yw8ix",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "allowClose": false,
+                    "replCommand": "export HOME=/ &&   cp -a /root/. ~ &&   source ~/.bashrc  && /bin/bash",
+                    "terminalTitle": "REPL"
+                  },
+                  "kind": "repl"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 785246,
+              "key": "7e86e940-f237-4e5f-8113-7cc758a438ed",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Solution\n```text\n>>> import os\n>>> os.listdir()\n['Photos', 'Desktop', 'my_file.txt']\n>>> os.listdir(\"Photos\")\n['bears.jpg', 'turtle.jpg', 'cat.jpg']\n>>> os.mkdir(\"Documents\")\n>>> os.listdir()\n['Photos', 'Desktop', 'my_file.txt', 'Documents']\n>>> os.rename(\"my_file.txt\", \"Documents/my_file.txt\")\n>>> os.listdir(\"Documents\")\n['my_file.txt']\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785247,
+              "key": "53b962b6-8144-4ff7-b3aa-665e5804963a",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "53b962b6-8144-4ff7-b3aa-665e5804963a",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Open your own terminal and make sure you're in a directory (like `Desktop`) that has some files in it. Use the shell command `cd` to change directories if you need to.",
+                "Once you're in a directory you like, start the Python interpreter.",
+                "Import the `os` module.",
+                "Try `os.listdir`.",
+                "Try `os.mkdir`.",
+                "Try `os.rename`."
+              ],
+              "positive_feedback": "**Nice work!**",
+              "video_feedback": null,
+              "description": "Now give it a try on your own computer. We'll leave the specifics up to you, but make sure to try each of the functions.\n\n---\n⚠️ Please do remember that these functions are accessing real files on your computer—so if you rename or move an important file, it really will rename or move that file!\n\n---"
+            }
+          ]
+        },
+        {
+          "id": 640830,
+          "key": "79e0a7ab-e032-47c9-9806-d9e023738ec2",
+          "title": "Relative paths, and the current working directory",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "79e0a7ab-e032-47c9-9806-d9e023738ec2",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 673773,
+              "key": "09e5ae0e-247a-47f0-bea8-9214c81ccd64",
+              "title": "Python: Relative paths and the current working directory",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "V-6HnY6BL9Y",
+                "china_cdn_id": "V-6HnY6BL9Y.mp4"
+              }
+            },
+            {
+              "id": 785253,
+              "key": "4478058d-a7af-431e-ac74-5835100be7b1",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "4478058d-a7af-431e-ac74-5835100be7b1",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "In the workspace below, try out `os.getcwd()` (don't forget to `import os` first!).\n\nWhat is the current working directory?",
+                "answers": [
+                  {
+                    "id": "a1543001633539",
+                    "text": "`/home/workspace`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1543001703914",
+                    "text": "`/root`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1543001705217",
+                    "text": "`/root/home/workspace`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1543001724697",
+                    "text": "`/home`",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 785255,
+              "key": "7cf88b3c-a022-4379-9263-f9c341a7679b",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r613901c640830xREPLwjkdu6lb",
+              "pool_id": "webterminal",
+              "view_id": "repl-quf3e",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "allowClose": false,
+                    "replCommand": "python3 -i",
+                    "terminalTitle": "REPL"
+                  },
+                  "kind": "repl"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 785254,
+              "key": "411ce670-217b-4197-a6e7-65d1eb16da92",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "411ce670-217b-4197-a6e7-65d1eb16da92",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Now, run `os.listdir()`. You'll see there's a directory called `workspace`.\n\nUse `os.chdir(\"workspace\")` to move into the `workspace` directory. Then run `os.listdir()` again. What file is in the `workspace` directory?",
+                "answers": [
+                  {
+                    "id": "a1543004216884",
+                    "text": "`lizards.txt`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1543004299804",
+                    "text": "`shakespeare.txt`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1543004307331",
+                    "text": "`armadillo.png`",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 640833,
+          "key": "6ea1d824-4688-4f0f-b9b6-cd3e3c2a7e98",
+          "title": "os functions and shell commands",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "6ea1d824-4688-4f0f-b9b6-cd3e3c2a7e98",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 673775,
+              "key": "9b928731-a425-4b45-b371-1a44639df9ea",
+              "title": "Python: os functions and shell commands",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "HzPHAFFcJPo",
+                "china_cdn_id": "HzPHAFFcJPo.mp4"
+              }
+            },
+            {
+              "id": 785256,
+              "key": "07e35f6c-9f1f-44ad-996d-92ec060e3cac",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Here's an example with `os.path.join` that you can try in the Python interpreter on your own computer:\n\n```python\n>>> import os\n>>> os.path.join(\"Documents\", \"Photos\", \"Oahu\")\n```\n\nDepending on your operating system, you should get a string with either forward slashes:\n\n```python\n'Documents/Photos/Oahu'\n```\n\nOr backslashes:\n\n```python\n'Documents\\Photos\\Oahu'\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 644502,
+              "key": "ab1000a0-d615-4b96-a931-cfb23a3a467b",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "ab1000a0-d615-4b96-a931-cfb23a3a467b",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Match the `os` functions to their corresponding shell commands!"
+                },
+                "concepts_label": "Shell command",
+                "answers_label": "Function name",
+                "concepts": [
+                  {
+                    "text": "`pwd`",
+                    "correct_answer": {
+                      "id": "a1528487750596",
+                      "text": "`os.getcwd`"
+                    }
+                  },
+                  {
+                    "text": "`mkdir`",
+                    "correct_answer": {
+                      "id": "a1528487765624",
+                      "text": "`os.mkdir`"
+                    }
+                  },
+                  {
+                    "text": "`mv`",
+                    "correct_answer": {
+                      "id": "a1528487775305",
+                      "text": "`os.rename`"
+                    }
+                  },
+                  {
+                    "text": "`ls`",
+                    "correct_answer": {
+                      "id": "a1528487791295",
+                      "text": "`os.listdir`"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1528485160770",
+                    "text": "`os.chdir`"
+                  },
+                  {
+                    "id": "a1528487750596",
+                    "text": "`os.getcwd`"
+                  },
+                  {
+                    "id": "a1528487765624",
+                    "text": "`os.mkdir`"
+                  },
+                  {
+                    "id": "a1528487775305",
+                    "text": "`os.rename`"
+                  },
+                  {
+                    "id": "a1528487791295",
+                    "text": "`os.listdir`"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 785284,
+          "key": "48264069-21f2-4c54-8763-caafc908268e",
+          "title": "Get a list of the file names",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "48264069-21f2-4c54-8763-caafc908268e",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 785285,
+              "key": "ea81a7b4-7ba4-402e-bb47-8248cea9b831",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Get a list of the file names",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785286,
+              "key": "d245fb40-7657-4631-bc24-8333c3f014f1",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "OK, we now have the tools we need to get started on the `organize_photos` program. As a reminder, here's our list again:\n\n1. **Get a list of the file names**\n2. Extract the place names from the file names\n3. Make a directory for each place name\n4. Move files into the right directories\n\nLet's start with the first one—getting a list of the files.\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785287,
+              "key": "42d4e02a-98aa-42f5-b374-64da1ebf77eb",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "42d4e02a-98aa-42f5-b374-64da1ebf77eb",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "We can use one of the `os` functions we just learned to get the list of the file names. Can you think of which one?",
+                "answers": [
+                  {
+                    "id": "a1543099294299",
+                    "text": "`os.mkdir`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1543099335593",
+                    "text": "`os.listdir`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1543099343450",
+                    "text": "`os.rename`",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 785289,
+              "key": "b4a979c0-65e8-4d7d-bd3f-594109eca202",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "b4a979c0-65e8-4d7d-bd3f-594109eca202",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Add `os.chdir(\"Photos\")` to change the working directory to *Photos*.",
+                "Use `os.listdir()` to get a list of all the files in the *Photos* directory.",
+                "Assign the returned list to the `originals` variable.",
+                "Use the `print` statement we included to check that everything ran OK and that you now have a list of file names!"
+              ],
+              "positive_feedback": "**Good!**",
+              "video_feedback": null,
+              "description": "In the workspace below, we've created a Photos directory like Kelly's (and like the one you downloaded). See if you can write the code to get a list of the file names."
+            },
+            {
+              "id": 785288,
+              "key": "7e3e0237-d51f-4f54-8c41-b47cc0deb71b",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r613901c785284xGENERICia25no7l",
+              "pool_id": "webterminal",
+              "view_id": "generic-m1dwr",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "userCode": "",
+                    "openFiles": [
+                      "/home/workspace/listing.py"
+                    ],
+                    "showFiles": false,
+                    "allowClose": false,
+                    "showEditor": true,
+                    "allowSubmit": false,
+                    "terminalTitle": "BASH"
+                  },
+                  "kind": "generic"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 785291,
+              "key": "b0d38642-3c6b-4023-a60c-678ce186e482",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n----\n<div style=\"background-color: #a4e4f5;\">\n## ⚠️ Spoiler alert!\n\n**Our solution is below.** You'll learn more effectively if you give the exercise a strong effort before comparing your code with ours!\n</div>\n----\n----",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785290,
+              "key": "8d34769d-ba6c-453a-b7fc-7d81116e409b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Solution\n\n```python\nimport os\n\nos.chdir(\"Photos\")\noriginals = os.listdir()\n\nprint(originals) # Just for testing the code\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785292,
+              "key": "c804d7bf-c0d4-4125-bfb1-5054d6f4ac32",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "c804d7bf-c0d4-4125-bfb1-5054d6f4ac32",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Include the `print` statement so you can test your code like we did here!",
+                "Open up your terminal and use `cd` to navigate to the folder where you saved `organize_photos.py`.",
+                "Use `ls` to check that both `organize_photos.py` and the **Photos** directory are in this same folder together.",
+                "Run `python3 organize_photos.py`. You should see the list of file names printed to your terminal."
+              ],
+              "positive_feedback": "Step 1 done! ✅",
+              "video_feedback": null,
+              "description": "Now that you know how to get the list of file names, add the code to your copy of `organize_photos.py` and try it on your own computer."
+            }
+          ]
+        },
+        {
+          "id": 640835,
+          "key": "014249dc-7ba8-4d28-bc05-c710c1f8fa60",
+          "title": "Extract the place names (1/2)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "014249dc-7ba8-4d28-bc05-c710c1f8fa60",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 785308,
+              "key": "345b6e08-3906-426f-9590-e4dcc83a88cb",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Extracting the place names (1/2)\n\nLet's see what's next on the list...\n\n>1. Get a list of the file names\n2. **Extract the place names from the file names**\n3. Make a directory for each place name\n4. Move files into the right directories",
+              "instructor_notes": ""
+            },
+            {
+              "id": 673776,
+              "key": "8c02685b-03ea-4be1-9e92-0adce7020de5",
+              "title": "Python: Taking apart filenames",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "breYyDpTEU8",
+                "china_cdn_id": "breYyDpTEU8.mp4"
+              }
+            },
+            {
+              "id": 785295,
+              "key": "5a16076b-1878-41b0-9f9c-a291ed96cf14",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Extracting the names with *string slicing*\n\nOne way to extract the place names is to use *string slicing*.  We'll explore this approach here, and then look at a second way to do it on the next page.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785297,
+              "key": "0abae1de-57cb-40e7-8ac9-91f831af0283",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "0abae1de-57cb-40e7-8ac9-91f831af0283",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "See if you can predict what result each of these will give:"
+                },
+                "concepts_label": "Code",
+                "answers_label": " Result",
+                "concepts": [
+                  {
+                    "text": "```python\n>>> name = \"2016-11_Berlin_9.jpg\"\n>>> name[8:14]\n```",
+                    "correct_answer": {
+                      "id": "a1543101457838",
+                      "text": "`'Berlin'`"
+                    }
+                  },
+                  {
+                    "text": "```python\n>>> name = \"2017-06_Yosemite_2.jpg\"\n>>> name[8:14]\n```",
+                    "correct_answer": {
+                      "id": "a1543101519702",
+                      "text": "`'Yosemi'`"
+                    }
+                  },
+                  {
+                    "text": "```python\n>>> name = \"2018-01_Oahu_2.jpg\"\n>>> name[8:14]\n```",
+                    "correct_answer": {
+                      "id": "a1543102020838",
+                      "text": "`'Oahu_2'`"
+                    }
+                  },
+                  {
+                    "text": "```python\n>>> name = \"2018_Scottland_1.jpg\"\n>>> name[8:14]\n```",
+                    "correct_answer": {
+                      "id": "a1543102037678",
+                      "text": "`'ttland'`"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1543102020838",
+                    "text": "`'Oahu_2'`"
+                  },
+                  {
+                    "id": "a1543102149528",
+                    "text": "`'Yosemite'`"
+                  },
+                  {
+                    "id": "a1543102037678",
+                    "text": "`'ttland'`"
+                  },
+                  {
+                    "id": "a1543102162245",
+                    "text": "`'Oahu'`"
+                  },
+                  {
+                    "id": "a1543102132317",
+                    "text": "`'Scottl'`"
+                  },
+                  {
+                    "id": "a1543101519702",
+                    "text": "`'Yosemi'`"
+                  },
+                  {
+                    "id": "a1543101457838",
+                    "text": "`'Berlin'`"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 785299,
+              "key": "24f97047-a2b6-41d5-9807-e0b164144866",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "As you can see, this approach *kind of* works. The problem is that the place names are different lengths—so if we pick specific, hard-coded index numbers, they will only work for some places and not others. `filename[8:14]` works for `'Berlin'`, but not for any of the others.\n\nFortunately, the file names have underscores `_` around the place names (and nowhere else). If our code can find the location of these underscores, then this will tell us where to slice each string. There's a particular string method that we can use for this. Let's see if we can figure out which one it is...",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785301,
+              "key": "978748b4-0203-4910-b160-734aa35db2c0",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "978748b4-0203-4910-b160-734aa35db2c0",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Suppose we ran this line in the Python interpreter:\n\n```python\n>>> filename = \"2016-11-04_Berlin_09/42/22.jpg\"\n```\n\nSee if you can predict what result we would get from each of the following:\n\n(If you're not sure, feel free to run the code yourself!)"
+                },
+                "concepts_label": "Code",
+                "answers_label": "Returned value",
+                "concepts": [
+                  {
+                    "text": "```python\n>>> filename.count(\"_\")\n```",
+                    "correct_answer": {
+                      "id": "a1543102602039",
+                      "text": "`2`"
+                    }
+                  },
+                  {
+                    "text": "```python\n>>> \"_\" in filename\n```",
+                    "correct_answer": {
+                      "id": "a1543102652205",
+                      "text": "`True`"
+                    }
+                  },
+                  {
+                    "text": "```python\n>>> filename.find(\"_\")\n```",
+                    "correct_answer": {
+                      "id": "a1543102664229",
+                      "text": "`10`"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1543102698528",
+                    "text": "`1`"
+                  },
+                  {
+                    "id": "a1543102652205",
+                    "text": "`True`"
+                  },
+                  {
+                    "id": "a1543102664229",
+                    "text": "`10`"
+                  },
+                  {
+                    "id": "a1543102695672",
+                    "text": "`17`"
+                  },
+                  {
+                    "id": "a1543102602039",
+                    "text": "`2`"
+                  },
+                  {
+                    "id": "a1543102701984",
+                    "text": "`False`"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 785300,
+              "key": "ba7e9e9b-4faa-4208-b51c-4bbd1745916c",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "ba7e9e9b-4faa-4208-b51c-4bbd1745916c",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Based on the above, which of these can we use to get the position of the first underscore?",
+                "answers": [
+                  {
+                    "id": "a1543102334145",
+                    "text": "`count`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1543102380330",
+                    "text": "`in`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1543102386025",
+                    "text": "`find`",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 785302,
+              "key": "abdab5df-f018-4a4f-8f02-d1bc4d5f63ae",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Now that we know the position of the first underscore, we can use this information to get rid of the first part of the string. For example, if we have this filename:\n\n```python\n\"2016-11-04_Berlin_09/42/22.jpg\"\n```\n\nWe want to get the following slice from it:\n\n```python\n\"Berlin_09/42/22.jpg\"\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785303,
+              "key": "d1910b98-6b25-4315-8852-35320fc64121",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "d1910b98-6b25-4315-8852-35320fc64121",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Here are some different attempts to do that. See what results you get from each of them.\n\nFirst, run these lines in your interpreter:\n```python\n>>> filename = \"2016-11-04_Berlin_09/42/22.jpg\"\n>>> first = filename.find(\"_\")\n```\n\n(Remember that it's great practice if you try to predict the result before running the code!)"
+                },
+                "concepts_label": "Code",
+                "answers_label": "Returned value",
+                "concepts": [
+                  {
+                    "text": "```python\n>>> filename[first:]\n```",
+                    "correct_answer": {
+                      "id": "a1543102780242",
+                      "text": "`'_Berlin_09/42/22.jpg'`"
+                    }
+                  },
+                  {
+                    "text": "```python\n>>> filename[first+1:]\n```",
+                    "correct_answer": {
+                      "id": "a1543102830728",
+                      "text": "`'Berlin_09/42/22.jpg'`"
+                    }
+                  },
+                  {
+                    "text": "```python\n>>> filename[:first]\n```",
+                    "correct_answer": {
+                      "id": "a1543102847543",
+                      "text": "`'2016-11-04'`"
+                    }
+                  },
+                  {
+                    "text": "```python\n>>> filename[:first+1]\n```",
+                    "correct_answer": {
+                      "id": "a1543102870928",
+                      "text": "`'2016-11-04_'`"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1543102870928",
+                    "text": "`'2016-11-04_'`"
+                  },
+                  {
+                    "id": "a1543102847543",
+                    "text": "`'2016-11-04'`"
+                  },
+                  {
+                    "id": "a1543102780242",
+                    "text": "`'_Berlin_09/42/22.jpg'`"
+                  },
+                  {
+                    "id": "a1543102830728",
+                    "text": "`'Berlin_09/42/22.jpg'`"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 785304,
+              "key": "e1dd2679-21a1-4e21-8ad5-43e3a75ba70a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "So now we have a way to get the part of the file name that comes after the first underscore.\n\nLet's store that in a variable so we can mess with it further. We'll call the variable `partial`, because it's just part of the original file name:\n\n```python\n>>> first = filename.find(\"_\")\n>>> first\n10 # The first underscore is at index 10\n>>> partial = filename[first+1:] # Get the slice from location 11 to the end\n>>> partial\n'Berlin_09/42/22.jpg' # Yay!\n```\n\nNow that we have this partial file name, we can run the `find` method again to get the location of that second underscore:\n\n```python\n>>> second = partial.find(\"_\")\n>>> second\n6 # The second underscore is at index 6\n```\n\nAnd finally, we can use that location to get just the place name by itself:\n\n```python\n>>> partial[:second] # Get slice from the beginning up to the second underscore\n'Berlin'\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785334,
+              "key": "d4324e6d-89f9-4635-84a1-3ebc111b3618",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "d4324e6d-89f9-4635-84a1-3ebc111b3618",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Suppose we start with this file name:\n\n```python\n>>> filename = \"2018-01-03_Oahu_21/51/57.jpg\"\n```\nWhat would each of these evaluate to?"
+                },
+                "concepts_label": "Code",
+                "answers_label": "Result",
+                "concepts": [
+                  {
+                    "text": "```python\n>>> first = filename.find(\"_\")\n>>> first\n```",
+                    "correct_answer": {
+                      "id": "a1543168679210",
+                      "text": "`10`"
+                    }
+                  },
+                  {
+                    "text": "```python\n>>> partial = filename[first+1:]\n>>> partial\n```",
+                    "correct_answer": {
+                      "id": "a1543168775699",
+                      "text": "`'Oahu_21/51/57.jpg'`"
+                    }
+                  },
+                  {
+                    "text": "```python\n>>> second = partial.find(\"_\")\n>>> second\n```",
+                    "correct_answer": {
+                      "id": "a1543168804908",
+                      "text": "`4`"
+                    }
+                  },
+                  {
+                    "text": "```python\n>>> partial[:second]\n```",
+                    "correct_answer": {
+                      "id": "a1543168829604",
+                      "text": "`'Oahu'`"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1543168679210",
+                    "text": "`10`"
+                  },
+                  {
+                    "id": "a1543168804908",
+                    "text": "`4`"
+                  },
+                  {
+                    "id": "a1543168829604",
+                    "text": "`'Oahu'`"
+                  },
+                  {
+                    "id": "a1543168775699",
+                    "text": "`'Oahu_21/51/57.jpg'`"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 785335,
+              "key": "36eeb518-2696-448a-a694-4e3cc93ec5cc",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Great! However, we don't just want to run this code on a single filename, we want to run it over and over on all the filenames. To be able to do that, we need to turn it into a function—that way, we'll be able to simply *call* it each time we need to extract a place name.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785305,
+              "key": "e8033fda-c8d6-4a0f-86a8-3101e2a7ea30",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "e8033fda-c8d6-4a0f-86a8-3101e2a7ea30",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Define a function named `extract_place` that has one parameter (we called the parameter `filename`).",
+                "Use string slicing, just like we showed above, to extract the place name.",
+                "Return the place name.",
+                "Test your function using the provided `print` statements."
+              ],
+              "positive_feedback": "**Nice work!**",
+              "video_feedback": null,
+              "description": "In the workspace below, see if you can write a function for extracting the place name.\n\nIt should take a file name like `\"2016-11-04_Berlin_09/42/22.jpg\"` and return just the place name, `'Berlin'`."
+            },
+            {
+              "id": 785298,
+              "key": "8f3e0995-bb7c-4768-8d4a-ca5ced74364e",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r613901c640835xGENERIC0bwz6vrx",
+              "pool_id": "webterminal",
+              "view_id": "generic-z92r9",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "userCode": "",
+                    "openFiles": [
+                      "/home/workspace/extract.py"
+                    ],
+                    "showFiles": true,
+                    "allowClose": true,
+                    "showEditor": true,
+                    "allowSubmit": false,
+                    "terminalTitle": "BASH"
+                  },
+                  "kind": "generic"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 670916,
+              "key": "d326fd80-5aeb-4770-b2f0-8ba160f7b7b7",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n----\n<div style=\"background-color: #a4e4f5;\">\n## ⚠️ Spoiler alert!\n\n**Our solution is below.** You'll learn more effectively if you give the exercise a strong effort before comparing your code with ours!\n</div>\n----\n----",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785306,
+              "key": "8ee8016c-addd-44a7-aeb0-eefc53e1e1fb",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Solution\n\nThis one might have been a bit challenging! It can be hard to keep track of what part of the string you're getting with each slice.\n\n```python\ndef extract_place(filename):\n    first = filename.find(\"_\")\n    partial = filename[first+1:]\n    second = partial.find(\"_\")\n    return partial[:second]\n```",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 785257,
+          "key": "442adb42-b71e-44ab-aaa4-e6601d2b8bec",
+          "title": "Extract the place names (2/2)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "442adb42-b71e-44ab-aaa4-e6601d2b8bec",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 785262,
+              "key": "354dc598-3883-4702-a59f-7bb49bb31fb0",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Extract the place names (2/2)\n\nOn the last page, we used string slicing to write the `extract_place` function. This worked fine, and was a great opportunity to get practice with both slicing and with the `find` method. These are some great techniques to have in your toolbox.\n\nThat said, Python actually provides a method that we can use to make the job much easier—and the `extract_place` function much shorter.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785258,
+              "key": "8ed8cb61-41d8-4638-8005-ab32881321c4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# The `split` method",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785259,
+              "key": "9e43b096-6f47-4d66-9f95-c88dc34d0897",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "The method we want is called the `split` method—and the best way to see what it does is to try it out for yourself.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785260,
+              "key": "8070885f-2a71-4ee7-8b3c-3ffcddcdb3d9",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "8070885f-2a71-4ee7-8b3c-3ffcddcdb3d9",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Give these bits of code a try in your interpreter, and see what results you get."
+                },
+                "concepts_label": "Code",
+                "answers_label": "Result",
+                "concepts": [
+                  {
+                    "text": "```python\n>>> \"ba_na_na\".split(\"_\")\n```",
+                    "correct_answer": {
+                      "id": "a1543026922106",
+                      "text": "`['ba', 'na', 'na']`"
+                    }
+                  },
+                  {
+                    "text": "```python\n>>> \"banana\".split(\"n\")\n```",
+                    "correct_answer": {
+                      "id": "a1543027164196",
+                      "text": "`['ba', 'a', 'a']`"
+                    }
+                  },
+                  {
+                    "text": "```python\n>>> sentence = \"a banana split\"\n>>> sentence.split(\" \")\n```",
+                    "correct_answer": {
+                      "id": "a1543027282206",
+                      "text": "`['a', 'banana', 'split']`"
+                    }
+                  },
+                  {
+                    "text": "```python\n>>> \"bandanna\".split(\"dan\")\n```",
+                    "correct_answer": {
+                      "id": "a1543027491347",
+                      "text": "`['ban', 'na']`"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1543027282206",
+                    "text": "`['a', 'banana', 'split']`"
+                  },
+                  {
+                    "id": "a1543026922106",
+                    "text": "`['ba', 'na', 'na']`"
+                  },
+                  {
+                    "id": "a1543027164196",
+                    "text": "`['ba', 'a', 'a']`"
+                  },
+                  {
+                    "id": "a1543027491347",
+                    "text": "`['ban', 'na']`"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 785261,
+              "key": "90ae80bc-1438-4e43-a7f2-5f8ee672e1bf",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "As you can see, the `split` method does just what the name implies—it splits a string up and returns a list containing the parts.\n\nNotice that we have to give it a string as the argument, and this tells it where to make the split.\n\nAlso notice that this string does not get included in the result. For example, `\"this and that\".split(\" \")` splits the string at the space character, `\" \"`, and does *not* include those spaces in the resulting list: `['this', 'and', 'that']`.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785264,
+              "key": "2e28bd69-a811-4d4e-af9d-0dc4ec1b0ab8",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "2e28bd69-a811-4d4e-af9d-0dc4ec1b0ab8",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Use the `split` method to get a list containing the parts of the file name.",
+                "Have the function `return` the list item that has the place name (**Hint:** You can use the index operator to select this item!)."
+              ],
+              "positive_feedback": "**Nice work!**",
+              "video_feedback": null,
+              "description": "In the workspace below, see if you can write a new version of the `extract_place` function that uses the `split` method instead of string slicing."
+            },
+            {
+              "id": 785263,
+              "key": "d8aa9026-757b-46fe-8f2b-100769d851a2",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r613901c785257xGENERICmq7ga3ry",
+              "pool_id": "webterminal",
+              "view_id": "generic-l2r4k",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "userCode": "",
+                    "openFiles": [
+                      "/home/workspace/extract.py"
+                    ],
+                    "showFiles": false,
+                    "allowClose": false,
+                    "showEditor": true,
+                    "allowSubmit": false,
+                    "terminalTitle": "BASH"
+                  },
+                  "kind": "generic"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 785266,
+              "key": "a5aafe65-6dba-494b-98b0-efd7fa4fed9e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n----\n<div style=\"background-color: #a4e4f5;\">\n## ⚠️ Spoiler alert!\n\n**Our solution is below.** You'll learn more effectively if you give the exercise a strong effort before comparing your code with ours!\n</div>\n----\n----",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785265,
+              "key": "bcde7ba9-98b2-4885-afb1-d71b84217dd6",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Solution\n\nHere's one way to write it:\n\n```python\ndef extract_place(filename):\n    parts = filename.split(\"_\") # Get a list containing all the parts\n    place_name = parts[1] # Use the index operator to select the second list item\n    return place_name\n```\n\nOr if we wanted to, we could shorten all of that to a single line:\n\n```python\ndef extract_place(filename):\n    return filename.split(\"_\")[1]\n```\n---",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785267,
+              "key": "46c8e76a-3004-4616-a2ae-8c8604165568",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Reviewing the two approaches\nIn this next video, Karl reviews and explains both approaches to writing the `extract_place` function.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785268,
+              "key": "abc8793c-022b-44bb-9b06-38866ba81082",
+              "title": "Python: extract_place solution",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "KTqScwzhkKA",
+                "china_cdn_id": "KTqScwzhkKA.mp4"
+              }
+            },
+            {
+              "id": 785269,
+              "key": "d8d8c72b-8139-46ab-9532-e1862c4e1cca",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "d8d8c72b-8139-46ab-9532-e1862c4e1cca",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Add the `extract_place` function right after `import os`.",
+                "Test the code by adding a line like `print(extract_place(\"2016-11-04_Berlin_09/42/22.jpg\"))`."
+              ],
+              "positive_feedback": "Step 2 done!  ✅",
+              "video_feedback": null,
+              "description": "Now that you've written the `extract_place` function, go ahead and add it to your copy of `organize_photos.py`."
+            }
+          ]
+        },
+        {
+          "id": 785270,
+          "key": "a1e6529f-1190-4f78-a830-b99cdd17149b",
+          "title": "Make place directories (1/2)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a1e6529f-1190-4f78-a830-b99cdd17149b",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 785271,
+              "key": "2f00ca4d-2e72-4809-8fe0-93eaa43b9c8e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Make place directories (1/2)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785272,
+              "key": "207728c4-4f75-42c1-925b-6c144724b2f7",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "We now have a way of extracting the place names—great! What's next on the list?\n\n>1. Get a list of the file names\n2. Extract the place names from the file names\n3. **Make a directory for each place name**\n4. Move files into the right directories\n\nThe next thing we need is a function that makes a directory for each of the places (e.g., a `Berlin` directory for all the Berlin photos, a `Scotland` directory for all the Scotland photos, and so on).\n\nWe can use the `os.mkdir` function to create the directories. For example:\n\n```python\n>>> os.mkdir(\"Berlin\")\n```\n\nBut the trick is that we need to loop over *all* of the place names, making a directory for each of them.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785309,
+              "key": "38c30a10-3295-4d7c-a09c-31f7857e9438",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Getting a list of place names\n\nIf we're going to loop over all the place names, the first thing we need is a *list* containing those place names!  Something like this:\n\n```python\n['Brooklyn', 'Berlin', 'Yosemite', 'Oahu', 'Firenze', 'Scotland', 'Kyoto', 'Cancun']\n```\nHow can we get our code to generate a list like this?\n\nWell, we already have the following:\n* A list of the full filenames (called `originals`) \n* A function for extracting individual place names from those filenames.\n\nSo what we need to do now is loop over the list of filenames, extracting place names as we go—and append each place name to a list. Then we'll have a list that has just the place names by themselves!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785274,
+              "key": "9eeec975-bf3a-4599-9d83-2250b0ac1f71",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "9eeec975-bf3a-4599-9d83-2250b0ac1f71",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Loop over the `originals` list.",
+                "For each file name, call the `extract_place` function and `append` the value it returns to the `places` list."
+              ],
+              "positive_feedback": "**Nice work!**",
+              "video_feedback": null,
+              "description": "In the workspace below, you'll find the code we've written so far, as well as an empty list, called `places`.\n\nYour goal is to loop over the file names, extract each place name, and append it to the `places` list."
+            },
+            {
+              "id": 785273,
+              "key": "3a2cb111-7790-4858-a604-2403a12e6b14",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r613901c785270xGENERIC2ynz44nu",
+              "pool_id": "webterminal",
+              "view_id": "generic-evn1o",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "userCode": "",
+                    "openFiles": [
+                      "/home/workspace/places.py"
+                    ],
+                    "showFiles": false,
+                    "allowClose": false,
+                    "showEditor": true,
+                    "allowSubmit": false,
+                    "terminalTitle": "BASH"
+                  },
+                  "kind": "generic"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 785310,
+              "key": "3bbacc7f-5793-48fa-8def-f2073f788779",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n----\n<div style=\"background-color: #a4e4f5;\">\n## ⚠️ Spoiler alert!\n\n**Our solution is below.** You'll learn more effectively if you give the exercise a strong effort before comparing your code with ours!\n</div>\n----\n----",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785275,
+              "key": "a966213c-612c-4fba-9fb0-be3d396c02d4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Solution\n\n```python\nimport os\n\ndef extract_place(filename):\n    return filename.split('_')[1]\n\nos.chdir(\"Photos\")\noriginals = os.listdir()\nplaces = []\nfor filename in originals:\n    place = extract_place(filename)\n    places.append(place)\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785276,
+              "key": "a69b27b6-1601-44b6-9589-abe2878d379e",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "a69b27b6-1601-44b6-9589-abe2878d379e",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Update your own copy of `organize_photos.py` to include the new code.",
+                "Use `print(places)` to make sure your code created a list of place names."
+              ],
+              "positive_feedback": "Nice!",
+              "video_feedback": null,
+              "description": ""
+            }
+          ]
+        },
+        {
+          "id": 640839,
+          "key": "e3ab7460-53ad-466d-980c-9ffad3665ba3",
+          "title": "Make place directories (2/2)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "e3ab7460-53ad-466d-980c-9ffad3665ba3",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 785311,
+              "key": "c20ae2a9-b9cd-42c6-95d9-928ebf97a90f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Make place directories (2/2)\n\nNow that we have our `places` list, we can loop over that list and make a new directory for each place name.\n\nNotice that this function doesn't need to `return` anything—it just need to create the directories.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785312,
+              "key": "8bbf10ff-0d7c-4475-a08d-3a4840e877b3",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "8bbf10ff-0d7c-4475-a08d-3a4840e877b3",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Define a function named `make_place_directories` with one parameter (we called ours `places`).",
+                "Loop over the `places` parameter and use `os.mkdir` to create a new directory for each place.",
+                "Don't forget to add a function call: `make_place_directories(places)`",
+                "We included a print statement to test the code—when you run it, you should see all the new directories you created."
+              ],
+              "positive_feedback": "Step 4 done! ✅",
+              "video_feedback": null,
+              "description": "Your job is to write a `make_place_directories` function that takes a list of places and creates a directory for each of the places in the list.\n\n**Note:** We only included a few photo files in this workspace, rather than the whole batch that's in the Photos folder. We'll explain why in a moment."
+            },
+            {
+              "id": 785313,
+              "key": "0989c12a-100f-4e6e-9a25-66231c0164c8",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r613901c640839xGENERICfrqyqd7c",
+              "pool_id": "webterminal",
+              "view_id": "generic-0vpp3",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "userCode": "",
+                    "openFiles": [
+                      "/home/workspace/dir.py"
+                    ],
+                    "showFiles": false,
+                    "allowClose": true,
+                    "showEditor": true,
+                    "allowSubmit": false,
+                    "terminalTitle": "BASH"
+                  },
+                  "kind": "generic"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 785318,
+              "key": "9edc8384-e413-4ea2-87a0-2f78322f7796",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Solution\n\nHere's our code. We added comments to point out what got added.\n\n```python\nimport os\n\ndef extract_place(filename):\n    return filename.split('_')[1]\n\ndef make_place_directories(places): # Here's the function definition\n    for place in places:\n        os.mkdir(place)\n\nos.chdir(\"Photos\")\noriginals = os.listdir()\nplaces = []\nfor filename in originals:\n    place = extract_place(filename)\n    places.append(place)\n\nmake_place_directories(places) # Don't forget to call the function!\nprint(os.listdir()) # This is just a temporary line for testing!\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785316,
+              "key": "de197978-f13b-4974-b488-cde97864b519",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "de197978-f13b-4974-b488-cde97864b519",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Like we mentioned above, we only included a few of the photos files in the above workspace. There's a reason for this, which you're about to discover...\n\nGo ahead and update your copy of `organize_files.py` to add the `make_place_directories.py` function—then try running your code. What happens?",
+                "answers": [
+                  {
+                    "id": "a1543108774775",
+                    "text": "It runs fine and creates the directories just like it's supposed to.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1543108873440",
+                    "text": "It creates some of the directories, but then it throws a `FileExistsError`.",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 785317,
+              "key": "55adc006-0cb4-4bde-ab02-1f218776a671",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this next video, Karl will review the code for the `make_place_directories` function—and then explain what the problem is that's causing the above error.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 676164,
+              "key": "1fbc8c4b-827b-40a3-9332-3bfc7c92560d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": " ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 673781,
+              "key": "c5c19e11-7266-4cbb-90cb-fb227fff9b92",
+              "title": "Python: Make place directories",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "NOC6JiN49Dk",
+                "china_cdn_id": "NOC6JiN49Dk.mp4"
+              }
+            },
+            {
+              "id": 785336,
+              "key": "5926f572-8ea5-4dcc-b6d4-f4a9a4e43ffc",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "5926f572-8ea5-4dcc-b6d4-f4a9a4e43ffc",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Replace your current *Photos* directory with a fresh copy."
+              ],
+              "positive_feedback": "**Good!**",
+              "video_feedback": null,
+              "description": "We'll fix the duplicates issue in a moment, but first—we just kind of messed up our *Photos* directory. The code created some of the folders we wanted, but not others.\n\nLet's fix that by deleting the current Photos directory and putting in a fresh copy of it. If you need to download the zip file again, you can get it [here](https://s3.amazonaws.com/video.udacity-data.com/topher/2018/November/5bf9cb20_photos/photos.zip)."
+            },
+            {
+              "id": 785314,
+              "key": "5cd9b031-80b9-4aa2-990b-6e1097cf911f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Preventing duplicates\n\nLike Karl mentioned in the video, we need to avoid passing the `make_place_directories` a place name that we've previously passed it!\n\nOne way we can do that is by making sure that we *only append a place to the `places` list if it isn't already in the list.* Like this:\n\n```python\nfor filename in originals:\n    place = extract_place(filename)\n    if place not in places: # This is the key change\n        places.append(place)\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785315,
+              "key": "a42f6a7f-b777-4f90-89f4-b1b7651f7ab3",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "a42f6a7f-b777-4f90-89f4-b1b7651f7ab3",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Add the `if` statement inside the `for` loop.",
+                "Test your code again—this time, you shouldn't get any errors."
+              ],
+              "positive_feedback": "Step 3 done! ✅",
+              "video_feedback": null,
+              "description": "Use the above code to modify the `for` loop in your copy of `organize_photos.py` so that place names only get appended if they're **not** already in the list."
+            },
+            {
+              "id": 785338,
+              "key": "68749267-82b0-453d-bb01-d05c6cc56f2d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "If you look in your *Photos* directory , you should see that your code created folders for each place:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785337,
+              "key": "ab8d05c3-6a0d-4ffe-a531-c428cb5e1bd3",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2018/November/5bfafe45_organize-photos-directories/organize-photos-directories.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/ab8d05c3-6a0d-4ffe-a531-c428cb5e1bd3",
+              "caption": "",
+              "alt": "Screenshot showing the new place directories.",
+              "width": 889,
+              "height": 377,
+              "instructor_notes": null
+            },
+            {
+              "id": 785339,
+              "key": "883205ce-43c2-4b2e-b893-08bbd0c51589",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "883205ce-43c2-4b2e-b893-08bbd0c51589",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Delete the place directories from the *Photos* folder."
+              ],
+              "positive_feedback": "**Good!**",
+              "video_feedback": null,
+              "description": "If you're seeing those directories, it means that the `make_place_directories` function worked! Yay!\n\nHowever, if we run the code again with the directories in there, it will get confused. It will try to process the directories themselves as if they were more photos. So for now, go ahead and delete these new folders. We will create them again once we finish writing the rest of the program."
+            }
+          ]
+        },
+        {
+          "id": 785320,
+          "key": "08c32b50-2f25-4cb9-9b37-f2d5568f2092",
+          "title": "Move the files",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "08c32b50-2f25-4cb9-9b37-f2d5568f2092",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 785321,
+              "key": "7c013c49-ae8c-4601-a507-4f3bd8386460",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Move the files\n\nJust one more task on our list:\n\n>1. Get a list of the file names\n2. Extract the place names from the file names\n3. Make a directory for each place name\n4. **Move files into the right directories**",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785340,
+              "key": "8c93d142-7d73-48c1-b599-3566a314ddf6",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Let's consider an example. If we have these files:\n\n```text\n2017-04-02_Brooklyn_23:15:06.jpg\n2018-08-01_Oahu_21:51:37.jpg\n```\n\nThen we need to change their file paths to something like:\n\n```text\nBrooklyn/2017-04-02_Brooklyn_23:15:06.jpg\nOahu/2018-08-01_Oahu_21:51:37.jpg\n```\nIt looks like we need to take the `place` and stick it together with the `filename`, but with a slash in between (whether it will be a forward slash or backslash depends on whether we're on Windows or Mac).\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785341,
+              "key": "9d341aa3-fcf8-4d68-8808-f697bc15557a",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "9d341aa3-fcf8-4d68-8808-f697bc15557a",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Suppose we have:\n\n```python\nfilename = '2018-08-01_Oahu_21:51:37.jpg'\nplace = 'Oahu'\n```\n\nWhich of the following would generate the string `'Oahu/2018-08-01_Oahu_21:51:37.jpg'`?",
+                "answers": [
+                  {
+                    "id": "a1543178531089",
+                    "text": "`os.rename(place, filename)` ",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1543178550695",
+                    "text": "`os.mkdir(place, filename)`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1543178551361",
+                    "text": "`os.path.join(place, filename)`",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 785342,
+              "key": "25542453-4dc5-4f0e-acfd-4f650fd1847b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "OK, so we can use `os.path.join` to generate the new file names. But creating these strings doesn't actually rename (or move) the files—for that, we need the `rename` function.\n\nIf you recall, the `rename` function has the following syntax:\n\n\n><p style=\"font-family:monospace\">os.**rename**(*source*, *destination*)</p>\n\nOr you can think of it like:\n\n><p style=\"font-family:monospace\">os.**rename**(*old name*, *new name*)</p>\n\nLike if we wanted to move `some_file` to the `Desktop`, we might rename it like this:\n\n```python\nos.rename(\"some_file\", \"Desktop/some_file\")\n```\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785343,
+              "key": "48de4c98-4e1f-4295-9769-72daf04041e0",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "48de4c98-4e1f-4295-9769-72daf04041e0",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Again suppose that we have:\n\n```python\nfilename = '2018-08-01_Oahu_21:51:37.jpg'\nplace = 'Oahu'\n```\n\nHere are some attempts to rename the file—which of them would work?",
+                "answers": [
+                  {
+                    "id": "a1543178868581",
+                    "text": "`os.rename(filename, os.path.join(place, filename))`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1543178876229",
+                    "text": "`os.rename(os.path.join(place, filename), filename)` ",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 785322,
+              "key": "52ccf348-4632-496c-ace3-829f4226a77e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "So that's our code for renaming (moving) *one* of the files. To move *all* of the files, we need to loop over the filenames in the `originals` list.\n\nThis means we'll need another `for` loop in the code. Like this:\n\n```python\nfor filename in originals:\n    place = extract_place(filename)\n    os.rename(filename, os.path.join(place, filename))\n```\n\nYou may notice that it looks very similar to the other loop that's already in our code—but in this case, we don't need to be checking for duplicate names.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785323,
+              "key": "75febc7b-a6cf-4436-914c-12578336f7cf",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "75febc7b-a6cf-4436-914c-12578336f7cf",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Update your copy of `organize_photos.py` to include the above loop (at the end of the program)."
+              ],
+              "positive_feedback": "Step 4 done! ✅",
+              "video_feedback": null,
+              "description": "At the end of your copy of `organize_photos.py`, add the code for moving the files.\n\nFor extra practice, see how much of it you can remember without looking at the above example."
+            }
+          ]
+        },
+        {
+          "id": 640841,
+          "key": "5de0c3e1-f4cd-4eff-bcfe-cb3ef6157c05",
+          "title": "Organize photos",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5de0c3e1-f4cd-4eff-bcfe-cb3ef6157c05",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 785319,
+              "key": "d4688af3-4a43-4322-8cec-a1f7489e3d05",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Organize photos",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785344,
+              "key": "2ef602c8-db9a-414e-a13c-28ac1781068e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "At this point, the `organize_photos` program will work just fine. However, there is one more modification that we might want to make to it\n\nIt has to do with this line:\n\n```python\nos.chdir(\"Photos\")\n```\nThis works great for our `Photos` directory, but what if we wanted to run the program on a directory with a different name? Really, there is no reason for the directory name to be hardcoded like we currently have it.\n\nHere's an alternative: We can put the remaining code inside of a function and make the `directory` a parameter of that function. This would allow us to run the code on any directory, by simply calling our function and passing it the name of that directory.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785326,
+              "key": "8bda3600-82e6-4e60-970d-b3b1881b0262",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "8bda3600-82e6-4e60-970d-b3b1881b0262",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Define a new function called `organize_photos`, with one parameter called `directory`.",
+                "Put all of the misc. code at the end of your program inside the body of the `organize_photos` function.",
+                "In the line `os.chdir(\"Photos\")` replace `\"Photos\"` with `directory`."
+              ],
+              "positive_feedback": "**Good!**",
+              "video_feedback": null,
+              "description": "Do you see the code at the end of the program that *isn't* currently in a function? Basically, we want to take all of that and put it inside a function. Go ahead and give this a try!\n\n(Karl will also demonstrate it in the video below.)"
+            },
+            {
+              "id": 785327,
+              "key": "76aadde0-d75d-4e0b-8ad1-a085d157bfcf",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this next video, Karl will go through all of the code that should be in the `organize_photos` function—and he'll give a review how it works.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 677030,
+              "key": "2c203542-4355-4d39-be34-8b1d8f3c29df",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": " ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 673783,
+              "key": "2506bf75-88bc-4659-b106-63610e757d9b",
+              "title": "Python: Organize photos",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "2V-sqfHjoj0",
+                "china_cdn_id": "2V-sqfHjoj0.mp4"
+              }
+            },
+            {
+              "id": 785346,
+              "key": "b797beeb-614c-4eeb-8184-eca729539bc3",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "b797beeb-614c-4eeb-8184-eca729539bc3",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Notice how everything in the program (aside from `import os`) is now inside a function! Of course, with that being the case, none of the code will run until one of the functions gets called.\n\nWe only actually need to call **one** of the functions, because it will then call the other functions. Which function should we call if we want the whole program to run?",
+                "answers": [
+                  {
+                    "id": "a1543180951128",
+                    "text": "`make_place_directories`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1543181069120",
+                    "text": "`extract_place`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1543181069552",
+                    "text": "`organize_photos`",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 785347,
+              "key": "0bdb6dce-7428-48e9-86f8-b5e9060c9e78",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "0bdb6dce-7428-48e9-86f8-b5e9060c9e78",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Go ahead and add a function call for `organize_photos`.",
+                "Remember to pass it an argument for the name of the directory you want to run it on (in this case, `\"Photos\"`)"
+              ],
+              "positive_feedback": "**Yay!**",
+              "video_feedback": null,
+              "description": ""
+            },
+            {
+              "id": 785345,
+              "key": "18243d87-f1cb-4fbb-8d7b-4d5143e9886b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "For reference, here's the full code for our program:\n\n```python\nimport os\n\ndef make_place_directories(places): # Here's the function definition\n    for place in places:\n        os.mkdir(place)\n\ndef extract_place(filename):\n    return filename.split('_')[1]\n\ndef organize_photos(directory):\n    os.chdir(directory)\n    originals = os.listdir()\n    places = []\n    for filename in originals:\n        place = extract_place(filename)\n        if place not in places: # This is the key change\n            places.append(place)\n\n    make_place_directories(places)\n\n    for filename in originals:\n        place = extract_place(filename)\n        os.rename(filename, os.path.join(place, filename))\n\norganize_photos(\"Photos\")\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785328,
+              "key": "3db1cdf5-5135-49c9-9fa3-bb9722b3b65a",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "3db1cdf5-5135-49c9-9fa3-bb9722b3b65a",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Open the `Photos` folder in your GUI (e.g., *Finder* or *File Explorer*",
+                "Make sure your terminal is in the right location, and then run `python3 organize_photos.py`.",
+                "The `Photos` folder is now organized!"
+              ],
+              "positive_feedback": "**Woohoo!!!**\n\nThat is a significant piece of code that you just put together! 💪",
+              "video_feedback": null,
+              "description": "If you haven't already, try running your finished version of `organize_photos.py`. We recommend having the Photos folder open in your GUI as well—so that you can see all the files move!"
+            }
+          ]
+        },
+        {
+          "id": 640842,
+          "key": "b42fa485-55f1-422d-b7ca-d5bd42c43fb5",
+          "title": "The script footer",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "b42fa485-55f1-422d-b7ca-d5bd42c43fb5",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 785348,
+              "key": "32c1f40d-10d3-40b5-abdf-34061987ec43",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# The script footer\n\nSuppose that at some point we decide that we would like to use our `organize_photos.py` code in another program. We've been importing other modules—like `turtle`, `random`, and `os`. Could we do the same thing with `organize_photos`?\n\nThe answer is yes—but there's a slight complication that we'll explain on this page.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785350,
+              "key": "5afce35e-a171-4568-ba22-be00f39a21b2",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## What happens when you `import`?\n\nLet's try a little experiment.\n\nJust for now comment-out the function call at the end of your program, and then add a print statement right under it. Like this:\n```python\n# organize_photos(\"Photos\")\nprint(\"TEST!\")\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785349,
+              "key": "9caf0e71-0344-4366-b149-10b1c752cfff",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "9caf0e71-0344-4366-b149-10b1c752cfff",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Now, make sure your terminal is in the same directory as your `organize_photos.py` file. Then, start up the Python interpreter, and run this line:\n\n```python\nimport organize_photos\n```\n\nWhat happens?",
+                "answers": [
+                  {
+                    "id": "a1543181923228",
+                    "text": "Nothing visible happens—the module gets imported, but nothing gets displayed in the terminal.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1543182094421",
+                    "text": "`'TEST!'` gets printed in the terminal",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 785351,
+              "key": "b61dfdd1-2861-422f-a376-ef791cc73478",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "This demonstrates something important:\n\n> When you `import` a module, the code in that module gets run.\n\nBut wait, that doesn't seem right. We imported the `turtle` module over and over—if all of the code in the `turtle` module were being run every time we imported it, wouldn't we have noticed? Why didn't the turtle go crazy every time we did this?\n\nThe answer has to do with something called the *script footer* that we need to add to the bottom of our program. In this next video, Karl and Kelly will demonstrate:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 673785,
+              "key": "7dba0e59-7920-4489-b337-f118a9c66b5a",
+              "title": "Python: The script footer",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "3GAJlxbhXuk",
+                "china_cdn_id": "3GAJlxbhXuk.mp4"
+              }
+            },
+            {
+              "id": 787469,
+              "key": "60965d3f-f90b-4bf8-821d-db7c87046652",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Double-underscore (\"dunder\") variables\n\nYou'll sometimes see variables in Python that have double underscores in the name, such as `__name__` and `__main__`. These are also sometimes called \"dunder\" variables—with \"dunder\" being short for \"double underscore\".\n\nNotice that these names have double underscores at both the beginning and the end. When you see this, it's a signal that it's a special name that is reserved for use by Python. That is, Python is doing some extra magic in the background that it wouldn't normally do with a regular name.\n\n## So what's `__name__`?\n\nAlthough you don't always see it in the code, every script has its own copy of the `__name__` variable.  Before running the code in a program, Python assigns a value to this variable. The value it assigns depends on whether the script is being **imported** or getting **directly executed**.\n\nSo for example, suppose that you have created a program called `my_script.py`. One thing you might do is run it directly, such as with this shell command:\n\n```bash\npython3 my_script.py\n```\n\nBefore executing the code inside `my_script.py`, Python assigns the value `'__main__'` to the `__name__` variable.\n\nA different possibility is that you just import the code, rather than running it directly. Like we saw above, when a module is imported, all of the code inside of it still gets run. But here's a key difference: When a script is imported, Python sets that script's `__name__` variable *to the name of the script*.\n\nSo the key point is:\n* If  we **directly run** `my_script.py`, then `__name__` gets set to `'__main__'`.\n* If we ** import** `my_script,py`, then `__name__` gets set to `'my_script'`.\n\nAgain, this allows you to specify if some code should (or should not) get run when the module is imported.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 787470,
+              "key": "5f429006-b5fc-4af4-a22f-f3c0578fce3d",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "5f429006-b5fc-4af4-a22f-f3c0578fce3d",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Suppose we have a script we're working on that we've named `my_script.py`. And suppose it has the following code:\n\n```python\nprint(\"TEST 1\")\n\nif __name__ == '__main__':\n    print(\"TEST 2\")\n\nif __name__ == 'my_script':\n    print(\"TEST 3\")\n```\nUnder what circumstances would each `print` statement run?"
+                },
+                "concepts_label": "Code",
+                "answers_label": "When will the print statement run?",
+                "concepts": [
+                  {
+                    "text": "```python\nprint(\"TEST 1\")\n```",
+                    "correct_answer": {
+                      "id": "a1543340324150",
+                      "text": "Both when run directly and when imported."
+                    }
+                  },
+                  {
+                    "text": "```python\nif __name__ == '__main__':\n    print(\"TEST 2\")\n```",
+                    "correct_answer": {
+                      "id": "a1543340495232",
+                      "text": "Only when run directly"
+                    }
+                  },
+                  {
+                    "text": "```\nif __name__ == 'my_script':\n    print(\"TEST 3\")\n```",
+                    "correct_answer": {
+                      "id": "a1543340495751",
+                      "text": "Only when imported."
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1543340495232",
+                    "text": "Only when run directly"
+                  },
+                  {
+                    "id": "a1543340495751",
+                    "text": "Only when imported."
+                  },
+                  {
+                    "id": "a1543340324150",
+                    "text": "Both when run directly and when imported."
+                  }
+                ]
+              }
+            },
+            {
+              "id": 787471,
+              "key": "b75e4f0e-edfe-4c8d-8692-4b0d2cca8851",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "b75e4f0e-edfe-4c8d-8692-4b0d2cca8851",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Try running it directly, by entering `python3 my_script.py` in your terminal.",
+                "Try starting the Python interpreter and running `import my_script`.",
+                "Compare which `print` statements got run in each case!"
+              ],
+              "positive_feedback": "**Nice experimenting!**",
+              "video_feedback": null,
+              "description": "The best way to solidify this idea is to play with it yourself. On your own computer, create a new Python file named `my_script.py` with the following code in it:\n\n```python\nprint(\"I run all the time!\")\n\nif __name__ == '__main__':\n    print(\"I've been run directly!\")\n\nif __name__ == 'my_script':\n    print(\"I've been imported!\")\n```"
+            },
+            {
+              "id": 665246,
+              "key": "c375f89d-a8b3-4737-995d-9a1230945733",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "For the following questions, let's say I have a file called `robot.py` that contains these lines of code at the end:\n\n```python\nif __name__ == '__main__':\n    robot_move()\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 665269,
+              "key": "828d497e-1719-4fbf-a92b-0bc791e69680",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "828d497e-1719-4fbf-a92b-0bc791e69680",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "If `robot.py` is imported into a program using `import robot`, what will the value of `__name__` be?",
+                "answers": [
+                  {
+                    "id": "a1529962557615",
+                    "text": "`'__main__'`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1529962726449",
+                    "text": "`True`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1529962729876",
+                    "text": "`'robot'`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1529962743660",
+                    "text": "`False`",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 665293,
+              "key": "3e403dd6-5ac2-4ac5-8d64-d6750461706f",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "3e403dd6-5ac2-4ac5-8d64-d6750461706f",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "When will the `robot_move()` function execute?",
+                "answers": [
+                  {
+                    "id": "a1529963412072",
+                    "text": "When `robot.py` is imported as a module",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1529963553613",
+                    "text": "When `robot.py` is run directly (e.g., by running `python3 robot.py`)",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1529966193151",
+                    "text": "It always executes ",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 671545,
+          "key": "af53ba9d-4a0b-49f3-b5ad-66268fbb29e0",
+          "title": "Pycodestyle",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "af53ba9d-4a0b-49f3-b5ad-66268fbb29e0",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": {
+            "files": [
+              {
+                "name": "Spin",
+                "uri": "https://video.udacity-data.com/topher/2018/July/5b3e793b_spin/spin.py"
+              }
+            ],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 673794,
+              "key": "640dddc0-664d-4848-b2b7-8d95db1da48d",
+              "title": "Python: Pycodestyle",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "LZnjWP9EF6w",
+                "china_cdn_id": "LZnjWP9EF6w.mp4"
+              }
+            },
+            {
+              "id": 787517,
+              "key": "e98e2c70-e4d2-469a-b602-5594914856e4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "The `pycodestyle` tool helps you write Python code that will be easier to read for other Python programmers — including your project reviewers. It checks your code using many of the rules from the [Python style guide](https://www.python.org/dev/peps/pep-0008/).",
+              "instructor_notes": ""
+            },
+            {
+              "id": 671547,
+              "key": "9c4a82ac-99d1-4249-a934-75fd30968ebe",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Install `pycodestyle` using the `pip` or `pip3` command in the shell, in your terminal:\n\n```python\n# If your Python is called \"python\"\n$ pip install pycodestyle\n```\n```python\n# if your Python is called \"python3\"\n$ pip3 install pycodestyle\n```\n\nTry running `pycodestyle` on some of your existing Python source code files, and look into what sorts of messages it displays. Here's a real example, pasted in fresh from my terminal:\n\n```text\n$ ls\nspin.py\n$ cat spin.py\nimport time\n\n\ndef spin():\n    for _ in range( 100 ):\n        for ch in '-\\\\|/':\n            print(ch, end='', flush=True)\n            time.sleep(0.1)\n            print('\\b', end='', flush=True)\n\n\nif __name__ == '__main__':\n  spin()\n\n$ pycodestyle spin.py\nspin.py:5:20: E201 whitespace after '('\nspin.py:5:24: E202 whitespace before ')'\nspin.py:13:3: E111 indentation is not a multiple of four\nspin.py:14:1: W391 blank line at end of file\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 671549,
+              "key": "886295f8-bda5-4e70-995e-eaa954f971c0",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "886295f8-bda5-4e70-995e-eaa954f971c0",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "In the above output from `pycodestyle`, which line has an indentation problem?",
+                "answers": [
+                  {
+                    "id": "a1530820608533",
+                    "text": "Line 5, `    for _ in range( 100 ):`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1530820643521",
+                    "text": "Line 13, `  spin()`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1530820646628",
+                    "text": "Line 14, which is an empty line.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1530820650726",
+                    "text": "There is no indentation problem.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 671551,
+              "key": "4d7e23f7-61cd-4d91-b5fc-d367b56f89a7",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "You can download the [spin.py code here](https://s3.amazonaws.com/video.udacity-data.com/topher/2018/July/5b3e793b_spin/spin.py). Try running `pycodestyle` on it, on your own computer. You should see the same error messages that are displayed above. Try editing the code so that `pycodestyle` no longer gives any error messages.\n\nLater in the course, you'll submit a project to demonstrate your new Python coding skills—and when you do, one of the things you'll demonstrate is your ability to write code that follows style guidelines. You'll need to test your code using `pycodestyle` and correct any style errors it finds. You can start practicing this now, so you will be very used to it by the time you get to that project!",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 640843,
+          "key": "c0933778-a840-4323-b357-fd17aaca0da1",
+          "title": "The profanity filter problem",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c0933778-a840-4323-b357-fd17aaca0da1",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 676166,
+              "key": "a8065c78-97a0-4046-ba01-350d20758239",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": " ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 673787,
+              "key": "2f416173-fde7-48b5-86ae-ceab78a8e101",
+              "title": "Python: The profanity filter problem",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "nBC35OSfiKM",
+                "china_cdn_id": "nBC35OSfiKM.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 640844,
+          "key": "7a533e7d-30b2-43fe-964f-9a50dc059db9",
+          "title": "Planning the solution to the profanity filter problem",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "7a533e7d-30b2-43fe-964f-9a50dc059db9",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 673790,
+              "key": "08408601-efe1-4e35-a20a-ddd8bd8e62b1",
+              "title": "Python: Planning solution to the profanity filter problem",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "6hnH_3WaYgI",
+                "china_cdn_id": "6hnH_3WaYgI.mp4"
+              }
+            },
+            {
+              "id": 669349,
+              "key": "34cbc46c-fc60-41ef-960b-cdf123af233b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Quiz: How many comparisons?\n\nRefer to this code for the quiz below. You can run this code on your own computer, or you can just read it!\n\n```python\n# Create a string with 99 a's and one b.\n# There will always be one b, but it will be at a random position from 0 to 99.\nimport random\nletters = ['a'] * 100\nb = random.randint(0, 99)\nletters[b] = 'b'\nletters = \"\".join(letters)\n\n# Search for the letter b in the string.\n# How many times will this print \"Not yet\" ?\nprint(\"Looking for 'b' ...\")\npos = 0\nwhile letters[pos] != 'b':\n    pos += 1\n    print(\"Not yet\")\nprint(\"Found it!\")\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 669348,
+              "key": "f2177d29-1682-459a-a0b2-f0905498e657",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "f2177d29-1682-459a-a0b2-f0905498e657",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "The above code will print out `Not yet` a random number of times, depending on where the letter `'b'` is placed in the string. But, **on average, approximately** how many times will it print `Not yet`?",
+                "answers": [
+                  {
+                    "id": "a1530574307398",
+                    "text": "On average, approximately 10 times.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1530575091905",
+                    "text": "On average, approximately 50 times.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1530575104259",
+                    "text": "On average, approximately 75 times.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1530575112138",
+                    "text": "It will always print it exactly 100 times.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 640845,
+          "key": "275fbe17-1252-4cf2-a20d-ecde09adb905",
+          "title": "Opening and reading a file",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "275fbe17-1252-4cf2-a20d-ecde09adb905",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 676167,
+              "key": "215f3103-f78f-4289-ab5c-1e6282452efc",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": " ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 673792,
+              "key": "27a21891-37eb-45b8-9f8b-f0f540429a22",
+              "title": "Python: Opening and reading a file",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "vxw1UkVVG2s",
+                "china_cdn_id": "vxw1UkVVG2s.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 640847,
+          "key": "9f0132db-6f3c-4182-b2b8-a479947751a8",
+          "title": "Closing a file",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "9f0132db-6f3c-4182-b2b8-a479947751a8",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 673793,
+              "key": "9ce79751-3968-4818-b5bb-af1d9772de96",
+              "title": "Python: Closing a file",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "-XeSgWp4IDA",
+                "china_cdn_id": "-XeSgWp4IDA.mp4"
+              }
+            },
+            {
+              "id": 665733,
+              "key": "2e96c66c-120c-419a-87e8-dad5a4e199b6",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In the workspace below, use your new knowledge of how to read files to open and read `read.txt`. Don't forget to close the file by using a `with` statement or the `close()` function!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 665783,
+              "key": "7cad3d1c-1b63-4b38-9975-35ff7f668c62",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "viewb8f9e21d",
+              "pool_id": "webterminal",
+              "view_id": "b8f9e21d-7b9f-4aea-828f-8247a5b00eb6",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "userCode": "cd workspace/reading_files\npython",
+                    "openFiles": [],
+                    "showFiles": false,
+                    "allowClose": true,
+                    "allowSubmit": false
+                  },
+                  "kind": "generic"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 665747,
+              "key": "1a2040e9-9580-4b69-9f3c-1d72f1acca31",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "1a2040e9-9580-4b69-9f3c-1d72f1acca31",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What are the contents of the `read.txt` file?",
+                "answers": [
+                  {
+                    "id": "a1530035146907",
+                    "text": "Turtles close their files, too!",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1530035175296",
+                    "text": "Don't try to read a file after closing it, you'll get an error!",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1530035175992",
+                    "text": "Reading files is cool, but don't forget to close them when you're done!",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 640850,
+          "key": "5742015c-0bdd-44f8-8aa9-12b9bd258957",
+          "title": "A slow solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5742015c-0bdd-44f8-8aa9-12b9bd258957",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 676168,
+              "key": "4e6b3880-63a0-44a6-aeeb-759a723d8c00",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": " ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 673795,
+              "key": "69d50578-a58b-4c42-a158-62f8959880b1",
+              "title": "Python: A slow solution",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "aLxa050TV2s",
+                "china_cdn_id": "aLxa050TV2s.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 640851,
+          "key": "b602e69f-9be3-4806-bc12-0898d982f10a",
+          "title": "One word at a time",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "b602e69f-9be3-4806-bc12-0898d982f10a",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 676169,
+              "key": "88a196b6-2fab-40b7-ad70-29ec3b4a8d9e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": " ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 673796,
+              "key": "77dbc008-06bc-449e-8e7e-4305d993de6e",
+              "title": "Python: One word at a time",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "IO82p2b2bc4",
+                "china_cdn_id": "IO82p2b2bc4.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 640852,
+          "key": "b41a36c7-15ce-4ddb-8f4d-5b2b8cbc9f61",
+          "title": "Fixing the punctuation bug",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "b41a36c7-15ce-4ddb-8f4d-5b2b8cbc9f61",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 673797,
+              "key": "bc4e5f5e-b1c4-458d-b29e-e1c964e4a28a",
+              "title": "Python: Fixing the punctuation bug",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "1naRrb3i28k",
+                "china_cdn_id": "1naRrb3i28k.mp4"
+              }
+            },
+            {
+              "id": 674601,
+              "key": "659d7c22-2126-4e2a-a867-51992f0cb212",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "[Python Documentation Website](https://docs.python.org)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 665840,
+              "key": "46ee75f2-1439-40e2-84b8-8087195128a0",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "46ee75f2-1439-40e2-84b8-8087195128a0",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What is the name of the string method that can be used to remove punctuation from strings?",
+                "answers": [
+                  {
+                    "id": "a1530038238602",
+                    "text": "`split`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1530038262709",
+                    "text": "`strip`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1530038389044",
+                    "text": "`join`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1530038391747",
+                    "text": "`replace`",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 640853,
+          "key": "1c3dd3d8-2233-4aaf-b57d-541b8593cbbc",
+          "title": "Fixing the capitalization bug",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "1c3dd3d8-2233-4aaf-b57d-541b8593cbbc",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 673798,
+              "key": "e709c6dc-0738-49f1-a5cc-96a986b32077",
+              "title": "Python: Fixing the capitalization bug",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "wn4RVpzIyo8",
+                "china_cdn_id": "wn4RVpzIyo8.mp4"
+              }
+            },
+            {
+              "id": 674602,
+              "key": "79c3beae-79e7-4f89-b03c-e473a49b9dee",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "[Python Documentation Website](https://docs.python.org)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 665857,
+              "key": "c7046cfb-22c5-436d-b9c3-b83ffe88f700",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "c7046cfb-22c5-436d-b9c3-b83ffe88f700",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What is the name of the string method that will solve the capitalization bug?",
+                "answers": [
+                  {
+                    "id": "a1530038857648",
+                    "text": "`upper`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1530038879478",
+                    "text": "`swapcase`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1530038880171",
+                    "text": "`lower`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1530038885453",
+                    "text": "`count`",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 640854,
+          "key": "aac6fd49-08f3-4b18-9fd6-712dc9eec6ce",
+          "title": "Writing output to a file",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "aac6fd49-08f3-4b18-9fd6-712dc9eec6ce",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 673799,
+              "key": "a5d3103d-1d67-4a83-8864-b2c1e610019e",
+              "title": "Python: Writing output to a file",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "a4VN2cC8o_8",
+                "china_cdn_id": "a4VN2cC8o_8.mp4"
+              }
+            },
+            {
+              "id": 665800,
+              "key": "0af3668d-efb6-42a7-a75f-7f32a9fcaa54",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "0af3668d-efb6-42a7-a75f-7f32a9fcaa54",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Create a new file in write mode",
+                "Use a loop to write all of the even numbers from 0 to 30 to your new file",
+                "Create another new file in write mode",
+                "Write the content of `read.txt` into your new file",
+                "Don't forget to close all the files you open when you're done with them!"
+              ],
+              "positive_feedback": "**Great work!** Feel free to create and write to as many files as you'd like in the workspace.",
+              "video_feedback": null,
+              "description": "Use the workspace below to accomplish the following tasks, and practice writing to files!"
+            },
+            {
+              "id": 665797,
+              "key": "df31a5b0-0ba8-4ad3-ba8d-56a7c694820e",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "viewb8f9e21d",
+              "pool_id": "webterminal",
+              "view_id": "0055a546-cd38-4a07-a7cb-0ff3bf3592d4",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "userCode": "cd workspace/reading_files\npython",
+                    "openFiles": [],
+                    "showFiles": false,
+                    "allowClose": true,
+                    "allowSubmit": false
+                  },
+                  "kind": "generic"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 670917,
+              "key": "fd5cd264-bcab-4f49-94f1-218e9175a084",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n----\n<div style=\"background-color: #a4e4f5;\">\n## ⚠️ Spoiler alert!\n\n**Our solution is below.** You'll learn more effectively if you give the exercise a strong effort before comparing your code with ours!\n</div>\n----\n----",
+              "instructor_notes": ""
+            },
+            {
+              "id": 674785,
+              "key": "a4ce5957-6cb0-4b02-a808-f92dd63dfe5e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Here's one way to write this program:\n\n```python\nwith open(\"numbers.txt\", \"w\") as writer:\n    # Write even numbers from 0 to 30\n    for num in range(0, 31):\n        if num % 2 == 0:\n            writer.write(f\"{num}\\n\")\n\n# Copy contents of one file to another\nwith open(\"read.txt\") as reader:\n    with open(\"copy.txt\") as copy:\n        copy.write(reader.read())\n\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 674786,
+              "key": "c238805b-1247-4820-8f9a-ef653e710152",
+              "title": "",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "c238805b-1247-4820-8f9a-ef653e710152",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What possible problems would our version of this program have?\n\nMark **two** of the answers below.",
+                "answers": [
+                  {
+                    "id": "a1531498971440",
+                    "text": "If `read.txt` does not exist, the program will crash.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1531498995477",
+                    "text": "If `numbers.txt` already exists, the program will crash.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1531498996214",
+                    "text": "If `read.txt` is too big to fit in memory, the program will crash.",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 640855,
+          "key": "0bfb25e2-aade-485c-a5d6-b62788de38df",
+          "title": "All done!",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "0bfb25e2-aade-485c-a5d6-b62788de38df",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 676170,
+              "key": "915d6a01-2b56-49fe-bb35-b99cc58d8f78",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": " ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 673800,
+              "key": "a8150a5d-8f77-4970-9612-c6a3a2350b79",
+              "title": "Python: All done!",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "IYqDBlvOz-U",
+                "china_cdn_id": "IYqDBlvOz-U.mp4"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

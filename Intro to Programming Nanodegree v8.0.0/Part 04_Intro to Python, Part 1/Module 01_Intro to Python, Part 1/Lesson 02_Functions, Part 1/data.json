@@ -1,0 +1,4288 @@
+{
+  "data": {
+    "lesson": {
+      "id": 817310,
+      "key": "3fb92a6d-1ed8-446b-a0b8-947b33ba84fd",
+      "title": "Functions, Part 1",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Expand your knowledge of Python by learning to write functions and conditional statements.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/3fb92a6d-1ed8-446b-a0b8-947b33ba84fd/817310/1582017603526/Functions%2C+Part+1+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/3fb92a6d-1ed8-446b-a0b8-947b33ba84fd/817310/1582017599396/Functions%2C+Part+1+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 468422,
+          "key": "35faa538-eb68-450a-873f-7af332231a51",
+          "title": "Welcome to lesson 2!",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "35faa538-eb68-450a-873f-7af332231a51",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 675573,
+              "key": "293e11b7-5787-4b3e-a678-39b385068c06",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": " ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 675098,
+              "key": "bc06040e-825c-46f8-b895-cabefc23e177",
+              "title": "Python: Welcome To Python Functions",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "yILDA1763UI",
+                "china_cdn_id": "yILDA1763UI.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 466644,
+          "key": "e554aad0-1574-4e38-a849-5ec047b5af6b",
+          "title": "Statements",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "e554aad0-1574-4e38-a849-5ec047b5af6b",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 675840,
+              "key": "14e5b233-9f53-4520-a788-ccd0447092d4",
+              "title": "Python: Statements",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "-ZgVHjyT0NI",
+                "china_cdn_id": "-ZgVHjyT0NI.mp4"
+              }
+            },
+            {
+              "id": 590429,
+              "key": "08b09b10-0af9-4471-9161-6f8f3ff71dfa",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "08b09b10-0af9-4471-9161-6f8f3ff71dfa",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Below are some kinds of statements you have used. Can you match each piece of code with what kind of statement it is?"
+                },
+                "concepts_label": "Code",
+                "answers_label": "Kind of statement",
+                "concepts": [
+                  {
+                    "text": "```python\nsides = 12\n```",
+                    "correct_answer": {
+                      "id": "a1522779478142",
+                      "text": "**assignment** statement"
+                    }
+                  },
+                  {
+                    "text": "```python\nimport turtle\n```",
+                    "correct_answer": {
+                      "id": "a1522779595075",
+                      "text": "**import** statement"
+                    }
+                  },
+                  {
+                    "text": "```python\nmary.color(\"purple\")\n```",
+                    "correct_answer": {
+                      "id": "a1522779595797",
+                      "text": "**method call** statement"
+                    }
+                  },
+                  {
+                    "text": "```python\nfor side in [1, 2, 3, 4, 5]:\n   mary.forward(10)\n   mary.right(72)\n```",
+                    "correct_answer": {
+                      "id": "a1522779654928",
+                      "text": "**`for` loop** statement"
+                    }
+                  },
+                  {
+                    "text": "`42`",
+                    "correct_answer": {
+                      "id": "a1522779920744",
+                      "text": "not a statement"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1522779595075",
+                    "text": "**import** statement"
+                  },
+                  {
+                    "id": "a1522779654928",
+                    "text": "**`for` loop** statement"
+                  },
+                  {
+                    "id": "a1522779920744",
+                    "text": "not a statement"
+                  },
+                  {
+                    "id": "a1522779478142",
+                    "text": "**assignment** statement"
+                  },
+                  {
+                    "id": "a1522779595797",
+                    "text": "**method call** statement"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 468452,
+              "key": "9b8a6551-73a9-4dee-bba0-95f9bb3a0dc1",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "9b8a6551-73a9-4dee-bba0-95f9bb3a0dc1",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Which statements are simple and which are compound?"
+                },
+                "concepts_label": "Statement",
+                "answers_label": "Simple or compound?",
+                "concepts": [
+                  {
+                    "text": "```python\njohn = turtle.Turtle()\n```",
+                    "correct_answer": {
+                      "id": "a1512425340098",
+                      "text": "simple"
+                    }
+                  },
+                  {
+                    "text": "```python\nfor t in turtles:\n    t.color(\"green\")\n```",
+                    "correct_answer": {
+                      "id": "a1512425384539",
+                      "text": "compound"
+                    }
+                  },
+                  {
+                    "text": "```python\nllamas = [\"llama\", \"llama\",\n          \"llama\", \"llama\"]\n```",
+                    "correct_answer": {
+                      "id": "a1512425442298",
+                      "text": "simple"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1512425384539",
+                    "text": "compound"
+                  },
+                  {
+                    "id": "a1512425340098",
+                    "text": "simple"
+                  },
+                  {
+                    "id": "a1512425442298",
+                    "text": "simple"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 468468,
+              "key": "26c0d063-331c-4ae8-900d-f098db3c5a7e",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "26c0d063-331c-4ae8-900d-f098db3c5a7e",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Here are some kinds of statements that you have not seen before!\n\nBut, knowing what you know about simple and compound statements, try to classify them as simple or compound."
+                },
+                "concepts_label": "Statement",
+                "answers_label": "Simple or compound?",
+                "concepts": [
+                  {
+                    "text": "```python\nreturn 5\n```",
+                    "correct_answer": {
+                      "id": "a1512427064213",
+                      "text": "simple"
+                    }
+                  },
+                  {
+                    "text": "```python\nif temperature < 0:\n    bird = \"penguin\"\n```",
+                    "correct_answer": {
+                      "id": "a1512427122175",
+                      "text": "compound"
+                    }
+                  },
+                  {
+                    "text": "```python\nbreak\n```",
+                    "correct_answer": {
+                      "id": "a1512427175648",
+                      "text": "simple"
+                    }
+                  },
+                  {
+                    "text": "```python\ndef spin(who):\n    who.right(180)\n```",
+                    "correct_answer": {
+                      "id": "a1512427237602",
+                      "text": "compound"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1512427175648",
+                    "text": "simple"
+                  },
+                  {
+                    "id": "a1512427122175",
+                    "text": "compound"
+                  },
+                  {
+                    "id": "a1512427064213",
+                    "text": "simple"
+                  },
+                  {
+                    "id": "a1512427237602",
+                    "text": "compound"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 675604,
+              "key": "c2d3d06c-d20e-4565-8794-28fa4b339a33",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "c2d3d06c-d20e-4565-8794-28fa4b339a33",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Can you remember what things are always true about compound statement?\n\nSome of the statements below follow the rules for compound statements, but others don't."
+                },
+                "concepts_label": "Statements",
+                "answers_label": "Correct or error?",
+                "concepts": [
+                  {
+                    "text": "```python\nfor angle in angles\n    calvin.forward(10)\n    calvin.right(angle)\n```",
+                    "correct_answer": {
+                      "id": "a1531758346896",
+                      "text": "has an error"
+                    }
+                  },
+                  {
+                    "text": "```python\nfor angle in angles:\n    calvin.forward(10)\n    calvin.right(angle)\n```",
+                    "correct_answer": {
+                      "id": "a1531758366135",
+                      "text": "is correct"
+                    }
+                  },
+                  {
+                    "text": "```python\nfor angle in angles:\ncalvin.forward(10)\ncalvin.right(angle)\n```",
+                    "correct_answer": {
+                      "id": "a1531758367262",
+                      "text": "has an error"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1531758366135",
+                    "text": "is correct"
+                  },
+                  {
+                    "id": "a1531758379438",
+                    "text": "is correct"
+                  },
+                  {
+                    "id": "a1531758367262",
+                    "text": "has an error"
+                  },
+                  {
+                    "id": "a1531758346896",
+                    "text": "has an error"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 466648,
+          "key": "8e2de148-d50b-4abc-9878-881e7c5f687b",
+          "title": "The range function",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "8e2de148-d50b-4abc-9878-881e7c5f687b",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 505047,
+              "key": "5a8aea6a-e10d-47f8-bbb2-c2db0575ea9c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# The `range` function\n\nIn the last lesson, we used a lot of `for` loops. And one of the things we learned was how to specify the **number of times a loop should run**. Do you remember what determines that?",
+              "instructor_notes": ""
+            },
+            {
+              "id": 675594,
+              "key": "4c45390e-74ff-4875-bed7-4e7c69d673bf",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# The `range` function",
+              "instructor_notes": ""
+            },
+            {
+              "id": 675099,
+              "key": "92e66eb4-dbc9-4442-b6ed-17dced176d2d",
+              "title": "Python: The Range Function",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "2WheJTYHeEg",
+                "china_cdn_id": "2WheJTYHeEg.mp4"
+              }
+            },
+            {
+              "id": 468842,
+              "key": "a4613f72-9c62-4953-b919-3fd5fd8dd548",
+              "title": "Replacing a list with a range",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "a4613f72-9c62-4953-b919-3fd5fd8dd548",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "**Run** the code to see what it does.",
+                "Change the line `for side in sides:` so that it uses `range`.",
+                "Delete the giant list called `sides`.",
+                "**Run** the code again to check that it does the same thing.",
+                "**Celebrate!** You've just made this code a lot cleaner!"
+              ],
+              "positive_feedback": "**Great!** Here's a secret of programming: Often, the best programmers write *fewer* lines of code rather than more.",
+              "video_feedback": null,
+              "description": "In the workspace below, there's a very long list named `sides` that has 100 elements in it. This list is used in a `for` loop to draw a 100-sided shape.\n\nYou can get rid of this list and use `range` instead, in order to make this code much shorter and easier to read.\n\nCheck off each of these steps as you complete it.\n\n_(By the way, yes, a hundred-sided polygon looks a lot like a circle.)_"
+            },
+            {
+              "id": 467863,
+              "key": "3c8e43ea-b564-4a2c-a060-7828da5e3d15",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "viewb75b0f93",
+              "pool_id": "webterminal",
+              "view_id": "19597e31-9d9b-4ea2-b414-ee94793836d8",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "openFiles": [
+                      "/home/workspace/workspace-turtle-support/student_files/lesson_two/3_range.py"
+                    ],
+                    "showFiles": false,
+                    "allowClose": false,
+                    "showEditor": true,
+                    "allowSubmit": false,
+                    "autoRefresh": false,
+                    "previewFile": "/home/workspace/workspace-turtle-support/student_files/lesson_two/3_range.html"
+                  },
+                  "kind": "html-live"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 468836,
+              "key": "00f3d3b6-590d-4866-98a6-c0e7812ebc8b",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "00f3d3b6-590d-4866-98a6-c0e7812ebc8b",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of these could we use to replace the list `[0, 1, 2, 3, 4, 5, 6]`?",
+                "answers": [
+                  {
+                    "id": "a1512495777128",
+                    "text": "`range(0)`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1512495809243",
+                    "text": "`range(6)`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1512495815631",
+                    "text": "`range(7)`",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 466645,
+          "key": "7dcfe528-dd8e-4d9c-ba51-02cfda1186e8",
+          "title": "Crunching numbers (1/2)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "7dcfe528-dd8e-4d9c-ba51-02cfda1186e8",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 675841,
+              "key": "20e2e820-4aa2-471b-a867-01821b8ce74e",
+              "title": "Python: Arithmetic Expressions",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "fXbatAIaUtw",
+                "china_cdn_id": "fXbatAIaUtw.mp4"
+              }
+            },
+            {
+              "id": 718917,
+              "key": "19a21c26-9a5b-4b73-b5e5-e1846e3e757f",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "19a21c26-9a5b-4b73-b5e5-e1846e3e757f",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Here's a little piece of code:\n\n```python\nsome_number =  5 + 9 * 2\n```\n\nCan you label the parts shown below?"
+                },
+                "concepts_label": "Piece of code",
+                "answers_label": "What kind of thing is it?",
+                "concepts": [
+                  {
+                    "text": "`5 + 9 * 2`",
+                    "correct_answer": {
+                      "id": "a1537482639472",
+                      "text": "expression"
+                    }
+                  },
+                  {
+                    "text": "`9`",
+                    "correct_answer": {
+                      "id": "a1537482814303",
+                      "text": "operand"
+                    }
+                  },
+                  {
+                    "text": "`+`",
+                    "correct_answer": {
+                      "id": "a1537482840023",
+                      "text": "operator"
+                    }
+                  },
+                  {
+                    "text": "`*`",
+                    "correct_answer": {
+                      "id": "a1537482848301",
+                      "text": "operator"
+                    }
+                  },
+                  {
+                    "text": "`5`",
+                    "correct_answer": {
+                      "id": "a1537482895590",
+                      "text": "operand"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1537482814303",
+                    "text": "operand"
+                  },
+                  {
+                    "id": "a1537482895590",
+                    "text": "operand"
+                  },
+                  {
+                    "id": "a1537482848301",
+                    "text": "operator"
+                  },
+                  {
+                    "id": "a1537482840023",
+                    "text": "operator"
+                  },
+                  {
+                    "id": "a1537482639472",
+                    "text": "expression"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 468470,
+              "key": "bc427bdc-8af5-4349-8df4-45ade843b050",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## 🔡 Arithmetic with variables\n\nLike Kelly showed, you can assign a number to a variable:\n\n```python\nsome_number = 2\n```\n\nAnd then use that variable in an expression:\n\n```python\namy.forward(50 * some_number)\n```\nSince `some_number` has the value `2`, `amy` will go forward by `50 * 2` or `100` pixels.\n\nBut that's kind of boring. Here's a more interesting example:\n\n````python\nfor side in [1, 2, 3, 4]:\n    amy.forward(10 * side)\n    amy.right(90)\n```\nEach time the loop runs, the variable called `side` will get assigned a new number from the list. So `10 * side` will evaluate to a different result each time!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 468819,
+              "key": "d499b5a2-1083-4762-b3c1-6ac516099713",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "d499b5a2-1083-4762-b3c1-6ac516099713",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Here's another example:\n\n```python\nhoward = turtle.Turtle()\nfor side in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]:\n    howard.forward(side * 10)\n    howard.right(90 - side)\n```\nOn the *last* pass through the loop, the value of `side` will be `10`. What will `howard` the turtle do on the last pass?",
+                "answers": [
+                  {
+                    "id": "a1512491210678",
+                    "text": "Go forward by 10 pixels and right by 90 degrees.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1512491270975",
+                    "text": "Go forward by 100 pixels and right by 80 degrees.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1512491272010",
+                    "text": "Go forward by 100 pixels and right by 10 degrees.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 675121,
+              "key": "27b6d34d-2817-468d-a51d-855525204a22",
+              "title": "Python: Neater Shapes",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "wtNCdi1_JUw",
+                "china_cdn_id": "wtNCdi1_JUw.mp4"
+              }
+            },
+            {
+              "id": 502226,
+              "key": "fdec9860-32b9-4ad1-ae66-2029404fde72",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "fdec9860-32b9-4ad1-ae66-2029404fde72",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Suppose you wanted to draw a regular polygon with `x` sides. (`x` is a variable.)\n\nWhich arithmetic expression could you use to calculate the turning angle?",
+                "answers": [
+                  {
+                    "id": "a1515709611628",
+                    "text": "`360 * x`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1515709721400",
+                    "text": "`x / 360`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1515709740218",
+                    "text": "`360 / x`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1515709746107",
+                    "text": "`x + 360`",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 468839,
+              "key": "9b0a59e1-35d8-426b-810e-fb97e17234af",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "9b0a59e1-35d8-426b-810e-fb97e17234af",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "**Run** the code below and see what it does.",
+                "Go to line 13 and replace the number `72` with an expression that uses the `sides` variable (like in the last quiz, above!)",
+                "**Run** the code and check that it still does the same thing.",
+                "Try changing the value of the `sides` variable and see what the code does! If the whole shape doesn't fit on the screen, try reducing the `length` variable."
+              ],
+              "positive_feedback": "You've learned how to use arithmetic expressions to make your code more flexible!",
+              "video_feedback": null,
+              "description": "Now let's put this to work in some real code! In the workspace below, you'll find a program for drawing shapes. \n\nYour goal is to change the code so that the turtle automatically adjusts how much it turns, based on the number of sides in the shape (just like we discussed above)."
+            },
+            {
+              "id": 467624,
+              "key": "07168045-c9fc-40a0-900f-01ba21ba4794",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "viewb75b0f93",
+              "pool_id": "webterminal",
+              "view_id": "cbabf3f7-f793-4552-8914-469a391546c1",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "openFiles": [
+                      "/home/workspace/workspace-turtle-support/student_files/lesson_two/1_division.py"
+                    ],
+                    "showFiles": false,
+                    "allowClose": false,
+                    "showEditor": true,
+                    "allowSubmit": false,
+                    "autoRefresh": false,
+                    "previewFile": "/home/workspace/workspace-turtle-support/student_files/lesson_two/1_division.html"
+                  },
+                  "kind": "html-live"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 671112,
+              "key": "3bcabcda-3af4-4847-96ac-6d2ccf217e6c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n----\n<div style=\"background-color: #a4e4f5;\">\n## ⚠️ Spoiler alert!\n\n**Our solution is below.** You'll learn more effectively if you give the exercise a strong effort before comparing your code with ours!\n</div>\n----\n----",
+              "instructor_notes": ""
+            },
+            {
+              "id": 671114,
+              "key": "b3d86165-3350-468a-8bde-ddf0c348df88",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Solution\n\nHere's one solution for the exercise above:\n\n```python\nsides = 5\nlength = 100\nt = turtle.Turtle()\nt.color(\"orange\")\nfor side in range(sides):\n    t.forward(length)\n    t.right(360 / sides)\n```\n\nThe important part is the last line: dividing `360` by `sides` will give the correct turning angle for any number of sides. For instance, `360 / 8` equals `45`, which is the correct turning-angle to draw an eight-sided figure (an octagon). You can test this by changing the `sides` variable to `8` or any other positive number! (Keep in mind that if the number of sides is very large, the shape will just end up looking like a circle.)",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 571444,
+          "key": "59b1e34c-5a7f-4660-9e62-5ee22de1f729",
+          "title": "Crunching numbers (2/2)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "59b1e34c-5a7f-4660-9e62-5ee22de1f729",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 571447,
+              "key": "8ab04240-af78-4794-8634-ad20aed4a032",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Crunching numbers (2/2)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 571446,
+              "key": "c2076b96-d00f-4c15-b4d9-d275450e7fd7",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "c2076b96-d00f-4c15-b4d9-d275450e7fd7",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "```python\nimport turtle\ngeorge = turtle.Turtle()\n\nsides = 4\nangle = 360 / sides\ngeorge.right(angle)\n```\nHow far will `george` turn?",
+                "answers": [
+                  {
+                    "id": "a1521866610318",
+                    "text": "4 degrees",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1521866810150",
+                    "text": "360 degrees",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1521866825304",
+                    "text": "36 degrees",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1521866842945",
+                    "text": "90 degrees",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 571448,
+              "key": "f2171f9e-02f3-431a-9b01-0564a25bc9a6",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "f2171f9e-02f3-431a-9b01-0564a25bc9a6",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "I came up with some code to draw a sort of spiral shape:\n\n```python\nimport turtle\nt = turtle.Turtle()\nt.color(\"red\")\n\nfor side in range(20):\n    t.forward(side)\n    t.right(45)\n```\nBut the shape is kind of small. Which of the following changes would make a larger version of the same shape?",
+                "answers": [
+                  {
+                    "id": "a1521867642971",
+                    "text": "Change `for side in range(20):` to `for side in range(40):` ",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1521867768115",
+                    "text": "Change `for side in range(20):` to `for side in range(20 * 10):` ",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1521867829643",
+                    "text": "Change  ` t.forward(side)` to  `t.forward(side / 10)`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1521867866292",
+                    "text": "Change  ` t.forward(side)` to  `t.forward(side * 10)`",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 571449,
+              "key": "eb353e2a-1ab7-403c-87d3-19e5c184b681",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Here's another shape that I came up with:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 571450,
+              "key": "26cdee3b-d286-49cf-93f6-ffb71d24540c",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2018/March/5ab5dd13_spirangle/spirangle.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/26cdee3b-d286-49cf-93f6-ffb71d24540c",
+              "caption": "",
+              "alt": "A triangular spiral in cyan.",
+              "width": 219,
+              "height": 187,
+              "instructor_notes": null
+            },
+            {
+              "id": 590523,
+              "key": "fa51b7bc-301f-4a9f-9be3-33b360306ad8",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "fa51b7bc-301f-4a9f-9be3-33b360306ad8",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "I put something inside the parentheses for `range()`",
+                "I put something inside the parentheses for `t.forward()`",
+                "I ran the code and it drew the shape!"
+              ],
+              "positive_feedback": "**Awesome!**",
+              "video_feedback": null,
+              "description": "In the workspace below, I’ve written some of the code that will draw this shape, but it's not finished yet. If you look at the lines that have `range()` and `t.forward()`, you'll see that there's nothing inside the parentheses. Can you figure out what needs to go there?\n\n**Hint:** This is closely related to the above quiz!"
+            },
+            {
+              "id": 590517,
+              "key": "a6e36792-eb2b-440c-8310-a8775d969c57",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "viewb75b0f93",
+              "pool_id": "webterminal",
+              "view_id": "86a7a1d8-f3cb-4cbf-9612-2d42308a8dff",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "openFiles": [
+                      "/home/workspace/workspace-turtle-support/student_files/lesson_two/20_spirangle.py"
+                    ],
+                    "showFiles": false,
+                    "allowClose": false,
+                    "showEditor": true,
+                    "allowSubmit": false,
+                    "autoRefresh": false,
+                    "previewFile": "/home/workspace/workspace-turtle-support/student_files/lesson_two/20_spirangle.html"
+                  },
+                  "kind": "html-live"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 671115,
+              "key": "b5b03cbb-6587-455c-a1fc-8943b67283ad",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n----\n<div style=\"background-color: #a4e4f5;\">\n## ⚠️ Spoiler alert!\n\n**Our solution is below.** You'll learn more effectively if you give the exercise a strong effort before comparing your code with ours!\n</div>\n----\n----",
+              "instructor_notes": ""
+            },
+            {
+              "id": 590522,
+              "key": "a25fe640-2f21-4817-b016-9b255e56e497",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n## Solution for the _spirangle_ exercise\n\n```python\nimport turtle\nt = turtle.Turtle()\nt.color(\"cyan\")\n\nfor side in range(19):\n    t.forward(side*10)\n    t.right(120)\n```",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 572055,
+          "key": "32f6c7c1-6dbe-4718-a615-b60c30c7d29c",
+          "title": "What's a function? (1/2)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "32f6c7c1-6dbe-4718-a615-b60c30c7d29c",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 681215,
+              "key": "8dd21068-487a-4b30-908f-24ca6a7d04fe",
+              "title": "Python: What's a Function?",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "NX1YkCcB4kw",
+                "china_cdn_id": "NX1YkCcB4kw.mp4"
+              }
+            },
+            {
+              "id": 572062,
+              "key": "eaa3a196-0758-49a9-b82d-5288c8b6fd24",
+              "title": "",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "eaa3a196-0758-49a9-b82d-5288c8b6fd24",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following are true about **functions**?\n\n(Select **all** of the answers that are correct!)",
+                "answers": [
+                  {
+                    "id": "a1522014207806",
+                    "text": "A function is a block of code that has a name, but that doesn't run until we tell it to.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1522014225612",
+                    "text": "We can tell a function to run by _calling_ that function.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1522014230382",
+                    "text": "To _call_ a function, use the name of the function, followed by parentheses (as in `range(5)`).",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1522014240716",
+                    "text": "To _call_ a function, use the name of the function, followed by parentheses and a colon (as in `range(5):`).",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 578236,
+              "key": "b39e50c4-a055-4a09-9705-1bf1c6f89e90",
+              "title": "",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "b39e50c4-a055-4a09-9705-1bf1c6f89e90",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What does a **function call** like `range(100)` do?\n\n(Select **all** of the answers that are correct!)",
+                "answers": [
+                  {
+                    "id": "a1522290734095",
+                    "text": "Runs the code in the function.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1522291180001",
+                    "text": "Passes _input_ to the function.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1522291197057",
+                    "text": "Gets back some _output_ from the function.",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 675101,
+              "key": "05d3958e-f332-45b8-9484-baa7b97b9b5e",
+              "title": "Python: Difference Between Methods And Functions",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "p7MUmfg68x0",
+                "china_cdn_id": "p7MUmfg68x0.mp4"
+              }
+            },
+            {
+              "id": 590460,
+              "key": "7d805545-84e3-4a75-a2b7-88ccba13a204",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "7d805545-84e3-4a75-a2b7-88ccba13a204",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Here are some pieces of code you've probably never seen before.\n\nCan you tell what kind of thing each one is?"
+                },
+                "concepts_label": "Piece of code",
+                "answers_label": "What is it?",
+                "concepts": [
+                  {
+                    "text": "`edna.home()`",
+                    "correct_answer": {
+                      "id": "a1522784879245",
+                      "text": "method call"
+                    }
+                  },
+                  {
+                    "text": "`max(23, 17)`",
+                    "correct_answer": {
+                      "id": "a1522784891482",
+                      "text": "function call"
+                    }
+                  },
+                  {
+                    "text": "`print`",
+                    "correct_answer": {
+                      "id": "a1522784892251",
+                      "text": "something else"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1522784892251",
+                    "text": "something else"
+                  },
+                  {
+                    "id": "a1522784891482",
+                    "text": "function call"
+                  },
+                  {
+                    "id": "a1522784879245",
+                    "text": "method call"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 572058,
+          "key": "2340d3d0-4c1e-44c4-b529-62eb1eef01f7",
+          "title": "What's a function? (2/2)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "2340d3d0-4c1e-44c4-b529-62eb1eef01f7",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 722394,
+              "key": "23d4881c-261d-4d5a-ba96-92e2e194e827",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# What's a function? (2/2)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 572063,
+              "key": "f1ed7fec-cbc1-44fa-8bc2-2111830c437e",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "f1ed7fec-cbc1-44fa-8bc2-2111830c437e",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Match each term with its description."
+                },
+                "concepts_label": "Description",
+                "answers_label": "Term",
+                "concepts": [
+                  {
+                    "text": "a block of code that has a name, but that doesn't run until we tell it to run",
+                    "correct_answer": {
+                      "id": "a1522014297519",
+                      "text": "function"
+                    }
+                  },
+                  {
+                    "text": "a statement that makes a function run",
+                    "correct_answer": {
+                      "id": "a1522014322927",
+                      "text": "function call"
+                    }
+                  },
+                  {
+                    "text": "a value that we can pass to a function when we call that function\n",
+                    "correct_answer": {
+                      "id": "a1522014346096",
+                      "text": "argument"
+                    }
+                  },
+                  {
+                    "text": "a function that's associated with an object",
+                    "correct_answer": {
+                      "id": "a1522014365032",
+                      "text": "method"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1522014322927",
+                    "text": "function call"
+                  },
+                  {
+                    "id": "a1522014346096",
+                    "text": "argument"
+                  },
+                  {
+                    "id": "a1522014365032",
+                    "text": "method"
+                  },
+                  {
+                    "id": "a1522014297519",
+                    "text": "function"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 572064,
+              "key": "c72e5f85-c6ce-4126-a463-d341b5816e75",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "c72e5f85-c6ce-4126-a463-d341b5816e75",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Here's a _function call_ for a block of code named `draw_circle`:\n\n`draw_circle(10)`\n\nWhich part of this code is referred to as an **argument**?",
+                "answers": [
+                  {
+                    "id": "a1522014428257",
+                    "text": "`draw_circle`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1522014442376",
+                    "text": "`()`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1522014443024",
+                    "text": "`10`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1522014443599",
+                    "text": "This _function call_ has no arguments.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 572065,
+              "key": "541402e8-f030-4c06-ba9f-668e7592a875",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "541402e8-f030-4c06-ba9f-668e7592a875",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Here's a _function call_ for a block of code named `draw_square`:\n\n`draw_square()`\n\nWhich part of this code is referred to as an **argument**?",
+                "answers": [
+                  {
+                    "id": "a1522014506890",
+                    "text": "`draw_square`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1522014531409",
+                    "text": "`()`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1522014535857",
+                    "text": "`4`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1522014539826",
+                    "text": "This _function call_ has no arguments.",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 572066,
+              "key": "b4f10879-3f2c-4196-a86f-df0d14cd1c05",
+              "title": "",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "b4f10879-3f2c-4196-a86f-df0d14cd1c05",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "I have created a function named `make_waffles`. This function takes one argument, which is the number (as an integer) of waffles it should make.\n\nWhat line of code would you use to _call_ this function and have it make `10` waffles?",
+                "matchers": [
+                  {
+                    "expression": " *make_waffles *\\( *10 *\\) *"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 466649,
+          "key": "a058cd3a-8475-4235-b22a-a069065858b0",
+          "title": "Defining functions",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a058cd3a-8475-4235-b22a-a069065858b0",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 675839,
+              "key": "c46cc93c-6c0a-4a43-986b-fcafdb429eff",
+              "title": "Python: Defining A Function, Part 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "yE1drVmNC7E",
+                "china_cdn_id": "yE1drVmNC7E.mp4"
+              }
+            },
+            {
+              "id": 469126,
+              "key": "e1e42233-4f83-435f-a834-fb14cfb4bb07",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "e1e42233-4f83-435f-a834-fb14cfb4bb07",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Here are some different attempts at defining a function called `square`. Based on what Kelly described in the video, which of them use the correct syntax? (Which of them are grammatically correct?)"
+                },
+                "concepts_label": "Code",
+                "answers_label": "Correct syntax?",
+                "concepts": [
+                  {
+                    "text": "```text\ndef square():\n    for side in range(4):\n        t.forward(100)\n        t.right(90)\n```",
+                    "correct_answer": {
+                      "id": "a1512510366325",
+                      "text": "correct"
+                    }
+                  },
+                  {
+                    "text": "```text\nsquare():\n    for side in range(4):\n        t.forward(100)\n        t.right(90)\n```",
+                    "correct_answer": {
+                      "id": "a1512510505345",
+                      "text": "incorrect"
+                    }
+                  },
+                  {
+                    "text": "```text\ndef square()\n    for side in range(4):\n        t.forward(100)\n        t.right(90)\n```",
+                    "correct_answer": {
+                      "id": "a1512511082296",
+                      "text": "incorrect"
+                    }
+                  },
+                  {
+                    "text": "```text\ndef square:\n    for side in range(4):\n        t.forward(100)\n        t.right(90)\n```",
+                    "correct_answer": {
+                      "id": "a1516130116709",
+                      "text": "incorrect"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1512510366325",
+                    "text": "correct"
+                  },
+                  {
+                    "id": "a1512510505345",
+                    "text": "incorrect"
+                  },
+                  {
+                    "id": "a1516130462512",
+                    "text": "correct"
+                  },
+                  {
+                    "id": "a1512511082296",
+                    "text": "incorrect"
+                  },
+                  {
+                    "id": "a1516130116709",
+                    "text": "incorrect"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 469142,
+              "key": "8c332709-3732-4d86-9a08-4e1f7606920e",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "8c332709-3732-4d86-9a08-4e1f7606920e",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Run the code to see what it does.",
+                "Add a `def` statement to create a new function named `spiral`.",
+                "Indent the spiral code so that it's _inside_ the function.",
+                "Add a _call_ for your new function!",
+                "Run the code to make sure it draws a spiral just like before."
+              ],
+              "positive_feedback": "Great!",
+              "video_feedback": null,
+              "description": "In the workspace below, you'll find the code for drawing a spiral—but the code is _not_ part of a function yet.\n\nJust like Kelly showed in the video, create a **function definition** for a function called `spiral`, and then place the spiral code _inside_ it.\n\nThen, add a **function call** for your new `spiral` function so that it will run."
+            },
+            {
+              "id": 467865,
+              "key": "b62b8846-e03e-4205-8bd4-b3dd17d3cc6c",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "viewb75b0f93",
+              "pool_id": "webterminal",
+              "view_id": "172fc04b-ee8c-4222-a822-ea4849af18e5",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "openFiles": [
+                      "/home/workspace/workspace-turtle-support/student_files/lesson_two/4_def.py"
+                    ],
+                    "showFiles": false,
+                    "allowClose": false,
+                    "showEditor": true,
+                    "allowSubmit": false,
+                    "autoRefresh": false,
+                    "previewFile": "/home/workspace/workspace-turtle-support/student_files/lesson_two/4_def.html"
+                  },
+                  "kind": "html-live"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 675810,
+              "key": "84c1f752-1f9e-4164-a918-c2ffbf49f549",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n----\n<div style=\"background-color: #a4e4f5;\">\n## ⚠️ Spoiler alert!\n\n**Our solution is below.** You'll learn more effectively if you give the exercise a strong effort before comparing your code with ours!\n</div>\n----\n----",
+              "instructor_notes": ""
+            },
+            {
+              "id": 675809,
+              "key": "41aad225-0979-4ba0-a362-a7cd9d62756c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Solution\n\n```python\nimport turtle\n\ndef spiral():\n    t = turtle.Turtle()\n    t.color(\"cyan\")\n    for n in range(100):\n        t.forward(n)\n        t.right(20)\n\nspiral()\n```",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 466650,
+          "key": "038b597a-e9da-413f-8e5f-0271b0476a30",
+          "title": "Parameters and arguments",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "038b597a-e9da-413f-8e5f-0271b0476a30",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 675103,
+              "key": "dea5aea6-e368-4010-a357-c9c2a4f1e546",
+              "title": "Python: Defining A Function, Part 2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "5ehq3NN7rIw",
+                "china_cdn_id": "5ehq3NN7rIw.mp4"
+              }
+            },
+            {
+              "id": 693696,
+              "key": "662ae94c-b734-4e99-ac05-b60976e4c023",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Parameters and arguments\n\nIt's important to be able to tell the difference between _parameters_ and _arguments_.\n\nWhen we _define_ a function, we specify its **parameters**:\n\n```python\ndef spiral(sides, turn, color, width):\n```\n\nWhen we _call_ a function, we specify its **arguments**:\n\n```python\nspiral(150, -30, \"blue\", 10)\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 693497,
+              "key": "431ec3ed-83f1-4443-b807-ef8c73c6e48c",
+              "title": "",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "431ec3ed-83f1-4443-b807-ef8c73c6e48c",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Here's the first line from the `spiral` function Kelly just demonstrated:\n\n```python\ndef spiral(sides):\n```\n\nWhat kind of a thing is `sides`?\n\nThere are **two** correct answers.",
+                "answers": [
+                  {
+                    "id": "a1534455608108",
+                    "text": "A string.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1534455624731",
+                    "text": "A variable.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1534455637554",
+                    "text": "A parameter.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1534455695866",
+                    "text": "An argument.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 693500,
+              "key": "57785df1-c5e5-4f14-ab05-d18a91abc240",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "57785df1-c5e5-4f14-ab05-d18a91abc240",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "And here's a line that _calls_ the `spiral` function:\n\n```python\nspiral(100)\n```\n\nWhat kind of a thing is `100`?",
+                "answers": [
+                  {
+                    "id": "a1534456951084",
+                    "text": "A string.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1534456993505",
+                    "text": "A variable.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1534456994158",
+                    "text": "A parameter.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1534456994704",
+                    "text": "An argument.",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 693507,
+              "key": "c1f42fc8-c8b3-4090-a9ff-e728bb469c78",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Parameters are just variables\nA _parameter_ isn't anything fancy—it's really just a variable. Specifically, it's a variable that is _in the first line of a function definition_.\n\nSo for example, here is the first line of the definition for our `spiral` function:\n\n```python\ndef spiral(sides):\n```\n\nBecause the variable, `sides`, is given as part of the function definition, we call it a _parameter_. It's that simple—we want to distinguish this sort of variable from regular variables, so we use a different term.\n\n## Arguments are just inputs\n\nAn _argument_ isn't anything fancy either—it's just some input that we pass to a function.\n\nFor example, this line ...\n\n```python\nspiral(100)\n```\n\n... is calling the spiral function and passing it the number `100` as input. In this context, we would call the `100` an _argument_. \n\n## Wait, what does \"passing\" really mean?\nWe just said that `spiral(100)` will \"pass the number `100` as input\". But what does that really mean?\n\nWhen we say that it \"passes\" this argument, all we mean is that it _assigns this number to the corresponding parameter_. In this case, it will assign the `100` to the `sides` parameter.\n\nThis is very much the same as if we had an assignment statement, like this:\n\n```python\nsides = 100\n```\n\nSo \"passing an argument to a function\" is really just another way that we can _assign a value to a variable_.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 722652,
+              "key": "2f33deb7-42e1-4a0f-a87d-b498d0d4ece1",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2018/September/5ba5c286_arguments-to-parameters/arguments-to-parameters.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/2f33deb7-42e1-4a0f-a87d-b498d0d4ece1",
+              "caption": "Here, the number `50` (the _argument_) is being assigned to the variable called `sides` (which is a _parameter_ of the spiral function).",
+              "alt": "An argument being passed to a function.",
+              "width": 393,
+              "height": 283,
+              "instructor_notes": null
+            },
+            {
+              "id": 693516,
+              "key": "db040013-a0ed-41e7-bcb9-8da415e18095",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "db040013-a0ed-41e7-bcb9-8da415e18095",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Here's a function (and a function call) for drawing a spiral:\n\n```python\ndef spiral(sides):\n    for n in range(sides):\n        t.forward(n)\n        t.right(30)\n\nspiral(50)\n```\n\nAnd here's another version of it:\n\n```python\ndef spiral():\n    sides = 50\n    for n in range(sides):\n        t.forward(n)\n        t.right(30)\n\nspiral()\n```\nWill these draw the same thing?",
+                "answers": [
+                  {
+                    "id": "a1534462456127",
+                    "text": "No—one of them will draw a spiral and the other one will throw an error.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1534462570671",
+                    "text": "Yes—they will draw the same 50-sided spiral.",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 693508,
+              "key": "8bb09ef7-aad6-4f37-ab46-440de5375fa8",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "So why don't we just always use an assignment statement, like `sides = 50`, as we did in the second version of the function above? Well, the reason is because that second version of the function _will draw the same spiral every time_.\n\nWe want our function to be flexible! When we define the function, we don't know what number we want to assign to `sides`. Sometimes we will want a 100-sided spiral, and sometimes we will want a 12-sided spiral. So we need to be able to assign the value _when we call the function_.\n\nThat's why we need to get into this whole business of passing arguments to parameters!\n\nThis concept can be confusing, because you don't _see_ the variable assignment happening. But once you've been using functions and function calls for a while, you'll get used to the idea that this is happening behind the scenes.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 693501,
+              "key": "d3fb007a-6b5b-4b1a-acff-af497120a903",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "d3fb007a-6b5b-4b1a-acff-af497120a903",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Here's the `spiral` function again, from the video:\n\n```python\nimport turtle\n\ndef spiral(sides, turn, color, width):\n    t = turtle.Turtle()\n    t.color(color)\n    t.width(width)\n    for n in range(sides):\n        t.forward(n)\n        t.right(turn)\n\nspiral()\n```\nIf we _call_ this as shown, using `spiral()`, what would happen?",
+                "answers": [
+                  {
+                    "id": "a1534458288579",
+                    "text": "It would run without errors and draw a spiral.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1534458345874",
+                    "text": "It would run without errors, but not draw anything.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1534458346729",
+                    "text": "It would throw an error, because `spiral()` has no arguments inside the parentheses.",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 693503,
+              "key": "c4a665a1-2ea3-4421-89d7-6e034a89f832",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In the workspace below, you can find the same code as in the quiz above. Your job is to get the code working by adding _arguments_ to the function call. Try playing around with different arguments to see what kinds of spirals you can make. Here's one possibility:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 693506,
+              "key": "8369a2d5-dc0d-4117-aec5-24a704850f42",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2018/August/5b75ff74_spiral-arguments/spiral-arguments.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/8369a2d5-dc0d-4117-aec5-24a704850f42",
+              "caption": "",
+              "alt": "A picture of a cyan-colored spiral shape.",
+              "width": 180,
+              "height": 292,
+              "instructor_notes": null
+            },
+            {
+              "id": 695362,
+              "key": "1d423a24-fc92-4bce-abba-bed48a034176",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "**Note:** If you're wondering, the color on this one is `\"cyan\"`.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 476186,
+              "key": "cf7d6fc6-5cb3-4ca4-9890-d5263b8ad01c",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "cf7d6fc6-5cb3-4ca4-9890-d5263b8ad01c",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "**Run** the code to see what kind of error it throws.",
+                "Add the missing arguments to the function call that will make it draw a spiral.",
+                "Try some different arguments to see if you can get different kinds of spirals!"
+              ],
+              "positive_feedback": "**Cool!** Passing arguments to functions is something you'll be doing a _lot_!",
+              "video_feedback": null,
+              "description": "Try running the code! See what kind of error you get, then modify the function _call_ so that the code works.\n\n(If you get stuck, you can find our solution below the workspace.)"
+            },
+            {
+              "id": 467889,
+              "key": "f586ee1f-6a85-4c1a-a638-7ce8796ac48a",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "viewb75b0f93",
+              "pool_id": "webterminal",
+              "view_id": "97401d15-bb38-4ecf-a671-5f9b7f271f48",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "openFiles": [
+                      "/home/workspace/workspace-turtle-support/student_files/lesson_two/6b_spiral_arguments.py"
+                    ],
+                    "showFiles": false,
+                    "allowClose": false,
+                    "showEditor": true,
+                    "allowSubmit": false,
+                    "autoRefresh": false,
+                    "previewFile": "/home/workspace/workspace-turtle-support/student_files/lesson_two/6b_spiral_arguments.html"
+                  },
+                  "kind": "html-live"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 693505,
+              "key": "cb999813-30dd-41fd-b503-839894bb59e5",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n----\n<div style=\"background-color: #a4e4f5;\">\n## ⚠️ Spoiler alert!\n\n**Our solution is below.** You'll learn more effectively if you give the exercise a strong effort before comparing your code with ours!\n</div>\n----\n----",
+              "instructor_notes": ""
+            },
+            {
+              "id": 693504,
+              "key": "7b9c0e5b-a4d4-4bcc-b6bc-56fc7e107c80",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Solution \n\n```python\nimport turtle\n\ndef spiral(sides, turn, color, width):\n    t = turtle.Turtle()\n    t.color(color)\n    t.width(width)\n    for n in range(sides):\n        t.forward(n)\n        t.right(turn)\n\nspiral(50, 45, \"cyan\", 5)\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 693565,
+              "key": "e4e99ce8-63c9-40ec-b1c8-f8b7cd654315",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Parameters ... or arguments?\n\nIn practice, different programmers aren't always consistent when they use the terms \"argument\" and \"parameter\"—and it's not uncommon to see the two terms get mixed up. And some programmers avoid the term \"argument\" altogether, and instead use the terms \"formal parameter\" and \"actual parameter\".\n\nIt would be nice (and less confusing) if we were all consistent with our terminology! However, the most important thing is not what we call these things, but that we understand **what they are and how they work**: When we call a function, we pass it some inputs (_usually_ called **arguments**)—and these inputs get assigned to variables that are in the definition of that function (_usually_ called **parameters**).\n\nIf you understand that underlying core idea, you'll usually be able to tell what someone is talking about from the context—regardless of what terms they use.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 572081,
+          "key": "aed42050-213b-42e1-8eb3-5798c0fdf3ff",
+          "title": "draw_square (definition)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "aed42050-213b-42e1-8eb3-5798c0fdf3ff",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 572082,
+              "key": "78eeda7a-e386-43ed-98fe-69763817c565",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Defining a `draw_square` function\nLet's get some more practice defining functions!\n\nWe've been spending a lot of time drawing shapes recently—and each time, we have to write a bunch of code.\n\nJust to draw a simple square, we have to do all this:\n```python\nimport turtle\njack = turtle.Turtle()\njack.color(\"yellow\")\n\nfor side in range(4):\n    jack.forward(100)\n    jack.right(90)\n```\nAnd we have to repeat this same code every time we want another square. How tedious!\n\nInstead, let's make a function to draw squares for us. We'll call it the `draw_square` function.\n\n(You could choose all sorts of names and the function would still work the same, but it's a good idea to give it a name that describes what it does!)\n\nRemember, a function definition always starts off with `def`, followed by the name of the function, parentheses `()`, and a colon `:`. Like this:\n\n```python\ndef some_name():\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 572083,
+              "key": "9502dad9-8459-4553-b0fe-9a5a42b1bbef",
+              "title": "",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "9502dad9-8459-4553-b0fe-9a5a42b1bbef",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Go ahead and write the first line of the definition for the `draw_square` function that we're creating",
+                "matchers": [
+                  {
+                    "expression": " *def *draw_square *\\( *\\) *: *"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 572086,
+              "key": "f2deffc2-213c-494c-9409-cf39fb0ab92d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Now that we have the first line of the function, all we have to do is take the code for drawing a square and place it _inside_ the function. \n\nWe don't need all of the code—just the `for` loop that draws the square.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 572087,
+              "key": "4e5a64ef-0a23-4554-a20e-7cd62bcd29c0",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "4e5a64ef-0a23-4554-a20e-7cd62bcd29c0",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Below are some different attempts at writing the `draw_square` function. Mark each one as \"correct\" or \"error\"."
+                },
+                "concepts_label": "Code",
+                "answers_label": "Correct or error",
+                "concepts": [
+                  {
+                    "text": "```python\ndef draw_square():\nfor side in range(4):\n    jack.forward(100)\n    jack.right(90)\n```",
+                    "correct_answer": {
+                      "id": "a1522026689815",
+                      "text": "error"
+                    }
+                  },
+                  {
+                    "text": "```python\ndef draw_square():\n    for side in range(4):\n    jack.forward(100)\n    jack.right(90)\n```",
+                    "correct_answer": {
+                      "id": "a1522027155159",
+                      "text": "error"
+                    }
+                  },
+                  {
+                    "text": "```python\ndef draw_square():\n    for side in range(4):\n        jack.forward(100)\n        jack.right(90)\n```",
+                    "correct_answer": {
+                      "id": "a1522027225594",
+                      "text": "correct"
+                    }
+                  },
+                  {
+                    "text": "```\ndef draw_square()\n    for side in range(4):\n        jack.forward(100)\n        jack.right(90)\n```",
+                    "correct_answer": {
+                      "id": "a1522027818707",
+                      "text": "error"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1522027155159",
+                    "text": "error"
+                  },
+                  {
+                    "id": "a1522027828727",
+                    "text": "correct"
+                  },
+                  {
+                    "id": "a1522026689815",
+                    "text": "error"
+                  },
+                  {
+                    "id": "a1522027225594",
+                    "text": "correct"
+                  },
+                  {
+                    "id": "a1522027818707",
+                    "text": "error"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 572088,
+              "key": "0a12a631-5a37-47ce-a097-76369c559fa9",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "0a12a631-5a37-47ce-a097-76369c559fa9",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Here is the code so far:\n\n```python\nimport turtle\njack = turtle.Turtle()\njack.color(\"yellow\")\n\ndef draw_square():\n    for side in range(4):\n        jack.forward(100)\n        jack.right(90)\n```\n\nIf we run this code as it is now, what will happen?",
+                "answers": [
+                  {
+                    "id": "a1522028133349",
+                    "text": "It will draw a square",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1522028156828",
+                    "text": "It will display an error",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1522028188957",
+                    "text": "It will run without errors, but it won't draw anything",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 572089,
+              "key": "5a852861-399d-4aff-86fa-f98e263324bd",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "5a852861-399d-4aff-86fa-f98e263324bd",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What should we add to the code so that it draws a square?",
+                "answers": [
+                  {
+                    "id": "a1522028439731",
+                    "text": "We should add the line `draw_square`.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1522028463511",
+                    "text": "We should add the line `draw_square():`.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1522028492224",
+                    "text": "We should add the line `draw_square()`.",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 572091,
+              "key": "abd86c7a-884b-4cca-be22-ac6af485c783",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "abd86c7a-884b-4cca-be22-ac6af485c783",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "And **where** should we add the _function call_?\n\nShould it go _before_ the function definition, like this:\n\n```python\ndraw_square()\n\ndef draw_square():\n    for side in range(4):\n        jack.forward(100)\n        jack.right(90)\n```\n\nOr _after_, like this:\n\n```python\ndef draw_square():\n    for side in range(4):\n        jack.forward(100)\n        jack.right(90)\n\ndraw_square()\n```",
+                "answers": [
+                  {
+                    "id": "a1522028560277",
+                    "text": "Before the function definition.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1522028588834",
+                    "text": "After the function definition.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1522028589616",
+                    "text": "It doesn't matter—a _function call_ can go anywhere.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 572093,
+              "key": "c709b72c-f2ff-4b7f-ba96-049b65f88c91",
+              "title": "Time to write the function!",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "c709b72c-f2ff-4b7f-ba96-049b65f88c91",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Define the `draw_square` function.",
+                "Add a _function call_ for the `draw_square` function.",
+                "**Run** the code to make sure it works!"
+              ],
+              "positive_feedback": "**Great!**",
+              "video_feedback": null,
+              "description": "Now it's time to get some practice typing this all out for yourself. In the workspace below, go ahead and define the `draw_square` function. Then add a line to _call_ the function.\n\nYou can copy and paste the code from above if you like, but we strongly recommend that you type it out for yourself—and try to do it from your own memory as much as possible. This will help you get better at remembering the correct syntax for defining and calling a function."
+            },
+            {
+              "id": 573403,
+              "key": "b9c9b2b9-d132-4eba-b8fa-35494d31d495",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "viewb75b0f93",
+              "pool_id": "webterminal",
+              "view_id": "dab884e3-2af0-4b54-8a90-0e8cc68bfd8f",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "openFiles": [
+                      "/home/workspace/workspace-turtle-support/student_files/lesson_two/19_draw_square.py"
+                    ],
+                    "showFiles": false,
+                    "allowClose": false,
+                    "showEditor": true,
+                    "allowSubmit": false,
+                    "autoRefresh": false,
+                    "previewFile": "/home/workspace/workspace-turtle-support/student_files/lesson_two/19_draw_square.html"
+                  },
+                  "kind": "html-live"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 675894,
+              "key": "c42f62f1-60a4-4083-9ef6-2f287ec5b9ac",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n----\n<div style=\"background-color: #a4e4f5;\">\n## ⚠️ Spoiler alert!\n\n**Our solution is below.** You'll learn more effectively if you give the exercise a strong effort before comparing your code with ours!\n</div>\n----\n----",
+              "instructor_notes": ""
+            },
+            {
+              "id": 675893,
+              "key": "826ca770-295f-4ab5-ba20-34a4ed311559",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Solution\n\n```python\nimport turtle\njack = turtle.Turtle()\njack.color(\"yellow\")\n\ndef draw_square():\n    for side in range(4):\n        jack.forward(100)\n        jack.right(90)\n\ndraw_square()\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 572096,
+              "key": "99679532-87a6-42e3-bf89-4863f92a51eb",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## ⚡The power of functions!\nNow that we have a `draw_square` function, we can _call_ that function as many times as we like. For example, copy this code into the workspace and give it a try:\n\n```python\njack.penup()\njack.back(150)\njack.pendown()\n\ndraw_square()\njack.forward(100)\ndraw_square()\njack.forward(100)\ndraw_square()\n```\n\nWhen you run it, you should see the turtle back up, and then draw three squares. Each square is the result of one of the `draw_square()` function calls.\n\nThis is one of the advantages of functions—**we only have to define the function one time in our program**, and then we can easily _call_ it as many times as we like.\n\nWe could also do something more interesting, like calling the `draw_square` function from inside a loop:\n\n(**Note:** Before trying this, you may want to add `jack.speed(0)` to your code to make the turtle draw faster.)\n\n```python\nfor square in range(80):\n    draw_square()\n    jack.forward(5)\n    jack.left(5)\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 722658,
+              "key": "0e046da8-0fa0-4d18-9f38-6788aa2fe3eb",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "0e046da8-0fa0-4d18-9f38-6788aa2fe3eb",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "I added the `for` loop to my code.",
+                "It drew a big circle made out of lots and lots of squares."
+              ],
+              "positive_feedback": "Behold, the power of functions! 😁",
+              "video_feedback": null,
+              "description": ""
+            }
+          ]
+        },
+        {
+          "id": 572097,
+          "key": "7fca0fc5-b710-4e6d-8d48-207098d10c61",
+          "title": "draw_square (one parameter)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "7fca0fc5-b710-4e6d-8d48-207098d10c61",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 572098,
+              "key": "d08b1e9b-1d9c-47cc-b109-c741a16c4367",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Adding a parameter to `draw_square`",
+              "instructor_notes": ""
+            },
+            {
+              "id": 572102,
+              "key": "b47594e6-babf-47d2-81cd-fee1c7f63ba4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "At this point, our `draw_square` function makes things a little more convenient—but it could be more useful. Right now, it always draws _exactly the same square_ every time we call it. Let's change that.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 572103,
+              "key": "a3624238-c266-4dc9-b771-ea038ac5dfd6",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "a3624238-c266-4dc9-b771-ea038ac5dfd6",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "The reason the squares are always the same size has to do with this line:\n\n`jack.forward(100)`\n\nEvery time the turtle draws a side, it goes exactly the same distance—`100` pixels. If we want to be able to draw squares of different sizes, what kind of thing should we replace `100` with?",
+                "answers": [
+                  {
+                    "id": "a1522033252559",
+                    "text": "An integer.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1522033343081",
+                    "text": "A string.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1522033347456",
+                    "text": "A list.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1522033354359",
+                    "text": "A variable.",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 572104,
+              "key": "4ca3cf22-5bf6-4a23-ada5-54c978ba4e0b",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "4ca3cf22-5bf6-4a23-ada5-54c978ba4e0b",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Here are some attempts at modifying the function. Mark each one as \"correct\" or \"error\"."
+                },
+                "concepts_label": "Code",
+                "answers_label": "Correct or error",
+                "concepts": [
+                  {
+                    "text": "```python\ndef draw_square(length):\n    for side in range(4):\n        jack.forward(length)\n        jack.right(90)\n```",
+                    "correct_answer": {
+                      "id": "a1522033410090",
+                      "text": "correct"
+                    }
+                  },
+                  {
+                    "text": "```python\ndef draw_square(100):\n    for side in range(4):\n        jack.forward(length)\n        jack.right(90)\n```",
+                    "correct_answer": {
+                      "id": "a1522033520402",
+                      "text": "error"
+                    }
+                  },
+                  {
+                    "text": "```python\ndef draw_square(distance):\n    for side in range(4):\n        jack.forward(distance)\n        jack.right(90)\n```",
+                    "correct_answer": {
+                      "id": "a1522033562194",
+                      "text": "correct"
+                    }
+                  },
+                  {
+                    "text": "```python\ndef draw_square(length):\n    for side in range(4):\n        jack.forward(distance)\n        jack.right(90)\n```",
+                    "correct_answer": {
+                      "id": "a1522033578931",
+                      "text": "error"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1522033520402",
+                    "text": "error"
+                  },
+                  {
+                    "id": "a1522033410090",
+                    "text": "correct"
+                  },
+                  {
+                    "id": "a1522033578931",
+                    "text": "error"
+                  },
+                  {
+                    "id": "a1522033562194",
+                    "text": "correct"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 572106,
+              "key": "14905f4f-66f2-4f26-92f6-868387d383a4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In order to be able to change the size of the square, we need to replace the `100` with a _variable_. Notice that we also need to put the variable in the first line of the function definition: `def draw_square(length):`. \n\nThus, our function definition will look like this:\n\n```python\ndef draw_square(length):\n    for side in range(4):\n        jack.forward(length)\n        jack.right(90)\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 696516,
+              "key": "78107ced-bade-4614-81ca-cc6fdeb6a499",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "78107ced-bade-4614-81ca-cc6fdeb6a499",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "In this line ...\n\n```python\ndef draw_square(length):\n```\n\n... the variable `length` is written _inside the parentheses of the function definition_. What's another word that's commonly used to refer to this kind of variable?",
+                "answers": [
+                  {
+                    "id": "a1535068155698",
+                    "text": "argument",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1535068202905",
+                    "text": "parameter",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1535068203642",
+                    "text": "value",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 696491,
+              "key": "b9ac32c9-a1f5-47ae-a6f8-b8cd1331758e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "By putting a _parameter_ in the function definition, we make it possible to pass that function some input when we _call_ it.\n\nTo do that, we put the input inside the parentheses of the function _call_. Like this:\n\n`draw_square(50)`\n\nThis will _pass_ the _argument_ `50` to the `draw_square` function. Or put another way, the number `50` will get assigned to the function's `length` parameter.\n\n(Even though you don't see one, it is essentially _as if_ we had an assignment statement like `length = 50`.)\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 578343,
+              "key": "b15f4b1b-5d2c-424d-9d98-b89dd68be408",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "b15f4b1b-5d2c-424d-9d98-b89dd68be408",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Add a `length` parameter to `def draw_square()` so that the function can accept an argument.",
+                "Change `jack.forward(100)` to use the `length` variable.",
+                "Modify any function calls so that they now pass the `draw_square` function an argument.",
+                "Try passing the `draw_square` function different numbers (to make it draw squares of different sizes)."
+              ],
+              "positive_feedback": "**Excellent!** This is an important concept to practice with.",
+              "video_feedback": null,
+              "description": "Below you'll find the workspace from the previous page. It should still have your code for the `draw_square` function that you wrote.\n\nLet's make some changes ..."
+            },
+            {
+              "id": 689161,
+              "key": "422e32a8-c0d2-4135-9baf-62e735763cd7",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "viewb75b0f93",
+              "pool_id": "webterminal",
+              "view_id": "html-live-B1UJxW+rQ",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "openFiles": [
+                      "/home/workspace/workspace-turtle-support/student_files/lesson_two/19_draw_square.py"
+                    ],
+                    "showFiles": false,
+                    "allowClose": false,
+                    "showEditor": true,
+                    "allowSubmit": false,
+                    "autoRefresh": false,
+                    "previewFile": "/home/workspace/workspace-turtle-support/student_files/lesson_two/19_draw_square.html"
+                  },
+                  "kind": "html-live"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 689167,
+              "key": "c79fbb32-93b1-4be9-b6a7-29990e242305",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n----\n<div style=\"background-color: #a4e4f5;\">\n## ⚠️ Spoiler alert!\n\n**Our solution is below.** You'll learn more effectively if you give the exercise a strong effort before comparing your code with ours!\n</div>\n----\n----",
+              "instructor_notes": ""
+            },
+            {
+              "id": 689166,
+              "key": "73281256-9160-49f7-bc55-6a677e8fb31a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Solution\n\n```python\nimport turtle\njack = turtle.Turtle()\njack.color(\"yellow\")\n    \ndef draw_square(length):\n    for side in range(4):\n        jack.forward(length)\n        jack.right(90)\n\ndraw_square(100)\ndraw_square(50)\ndraw_square(25)\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 572111,
+              "key": "99b8fda1-3288-4a66-9d02-e2c386cc916e",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "99b8fda1-3288-4a66-9d02-e2c386cc916e",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "The concept of passing an argument to a function can be kind of confusing, so let's get some more practice. What would this code do?\n\n```python\ndef draw_thingy(n):\n    for side in range(20):\n        jack.forward(n)\n        jack.right(n)\n\ndraw_thingy(100)\n```",
+                "answers": [
+                  {
+                    "id": "a1522034506258",
+                    "text": "It draws a shape that has turning angles of `100` degrees and sides that are `100` pixels long.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1522035044631",
+                    "text": "It draws a shape that has turning angles of `20` degrees and sides that are `100` pixels long.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1522035048199",
+                    "text": "It draws a shape that has turning angles of `100` degrees and sides that are `20` pixels long.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 572112,
+              "key": "d7b9c2b1-234d-4361-92a2-b9ac3ce2d695",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "d7b9c2b1-234d-4361-92a2-b9ac3ce2d695",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What would this code do when run?\n\n```python\ndef draw_square(length):\n    for side in range(4):\n        jack.forward(length)\n        jack.right(90)\n\ndraw_square()\n```",
+                "answers": [
+                  {
+                    "id": "a1522035331276",
+                    "text": "Draw a square with length of `100`.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1522035383196",
+                    "text": "Draw a square with length of `0`.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1522035405715",
+                    "text": "Display an error.",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 689169,
+          "key": "c6468639-2ffc-474d-bc5c-24ebb90eabc5",
+          "title": "draw_square (multiple parameters)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c6468639-2ffc-474d-bc5c-24ebb90eabc5",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 689170,
+              "key": "a67a0376-2331-431e-80fe-9468206754df",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Multiple parameters\n\n\nLet's make our `draw_square` function even more flexible—so that we can change not only the size of the square, but also its color.\n\nTo do this, we'll need to change the function so that it has two parameters. When defining a function with multiple parameters, we separate them with commas:\n\n```python\ndef draw_square(length, color):\n```\n\nThen we can use the `color` parameter in the body of the function:\n\n```python\ndef draw_square(length, color):\n    jack.color(color)\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 689175,
+              "key": "3c4aed9c-6847-44e8-949e-8d77d4b69c88",
+              "title": "",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "3c4aed9c-6847-44e8-949e-8d77d4b69c88",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Here's our function definition so far:\n\n```python\ndef draw_square(length, color):\n    jack.color(color)\n    for side in range(4):\n        jack.forward(length)\n        jack.right(90)\n```\n\nNow that the function is set up to accept two arguments, what are some ways that we could _call_ the function?\n\n(There are multiple correct answers!)",
+                "answers": [
+                  {
+                    "id": "a1533250975633",
+                    "text": "`draw_square(50, \"red\")`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1533250987043",
+                    "text": "`draw_square(25, \"yellow\")`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1533250993971",
+                    "text": "`draw_square(\"green\", 100)`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1533250995115",
+                    "text": "`draw_square(50)`",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 689191,
+              "key": "41bcfe74-bafa-4826-befc-cc30d6dcbe1d",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "41bcfe74-bafa-4826-befc-cc30d6dcbe1d",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "I added a `color` parameter to the function definition.",
+                "I tried calling `draw_square` to make squares of different colors."
+              ],
+              "positive_feedback": "**Great!**",
+              "video_feedback": null,
+              "description": "Below is a workspace that should have your code from earlier. Go ahead and modify the code so that the `draw_square` function can accept an argument specifying the color. Then try calling it with different arguments to draw squares of different colors."
+            },
+            {
+              "id": 689192,
+              "key": "5b83ce64-8a50-4135-924f-511d82a707aa",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "viewb75b0f93",
+              "pool_id": "webterminal",
+              "view_id": "html-live-r1Ky+GWS7",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "openFiles": [
+                      "/home/workspace/workspace-turtle-support/student_files/lesson_two/19_draw_square.py"
+                    ],
+                    "showFiles": false,
+                    "allowClose": false,
+                    "showEditor": true,
+                    "allowSubmit": false,
+                    "autoRefresh": false,
+                    "previewFile": "/home/workspace/workspace-turtle-support/student_files/lesson_two/19_draw_square.html"
+                  },
+                  "kind": "html-live"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 689193,
+              "key": "7b033c1d-d84c-485a-b76f-95a900a6e0f8",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n----\n<div style=\"background-color: #a4e4f5;\">\n## ⚠️ Spoiler alert!\n\n**Our solution is below.** You'll learn more effectively if you give the exercise a strong effort before comparing your code with ours!\n</div>\n----\n----",
+              "instructor_notes": ""
+            },
+            {
+              "id": 689194,
+              "key": "386d1dad-048b-49f1-9a22-635f12a7f4cc",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Solution\n\n```python\nimport turtle\njack = turtle.Turtle()\njack.color(\"yellow\")\n    \ndef draw_square(length, color):\n    for side in range(4):\n        jack.color(color)\n        jack.forward(length)\n        jack.right(90)\n\ndraw_square(100, \"cyan\")\ndraw_square(50, \"magenta\")\ndraw_square(25, \"yellow\")\n```",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 689171,
+          "key": "3ae709aa-eee4-4e5b-8205-ad6ec99b0b6f",
+          "title": "draw_shape",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "3ae709aa-eee4-4e5b-8205-ad6ec99b0b6f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 689172,
+              "key": "94bd50c1-23b3-4548-8a2d-15dc25539c94",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## From `draw_square` to `draw_shape`\n\nRather than just drawing squares, we could set our function up to draw other shapes as well.\n\nAs we saw earlier, we can change the shape by changing the _angle_ and the number of _sides_. A square has four sides and 90 degree angles; a pentagon has five sides and 72 degree angles.\n\nWe also saw that if we know the number of sides for a shape, we can use this to get the degrees—all we have to do is divide 360 by the number of sides (for example, a square has angles of 360 / 4 = 90 degrees).",
+              "instructor_notes": ""
+            },
+            {
+              "id": 689200,
+              "key": "9eea089d-0bea-4180-9de0-40c20323495d",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "9eea089d-0bea-4180-9de0-40c20323495d",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Change the name of the function to something like `draw_shape` or `draw_polygon`. This won't actually affect how it runs, but it's good to use names that accurately describe what the function does.",
+                "Add a third parameter to the function for the number of sides (you could call the parameter `sides`).",
+                "Change the angle in `jack.right(90)` to an arithmetic expression that uses the `sides` variable.",
+                "Try _calling_ the function with different arguments (you'll need three of them now) to draw different shapes."
+              ],
+              "positive_feedback": "**Outstanding!** The skills you've strengthened here are going to come in handy a _lot_ in your future coding!",
+              "video_feedback": null,
+              "description": "You'll find your code for the `draw_square` function in the workspace below. See if you can figure out how to modify the function so that it can be used to draw different shapes.\n\nThe goal is to be able to give the function the number of sides in the shape, and have it calculate the angles."
+            },
+            {
+              "id": 689203,
+              "key": "73248aaf-de50-48e4-8146-cdeacaf47439",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "viewb75b0f93",
+              "pool_id": "webterminal",
+              "view_id": "html-live-Hko1Xf+rX",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "openFiles": [
+                      "/home/workspace/workspace-turtle-support/student_files/lesson_two/19_draw_square.py"
+                    ],
+                    "showFiles": false,
+                    "allowClose": false,
+                    "showEditor": true,
+                    "allowSubmit": false,
+                    "autoRefresh": false,
+                    "previewFile": "/home/workspace/workspace-turtle-support/student_files/lesson_two/19_draw_square.html"
+                  },
+                  "kind": "html-live"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 689201,
+              "key": "f30f7aac-4b6f-48cc-982c-745f88e0c46f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n----\n<div style=\"background-color: #a4e4f5;\">\n## ⚠️ Spoiler alert!\n\n**Our solution is below.** You'll learn more effectively if you give the exercise a strong effort before comparing your code with ours!\n</div>\n----\n----",
+              "instructor_notes": ""
+            },
+            {
+              "id": 689202,
+              "key": "5ee3ec0d-0761-4cc4-9466-772930129fb2",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Solution\n\n```python\nimport turtle\njack = turtle.Turtle()\n\ndef draw_shape(length, color, sides):\n    jack.color(color)\n    for side in range(sides):\n        jack.forward(length)\n        jack.right(360/sides)\n\ndraw_shape(100, \"cyan\", 5)\n```",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 467869,
+          "key": "a8366a09-4f44-4e33-8442-36c1f4051dac",
+          "title": "Make your own function",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a8366a09-4f44-4e33-8442-36c1f4051dac",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 467977,
+              "key": "fe0bfb32-18e1-42ec-a1f3-0aad8b9b271c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Make your own function\n\nIt's time to solidify your knowledge of functions—and play around a little! In the workspace below, write a function that draws a shape.\n\nThen, below the function definition, write code that _calls_ that function multiple times (to create a pattern).\n\nFeel free to be creative! If you want an idea, here's one example of something you could try to make:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 486227,
+              "key": "07323c63-4c35-4b93-8019-3bc531ff57a1",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2017/December/5a37d29c_screen-shot-2017-12-18-at-6.36.52-am/screen-shot-2017-12-18-at-6.36.52-am.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/07323c63-4c35-4b93-8019-3bc531ff57a1",
+              "caption": "A pattern made of colored triangles.",
+              "alt": "A pattern made of colored triangles.",
+              "width": 287,
+              "height": 248,
+              "instructor_notes": null
+            },
+            {
+              "id": 476140,
+              "key": "de8c971a-cfe6-48d3-aa62-415fadd568ee",
+              "title": "Define and call a function!",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "de8c971a-cfe6-48d3-aa62-415fadd568ee",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Write a function definition with `def` that creates a turtle and has it draw a shape.",
+                "Write several calls to your new function.",
+                "**Run** your code! Does it do what you wanted?"
+              ],
+              "positive_feedback": "You'll see functions _a lot_ in programming—and now you know how to write them yourself.\n\nYou should feel pretty good about yourself right now. 😎",
+              "video_feedback": null,
+              "description": "In the workspace below, you can write a function of your own and call it.\n\nCheck off each of these activities as you complete them!"
+            },
+            {
+              "id": 467871,
+              "key": "5f60fec0-93eb-4850-8a19-88a3301862b3",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "viewb75b0f93",
+              "pool_id": "webterminal",
+              "view_id": "086c85a1-0d6e-4e58-9de8-e48dce7dc714",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "openFiles": [
+                      "/home/workspace/workspace-turtle-support/student_files/lesson_two/5_def.py"
+                    ],
+                    "showFiles": false,
+                    "allowClose": false,
+                    "showEditor": true,
+                    "allowSubmit": false,
+                    "autoRefresh": false,
+                    "previewFile": "/home/workspace/workspace-turtle-support/student_files/lesson_two/5_def.html"
+                  },
+                  "kind": "html-live"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 675351,
+              "key": "8c3c4787-23bc-4412-a222-4c53ca3489e7",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<div style=\"background-color: #a4e4f5;\">\n## ⚠️ Spoiler alert!\n**Our solution is below.** You'll learn more effectively if you give the exercise a strong effort before comparing your code with ours!\n</div>\n----\n----",
+              "instructor_notes": ""
+            },
+            {
+              "id": 675350,
+              "key": "0f311090-87e8-4bbf-bb53-d1ebf5e7d8f6",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Solution\n\nHere's the code that we used to create the colorful pattern above. Remember, it's totally fine if your code draws a completely different shape — we're just sharing this code as an example.\n\n```\nimport turtle\n\n# Write a function here that creates a\n# turtle and draws a shape with it.\ndef triangle_boogie(color, start):\n  t = turtle.Turtle()\n  t.color(color)\n  t.speed(0)\n  t.width(5)\n  t.right(start)\n  for shape in range(6):\n    for side in range(3):\n      t.forward(100)\n      t.right(120)\n    t.right(15)\n  t.hideturtle()\n\n# Call the function multiple times.\ntriangle_boogie(\"red\", 0)\ntriangle_boogie(\"orange\", 120)\ntriangle_boogie(\"blue\", 240)\n```",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 466651,
+          "key": "27396a03-79b9-4712-8616-efb610430d5c",
+          "title": "Variable scope (1/2)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "27396a03-79b9-4712-8616-efb610430d5c",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 675104,
+              "key": "a87c35d2-2ce2-4196-bfea-b2f59d1c5aa2",
+              "title": "Python: Variable Scope Basics",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "AipHADxHuvo",
+                "china_cdn_id": "AipHADxHuvo.mp4"
+              }
+            },
+            {
+              "id": 485953,
+              "key": "65966be8-a24f-4a40-b25f-3595117f3410",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "65966be8-a24f-4a40-b25f-3595117f3410",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "In this code, which variables are **local** and which are  **global**?\n```python\nimport turtle\n\n# How intense should the turtle's dance be?\nintensity = 10\n\ndef bounce(something):\n    dance = [-1, 1, -1, 1, -1, 1]\n    for step in dance:\n        something.forward(step * intensity)\n\ndef boogie():\n    wiggler = turtle.Turtle()\n    bounce(wiggler)\n    wiggler.right(90)\n    bounce(wiggler)\n\nboogie()\n```"
+                },
+                "concepts_label": "Variable name",
+                "answers_label": "Scope",
+                "concepts": [
+                  {
+                    "text": "`intensity`",
+                    "correct_answer": {
+                      "id": "a1513370562753",
+                      "text": "global"
+                    }
+                  },
+                  {
+                    "text": "`dance`",
+                    "correct_answer": {
+                      "id": "a1513370601756",
+                      "text": "local"
+                    }
+                  },
+                  {
+                    "text": "`wiggler`",
+                    "correct_answer": {
+                      "id": "a1513370606170",
+                      "text": "local"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1513370601756",
+                    "text": "local"
+                  },
+                  {
+                    "id": "a1513370562753",
+                    "text": "global"
+                  },
+                  {
+                    "id": "a1513370742296",
+                    "text": "global"
+                  },
+                  {
+                    "id": "a1513370606170",
+                    "text": "local"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 485963,
+              "key": "5d68f924-c235-4584-90df-b9b5677a18b3",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "5d68f924-c235-4584-90df-b9b5677a18b3",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Imagine that you added this code to the very end of the above program:\n```python\ndoodler = turtle.Turtle()\ndoodler.forward(step)\n```\nWould this work, or would it be an error?",
+                "answers": [
+                  {
+                    "id": "a1513372364994",
+                    "text": "It would work fine.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1513372372103",
+                    "text": "It would be an error.",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 590529,
+          "key": "41aece0d-2859-4adb-845e-1d260719b5bf",
+          "title": "Variable scope (2/2)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "41aece0d-2859-4adb-845e-1d260719b5bf",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 676176,
+              "key": "87531c31-50fb-4fe4-95d3-6dec319ef9d6",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Variable scope (2/2)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 590546,
+              "key": "8b0ee1f9-bdf2-497e-94b0-8d60ce596c89",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Here is some code I wrote. It's supposed to draw a square and then back the turtle up by 100 pixels.\n\n```python\nimport turtle\n\ndef draw_square():\n    jack = turtle.Turtle()\n    jack.color(\"yellow\")\n    for side in range(4):\n        jack.forward(100)\n        jack.right(90)\n\ndraw_square()\njack.penup()\njack.back(100)\n```\n\nBelow are some questions about this code.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 590540,
+              "key": "c263a5e9-cdc8-4ad7-b74a-3ab690410247",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "c263a5e9-cdc8-4ad7-b74a-3ab690410247",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What will happen when I run the above code?",
+                "answers": [
+                  {
+                    "id": "a1522797157757",
+                    "text": "It will work as expected, drawing a square and then backing up 100 pixels.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1522799125433",
+                    "text": "It will draw a square, but then display a **NameError** because `jack` is a local variable.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1522799592415",
+                    "text": "It will draw a square, but then display a **NameError** because `jack` is a global variable.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 590550,
+              "key": "dbdd2710-8c4b-4f96-be56-510a119ffe1d",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "dbdd2710-8c4b-4f96-be56-510a119ffe1d",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Here's an attempt to correct the code. Notice that the line that defines `jack` has been moved _outside_ the function.\n\n```python\nimport turtle\njack = turtle.Turtle()\njack.color(\"yellow\")\n\ndef draw_square():\n    for side in range(4):\n        jack.forward(100)\n        jack.right(90)\n\ndraw_square()\njack.penup()\njack.back(100)\n```\n\nWould this work, or would it still produce an error?",
+                "answers": [
+                  {
+                    "id": "a1522799891553",
+                    "text": "It would work.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1522799910576",
+                    "text": "It would still produce a **NameError**.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 590571,
+              "key": "a4d36ab1-8dc7-4ca2-90a4-02e5c48b1b85",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "a4d36ab1-8dc7-4ca2-90a4-02e5c48b1b85",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Here's another (different) attempt to correct the code:\n\n```python\nimport turtle\n\ndef draw_square():\n    jack = turtle.Turtle()\n    jack.color(\"yellow\")\n    for side in range(4):\n        jack.forward(100)\n        jack.right(90)\n    jack.penup()\n    jack.back(100)\n\ndraw_square()\n```\n\nWould this work, or would it still produce an error?",
+                "answers": [
+                  {
+                    "id": "a1522804652275",
+                    "text": "It would work.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1522804728987",
+                    "text": "It would still produce a **NameError**.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 466652,
+          "key": "12a0f0cc-a823-4420-9377-d5b3cfa6f730",
+          "title": "Indent with care!",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "12a0f0cc-a823-4420-9377-d5b3cfa6f730",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 467978,
+              "key": "67e7dba6-ebd4-4cba-bd0a-75777ad19972",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 👉 Indent with care!\n\nPython uses the **indentation** of your code to determine its structure. For example, there's a big difference between these two blocks of code:\n\n```python\nfor side in [25, 50, 25, 50]:\n    t.forward(side)\n    t.right(90)\n```\n\n```\nfor side in [25, 50, 25, 50]:\n    t.forward(side)\nt.right(90)\n```\n\nThe difference is in whether the line `t.right(90)` is part of the loop or not. In the first case, it is; so the turtle will draw a rectangle. In the second case, it isn't; so the turtle will just keep going forward four times and only turn right at the very end.\n\nSome indentation mistakes will cause Python to give an error message (as you'll see in a minute). Others (like having a line _outside_ of a loop when you meant for it to be _inside_ of a loop) won't throw an error—instead, they'll simply cause the code to do something you didn't expect!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 474104,
+              "key": "09c8519d-8f5f-4edb-b995-a6425217e425",
+              "title": "Fixing indentation problems in function definitions",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "09c8519d-8f5f-4edb-b995-a6425217e425",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "**Run** the code and see an error message.",
+                "Find and fix the *first* indentation error.",
+                "**Run** the code again.",
+                "Find and fix the *second* indentation error.",
+                "**Run** the code a third time.",
+                "Find and fix the *third* indentation error.",
+                "**Run** the code a fourth time.",
+                "Balloons! 🎈"
+              ],
+              "positive_feedback": "**Yes!**  \n🎈🎈🎈",
+              "video_feedback": null,
+              "description": "The code in the workspace below has several indentation errors. **Run** it to see the first error message; then fix the indentation on the line it tells you about. Keep going until there are no more errors!\n\nCheck off these activities as you complete them."
+            },
+            {
+              "id": 467912,
+              "key": "f34600f6-7ca4-436a-84d3-28cea86fcf45",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "viewb75b0f93",
+              "pool_id": "webterminal",
+              "view_id": "933c70aa-9c51-476c-9896-dfb063dc67a9",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "openFiles": [
+                      "/home/workspace/workspace-turtle-support/student_files/lesson_two/8_indent.py"
+                    ],
+                    "showFiles": false,
+                    "allowClose": false,
+                    "showEditor": true,
+                    "allowSubmit": false,
+                    "autoRefresh": false,
+                    "previewFile": "/home/workspace/workspace-turtle-support/student_files/lesson_two/8_indent.html"
+                  },
+                  "kind": "html-live"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 693451,
+              "key": "5e40d75b-eade-4a39-9153-8a1b1dbfdbb8",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<div style=\"background-color: #a4e4f5;\">\n## ⚠️ Spoiler alert!\n**Our solution is below.** You'll learn more effectively if you give the exercise a strong effort before comparing your code with ours!\n</div>\n----",
+              "instructor_notes": ""
+            },
+            {
+              "id": 693452,
+              "key": "7913bee3-4359-4491-953c-2710848f0f04",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "```python\nimport turtle\n\n# This code works!\n\ndef balloon(t, color):\n    t.speed(0)\n    t.color(color)\n\n    # Draw balloon body.\n    for side in range(30):\n        t.forward(10)\n        t.left(12)\n\n    # Draw balloon knot.\n    t.right(60)\n    for side in range(3):\n      t.forward(10)\n      t.right(120)\n    \n    # Draw balloon string.\n    t.color(\"gray\")\n    t.right(30)\n    t.forward(100)\n\n\nt = turtle.Turtle()\n\nt.penup()\nt.back(100)\nt.pendown()\nballoon(t, \"red\")\n\nt.penup()\nt.home()\nt.pendown()\nballoon(t, \"blue\")\n\nt.penup()\nt.home()\nt.forward(100)\nt.pendown()\nballoon(t, \"purple\")\n\nt.hideturtle()\n\n```",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 698674,
+          "key": "ae794b19-ce7f-4cc9-b44b-9514181eb2be",
+          "title": "Which data type?",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "ae794b19-ce7f-4cc9-b44b-9514181eb2be",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 698675,
+              "key": "fbd4b4df-7375-48f1-b4c0-86e9c7881417",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Which data type? 🔢 🐢 📖",
+              "instructor_notes": ""
+            },
+            {
+              "id": 698689,
+              "key": "46644ef5-40e9-48d4-9aa5-33d9a9302604",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "I made a new function, called `circlify`. You can call the function to have it draw a circle made up of other shapes. Like this circle, made from squares:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 698691,
+              "key": "19ae4533-90a2-44c8-a862-13561991475b",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2018/August/5b833244_shape-circle/shape-circle.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/19ae4533-90a2-44c8-a862-13561991475b",
+              "caption": "",
+              "alt": "A circle made from squares.",
+              "width": 205,
+              "height": 197,
+              "instructor_notes": null
+            },
+            {
+              "id": 698690,
+              "key": "ae185ef7-45f2-4e59-85c4-1030417bf039",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "You can find the code for the function in the workspace below. But there's an error in the code. See if you can figure out what's causing the error, and then answer the questions below the workspace to see if you're right!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 722686,
+              "key": "858af154-b288-4598-a99d-bd61d750dffc",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "viewd1mupdn3g3l",
+              "pool_id": "turtle",
+              "view_id": "custom-iframe-app-ifrypdgwh7r",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "daemons": [
+                      {
+                        "id": "daemon",
+                        "cmd": ""
+                      }
+                    ],
+                    "openFiles": [
+                      "/home/workspace/workspace.py"
+                    ],
+                    "showFiles": false,
+                    "allowClose": false,
+                    "allowSubmit": false
+                  },
+                  "kind": "custom-iframe-app"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 698694,
+              "key": "d9731174-aace-477a-a1a9-def67e4e42bd",
+              "title": "",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "d9731174-aace-477a-a1a9-def67e4e42bd",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "When you try to run the code, you should get this error:\n\n```text\nTypeError\nLine: 8\nError: unsupported operand type(s) for Div: 'str' and 'int'\n```\n\nThat probably sounds confusing, but take your best guess—what do you think this error is saying?\n\n(Mark **all** the answers that you think are correct.)",
+                "answers": [
+                  {
+                    "id": "a1535326253002",
+                    "text": "The error has to do with something on line 8.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1535326288875",
+                    "text": "The error has something to do with some data being of the wrong \"type\".",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1535326289473",
+                    "text": "The division operator, `/`, can't divide a string by an integer.",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 698695,
+              "key": "1905048d-985c-4088-8fed-54771ed59412",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "1905048d-985c-4088-8fed-54771ed59412",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What should we do to fix the problem?",
+                "answers": [
+                  {
+                    "id": "a1535327155226",
+                    "text": "Change the function call to `circlify(150, \"gold\",  4)`.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1535327196252",
+                    "text": "Change the function call to `circlify(150,  4, \"gold\")`.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1535327224194",
+                    "text": "Delete line 8.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 698696,
+              "key": "b512fe02-7d2b-486e-a216-ed5616399fdc",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "As you can see, when we pass arguments to a function, those arguments can have different **data types**. Some arguments may be strings, while others may be integers, or lists (or something else!). If we pass one of the function's parameters the wrong data type, this can cause problems (like we saw above).\n\n(In this case, the data types were wrong because the arguments were in the wrong order.)\n\nIt's important to be able to look at the parameters of a function and figure out what data types they require—and then pass that function arguments that are of the correct data type (and in the right order).",
+              "instructor_notes": ""
+            },
+            {
+              "id": 722653,
+              "key": "95167208-5071-4ea4-8d8f-5147f3752509",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "95167208-5071-4ea4-8d8f-5147f3752509",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Here is a function definition:\n```python\ndef star(a, b, c):\n    d = turtle.Turtle()\n    d.color(a)\n    for e in range(b):\n        d.forward(c)\n        d.right(720 / b)\n```\nWhich of these function calls will work correctly with it?",
+                "answers": [
+                  {
+                    "id": "a1537592620568",
+                    "text": "`star(\"red\", 5, 100)`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1537592652444",
+                    "text": "`star(5, 100, \"red\")`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1537592658972",
+                    "text": "`star(100, \"red\", 5)`",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 698697,
+              "key": "0f41c34f-0c8c-46b3-b88a-2b5559edde1b",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "0f41c34f-0c8c-46b3-b88a-2b5559edde1b",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Here's a definition for a function called `waggle`:\n\n```\ndef waggle(who, angle, distance):\n    who.forward(distance)\n    who.right(angle)\n    who.forward(distance)\n    who.left(angle)\n    who.forward(distance)\n```\n\nThe function has three parameters, called `who`, `angle`, and `distance`.\n\nWhen we _call_ this funtion, what type of argument should we pass to each parameter?"
+                },
+                "concepts_label": "Parameter",
+                "answers_label": "Type",
+                "concepts": [
+                  {
+                    "text": "`who`",
+                    "correct_answer": {
+                      "id": "a1535327759580",
+                      "text": "turtle"
+                    }
+                  },
+                  {
+                    "text": "`angle`",
+                    "correct_answer": {
+                      "id": "a1535328348048",
+                      "text": "integer"
+                    }
+                  },
+                  {
+                    "text": "`distance`",
+                    "correct_answer": {
+                      "id": "a1535328348592",
+                      "text": "integer"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1535328386712",
+                    "text": "turtle"
+                  },
+                  {
+                    "id": "a1535327759580",
+                    "text": "turtle"
+                  },
+                  {
+                    "id": "a1535328396363",
+                    "text": "list"
+                  },
+                  {
+                    "id": "a1535328391471",
+                    "text": "function"
+                  },
+                  {
+                    "id": "a1535328348592",
+                    "text": "integer"
+                  },
+                  {
+                    "id": "a1535328348048",
+                    "text": "integer"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 698698,
+              "key": "fe89174b-799b-49a0-8614-d1692884aaec",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In the exercise above, you might have found it a little surprising that the `who` parameter needs to be passed a _turtle_. Yes, we can pass a turtle to a function as one of the arguments! But wait, what does that even mean? And why would it be useful?\n\nKeep these questions in the back of your mind, because we'll come back to them shortly.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 698579,
+          "key": "06e3c058-3229-4657-96e0-83fdd7dda1c3",
+          "title": "Two turtles",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "06e3c058-3229-4657-96e0-83fdd7dda1c3",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 698580,
+              "key": "f2e6b908-5dfd-4378-8efb-0668ec702979",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 🐢🐢 Two turtles\n\nIn a little while, we're going to experiment with some code that uses multiple turtles—and even turtles that have more than one name! Things could get pretty confusing, so let's look at some of the underlying concepts first.\n\n## Variables connect names to data\nBack in the last lesson, we talked a lot about _variables_. We said that a variable is really just a connection between a name in your code and some data in memory. Like when we run this line ...\n\n```python\nromeo = turtle.Turtle()\n```\n\n... this creates a new turtle data object, and then assigns it to the name `romeo`. That means anytime we use `romeo` in our code, Python will understand that we are referring to the turtle object we created.\n\n\nBut because all of this is invisible to you (since it's happening inside your computer) it can be a little unclear what exactly is happening. Let's explore it a little.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 698584,
+              "key": "88aab5b0-3363-457c-9d65-bb3be29d77be",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "88aab5b0-3363-457c-9d65-bb3be29d77be",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What will this code do?\n\n```python\nimport turtle\nromeo = turtle.Turtle()\njuliet = turtle.Turtle()\n```\n(You probably don't know for sure—that's OK! Just take a guess.)",
+                "answers": [
+                  {
+                    "id": "a1535219072668",
+                    "text": "Create two different turtle objects (one named `romeo` and the other named `juliet`).",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1535219110969",
+                    "text": "Make it so `romeo` and `juliet` both refer to the same underlying turtle object.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1535219111667",
+                    "text": "Throw an error.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 698586,
+              "key": "29741e8c-f28c-45b6-a76d-86e037bc21d2",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "29741e8c-f28c-45b6-a76d-86e037bc21d2",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "After we create a new turtle object, we can modify it, such as by setting its color and width:\n\n```python\nromeo.color(\"red\")\nromeo.width(5)\n```\n\nLet's review our vocabulary from earlier—can you name each piece of this code?"
+                },
+                "concepts_label": "Code",
+                "answers_label": "What kind of thing is it?",
+                "concepts": [
+                  {
+                    "text": "`romeo`",
+                    "correct_answer": {
+                      "id": "a1535227871662",
+                      "text": "variable name"
+                    }
+                  },
+                  {
+                    "text": "`color`",
+                    "correct_answer": {
+                      "id": "a1535228021886",
+                      "text": "method name"
+                    }
+                  },
+                  {
+                    "text": "`\"red\"`",
+                    "correct_answer": {
+                      "id": "a1535228042649",
+                      "text": "argument"
+                    }
+                  },
+                  {
+                    "text": "`width`",
+                    "correct_answer": {
+                      "id": "a1535228070296",
+                      "text": "method name"
+                    }
+                  },
+                  {
+                    "text": "`5`",
+                    "correct_answer": {
+                      "id": "a1535228089289",
+                      "text": "argument"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1535227871662",
+                    "text": "variable name"
+                  },
+                  {
+                    "id": "a1535228070296",
+                    "text": "method name"
+                  },
+                  {
+                    "id": "a1535228089289",
+                    "text": "argument"
+                  },
+                  {
+                    "id": "a1535228021886",
+                    "text": "method name"
+                  },
+                  {
+                    "id": "a1535228042649",
+                    "text": "argument"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 698587,
+              "key": "ca85f39e-c4e6-4644-a709-bdf6989582ed",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "It's good to pause and try to imagine how a line like `romeo.color(\"red\")` works. We use the variable name, `romeo`, to tell Python that we want to do something with a particular data object. In this case, `romeo` refers to a turtle object.\n\nAnd because this is a turtle object, it contains a method called `color`, which is used to set the turtle's drawing color. So we can use `.color()` to _call_ the method that's on the `romeo` object and pass it the argument `\"red\"`.\n\nIn sum, we can say that the line `romeo.color(\"red\")` is _calling the `color` method on the turtle object that the variable name `romeo` refers to_. Whew, that's a real mouthful! No wonder it's often hard to understand what programmers are talking about ...",
+              "instructor_notes": ""
+            },
+            {
+              "id": 698666,
+              "key": "90fc9728-2288-4be9-87a3-17e0e2eddd17",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "90fc9728-2288-4be9-87a3-17e0e2eddd17",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What do you predict will happen when we run this code?\n\n```python\nimport turtle\nromeo = turtle.Turtle()\njuliet = turtle.Turtle()\n\nromeo.color(\"red\")\nromeo.width(5)\n\njuliet.color(\"white\")\njuliet.width(5)\n\nromeo.forward(100)\njuliet.forward(100)\n```",
+                "answers": [
+                  {
+                    "id": "a1535290093892",
+                    "text": "Two different turtle objects will draw two different lines (one red and one white).",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1535290214508",
+                    "text": "One turtle object will draw two different lines (one red and one white)",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1535290214925",
+                    "text": "One turtle object will draw two different lines (both white)",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 698590,
+              "key": "7da08c9b-209f-48d2-af73-51a845d51d78",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "If we create two different turtles, like this:\n\n```python\nromeo = turtle.Turtle()\njuliet = turtle.Turtle()\n```\n\nThen we have two different underlying objects in memory. And that means we can set the drawing color of those objects separately from one another.\n\nGive it a try for yourself—In the workspace below, create two different turtles named `romeo` and `juliet` and then have them each draw something in a different color, like this:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 698591,
+              "key": "ccde10ea-c9b3-4494-87e2-78b7d407361d",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2018/August/5b81bb36_romeoandjuliet01/romeoandjuliet01.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/ccde10ea-c9b3-4494-87e2-78b7d407361d",
+              "caption": "A red line and a white line, drawn by two different turtles.",
+              "alt": "A red line and a white line.",
+              "width": 173,
+              "height": 127,
+              "instructor_notes": null
+            },
+            {
+              "id": 698598,
+              "key": "20f49499-7a64-4a7a-b782-387bdab0ff40",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "viewb75b0f93",
+              "pool_id": "webterminal",
+              "view_id": "html-live-xujpcgjz9uq",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "openFiles": [
+                      "/home/workspace/workspace-turtle-support/student_files/lesson_two/romeo_and_juliet.py"
+                    ],
+                    "showFiles": false,
+                    "allowClose": false,
+                    "showEditor": true,
+                    "allowSubmit": false,
+                    "autoRefresh": false,
+                    "previewFile": "/home/workspace/workspace-turtle-support/student_files/lesson_two/romeo_and_juliet.html"
+                  },
+                  "kind": "html-live"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 698600,
+              "key": "5969bc5e-e2db-4ffe-b4cf-62cbf6aec9ea",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<div style=\"background-color: #a4e4f5;\">\n## ⚠️ Spoiler alert!\n**Our solution is below.** You'll learn more effectively if you give the exercise a strong effort before comparing your code with ours!\n</div>\n----",
+              "instructor_notes": ""
+            },
+            {
+              "id": 698599,
+              "key": "c447198d-fd5e-4823-823b-34ba2270fd8c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Solution\n\nHere's our code:\n\n```python\nimport turtle\nromeo = turtle.Turtle()\njuliet = turtle.Turtle()\n\nromeo.color(\"red\")\nromeo.width(5)\n\njuliet.color(\"white\")\njuliet.width(5)\n\nromeo.forward(150)\nromeo.right(90)\nromeo.forward(100)\n\njuliet.forward(100)\njuliet.right(90)\njuliet.forward(100)\n```",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 698664,
+          "key": "2beed0ba-dd91-4057-a8fb-a25a57b6e34e",
+          "title": "By any other name ...",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "2beed0ba-dd91-4057-a8fb-a25a57b6e34e",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 698667,
+              "key": "3a7efdb6-a6be-4d42-87b9-81a8ff3e3b81",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# A turtle by any other name ... 🌹",
+              "instructor_notes": ""
+            },
+            {
+              "id": 698665,
+              "key": "b119a0fc-a116-4c15-a745-708e6a649e25",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "b119a0fc-a116-4c15-a745-708e6a649e25",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Here's something a little different:\n\n```python\nimport turtle\nromeo = turtle.Turtle()\nmontague = romeo\n```\n\nWhat do you think this might do?",
+                "answers": [
+                  {
+                    "id": "a1535285927985",
+                    "text": "Create two different turtle objects (one named `romeo` and the other named `montague`).",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1535285937764",
+                    "text": "Make it so `romeo` and `montague` both refer to the same underlying turtle object.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1535285938428",
+                    "text": "Throw an error.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 698668,
+              "key": "4962c4af-b667-4a28-a0bc-984460a1414d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In the code above, we have the familiar assignment statement, `romeo = turtle.Turtle()`, which creates a new turtle object and names it `romeo`.\n\nBut then we have a second assignment statement: `montague = romeo`. Remember, `romeo` refers to a turtle object. So this line is simply giving that turtle object a second name, `montague`.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 698669,
+              "key": "3b2277a8-2013-49d1-b2b8-14cd22c4452f",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "3b2277a8-2013-49d1-b2b8-14cd22c4452f",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Here's a tricky one:\n\n```python\nimport turtle\nromeo = turtle.Turtle()\nmontague = romeo\n\nmontague.color(\"white\")\nromeo.color(\"red\")\n\nmontague.forward(100)\n```\n\nWhat color line will `montague` draw?",
+                "answers": [
+                  {
+                    "id": "a1535291097072",
+                    "text": "White",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1535291412131",
+                    "text": "Red",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 722668,
+              "key": "47609a8e-a0f7-4275-9715-463b316f2412",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "47609a8e-a0f7-4275-9715-463b316f2412",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "**Run** the code.",
+                "Remove the comment `# ` from line 12.",
+                "**Run** the code again to see the change."
+              ],
+              "positive_feedback": "This example is kind of silly, but we'll soon see that it's pretty common for two names to refer to the same object.",
+              "video_feedback": null,
+              "description": "Try this out for yourself! In the workspace below, you'll find that `montague` currently draws a red square. \n\nIf you try changing `romeo`'s color, you'll find that `montague` also changes—since they are actually the same turtle."
+            },
+            {
+              "id": 698672,
+              "key": "b21962fb-3696-490b-be4e-b176af3efcc1",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "viewb75b0f93",
+              "pool_id": "webterminal",
+              "view_id": "html-live-9ii43csvknc",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "openFiles": [
+                      "/home/workspace/workspace-turtle-support/student_files/lesson_two/romeo_montague.py"
+                    ],
+                    "showFiles": false,
+                    "allowClose": false,
+                    "showEditor": true,
+                    "allowSubmit": false,
+                    "autoRefresh": false,
+                    "previewFile": "/home/workspace/workspace-turtle-support/student_files/lesson_two/romeo_montague.html"
+                  },
+                  "kind": "html-live"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 698673,
+          "key": "0ed5c0a1-92af-49cb-99ae-cd6387caf76b",
+          "title": "Square flower (1/3)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "0ed5c0a1-92af-49cb-99ae-cd6387caf76b",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 722669,
+              "key": "c2bf34fb-fd06-41dd-ae93-b3526bc7c7e6",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Square flower (1/3)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 698699,
+              "key": "7e727d7d-3f0e-47fe-bb52-5f472e434388",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "I got a little tired of just drawing squares, so I wrote some code to make a sort of flower shape out of the squares, like this:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 698700,
+              "key": "5995f289-7321-4f31-90bb-a6eb19145fff",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2018/August/5b834441_square-flower/square-flower.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/5995f289-7321-4f31-90bb-a6eb19145fff",
+              "caption": "",
+              "alt": "A flower made from six squares as the petals.",
+              "width": 281,
+              "height": 269,
+              "instructor_notes": null
+            },
+            {
+              "id": 698701,
+              "key": "884678bf-f822-441e-a936-ab12f2f64f36",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "To do this, we can use a variation of our `draw_square` function. Each time we need a petal for the flower, we'll simply call `draw_square`.\n\nSince we have six petals, we can use a `for` loop that runs six times—each time it runs, it'll call `draw_square`, and then rotate a little to get into position for the next petal.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 698702,
+              "key": "52396031-4410-46b9-8741-00a7c00cc4c8",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "52396031-4410-46b9-8741-00a7c00cc4c8",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "**Run** the code to see what kind of error you get.",
+                "Fix the error by passing the right type of argument to the `draw_square` function."
+              ],
+              "positive_feedback": "Nice work!",
+              "video_feedback": null,
+              "description": "Here's the code for drawing the flower—but it's not quite finished yet. Can you add the last little bit to get it working?"
+            },
+            {
+              "id": 722670,
+              "key": "17aa4d1c-7ee0-4486-8a97-5ca110b54ad1",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "view9i3odosx3ig",
+              "pool_id": "turtle",
+              "view_id": "custom-iframe-app-x1lfqqr9gmh",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "daemons": [
+                      {
+                        "id": "daemon",
+                        "cmd": ""
+                      }
+                    ],
+                    "openFiles": [
+                      "/home/workspace/workspace.py"
+                    ],
+                    "showFiles": false,
+                    "allowClose": false,
+                    "allowSubmit": false
+                  },
+                  "kind": "custom-iframe-app"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 722671,
+              "key": "23cf240c-e414-4b1b-af4a-c1b5f0d16bb0",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<div style=\"background-color: #a4e4f5;\">\n## ⚠️ Spoiler alert!\n**Our solution is below.** You'll learn more effectively if you give the exercise a strong effort before comparing your code with ours!\n</div>\n----",
+              "instructor_notes": ""
+            },
+            {
+              "id": 698703,
+              "key": "b435a817-540d-4494-bc9d-1723b5f1f824",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Solution\n\n```python\nimport turtle\n\ndef draw_square(some_turtle):\n    for side in range(4):\n        some_turtle.forward(100)\n        some_turtle.right(90)\n\nromeo = turtle.Turtle()\nromeo.color(\"violet\")\nromeo.speed(8)\nfor petal in range(6):\n    draw_square(romeo)\n    romeo.right(60)\n```",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 722672,
+          "key": "fe00a47b-4b11-4a65-84c2-78e0c36916da",
+          "title": "Square flower (2/3)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "fe00a47b-4b11-4a65-84c2-78e0c36916da",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 722673,
+              "key": "217e233f-d51e-4246-a3df-dc94c9433b70",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Square flower (2/3)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 722674,
+              "key": "7259fe32-1c56-4f9d-8b2c-fb40cceaa183",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "I decided that I really like that weird square flower pattern, and I want to make a bunch more of them. \n\nRather than typing the same code over and over, it would be great if we had a `draw_flower` function that we could call.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 722676,
+              "key": "defbae9a-a938-489a-8f77-3ddaa531a4fe",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "defbae9a-a938-489a-8f77-3ddaa531a4fe",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Add a `def` statement to create a function called `draw_flower`.",
+                "Make sure to include a `some_turtle` parameter, just like we have for the `draw_square` function.",
+                "Put the flower-drawing code inside the body of the function (by indenting it).",
+                "In the body of the function, replace all instances of `romeo` with `some_turtle`.",
+                "Call the function to make sure it works."
+              ],
+              "positive_feedback": "Great!",
+              "video_feedback": null,
+              "description": "The part of the code that draws the flower is this block here:\n\n```python\nfor petal in range(6):\n    draw_square(romeo)\n    romeo.right(60)\nromeo.hideturtle()\n```\nCan you turn this into a function?"
+            },
+            {
+              "id": 722675,
+              "key": "c7277cf7-ade8-4e66-ae87-6d7944ae9904",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "viewpqdi1l5on9e",
+              "pool_id": "turtle",
+              "view_id": "custom-iframe-app-dikfjiywqci",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "daemons": [
+                      {
+                        "id": "daemon",
+                        "cmd": ""
+                      }
+                    ],
+                    "openFiles": [
+                      "/home/workspace/workspace.py"
+                    ],
+                    "showFiles": false,
+                    "allowClose": false,
+                    "allowSubmit": false
+                  },
+                  "kind": "custom-iframe-app"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 722677,
+              "key": "fcc36a33-a494-4b82-9d27-ff9bf454c6d8",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Solution\n\n```python\nimport turtle\n\nromeo = turtle.Turtle()\nromeo.color(\"violet\")\nromeo.speed(8)\n\ndef draw_square(some_turtle):\n    for side in range(4):\n        some_turtle.forward(100)\n        some_turtle.right(90)\n\ndef draw_flower(some_turtle):\n    for petal in range(6):\n        draw_square(some_turtle)\n        some_turtle.right(60)\n    some_turtle.hideturtle()\n\ndraw_flower(romeo)\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 722682,
+              "key": "90f0a8b1-f477-4401-9c45-9ab6762d3233",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Functions calling functions\n\nIn the above code, notice that we have **a function that calls another function**. We call the `draw_flower` function, which then calls the `draw_square` function.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 722683,
+              "key": "18089be7-e12a-4122-836f-5c4c17dfa246",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2018/September/5ba70235_functions-calling-functions/functions-calling-functions.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/18089be7-e12a-4122-836f-5c4c17dfa246",
+              "caption": "An example of a function calling another function.",
+              "alt": "An example of a function calling another function.",
+              "width": 530,
+              "height": 464,
+              "instructor_notes": null
+            },
+            {
+              "id": 722684,
+              "key": "8b9534ed-1d6b-45a5-8d25-f082f024aab5",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "This is a very common thing that you'll see in programming. In fact, some programs are made up almost entirely of functions that call functions that call yet more functions!\n\nThis approach is common because it has significant advantages. For example, we could add more code to this program that uses the `draw_square` function for something else (other than drawing flowers). By separating different tasks into their own functions, you can make your code easier to use and more flexible.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 722678,
+          "key": "d45a1d26-98ea-403e-bd65-0a845780c5c6",
+          "title": "Square flower (3/3)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d45a1d26-98ea-403e-bd65-0a845780c5c6",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 722687,
+              "key": "93bb0cf7-eccb-429d-a228-bf0fe2a337d4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Square flower (3/3)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 722679,
+              "key": "53ac43ce-82c7-43fc-9bae-a67c482f5543",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Here's a key thing to notice about our `draw_flower` function: **We can pass a turtle to a function.** When we call `draw_flower`, we pass it a turtle (like `romeo`), which gets assigned to the `some_turtle` parameter. \n\nWhile the function is running, `some_turtle` will refer to the same underlying turtle object as `romeo`. (We said \"while the function is running\", because `some_turtle` is a local variable; it won't be recognized outside of the function.)\n\nBut wait, why did we do that? Why not just have `romeo` everywhere? Why bother with this `some_turtle` parameter?\n\nWell, if we had just used `romeo`, then the flowers would always be drawn by the same turtle. By using a parameter for the turtle, we can use the `draw_flower` function with _any_ turtle.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 722681,
+              "key": "5d74b6bf-ae12-40f8-a860-9e775b4f7417",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "5d74b6bf-ae12-40f8-a860-9e775b4f7417",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Add a second function call at the end of the code—but this time, pass `juliet` to the `draw_flower` function.",
+                "**Run** the code—now `romeo` and `juliet` will each draw their own flower!"
+              ],
+              "positive_feedback": "**Great!**",
+              "video_feedback": null,
+              "description": "We can have more than one turtle in our code, and any of those turtles can use the `draw_flower` function!\n\nWe've added a second turtle, `juliet`, to the code so that you can try this out.\n\n(By the way, the concepts you're learning here *do* apply to all kinds of functions—not just Shakespearean turtles drawing weird geometric flower shapes.)"
+            },
+            {
+              "id": 722680,
+              "key": "8fbfac72-b26b-4830-8dce-441eb1a33714",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "view24costist0r",
+              "pool_id": "turtle",
+              "view_id": "custom-iframe-app-yd43fzp5o4",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "daemons": [
+                      {
+                        "id": "daemon",
+                        "cmd": ""
+                      }
+                    ],
+                    "openFiles": [
+                      "/home/workspace/workspace.py"
+                    ],
+                    "showFiles": false,
+                    "allowClose": true,
+                    "allowSubmit": false
+                  },
+                  "kind": "custom-iframe-app"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 722727,
+              "key": "c5577cc9-77e8-4ada-a799-588be6390099",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<div style=\"background-color: #a4e4f5;\">\n## ⚠️ Spoiler alert!\n**Our solution is below.** You'll learn more effectively if you give the exercise a strong effort before comparing your code with ours!\n</div>\n----",
+              "instructor_notes": ""
+            },
+            {
+              "id": 722726,
+              "key": "cc1e4276-c6e0-49ee-a28e-efc3582d2246",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Solution\n\nSince `romeo` is drawing with a thicker line (and in a different color), you should be able to see both flowers in the end (with `juliet`'s flower on top).\n\n```python\nimport turtle\n\nromeo = turtle.Turtle()\nromeo.color(\"violet\")\nromeo.width(5)\nromeo.speed(8)\n\njuliet = turtle.Turtle()\njuliet.color(\"misty rose\")\njuliet.speed(8)\n\ndef draw_square(some_turtle):\n    for side in range(4):\n        some_turtle.forward(100)\n        some_turtle.right(90)\n\ndef draw_flower(some_turtle):\n    for petal in range(6):\n        draw_square(some_turtle)\n        some_turtle.right(60)\n    some_turtle.hideturtle()\n\ndraw_flower(romeo)\ndraw_flower(juliet)\n```",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

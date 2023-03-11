@@ -1,0 +1,2150 @@
+{
+  "data": {
+    "lesson": {
+      "id": 1004962,
+      "key": "76f4c48c-a664-4750-8753-5811c854d02a",
+      "title": "EHR Code Sets",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "In this lesson you will learn how to work with different EHR codes and how to map them properly to records.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "AI in EHR Course Glossary",
+            "uri": "https://video.udacity-data.com/topher/2020/April/5e9cfa72_ai-ehr-course-glossary/ai-ehr-course-glossary.pdf"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 1005431,
+          "key": "efcefe17-57d3-40dc-9820-89902489db95",
+          "title": "EHR Code Sets Overview",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "efcefe17-57d3-40dc-9820-89902489db95",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1005432,
+              "key": "840c323d-8ef6-4390-bb59-05994bf21622",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Code Sets Overview",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1005433,
+              "key": "c731e93d-4851-4826-9a04-63f0debf1631",
+              "title": "ND320 AIHCND C01 L02 A01 Lesson Introduction V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "SujygiJByj8",
+                "china_cdn_id": "SujygiJByj8.mp4"
+              }
+            },
+            {
+              "id": 1005435,
+              "key": "540d62d5-feba-43fb-bca9-0a2ea6432261",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Lesson Overview",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1005434,
+              "key": "c0005599-eb3a-4ccd-b05d-4831fdaa8f81",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e8b9211_l2-ehr-code-sets/l2-ehr-code-sets.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/c0005599-eb3a-4ccd-b05d-4831fdaa8f81",
+              "caption": "",
+              "alt": "",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1011265,
+              "key": "ba561f1c-e97e-46c3-a5fa-8deb27d4fb03",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Working with EHR Code Sets\nYou are about 20% of the way through and you have gained some very important skills in dealing with EHR data. Now you'll build even more on those skills as we begin to look at Electronic Health Record Code sets. But before we get started, let's review what will be covered in this lesson.\n\nThis lesson will delve into Code Sets in EHR and how to work with them, including:\n- Diagnosis Codes\n  - IDC10-CM\n- Procedure Codes\n  - ICD10 - PCS\n  - CPT\n  - HCPCS\n- Medication Codes\n  - NDC Codes\n  - RXNorm\n- Using these codes to group and categorize your datasets\n  - Using CCS\n\nThis is very important because of how many codes there are in the medical field. If you don't understand the codes, you will likely not get all of and/or the right data you need for creating your models. So get ready for a lot of different codes! You'll be a master at figuring them out and using them to group your data by the time you're done.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1009645,
+          "key": "f071590a-6eff-4b14-aa4d-c9c66a773363",
+          "title": "Codes Sets Background",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "f071590a-6eff-4b14-aa4d-c9c66a773363",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1009648,
+              "key": "ee5c247e-097b-4024-848e-e60b5400b9cf",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Codes Sets Background",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009647,
+              "key": "d867e4bd-cd5c-47f7-895d-0a4964d97831",
+              "title": "ND320 AIHCND C01 L02 A02 Codes Sets Background",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "AK40FT6k0tU",
+                "china_cdn_id": "AK40FT6k0tU.mp4"
+              }
+            },
+            {
+              "id": 1009649,
+              "key": "401f480a-793f-454a-9e67-eb3ea1585bfd",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Key Points\n\nFor the purposes of this course, when we refer to a code set we are referencing an EHR data field that is linked to an accepted code standard such as ICD10 or CPT codes, which you will learn more about shortly.\nExamples of important code sets are diagnosis codes and procedure codes. We will go over these in more detail later. \n\n### Why do we need code sets? \nThere are many different providers and EHR systems around the world. There needs to be a standard way to encode common diagnoses, medications, procedures, and lab test results across all these providers and systems. We will focus on some of the most common code sets that allow for some of the most high-value analysis.\n\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1011269,
+              "key": "874a29b3-d7eb-401a-b7b1-135bdc6c3283",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e8e1ab1_l2-ehr-code-sets/l2-ehr-code-sets.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/874a29b3-d7eb-401a-b7b1-135bdc6c3283",
+              "caption": "Context of a Medical Encounter",
+              "alt": "Context of a Medical Encounter",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1011268,
+              "key": "dcea6ef1-e705-4d29-a712-5b9e3d2c8f5a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Context of a Medical Encounter\n**Medical Encounter**: An interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.  \n\nThis could also be online in today's world. During each encounter, one or more codes are generated about your encounter.\n\n1. It is important to note that medical records often go through a process from a written note or some other unstructured input to a structured medical code that is standardized but can be very specific. There is a whole industry of medical coders that take this unstructured information and “code” it to medical code standards and into EHR records.\n\n2.  Another piece of information that is relevant to industry codes is whether the encounter occurred in an inpatient or outpatient setting. \n  - Inpatient usually refers to hospitalization.\n  - Outpatient refers to visits and encounters like visits with your primary care physician or specialists like a cardiologist but do not require hospitalization. \n  - Outpatient can also refer to ambulatory care. \n\nIt is important to work with subject-matter experts who know the domain and processes at a much deeper level. There are a lot of intricacies and details in healthcare that require you to work deeply with SMEs to understand the context better. \n\nHowever, you should feel empowered to bring the technology and AI perspective to the table and re-think legacy processes!\n\n## Importance of Using Codes to Group/Categorize Your Data\n\nAs you will see in a bit there are literally thousands of medical codes in use and each time have a **Medical Encounter**, you have several of these codes added to that encounter. If you do not properly group/categorize your data, you may end up with missing or incorrect data to feed into your model. As an example let's say you knew one of the diagnosis codes for Sepsis and wanted to build a model around predicting which patients are at the greatest risk for Sepsis. \nSepsis- sepsis during labor (O75.3)\nIf you used only that code to build your dataset for training you are likely missing out on thousands of other records that also deal with Sepsis, but have a different code. \n\nHere is a link to the Sepsis codes to see some others: [IDC10-CM Sepsis Codes](https://www.icd10data.com/ICD10CM/Codes/A00-B99/A30-A49/A41-/A41)\n\nThis would lead your model to be inaccurate. This concept will become clearer as dig deeper.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1013317,
+              "key": "7d2ad6f1-1f5d-41cb-b97b-4ee9ed146e9e",
+              "title": "Medical Encounters",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "7d2ad6f1-1f5d-41cb-b97b-4ee9ed146e9e",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following are medical encounters?",
+                "answers": [
+                  {
+                    "id": "a1586810928818",
+                    "text": "A yearly checkup",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1586810960817",
+                    "text": "Getting blood work",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1586810980608",
+                    "text": "Having a CAT scan",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1586811002389",
+                    "text": "An emergency visit",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1005436,
+          "key": "66c28cbc-955d-4e50-9a78-6d06193e3d36",
+          "title": "Diagnosis Codes Part 1",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "66c28cbc-955d-4e50-9a78-6d06193e3d36",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1005437,
+              "key": "6499648b-07a0-40e6-a37c-707f1c16893b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Diagnosis Codes",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1005438,
+              "key": "82a37fd3-5dca-4c3d-8a85-1df6b6c44d66",
+              "title": "ND320 AIHCND C01 L02 A03 Diagnosis Codes Part 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "utTEMMukXfo",
+                "china_cdn_id": "utTEMMukXfo.mp4"
+              }
+            },
+            {
+              "id": 1005439,
+              "key": "472daf60-f83b-4c27-857c-5946e3cecb51",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Diagnosis Codes Key Points\nIn Healthcare, the different diagnosis code sets are extremely important and can sometimes be tricky to deal with. But don't worry, when you are done with this section, you'll be a able to crack the code like a pro!\n\n### What is a diagnosis?\nLet’s imagine that you see a doctor and you have some symptoms such as coughing and a stomach ache and then your doctor magically comes up with a diagnosis. As we will learn later this diagnosis is a key piece of information that connects so much of the encounter experience together.\n\n### ICD10\n**ICD10**: International Classification of Diseases 10 \n- Also known as ICD10\n- Standard developed by **WHO**: World Health Organization and in 10th revision\n\n### ICD10-CM\n**ICD10-CM**: International Classification of Diseases 10 - Clinical Modification \n\nDiagnosis code standard used in the U.S. \n- Maintained by U.S. CDC\n- Contains a wide variety of diseases and conditions \n- Used for Medical claims, disease epidemic, and mortality tracking\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1011279,
+              "key": "418471e3-46f6-4a20-9709-ad552f6c438c",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e8e20d2_l2-ehr-code-sets-1/l2-ehr-code-sets-1.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/418471e3-46f6-4a20-9709-ad552f6c438c",
+              "caption": "ICD9 to 10",
+              "alt": "ICD9 to 10",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1011280,
+              "key": "001fd560-90d7-4c03-bccd-dc33e6bec973",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### ICD9 to 10\nThe U.S. had been using ICD9 since 1979  until it adopted ICD10 in October of 2014. The US lagged a bit behind the rest of the world who had adopted ICD10 much earlier. The reason for the changes from ICD9 to ICD10 is that the code set was not robust enough to meet future healthcare needs. \n\nImportant Changes: \n- 14,025 codes => 69,823 codes\n- Up to 7 characters\n- Created a much higher level of detail\n  - Included things like laterality or side of injury\n\nYou can learn more by looking at the [CDC's Rationale](https://www.cdc.gov/nchs/icd/icd10cm_pcs_background.htm)\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1011282,
+              "key": "21706846-1a5c-4a10-8a6f-73c522aed10c",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e8e2259_l2-ehr-code-sets-2/l2-ehr-code-sets-2.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/21706846-1a5c-4a10-8a6f-73c522aed10c",
+              "caption": "ICD10- CM Code Structure",
+              "alt": "ICD10- CM Code Structure",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1011281,
+              "key": "43bbf50b-1643-4e5e-90fc-97ba638b0926",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## ICD10- CM Code Structure\n\n### *[ XXX ]*.XXX.X\n\nThe first part is the category of the diagnosis and it is the first three characters and could be an S code like the injury category. There are 21 different categories and these range from the disease of the respiratory system to injury, poisoning, and certain other consequences of external causes. \n\n### XXX.*[ XXX ]*.X\n\nThe Second is the etiology, anatomic site, and manifestation part which can be up to  3 more characters and is essentially the cause for a condition or disease or the location of the condition.\n\n### XXX.XXX.*[ X ]*\n\nFinally, the third part is the extension which is the last character and can be tricky b/c it can often be null or has an X placeholder. It is often used with injury-related codes referring to the episode of care.\n\n#### Additional Resources\n[Code Structure](https://library.ahima.org/doc?oid=106177#.Xm70u5NKhQI)\n[Coding Guidelines](https://www.cms.gov/Medicare/Coding/ICD10/Downloads/2019-ICD10-Coding-Guidelines-.pdf)\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1013726,
+              "key": "85b4c5de-4741-45b4-8b3e-244767f2cd20",
+              "title": "Pre test. ",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "85b4c5de-4741-45b4-8b3e-244767f2cd20",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "We will be digging into these codes more in the next section if you don't understand these yet, it's ok!  \n\nSee if you can use what you learned above to determine: \nWhich of the following are true about ICD10-CM code: **S93.01XA**? \n\nPlease use this website [2020 ICD-10CM Codes](https://www.icd10data.com/ICD10CM/) to help answer this question. ",
+                "answers": [
+                  {
+                    "id": "a1586886319483",
+                    "text": "This code is about the ventricle of the heart.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1586886491554",
+                    "text": "This code has to do with the left side.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1586886520889",
+                    "text": "This code is about an ankle sprain",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1586886586276",
+                    "text": "This code has to do with the right side.",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1013729,
+              "key": "929bf9bc-0c78-4c71-9b33-f7495da0b293",
+              "title": "Find the correct ICD10-CM Code.",
+              "semantic_type": "ReflectAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "929bf9bc-0c78-4c71-9b33-f7495da0b293",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "title": null,
+                "semantic_type": "TextQuestion",
+                "evaluation_id": null,
+                "text": "Again we will go over this more in-depth in the next section, but see if you can use your intuition to figure out the correct code for normal first pregnancy in the third trimester? \n\nPlease use this website [2020 ICD-10CM Codes](https://www.icd10data.com/ICD10CM/) to help answer this question. "
+              },
+              "answer": {
+                "text": "The answer for this one is **Z34.03**. Where **Z3**4 has to do with Encounter for supervision of normal first pregnancy, and the **03** indicates the 3rd trimester.",
+                "video": null
+              }
+            }
+          ]
+        },
+        {
+          "id": 1009657,
+          "key": "3277cb18-1de1-49c3-b42e-3287aae3fde0",
+          "title": "Diagnosis Codes Part 2",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "3277cb18-1de1-49c3-b42e-3287aae3fde0",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1009658,
+              "key": "2504e630-1427-4784-91b7-920c5d753578",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Diagnosis Codes Part 2",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009659,
+              "key": "05c57cd1-8389-4440-8305-376303e3294e",
+              "title": "ND320 AIHCND C01 L02 A04 Diagnosis Codes Part 2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "5msiZGehPQQ",
+                "china_cdn_id": "5msiZGehPQQ.mp4"
+              }
+            },
+            {
+              "id": 1011285,
+              "key": "3eaccd90-1afc-4c88-a082-b23d73e448d4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Diagnosis Codes Key Points\nFirst, it is important to note that it can take several encounters for a patient to receive a diagnosis, and therefore a diagnosis code. There may be an initial appointment, some follow-up testing, and then another appointment before a diagnosis is determined. This is very common. This means that there may not be diagnosis codes for every encounter. \n\nEncounter 1: G30.9, M06.9, **~~G30.9~~**\n\nSecond, a diagnosis code should never be repeated in the same encounter. \n\n- Encounter 1: **G30.9**, M06.9\n- Encounter 2: **G30.9**, M06.9, A34.6\n\nThird, it is expected that a diagnosis would carry across different encounters as the patient is being treated for that diagnosis.\n\n#### Additional Resources\nIn the video, we showed you the CDC lookup tool for ICD10-CM codes. The link is below. Go ahead and look up some codes you might be familiar with!\n- [CDC ICD10-CM Lookup Tool](https://icd10cmtool.cdc.gov/?fy=FY2019)\n- [Coronavirus ICD Code Announcement](https://www.cdc.gov/nchs/data/icd/Announcement-New-ICD-code-for-coronavirus-2-20-2020.pdf)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1011292,
+              "key": "c2f972f6-2fec-41e5-bf97-3065a53f874d",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e8e3c2a_l2-ehr-code-sets-4/l2-ehr-code-sets-4.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/c2f972f6-2fec-41e5-bf97-3065a53f874d",
+              "caption": "",
+              "alt": "",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1011293,
+              "key": "f164fa50-a75e-45c1-8c8b-245e10dc93a7",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Diagnosis Code Prioritization\nAt a high level, it is important to distinguish what code is taking up the most resources or is the most critical and there are few terms that you should become familiar with.\n- **Primary Diagnosis Code**: The code that takes up the most resources to treat.\n- **Principal Diagnosis Code**: The diagnosis that is found after hospitalization to be the one that is chiefly responsible.\n\nThis **can be** an important distinction since the admitting diagnosis code can widely differ from the final, Principal Diagnosis.  For the most part, these terms interchangeably but it's good to be aware of the differences and the need to dig into the details when necessary.\n\n- **Secondary Diagnosis Codes**: The other diagnosis codes listed on an encounter.\n\nFor example, if a patient were to have a knee replacement surgery but had type 2 diabetes as a prior condition, the secondary diagnosis code of type 2 diabetes would be included in the medical record. \n\n**Note**:  Secondary diagnoses codes can include many additional codes\n\n#### Additional Resources\n- [ICD10 -CM Coding Guidelines ](https://www.cms.gov/Medicare/Coding/ICD10/Downloads/2019-ICD10-Coding-Guidelines-.pdf)\n- [Primary, Principal, and Secondary Diagnosis Codes](https://www.hcpro.com/HIM-324035-5707/QA-Primary-principal-and-secondary-diagnoses.html)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1013734,
+              "key": "2fc8e1df-3f07-46e4-a188-19d2147f0d01",
+              "title": "Diagnosis Codes",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "2fc8e1df-3f07-46e4-a188-19d2147f0d01",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following are true about diagnosis codes as related to encounters?",
+                "answers": [
+                  {
+                    "id": "a1586888121765",
+                    "text": "Diagnosis codes should be repeated within an encounter.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1586888188122",
+                    "text": "Diagnosis codes can be repeated across encounters. ",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1586888216560",
+                    "text": "A diagnosis should be given on the first encounter.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1586888272334",
+                    "text": "It can take multiple encounters to reach a diagnosis.",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1013766,
+              "key": "6f5cbe75-76f7-41e5-9f1b-cd3fe8f3d862",
+              "title": "Diagnosis Code Prioritization",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "6f5cbe75-76f7-41e5-9f1b-cd3fe8f3d862",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Match the scenario with the correct diagnosis codes priority. "
+                },
+                "concepts_label": "Scenario",
+                "answers_label": "Diagnosis Code",
+                "concepts": [
+                  {
+                    "text": "A person comes into the ER after a bicycle accident with visible scrapes/abrasions and bruises. ",
+                    "correct_answer": {
+                      "id": "a1586893436292",
+                      "text": "Primary Diagnosis code would likely be about abrasions."
+                    }
+                  },
+                  {
+                    "text": "After having an X-Ray, it is determined that the person has a fractured tibia. ",
+                    "correct_answer": {
+                      "id": "a1586893794773",
+                      "text": "Secondary Diagnosis would likely be about a fractures."
+                    }
+                  },
+                  {
+                    "text": "After a thorough examination, it is further determined that the person also has a severe concussion. ",
+                    "correct_answer": {
+                      "id": "a1586893859522",
+                      "text": "Principal Diagnosis code would likely be about concussions."
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1586894050375",
+                    "text": "Principal Diagnosis code would likely be about a fractures."
+                  },
+                  {
+                    "id": "a1586894098070",
+                    "text": "Primary Diagnosis code would deal likely with concussions."
+                  },
+                  {
+                    "id": "a1586893859522",
+                    "text": "Principal Diagnosis code would likely be about concussions."
+                  },
+                  {
+                    "id": "a1586894138655",
+                    "text": "Secondary Diagnosis would likely be about a fractures."
+                  },
+                  {
+                    "id": "a1586894027037",
+                    "text": "Principal Diagnosis code would likely be about a abrasions."
+                  },
+                  {
+                    "id": "a1586893794773",
+                    "text": "Secondary Diagnosis would likely be about a fractures."
+                  },
+                  {
+                    "id": "a1586893436292",
+                    "text": "Primary Diagnosis code would likely be about abrasions."
+                  },
+                  {
+                    "id": "a1586894017186",
+                    "text": "Secondary Diagnosis would likely be about a abrasions."
+                  },
+                  {
+                    "id": "a1586893780922",
+                    "text": "Primary Diagnosis code would deal likely with fractures."
+                  },
+                  {
+                    "id": "a1586894124121",
+                    "text": "Secondary Diagnosis would likely be about a concussions."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1009634,
+          "key": "dfb018f3-a0b3-48f0-8aeb-9e6c34fa913a",
+          "title": "Grouping codes Walkthrough",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "dfb018f3-a0b3-48f0-8aeb-9e6c34fa913a",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1009636,
+              "key": "326fcb24-bda5-47ab-92ec-de214c5cad54",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Grouping Codes Walkthrough",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009637,
+              "key": "dfa2bbad-90ea-4a61-8044-a053ab229c38",
+              "title": "ND320 AIHCND C01 L02 A05 Grouping Codes",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "5u7O2sxM3X8",
+                "china_cdn_id": "5u7O2sxM3X8.mp4"
+              }
+            },
+            {
+              "id": 1020379,
+              "key": "697cefd5-3a53-413d-b143-fda34dfe4ae3",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "*Note at about 00:33 the instructor says four out of five records, however, he meant to say 5 out of 6 records*",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1011294,
+              "key": "1546b1ff-1147-401b-92f8-d1ab6b158802",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Key Points\n\nOne great method for grouping codes is using the `str.startswith()` method. While there are a lot of medical codes, the decision to provide a clear categorization system works in your favor here. \n\nEssentially you use `str.startswith()` by providing the number of characters you are looking for in your code.\n`str.startswith('4')` or `str.startswith('D35')`. While this is probably just a good review for you, the important part here is that you know how to find the right codes to search for in the first place.\n\nWe have provided a notebook for you below to practice this a bit! Have fun!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1011593,
+              "key": "4d5f1d68-9fd6-438c-a622-ddab1e74e2ed",
+              "title": "Grouping Codes",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "4d5f1d68-9fd6-438c-a622-ddab1e74e2ed",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following pieces of code would result in finding the correct results for the ICD10-CM codes for Type 1 Diabetes?\nPlease use [CDC ICD10-CM Code Search](https://icd10cmtool.cdc.gov/) to help you with this.",
+                "answers": [
+                  {
+                    "id": "a1586453874978",
+                    "text": "`str.startswith('D')`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1586454508923",
+                    "text": "`str.startswith('E')`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1586454543745",
+                    "text": "`str.startswith('Type 1 Diabetes')`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1586454565950",
+                    "text": "`str.starstwith('E10')`",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1011595,
+              "key": "5a91bd46-cabe-417e-b886-909fedbff415",
+              "title": "Apply Your Knowledge",
+              "semantic_type": "ReflectAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "5a91bd46-cabe-417e-b886-909fedbff415",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "title": null,
+                "semantic_type": "TextQuestion",
+                "evaluation_id": null,
+                "text": "Please write the correct code for  **Pneumonia due to other specified bacteria**. \n\nPlease use [CDC ICD10-CM Code Search](https://icd10cmtool.cdc.gov/) to help you with this."
+              },
+              "answer": {
+                "text": "If you answered `str.starstwith('J15.8')` you answered correctly!  Great job! If you didn't,  **J15** is for *Pneumonia* and the .8 is for *due to other specified bacteria*.",
+                "video": null
+              }
+            },
+            {
+              "id": 1013666,
+              "key": "173a7e0f-14a6-425a-9695-eebc6c726bd4",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1009634xJUPYTERf0pn0gfk",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-kt8r7",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Lesson_Code_Sets_screencast.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1009433,
+          "key": "606729e5-b4a0-43fd-9766-62bfae1b991d",
+          "title": "Diagnosis Code Grouping Exercise",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "606729e5-b4a0-43fd-9766-62bfae1b991d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1013667,
+              "key": "cec7d932-1267-4210-90c0-91ab6601749a",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1009433xJUPYTER7ivobcjm",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-gncc0",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Lesson_Code%20Sets_Exercise_1_Starter_Code.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1009434,
+          "key": "b8de2ac3-1833-4a7b-9775-bbc7a2e32571",
+          "title": "Diagnosis Code Grouping Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "b8de2ac3-1833-4a7b-9775-bbc7a2e32571",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1009435,
+              "key": "15a11492-e01c-4ab3-852b-49a5a4f31265",
+              "title": "ND320 AIHCND C01 L02 A06 Exercise 1 Diagnosis Code Grouping",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "IbfM3RASER0",
+                "china_cdn_id": "IbfM3RASER0.mp4"
+              }
+            },
+            {
+              "id": 1013669,
+              "key": "81262af4-4991-43c0-ba73-073e11d5bd64",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1009434xJUPYTER44wjwh6z",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-iklm6",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Lesson_Code%20Sets_Exercises_Solutions.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1005445,
+          "key": "9e9ef750-5450-48f6-8f34-1870cd460225",
+          "title": "Procedure Codes",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "9e9ef750-5450-48f6-8f34-1870cd460225",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1005446,
+              "key": "4b0ae6fa-3d8c-4114-a7fa-5481c970b600",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Procedure Codes",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1005447,
+              "key": "fa718273-7666-4317-b8f5-3e5775265e6b",
+              "title": "ND320 AIHCND C01 L02 A07 Prodedure Codes",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "g5pWanBrvSc",
+                "china_cdn_id": "g5pWanBrvSc.mp4"
+              }
+            },
+            {
+              "id": 1005448,
+              "key": "c463f545-30ec-41d7-8752-3b02e7a58ab8",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Key Points\n**Procedure Codes**: the categorization of the medical codes during an encounter.\nIt's important to note if a procedure is inpatient or outpatient. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1011596,
+              "key": "2be6c0c7-6e69-4069-9795-b55da2bae260",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e8f6b65_l2-ehr-code-sets-3/l2-ehr-code-sets-3.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/2be6c0c7-6e69-4069-9795-b55da2bae260",
+              "caption": "Key Procedure Code Sets",
+              "alt": "Key Procedure Code Sets",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1011771,
+              "key": "44646c1b-c3c5-4461-a2b9-a308225b98f7",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Key Procedure Code Sets\n\nThe graphic above shows some additional information about 3 of the important code sets. Here are the key points about each of them.\n-  **ICD10 PCS**: Procedure Coding Systems\n  - Only for **Inpatient**\n  - 72,000+ codes as of 2019\n  - Focus on medical and surgical\n- **CPT**: Current Procedural Terminology\n  - **Outpatient** focused but can apply to physician visits in ambulatory settings\n  - 10,000+ codes as of 2019\n  - Focus on professional services by physician\n- **HCPCS**:  Healthcare Common Procedure Coding System\n  - Inpatient and outpatient\n  - Has 3 levels\n    - L1: CPT Codes\n    - L2: Non-physician services  \n     - DME: Durable Medical Equipment\n     - Ambulatory Services\n     - Dental\n   - L3:  Medicare/Medicaid  related\n\nWe will focus on ICD-10 PCS and CPT codes, but it's good to be aware of HCPCS codes, too!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1011775,
+              "key": "0a19c49f-54be-47c3-a03d-8187f17b1dba",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e8f8994_l2-ehr-code-sets-6/l2-ehr-code-sets-6.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/0a19c49f-54be-47c3-a03d-8187f17b1dba",
+              "caption": "ICD10 PCS Selections",
+              "alt": "ICD10 PCS Selections",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1012304,
+              "key": "10b09df9-2c31-4a27-98ab-dfe81385fcf1",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### ICD10-PCS Code Structure\n- 7 alphanumeric characters [A-Z, 0-9]\n- 1st character is the Section \n  - Reference Section codes categories in the table above\n- Subsequent characters relate to the *Section* and give:\n  - Body System\n  - Body Part\n  - Approach\n  - Device used for a procedure\n\n#### Additional Resources\n- [PCS Procedure Code System](https://www.cms.gov/Medicare/Coding/ICD10/Downloads/2014-pcs-procedure-coding-system.pdf)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1011773,
+              "key": "16251ff8-81a6-4157-ad47-f04061e61cd7",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e8f8953_l2-ehr-code-sets-4/l2-ehr-code-sets-4.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/16251ff8-81a6-4157-ad47-f04061e61cd7",
+              "caption": "Coronary Heart Code Example: 027004Z",
+              "alt": "Coronary Heart Code Example: 027004Z",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1012308,
+              "key": "a819adbe-8de9-4478-a21d-eede0c377fc3",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## PCS Code Example\nFor this example we used 027004Z. \nThis is a Heart Surgery code that relates to:\n- Dilation of Coronary Artery\n- One Site with Drug-eluting Intraluminal Device\n- Open Approach \n\nYou can see the breakdown in the image above.\nIn the table, you can see that this code starts with **0**, which is the **Medical** category.\nIf you look over the link from the last section, [PCS Procedure Code System](https://www.cms.gov/Medicare/Coding/ICD10/Downloads/2014-pcs-procedure-coding-system.pdf), you can further see where the rest of the code breaks down.\n- 0 = Medical\n- 2 = Heart and Great Vessels\n- 7 = Dilation\n- 0 = Coronary Artery, One Site\n- 0 = Open Approach\n- 4 = Drug-eluting Intraluminal Device\n- Z = No Qualifier\n\n#### Additional Resources\n- [PCS Overview](https://www.tacomacc.edu/userfiles/servers/server_6/file/him/him240/pcsoverview/pcsoverview4)\n- [Medicare Coding](https://www.cms.gov/Medicare/Coding/ICD10/Downloads/2016-PCS-Slides.pdf)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1013776,
+              "key": "e1c65049-508e-4bb4-9efe-7c41acfa6788",
+              "title": "Code Sets",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "e1c65049-508e-4bb4-9efe-7c41acfa6788",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which code set focuses only on inpatient services?",
+                "answers": [
+                  {
+                    "id": "a1586894516577",
+                    "text": "CPT",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1586894580774",
+                    "text": "ICD10 - PCS",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1586894591120",
+                    "text": "HCPCS",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1012325,
+              "key": "cc398653-0a6b-4bfb-9437-fd459e099ca3",
+              "title": "PCS Code Quiz",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "cc398653-0a6b-4bfb-9437-fd459e099ca3",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Using Page 4 of the [PCS Procedure Code System](https://www.cms.gov/Medicare/Coding/ICD10/Downloads/2014-pcs-procedure-coding-system.pdf) PDF, determine which of the following would be the correct code for Dilation of Three Coronary Arteries using a Radioactive Intraluminal Device via Percutaneous Endoscopic approach.",
+                "answers": [
+                  {
+                    "id": "a1586557847268",
+                    "text": "02724TZ",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1586558160058",
+                    "text": "02714TZ",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1586558184493",
+                    "text": "12733DZ",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1586558208658",
+                    "text": "02723DZ",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1011774,
+              "key": "373d07cb-8e5e-4bd8-8705-294ef6f81202",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e8f8960_l2-ehr-code-sets-5/l2-ehr-code-sets-5.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/373d07cb-8e5e-4bd8-8705-294ef6f81202",
+              "caption": "CPT Category 1 Billable Codes",
+              "alt": "CPT Category 1 Billable Codes",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1012326,
+              "key": "30a67f95-7b0e-4811-890d-09cb5aaf96ff",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## CPT Codes\nCPT codes have the following structure:\n- Up to 5 numbers\n- 3 Categories\n  - Category 1: Billable codes\n    - 10 sections largely split along biological systems which are broken out in the image above\n  - Category 2: \n    - Five digits that end in F\n    - Non-billable\n    - Performance measure focused on physicals and patient history\n  - Category 3:\n    - Services and procedures using emerging technology\n\nGenerally, you'll focus on the first two categories.\n\nAs a reminder, we will not be covering HCPCS Codes. However, we have added some additional links regarding HCPCS codes below.\n\n#### Additional Links\n- [Understanding CPT Codes](https://www.aapc.com/resources/medical-coding/cpt.aspx)\n- [CMS.gov Database Download for CPT Codes ](https://www.cms.gov/medicare-coverage-database/license/cpt-license.aspx?from=~/overview-and-quick-search.aspx&npage=/medicare-coverage-database/downloads/downloadable-databases.aspx)\n- [CMS.gov HCPCS Codes Information](https://www.cms.gov/Medicare/Coding/MedHCPCSGenInfo)\n- [HCPCS Wikipedia](https://en.wikipedia.org/wiki/Healthcare_Common_Procedure_Coding_System)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1012327,
+              "key": "91dd9490-de45-4a24-9da5-23b6e0c2af8e",
+              "title": "CPT Code Quiz",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "91dd9490-de45-4a24-9da5-23b6e0c2af8e",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Match the CPT Code with the correct high level Category (1,2,3) or Billable Code Category, if it has one."
+                },
+                "concepts_label": "CPT Code",
+                "answers_label": "Category",
+                "concepts": [
+                  {
+                    "text": "49878",
+                    "correct_answer": {
+                      "id": "a1586559993315",
+                      "text": "Digestive System"
+                    }
+                  },
+                  {
+                    "text": "97563",
+                    "correct_answer": {
+                      "id": "a1586560168707",
+                      "text": "Evaluation & Management Systems"
+                    }
+                  },
+                  {
+                    "text": "3875F",
+                    "correct_answer": {
+                      "id": "a1586560174690",
+                      "text": "Category 2"
+                    }
+                  },
+                  {
+                    "text": "79832",
+                    "correct_answer": {
+                      "id": "a1586560181877",
+                      "text": "Radiology Services"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1586560181877",
+                    "text": "Radiology Services"
+                  },
+                  {
+                    "id": "a1586560174690",
+                    "text": "Category 2"
+                  },
+                  {
+                    "id": "a1586559993315",
+                    "text": "Digestive System"
+                  },
+                  {
+                    "id": "a1586560168707",
+                    "text": "Evaluation & Management Systems"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1013782,
+              "key": "cebf60bd-7ab4-474b-a601-3e622004e48a",
+              "title": "Code Sets Quiz",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "cebf60bd-7ab4-474b-a601-3e622004e48a",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Match the correct code set to its attributes."
+                },
+                "concepts_label": "Attibutes",
+                "answers_label": "Code Set",
+                "concepts": [
+                  {
+                    "text": "10,000+ Codes",
+                    "correct_answer": {
+                      "id": "a1586894740191",
+                      "text": "CPT"
+                    }
+                  },
+                  {
+                    "text": "Focus on medical and surgical",
+                    "correct_answer": {
+                      "id": "a1586894805015",
+                      "text": "ICD10-PCS"
+                    }
+                  },
+                  {
+                    "text": "72,000+ codes",
+                    "correct_answer": {
+                      "id": "a1587319453416",
+                      "text": "ICD10-PCS"
+                    }
+                  },
+                  {
+                    "text": "Has 3 Categories",
+                    "correct_answer": {
+                      "id": "a1587319503037",
+                      "text": "CPT"
+                    }
+                  },
+                  {
+                    "text": "Has 3 levels",
+                    "correct_answer": {
+                      "id": "a1587319560386",
+                      "text": "HCPCS"
+                    }
+                  },
+                  {
+                    "text": "Up to 5 numbers",
+                    "correct_answer": {
+                      "id": "a1587319567456",
+                      "text": "CPT"
+                    }
+                  },
+                  {
+                    "text": "Up to 7 alphanumeric digits",
+                    "correct_answer": {
+                      "id": "a1587319605967",
+                      "text": "ICD10-PCS"
+                    }
+                  },
+                  {
+                    "text": "Focused on Outpatient",
+                    "correct_answer": {
+                      "id": "a1587319649208",
+                      "text": "CPT"
+                    }
+                  },
+                  {
+                    "text": "Only Deals with Inpatient",
+                    "correct_answer": {
+                      "id": "a1587319677303",
+                      "text": "ICD10-PCS"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1587319605967",
+                    "text": "ICD10-PCS"
+                  },
+                  {
+                    "id": "a1587319560386",
+                    "text": "HCPCS"
+                  },
+                  {
+                    "id": "a1587319453416",
+                    "text": "ICD10-PCS"
+                  },
+                  {
+                    "id": "a1587319677303",
+                    "text": "ICD10-PCS"
+                  },
+                  {
+                    "id": "a1587319503037",
+                    "text": "CPT"
+                  },
+                  {
+                    "id": "a1587319567456",
+                    "text": "CPT"
+                  },
+                  {
+                    "id": "a1587319649208",
+                    "text": "CPT"
+                  },
+                  {
+                    "id": "a1586894740191",
+                    "text": "CPT"
+                  },
+                  {
+                    "id": "a1586894805015",
+                    "text": "ICD10-PCS"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1009436,
+          "key": "c10ce7eb-6856-43ec-bafa-e48a1fd0c8ef",
+          "title": "Procedure Code Grouping Exercise",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c10ce7eb-6856-43ec-bafa-e48a1fd0c8ef",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1013931,
+              "key": "ad0f7566-37dc-476d-8773-3cb708b97256",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1009433xJUPYTER7ivobcjm",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-if8ky",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Lesson_Code%20Sets_Exercise_2_Starter_Code.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1009437,
+          "key": "77df752c-3206-499a-a6e9-51dc6b112420",
+          "title": "Procedure Code Grouping Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "77df752c-3206-499a-a6e9-51dc6b112420",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1010822,
+              "key": "a5822caf-fb6b-4e8e-b236-56bdaf22e881",
+              "title": "ND320 AIHCND C01 L02 A08 Exercise 2 Procedure Code Grouping",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "jwuZhZjqQj4",
+                "china_cdn_id": "jwuZhZjqQj4.mp4"
+              }
+            },
+            {
+              "id": 1013932,
+              "key": "c65b3cf3-90c6-4fb6-9f0a-b924ded42260",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1009434xJUPYTER44wjwh6z",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-nwvps",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Lesson_Code%20Sets_Exercises_Solutions.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1005451,
+          "key": "5d48e35a-a785-4642-bad7-631cc878ce9f",
+          "title": "Medication Codes",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5d48e35a-a785-4642-bad7-631cc878ce9f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1005452,
+              "key": "1132fdb3-d197-4484-bc8a-b75287ad5a4d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Medication Codes",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1005453,
+              "key": "4d861ce0-29b5-4746-bbb0-7151c2802d56",
+              "title": "ND320 AIHCND C01 L02 A09 Medication Codes V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "3EWuX8eCVEs",
+                "china_cdn_id": "3EWuX8eCVEs.mp4"
+              }
+            },
+            {
+              "id": 1005454,
+              "key": "f80bc9fc-7fb7-4da5-a891-289271e1c909",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Medication Code Key Points\n**NDC**: National Drug Code\n\nIn this section, we discussed the NDC Codes. These codes have been in place since 1972, and are maintained by the FDA.\n\n### NDC Code Structure\n- 10- to 11-digit code\n  - multiple configurations\n- 3 Parts\n  - Labeler: Drug manufacturer\n  - Product code: the actual drug details\n  - Package code: form and size of medication\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1011776,
+              "key": "4810f124-e769-47b1-a31d-39c467bf95d7",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e8f8a68_l2-ehr-code-sets-7/l2-ehr-code-sets-7.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/4810f124-e769-47b1-a31d-39c467bf95d7",
+              "caption": "",
+              "alt": "",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1012328,
+              "key": "9f8e27c7-3412-4f10-b6f9-d4b13add5a22",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In the image above you, can see the first part of the NDC code for *Tecentriq*. \n\nThe first part of the code **50242** is the **Labeler**, which maps to the manufacturer of the drug (which in this case is **Genentech, Inc**).",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1011777,
+              "key": "577ce30b-e5fa-425e-962c-8d2037542569",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e8f8a73_l2-ehr-code-sets-8/l2-ehr-code-sets-8.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/577ce30b-e5fa-425e-962c-8d2037542569",
+              "caption": "NDC Product Code",
+              "alt": "NDC Product Code",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1012329,
+              "key": "fbc30b23-9bce-4c3c-9a0c-4f5b04567ac1",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In the example above, we are looking at the middle section of the code **917**.\n\n**917** is the **Product Code**. In this case, it takes the unpronounceable, Non-Proprietary Name, **ATEZOLIZUMAB 1200mg/20ml** and maps it to the Proprietary Name, **Tecentriq**.\nIt also indicates that the drug dosage form is **Injection, Solution** and the route of administration is **Intravenous**.\n\nIt is important to note that you may need to use the Non-Proprietary Name in order to group a drug by all of its generics. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1011778,
+              "key": "e7c4bf6f-edcc-4626-923c-eef23b06e307",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e8f8a7e_l2-ehr-code-sets-9/l2-ehr-code-sets-9.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/e7c4bf6f-edcc-4626-923c-eef23b06e307",
+              "caption": "NDC Packaging Code",
+              "alt": "NDC Packaging Code",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1013237,
+              "key": "c2911c28-0ee7-4428-9a5b-20a057770032",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Finally, the last two digits **01**.\n\nThis is the **packaging code**, and in this instance indicates that the package is a 14ml single vial in 1 carton for single use.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1011780,
+              "key": "429eefb0-833c-4b31-8777-65211721bd44",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e8f8aa3_l2-ehr-code-sets-10/l2-ehr-code-sets-10.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/429eefb0-833c-4b31-8777-65211721bd44",
+              "caption": "HCPCS Crosswalk",
+              "alt": "HCPCS Crosswalk",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1013238,
+              "key": "ff1298a9-fed0-4f13-92fc-3025f22446bc",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Crosswalk\n**Crosswalk**:  A connection between two different code sets or versions of drugs in the same code set.\n\nA common term you will hear for medical code sets is a crosswalk. \n\nFor NDC codes we can connect them to HCPCS codes and depending on the data source you are looking at there may be a mapping from these codes. \n\nFor the previous example, there is a crosswalk between the Tecentriq NDC code and the HCPCS code J9022. Something to note is that the HCPCS code starts with a J and the “J” codes tend to be drugs that are injected but by definition, they are drugs that are not taken orally.  You can see that the HCPCS code maps some info from the NDC code.\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1011779,
+              "key": "ccdb7e7d-2672-4132-a7c7-e5ef3b549d88",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e8f8a8e_l2-ehr-code-sets-11/l2-ehr-code-sets-11.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/ccdb7e7d-2672-4132-a7c7-e5ef3b549d88",
+              "caption": "NDC Code Challenges",
+              "alt": "NDC Code Challenges",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1013239,
+              "key": "d7021cb0-180a-4916-b4bd-585a206b4f43",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Challenge with NDC Codes\nOne of the major challenges with NDC codes is to normalize or group codes by common types of drugs. For example, let’s take acetaminophen. You would think this would be relatively straightforward to group whenever someone has the NDC code for this drug. However, as you can see from this table of only a sample of the results from [NDC List](http://ndclist.com) that there many drug codes that could contain acetaminophen with other drugs too. This can make drugs very difficult to deal with.\n\n#### Additional Resources:\n[NDC List](http://ndclist.com)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1011781,
+              "key": "42a5c5ef-2f51-4e5f-8186-e3052823b3b4",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e8f8ab0_l2-ehr-code-sets-12/l2-ehr-code-sets-12.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/42a5c5ef-2f51-4e5f-8186-e3052823b3b4",
+              "caption": "RXNorm Example",
+              "alt": "RXNorm Example",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1013242,
+              "key": "4cdeb235-a6b3-4ae7-998c-88ba0305e2ae",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### RXNorm\nTo address the problem just mentioned, the NIH developed a normalized naming system called **RXNorm**, which does what its name implies and groups medication together. This is important because providers, pharmacies, payers all send EHR records with this data but might use different names and it becomes difficult to communicate between different systems.\n\nTo illustrate this issue, take a look at a drug Naproxen and the just a few examples of different names of naproxen that is the same thing, \n\nWhile there is a crosswalk between NDC codes and RXNorm, there are still some issues.  Depending on the system you are dealing with, it could use one or the other code set.\n\n#### Additional Resources\n[RXNorm Overview](https://www.nlm.nih.gov/research/umls/rxnorm/overview.html)\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1013786,
+              "key": "036633a5-6171-406f-b3b7-31534c9d74dd",
+              "title": "NDC Codes Quiz",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "036633a5-6171-406f-b3b7-31534c9d74dd",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following is true? Please use the information from the course and [ndclist.com](https://ndclist.com/) to answer this quiz!",
+                "answers": [
+                  {
+                    "id": "a1586895889342",
+                    "text": "The NDC code 0573-0154 is for Advil.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1586895962173",
+                    "text": "Advil is also known as ibuprofen and is taken orally.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1586896159849",
+                    "text": "The first group of numbers in the NDC codes are known as the product code and give product information.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1586896160284",
+                    "text": "Capsaicin has an NDC code of 64058-113",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1586896399728",
+                    "text": "A crosswalk connects two different versions of a drug.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1586896478517",
+                    "text": "The last two numbers indicate the packaging for a drug.",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1013788,
+              "key": "53d5354c-1948-4310-9d24-fbeb46dea24e",
+              "title": "NDC Codes",
+              "semantic_type": "ReflectAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "53d5354c-1948-4310-9d24-fbeb46dea24e",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "title": null,
+                "semantic_type": "TextQuestion",
+                "evaluation_id": null,
+                "text": "Use [ndclist.com](https://ndclist.com/) to help you answer this question.\nWho makes the drugs that start with 0378?\nWhat drug do they make with the code 4154?\nWhat is this product's dosage form?"
+              },
+              "answer": {
+                "text": "Hopefully, you figured out that the drug manufacturer is Mylan Pharmaceuticals Inc. and they make the drug Tramadol Hydrochloride and the dosage form is a tablet, extended-release. Great job if you figured that out!",
+                "video": null
+              }
+            },
+            {
+              "id": 1013789,
+              "key": "ee8e6f8f-8f13-44f7-8e88-e2823d27f6ae",
+              "title": "NDC Codes Continued",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "ee8e6f8f-8f13-44f7-8e88-e2823d27f6ae",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following are true about the drug with the code 68196-005?",
+                "answers": [
+                  {
+                    "id": "a1586897725277",
+                    "text": "The drug's main active ingredient is acetaminophen.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1586897789539",
+                    "text": "The drug's main active ingredient is ibuprofen.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1586897837027",
+                    "text": "Its name is Member's Mark Ibuprofen.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1586897893583",
+                    "text": "It is made by Sam's West Inc which is the owner of Sam's Club.",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1005456,
+          "key": "2e1be139-4d7d-4fce-ac3a-9f3b93aadb30",
+          "title": "Grouping/Categorizing Systems",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "2e1be139-4d7d-4fce-ac3a-9f3b93aadb30",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1005457,
+              "key": "64aa34d7-3086-4985-9d44-bc9d0531a32c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Grouping/Categorizing Systems",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1005459,
+              "key": "f1bfb6f0-d7e4-460b-9887-13df5bca28ef",
+              "title": "ND320 AIHCND C01 L02 A10 Utilizing Grouping Categorizing Systems V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "UmRyFJ8DdQo",
+                "china_cdn_id": "UmRyFJ8DdQo.mp4"
+              }
+            },
+            {
+              "id": 1005462,
+              "key": "1ba8a663-adab-46b9-9dc9-868d236f69c8",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Grouping/Categorizing Key Points\n**CCS**- Clinical Classifications Software \n\nAs mentioned earlier, there is a tremendous challenge of taking the 77K+ ICD10 PCS codes and categorizing them into meaningful categories at scale. \nThis is where a government-industry partnership called the Healthcare Cost and Utilization Project (HCUP) created a categorization system called clinical classifications software or CCS. It can be used to map diagnosis or procedure codes from ICD code sets. It has single or multi-level options for mapping these codes. \n\n### Single Level Categories\n- Mutually exclusive categories \n- 285 categories for diagnoses\n- 231 categories for procedures\n\nAs an example using single-level codes:\n- **Operations on the cardiovascular system**  are codes **43-63** \n- **Heart valve procedures** is code **43**. \n\nBelow you can see how that changes using multi-level codes. \n\nSingle level categories can be used for ranking of codes and help with risk adjustment scoring\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1012012,
+              "key": "45843dfd-8d6e-4065-b2e2-eafcd7fdaf5f",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e90882a_l2-ehr-code-sets-13/l2-ehr-code-sets-13.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/45843dfd-8d6e-4065-b2e2-eafcd7fdaf5f",
+              "caption": "CCS Multi-level Categories",
+              "alt": "CCS Multi-level Categories",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1013283,
+              "key": "9e300c27-43ad-4615-b9e1-e130d555e440",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Multi-Level Categories\nCCS Multi-level categories are helpful for more detailed analysis and grouping at a more granular level. there are 4 levels for diagnosis codes and 3 levels for procedure codes.\n\nIn the above example, **7** is a broad category, but then you can see that it branches off into **7.1** and **7.2** into more detail. **7.1**. \n\nThen **7.1.X.X** further break down hypertension.\n\n**7.1.2.1** = Hypertensive heart and/or renal disease (*typo in image above*). ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1012013,
+              "key": "e6c5ecab-7a13-47ce-a72d-dd51e97204d6",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e90884f_l2-ehr-code-sets-14/l2-ehr-code-sets-14.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/e6c5ecab-7a13-47ce-a72d-dd51e97204d6",
+              "caption": "CCS ICD10 - PCS Category Mapping File \n[CCS website](https://www.hcup-us.ahrq.gov/toolssoftware/ccs10/ccs10.jsp)",
+              "alt": "CCS ICD10 - PCS Category Mapping File ",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1012014,
+              "key": "9d724e6f-11be-4c8f-97ae-5af312ea74c5",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### CCS ICD10-PCS Category Mapping File\nBelow we have included a link to the CCS ICD10-PCS Category Mapping File which makes figuring out and working with these category groupings much easier. \n*You download the mapping file for taking ICD10 PCS procedure codes and map them to grouping/categorization with CCS.*\n\nThe mapping file breaks down like this (image above): \n- ICD10 codes and their descriptions on the left\n- CCS category descriptions, Multi CCS LVL 1, and Multi Lvl 1 Label on the right.\n\nIt would be hard to have a medical expert categorize these at and they can change over time. \nThankfully CCS maps these for us. These mappings can be helpful in reducing dimensionality.\n\n### Other Categorization  Systems\n- **MS- DRG**- Medicare Severity-Diagnosis Related Group\n  - Group payment based on the principal diagnosis\n  - Up to 25 secondary dx\n  - Up to 25 procedures during a visit/encounter\n- **SNOMED CT**- Systematized Nomenclature of Medicine—Clinical Terms\n  - License to use \n  - Helpful for making the EHR records interoperable\n\nWe will not be using these two in this course and there are many other systems as well, but knowing that they exist is good.\n#### Additional Resources\n- [CCS website](https://www.hcup-us.ahrq.gov/toolssoftware/ccs10/ccs10.jsp)\n- [MS-DRG](https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/AcuteInpatientPPS/MS-DRG-Classifications-and-Software)\n- [SNOMED CT](http://www.snomed.org/snomed-ct/five-step-briefing)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1013801,
+              "key": "5604c2fc-c39f-4182-89c4-f3c698fcdf18",
+              "title": "CCS Quiz",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "5604c2fc-c39f-4182-89c4-f3c698fcdf18",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Correctly match the following statement with term or level."
+                },
+                "concepts_label": "Statement",
+                "answers_label": "Term/CCS Level",
+                "concepts": [
+                  {
+                    "text": "Takes the ICD10-PCS codes and categorizes them.",
+                    "correct_answer": {
+                      "id": "a1586902450849",
+                      "text": "CCS"
+                    }
+                  },
+                  {
+                    "text": "Uses codes like 7.1.2 for categorization.",
+                    "correct_answer": {
+                      "id": "a1586902700429",
+                      "text": "Multi-Level"
+                    }
+                  },
+                  {
+                    "text": "Is broken down into 4 levels in the multilevel category system.",
+                    "correct_answer": {
+                      "id": "a1586902844061",
+                      "text": "Diagnosis Codes"
+                    }
+                  },
+                  {
+                    "text": "Pairs a procedure or diagnosis to a code like 43 for categorization",
+                    "correct_answer": {
+                      "id": "a1586902902496",
+                      "text": "Single Level"
+                    }
+                  },
+                  {
+                    "text": "Is broken down in 3 levels in the multilevel category system.",
+                    "correct_answer": {
+                      "id": "a1586902938436",
+                      "text": "Procedure Codes"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1586902700429",
+                    "text": "Multi-Level"
+                  },
+                  {
+                    "id": "a1586902902496",
+                    "text": "Single Level"
+                  },
+                  {
+                    "id": "a1586902938436",
+                    "text": "Procedure Codes"
+                  },
+                  {
+                    "id": "a1586902450849",
+                    "text": "CCS"
+                  },
+                  {
+                    "id": "a1586902844061",
+                    "text": "Diagnosis Codes"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1013802,
+              "key": "a43d47df-cbcc-4716-ad59-8cd3a096d9ef",
+              "title": "CCS Single Level Codes",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "a43d47df-cbcc-4716-ad59-8cd3a096d9ef",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "If you wanted to analyze all cases from a dataset using Single Level CCS codes for Colon Cancer, what code would you use in your `str.contains()` method? You can use the internet or the zip file from the classroom above to help you find your answer!. ",
+                "answers": [
+                  {
+                    "id": "a1586903286146",
+                    "text": "`str.contains('13.1')` ",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1586903430127",
+                    "text": "`str.contains('14.3.3')` ",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1586903449679",
+                    "text": "`str.contains('14')` ",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1586903453882",
+                    "text": "`str.contains('13')` ",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1586903457227",
+                    "text": "`str.contains('17.2.1')` ",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1013803,
+              "key": "ff7f2ea1-a753-4712-9bb3-2025f270171b",
+              "title": "Multi-Level CCS Quiz",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "ff7f2ea1-a753-4712-9bb3-2025f270171b",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "If you wanted to analyze all cases from a dataset using Muti-Level CCS codes for for Colon Cancer, what code would you use in your `str.contains()` method? You can use the the zip file from the classroom above or this [HCUP Link](https://www.hcup-us.ahrq.gov/toolssoftware/ccs/AppendixCMultiDX.txt) to help you find your answer!",
+                "answers": [
+                  {
+                    "id": "a1586903814260",
+                    "text": "`str.contains('2.2.4')` ",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1586903898793",
+                    "text": "`str.contains('3.1')` ",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1586903901104",
+                    "text": "`str.contains('7.2.1')` ",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1586903933353",
+                    "text": "`str.contains('2.1.1')` ",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1586904645326",
+                    "text": "`str.contains('14')` ",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1005463,
+          "key": "50877dd7-1a63-4cbe-aa0d-ee8f49936dc8",
+          "title": "Group or Categorize Procedures Exercise",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "50877dd7-1a63-4cbe-aa0d-ee8f49936dc8",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1013933,
+              "key": "fd81bd8c-5614-4f84-8403-578aee9bbc58",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1009433xJUPYTER7ivobcjm",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-3hfej",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Lesson_Code%20Sets_Exercise_3_Starter_Code.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1009438,
+          "key": "8c3840cb-27ce-4aaf-bf15-946bccf0b454",
+          "title": "Group or Categorize Procedures Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "8c3840cb-27ce-4aaf-bf15-946bccf0b454",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1009439,
+              "key": "fb7ba40c-3f2a-4c8a-8690-39a28c62e95f",
+              "title": "ND320 AIHCND C01 L02 A11 Exercise 3 Solution Group Or Categorize Procedures",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "alz1umgZ0_M",
+                "china_cdn_id": "alz1umgZ0_M.mp4"
+              }
+            },
+            {
+              "id": 1013934,
+              "key": "0ba286f0-3a2b-4ef1-9367-737830304ae3",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1009434xJUPYTER44wjwh6z",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-v5eaq",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Lesson_Code%20Sets_Exercises_Solutions.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1009440,
+          "key": "36105657-a626-43d7-bed7-2c6fe2fa5f2d",
+          "title": "EHR Code Sets Recap",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "36105657-a626-43d7-bed7-2c6fe2fa5f2d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1009441,
+              "key": "d49e63b8-d156-489b-8253-08ceb2ede89b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# EHR Code Sets Recap",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009442,
+              "key": "e6c1e74c-c9f5-42d0-a61b-960f7403c6e5",
+              "title": "ND320 AIHCND C01 L02 A12 Lesson Overview V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "-daJb_X1LDk",
+                "china_cdn_id": "-daJb_X1LDk.mp4"
+              }
+            },
+            {
+              "id": 1009444,
+              "key": "8a880c6c-e9c5-4ae9-b7c0-55c757bac465",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## EHR Code Sets Recap Key Points\nAwesome! You made it to the end of code sets in EHR. \n\nIn this lesson, you learned about key components of EHR data, Code Sets. As a quick reminder, EHR Code sets allow for the comparison of data across various EHR systems. \nYou first learned about diagnosis codes. In particular, ICD10-CM. You gained knowledge of what this code set is, why it's important, how to read them. You also applied that knowledge by grouping data using EHR codes as well as build an embedding with visualizations. Hopefully, ICD10- CM codes will be easy to work with from now on.\n\nThen you reduced cardinality of a dataset using procedure codes after learning more about ICD10-PCS, CPT and HCPCS.  You should be able to break down medication codes too! You should also be able to apply your knowledge to deal with the challenges of working with medication code sets.\n\nFinally, you put all of this code knowledge to work by grouping and categorizing these code sets with CCS. I know that there was a lot of information in this lesson, but now it's time to move on to learning some magic to transform EHR Data! Into what? You'll have to head to the next lesson to find out!\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009443,
+              "key": "a9fa3f17-8913-42a3-99ae-014c283f9c75",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e908920_l2-ehr-code-sets-15/l2-ehr-code-sets-15.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/a9fa3f17-8913-42a3-99ae-014c283f9c75",
+              "caption": "EHR Code Sets Overview",
+              "alt": "EHR Code Sets Overview",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1009445,
+              "key": "1dc2b3f0-2ca1-4b1e-9eff-b29c2b7ada2a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Key Terms\n|Key Terms | Definition|\n|------------------------|------------------------------------------|\n|Medical Encounter| An interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient. |\n|ICD10:|International Classification of Diseases 10 |\n|WHO:|World Health Organization |\n|ICD10-CM| International Classification of Diseases 10 - Clinical Modification|\n|Primary Diagnosis Code| The code that takes up the most resources to treat.|\n|Principal Diagnosis Code| The diagnosis that is found after hospitalization to be the one that is chiefly responsible.|\n|Secondary Diagnosis Codes:|The other diagnosis codes listed on an encounter.|\n|Medical Procedure| A course of action to achieve an intended result for a patient in healthcare.|\n|Procedure Codes| The categorization of these medical codes during an encounter.|\n|NDC| National Drug Code|\n|Crosswalk|  A connection between two different code sets or versions of drugs in the same code set.|\n|RXNorm| Groups medications together.|\n|CCS| Clinical Classifications Software used to map diagnosis or procedure codes from ICD code sets. |\n|MS-DRG| Medicare Severity-Diagnosis Related Group|\n|SNOMED CT| Systematized Nomenclature of Medicine—Clinical Terms|",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

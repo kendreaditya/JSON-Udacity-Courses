@@ -1,0 +1,1335 @@
+{
+  "data": {
+    "lesson": {
+      "id": 1015280,
+      "key": "1d16d5f0-d96d-4e1d-b3bf-90fbf8590575",
+      "title": "Deploying AI Algorithms in Real World Scenarios",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "In this lesson, we'll talk about clinical networks, architecture, and AI deployment, tools and their use by data scientists and clinicians, as well as medical device regulation and data privacy.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/1d16d5f0-d96d-4e1d-b3bf-90fbf8590575/1015280/1590514008106/Deploying+AI+Algorithms+in+Real+World+Scenarios+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/1d16d5f0-d96d-4e1d-b3bf-90fbf8590575/1015280/1590514002391/Deploying+AI+Algorithms+in+Real+World+Scenarios+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 1015279,
+          "key": "290697d3-ec68-4e6f-bce4-c3c03d122d10",
+          "title": "Introduction",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "290697d3-ec68-4e6f-bce4-c3c03d122d10",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1015201,
+              "key": "cba38121-bba6-4220-9d1c-acde444248b0",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Introduction",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015205,
+              "key": "4b3af355-0d95-48e5-9436-25ec80bb947c",
+              "title": "ND320 C3 L4 01 Welcome To The Lesson & Overview",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "1Rd11bAqJGM",
+                "china_cdn_id": "1Rd11bAqJGM.mp4"
+              }
+            },
+            {
+              "id": 1015210,
+              "key": "9b5073ae-96fb-4e77-8803-52b28bcb355c",
+              "title": "Summary of Overview + Lesson Outline",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Conceptual map\n\nThis is our conceptual map, with content for the final lesson highlighted.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015248,
+              "key": "9bb400ea-3e6f-4b26-8787-f4e13b0ce37c",
+              "title": "Conceptual Lesson Overview/Map",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9bf447_l4-course-overview/l4-course-overview.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/9bb400ea-3e6f-4b26-8787-f4e13b0ce37c",
+              "caption": "Lesson Overview (focus areas are highlighted with dark-blue color)",
+              "alt": "“In the wild” lesson conceptual map. Focus on: Enterprise Viewers, PACS",
+              "width": 1173,
+              "height": 1037,
+              "instructor_notes": null
+            },
+            {
+              "id": 1015266,
+              "key": "37583eae-940c-401d-93d6-17d9fd4e5e7f",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Lesson Summary\nIn our final lesson, we will focus on what it takes to build an AI algorithm like some of those we talked about in the previous lesson into a real-world system. We will discuss the following:\n\n* Basics of **DICOM networking** \n* How **hospital networks** operate and where would AI algorithms fit in\n* Requirements for integration of AI algorithms\n* **Tools for simulating and debugging** clinical environments:  \n    * scripting via DCMTK\n    * OHIF - the zero-footprint medical image viewer\n    * A deeper-dive into Slicer for annotation\n* **Medical imaging viewer as radiologist’s tool** - Mazen will show us how radiologists interact with viewers\n* **Medical Device Regulations** with the US FDA as an example. We will talk about the regulation of medical devices by the government and how it applies to AI algorithms.\n* Data privacy, HIPAA, and anonymization.\n\nThe content of this lesson is meant to give you an idea of what it takes to bring an AI system into the real world. This is where the job of data scientist typically ends and collaboration of cross-disciplinary teams is involved. However, your activities as an AI engineer should be informed by what happens with the system in the real world, and likewise, there are aspects of operation and deployment where the input of an AI engineer is instrumental. Here we try to help you understand what kinds of things to pay attention to.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1015272,
+          "key": "4a87a2e4-bbae-40b9-af9b-d03ed82aec61",
+          "title": "DICOM Networking: Introduction",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "4a87a2e4-bbae-40b9-af9b-d03ed82aec61",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1015216,
+              "key": "b8ba224c-7bfa-4d88-9605-fe50ea45f9d3",
+              "title": "heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Clinical Network Architecture",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015217,
+              "key": "08bc923a-23f8-46e8-ade1-826c6673bfdd",
+              "title": "ND320 C3 L4 02 Clinical Networks And Integration Points (DICOM)",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "m3gYHR9WXwI",
+                "china_cdn_id": "m3gYHR9WXwI.mp4"
+              }
+            },
+            {
+              "id": 1015235,
+              "key": "c9ef5f96-a76d-4de4-99bf-30428b3ee913",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "When it comes to moving medical images around the hospital, the DICOM standard comes to the rescue. Alongside the definition of the format for storing images and metadata (which we have looked at in detail in previous lessons, it defines the networking protocol for moving the images around. \n\nIn the following few concepts, we will be talking about DICOM networking services, which are defined in [Part 7 and Part 8 of the standard](http://dicom.nema.org/medical/dicom/2020a/output/chtml/part07/PS3.7.html).",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015211,
+              "key": "94768338-0ef3-4a5e-a808-34e76a3f778e",
+              "title": "What is a DICOM Application Entity?",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "94768338-0ef3-4a5e-a808-34e76a3f778e",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What is a DICOM Application Entity",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "A DICOM file",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "An abstraction of an application that uses DICOM networking protocol to communicate",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "An abstraction of MRI reconstruction kernel",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk4",
+                    "text": "A networking protocol",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1015263,
+          "key": "2f98c279-8565-4558-9780-4994b6bfbf2f",
+          "title": "DICOM Networking: Services",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "2f98c279-8565-4558-9780-4994b6bfbf2f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1015242,
+              "key": "2114583f-596a-48ba-b283-b9e1ac761b7a",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# DICOM Networking: DIMSE Services",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015223,
+              "key": "150e49a3-9ce6-48ab-8715-03653b67099d",
+              "title": "ND320 C3 L4 03 Clinical Networks And Integration Points (DISME)",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "45hRHj8n6KU",
+                "china_cdn_id": "45hRHj8n6KU.mp4"
+              }
+            },
+            {
+              "id": 1015214,
+              "key": "ad329e63-fefe-4b6d-bb0d-bd5318270691",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "To summarize, here are the key things to remember about DICOM networking:\n\n1. There are two types of DICOM networking: DIMSE (DICOM Message Service Element) and DICOMWeb. The former is designed to support data exchange in protected clinical networks that are largely isolated from the Internet. The latter is a set of RESTful APIs ([link to the Standard](https://www.dicomstandard.org/dicomweb/)) that are designed to communicate over the Internet. DIMSE networking does not have a notion of authentication and is prevalent inside hospitals.\n1. DICOM DIMSE networking defines how DICOM *Application Entities* talk to each other on protected networks\n2. DICOM Application Entities that talk to each other take on roles of **S**ervice **C**lass **U**sers and **S**ervice **C**lass **P**roviders.\n3. SCPs typical respond to requests and SCUs issue them\n4. Full list of DIMSE services could be found in the [Part 7 of the DICOM Standard](http://dicom.nema.org/medical/dicom/current/output/chtml/part07/sect_7.5.html#sect_7.5.1), ones that you are most likely run into are:\n    * C-Echo - “DICOM ping” - checks if the other party can speak DICOM\n    * C-Store - request to store an instance\n5. An Application Entity is defined by three parameters:\n    * Port\n    * IP Address\n    * Application Entity Title (AET) - an alphanumeric string",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1015264,
+          "key": "06e2c3ef-5c08-4120-9a1f-a7b4d6f2d341",
+          "title": "Clinical Networks",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "06e2c3ef-5c08-4120-9a1f-a7b4d6f2d341",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1015221,
+              "key": "c4de000a-09ed-4a11-87cc-751da5b30862",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Clinical Networks",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015206,
+              "key": "8cfee682-d2da-4008-9904-aa892a5bb4ca",
+              "title": "ND320 C3 L4 04 Clinical Networks And Integration Points (Clinical Systems)",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "nRLaW3vrNHs",
+                "china_cdn_id": "nRLaW3vrNHs.mp4"
+              }
+            },
+            {
+              "id": 1015202,
+              "key": "c88dce16-8579-42cf-81b3-c45da994521e",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Clinical networking is an industry on its own and an AI engineer will probably be exposed to a very small subset of that. So, it’s important to understand the basics - what are the systems that are important to a clinical network and how do they all fit together.\n\n# New Vocabulary\n\n**PACS** - Picture Archiving and Communication System. An archive for medical images. A PACS product typically also includes “diagnostic workstations” - software for radiologists that is used for viewing and reporting on medical images.  \n**VNA** - Vendor Neutral Archive. A PACS that is not tied to a particular equipment manufacturer. A newer generation of PACS. Often deployed in a cloud environment.   \n**EHR** - Electronic Health Record. A system that stores clinical and administrative information about the patients. If you’ve been to a doctor’s office where they would pull your information on a computer screen and type up the information - it is an EHR system that they are interacting with. EHR system typically interfaces with all other data systems in the hospital and serves as a hub for all patient information. You may also see the acronym “EMR”, which typically refers to the electronic medical records stored by the EHR systems.  \n**RIS** - Radiology Information System. Think of those as “mini-EHRs” for radiology departments. These systems hold patient data, but they are primarily used to schedule patient visits and manage certain administrative tasks like ordering and billing. RIS typically interacts with both PACS and EHR.  \n\nIn addition to DICOM protocol there are two more (among many) that you might run into:  \n\n**HL7** - Health Level 7. A protocol used to exchange patient data between systems as well as data about physician orders (lab tests, imaging exams)  \n**FHIR** - Fast Healthcare Interoperability Resources. Another protocol for healthcare data exchange. HL7 dates back to the '80s and many design decisions of this protocol start showing their age. You can think of FHIR as the new generation of HL7 built for the open web.   \n  \nLet’s see what a more realistic network scenario could look like, and what could be the possible integration points for AI technology:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015209,
+              "key": "6c46c464-9cf2-4415-916e-7d54baacc440",
+              "title": "ND320 C3 L4 05 Clinical Networks And Integration Points (AI Integration)",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "dm8Ip8u7wfg",
+                "china_cdn_id": "dm8Ip8u7wfg.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 1015267,
+          "key": "292622b2-8e03-49fd-bc9e-8eae61b52cd8",
+          "title": "Requirements for Integration",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "292622b2-8e03-49fd-bc9e-8eae61b52cd8",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1015208,
+              "key": "80c32207-dbac-448f-864c-b0e812e3f297",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Requirements for Integration of AI Algorithms",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015207,
+              "key": "51c8024f-d9f7-47ac-8cf5-eee80644173d",
+              "title": "ND320 C3 L4 06 Requirements For Integration Of AI Algo",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "_nQP7fu5QPU",
+                "china_cdn_id": "_nQP7fu5QPU.mp4"
+              }
+            },
+            {
+              "id": 1015219,
+              "key": "2ae109ae-ed4a-4b34-9d73-aba75154ac43",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "When you start thinking of deploying your AI algorithms, you will want to set some requirements as to data that is sent to these algorithms, and the environment they operate in. When defining those, you may want to think of the following:\n\n* Series selection. As we’ve seen, modalities typically use C-STORE requests to send entire studies. How are you going to identify images/series that your algorithms will process? \n* Imaging protocols. There are lots of ways images can be acquired - we’ve talked about MR pulse sequences, and there are just physiological parameters, like contrast media or FoV. How do you make sure that your algorithm processes images that are consistent with what it has been trained on?\n* Workflow disruptions. If the algorithm introduces something new into the radiologists' workflow - how is this interaction going to happen? \n* Interfaces with existing systems. If your algorithm produces an output - where does it go? What should the systems processing your algorithm’s output be capable of doing?",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015245,
+              "key": "c025d250-376a-4628-acdf-faae4f02f8d2",
+              "title": "Series Selection",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "c025d250-376a-4628-acdf-faae4f02f8d2",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "An AI solution can quantify the severity of knee ligament damage on a Proton Density (PD) MRI volume. You deploy it between an MRI scanner and PACS to generate PDF reports out of any suitable series, sending them by email. The MRI scanner is used by the radiology department for different scans - abdominal, brain, etc. What strategies would help identify the series to run your algorithm on?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "Looking at [Series Description](http://dicom.nema.org/medical/dicom/2020a/output/chtml/part03/sect_C.7.3.html) tag",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "Checking [Body Part Examined](http://dicom.nema.org/medical/dicom/2020a/output/chtml/part03/sect_C.7.3.html) tag",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "Looking at [Image Position Patient](http://dicom.nema.org/medical/dicom/2020a/output/chtml/part03/sect_C.7.6.2.html) tag",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk4",
+                    "text": "Building a classifier that will look at MR series and predict if this is a PD image of a knee",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk5",
+                    "text": "Looking at [Patient Name](http://dicom.nema.org/medical/Dicom/2020a/output/chtml/part03/sect_C.2.2.html) tag",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1015270,
+          "key": "0068a68f-26fb-48d9-9f33-3281ef0e323d",
+          "title": "Clinical Network Architecture Summary",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "0068a68f-26fb-48d9-9f33-3281ef0e323d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1015247,
+              "key": "db6c5b7f-1702-4e90-8fb1-66f44333ef7e",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Clinical Network Architecture Summary\n\nThis concludes our section on the clinical network architecture.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015212,
+              "key": "9db6211c-4624-49fb-9508-c79bb88f8248",
+              "title": "Check for Understanding",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "9db6211c-4624-49fb-9508-c79bb88f8248",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What is the purpose of a C-STORE request?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "Create an Application Entity",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "Send DICOM instances to an Application Entity",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "Check if an Application Entity is available for DICOM communications",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk4",
+                    "text": "Query the server for imaging data",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1015203,
+              "key": "d36c6b3e-24dc-4693-beea-ad1b3e757c6f",
+              "title": "Summary, Further Research, New Vocab Terms",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this section, we have discussed some of the basics of the DICOM networking, including services such as C-ECHO and C-STORE. We looked at how clinical networks are built and what actors are there. We considered possible integration points for AI algorithms and some of the requirements to keep in mind when integrating the AI tools. \n\n## Further Resources\n\n* As usual, DICOM standard is a great reference for DICOM networking:  http://dicom.nema.org/medical/dicom/2020a/output/chtml/part07/sect_7.5.html#sect_7.5.1 \n* This paper from NIH offers (a bit dated, but still very valid) overview of the networking portion of DICOM: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC61235/\n* This book has a comprehensive overview of the standard and is a must-have for any deep DICOM development: Digital Imaging and Communications in Medicine (DICOM). A Practical Introduction and Survival Guide. Authors: Pianykh, Oleg S. http://www.springer.com/us/book/9783642108495  \n\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1020132,
+          "key": "a7678cdd-b19d-4122-b3ed-615f0eaaeb64",
+          "title": "Tools of the Trade - Intro",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a7678cdd-b19d-4122-b3ed-615f0eaaeb64",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1020130,
+              "key": "1687de94-f489-4a7d-bb6c-1fef39b78195",
+              "title": "Intro",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Tools of the Trade\n\nAnd this brings us to our next section on tools. We will talk about some of the ways in which you can emulate clinical networks to ensure your technology works before deploying it at a real hospital.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015230,
+              "key": "697a41f7-d722-4069-88d5-9b5630447955",
+              "title": "ND320 C3 L4 07 Why Tools-",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "DJdgSOAzv5Y",
+                "china_cdn_id": "DJdgSOAzv5Y.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 1015265,
+          "key": "aad3b3ac-a019-4022-8a52-81a3810e6481",
+          "title": "Tools of the Trade - Scripting",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "aad3b3ac-a019-4022-8a52-81a3810e6481",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1015244,
+              "key": "65b7bd2f-1607-47cc-a226-db42f004e4dd",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Tools of the Trade - Scripting DICOM Networks",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015220,
+              "key": "23c56403-aa65-421a-bca9-e6cf17ceaf1d",
+              "title": "ND320 C3 L4 09 Scripting",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "l5PizNCrQkM",
+                "china_cdn_id": "l5PizNCrQkM.mp4"
+              }
+            },
+            {
+              "id": 1015240,
+              "key": "5e845d58-8e64-456b-a2bd-68543d9ec251",
+              "title": "How do you ping an AE with DCMTK?",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "5e845d58-8e64-456b-a2bd-68543d9ec251",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "How do you ping an AE with DCMTK?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "storecsu tool",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "echoscp tool",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "storescp tool",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk4",
+                    "text": "echoscu tool",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1015204,
+              "key": "dc0dfe30-4135-4c78-9a0c-c0092b6a2e26",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Here, we used some of the tools from the [DCMTK toolkit](https://dcmtk.org/) to emulate the operation of a DICOM network. We have done the following:\n\n* Used `dcmdump` tool to view the DICOM metadata of a DICOM file\n* Used `storecsp` command to bring up an SCP listening to incoming C-STORE requests. The following is the command line that we used: `storescp 109 -v -aet TESTSCP -od . --sort-on-study-uid st`. This starts listening on port 109, with verbose logging,  with AE Title “TESTSCP”, putting all incoming files into the current directory and organizing studies into directories named as study instance UIDs, with prefix *st*\n* Used `echoscu` command to verify that our SCP instance is alive and listening by running the following on the command line: `echoscu localhost 109 -v`\n* Used `storescu` command to issue a set of C-STORE requests to our SCP and send several DICOM studies. We used the following command to accomplish this: `storescu localhost 109 -v -aec TESTSCU +r +sd .`. Here, `-aec` parameter specifies the AE title that our SCU will use to identify itself (some SCPs might only receive data from known AE titles); `+r` parameter tells our tool to process directories recursively and `+sd` parameter specifies a directory to send. ",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1015262,
+          "key": "d644fb8e-6c6e-4d08-a9cc-c77199811533",
+          "title": "Exercise 1: Scripting for DICOM Networks",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d644fb8e-6c6e-4d08-a9cc-c77199811533",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1015241,
+              "key": "4ed0d3a9-73dc-4c5a-8540-b261f31b140e",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Exercise 1: Scripting for DICOM Networks\n\nIn this exercise, I invite you to write a simple code that will send some data to a DICOM endpoint. As an AI engineer, you might use code like that to send results of your algorithm to a PACS system.\n\nThis workspace will include the ability to access a VNC or virtual desktop. These environments will use the GPU to access the VNC and the environment, medai. You can also disable this when you are coding (and not running the code) or writing an explanation in the starter files. You will also be able access a couple of different functions listed below:\n\n- **Slicer** - You will need to enable the GPU as Slicer is already configured on the VNC. When you enter the VNC with the Desktop button at the bottom right hand corner, you can find a Slicer as a shortcut on the desktop.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1018281,
+              "key": "52867289-8c4d-4d97-9764-1b4699e53a46",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1015262xREACTp9uividl",
+              "pool_id": "autonomousgpu",
+              "view_id": "react-c1xzv",
+              "gpu_capable": true,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/applications",
+                          "dest": "/opt/aihcnd-applications"
+                        },
+                        {
+                          "src": "/AIHCND/conda-envs/medai",
+                          "dest": "/root/miniconda3/envs/medai"
+                        },
+                        {
+                          "src": "/AIHCND/data",
+                          "dest": "/data"
+                        }
+                      ]
+                    },
+                    "port": 3000,
+                    "ports": [
+                      3001
+                    ],
+                    "userCode": "/root/miniconda3/bin/conda init bash > /dev/null\ngrep -qxF \"conda activate medai\" /root/.bashrc || echo \"conda activate medai\" >> /root/.bashrc",
+                    "openFiles": [
+                      "/home/workspace/send_volume.py"
+                    ],
+                    "showFiles": true,
+                    "allowClose": true,
+                    "allowSubmit": false,
+                    "terminalTitle": "",
+                    "actionButtonText": "Go to Desktop",
+                    "openTerminalOnStartup": true
+                  },
+                  "kind": "react"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 1015200,
+              "key": "c342fcc2-354a-4939-baf9-e8fcd3c1d021",
+              "title": "Exercise 1: Scripting Solution/Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "You can find the solution for the **Exercise 1: Scripting for DICOM Networks** [here](https://github.com/udacity/nd320-c3-3d-med-imaging/blob/master/deploy-algorithms-in-real-world/exercises/1-sending-volumes/solution/send_volume.py).  \n\nNote the method that I used to select the correct series. As we’ve discussed there isn’t really a one 100% reliable one.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1015260,
+          "key": "1894213e-a22c-44d1-a52d-3800f15019fe",
+          "title": "Tools of the Trade - A Radiologists in Action",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "1894213e-a22c-44d1-a52d-3800f15019fe",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1015238,
+              "key": "0096a97f-0ff6-45cf-9eee-bd01bab5a3f5",
+              "title": "heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Tools of the Trade - Radiologists' Tools\n\nIn this concept, we will see what a clinical workflow looks like. As you watch me inspect an MR study of a brain, think of where an AI technology would  fit in here and how I would interact with it.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015234,
+              "key": "1f82b0bc-7f23-49f2-a04f-1de9db299bf8",
+              "title": "ND320 C3 L4 08 Radiologist'S Tools",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "xHoV0MZlGHw",
+                "china_cdn_id": "xHoV0MZlGHw.mp4"
+              }
+            },
+            {
+              "id": 1015233,
+              "key": "005c8024-7141-49dc-a17f-7a773856e68f",
+              "title": "Video Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "We have observed the use of a clinical-grade medical image viewer system used by a clinician to analyze a radiological study. Note the following things that happened in this walkthrough:\n\n* Inspection of several MR pulse sequences side-by-side, drawing upon the fact that tissues present differently in different types of series\n* Measurement of a lesion was taken. Note how exactly the measurement was done - through taking two linear measurements of the largest diameters. This is a fairly standard way of taking measurements of lesions\n* Image inspection tools were used - zoom, pan and window center/width adjustments\n* The analysis ended with a “report” - a formal description of important findings on the image. Such a report would be converted into text, stored in EHR over HL7 and presented to the ordering physician when they review the results of the test\n\nNote some challenges that were immediately seen as well:\n* It is not that easy or practical to measure volumes of tumors. Such measurement was substituted by several linear measurements\n* I was looking for a change of the tumor over time, but it was not really easy to see what exactly changed as images belonged to different studies and were not exactly matching up, spatially",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015227,
+              "key": "b46a2a89-3b1e-471d-a208-4313d8bdb6eb",
+              "title": "Check for Understanding",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "b46a2a89-3b1e-471d-a208-4313d8bdb6eb",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What would be an appropriate use of windowing?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "Measuring the size of a tumor",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "Comparing pre- and post-contrast images",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "Adjusting apparent brightness and contrast to get better contrast of the tissues of interest",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk4",
+                    "text": "Helping report a study to the EHR",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1015275,
+          "key": "14b6f283-2104-45ca-a574-49a8b2ed05c2",
+          "title": "Tools of the Trade - Viewers - OHIF",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "14b6f283-2104-45ca-a574-49a8b2ed05c2",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1015259,
+              "key": "98aaa0f4-4578-4b19-97da-139412de8422",
+              "title": "heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Tools of the Trade - OHIF, the Zero-footprint Web-based Viewer",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015226,
+              "key": "eddc8f30-bcb5-4f8c-9e78-7e27edcb840a",
+              "title": "ND320 C3 L4 10 Viewing - Web",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "zyALJQ7hNjI",
+                "china_cdn_id": "zyALJQ7hNjI.mp4"
+              }
+            },
+            {
+              "id": 1015228,
+              "key": "2acc2693-d2c3-446b-8323-3321386a715a",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "OHIF, Open Health Imaging Foundation is an organization supported by both academic and commercial collaborators, which aims to deliver an open-source framework for building modern (as of 2020) web-based medical imaging applications.  \n\nAs you have probably noticed throughout this lesson, a lot of imaging IT technologies have been created back in the '70s and '80s in the pre-Internet, pre-UI era. This legacy lives on and it is not uncommon these days to find widely used clinical medical imaging applications that have the UX language of the '90s. OHIF set out to take an open-source project for Javascript-based medical image interactions, called Cornerstone and build a state-of-the-art responsive web application on it, using the latest and greatest in web development. A lot of viewers that have been commercialized by many recent AI startups are based on Cornerstone or OHIF.  \n\nIf you are looking to prototype a UX solution for your AI technology, this would be a solid choice.\n\nOHIF website: http://ohif.org/  \nCornerstone GitHub repository: https://github.com/cornerstonejs/cornerstone  ",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1015273,
+          "key": "a4adbee6-1689-4715-a719-45ba59447647",
+          "title": "Tools of the Trade - Viewers - 3D Slicer",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a4adbee6-1689-4715-a719-45ba59447647",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1015258,
+              "key": "6ff9b01a-61b7-4f33-959c-7b8b57f8c2f5",
+              "title": "Tools of the Trade - Viewers - 3D Slicer",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Tools of the Trade - Viewers - 3D Slicer\n\nSo far, you should be familiar with 3D Slicer - we have talked about this tool early on and maybe you even used it to view some of the images. Here, we will take a deeper dive, look at some features in more detail and particularly focus on segmentation.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015215,
+              "key": "bfddbf6a-0417-4644-80e3-fd57800fd064",
+              "title": "ND320 C3 L4 11 Viewing - Slicer",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "5tPt6OMnL10",
+                "china_cdn_id": "5tPt6OMnL10.mp4"
+              }
+            },
+            {
+              "id": 1015253,
+              "key": "7e0fd9a9-c3f0-4796-a10c-d0df07196cab",
+              "title": "Video Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Here, we took a closer look at how to work with segmentation masks in Slicer, walking you through loading a NIFTI volume and corresponding mask, displaying one on top of the other, and creating your own segmentation mask. \n\n## Segmentation formats\n\nLet me take a bit of a sidetrack here and say a few words on formats for storing segmentations since this is how your segmentation ground truth data may come in and this is what you would be using a Slicer-like tool with. There are a few that are commonly used:\n\n* **NIFTI**, which you are already familiar with, allows you to define what essentially is a scalar field - every point in some rectangular subset of a 3D space has a value (intensity) associated with it. Thus, a segmentation mask could be stored in NIFTI by using “one-hot” encoding, as we’ve seen in the machine learning lesson. Such a mask would assign one class label to all voxels inside the structure and another one outside. Due to convenience, NIFTI masks are very widespread in the ML community.  \n\n* **DICOM RT** is a DICOM IOD for “[Radiation Therapy Structure Set](http://dicom.nema.org/medical/Dicom/2020a/output/chtml/part03/sect_A.19.3.html#table_A.19.3-1)”. We had mentioned radiation therapy in this course before - it is the treatment of cancers with radiation, and it relies on accurate mapping of the human anatomy which serves as an input into the radiation machine (typically called linac). The DICOM standard has several separate IODs that are specific just to radiation therapy space and one such IOD is the RT Structure Set, which is designed to store contours of the human anatomy, which will be used to target radiation. DICOM RT, unlike NIFTI, stores information about contours, i.e., curves within given slices, to define where structure boundaries are. \n\n* **DICOM Segmentation** is [another DICOM IOD](http://dicom.nema.org/medical/Dicom/2020a/output/chtml/part03/sect_A.51.3.html) for segmentations. It is specifically used for storing structure delineations for general purpose use, and this one is more similar to NIFTI in that segmentation masks are stored allocating a class to every voxel.\n\nA couple of other notable formats which are not specific to medical imaging, but are still sometimes used are:\n* [NRRD](https://en.wikipedia.org/wiki/Nrrd) - generic format for storing multidimensional raster data, and\n* [HDF5](https://en.wikipedia.org/wiki/Hierarchical_Data_Format) - format for storing hierarchical multimodal data (including multidimensional raster data, like segmentations)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015249,
+              "key": "74797dc7-2c37-47ff-9387-431ae79fa956",
+              "title": "Distinct classes in seg mask",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "74797dc7-2c37-47ff-9387-431ae79fa956",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "How many distinct values would be in a NIFTI segmentation mask that contains a single segmentation mask for a spleen, similar to one that was created in the demo?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "1",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "255",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "2",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk4",
+                    "text": "65535",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1015271,
+          "key": "4110a79d-f593-4ea7-87d3-5b07639a1e63",
+          "title": "Exercise 2: Creating Ground Truth with Slicer",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "4110a79d-f593-4ea7-87d3-5b07639a1e63",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1015246,
+              "key": "5c5f0cc9-98c4-4e8e-8e6d-c115b223ea21",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Exercise 2: Creating Ground Truth with Slicer\n\nThis exercise will have you create your own spleen segmentation mask using Slicer. A fun thing would be to plug it into the Dice score algorithm from the previous lesson and compare yourself with the ground truth.  \n\n> Note that if you are using a Udacity Workspace, then in order to be able use Slicer you need to start a GPU workspace and switch to desktop using the blue button at the bottom. You will find the Slicer launch icon on the desktop.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1017973,
+              "key": "fdd4a149-2363-4159-a9f6-a40517382770",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1015271xREACTfvz29w8g",
+              "pool_id": "autonomousgpu",
+              "view_id": "react-34zc9",
+              "gpu_capable": true,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/applications",
+                          "dest": "/opt/aihcnd-applications"
+                        },
+                        {
+                          "src": "/AIHCND/conda-envs/medai",
+                          "dest": "/root/miniconda3/envs/medai"
+                        }
+                      ]
+                    },
+                    "port": 3000,
+                    "ports": [
+                      3001
+                    ],
+                    "userCode": "/root/miniconda3/bin/conda init bash > /dev/null\ngrep -qxF \"conda activate medai\" /root/.bashrc || echo \"conda activate medai\" >> /root/.bashrc",
+                    "openFiles": [
+                      "/home/workspace/README.md"
+                    ],
+                    "showFiles": true,
+                    "allowClose": true,
+                    "allowSubmit": false,
+                    "terminalTitle": "",
+                    "actionButtonText": "Go to Desktop",
+                    "openTerminalOnStartup": true
+                  },
+                  "kind": "react"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 1020131,
+              "key": "84a36afa-a27d-4501-864c-241ef4cc4469",
+              "title": "Solution",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "You can find the solution to this exercise [here](https://github.com/udacity/nd320-c3-3d-med-imaging/tree/master/deploy-algorithms-in-real-world/exercises/2-segmenting-structures/solution). You can run the solution on Slicer to see the mask I created for the spleen. ",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1015276,
+          "key": "438369f0-6f1d-44a9-a1fd-8c3c37819cb5",
+          "title": "Tools of the Trade Summary",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "438369f0-6f1d-44a9-a1fd-8c3c37819cb5",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1015255,
+              "key": "ebceb797-c499-4362-9c1f-7835ca7e0a10",
+              "title": "heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Tools of the Trade - Summary",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015213,
+              "key": "6efd5566-f48e-4c6e-8ce3-325cf0b17846",
+              "title": "ND320 C3 L4 12 Tools Summary",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "WkfjFuo_9cg",
+                "china_cdn_id": "WkfjFuo_9cg.mp4"
+              }
+            },
+            {
+              "id": 1015243,
+              "key": "ca033079-e265-4d31-a36b-55cc0758e6a7",
+              "title": "Summary, Further Research, New Vocab Terms",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Hopefully, this section gave you a better understanding of some of the tools that you might be integrating with or using in your endeavors. In the next and final section, we will touch on the regulatory landscape that you will likely be dealing with, and for now, allow me to link to some resources.\n\n# Further Resources\n\n* DCMTK - the swiss-army-knife for DICOM debugging: https://dcmtk.org/dcmtk.php.en\n* Cornerstone - the open-source Javascript framework for viewing medical images: https://github.com/cornerstonejs/cornerstone \n* OHIF - the open-source radiological image viewer: http://ohif.org/\n* Orthanc (https://www.orthanc-server.com/) is a tool that we have not really discussed in the lesson, but will use in the final project. Orthanc is a free open-source implementation of a medical imaging archive that provides many features similar to a clinical PACS when it comes to storage\n* Radiant (https://www.radiantviewer.com/) is another freeware viewer that has been used by Mazen in the clinical viewers video",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1015268,
+          "key": "ab2560a1-0494-49aa-8006-a750c067a266",
+          "title": "Regulatory Landscape: Medical Devices",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "ab2560a1-0494-49aa-8006-a750c067a266",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1015254,
+              "key": "be312297-f4df-468a-9739-4452da7883aa",
+              "title": "heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Regulatory Landscape\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015231,
+              "key": "72bcf8d6-17c8-438b-9764-efba752b68a5",
+              "title": "ND320 C3 L4 13 FDA & Medical Device Leg",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "1CoxFsUnl7A",
+                "china_cdn_id": "1CoxFsUnl7A.mp4"
+              }
+            },
+            {
+              "id": 1015229,
+              "key": "dce3628c-a04f-4e86-b33c-230177efc0ef",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this final section, I will cover the basics of some of the regulatory standards that control the use of software in medicine. This video introduced the concepts of a “*medical device*”, which is central to many regulatory systems across the world. This is the concept that regulatory agencies use to draw the line between software that has to comply with regulations and the one that does not.\n\nHere is how the US Foods and Drugs Administration (the main government regulatory body in all things healthcare) [defines a medical device](https://www.fda.gov/medical-devices/classify-your-medical-device/how-determine-if-your-product-medical-device):\n\n> ... An instrument, apparatus, implement, machine, contrivance, implant, in vitro reagent, or other similar or related article, including a component part, or accessory which is:  \n1. recognized in the official National Formulary, or the United States Pharmacopoeia, or any supplement to them,  \n1. intended for use in the diagnosis of disease or other conditions, or in the cure, mitigation, treatment, or prevention of disease, in man or other animals, or  \n1. intended to affect the structure or any function of the body of man or other animals, and which does not achieve its primary intended purposes through chemical action within or on the body of man or other animals …  \nFor comparison, this is how [European Medical Device Regulation (MDR)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2017.117.01.0001.01.ENG&toc=OJ:L:2017:117:TOC) defines the term:\n\n> ‘medical device’ means any instrument, apparatus, appliance, software, implant, reagent, material or other article intended by the manufacturer to be used, alone or in combination, for human beings for one or more of the following specific medical purposes:  \n* diagnosis, prevention, monitoring, prediction, prognosis, treatment or alleviation of disease,\n* diagnosis, monitoring, treatment, alleviation of, or compensation for, an injury or disability,\n* investigation, replacement or modification of the anatomy or of a physiological or pathological process or state,\n* providing information by means of in vitro examination of specimens derived from the human body, including organ, blood and tissue donations,\n\nYou can see the pattern here - something that is built with the purpose of diagnosing, preventing, or treating the disease is potentially a medical device that should conform with certain standards of safety and engineering rigor. The degree of this rigor that the regulatory bodies require depends on the risk class of the said device. Thus, for a device with lesser risk class (like a sterile bandage) often it is sufficient to just notify the respective regulatory body that device is being launched into the market while with high-risk devices (like an implantable defibrillator) there are requirements to clinical testing and engineering practices. \n\nWhile “medical device” may sound like something that does not have much to do with software, the regulatory bodies actually include software in this notion as well, often operating with concepts of “software-as-a-medical-device”. Sometimes a distinction is made between “medical device with embedded software” (like a CT scanner) or “software-only medical device” (like a PACS).\n\nKey thing that determines whether something is a medical device or not, and what class it is, is its ”intended use”. The same device may have different risk classes (or not qualify as a medical device at all) depending on what use you have in mind for it. A key takeaway here is that the presence of an “AI algorithm” in a system that is used by clinicians does not automatically make it a medical device. You need to articulate the intended use of the system before you try to find out what the regulatory situation is for your product.\n\nA couple of additional notes:\n\n* Further in this section, I will be using USA regulations as an example, just to keep my examples simple. For fundamental things, regulations across all countries are quite similar. \n* This section is not legal advice - it is meant to provide a general understanding of the process and the place of an AI engineer in it. If you are seeking to classify your medical device or prepare a 510(k) package, you could use this section for reference, but you should consult a trained professional to evaluate legal risks and determine the correct regulatory strategy",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1015261,
+          "key": "4c81d20c-90b1-4623-8bef-5ae2b0c0264b",
+          "title": "Regulatory Landscape: FDA Process",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "4c81d20c-90b1-4623-8bef-5ae2b0c0264b",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1015218,
+              "key": "a2c39ddc-4b6c-4459-bc10-d264120fd82a",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Regulatory Landscape: FDA Process",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015225,
+              "key": "6f4998de-4c7d-4238-86f2-9ea9e949621d",
+              "title": "ND320 C3 L4 14 FDA & Medical Device Regulation (Process)",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "ECHmaWx4seo",
+                "china_cdn_id": "ECHmaWx4seo.mp4"
+              }
+            },
+            {
+              "id": 1015236,
+              "key": "c72c1019-57ad-43ef-9629-a22ba38b9222",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Regulatory process typically involves two big steps:\n\n1. Submitting a document package - called “510(k)” for Class II medical devices or “PMA” for Class III devices. This document package needs to include engineering artifacts providing evidence that you have followed the process and your process resulted in certain deliverables. For example, a PMA package has to include things like “Design Review notes” or “Software Verification plans”. \n1. Establishing a Quality Management System. This system is a set of processes that are designed to ensure that you maintain a level of quality in your engineering and operations that is commensurate with the risk that your device presents to patients and operators. For example, the QMS might define the need for a “post-launch surveillance” process that would ensure that you keep track of usage of the device in the field and have a feedback mechanism that has you reviewing potential risks that have been realized in the field and responding to them. \n\nThe former communicates your intent to launch a product to the regulatory body, and the FDA would review your documentation package to ensure that you have followed the prescribed procedures while developing it. The latter establishes certain engineering processes.\n\nNote that the FDA or other agencies do not actually tell you *what* exactly do you have to produce. The rules are designed to ensure that you have the right process. It is up to you to decide how to apply this process to what you are doing. \n\nAn aspect of a QMS that is probably the most relevant to an AI engineer is the *validation process*. A QMS might define the need to perform product validation before you release a new version of a product, which means that you need to provide evidence that your software indeed performs. If the product has an AI component at its heart, you may need to provide input along the following lines:\n* What is the intended use of the product?\n* How was the training data collected?\n* How did you label your training data?\n* How was the performance of the algorithm measured and how was the real-world performance estimated?\n* What data will the algorithm perform well in the real world and what data it might not perform well on?\n\nAs the owner of an AI algorithm, you would be best positioned to answer these questions and your input would be instrumental.\n\n# Further Resources\n\n* FDA actually [publishes all clearances](https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPMN/pmn.cfm) that it issues, so you can take a look at how people described their medical devices and what the intended use was. For example, here is Arterys’ submission for their Medical Imaging Cloud AI Platform: https://www.accessdata.fda.gov/cdrh_docs/pdf19/K192437.pdf\n* FDA’s Quality Management System requirements are available online as [21 CFR Part 820](https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfCFR/CFRSearch.cfm?CFRPart=820). European and Canadian regulators require compliance with [ISO 13485 standard](https://www.iso.org/standard/59752.html) (which is not publicly available)",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1015274,
+          "key": "9be5e506-6cb2-4508-9d51-3789bd3a7535",
+          "title": "Regulatory landscape: HIPAA, Anonymization",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "9be5e506-6cb2-4508-9d51-3789bd3a7535",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1015222,
+              "key": "e5032445-8795-4486-b22e-51684319483f",
+              "title": "Intro",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Regulatory Landscape: HIPAA, Anonymization",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015250,
+              "key": "fa738d20-5dfc-44bd-8ff6-5da653f3406b",
+              "title": "ND320 C3 L4 15 HIPAA, Privacy, And Anonymization",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "GPf-yATW5is",
+                "china_cdn_id": "GPf-yATW5is.mp4"
+              }
+            },
+            {
+              "id": 1015232,
+              "key": "9cc5481f-69ba-472c-9a62-931dcab810eb",
+              "title": "Video Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Privacy laws vary from one country to another, but most of them are similar to HIPAA (USA) and GDPR (Europe).   \n\nIf you want to learn more about it, there is more detail in the \"EHR Data\" course in this nanodegree. Consider this a bit of a recap with a focus on applying de-identification methods to DICOM data.\n\nThere are a lot to privacy laws, but something that has the greatest impact on an AI engineer are the requirements towards de-identifying the data that is coming in. De-identification is important because HIPAA Privacy rule (and GDPR) institute quite strict controls over “Protected Health Information” while at the same time [HIPAA has this to say about De-identified Health Information](https://www.hhs.gov/hipaa/for-professionals/privacy/laws-regulations/index.html?language=es):  \n> De-Identified Health Information. There are no restrictions on the use or disclosure of de-identified health information. De-identified health information neither identifies nor provides a reasonable basis to identify an individual. There are two ways to de-identify information; either: (1) a formal determination by a qualified statistician; or (2) the removal of specified identifiers of the individual and of the individual’s relatives, household members, and employers is required, and is adequate only if the covered entity has no actual knowledge that the remaining information could be used to identify the individual.\n\nEssentially, a lot of restrictions and controls are removed for data that is considered de-identified. If you read this definition carefully, you will see that HIPAA suggests two methods for de-identification. Method #2 is actually somewhat straightforward as HIPAA lists things that are considered private in [45 CFR 165.514](https://www.law.cornell.edu/cfr/text/45/164.514), and we will practice with some of these in our final exercise.  \n\nMethod #1 is worth a note here, though. You may wonder what statisticians have to do with privacy, but it might make sense if you remember that statisticians are what machine learning engineers used to be called before ML became widespread :) On a serious note, there is more to de-identifying data than removing unique identifiers and other things that can identify a person. Thus, age alone is hardly good enough to identify a person. But what if the age of an individual is high, you know the country where they live, and you have access to additional information such as a newspaper article that interviews the longest-living person from that country who happens to have the same age as that in your “de-identified” dataset? Surely, that would be sufficient to identify that individual. This is where statistics becomes important and a prudent approach would be to prove, with statistical guarantees, the chances of re-identifying an individual based on patterns in the dataset. This is getting very close to the concept of [differential privacy](https://en.wikipedia.org/wiki/Differential_privacy) and is outside the scope of this course. However, I will post some links in the final section.  \n\nWhen it comes to DICOM medical images, anonymization typically boils down to cleaning out the DICOM metadata tags. However, depending on the dataset, you might also want to take a closer look at the pixels. Thus, you may see text that has been burnt directly into the images (not common in CT and MR, but quite common in XRays) or facial features (as we’ve seen in some of the Slicer visualizations throughout the course). As always, a good AI engineer will inspect the data and provide input if the data has potentially identifying characteristics.\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015256,
+              "key": "01600d26-be8e-4c13-95e6-2f57108b7b3a",
+              "title": "Check for Understanding",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "01600d26-be8e-4c13-95e6-2f57108b7b3a",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of these does the FDA **not** define for a manufacturer of a medical AI software?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "What your device should be doing",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "Principles for handling customer complaints from the operation of the device in the field",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "Items that need to be submitted to the FDA before a high-risk device is marketed to customers",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk4",
+                    "text": "Outline of an engineering process",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1015224,
+              "key": "423b3eed-bd22-408f-9e6a-5667817580d6",
+              "title": "Summary & Exercise Instructions",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "With that, let’s move on and do a small exercise on anonymization - which would be the last exercise of our course!",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1015269,
+          "key": "dd7d1e67-6662-447c-a77f-6c4cc6676b1a",
+          "title": "Exercise 3: Anonymization",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "dd7d1e67-6662-447c-a77f-6c4cc6676b1a",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1017994,
+              "key": "66e8ea20-0b8e-4228-8c2e-6ef24070356a",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1015269xJUPYTERv6lnuhe8",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-sovte",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Anonymization.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 1015257,
+              "key": "844780ca-566f-49ca-ab23-32a56202b744",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "I hope you enjoyed this little exercise and have a better grasp of what is involved in anonymization of DICOM datasets. You can find the solution to this exercise [here](https://github.com/udacity/nd320-c3-3d-med-imaging/blob/master/deploy-algorithms-in-real-world/exercises/3-anonymization/solution/Anonymization.ipynb). As you inspect the solution, take note of how HIPAA gives you a good start for what is considered a PHI and what isn’t, but really there is much more that you should be aware of, even when anonymizing just the DICOM tags.\n\nWhile it is fun to get hands-on and look at those individual tags and algorithms yourself, there are libraries out there that do a good job of de-identifying DICOM and it’s something you should consider when setting up de-id pipelines. <br><br>\nAn example of a good library is the [deid module of pydicom](https://pydicom.github.io/deid/) that cleans both metadata and image pixels: https://pydicom.github.io/deid/    <br><br>\nAnother such library is the [skull stripping functionality](http://freesurfer.net/fswiki/mri_strip_skull) of the popular neuroimaging FreeSurfer package. This package can remove pixels containing facial features while leaving brains intact.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1015278,
+          "key": "1f66436f-a657-42fd-96e3-81dfd54df7bb",
+          "title": "Lesson Summary",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "1f66436f-a657-42fd-96e3-81dfd54df7bb",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1015239,
+              "key": "87de2245-d219-4daa-bd95-a49c83eed797",
+              "title": "heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Lesson Recap",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015237,
+              "key": "4cff0ba8-63e1-43d6-9676-bcc42f81e797",
+              "title": "ND320 C3 L4 16 Summary Of The In The Wild Lesson",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "bjliG3k1NuM",
+                "china_cdn_id": "bjliG3k1NuM.mp4"
+              }
+            },
+            {
+              "id": 1015252,
+              "key": "b464e80d-f663-4889-b1da-ece305f16551",
+              "title": "Vocabulary Terms & Further Research",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "And this brings our lesson to a close. I hope you learned something valuable and I hope that your newly acquired skills will help you make a greater impact on AI technology for 3D medical imaging!   \n\nIn this lesson we have covered the following:\n\n* Basics of DICOM networking\n* How hospital networks operate and where would AI algorithms fit in\n* Requirements for integration of AI algorithms\n* Tools for simulating and debugging clinical environments:  \n    * scripting via DCMTK\n    * OHIF - the zero-footprint medical image viewer\n    * A deeper-dive into Slicer for annotation\n* Medical imaging viewer as radiologist’s tool\n* Medical Device Regulations with the US FDA as an example\n* Data privacy, HIPAA, and anonymization.\n\nLet me leave you with some useful resources here before we move on to the final project.\n\n# Further Resources\n\n* FDA’s guidance for software validation: https://www.fda.gov/media/73141/download \n* A very profound analysis done by the University of Cambridge of various regulatory frameworks, as it pertains to algorithms as medical devices: https://www.phgfoundation.org/documents/algorithms-as-medical-devices.pdf\n* American College of Radiology has been hosting very good [webinars on all things medical imaging and AI](https://www.acr.org/Member-Resources/rfs/Journal-Club).\n* An [article by American College of Radiology](https://www.acadrad.org/wp-content/uploads/2019/06/NIBIB-workshop-1.pdf) with some greatly structured thoughts on the roadmap for AI development in radiology \n* A question that presents somewhat of a challenge to medical device regulators is what to do about machine learning systems that are continuously learning. As you have seen, the traditional regulatory frameworks assume a strict step-by-step process whereby evidence of device performance is collected and submitted once, and if updates are needed, it is submitted again, with 90 days or so review cycles. That doesn’t quite work well for continuously learning systems. FDA has recently [published some thoughts on what a framework for such systems could look like](https://www.fda.gov/media/122535/download).",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1015277,
+          "key": "dd4df0a8-27c0-4dc3-9639-eb21b22338d9",
+          "title": "The End and Final Project",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "dd4df0a8-27c0-4dc3-9639-eb21b22338d9",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1015251,
+              "key": "4852d86c-6817-417b-a500-2d5d4eb6d5a3",
+              "title": "ND320 C3 Course Outro",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "YBhLaprdvmc",
+                "china_cdn_id": "YBhLaprdvmc.mp4"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

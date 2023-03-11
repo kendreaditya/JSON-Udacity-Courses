@@ -1,0 +1,1304 @@
+{
+  "data": {
+    "lesson": {
+      "id": 1126858,
+      "key": "d9330a8b-f15d-45a2-9b72-ab0b75d95bcb",
+      "title": "Covering Tracks & Reporting",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "In this lesson, we will learn how to stay under the radar of the target and not be noticed. And we will also organize all our thoughts in a final comprehensive report.",
+      "lesson_type": null,
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/d9330a8b-f15d-45a2-9b72-ab0b75d95bcb/1126858/1619795647049/Covering+Tracks+%26+Reporting+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/d9330a8b-f15d-45a2-9b72-ab0b75d95bcb/1126858/1619795640509/Covering+Tracks+%26+Reporting+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 1126757,
+          "key": "554787bd-ac62-405b-aa26-5f226baacf56",
+          "title": "Introduction to Covering Tracks & Reporting",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "554787bd-ac62-405b-aa26-5f226baacf56",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1126754,
+              "key": "37ed475a-5f20-43b5-bc04-7a6e9b04e5b1",
+              "title": "Introduction to Covering Tracks & Reporting Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Introduction to Covering Tracks & Reporting",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1126755,
+              "key": "2110fb87-8aa8-4d08-9303-a5e31d3236cf",
+              "title": "ND350 C2 L5 A01 Introduction To Covering Tracks And Reporting V1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "T4XkBJhkQO0",
+                "china_cdn_id": "T4XkBJhkQO0.mp4"
+              }
+            },
+            {
+              "id": 1126756,
+              "key": "485b041b-0d2e-461e-a065-eeaffa143714",
+              "title": "Introduction to Covering Tracks & Reporting Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "* What does covering track mean in hacking\n* Techniques that a red team can use to cover tracks after their hack work is done\n* Removing evidence",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1126768,
+          "key": "38bf49bf-e400-47bc-83e5-d800137ac670",
+          "title": "Effective Methods for Covering Tracks",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "38bf49bf-e400-47bc-83e5-d800137ac670",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1126764,
+              "key": "d4234a56-1cf8-4857-aa53-bb78a597e6cc",
+              "title": "Clearing Registries Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## A Review of Techniques to Cover Tracks",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1126765,
+              "key": "7188e54f-5c32-4467-b597-c3c9a7aa184a",
+              "title": "ND350 C2 L5 A02 Effective Methods For Covering Your Tracks V1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "bijUxku2zAA",
+                "china_cdn_id": "bijUxku2zAA.mp4"
+              }
+            },
+            {
+              "id": 1129371,
+              "key": "e4982f82-aa82-41c2-84ab-b7dc50fed70b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "* Clearing logs\n* Concealed Presence\n* False Flag \n* Shredding or erasing the Command History\n* Hiding and/or removing files and folders",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1126759,
+          "key": "65e562a5-6bcb-4b09-9bff-0f784935f1e8",
+          "title": "Quiz: Introduction to Covering Tracks",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "65e562a5-6bcb-4b09-9bff-0f784935f1e8",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1129372,
+              "key": "eed7a065-3eb0-4a84-a167-81d4ffde0665",
+              "title": null,
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "eed7a065-3eb0-4a84-a167-81d4ffde0665",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What is a false flag?",
+                "answers": [
+                  {
+                    "id": "3f2fb78f-a363-4384-9de1-2d477731ab16",
+                    "text": "When a hacker attacks a honey pot",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "7a33c169-3e86-4e24-8e79-d32beae6d8fa",
+                    "text": "When a hacker captures an object on the target machine but then realize that it was not as valuable as they thought",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "342adb85-443a-4a2a-82fb-874e650b686c",
+                    "text": "When a hacker commits a hack using a known attack style of another hacker ",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "9c6de087-eb4e-4cc8-83a6-8efb6dfa5055",
+                    "text": "When the TCP flag set is not set properly",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1129373,
+              "key": "f0a27d1e-6479-4ac1-abe2-a69fd5f41ec0",
+              "title": null,
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "f0a27d1e-6479-4ac1-abe2-a69fd5f41ec0",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What is steganography?",
+                "answers": [
+                  {
+                    "id": "f3f9b123-b29e-43d2-9c19-0440afe4dc85",
+                    "text": "The process of conducting DoS on your target",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "45a3ac03-03a9-4d59-b695-7b36eea2c18a",
+                    "text": "The process of hiding a file inside a file",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "cc11f80a-9bcd-4dd1-b140-c6bfc5427045",
+                    "text": "The process of turning milk into cheese",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "8bff5be4-bf7e-4d3f-926a-20c447ff6235",
+                    "text": "The process of creating a reverse TCP shell",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1126763,
+          "key": "7d879e72-2c45-4bbb-afc9-307eec26aa17",
+          "title": "Team Meeting!",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "7d879e72-2c45-4bbb-afc9-307eec26aa17",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1129375,
+              "key": "5aa47e6c-7a50-4c94-94fd-8c476d6537a5",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Team Meeting\n\nTopic: Discuss maintaining access and plans to cover tracks",
+              "instructor_notes": null
+            },
+            {
+              "id": 1126761,
+              "key": "5b40e8c6-a118-4692-bcc7-f09b345c8117",
+              "title": "Covering Tracks And Reporting-",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "5gLyyWlVIlE",
+                "china_cdn_id": "5gLyyWlVIlE.mp4"
+              }
+            },
+            {
+              "id": 1126762,
+              "key": "60ef78db-01b6-48a0-a270-36443eb5d41e",
+              "title": "Review Status and Discuss Cover Tracks with Team  Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Meeting Notes: \n\n* Persistence Connection was established \n* NAC was implemented on the network to block access to the DMZ, but the team overcame that by pivoting via the MZ\n* Team will need to clean up but leave one or two backdoor channels as evidence and for coaching opportunity",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1126781,
+          "key": "e30bee1d-b9cb-4296-bf08-2a523b79689a",
+          "title": "Clearing Logs",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "e30bee1d-b9cb-4296-bf08-2a523b79689a",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1126777,
+              "key": "077f9263-dc87-4c91-b7a5-494dee826592",
+              "title": "Clearing Logs Manually Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## How to Clear Event Logs",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1126778,
+              "key": "e45646c3-4b42-4da1-ae47-7366683b183c",
+              "title": "ND350 C2 L5 A04 Clearing Event Logs V1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "VfbYRP6zlLA",
+                "china_cdn_id": "VfbYRP6zlLA.mp4"
+              }
+            },
+            {
+              "id": 1129376,
+              "key": "e4fbdb7b-bbf2-4bc1-861e-47bee343c3c9",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Attack Game Plan\n\n1. Start a meterpreter session with the win-10 vm\n   * Create one if one is not already opened\n1. Send the clearev command through the session\n   * All activity logs should be cleared\n1. Remove event log on Linux Using rm command agains the directory: `/var/log/messages`\n\nIf the command is successful you will see the logs cleared on the target machine.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1172909,
+              "key": "8d2f7a9d-9552-4f51-b1b7-a7b46a3cd10d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Observe, in the screenshot below all the records item are wiped from Application logs (112), System logs (106) and Security logs (35036) following this format:\n\n```\n[*] Wiping # records from <Location>...\n```",
+              "instructor_notes": null
+            },
+            {
+              "id": 1151942,
+              "key": "5689942e-b149-40d1-bd56-8207bacc934f",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/March/603dbd80_l5clearev/l5clearev.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/5689942e-b149-40d1-bd56-8207bacc934f",
+              "caption": "Clearev Success",
+              "alt": "Clearev Success",
+              "width": 530,
+              "height": 143,
+              "instructor_notes": null
+            },
+            {
+              "id": 1172908,
+              "key": "ba9fba7a-09f3-4265-a615-5971c11aa7a9",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Observe, in the screenshot below, we can see each line shows a deleted log item with the following format:\n\n```undefined\nMonth Date Time Machine EventType: Date Time EventDescription\n```",
+              "instructor_notes": null
+            },
+            {
+              "id": 1151943,
+              "key": "b49b0b91-257f-46e1-8b5a-51d1ddbecd8c",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/March/603dbd9c_l5clear-event-log-on-linux-dmziserver/l5clear-event-log-on-linux-dmziserver.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/b49b0b91-257f-46e1-8b5a-51d1ddbecd8c",
+              "caption": "Success after clearing log using the RM command on DMZIServer",
+              "alt": "Success after clearing log using the RM command on DMZIServer",
+              "width": 1269,
+              "height": 505,
+              "instructor_notes": null
+            },
+            {
+              "id": 1162996,
+              "key": "b8c84eeb-c4cb-4900-ae19-6ec5d1af77de",
+              "title": null,
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "b8c84eeb-c4cb-4900-ae19-6ec5d1af77de",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following is a command used to clear event logs on a Windows machine?",
+                "answers": [
+                  {
+                    "id": "2abb1c7f-0f79-4ac7-a2a5-9a635501c9ee",
+                    "text": "Cmdprompt",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "2bf00b53-aab1-4f30-a399-46761a75e0d5",
+                    "text": "shell",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "77595ffe-a159-41f1-ad89-eeddfb862386",
+                    "text": "clearev",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "9d1d4734-d764-4e9a-82f5-c2f8cd7828a9",
+                    "text": "ifconfig",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "ccbc7b4b-ab57-4219-bd9f-188102748da9",
+                    "text": "ipconfig",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1126772,
+          "key": "dadc17d0-f515-4845-834a-3a371e84f539",
+          "title": "Exercise: Clearing Logs",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "dadc17d0-f515-4845-834a-3a371e84f539",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1130084,
+              "key": "43b52d1c-65e5-4058-b395-22e2d7e27c1b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Exercise: Clearing Logs",
+              "instructor_notes": null
+            },
+            {
+              "id": 1130081,
+              "key": "a989bcdb-5fcb-499b-a995-03833155dd61",
+              "title": "We saw how to wipe the entire event log on a windows machine… but what if i just want to delete some of the logs and not all of the logs. ",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "a989bcdb-5fcb-499b-a995-03833155dd61",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Start a meterpreter session with the win10 machine in the mz",
+                "Inside the meterpreter session go ahead and enter the command run event_viewer -h",
+                "Use the commands listed in the help menu to delete only the event logs inside the security directoryattrib +s +h payload.exe "
+              ],
+              "positive_feedback": null,
+              "video_feedback": null,
+              "description": "For this exercise, i would like for you to do the following: "
+            },
+            {
+              "id": 1142824,
+              "key": "e0c90ec3-7afb-40fe-a3b0-e049b916c909",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "pmicrosoftylf2gmvg",
+              "pool_id": "microsoft",
+              "view_id": "microsoft-2wev2",
+              "gpu_capable": null,
+              "configuration": {
+                "partner": "microsoft",
+                "blueprint": {
+                  "kind": "partner-workspace"
+                },
+                "iframe_url": "",
+                "nutanix_pool_id": "",
+                "nutanix_windows_config_id": ""
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1126776,
+          "key": "b57d348e-ce4c-43bf-a028-a9c0759a913b",
+          "title": "Exercise Solution: Clearing Logs",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "b57d348e-ce4c-43bf-a028-a9c0759a913b",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1163000,
+              "key": "e4476b1f-584d-42bd-8431-6c49881a30b4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Clearing Logs Exercise Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1126774,
+              "key": "c9611cfd-8410-44d7-8317-412efe5fb940",
+              "title": "ND350 C2 L5 A05 Clearing Event Logs Exercise Solution V1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "8ZtsaROUzKE",
+                "china_cdn_id": "8ZtsaROUzKE.mp4"
+              }
+            },
+            {
+              "id": 1151947,
+              "key": "d70ddf85-d41f-4a27-a7b2-dcb574897c6d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this exercise, we were able to clear security logs using the following command: \n\n```\nrun event_manager -c security\n```\nit will result in the following:\n```\n[-] You must specify and eventlog to query!\n[*] Clearing security \n[*] Event Log security Cleared!\n```",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1126770,
+          "key": "095070a5-787b-474b-bf84-fe6e00994125",
+          "title": "Hiding Your Payload",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "095070a5-787b-474b-bf84-fe6e00994125",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1126769,
+              "key": "dcd0cb56-229a-4e39-a1cb-d7e01621c09e",
+              "title": "Clearing Registries Quiz",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Combining Your Payload with JPEG",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1129378,
+              "key": "3ff44c57-fe70-47b2-9edf-8807ed1128bf",
+              "title": "ND350 C2 L5 A06 Combining Payload With JPEG V1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "dCpK4kF1sXc",
+                "china_cdn_id": "dCpK4kF1sXc.mp4"
+              }
+            },
+            {
+              "id": 1151949,
+              "key": "470f5c4f-3ab2-4f8b-b893-354c488340e6",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this video we were able to disguise out payload as a JPEG file. Once executed a real JPEG file opens and the payload executes in the background.",
+              "instructor_notes": null
+            },
+            {
+              "id": 1151951,
+              "key": "f40cf322-6634-4676-a74d-2cfee28c44e8",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/March/603dc1f6_l5-jpg-instructions/l5-jpg-instructions.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/f40cf322-6634-4676-a74d-2cfee28c44e8",
+              "caption": "Process to combine a payload with a JPEG file",
+              "alt": "Process to combine a payload with a JPEG file",
+              "width": 687,
+              "height": 360,
+              "instructor_notes": null
+            },
+            {
+              "id": 1151950,
+              "key": "6787f083-ef35-4a76-80cd-6f752300bd2b",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/March/603dc1aa_l5-hide-payload-inside-jpg-file/l5-hide-payload-inside-jpg-file.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/6787f083-ef35-4a76-80cd-6f752300bd2b",
+              "caption": "Image that has been combined with a payload",
+              "alt": "Image that has been combined with a payload",
+              "width": 1228,
+              "height": 563,
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1126785,
+          "key": "ceba3c53-4c95-44f6-aacf-13f7f28bf181",
+          "title": "Removing Evidence",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "ceba3c53-4c95-44f6-aacf-13f7f28bf181",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1126784,
+              "key": "6d92660e-0aec-4a99-9671-60ac3faae13c",
+              "title": "Clearing Logs Manually Quiz",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Shredding and Deleting Command History",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1129385,
+              "key": "45eb6835-4612-4dde-97d1-bba1ccc2975a",
+              "title": "ND350 C2 L5 A07 Removing Evidence V1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "20YraMSn4jk",
+                "china_cdn_id": "20YraMSn4jk.mp4"
+              }
+            },
+            {
+              "id": 1151952,
+              "key": "df39072e-9fd7-4734-89c1-04cb4141965f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this video, we learned the following: \n\n* Another effective method to cover all footsteps associated with the hacking activity is to erase or shred the whole command history. This is a tactic used when the hacker has got little time to do damage control. \n\n* The History -c command will clear the command history for the active session. But the issue with this is that command history from other sessions are stored inside a file called .bash_history. \n\n* We used the shred -zu command to permanently remove the command history. The shred command is used in Linux to permanently delete files so that it is extremely difficult to recover them. It does this by overwriting the content of the files multiple time. The -z command is a zero command that tells the shred utility to overwrite the file with zeros. This way evidence of shredding will be hidden. The last letter, -u tells the shred utility to truncate and remove the file after overwriting is complete.",
+              "instructor_notes": null
+            },
+            {
+              "id": 1151953,
+              "key": "a705238c-1e43-405e-8960-fedc580a75a4",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/March/603dc2a7_l5-removing-evidence/l5-removing-evidence.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/a705238c-1e43-405e-8960-fedc580a75a4",
+              "caption": "Removing Evidence through a SSH Session with SHRED",
+              "alt": "Removing Evidence through a SSH Session with SHRED",
+              "width": 610,
+              "height": 249,
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1126789,
+          "key": "589d8ebf-574f-41b3-970c-db143355bd3c",
+          "title": "Exercise: Removing Evidence",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "589d8ebf-574f-41b3-970c-db143355bd3c",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1126786,
+              "key": "4c289113-210d-4a88-87e3-02b3720cf351",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Hiding your Files",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1126788,
+              "key": "f40484a7-6cc2-49ab-b324-f1dc7310b30f",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "So you’ve had a chance to hide your files inside the linux machine. Now i want you to gain some skills in hiding files inside your windows machine.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1137630,
+              "key": "5d9055ca-3b6f-4121-abf2-79459133b5ef",
+              "title": "Inside your meterpreter session, i would like you to use the attrib command to hide your file. The +s and +h command will hide the our payload and the -s and -h command will show them again. Simply type these commands while you’re in a meterpreter shell… notice i said shell mode, not just meterpreter mode. ",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "5d9055ca-3b6f-4121-abf2-79459133b5ef",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Start a meterpreter session with the Win10 machine in the MZ\n",
+                "Go into shell mode to hide your payload using the following commands: \nattrib +s +h payload.exe\nattrib -s -h payload.exe\n",
+                "Navigate to and delete some of the content in the .Bash_history file. ",
+                "Merge your payload process using the migrate command  (hint: use migrate -h for clues)"
+              ],
+              "positive_feedback": null,
+              "video_feedback": null,
+              "description": "Requirement: "
+            },
+            {
+              "id": 1142825,
+              "key": "6ad97511-9290-4b6a-bbf5-999558625542",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "pmicrosoftig0jk53z",
+              "pool_id": "microsoft",
+              "view_id": "microsoft-6cx67",
+              "gpu_capable": null,
+              "configuration": {
+                "partner": "microsoft",
+                "blueprint": {
+                  "kind": "partner-workspace"
+                },
+                "iframe_url": "",
+                "nutanix_pool_id": "",
+                "nutanix_windows_config_id": ""
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1126794,
+          "key": "45b9c62e-5c14-4d70-988b-194fd4984265",
+          "title": "Exercise Solution: Removing Evidence",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "45b9c62e-5c14-4d70-988b-194fd4984265",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1163001,
+              "key": "eb568adc-7df6-414a-b8b1-2755eada2d38",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Removing Evidence Exercise Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1126791,
+              "key": "844828fe-84a6-4692-9b88-fcc6cfeb0f0e",
+              "title": "ND350 C2 L5 A08 Exercise Solution Removing Evidence V1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Z9JkH8AL2VM",
+                "china_cdn_id": "Z9JkH8AL2VM.mp4"
+              }
+            },
+            {
+              "id": 1151955,
+              "key": "4805c1c4-39c7-49f4-aa90-d9394aac4a23",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In order to solve this exercise, we ran the following commands while inside a meterpreter shell: \n\n* attrib +s +h payload.exe\n* attrib -s -h payload.exe\n* migrate [PID for explorer]\n\nWe migrated a session process ID with explorer with the following:\n```\nmeterpreter > migrate 8784\n[*] Migrating from 4376 to 8784...\n[*] Migrating completed successfully. \n```",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1126796,
+          "key": "b8a23902-f895-44d5-90de-cbab5e36a638",
+          "title": "Breaking the System",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "b8a23902-f895-44d5-90de-cbab5e36a638",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1126795,
+              "key": "2d0d68b2-223e-4b27-9c60-0afab34a5113",
+              "title": "Clearing Logs Using Root Kit Quiz",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Breaking the System",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1129388,
+              "key": "1cc035d3-5603-4884-a93f-3f0c309e890c",
+              "title": "ND350 C2 L5 A09 Breaking The System V1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "UwHdU9BiQxw",
+                "china_cdn_id": "UwHdU9BiQxw.mp4"
+              }
+            },
+            {
+              "id": 1151957,
+              "key": "1068a987-723a-48f8-a29a-9f5804c9ec97",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Main objective is to not leave a trace that could lead to an investigation\n\nWe will use a post exploitation tool to to break the win10 machine\n\n* Msf post(kill) > set session #\n* Msf post(kill) > run\n\nThis script will wipe your MBR and partition tables with zeros. The MBR is the first part of a hard disk that tells how and where an OS is located and can be booted. The partition table is how the Operating system know how the the disk is partitioned. Its kind of like a map for your OS.\n\nHere is what I ran in the walkthrough:\n```\nmsf6 post(windows/manage/kill) > run\n\n[*] Wiped MBR\n[*] Shutting down\n[*] Post module execution completed\nmsf6 post(windows/manage/kill) > [*] 10.1.2.10 - Meterpreter session 1 closed. Reason: Died\n[*] 10.1.2.10 - Meterpreter session 2 closed. Reason: Died\n```",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1126822,
+          "key": "5b819100-9a7e-47cb-bb78-e6180b22e983",
+          "title": "Drafting Your Report - Part 1",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5b819100-9a7e-47cb-bb78-e6180b22e983",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": {
+            "files": [
+              {
+                "name": "Lesson 5 Covering Tracks",
+                "uri": "https://video.udacity-data.com/topher/2021/March/60400e32_lesson-5-covering-tracks/lesson-5-covering-tracks.ctb"
+              },
+              {
+                "name": "PJBank PenTest Report Draft",
+                "uri": "https://video.udacity-data.com/topher/2021/March/60400e43_pjbank-pentest-report-draft/pjbank-pentest-report-draft.docx"
+              }
+            ],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 1126819,
+              "key": "d6ae693d-2209-45a2-bfc0-e1b72da75254",
+              "title": "Introduction to Writing Your Report Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Drafting Your Report Part 1",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1126820,
+              "key": "2773e1a1-e443-4ae0-81e5-45bd0c26eac4",
+              "title": "ND350 C2 L5 A10 Drafting The Penetration Testing Report Part 1 V1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "_vnVfwwpVQE",
+                "china_cdn_id": "_vnVfwwpVQE.mp4"
+              }
+            },
+            {
+              "id": 1151959,
+              "key": "8f01d763-a147-43aa-9da2-76acb8da0d69",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this video we were reviewed the report appendix. This is the technical portion of the report that details the following: \n\n* Discoveries made during Recon\n* Discoveries made during the scanning phase\n* Discoveries made during the gaining access phase\n* Discoveries made during the maintain access phase\n* Discoveries made during Covering tracks\n\nOutline of updated Cherry Tree Report is listed below along with a full report to upload.\n\nNote: A full copy of the cherry tree report is available below for download.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1162997,
+              "key": "af0abb24-b17e-4eef-a42e-1db3d3259f7e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Outline of the Cherry Tree Up Until This Point\n\n* **Information Discovery - Recon**\n   * Physical Recon\n      * HQ - Address 2440 W El Camino Rea, Mountain View CA\n      * Location Layout\n         * Front Possible rear entrance\n         * Data center is on the 2nd Floor\n         * High Traffic Lobby and Cafeteria Area\n      * **Physical Security**\n         * Low Swing Turnstyle\n         * Two Cameras\n   * **Personnel Reconnaissance**\n      * Maintenance weekend ~15th of every month\n      * James McLovin and Janet Pierce socialize with one another on Twitter\n   * **Network Recon**\n      * Windows 10 are being used by employees\n      * **MYPJBank.com - 74.208.236.247**\n         * **Name Server**\n            * IP: 74.208.236.247\n            * DNS Information\n         * Open ports 80, 81, and 443\n         * Hosting Provider: IONOS (PaaS)\n         * Software Discovery\n      * Network Layout - 5 Hosts Discovered\n         * Windows 10 are being used by Employees\n* **Vulnerabilities Discovered**\n   * Physical - On Premise\n      * RFID Badges can be easily cloned\n      * Fed-Ex truck driver gained access without ID\n      * Typosquatting: Domain Names with similar spelling\n   * **MYPJBank.com - 74.208.236.247**\n      * Contact-Form-7 5.3 - Critical Vulnerability (CV-E2020-25213)\n      * Paid Membership Pro < 2.5.3 - Unauthorized Order Information Disclosure Fixed in 2.5.3\n      * Elementor < 3.0.14 - SVG Upload Allowed by\n      * WP Google Map Plugin < 4.1.5 - Authenticated SQL Injection\n   * **Win 10 VM - 10.1.2.6**\n      * XAMPP - 1.7.3\n      * Apache 2.2.14\n      * Slow Loris DOS Attack - CVE: CVE-2007-6750\n      * SSL/TLS MITM Vulnerability (CCS Injection)\n      * SSL POODLE Information Leak - IDs: \n       BID: 70574 \n       CVE:VED-201403566\n      * Open Ports - 21, 22, 25, 79, 443, 445, 110, 106, 3389, 5357\n   * **DMZIServer - 10.1.0.7**\n      * Open Ports: 22 & 80\n      * Apache 2.4.38\n   * **Debianx64DMZwebC-MSCloud-10.1.0.11**\n      * Wordpress 4.8.15\n      * Apache 2.4.38\n   * **DNS Server -10.1.0.8**\n      * Open Ports - 80 & 53\n   * **Debianx64DMZOnCloudNew- 10.1.0.12**\n      * Open Ports - 20, 80, 139, 445, 111\n      * SAMBA 4.2.14\n      * Apache 2.4.10\n* Successful Exploits\n   * **DMZIServer - 10.1.0.7**\n      * Obtained SSH Keys: \n       username: Admin123 \n       Password: Password123!\n      * SQL Injection \n      * Directory Traversal\n      * [NEW] Clear Event Logs\n      * [NEW] Clear and Shread Command History\n   * **Win10 - 10.1.2.4**\n      * XAMPP - 1.7.2 - Remote Access\n      * Social Engineering w/ Rubber Ducky\n      * Data Exfiltration\n      * Password Cracking\n      * Gained Access to Restricted Area\n      * Persistence Connection\n      * Remote Connection via WAN\n      * [NEW] Clear Event Logs\n      * [NEW] Breaking the System\n      * [NEW] Inject Hidden Payload\n   * **DNS - 10.1.0.8**\n      * Pivot Attack on DNS via Win-10",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1126801,
+          "key": "55ddc406-3ad7-418d-8ec9-9111bac20bbf",
+          "title": "Drafting Your Report - Part 2",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "55ddc406-3ad7-418d-8ec9-9111bac20bbf",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": {
+            "files": [
+              {
+                "name": "PJBank PenTest Report Draft",
+                "uri": "https://video.udacity-data.com/topher/2021/March/60400e43_pjbank-pentest-report-draft/pjbank-pentest-report-draft.docx"
+              }
+            ],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 1126797,
+              "key": "58e7fbb6-d1a2-42dd-bbd9-ec26e35ebc8b",
+              "title": "Removing Red Team Footprints Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Drafting Your Report Part 2",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1126798,
+              "key": "0cdb8d50-07ce-46f9-8f6d-3031b9070dc8",
+              "title": "ND350 C2 L5 A11 Drafting The Penetration Testing Report Part 2 V1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "91Ho88bOZnU",
+                "china_cdn_id": "91Ho88bOZnU.mp4"
+              }
+            },
+            {
+              "id": 1151967,
+              "key": "e2745241-e04f-420b-b54e-80fda26f8d6a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this video, we wrapped up the Pen test report by adding non-technical summary for the management review. \n\nWe reviewed: \n\n* **Security Engagement Summary**: this list major vulnerabilities that we uncovered during our pen-test\n* **Engagement Overview Details**:  the summary with a little more information\n* **System Component**: describe the targets that we were authorized to test\n* **Scope**: high level review of what the pen-test was about\n* **Risk Analysis**: a synopsis of major risk on the network that we thing executive stakeholder should draw their attention to\n* **Recommendations**: areas that could reduce risks on the network if improved upon",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1126805,
+          "key": "4b8cc0a1-d4da-4766-9f8a-a2995a71c59f",
+          "title": "Exercise: Drafting Your Report",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "4b8cc0a1-d4da-4766-9f8a-a2995a71c59f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": {
+            "files": [
+              {
+                "name": "Drafting Report Template",
+                "uri": "https://video.udacity-data.com/topher/2021/April/608825e5_pjbank-pentest-report-draft/pjbank-pentest-report-draft.docx"
+              }
+            ],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 1126804,
+              "key": "27cf2947-93f2-493f-810d-753024391526",
+              "title": "Removing Red Team Footprints Quiz",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Proof and Edit",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1151968,
+              "key": "59c5ad44-748f-4fb7-bc61-76c69acf329d",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/March/603dca95_l5-creport-exercise/l5-creport-exercise.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/59c5ad44-748f-4fb7-bc61-76c69acf329d",
+              "caption": null,
+              "alt": null,
+              "width": 756,
+              "height": 429,
+              "instructor_notes": null
+            },
+            {
+              "id": 1129390,
+              "key": "b05b0b3d-ec0f-4b4b-aefd-088705ee9c94",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "> Hi,  \n>\n>\n> Do me a favor, I have a meeting with the CISO later today.  \n>\n>\n> I promised her we will submit the report a the meeting. We need to add an additional section called Significant Vulnerability Detail. This is a section that elaborates on the significant Vulnerability section of the report. Go ahead and update that for me please, I have quite a busy day today and won't have time to get around to it.   \n>    \n>\n> A copy of the Report is attached below.   \n>\n>\n> Thanks,   \n>\n> Paul  \n>",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1126809,
+          "key": "ef4e8fcb-c195-4bf8-9286-a68bf1419486",
+          "title": "Exercise Solution: Drafting Your Report",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "ef4e8fcb-c195-4bf8-9286-a68bf1419486",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": {
+            "files": [
+              {
+                "name": "Drafting Report Exercise Solution",
+                "uri": "https://video.udacity-data.com/topher/2021/April/60882615_pjbank-pentest-report-v1-20210317/pjbank-pentest-report-v1-20210317.pdf"
+              }
+            ],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 1126806,
+              "key": "e23a279d-411d-4a25-adda-4d34456c3eb5",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Missing Information on the Report Exercise Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1126807,
+              "key": "376c7033-9ef6-4de4-9ac5-c361a3377ec3",
+              "title": "ND350 C2 L5 A12 Drafting Your Penetration Testing Report Exercise Solution V1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "5lkdpygOrC0",
+                "china_cdn_id": "5lkdpygOrC0.mp4"
+              }
+            },
+            {
+              "id": 1126808,
+              "key": "c23f31ed-5dca-4154-86bd-2b40104f7cb7",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "We were able to add details on the following significant vulnerabilities: \n\n1. SQLI against the DMZIServer\n1. Xampp 1.73 remote shell exploit\n1. USB drop attack against an employee (social engineering)\n1. Password cracking of an employee credentials\n\nUpdated copy of the report is attached below.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1130092,
+          "key": "33880639-3a56-419a-9298-563abe3bfe08",
+          "title": "Grand Finale",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "33880639-3a56-419a-9298-563abe3bfe08",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1130102,
+              "key": "cfd55aea-bef2-4594-b834-784a062696fb",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Grand Finale",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1130103,
+              "key": "31dc9365-8adb-48d0-a54b-fbe58ff6f19c",
+              "title": "ND350 C2 L5 A13 Grand Finale V1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "DVDpnRNBkMM",
+                "china_cdn_id": "DVDpnRNBkMM.mp4"
+              }
+            },
+            {
+              "id": 1130104,
+              "key": "210a3666-b69b-4103-b81a-cfefd08a5765",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Our goal is to try an apply as much real world scenarios as we could. I hope you went through your training understanding concepts instead of memorizing. You don’t need to memorize anything in IT, that’s what search engines are for. But you do need to make sense of things because the rate technology continue to grow, you will face new situations and new technology. Think of it like this, If u learn you how to use a spoon, you would know how to use a spoon. But If you learn the concept of silverware, well then you’re only a step away from learning how to use a spoons, forks, knives and yes even sporks... I hope that analogy makes sense. \n\n* Don’t be robotic  by blindly following my instructions step by step\n* Be curious, experiment with other methods\n* Ask questions and research further. \n* Let those troubleshooting steps frustrate you, its all part of the learning process. Troubleshooting is what will forge you into an experience pen tester. This is how you go from a trainee to a pro.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1126849,
+          "key": "2d21e6ab-c8ca-4387-93cb-88bcfc3f2a81",
+          "title": "Lesson Recap",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "2d21e6ab-c8ca-4387-93cb-88bcfc3f2a81",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1126846,
+              "key": "54fc9782-50aa-45d1-99fa-3a16356f2b27",
+              "title": "Lesson Recap Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Lesson Recap and Project Closeout Meeting",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1126847,
+              "key": "ff6bb1d5-7936-4f8c-8ae1-5980b8fe6f29",
+              "title": "ND350 C2 L5 A14 Covering Tracks And Reporting Lesson Recap V1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "x-rbZvs-06E",
+                "china_cdn_id": "x-rbZvs-06E.mp4"
+              }
+            },
+            {
+              "id": 1126848,
+              "key": "7629bfb0-223f-421d-8245-b725f74a5285",
+              "title": "Lesson Recap Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## In this lesson we were able to:\n\n* Learn about multiple techniques that can be used to cover tracks\n* Clear event logs\n* Hide our payload using steganography\n* Remove evidence\n* Broke the system to destroy evidence",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1173122,
+              "key": "21900edd-d7a8-4cac-9479-99d55a585525",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Further Research\n\n* <a href=\"https://resources.infosecinstitute.com/topic/penetration-testing-covering-tracks/\" target=\"_blank\">Penetration Testing - Covering Tracks</a>\n* <a href=\"https://null-byte.wonderhowto.com/how-to/hack-like-pro-cover-your-tracks-leave-no-trace-behind-target-system-0148123/\" target=\"_blank\">How to Cover Your Tracks & Leave no Trace Behind on the Target System</a>",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1130085,
+          "key": "560ce4ca-5a47-4b10-a9ed-a53278135fb3",
+          "title": "Course Recap",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "560ce4ca-5a47-4b10-a9ed-a53278135fb3",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1130087,
+              "key": "51b363ae-ccd2-4dd8-b961-00ccbed7b33a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Penetration Testing & Red Teaming Course Recap",
+              "instructor_notes": null
+            },
+            {
+              "id": 1130088,
+              "key": "81bc86ec-0cb3-4b2c-b1a0-da77fd790ef8",
+              "title": "ND350 C2 L5 A15 Penetration Testing And Red Teaming Course Recap V1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "hRpwAT_Gusc",
+                "china_cdn_id": "hRpwAT_Gusc.mp4"
+              }
+            },
+            {
+              "id": 1162998,
+              "key": "78344627-d858-4148-bc17-bdc4be9611ea",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Course Agenda \n- Introduction to Reconnaissance\n- Scanning & Research\n- Gaining Access \n- Maintaining Access\n- Cover Tracks & Reporting\n\nGreat News! PJ Bank CISO was so impressed with your team’s performance, they decided to extend your contract term. Your new assignment is to test the new training program platform for security weaknesses.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1151853,
+              "key": "97a36cdf-638f-4881-a427-3510af67a1d8",
+              "title": "ND350 C2 L5 A16 Project Red Teaming Operations V1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "8sw6rBAfV2M",
+                "china_cdn_id": "8sw6rBAfV2M.mp4"
+              }
+            },
+            {
+              "id": 1130089,
+              "key": "6c824840-8239-41ac-ad60-c4a155ba65de",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "The site is learnaboutsecurity.com and they have an internal server that stores personnel data. Get started on your project, if you’ve been taking good notes so far, the project shouldn't be too bad since we’ve covered all the task items in this course. \n\nGood luck I’ll see you later!",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1130086,
+          "key": "887a1bd0-1122-4d3f-800e-ebffc6d7285d",
+          "title": "Congratulations",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "887a1bd0-1122-4d3f-800e-ebffc6d7285d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1130093,
+              "key": "b8480c0f-738a-4ff3-90e7-02e71195f89a",
+              "title": "ND350 C2 L5 A17 Congratulations V1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "dYOJviE5VNk",
+                "china_cdn_id": "dYOJviE5VNk.mp4"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "lesson_type",
+      "reason": "Obsolete"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "starter_files",
+      "reason": "prefer master_archive_id"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "starter_files",
+      "reason": "prefer master_archive_id"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

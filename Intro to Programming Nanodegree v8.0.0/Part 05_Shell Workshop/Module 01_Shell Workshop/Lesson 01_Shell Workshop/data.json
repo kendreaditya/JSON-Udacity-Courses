@@ -1,0 +1,2621 @@
+{
+  "data": {
+    "lesson": {
+      "id": 817314,
+      "key": "09b1e3e3-604b-40f7-a78f-e87808d68064",
+      "title": "Shell Workshop",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "The Unix shell is a powerful tool for developers of all sorts. In this lesson, you'll get a quick introduction to the very basics of using it on your own computer.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/09b1e3e3-604b-40f7-a78f-e87808d68064/817314/1555957151221/Shell+Workshop+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/09b1e3e3-604b-40f7-a78f-e87808d68064/817314/1555957147804/Shell+Workshop+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 729528,
+          "key": "05c44c76-f163-44fe-b071-83c660aeabf2",
+          "title": "Welcome!",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "05c44c76-f163-44fe-b071-83c660aeabf2",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 729529,
+              "key": "daea0fc0-783d-421b-86ac-75dd03d51c16",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": " ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 729574,
+              "key": "540b789e-b233-45c1-ac8c-e642b0fd7f56",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Welcome to the *shell* workshop!\nIn this course, you'll be learning about something called the _shell_. Karl will introduce the general concept and then we'll go over everything in more detail.\n\n**Note**: Karl goes over a lot in this video. Don't worry; we're going to walk you through all of this stuff step by step and we won't assume that you have any prior experience with it. For now, just try to pick up the general idea.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 729573,
+              "key": "95f642c1-4f0b-45c5-9a29-b7c4d5c1d963",
+              "title": "Shell Intro",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "-EtN5oD8MM0",
+                "china_cdn_id": "-EtN5oD8MM0.mp4"
+              }
+            },
+            {
+              "id": 729552,
+              "key": "7cd16d58-9712-40ac-82b5-8bd10064bcea",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# What's the big idea?\n\nBefore we dive into the specifics of how to use the shell, let's take a step back and get a little context.\n\nOur goal is to communicate with the computer. Every time you want to open a file, use your word processor, or browse the internet, you need a way of giving the computer instructions.\n\nBut at its core, your computer is made up of electrical circuits ... and it isn't exactly practical to communicate with those circuits directly. Imagine if you had to modulate the electrical activity in a microchip every time you wanted to send an email!\n\nSo we need other ways of telling the computer what to do. To that end, there are many, many layers of hardware and software that exist between you and your computer's circuits to make it possible for you to interact with your computer in a convenient way.\n\nOne of those layers is your **operating system**—like Windows, macOS, or Linux.\n\n## OK, but what's a _shell_?\n> **💡 Key idea:** A **shell** is simply the outermost layer of an operating system. It's designed to provide a way for you to interact with the tools and services that your operating system provides.\n\nThat may sound fancy, but you actually already use shells all the time. If you've ever used the Windows _Start_ menu to run a program, or used _Finder_ to open a file on your Mac, you've used a shell.\n\n## Graphics vs. text\nThe examples above are what we call **graphical shells**, where you interact with the operating system through things like windows and buttons. You may have heard this type of interface called a **Graphical User Interface** or **GUI** (pronounced \"gooey\").\n\nIn contrast, this course is all about how to use your computer's **text shell**. Instead of clicking on buttons, you'll be entering text commands. This type of interface is called a **Command-Line Interface** or **CLI**.\n\n(When you see the stereotypical hacker on a TV show frantically typing away at the keyboard, they're usually giving instructions to the *shell* through a *Command-Line Interface*.)\n\nAnd that's what you'll be learning in this course: How to use your operating system's _shell_ by entering text into a a CLI.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 729666,
+              "key": "56160786-69be-4d4e-9cab-f22047275fed",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## BASH\n\nWe've been saying \"*the* shell,\" but there isn't just one single shell that all systems use—there are a variety of shells out there, and different operating systems may use different shells.\n\nOne of the most widely used shells is called **BASH**, and that's what we'll be using in this course. Mac and Linux computers use the BASH shell by default. Windows computers _don't_, but it's pretty easy to get one installed.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 729655,
+              "key": "48e3e6b6-7ed2-4b24-8258-76337722a175",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "48e3e6b6-7ed2-4b24-8258-76337722a175",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "We just threw a lot of vocabulary at you! Let's review some of the key terms."
+                },
+                "concepts_label": "Description",
+                "answers_label": "Term",
+                "concepts": [
+                  {
+                    "text": "The outermost layer of your operating system.",
+                    "correct_answer": {
+                      "id": "a1538507557172",
+                      "text": "shell"
+                    }
+                  },
+                  {
+                    "text": "A user interface where you give instructions to the computer by entering lines of text.",
+                    "correct_answer": {
+                      "id": "a1538507571082",
+                      "text": "CLI"
+                    }
+                  },
+                  {
+                    "text": "A user interface where you give instructions to the computer by interacting with things like windows, menus, icons, and buttons.\n",
+                    "correct_answer": {
+                      "id": "a1538507603130",
+                      "text": "GUI"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1538507603130",
+                    "text": "GUI"
+                  },
+                  {
+                    "id": "a1538507557172",
+                    "text": "shell"
+                  },
+                  {
+                    "id": "a1538507571082",
+                    "text": "CLI"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 729656,
+              "key": "c9f0bff2-98cd-4e8b-b64d-5f422397f9ac",
+              "title": "",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "c9f0bff2-98cd-4e8b-b64d-5f422397f9ac",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of these things will we be learning about in this course?\n\n(You can select multiple answers.)",
+                "answers": [
+                  {
+                    "id": "a1538507808000",
+                    "text": "How to use a Graphical User Interface (GUI)",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1538507855079",
+                    "text": "How to use a Command-Line Interface (CLI)",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1538507866414",
+                    "text": "How to use the BASH shell",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1538512007346",
+                    "text": "How to use the Windows shell",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 729652,
+              "key": "2c738bf6-43db-4b51-ae48-c8e9f062922a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## OK, but ... why?\nLike we mentioned, you already use a graphical shell—so why go through the extra work to learn a *text* shell like BASH? Why use a Command-Line Interface (CLI) rather than just always using a Graphical User Interface (GUI)?\n\n### It will make you a more powerful programmer\nLearning to give your computer commands through a CLI will make you more efficient and effective as both a user and a developer. It *does* take extra work to learn a new vocabulary and syntax. But once you do, you'll be able to carry out many tasks much faster than you ever could by clicking on buttons in a GUI. In fact, some instructions can *only* be given to the computer using a CLI!\n\nIn other words, if you want to be a powerful developer (or even just a powerful user), it's essential to at least learn the basics of using a text shell and CLI.\n\n### It will open the door to other tools\nSecond, once you know your way around the shell, this will open the door to other tools that professional developers use, such as something called a *Version Control System* (like *Git*—which is an incredibly useful tool for tracking and managing your code). You'll learn more about this later on.\n\n### You'll need it to run your Python programs!\nSo far, you've been writing and running all of your code here in a workspace, in your browser. That works great for the stuff we've learned up to this point, but it's also limited. To explore all the things Python can do, you'll need to be able to write and run code on your own computer. We'll be doing that in a later lesson, and **we'll be running our Python code from the shell**. \n\nOK, now that you know the context, let's get started!",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 752114,
+          "key": "1716066d-0a2a-4346-9639-2f8e17061bd6",
+          "title": "Windows: Installing Git Bash",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "1716066d-0a2a-4346-9639-2f8e17061bd6",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 752115,
+              "key": "47f7dd67-cc2e-480a-afce-ec1b4ac66162",
+              "title": "Ud206 002 P0 Windows Installing Git Bash",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "UQZvV6VTlGQ",
+                "china_cdn_id": "UQZvV6VTlGQ.mp4"
+              }
+            },
+            {
+              "id": 752116,
+              "key": "77e591da-85a7-482c-a298-c15a21a4a59c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "**Reminder: This page is Windows-only! Mac and Linux users, skip ahead to the next page!**\n\nDownload Git here: https://git-scm.com/download/win\n\n>**Note:** There is a new Linux compatibility system in Windows 10, called **Windows Subsystem for Linux (WSL)**. If you've heard of it, you may be wondering why we don't use that in this course. It's an experimental mini-Linux-OS that runs inside Windows, like a virtual machine. You can access your Windows files from inside it, but it's a little bit dangerous to share files between the Linux and Windows sides. In the future, WSL will probably become less experimental, **but for now we'll be using Git Bash instead for this course.**\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 752117,
+              "key": "92ca3672-69d0-4bb3-b1c9-48888ec6f524",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "92ca3672-69d0-4bb3-b1c9-48888ec6f524",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "I have downloaded Git from git-scm.com",
+                "I have installed Git.",
+                "I have found the Git Bash application and run it.",
+                "I've adjusted the font to something comfortable for me."
+              ],
+              "positive_feedback": "Now you have a Unix-compatible shell on your Windows computer!",
+              "video_feedback": null,
+              "description": "Install Git Bash on your Windows computer."
+            }
+          ]
+        },
+        {
+          "id": 771479,
+          "key": "550f0e4d-ed55-416d-957b-9a6551879bdd",
+          "title": "Opening a terminal",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "550f0e4d-ed55-416d-957b-9a6551879bdd",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 771480,
+              "key": "3b4249c5-3845-4fd6-b9a9-c795e119406c",
+              "title": "Ud206 003 Shell P1 - Opening A Terminal",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "4q6Vtym-nno",
+                "china_cdn_id": "4q6Vtym-nno.mp4"
+              }
+            },
+            {
+              "id": 771481,
+              "key": "34d13fc4-cbae-4c36-b566-f33e93b4f1e9",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "34d13fc4-cbae-4c36-b566-f33e93b4f1e9",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "I have a terminal open in another window."
+              ],
+              "positive_feedback": "Cool! Now let's see what you can do with it.",
+              "video_feedback": null,
+              "description": ""
+            }
+          ]
+        },
+        {
+          "id": 729682,
+          "key": "8d104eec-cd23-4a13-ae66-e769f368eac1",
+          "title": "Your first command (echo)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "8d104eec-cd23-4a13-ae66-e769f368eac1",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 729692,
+              "key": "703e3c3d-c227-4a74-8881-d6ef48957081",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Your first command (`echo`)\nA key thing to understand is that text-based shells come with their own programming languages. Much like we can give instructions to the computer using Python or JavaScript, we can also give instructions using a _shell_ language.\n\nThe difference is that shell languages are generally designed specifically for communicating with the computer's operating system through a Command-Line Interface—in other words, they're specifically designed to be used with shells!\n\nSince we're using a BASH shell, the commands we'll learn here are all part of the BASH language (but luckily these commands are the same in many shell languages!). In this next video, Karl will show you a simple example of a BASH command: `echo`.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 729693,
+              "key": "9f0dd13a-2085-4833-96cc-98215fa94e8c",
+              "title": "Ud206 004 Shell P2 - Your First Command",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "ggf5WhOYy1U",
+                "china_cdn_id": "ggf5WhOYy1U.mp4"
+              }
+            },
+            {
+              "id": 729697,
+              "key": "a9925d68-31ee-4f5f-9cb4-abdd934fc95c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "If you haven't already, go ahead and give `echo` a try in your terminal. You can type the command, followed by a string of characters, and hit _Enter_—and it will repeat the string back to you on the next line:\n\n```bash\necho Hello world!\nHello world!\n```\n\nBut `echo` doesn't _just_ repeat things back. Like Karl showed in the video, there are some characters that have special meanings, like the double exclamation mark `!!`. When you type this in the code, BASH substitutes in whatever your last command was. To see it in action, first enter a simple echo command, like `echo hello`. You should see this:\n\n```bash\necho hello\nhello\n```\n\nThen, try entering `!!` (by itself). You should see this:\n\n```bash\n!!\necho hello\nhello\n```\n\nWhen we entered the `!!`, it replaced it with our last command, which was `echo hello`. And the result of that command was that it repeated back `hello`. Kind of weird, huh?",
+              "instructor_notes": ""
+            },
+            {
+              "id": 729709,
+              "key": "a2b7f93c-7046-4337-8b81-83020a721b23",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "a2b7f93c-7046-4337-8b81-83020a721b23",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Suppose that you really just wanted the `echo` command to display `Hello!!`, and _not_ replace the `!!` with the last command.\n\nWhat should you enter?",
+                "answers": [
+                  {
+                    "id": "a1538518201618",
+                    "text": "`echo 'Hello!!'` (with single quotes)",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1538518260494",
+                    "text": "`echo [Hello!!]` (with square brackets)",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1538518275832",
+                    "text": "`echo Hello!!` (with no quotes or brackets)",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 730174,
+              "key": "bcf0a8ee-e020-477c-a8e5-05ca886daa7e",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "bcf0a8ee-e020-477c-a8e5-05ca886daa7e",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Try using the up arrow to bring back a previous command, and run it again."
+              ],
+              "positive_feedback": "Good! This is a really handy shortcut to know.",
+              "video_feedback": null,
+              "description": "So entering `!!` is one way you could re-run your last command.\n\nBut another (more helpful) way you can bring back a previous command is by using the up arrow ↑ and down arrow ↓ keys on your keyboard.\n\nThis will cycle through your recent commands. When you find the one that you want to run again, simply press enter!"
+            },
+            {
+              "id": 730182,
+              "key": "2eab98ce-6841-4ee5-8dba-fed2bab60697",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "2eab98ce-6841-4ee5-8dba-fed2bab60697",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Use the up arrow to bring back a command you just ran. Suppose that you want to edit the beginning of the command—can you click on that spot in the terminal (with the mouse) to start editing it?",
+                "answers": [
+                  {
+                    "id": "a1538685032750",
+                    "text": "**No**—clicking with the mouse doesn't move the cursor.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1538685123142",
+                    "text": "**Yes**—clicking with the mouse moves the cursor, and I can edit the text at that location.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 730186,
+              "key": "0e108e11-a401-4aad-9b63-00e2b4a3e9f7",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "0e108e11-a401-4aad-9b63-00e2b4a3e9f7",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Now try using the left ← and right → arrow keys. Can you move the cursor this way?",
+                "answers": [
+                  {
+                    "id": "a1538685301594",
+                    "text": "**No**—the cursor still stays at the end of the line.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1538685363073",
+                    "text": "**Yes**—the cursor moves to a new location, and I can edit text at that location.",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 729712,
+          "key": "3720a74f-0a1a-4478-803e-96e9b5356a55",
+          "title": "Variables",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "3720a74f-0a1a-4478-803e-96e9b5356a55",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 729713,
+              "key": "da369a57-0623-499c-8f88-d0cffad5102d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Variables",
+              "instructor_notes": ""
+            },
+            {
+              "id": 729719,
+              "key": "0e3ead88-c149-4e01-aef5-d5d868ea985b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Remember how with Python we could assign values to variables? As in:\n\n```python\nx = 100\n```\n\nWe can do something very similar in BASH. It looks like this:\n\n```bash\nx=100\n```\nThis assigns the number `100` to the variable named `x`. Pretty similar to Python, isn't it?",
+              "instructor_notes": ""
+            },
+            {
+              "id": 729726,
+              "key": "3a55c4d0-a4ab-4c61-beb8-e47cff1d8da9",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "3a55c4d0-a4ab-4c61-beb8-e47cff1d8da9",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Notice how we didn't put spaces around the `=` operator. Go ahead and try the code both ways—first without spaces:\n\n```bash\nx=100\n```\n\nAnd then with spaces:\n\n```bash\nx = 100\n```\n\nWhat happens when you do it with the spaces?",
+                "answers": [
+                  {
+                    "id": "a1538521604146",
+                    "text": "The same thing as before (the spaces are just optional).",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1538521694907",
+                    "text": "BASH displays the error `-bash: x: command not found`",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 729728,
+              "key": "e823119e-8abb-4834-95b9-fae56f7dc7bc",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n>**It's a different syntax!** In Python, we could optionally include those spaces or not, and it worked fine either way. But in BASH, `x=100` and `x = 100` mean different things. This is something you'll run into a lot; when you start learning a new programming language, you'll usually find that some parts of the syntax are similar, and other parts are different.\n\nHere's another part of the BASH syntax that's a bit different: To refer to the variable we created, we have to put a dollar sign `$` in front of the variable name. So, if we want to see the value we assigned to `x`, we would do this:\n\n```bash\nx=100\necho $x\n100\n```\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 729720,
+              "key": "62610197-a479-452d-863d-a546752a435c",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "62610197-a479-452d-863d-a546752a435c",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Here are some more things you can try. If you enter these into the terminal, what do you think the result will be?\n\n(We suggest that you first try to predict the result, just based on what you've learned so far. Then give each command a try for yourself.)"
+                },
+                "concepts_label": "Commands",
+                "answers_label": "Result",
+                "concepts": [
+                  {
+                    "text": "```bash\nx=42\necho The answer is $x.\n```",
+                    "correct_answer": {
+                      "id": "a1538520193221",
+                      "text": "The answer is 42."
+                    }
+                  },
+                  {
+                    "text": "```bash\nx=42\necho 'The answer is $x.'\n```",
+                    "correct_answer": {
+                      "id": "a1538520314061",
+                      "text": "The answer is $x."
+                    }
+                  },
+                  {
+                    "text": "```bash\nx=42\necho 'The answer is' $x'.'\n```",
+                    "correct_answer": {
+                      "id": "a1538520314668",
+                      "text": "The answer is 42."
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1538520193221",
+                    "text": "The answer is 42."
+                  },
+                  {
+                    "id": "a1538520314668",
+                    "text": "The answer is 42."
+                  },
+                  {
+                    "id": "a1538520314061",
+                    "text": "The answer is $x."
+                  }
+                ]
+              }
+            },
+            {
+              "id": 730172,
+              "key": "cbcbbe12-7a36-4129-8857-4ab875067d02",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "cbcbbe12-7a36-4129-8857-4ab875067d02",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Now give this a try in your terminal:\n```bash\necho $COLUMNS x $LINES\n```\nTake a look at the result—what do you think is going on?",
+                "answers": [
+                  {
+                    "id": "a1538684317923",
+                    "text": "The terminal is multiplying dollars by dollars.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1538684398204",
+                    "text": "The shell is telling me how big my terminal is.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1538684398795",
+                    "text": "The shell is telling me how big its army is.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1538684399307",
+                    "text": "The terminal is erasing all my files.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 737892,
+              "key": "9597b774-7e75-40f4-8c16-a5a4e0b06786",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "You may have noticed that you didn't have to assign anything to `$COLUMNS` or `$LINES`. These variables already existed, because they were created behind the scenes by the shell. And as you might imagine, the shell changes the value associated with these variables whenever the window is resized. That's why you don't see any assignment statements (like `COLUMNS=96`).",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 730215,
+          "key": "eb430c12-6665-4ad4-bb89-634692bc09ed",
+          "title": "Navigating directories (1/2)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "eb430c12-6665-4ad4-bb89-634692bc09ed",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 730217,
+              "key": "25ab7fb3-ea6c-4559-ba74-e170b8212487",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Navigating directories (ls, cd, ..)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 730242,
+              "key": "8676c7c6-a052-4fb9-a5b2-07a905ef5377",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "One of the things that you can do with the shell is navigate around the files and folders on your computer. You already do this with the _graphical_ shell on your computer—now it's time to learn how to do it with the _text_-based shell.\n\nIn this next video, Karl will give a quick overview—and then we'll get some practice with the commands that he uses.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 730243,
+              "key": "4d51c368-1412-468b-a0a7-3f19f3ac21bc",
+              "title": "Ud206 006 Shell P3 - Navigating Directories",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "i9Xp94DmdB8",
+                "china_cdn_id": "i9Xp94DmdB8.mp4"
+              }
+            },
+            {
+              "id": 730244,
+              "key": "9210649a-ac7a-416a-99b4-ebc7319c8d2d",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "9210649a-ac7a-416a-99b4-ebc7319c8d2d",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Here are some of the commands Karl described. Do you remember what each one does?"
+                },
+                "concepts_label": "Command",
+                "answers_label": "What does it do?",
+                "concepts": [
+                  {
+                    "text": "```bash\nls\n```",
+                    "correct_answer": {
+                      "id": "a1538702222253",
+                      "text": "List the contents of the current directory."
+                    }
+                  },
+                  {
+                    "text": "```bash\ncd Downloads\n```",
+                    "correct_answer": {
+                      "id": "a1538702272225",
+                      "text": "Move to the `Downloads` directory."
+                    }
+                  },
+                  {
+                    "text": "```bash\ncd ..\n```",
+                    "correct_answer": {
+                      "id": "a1538702312323",
+                      "text": "Go up one directory (move to the parent directory)."
+                    }
+                  },
+                  {
+                    "text": "```bash\nls ..\n```",
+                    "correct_answer": {
+                      "id": "a1538702588854",
+                      "text": "List the contents of the parent directory."
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1538702312323",
+                    "text": "Go up one directory (move to the parent directory)."
+                  },
+                  {
+                    "id": "a1538702588854",
+                    "text": "List the contents of the parent directory."
+                  },
+                  {
+                    "id": "a1538702272225",
+                    "text": "Move to the `Downloads` directory."
+                  },
+                  {
+                    "id": "a1538702222253",
+                    "text": "List the contents of the current directory."
+                  }
+                ]
+              }
+            },
+            {
+              "id": 730390,
+              "key": "db733709-88fd-43be-accc-767e46ec9050",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "db733709-88fd-43be-accc-767e46ec9050",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Use `ls` to see what's inside the current directory (you should see another directory, called `Desktop`).",
+                "Use `cd Desktop` to move into the `Desktop` directory.",
+                "Try `cd ..` to move back up to the directory immediately above the current one (the \"parent\" directory).",
+                "Try these same commands on your own computer!"
+              ],
+              "positive_feedback": "Good! Now see if you can answer the questions below.",
+              "video_feedback": null,
+              "description": "The workspace below has been set up with a terminal running the BASH shell. It'll work pretty much the same as the terminal that you're running on your computer—except **it won't access the files or directories on _your_ computer**. Instead, it contains files and directories that we've created just for the exercise.\n\nWe'll provide workspaces like this throughout the lesson, so that you can test out the things you're learning. Once you've tried out a new command in the workspace, you should *also* try it in the terminal on your own computer, because that's how you'll be doing things as a developer in the real world!"
+            },
+            {
+              "id": 730237,
+              "key": "13b35bc9-2151-4b58-ad9a-b87a51fd8f8f",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "view9fgzf71ni3v",
+              "pool_id": "webterminal",
+              "view_id": "repl-zaiuftuuss",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "allowClose": true,
+                    "replCommand": "export HOME=/home &&   cp -a /root/. ~ &&   source ~/.bashrc  && /bin/bash",
+                    "terminalTitle": "BASH"
+                  },
+                  "kind": "repl"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 730394,
+              "key": "4fd31b85-e1e6-4338-b913-07d4ca113403",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Using the workspace, see if you can find the answers to these questions:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 737921,
+              "key": "d0d14244-64e6-440e-9208-0f71667cdbe9",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "d0d14244-64e6-440e-9208-0f71667cdbe9",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Do `cd Desktop` and `cd desktop` do the same thing?",
+                "answers": [
+                  {
+                    "id": "a1539455422469",
+                    "text": "**Yes**—both of these will work.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1539455477044",
+                    "text": "**No**—`cd desktop` throws an error.",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 730392,
+              "key": "d5981acc-f8e4-4b88-9779-a3d60a4cfa69",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "d5981acc-f8e4-4b88-9779-a3d60a4cfa69",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What is inside the `Desktop` directory?",
+                "answers": [
+                  {
+                    "id": "a1538783650272",
+                    "text": "`Photos` and `to-do.txt`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1538783716960",
+                    "text": "`My Computer`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1538783727406",
+                    "text": "`Stuff` and `Things`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1538783739062",
+                    "text": "`Downloads`",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 730397,
+              "key": "de0a2177-82c7-42a1-aecd-b1187bcf2d05",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "de0a2177-82c7-42a1-aecd-b1187bcf2d05",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What files are in the `Photos` directory?",
+                "answers": [
+                  {
+                    "id": "a1538784081430",
+                    "text": "`cat.jpg` and `dog.jpg`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1538784120195",
+                    "text": "`turtle.jpg` and `bears.png`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1538784143126",
+                    "text": "`fish.gif` and `birthday_party.jpg`",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 730411,
+          "key": "68455e25-5122-4532-adcf-107900066335",
+          "title": "Navigating directories (2/2)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "68455e25-5122-4532-adcf-107900066335",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 730412,
+              "key": "bcf4c54c-a346-41ff-a6e6-a3415bd1a516",
+              "title": "Ud206 007 Shell P4 - Current working directory",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "X7dsy3oMHp0",
+                "china_cdn_id": "X7dsy3oMHp0.mp4"
+              }
+            },
+            {
+              "id": 730754,
+              "key": "d3a3c864-0e95-4c03-8ed8-bc39421229b0",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## The **home** directory\n\nIn the video, Karl mentioned the *home* directory. On your computer, the *home* directory is the *current user's* top-level directory. It's usually called something like:\n\n```bash\n/Users/karl\n```\n\nWhen we say it's the \"top-level\" directory, we mean that it's the directory that has all of the current user's other directories inside of it.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 730753,
+              "key": "bc3f2180-7776-4ee5-b59b-0d6cc6f0a7dd",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "bc3f2180-7776-4ee5-b59b-0d6cc6f0a7dd",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Can you match each term with its description?"
+                },
+                "concepts_label": "Description",
+                "answers_label": "Term",
+                "concepts": [
+                  {
+                    "text": "The directory you're currently inside.",
+                    "correct_answer": {
+                      "id": "a1538942552740",
+                      "text": "**working directory**"
+                    }
+                  },
+                  {
+                    "text": "The directory immediately above your current directory.",
+                    "correct_answer": {
+                      "id": "a1538942640198",
+                      "text": "**parent directory**"
+                    }
+                  },
+                  {
+                    "text": "The current user's top-level directory (the directory that has all of that user's other directories inside of it).",
+                    "correct_answer": {
+                      "id": "a1538942751405",
+                      "text": "**home directory**"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1538942552740",
+                    "text": "**working directory**"
+                  },
+                  {
+                    "id": "a1538942751405",
+                    "text": "**home directory**"
+                  },
+                  {
+                    "id": "a1538942640198",
+                    "text": "**parent directory**"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 730756,
+              "key": "8d7e3c69-674a-4b8b-99c5-7f9fd1c0952a",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "8d7e3c69-674a-4b8b-99c5-7f9fd1c0952a",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Like Karl mentioned, there are some symbols we can use as shortcuts for certain directories. Do you remember which are which?"
+                },
+                "concepts_label": "Directory",
+                "answers_label": "Shortcut",
+                "concepts": [
+                  {
+                    "text": "**Working** directory.",
+                    "correct_answer": {
+                      "id": "a1538943424091",
+                      "text": "`.`"
+                    }
+                  },
+                  {
+                    "text": "**Parent** directory.",
+                    "correct_answer": {
+                      "id": "a1538943648573",
+                      "text": "`..`"
+                    }
+                  },
+                  {
+                    "text": "**Home** directory.",
+                    "correct_answer": {
+                      "id": "a1538943671694",
+                      "text": "`~`"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1538943671694",
+                    "text": "`~`"
+                  },
+                  {
+                    "id": "a1538943424091",
+                    "text": "`.`"
+                  },
+                  {
+                    "id": "a1538943648573",
+                    "text": "`..`"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 730804,
+              "key": "42dccf20-5039-427f-830f-892c4e020e21",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "42dccf20-5039-427f-830f-892c4e020e21",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Try `pwd` to show the name of the **working directory**.",
+                "Try `ls ~` to list the contents of the home directory (you should see that it contain the directory called `workspace`).",
+                "Try the same commands on your own computer!"
+              ],
+              "positive_feedback": "**Great!**",
+              "video_feedback": null,
+              "description": "Here's the same terminal from the last page. You can use it to play with the shortcuts and commands you just learned.\n\nHere are some specific things you can try:"
+            },
+            {
+              "id": 730413,
+              "key": "6014bab0-36a1-4c18-a002-9ea5f1b42e7a",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "view9fgzf71ni3v",
+              "pool_id": "webterminal",
+              "view_id": "repl-d85emvatx5p",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "allowClose": false,
+                    "replCommand": "export HOME=/home &&   cp -a /root/. ~ &&   source ~/.bashrc  && /bin/bash",
+                    "terminalTitle": "BASH"
+                  },
+                  "kind": "repl"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 730434,
+              "key": "a0481892-b57b-4dec-ac69-d81d72f973b9",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "a0481892-b57b-4dec-ac69-d81d72f973b9",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "There are some things about the `cd` command that can be a little confusing. To see what we mean, try this:\n\nFirst, navigate to the `Photos` directory. Then, try running this command (from inside the `Photos` directory):\n\n```bash\ncd workspace\n```\n\nWhat happens?",
+                "answers": [
+                  {
+                    "id": "a1538938632366",
+                    "text": "It moves to the `workspace` directory.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1538938651310",
+                    "text": "It throws an error: `No such file or directory`",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 730435,
+              "key": "2c65a357-e7b2-45c9-8464-a519530605cd",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "2c65a357-e7b2-45c9-8464-a519530605cd",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Again from inside the `Photos` directory, try this:\n\n```bash\ncd /home/workspace\n```\n\n(Be sure to include the `/` in `/home`.)\n\nWhat happens?",
+                "answers": [
+                  {
+                    "id": "a1538938963021",
+                    "text": "It moves to the `workspace` directory.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1538938970122",
+                    "text": "Again it throws an error, saying `No such file or directory`.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 730436,
+              "key": "182b32cd-f27f-42ba-972b-2ab474502cdc",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "182b32cd-f27f-42ba-972b-2ab474502cdc",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Now, use `cd` to move to the `home` directory. You can do that either by using `cd /home` or `cd ~`.\n\nOnce you're in `home`, again try this:\n```bash\ncd workspace\n```\n\nWhat happens?",
+                "answers": [
+                  {
+                    "id": "a1538939004676",
+                    "text": "It moves to the `workspace` directory.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1538939013468",
+                    "text": "It throws an error.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 730415,
+              "key": "bcd9e36d-10ff-40fd-acbc-5ce6201d4603",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Absolute vs. relative path\n\nOK, so what's up with that? Why does `cd` sometimes work and sometimes throw an error?\n\nHere's the deal: When you use the `cd` command, you need to follow it with a *path*, as in `cd /home/workspace/Desktop`—and you have to give that path in one of two ways:\n\n## 1. Relative\n\nOne option is to give the path **relative** to your current location (the current *working directory*).\n\nFor example, if you are in `workspace` and want to go to `workspace/Desktop`, you can simply use:\n\n```bash\ncd Desktop\n```\n\nThis works, because `Desktop` is immediately inside of the working directory.\n\nOn the other hand, if you are in `workspace` and want to go to `workspace/Desktop/Photos` ... well, `Photos` isn't *directly* inside of `workspace`. So you would need to give this path instead:\n\n```bash\ncd Desktop/Photos\n```\n\nSo you can give a *partial* path to the directory you want to go, as long as the partial path includes all the steps needed to get there *from wherever you're currently located*. \n\n## 2. Absolute\nThe other option is to give an **absolute** path. This is where you provide the full path, all the way from the **home** directory.\n\nIf you want to go to `Photos` using an absolute path, you would type:\n\n`cd /home/workspace/Desktop/Photos`\n\nThis will work no matter where you are currently located. You could be in `home` or `Desktop` or `workspace` and in all cases this command will bring you to `Photos`. (Note that the first `/` in `/home` *is* required, for reasons we won't get into here.)\n\nIn our example, the *home* directory is actually called `home`, but like we mentioned earlier, on your computer the home directory probably has a different name—usually something like `/Users/karl`.\n\nLike Karl showed in the video, you can use the `~` key (usually in the upper left-hand corner of your keyboard) as a shortcut for the home directory. So, if you want to go to your home directory and aren't sure what it's called, you can simply use:\n\n```bash\ncd ~\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 730752,
+              "key": "4e45f374-62e0-4e42-a189-74f3fdc33668",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "4e45f374-62e0-4e42-a189-74f3fdc33668",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Suppose that you're currently in the `workspace` directory. Which of these commands would work from this location, and which would throw an error?\n\nFor reference, here's the full directory structure:\n\n```bash\n/home/workspace/Desktop/Photos\n```"
+                },
+                "concepts_label": "Command",
+                "answers_label": "Does it work?",
+                "concepts": [
+                  {
+                    "text": "```bash\ncd Desktop/Photos\n```",
+                    "correct_answer": {
+                      "id": "a1538942247496",
+                      "text": "Works"
+                    }
+                  },
+                  {
+                    "text": "```bash\ncd Photos\n```",
+                    "correct_answer": {
+                      "id": "a1538942424384",
+                      "text": "Error"
+                    }
+                  },
+                  {
+                    "text": "```bash\ncd /home/Desktop/Photos\n```",
+                    "correct_answer": {
+                      "id": "a1538942449954",
+                      "text": "Error"
+                    }
+                  },
+                  {
+                    "text": "```bash\ncd /home/workspace/Desktop/Photos\n```",
+                    "correct_answer": {
+                      "id": "a1538942486213",
+                      "text": "Works"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1538942424384",
+                    "text": "Error"
+                  },
+                  {
+                    "id": "a1538942486213",
+                    "text": "Works"
+                  },
+                  {
+                    "id": "a1538942247496",
+                    "text": "Works"
+                  },
+                  {
+                    "id": "a1538942449954",
+                    "text": "Error"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 737958,
+          "key": "d5096ad6-6a83-4957-a3e3-ebdbbca3f44e",
+          "title": "Options",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d5096ad6-6a83-4957-a3e3-ebdbbca3f44e",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 737959,
+              "key": "f4fae868-c6c1-445f-8b7d-4d7a5a3f88d5",
+              "title": "Ud206 008 Shell P5 - Parameters and options",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "UX9mzq11Mmg",
+                "china_cdn_id": "UX9mzq11Mmg.mp4"
+              }
+            },
+            {
+              "id": 737963,
+              "key": "155aa4e8-4f57-40ea-b765-ea006c94286d",
+              "title": "",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "155aa4e8-4f57-40ea-b765-ea006c94286d",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of these is true about `ls -l`?\n\nMark **all** answers that are correct.",
+                "answers": [
+                  {
+                    "id": "a1539470601590",
+                    "text": "`-l` is an example of an *option* that you can add after the `ls` command.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1539470666738",
+                    "text": "`-l` stands for *long* (as in *long format*).",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1539470667459",
+                    "text": "`ls -l` gives a more detailed list than `ls` by itself. ",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 737968,
+              "key": "a5fb64fc-30c4-4687-8d1b-93bcf5ef11f3",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "a5fb64fc-30c4-4687-8d1b-93bcf5ef11f3",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "If you wanted to list all the files whose names **end** with `.txt`, how would you do it?",
+                "answers": [
+                  {
+                    "id": "a1539473966306",
+                    "text": "`ls .txt*`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1539474012368",
+                    "text": "`ls *.txt`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1539474013046",
+                    "text": "`ls .txt`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1539474021088",
+                    "text": "You can't.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 737964,
+              "key": "ff8604a9-1a43-4c8b-b8c4-9cd25af9126d",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "ff8604a9-1a43-4c8b-b8c4-9cd25af9126d",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "If you wanted to list all the files whose names **start** with the word `bear`, how would you do it?",
+                "answers": [
+                  {
+                    "id": "a1539473856808",
+                    "text": "`ls bear`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1539473872893",
+                    "text": "`ls *.bear`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1539473878244",
+                    "text": "`ls bear*`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1539473899469",
+                    "text": "`ls *bear*`",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 738039,
+              "key": "0c19cf73-b2f1-43db-80d4-e87ac709ea8f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Here's a workspace that has a few different files in it. Use `ls` to see what the files are, and then see if you can answer the questions below.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 737993,
+              "key": "2241e72e-e15f-46d6-bb43-d6d56850a745",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "viewfbjiwdt2r6e",
+              "pool_id": "webterminal",
+              "view_id": "repl-qw12mjj5xiq",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "allowClose": false,
+                    "replCommand": "export HOME=/home &&   cp -a /root/. ~ &&   source ~/.bashrc  && /bin/bash",
+                    "terminalTitle": "BASH"
+                  },
+                  "kind": "repl"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 738041,
+              "key": "9776f3d1-bfe9-4753-af64-349769b083f1",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "9776f3d1-bfe9-4753-af64-349769b083f1",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which file is `131` bytes in size?",
+                "answers": [
+                  {
+                    "id": "a1539478125207",
+                    "text": "animals.txt",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1539478160605",
+                    "text": "bad_poem.rtf",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1539478168645",
+                    "text": "nonsense_animals.rtf",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1539478186053",
+                    "text": "nonsense_poem.txt",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 738051,
+              "key": "e7e244bd-4b74-4b23-b8d8-2a64deb604b9",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "e7e244bd-4b74-4b23-b8d8-2a64deb604b9",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "When were these files last modified?",
+                "answers": [
+                  {
+                    "id": "a1539478304543",
+                    "text": "January 1st",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1539478323935",
+                    "text": "August 8th",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1539478328357",
+                    "text": "October 14th",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 738059,
+              "key": "180f9db6-5caf-465d-9d15-3045e10cb609",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "180f9db6-5caf-465d-9d15-3045e10cb609",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "`bad_poem.rtf  nonsense_poem.txt`\n\nWhich of the following `ls` commands would give this result? ",
+                "answers": [
+                  {
+                    "id": "a1539478408682",
+                    "text": "`ls *poem`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1539478505776",
+                    "text": "`ls poem*`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1539478512859",
+                    "text": "`ls *poem*`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1539478607706",
+                    "text": "`ls *poem.txt`",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 738062,
+          "key": "d58e3a66-9515-431c-8cdf-51829c478dbc",
+          "title": "Organizing your files (mkdir, mv)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d58e3a66-9515-431c-8cdf-51829c478dbc",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 738063,
+              "key": "3ef3c38d-730d-4361-ba86-faef827a9be9",
+              "title": "Ud206 009 Shell P6 - Organizing your files",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "NZsYyzzpJXA",
+                "china_cdn_id": "NZsYyzzpJXA.mp4"
+              }
+            },
+            {
+              "id": 738067,
+              "key": "e68ec133-7b97-419c-9b6f-59bb0bcff08e",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "e68ec133-7b97-419c-9b6f-59bb0bcff08e",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Here are some commands—what does each of them do?\n\n**Note:** Some of them are real commands and some are misspelled."
+                },
+                "concepts_label": "Command",
+                "answers_label": "What does it do?",
+                "concepts": [
+                  {
+                    "text": "`mkdir Photos`",
+                    "correct_answer": {
+                      "id": "a1539480245073",
+                      "text": "Create a new directory called `Photos`."
+                    }
+                  },
+                  {
+                    "text": "`mv kitten.jpg Photos/kitten.jpg`",
+                    "correct_answer": {
+                      "id": "a1539480260998",
+                      "text": "Move a file into the `Photos` directory."
+                    }
+                  },
+                  {
+                    "text": "`mvdir Photos`",
+                    "correct_answer": {
+                      "id": "a1539480277048",
+                      "text": "Not a real command."
+                    }
+                  },
+                  {
+                    "text": "`mkdr Photos`",
+                    "correct_answer": {
+                      "id": "a1539480312201",
+                      "text": "Not a real command."
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1539480260998",
+                    "text": "Move a file into the `Photos` directory."
+                  },
+                  {
+                    "id": "a1539480312201",
+                    "text": "Not a real command."
+                  },
+                  {
+                    "id": "a1539480277048",
+                    "text": "Not a real command."
+                  },
+                  {
+                    "id": "a1539480245073",
+                    "text": "Create a new directory called `Photos`."
+                  }
+                ]
+              }
+            },
+            {
+              "id": 738099,
+              "key": "013a054e-93dd-4ad0-bf6a-c09823dbf149",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "013a054e-93dd-4ad0-bf6a-c09823dbf149",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Make a new directory called `Photos`.",
+                "Move all of the `.jpg` files into the `Photos` directory.",
+                "Make a new directory called `Animations`.",
+                "Move all the `.gif` files into the `Animations` directory."
+              ],
+              "positive_feedback": "**Great!**",
+              "video_feedback": null,
+              "description": "In the workspace below, you'll find that there are six files (you can see them by using `ls`).\n\nHalf of the files end in `.jpg` and the other half end in `.gif`. Your job is to organize them, by creating some new directories and moving the files into those directories."
+            },
+            {
+              "id": 738077,
+              "key": "d52bd2ed-2a3b-477a-a9b7-6dc2866b3a45",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "viewvn02fcp8o5i",
+              "pool_id": "webterminal",
+              "view_id": "repl-4aiyr2xphzp",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "allowClose": false,
+                    "replCommand": "export HOME=/home &&   cp -a /root/. ~ &&   source ~/.bashrc  && /bin/bash",
+                    "terminalTitle": "BASH"
+                  },
+                  "kind": "repl"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 738109,
+              "key": "56bd6d5e-70dd-42e9-8726-493424d85937",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n----\n<div style=\"background-color: #a4e4f5;\">\n## ⚠️ Spoiler alert!\n\n**Our solution is below.** You'll learn more effectively if you give the exercise a strong effort before comparing your code with ours!\n</div>\n----\n----",
+              "instructor_notes": ""
+            },
+            {
+              "id": 738108,
+              "key": "af805a80-fe0c-4793-866b-64fdd10d5e0d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Solution\n\nHere's how we did it:\n\n```bash\nmkdir Photos\nmv *.jpg Photos\nmkdir Animations\nmv *.gif Animations\n```\n\nWe can then check to make sure the files are in the new directories:\n\n```bash\nls Photos\nbeautiful.jpg  elephant.jpg  smiley.jpg\nls Animations\nkitten.gif  puppy.gif  silly.gif\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 738110,
+              "key": "3bd82500-0fcf-43fd-906a-c678e00baf15",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "3bd82500-0fcf-43fd-906a-c678e00baf15",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "`cd` to your `Desktop` directory.",
+                "Use `mkdir` to create a new directory—you can call it whatever you like. You should see it appear on your desktop as soon as you run the command!",
+                "Use `mv` to move a test file into the directory.",
+                "See if you can reverse what you just did, by moving the file back *out* of the directory and onto the desktop."
+              ],
+              "positive_feedback": "Great!",
+              "video_feedback": null,
+              "description": "Now, give it a try in the terminal on your own computer!\n\n**Note:** Obviously, we don't recommend that you experiment with any important files, just in case something goes wrong while you're learning the syntax! Make some test files that you can play with, or use some that aren't important."
+            },
+            {
+              "id": 738111,
+              "key": "77334afa-0ab2-482f-a4ff-4db154e89395",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "77334afa-0ab2-482f-a4ff-4db154e89395",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Suppose that Karl has a folder containing **thousands** of files, a few hundred of which are from a vacation he took back in 2014.\n\nHe wants to move all the photos from his 2014 vacation into a folder called `Vacation`. Fortunately (unlike all the other files), the vacation photos all end in `.jpg` and have `2014` somewhere in the name.\n\nWhich of these commands should he run?",
+                "answers": [
+                  {
+                    "id": "a1539483090515",
+                    "text": "`mv 2014.jpg`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1539483091172",
+                    "text": "`mv *2014*.jpg`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1539483297030",
+                    "text": "`mv *2014*.jpg Vacation`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1539483475760",
+                    "text": "Use the GUI to find the files and drag them into the `Vacation` folder, one at a time.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 738112,
+              "key": "fa003e2f-c2e6-4abe-99ad-47ad4d2d6c4a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "As you can see, when you want to move files around on your computer, you have some different options—you could use your computer's *graphical* shell, or you could use your computer's *text* shell.\n\nThey can both do a lot of the same things, but in some cases using the *text* shell is way faster!",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 738113,
+          "key": "96334a09-25c6-4c2e-b833-72dc3eed06ec",
+          "title": "Downloading (curl)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "96334a09-25c6-4c2e-b833-72dc3eed06ec",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 738114,
+              "key": "24137d83-09ec-4138-a404-3c6adcb17547",
+              "title": "Ud206 011 Shell P7 - Downloading",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "h7FhU1f4TgE",
+                "china_cdn_id": "h7FhU1f4TgE.mp4"
+              }
+            },
+            {
+              "id": 738115,
+              "key": "e072b74d-1013-41e3-a75b-e922f46562c5",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Downloading files (`curl`)\n\nThe `curl` command can be used to download a file from the Web. By default, it will download the file and display the contents in the terminal. For example:\n\n```bash\ncurl 'http://www.google.com'\n```\n\nThis gets the contents of whatever file is stored at the address `http://www.google.com` and displays those contents in the terminal.\n\n**Note:** You may have noticed we put single quotes `'` around the URL. A lot of URLs have special characters in them, such as the `&` sign, which have unusual meanings to the shell. That's why we're always putting these URLs in quotes … even though these particular examples would work without them, it's a good practice to get into.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 738184,
+              "key": "31b5a2b0-4e59-46bb-bb32-7b4504e73275",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Following **redirects** (`-L`)\nWhen you put a URL into the address bar of your browser, you're essentially reaching out to a server somewhere and asking for it to send back the Web page for that address. A **redirect** is when, instead of sending back the page you asked for, the server *redirects* you to a different address.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 738116,
+              "key": "21606d26-2619-4a7c-a8bd-d7044e6ab15d",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "21606d26-2619-4a7c-a8bd-d7044e6ab15d",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Try opening a browser window and entering `http://www.googel.com` (yes, we spelled it wrong on purpose!).\n\nOnce the page loads, what address does your browser show in the address bar?",
+                "answers": [
+                  {
+                    "id": "a1539490620789",
+                    "text": "`http://www.googel.com`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1539490648442",
+                    "text": "`http://www.google.com`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1539490653547",
+                    "text": "`https://www.google.com`",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 738117,
+              "key": "09238d92-5ed5-48ad-9312-2a536f9dc726",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "If you add the `-L` option to `curl`, it will first follow any redirects, and *then* download the file from wherever the redirects ultimately go. In other words, if you enter:\n```bash\ncurl -L 'http://www.googel.com'\n```\n\nOr:\n\n```bash\ncurl -L 'http://www.google.com'\n```\n\nIn both cases the server will *redirect* `curl` to `https://www.google.com` and it will download the file stored at that location. Notice the added `s` in `https`, which stands for *secure*. Google established this redirect back in 2016, in order to take visitors from the less secure `http` address to the more secure `https` address.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 740949,
+              "key": "26c2967f-6258-4138-b8dc-bcf90a6d4f43",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "26c2967f-6258-4138-b8dc-bcf90a6d4f43",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "In the terminal on your computer, `cd` to a convenient location, like the Desktop or your Downloads folder. Then, run this command:\n\n```bash\ncurl 'googel.com'\n```\n\nWhat happens?",
+                "answers": [
+                  {
+                    "id": "a1539535446335",
+                    "text": "Several lines of HTML get displayed in the terminal window, including the line `The document has moved`.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1539535541839",
+                    "text": "A very large block of HTML (and other code) gets displayed in the terminal window.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 740950,
+              "key": "ec5df921-8e56-43f8-a7c3-84b27e132656",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "ec5df921-8e56-43f8-a7c3-84b27e132656",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Now try this:\n\n```bash\ncurl 'https://www.google.com'\n```\nWhat happens?",
+                "answers": [
+                  {
+                    "id": "a1539536081537",
+                    "text": "Several lines of HTML get displayed in the terminal window, including the line `The document has moved`.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1539536123302",
+                    "text": "A very large block of HTML (and other code) gets displayed in the terminal window.",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 740948,
+              "key": "a6956f05-2f6e-4bda-8bbd-7ca321cf8343",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Output to a file (`-o`)\n\nBy default, `curl` will output whatever it downloads directly to the terminal. This typically results in a big mess of code filling up your terminal window, something that isn't always particularly useful.\n\nInstead, you can tell `curl` to output the data to a file by adding the `-o` option:\n\n```bash\ncurl -L -o 'http://www.google.com'\n```\n\nOf course, it also needs to create a file to put the data into, so you'll need to tell it that as well:\n\n```bash\ncurl -L -o some_file.html 'http://www.google.com'\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 740951,
+              "key": "77d14aaa-a2e8-48f3-acaf-42e7071ccaa6",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "77d14aaa-a2e8-48f3-acaf-42e7071ccaa6",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Use `curl` with `-o` to download the Google main page and output it to an `.html` file.",
+                "Try opening the `.html` file in your browser. You should see the Google main page (though it will probably be missing the images).",
+                "Try opening the `.html` file in your code editor. You should see all the HTML and other code (this is the same thing that was output to the terminal before)."
+              ],
+              "positive_feedback": "Cool!",
+              "video_feedback": null,
+              "description": "Give this a try for yourself! In the terminal on your computer, use `curl` to download the main Google page (`https://www.google.com`) and use the `-o` option to output it to a file.\n\nYou can call the file something like `some_file.html` or `google.html` (just be sure it ends in `.html`, so that you can open it in a browser)."
+            },
+            {
+              "id": 740952,
+              "key": "b771b1e3-dc23-4fe4-a16e-5301c8b678c1",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Download `dictionary.txt`\n\nFor the next part of the course, we'll be playing around with a text file that contains a bunch of words in alphabetical order. To do that, you'll first need to download the file—so we'll use this as an opportunity to practice using `curl`.\n\nHere's the address where the file is located:\n\n```text\nhttps://tinyurl.com/zeyq9vc\n```\nOne way to download the file, of course, is simply to copy and paste this URL into your browser's address bar. You can do that now if you want to check out what the file looks like using your browser.\n\nBut another way, of course, is to use `curl`.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 740953,
+              "key": "715a21c6-6290-4e55-aff5-04223357a049",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "715a21c6-6290-4e55-aff5-04223357a049",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "`cd` to wherever you want to download the data (e.g. your Desktop).",
+                "Use `curl` to download the data and output it to a file named `dictionary.txt`. Be sure to follow redirects!",
+                "Open your new `dictionary.txt` file using a text editor or code editor, just to verify that it worked. You should see a bunch of words, in alphabetical order."
+              ],
+              "positive_feedback": "**Woohoo!**",
+              "video_feedback": null,
+              "description": "In your terminal, use `curl` to download the data stored at `https://tinyurl.com/zeyq9vc`, and output it to a file named `dictionary.txt`. You'll want to put the file somewhere convenient, like your Desktop or Downloads folder, since we'll be using it again in a little while (so `cd` to one of those locations before downloading).\n\nThis is exactly like what we just did with the Google page, except that in this case we're naming the file with a `.txt` extension, since it's just a simple text file (it doesn't have any code in it)."
+            },
+            {
+              "id": 740954,
+              "key": "107c3c38-1dd9-45f6-9e48-1e0e2f5e59d0",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 740955,
+              "key": "6d8c70eb-61aa-4bbc-b521-6bfe7a24e67e",
+              "title": "Ud206 011 Shell P7.1 - Downloading Solution",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "1oEJUA-b0kE",
+                "china_cdn_id": "1oEJUA-b0kE.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 740956,
+          "key": "7cedf692-ef56-43a7-89fd-86019a8f5768",
+          "title": "Viewing files (cat, less)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "7cedf692-ef56-43a7-89fd-86019a8f5768",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 740957,
+              "key": "687c475e-698d-4770-839c-eda821ecccb2",
+              "title": "Ud206 013 Shell P8 - Viewing Files",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "hPPVMKqbQV0",
+                "china_cdn_id": "hPPVMKqbQV0.mp4"
+              }
+            },
+            {
+              "id": 740959,
+              "key": "da4c4c0d-b830-4fc5-a226-cbf256391067",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## `cat` and `less`\n\nKarl described two ways of viewing the contents of a file. The `cat` command will display the full contents of the file:\n\n```bash\ncat dictionary.txt\n```\n\nThe limitation is that files often have more text than will fit on the screen at once. When that's the case, you can use `less`, as in:\n\n```bash\nless dictionary.txt\n```\n\nThis displays the output in a format that allows you to search and scroll.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 740958,
+              "key": "d3df8ff7-e1be-4e03-9f8e-bdddcf76b009",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "d3df8ff7-e1be-4e03-9f8e-bdddcf76b009",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Once you've started the `less` program, you can use some different keys to move around. See if you can remember which key to press for each of these things:"
+                },
+                "concepts_label": "To do this ...",
+                "answers_label": "... what key would you press?",
+                "concepts": [
+                  {
+                    "text": "Scroll down.",
+                    "correct_answer": {
+                      "id": "a1539549315841",
+                      "text": "**Spacebar** or **down arrow**."
+                    }
+                  },
+                  {
+                    "text": "Scroll up.",
+                    "correct_answer": {
+                      "id": "a1539549350263",
+                      "text": "`b` key or **up arrow**."
+                    }
+                  },
+                  {
+                    "text": "Search.",
+                    "correct_answer": {
+                      "id": "a1539549514051",
+                      "text": "**Forward slash** `/`."
+                    }
+                  },
+                  {
+                    "text": "Exit `less`.",
+                    "correct_answer": {
+                      "id": "a1539549685132",
+                      "text": "`q` key."
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1539549315841",
+                    "text": "**Spacebar** or **down arrow**."
+                  },
+                  {
+                    "id": "a1539549685132",
+                    "text": "`q` key."
+                  },
+                  {
+                    "id": "a1539549350263",
+                    "text": "`b` key or **up arrow**."
+                  },
+                  {
+                    "id": "a1539549514051",
+                    "text": "**Forward slash** `/`."
+                  }
+                ]
+              }
+            },
+            {
+              "id": 740961,
+              "key": "59c0a474-4b13-45bc-914a-5aae1c979f82",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "The search feature that comes with `less` is an especially useful tool. To use it, simply type `/` followed by the string of characters that you want to search for. For example, to find `zebra`, you would run:\n\n```bash\n/zebra\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 740960,
+              "key": "52251d34-ac57-4148-bdc9-9a6a59136c50",
+              "title": "",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "52251d34-ac57-4148-bdc9-9a6a59136c50",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Using the `dictionary.txt` file (that you downloaded on the last page) and the `less` command, find out the next word after the word `goobers` in this dictionary.",
+                "matchers": [
+                  {
+                    "expression": "^good\\s*$"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 740962,
+          "key": "87654f77-6e7c-42a9-9da0-e1b2e51951f4",
+          "title": "Removing things (rm, rmdir)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "87654f77-6e7c-42a9-9da0-e1b2e51951f4",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 740963,
+              "key": "10d33ae2-f7f8-4ce2-a03e-02ff739c4165",
+              "title": "Ud206 014 Shell P9 - Removing Things",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "it19PvJarbk",
+                "china_cdn_id": "it19PvJarbk.mp4"
+              }
+            },
+            {
+              "id": 740967,
+              "key": "2d0fa514-d681-46e5-9209-f3a02503902d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": ">**⚠️ CAUTION:** Like Karl said, the `rm` and `rmdir` commands **permanently delete** files. So please do be careful not to delete something important!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 740966,
+              "key": "670df538-d78e-45b1-a6bf-ff3fbf02c4b8",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "670df538-d78e-45b1-a6bf-ff3fbf02c4b8",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Here are some different tasks you might want to perform. Can you pair each one with the appropriate command?"
+                },
+                "concepts_label": "Task",
+                "answers_label": "Command",
+                "concepts": [
+                  {
+                    "text": "Permanently delete a file named `example` without double-checking.",
+                    "correct_answer": {
+                      "id": "a1539557466762",
+                      "text": "`rm example`"
+                    }
+                  },
+                  {
+                    "text": "Permanently delete a file named `example`, but double-check first.",
+                    "correct_answer": {
+                      "id": "a1539557521992",
+                      "text": "`rm -i example`"
+                    }
+                  },
+                  {
+                    "text": "Permanently delete a directory named `example`.",
+                    "correct_answer": {
+                      "id": "a1539557566634",
+                      "text": "`rmdir example`"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1539557466762",
+                    "text": "`rm example`"
+                  },
+                  {
+                    "id": "a1539557521992",
+                    "text": "`rm -i example`"
+                  },
+                  {
+                    "id": "a1539557566634",
+                    "text": "`rmdir example`"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 740968,
+              "key": "f7d52c89-b329-490b-8124-c74398836b17",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "If you want to delete multiple files or directories, you can simply list them after the command, with each one separated by a space. Like this:\n\n```bash\nrmdir example1 example2 example3\n```\n\nAlso, notice how the shell uses a space to tell where one item ends and the next begins. If the name of a file or directory has a space in it, you'll need to put the whole name in single quotes. Like this:\n\n```bash\nrmdir 'example 1'  'example 2'  'example 3'\n```\n\nBy the way, when using the `rmdir` command, it will only delete a directory that is *empty*. If the directory has files inside, you'll get an error saying `Directory not empty`. This helps prevent you from accidentally deleting a folder that contains a bunch of files.\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 740969,
+              "key": "35bbb406-e82a-41cf-b77f-da2a10cfdc45",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "35bbb406-e82a-41cf-b77f-da2a10cfdc45",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Use `rm -i` to delete `dictionary.txt`. When prompted, you can type `yes` or `y` to confirm that you want to remove the file."
+              ],
+              "positive_feedback": "**Good!**\n\nBut can we do anything more interesting with `rm`?",
+              "video_feedback": null,
+              "description": "We won't be needing the `dictionary.txt` file anymore, so go ahead and use it as an opportunity to try out the `rm` command with the `-i` option."
+            },
+            {
+              "id": 740970,
+              "key": "e959b6e2-bc49-464e-b959-1ee552211e70",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "So far, these commands are fine—but maybe a little boring. We already know how to delete files and folders in the GUI, so why bother using a shell command?\n\nTo make things more interesting, we can combine `rm` or `rmdir` with other things we've learned, such as the `*` character.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 740971,
+              "key": "40eb3b84-c4a5-495e-b6c3-b2002b13bd6e",
+              "title": "",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "40eb3b84-c4a5-495e-b6c3-b2002b13bd6e",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "You have four files named:\n1. `Good File`\n2. `Bad Name Good File`\n3. `Bad File`\n4. `Good Name Bad Face`\n\nYou want to remove files 3 and 4, while leaving 1 and 2 intact. There are two commands below that will accomplish this goal. Choose them:",
+                "answers": [
+                  {
+                    "id": "a1539559688470",
+                    "text": "`rm 'Bad File' 'Good Name Bad Face'`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1539559704537",
+                    "text": "`rm *Bad*`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1539559705131",
+                    "text": "`rm Bad!Good`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1539559705811",
+                    "text": "`rm *'Bad F'*\f`",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 740972,
+              "key": "d829e533-077f-4926-8ace-2ff4109efb97",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this example, you could still have accomplished the task easily by using the GUI. But imagine if you had a similar scenario with hundreds, thousands, or even millions of files—where you wanted to delete only the files that matched a particular pattern. Clearly, `rm` would allow you to do something that the GUI does not!",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 740983,
+          "key": "240fb2da-c267-477b-84bc-e0a2f0baef0c",
+          "title": "Review",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "240fb2da-c267-477b-84bc-e0a2f0baef0c",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 740985,
+              "key": "caca7a2c-11e6-4fa8-803a-98a0cdc4b879",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Review\n\nYou've learned a whole bunch of shell commands in this lesson! Let's review them.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 740984,
+              "key": "dc74bad9-6e2c-43b9-8701-61a7fce49320",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "dc74bad9-6e2c-43b9-8701-61a7fce49320",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "See if you can match each command with what it does."
+                },
+                "concepts_label": "What it does",
+                "answers_label": "Command",
+                "concepts": [
+                  {
+                    "text": "Print some text to the terminal.",
+                    "correct_answer": {
+                      "id": "a1539570212465",
+                      "text": "`echo`"
+                    }
+                  },
+                  {
+                    "text": "Change directories.",
+                    "correct_answer": {
+                      "id": "a1539570492701",
+                      "text": "`cd`"
+                    }
+                  },
+                  {
+                    "text": "List the contents of a directory.",
+                    "correct_answer": {
+                      "id": "a1539570514572",
+                      "text": "`ls`"
+                    }
+                  },
+                  {
+                    "text": "Print the current (working) directory to the terminal.",
+                    "correct_answer": {
+                      "id": "a1539570532781",
+                      "text": "`pwd`"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1539570532781",
+                    "text": "`pwd`"
+                  },
+                  {
+                    "id": "a1539570492701",
+                    "text": "`cd`"
+                  },
+                  {
+                    "id": "a1539570514572",
+                    "text": "`ls`"
+                  },
+                  {
+                    "id": "a1539570212465",
+                    "text": "`echo`"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 740986,
+              "key": "d96f2ee8-d4c9-4c0b-8f1d-98a6c42cc205",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "d96f2ee8-d4c9-4c0b-8f1d-98a6c42cc205",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "And here are some more:"
+                },
+                "concepts_label": "What it does",
+                "answers_label": "Command",
+                "concepts": [
+                  {
+                    "text": "Move a file or directory.",
+                    "correct_answer": {
+                      "id": "a1539570759208",
+                      "text": "`mv`"
+                    }
+                  },
+                  {
+                    "text": "Make a new directory.",
+                    "correct_answer": {
+                      "id": "a1539570843667",
+                      "text": "`mkdir`"
+                    }
+                  },
+                  {
+                    "text": "Remove (delete) a file.",
+                    "correct_answer": {
+                      "id": "a1539570856824",
+                      "text": "`rm`"
+                    }
+                  },
+                  {
+                    "text": "Remove (delete) a directory.",
+                    "correct_answer": {
+                      "id": "a1539570911956",
+                      "text": "`rmdir`"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1539570911956",
+                    "text": "`rmdir`"
+                  },
+                  {
+                    "id": "a1539570843667",
+                    "text": "`mkdir`"
+                  },
+                  {
+                    "id": "a1539570856824",
+                    "text": "`rm`"
+                  },
+                  {
+                    "id": "a1539570759208",
+                    "text": "`mv`"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 740987,
+              "key": "620d3dff-52db-4c46-9a4f-7e5c777bae68",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "620d3dff-52db-4c46-9a4f-7e5c777bae68",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "... and even more!\n\n(You really did learn a lot of commands!)"
+                },
+                "concepts_label": "What it does",
+                "answers_label": "Command",
+                "concepts": [
+                  {
+                    "text": "Download a file.",
+                    "correct_answer": {
+                      "id": "a1539571051647",
+                      "text": "`curl`"
+                    }
+                  },
+                  {
+                    "text": "Output the entire contents of a file to the terminal.",
+                    "correct_answer": {
+                      "id": "a1539571095844",
+                      "text": "`cat`"
+                    }
+                  },
+                  {
+                    "text": "View the contents of a file one page at a time, with the ability to scroll and search.",
+                    "correct_answer": {
+                      "id": "a1539571129454",
+                      "text": "`less`"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1539571129454",
+                    "text": "`less`"
+                  },
+                  {
+                    "id": "a1539571095844",
+                    "text": "`cat`"
+                  },
+                  {
+                    "id": "a1539571051647",
+                    "text": "`curl`"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 740991,
+          "key": "7ef90e90-627b-46f8-a9b6-97029c25b73e",
+          "title": "Keep learning!",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "7ef90e90-627b-46f8-a9b6-97029c25b73e",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 740992,
+              "key": "4496ebdf-29e8-421e-b7b2-3611b131c2e7",
+              "title": "Ud206 022 Shell Workshop Outro",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "68twTPXPrx0",
+                "china_cdn_id": "68twTPXPrx0.mp4"
+              }
+            },
+            {
+              "id": 740994,
+              "key": "eae283cb-9be4-42bd-b81e-da90fdb49d2e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Shell resources\n\nWe've only just scratched the surface of what the shell can do, but hopefully you now have an idea of how useful and powerful a tool it can be. If you're serious about becoming a professional developer (or just a more powerful user), here are some great resources you may want to check out at some point:\n\n* [The Bash Academy](http://www.bash.academy/)\n* [Bash Beginners Guide](http://www.tldp.org/LDP/Bash-Beginners-Guide/html/)\n* [Bash Programming HOWTO](http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html)\n\n## What's next?\nThere's a *lot* more that you can do with the shell beyond what we've covered here. But with the commands you've learned in this lesson, you now have more than enough to complete the rest of this program. In particular, you're now more than ready to tackle the next lesson—in which we'll install Python on your own computer, and run it from the shell!\n\nBut before you move on, we hope you'll pause to reflect on what you've learned.\n\nWhen you're first introduced to the shell, it can feel kind of confusing and overwhelming, and you probably still feel like you only have a fuzzy understanding of how it works. This is a very common experience, and it will get better as you use the shell more and more often.\n\nKeep in mind that you've just learned the fundamentals of a powerful tool that's on almost **every computer** ... but that **most other users have never even touched!**",
+              "instructor_notes": ""
+            },
+            {
+              "id": 740995,
+              "key": "99f87773-8459-44d5-8f89-1b68f0f97574",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Feedback\n\nWhen you click the **Next** button, you'll have a chance to leave some feedback on this lesson. As always, we hope you'll write us a short message and let us know how things went for you!",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

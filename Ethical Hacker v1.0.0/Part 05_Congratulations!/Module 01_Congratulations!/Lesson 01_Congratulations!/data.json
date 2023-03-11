@@ -1,0 +1,145 @@
+{
+  "data": {
+    "lesson": {
+      "id": 1121685,
+      "key": "8606ae15-4e97-49dd-9440-1b8d9df85b0f",
+      "title": "Congratulations!",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Congratulations on your graduation from this program! Please join us in celebrating your accomplishments.",
+      "lesson_type": null,
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/8606ae15-4e97-49dd-9440-1b8d9df85b0f/1121685/1609865164913/Congratulations%21+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/8606ae15-4e97-49dd-9440-1b8d9df85b0f/1121685/1609865161869/Congratulations%21+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 1121686,
+          "key": "9c14ab46-b276-4e4a-a508-02013e360c63",
+          "title": "Let the Celebration Begin!",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "9c14ab46-b276-4e4a-a508-02013e360c63",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1121687,
+              "key": "e7d81403-6dbf-4159-8d03-3dae32ab0113",
+              "title": "David Silver Graduation Intro 2 V3",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "_38w_lyll3A",
+                "china_cdn_id": "_38w_lyll3A.mp4"
+              }
+            },
+            {
+              "id": 1121688,
+              "key": "1e7297e0-7c3d-467e-91e1-d297fb99ab28",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Congratulations! Today, you’ve taken the next step in your career and are on your way to new opportunities. \n<br><br>We can’t wait to see you again!",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1121689,
+          "key": "ff264c0a-3682-4f49-9d0e-9cc49a768c66",
+          "title": "Commencement Speech, Udacity Founder Sebastian Thrun",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "ff264c0a-3682-4f49-9d0e-9cc49a768c66",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1121690,
+              "key": "db6e0ee4-0387-4c57-93fb-e68d421a673f",
+              "title": "Grad 2019 Sebastian SHORTENED V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "c-pkEQO044g",
+                "china_cdn_id": "c-pkEQO044g.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 1121691,
+          "key": "95d9983c-1a1c-4e04-9dfa-275aaed5455c",
+          "title": "Your Next Steps",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "95d9983c-1a1c-4e04-9dfa-275aaed5455c",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1121692,
+              "key": "48b06d66-3a24-4938-a65a-873174c3a37b",
+              "title": "David Silver Graduation Outro",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "GaOb-wnX-tg",
+                "china_cdn_id": "GaOb-wnX-tg.mp4"
+              }
+            },
+            {
+              "id": 1121693,
+              "key": "d8ce9071-e926-4fb5-9214-5bf91923ff8c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Udacity is honored to be part of your career journey. Congratulations again on your achievement; Udacity is here for you every step of the way. \n<br><br>[Find your next Nanodegree program here](https://www.udacity.com/courses/all)",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "lesson_type",
+      "reason": "Obsolete"
+    }
+  ]
+}

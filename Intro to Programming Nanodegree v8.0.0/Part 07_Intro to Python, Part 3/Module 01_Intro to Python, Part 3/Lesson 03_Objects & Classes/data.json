@@ -1,0 +1,2361 @@
+{
+  "data": {
+    "lesson": {
+      "id": 817325,
+      "key": "3e3a6b22-bba2-4bc3-b915-fef10212450d",
+      "title": "Objects & Classes",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Learn to create new kinds of data object using classes, including creating your own methods.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/3e3a6b22-bba2-4bc3-b915-fef10212450d/817325/1549164678400/Objects+%26+Classes+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/3e3a6b22-bba2-4bc3-b915-fef10212450d/817325/1549164674528/Objects+%26+Classes+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 640856,
+          "key": "a4d0335c-b2da-4fac-9f6e-6e397200130d",
+          "title": "Welcome to objects and classes",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a4d0335c-b2da-4fac-9f6e-6e397200130d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 676171,
+              "key": "ad6ebeea-5ccf-4d9c-a9cf-879403a1c535",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": " ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 673767,
+              "key": "bda97ff9-5185-49d4-8193-685b377ecdb1",
+              "title": "Python: Welcome to objects and classes",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "vQAnoyoDY4E",
+                "china_cdn_id": "vQAnoyoDY4E.mp4"
+              }
+            },
+            {
+              "id": 790408,
+              "key": "5c92aa79-5b4e-445a-97f7-c9adbf31fdb4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Like Karl said, this lesson is all about **objects**. We've been dealing with objects since the very beginning of the course, when we created turtle objects:\n\n```python\nimport turtle\namy = turtle.Turtle()\n```\nIf you recall, this code creates a new turtle object in memory, and assigns it the name `amy`. If we then use the name `amy` elsewhere in the code, Python will know that we are referring to the turtle object we created.\n\nSo here are two things that we already know about objects:\n\n1. We can create objects in memory\n2. We can use variable names to refer to objects\n\nSo objects are *things in memory* that we can *refer to by name*.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 790409,
+              "key": "89251b74-b0c5-4936-827a-cf1d13c13664",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Objects are everywhere\n\nIf we consider the above definition of an *object*, we can see that pretty much everything we've been dealing with is an object. For example, suppose you run this in your interpreter:\n\n```python\n>>> n = 300\n```\n\nYou've just created an *integer object* in memory, and assigned the name `n` so that it refers to that object.\n\nOr consider this example:\n\n```python\n>>> def my_function():\n...     print(\"Hello!\")\n```\n\nIf we run this code, it creates a *function object* in memory, and sets the name `my_function` to refer to that object.\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 790411,
+              "key": "0d4619ff-60c8-4133-838c-6f11e78125e7",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Objects have a *type*\n\nHere's a third thing that we already kind of know about objects:\n\n3. Objects have a *type*.\n\nLet's refresh our memory on that a bit...",
+              "instructor_notes": ""
+            },
+            {
+              "id": 790410,
+              "key": "2fa2ad96-c0e8-41e1-8525-fff5d3d2261a",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "2fa2ad96-c0e8-41e1-8525-fff5d3d2261a",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Each of these pieces of code creates an object and assigns it a name. For each, say what *type* of object is being created."
+                },
+                "concepts_label": "Code",
+                "answers_label": "What type of object is created?",
+                "concepts": [
+                  {
+                    "text": "```python\nn = 300\n```",
+                    "correct_answer": {
+                      "id": "a1543693445587",
+                      "text": "integer"
+                    }
+                  },
+                  {
+                    "text": "```python\nmessage = \"Hello\"\n```",
+                    "correct_answer": {
+                      "id": "a1543693474023",
+                      "text": "string"
+                    }
+                  },
+                  {
+                    "text": "```python\nstatus = False\n```",
+                    "correct_answer": {
+                      "id": "a1543693474544",
+                      "text": "boolean"
+                    }
+                  },
+                  {
+                    "text": "```python\nsides = [1, 2, 3]\n```",
+                    "correct_answer": {
+                      "id": "a1543693476806",
+                      "text": "list"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1543693474544",
+                    "text": "boolean"
+                  },
+                  {
+                    "id": "a1543693445587",
+                    "text": "integer"
+                  },
+                  {
+                    "id": "a1543693476806",
+                    "text": "list"
+                  },
+                  {
+                    "id": "a1543693474023",
+                    "text": "string"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 790412,
+              "key": "cd3e7f5d-87fc-49fe-9c39-bcdfb8115bd2",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "OK, so every object has a type. But what does that really mean anyway?",
+              "instructor_notes": ""
+            },
+            {
+              "id": 790413,
+              "key": "6d6dea9f-0b8b-4841-bf36-418a8ca4fb4b",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "6d6dea9f-0b8b-4841-bf36-418a8ca4fb4b",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "For each of these pieces of code, say whether it will work or throw an error.\n\n(If you're not sure, feel free to try them for yourself.)"
+                },
+                "concepts_label": "Code",
+                "answers_label": "Works or doesn't work",
+                "concepts": [
+                  {
+                    "text": "```python\n>>> thingy = 4\n>>> thingy / 2\n```",
+                    "correct_answer": {
+                      "id": "a1543693668829",
+                      "text": "Works"
+                    }
+                  },
+                  {
+                    "text": "```python\nthingy = \"Hello\"\nthingy / 2\n```",
+                    "correct_answer": {
+                      "id": "a1543693724812",
+                      "text": "Doesn't work"
+                    }
+                  },
+                  {
+                    "text": "```python\nimport turtle\namy = turtle.Turtle()\namy.forward(100)\n```",
+                    "correct_answer": {
+                      "id": "a1543693726278",
+                      "text": "Works"
+                    }
+                  },
+                  {
+                    "text": "```python\nmessage = \"Hello\"\nmessage.forward(100)\n```",
+                    "correct_answer": {
+                      "id": "a1543693726865",
+                      "text": "Doesn't work"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1543693668829",
+                    "text": "Works"
+                  },
+                  {
+                    "id": "a1543693724812",
+                    "text": "Doesn't work"
+                  },
+                  {
+                    "id": "a1543693726278",
+                    "text": "Works"
+                  },
+                  {
+                    "id": "a1543693726865",
+                    "text": "Doesn't work"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 790414,
+              "key": "17f7bab4-ad1e-40c9-b337-1735d4057503",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "As you can see from the above examples, an object's *type* tells you what kinds of things you can do with that object. We can use `/` to divide an integer, but we can't use `/` to divide a string. And we can tell a turtle object to go `forward`, but we can't tell the string `\"Hello\"` to go forward.\n\nSo when we create an object, that object will have a *type*—and this type tells us what characteristics and behaviors the object can have.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 790415,
+              "key": "f3a4153c-aae8-46dd-a18b-75ba0835ac6c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## You can create your own types of objects\n\nAll of these different types of objects that we've been looking at are *built-in* types—that is, the behavior and characteristics of these types has already been defined as part of the Python language.\n\nBut as Karl said earlier, you can also create your own types of objects—and that's what you'll learn to do in this lesson.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 640857,
+          "key": "ac09f466-dfc2-4943-8283-60dd9998d992",
+          "title": "Objects belong to classes",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "ac09f466-dfc2-4943-8283-60dd9998d992",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 673770,
+              "key": "668cff3b-a695-4317-8a6c-34d9633d8451",
+              "title": "Python: Objects belong to classes",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "xR0CRnHuU6w",
+                "china_cdn_id": "xR0CRnHuU6w.mp4"
+              }
+            },
+            {
+              "id": 790416,
+              "key": "e54a9f61-57fd-4137-8e5a-f5cee9e34966",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "e54a9f61-57fd-4137-8e5a-f5cee9e34966",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Here are some examples with `isinstance` that you can try in the Python interpreter:"
+                },
+                "concepts_label": "Code",
+                "answers_label": "Result",
+                "concepts": [
+                  {
+                    "text": "```python\n>>> isinstance(2, int)\n```",
+                    "correct_answer": {
+                      "id": "a1543697665072",
+                      "text": "`True`"
+                    }
+                  },
+                  {
+                    "text": "```python\n>>> isinstance(\"2\", int)\n```",
+                    "correct_answer": {
+                      "id": "a1543697894586",
+                      "text": "`False`"
+                    }
+                  },
+                  {
+                    "text": "```python\n>>> isinstance([1, 2, 3], list)\n```",
+                    "correct_answer": {
+                      "id": "a1543697908537",
+                      "text": "`True`"
+                    }
+                  },
+                  {
+                    "text": "```python\n>>> isinstance(False, bool)\n```",
+                    "correct_answer": {
+                      "id": "a1543697935861",
+                      "text": "`True`"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1543697975060",
+                    "text": "`False`"
+                  },
+                  {
+                    "id": "a1543697665072",
+                    "text": "`True`"
+                  },
+                  {
+                    "id": "a1543697908537",
+                    "text": "`True`"
+                  },
+                  {
+                    "id": "a1543697894586",
+                    "text": "`False`"
+                  },
+                  {
+                    "id": "a1543697935861",
+                    "text": "`True`"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 645322,
+              "key": "937e6fc8-d9c0-4bef-8fce-ed4948c99551",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Use the `isinstance` function or the `type` function to investigate the following questions.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 645324,
+              "key": "0f2526c4-7714-4210-8f45-47dad866e4cb",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "0f2526c4-7714-4210-8f45-47dad866e4cb",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which class does the value `\"monkey\"` belong to?",
+                "answers": [
+                  {
+                    "id": "a1528761205390",
+                    "text": "`list`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1528761209734",
+                    "text": "`str`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1529533636919",
+                    "text": "`int`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1529533679344",
+                    "text": "None of the above",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 662974,
+              "key": "f0893b0e-d76b-41e3-8b76-b3aed4faf758",
+              "title": "",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "f0893b0e-d76b-41e3-8b76-b3aed4faf758",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following belong to the `int` class? If you're not sure, try using the `isinstance` function to tell!",
+                "answers": [
+                  {
+                    "id": "a1529533832904",
+                    "text": "`5`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1529533867475",
+                    "text": "`3.1415`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1529533871128",
+                    "text": "`True`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1529533920303",
+                    "text": "`\"amy\"`",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 640858,
+          "key": "c8d6962b-9121-4314-bdd3-8a28aafd8335",
+          "title": "Python classes versus CSS classes",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c8d6962b-9121-4314-bdd3-8a28aafd8335",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 676173,
+              "key": "551c76d3-c64c-416f-ab71-ed89e4aa662a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": " ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 673772,
+              "key": "ca95e3c5-03b1-446e-be56-fc6b36d504c3",
+              "title": "Python: Python classes versus CSS classes",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "6_R0ovLBMxk",
+                "china_cdn_id": "6_R0ovLBMxk.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 790417,
+          "key": "f8490e39-774f-4e7b-bc11-2d11d5923242",
+          "title": "Defining a new class (1/2)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "f8490e39-774f-4e7b-bc11-2d11d5923242",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 790418,
+              "key": "79260cc2-f0bc-4b34-a499-2db2b5cb8488",
+              "title": "Python: Defining a new class",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "pe_x3fIrFn4",
+                "china_cdn_id": "pe_x3fIrFn4.mp4"
+              }
+            },
+            {
+              "id": 790420,
+              "key": "67103036-687a-4d21-8b0d-d382707d621c",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "67103036-687a-4d21-8b0d-d382707d621c",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Define the `Cat` class and give it a `speak` method.",
+                "Open a new terminal and run `python3` to start the Python interpreter.",
+                "Import the `animals` module.",
+                "Create a new `Cat` object and give it a name.",
+                "Call the object's `speak` method."
+              ],
+              "positive_feedback": "**Meow!** 😸",
+              "video_feedback": null,
+              "description": "In the workspace below, you'll find the `animals.py` file with the `Dog` class, just like Karl showed in the video.\n\nYour job is to add a second class called `Cat` that is just like the `Dog` class—expect that it will print `\"Meow!\"` instead of `\"Woof!\"`"
+            },
+            {
+              "id": 790419,
+              "key": "18efd586-30d8-4267-9cb4-7e1b48e3a109",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r613901c790417xGENERICdwc3czue",
+              "pool_id": "webterminal",
+              "view_id": "generic-tz0kx",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "userCode": "",
+                    "openFiles": [
+                      "/home/workspace/animals.py"
+                    ],
+                    "showFiles": true,
+                    "allowClose": true,
+                    "showEditor": true,
+                    "allowSubmit": false,
+                    "terminalTitle": "BASH"
+                  },
+                  "kind": "generic"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 790424,
+              "key": "f41180ce-6e6f-4f1d-8b61-c22fc22fcb5e",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "f41180ce-6e6f-4f1d-8b61-c22fc22fcb5e",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Change the `speak` method on the `Dog` class so that it prints `\"Bowow!\"` instead of `\"Woof!\"`.",
+                "Try calling the `speak` method—you should see that it uses the old code that was there before your change.",
+                "Exit Python by entering `quit()`.",
+                "Restart the Python interpreter and import `animals` again.",
+                "Create a dog object and call its `speak` method. It should show your change now."
+              ],
+              "positive_feedback": "**Good!**\n\nIf you forget to do this, it's easy to get confused about why your changes aren't having any effect!",
+              "video_feedback": null,
+              "description": "> ⚠️ **Important:** If you import a module *and then make changes to that module*, the changes won't show up until you **1. restart Python** and **2. re-import the module**.\n\nLet's make sure you know how to do that!"
+            },
+            {
+              "id": 790421,
+              "key": "4d5e2053-2ba7-41f3-8884-16ac44dd0354",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Solution\n\nIn case you need it, here's all the code for the `Dog` and `Cat` classes:\n\n```python\nclass Dog:\n    def speak(self):\n        print(\"Woof!\")\n\nclass Cat:\n    def speak(self):\n        print(\"Meow!\")\n```",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 640859,
+          "key": "dd536705-99ff-49d8-95a7-dda7183fd9c9",
+          "title": "Defining a new class (2/2)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "dd536705-99ff-49d8-95a7-dda7183fd9c9",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 790425,
+              "key": "0e7f3a4c-7a95-4110-bf04-d5c9754ba521",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Defining a new class (2/2)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 790426,
+              "key": "03d02c14-8bff-4435-aae2-4d57b910aee7",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "We can give a class as many methods as we like. If you recall, the `Turtle` class had a whole bunch—like `forward`, `right`, `left`, `penup`, `pendown`, `color`, and so on!\n\nLet's practice by adding another method to the `Dog` class. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 665197,
+              "key": "500d5332-e2a1-43d0-bcd7-19e1618fe297",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "500d5332-e2a1-43d0-bcd7-19e1618fe297",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Add an `eat` method to the `Dog` class. Remember, it will need **two** parameters—`self` and `food`.",
+                "Test it just like before—start up Python, import `animals`, make a `Dog` object, and call the `eat` method."
+              ],
+              "positive_feedback": "**Cool!** Class and method definitions are essential to object-oriented programming.",
+              "video_feedback": null,
+              "description": "Dogs need to eat, so let's add an `eat` method. Have it take a parameter, `food`, for what the dog is eating. (This will be in addition to the `self` parameter.) It should work like this:\n\n```text\n>>> spot = animals.Dog()\n>>> spot.eat(\"biscuit\")\nYummy!\n>>> spot.eat(\"chair\")\nThat's not food!\n```"
+            },
+            {
+              "id": 665191,
+              "key": "7a36c4d2-def8-44a8-8c32-f144fa8e5ec5",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "view3ef4dbc4",
+              "pool_id": "webterminal",
+              "view_id": "3ef4dbc4-98cb-4eeb-889a-7f79a6246cc6",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "userCode": "cd workspace\npython3",
+                    "openFiles": [
+                      "/home/workspace/animals.py"
+                    ],
+                    "showFiles": true,
+                    "allowClose": true,
+                    "showEditor": true,
+                    "allowSubmit": false,
+                    "terminalTitle": "BASH"
+                  },
+                  "kind": "generic"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 670909,
+              "key": "15341880-05da-476a-8282-4a6b56907580",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "----\n<div style=\"background-color: #a4e4f5;\">\n## ⚠️ Spoiler alert!\n\n**Our solution is below.** You'll learn more effectively if you give the exercise a strong effort before comparing your code with ours!\n</div>\n----\n----",
+              "instructor_notes": ""
+            },
+            {
+              "id": 670911,
+              "key": "0c9ef6ac-4eb9-4e77-9d5d-c68c085617e2",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Defining a new class, solution\n\nHere's a solution to the exercise above, defining the `Dog.eat` method and the `Cat` class:\n\n```\nclass Dog:\n    def speak(self):\n        print(\"Woof!\")\n\n    def eat(self, food):\n        if food == \"biscuit\":\n            print(\"Yummy!\")\n        else:\n            print(\"That's not food!\")\n\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 790427,
+              "key": "11ff5509-3435-4321-96c7-aaa49b05dfa1",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "11ff5509-3435-4321-96c7-aaa49b05dfa1",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "In your code editor, make a new file called `animals.py` and add the above code (if you want extra practice, try to type it yourself rather than copying it).",
+                "In your terminal, use `cd` to navigate to the directory where you saved `animals.py`.",
+                "Start the Python interpreter in the terminal",
+                "Import `animals`—then try creating a new `Dog` object and calling the `speak` method."
+              ],
+              "positive_feedback": "**Great!**",
+              "video_feedback": null,
+              "description": "Everything we've done so far in the workspace here, you can also do on your own computer. Let's make sure you're comfortable with that."
+            }
+          ]
+        },
+        {
+          "id": 790454,
+          "key": "e70463eb-cec2-4039-bcfb-f47b304dc085",
+          "title": "The self parameter",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "e70463eb-cec2-4039-bcfb-f47b304dc085",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 790455,
+              "key": "9da2773a-5bdc-4728-a5d8-83e104f8cb74",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# The `self` parameter",
+              "instructor_notes": ""
+            },
+            {
+              "id": 790456,
+              "key": "99e0dc89-38a2-4e48-93b1-8ab18840fea2",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Let's look at this code again:\n\n```python\nclass Dog:\n    def speak(self):\n        print(\"Woof!\")\n```\n\nThere are some things about this code that can be confusing. So on this page, let's just play around with it and see what we can figure out. In this case, we'll do everything in the Python interpreter—so go ahead and start the interpreter in your terminal now.\n\n**Note:** If you already had the interpreter running, restart it (`quit()` and run `python3`) just to be sure you have a fresh session and haven't already imported something.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 790457,
+              "key": "ca727d71-e256-454a-9b1d-7bd6e128a1d4",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "ca727d71-e256-454a-9b1d-7bd6e128a1d4",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "First, just try defining a class named `Dog` and not putting *anything* in the class at all:\n\n```python\n>>> class Dog:\n...     \n```\n(Remember that you have to hit *Enter* an extra time to tell Python you've completed a compound statement.)\n\nWhat happens when you enter the above code?",
+                "answers": [
+                  {
+                    "id": "a1543782960903",
+                    "text": "It seems to work fine—the class gets defined, even though it doesn't do anything.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1543783004375",
+                    "text": "It throws the error: `IndentationError: expected an indented block`",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 790458,
+              "key": "29125f2b-8c59-4214-998b-db5d0d2cc30d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "OK, so we can see that when we define a class, Python expects us to put *something* inside of it.\n\nWe've seen two things that we can put inside of a class: *variables* and *methods*. These specify what characteristics and behaviors this type (or *class*) of objects will have.\n\nSo now let's go ahead and define the `Dog` class with the `speak` method, just like we did earlier...",
+              "instructor_notes": ""
+            },
+            {
+              "id": 790459,
+              "key": "f7dfe755-81de-4c8b-b211-9459488dff2c",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "f7dfe755-81de-4c8b-b211-9459488dff2c",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Enter this code to define the `Dog` class and the `speak` method:\n\n```python\n>>> class Dog:\n...     def speak(self):\n...         print(\"Woof!\")\n... \n```\n\nThen just try entering this line:\n\n```python\n>>> Dog\n```\n(Make sure that you *don't* put parentheses `()` after the name!)\n\nWhat do you get?",
+                "answers": [
+                  {
+                    "id": "a1543783434487",
+                    "text": "`<class '__main__.Dog'>`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1543783513283",
+                    "text": "`<'__main__.Dog' class>`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1543783513876",
+                    "text": "`<object '__main__.Dog'>`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1543783533397",
+                    "text": "`<'__main__.Dog' object>`",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 790460,
+              "key": "d5e26c7d-40d9-4600-8732-047165cc9293",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "OK, so what does `<class '__main__.Dog'>` mean?\n\nWhen we give Python the name `Dog`, it looks for the thing in memory that this name refers to—and in this case, it is telling us that this name refers to a `class`. Well, that seems to make sense! We created a class and we gave it the name `Dog`.\n\nWhat about the other part, `__main__`? What does that mean? This is telling us the name of the module where the class is defined. In this case, it's `__main__`, because we defined the class directly in the *main* program that's currently running—in other words, we did not have to *import* it from some other module.\n\nIf we had defined the `Dog` class in our `animals.py` file and imported `animals`, then instead of `<class '__main__.Dog'>`, we would have seen:\n\n```python\n<class 'animals.Dog'>\n```\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 790461,
+              "key": "1775d01e-216f-41e7-beb2-8201bbcf89ac",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "1775d01e-216f-41e7-beb2-8201bbcf89ac",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "OK, now let's try *calling* the class, which we can do by adding parentheses `()` to the end of the name:\n\n```python\nDog()\n```\nWhat do you get?\n",
+                "answers": [
+                  {
+                    "id": "a1543784415652",
+                    "text": "`\"Woof!\"`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1543784431498",
+                    "text": "Something like `<__main__.Dog object at 0x10b004b00>`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1543784433401",
+                    "text": "Something like `<__main__.Dog class at 0x10b004b00>`",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 790462,
+              "key": "e0234d03-d35b-41b5-97b0-5b11a1736c47",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "If you recall, we used a line like `turtle.Turtle()` to call the `Turtle` class. And when we called the `Turtle` class, the result was that it created a new `Turtle` object. This is doing the same kind of thing—when we run the line `Dog()`, it is calling the `Dog` class—and the result is that it creates a new `Dog` object.\n\nWhat's that bit with `0x10b004b00` all about at the end of the message? This is a hexadecimal number that specifies the exact address in memory where the object was created. We don't need to do anything with this number, but hopefully this gives you the idea that there really is a location in memory where this object now exists. (The number you get will be different, because it will create your `Dog` object at a different location in memory!)\n\nBut just creating an object in memory doesn't do us any good if we don't have a way of referring to it. For that, we need to give it a name. We do that with an assignment statement, such as:\n\n```python\n>>> fido = Dog()\n```\n\nAgain, this creates a new object based on the `Dog` class, but now it also tells Python that from here forward the name `fido` will refer to that object.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 790464,
+              "key": "b538c6dd-33f0-4055-a797-8d58317887cc",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "b538c6dd-33f0-4055-a797-8d58317887cc",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Try this out:\n```python\n>>> fido = Dog()\n>>> fido\n```\n\nWhat do you get?",
+                "answers": [
+                  {
+                    "id": "a1543784713518",
+                    "text": "`\"Woof!\"`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1543784729398",
+                    "text": "Something like `<__main__.Dog object at 0x10b004b00>`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1543784748749",
+                    "text": "Something like `<__main__.Dog class at 0x10b004b00>`",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 790465,
+              "key": "8f95082c-4c9f-47ff-8117-72512f04b9eb",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Notice that this is exactly the same thing that we got on the last exercise, when we entered `Dog()`:\n\n```python\n>>> Dog()\n<__main__.Dog object at 0x10b004b00>\n>>> fido = Dog()\n>>> fido\n<__main__.Dog object at 0x10afdb358>\n```\n\nYou'll notice that the results are identical, except that the addresses are different. That's because the lines above created two separate `Dog` objects, which are each at a different location in memory. \n\nWith the first example, we didn't assign the object any name, so that wasn't very useful—we created a `Dog` object, but we have no way of accessing it. But with the second example, we assigned it the name `fido`, so now we can use this name to refer to that object whenever we need to.\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 790466,
+              "key": "db903a2a-8355-4aa0-808c-794b12a40484",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "db903a2a-8355-4aa0-808c-794b12a40484",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Try creating a second `Dog` object with a different name:\n\n```python\n>>> spot = Dog()\n```\n\nThen enter:\n\n```python\n>>> spot\n```\n\nAnd:\n\n```python\n>>> fido\n```\nCompare the results—what can we say about them?",
+                "answers": [
+                  {
+                    "id": "a1543784990245",
+                    "text": "`spot` and `fido` both refer to `Dog` objects, but they refer to *different* objects at *different* locations in memory.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1543785041249",
+                    "text": "`spot` and `fido` both refer to the *same* `Dog` object, at the exact *same* location in memory.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 790467,
+              "key": "b524c72a-1b94-42d9-a9ef-e3bdec7dc466",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Notice that if we enter the name for one of the objects multiple times, we get the same address each time:\n\n```python\n>>> fido\n<__main__.Dog object at 0x10afdb358>\n>>> fido\n<__main__.Dog object at 0x10afdb358>\n>>> fido\n<__main__.Dog object at 0x10afdb358>\n>>> \n```\n\nAgain, hopefully this helps give you the idea that there really is an object that we've created at a specific location in memory.\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 790468,
+              "key": "88f5f07c-60de-45a9-ae3d-0f66dbfdb9d1",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "OK, now let's play with the method that we defined in the `Dog` class—the `speak` method. Remember, a method is just a special kind of function. Specifically, it's a function that is used with a particular object. Normally, we would call a method like this:\n\n```python\nfido.speak()\n```\n\nWe give the name of the object, then a dot `.`, and then the actual function call `speak()`.\n\nBut just to experiment, let's try something a little different.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 790469,
+              "key": "888ee53a-fb11-4a82-901e-957c506fbd7f",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "888ee53a-fb11-4a82-901e-957c506fbd7f",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Rather than accessing the method by referring to an object, let's try using the class. Like this:\n\n```python\n>>> Dog.speak\n```\n(Notice that there are no parentheses `()`. We are not *calling* the method here.)\n\nWhat do you get?\n",
+                "answers": [
+                  {
+                    "id": "a1543785327998",
+                    "text": "A line like `<function Dog.speak at 0x10b010ae8>`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1543785355796",
+                    "text": "A line like `<class Dog.speak at 0x10b010ae8>`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1543785366263",
+                    "text": "A line like `<object Dog.speak at 0x10b010ae8>`",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 790470,
+              "key": "769b7603-6729-425c-8250-8de556546b35",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "This seems to be telling us that, yup, there's a function called `speak` that is now available in memory (and it even gives us the location in memory where the function exists).",
+              "instructor_notes": ""
+            },
+            {
+              "id": 790471,
+              "key": "286bdbe5-4c61-48d8-8a49-4444fb857529",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "286bdbe5-4c61-48d8-8a49-4444fb857529",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "OK, so if that `speak` function is out there in memory, we should be able to *call* it. Let's try calling it like this:\n\n```python\n>>> Dog.speak()\n```\n\nWhat do you get?",
+                "answers": [
+                  {
+                    "id": "a1543785418668",
+                    "text": "`\"Woof!\"`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1543785438120",
+                    "text": "`TypeError: speak() missing 1 required positional argument: 'self'`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1543785438592",
+                    "text": "`NameError: name 'Dog' is not defined`",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 790472,
+              "key": "b01619c3-e85e-4808-a041-c79bcad3adf4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "So why are we getting this error? Well, remember that `speak` is a *method*, and that means it needs to be called *on a specific object*. If we just try to call `speak`, Python doesn't know *which* object we want to use the method with. Do we mean `fido`? Or `spot`? Or some other object? We can't just call the method without giving this information—we have to be explicit and tell Python which object we want to call the method *on*.\n\nAnd that's what this mysterious `self` parameter is for. We have to pass the `self` parameter an argument, and the argument needs to be the object we're wanting to use the method with.\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 790473,
+              "key": "693e5e67-7482-4e30-a517-b17a4691c858",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "693e5e67-7482-4e30-a517-b17a4691c858",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Now give this a try:\n```python\n>>> Dog.speak(fido)\n```\nWhat do you get?",
+                "answers": [
+                  {
+                    "id": "a1543785735508",
+                    "text": "`\"Woof!\"`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1543785754908",
+                    "text": "`TypeError: speak() missing 1 required positional argument: 'self'`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1543785759724",
+                    "text": "`NameError: name 'Dog' is not defined`",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 790474,
+              "key": "decc3072-9bc6-40a1-80ff-410ee98e657b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "So that's kind of interesting! It looks like it is actually possible to call the `speak` method with a line like `Dog.speak()`—but we have to put the name of a `Dog` object inside the parentheses, as in `Dog.speak(fido)`.\n\nWhen we do this, it assigns the `fido` object to the `self` parameter, and this tells Python which object we want to use with the method.\n\nSo that is the purpose of the `self` parameter: It tells Python which particular `Dog` object we're wanting to use when we call the method.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 790475,
+              "key": "e8b95c3f-a709-4419-acb8-6f51eb478f6c",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "e8b95c3f-a709-4419-acb8-6f51eb478f6c",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "OK, so we just saw that we can call the method using a line like:\n\n```python\n>>> Dog.speak(fido)\n```\nTry comparing that with this line:\n```python\n>>> fido.speak()\n```\nWhat results do you get? Are they the same for these two lines, or different?",
+                "answers": [
+                  {
+                    "id": "a1543785854050",
+                    "text": "These lines have the exact same result.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1543785864540",
+                    "text": "These lines have different results.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 790476,
+              "key": "3830d4ad-2f32-4930-877d-6d546096302e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Hopefully this gives you a little bit better idea of what's going on with a line like `fido.speak()`.\n\nNotice that when we call the method the first way, we have to pass it the object, `fido`:\n\n```python\n>>> Dog.speak(fido)\n```\n\nBut when we call the method this way, we don't need to do that:\n\n```python\n>>> fido.speak()\n```\nSo when we do it this way, we don't have to pass anything to the `self` parameter—Python already knows that we're using the method with the `fido` object, so it passes that object *automatically*. This is convenient ... but kind of confusing!\n\nSo when you run a line like `fido.speak()` or `amy.forward(100)`, you should keep in mind that, in the background, Python is automatically looking for whatever object `fido` or `amy` refers to, and it's passing that object to the `self` parameter. That's how it knows which object the method is being called on.\n\nThis may feel rather counter-intuitive to you! Understand that it's normal to find this concept rather confusing, and give yourself some time to get used to it (in other words, don't feel stupid if it isn't \"clicking\" right away!). We will get lots more practice using the `self` parameter as we continue with this lesson.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 640860,
+          "key": "7bdf0264-9158-4ce1-8224-bb54c2772bb8",
+          "title": "Using class-level variables",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "7bdf0264-9158-4ce1-8224-bb54c2772bb8",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 673777,
+              "key": "3f51c7ec-8e5b-4012-9d0f-25f95871c2b7",
+              "title": "Python: Using class-level variables",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "wHRY7qVCH2E",
+                "china_cdn_id": "wHRY7qVCH2E.mp4"
+              }
+            },
+            {
+              "id": 674918,
+              "key": "9880ff63-09af-4f21-9d62-0e63f2463e98",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "9880ff63-09af-4f21-9d62-0e63f2463e98",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Add a class-level variable to the `Dog` class.",
+                "In the interpreter, create a `Dog` object, then access its new class-level variable as shown in the video."
+              ],
+              "positive_feedback": "**Great!**\n\nThat's one more tool in your Python toolkit.",
+              "video_feedback": null,
+              "description": "Try out defining class-level variables in the workspace!"
+            },
+            {
+              "id": 790428,
+              "key": "52ef5446-d659-42d9-b19c-a16ac687873e",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r613901c640860xGENERICn7wrcbsz",
+              "pool_id": "webterminal",
+              "view_id": "generic-ml5ci",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "userCode": "",
+                    "openFiles": [
+                      "/home/workspace/animals.py"
+                    ],
+                    "showFiles": true,
+                    "allowClose": true,
+                    "showEditor": true,
+                    "allowSubmit": false,
+                    "terminalTitle": "BASH"
+                  },
+                  "kind": "generic"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 640861,
+          "key": "8c463029-b8f7-4b93-b23d-095f8df107fe",
+          "title": "Using instance-level variables",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "8c463029-b8f7-4b93-b23d-095f8df107fe",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 673778,
+              "key": "2303b67f-25fb-42ad-88d5-76717a3cac8d",
+              "title": "Python: Using instance-level variables",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "SEEgIFai-6o",
+                "china_cdn_id": "SEEgIFai-6o.mp4"
+              }
+            },
+            {
+              "id": 790480,
+              "key": "3018e130-a363-432d-a646-387112bd348e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Let's look again at the `learn_name` method that Karl just demonstrated:\n\n```python\ndef learn_name(self, name):\n    self.name = name\n```\n\nThis might seem awfully confusing—especially the line `self.name = name`. What's up with that?\n\nLet's consider each part. First, we can see that the `learn_name` method takes two parameters: `self` and `name`. We've seen that `self` is taken care of automatically by Python—when we call the method, `self` will get passed a specific object. The second parameter, `name`, will get passed whatever name we want that particular dog object to have.\n\nSuppose we call the method like this:\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 790481,
+              "key": "0a18665b-4770-4ca1-8bdb-7efc810e5b14",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2018/December/5c045df4_self-parameter-01/self-parameter-01.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/0a18665b-4770-4ca1-8bdb-7efc810e5b14",
+              "caption": "",
+              "alt": "Code with arrows showing what gets passed to the method's parameters.",
+              "width": 462,
+              "height": 218,
+              "instructor_notes": null
+            },
+            {
+              "id": 790482,
+              "key": "d853a4fe-409b-427c-bc17-e3dc8c4c519e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this case, the `fido` object will get passed to the `self` parameter, and the string `\"Fido\"` will get passed to the `name` parameter.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 790483,
+              "key": "49657f24-203d-4251-b1e3-c8cdb3965e7c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Now let's look at the next line:\n\n```python\n    self.name = name\n```\n\nBecause of the arguments we passed to the method, `self` refers to a specific object, `fido`. And `name` refers to a specific string, `\"Fido\"`. So the above code works the same as if we had this:\n\n```python\n    fido.name = \"Fido\"\n```\n\nIn other words, we are setting the name for this particular dog object, `fido` to the string `\"Fido\"`.\n\nOne thing that can lead to confusion with this code is that we have two variables that are called the same thing: `name` and `self.name`.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 790484,
+              "key": "b469efa0-e40f-4e50-bb4f-df6c56113655",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2018/December/5c045f54_self-parameter-02/self-parameter-02.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/b469efa0-e40f-4e50-bb4f-df6c56113655",
+              "caption": "",
+              "alt": "Code with arrows showing that name is one variable, and self.name is a different variable.",
+              "width": 542,
+              "height": 265,
+              "instructor_notes": null
+            },
+            {
+              "id": 790485,
+              "key": "14aa6dac-94ac-48cd-92db-adb2611f02d4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "The `name` variable is the parameter that we defined as part of the method. In contrast, the `self.name` variable is the *instance variable* that will get set for each individual instance of a `Dog` object.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 790486,
+              "key": "f82b2789-e340-48a3-899d-cedf0d1d76f7",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "f82b2789-e340-48a3-899d-cedf0d1d76f7",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Here are a couple different versions of the `learn_name` method. One of them will work exactly the same as the original version, and the other will cause an error when it is called.\n\nCan you tell which works and which doesn't?"
+                },
+                "concepts_label": "Code",
+                "answers_label": "Works or doesn't work?",
+                "concepts": [
+                  {
+                    "text": "```python\ndef learn_name(self, foo):\n    self.name = foo\n```",
+                    "correct_answer": {
+                      "id": "a1543790513635",
+                      "text": "Works"
+                    }
+                  },
+                  {
+                    "text": "```python\ndef learn_name(self, foo):\n    self.foo = name\n```",
+                    "correct_answer": {
+                      "id": "a1543790535481",
+                      "text": "Doesn't work"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1543790513635",
+                    "text": "Works"
+                  },
+                  {
+                    "id": "a1543790535481",
+                    "text": "Doesn't work"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 790487,
+              "key": "ed5ae41d-85e8-4983-a1a5-cfb52ab9bfe8",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "So this version may have a parameter with a silly name (`foo`), but it still works:\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 790488,
+              "key": "964f99bd-acc1-4ca1-996d-dba2a6cb50d2",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2018/December/5c046077_self-parameter-03/self-parameter-03.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/964f99bd-acc1-4ca1-996d-dba2a6cb50d2",
+              "caption": "",
+              "alt": "",
+              "width": 394,
+              "height": 201,
+              "instructor_notes": null
+            },
+            {
+              "id": 790489,
+              "key": "6b34b4a1-2ae0-43c8-baae-60678ddf59f9",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "When we call it, `\"Fido\"` gets passed to the `foo` parameter, and then this gets assigned to the `self.name` variable.\n\nAs the arrows show, the end result is that the string `\"Fido\"` gets assigned to `self.name`.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 674921,
+              "key": "02f8def8-b052-463e-a1dc-c7f63a3f0249",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "02f8def8-b052-463e-a1dc-c7f63a3f0249",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Write the `learn_name` method.",
+                "Open a new terminal, start the Python interpreter, and import `animals`.",
+                "Create a new `Dog` object (e.g., `fido = animals.Dog()`).",
+                "Call the `learn_name` method on your new object and pass it a name",
+                "Use dot `.` notation to access the dog's name (as in `fido.name`)."
+              ],
+              "positive_feedback": "**Nice work!**",
+              "video_feedback": null,
+              "description": "You'll find the `Dog` class in the workspace below. Go ahead and add the `learn_name` method.\n\nDo as much as you can on your own (because this effort will help make the memory more permanent in your brain!), but reference Karl's demonstration in the video above when you need to.\n\n(If you need it, all of the code is also shown at the bottom of this page.)"
+            },
+            {
+              "id": 790429,
+              "key": "25c6463b-6b56-4c15-823a-4abd8c5c2fad",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r613901c640861xGENERICpie4nn1j",
+              "pool_id": "webterminal",
+              "view_id": "generic-tzwyp",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "userCode": "",
+                    "openFiles": [
+                      "/home/workspace/animals.py"
+                    ],
+                    "showFiles": true,
+                    "allowClose": true,
+                    "showEditor": true,
+                    "allowSubmit": false,
+                    "terminalTitle": "BASH"
+                  },
+                  "kind": "generic"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 790490,
+              "key": "084354ec-d373-4c51-bbd8-5c9a7fb29968",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "084354ec-d373-4c51-bbd8-5c9a7fb29968",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "The hear method needs two parameters: `self` and `word`.",
+                "Inside the method, it should check `if` the dog's name is `in` the `words` string.",
+                "If the name is there, then the `hear` method should call the `speak` method to make the dog bark."
+              ],
+              "positive_feedback": "**Great!**",
+              "video_feedback": null,
+              "description": "Now go back up to the workspace and add the `hear` method that Karl demonstrated."
+            },
+            {
+              "id": 790491,
+              "key": "d52c2764-247a-4275-8b9b-76e4e4e724ad",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Solution\n\nHere's the full code, in case you need to reference it as you work:\n\n```python\nclass Dog:\n\n    scientific_name = \"Canis lupus familiaris\"\n\n    def speak(self):\n        print(\"Woof!\")\n\n    def eat(self, food):\n        if food == \"biscuit\":\n            print(\"Yummy!\")\n        else:\n            print(\"That's not food!\")\n\n    def learn_name(self, name):\n        self.name = name\n\n    def hear(self, words):\n        if self.name in words:\n            self.speak()\n```\n\nAnd here's what you would run in the Python interpreter to try it out:\n\n```python\n>>> import animals\n>>> fido = animals.Dog()\n>>> fido.learn_name(\"Fido\")\n>>> fido.hear(\"This string does not have the dog's name in it.\")\n>>> fido.hear(\"I have a nice treat for Fido!\")\n>>> Woof!\n\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 790493,
+              "key": "3d3dbfe1-b564-4a20-a4ac-e6d34c8200fe",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "3d3dbfe1-b564-4a20-a4ac-e6d34c8200fe",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Update the copy of `animals.py` that you have on your own computer, so that it includes the new code we've added."
+              ],
+              "positive_feedback": "**Good!**",
+              "video_feedback": null,
+              "description": "Remember, everything we're doing in the workspace here, you can also do in your own terminal and code editor. Let's make sure to keep your copy up to date."
+            }
+          ]
+        },
+        {
+          "id": 640863,
+          "key": "b45477ea-e290-4090-9ea3-bb3a8563535a",
+          "title": "Initializers (1/2)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "b45477ea-e290-4090-9ea3-bb3a8563535a",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 790492,
+              "key": "48c04634-3b1f-4e0c-8096-c2d4b65662de",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Initializers",
+              "instructor_notes": ""
+            },
+            {
+              "id": 790494,
+              "key": "d03bda43-05cf-4abd-92c2-ddfd0b022da6",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "d03bda43-05cf-4abd-92c2-ddfd0b022da6",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Start up the Python interpreter in your terminal and give this code a try (with your own copy of `animals.py`):\n\n```python\n>>> import animals\n>>> misty = animals.Dog()\n>>> misty.hear(\"Can Misty hear me!\")\n```\n(Notice that this code does *not* call the `learn_name` method!)\n\nWhat result do you get?",
+                "answers": [
+                  {
+                    "id": "a1543792572422",
+                    "text": "`Woof!`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1543792697293",
+                    "text": "`AttributeError: 'Dog' object has no attribute 'name'`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1543792703109",
+                    "text": "`NameError: name 'name' is not defined`",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 676174,
+              "key": "322e6172-09ce-4967-90f8-c9ee376403e5",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": " ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 673780,
+              "key": "62e4b9be-c97f-477d-be17-8609bc9bc94f",
+              "title": "Python: Initializers",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "nLs44xJYYcI",
+                "china_cdn_id": "nLs44xJYYcI.mp4"
+              }
+            },
+            {
+              "id": 790495,
+              "key": "941357d0-83ac-4532-8308-caa33d745597",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "941357d0-83ac-4532-8308-caa33d745597",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Add the `__init__` method, including the code for setting the dog's name.",
+                "Delete (or comment-out) the old `learn_name` method, since we don't need it anymore.",
+                "Test the code by creating a new `Dog` object that has a name right from the start."
+              ],
+              "positive_feedback": "**Great!**",
+              "video_feedback": null,
+              "description": "Go ahead and update your copy of `animals.py` to use the `__init__` method, as Karl showed in the video."
+            },
+            {
+              "id": 790496,
+              "key": "1b7215a4-427e-439d-bfda-49fd23da6698",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Solution\n\nHere's the code (as shown in the video above):\n\n```python\nclass Dog:\n\n    scientific_name = \"Canis lupus familiaris\"\n\n    def __init__(self, name):\n        self.name = name\n\n    def speak(self):\n        print(\"Woof!\")\n\n    def hear(self, words):\n        if self.name in words:\n            self.speak()\n\n```",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 790499,
+          "key": "543558ac-d27f-46b1-8327-34a36e4dd723",
+          "title": "Initializers (2/2)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "543558ac-d27f-46b1-8327-34a36e4dd723",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 790500,
+              "key": "1b581675-9212-4711-adc9-c30a7673d5b6",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Initializers (2/2)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 790501,
+              "key": "a3692507-e604-4102-90a4-e7cc5a94b4b5",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Let's take a break from dogs for a moment and revisit the `Cat` class.\n\nSpecifically, let's create a variable called `mood`, which starts out as `\"neutral\"` when a cat is created—but can be changed to other values after that.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 790502,
+              "key": "92259f25-fbd8-496f-8937-7a032037e520",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "92259f25-fbd8-496f-8937-7a032037e520",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "We want to be able to set the `mood` variable to different values on different `Cat` objects (i.e., different cats can be in different moods).\n\nBased on this, do you think the `mood` variable should be a *class-level* variable or an *instance* variable?",
+                "answers": [
+                  {
+                    "id": "a1543800149006",
+                    "text": "`mood` should be a **class-level** variable.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1543800222095",
+                    "text": "`mood` should be an **instance** variable.",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 790503,
+              "key": "30ad75af-c8c0-4b90-8b9b-3eb94c0153cd",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Just like with the `name` variable, we can put the `mood` variable in the `__init__` method.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 790504,
+              "key": "4748a428-b024-4bfb-b5e7-e736d92af32f",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "4748a428-b024-4bfb-b5e7-e736d92af32f",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Add the `__init__` method to the class. Remember to include the `self` parameter.",
+                "Inside `__init__`, initialize a variable called `self.mood`, with a starting value of `\"neutral\"`.",
+                "As shown above, create a `Cat` object and access it's mood."
+              ],
+              "positive_feedback": "**Great!**",
+              "video_feedback": null,
+              "description": "In the workspace below, you'll find the `Cat` class. Add the an instance variable called `mood`, with an initial value of `\"neutral\"`.\n\nWhen you're done, you should be able to do the following:\n\n```python\n>>> import animals\n>>> hobbes = animals.Cat()\n>>> hobbes.mood\n'neutral'\n```"
+            },
+            {
+              "id": 790506,
+              "key": "40860ca8-b46f-4489-8961-fc8b8ea9eb12",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r613901c790499xGENERIC7j1wgtda",
+              "pool_id": "webterminal",
+              "view_id": "generic-ho1uo",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "userCode": "",
+                    "openFiles": [
+                      "/home/workspace/animals.py"
+                    ],
+                    "showFiles": true,
+                    "allowClose": true,
+                    "showEditor": true,
+                    "allowSubmit": false,
+                    "terminalTitle": "BASH"
+                  },
+                  "kind": "generic"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 790511,
+              "key": "94b33dde-107a-4931-aea2-bcce5bc3e607",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "----\n<div style=\"background-color: #a4e4f5;\">\n## ⚠️ Spoiler alert!\n\n**Our solution is below.** You'll learn more effectively if you give the exercise a strong effort before comparing your code with ours!\n</div>\n----\n----",
+              "instructor_notes": ""
+            },
+            {
+              "id": 790505,
+              "key": "330515ae-8ee0-4018-9da3-d2b95a8301ba",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Solution\n\nHere's our code:\n\n```python\nclass Cat:\n\n    def __init__(self):\n        self.mood = \"neutral\"\n    \n    def speak(self):\n        print(\"Meow!\")\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 790507,
+              "key": "927f511e-49ab-4469-b5c6-47737a308165",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Happy cat, angry cat 😺😾\n\nThe key idea behind an instance variable, like `self.mood`, is that each object has its own copy of the variable. So while all of our cats start out being in a `\"neutral\"` mood, we can change that, like so:\n\n```python\n>>> hobbes.mood = \"happy\"\n>>> hobbes.mood\n'happy'\n```\n\nThis allows us to create objects that have certain things in common, but also have their own individual characteristics and behaviors.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 790508,
+              "key": "d1d1510a-82d4-4eac-a6b5-af129633ed7a",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "d1d1510a-82d4-4eac-a6b5-af129633ed7a",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "If the `mood` is `\"happy\"`, have the method print `\"Purr\"`.",
+                "If the `mood` is `\"angry\"`, have the method print `\"Hiss!\"`.",
+                "Otherwise, have the method print `\"Meow!\"`.",
+                "Test it by creating two different `Cat` objects and setting their `mood` variables to different values."
+              ],
+              "positive_feedback": "**Great!**",
+              "video_feedback": null,
+              "description": "Go back up to the workspace and modify the `speak` method so that it prints something different depending on the cat's mood. Like this:\n\n```python\n>>> hobbes.speak()\nMeow!\n>>> hobbes.mood = \"happy\"\n>>> hobbes.speak()\nPurrr\n>>> mimi.speak()\nMeow!\n>>> mimi.mood = \"angry\"\n>>> mimi.speak()\nHiss!\n```"
+            },
+            {
+              "id": 790510,
+              "key": "6eb2bd4d-817d-4675-aff9-0eb96ea452cf",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "----\n<div style=\"background-color: #a4e4f5;\">\n## ⚠️ Spoiler alert!\n\n**Our solution is below.** You'll learn more effectively if you give the exercise a strong effort before comparing your code with ours!\n</div>\n----\n----",
+              "instructor_notes": ""
+            },
+            {
+              "id": 790509,
+              "key": "7a09bae7-432d-4316-8242-cb9ddc6a44a5",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Solution\n\nHere's our code:\n```python\nclass Cat:\n\n    def __init__(self):\n        self.mood = \"neutral\"\n    \n    def speak(self):\n        if self.mood == \"happy\":\n            print(\"Purrr\")\n        elif self.mood == \"angry\":\n            print(\"Hiss!\")\n        else:\n            print(\"Meow!\")\n```",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 640865,
+          "key": "79d4f63e-068c-4a84-a397-47b72a716318",
+          "title": "Storing information on instances",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "79d4f63e-068c-4a84-a397-47b72a716318",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 673782,
+              "key": "e6f58a5d-21de-4202-adb3-2eb8371ab169",
+              "title": "Python: Storing information on instances",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "TA2kT-rjWSw",
+                "china_cdn_id": "TA2kT-rjWSw.mp4"
+              }
+            },
+            {
+              "id": 665250,
+              "key": "2b5c35d9-a0e9-4896-8900-073d53168800",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "What is the \"something else\" that Karl alludes to? Well, the `count` method is going to need to have a variable that keeps track of the current count. This variable needs to be initialized when we create a new dog—so you'll need to add it inside the `__init__` method.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 665271,
+              "key": "d4a20bd4-cbbc-45e3-8c89-abbb85f3dc83",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "d4a20bd4-cbbc-45e3-8c89-abbb85f3dc83",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "First, add an instance variable to the `__init__` method to keep track of the count. We called ours `woofs`.",
+                "Add a `count` method, being sure to include the `self` parameter. In the body of the method, you'll probably want to use a `for` loop and the `range` function.",
+                "In all the places where it is used, your `woofs` variable should have `self.` at the beginning (because it's an instance variable that belongs to a specific object).",
+                "Test it in the interpreter. Make sure to create two or more `Dog`s and check that their counts are separate!"
+              ],
+              "positive_feedback": "**Woof!**  \nI mean ...  \n**Great!**",
+              "video_feedback": null,
+              "description": "In the workspace below, add a `count` method to the `Dog` class. Here's an example of how it should work:\n\n```python\n>>> fido.count()\nWoof!\n>>> fido.count()\nWoof!\nWoof!\n>>> fido.count()\nWoof!\nWoof!\nWoof!\n```\n\nNote that each `Dog` object should keep track of its own count. For example:\n\n```python\n>>> fido = Dog(\"Fido\")\n>>> archer = Dog(\"Archer\")\n>>> fido.count()\nWoof!\n>>> fido.count()\nWoof!\nWoof!\n>>> archer.count()\nWoof!\n```"
+            },
+            {
+              "id": 790430,
+              "key": "d4ef8153-bca1-4fd0-bee0-b9b47b2ba5b8",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r613901c640865xGENERIC7umpxyxw",
+              "pool_id": "webterminal",
+              "view_id": "generic-eurua",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "userCode": "",
+                    "openFiles": [
+                      "/home/workspace/animals.py"
+                    ],
+                    "showFiles": true,
+                    "allowClose": true,
+                    "showEditor": true,
+                    "allowSubmit": false,
+                    "terminalTitle": "BASH"
+                  },
+                  "kind": "generic"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 670912,
+              "key": "3dc5c43b-a0a9-49a9-a27b-c87d37377a92",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n----\n<div style=\"background-color: #a4e4f5;\">\n## ⚠️ Spoiler alert!\n\n**Our solution is below.** You'll learn more effectively if you give the exercise a strong effort before comparing your code with ours!\n</div>\n----\n----",
+              "instructor_notes": ""
+            },
+            {
+              "id": 790498,
+              "key": "fda9e831-50d7-4d49-9036-b7e8c70f24e9",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 674604,
+              "key": "1965922e-3c40-4a89-8303-5bfd787605f5",
+              "title": "Python: Dog.count solution",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Ezd5aIKZvHs",
+                "china_cdn_id": "Ezd5aIKZvHs.mp4"
+              }
+            },
+            {
+              "id": 790497,
+              "key": "10ff58a7-6960-407a-bd93-1257178f9ba6",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Here's the code shown in the video in case you need it:\n\n```python\nclass Dog:\n\n    scientific_name = \"Canis lupus familiaris\"\n\n    def __init__(self, name):\n        self.name = name\n        self.woofs = 0\n\n    def speak(self):\n        print(\"Woof!\")\n\n    # def learn_name(self, foo):\n    #     self.foo = name\n\n    def hear(self, words):\n        if self.name in words:\n            self.speak()\n\n    def count(self):\n        self.woofs += 1\n        for bark in range(self.woofs):\n            self.speak()\n```",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 640868,
+          "key": "aa4df581-4448-4764-b018-e20bd43d79c0",
+          "title": "Inheritance",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "aa4df581-4448-4764-b018-e20bd43d79c0",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 673784,
+              "key": "d89cefd5-0279-4ec3-9709-54cfc9094cab",
+              "title": "Python: Inheritance",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "tTtkJWK_oTM",
+                "china_cdn_id": "tTtkJWK_oTM.mp4"
+              }
+            },
+            {
+              "id": 665277,
+              "key": "d15fd3dd-880b-458d-ab33-29f7d6465ebe",
+              "title": "Create a subclass of the Dog class!",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "d15fd3dd-880b-458d-ab33-29f7d6465ebe",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Create a new subclass of `Dog`.",
+                "Define an `origin` variable on it.",
+                "Define a new `speak` method for how that dog sounds.",
+                "Test it in the interpreter!"
+              ],
+              "positive_feedback": "**Bark bark, yip, awoo~!**",
+              "video_feedback": null,
+              "description": "Mark off these activities as you complete them."
+            },
+            {
+              "id": 790431,
+              "key": "96c9a1eb-c4f6-4831-862c-e81a87e74f40",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r613901c640868xGENERICqqahh73u",
+              "pool_id": "webterminal",
+              "view_id": "generic-8larm",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "userCode": "",
+                    "openFiles": [
+                      "/home/workspace/animals.py"
+                    ],
+                    "showFiles": true,
+                    "allowClose": true,
+                    "showEditor": true,
+                    "allowSubmit": false,
+                    "terminalTitle": "BASH"
+                  },
+                  "kind": "generic"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 662718,
+              "key": "1e78dd34-7bd5-4841-89cb-475f97e98a0e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Earlier in this lesson, you might have noticed that `isinstance(True, int)` was True — in other words, that the Boolean values True and False are also members of the int class. It turns out that this is an example of subclassing that is built right into the core of Python. True and False are members of the `bool` class — but `bool` is a subclass of `int`. You can try this out!\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 662721,
+              "key": "f62548d8-803a-40aa-b3d3-d5a790e02e01",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "f62548d8-803a-40aa-b3d3-d5a790e02e01",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What is the result when you enter `issubclass(bool, int)` in the interactive interpreter?",
+                "answers": [
+                  {
+                    "id": "a1529527813608",
+                    "text": "True",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1529527836014",
+                    "text": "False",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 650942,
+              "key": "d887e1ea-ecf4-4e42-b9ae-3c0b72f7f262",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Methods that do nothing\n\nSometimes when defining classes, you'll want to create _placeholder_ methods — which don't do anything, but which can be replaced in a subclass. Python has a special do-nothing statement called `pass` which works very well for this. `pass` can be used in class or method definitions to indicate that it's intentional for the definition to do nothing —\n\n```\nclass Dog:\n    def do_trick(self):\n        pass\n\nclass Chihuahua(Dog):\n    pass\n\nclass TrainedChihuahua(Chihuahua):\n    def do_trick(self):\n        print(\"The chihuahua spins in the air and turns briefly into a chicken.\")\n```\n\nWhy do we need this? Because it's not legal in Python to have a function or class that contains no statements. By defining `do_trick` on the `Dog` class, we make it possible to call that method on any `Dog`, even though only `TrainedChihuahua` instances will actually do anything when it's called:\n\n```text\n>>> fido = Dog()\n>>> fido.do_trick()\n>>> pupper = TrainedChihuahua()\n>>> pupper.do_trick()\nThe chihuahua spins in the air and turns briefly into a chicken.\n```",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 640869,
+          "key": "74f4a997-802c-4485-b9f4-f63ac4aab19c",
+          "title": "\"Is-a\" vs. \"Has-a\"",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "74f4a997-802c-4485-b9f4-f63ac4aab19c",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 673786,
+              "key": "a700726d-1de0-4734-8160-3381bf6c860e",
+              "title": "Python: \"Is-a\" vs. \"Has-a\"",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "owYLz2tXQVA",
+                "china_cdn_id": "owYLz2tXQVA.mp4"
+              }
+            },
+            {
+              "id": 665281,
+              "key": "204e5a5c-1dca-4d7b-85e8-9a83f2bc8378",
+              "title": "Implement DogPark.shout",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "204e5a5c-1dca-4d7b-85e8-9a83f2bc8378",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Read the code in the workspace below for the `DogPark` class.",
+                "Read the code in the `if __name__ == '__main__':` block to see how to create a `DogPark` with `Dog` objects in it.",
+                "Write a `shout` method that calls the `hear` method of each `Dog` in the park.",
+                "Test it out by creating a `DogPark` and calling its `converse` method."
+              ],
+              "positive_feedback": "**Great job!** Now you can talk to the animals.",
+              "video_feedback": null,
+              "description": "Mark these activities as you complete them."
+            },
+            {
+              "id": 668871,
+              "key": "e92c92b1-56a2-4dad-8b25-4466e76649b2",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "view8e2adfc6",
+              "pool_id": "webterminal",
+              "view_id": "8e2adfc6-784d-4eec-8f4a-a49d8fb69d52",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "userCode": "cd workspace\npython3\n",
+                    "openFiles": [
+                      "/home/workspace/dogpark.py",
+                      "/home/workspace/animals.py"
+                    ],
+                    "showFiles": false,
+                    "allowClose": false,
+                    "allowSubmit": false
+                  },
+                  "kind": "generic"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 670914,
+              "key": "1fadee9c-6da9-4056-acc9-add52a579933",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n----\n<div style=\"background-color: #a4e4f5;\">\n## ⚠️ Spoiler alert!\n\n**Our solution is below.** You'll learn more effectively if you give the exercise a strong effort before comparing your code with ours!\n</div>\n----\n----",
+              "instructor_notes": ""
+            },
+            {
+              "id": 673791,
+              "key": "ada2df5c-ba2b-47b4-82cc-311514bc8120",
+              "title": "Python: DogPark.shout solution",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "lHZXxa-r98A",
+                "china_cdn_id": "lHZXxa-r98A.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 640871,
+          "key": "57da62ac-2fdc-4ac3-9ecc-a09a079c38ad",
+          "title": "Using super",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "57da62ac-2fdc-4ac3-9ecc-a09a079c38ad",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 673788,
+              "key": "0214f7b6-d6e4-4ac4-9a77-e77e476d75a7",
+              "title": "Python: Using super",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "5cWvU0lk1yE",
+                "china_cdn_id": "5cWvU0lk1yE.mp4"
+              }
+            },
+            {
+              "id": 674934,
+              "key": "94889ae7-538c-4eea-829f-53d630020bbd",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "94889ae7-538c-4eea-829f-53d630020bbd",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Create a subclass of `turtle.Turtle`.",
+                "Define an `__init__` method that modifies something about the turtle.",
+                "Use `super` to access the `__init__` method from the parent class."
+              ],
+              "positive_feedback": "**That's super!**\n\n(Couldn't resist.)",
+              "video_feedback": null,
+              "description": "Try out the `super` method by creating your own turtle subclass in Python on your own computer."
+            },
+            {
+              "id": 665290,
+              "key": "8e873651-a36d-40ee-9178-15627f3a87d5",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "8e873651-a36d-40ee-9178-15627f3a87d5",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "How can you tell if a class's `__init__` method is likely to need to call `super().__init__()`?",
+                "answers": [
+                  {
+                    "id": "a1529965356781",
+                    "text": "If the parent class has a bug in its `__init__` method, you will need to call `super().__init__()`.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1529965395001",
+                    "text": "If the parent class does setup in its `__init__` method that the child class needs, you will need to call `super().__init__()`.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1529965395651",
+                    "text": "If the child class needs to be an exact copy of the parent class, you should call `super().__init__()`.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 640872,
+          "key": "9d2b0bb1-dd93-4053-933f-067f3e36fb4e",
+          "title": "Congratulations!",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "9d2b0bb1-dd93-4053-933f-067f3e36fb4e",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 676175,
+              "key": "8032184f-337e-418d-ab9f-50a47deb5bbd",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": " ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 673789,
+              "key": "e7ddbfa8-6808-43b4-8a65-e9020a5df5af",
+              "title": "Python: Congratulations!",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "P4j6PHeurA0",
+                "china_cdn_id": "P4j6PHeurA0.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 817348,
+          "key": "2c3b83a3-eb3a-495c-91b5-045b1aaf4ac1",
+          "title": "Optional bonus project!",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "2c3b83a3-eb3a-495c-91b5-045b1aaf4ac1",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 817349,
+              "key": "daac1a3e-04f9-42fa-a36c-dffe9e1791f7",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Optional bonus project: Rock, Paper, Scissors",
+              "instructor_notes": ""
+            },
+            {
+              "id": 817350,
+              "key": "30127643-ad1d-4dea-8fbe-c36aa246ed0a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "**Object-Oriented Programming (OOP)** is a key concept that an effective programmer should have a solid grasp of—but it's also a concept that tends to be especially confusing and intimidating when you're first learning it.\n\nFor this reason, we've provided an additional (optional) project that you can use to further practice and sharpen your OOP skills. The project is challenging and will push you to think more deeply about objects and classes.\n\nTo be clear, this project is **not** a requirement for graduation—but If you choose to complete and submit the project, you'll get a full code review and tips on your code from a Udacity reviewer.\n\nIf you'd like to try your hand at it, you can get to the optional project by clicking [here](https://classroom.udacity.com/nanodegrees/nd000/parts/07d96bf0-171f-4cca-a960-3ac387a6928e/modules/bb3df5ce-7f20-446b-9859-413328a76daa/lessons/005a7a3c-b6ba-4e83-ac2c-92fc77eee068/concepts/947b71a3-47ea-4535-b456-0e47359c5e9b?contentVersion=7.0.0&contentLocale=en-us), or by looking for *Rock, Paper, Scissors* under the *Extracurricular* section of the left-hand menu.\n\nEither way, you just completed the *Object & Classes* lesson—way to go tackling such a tricky subject!",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

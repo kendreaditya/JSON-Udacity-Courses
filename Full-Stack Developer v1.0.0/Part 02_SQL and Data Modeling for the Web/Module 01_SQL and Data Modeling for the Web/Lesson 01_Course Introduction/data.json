@@ -1,0 +1,241 @@
+{
+  "data": {
+    "lesson": {
+      "id": 907374,
+      "key": "3eba3076-0273-46e2-9b29-aa08da6ddfe7",
+      "title": "Course Introduction",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Understand what this course will cover and the learning objectives achieved.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/3eba3076-0273-46e2-9b29-aa08da6ddfe7/907374/1579648087066/Course+Introduction+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/3eba3076-0273-46e2-9b29-aa08da6ddfe7/907374/1579648084611/Course+Introduction+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 907372,
+          "key": "079f7814-6ceb-46cd-aac5-4153999020a5",
+          "title": "Course Overview & Project",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "079f7814-6ceb-46cd-aac5-4153999020a5",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 907370,
+              "key": "10dfa990-7de6-48f5-9d72-638b13048510",
+              "title": "Course Intro Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 👋 Welcome!\n\nI'm so happy to have you here! 😄 My name is [Amy Hua](https://www.linkedin.com/in/huaamy), and throughout this course on SQL & Data Modeling for the Web, I'll be your instructor, delivering you this course in written, interactive, and video format. Click on the video below to get started...\n\n\n\n.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907369,
+              "key": "879a9d61-c5d6-4f22-b539-3274b408c7bf",
+              "title": "ND004 C01 L01 02 Course Intro",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "JswwUOZWRao",
+                "china_cdn_id": "JswwUOZWRao.mp4"
+              }
+            },
+            {
+              "id": 907368,
+              "key": "02d3aebe-1618-4db9-bf7a-4905c51929a8",
+              "title": "Course Intro Recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this course, you'll learn the skills needed to traverse the stack and develop an entire database-backed web application. By the end of the course, you'll have the fundamentals you need to start building web applications for anything you can think of! (Well, almost anything!)\n\nHere are some of the specific core concepts we'll cover:\n* How to do *Create*, *Read*, *Update*, and *Delete* (*CRUD*) operations\n* How to apply these operations across both *databases* and *web applications*\n* How to set up *relationships* between elements of an application\n* How to think about important principles and patterns in building *data models* for a web application\n\nThese skills are best learned by *doing*—by actually building web applications, rather than just reading about how to build them. So in this course, you'll first practice these skills in the context of building a database-backed **to-do application**, and then you'll get a second opportunity to demonstrate your new skills in your final project (described below).",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907375,
+              "key": "f0ab582f-5b06-4c3a-a5e9-34dae6a81c94",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Final Project: Fyyur\nAt the end of this course, you'll get an opportunity to practice (and demonstrate) all of the above skills a second time, by building your final project—an app called *Fyyur*. Let's get a preview of that, so that you know what you'll be building!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907376,
+              "key": "c308eac4-76f5-4a0d-a91f-3ef68bd7aa23",
+              "title": "ND004 C01 L01 03 FInal Project Overview",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Jau-xBGGvkU",
+                "china_cdn_id": "Jau-xBGGvkU.mp4"
+              }
+            },
+            {
+              "id": 907377,
+              "key": "fd049776-5650-466c-961e-c1e6d3891d58",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "At this time, or at any point during the course, feel free to go ahead and have a look at the final project instructions that are at the end of the course. A lot of it won't yet make sense to you, but it can help a lot to know where you're headed, and how you'll be implementing the skills you're learning.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 907378,
+          "key": "3849ac97-6116-48a0-a852-8f74f546fa5b",
+          "title": "Prerequisites & Tech Stack",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "3849ac97-6116-48a0-a852-8f74f546fa5b",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 907379,
+              "key": "9d2f5906-efcb-4603-87f6-41dce2506ee4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Prerequisites & Tech Stack",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907380,
+              "key": "9c7d2819-4fed-482a-bf63-0285cb7d5bf8",
+              "title": "ND004 C01 L01 04 Prerequisites   Tech Stack",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "-mb5NWy7jcI",
+                "china_cdn_id": "-mb5NWy7jcI.mp4"
+              }
+            },
+            {
+              "id": 907381,
+              "key": "f4716844-d1f8-4c5c-9c14-f2c89fda5937",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Here are the skills you'll need for this course:\n* Basic Programming in Python\n* Front-end web development (HTML, CSS, Javascript)\n* Terminal Command Basics\n* SQL and Relational Databases\n\nNeed a refresh on these? Check out these courses and Nanodegree programs.\n\n- [Introduction to Python Programming](https://www.udacity.com/course/introduction-to-python--ud1110)\n- [Front End Web Developer Nanodegree program](https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001)\n- [Shell (Command Line) Workshop](https://classroom.udacity.com/courses/ud206) or [Linux Command Line Basics](https://www.udacity.com/course/linux-command-line-basics--ud595)\n- [SQL for Data Analysis](https://www.udacity.com/course/sql-for-data-analysis--ud198) and [Intro to Relational Databases](https://www.udacity.com/course/intro-to-relational-databases--ud197)\n\nAnd here is the tech stack we'll be gaining proficiency in:\n* Python 3\n* Flask\n* PostgresSQL\n* psycopg2\n* SQLAlchemy\n* Flask-SQLAlchemy\n\n\n### Non-technical prerequisites\n\nI want to take a moment to talk about some of the \"softer\" requirements for being happy and successful in this course.\n\nLet's pause for a second and discuss some strategies to help you along your journey. We will cover:\n\n* Having the right expectations\n* Sculpting out the time\n* Strategies for being proactive in your learning\n\n##### Having the right expectations\n\nThis will likely be your first introduction to many concepts in full stack development and probably also your first introduction to being a software engineer. How exciting! And so you may be wondering, how long does it take to learn these things?... Being a good software engineer is about being a good beginner -- all, the, time. It doesn't matter if you've been in software for 1 month, 1 year, or 10 years. The field is constantly changing, every concept contains a rabbit hole of many more concepts to follow, and the point is not to learn \"everything\" -- it is about scoping clearly what you want to build next. And then, having the foundations and learning strategies for knowing what you'll need to learn to build that next feature, or fix that next bug.\n\nThe great oxymoron of mastering software is being aware of what you haven't mastered, but knowing how to learn them with time, for the rest of your career.\n\nYou may, in fact, never feel complete, in either this course or in your technical career, on whether you know everything you need to know to fully build any application whatsoever. And so it is normal to feel that there is something \"missing\" here: like, maybe I won't cover Application Architecture patterns very well, coding best practices, Javascript, CSS, HTML, Python, the Compiler, Performance best practices, Asynchronous programming, and so on so forth. But trust me, this course is _deep_ and _comprehensive_, and it sets you up to ask those questions, well, and be able to answer them later. But first things first, I will teach you how to build your first full stack web app. You can research, ask, and get mentored on the rest, for the rest of your career to follow. :)\n\nBut, don't worry, you don't actually need to know everything to land a job, build your app, or be called a software master! I know I certainly don't know it all... and I've been doing this since 2012... Anyway, we hope to get you _on a definite track_ for landing your first software job, be off to a very strong start, and knowing where you ought to improve upon in the future.\n\nI will make sure that you will have all the resources for building your (first) web application, end to end, of what I hope to be many more to follow, where you will keep learning what it takes to do full stack development, in every application you continue to work on. A [growth mindset](https://hbr.org/2016/01/what-having-a-growth-mindset-actually-means) will greatly help in making this a pleasant journey.\n\n##### Sculpting out the time\n\nSpinning multiple plates? Are you balancing a family, other classes, travels, or a job at the same time? It helps to schedule and block out a regular time and place to commit to this course to finish it end to end. Take a moment to plan how to set aside the appropriate amount of _time_ you'll need to engage with and commit to this course and the Nanodegree as a whole. Buffer more time than you think you need, and ensure you try to mitigate other obstacles to accomplishing the time you'll need to master the concepts in this course.\n\n##### Being proactive in your learning\n\nIn addition to engaging with your Udacity mentor, other useful strategies include working with peer students in the course, getting live feedback in how ready you are to interview for a job with (free) resources like [interviewing.io](https://interviewing.io/) and [leetcode](https://leetcode.com/), and checking out supplementary Udacity courses to fill in the blanks for your learning. Things we will cover less in this course include:\n\n* HTML, CSS, and Javascript\n* Application Patterns\n* Algorithms and Data Structures\n\nWhen self-studying, I like to find other peers who are on the same journey for social support and accountability, balancing my learning with multiple other resources, taking frequent breaks (see: the pomodoro method), studying in coffee shops and libraries (also see: [coffeetivity](https://coffitivity.com/)), and so forth. Self studying is hard and you need to be in a distraction-free, good mood to get into a [state of flow](https://www.verywellmind.com/what-is-flow-2794768) with it, so much like [sleep hygiene](https://www.sleepfoundation.org/articles/sleep-hygiene), I recommend ensuring you're in a well set up environment to get yourself going. Exercise and good sleep help.\n\n##### This is a marathon, not a sprint.\n\n[Don't beat yourself up too much for not getting everything right away](https://medium.com/@samyj13/the-most-overused-saying-its-a-marathon-not-a-sprint-776a7103fe66). Keep at it, and in a matter of weeks to a few months, you'll be amazed by how much you have learned and can build!",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 907382,
+          "key": "0aad1ad9-abcb-417c-bbee-5c228c7e8003",
+          "title": "Required Software",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "0aad1ad9-abcb-417c-bbee-5c228c7e8003",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 907383,
+              "key": "b8fe2443-f412-4a77-a0f7-61f0f08e83c1",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Required Software\n\nBefore getting started, let's make sure you have all the needed software installed. They are:\n\n* A Command-Line Interface (CLI) like *Terminal* or *GitBash*.\n* Python (be sure it is version 3.7 or later)\n* pip\n* A code editor\n* A web browser\n\n(If you're totally confident you already have all of these things, feel free to skip the rest of this page and head straight to the next lesson!)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 951462,
+              "key": "725334d2-7357-45af-a277-d49e2efcf7d7",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Command-Line Interface (CLI)\nFor this course, you'll need to have a **Command-Line Interface (CLI)**—such as *terminal* (on MacOS) or *GitBash* (on Windows)—and you'll need to know how to use it. If you've been coding for a little while, you probably already have a CLI set up and know at least some basic commands (like `cd`, `pwd`, `ls`, etc.). But if you have no idea what we're talking about, or you just feel a bit fuzzy on the details, we strongly recommend that you go through the first part of our free course, [Shell Workshop](https://classroom.udacity.com/courses/ud206). This course shows you how to install a CLI (if you don't already have one) and also walks through the basic commands that any developer should know.\n\nNote that if you're on a Mac, you'll already have the default CLI, called *Terminal*. That will work fine for this course, but you can download an alternative CLI if you find that you want different features. Personally, I prefer [ITerm2](https://www.iterm2.com/).\n\nIf you're on Windows, you'll have the Command Prompt pre-installed, but this will *not* have the functionality you need—so you'll have to install an alternative, such as *GitBash*. Again, you can check out the [Shell Workshop](https://classroom.udacity.com/courses/ud206) course for details on how to install and use GitBash.\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907384,
+              "key": "b9c4ee70-c476-40a4-b995-decc83af24e9",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Python 3 and pip",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907385,
+              "key": "4c1680f1-03f8-4f3d-9773-0e53107425dd",
+              "title": "ND004 C01 L01 05 Software Installation",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "K66ygx4JCls",
+                "china_cdn_id": "K66ygx4JCls.mp4"
+              }
+            },
+            {
+              "id": 907386,
+              "key": "15e09fa0-3cd3-400b-96b2-b9937778cab6",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Python 3.7 or later\n\nYou'll want to be sure that you have Python 3.7 or later installed. If you're not sure whether Python is installed, or you're not sure what version of Python you have, you can find out by going to your command line and running:\n\n```bash\n python --version\n```\nOr:\n\n```bash\npython3 --version\n```\nIf you need to install (or update) Python, you can get the latest version [here](https://www.python.org/downloads/).\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 951463,
+              "key": "7de579ba-84ac-4cd2-a001-0add9e68bf31",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## pip / pip3\n\n**pip** is the package manager for Python, and we'll be using it to install packages that we need from the [Python Package Index](https://pypi.org/) (a.k.a. **PyPI**). If you have Python installed, then there's a good chance you already have some version of pip installed along with it. You can check by running this in the command line:\n\n```bash\npip --version\n```\n\nAnd also:\n\n```bash\npip3 --version\n```\nIf you don't have pip installed, you'll get a `command not found` message. If you *do* have pip, you should get a result something like this:\n\n```bash\npip 19.2.3 from /Users/jsmith/lib/python3.7/site-packages/pip (python 3.7)\n```\n\nThis shows both which version of pip you have (in this case , version `19.2.3`) as well as which version of Python it is connected to (in this case, `python 3.7`).\n\nIf you don't have pip installed with your most recent Python version, then go [here](https://pip.pypa.io/en/stable/installing/) for instructions on how to install or upgrade.\n\n>**Note:** Be aware that it's possible to have both Python 2 and Python 3 installed on the same computer, and similarly possible to have multiple installations of pip. This can cause confusion, if you're not sure which version you're using. So this is why it's good to check the version, as shown above. You'll want to be sure you can use pip to install packages with your Python 3.7+ installation.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907387,
+              "key": "c3958032-3541-4ebd-9835-94ed01cf9c17",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Code Editor\nYou probably already have a code editor installed on your computer; if not, you'll need to get one now in order to follow along with us for the rest of this course. I prefer [Visual Studio Code (VS Code)](https://code.visualstudio.com/). Other editors like [Sublime](https://www.sublimetext.com/) and [Atom](https://atom.io/) or plain old [Vim](https://www.vim.org/) are also popular, awesome choices.\n\n## Web Browser\nFinally, you will of course need a Web Browser, such as [Chrome](https://www.google.com/chrome/) or [Firefox](https://www.mozilla.org/en-US/firefox/new/) for previewing the web pages you work with in the class. I prefer [Firefox](https://www.mozilla.org/en-US/firefox/new/) (as well as the [DuckDuckGo](https://duckduckgo.com/) search engine for looking things up, for that matter).",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

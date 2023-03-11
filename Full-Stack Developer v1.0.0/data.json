@@ -1,0 +1,3380 @@
+{
+  "data": {
+    "nanodegree": {
+      "id": 906867,
+      "key": "nd0044",
+      "title": "Full-Stack Developer",
+      "semantic_type": "Degree",
+      "is_public": true,
+      "cohorts": [
+        {
+          "id": 14141,
+          "part_keys": [
+            "091c594f-fa25-4bd2-aff9-503f60cb0a63",
+            "216c669c-5e62-43a1-bcb9-8a8e5eca972a",
+            "838df8a7-4694-4982-a9a5-a5ab20247776",
+            "b91edf5c-5a4d-499a-ba69-a598afd9fe3e",
+            "df863fd7-e7ca-4b3a-9ec3-725b7a9cba70",
+            "ab19ff50-446b-4c99-be38-b2ad8785b121"
+          ],
+          "start_at": "2020-06-09T19:00:00.000Z",
+          "due_at": "2020-10-08T19:00:00.000Z",
+          "end_at": "2020-11-05T19:00:00.000Z"
+        }
+      ],
+      "version": "1.0.0",
+      "locale": "en-us",
+      "color_scheme": "color_scheme1",
+      "enrollment": {
+        "product_variant": "STANDARD",
+        "variant": "STANDARD",
+        "free_preview_status": "NONE",
+        "free_preview_expires_at": null,
+        "static_access": null
+      },
+      "nd_units": [
+        {
+          "id": 10253,
+          "part_keys": [
+            "091c594f-fa25-4bd2-aff9-503f60cb0a63",
+            "216c669c-5e62-43a1-bcb9-8a8e5eca972a",
+            "838df8a7-4694-4982-a9a5-a5ab20247776",
+            "b91edf5c-5a4d-499a-ba69-a598afd9fe3e",
+            "df863fd7-e7ca-4b3a-9ec3-725b7a9cba70",
+            "ab19ff50-446b-4c99-be38-b2ad8785b121"
+          ]
+        }
+      ],
+      "hero_image": {
+        "url": "https://video.udacity-data.com/topher/2018/June/5b2a7c6f_full-stack-large/full-stack-large.jpg"
+      },
+      "forum_path": "c/https://knowledge.udacity.com/",
+      "summary": "Learn how to create server-side, data-driven web applications that support any front-end and can scale to support hundreds of thousands of users.",
+      "is_graduated": false,
+      "is_term_based": true,
+      "is_default": true,
+      "project_deadlines": [
+        {
+          "due_at": "2020-06-30T19:00:00.000Z",
+          "node_key": "65571c98-fc9d-41e9-8817-83f8ee564546"
+        },
+        {
+          "due_at": "2020-07-21T19:00:00.000Z",
+          "node_key": "6c4321a9-5aad-403a-9663-fc9a93670a35"
+        },
+        {
+          "due_at": "2020-07-22T19:00:00.000Z",
+          "node_key": "0051a3da-930f-47a1-bd41-d7fe3bd324f4"
+        },
+        {
+          "due_at": "2020-08-12T19:00:00.000Z",
+          "node_key": "9201dbc0-4fce-45c4-95d8-b41ee9a8a7f0"
+        },
+        {
+          "due_at": "2020-09-02T19:00:00.000Z",
+          "node_key": "cbbb1716-7c5d-44ee-bad1-ee0e51e0a13e"
+        },
+        {
+          "due_at": "2020-09-03T19:00:00.000Z",
+          "node_key": "4180859007"
+        },
+        {
+          "due_at": "2020-09-24T19:00:00.000Z",
+          "node_key": "302f4d89-5031-418b-a368-6001ed705a62"
+        }
+      ],
+      "user_state": {
+        "node_key": "nd0044",
+        "completed_at": "2020-06-01T01:55:22.342Z",
+        "last_viewed_at": "2020-06-01T01:57:17.444Z",
+        "unstructured": null
+      },
+      "aggregated_state": {
+        "node_key": "nd0044",
+        "completion_amount": 0,
+        "completed_count": 0,
+        "concept_count": 232,
+        "last_viewed_child_key": "091c594f-fa25-4bd2-aff9-503f60cb0a63",
+        "part_aggregated_states": [
+          {
+            "node_key": "091c594f-fa25-4bd2-aff9-503f60cb0a63",
+            "completed_at": null,
+            "completion_amount": 0,
+            "completed_count": 0,
+            "concept_count": 5,
+            "last_viewed_child_key": "1e3585c0-991b-429e-8eb2-3ef6068b03de",
+            "module_aggregated_states": [
+              {
+                "node_key": "1e3585c0-991b-429e-8eb2-3ef6068b03de",
+                "completed_at": null,
+                "completion_amount": 0,
+                "completed_count": 0,
+                "concept_count": 5,
+                "last_viewed_child_key": "aa774d75-e696-44ff-a11f-e558c0e69f6d",
+                "lesson_aggregated_states": [
+                  {
+                    "node_key": "aa774d75-e696-44ff-a11f-e558c0e69f6d",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 5,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "8344cff2-2fb7-49a3-8a99-1878aa6b1269"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "node_key": "216c669c-5e62-43a1-bcb9-8a8e5eca972a",
+            "completed_at": null,
+            "completion_amount": 0,
+            "completed_count": 0,
+            "concept_count": 81,
+            "last_viewed_child_key": "43f34772-8032-4851-938b-d952bbfc7f1c",
+            "module_aggregated_states": [
+              {
+                "node_key": "43f34772-8032-4851-938b-d952bbfc7f1c",
+                "completed_at": null,
+                "completion_amount": 0,
+                "completed_count": 0,
+                "concept_count": 81,
+                "last_viewed_child_key": "3eba3076-0273-46e2-9b29-aa08da6ddfe7",
+                "lesson_aggregated_states": [
+                  {
+                    "node_key": "3eba3076-0273-46e2-9b29-aa08da6ddfe7",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 3,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "079f7814-6ceb-46cd-aac5-4153999020a5"
+                  },
+                  {
+                    "node_key": "e9a00338-ff0d-415b-b382-25d445e529a1",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 21,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "b9764a82-2998-4b66-a465-9a081a51c959"
+                  },
+                  {
+                    "node_key": "53139bef-389d-4d0a-b7b6-e4bb4bd0ef0c",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 17,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "98895b2f-4fd4-44e7-bba7-7995602b9cf8"
+                  },
+                  {
+                    "node_key": "56296e82-9c61-4aae-9df9-ab9027245ca0",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 5,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "a39d4b7f-8ea2-4f00-afda-7a9730e5cf75"
+                  },
+                  {
+                    "node_key": "31c3741e-ea1c-48d5-a9bd-2d1d0bb33e5d",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 10,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "b72157ed-2cbd-424c-ab27-5d9c047ea8c8"
+                  },
+                  {
+                    "node_key": "1e52ce88-a7af-43d0-8fc4-6e304e50ed0b",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 7,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "cd423d23-c7c5-41d5-96ff-a5b35c46bfb6"
+                  },
+                  {
+                    "node_key": "bc24f190-2e3d-4323-a1a0-603e64102289",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 17,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "d10c337b-09f6-418f-bb3b-f44604ad6dd1"
+                  },
+                  {
+                    "node_key": "af04d96a-6182-43a0-af07-157d1bd389d0",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 1,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "7107ad1d-63ca-4cb8-a9ae-bb3ffc1847b8"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "node_key": "838df8a7-4694-4982-a9a5-a5ab20247776",
+            "completed_at": null,
+            "completion_amount": 0,
+            "completed_count": 0,
+            "concept_count": 46,
+            "last_viewed_child_key": "afbae13a-a91a-4d5e-9f98-4fe13c415f7a",
+            "module_aggregated_states": [
+              {
+                "node_key": "afbae13a-a91a-4d5e-9f98-4fe13c415f7a",
+                "completed_at": null,
+                "completion_amount": 0,
+                "completed_count": 0,
+                "concept_count": 34,
+                "last_viewed_child_key": "d78f77bd-83ff-406a-a144-4d47e6ba420d",
+                "lesson_aggregated_states": [
+                  {
+                    "node_key": "d78f77bd-83ff-406a-a144-4d47e6ba420d",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 6,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "7d0947e1-a05d-473e-ae3c-c1864a4ef31d"
+                  },
+                  {
+                    "node_key": "d55c45a3-e2b2-4442-b74b-db4bc2286ee3",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 7,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "3ce64cc3-a63f-4d87-8853-2f9ece6daa5d"
+                  },
+                  {
+                    "node_key": "37cec828-a108-4013-96e7-645495aed9a0",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 8,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "42afc505-dc2a-4857-967d-203b7fd7ddff"
+                  },
+                  {
+                    "node_key": "123d0a0a-8137-4e21-881f-8d03fb371209",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 6,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "0ae8c4ed-e895-4f9e-8669-e8a8d8125811"
+                  },
+                  {
+                    "node_key": "1de68fcc-5fec-422c-b1a9-69deba3e3d04",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 6,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "434d8a78-81f5-4ac3-a6a3-5f38d1fe9990"
+                  },
+                  {
+                    "node_key": "f4f0df45-f58d-4a5e-8415-51f0045c839a",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 1,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "683aab00-f4e6-45d9-a869-04695bd85c6f"
+                  }
+                ]
+              },
+              {
+                "node_key": "2ea2c155-63a0-4661-92f8-73fef990d474",
+                "completed_at": null,
+                "completion_amount": 0,
+                "completed_count": 0,
+                "concept_count": 12,
+                "last_viewed_child_key": "20707806-8f14-420f-b613-4196199a88c1",
+                "lesson_aggregated_states": [
+                  {
+                    "node_key": "20707806-8f14-420f-b613-4196199a88c1",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 12,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "c8c3fbd0-b7ba-471e-85b7-eb2b1c3820c0"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "node_key": "b91edf5c-5a4d-499a-ba69-a598afd9fe3e",
+            "completed_at": null,
+            "completion_amount": 0,
+            "completed_count": 0,
+            "concept_count": 48,
+            "last_viewed_child_key": "5606de9d-aa2b-4a1b-9b14-81b87d80a264",
+            "module_aggregated_states": [
+              {
+                "node_key": "5606de9d-aa2b-4a1b-9b14-81b87d80a264",
+                "completed_at": null,
+                "completion_amount": 0,
+                "completed_count": 0,
+                "concept_count": 48,
+                "last_viewed_child_key": "62b3047a-77bf-4334-9eab-dd988f95dd20",
+                "lesson_aggregated_states": [
+                  {
+                    "node_key": "62b3047a-77bf-4334-9eab-dd988f95dd20",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 4,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "7e6aee90-126e-4016-b644-a12be47e55c7"
+                  },
+                  {
+                    "node_key": "0f6a882a-aff8-474a-b0ec-15a28f8c0c95",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 16,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "1b5e14f4-daa3-4850-aa9d-f89f79062bae"
+                  },
+                  {
+                    "node_key": "450352d6-5e7e-47e7-aa41-eae3dc4f3cea",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 14,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "9a44db7a-9d01-4dc4-b3db-f20914f97931"
+                  },
+                  {
+                    "node_key": "2baeea23-aa82-4c96-aaf9-670855db2b70",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 6,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "d15654c1-799b-47ea-8935-5a430f356411"
+                  },
+                  {
+                    "node_key": "2de7e6db-25b4-42bd-b0a6-5a2ba119cff1",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 7,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "2f9a0323-bb7d-4688-ab47-f86c74cd122d"
+                  },
+                  {
+                    "node_key": "4aa35451-3192-49f5-b4bb-564b52ba8855",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 1,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "6b2d131b-06ae-4f9c-96b5-dbf6af0c1161"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "node_key": "df863fd7-e7ca-4b3a-9ec3-725b7a9cba70",
+            "completed_at": null,
+            "completion_amount": 0,
+            "completed_count": 0,
+            "concept_count": 46,
+            "last_viewed_child_key": "ac13842f-c841-4c1a-b284-b47899f4613d",
+            "module_aggregated_states": [
+              {
+                "node_key": "ac13842f-c841-4c1a-b284-b47899f4613d",
+                "completed_at": null,
+                "completion_amount": 0,
+                "completed_count": 0,
+                "concept_count": 29,
+                "last_viewed_child_key": "af87a2e0-67bf-4859-aec9-efe487eee24b",
+                "lesson_aggregated_states": [
+                  {
+                    "node_key": "af87a2e0-67bf-4859-aec9-efe487eee24b",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 1,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "f2fb9014-1a83-4c01-9ad9-ce1f1484908e"
+                  },
+                  {
+                    "node_key": "5311dad9-1e88-412a-8533-8631bec2b44c",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 9,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "fe38c88c-edbb-46dc-8b88-5ad33e00145c"
+                  },
+                  {
+                    "node_key": "7a6747f4-af9c-46f4-81c3-915829f59f4d",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 11,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "8764ae2f-204e-4039-9240-e22807eac583"
+                  },
+                  {
+                    "node_key": "becb2dac-c108-4143-8f6c-11b30413e28d",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 8,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "092cdb35-28f7-4145-b6e6-6278b8dd7527"
+                  }
+                ]
+              },
+              {
+                "node_key": "5c0a8931-098b-4071-b983-e2069e694cf8",
+                "completed_at": null,
+                "completion_amount": 0,
+                "completed_count": 0,
+                "concept_count": 17,
+                "last_viewed_child_key": "de38d0de-afac-4d34-a339-25c2519cf9f9",
+                "lesson_aggregated_states": [
+                  {
+                    "node_key": "de38d0de-afac-4d34-a339-25c2519cf9f9",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 17,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "00b53aa6-a4a0-4eee-a034-39915c379b68"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "node_key": "ab19ff50-446b-4c99-be38-b2ad8785b121",
+            "completed_at": null,
+            "completion_amount": 0,
+            "completed_count": 0,
+            "concept_count": 6,
+            "last_viewed_child_key": "5a12cd8b-c106-4a27-bfc2-83fb5748d144",
+            "module_aggregated_states": [
+              {
+                "node_key": "5a12cd8b-c106-4a27-bfc2-83fb5748d144",
+                "completed_at": null,
+                "completion_amount": 0,
+                "completed_count": 0,
+                "concept_count": 6,
+                "last_viewed_child_key": "22de0129-9744-4580-894b-a9cfd1083375",
+                "lesson_aggregated_states": [
+                  {
+                    "node_key": "22de0129-9744-4580-894b-a9cfd1083375",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 5,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "ba5b80c9-aae9-42bd-98cf-9faddade53e6"
+                  },
+                  {
+                    "node_key": "1761f959-830f-495b-9610-54da073a5cee",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 1,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "7640c062-8035-4663-a56a-ecdcacecfac6"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "resources": null,
+      "specializations": [],
+      "parts": [
+        {
+          "id": 907302,
+          "key": "091c594f-fa25-4bd2-aff9-503f60cb0a63",
+          "title": "Welcome to the Program!",
+          "semantic_type": "Part",
+          "is_public": true,
+          "version": "1.0.0",
+          "locale": "en-us",
+          "summary": null,
+          "part_type": "Core",
+          "locked_reason": "not_locked",
+          "locked_until": null,
+          "content_ready_date_ms": null,
+          "resources": null,
+          "image": null,
+          "specialization": null,
+          "modules": [
+            {
+              "id": 922025,
+              "key": "1e3585c0-991b-429e-8eb2-3ef6068b03de",
+              "title": "Full Stack Web Developer Nanodegree Orientation",
+              "semantic_type": "Module",
+              "is_public": true,
+              "version": "1.0.0",
+              "locale": "en-us",
+              "is_project_module": null,
+              "forum_path": "",
+              "lessons": [
+                {
+                  "id": 922026,
+                  "key": "aa774d75-e696-44ff-a11f-e558c0e69f6d",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "Welcome to the program!",
+                  "title": "Welcome to the Full-Stack Web Developer Nanodegree Program",
+                  "duration": 20,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2018/April/5ad4e200_8-nanodegree-orientation2x/8-nanodegree-orientation2x.jpg",
+                    "width": 500,
+                    "height": 500
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 909718,
+                      "key": "8344cff2-2fb7-49a3-8a99-1878aa6b1269",
+                      "title": "Welcome to Udacity",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 909720,
+                      "key": "62d3c73e-7c38-4ecc-a561-fb98d372fb89",
+                      "title": "Welcome to the Nanodegree Program Experience",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 922029,
+                      "key": "75935058-f42b-47ac-98e1-ce8767659ca4",
+                      "title": "Nanodegree Program Introduction",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 909726,
+                      "key": "bf9b7121-c81f-4c38-9e1f-fc9fb892c92d",
+                      "title": "How to Succeed",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 831981,
+                      "key": "99232e4b-299c-40f5-a985-3162da96288e",
+                      "title": "Access the Career Portal",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 907303,
+          "key": "216c669c-5e62-43a1-bcb9-8a8e5eca972a",
+          "title": "SQL and Data Modeling for the Web",
+          "semantic_type": "Part",
+          "is_public": true,
+          "version": "1.0.0",
+          "locale": "en-us",
+          "summary": "In this part, you’ll be building out the data models and database for an artist/venue booking application. The fictitious startup Fy-yur is building a website that facilitates bookings between artists who can play at venues, and venues who want to book artists. ",
+          "part_type": "Core",
+          "locked_reason": "not_locked",
+          "locked_until": null,
+          "content_ready_date_ms": null,
+          "resources": null,
+          "image": null,
+          "specialization": null,
+          "modules": [
+            {
+              "id": 850197,
+              "key": "43f34772-8032-4851-938b-d952bbfc7f1c",
+              "title": "SQL and Data Modeling for the Web",
+              "semantic_type": "Module",
+              "is_public": true,
+              "version": "1.0.0",
+              "locale": "en-us",
+              "is_project_module": null,
+              "forum_path": "",
+              "lessons": [
+                {
+                  "id": 907374,
+                  "key": "3eba3076-0273-46e2-9b29-aa08da6ddfe7",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "Understand what this course will cover and the learning objectives achieved.",
+                  "title": "Course Introduction",
+                  "duration": 10,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2017/June/5935e590_2-5-deeper-into-sql2x/2-5-deeper-into-sql2x.jpg",
+                    "width": 592,
+                    "height": 640
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 907372,
+                      "key": "079f7814-6ceb-46cd-aac5-4153999020a5",
+                      "title": "Course Overview & Project",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 907378,
+                      "key": "3849ac97-6116-48a0-a852-8f74f546fa5b",
+                      "title": "Prerequisites & Tech Stack",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 907382,
+                      "key": "0aad1ad9-abcb-417c-bbee-5c228c7e8003",
+                      "title": "Required Software",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 907460,
+                  "key": "e9a00338-ff0d-415b-b382-25d445e529a1",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "Interact with relational databases. Review SQL and the Client-Server Model. Use Postgres, understand DBAPIs, and use psycopg2.",
+                  "title": "Interacting with Databases",
+                  "duration": 240,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2018/July/5b466859_3-3-python-db-api2x/3-3-python-db-api2x.jpg",
+                    "width": 592,
+                    "height": 640
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 907446,
+                      "key": "b9764a82-2998-4b66-a465-9a081a51c959",
+                      "title": "Lesson Overview",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 907445,
+                      "key": "7f8d4f04-ecd4-40ed-b3cf-63e3439098dc",
+                      "title": "Relational Databases",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 917209,
+                      "key": "3b1f424f-0dbd-441c-8933-49495c37b52a",
+                      "title": "Primary Keys & Foreign Keys",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 917213,
+                      "key": "0cda4d0e-91a8-4f43-b56a-72c1e3eabef3",
+                      "title": "SQL",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 917218,
+                      "key": "47f10a00-75b2-43b3-b539-e1062babe52c",
+                      "title": "Execution Plan",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 907449,
+                      "key": "44db44ef-8469-40db-85ca-62d448311533",
+                      "title": "Client-Server Model",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 907447,
+                      "key": "e711f5f3-f9a6-47b7-be25-eafd4623929f",
+                      "title": "Example: Jane's Store",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 907459,
+                      "key": "a4a60746-320c-4c9e-bfdc-81c87a44f1b6",
+                      "title": "TCP/IP",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 908371,
+                      "key": "1b3c8414-154d-4bab-9e1b-e3ff44ef8fd8",
+                      "title": "Connections and Sessions in TCP/IP",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 907853,
+                      "key": "4b48ed67-9b70-4e9f-a385-1132e8810377",
+                      "title": "Transactions",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 907457,
+                      "key": "5211128a-28f0-4e57-b181-ec28afb84ae6",
+                      "title": "Installing Postgres",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 907451,
+                      "key": "ccea8ef8-218a-483e-af58-3a8a8e4aac0a",
+                      "title": "Postgres Command Line Applications",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 907458,
+                      "key": "a91d409b-0a00-4549-bcab-f1de7f1fa69f",
+                      "title": "Intro to psql",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 908389,
+                      "key": "1c62a264-291e-4d3b-a3dd-8c1cf59b1aa0",
+                      "title": "Using psql - SQL Commands",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 908390,
+                      "key": "a30495c4-3cea-4a02-a4c7-7c23b74cdf9b",
+                      "title": "Using psql - Final remarks",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 907452,
+                      "key": "5920539b-545a-469e-b4d7-5a97e7ed5c38",
+                      "title": "Other Postgres Clients",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 907456,
+                      "key": "956635fe-381b-4d38-b648-e88e9459bf94",
+                      "title": "DBAPIs and psycopg2",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 907455,
+                      "key": "30948869-9344-49f5-941c-1013fe3e224e",
+                      "title": "psycopg2: basic usage",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 907453,
+                      "key": "2ec7521f-51c3-4700-8f36-825a73e303d6",
+                      "title": "psycopg2: string composition",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 907450,
+                      "key": "31adcd35-9d00-4d7a-8429-c184f05044fd",
+                      "title": "psycopg2: fetching results",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 907448,
+                      "key": "7f493ea2-58a5-42eb-9031-1d4071884aa6",
+                      "title": "Recap",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 907674,
+                  "key": "53139bef-389d-4d0a-b7b6-e4bb4bd0ef0c",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "Learn to use SQLAlchemy and SQLAlchemy ORM to work with a relational database in Python.",
+                  "title": "SQLAlchemy Basics",
+                  "duration": 120,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2018/December/5c0be5de_3-1-basic-sql/3-1-basic-sql.jpg",
+                    "width": 1250,
+                    "height": 1250
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 907660,
+                      "key": "98895b2f-4fd4-44e7-bba7-7995602b9cf8",
+                      "title": "Introduction",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 907664,
+                      "key": "d35f8053-b340-4943-8198-fde03807a8bb",
+                      "title": "Layers of Abstraction",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 907663,
+                      "key": "e71f2b13-557b-4228-b10a-a14cdd25b06f",
+                      "title": "The Dialect",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 907662,
+                      "key": "5138da64-a3a2-40c2-baeb-f14d35caad99",
+                      "title": "The Connection Pool",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 907673,
+                      "key": "f97ef8f6-dbb0-41fa-a379-dd733c7b714d",
+                      "title": "The Engine",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 907670,
+                      "key": "b8631b04-3fbe-4392-b850-d95d343f0ba9",
+                      "title": "SQL Expressions",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 907666,
+                      "key": "179abc49-581c-448e-92af-65a4bf580774",
+                      "title": "SQLAlchemy ORM",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 909381,
+                      "key": "5302cfb9-668f-4794-b4cb-46efed1e1b39",
+                      "title": "Mapping Between Tables and Classes",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 916808,
+                      "key": "2ac2b208-4b0e-46c9-ba7e-2be921b96109",
+                      "title": "Hello App with Flask-SQLAlchemy - Part 1",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 907672,
+                      "key": "86d59d1d-6b21-479f-b1a6-2ecfe983736d",
+                      "title": "Connecting to the Database",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 916829,
+                      "key": "479a78e4-0724-4061-87c8-10f1a6b71a3b",
+                      "title": "db.Model and Defining Models",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 907667,
+                      "key": "b5e57117-4055-411e-8ef3-748e85971cad",
+                      "title": "Syncing Models, db.create_all()",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 916819,
+                      "key": "46ffc4b1-9741-42d2-adc5-5302b001b1b5",
+                      "title": "Inserting Records, Using Debug Mode",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 909408,
+                      "key": "a4681db5-4589-42e1-bf76-e2805140f940",
+                      "title": "Experimenting in Interactive Mode",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 907669,
+                      "key": "52fee593-aa2b-4b27-88cd-17783c144004",
+                      "title": "SQLAlchemy Data Types",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 907671,
+                      "key": "169f1035-8de2-41e3-bab2-5509469ccbae",
+                      "title": "SQLAlchemy Constraints",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 907668,
+                      "key": "9b0ec32b-dfa4-4f5f-98bf-8108f8c31d74",
+                      "title": "Recap",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 907585,
+                  "key": "56296e82-9c61-4aae-9df9-ab9027245ca0",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "Get to know Model.query and the SQLAlchemy Object Lifecycle to master how to query for and change records in a database.",
+                  "title": "SQLAlchemy ORM in Depth",
+                  "duration": 120,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2018/August/5b63f6ac_3-10-sql-subqueries-and-temporary-tables2x/3-10-sql-subqueries-and-temporary-tables2x.jpg",
+                    "width": 500,
+                    "height": 500
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 907582,
+                      "key": "a39d4b7f-8ea2-4f00-afda-7a9730e5cf75",
+                      "title": "Introduction",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 907580,
+                      "key": "4d39ccab-2adb-42fc-9198-30619e9ede5a",
+                      "title": "Model.query",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 907583,
+                      "key": "3d37edd7-aab1-4664-bd73-dcd22b0333e2",
+                      "title": "SQLAlchemy Object Lifecycle — Part 1",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 907581,
+                      "key": "1b801a95-59f7-49fd-b5a2-0a2d451ceb7b",
+                      "title": "SQLAlchemy Object Lifecycle — Part 2",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 907584,
+                      "key": "27192d70-28d0-4e91-8720-38f0bc9de90f",
+                      "title": "Recap",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 907726,
+                  "key": "31c3741e-ea1c-48d5-a9bd-2d1d0bb33e5d",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "Build out the ability to read and create todo items in our To-do app, handling changes from the database to the views.",
+                  "title": "Build a CRUD App with SQLAlchemy - Part 1",
+                  "duration": 240,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2017/August/59a3a3a4_3-6-working-with-crud2x/3-6-working-with-crud2x.jpg",
+                    "width": 592,
+                    "height": 640
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 907716,
+                      "key": "b72157ed-2cbd-424c-ab27-5d9c047ea8c8",
+                      "title": "Introduction",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 907714,
+                      "key": "b42f2b13-2f89-4cdb-9844-b42d8ebd6ce5",
+                      "title": "Create a Dummy ToDo App",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 907725,
+                      "key": "b91df17d-4b02-4949-97a6-948fd17d39c7",
+                      "title": "Reading ToDo items: The “R” in CRUD",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 907721,
+                      "key": "f461c188-d146-4222-86cc-c5b02aa97c1e",
+                      "title": "Model View Controller (MVC)",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 907718,
+                      "key": "565c6e66-8bce-44da-aedb-3c5d277bba35",
+                      "title": "Handling User Input",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 907723,
+                      "key": "5424e14d-2fa8-41b8-83b7-8aece3b5359e",
+                      "title": "Getting User Data in Flask — Part 1",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 909446,
+                      "key": "8f100ee8-ab95-4b74-a1b7-63a56f0d49a0",
+                      "title": "Getting User Data in Flask — Part 2",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 907724,
+                      "key": "f8b0305f-1099-4f04-9ce6-bcdfcf01db93",
+                      "title": "Using AJAX to send data to flask",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 907720,
+                      "key": "17fed9cf-0461-405a-80d8-2e1cdb3da524",
+                      "title": "Using sessions in controllers",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 908221,
+                      "key": "12fb8356-1165-42f9-96dc-6c60a2a45fe3",
+                      "title": "Recap",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 907742,
+                  "key": "1e52ce88-a7af-43d0-8fc4-6e304e50ed0b",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "Handle changes to your database schema over time using a version control system involving migration files.",
+                  "title": "Migrations",
+                  "duration": 120,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2018/September/5b9e499a_3-2-elements-of-sql2x/3-2-elements-of-sql2x.jpg",
+                    "width": 592,
+                    "height": 640
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 907739,
+                      "key": "cd423d23-c7c5-41d5-96ff-a5b35c46bfb6",
+                      "title": "Introduction (Migrations Part 1)",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 907740,
+                      "key": "7db2f374-30b2-4ac3-96d4-dfafb63f0c9f",
+                      "title": "Migrations - Part 2",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 907741,
+                      "key": "1b51c655-65ed-43aa-9c91-130b2ee0636b",
+                      "title": "Flask-Migrate - Part 1",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 916876,
+                      "key": "e1fc616d-d2a7-4d59-96e1-68e32f17ec72",
+                      "title": "Flask-Migrate - Part 2",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 916877,
+                      "key": "426167de-1e81-48af-992c-be6d39cd0623",
+                      "title": "Flask-Migrate - Part 3",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 916887,
+                      "key": "c7de82c3-5561-4f47-a628-db3a71b12374",
+                      "title": "Flask-Migrate - Part 4",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 907937,
+                      "key": "e6fa53f0-132d-4a90-a5c6-19298ccdbdf9",
+                      "title": "Recap",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 907837,
+                  "key": "bc24f190-2e3d-4323-a1a0-603e64102289",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "Finish developing our To-Do app with update and delete functionality. Model relationships with To-Do lists. ",
+                  "title": "Build a CRUD App with SQLAlchemy ORM - Part 2",
+                  "duration": 240,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2017/June/5935c682_1-4-problem-set-document-object-model2x/1-4-problem-set-document-object-model2x.jpg",
+                    "width": 592,
+                    "height": 640
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 907830,
+                      "key": "d10c337b-09f6-418f-bb3b-f44604ad6dd1",
+                      "title": "Introduction",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 909545,
+                      "key": "25ddc15b-823c-461a-a257-8802e2695e01",
+                      "title": "Updating a Todo Item: Part I",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 916899,
+                      "key": "6b186b78-30f1-4a3e-bceb-796a66d2cbc1",
+                      "title": "Updating a Todo Item: Part II",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 907827,
+                      "key": "1e001095-2857-4f8e-b7fe-a66f8fa76207",
+                      "title": "DELETE a Todo item - Exercise",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 918967,
+                      "key": "f40363f9-96fc-45a6-9ba3-bdcbc8957e72",
+                      "title": "DELETE a Todo item - Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 907829,
+                      "key": "ee711f0f-0e5e-4506-8811-fbe9b94c6b50",
+                      "title": "Intro: Modeling Relationships",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 907832,
+                      "key": "ec589ed8-9eb8-4141-b0c1-05fc9cda6846",
+                      "title": "Review: Relationships & Joins",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 909494,
+                      "key": "e0943624-8874-43c4-bd6b-0af4a12e38bc",
+                      "title": "db.relationship",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 907828,
+                      "key": "eead4644-3209-4b98-9ef8-0e5b6e22a46a",
+                      "title": "Configuring Relationships",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 909369,
+                      "key": "b4309fbb-deac-4f86-9c92-646893996c15",
+                      "title": "Foreign Key Constraint Setup",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 907833,
+                      "key": "e294fd36-942e-4fa9-97bb-6a34b37d3d86",
+                      "title": "One-to-Many Relationship Setup",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 909857,
+                      "key": "c4676989-8279-4413-8147-1ce12589dcb8",
+                      "title": "Practice - Modeling Relationships",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 909372,
+                      "key": "38d495ef-c8cd-49a0-92b5-72488b5e1cd9",
+                      "title": "CRUD on a List of To-Dos",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 909537,
+                      "key": "61b8378b-1cd6-421b-b2a1-fd9ae20c9332",
+                      "title": "CRUD on a List of To-Dos - Part 2",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": {
+                        "files": [
+                          {
+                            "name": "Todoapp-Crud-Lists-Solution",
+                            "uri": "https://video.udacity-data.com/topher/2020/May/5ed0a34a_todoapp-crud-lists-solution/todoapp-crud-lists-solution.zip"
+                          }
+                        ],
+                        "google_plus_link": null,
+                        "career_resource_center_link": null,
+                        "coaching_appointments_link": null,
+                        "office_hours_link": null,
+                        "aws_provisioning_link": null
+                      }
+                    },
+                    {
+                      "id": 907835,
+                      "key": "22958276-bf46-46b7-9a0b-40c2b4f3c949",
+                      "title": "Many-To-Many Relationships: Part I",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 916924,
+                      "key": "58fb368c-776a-434d-b281-15574b420794",
+                      "title": "Many-To-Many Relationships: Part II",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 907834,
+                      "key": "8b2457a7-7370-4627-85e0-5ddde9463c39",
+                      "title": "Recap",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 898151,
+                  "key": "af04d96a-6182-43a0-af07-157d1bd389d0",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "In this project, you'll demonstrate your new SQL and data modeling skills by creating a site to help coordinate bookings between artists and venues.",
+                  "title": "Project: Fyyur",
+                  "duration": 240,
+                  "is_public": true,
+                  "is_project_lesson": true,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2018/May/5b06d010_3-4-p-query-a-digital-music-store-database2/3-4-p-query-a-digital-music-store-database2.jpg",
+                    "width": 1250,
+                    "height": 1250
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": {
+                    "key": "65571c98-fc9d-41e9-8817-83f8ee564546",
+                    "version": "1.0.0",
+                    "locale": "en-us",
+                    "duration": 30240,
+                    "semantic_type": "Project",
+                    "title": "Fyyur: Artist Booking Site",
+                    "description": "While working on the project, you should have created your own copy of the project repository. To submit the project, zip this entire repo and upload the zip file.\n\nBefore submitting, be sure to check out the [rubric](https://review.udacity.com/#!/rubrics/2653/view) to confirm that your project meets all the required specs. \n\nYou will get an email as soon as your reviewer has feedback for you! Due to the high volume of submissions we receive, please allow up to 7 business days for your evaluation to be returned (however, usually your project will be reviewed within 24 hours). ",
+                    "is_public": true,
+                    "summary": null,
+                    "forum_path": "",
+                    "rubric_id": "2653",
+                    "terminal_project_id": null,
+                    "resources": null,
+                    "image": null
+                  },
+                  "concepts": [
+                    {
+                      "id": 898183,
+                      "key": "7107ad1d-63ca-4cb8-a9ae-bb3ffc1847b8",
+                      "title": "Project Instructions",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 907304,
+          "key": "838df8a7-4694-4982-a9a5-a5ab20247776",
+          "title": "API Development and Documentation",
+          "semantic_type": "Part",
+          "is_public": true,
+          "version": "1.0.0",
+          "locale": "en-us",
+          "summary": "In this part, you will use the skills you’ve developed to build a Trivia API. The goal of this project is to use APIs to control and manage a web application using existing data models. You’ll be given a set of data models and the application front end. Your task will be to implement the API in Flask to make the Trivia game functional.\n",
+          "part_type": "Core",
+          "locked_reason": "not_locked",
+          "locked_until": null,
+          "content_ready_date_ms": null,
+          "resources": null,
+          "image": null,
+          "specialization": null,
+          "modules": [
+            {
+              "id": 850199,
+              "key": "afbae13a-a91a-4d5e-9f98-4fe13c415f7a",
+              "title": "API Development and Documentation",
+              "semantic_type": "Module",
+              "is_public": true,
+              "version": "1.0.0",
+              "locale": "en-us",
+              "is_project_module": null,
+              "forum_path": "",
+              "lessons": [
+                {
+                  "id": 899761,
+                  "key": "d78f77bd-83ff-406a-a144-4d47e6ba420d",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "In this lesson, you'll learn what APIs are, how they're implemented, and why they're important. We'll also dive into the concepts of Internet Protocols and REST.  ",
+                  "title": "Introduction to APIs",
+                  "duration": 30,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2018/September/5ba14970_5-11-requests-and-apis2x-green/5-11-requests-and-apis2x-green.jpg",
+                    "width": 592,
+                    "height": 640
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 899758,
+                      "key": "7d0947e1-a05d-473e-ae3c-c1864a4ef31d",
+                      "title": "Welcome!",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 899759,
+                      "key": "1afff0e7-c7ba-40a5-85c7-32cf439476a6",
+                      "title": "What are APIs",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 899760,
+                      "key": "981e61e6-4159-4232-b56b-b2987c0be1fa",
+                      "title": "How APIs Work",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 901214,
+                      "key": "afedc319-2410-433d-acd5-a64a35c26b95",
+                      "title": "Internet Protocols",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 901215,
+                      "key": "cbfaa84e-d032-4ea4-8937-9a1ab399a9fc",
+                      "title": "RESTful APIs",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 901221,
+                      "key": "6e1a1146-1988-419d-9ccb-aefeb5d515ab",
+                      "title": "Let's get started!",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 899797,
+                  "key": "d55c45a3-e2b2-4442-b74b-db4bc2286ee3",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "In this lesson, you'll learn about HTTP—including methods, requests, responses and status codes— as well as how to set up a Flask app, and implement and test endpoints using Curl.",
+                  "title": "HTTP and Flask Basics",
+                  "duration": 60,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2017/May/590aa9fd_flask/flask.png",
+                    "width": 2133,
+                    "height": 2133
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 899794,
+                      "key": "3ce64cc3-a63f-4d87-8853-2f9ece6daa5d",
+                      "title": "Overview",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 899795,
+                      "key": "00119ce2-9db7-4801-97f1-748c7cb6923d",
+                      "title": "Introduction to HTTP",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 901224,
+                      "key": "7d256852-593c-4daa-aeb0-07bdcefd84c6",
+                      "title": "HTTP Requests",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 901225,
+                      "key": "2ec90546-f995-4ebe-a753-d30ec77cd4f8",
+                      "title": "HTTP Responses",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 899796,
+                      "key": "c0c79060-26d7-4363-8530-7da234a8c48c",
+                      "title": "Intro to Flask",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 899867,
+                      "key": "2b7dc7b5-3cd2-44b1-9375-69190e0fa448",
+                      "title": "Introduction to Curl and Chrome Dev Tools",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 901236,
+                      "key": "e3b3fa89-52ef-40f3-8609-9a5c8e8ac9e7",
+                      "title": "Review",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 899825,
+                  "key": "37cec828-a108-4013-96e7-645495aed9a0",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "In this lesson, you'll learn about how Flask is extensible in itself to handle different kinds of methods, more complex endpoints, and to return formatted data to the client. ",
+                  "title": "Endpoints and Payloads",
+                  "duration": 60,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2018/September/5b9fb26e_3-16-creating-your-own-api-endpoints2x/3-16-creating-your-own-api-endpoints2x.jpg",
+                    "width": 592,
+                    "height": 640
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 899820,
+                      "key": "42afc505-dc2a-4857-967d-203b7fd7ddff",
+                      "title": "Overview",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 899822,
+                      "key": "cff97098-b597-425a-99e0-7e06d245355d",
+                      "title": "Organizing API endpoints",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 917267,
+                      "key": "20503fe1-ec10-4138-9ecd-9737c280e18c",
+                      "title": "CORS",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 899823,
+                      "key": "56008375-e597-42db-92e9-60e40b0c99b9",
+                      "title": "Flask-CORS",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 899824,
+                      "key": "f51a76f8-1662-4c0e-9c25-fc0537847e4e",
+                      "title": "Flask Part II",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 899821,
+                      "key": "585ed114-2509-4fcb-9f7f-94cf23da764f",
+                      "title": "Error Handling",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 906249,
+                      "key": "7e11dc46-bb98-4c88-8e25-a3acad76b31f",
+                      "title": "Flask Error Handling",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 906254,
+                      "key": "aa9add91-cee6-411c-a535-631be7a5b713",
+                      "title": "Review",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 899837,
+                  "key": "123d0a0a-8137-4e21-881f-8d03fb371209",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "This lesson teaches students the benefits and purposes of testing an API, Test-Driven Development for APIs and implementing the tests using unittest. ",
+                  "title": "API Testing",
+                  "duration": 60,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2019/February/5c6c91fe_5-21-rethinking-testing2x/5-21-rethinking-testing2x.jpg",
+                    "width": 500,
+                    "height": 500
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 899835,
+                      "key": "0ae8c4ed-e895-4f9e-8669-e8a8d8125811",
+                      "title": "Overview",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 899836,
+                      "key": "c8bce42a-c8a6-4a4f-bbd2-b5ace422a575",
+                      "title": "Testing in Flask",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 909323,
+                      "key": "8d7e8e71-45c7-4730-841e-9821bad16d85",
+                      "title": "Practice - Testing in Flask",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 917380,
+                      "key": "012cae2e-a4ef-429f-aea6-d282da3b7e44",
+                      "title": "TDD for APIs",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 899834,
+                      "key": "7529c53d-c671-4ec7-bd7b-81ea374f72e3",
+                      "title": "Practice - TDD for APIs",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 906260,
+                      "key": "7c4e3de2-a6cd-495c-96c3-f5d4217804c3",
+                      "title": "Review",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 899852,
+                  "key": "1de68fcc-5fec-422c-b1a9-69deba3e3d04",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "To round out the course, students will consider and write API documentation and project documentation so their projects can be hosted, shared, and used by other developers with clarity. ",
+                  "title": "API Documentation",
+                  "duration": 60,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2016/September/57d733e5_documentation-icon/documentation-icon.png",
+                    "width": 162,
+                    "height": 162
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 899849,
+                      "key": "434d8a78-81f5-4ac3-a6a3-5f38d1fe9990",
+                      "title": "Overview",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 917390,
+                      "key": "7c126215-d166-485e-826d-a9c65dbad545",
+                      "title": "Documentation Examples",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 917396,
+                      "key": "c1d94a9d-b8cc-424e-8632-2ce4f340c64e",
+                      "title": "Best Practices",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 917260,
+                      "key": "d3ba679a-0b7e-4fd5-8504-03028ec8ee57",
+                      "title": "API Documentation Lab ",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 917404,
+                      "key": "2f7b248a-6631-42ae-9eef-64075b771cfc",
+                      "title": "Project Documentation",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 917410,
+                      "key": "65277b47-bf8b-4b79-9edd-d54dc566c71d",
+                      "title": "Project Documentation Lab",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 859441,
+                  "key": "f4f0df45-f58d-4a5e-8415-51f0045c839a",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "In this project, you'll use your new API and API documentation skills to build a trivia API.",
+                  "title": "Project: Trivia API",
+                  "duration": 240,
+                  "is_public": true,
+                  "is_project_lesson": true,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2018/February/5a792050_1-9-6-questions-on-robotics-careers1x/1-9-6-questions-on-robotics-careers1x.png",
+                    "width": 500,
+                    "height": 500
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": {
+                    "key": "6c4321a9-5aad-403a-9663-fc9a93670a35",
+                    "version": "1.0.0",
+                    "locale": "en-us",
+                    "duration": 30240,
+                    "semantic_type": "Project",
+                    "title": "Trivia API",
+                    "description": "While working on the project, you should have created your own copy of the project repository. To submit the project, zip this entire repo and upload the zip file.\n\nBefore submitting, be sure to check out the [rubric](https://review.udacity.com/#!/rubrics/2634/view) to confirm that your project meets all the required specs. \n\nYou will get an email as soon as your reviewer has feedback for you! Due to the high volume of submissions we receive, please allow up to 7 business days for your evaluation to be returned (however, usually your project will be reviewed within 24 hours). ",
+                    "is_public": true,
+                    "summary": null,
+                    "forum_path": "",
+                    "rubric_id": "2634",
+                    "terminal_project_id": null,
+                    "resources": null,
+                    "image": null
+                  },
+                  "concepts": [
+                    {
+                      "id": 859443,
+                      "key": "683aab00-f4e6-45d9-a869-04695bd85c6f",
+                      "title": "Project Instructions",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": 951460,
+              "key": "2ea2c155-63a0-4661-92f8-73fef990d474",
+              "title": "Career Services",
+              "semantic_type": "Module",
+              "is_public": true,
+              "version": "1.0.0",
+              "locale": "en-us",
+              "is_project_module": null,
+              "forum_path": "",
+              "lessons": [
+                {
+                  "id": 631083,
+                  "key": "20707806-8f14-420f-b613-4196199a88c1",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "Find your next job or connect with industry peers on LinkedIn. Ensure your profile attracts relevant leads that will grow your professional network.",
+                  "title": "Take 30 Min to Improve your LinkedIn",
+                  "duration": 30,
+                  "is_public": true,
+                  "is_project_lesson": true,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": {
+                    "url": "https://s3.amazonaws.com/video.udacity-data.com/topher/2018/February/5a8222c0_1-3-career-services-available-to-you2x/1-3-career-services-available-to-you2x.jpg",
+                    "width": 500,
+                    "height": 500
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": {
+                    "key": "0051a3da-930f-47a1-bd41-d7fe3bd324f4",
+                    "version": "1.0.0",
+                    "locale": "en-us",
+                    "duration": 1440,
+                    "semantic_type": "Project",
+                    "title": "Improve Your LinkedIn Profile",
+                    "description": "Have job opportunities come to you by optimizing your LinkedIn profile! Complete this simple process to get personalized tips from a career mentor. \n\nHere’s how to submit your LinkedIn profile for feedback now:\n* Check out this [checklist](https://docs.google.com/document/d/1BZMxuKnBNovOyMelEx7d8ktbsWGj0EJ9KaD81dVC1TE/pub?embedded=true) for tips on optimizing your LinkedIn profile (optional).\n* **Make sure your profile is in English.** If you do not have an English profile yet, check out LinkedIn's [advice](https://www.linkedin.com/help/linkedin/answer/1717/creating-or-deleting-a-profile-in-another-language?lang=en) on how to create a secondary language profile.\n* Make your profile publicly visible. Scroll down and set the profile section toggles to `Show` under the “Edit Visibility” section of  [your public profile edit page](https://www.linkedin.com/public-profile/settings?trk=nprofile-public-profile-settings-redirect).\n * ![Edit Visibility](http://lh3.googleusercontent.com/R0A5rnKYyzLPZJ8B_pkyxdKkvab5qQi2LnEpFq2L-F33TSgzmjduHuUyDi-Z_ka2L7oU50UYqQTeU1n8VcM=s0#w=400&h=333 \"Edit Visibility\")\n* Create a custom profile URL in the “Edit URL” section of [your public profile edit page](https://www.linkedin.com/public-profile/settings?trk=nprofile-public-profile-settings-redirect).\n * ![Edit URL](http://lh3.googleusercontent.com/SGdIHFzKav0QZmOSrrP69xch_F0Ufhu9pLy-nDXYDArHUyzAen7ewoLakVOKn3KvX_CVgJjBWkl_FmPTPqM=s0#w=250&h=120 \"Edit URL\")\n* Submit your public profile URL (such as `www.linkedin.com/in/udacitystudent`) for guidance from a career mentor by clicking “Submit Project” below.",
+                    "is_public": true,
+                    "summary": null,
+                    "forum_path": "",
+                    "rubric_id": "1910",
+                    "terminal_project_id": null,
+                    "resources": null,
+                    "image": null
+                  },
+                  "concepts": [
+                    {
+                      "id": 704348,
+                      "key": "c8c3fbd0-b7ba-471e-85b7-eb2b1c3820c0",
+                      "title": "Get Opportunities with LinkedIn",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 703862,
+                      "key": "20efad1e-c7b3-432d-86ad-0e798c795d49",
+                      "title": "Use Your Story to Stand Out",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 703860,
+                      "key": "a891296f-46ea-457c-89d9-f4ec96a40cae",
+                      "title": "Why Use an Elevator Pitch",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 703864,
+                      "key": "0c1acad0-cb41-4260-bd5c-6df07f1b2778",
+                      "title": "Create Your Elevator Pitch",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 708825,
+                      "key": "36e84f5b-204e-48c4-8071-293f49886a85",
+                      "title": "Use Your Elevator Pitch on LinkedIn",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 729380,
+                      "key": "a7deba78-27c8-4735-ad9c-7ab2b2b1ad91",
+                      "title": "Create Your Profile With SEO In Mind",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 728573,
+                      "key": "6ed9b5b0-43cf-4b65-b01d-345e44dfd765",
+                      "title": "Profile Essentials",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 728593,
+                      "key": "d3f369bb-78d7-478a-a909-c6e13683cc18",
+                      "title": "Work Experiences & Accomplishments",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 708828,
+                      "key": "eb90e45b-5d77-458b-af34-0f8eaecd45a8",
+                      "title": "Build and Strengthen Your Network",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 617430,
+                      "key": "64ed9954-b423-4a75-ad70-b2a1fbaa3a6d",
+                      "title": "Reaching Out on LinkedIn",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 728591,
+                      "key": "1d61fe7d-02e6-4376-a0c5-e01e26969d63",
+                      "title": "Boost Your Visibility",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 708834,
+                      "key": "2da1cc73-72cb-4678-b84d-1ab91798e8b3",
+                      "title": "Up Next",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 907305,
+          "key": "b91edf5c-5a4d-499a-ba69-a598afd9fe3e",
+          "title": "Identity and Access Management",
+          "semantic_type": "Part",
+          "is_public": true,
+          "version": "1.0.0",
+          "locale": "en-us",
+          "summary": "In this part, you will build the backend for a coffee shop application. You’ll add user accounts and authentication to your application and use role-based access management strategies to control different types of user behavior in the app. ",
+          "part_type": "Core",
+          "locked_reason": "not_locked",
+          "locked_until": null,
+          "content_ready_date_ms": null,
+          "resources": null,
+          "image": null,
+          "specialization": null,
+          "modules": [
+            {
+              "id": 850001,
+              "key": "5606de9d-aa2b-4a1b-9b14-81b87d80a264",
+              "title": "Identity and Access Management",
+              "semantic_type": "Module",
+              "is_public": true,
+              "version": "1.0.0",
+              "locale": "en-us",
+              "is_project_module": null,
+              "forum_path": "",
+              "lessons": [
+                {
+                  "id": 850002,
+                  "key": "62b3047a-77bf-4334-9eab-dd988f95dd20",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "Set the groundwork for understanding information security and refresh your understanding of the technologies used in future lessons.",
+                  "title": "Foundation",
+                  "duration": 100,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": {
+                    "url": "https://s3.amazonaws.com/video.udacity-data.com/topher/2018/January/5a6bafbd_vrdn-lesson-image-7-14-the-protagonists-journey/vrdn-lesson-image-7-14-the-protagonists-journey.jpg",
+                    "width": 500,
+                    "height": 500
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 857103,
+                      "key": "7e6aee90-126e-4016-b644-a12be47e55c7",
+                      "title": "Course Intro",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 859122,
+                      "key": "d3073583-a757-4176-a0c4-93f45d25e60f",
+                      "title": "Recap - HTTP, Flask, and Postman",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 859156,
+                      "key": "6f949cc1-43f9-4bf9-bce2-7b9f0358d6b8",
+                      "title": "Recap - SQLAlchemy",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 858854,
+                      "key": "07ba544e-8b01-454e-94e1-76f83a50b52b",
+                      "title": "Recap - Python Decorators",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 850004,
+                  "key": "0f6a882a-aff8-474a-b0ec-15a28f8c0c95",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "Explore frequently used methods of identifying who is making requests on web systems. Implement modern software patterns to accomplish this goal across the stack.",
+                  "title": "Identity and Authentication",
+                  "duration": 330,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": {
+                    "url": "https://s3.amazonaws.com/video.udacity-data.com/topher/2018/November/5be47107_duvidas/duvidas.png",
+                    "width": 500,
+                    "height": 500
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 857083,
+                      "key": "1b5e14f4-daa3-4850-aa9d-f89f79062bae",
+                      "title": "Lesson Intro",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 858846,
+                      "key": "84762640-4deb-4aed-8ab2-76adadf68eed",
+                      "title": "Common Authentication Methods",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 906481,
+                      "key": "9c4bbe79-7936-492a-8526-f059387ee804",
+                      "title": "Alternative Authentication Methods",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 857090,
+                      "key": "319fa1ba-3d71-459e-870a-c5b601cdce23",
+                      "title": "Third-Party Auth Systems",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 906486,
+                      "key": "4bdfc24c-e822-42fe-994f-052de526036b",
+                      "title": "Implementing Auth0",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 857084,
+                      "key": "846d6ed1-148b-41c2-b0fc-364cb1fb938a",
+                      "title": "JWT - JSON Web Tokens",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 906490,
+                      "key": "e9a02c51-50d9-4b84-9aeb-3cac33d30b6e",
+                      "title": "JWT - Datastructure",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 906492,
+                      "key": "d2353499-1bd9-4e3d-bc11-0156561d30cb",
+                      "title": "JWT - Validation",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 857085,
+                      "key": "a0f32909-f902-44e7-bd30-ab011e14ed6b",
+                      "title": "Practice - Generating and Verifying JWTs",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 859204,
+                      "key": "87007dfe-8503-40ae-bc21-3ef608c1f45f",
+                      "title": "Practice - Validating Auth0 Tokens",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 857086,
+                      "key": "215e03f8-4d18-44b0-9d02-b80f60c776ae",
+                      "title": "Recap - Local Storage",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 906495,
+                      "key": "16ce4887-86aa-4623-b796-5365da02651e",
+                      "title": "Storing JWTs",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 857088,
+                      "key": "43f64499-9215-45eb-84c1-22a797d2dbbc",
+                      "title": "Sending Tokens",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 857089,
+                      "key": "2534fdc2-5d89-45b1-9b55-b0bcb91d647a",
+                      "title": "Practice - Sending Tokens",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 859205,
+                      "key": "f5c8c8a6-b9f4-4df9-a034-353d2049c5ac",
+                      "title": "Practice - Applying Skills in Flask",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 857092,
+                      "key": "61850262-6865-4889-a6b8-f8aeb87813c5",
+                      "title": "Recap",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 850003,
+                  "key": "450352d6-5e7e-47e7-aa41-eae3dc4f3cea",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "Understand and overcome common pitfalls of the ubiquitous password authentication design pattern.",
+                  "title": "Passwords",
+                  "duration": 200,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": {
+                    "url": "https://s3.amazonaws.com/video.udacity-data.com/topher/2018/November/5be4416c_who-and-when-your-customer-2/who-and-when-your-customer-2.png",
+                    "width": 1379,
+                    "height": 1209
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 857011,
+                      "key": "9a44db7a-9d01-4dc4-b3db-f20914f97931",
+                      "title": "Lesson Intro",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 857012,
+                      "key": "f5e2c1a0-c5e6-4b93-8e11-95b859355051",
+                      "title": "Problems with Plain Text",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 859663,
+                      "key": "e186fde6-0c0f-4d1d-8167-32b7012441ef",
+                      "title": "Problems - Brute Force Attacks",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 859773,
+                      "key": "9a1c6fb0-cbfb-482f-bbf6-937f1eed37a1",
+                      "title": "Practice - Brute Force",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 906531,
+                      "key": "c1eb762a-73dc-471e-87d0-b0b33c1215e6",
+                      "title": "Problems - Data Handling and Logging",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 857013,
+                      "key": "4c999b32-9b33-44aa-9384-45b1bb46563c",
+                      "title": "Introduction to Encryption",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 906533,
+                      "key": "7670ed22-fdc1-4607-b77e-70726b06ea71",
+                      "title": "Using Encryption for User Tables",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 858541,
+                      "key": "5adc5ff8-1728-4163-9271-9db65ba1089c",
+                      "title": "Practice - Using Cryptography",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 906534,
+                      "key": "26656da6-b2ac-41a3-913c-aaf5e5d3c5d0",
+                      "title": "Asymmetric Encryption",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 857014,
+                      "key": "a9f2df0f-14b7-4d6c-a672-61ac128f530e",
+                      "title": "Hashing",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 857082,
+                      "key": "c24c53a6-4388-451d-aa1a-9a254a8b09bc",
+                      "title": "Practice - Rainbow Tables",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 857015,
+                      "key": "1c0b6535-137d-4e24-884e-a3591944fdfa",
+                      "title": "Hashing with Salts",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 857081,
+                      "key": "5b9c6032-b6e5-4030-aa20-188fd35caf52",
+                      "title": "Practice - Salted, Hashed Passwords",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 857018,
+                      "key": "7242a924-e2ce-4cd9-b924-7b735c3743a4",
+                      "title": "Recap",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 850005,
+                  "key": "2baeea23-aa82-4c96-aaf9-670855db2b70",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "Limit access to specific resources or actions by restricting requests only to authorized request to particular users and groups of users. Implement role-based access controls (RBAC) across the stack.",
+                  "title": "Access and Authorization",
+                  "duration": 120,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": {
+                    "url": "https://s3.amazonaws.com/video.udacity-data.com/topher/2018/September/5b9fafb6_3-10-authentication-vs-authorization2x/3-10-authentication-vs-authorization2x.jpg",
+                    "width": 592,
+                    "height": 640
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 857093,
+                      "key": "d15654c1-799b-47ea-8935-5a430f356411",
+                      "title": "Lesson Intro",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 857094,
+                      "key": "af6ab484-acbe-4934-bc3d-ac77a22355ab",
+                      "title": "Role-Permission Based Access",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 857095,
+                      "key": "56851141-a4be-4edc-adbb-7fa718c6d755",
+                      "title": "Defining Roles in Auth0",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 857097,
+                      "key": "413c0df9-3464-44e9-9d60-390609edc34f",
+                      "title": "Using RBAC in Flask",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 857098,
+                      "key": "02439724-158d-4bc3-baf0-674ef2b2a81e",
+                      "title": "Restricting Features in Frontend",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 857102,
+                      "key": "04f12f03-b93b-4e66-93f3-0d5450d3cf52",
+                      "title": "Recap",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 850008,
+                  "key": "2de7e6db-25b4-42bd-b0a6-5a2ba119cff1",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "Stay one step ahead of attackers by implementing a secure development process and knowing how to keep informed on the cutting edge of security research.",
+                  "title": "Thinking Adversarially",
+                  "duration": 60,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": {
+                    "url": "https://s3.amazonaws.com/video.udacity-data.com/topher/2017/September/59ce97a5_1-1-project-establishing-a-webdeveloper-mindset2x/1-1-project-establishing-a-webdeveloper-mindset2x.jpg",
+                    "width": 592,
+                    "height": 640
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 857104,
+                      "key": "2f9a0323-bb7d-4688-ab47-f86c74cd122d",
+                      "title": "Lesson Intro",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 859139,
+                      "key": "05ac18a0-c9cf-4a03-a497-5f8729e6faa3",
+                      "title": "Limiting Access to Code and Systems",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 906537,
+                      "key": "cc01bd6a-fef0-44fc-a787-cc9c621baa11",
+                      "title": "Code Review for Security",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 859090,
+                      "key": "ef8a7356-63d8-4d36-9518-64d5bd2ececc",
+                      "title": "Auth Validation Testing",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 859795,
+                      "key": "c5659982-2551-4e7b-a584-986e3ea14b39",
+                      "title": "Alternate Attack Vectors",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 859140,
+                      "key": "5f252e42-521c-4385-92ed-93309c4e1345",
+                      "title": "Staying Ahead of the Attackers",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 859142,
+                      "key": "04ae6c75-639d-4df1-8614-2bd1502406fe",
+                      "title": "Course Recap",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 850009,
+                  "key": "4aa35451-3192-49f5-b4bb-564b52ba8855",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "In this project, you'll demonstrate your new authentication and authorization skills by creating a full-stack application for a coffee shop menu.",
+                  "title": "Project: Coffee Shop Full Stack",
+                  "duration": 240,
+                  "is_public": true,
+                  "is_project_lesson": true,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": {
+                    "url": "https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/5935c9d5_4-5-coffee-break-challenge2x/4-5-coffee-break-challenge2x.jpg",
+                    "width": 592,
+                    "height": 640
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": {
+                    "key": "9201dbc0-4fce-45c4-95d8-b41ee9a8a7f0",
+                    "version": "1.0.0",
+                    "locale": "en-us",
+                    "duration": 30240,
+                    "semantic_type": "Project",
+                    "title": "Coffee Shop Full Stack",
+                    "description": "While working on the project, you should have created your own copy of the project repository. To submit the project, zip this entire repo and upload the zip file.\n\nBefore submitting, be sure to check out the [rubric](https://review.udacity.com/#!/rubrics/2593/view) to confirm that your project meets all the required specs. \n\nYou will get an email as soon as your reviewer has feedback for you! Due to the high volume of submissions we receive, please allow up to 7 business days for your evaluation to be returned (however, usually your project will be reviewed within 24 hours). \n\n> ***IMPORTANT!* Please ensure any submitted resources are running for—and any tokens will not expire within—the 7 business day window.**",
+                    "is_public": true,
+                    "summary": null,
+                    "forum_path": "",
+                    "rubric_id": "2593",
+                    "terminal_project_id": null,
+                    "resources": null,
+                    "image": null
+                  },
+                  "concepts": [
+                    {
+                      "id": 850606,
+                      "key": "6b2d131b-06ae-4f9c-96b5-dbf6af0c1161",
+                      "title": "Project Instructions",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 907306,
+          "key": "df863fd7-e7ca-4b3a-9ec3-725b7a9cba70",
+          "title": "Server Deployment, Containerization and Testing",
+          "semantic_type": "Part",
+          "is_public": true,
+          "version": "1.0.0",
+          "locale": "en-us",
+          "summary": "In this part, you will create a container for your Flask web app using Docker and deploy the container to a Kubernetes cluster using Amazon EKS. By the end of the project, you will have deployed your application live to the world, where it should be accessible by IP address.",
+          "part_type": "Core",
+          "locked_reason": "not_locked",
+          "locked_until": null,
+          "content_ready_date_ms": null,
+          "resources": null,
+          "image": null,
+          "specialization": null,
+          "modules": [
+            {
+              "id": 859437,
+              "key": "ac13842f-c841-4c1a-b284-b47899f4613d",
+              "title": "Server Deployment, Containerization, and Testing",
+              "semantic_type": "Module",
+              "is_public": true,
+              "version": "1.0.0",
+              "locale": "en-us",
+              "is_project_module": null,
+              "forum_path": "",
+              "lessons": [
+                {
+                  "id": 900458,
+                  "key": "af87a2e0-67bf-4859-aec9-efe487eee24b",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "Welcome to the Server Deployment, Containerization, and Testing course!",
+                  "title": "Introduction",
+                  "duration": 90,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2018/October/5bd361fc_6-1-introduction-to-deployment/6-1-introduction-to-deployment.jpg",
+                    "width": 500,
+                    "height": 500
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 900459,
+                      "key": "f2fb9014-1a83-4c01-9ad9-ce1f1484908e",
+                      "title": "Intro",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 899018,
+                  "key": "5311dad9-1e88-412a-8533-8631bec2b44c",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "An introduction to containers and Docker",
+                  "title": "Containers",
+                  "duration": 90,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2019/July/5d40d29f_docker-logo/docker-logo.png",
+                    "width": 336,
+                    "height": 287
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 899013,
+                      "key": "fe38c88c-edbb-46dc-8b88-5ad33e00145c",
+                      "title": "Lesson Intro",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 899017,
+                      "key": "f6a4a00e-6178-4f06-bb8f-021f2fd2a65a",
+                      "title": "What is a Container?",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 922041,
+                      "key": "5a52e5eb-6740-412b-b8be-d3ace2291ea5",
+                      "title": "Containers vs VMs",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 899012,
+                      "key": "5e96dde7-f1bd-452b-8e0f-ab4ed855bc8b",
+                      "title": "Docker",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 922160,
+                      "key": "7d5fe670-e32e-4aa9-b084-5808232197c8",
+                      "title": "Docker Concepts",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 899014,
+                      "key": "4f407634-b895-4e16-98a7-5b0c284a33cb",
+                      "title": "DockerHub",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 899015,
+                      "key": "f123f32d-4681-44e4-8ca1-682c621012a5",
+                      "title": "Dockerfiles",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 922204,
+                      "key": "d82346f4-5eaa-4264-8d5c-97c2cc6877f3",
+                      "title": "Dockerfile Exercises",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 899016,
+                      "key": "dcd04973-2531-4ca9-bff8-b5285d9634df",
+                      "title": "Lesson Summary",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 899346,
+                  "key": "7a6747f4-af9c-46f4-81c3-915829f59f4d",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "Deploy into Kubernetes using continuous delivery",
+                  "title": "Deployment",
+                  "duration": 90,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2019/October/5d93c777_kubernetes-2/kubernetes-2.png",
+                    "width": 1536,
+                    "height": 799
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 899337,
+                      "key": "8764ae2f-204e-4039-9240-e22807eac583",
+                      "title": "Intro and Overview",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 899339,
+                      "key": "1217326f-4459-4d24-8a19-b2f74c11fae8",
+                      "title": "Kubernetes",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 928442,
+                      "key": "dbecadf4-04ab-40c5-8049-6ff8a8032a3f",
+                      "title": "Kubernetes Concepts",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 928443,
+                      "key": "e0252aee-3de1-4a6a-b413-2c91b2c44074",
+                      "title": "EKS: Kubernetes on AWS",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 899344,
+                      "key": "05902002-26ad-4f29-8a46-cdad67523905",
+                      "title": "AWSCLI",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 899341,
+                      "key": "bb2c08fc-06c0-4d5b-a8e7-e4c4e52a6308",
+                      "title": "Installing eksctl",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 899338,
+                      "key": "a967854d-a9e2-49c7-8cfc-8534faf9fd07",
+                      "title": "Installing kubectl",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 899343,
+                      "key": "ab69039b-0393-4233-8c51-0de2314f0517",
+                      "title": "Creating an EKS Cluster",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 899342,
+                      "key": "0a604d5e-ea95-403c-83ab-8a70b9ae14bf",
+                      "title": "CodePipeline",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 899340,
+                      "key": "67b3f3bc-82e9-413c-ab10-779e21ba60da",
+                      "title": "CodeBuild",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 899345,
+                      "key": "50954a6d-66b9-427a-8e4f-7f2545870c61",
+                      "title": "Summary",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 859669,
+                  "key": "becb2dac-c108-4143-8f6c-11b30413e28d",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": null,
+                  "title": "Deploy Your Flask App to Kubernetes Using EKS",
+                  "duration": 20,
+                  "is_public": true,
+                  "is_project_lesson": true,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2018/October/5bda1411_1-3-app-navigation2x/1-3-app-navigation2x.jpg",
+                    "width": 500,
+                    "height": 500
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": {
+                    "key": "cbbb1716-7c5d-44ee-bad1-ee0e51e0a13e",
+                    "version": "1.0.0",
+                    "locale": "en-us",
+                    "duration": 30240,
+                    "semantic_type": "Project",
+                    "title": "Deploy Your Flask App to Kubernetes Using EKS",
+                    "description": "# Project Submission\n\nYou should submit your project using your project's Github repo. \n\n**Please provide the IP address of your running application in the submission notes, as the reviewer will use the IP address to check that your application is running correctly.**\n\nYou should leave your application deployment up and running until you receive your project feedback. _To avoid incurring additional costs, please remember to tear down your application after you have received feedback._",
+                    "is_public": true,
+                    "summary": null,
+                    "forum_path": "",
+                    "rubric_id": "2637",
+                    "terminal_project_id": null,
+                    "resources": null,
+                    "image": null
+                  },
+                  "concepts": [
+                    {
+                      "id": 899019,
+                      "key": "092cdb35-28f7-4145-b6e6-6278b8dd7527",
+                      "title": "Final Project Overview",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 899023,
+                      "key": "f7d0c77d-5a90-4cfd-bff9-5f2f20be1018",
+                      "title": "Intro to the Flask App",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 906651,
+                      "key": "16f36799-dea1-4aac-97c2-45cebe43e41d",
+                      "title": "Containerizing and Running Locally",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 899028,
+                      "key": "1c8c32de-2fcb-43e8-80b7-3b92a5112c76",
+                      "title": "Overview of the CD Pipeline",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 906725,
+                      "key": "38e0de66-f2b2-4f74-a77b-245d12034432",
+                      "title": "Create an EKS Cluster and IAM Role",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 906782,
+                      "key": "044acb09-a784-4af4-9383-a4b39c915915",
+                      "title": "Deployment to Kubernetes using CodePipeline and CodeBuild",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 906880,
+                      "key": "af566d0b-cb8e-4045-8540-e428d5c6d9d2",
+                      "title": "Adding Tests to the Build",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 899033,
+                      "key": "e440e7a8-f0b3-472e-b0ff-825b93fdbdfe",
+                      "title": "Outro",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": 951461,
+              "key": "5c0a8931-098b-4071-b983-e2069e694cf8",
+              "title": "Career Services",
+              "semantic_type": "Module",
+              "is_public": true,
+              "version": "1.0.0",
+              "locale": "en-us",
+              "is_project_module": null,
+              "forum_path": "",
+              "lessons": [
+                {
+                  "id": 594372,
+                  "key": "de38d0de-afac-4d34-a339-25c2519cf9f9",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "Other professionals are collaborating on GitHub and growing their network. Submit your profile to ensure your profile is on par with leaders in your field.",
+                  "title": "Optimize Your GitHub Profile",
+                  "duration": 75,
+                  "is_public": true,
+                  "is_project_lesson": true,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": {
+                    "url": "https://s3.amazonaws.com/video.udacity-data.com/topher/2018/August/5b7218b9_2-5-add-commits-to-a-repo2x-1/2-5-add-commits-to-a-repo2x-1.jpg",
+                    "width": 592,
+                    "height": 640
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": {
+                    "key": "4180859007",
+                    "version": "1.0.0",
+                    "locale": "en-us",
+                    "duration": 1440,
+                    "semantic_type": "Project",
+                    "title": "Optimize Your GitHub Profile",
+                    "description": "GitHub Profiles are a key piece of \"evidence\" to an employer that you'd be a good job candidate, because they can see the details of your work. Recruiters use GitHub as a way to find job candidates, and many Nanodegree alumni have received work opportunities from their activity on GitHub. In addition, using GitHub is a way for you to collaborate on projects with other programmers - this will show that you are able to work well with others on an engineering team on the job.\n\n## Submission Instructions\n1. Submit this project after you've done some continuous coding for two weeks, so the reviewer will be able to comment on trends.\n2. Submit your GitHub profile URL as your project.\n3. If you'd like to **opt-out** of this project, please read the instructions underneath the divider line, below.\n\n## Project Resources\n1. [Project Rubric](https://review.udacity.com/#!/rubrics/52/view). *Your project will be reviewed by a Udacity Career Reviewer against this rubric.*\n2. [Project checklist](https://docs.google.com/document/d/1a9AKnNyqfGgdQV5ohPCN5H9ntnEUhMptWMwVBWURCN0/pub?embedded=true). *Based on the project rubric, this is a handy checklist on GitHub best practices.*\n3. [Career Resource Center](https://career-resource-center.udacity.com/linkedin-github-profiles). *Find additional tips and guides on developing your GitHub Profile.*\n\n## Up Next\nContinue developing on GitHub! For project ideas, consider [contributing to open source](https://career-resource-center.udacity.com/contributing-to-open-source).\n\n---\n\n### *Career Review Requirement*\n\n*Your Nanodegree program was designed to ensure your long-term success in the field, and to pursue a successful career you must showcase the skills you’ve learned to employers effectively. **Therefore, this is a requirement for graduation, unless you opt-out.*** \n\n#### Opting Out\n\nIf improving your GitHub profile does not align with your Nanodegree goals, **you may opt-out of this graduation requirement**.\n\nWhen you opt-out:\n\n* *You will no longer be able to submit the GitHub Review from this Nanodegree program and all other Nanodegree programs.*\n* *Your decision to opt-out is final and future access to GitHub Review will need to be purchased separately.*\n\n*If you would like to opt-out, please click [here](https://forms.udacity.com/forms/career-opt-out).*",
+                    "is_public": true,
+                    "summary": "GitHub is a great way for employers to get a sense of how you code. Learn what your GitHub profile says about you and how to improve it to impress employers.",
+                    "forum_path": "c/careers-github-profile-review",
+                    "rubric_id": "52",
+                    "terminal_project_id": "",
+                    "resources": {
+                      "files": [],
+                      "google_plus_link": null,
+                      "career_resource_center_link": null,
+                      "coaching_appointments_link": null,
+                      "office_hours_link": null,
+                      "aws_provisioning_link": null
+                    },
+                    "image": null
+                  },
+                  "concepts": [
+                    {
+                      "id": 653724,
+                      "key": "00b53aa6-a4a0-4eee-a034-39915c379b68",
+                      "title": "Prove Your Skills With GitHub",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 25024,
+                      "key": "58316191600923",
+                      "title": "Introduction",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 41373,
+                      "key": "58492985590923",
+                      "title": "GitHub profile important items",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 19532,
+                      "key": "58315398190923",
+                      "title": "Good GitHub repository",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 21541,
+                      "key": "58503485550923",
+                      "title": "Interview with Art - Part 1",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 44395,
+                      "key": "58334298230923",
+                      "title": "Identify fixes for example “bad” profile",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 5637,
+                      "key": "64958716790923",
+                      "title": "Quick Fixes #1",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 23053,
+                      "key": "64786551490923",
+                      "title": "Quick Fixes #2",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 67965,
+                      "key": "65214390560923",
+                      "title": "Writing READMEs with Walter",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 16617,
+                      "key": "64423071120923",
+                      "title": "Interview with Art - Part 2",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 55196,
+                      "key": "65265285770923",
+                      "title": "Commit messages best practices",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 41944,
+                      "key": "64804050710923",
+                      "title": "Reflect on your commit messages",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 91571,
+                      "key": "65053008530923",
+                      "title": "Participating in open source projects",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 56941,
+                      "key": "64818045500923",
+                      "title": "Interview with Art - Part 3",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 5694,
+                      "key": "65019290470923",
+                      "title": "Participating in open source projects 2",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 22046,
+                      "key": "64858046490923",
+                      "title": "Starring interesting repositories",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 594373,
+                      "key": "156ac946-5ac9-45e8-9ca4-7523e6af7234",
+                      "title": "Next Steps",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": {
+                        "files": [],
+                        "google_plus_link": null,
+                        "career_resource_center_link": null,
+                        "coaching_appointments_link": null,
+                        "office_hours_link": null,
+                        "aws_provisioning_link": null
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 922003,
+          "key": "ab19ff50-446b-4c99-be38-b2ad8785b121",
+          "title": "Capstone Project",
+          "semantic_type": "Part",
+          "is_public": true,
+          "version": "1.0.0",
+          "locale": "en-us",
+          "summary": "You will now combine all of the new skills you’ve learned and developed in this course to construct a database-backed web API with user access control. You will choose what app to build and then you’ll design and build out all of the API endpoints needed for the application and properly secure them for use in any front end application (web or mobile). ",
+          "part_type": "Core",
+          "locked_reason": "not_locked",
+          "locked_until": null,
+          "content_ready_date_ms": 1569826800000,
+          "resources": null,
+          "image": {
+            "url": "https://video.udacity-data.com/topher/2018/October/5bc238d5_machine-learning-capstone-project-lesson-image/machine-learning-capstone-project-lesson-image.png",
+            "width": 2084,
+            "height": 2084
+          },
+          "specialization": null,
+          "modules": [
+            {
+              "id": 922006,
+              "key": "5a12cd8b-c106-4a27-bfc2-83fb5748d144",
+              "title": "Capstone",
+              "semantic_type": "Module",
+              "is_public": true,
+              "version": "1.0.0",
+              "locale": "en-us",
+              "is_project_module": null,
+              "forum_path": "",
+              "lessons": [
+                {
+                  "id": 947876,
+                  "key": "22de0129-9744-4580-894b-a9cfd1083375",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "In this lesson you’ll be introduced to the Capstone project and Heroku, a new tool you’ll use to deploy your API. ",
+                  "title": "Capstone Prep and Deployment",
+                  "duration": 120,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": null,
+                  "lesson_type": "Classroom",
+                  "image": null,
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 947875,
+                      "key": "ba5b80c9-aae9-42bd-98cf-9faddade53e6",
+                      "title": "Introduction to FSND Capstone",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 947873,
+                      "key": "df94a430-2ccd-4489-b318-4062e8c2df24",
+                      "title": "Introduction to Heroku",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 947872,
+                      "key": "2b3b2652-1a36-4ca5-a9f9-e92472dfaea6",
+                      "title": "Deployment Configuration",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 947870,
+                      "key": "4cccdb28-f803-428e-9e50-416fdf628477",
+                      "title": "Database Migrations",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 947874,
+                      "key": "5b622b9e-a897-49ab-9ce7-684bec9636db",
+                      "title": "Deploy and Test!",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 922007,
+                  "key": "1761f959-830f-495b-9610-54da073a5cee",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": null,
+                  "title": "Capstone",
+                  "duration": 300,
+                  "is_public": true,
+                  "is_project_lesson": true,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2018/October/5bc238d5_machine-learning-capstone-project-lesson-image/machine-learning-capstone-project-lesson-image.png",
+                    "width": 2084,
+                    "height": 2084
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": {
+                    "key": "302f4d89-5031-418b-a368-6001ed705a62",
+                    "version": "1.0.0",
+                    "locale": "en-us",
+                    "duration": 30240,
+                    "semantic_type": "Project",
+                    "title": "Capstone Project",
+                    "description": "Please submit your project with the following:\n- Github repo (or Zip file) with:\n  - README which includes:\n   - URL where the application is hosted\n   - Instructions to set up authentication \n\nYou can find the starter code for the project at this [link](https://github.com/udacity/FSND/tree/master/projects/capstone/starter)\n\nYour project should meet all rubric requirements to pass the project. The link is provided here: [Project Rubric](https://review.udacity.com/#!/rubrics/2682/view).",
+                    "is_public": true,
+                    "summary": null,
+                    "forum_path": "",
+                    "rubric_id": "2682",
+                    "terminal_project_id": null,
+                    "resources": null,
+                    "image": null
+                  },
+                  "concepts": [
+                    {
+                      "id": 942796,
+                      "key": "7640c062-8035-4663-a56a-ecdcacecfac6",
+                      "title": "Instructions",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

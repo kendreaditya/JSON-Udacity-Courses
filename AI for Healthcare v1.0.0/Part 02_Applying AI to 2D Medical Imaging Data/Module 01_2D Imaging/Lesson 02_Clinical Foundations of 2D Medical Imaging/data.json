@@ -1,0 +1,1821 @@
+{
+  "data": {
+    "lesson": {
+      "id": 1007529,
+      "key": "602d9c5b-4079-4738-b9dc-c82b5aa56fca",
+      "title": "Clinical Foundations of 2D Medical Imaging",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "In this lesson, we will cover clinical foundations such as clinical workflows, applications of 2D imaging in clinical settings and how machine learning impacts clinics.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": null,
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 1007558,
+          "key": "a6d2c87c-786e-4972-8a37-5380e9c3b474",
+          "title": "Clinical Foundations",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a6d2c87c-786e-4972-8a37-5380e9c3b474",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007559,
+              "key": "91575d39-a3f7-4e1f-8ad1-afad7862707d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Clinical Foundations",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009549,
+              "key": "74f8bed9-4bb8-41e1-afc3-fa6163e84b88",
+              "title": "ND320 C2 L1 01 Clinical Foundations",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "cj0Mf0ICVEY",
+                "china_cdn_id": "cj0Mf0ICVEY.mp4"
+              }
+            },
+            {
+              "id": 1009550,
+              "key": "b44e349c-6487-46ff-9263-f53d9946721d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\nIn this lesson, we will cover clinical foundations such as clinical workflows, applications of 2D imaging in clinical settings and how machine learning impacts clinics. You will also learn about major types of 2D images, when 2D medical imaging is used, how AI can be applied to it, and who the key stakeholders are in this space when you think about translating your AI to an actual clinical setting.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1007560,
+          "key": "7807781d-a24c-4c18-8b8c-6e817eb55c44",
+          "title": "Lesson Outline",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "7807781d-a24c-4c18-8b8c-6e817eb55c44",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007561,
+              "key": "25740d73-fae3-4c79-a0dc-b2f45072d100",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Lesson Outline",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009551,
+              "key": "e2023696-de14-41cd-b72d-fe91db41dde3",
+              "title": "ND320 C2 L1 02 Lesson Outline Video",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "qw3Uyp9aXWs",
+                "china_cdn_id": "qw3Uyp9aXWs.mp4"
+              }
+            },
+            {
+              "id": 1009554,
+              "key": "b8be902e-72e5-4474-a428-714a98258b52",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9a3fb7_l1-outline/l1-outline.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/b8be902e-72e5-4474-a428-714a98258b52",
+              "caption": "",
+              "alt": "",
+              "width": 974,
+              "height": 356,
+              "instructor_notes": null
+            },
+            {
+              "id": 1009555,
+              "key": "45051ee4-f326-49c1-a45a-828d72e7a048",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\nIn this lesson, we will first learn how and why 2D imaging is used, and who it is used by. Then, we'll talk about how machine learning can be helpful for different stakeholders in clinical environments. Next, we'll talk about how we use statistics to interpret the utility of machine learning algorithms, and finally, we'll talk about the important stakeholders that help us bring our algorithms to the front line of clinical care.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1007564,
+          "key": "18f0dadd-d7b4-44b0-ab7e-ce0fb1bf6197",
+          "title": "Intuition About 2D Medical Images",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "18f0dadd-d7b4-44b0-ab7e-ce0fb1bf6197",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007565,
+              "key": "886fad92-44ac-4a98-a996-cefc66c886eb",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Intuition About 2D Medical Images",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009560,
+              "key": "763cb24c-3748-4b7f-bd06-d8477b09705b",
+              "title": "ND320 C2 L1 04 Developing Your Intuition About 2D Medical Images Video",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "oQMS4GpYlxU",
+                "china_cdn_id": "oQMS4GpYlxU.mp4"
+              }
+            },
+            {
+              "id": 1014699,
+              "key": "37d60ca9-86da-48ec-b831-aebe475403bd",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9a402a_screen-shot-2020-04-17-at-4.47.46-pm/screen-shot-2020-04-17-at-4.47.46-pm.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/37d60ca9-86da-48ec-b831-aebe475403bd",
+              "caption": "",
+              "alt": "",
+              "width": 890,
+              "height": 464,
+              "instructor_notes": null
+            },
+            {
+              "id": 1009563,
+              "key": "69f71db0-d333-431f-abfc-155db051d8b4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary  \n### x-ray\nThis type of imaging projects a type of radiation called x-rays down at the body from a single direction to capture a single image. These are relatively cheap to acquire by imaging standards, but the downside is that they emit radiation and don’t offer too much detail at the organ-level. They allow us to see major structures like bone, lungs, and heart, and they’re safe to use for people who have metal in their bodies.\n\n### Computed Tomography (CT) \nCT uses x-ray, but they emit x-rays from many different angles around the human body to capture more detail from more different angles. They are more expensive, but they allow us to see more details about organs and soft tissues in the body. Most hospitals in the US have a CT scanner in them. \n\n### Magnetic Resonance Imaging (MRI)\nMRI uses strong magnetic fields and radio waves to create images of areas of the body from all different angles. It allows us to assess even more details about the human body. This type of imaging is particularly useful for studying the human brain. Although it is safer in that it does not emit radiation, MRI is not safe for people with metal in their bodies. Not all hospitals in the US have MRI scanners and it is a very expensive imaging tool. \n\n### Ultrasound\nUltrasound isn't covered in the video. It utilizes high-frequency sound waves beyond the audible limit of human hearing to generate images. Ultrasound waves travel through soft tissues or fluids and bounce back when it hits dense tissues. More waves bounce back if the tissue is denser. The waves that bounce back are captured to generate images. Ultrasound is very safe and commonly used during pregnancy.\n\n### 2D vs. 3D\nOut of these different imaging tools, x-ray is the **only** 2D imaging tool. \n\n2D imaging takes the picture from a single angle, and everything that is visible to the device at that angle will appear in the picture. You do not see overlapping structures in the 2D image.\n\n3D imaging takes lots of pictures from lots of angles to create a **volume** of images. You can see structures that are behind one another. The final 3D image is actually a set of 2D images that represent different slices through the body. So, in any single slice or 2D image, you can’t see the whole part but if you scroll through the slices, you will view the **volume** of that body part.\n\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009564,
+              "key": "d9ab8bd1-0544-464b-9eb8-8d442d704d94",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "d9ab8bd1-0544-464b-9eb8-8d442d704d94",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Would it be possible to assess overlapping organs in the abdomen using a 2D imaging technique?",
+                "answers": [
+                  {
+                    "id": "a1585858514595",
+                    "text": "Yes",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1585858709935",
+                    "text": "No",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1585858712989",
+                    "text": "Can't be decided.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1014614,
+              "key": "3d935424-5b95-4654-8f98-0b37b6b2e1ad",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## New terms\n* **X-ray**: a 2D imaging technique that projects a type of radiation called x-rays down at the body from a single direction to capture a single image. \n* **Ultrasound**: a 2D imaging technique that uses high-frequency sound waves to generate images.\n* **Computed Tomography (CT)**: a 3D imaging technique that emits x-rays from many different angles around the human body to capture more detail from more different angles.\n* **Magnetic Resonance Imaging (MRI)**: a 3D imaging technique that uses strong magnetic fields and radio waves to create images of areas of the body from all different angles. \n* **2D imaging**: an imaging technique that pictures are taken from a single angle.\n* **3D imaging**: an imaging technique that pictures are taken from different angles to create a volume of images.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1007566,
+          "key": "61136280-a7a9-452d-a324-1d700d93f3c3",
+          "title": "Clinical Applications",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "61136280-a7a9-452d-a324-1d700d93f3c3",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007567,
+              "key": "29450b03-cf28-44cd-ad9c-5df0bfa261bd",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Clinical Applications",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009570,
+              "key": "63249e9f-450c-49ca-bc0c-112db7bd2161",
+              "title": "ND320 C2 L1 05 Clinical Applications Of 2D Imaging Video Pt 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "VqdrQ94c39E",
+                "china_cdn_id": "VqdrQ94c39E.mp4"
+              }
+            },
+            {
+              "id": 1014625,
+              "key": "2e00b57f-e16c-4ed6-b60b-8205d7cba9c0",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Clinicians Involved in Medical Imaging\n#### Radiologist\nThe primary reader of medical imaging data is a type of clinician called a radiologist. These clinicians read all types of 2D and 3D images from all areas of the body. Their role in the clinical workflow is to _read imaging studies_ and write _interpretations_ of the images that can then be understood by other clinicians who are not experts in imaging. \n\n#### Diagnosing Clinician\nAfter the radiologist reads an imaging study, their radiology report is sent to the patient's _diagnosing clinician._ This clinician could be an emergency room doctor, primary care physician (PCP), or any other type of specialist. While the radiologist's report may have diagnostic information in it, the _final diagnosis_ always comes from the diagnosing clinician who takes the radiologist's report into account alongside other information: the patient's medical history, lab results, and current symptoms. So, medical imaging plays a critical, but only a partial role in the diagnostic process. \n\n#### Pathologists\nPathologists are a type of clinician who work primarily in _laboratories_. While radiologists are the primary readers of x-rays, CT, and MRI studies, pathologists are the primary readers of microscopy studies. It is their job to interpret findings from all different types of _cell-level_ samples taken from patients such as tumor biopsies and blood smears. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015312,
+              "key": "cc35b2d5-1886-4423-bc44-040be7272857",
+              "title": "ND320 C2 L1 06 Clinical Applications Of 2D Imaging Video Pt 2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "nbx4msfjd9k",
+                "china_cdn_id": "nbx4msfjd9k.mp4"
+              }
+            },
+            {
+              "id": 1015313,
+              "key": "a1a93cf9-a311-4cc0-80a2-beb2dfec2120",
+              "title": "ND320 C2 L1 07 Clinical Applications Of 2D Imaging Video Pt 3",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "SMJ1oe_tLYU",
+                "china_cdn_id": "SMJ1oe_tLYU.mp4"
+              }
+            },
+            {
+              "id": 1009597,
+              "key": "abacb7df-7180-4831-b18b-9237835965aa",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Types of 2D Imaging\n#### X-ray\nThe most common type of 2D imaging is x-ray. This technique uses a machine to emit x-rays, which are absorbed differently by different tissues in the body. Bone has _high absorption_ and therefore appears _bright white_. Soft tissues like the heart and diaphragm absorb a _medium amount_ and appear _gray_. Air _does not absorb_ any x-rays and thus appears _black_.\n\nWe usually think of x-rays to look for fractures/broken bones, but two of their other most common use cases are for assessing abnormalities in the lungs, and for assessing breast tissue (mammograms). \n\n#### Ultrasound\nUltrasound is a type of 2D imaging technique that isn't covered in the video. It utilizes high-frequency sound waves beyond the audible limit of human hearing to generate images. Ultrasound waves travel through soft tissues or fluids and bounce back when it hits dense tissues. More waves bounce back if the tissue is denser. The waves that bounce back are captured to generate images. Ultrasound is very safe and commonly used during pregnancy.\n\n#### Microscopy\nMicroscopy refers to _physical slides_ of biological material taken from a patient that can be viewed at the _cell-level_ through a microscope. These slides often have a stain applied to them that causes different cell structures to appear in different colors. These stains help pathologists tell the difference between cell structures.\n\n#### Fundal Imaging\nThe fundus of the eye is the interior surface of the eye, and images can be taken of it to diagnose diabetic retinopathy. In this condition, blood vessels at the back of the eye become damaged, so fundal imaging particularly looks at the integrity of the tiny vessels in the eye.\n\n#### Differences in the imaging techniques\nSince fundal images and microscopy images are not acquired with a digital machine, they are not inherently digital like x-rays are. As a result, an additional step of digitizing these images is required before applying AI. Once microscopy and fundal images are digitized, much of the AI principals can be applied to them the same way that they can be applied to x-ray images. \n\nThe second difference is that X-ray images are stored as single-channel grayscale images, while microscopy and fundal images are stored as red-green-blue (RGB) three-channel images. \n\nAnother major difference is that x-rays are stored in the DICOM format, which is the standard file format for medical imaging data, while this does not apply to microscopy and fundal images. We will cover more on this later.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014616,
+              "key": "ad3950e1-9d95-4b13-8dc7-e5355e5d36fa",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "ad3950e1-9d95-4b13-8dc7-e5355e5d36fa",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "What type of clinician would look at each of the following c"
+                },
+                "concepts_label": "Case",
+                "answers_label": "Clinician",
+                "concepts": [
+                  {
+                    "text": "blood cell smear on a slide",
+                    "correct_answer": {
+                      "id": "a1587143798525",
+                      "text": "pathologist"
+                    }
+                  },
+                  {
+                    "text": "x-ray of a broken bone",
+                    "correct_answer": {
+                      "id": "a1587143819365",
+                      "text": "radiologist"
+                    }
+                  },
+                  {
+                    "text": "read the report about findings in an x-ray",
+                    "correct_answer": {
+                      "id": "a1587143962642",
+                      "text": "primary care physician"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1587143819365",
+                    "text": "radiologist"
+                  },
+                  {
+                    "id": "a1587143962642",
+                    "text": "primary care physician"
+                  },
+                  {
+                    "id": "a1587143798525",
+                    "text": "pathologist"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1007568,
+          "key": "f48a062b-3b52-4541-9aba-32c2a86308b2",
+          "title": "Clinical Applications Quizzes",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "f48a062b-3b52-4541-9aba-32c2a86308b2",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007569,
+              "key": "b4795dd7-7b1c-42b3-8dbc-a43c4ea84a01",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Clinical Applications Quizzes",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1010326,
+              "key": "6c5cfc0f-3fc6-44db-90bf-82d3ed2f7763",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e8a7b32_quiz1.-1/quiz1.-1.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/6c5cfc0f-3fc6-44db-90bf-82d3ed2f7763",
+              "caption": "",
+              "alt": "",
+              "width": 900,
+              "height": 300,
+              "instructor_notes": null
+            },
+            {
+              "id": 1009619,
+              "key": "7a05930b-83d1-44a8-8630-85092707d137",
+              "title": "Types of 2D Imaging",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "7a05930b-83d1-44a8-8630-85092707d137",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Match each image above with its type of 2D imaging."
+                },
+                "concepts_label": "Image",
+                "answers_label": "Type",
+                "concepts": [
+                  {
+                    "text": "Image 1",
+                    "correct_answer": {
+                      "id": "a1585861119306",
+                      "text": "X-Ray"
+                    }
+                  },
+                  {
+                    "text": "Image 2",
+                    "correct_answer": {
+                      "id": "a1585861172215",
+                      "text": "Digital Pathology"
+                    }
+                  },
+                  {
+                    "text": "Image 3",
+                    "correct_answer": {
+                      "id": "a1586133844443",
+                      "text": "Mammography"
+                    }
+                  },
+                  {
+                    "text": "Image 4",
+                    "correct_answer": {
+                      "id": "a1586133854417",
+                      "text": "Fundal Image"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1585861172215",
+                    "text": "Digital Pathology"
+                  },
+                  {
+                    "id": "a1586133854417",
+                    "text": "Fundal Image"
+                  },
+                  {
+                    "id": "a1586133844443",
+                    "text": "Mammography"
+                  },
+                  {
+                    "id": "a1585861119306",
+                    "text": "X-Ray"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1010327,
+              "key": "7c2d2c9c-d3e1-4582-a6cc-72cb7ea1db30",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e8a7db2_quiz1-2/quiz1-2.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/7c2d2c9c-d3e1-4582-a6cc-72cb7ea1db30",
+              "caption": "",
+              "alt": "",
+              "width": 300,
+              "height": 300,
+              "instructor_notes": null
+            },
+            {
+              "id": 1009621,
+              "key": "e8a86c1a-229b-4d4a-ab4c-b1b68d2ef6a2",
+              "title": "Identify Structures",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "e8a86c1a-229b-4d4a-ab4c-b1b68d2ef6a2",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of these structures are visible in this image? ",
+                "answers": [
+                  {
+                    "id": "a1585861189449",
+                    "text": "Heart",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1586134471539",
+                    "text": "Lungs",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1586134472338",
+                    "text": "Wrist",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1586134473097",
+                    "text": "Spine",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1586134494232",
+                    "text": "Pelvis",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1007570,
+          "key": "447b7d26-f2d4-4ce7-af8e-dd3b310912db",
+          "title": "Clinical Applications Exercise",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "447b7d26-f2d4-4ce7-af8e-dd3b310912db",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007571,
+              "key": "b3c17b5b-3154-41ba-9ac9-24fc8ca26955",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Clinical Applications Exercise",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1007776,
+              "key": "1f997672-6811-4ef9-a3cf-0cc06b575b30",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In the following exercise, you will use what you learned about how x-rays are absorbed differently by different types of tissue. You will look at two chest x-rays, one healthy and one diseased, as well as an asymmetrical mammography study. In each of these images you will be asked to identify areas of the image that contain specific types of organs or tissues (e.g. lung, bone, tumor) and then plot the intensity values for those regions of the image. Notice how different the intensity values are, and how it is these intensity value differences that allow your eye to easily distinguish between different anatomical structures in the images. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1007837,
+              "key": "0b4f9a41-22d0-46d0-b554-0e8b2a0ed94c",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1007570xJUPYTERfwblljb7",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-np3xa",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1007572,
+          "key": "ce28864c-09bd-409d-b46c-ccea6c5479c1",
+          "title": "Clinical Applications Exercise Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "ce28864c-09bd-409d-b46c-ccea6c5479c1",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007573,
+              "key": "9a149afb-c648-4e7d-9b47-d480fee31791",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Clinical Applications Exercise Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014641,
+              "key": "184b0a47-88e8-4476-b6a0-ca4e3ba2eec1",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Reflect\nIs it difficult to distinguish between different structures with an untrained eye?",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1008305,
+              "key": "8c684776-5606-486a-833b-060cc1225886",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1007572xJUPYTER4mx8vpkf",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-4mkvx",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1007574,
+          "key": "10f666bd-93d6-4510-88a9-8af51469a3e3",
+          "title": "Apply Machine Learning ",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "10f666bd-93d6-4510-88a9-8af51469a3e3",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007575,
+              "key": "b04e9d71-ebd3-4434-b01e-248d8ea515dc",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Apply Machine Learning ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009640,
+              "key": "7979afab-8773-4ba7-9468-c71538062325",
+              "title": "ND320 C2 L1 10 Machine Learning Applied To 2D Medical Imaging Pt 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "7oNihzu6Xc4",
+                "china_cdn_id": "7oNihzu6Xc4.mp4"
+              }
+            },
+            {
+              "id": 1009642,
+              "key": "818d0019-693f-47a9-846b-59e940f21e18",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9a409e_l1-clinicalworkflow-/l1-clinicalworkflow-.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/818d0019-693f-47a9-846b-59e940f21e18",
+              "caption": "",
+              "alt": "",
+              "width": 704,
+              "height": 304,
+              "instructor_notes": null
+            },
+            {
+              "id": 1009641,
+              "key": "579d7717-c336-4408-a362-3d44add3ad37",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Medical Imaging Workflows\n#### Picture Archiving and Communication System (PACS) \nEvery imaging center and hospital have a PACS. These systems allow for all medical imaging to be stored in the hospital's servers and transferred to different departments throughout the hospital. \n\n#### Diagnostic Imaging\nIn diagnostic situations, a clinician orders an imaging study because they believe that a disease _may be present_ based on the patient's symptoms. Diagnostic imaging can be performed in _emergency_ settings as well as _non-emergency_ settings.\n\n#### Screening Imaging\nScreening studies are performed on populations of individuals who _fall into risk groups_ for certain diseases. These tend to be diseases that are relatively common, have serious consequences, but also have the potential of being reversed if detected and treated early. For example, individuals who are above a certain age with a long smoking history are candidates for lung cancer screening which is performed using x-rays on an annual basis.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015314,
+              "key": "8a33c011-8fdf-4cbe-ae13-8c24765e4ba2",
+              "title": "ND320 C2 L1 11 Machine Learning Applied To 2D Medical Imaging Pt 2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "2NhapgAZjKo",
+                "china_cdn_id": "2NhapgAZjKo.mp4"
+              }
+            },
+            {
+              "id": 1015315,
+              "key": "f3d638c2-b758-422f-ae5a-a0cc8cf26739",
+              "title": "ND320 C2 L1 12 Machine Learning Applied To 2D Medical Imaging Pt 3",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "xzS5BlWdbbU",
+                "china_cdn_id": "xzS5BlWdbbU.mp4"
+              }
+            },
+            {
+              "id": 1014642,
+              "key": "8e132164-ce20-4144-8e0f-93335673462e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Types of 2D Imaging Algorithms\n#### Classification\nThe classification algorithm assesses a whole image and returns an output stating _whether or not_ a disease or abnormality is present in an image. These types of algorithms can be used for binary or multi-class classification, where a single algorithm can classify for the presence or absence of multiple types of findings or diseases. \n\n#### Localization\nLocalization algorithms are intended to aid radiologists in determining _where_ in an image a particular finding is. These types of algorithms output a set of coordinates that create a _bounding box_ around a section of the image where a particular type of finding is. These types of algorithms can be very useful for drawing radiologists' _attention_ to certain types of findings that are difficult to see on imaging. \n\n#### Segmentation \nSegmentation algorithms return _a set of pixels_ that contain the presence of a particular finding in an image, creating a _border_ around a particular finding that allows for the calculation of its exact area. Segmentation algorithms are typically used to _measures the size_ of particular findings or _count the number_ of findings in an image. They are often used to count cells in microscopy data as well, where each cell in an image is segmented individually.\n\n### Clinical Impact of ML for 2D Imaging\nYou should be aware of the effect on _clinician workflows_ when you are designing an algorithm that may be inserted into them. ",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1007576,
+          "key": "48d141e3-0469-4f84-99a4-bada252b2942",
+          "title": "Apply Machine Learning Quizzes",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "48d141e3-0469-4f84-99a4-bada252b2942",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007577,
+              "key": "991c1e77-176b-4afd-a16d-5b6f6e82728b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Apply Machine Learning Quizzes",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009646,
+              "key": "e0deaf1c-d843-4672-9b9f-629b206337ef",
+              "title": "Applications of Imaging Algorithms",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "e0deaf1c-d843-4672-9b9f-629b206337ef",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Match each of these clinical applications to a type of ML algorithm."
+                },
+                "concepts_label": "Application",
+                "answers_label": "Algorithm",
+                "concepts": [
+                  {
+                    "text": "Track progression of tumor growth over time",
+                    "correct_answer": {
+                      "id": "a1585864775303",
+                      "text": "Segmentation "
+                    }
+                  },
+                  {
+                    "text": "Identify area of the lung where there is fluid",
+                    "correct_answer": {
+                      "id": "a1585864796437",
+                      "text": "Localization"
+                    }
+                  },
+                  {
+                    "text": "Determine whether a tumor is malignant or benign",
+                    "correct_answer": {
+                      "id": "a1586123893830",
+                      "text": "Classification "
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1585864775303",
+                    "text": "Segmentation "
+                  },
+                  {
+                    "id": "a1585864796437",
+                    "text": "Localization"
+                  },
+                  {
+                    "id": "a1586123893830",
+                    "text": "Classification "
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1009651,
+              "key": "399ebf54-7c1a-44f3-a209-8c447135af9b",
+              "title": "Free Response Question  ",
+              "semantic_type": "ReflectAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "399ebf54-7c1a-44f3-a209-8c447135af9b",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "title": null,
+                "semantic_type": "TextQuestion",
+                "evaluation_id": null,
+                "text": "Suppose you had the following clinical situation. Write a short response about where in the medical imaging workflow an algorithm could be applied and what type of algorithm it would be (segmentation, localization, classification). \n\n*Clinical Situation:* You are asked to develop an algorithm that will help emergency room clinicians know if patients have the life-threatening condition of a subdural hematoma (brain bleed) as soon as possible. The current protocol is that _all_ images taken in the emergency room are sent to the PACS to be read by a radiologist in a first-in-first-read order. The image will need to be read by a human radiologist no matter what. \n\nCan you describe an algorithm that might help them to read it faster? Can you describe what type of algorithm this would be and wherein the workflow such an algorithm might be applied? "
+              },
+              "answer": {
+                "text": "This would also be a _classification_ algorithm because all that's needed is to determine whether or not a subdural hematoma exists. \n\nSince this is an _emergency diagnostic_ situation, you would want your algorithm to be run on the device that acquired the image, _prior_ to it being sent to the PACS. This way, the prioritization of the image in the read queue would be done _before_ the image got to the PACS. ",
+                "video": null
+              }
+            }
+          ]
+        },
+        {
+          "id": 1007578,
+          "key": "76ba6e00-507e-4db4-9384-50342006ad63",
+          "title": "Apply Machine Learning Exercise",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "76ba6e00-507e-4db4-9384-50342006ad63",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007579,
+              "key": "92b627e9-0c40-4166-84d1-558b5cdd7555",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Apply Machine Learning Exercise\n\nIn this exercise, you'll be given a real-world situation where a radiologist's worklist needs to be prioritized. In this scenario, you have a radiologist who works in a _very_ busy emergency department in a major city. They are often getting hundreds of emergency images that need to be read every day, and there is no prioritization around those images because they come in through the emergency department, so everything is marked as \"urgent.\" In the current setting, radiologists read these images in a first-in-first-out queue, where all images are simply read in the order that they come in. From a clinical perspective, you know that some urgent cases are truly more urgent than others. From your research in interviewing emergency doctors and radiologists, you have identified that two of the most urgent types of findings on an image are a brain bleed and an aortic dissection. Both of these problems can lead to patient death within minutes, but they can only be detected on imaging, so it is critical these images are read ASAP. \n\nYou have used deep learning to create two classification algorithms, one for the detection of brain bleeds on head CT images, and one for the detection of aortic dissection on chest x-ray images. Now, you need to figure out how to integrate these algorithms into the radiologist's workflow so that they are most helpful clinically. \n\nIn this exercise you'll be given the following: \n1. A list of images that have come in through the ED in order of patient arrival\n2. Probabilities of 'brain bleed' for each image, as determined by one of your deep learning algorithms\n3. Probabilities of 'aortic dissection' for each image, as determined by one of your deep learning algorithms\n\nYou will need to do the following: \n\n1. Calculate the amount of time it will take before each image is read by the radiologist, given the patient arrival queue, assuming each image takes 6 minutes to read\n2. Implement a heuristic that uses the probabilities returned by your two algorithms to re-order the priority read list, assuming that brain bleeds and aortic dissections are equally urgent\n3. Calculate the time delta for each image between the initial and the re-ordered priority reads\n\nAnswer the following questions based on your reprioritization: \n\n1. If your algorithm's goal was to have brain bleeds read 30 minutes faster, how did it do? \n2. If your algorithm's goal was to have aortic dissections read 15 minutes faster, how did it do? \n3. Were there any cases where your algorithm made it _worse_ for patients who needed an ASAP read? Could anything have been done about this? \n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1007778,
+              "key": "c3853643-bd1b-4bfb-9c0b-7c2fb35e8dee",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1007578xJUPYTERhft9p8n6",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-kk63d",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": ""
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1007580,
+          "key": "e552e845-6b2b-494e-9c59-acb3cbdd72c5",
+          "title": "Apply Machine Learning Exercise Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "e552e845-6b2b-494e-9c59-acb3cbdd72c5",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007603,
+              "key": "02f9d5fa-1a73-42c1-8a07-f5a0a4ded983",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Apply Machine Learning Exercise Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009652,
+              "key": "efdf7bb9-7dac-4aa0-9edb-3d13035703d1",
+              "title": "ND320 C2 L1 14 Machine Learning Applied To 2D Medical Imaging Exercise Solution Video",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "xPm5u306EhY",
+                "china_cdn_id": "xPm5u306EhY.mp4"
+              }
+            },
+            {
+              "id": 1009653,
+              "key": "99de9198-f148-4076-9bf4-7a8f49dee59c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\n ```max_prob``` column is created which takes the max of either ```Brain_bleed_probability``` or ```Aortic_dissectin_probability```.\n\nAnd re-order the dataframe according to this ```max_prob```. So the images with larger probability are put at the top of the queue.\n\nNext,  ```time_too_read_prioritized``` column is created that is simply values incremented by 6 minutes per row. This is the new reading time based on the re-ordered queue.\n\nFinally,  ```time_delta``` column is  ```time_to_read``` minus ```time_to_read_prioritized``` so that you could get a sense of how much time is saved from the original order. \n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1008306,
+              "key": "1597d1e0-7968-4e1f-a593-28672833550f",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1007580xJUPYTERcdkm38h9",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-usa6t",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1007581,
+          "key": "2ebe640e-ffea-4bc3-95f8-928db4ae5029",
+          "title": "Performance of ML",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "2ebe640e-ffea-4bc3-95f8-928db4ae5029",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007582,
+              "key": "6761525f-4771-459d-92e5-c2ece49d9825",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Performance of ML\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009654,
+              "key": "cfb3fb39-9a76-46c6-a919-ae20729e640f",
+              "title": "ND320 C2 L1 15 Assessing Performance Of Machine Learning Algorithms For 2D Imaging Video",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "c0gF0BH71Zw",
+                "china_cdn_id": "c0gF0BH71Zw.mp4"
+              }
+            },
+            {
+              "id": 1014702,
+              "key": "f02a1c78-b110-40e9-98bd-027cf05f0ceb",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9a40c6_l1-performance-2/l1-performance-2.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/f02a1c78-b110-40e9-98bd-027cf05f0ceb",
+              "caption": "",
+              "alt": "",
+              "width": 892,
+              "height": 266,
+              "instructor_notes": null
+            },
+            {
+              "id": 1014703,
+              "key": "ecc01ce4-bffc-481e-a271-a38da5a4c6fb",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9a40d5_l1-performance-1/l1-performance-1.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/ecc01ce4-bffc-481e-a271-a38da5a4c6fb",
+              "caption": "",
+              "alt": "",
+              "width": 944,
+              "height": 418,
+              "instructor_notes": null
+            },
+            {
+              "id": 1010642,
+              "key": "b6be17ef-885b-4713-b8cd-7706b0b59eed",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Performance Metrics\n#### Sensitivity\nSensitivity is a metric that tells us among  ALL the _positive_ cases in the dataset, how many of them are successfully identified by the algorithm, i.e. the true positive. In other words, it measures the proportion of accurately-identified _positive cases_. \n\nYou can think of highly sensitive tests as being good for _ruling out_ disease. If someone has a negative result on a highly sensitive algorithm, it is extremely likely that they don’t have the disease since a high sensitive algorithm has low _false negative_. \n\n#### Specificity\nSpecificity measures ALL the _negative_ cases in the dataset, how many of them are successfully identified by the algorithm, i.e. the true negatives. In other words, it measures the proportion of accurately-identified _negative_ cases. \n\nYou can think of highly specific tests as being good for _ruling in_ disease. If someone has a positive result on a highly specific test, it is extremely likely that they have the disease since a high specific algorithm has low _false positive_. \n\n#### Dice coefficient\nThe dice coefficient measures the _overlap_ of algorithm output and true labels. It is used to assess the performance of segmentation and localization.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1007583,
+          "key": "c0ca013f-d268-4bfb-9b78-809e2c34ba41",
+          "title": "Performance of ML Quizzes",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c0ca013f-d268-4bfb-9b78-809e2c34ba41",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007584,
+              "key": "aebb98e6-21af-480e-af79-9f0802c2c49b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Performance of ML Quizzes",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1010370,
+              "key": "74999c13-8457-431a-88d4-9da0a5ed619d",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e8b1730_screen-shot-2020-04-06-at-7.48.15-am/screen-shot-2020-04-06-at-7.48.15-am.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/74999c13-8457-431a-88d4-9da0a5ed619d",
+              "caption": "",
+              "alt": "",
+              "width": 300,
+              "height": 100,
+              "instructor_notes": null
+            },
+            {
+              "id": 1009655,
+              "key": "d9a1ab3f-b5e4-4e3c-b8d0-f2f08b3995be",
+              "title": "Assessing Performance #1",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "d9a1ab3f-b5e4-4e3c-b8d0-f2f08b3995be",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Above is a table that shows a true label and a label generated by an algorithm for nine different images. Determine the number of TPs, FPs, FNs, and TNs for this algorithm on these nine images. "
+                },
+                "concepts_label": "Metric",
+                "answers_label": "Number",
+                "concepts": [
+                  {
+                    "text": "TP",
+                    "correct_answer": {
+                      "id": "a1585865221275",
+                      "text": "3"
+                    }
+                  },
+                  {
+                    "text": "FP",
+                    "correct_answer": {
+                      "id": "a1585865285226",
+                      "text": "1"
+                    }
+                  },
+                  {
+                    "text": "TN",
+                    "correct_answer": {
+                      "id": "a1585865292830",
+                      "text": "4"
+                    }
+                  },
+                  {
+                    "text": "FN",
+                    "correct_answer": {
+                      "id": "a1585865297265",
+                      "text": "1"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1585865285226",
+                    "text": "1"
+                  },
+                  {
+                    "id": "a1585865292830",
+                    "text": "4"
+                  },
+                  {
+                    "id": "a1585865221275",
+                    "text": "3"
+                  },
+                  {
+                    "id": "a1585865297265",
+                    "text": "1"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1020092,
+              "key": "0a1f80de-6921-496c-8ec5-81b334779eba",
+              "title": "Assessing Performance #2",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "0a1f80de-6921-496c-8ec5-81b334779eba",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Using the same table with algorithm performances above, calculate the sensitivity and specificity of this algorithm.",
+                "answers": [
+                  {
+                    "id": "a1588987085516",
+                    "text": "Sensitivity = 0.70, Specificity = 0.7",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1588987127873",
+                    "text": "Sensitivity = 0.70, Specificity = 0.8",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1588987132068",
+                    "text": "Sensitivity = 0.75, Specificity = 0.8",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1588987133918",
+                    "text": "Sensitivity = 0.75, Specificity = 0.7",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1007585,
+          "key": "164b5ea8-a619-4efa-9020-5ac7c9198112",
+          "title": "Performance of ML Exercise",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "164b5ea8-a619-4efa-9020-5ac7c9198112",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007586,
+              "key": "16f7b87f-f9c4-4dfc-9975-e7bdab3cccef",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Performance of ML Exercise\n\nIn this exercise, you'll take a look at how well a radiologist can accurately label a set of medical images as either \"cancer\" or \"benign\", and how well a machine learning algorithm can do the same task. You will be given a dataframe with three columns: \n* Image labels created by a \"perfect labeler\" \n* Image labels created by an expert radiologist\n* Image labels created by a machine learning algorithm \n\nYou'll notice that the algorithm's labels are not 'cancer' or 'benign,' but rather probability values between 0 - 1 that indicate how likely the algorithm believes the image contains cancer (score of 1 indicates 100% likelihood that cancer is in the image). \n\nThe goal of this exercise is to assess the performance of the expert radiologist compared to the \"perfect labeler,\" compare the algorithm to the \"perfect labeler,\" and finally to compare the algorithm to the radiologist. You will do this by generating confusion matrices for each pair of labels and assessing true positive and false positive rates. \n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1007839,
+              "key": "0d647866-c312-40e9-bc52-b357713d165d",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1007585xJUPYTERr9xumxh2",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-ukutk",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1007587,
+          "key": "c19f4113-8187-48a5-9a64-8917efaa6719",
+          "title": "Performance of ML Exercise Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c19f4113-8187-48a5-9a64-8917efaa6719",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007588,
+              "key": "c07fd891-69bb-4ed7-ab14-0feded00bce4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Performance of ML Exercise Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1008307,
+              "key": "e467139b-6c34-42be-93ef-8796bac21646",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1007587xJUPYTERw2lmya22",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-6h4bd",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1007589,
+          "key": "55370da0-f21b-4b74-9642-fa3f3c12d971",
+          "title": "Regulatory Landscape",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "55370da0-f21b-4b74-9642-fa3f3c12d971",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007590,
+              "key": "36455167-99ba-466f-ac2f-f7f2a4115b26",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Regulatory Landscape",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009663,
+              "key": "afab02e9-d186-45ef-a6af-ab47e51cd7fe",
+              "title": "ND320 C2 L1 18 Understanding Key Stakeholders - Clinical",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "XsdnG9RH0NY",
+                "china_cdn_id": "XsdnG9RH0NY.mp4"
+              }
+            },
+            {
+              "id": 1015316,
+              "key": "340fb420-e43b-4983-a553-7e5eb12bfb4d",
+              "title": "ND320 C2 L1 19 Understanding Key Stakeholders - Industry",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "JHk1CtVBCVE",
+                "china_cdn_id": "JHk1CtVBCVE.mp4"
+              }
+            },
+            {
+              "id": 1015317,
+              "key": "af93dbea-fc54-4419-b783-eef2736844c4",
+              "title": "ND320 C2 L1 20 Understanding Key Stakeholders - Regulatory",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "mcdWvNZ_BCs",
+                "china_cdn_id": "mcdWvNZ_BCs.mp4"
+              }
+            },
+            {
+              "id": 1019320,
+              "key": "057df941-db35-4b10-b800-8700b94953f9",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Typo in the slide: should be **implantable pacemaker**",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014704,
+              "key": "9561a0ef-113d-4f98-b161-a897a19c3f35",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9a40f3_l1-stakeholder/l1-stakeholder.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/9561a0ef-113d-4f98-b161-a897a19c3f35",
+              "caption": "",
+              "alt": "",
+              "width": 910,
+              "height": 418,
+              "instructor_notes": null
+            },
+            {
+              "id": 1014705,
+              "key": "88592235-6586-4719-bfc9-e0b7436e6cbe",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9a4106_l1-stakeholderfda/l1-stakeholderfda.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/88592235-6586-4719-bfc9-e0b7436e6cbe",
+              "caption": "",
+              "alt": "",
+              "width": 844,
+              "height": 404,
+              "instructor_notes": null
+            },
+            {
+              "id": 1009664,
+              "key": "4b00ebcd-24da-4216-917a-b5b7deb76a67",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\n### Key Stakeholders\n\n#### Clinical Stakeholders\nClinical stakeholders are radiologists, diagnosing clinicians and patients. Radiologists are likely the end-users of an AI application for 2D imaging. They care about low disruption to workflow and they play an important advisory role in the algorithm development process. Clinicians have less visibility into the inner workings of an algorithm. They also care about low disruption to workflows and they care about the interpretability of algorithm output. Patients may be the most important stakeholder, and the FDA looks at your algorithm through the lens of protecting the patient from all unnecessary risks. Patients may never know that AI is involved and they care about the timeliness of receiving accurate test results.\n\n#### Industry stakeholders \nIndustry stakeholders include medical device companies, software companies, and hospitals. Many medical device companies typically have accompanying imaging software. They also build their own AI algorithms to run on their hardware. Software companies can act more dynamically because they are not tied to a specific hardware system, but this also poses a regulatory challenge as the FDA wants to know if an algorithm performs the same across all hardware systems, and if not, which ones it is not appropriate for. Hospitals must be sure that they have the adequate infrastructure needed for algorithm deployment. In order to purchase an algorithm, a hospital must be convinced that it will save them money in the long run. \n\n####  Regulatory stakeholder\nThe main regulatory stakeholder in the medical imaging world is the Food and Drug Administration (FDA). The FDA treats AI algorithms as medical devices. Medical devices are broken down into three classes by the FDA, Class I, Class II, and Class III, based on their potential risks present to the patient. A device's class dictates the safety controls, which in turn dictates which regulatory pathway they must go down. The two main regulatory pathways for medical devices are **510(k)** and **Pre-market Approval (PMA).** Lower risk devices (Classes I & II) usually take a 501(k) submission pathway. Higher risk devices and algorithms (Class III) must go through PMA. \n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1007591,
+          "key": "4f695c6b-2e0b-4fce-8338-05c5eb99e932",
+          "title": "Regulatory Landscape Quizzes",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "4f695c6b-2e0b-4fce-8338-05c5eb99e932",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007592,
+              "key": "de4eb59d-59a8-4949-b523-a3d114bb9e19",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Regulatory Landscape Quizzes",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009666,
+              "key": "dcb38855-810c-43ff-861c-35820b865b4a",
+              "title": "Identifying Stakeholders",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "dcb38855-810c-43ff-861c-35820b865b4a",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Who would be a stakeholder for a tool that does the following? \n\nAn algorithm that measures the change in the size of a lung nodule over time from consecutive chest x-rays.\n",
+                "answers": [
+                  {
+                    "id": "a1585866994128",
+                    "text": "Patient",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1586258389237",
+                    "text": "FDA",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1586258398584",
+                    "text": "Radiologist",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1586258403509",
+                    "text": "MRI manufacturer",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1586258415685",
+                    "text": "Software developer",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1586258431348",
+                    "text": "Hospital",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1019338,
+              "key": "6c5d9265-a350-41eb-a19f-f8d8a505c28c",
+              "title": "FDA Risk Classes",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "6c5d9265-a350-41eb-a19f-f8d8a505c28c",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Match the following algorithm descriptions to their appropriate FDA risk class."
+                },
+                "concepts_label": "Algorithm",
+                "answers_label": "Class",
+                "concepts": [
+                  {
+                    "text": "An algorithm that fully replaces the radiologist in diagnosing breast cancer.",
+                    "correct_answer": {
+                      "id": "a1588787240216",
+                      "text": "Class III"
+                    }
+                  },
+                  {
+                    "text": "An algorithm that draws a bounding box around suspicious areas of an image for interpretation by a radiologist. ",
+                    "correct_answer": {
+                      "id": "a1588787255077",
+                      "text": "Class II"
+                    }
+                  },
+                  {
+                    "text": "An algorithm that segments the lungs and measures their volume for interpretation by a radiologist.",
+                    "correct_answer": {
+                      "id": "a1588787255923",
+                      "text": "Class II"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1588787255077",
+                    "text": "Class II"
+                  },
+                  {
+                    "id": "a1588787255923",
+                    "text": "Class II"
+                  },
+                  {
+                    "id": "a1588787240216",
+                    "text": "Class III"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1007593,
+          "key": "2b526262-3f94-4a19-b551-f866c405071d",
+          "title": "Regulatory Landscape Exercise",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "2b526262-3f94-4a19-b551-f866c405071d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007594,
+              "key": "711b67c1-501f-4fbc-b209-7c413ebcb60c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Regulatory Landscape Exercise\n\nGiven what you learned throughout this lesson, but especially what we _just_ learned about key stakeholders, we want you to get creative in this lesson and imagine a type of algorithm that you think would be clinically _useful_ for 2D medical imaging, and what the FDA would think about it. This exercise is open-ended because there isn't really a right or wrong answer. What we want you to do is synthesize your current knowledge into a holistic idea about 2D imaging as it could be brought from bench to bedside. \n\nImagine an algorithm and cover the following elements in your solution: \n\n* Disease or abnormality of interest\n* What type of 2D imaging you will use\n* What type of algorithm you would use (segmentation, localization, or classification) \n* How your algorithm would fit into a medical imaging workflow\n* How you think the FDA would classify your algorithm\n\nWe are going to cover _all_ of these areas in more depth in Lessons 2, 3, and 4, so don't worry about having a _correct_ answer. Be creative and see how deep your current understanding goes. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1019666,
+              "key": "633a71a8-745b-4657-ab3d-b746d1342775",
+              "title": "Reflect",
+              "semantic_type": "ReflectAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "633a71a8-745b-4657-ab3d-b746d1342775",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "title": null,
+                "semantic_type": "TextQuestion",
+                "evaluation_id": null,
+                "text": "Please input your answer here."
+              },
+              "answer": {
+                "text": "See the solution for details.",
+                "video": null
+              }
+            }
+          ]
+        },
+        {
+          "id": 1007595,
+          "key": "0f7ffae7-a507-445f-90de-332fdf2c95b3",
+          "title": "Regulatory Landscape Exercise Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "0f7ffae7-a507-445f-90de-332fdf2c95b3",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007596,
+              "key": "a6cd09dc-869f-49bb-be43-23a33694c58e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Regulatory Landscape Exercise Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009668,
+              "key": "366b23f5-6e3b-4dd6-8ded-3b62f03f3b3b",
+              "title": "ND320 C2 L1 22 Understanding Key Stakeholders Exercise Solution Video",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "R5MzajI0x5k",
+                "china_cdn_id": "R5MzajI0x5k.mp4"
+              }
+            },
+            {
+              "id": 1009669,
+              "key": "28e6ce29-bc54-456e-80cb-ec7eb744e7af",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\nThe algorithm would use _digital pathology_ data and would be a _segmentation_ algorithm used to segment and count red vs. white blood cells from a blood smear. \n\nThis would have to occur in the workflow _after digitization_ of the images, but before the pathologist got to the image. I would use this to help pathologists quickly know the exact ratio of red: white blood cells. If this value is high, it could indicate leukemia. Since the algorithm would give an exact ratio, rather than a pathologist’s estimate from just looking at the smear without counting it, this could be useful as early detection of low white blood cells, before the count gets so low that it is visually obvious. \n\nI am going to guess that this is either Class I or Class II, because I don’t think that something like this would be high risk. If it is wrong, the pathologist is still always going to be looking at the image anyways, so they will probably be able to correct any incorrect output that my algorithm gives in their report. ",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1007599,
+          "key": "33470c8a-3931-439c-b39f-0ae5620d05fa",
+          "title": "Final Review",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "33470c8a-3931-439c-b39f-0ae5620d05fa",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007600,
+              "key": "8782cb6c-ba5c-4e1c-8797-a3c9deb8c2dd",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Final Review",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009673,
+              "key": "a288c419-a5cc-4e8a-995f-68e30f6a4dc1",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Glossary\n- **X-Ray:** Type of 2D imaging that uses a type of radiation to take pictures of the body's internal structures\n- **Computed Tomography:** Type of 3D imaging that uses x-rays to take pictures at multiple angles of the body's internal structures\n- **Magnetic Resonance Imaging:** Type of 3D imaging that uses radio waves and strong magnetic fields at multiple angles to take pictures of the body's internal structures\n- **Mammogram:** A type of 2D x-ray that is specialized for breast imaging\n- **Digital Pathology:** A type of 2D imaging that involves the digitization of microscopy images of cell-level biological material\n- **Radiologist:** A specialized type of clinician who is trained to read medical imaging data\n- **PACS:** Picture archiving and communication system, used for storing and viewing medical images within and across hospitals\n- **Screening:** A type of test that is performed on individuals who are in a risk group for a given disease\n- **Sensitivity:** Proportion of accurately identified positive cases that a test returns\n- **Specificity:** Proportion of accurately identified negative cases that a test returns\n\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1007601,
+          "key": "401788de-6bca-4f32-90c7-41db7e02cfde",
+          "title": "Lesson Conclusion",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "401788de-6bca-4f32-90c7-41db7e02cfde",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007602,
+              "key": "7ebde3f0-6d4a-482e-bad2-8dc90a3f55b0",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Lesson Conclusion",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009674,
+              "key": "87e03283-cc30-4392-940e-e3f6fa988788",
+              "title": "ND320 C2 L1 23 Lesson Conclusion",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "rt54OPaOnps",
+                "china_cdn_id": "rt54OPaOnps.mp4"
+              }
+            },
+            {
+              "id": 1009675,
+              "key": "e9dde1a3-61ae-4ac4-9dc8-a82c25b3f355",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9a427b_l1-conclusion/l1-conclusion.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/e9dde1a3-61ae-4ac4-9dc8-a82c25b3f355",
+              "caption": "",
+              "alt": "",
+              "width": 916,
+              "height": 414,
+              "instructor_notes": null
+            },
+            {
+              "id": 1009677,
+              "key": "043d7042-369e-475e-88d1-ff8eb6ea1251",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Further reading\n\n- The Radiology Society of North America (RSNA) publishes a journal called [Radiology](https://pubs.rsna.org/journal/radiology \"Radiology\") that is the most widely-read journal by practicing radiologists. This a great resource for learning about new AI applications that are actually being used by clinical radiologists. \n- This [review](https://www.healthnewsreview.org/toolkit/tips-for-understanding-studies/understanding-medical-tests-sensitivity-specificity-and-positive-predictive-value/) is a great deep-dive into understanding sensitivity and specificity in medicine.\n- Radiopedia offers a slightly deeper overview of PACS in their post [here](https://radiopaedia.org/articles/picture-archiving-and-communication-system?lang=us).",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

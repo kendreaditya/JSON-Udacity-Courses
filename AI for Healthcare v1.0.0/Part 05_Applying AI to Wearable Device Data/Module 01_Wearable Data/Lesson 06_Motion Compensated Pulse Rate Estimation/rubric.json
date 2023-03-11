@@ -1,0 +1,251 @@
+{
+  "id": 2723,
+  "project_id": 710,
+  "upload_types": [
+    "repo",
+    "zip"
+  ],
+  "file_filter_regex": "\\A(?!(((.*/)?(__MACOSX|\\.git|node_modules|bower_components|jspm_packages|\\.idea|build|.ipynb_checkpoints|\\.Trash-0|logs)(\\Z|/))))((.*\\.(js|css|py|html|htm|txt|md|markdown|sql|swift|java|ts|gradle|xml|rst|yml|yaml|rmd|pdf|docx|h|H|hh|hxx|h\\+\\+|c|C|cc|cpp|cxx|c\\+\\+)\\Z)|((.*/)?(README|Readme|readme|Makefile)\\Z))",
+  "nomination_eligible": false,
+  "stand_out": "1. Achieve a 90th-percentile mean absolute error less than 2 BPM on the test set.\n2. Include visualizations of the signal and your algorithm outputs in the write-up to better communicate how the algorithm works.\n3. Break down algorithm performance by activity and discuss this in the write-up.\n",
+  "hide_criteria": false,
+  "created_at": "2019-11-06T21:47:09.825Z",
+  "updated_at": "2020-05-16T17:42:27.353Z",
+  "hashtag": "",
+  "max_upload_size_mb": 500,
+  "estimated_sla": null,
+  "project_assistant_enabled": false,
+  "checkmate_enabled": false,
+  "checkmate_metadata": null,
+  "available_for_cert_project": false,
+  "classroom_node_id": 956034,
+  "classroom_project_key": "427edacc-8019-4db8-b818-8b1bb4591486",
+  "language": "en-us",
+  "ndkeys": [
+    "nd320-beta",
+    "nd320",
+    "nd320-ent"
+  ],
+  "coursekeys": [],
+  "sections": [
+    {
+      "id": 5866,
+      "name": "Code Quality",
+      "created_at": "2019-11-20T23:11:31.407Z",
+      "updated_at": "2019-11-20T23:11:39.981Z",
+      "deleted_at": null,
+      "position": 0,
+      "rubric_id": 2723,
+      "rubric_items": [
+        {
+          "id": 16832,
+          "section_id": 5866,
+          "passed_description": "* Scripts have an intuitive, easy-to-follow structure with code separated into logical functions.\n* Naming for variables and functions follows the [PEP8](https://www.python.org/dev/peps/pep-0008/#naming-conventions) style guidelines.",
+          "exceeded_description": null,
+          "created_at": "2019-11-20T23:12:22.347Z",
+          "updated_at": "2019-11-20T23:16:18.384Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "The project code is clean and modular.",
+          "exceedable": false
+        },
+        {
+          "id": 16833,
+          "section_id": 5866,
+          "passed_description": "* Comments are used to clearly describe tricky or opaque pieces of code. \n* Each function has a docstring.\n* The module containing the algorithm has a docstring describing the algorithm.",
+          "exceeded_description": null,
+          "created_at": "2019-11-20T23:14:43.108Z",
+          "updated_at": "2019-11-20T23:16:18.403Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 1,
+          "criteria": "Code is well documented.",
+          "exceedable": false
+        },
+        {
+          "id": 16834,
+          "section_id": 5866,
+          "passed_description": "* Algorithm parameters are passed as function arguments.  \n* Default values for algorithm parameters should be set.\n* Use module constants or function parameters instead of [magic numbers](https://en.wikipedia.org/wiki/Magic_number_(programming).  \n* Makes use of vectorized operations (e.g., with `numpy`) when doing so would make the code easier to read or noticeably faster.",
+          "exceeded_description": null,
+          "created_at": "2019-11-20T23:16:18.557Z",
+          "updated_at": "2019-11-20T23:19:37.711Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 2,
+          "criteria": "Numerical algorithms best practices.",
+          "exceedable": false
+        }
+      ]
+    },
+    {
+      "id": 5867,
+      "name": "Algorithm Specifics",
+      "created_at": "2019-11-20T23:11:40.097Z",
+      "updated_at": "2019-11-20T23:11:53.666Z",
+      "deleted_at": null,
+      "position": 1,
+      "rubric_id": 2723,
+      "rubric_items": [
+        {
+          "id": 17424,
+          "section_id": 5867,
+          "passed_description": "* Use the 2nd ppg signal in the third column of the troika data matrix. If you are using the provided starter code to parse the data files, then this happens automatically. ",
+          "exceeded_description": null,
+          "created_at": "2020-05-10T07:09:17.234Z",
+          "updated_at": "2020-05-10T07:11:48.233Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "Use the correct input signals",
+          "exceedable": false
+        },
+        {
+          "id": 16835,
+          "section_id": 5867,
+          "passed_description": "* The PPG and accelerometer signals should be bandpass filtered using a reasonable passband and filter design.\n* The accelerometer channels should be aggregated in a meaningful way (e.g., into a magnitude signal).",
+          "exceeded_description": null,
+          "created_at": "2019-11-20T23:20:55.063Z",
+          "updated_at": "2020-05-10T07:11:48.238Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 1,
+          "criteria": "Follow signal processing and algorithm best practices.",
+          "exceedable": false
+        },
+        {
+          "id": 16836,
+          "section_id": 5867,
+          "passed_description": "* Reference values and estimates are appropriately paired (eg. using nearest neighbor or interpolation technique).\n* Mean absolute error is computed correctly.",
+          "exceeded_description": null,
+          "created_at": "2019-11-20T23:20:58.162Z",
+          "updated_at": "2020-05-10T07:11:48.243Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 2,
+          "criteria": "Algorithm error is computed correctly.",
+          "exceedable": false
+        },
+        {
+          "id": 16837,
+          "section_id": 5867,
+          "passed_description": "* The mean absolute error at 90% availability is less than 10 BPM.",
+          "exceeded_description": null,
+          "created_at": "2019-11-20T23:20:59.031Z",
+          "updated_at": "2020-05-10T07:11:48.246Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 3,
+          "criteria": "Acceptable algorithm performance on the test set.",
+          "exceedable": false
+        },
+        {
+          "id": 16838,
+          "section_id": 5867,
+          "passed_description": "* The algorithm should run on the test subject without errors.\n* The algorithm should produce a pulse rate estimate and a confidence value at least every 2 seconds.",
+          "exceeded_description": null,
+          "created_at": "2019-11-20T23:20:59.935Z",
+          "updated_at": "2020-05-10T07:11:48.249Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 4,
+          "criteria": "Algorithm runs without errors.",
+          "exceedable": false
+        }
+      ]
+    },
+    {
+      "id": 5868,
+      "name": "Project Write-up",
+      "created_at": "2019-11-20T23:11:53.813Z",
+      "updated_at": "2019-11-20T23:12:13.272Z",
+      "deleted_at": null,
+      "position": 2,
+      "rubric_id": 2723,
+      "rubric_items": [
+        {
+          "id": 16839,
+          "section_id": 5868,
+          "passed_description": "* The **Project Write-up** describes how to run the code.",
+          "exceeded_description": null,
+          "created_at": "2019-11-20T23:24:42.225Z",
+          "updated_at": "2020-02-05T17:39:10.141Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "Code Description.",
+          "exceedable": false
+        },
+        {
+          "id": 16840,
+          "section_id": 5868,
+          "passed_description": "The **Project Write-up** describes: \n* what activities were performed in the dataset.\n* features of the sensor that was used.\n* the quantity of data in the dataset.\n* short-comings of the dataset.\n",
+          "exceeded_description": null,
+          "created_at": "2019-11-20T23:24:45.226Z",
+          "updated_at": "2020-02-05T17:39:10.150Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 1,
+          "criteria": "Data Description.",
+          "exceedable": false
+        },
+        {
+          "id": 16841,
+          "section_id": 5868,
+          "passed_description": "The **Project Write-up** describes:\n* how the algorithm works, including a description of the physiology.\n* an intuitive explanation of why the confidence algorithm produces a higher number for better estimates.\n* insightful caveats and failure-modes of the algorithm.",
+          "exceeded_description": null,
+          "created_at": "2019-11-20T23:24:46.282Z",
+          "updated_at": "2020-02-05T17:39:10.154Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 2,
+          "criteria": "Algorithm Description",
+          "exceedable": false
+        },
+        {
+          "id": 16842,
+          "section_id": 5868,
+          "passed_description": "The **Project Write-Up** describes\n* the algorithm performance and how it was computed.\n*It discusses the performance generalizability to other datasets. ",
+          "exceeded_description": null,
+          "created_at": "2019-11-20T23:24:47.128Z",
+          "updated_at": "2020-05-10T07:11:48.252Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 3,
+          "criteria": "Algorithm Performance",
+          "exceedable": false
+        },
+        {
+          "id": 17111,
+          "section_id": 5868,
+          "passed_description": "The **Clinical Conclusion** describes: \n* the trends are observed in the data (women, men, compared)\n* the a possible reasoning for what is seen in the data\n* at least 1 technique or type of data source to clarify the current data\n* the validation/or not of the trend seen in resting heart rates.",
+          "exceeded_description": null,
+          "created_at": "2020-02-04T21:42:36.487Z",
+          "updated_at": "2020-05-10T07:11:48.258Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 4,
+          "criteria": "Clinical Significance Description",
+          "exceedable": false
+        }
+      ]
+    }
+  ],
+  "project": {
+    "id": 710,
+    "name": "Activity Aware Pulse Rate Algorithm",
+    "nanodegree_key": "nd320",
+    "is_cert_project": false,
+    "audit_project_id": null,
+    "hashtag": null,
+    "audit_rubric_id": null,
+    "entitlement_required": false,
+    "is_career": false,
+    "recruitment_family_id": 1,
+    "created_at": "2020-02-21T01:03:19.420Z",
+    "updated_at": "2020-05-30T21:35:19.400Z",
+    "price": "12.0",
+    "ungradeable_price": "3.0",
+    "audit_price": null
+  }
+}

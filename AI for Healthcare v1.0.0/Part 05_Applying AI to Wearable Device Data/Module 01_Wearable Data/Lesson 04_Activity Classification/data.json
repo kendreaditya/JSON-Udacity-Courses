@@ -1,0 +1,1067 @@
+{
+  "data": {
+    "lesson": {
+      "id": 1008010,
+      "key": "889d707f-7014-4216-ac94-ab3c285ad0e0",
+      "title": "Activity Classification",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Build an activity classifier using a wrist-worn accelerometer!",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "AIHCND-Wearable-Data-Course-Glossary",
+            "uri": "https://video.udacity-data.com/topher/2020/May/5ebb2d0c_aihcnd-wearable-data-glossary-v2/aihcnd-wearable-data-glossary-v2.pdf"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 1007998,
+          "key": "b5a57872-8f44-4eaa-add9-2e173356ae37",
+          "title": "Intro to Activity Classifiers",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "b5a57872-8f44-4eaa-add9-2e173356ae37",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007958,
+              "key": "67e71d5f-016c-449a-9d21-56fb0dcc9a97",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Introduction",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1007972,
+              "key": "dc48095b-036b-4471-94e3-ffc9e185aa76",
+              "title": "ND320 C4 L3 01 Intro To Activity Classifiers",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "dteQl6Nxo0g",
+                "china_cdn_id": "dteQl6Nxo0g.mp4"
+              }
+            },
+            {
+              "id": 1007962,
+              "key": "7149ae0d-809a-4406-a3fe-fcbf662201a7",
+              "title": "Intro to Activity Classifiers Recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary  \nIn this lesson, we are going to build an activity classifier using data from an accelerometer from a wrist wearable. Activity classifiers can be useful directly in that people like to keep track of the activities they are doing over the day. But they can also be used in more clinical contexts. For example, if a company is doing a drug trial and wants to know if their drug makes study subjects more or less active, they can look at the activity classifier output and see if subjects are spending more time walking around or if they are mostly idle. \n\nTo build this activity classifier, you will learn how to featurize a high-rate time-series signal. How do you take a few seconds of a 200Hz signal -- so that’s 1000s of data points -- and reduce it to a handful of features that traditional machine learning models know how to deal with. We’ll then use a random forest model to train our activity classifier and use leave-one-subject out cross-validation to evaluate its performance. We’ll then talk about our model’s hyperparameters and do hyperparameter optimization. To be successful in any modeling task, however, we need to dive into our data and become familiar with its intricacies, so we’re going to begin with some data exploration.\n\n\n## Outline\nUnderstanding Your Data\n - Wrist PPG Dataset\n - Data Exploration and Visualization\nUnderstanding The Literature\n  - Feature Engineering and Extraction\nModeling\nPerformance Evaluation\nHyperparameter Optimization\n\n## Concepts\nWe will follow an algorithm development process, as outlined below.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1007952,
+              "key": "e0ac6772-767b-4068-b315-85c7680fd54b",
+              "title": "Overarching Concepts",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/March/5e7a3d10_nd320-c4-l3-algorithm-development-progress/nd320-c4-l3-algorithm-development-progress.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/e0ac6772-767b-4068-b315-85c7680fd54b",
+              "caption": "Algorithm Development Process",
+              "alt": "Algorithm Development Process",
+              "width": 1560,
+              "height": 265,
+              "instructor_notes": null
+            },
+            {
+              "id": 1007971,
+              "key": "5699fd3e-be73-482c-8550-0bde8a7fd8bc",
+              "title": "concepts",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Before jumping into a new domain, we first need to understand the data and the literature. For this lesson, we will be building an algorithm that first featurizes the raw high-rate IMU time series into a manageable number of data points. We can then put these features into a classical machine learning model, optimize the hyperparameters, and evaluate our performance.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1007997,
+          "key": "39caeac4-d9d2-4f3b-a48c-bf8ef6986761",
+          "title": "Data Exploration",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "39caeac4-d9d2-4f3b-a48c-bf8ef6986761",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007961,
+              "key": "e288e8cc-a96b-4915-8a9e-65e421ad3735",
+              "title": "Data Exploration Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Data Exploration",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1007965,
+              "key": "7734271b-3c9c-4448-927e-44f948839220",
+              "title": "ND320 C4 L3 02 Data Exploration",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "mk5A4cLeyy8",
+                "china_cdn_id": "mk5A4cLeyy8.mp4"
+              }
+            },
+            {
+              "id": 1020214,
+              "key": "6c92b9d1-3ecb-49f8-bbdd-ec2ff657a1ed",
+              "title": "Data Exploration Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "We just went over the dataset we will be using throughout this lesson from PhysioNet. We learned from reading the **Experimental Protocol** that there is PPG, ECG, 3-channel accelerometer data. And the 8 participants are doing the 4 following activities: \n1. Walking\n2. Jogging\n3. Biking Lower Resistance\n4. Biking Higher Resistance\n\nFor this lesson we will be focused on accelerometer data for building our activity classifier.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1007963,
+              "key": "fdac705d-6776-4d77-9d69-ed671c79660e",
+              "title": "ND320 C4 L3 03 Plotting",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "fRN3iNPxJI8",
+                "china_cdn_id": "fRN3iNPxJI8.mp4"
+              }
+            },
+            {
+              "id": 1007959,
+              "key": "4e981f67-f21f-424e-bc25-9d3dba623d38",
+              "title": "Data Exploration Recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Summary\n\nThe dataset we will be using comes from the [Wrist PPG During Exercise](https://physionet.org/content/wrist/1.0.0/) dataset on Physionet. Physionet is a great resource for biomedical time-series signals. It has many datasets with various signals in various disease conditions and all the data is available under an open license. The Wrist PPG dataset contains data from 8 subjects. The protocol contained four activities -- walking on a treadmill, running on a treadmill, low-intensity cycling on an exercise bike, and high-intensity cycling. While the dataset contains ECG and PPG signals as well, we will only be using the accelerometer signal for this project. \n\nWe explore the summary statistics of this dataset and look at the raw data. Like most real datasets, this one is not perfect. It is unbalanced in terms of numbers of subjects as well as the total number of data points. \n\n## Notebook Review\nIf you wanted to interact with the notebook in the video, you can access it [here](https://github.com/udacity/nd320-c4-wearable-data-starter/tree/master/activity-classifier/walkthroughs/data-exploration/) in the repo `/activity-classifier/walkthroughs/data-exploration/` or in the workspace below. \n\nThe dataset that will be used throughout this lesson can be found at the top of the lesson directory at `/activity-classifier/data/`. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1008254,
+              "key": "27bea212-34e2-43f5-a018-18a22d9b56f7",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1007997xJUPYTERdl0q87fc",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-35ywi",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Data%20Exploration.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 1007957,
+              "key": "d4d7fffb-caf8-409d-9e67-3009c59362d3",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Exercise 1: Data Exploration\n\n## Instructions\n1. Complete the **Offline** or **Online** instructions below.\n2. Read through the whole `.ipynb`.\n3. Complete all the code cells that contain `## Your Code Goes Here`.\n\n#### Offline\n1. In the repo which you can access [here](https://github.com/udacity/nd320-c4-wearable-data-starter/tree/master/activity-classifier/exercises/1-data-exploration/) in the repo `/activity-classifier/exercises/1-data-exploration/)` you should find the following files:\n - `1_data_exploration.ipynb`\n2. The dataset that will be used throughout this lesson can be found at the top of the lesson directory at `/activity-classifier/data/`.\n3. Open up the python notebook and associated files in your desired editor. \n\n**Note**: Instructions can be found in **Introduction to Wearable Data**'s Concept **Developer Workflow** for how to set up your local environment.\n\n#### Online\n1. Go to the next concept and the `1_data_exploration.ipynb` should be open and the workspace should already contain the appropriate `data` folder. ",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1007953,
+          "key": "91b74cd3-f85a-4e37-a0fc-4b75f1a14617",
+          "title": "Exercise 1: Data Exploration",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "91b74cd3-f85a-4e37-a0fc-4b75f1a14617",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1008253,
+              "key": "173c0f59-738c-4c90-bfed-44ce8ce486da",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1007953xJUPYTERzr9n00sk",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-jcefs",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/1_data_exploration.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1007996,
+          "key": "391a97cb-9a4f-490e-a9c9-554e557ba455",
+          "title": "Exercise 1: Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "391a97cb-9a4f-490e-a9c9-554e557ba455",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007966,
+              "key": "acb45165-ac8c-42d0-a9cc-98ec7098e476",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Exercise 1: Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1007964,
+              "key": "d1d0e7ea-fcd0-43c0-bfba-a1573d3545e3",
+              "title": "ND320 C4 L3 04 Exercise 1 Solution",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "6eqmSZ0Hwos",
+                "china_cdn_id": "6eqmSZ0Hwos.mp4"
+              }
+            },
+            {
+              "id": 1007951,
+              "key": "631f53a3-56cb-44e2-b2e4-98df11142f59",
+              "title": "Further Resources",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Further Resources\n- [Wrist PPG Dataset](https://physionet.org/content/wrist/1.0.0/)  \n- This is a great blog post by [Casie Kozrykov](https://towardsdatascience.com/@kozyrkov) who taught me statistics at Google! In it, she describes the dangers of overfitting your brain when you explore your data.  \n- [Your dataset is a giant inkblot test](https://towardsdatascience.com/your-dataset-is-a-giant-inkblot-test-b9bf4c53eec5)\n- Check out [this StackOverflow discussion](https://stats.stackexchange.com/questions/352688/is-exploratory-data-analysis-important-when-doing-purely-predictive-modeling) on the value of data exploration. From one of the responses:\n>Two weeks spent training a neuralnet can save you 2 hours looking at the input data\n- And finally, a [blog post](https://machinelearningmastery.com/understand-problem-get-better-results-using-exploratory-data-analysis/) from a machine learning practitioner on the data exploration.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1008003,
+          "key": "0e80aaf9-4d8f-428d-a4c7-a7e5934af564",
+          "title": "Feature Extraction I",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "0e80aaf9-4d8f-428d-a4c7-a7e5934af564",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007960,
+              "key": "8d58378d-4b04-421a-80da-417f99dcb7c4",
+              "title": "heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Feature Extraction",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1007968,
+              "key": "67233e79-3cb2-47a9-9276-48ff47486ca4",
+              "title": "ND320 C4 L3 05 Feature Creation",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "S02ESJAPztg",
+                "china_cdn_id": "S02ESJAPztg.mp4"
+              }
+            },
+            {
+              "id": 1020215,
+              "key": "2e73da14-787f-4c44-b138-f76166913afd",
+              "title": "Feature Creation Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In the previous exercise we thought about how to distinguish between the types of activities based on the data but because of the limited set of data it’s important to recognize that we’ve also just overfit ourselves to the dataset. When we did the data exploration, we looked at the entire dataset and now our brains might pick up on patterns that are only specific for that dataset. And it almost happened to me and we looked at how we might have distinguished biking from walking but there was 1 subject's walking data that looked much more like biking data rather than walking. It is safer to use literature based features, particularly when on a limited dataset. Other researchers use different datasets so it is very unlikely to be overfit to your dataset.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1007967,
+              "key": "2d8696fa-98e7-4a0d-9bf2-63bff76fb478",
+              "title": "ND320 C4 L3 06 Feature Extraction Walkthrough",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "fveNx3NVGqM",
+                "china_cdn_id": "fveNx3NVGqM.mp4"
+              }
+            },
+            {
+              "id": 1007999,
+              "key": "174f77b5-1d9d-4848-8bef-eafab5536267",
+              "title": "Feature Creation Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Summary\nWith the previous exercise, we’ve started to think about the data and how we might build features to separate the signals into activity classes. And while that’s a great exercise, it’s important to recognize that we’ve also just overfit ourselves to the dataset. When we did the data exploration we looked at the entire dataset and now our brains might pick up on patterns that are only specific for that dataset. This almost happened to me, in fact. One of my observations was that the x and z channel overlap for walking and not for biking. However, this isn’t true for S6. There could easily have been a dataset where S6 did not participate, and I would have fully believed that x and z acc channels overlap when people are walking. If I had put this feature in my model, it would have not generalized to S6 and the performance of my model would have significantly degraded.\n\nFor small datasets like this, looking at the literature of existing features is a great way to avoid overfitting because the researchers who have come up with these features have looked at different datasets from ours. We are going to use features described in:  \n\n- Mehrang S., Pietilä J., Korhonen I. An Activity Recognition Framework Deploying the Random Forest Classifier and A Single Optical Heart Rate Monitoring and Triaxial Accelerometer Wrist-Band. Sensors. 2018;18:613. doi: 10.3390/s18020613. [Link](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5856093/)\n- Liu S, Gao RX, Freedson PS. Computational methods for estimating energy expenditure in human physical activities. Med Sci Sports Exerc. 2012;44:2138–2146. doi: 10.1249/MSS.0b013e31825e825a. [Link](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3475744/)\n\nWe describe some of these features in an IPython notebook and leave some of the implementation to you in the following exercise!\n\n## Notebook Review\nIf you wanted to interact with the notebook in the video, you can access it [here](https://github.com/udacity/nd320-c4-wearable-data-starter/tree/master/activity-classifier/walkthroughs/feature-extraction/) in the repo `/activity-classifier/walkthroughs/feature-extraction/`. The dataset that will be used throughout this lesson can be found at the top of the lesson directory at `/activity-classifier/data/`. No workspace is available as the following exercise's starter code is what you saw in this concept.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1007977,
+              "key": "cd0fa489-c39c-4d1f-8bda-b7586694c25d",
+              "title": "Exercise",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Exercise 2: Feature Extraction\n\n## Instructions\n1. Complete the **Offline** or **Online** instructions below.\n2. Read through the whole `.ipynb`.\n3. Complete all the code cells that contain `## Your Code Goes Here`.\n\n#### Offline\n1. In the repo which you can access [here](https://github.com/udacity/nd320-c4-wearable-data-starter/tree/master/activity-classifier/exercises/2-feature-extraction/) in the repo `/activity-classifier/exercises/2-feature-extraction)` you should find the following files:\n - `2-feature-extraction.ipynb`\n2. The dataset that will be used throughout this lesson can be found at the top of the lesson directory at `/activity-classifier/data/`.\n3. Open up the python notebook and associated files in your desired editor. \n\n**Note**: Instructions can be found in **Introduction to Wearable Data**'s Concept **Developer Workflow** for how to set up your local environment.\n\n#### Online\n1. Go to the next concept and the `2_feature_extraction.ipynb` should be open and the workspace should already contain the appropriate `data` folder. ",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1007975,
+          "key": "935b40e0-d656-4f82-acd7-c2dd6a05e54f",
+          "title": "Exercise 2: Feature Extraction",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "935b40e0-d656-4f82-acd7-c2dd6a05e54f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1008258,
+              "key": "e5f5c4d6-6191-4585-8285-965e2fc246e5",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1007975xJUPYTERe1ihpfcx",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-h1unm",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/2_feature_extraction.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1008001,
+          "key": "dc0aa8f9-67a2-431c-9a05-05f22ed30592",
+          "title": "Feature Extraction Continued...",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "dc0aa8f9-67a2-431c-9a05-05f22ed30592",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007973,
+              "key": "979c3620-36a0-4454-93f2-0128ac667387",
+              "title": "heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Feature Extraction Continued...",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1007987,
+              "key": "16eb81d9-d515-450a-a059-b967228dbb10",
+              "title": "ND320 C4 L3 07 Feature Extraction Continued",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "JjSgg3MjBpg",
+                "china_cdn_id": "JjSgg3MjBpg.mp4"
+              }
+            },
+            {
+              "id": 1020216,
+              "key": "e72a15aa-b3dd-4f38-97b8-021e2750d0ec",
+              "title": "summary of feature extraction cont",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "We computed a partial list of our features but this needed to be done for you for each of the accelerometer channels in `activity_classifier_utils.py`.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1007985,
+              "key": "59906124-15e5-4065-9f15-e95b558b084e",
+              "title": "ND320 C4 L3 08 Feature Extraction",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Ssycf56WjLw",
+                "china_cdn_id": "Ssycf56WjLw.mp4"
+              }
+            },
+            {
+              "id": 1007978,
+              "key": "9cc26fe4-ea98-4daf-8c2a-5a562077647f",
+              "title": "Feature Creation Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Summary\nSampling a sensor hundreds of times per second means that raw sensor data has huge dimensionality. There are 7680 points of accelerometer data at 256 Hz over 10 seconds.  Trying to model data points of this size will not be successful. We need to do dimensionality reduction.  \n  \nBy selecting features from the literature, we can be confident that we are not using features that overfit to our dataset and that the activity classifier we build will generalize to other studies and devices.  \n  \nCheck out the notebooks for this lesson and `activity_classifier_utils.py` to see how we implement the features and compute them for our dataset.\n\n## Notebook Review\nIf you wanted to interact with the notebook in the video, you can access it [here](https://github.com/udacity/nd320-c4-wearable-data-starter/tree/master/activity-classifier/walkthroughs/feature-extraction-continued/) in the repo `/activity-classifier/walkthroughs/feature-extraction-continued/` or in the workspace below. \n\nThe dataset that will be used throughout this lesson can be found at the top of the lesson directory at `/activity-classifier/data/`. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1008259,
+              "key": "2eebb3a2-7678-4b53-b92c-7a4bf02a161d",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1008001xJUPYTERrxpavx43",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-q37w2",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Feature%20Extraction%20Continued.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 1007970,
+              "key": "41db3547-aa56-4b17-9f0a-d3f865331615",
+              "title": "Feature Creation Further Research",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Further Resources\n\nThis blog post goes through a very similar process as this lesson. It starts by explaining some signal processing techniques (like we did earlier in the course). The author uses those techniques to build features in much the same way we just did. And then, he uses those features to build an activity classification model, just as we are about to!\n[Machine Learning with Signal Processing Techniques](http://ataspinar.com/2018/04/04/machine-learning-with-signal-processing-techniques/)\n\n## Literature\nThe algorithm we built was inspired by these two papers.\n\n- Mehrang S., Pietilä J., Korhonen I. An Activity Recognition Framework Deploying the Random Forest Classifier and A Single Optical Heart Rate Monitoring and Triaxial Accelerometer Wrist-Band. Sensors. 2018;18:613. doi: 10.3390/s18020613. [Link](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5856093/)\n- Liu S, Gao RX, Freedson PS. Computational methods for estimating energy expenditure in human physical activities. Med Sci Sports Exerc. 2012;44:2138–2146. doi: 10.1249/MSS.0b013e31825e825a. [Link](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3475744/)",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1008009,
+          "key": "1279d063-a181-43fb-a842-0d00a7e33bca",
+          "title": "Activity Classification",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "1279d063-a181-43fb-a842-0d00a7e33bca",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1008006,
+              "key": "0a62a77d-b72c-4e10-ad12-38bdd095b823",
+              "title": "Activity Classification Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Activity Classification",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1007976,
+              "key": "00c4b31e-39c8-4e26-b696-e98e2aee65ee",
+              "title": "ND320 C4 L3 09 Activity Classifier",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "fZXNoeq1ezg",
+                "china_cdn_id": "fZXNoeq1ezg.mp4"
+              }
+            },
+            {
+              "id": 1020221,
+              "key": "c56ca2ba-30d7-46ab-bd87-80b1994b0f3b",
+              "title": "Activity Classification Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Now that we've explored the data, examined the literature, chosen our features, and pre-processed all the data. Now it's time to finally build the classifier!\n\nFirst off, we will do feature extraction to train on 10 second long non-overlapping windows. And we used sklearn to build a random forest classifier to classify our data. Then we defined the hyperparameters with 100 trees where each tree has a maximum depth of 4. \n\nNow we are ready to build and train the model!\n\nBut as we just trained on the whole dataset we can't easily evaluate it. But one way to evaluate the performance of a multi-class classifier is to look at a confusion matrix. The confusion matrix shows how many data points were misclassified and what they were misclassified as.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1008004,
+              "key": "84784b9a-53af-4ae0-b953-65ccbbf9ebf0",
+              "title": "ND320 C4 L3 10 Leave-One-Subject-Out Cross Validation",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "xcE_k8K5wPY",
+                "china_cdn_id": "xcE_k8K5wPY.mp4"
+              }
+            },
+            {
+              "id": 1007983,
+              "key": "97f8a0cc-48bd-43d0-b9c6-32cef5b933aa",
+              "title": "Activity Classification Recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Summary\nWe've explored the data, examined the literature, chosen our features, and pre-processed all the data. Now it's time to finally build the classifier!  \n  \nIn this lesson, we finally train our features to build a random forest model. We talk about model performance and use **cross-validation** to estimate our accuracy. We end up with a model with an overall **classification accuracy** of 73%, which is the percent of correct classifications made by the model. But don’t fret, we’ll do better in the next video!\n\n### Quiz",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1007969,
+              "key": "082eb991-b0c4-4aad-9335-2c4915fdf0c0",
+              "title": "image quiz",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/March/5e7a3d11_nd320-c4-l3-fruit-classifierpng/nd320-c4-l3-fruit-classifierpng.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/082eb991-b0c4-4aad-9335-2c4915fdf0c0",
+              "caption": "Fruit Classifier",
+              "alt": "Fruit Classifier",
+              "width": 836,
+              "height": 706,
+              "instructor_notes": null
+            },
+            {
+              "id": 1007956,
+              "key": "263d686f-9f78-4b0b-bced-cb021d2bebb2",
+              "title": "quiz",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "263d686f-9f78-4b0b-bced-cb021d2bebb2",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Take a look at the confusion matrix for a fruit classifier above. What is the main classification error that the fruit classifier makes?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "Calling bananas oranges",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "Calling oranges bananas",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "Calling oranges apples",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk4",
+                    "text": "Calling apples oranges",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1007974,
+              "key": "a1ff5033-d249-4f40-a0f7-951f77a51f59",
+              "title": "Code from Video",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Notebook Review\nIf you wanted to interact with the notebook in the video, you can access it [here](https://github.com/udacity/nd320-c4-wearable-data-starter/tree/master/activity-classifier/walkthroughs/activity-classifier/) in the repo `/activity-classifier/walkthroughs/activity-classifier/` or in the workspace below. \n\nThe dataset that will be used throughout this lesson can be found at the top of the lesson directory at `/activity-classifier/data/`. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1008260,
+              "key": "19bfbb51-dc5a-491a-adbf-7c67cf6a5f53",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1008009xJUPYTERow1ryt9e",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-jjifa",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Activity%20Classifier.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 1007981,
+              "key": "6429359b-6497-4073-afbe-2dd03ab40992",
+              "title": "Activity Classification Further Research",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Further Resources\n\nRandom forests are boosted decision tree models. You need to understand a decision tree before learning what a random forest model is. Start with the [`sklearn` tutorial](https://scikit-learn.org/stable/modules/tree.html) on decision trees.  Then check out these videos on youtube for a visual explanation:  \n  \n- [Decision Trees Part 1](https://www.youtube.com/watch?v=7VeUPuFGJHk)  \n- [Decision Trees Part 2](https://www.youtube.com/watch?v=wpNl-JwwplA)  \n- [Random Forest Part 1](https://www.youtube.com/watch?v=J4Wdy0Wc_xQ)  \n- [Random Forest Part 2](https://www.youtube.com/watch?v=nyxTdL_4Q-Q)  \n  \nSee this [list of classification accuracy metrics](https://scikit-learn.org/stable/modules/model_evaluation.html#classification-metrics) that can be computed in `sklearn`.  \n\nFollow [this series of blog posts](https://towardsdatascience.com/multi-class-metrics-made-simple-part-i-precision-and-recall-9250280bddc2) for an understanding of how these accuracy metrics work on multiclass problems like ours.\n\n## Glossary\n- **Cross-validation**: A technique for estimating model performance where multiple models are trained and tested each on a separate partition of the entire dataset.\n- **Classification accuracy**: The percent of correct classifications made by a model.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1008008,
+          "key": "2a1cec52-d811-4480-8cca-756208d23db2",
+          "title": "Hyperparameter Tuning & Regularization",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "2a1cec52-d811-4480-8cca-756208d23db2",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007982,
+              "key": "cc2864d5-ccf0-4a72-a4cc-16cff2807256",
+              "title": "Hyperparameter Tuning & Regularization Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Hyperparameter Tuning and Regularization",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1007979,
+              "key": "50b1cd47-9f97-43cd-8ece-7251eefd861d",
+              "title": "ND320 C4 L3 11 Hyperparameter Tuning",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "nsDnNc9zFSk",
+                "china_cdn_id": "nsDnNc9zFSk.mp4"
+              }
+            },
+            {
+              "id": 1020217,
+              "key": "540eece0-d80e-4280-a8ab-55b0a6e393c5",
+              "title": "Hyperparameter Tuning & Regularization",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "We ended the last concept with a classification accuracy of 77%. However, there are a few more ways we can turn to improve the performance.\n\nWe at first used our best guesses but now we can explore the space and see if we can improve the performance. We found that reducing the maximum tree depth to 2, we have significantly increased our classification accuracy, from 77% to 89%. By reducing the depth to 2, we are **regularizing** our model. Regularization is an important topic in ML and is our best way to avoid overfitting. This is why we see an increase in the cross-validated performance.\n\nBut, we used the entire dataset many times to figure out the optimal hyperparameters. In some sense, this is also overfitting. Our 90% classification accuracy is likely too high, and not the generalized performance. In the next concept, we can see what our actual generalized performance might be if we use our dataset to optimize hyperparameters.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1020222,
+          "key": "425e421e-feea-4479-84ee-9287fe59de70",
+          "title": "Cross-Validation and Feature Importance",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "425e421e-feea-4479-84ee-9287fe59de70",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1020219,
+              "key": "ee93cf99-fe97-4608-87f2-834552e2154b",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Cross-Validation and Feature Importance",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1007954,
+              "key": "ef2b9bb5-05e3-44a7-aa9a-de4f3c3db641",
+              "title": "ND320 C4 L3 12 Nested Cross-Validation",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "JoABAPvHXIQ",
+                "china_cdn_id": "JoABAPvHXIQ.mp4"
+              }
+            },
+            {
+              "id": 1020218,
+              "key": "34aa1287-a94c-4af2-ae8b-d66c8256b2bb",
+              "title": "Nested Cross Validation Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Using the Nested Cross Validation technique, we'd ideally pick the best hyperparameters on a subset of the data, and then evaluate it on a hold-out set which is similar to train-validation-test set split but we don't have enough data to do so. When you don't have enough data to separate your dataset into 3 parts, we can nest the hyperparameter selection in another layer of cross-validation.\n\nWe then walked through how to actually apply this technique on our dataset. Our performance dropped because we are now not overfitting our hyperparameters when we evaluate model performance.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1007988,
+              "key": "b2b7cc4c-4d44-4492-b64d-4d9f07d2ce19",
+              "title": "ND320 C4 L3 13 Feature Importance",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "ShE5zyg0l9s",
+                "china_cdn_id": "ShE5zyg0l9s.mp4"
+              }
+            },
+            {
+              "id": 1007955,
+              "key": "58da6c45-b3e4-4b09-9e04-6ce1ab575319",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "We have just learned that another way to regularize our model and increase performance (besides reducing the tree depth) is to reduce the number of features we use. The `RandomForestClassifier` can tell us how important the features are in classifying the data. We found the 10 most important features determined by the `RandomForestClassifier` and trained the model on just those 10 features. The trained model no longer misclassified `bike` as `walk` and this improved our classifier performance by 15%, just by picking the most important features! ",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1020223,
+          "key": "0584dc61-7c6a-4794-9d96-3250e4702da6",
+          "title": "Hyperparameter Tuning in Review",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "0584dc61-7c6a-4794-9d96-3250e4702da6",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1020220,
+              "key": "ea3dd097-d416-4a0b-b0c9-694326f54fa5",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Hyperparameter Tuning in Review\nMachine learning models use data to fit their internal parameters. However, all models also have parameters that configure how they work and aren’t modified during training, these parameters are called **hyperparameters**. We can train these hyperparameters by creating many different models, each with different hyperparameters and evaluating each model’s performance. Just like we can overfit model parameters, we can also overfit its hyperparameters. To avoid this, we can estimate performance using **nested cross-validation**.\n  \nSome hyperparameters affect how easily the model will overfit the data, sometimes at the expense of complexity. In our case, this hyperparameter was the depth of the trees in the forest. When we limited the tree depth to just 2, we saw the cross-validation error decrease substantially.  \n  \nAnother hyperparameter that we can modify is the number of features that we choose to model. Random forest models use some features more than others to classify the data. In `sklearn` we can ask the `RandomForestClassifier` which features were more important than others. By building a new model that only uses the 10 best features, we were able to improve our performance to 93%. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1007984,
+              "key": "25d3f8cc-0bdb-4f61-a6d7-093f71387b67",
+              "title": "Q: When to use nested CV?",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "25d3f8cc-0bdb-4f61-a6d7-093f71387b67",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "When should you use nested cross-validation?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "To train your hyperparameters.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "When you need a better estimate of generalization error than regular cross-validation.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "To help regularize your model.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk4",
+                    "text": "None of the above",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1008007,
+              "key": "463984dc-38e6-4d35-9471-5dac8e3bc49a",
+              "title": "Video Code instructions",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Notebook Review\nIf you wanted to interact with the notebook in the video, you can access it [here](https://github.com/udacity/nd320-c4-wearable-data-starter/tree/master/activity-classifier/walkthroughs/hyperparameter-tuning/) in the repo `/activity-classifier/walkthroughs/hyperparameter-tuning/` or in the workspace below. \n\nThe dataset that will be used throughout this lesson can be found at the top of the lesson directory at `/activity-classifier/data/`. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1020239,
+              "key": "96f735fa-6b25-4edd-8f1c-d8cd1fe854fa",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1020223xJUPYTERvs245mfs",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-obext",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Hyperparameter%20Tuning.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 1007980,
+              "key": "dd1d1638-3400-4812-ab5d-cc1c257b6291",
+              "title": "Further Resources",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Further Resources\n\nNested cross-validation can be a tricky concept to wrap your head around. Here are three different explanations from three different authors. Maybe one of the following resources will explain it in a way that clicks for you:  \n- [Nested CV - Weina Jin](https://weina.me/nested-cross-validation/)  \n- [Nested CV - Elder Research](https://www.elderresearch.com/blog/nested-cross-validation)  \n- [Nested CV - Stack Exchange: Cross Validated](https://stats.stackexchange.com/questions/65128/nested-cross-validation-for-model-selection)  \n\nOur code implementing nested CV was pretty verbose so that you could see all the steps. As with almost everything in ML, `sklearn` can do it for us as well and you can learn more about\nNested CV in `sklearn` through the [documentation](https://scikit-learn.org/stable/auto_examples/model_selection/plot_nested_cross_validation_iris.html). \n  \nIs overfitting our hyperparameters really a problem in practice? [Yes (or so says this 2010 paper)](http://www.jmlr.org/papers/volume11/cawley10a/cawley10a.pdf)  \n  \nAn explanation of the difference between hyperparameters and regular parameters with this [article](https://machinelearningmastery.com/difference-between-a-parameter-and-a-hyperparameter/) from Machine Learning Mastery. \n  \nIf you want to learn more about Regularization through this [article](https://towardsdatascience.com/regularization-an-important-concept-in-machine-learning-5891628907ea) from Towards Data Science.\n\n## Glossary\n- **Hyperparameter**: A parameter of the model that dictates how the model learns. This is not trained during the training process of the model itself.\n- **Regularization**: Regularization is a technique to reduce overfitting of a model by discouraging complexity in the model.\n- **Nested cross-validation**: A technique to determine model performance when hyperparameters are also optimized.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1007989,
+              "key": "a578f2bd-8d58-44f7-a078-9a2f6b6f7fd5",
+              "title": "heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Exercise 3: A Quirk in the Dataset\n\n## Instructions\n1. Complete the **Offline** or **Online** instructions below.\n2. Read through the whole `.ipynb`.\n3. Complete all the code cells that contain `## Your Code Goes Here`.\n\n#### Offline\n1. In the repo which you can access [here](https://github.com/udacity/nd320-c4-wearable-data-starter/tree/master/activity-classifier/exercises/3-quirk-in-the-dataset) in the repo `/activity-classifier/exercises/3-quirk-in-the-dataset/)` you should find the following files:\n - `1_data_exploration.ipynb`\n2. The dataset that will be used throughout this lesson can be found at the top of the lesson directory at `/activity-classifier/data/`.\n3. Open up the python notebook and associated files in your desired editor. \n\n**Note**: Instructions can be found in **Introduction to Wearable Data**'s Concept **Developer Workflow** for how to set up your local environment.\n\n#### Online\n1. Go to the next concept and the `3_quirk_in_the_dataset.ipynb` should be open and the workspace should already contain the appropriate `data` folder. ",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1008005,
+          "key": "4128c33e-47f2-4719-a33b-8a04ea34e347",
+          "title": "Exercise 3: A Quirk in the Dataset",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "4128c33e-47f2-4719-a33b-8a04ea34e347",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1008262,
+              "key": "8eb28a37-8f62-4404-9404-872f0950ebb4",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1008005xJUPYTERs0mhcbee",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-gzfwr",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/3_quirk_in_the_dataset.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1008000,
+          "key": "3ba95e94-6bdc-4f2e-8a0f-35a163bc4650",
+          "title": "Exercise 3: Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "3ba95e94-6bdc-4f2e-8a0f-35a163bc4650",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007986,
+              "key": "5aab5d2c-3ede-4711-abc3-9646258a1c27",
+              "title": "Exercise walk-through",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Exercise 3: Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1007990,
+              "key": "65754c5d-3bd3-4f7a-a68c-9c482eeaaf6d",
+              "title": "ND320 C4 L3 14 Exercise 3 Walkthrough",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "fxnUCwPc4s4",
+                "china_cdn_id": "fxnUCwPc4s4.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 1008002,
+          "key": "d740edbe-ebaf-45b4-b1c2-f87b19c5de35",
+          "title": "Recap: Activity Classification",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d740edbe-ebaf-45b4-b1c2-f87b19c5de35",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007992,
+              "key": "d93273bf-abde-4968-ae3c-017f310a6bab",
+              "title": "heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Activity Classification Recap",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1007994,
+              "key": "a60142cd-bdab-488e-b661-f9a1caee97f5",
+              "title": "ND320 C4 L3 15 Recap- Decision Tree Vs. Random Forest",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "1i5obfDHdio",
+                "china_cdn_id": "1i5obfDHdio.mp4"
+              }
+            },
+            {
+              "id": 1007995,
+              "key": "d92a9b78-9637-4e51-a096-ffb2ad1ab851",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Summary\nWe’ve just done our first modeling task with wearable data. It took a while to get here. We had to learn what an accelerometer was and how it collected information about movement, and we had to learn about signal processing to build the features that we used in our model. We were able to build a pretty successful three-class classifier using a random forest and by doing proper hyperparameter optimization. But this problem is about as easy as it gets.\n\n If you’re looking for a challenge, go to the original dataset and see that it actually has four classes -- running, walking, high-intensity biking, and low-intensity biking. You could try building a classifier that can distinguish between high-intensity and low-intensity biking. You’ll also find a PPG signal in the dataset. That might help you discriminate between these two classes. You might also find that it’s impossible. Maybe there’s not enough information in these sensors to solve this problem, or maybe the dataset wasn’t collected as rigorously as we need. Ultimately, low-resistance and high-resistance is subjective, and the dataset description even notes: \n> ...each participant was free to set the pace of the treadmill and pedal rate on the bike so they were comfortable and also to change these settings or stop the exercise at any time.\n\nMore often than not, this is the reality of real-world data science problems.\n\n### Outline\nUnderstanding Your Data\n - Wrist PPG Dataset\n - Data Exploration and Visualization\nUnderstanding The Literature\n  - Feature Engineering and Extraction\nModeling\nPerformance Evaluation\nHyperparameter Optimization",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1007993,
+              "key": "53778932-663c-4883-91b7-5be39fc40700",
+              "title": "Resources",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Further Resources\n### Data Exploration\n- [Wrist PPG Dataset](https://physionet.org/content/wrist/1.0.0/)\n- This is a great blog post by [Casie Kozrykov](https://towardsdatascience.com/@kozyrkov) who taught me statistics at Google! In it, she describes the dangers of overfitting your brain when you explore your data.\n[Your dataset is a giant inkblot test](https://towardsdatascience.com/your-dataset-is-a-giant-inkblot-test-b9bf4c53eec5).\n- Check out [this StackOverflow discussion](https://stats.stackexchange.com/questions/352688/is-exploratory-data-analysis-important-when-doing-purely-predictive-modeling) on the value of data exploration. From one of the responses:\n>Two weeks spent training a neuralnet can save you 2 hours looking at the input data\n\n- And finally, a [blog post](https://machinelearningmastery.com/understand-problem-get-better-results-using-exploratory-data-analysis/) from a machine learning practitioner on the data exploration.\n\n### Feature Creation\nThis blog post, [Machine Learning with Signal Processing Techniques](http://ataspinar.com/2018/04/04/machine-learning-with-signal-processing-techniques/), goes through a very similar process as this lesson. It starts by explaining some signal processing techniques (like we did earlier in the course). The author uses those techniques to build features in much the same way we just did. And then, he uses those features to build an activity classification model, just as we are about to!\n\nThe algorithm we built was inspired by these two papers.\n\n[Mehrang S., Pietilä J., Korhonen I. An Activity Recognition Framework Deploying the Random Forest Classifier and A Single Optical Heart Rate Monitoring and Triaxial Accelerometer Wrist-Band. Sensors. 2018;18:613. doi: 10.3390/s18020613.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5856093/)\n\n[Liu S, Gao RX, Freedson PS. Computational methods for estimating energy expenditure in human physical activities. Med Sci Sports Exerc. 2012;44:2138–2146. doi: 10.1249/MSS.0b013e31825e825a.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3475744/)\n\n### Model Building\nRandom forests are boosted decision tree models. You need to understand a decision tree before learning what a random forest model is. Start with the [`sklearn` tutorial](https://scikit-learn.org/stable/modules/tree.html) on decision trees.  Then check out these videos on youtube for a visual explanation:\n\n[Decision Trees Part 1](https://www.youtube.com/watch?v=7VeUPuFGJHk)\n[Decision Trees Part 2](https://www.youtube.com/watch?v=wpNl-JwwplA)\n[Random Forest Part 1](https://www.youtube.com/watch?v=J4Wdy0Wc_xQ)\n[Random Forest Part 2](https://www.youtube.com/watch?v=nyxTdL_4Q-Q)\n\nSee this [list of classification accuracy metrics](https://scikit-learn.org/stable/modules/model_evaluation.html#classification-metrics) that can be computed in `sklearn`.\n\nFollow [this series of blog posts](https://towardsdatascience.com/multi-class-metrics-made-simple-part-i-precision-and-recall-9250280bddc2) for an understanding of how these accuracy metrics work on multiclass problems like ours.\n\n### Hyperparameter Optimization\nNested cross-validation can be a tricky concept to wrap your head around. Here are three different explanations from three different authors. Maybe one of the following resources will explain it in a way that clicks for you:\n- [Nested CV - Weina Jin](https://weina.me/nested-cross-validation/)\n- [Nested CV - Elder Research](https://www.elderresearch.com/blog/nested-cross-validation)\n- [Nested CV - Stack Exchange: Cross Validated](https://stats.stackexchange.com/questions/65128/nested-cross-validation-for-model-selection)\n\nOur code implementing nested CV was pretty verbose so that you could see all the steps. As with almost everything in ML, `sklearn` can do it for us as well and you can learn more about\nNested CV in `sklearn` through the [documentation](https://scikit-learn.org/stable/auto_examples/model_selection/plot_nested_cross_validation_iris.html).\n\nIs overfitting our hyperparameters really a problem in practice? [Yes (or so says this 2010 paper)](http://www.jmlr.org/papers/volume11/cawley10a/cawley10a.pdf)\n\nAn explanation on the difference between hyperparameters and regular parameters with this [article](https://machinelearningmastery.com/difference-between-a-parameter-and-a-hyperparameter/) from Machine Learning Mastery.\n\nIf you want to learn more about Regularization through this [article](https://towardsdatascience.com/regularization-an-important-concept-in-machine-learning-5891628907ea) from Towards Data Science.\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1007991,
+              "key": "387ff388-9ef2-4192-9e6b-472e51da6b25",
+              "title": "Glossary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Glossary\n- **Hyperparameter**: A parameter of the model that dictates how the model learns. This is not trained during the training process of the model itself.\n- **Regularization**: Regularization is a technique to reduce overfitting of a model by discouraging complexity in the model.\n- **Nested cross-validation**: A technique to determine model performance when hyperparameters are also optimized.\n- **Cross-validation**: A technique for estimating model performance where multiple models are trained and tested each on a separate partition of the entire dataset.\n- **Classification accuracy**: The percent of correct classifications made by a model.",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

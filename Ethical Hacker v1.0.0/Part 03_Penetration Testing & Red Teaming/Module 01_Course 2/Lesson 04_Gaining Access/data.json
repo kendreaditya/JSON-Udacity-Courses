@@ -1,0 +1,1526 @@
+{
+  "data": {
+    "lesson": {
+      "id": 1121785,
+      "key": "ddb8e4d7-e62e-40fd-a8f9-dadcad26f22f",
+      "title": "Gaining Access",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "In this lesson, we are will now execute on the information we have from reconnaissance, scanning, and research and will now execute on the plan of how to gain access on the target. ",
+      "lesson_type": null,
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/ddb8e4d7-e62e-40fd-a8f9-dadcad26f22f/1121785/1619795638469/Gaining+Access+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/ddb8e4d7-e62e-40fd-a8f9-dadcad26f22f/1121785/1619795632647/Gaining+Access+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 1121714,
+          "key": "ba11e7a1-ffa1-46f0-bfff-ceb0b34fca15",
+          "title": "Introduction to Gaining Access",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "ba11e7a1-ffa1-46f0-bfff-ceb0b34fca15",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1121711,
+              "key": "ae703af4-81b8-4d1f-8657-7f923718aa2c",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Introduction to Gaining Access",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1121712,
+              "key": "28271b84-8103-4779-8221-1dea3f3e0565",
+              "title": "ND350 C2 L3 A01 Intro To Gaining Access",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "8ZDfxxv2H7k",
+                "china_cdn_id": "8ZDfxxv2H7k.mp4"
+              }
+            },
+            {
+              "id": 1121713,
+              "key": "e8cd48c1-6145-4f62-88a7-0606ac1ca4a8",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this lesson we will cover:\n\n* Review different types of Payloads\n* Deploy backdoor payloads\n* Crack Passwords\n* Conduct SQL Injection \n* Conduct Directory Traversal\n* Bypass authentication\n* Exploit on-premise application",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1121718,
+          "key": "5aab5f68-3612-4ba1-8915-53705f800977",
+          "title": "Payloads Explained - Part 1",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5aab5f68-3612-4ba1-8915-53705f800977",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1121715,
+              "key": "2121b16b-1939-4091-8d49-92b48d7e855c",
+              "title": "Attack Vectors Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Payloads Explained - Part 1",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1121716,
+              "key": "44c6b86a-3a3a-45bf-a204-43e738c2491c",
+              "title": "ND350 C2 L3 A02 Payloads Explained Pt1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "CP8Yr4YNNTQ",
+                "china_cdn_id": "CP8Yr4YNNTQ.mp4"
+              }
+            },
+            {
+              "id": 1124768,
+              "key": "ebe15aa6-f22f-4829-99ac-c523d5626e92",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Recap of what was discussed: \n\n1. You have exploits and you’ve got payloads. The exploit takes advantage of the vulnerability to get in. The payload is what is executed to give the hacker access. \n\n2. The payload is executed in RAM. This is where the code is processed into machine language by an assembler. \n\n3. During execution, the payload is known as a shellcode.",
+              "instructor_notes": null
+            },
+            {
+              "id": 1121717,
+              "key": "9e44da1b-08fc-45f4-9877-51bcc1399f50",
+              "title": "Attack Vectors Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Terms and Definitions\n\n* **Payload**: Part of the code to be executed after a vulnerability is exploited.\n* **Exploit**: The part of the code that when executed will take advantage of a vulnerability. \n* **Assembler**: The operation that does this translation of executing the payload\n* **Shellcode**: The payload in executable state from the Assembler",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1121720,
+          "key": "f1a44a34-c0d0-4164-8246-5c4c5fb54997",
+          "title": "Quiz: Payload Explained",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "f1a44a34-c0d0-4164-8246-5c4c5fb54997",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1124769,
+              "key": "28feb848-129b-44e1-b96f-de2527f861fb",
+              "title": null,
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "28feb848-129b-44e1-b96f-de2527f861fb",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Name a quality of a singles payload",
+                "answers": [
+                  {
+                    "id": "598e549c-8a68-4de9-b4de-ccdc7213c2d4",
+                    "text": "Unstable",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "b41a37c4-8b26-4f86-8b4b-94d6d6f32b50",
+                    "text": "Stable",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "669b4160-4fc7-4c8b-b8cd-b0deeac16231",
+                    "text": "Can be Modified Remotely",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "c3c364f5-73ef-487e-92e4-a69aacd9d59c",
+                    "text": "Small in Size",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1124774,
+              "key": "1d0b7e6a-8263-4ce0-8a0a-c04e66eac848",
+              "title": null,
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "1d0b7e6a-8263-4ce0-8a0a-c04e66eac848",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Name a quality of a Stage payload. Select the best answer. ",
+                "answers": [
+                  {
+                    "id": "eb7264a3-a145-4376-80e4-7bd5463d5a9c",
+                    "text": "Can be Modified Remotely",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "fdd1568f-fdc7-4126-b0c0-1c029549d3d9",
+                    "text": "Cannot be Modified Remotely",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "52f7132b-2535-46b9-8da6-5e291abf97e3",
+                    "text": "Small in Size",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "5cb3a4c9-d986-43a5-aaf4-a834c3d64b37",
+                    "text": "Easiest to Detect with AV",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1124775,
+              "key": "3b3e1d6d-d74c-41be-bb82-2f70839b7818",
+              "title": null,
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "3b3e1d6d-d74c-41be-bb82-2f70839b7818",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What is MSFVenom?",
+                "answers": [
+                  {
+                    "id": "5dbc0d2e-2bb9-4f77-912c-7a3412eb08a1",
+                    "text": "A type of payload encoder",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "5b904e4b-a7ae-4f3e-a0e6-adc9b987dd95",
+                    "text": "A part of Metasploit used to create payload",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "e3d2ff6c-6124-43ef-a69e-011ffdb230ee",
+                    "text": "Used for web application scanning",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "19e51bcf-e8fc-4040-957b-2c74cb59cbba",
+                    "text": "Used to create NOP sled",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1121724,
+          "key": "af1ff6a5-d80e-4d03-8def-bd93b87b19d9",
+          "title": "Payload Explained - Part 2",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "af1ff6a5-d80e-4d03-8def-bd93b87b19d9",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1121721,
+              "key": "ef2eb1fb-7b30-4be3-bfc9-71e7f26787e1",
+              "title": "Scan Results and Strategy to Gain Access with Team  Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## A Review of Veil, Shellter, Donut and Custom Shell Codes",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1121722,
+              "key": "968b05cc-308e-4739-986e-997cc2226f8b",
+              "title": "ND350 C2 L3 A03 Payloads Pt 2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "mx4F9wF8elk",
+                "china_cdn_id": "mx4F9wF8elk.mp4"
+              }
+            },
+            {
+              "id": 1121723,
+              "key": "33da6168-1895-41f3-9696-77b1d40a3b5d",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "We just went over some tools for payloads: \n\n* **Veil**: A set of tools that allows create a shellcode\n* **Shellter**: A tool to inject shellcodes into binaries\n* **Donut**: Allows the generation of shellcodes for .NET assemblies \n* How to create customized Shell Codes?",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1121728,
+          "key": "d72d2c9e-6f66-4583-8f16-0127b21bf7d7",
+          "title": "Team Meeting!",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d72d2c9e-6f66-4583-8f16-0127b21bf7d7",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1121725,
+              "key": "d7f8eeac-cd66-4b9f-8be7-b237722c55b9",
+              "title": "Password Attacks Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Team Meeting\n\n**Topic: **Discuss the scan results and strategize how to gain access",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1121726,
+              "key": "ed2e2092-f3dd-4c2b-9517-2869900d8006",
+              "title": "Gaining Access Simulation",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "FQ7jeXnG7v8",
+                "china_cdn_id": "FQ7jeXnG7v8.mp4"
+              }
+            },
+            {
+              "id": 1121727,
+              "key": "62b72992-f2e5-49ef-b2ac-1bc64abaa6a5",
+              "title": "Password Attacks Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "* **Jackie's Report: ** Vulnerable software on mypjbank.com - File manager 6.8 and contact form 5.3.2\n* **Json Report: **Gained remote access via USB drive and collected SSH root keys",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1121730,
+          "key": "8ae0ee03-c809-4ec5-82ac-ec2899ff05d4",
+          "title": "Creating a Backdoor Connection",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "8ae0ee03-c809-4ec5-82ac-ec2899ff05d4",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1121729,
+              "key": "c87b8774-04e0-4264-851c-589cc351ec54",
+              "title": "Password Attacks Quiz",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## The Rubber Ducky",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1124776,
+              "key": "aac03037-9ca0-4e8a-b228-a9f6e76d5859",
+              "title": "ND350 C2 L3 A04 Creating A Backdoor Connection",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "yb2vo1AQwjw",
+                "china_cdn_id": "yb2vo1AQwjw.mp4"
+              }
+            },
+            {
+              "id": 1124777,
+              "key": "e9634926-1c47-441a-bcb8-0a4e7eec0cf3",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Steps to creating your reverse TCP connection\n\n1. Create your payload\n1. Move the payload to your web server\n1. Generate automation code onto Rubber Ducky micro SD using the adapter (Note: this step is OPTIONAL, if you don't have a rubber ducky, you can activate the payload manually. Instructions for physically connecting the rubber ducky is listed below)\n1. Run Meterpreter listening service (use Multi/handler)\n1. Connect the Rubber Ducky to auto activate the payload",
+              "instructor_notes": null
+            },
+            {
+              "id": 1162993,
+              "key": "77508de3-31af-46fc-805b-dc9437049f6a",
+              "title": "ND350 C2 L3 A04b Creating A Backdoor Connection Pt2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "i-YlsbjQea4",
+                "china_cdn_id": "i-YlsbjQea4.mp4"
+              }
+            },
+            {
+              "id": 1151862,
+              "key": "d2f78b5e-4811-4e31-943d-3fb7ec401a84",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# How to Connect and Activate the Rubber Ducky",
+              "instructor_notes": null
+            },
+            {
+              "id": 1151863,
+              "key": "9a94513c-9294-4a0e-8e84-a5baaf670650",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "**Step 1:** Insert the Micro SD inside the USB adapter",
+              "instructor_notes": null
+            },
+            {
+              "id": 1151861,
+              "key": "df30043b-da86-406b-a897-faacc29d6ad5",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/March/603d96ee_ducky-1/ducky-1.jpeg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/df30043b-da86-406b-a897-faacc29d6ad5",
+              "caption": "Rubber Ducky with a Micro SD and USB adapter",
+              "alt": "Insert the Micro SD inside the USB adapter",
+              "width": 1600,
+              "height": 1200,
+              "instructor_notes": null
+            },
+            {
+              "id": 1151864,
+              "key": "f8a89c0a-8320-4f46-8a23-a927deb955bc",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "**Step 2:** Insert the adapter inside your USB Drive\n\n**Step 3:** Upload the bin file inside the USB",
+              "instructor_notes": null
+            },
+            {
+              "id": 1151866,
+              "key": "3a1e5dbd-9af6-47b6-9921-97a09944f47b",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/March/603d9769_ducky-2/ducky-2.jpeg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/3a1e5dbd-9af6-47b6-9921-97a09944f47b",
+              "caption": null,
+              "alt": null,
+              "width": 1600,
+              "height": 1200,
+              "instructor_notes": null
+            },
+            {
+              "id": 1151868,
+              "key": "95190735-42e7-4f4d-984f-0db5783f44a7",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "**Step 4:** Take the Micro SD out of the adapter",
+              "instructor_notes": null
+            },
+            {
+              "id": 1151869,
+              "key": "d04210ac-5f7e-4e90-a2d0-4b48ff701439",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/March/603d9798_ducky-3/ducky-3.jpeg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/d04210ac-5f7e-4e90-a2d0-4b48ff701439",
+              "caption": "",
+              "alt": "",
+              "width": 1600,
+              "height": 1200,
+              "instructor_notes": null
+            },
+            {
+              "id": 1151870,
+              "key": "dc78dc17-5884-4adb-8c95-133a78adf3fa",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "**Step 5:** Insert the Micro SD inside the Rubber Ducky",
+              "instructor_notes": null
+            },
+            {
+              "id": 1151871,
+              "key": "677001fd-af21-4c87-b25c-1a7361f8aec4",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/March/603d97b9_ducky-4/ducky-4.jpeg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/677001fd-af21-4c87-b25c-1a7361f8aec4",
+              "caption": "",
+              "alt": "",
+              "width": 1200,
+              "height": 1600,
+              "instructor_notes": null
+            },
+            {
+              "id": 1151872,
+              "key": "23f287c5-22e7-4cb8-a411-9d597f28b610",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "**Step 6:** Insert the Rubber Ducky inside the Laptop to activate (Make sure the USB port is active on the target vm prior to activating)",
+              "instructor_notes": null
+            },
+            {
+              "id": 1151874,
+              "key": "bf039b6c-f1ce-4ab0-b503-c39fbc29490d",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/March/603d97fe_ducky-5/ducky-5.jpeg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/bf039b6c-f1ce-4ab0-b503-c39fbc29490d",
+              "caption": "",
+              "alt": "",
+              "width": 1600,
+              "height": 1200,
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1121732,
+          "key": "8ed06124-9bff-4b6d-ae5e-4c3cd6a79cf0",
+          "title": "Exercise: Remote Connection ",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "8ed06124-9bff-4b6d-ae5e-4c3cd6a79cf0",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1121731,
+              "key": "2755f941-5c36-470e-9929-e7feb0dd5dc7",
+              "title": "Password Attacks Excercise",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Remote Connection via Compromised Flash Drive",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1129816,
+              "key": "cc3185ab-b027-44b0-b080-1f16c97b9ea7",
+              "title": "Exercise Requirements",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "cc3185ab-b027-44b0-b080-1f16c97b9ea7",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Create your payload using msfvenom/veil/shellter",
+                "Configure your rubber duckie flash drive (follow instructions in the walkthrough) If you don't have a Rubber Ducky, skip this step. ",
+                "Start listener service (use multi/handler)",
+                "Execute your payload using the Rubber Ducky or manually to create a backdoor connection"
+              ],
+              "positive_feedback": null,
+              "video_feedback": null,
+              "description": null
+            },
+            {
+              "id": 1142819,
+              "key": "318b8994-323e-4d4e-b338-3afb72facfac",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "pmicrosoftknnmimxj",
+              "pool_id": "microsoft",
+              "view_id": "microsoft-4dmzt",
+              "gpu_capable": null,
+              "configuration": {
+                "partner": "microsoft",
+                "blueprint": {
+                  "kind": "partner-workspace"
+                },
+                "iframe_url": "",
+                "nutanix_pool_id": "",
+                "nutanix_windows_config_id": ""
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1121735,
+          "key": "dd37fd12-bbc0-48df-85cf-5796da82c92b",
+          "title": "Creating a Backdoor Connection Exercise Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "dd37fd12-bbc0-48df-85cf-5796da82c92b",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1121733,
+              "key": "4511955d-f4ee-454a-b823-00888eb2b5ca",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Creating a Backdoor Connection Exercise Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1151875,
+              "key": "adc30863-fee3-470d-8982-1146f1178ee9",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this solution, I completed the following: \n\n1. Create a payload using Veil\n1. Move the payload to your web server\n1. Generate automation code onto Rubber Ducky micro SD using the adapter (Note: this step is OPTIONAL, if you don't have a rubber ducky, you can activate the payload manually. Instructions for physically connecting the rubber ducky is listed below)\n1. Run Meterpreter listening service (use Multi/handler)\n1. Connect the Rubber Ducky to auto activate the payload",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1121739,
+          "key": "7c43ee12-f1b1-423c-9a76-c25360ca33e7",
+          "title": "Meterpreter Session Commands",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "7c43ee12-f1b1-423c-9a76-c25360ca33e7",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1121736,
+              "key": "8d7c9782-67de-453f-9d27-913d9601ca03",
+              "title": "Web App & Database Attacks Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Working with Meterpreter",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1121737,
+              "key": "2278dd45-6b37-44f2-b171-a5ccfe6251d5",
+              "title": "ND350 C2 L3 A12 Meterpreter Session Commands",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "uO2tRNoOI7E",
+                "china_cdn_id": "uO2tRNoOI7E.mp4"
+              }
+            },
+            {
+              "id": 1121738,
+              "key": "884f0cf4-0898-48e2-b770-c5499334e721",
+              "title": "Web App & Database Attacks Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "* Can you identify these commands and what they're used for? \n   * sessions -i\n      * The \"i\" stands for interact. this command will interact with a session number of your choice. Just add the number after \"i\".\n   * sebcam_list\n      * This command will list all the web cam connected to the target.\n   * screenshot\n      * This command will collect a screenshot of the target.\n   * getuid\n      * This command will reveal what username you are logged in as during your meterpreter session. \n   * getsystem\n      * This command will escalate your privilege on the target machine.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1121743,
+          "key": "78a50c29-414b-451e-9298-df57aa95880a",
+          "title": "Exercise: Data Exfiltration",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "78a50c29-414b-451e-9298-df57aa95880a",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1121742,
+              "key": "304aacfd-06ad-4c8e-847c-8b3ce1b38226",
+              "title": "Web App & Database Attacks Excercise",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Stealing the VPN Software",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1124784,
+              "key": "6e4c281b-8be8-4bda-9341-92e058d52a9a",
+              "title": "ND350 C2 L3 A05 Exercise- Data Exfiltration",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Rqqwa9uQgAo",
+                "china_cdn_id": "Rqqwa9uQgAo.mp4"
+              }
+            },
+            {
+              "id": 1129817,
+              "key": "3c4e777c-7996-4a0c-84cf-2df775adaf32",
+              "title": "Exercise Requirement",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "3c4e777c-7996-4a0c-84cf-2df775adaf32",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Using the Kali-Internal Machine, start a meterpreter session with the Win-10 vm in the MZ",
+                "Go to Shell mode from the meterpreter session. Locate the file of interest inside the the target Downloads folder",
+                "Go back to meterpreter mode and use the help (-h)  command to determine which command you will use to download from the target",
+                "Execute the download of the VPN file. You should now have the zip file stored locally. "
+              ],
+              "positive_feedback": null,
+              "video_feedback": null,
+              "description": null
+            },
+            {
+              "id": 1142820,
+              "key": "9f7745d6-cd9f-4a23-9498-1a96016b714c",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "pmicrosoftd9y4jhca",
+              "pool_id": "microsoft",
+              "view_id": "microsoft-58ycd",
+              "gpu_capable": null,
+              "configuration": {
+                "partner": "microsoft",
+                "blueprint": {
+                  "kind": "partner-workspace"
+                },
+                "iframe_url": "",
+                "nutanix_pool_id": "",
+                "nutanix_windows_config_id": ""
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1121746,
+          "key": "e9691e1e-703f-4ad9-a0c2-49889d7bd512",
+          "title": "Web App & Database Attacks Exercise Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "e9691e1e-703f-4ad9-a0c2-49889d7bd512",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1121744,
+              "key": "ab4f172e-b32f-41c9-862e-7e5fa4df15f1",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Data Exfiltration: Exercise Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1121745,
+              "key": "7b28bde9-933b-45ac-823e-a41404b7954a",
+              "title": "ND350 C2 L3 A06 Data Exfiltration Solution",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "rNTYRQB9-Xk",
+                "china_cdn_id": "rNTYRQB9-Xk.mp4"
+              }
+            },
+            {
+              "id": 1124786,
+              "key": "50d50414-504b-4444-817c-41903251d07d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "**Solution Steps**\n\n1. Download the software: `download guest.ovpn`\n1. Run the VPN Client: `openvpn guest.ovpn`",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1121751,
+          "key": "f65327a2-31a1-437c-9aa1-20d1a9152c66",
+          "title": "Password Cracking",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "f65327a2-31a1-437c-9aa1-20d1a9152c66",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1121747,
+              "key": "5e4bd63f-f38b-46a3-82fa-2d2f343022d9",
+              "title": "Phishing and Social Engineering Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Cracking password with John the Ripper and Hash Cat",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1121748,
+              "key": "f5aa08c6-11e1-4e1d-a531-dd25cafc1047",
+              "title": "ND350 C2 L3 A28 Password Cracking",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "_UxbmcGoAg4",
+                "china_cdn_id": "_UxbmcGoAg4.mp4"
+              }
+            },
+            {
+              "id": 1121750,
+              "key": "9cdb3b50-3ce3-41fa-a716-a2067558ee18",
+              "title": "Phishing and Social Engineering Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Commands used: \n\n* use `post/windows/gather/hashdump`\n   * This command will put you inside the hashdump module. from here you can indicate the session number that you want to run the exploit through. (\"set session #\" and then \"run\" will execute the exploit after entering the command above). \n* `hashcat -m 1000 -a 0 hash.txt /usr/share/john/password.lst`\n   * This command will run the hashcat tool and attempt to crack the password hash value that was pulled using hashdump. The hash value of all the guesses listed in the password.lst file will be compared against the password hash value until a match is found.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1121753,
+          "key": "94c607bc-6b6e-4486-8996-91af08afef1b",
+          "title": "SQL injection Explained",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "94c607bc-6b6e-4486-8996-91af08afef1b",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1121752,
+              "key": "6e1b44df-3438-496a-be5a-42eb9b2f89dd",
+              "title": "Phishing and Social Engineering Quiz",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## SQL Injection with Examples",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1124787,
+              "key": "f9493951-ee44-45f9-9638-fe714a17c91e",
+              "title": "ND350 C2 L3 A07 SQL Injection",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "o4OMJTycUxE",
+                "china_cdn_id": "o4OMJTycUxE.mp4"
+              }
+            },
+            {
+              "id": 1124789,
+              "key": "2b6f46f6-daef-464c-a7c6-525c59217fdc",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "```\nSELECT USERNAME,PASSWORD from USERS where USERNAME='Paul' AND PASSWORD=’PaulisAwesome';\n```\n\nbecomes... \n\n```\nSELECT USERNAME,PASSWORD from USERS where USERNAME='Paul' AND PASSWORD=’ ' ||1='1';\n```\n\nWe replaced the password `PaulisAwesome` with `' || 1='1'` making it a \"true\" statement because basic math tell us that **1 does equal 1**. Therefore, the computer reads this as `true` and automatically assumes that the password is `true` since a true statement is entered into the password field.",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1121755,
+          "key": "3337db0e-2086-43ec-845f-1f15bb072c2b",
+          "title": "Different Types of SQL Injections",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "3337db0e-2086-43ec-845f-1f15bb072c2b",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1121754,
+              "key": "37787e17-44f5-408d-a6d0-a2b6a13ebbe8",
+              "title": "Phishing and Social Engineering Excercise",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Different SQL Injection Attack Types",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1124790,
+              "key": "aa0a5937-951f-492a-ad2f-f62ef04c74eb",
+              "title": "ND350 C2 L3 A08 Types Of SQL Injection",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "dZEIikCjMq8",
+                "china_cdn_id": "dZEIikCjMq8.mp4"
+              }
+            },
+            {
+              "id": 1124791,
+              "key": "d9d5ec20-666f-4360-8833-8f8572533b3b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "The different types of SQL Injection are: \n\n* **Error-Based SQLI**: This sort of SQL injection depends on the error messages being tossed by the database server, which may give us some valuable data regarding database structure.\n\n* **Blind Injection**: This happens when the web application is vulnerable to SQL Injection yet the after effects of the SQL query are not returned in the HTTP. \n\n* **Time-based SQLI**: This strategy relies on injecting a SQL query that makes the database wait for a particular time depending on the predetermined condition. The time taken by the server to send back any action decides whether the query is true/false.\n\n* **Union-Based SQLI**: This procedure utilizes the SQL UNION operation to join the result of two selected queries and return single  HTTP response. It permits the hacker to extricate data from different tables by attaching the outcomes to the original query made to the database.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1121758,
+          "key": "87767cd2-e362-46f5-8a34-f83fffd9ab09",
+          "title": "SQL injection",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "87767cd2-e362-46f5-8a34-f83fffd9ab09",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1121756,
+              "key": "16691a21-9e16-47a4-8932-2b79a46c99ad",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## SQL Injection",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1121757,
+              "key": "503d3db7-dbec-46f2-b156-e777267ed16d",
+              "title": "ND350 C2 L3 A09 SQL Injection Walkthrough",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "7Qv561Enuow",
+                "china_cdn_id": "7Qv561Enuow.mp4"
+              }
+            },
+            {
+              "id": 1124792,
+              "key": "65a75e5b-d8f5-4aea-8c9b-fb2cf8332aa8",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Common SQL Injection query for authentication bypass. These are all different ways to create a true statement. They can be entered in either the username and/or the password field of a web application that is vulnerable to SQLI: \n\n* `‘ or 1=1--`\n* `‘ or 1=1#`\n* `‘ or 1=1/*`\n* `‘) or ‘1’ =’1--`\n* `‘) or (‘1’=’1--`\n* `‘ || 1=’1`",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1121741,
+          "key": "d2a302b4-56ad-4e87-b6dd-1946b8f91b08",
+          "title": "Directory Traversal",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d2a302b4-56ad-4e87-b6dd-1946b8f91b08",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1121740,
+              "key": "7bf45fdf-12e8-4dac-9b4c-8350363270fd",
+              "title": "Web App & Database Attacks Quiz",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## An Introduction to Directory Traversal Attacks",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1124793,
+              "key": "903e111b-e1d6-4344-ba2c-f3fb8e79b2ca",
+              "title": "ND350 C2 L3 A10 Intro To Directory Traversal",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "-8o_w9QyobE",
+                "china_cdn_id": "-8o_w9QyobE.mp4"
+              }
+            },
+            {
+              "id": 1124794,
+              "key": "90bc3dcb-27d2-43df-b063-a1371bad90b4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## What is Directory Traversal?\nDirectory Traversal is a type of exploit in which an attacker gets access to the sensitive information in a directory other than the server's root directory. if the attacker is successful, he can see restricted files or even execute malicious commands on the server. These attacks are usually performed using web browsers (HTTP). Any server where input information isn't validated is vulnerable to this kind of attacks.\n\n## How does Directory Traversal work?\nDirectory traversal attacks can be effortlessly executed if there are vulnerabilities in the website's code and the server configuration. This type of vulnerability can be found using various tools such as DIRB. \n\n## How to prevent a Directory Traversal Attack?\n   * Admins should use latest web server software and by making sure that server is well maintained and new patches are applied. \n   * Another way is to whitelist some values and accept only valid values. Remove ../ “ and ..\\  from file directories.\n   * Indexes should be used instead of actual file names (for example, value 2 from the user submission = Lareb, rather than expecting the user to return “Lareb”).\n   * Strict access policies should be implemented where files are stored.\n   * It should be ensured that user can’t supply any text of the path to any file. \n   * Admins with UNIX system should use chrooted jails and code access policies to restrict where files can be obtained.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1121763,
+          "key": "8f86ce66-f813-431b-a628-0b407df0abfc",
+          "title": "Exercise: Directory Traversal",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "8f86ce66-f813-431b-a628-0b407df0abfc",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1121759,
+              "key": "901afcf3-87b0-4075-92b6-1c310e680491",
+              "title": "Vulnerable Software Attack Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Uncovering of Files",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1121760,
+              "key": "733d6fc8-b46d-4570-a200-a149ffe3af37",
+              "title": "ND350 C2 L3 A11 Exercise- Directory Traversal-",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "PLgV6wL8JWw",
+                "china_cdn_id": "PLgV6wL8JWw.mp4"
+              }
+            },
+            {
+              "id": 1121762,
+              "key": "47046fab-ba02-4806-97fe-867655111adf",
+              "title": "Vulnerable Software Attack Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Requirement\n Play around with the directory traversal attack. See if you can uncover the shadow fileion.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1129818,
+              "key": "b6710e22-3721-44db-88b0-f5a550efb6d8",
+              "title": "Exercise Requirement",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "b6710e22-3721-44db-88b0-f5a550efb6d8",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "From the Kali-Internal Machine navigate to the DMZIwebser web site using the Firefox browser. ",
+                "Authenticate to the webserver using SQLI",
+                "Once you have authenticated access, run a directory traversal to see if you can access the content inside the etc/shadow file.",
+                "Think about why or why your were successful in this attack. "
+              ],
+              "positive_feedback": null,
+              "video_feedback": null,
+              "description": null
+            },
+            {
+              "id": 1142821,
+              "key": "68772d4f-a67e-4687-adff-f5c75b512da6",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "pmicrosoft99yz4kx8",
+              "pool_id": "microsoft",
+              "view_id": "microsoft-o0t96",
+              "gpu_capable": null,
+              "configuration": {
+                "partner": "microsoft",
+                "blueprint": {
+                  "kind": "partner-workspace"
+                },
+                "iframe_url": "",
+                "nutanix_pool_id": "",
+                "nutanix_windows_config_id": ""
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1121765,
+          "key": "60ae4289-a9c1-4d65-82a6-28a4aa5ba97e",
+          "title": "Directory Traversal - Exercise Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "60ae4289-a9c1-4d65-82a6-28a4aa5ba97e",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1121764,
+              "key": "58d3ceb9-4e32-4706-8c06-a77e82f47ff2",
+              "title": "Vulnerable Software Attack Quiz",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Directory Traversal - Exercise Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1163292,
+              "key": "9e0f69a4-9ab2-4d0b-98d7-095c0ded357a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Complete the following Steps in order to solve this exercise:\n\n# Step 1: \n\nRun your SQLI injection to gain access to the web application:\n\n `password = ‘ || 1=’1`",
+              "instructor_notes": null
+            },
+            {
+              "id": 1163293,
+              "key": "1b07b614-8476-4e2d-b73d-ce928d4dfe8a",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/March/605b5a8e_sqli/sqli.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/1b07b614-8476-4e2d-b73d-ce928d4dfe8a",
+              "caption": "Login",
+              "alt": "Login - username adm and SQL injection password",
+              "width": 653,
+              "height": 273,
+              "instructor_notes": null
+            },
+            {
+              "id": 1151877,
+              "key": "2883f75e-b178-48fe-baba-325bed9cc121",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Step 2\n\nRun Inspection and enter the following directory inside the input field: `(../../../etc/passwd)`",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1163296,
+              "key": "45eb99b1-58f8-4146-b106-2253bf0dfcb0",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/March/605b5b7f_directory-traversal/directory-traversal.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/45eb99b1-58f8-4146-b106-2253bf0dfcb0",
+              "caption": "Inspecting the page",
+              "alt": "Inspect > Storage > Cookies > Value",
+              "width": 1154,
+              "height": 854,
+              "instructor_notes": null
+            },
+            {
+              "id": 1163301,
+              "key": "7035c3ad-e914-4195-b32f-33df511cb5bd",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "A reveal of the content of the passwd file shows that the target is vulnerable to directory traversal. Now try to reveal the shadow file which is located in the same directory... \n\n`(../../../etc/shadow)`",
+              "instructor_notes": null
+            },
+            {
+              "id": 1163302,
+              "key": "d98af081-5f99-4b65-b833-1fd51d58561a",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/March/605b5df1_directory-traversal2/directory-traversal2.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/d98af081-5f99-4b65-b833-1fd51d58561a",
+              "caption": "Change the Value",
+              "alt": "Change the Value to end with .../etc/shadow",
+              "width": 1200,
+              "height": 779,
+              "instructor_notes": null
+            },
+            {
+              "id": 1163303,
+              "key": "8d083237-2b50-47ae-9afb-a239d96de80e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "I was not able to gain access to the shadow file via directory traversal because it is protected. This file is often restricted to the server admins and other users are not permitted to read the file directly. You can open the content of the Kali Internal machine Shadow file using nano. Nano is a Linux utility that can be used to open text files: \n\nnano '/etc/shadow'\n\nBelow is a screenshot of the content of the file. There are nine fields separated by colons here is a key:  \n\n```undefined\n1:2:3:4:5:6:7:8:9\n```\n\n1. Username\n1. Password in cipher test\n1. Date of last password change\n1. Minimum days required before password changes\n1. Maximum days required before password changes\n1. Number of days to display password expiration message\n1. Number of days after password expires to disable the account\n1. Account expiration date\n1. Reserve Field",
+              "instructor_notes": null
+            },
+            {
+              "id": 1163304,
+              "key": "4de85699-b184-4f76-a7ef-c527996de317",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/March/605b6096_shadow-file/shadow-file.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/4de85699-b184-4f76-a7ef-c527996de317",
+              "caption": "Shadow file content",
+              "alt": null,
+              "width": 637,
+              "height": 637,
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1121767,
+          "key": "347ce456-32f3-4d1f-b564-384596407c43",
+          "title": "Using Burp Suite to Capture Cookies",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "347ce456-32f3-4d1f-b564-384596407c43",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1121766,
+              "key": "dec1e6da-cfd5-430e-9595-3e5e198ec9b1",
+              "title": "Vulnerable Software Attack Quiz",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Using Burp Suite to Capture Cookies",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1124796,
+              "key": "16cd7218-c1d8-4b0d-b58f-eb87d9f6fd97",
+              "title": "ND350 C2 L3 A26 Burpsite- Stealing Cookies-",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "0l-BOjJSwIw",
+                "china_cdn_id": "0l-BOjJSwIw.mp4"
+              }
+            },
+            {
+              "id": 1151878,
+              "key": "f513e6b7-2038-4fb4-aaab-c0000ed50321",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Steps in the Walkthrough\n\n1. We will set up a proxy service on our web browser and configure it to send traffic to Burpsuite before the traffic is forwarded to its destination. \n2. On the web browser, we will log in to mypjbank.com using our admin credentials. Upon logging in, the web browser will receive a session cookie from the bank site.\n3. We will set Burpsuite to intercept the web traffic and capture the cookie that is being used to maintain the session.\n4. we will used that captured traffic and sign on through a different browser. This essentially means we’ve logged in without authenticating.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1121780,
+          "key": "c870a502-1fb2-4639-974a-8461fcb2c564",
+          "title": "Update Your Report",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c870a502-1fb2-4639-974a-8461fcb2c564",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": {
+            "files": [
+              {
+                "name": "Lesson 3 Gaining Access",
+                "uri": "https://video.udacity-data.com/topher/2021/March/60400d38_lesson-3-gaining-access/lesson-3-gaining-access.ctb"
+              }
+            ],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 1121777,
+              "key": "3e21c450-c57a-4ad8-bfa8-056dfe4f1d64",
+              "title": "Update your Report Instructions",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Update Your Report",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1121778,
+              "key": "b4c722d6-48bd-4fb3-8514-3df75d51c238",
+              "title": "ND350 C2 L3 A13 Updating Your Report",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "rWSzFT7DLsg",
+                "china_cdn_id": "rWSzFT7DLsg.mp4"
+              }
+            },
+            {
+              "id": 1151907,
+              "key": "10751f5c-00d1-4939-a615-7d6bfe95d855",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Below is a outline of our updated Cherry Tree Report. \n\nNote: A full copy of the cherry tree report is available below for download.",
+              "instructor_notes": null
+            },
+            {
+              "id": 1162994,
+              "key": "89ae8d86-d6dd-41e3-ad9a-db8541102154",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Outline of the Cherry Tree Up Until This Point\n\n* **Information Discovery - Recon**\n   * Physical Recon\n      * HQ - Address 2440 W El Camino Rea, Mountain View CA\n      * Location Layout\n         * Front Possible rear entrance\n         * Data center is on the 2nd Floor\n         * High Traffic Lobby and Cafeteria Area\n      * **Physical Security**\n         * Low Swing Turnstyle\n         * Two Cameras\n   * **Personnel Reconnaissance**\n      * Maintenance weekend ~15th of every month\n      * James McLovin and Janet Pierce socialize with one another on Twitter\n   * **Network Recon**\n      * Windows 10 are being used by employees\n      * **MYPJBank.com - 74.208.236.247**\n         * **Name Server**\n            * IP: 74.208.236.247\n            * DNS Information\n         * Open ports 80, 81, and 443\n         * Hosting Provider: IONOS (PaaS)\n         * Software Discovery\n      * [NEW] Network Layout - 5 Hosts Discovered\n         * Windows 10 are being used by Employees\n* **Vulnerabilities Discovered**\n   * Physical - On Premise\n      * RFID Badges can be easily cloned\n      * Fed-Ex truck driver gained access without ID\n      * Typosquatting: Domain Names with similar spelling\n   * **MYPJBank.com - 74.208.236.247**\n      * Contact-Form-7 5.3 - Critical Vulnerability (CV-E2020-25213)\n      * Paid Membership Pro < 2.5.3 - Unauthorized Order Information Disclosure Fixed in 2.5.3\n      * Elementor < 3.0.14 - SVG Upload Allowed by\n      * WP Google Map Plugin < 4.1.5 - Authenticated SQL Injection\n   * **Win 10 VM - 10.1.2.6**\n      * XAMPP - 1.7.3\n      * Apache 2.2.14\n      * Slow Loris DOS Attack - CVE: CVE-2007-6750\n      * SSL/TLS MITM Vulnerability (CCS Injection)\n      * SSL POODLE Information Leak - IDs: BID: 70574 CVE:VED-201403566\n      * Open Ports - 21, 22, 25, 79, 443, 445, 110, 106, 3389, 5357\n   * **DMZIServer - 10.1.0.7**\n      * Open Ports: 22 & 80\n      * Apache 2.4.38\n   * **Debianx64DMZwebC-MSCloud-10.1.0.11**\n      * Wordpress 4.8.15\n      * Apache 2.4.38\n   * **DNS Server -10.1.0.8**\n      * Open Ports - 80 & 53\n   * **Debianx64DMZOnCloudNew- 10.1.0.12**\n      * Open Ports - 20, 80, 139, 445, 111\n      * SAMBA 4.2.14\n      * Apache 2.4.10\n* Successful Exploits\n   * **DMZIServer - 10.1.0.7**\n      * Obtained SSH Keys: <br> username: Admin123 <br> Password: Password123!\n      * [NEW] SQL Injection\n      * [NEW] Directory Traversal\n   * [NEW] **Win10 - 10.1.2.4**\n      * XAMPP - 1.7.2 - Remote Access\n      * Social Engineering w/ Rubber Ducky\n      * Data Exfiltration\n      * Password Cracking\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1124943,
+          "key": "7553186d-4df5-4f6d-b44e-8050437fd38d",
+          "title": "Be Flexible and Focused",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "7553186d-4df5-4f6d-b44e-8050437fd38d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1124944,
+              "key": "dfd9cb1c-8ea2-4f18-9d63-537edf9718af",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Be Flexible and Focused",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1124945,
+              "key": "26f49ec6-70ab-4864-aa18-c73731d0c46d",
+              "title": "ND350 C2 L3 A14  Edge Case-Intution Building",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "inGHjGWVYnA",
+                "china_cdn_id": "inGHjGWVYnA.mp4"
+              }
+            },
+            {
+              "id": 1124946,
+              "key": "069a98b3-9f73-46df-9fe1-0c8b853571a2",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Penetration Testing is about educated guessing and checking. Sometimes you are in a black box scenario and wont know what system you are attacking so you will have to use your best judgment to figure out what is the best way to navigate, which comes with experience.\n\nDon't worry if this is hard, the more you practice the more you will gain an intuition about what to try.  Attention to details matter, when you are stuck it is good to look at the details and see if they give you a hint on other ways to gain access.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1121784,
+          "key": "a5ce3a2d-c820-44eb-b10e-13979ce486c3",
+          "title": "Gaining Access Lesson Recap",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a5ce3a2d-c820-44eb-b10e-13979ce486c3",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1121781,
+              "key": "1f7dce92-69dd-49da-bd4f-e5f0da4d54c4",
+              "title": "Gaining Access Lesson Recap Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Gaining Access Lesson Recap",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1121782,
+              "key": "937e71d8-7a54-449e-852c-19ad5978e8a5",
+              "title": "ND350 C2 L3 A15 Lesson Recap",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "d4FN09UV0WQ",
+                "china_cdn_id": "d4FN09UV0WQ.mp4"
+              }
+            },
+            {
+              "id": 1121783,
+              "key": "2efe8307-bfba-4439-a658-b297f3c47084",
+              "title": "Gaining Access Lesson Recap Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "* Understand how payloads are designed\n* Create different types of payload\n* Deploy techniques commonly used to bypass AVs\n* Use a payload to create a backdoor connection\n* Exploit a Windows 10 machine remotely\n* Crack Passwords using Hash Dump\n* Conduct SQL injection\n* Conduct Directory Traversal using logic\n* Utilize Burpsuit to capture web session cookies\n* Bypass authentication with Zap\n* Exploit an on-premise application\n\n\n\n<lesson vocab=\"\" &=\"\" further=\"\" research=\"\"></lesson>",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1173120,
+              "key": "8ac4d1d6-48b5-42e9-a0fc-26cd7a54e079",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Further Research: \n\n* <a href=\"https://owasp.org/www-community/attacks/SQL_Injection\" target=\"_blank\">OWASP Breakdown of SQL Injection</a>\n* <a href=\"https://owasp.org/www-project-top-ten/2017/A2_2017-Broken_Authentication\" target=\"_blank\">OWASP Guidance on Broken Authentication</a>\n* <a href=\"https://www.offensive-security.com/metasploit-unleashed/binary-payloads/\" target=\"_blank\">Metasploit tutorial on Creating a reverse TCP Shell</a>",
+              "instructor_notes": null
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "lesson_type",
+      "reason": "Obsolete"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "starter_files",
+      "reason": "prefer master_archive_id"
+    },
+    {
+      "name": "starter_files",
+      "reason": "prefer master_archive_id"
+    },
+    {
+      "name": "starter_files",
+      "reason": "prefer master_archive_id"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

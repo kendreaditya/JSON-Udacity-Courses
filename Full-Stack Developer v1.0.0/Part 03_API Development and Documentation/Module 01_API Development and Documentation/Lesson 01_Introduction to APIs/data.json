@@ -1,0 +1,535 @@
+{
+  "data": {
+    "lesson": {
+      "id": 899761,
+      "key": "d78f77bd-83ff-406a-a144-4d47e6ba420d",
+      "title": "Introduction to APIs",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "In this lesson, you'll learn what APIs are, how they're implemented, and why they're important. We'll also dive into the concepts of Internet Protocols and REST.  ",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/d78f77bd-83ff-406a-a144-4d47e6ba420d/899761/1581172459406/Introduction+to+APIs+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/d78f77bd-83ff-406a-a144-4d47e6ba420d/899761/1581172456670/Introduction+to+APIs+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 899758,
+          "key": "7d0947e1-a05d-473e-ae3c-c1864a4ef31d",
+          "title": "Welcome!",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "7d0947e1-a05d-473e-ae3c-c1864a4ef31d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 900350,
+              "key": "4d2727c8-ff07-4c7c-9835-28d26a714c93",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Welcome!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 909669,
+              "key": "97edf08c-bc79-460e-9ce2-9355625c1b16",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Welcome to *API Development and Documentation (ADD)*! In the last course of the Nanodegree you learned how to model data for the web—something that is essential to any backend. In this course, you'll learn a lot more about **Application Programming Interfaces** (**APIs**), which are essential for exposing that backend in a controlled way, so you can define behaviors to access and manipulate data while maintaining its integrity.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 900349,
+              "key": "f6660fb1-e963-4cd8-8943-97f821aea595",
+              "title": "FSND C2 L1 A01 Lesson Intro",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "qVWtPBWAYaE",
+                "china_cdn_id": "qVWtPBWAYaE.mp4"
+              }
+            },
+            {
+              "id": 909668,
+              "key": "7f37438c-ed35-468d-8c1e-9e83415fc74c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Throughout this course, there are quizzes and workspaces to test your conceptual and applicable knowledge in preparation for the final project. By the end of the course, you'll develop an API, document it, and—if you like—be able to host your code on GitHub to share with peers and potential employers. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 899748,
+              "key": "61eda566-dd0e-42da-9f97-949d8d257b7e",
+              "title": "Lesson Intro Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Course Overview\n\nHere are the topics and technologies we'll be covering in this course:\n\n## Course Topics:\n- APIs: What, Why, How \n- Handling HTTP Requests\n- Routing and API Endpoints\n- Documentation\n- Testing\n\n## Technologies \n- Flask\n- Flask-CORS\n- SQLAlchemy\n- JSONify\n- Unittest",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917230,
+              "key": "a770e426-1d99-44eb-979d-292a942a8834",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Lesson Overview: Introduction to APIs\n\nBefore you start development, you should conceptually understand what you're doing. In this first lesson, you'll gain that foundational knowledge. Here's what we'll go over: \n- What are APIs?\n- Benefits of APIs\n- IP Communication\n- RESTful APIs\n\nLet's get started!",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 899759,
+          "key": "1afff0e7-c7ba-40a5-85c7-32cf439476a6",
+          "title": "What are APIs",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "1afff0e7-c7ba-40a5-85c7-32cf439476a6",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 899755,
+              "key": "dc1042e4-c6f1-4c24-adc0-2617dacdd87f",
+              "title": "What are APIs Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# What are APIs?",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917231,
+              "key": "bf8e1e01-5a97-4836-a552-f5f26dc173f2",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "If you look up the term **API**, you'll probably find a number of definitions—some of which are rather difficult to understand. But the key underlying idea is in the name—**Application Programming Interface**. An API is an *interface*. It's something that has been created to help two different systems interact with one another.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 899751,
+              "key": "df7a60c8-28a1-4cae-9975-f06621cb1989",
+              "title": "FSND C2 L1 A02 What Are APIs",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "-WdKSbZuias",
+                "china_cdn_id": "-WdKSbZuias.mp4"
+              }
+            },
+            {
+              "id": 909665,
+              "key": "3a6aed30-70d7-4a2f-bf93-297c59f0bc04",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "A key idea to remember is that *API functionality is defined independent of the actual implementation of the provider.* Essentially, you don't need to understand the entirety of the application implementation in order to interact with it through the API. This has multiple benefits:\n1. It doesn't expose the implementation to those who shouldn't have access to it\n2. The API provides a standard way of accessing the application\n3. It makes it much easier to understand how to access the application's data\n\nSome frequently used APIs include: \n- [Google Maps API](https://developers.google.com/maps/documentation/)\n- [Stripe API](https://stripe.com/docs/api?utm_source=zapier.com&utm_medium=referral&utm_campaign=zapier&utm_source=zapier.com&utm_medium=referral&utm_campaign=zapier)\n- [Facebook API](https://developers.facebook.com/docs)\n- [Instagram API](https://www.instagram.com/developer/)\n- [Spotify API](https://developer.spotify.com/documentation/web-api/)\n\nIf you check out any of the above links, you'll find some extensive documentation for the relevant API. Creating good API documentation is an important consideration all to itself, and we'll be discussing it in some detail later in this course.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 899760,
+          "key": "981e61e6-4159-4232-b56b-b2987c0be1fa",
+          "title": "How APIs Work",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "981e61e6-4159-4232-b56b-b2987c0be1fa",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 899757,
+              "key": "29184feb-4381-444a-9596-3e587ae55cbe",
+              "title": "How APIs Work Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# How APIs Work",
+              "instructor_notes": ""
+            },
+            {
+              "id": 899754,
+              "key": "074d71b9-84c3-4d57-b119-0a87dbcda5af",
+              "title": "FSND C2 L1 A03 How APIs Work",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "sYZ7QWCbqF4",
+                "china_cdn_id": "sYZ7QWCbqF4.mp4"
+              }
+            },
+            {
+              "id": 901212,
+              "key": "5a827944-b89f-409b-9b64-68a99e500a22",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Client-Server Communication \n\nWhen you got to a bank, the bank teller acts as an intermediary or *interface* between you and the bank vault. And this is the same type of relationship we see in client-server communication: The user or client makes a request to the API server, which parses the requests, queries the database, formats a response and then sends it back.\n\nHere is the process listed out: \n1. Client sends a request to the API server\n2. The API server parses that request\n3. Assuming the request is formatted correctly, the server queries the database for the information or performs the action in the request\n4. The server formats the response and sends it back to the client\n5. The client renders the response according to its implementation",
+              "instructor_notes": ""
+            },
+            {
+              "id": 899756,
+              "key": "47bcb330-8ed3-47c7-af4d-2f2d97d53ca4",
+              "title": "What are APIs Quiz 1",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "47bcb330-8ed3-47c7-af4d-2f2d97d53ca4",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What does API stand for? ",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "Application Programming Interface",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "Allotted Program Interaction",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "Assorted Program Implementations",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk4",
+                    "text": "Application Procedure Implementations",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 899749,
+              "key": "989db1ac-6966-4aab-9188-972c458a1423",
+              "title": "What are APIs Quiz 2",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "989db1ac-6966-4aab-9188-972c458a1423",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What are some of the benefits an API provides? ",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "Defines standardized methods of accessing application data",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "Simplifies the database structure",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "Doesn’t expose application implementation",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk4",
+                    "text": "Makes frontend rendering more efficient",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 901214,
+          "key": "afedc319-2410-433d-acd5-a64a35c26b95",
+          "title": "Internet Protocols",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "afedc319-2410-433d-acd5-a64a35c26b95",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 901217,
+              "key": "34fa0c29-2bfb-46df-b134-00e54f2f0bc3",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Internet Protocols (IPs)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 901218,
+              "key": "1f2fbf40-e60f-4f94-bd11-416cc327b4f6",
+              "title": "FSND C2 L1 A04 Internet Protocols",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "se7mHFvttCs",
+                "china_cdn_id": "se7mHFvttCs.mp4"
+              }
+            },
+            {
+              "id": 909666,
+              "key": "0ab414b0-de54-42be-b79b-e8020de6e8c5",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Internet Protocol (IP) is the protocol for sending data from one computer to another across the internet. Each computer must have a unique IP address that identifies it from all other computers connected to the internet. It's likely that you've heard the term IP address before, even if you didn't know exactly what it meant. \n\nThere are many other internet protocols including:\n- Transmission Control Protocol (TCP) which is used for data transmission\n- Hypertext Transmission Protocol (HTTP) which is used for transmitting text and hyperlinks\n- File Transfer Protocol (FTP) which is used to transfer files between server and client \n\nOur API will transmit data to our client via HTTP so we will primarily focus on that protocol. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 909671,
+              "key": "a67c8713-5d4a-403b-b33d-ba88ad659079",
+              "title": "",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "a67c8713-5d4a-403b-b33d-ba88ad659079",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What two internet protocols will your API use to receive requests and send responses?",
+                "answers": [
+                  {
+                    "id": "a1565665612302",
+                    "text": "FTP",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1565665620863",
+                    "text": "HTTP",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1565665621855",
+                    "text": "TCP",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1565665622359",
+                    "text": "RTC",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 901215,
+          "key": "cbfaa84e-d032-4ea4-8937-9a1ab399a9fc",
+          "title": "RESTful APIs",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "cbfaa84e-d032-4ea4-8937-9a1ab399a9fc",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 901219,
+              "key": "cda92246-54f2-4029-9a08-1bc8865b86d4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# RESTful APIs",
+              "instructor_notes": ""
+            },
+            {
+              "id": 901220,
+              "key": "7b24df03-2fc1-4b9e-882d-28021b308c93",
+              "title": "FSND C2 L1 A05 RESTful",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "A8MSvJs02IA",
+                "china_cdn_id": "A8MSvJs02IA.mp4"
+              }
+            },
+            {
+              "id": 909667,
+              "key": "5df7be3e-d9ca-4188-b854-d11a0ee53a85",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "If you've done some research into developing APIs, you may have come across the term RESTful API. **REST** stands for **Representational State Transfer**, which is an architectural style introduced by [Roy Fielding in 2000](https://www.ics.uci.edu/~fielding/pubs/dissertation/fielding_dissertation.pdf).\n\nHere's a short summary of the REST principles:\n- **Uniform Interface**: Every rest architecture must have a standardized way of accessing and processing data resources. This include unique resource identifiers (i.e., unique URLs) and self-descriptive messages in the server response that describe how to process the representation (for instance JSON vs XML) of the data resource.\n- **Stateless**: Every client request is self-contained in that the server doesn't need to store any application data in order to make subsequent requests \n- **Client-Server**: There must be both a client and server in the architecture \n- **Cacheable & Layered System**: Caching and layering increases networking efficiency\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 909670,
+              "key": "6788a1ad-1c65-4eb2-88f5-29727dd610c6",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "6788a1ad-1c65-4eb2-88f5-29727dd610c6",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Match the principles of REST to their descriptions"
+                },
+                "concepts_label": "Description",
+                "answers_label": "Principle",
+                "concepts": [
+                  {
+                    "text": "Resources are only accessible as representations and the rules for processing that representation are described through self-descriptive messages. ",
+                    "correct_answer": {
+                      "id": "a1565665407765",
+                      "text": "Uniform Interface"
+                    }
+                  },
+                  {
+                    "text": "Every client request to the server is self-contained and subsequent requests do not require information from prior requests. ",
+                    "correct_answer": {
+                      "id": "a1565665433874",
+                      "text": "Stateless"
+                    }
+                  },
+                  {
+                    "text": "A client and server must be present in the architecture. ",
+                    "correct_answer": {
+                      "id": "a1565665436209",
+                      "text": "Client-Server"
+                    }
+                  },
+                  {
+                    "text": "Caching and other techniques are utilized in order to increase network efficiency.",
+                    "correct_answer": {
+                      "id": "a1565665436756",
+                      "text": "Cacheable & Layered System"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1565665433874",
+                    "text": "Stateless"
+                  },
+                  {
+                    "id": "a1565665436209",
+                    "text": "Client-Server"
+                  },
+                  {
+                    "id": "a1565665407765",
+                    "text": "Uniform Interface"
+                  },
+                  {
+                    "id": "a1565665436756",
+                    "text": "Cacheable & Layered System"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 901221,
+          "key": "6e1a1146-1988-419d-9ccb-aefeb5d515ab",
+          "title": "Let's get started!",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "6e1a1146-1988-419d-9ccb-aefeb5d515ab",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 901222,
+              "key": "03d3d656-8139-47ef-9c13-64764b9bcf90",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Let's get started!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 901223,
+              "key": "14854c45-63ac-4436-a950-6c05f7e82cb2",
+              "title": "FSND C2 L1 A06 Outro",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "g9fjnidcBc0",
+                "china_cdn_id": "g9fjnidcBc0.mp4"
+              }
+            },
+            {
+              "id": 917238,
+              "key": "44e80825-609b-4ba3-8411-573dbb5fb6fb",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this brief lesson, we took a short tour of some foundational concepts:\n- What are APIs?\n- Benefits of APIs\n- IP Communication\n- RESTful APIs\n\nRunning through all of these topics is one core idea—that we have a client who needs something from a database, and we need an *interface* to help fulfill that request. Now that we have that fundamental idea in mind, let's get started!",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

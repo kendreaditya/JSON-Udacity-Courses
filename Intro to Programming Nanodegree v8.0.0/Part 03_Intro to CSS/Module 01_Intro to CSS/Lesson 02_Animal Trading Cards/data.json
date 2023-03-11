@@ -1,0 +1,270 @@
+{
+  "data": {
+    "lesson": {
+      "id": 817306,
+      "key": "87257465-644a-4d47-9356-4564eaaf520f",
+      "title": "Animal Trading Cards",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Use your knowledge of HTML and CSS to create a web-based trading card depicting your favorite animal.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/87257465-644a-4d47-9356-4564eaaf520f/817306/1549159761663/Animal+Trading+Cards+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/87257465-644a-4d47-9356-4564eaaf520f/817306/1549159759770/Animal+Trading+Cards+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": {
+        "key": "91350a4e-13b7-4e38-a2b8-a834a7b955ea",
+        "version": "1.0.0",
+        "locale": "en-us",
+        "duration": 37440,
+        "semantic_type": "Project",
+        "title": "Animal Trading Cards",
+        "description": " Use what you've learned about CSS to convert a design prototype into a functional webpage!\n\n### Project Submission\n\n* Once you're satisfied with your result, check your project against the **[Project Rubric](https://review.udacity.com/#!/projects/7428479271/rubric)** to make sure you've satisfied all requirements.\n* Take a look at the [Udacity Style Guide](https://udacity.github.io/frontend-nanodegree-styleguide/) for HTML and CSS, and try to align your code with the style guidelines. These guidelines are used to make code easier to read!\n* Create a zip file containing `card.html`, `styles.css`, and your new animal image (unless you linked to an image hosted online).\n* Submit your project to be reviewed.\n\nHave fun and be creative 🐠 🐍 🐅 🐼 🐫 ! Writing CSS isn't an exact science, so feel free to experiment. For example, you might want to add rounded corners or a background color to your card. Your submission should resemble the design prototype, but it's okay if it doesn't match exactly, so long as you satisfy all the requirements.\n\n## Project Submission Checklist\n\n**Before submitting your project, please review and confirm the following items.** \n<input type=\"checkbox\"> I am confident all rubric items have been met and my project will pass as submitted. \n<input type=\"checkbox\"> Project builds correctly without errors and runs.\n<input type=\"checkbox\"> All required functionality exists and my project behaves as expected per the project's specifications.\n\n**Once you have checked all these items, you are ready to submit!**",
+        "is_public": true,
+        "summary": null,
+        "forum_path": "",
+        "rubric_id": "1955",
+        "terminal_project_id": null,
+        "resources": null,
+        "image": {
+          "url": "https://s3.amazonaws.com/video.udacity-data.com/topher/2019/January/5c534fc5_animal-trading-cards/animal-trading-cards.png",
+          "width": 1160,
+          "height": 384
+        }
+      },
+      "lab": null,
+      "concepts": [
+        {
+          "id": 55685,
+          "key": "74228992680923",
+          "title": "Project Overview and Instructions",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "74228992680923",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 676662,
+              "key": "8c947555-3b82-4413-a02c-c8b9d7c1b7e4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": " # Animal Trading Cards",
+              "instructor_notes": ""
+            },
+            {
+              "id": 486523,
+              "key": "1f545185-fe13-4b1c-aa11-7ac8090cd64c",
+              "title": "Animal Trading Cards",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "hFszXTvBUgY",
+                "china_cdn_id": "hFszXTvBUgY.mp4"
+              }
+            },
+            {
+              "id": 1015672,
+              "key": "e0ed785b-8e0a-498a-a12c-f8738202829a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## A. Project Overview\n\nAre you starting to feel like a web developer yet? You should!\n\nBefore you move on, I have one more challenge. I want you to use what you've learned up to this point to complete the following project. Simply titled, \"Animal Trading Cards\", this project combines the skills you mastered in the problem set and asks you to re-create a webpage from a design prototype.\n\nThis is a common workflow for front-end web developers. Typically, you'll be provided with a design prototype that needs to be translated to an actual, functional website. In most cases, designers only provide you with the design prototype. However, for this project, I've provided you with the design prototype and the HTML. The design prototype used in this project is inspired by trading cards and features a fish you might recognize from a popular animated film. You’ll be creating the card and swapping out the fish with an animal of your choice.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015673,
+              "key": "f93dc213-c9f0-4f8b-9914-47e36d62be3d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## B. Project Instructions\n#### 1.  View the Project Rubric     \nWhen doing a Udacity Project, it's an excellent habit to view the rubric once before doing the project *(to understand the requirements)* and once after doing the project *(to check your work)*. You can go to the [Project Rubric](https://review.udacity.com/#!/rubrics/151/view) page to read the details.  For your convenience, the next page also describes the rubric. \n\n#### 2. Download Project Template   \nDownload and unzip [animal-trading-cards-master.zip](https://github.com/udacity/animal-trading-cards/archive/master.zip). Inside, you'll find `card.html`, `styles.css`, `placeholder.png`, and the `design-prototype.png`.    \n\n\n#### 3. Have a look at each of the files. \n- Open `card.html` and view its code. See how it renders in the browser. \n- Have a look at the `design-prototype.png`. Note down what you notice about the styling or structure of the prototype.    \n- The `styles.css` will be blank. You will be adding the `CSS` here. \n- The `placeholder.png` is a blank image that is used as a placeholder instead of an animal's picture.      \n\n\nYour job is to try and make your card resemble what you see in the `design-prototype.jpg`. You’ll need to modify `card.html` to include `attributes` and use CSS `selectors` to style specific elements.     \n\n\n#### 4.  Customize `card.html`  \n\n\n- Open `card.html`.      \n\n\n- Download your favorite animal's image. I personally love pandas so I have downloaded a pandas' image.     ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015674,
+              "key": "5413c20a-e238-4d06-a2e1-394188661332",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5ea168a8_panda/panda.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/5413c20a-e238-4d06-a2e1-394188661332",
+              "caption": "Image courtesy - [Canva](www.canva.com)",
+              "alt": "",
+              "width": 1608,
+              "height": 1069,
+              "instructor_notes": null
+            },
+            {
+              "id": 1015675,
+              "key": "d2ae4f7f-1903-4f24-93c2-59a59c37131e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "- Replace the placeholder image with your favorite animal's image.   \n\n\n- Don't forget to change the image's `alt` attribute to the name of your animal.  So, `alt=\"name-of-your-animal\"` should be replaced with the actual name of your animal.  \n\n\n- Modify `card.html` to include `attributes` so that you can use CSS `selectors` to style the elements specified in the next step - __Customize `styles.css`__.   Make sure you use meaningful names for CSS classes. \n\n\n- Link your stylesheet in `card.html` or else your CSS, `styles.css` will not be applied to your webpage.  You will not be including any `<style>` elements or `style` attributes in the body of `card.html`.    \n\n\n- Replace the current information with your animal's information. Information will refer to:  \n    - The Animal's Name\n    - The Interesting Fact about the Animal\n    - The List of Items for your Animal's Characteristics. \n    - Your Animal's Brief Description.      ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015676,
+              "key": "5dc2f8b6-8763-4cc9-8921-d1f30a0a3c2a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### 5. Customize `styles.css`      \n\nOpen `styles.css` and apply the following style to match the design prototype:     \n- For the image, you will want to use an image with a `width` of 300 pixels. If your image is larger, you can set the image's width to 300 pixels in your `CSS`, but be aware that your image might end up squished or distorted. Later, we'll talk about how you can fix this problem using [responsive images](https://www.udacity.com/course/responsive-images--ud882).        \n\n\n- The entire card's width should be fixed and include the spacing around the image (Since image is 300px wide, card should be 300px + spacing on either side.) The card should not expand with the browser window.         \n\n\n- Italicized text for the animal's interesting fact.      \n\n\n- Bold the Labels for the animals' list items (e.g. 'Habitat'). Note that you have to only bold the labels, not the entire list items.      \n\n\n- No dots for the animal's list items.        \n\n\n- Border around the animal name, image and it's information (interesting fact, list items, and description). Make sure you set the `border-style`, `border-width` and `border-color`. You can even do it in one line.      \n\n\n\n- Spacing / [Padding](https://developer.mozilla.org/en-US/docs/Web/CSS/padding) around the animal's name, image, the list of items and the information.      \n\n \nFeel free to customize your information and styles so long as you follow the above rules. For inspiration, you can try playing around with background colors or border-radius.  You can even add a box shadow on the entire card.      ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 100332,
+              "key": "7422899268",
+              "title": "Animal Trading Cards Overview",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "---\n\n## C. Supporting Materials\n- [animal-trading-cards-master.zip](https://github.com/udacity/animal-trading-cards/archive/master.zip)",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1015670,
+          "key": "eddea1b8-1c7c-4224-b1aa-de10ba4646ab",
+          "title": "Project Rubric",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "eddea1b8-1c7c-4224-b1aa-de10ba4646ab",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1015677,
+              "key": "de9e5dd5-59bd-4048-9e48-715f5900f9d9",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Project Rubric\nThe following are the specifications as enlisted in the [Project Rubric](https://review.udacity.com/#!/rubrics/151/view).",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015678,
+              "key": "6cf48807-c3eb-4fa3-98c2-ee9c74d946ad",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Section 1 - Design \n\n#### Criteria - Design   \n\n- The page resembles the card from a design prototype.\n    - The text is italicized for the animal’s interesting fact.\n    - The labels are bolded for the animal’s list items.\n    - The dots are removed from the animal's list items.\n    - The page has a border around the animal’s name, image, and information (interesting fact, list items, and description).   \n    - The page uses spacing between the animal’s name, image, and information.\n    - Card width should be fixed and include the spacing around the image (Since the image is 300px wide, the card should be 300px + spacing on either side. Card should not expand with the browser window).      \n\nFeel free to customize your information and styles so long as you follow the above rules. For inspiration, you can try playing around with background colors or border-radius!        \n\n#### Criteria - Custom Image and Text   \n\n- The placeholder image and information is replaced with favorite animal image and information.      \n- The image is 300px wide or the image's width is set to 300px.     \n- The image’s `alt` is relevant to the animal used.       \n\n\n## Section 2 - Code Quality    \n\n#### Criteria - CSS Classes   \n\n- The `HTML` includes classes that are used for styling.     \n- CSS Classes are given meaningful names.      \n\n\n#### Criteria - Separation of Concerns   \n\n- The student separates `HTML` from `CSS` by linking to the stylesheet.    \n- `HTML` code does not include `<style>` elements or `style` attributes in the body.     \n\n#### Criteria - Code Quality\n\n- Code is ready for review, meaning new lines and indentation are used for easy readability. ",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1015671,
+          "key": "a5314333-d104-4c70-b3e8-4e6e7f6f3cdf",
+          "title": "Project Rubric - Checklist",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a5314333-d104-4c70-b3e8-4e6e7f6f3cdf",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1015712,
+              "key": "51aff54b-6e47-444f-ba9d-a1247797c722",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Check Your Project\nBefore submitting your project, it's always a good idea to check your project against the rubric. If you haven't already, go through the [Project Rubric](https://review.udacity.com/#!/rubrics/151/view) and check on the task list below.    ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015713,
+              "key": "9f1011d1-7c61-4345-8b1e-d0a469c294f7",
+              "title": "Section 1 - Design",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "9f1011d1-7c61-4345-8b1e-d0a469c294f7",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "The page resembles the card from design prototype.",
+                "The text is italicized for the animal’s interesting fact.",
+                "The labels are bolded for the animal’s list items.",
+                "The dots are removed from the animal's list items.",
+                "The page has a border around the animal’s name, image, and information (interesting fact, list items, and description).",
+                "The page uses spacing between the animal’s name, image, and information.",
+                "Card width should be fixed and include the spacing around the image (Since the image is 300px wide, the card should be 300px + spacing on either side. Card should not expand with the browser window).",
+                "The placeholder image and information is replaced with favourite animal image and information.",
+                "The image is 300px wide or the image's width is set to 300px.",
+                "The image’s `alt` is relevant to the animal used."
+              ],
+              "positive_feedback": "Great! Now go ahead and check your Code Quality!",
+              "video_feedback": null,
+              "description": ""
+            },
+            {
+              "id": 1015714,
+              "key": "ddfba9e5-fb21-43d2-92c6-621d5b15d1ae",
+              "title": "Section 2 - Code Quality",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "ddfba9e5-fb21-43d2-92c6-621d5b15d1ae",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "The `HTML` includes classes that are used for styling.",
+                "CSS Classes are given meaningful names.",
+                "The student separates `HTML` from `CSS` by linking to the stylesheet.",
+                "`HTML` code does not include `<style>` elements or `style` attributes in the body.",
+                "Code is ready for review, meaning new lines and indentation are used for easy readability."
+              ],
+              "positive_feedback": "Awesome work there! Seems like you're ready to submit your project! :D",
+              "video_feedback": null,
+              "description": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

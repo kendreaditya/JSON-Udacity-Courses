@@ -1,0 +1,219 @@
+{
+  "data": {
+    "lesson": {
+      "id": 696471,
+      "key": "f680ebe0-9aa6-4183-ae4a-0cd30d07706b",
+      "title": "Project: Deploying a Sentiment Analysis Model",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "In this project, you will build and deploy a neural network which predicts the sentiment of a user-provided movie review. In addition, you will create a simple web app that uses your deployed model.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/f680ebe0-9aa6-4183-ae4a-0cd30d07706b/696471/1544197154899/Project%3A+Deploying+a+Sentiment+Analysis+Model+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/f680ebe0-9aa6-4183-ae4a-0cd30d07706b/696471/1544197152172/Project%3A+Deploying+a+Sentiment+Analysis+Model+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": {
+        "key": "13aa7077-74d7-4f98-89d7-f21feb32d0c2",
+        "version": "1.0.0",
+        "locale": "en-us",
+        "duration": 40320,
+        "semantic_type": "Project",
+        "title": "Deploying a Sentiment Analysis Model",
+        "description": "## Project Overview\n\nWelcome to the SageMaker deployment project! In this project you will construct a recurrent neural network for the purpose of determining the sentiment of a movie review using the IMDB data set. You will create this model using Amazon's SageMaker service. In addition, you will deploy your model and construct a simple web app which will interact with the deployed model.\n\n## Project Instructions\n\nThe deployment project which you will be working on is intended to be done using Amazon's SageMaker platform. In particular, it is assumed that you have a working notebook instance in which you can clone the deployment repository.\n\n## Evaluation\n\nYour project will be reviewed by a Udacity reviewer against the deployment project [rubric](https://review.udacity.com/#!/rubrics/2262/view).  Review this rubric thoroughly, and self-evaluate your project before submission.  All criteria found in the rubric must meet specifications for you to pass.\n\n## Project Submission\n\nWhen you are ready to submit your project, collect all of the files in the project directory and compress them into a single archive for upload. In particular, make sure that the following files are included:\n- The `SageMaker Project.ipynb` file with fully functional code, **all code cells executed and displaying output**, and **all questions answered**.\n- An HTML or PDF export of the project notebook with the name `report.html` or `report.pdf`.\n- The completed `train/train.py` and `serve/predict.py` python files.\n- The edited `website/index.html` file.\n\nAlternatively, your submission could consist of the GitHub link to your repository.\n\n## Project Submission Checklist\n\n**Before submitting your project, please review and confirm the following items.** \n<input type=\"checkbox\"> I am confident all rubric items have been met and my project will pass as submitted. \n<input type=\"checkbox\"> Project builds correctly without errors and runs.\n<input type=\"checkbox\"> All required functionality exists and my project behaves as expected per the project's specifications.\n\n**Once you have checked all these items, you are ready to submit!**\n\n### Ready to submit your project?\n\nClick on the \"Submit Project\" button and follow the instructions to submit!",
+        "is_public": true,
+        "summary": null,
+        "forum_path": "",
+        "rubric_id": "2262",
+        "terminal_project_id": null,
+        "resources": null,
+        "image": {
+          "url": "https://s3.amazonaws.com/video.udacity-data.com/topher/2018/November/5bf33a3a_sentiment-analysis/sentiment-analysis.jpg",
+          "width": 1200,
+          "height": 900
+        }
+      },
+      "lab": null,
+      "concepts": [
+        {
+          "id": 730129,
+          "key": "100d8216-8f83-4998-a374-f70b7d3a1751",
+          "title": "Deployment Project",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "100d8216-8f83-4998-a374-f70b7d3a1751",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 770980,
+              "key": "98325069-7a26-40cb-9d64-6fb8bd67a5b1",
+              "title": "Deploying a Sentiment Analysis Model",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "LWcJtUKVkzo",
+                "china_cdn_id": "LWcJtUKVkzo.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 770982,
+          "key": "806f321e-3d19-4f09-84aa-02ae616ea2d3",
+          "title": "Setting up a Notebook Instance",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "806f321e-3d19-4f09-84aa-02ae616ea2d3",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 770983,
+              "key": "93b3bcb3-244a-4378-aaed-c30d7ac8b937",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Setting up a Notebook Instance\n\nThe deployment project which you will be working on is intended to be done using Amazon's SageMaker platform. In particular, it is assumed that you have a working notebook instance in which you can clone the deployment repository.\n\nIf you have not yet done this, please see the beginning of Lesson 2 in which we walk through creating a notebook instance and cloning the deployment repository. Alternatively, you can follow the instructions below.\n\nFirst, start by logging in to the [AWS console](http://console.aws.amazon.com), opening the SageMaker dashboard and clicking on **Create notebook instance**.\n\nYou may choose any name you would like for your notebook. A **ml.t2.medium** is used to launch the notebook and is available by default. Inside the notebook **ml.p2.xlarge** is used for __training__ a model and **ml.m4.xlarge** is used for __deployment__. These instance may not be available to all users by default.  If you haven't requested **ml.p2.xlarge** so far please follow the instructions on the next page to request it now.\n\nNext, under **IAM role** select **Create a new role**. You should get a pop-up window that looks like the one below. The only change that needs to be made is to select **None** under **S3 buckets you specify**, as is shown in the image below.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 770984,
+              "key": "016520a2-0ef1-47e1-9780-5d563e82f707",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2018/October/5bd74c8c_create-an-iam-role/create-an-iam-role.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/016520a2-0ef1-47e1-9780-5d563e82f707",
+              "caption": "",
+              "alt": "Create an IAM role dialog box",
+              "width": 821,
+              "height": 565,
+              "instructor_notes": null
+            },
+            {
+              "id": 770985,
+              "key": "c8ecadac-c33f-48ce-ab3b-876a1fc3afa2",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Once you have finished setting up the role for your notebook, your notebook instance settings should look something like the image below.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 770986,
+              "key": "aafdf405-c44d-4228-8b7b-3941f11f5bda",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2018/October/5bd74cba_notebook-instance-settings/notebook-instance-settings.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/aafdf405-c44d-4228-8b7b-3941f11f5bda",
+              "caption": "",
+              "alt": "Notebook instance settings",
+              "width": 802,
+              "height": 661,
+              "instructor_notes": null
+            },
+            {
+              "id": 770987,
+              "key": "ee19bb6d-6f28-469c-a508-f97872f12e3e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Note that your notebook name may be different than the one displayed and the IAM role that appears will be different.\n\nNext, scroll down to the section labelled **Git repositories**. Here you will clone the `https://github.com/udacity/sagemaker-deployment.git` repository. \n\nOnce you have filled in all of the required values, the settings should look as so:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 817593,
+              "key": "c559e9f3-e4d2-4dca-ad76-e4e1f506c98c",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2019/February/5c59a95c_clone-git-repo-sagemaker/clone-git-repo-sagemaker.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/c559e9f3-e4d2-4dca-ad76-e4e1f506c98c",
+              "caption": "",
+              "alt": "",
+              "width": 1213,
+              "height": 513,
+              "instructor_notes": null
+            },
+            {
+              "id": 817592,
+              "key": "17129508-f69e-4518-aec3-26a3224b740b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "You're done! Click on **Create notebook instance**. \n\nYour notebook instance is now set up and ready to be used!\n\nOnce the Notebook instance has loaded, you will see a screen resembling the following. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 817597,
+              "key": "cbfaf09c-912f-466b-a69a-90e7fd4dba3b",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2019/February/5c59aa8c_sagemaker-open-jupyter/sagemaker-open-jupyter.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/cbfaf09c-912f-466b-a69a-90e7fd4dba3b",
+              "caption": "",
+              "alt": "",
+              "width": 1317,
+              "height": 316,
+              "instructor_notes": null
+            },
+            {
+              "id": 817596,
+              "key": "fe49eada-2c41-4a3f-9f3f-9241d53151bb",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "You can access your notebook using the Action \"Open Jupyter\". ",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

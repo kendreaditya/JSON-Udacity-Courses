@@ -1,0 +1,3752 @@
+{
+  "data": {
+    "nanodegree": {
+      "id": 1046684,
+      "key": "nd350",
+      "title": "Ethical Hacker",
+      "semantic_type": "Degree",
+      "is_public": true,
+      "cohorts": [
+        {
+          "id": 17372,
+          "start_at": "2021-03-16T19:00:00.000Z",
+          "due_at": null,
+          "end_at": null
+        }
+      ],
+      "version": "1.0.0",
+      "locale": "en-us",
+      "color_scheme": "color_scheme1",
+      "enrollment": {
+        "product_variant": "STANDARD",
+        "variant": "STANDARD",
+        "static_access": null
+      },
+      "nd_units": [
+        {
+          "id": 10436
+        }
+      ],
+      "hero_image": {
+        "url": "https://video.udacity-data.com/topher/2020/July/5f220bb9_noun-hacker-2767862/noun-hacker-2767862.png"
+      },
+      "forum_path": "",
+      "summary": "This program will equip students with the skills they need to advance in their security career and become an Ethical Hacker or Penetration Tester.",
+      "is_graduated": false,
+      "is_term_based": true,
+      "is_default": true,
+      "project_deadlines": [
+        {
+          "due_at": "2021-05-30T20:40:39.260Z",
+          "node_key": "32077ccd-f9bb-41d1-973e-a15eba385548"
+        },
+        {
+          "due_at": "2021-06-27T20:40:39.260Z",
+          "node_key": "95eb58e1-0f8c-421b-b5eb-90ad64299492"
+        },
+        {
+          "due_at": "2021-06-28T20:40:39.260Z",
+          "node_key": "0051a3da-930f-47a1-bd41-d7fe3bd324f4"
+        },
+        {
+          "due_at": "2021-06-29T20:40:39.260Z",
+          "node_key": "4180859007"
+        }
+      ],
+      "user_state": {
+        "node_key": "nd350",
+        "completed_at": "2021-05-02T20:40:47.620Z",
+        "last_viewed_at": "2021-05-03T02:05:09.963Z",
+        "unstructured": null
+      },
+      "aggregated_state": {
+        "node_key": "nd350",
+        "completion_amount": 0.015384615384615385,
+        "completed_count": 1,
+        "concept_count": 297,
+        "last_viewed_child_key": "931a3b03-d129-43f1-9972-945018036ffd",
+        "part_aggregated_states": [
+          {
+            "node_key": "931a3b03-d129-43f1-9972-945018036ffd",
+            "completed_at": null,
+            "completion_amount": 0.07692307692307693,
+            "completed_count": 1,
+            "concept_count": 13,
+            "last_viewed_child_key": "34633c7b-9c88-424c-a339-f290d3af3b6e",
+            "module_aggregated_states": [
+              {
+                "node_key": "34633c7b-9c88-424c-a339-f290d3af3b6e",
+                "completed_at": null,
+                "completion_amount": 0.07692307692307693,
+                "completed_count": 1,
+                "concept_count": 13,
+                "last_viewed_child_key": "d03deb6d-3aee-4331-b4ed-67b8cd2ec8bb",
+                "lesson_aggregated_states": [
+                  {
+                    "node_key": "7f204648-cbb0-40a5-a2af-ac31082452ea",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 4,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "82d21b83-a3a9-42ce-9f06-d5ac8b35d642"
+                  },
+                  {
+                    "node_key": "d03deb6d-3aee-4331-b4ed-67b8cd2ec8bb",
+                    "completed_at": null,
+                    "completed_count": 1,
+                    "concept_count": 9,
+                    "completion_amount": 0.1111111111111111,
+                    "last_viewed_child_key": "99232e4b-299c-40f5-a985-3162da96288e"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "node_key": "7cb064b6-b6c9-41d9-8132-08f29aabe0cb",
+            "completed_at": null,
+            "completion_amount": 0,
+            "completed_count": 0,
+            "concept_count": 119,
+            "last_viewed_child_key": "eb4f8453-0690-479d-9512-1da8cbe3ce75",
+            "module_aggregated_states": [
+              {
+                "node_key": "eb4f8453-0690-479d-9512-1da8cbe3ce75",
+                "completed_at": null,
+                "completion_amount": 0,
+                "completed_count": 0,
+                "concept_count": 119,
+                "last_viewed_child_key": "ee11944d-da71-4095-bdc1-19cc608efe4a",
+                "lesson_aggregated_states": [
+                  {
+                    "node_key": "ee11944d-da71-4095-bdc1-19cc608efe4a",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 11,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "96c1be21-3265-4a09-879d-811b12770770"
+                  },
+                  {
+                    "node_key": "b77b4db7-3d68-4faa-9617-b6204eed0ae0",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 19,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "7010a0f0-c033-4aed-93b1-426231144ff2"
+                  },
+                  {
+                    "node_key": "d14c427d-b5bb-479f-8a6b-3de7c75b6918",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 26,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "1ca3dc50-ccc0-4765-863e-30288f50f511"
+                  },
+                  {
+                    "node_key": "a25ee65c-5606-4006-8085-b1656a092846",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 21,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "4b5556cc-edbc-4f4f-b294-5e5286c7ad06"
+                  },
+                  {
+                    "node_key": "774c0ab9-077c-4666-8634-06cdb01cdb8f",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 19,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "d32f3806-9635-468f-a029-c841f0de84cf"
+                  },
+                  {
+                    "node_key": "e5630ee6-cf86-42f8-826f-1dda4d12274e",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 20,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "3d258fc5-7db2-4bb4-bc6b-bd31765657b8"
+                  },
+                  {
+                    "node_key": "12c1f479-65d4-45d4-abf7-36301dc24461",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 3,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "99015004-610a-4903-be92-4fe005f3b265"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "node_key": "71180866-a076-4b70-afb0-5632d4af2ccd",
+            "completed_at": null,
+            "completion_amount": 0,
+            "completed_count": 0,
+            "concept_count": 133,
+            "last_viewed_child_key": "2355235e-cb76-42a4-91d7-247e5f8dc745",
+            "module_aggregated_states": [
+              {
+                "node_key": "2355235e-cb76-42a4-91d7-247e5f8dc745",
+                "completed_at": null,
+                "completion_amount": 0,
+                "completed_count": 0,
+                "concept_count": 133,
+                "last_viewed_child_key": "8b3d2316-7e6c-429c-8962-428522495545",
+                "lesson_aggregated_states": [
+                  {
+                    "node_key": "8b3d2316-7e6c-429c-8962-428522495545",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 15,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "644d458d-b058-4d34-8128-b7e63f152fa5"
+                  },
+                  {
+                    "node_key": "7888db54-8d1c-4abb-9d91-43d320c6256d",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 29,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "fbdfe5fc-4a89-483b-9011-83d899da622b"
+                  },
+                  {
+                    "node_key": "ee368548-aff9-4d0c-8fc8-1161a328416c",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 23,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "f769c8be-e3f7-4dde-a57c-c2459afd014c"
+                  },
+                  {
+                    "node_key": "ddb8e4d7-e62e-40fd-a8f9-dadcad26f22f",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 22,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "ba11e7a1-ffa1-46f0-bfff-ceb0b34fca15"
+                  },
+                  {
+                    "node_key": "9ac3e412-3c90-4ced-8354-30596a2863af",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 18,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "50d5027e-8e70-436d-97e4-9af23619e5f6"
+                  },
+                  {
+                    "node_key": "d9330a8b-f15d-45a2-9b72-ab0b75d95bcb",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 20,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "554787bd-ac62-405b-aa26-5f226baacf56"
+                  },
+                  {
+                    "node_key": "af94e7d5-4890-456d-8e30-365f3d2bddff",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 6,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "7d823ba3-1c5d-435e-b77c-165c11c27244"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "node_key": "ff8c034c-213e-475f-80c0-cd1c4ce970f3",
+            "completed_at": null,
+            "completion_amount": 0,
+            "completed_count": 0,
+            "concept_count": 29,
+            "last_viewed_child_key": "afaa9d52-748c-44af-8d62-9ba3c2f616bb",
+            "module_aggregated_states": [
+              {
+                "node_key": "afaa9d52-748c-44af-8d62-9ba3c2f616bb",
+                "completed_at": null,
+                "completion_amount": 0,
+                "completed_count": 0,
+                "concept_count": 29,
+                "last_viewed_child_key": "20707806-8f14-420f-b613-4196199a88c1",
+                "lesson_aggregated_states": [
+                  {
+                    "node_key": "20707806-8f14-420f-b613-4196199a88c1",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 12,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "c8c3fbd0-b7ba-471e-85b7-eb2b1c3820c0"
+                  },
+                  {
+                    "node_key": "de38d0de-afac-4d34-a339-25c2519cf9f9",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 17,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "00b53aa6-a4a0-4eee-a034-39915c379b68"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "node_key": "b6d542d1-04a4-4f70-a7eb-46b3b4bd18f2",
+            "completed_at": null,
+            "completion_amount": 0,
+            "completed_count": 0,
+            "concept_count": 3,
+            "last_viewed_child_key": "7a821319-6ffe-406d-956a-50ca0ae23fe7",
+            "module_aggregated_states": [
+              {
+                "node_key": "7a821319-6ffe-406d-956a-50ca0ae23fe7",
+                "completed_at": null,
+                "completion_amount": 0,
+                "completed_count": 0,
+                "concept_count": 3,
+                "last_viewed_child_key": "8606ae15-4e97-49dd-9440-1b8d9df85b0f",
+                "lesson_aggregated_states": [
+                  {
+                    "node_key": "8606ae15-4e97-49dd-9440-1b8d9df85b0f",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 3,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "9c14ab46-b276-4e4a-a508-02013e360c63"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "resources": null,
+      "specializations": [],
+      "parts": [
+        {
+          "id": 1078784,
+          "key": "931a3b03-d129-43f1-9972-945018036ffd",
+          "title": "Welcome To the Ethical Hacker Nanodegree",
+          "semantic_type": "Part",
+          "is_public": true,
+          "version": "1.0.0",
+          "locale": "en-us",
+          "summary": "",
+          "part_type": "Core",
+          "locked_reason": "not_locked",
+          "locked_until": null,
+          "content_ready_date_ms": null,
+          "resources": null,
+          "image": {
+            "url": "https://video.udacity-data.com/topher/2020/August/5f44775d_noun-computer-1951563/noun-computer-1951563.png",
+            "width": 500,
+            "height": 500
+          },
+          "specialization": null,
+          "modules": [
+            {
+              "id": 1078785,
+              "key": "34633c7b-9c88-424c-a339-f290d3af3b6e",
+              "title": "Welcome",
+              "semantic_type": "Module",
+              "is_public": true,
+              "version": "1.0.0",
+              "locale": "en-us",
+              "is_project_module": null,
+              "forum_path": "",
+              "lessons": [
+                {
+                  "id": 1159354,
+                  "key": "7f204648-cbb0-40a5-a2af-ac31082452ea",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "Welcome! We're so glad you're here. Join us in learning a bit more about what to expect and ways to succeed.",
+                  "title": "An Introduction to Your Nanodegree Program",
+                  "duration": 15,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": null,
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2019/March/5c7f3eca_01-welcome/01-welcome.png",
+                    "width": 500,
+                    "height": 500
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 1017735,
+                      "key": "82d21b83-a3a9-42ce-9f06-d5ac8b35d642",
+                      "title": "Welcome to Udacity",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1017737,
+                      "key": "429d8f29-a42a-4dc4-a482-bfd57c95c2b1",
+                      "title": "The Udacity Experience",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1159356,
+                      "key": "dfc42ecd-8ce2-4c0a-aa71-2fb00030d5e2",
+                      "title": "Career Chat with your instructors",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1159359,
+                      "key": "ac3d0e69-b9b7-414c-9e6e-7a83d7f5c234",
+                      "title": "How to Succeed",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 718657,
+                  "key": "d03deb6d-3aee-4331-b4ed-67b8cd2ec8bb",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "You are starting a challenging but rewarding journey! Take 5 minutes to read how to get help with projects and content.",
+                  "title": "Mentor Help, Peer Chat, and Careers",
+                  "duration": 30,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": null,
+                  "image": {
+                    "url": "https://s3.amazonaws.com/video.udacity-data.com/topher/2018/July/5b39acdb_1-3-learning-online-getting-help2x/1-3-learning-online-getting-help2x.jpg",
+                    "width": 592,
+                    "height": 640
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 718664,
+                      "key": "7b46b9c9-0d5b-4975-bab8-c6d265f06d9c",
+                      "title": "What It Takes",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1021285,
+                      "key": "ce0fb21a-73a5-4f9b-8ffa-0335059917a7",
+                      "title": "Getting Help",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 782140,
+                      "key": "6324e0bb-4deb-41b3-b605-99e07af894cc",
+                      "title": "Mentor Help",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1163855,
+                      "key": "5f942e16-64ef-4b24-9de4-f4a8d2369c2c",
+                      "title": "Submitting Classroom Feedback",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1163845,
+                      "key": "445f9136-5662-43b8-bb60-a9e810310a09",
+                      "title": "Help Center",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 908233,
+                      "key": "6f52a708-af17-4b67-bff0-b487b048bc93",
+                      "title": "Udacity Support Community",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 831981,
+                      "key": "99232e4b-299c-40f5-a985-3162da96288e",
+                      "title": "Career Services",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1028834,
+                      "key": "d895e8dd-e35a-419b-b1ea-a2953e03d951",
+                      "title": "Plagiarism",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1163864,
+                      "key": "52823ce0-8170-425d-b817-f8395f8ea77f",
+                      "title": "Quiz: Plagiarism at Udacity",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 1078786,
+          "key": "7cb064b6-b6c9-41d9-8132-08f29aabe0cb",
+          "title": "Intro to Ethical Hacking",
+          "semantic_type": "Part",
+          "is_public": true,
+          "version": "1.0.0",
+          "locale": "en-us",
+          "summary": "",
+          "part_type": "Core",
+          "locked_reason": "not_locked",
+          "locked_until": null,
+          "content_ready_date_ms": null,
+          "resources": null,
+          "image": null,
+          "specialization": null,
+          "modules": [
+            {
+              "id": 1078787,
+              "key": "eb4f8453-0690-479d-9512-1da8cbe3ce75",
+              "title": "Course 1",
+              "semantic_type": "Module",
+              "is_public": true,
+              "version": "1.0.0",
+              "locale": "en-us",
+              "is_project_module": null,
+              "forum_path": "",
+              "lessons": [
+                {
+                  "id": 1089394,
+                  "key": "ee11944d-da71-4095-bdc1-19cc608efe4a",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "Meet the instructor, get an overview of the course and start learning about why Ethical Hacking is such an exciting field.  Let's get started!",
+                  "title": "Welcome to Ethical Hacking",
+                  "duration": 45,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": null,
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2020/October/5f945b82_noun-training-2447977/noun-training-2447977.png",
+                    "width": 512,
+                    "height": 512
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 1089338,
+                      "key": "96c1be21-3265-4a09-879d-811b12770770",
+                      "title": "Meet Your Instructor",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089347,
+                      "key": "1f9ac7ae-3902-4536-a49a-2b619abb3618",
+                      "title": "Course Overview",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089351,
+                      "key": "907adf45-7025-4bf3-bd0c-f39acc771d8d",
+                      "title": "Prerequisites",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089359,
+                      "key": "04c75fb4-ec87-4564-bdc5-b1c8bc2a6fd0",
+                      "title": "Introduction to Ethical Hacking",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089367,
+                      "key": "566fd680-6d95-4b56-aee5-c075bffd4fdc",
+                      "title": "Stakeholders",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089374,
+                      "key": "322f49e5-2abf-421b-a8c2-41330da3a8be",
+                      "title": "History of Ethical Hacking",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089380,
+                      "key": "d8a6a5ef-4303-4def-8700-27e02b93068b",
+                      "title": "Tools & Environment",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089385,
+                      "key": "269854a1-8134-462c-b5f9-b3d33ee0f7b8",
+                      "title": "Project: Audit ExampleCorp",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089390,
+                      "key": "10657516-764e-4e2a-8704-3eeb823ab112",
+                      "title": "Lesson Recap",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089393,
+                      "key": "e7abcf3f-a0cd-4bd8-a401-47c3e53ae86d",
+                      "title": "Good Luck!",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1123295,
+                      "key": "b053bd20-42f6-42f4-8f52-f2da7142788c",
+                      "title": "Glossary",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 1089502,
+                  "key": "b77b4db7-3d68-4faa-9617-b6204eed0ae0",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "Perform a vulnerability scan using automated tools, manage prioritization and response, and score the vulnerabilities you uncover",
+                  "title": "Vulnerability Management",
+                  "duration": 180,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": null,
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2020/November/5fa454ae_noun-cybersecurity-3160093/noun-cybersecurity-3160093.png",
+                    "width": 512,
+                    "height": 512
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 1089399,
+                      "key": "7010a0f0-c033-4aed-93b1-426231144ff2",
+                      "title": "Introduction",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089405,
+                      "key": "e1576bb8-467b-45b8-b9b8-8b798a094fe3",
+                      "title": "Why Is Vulnerability Management Important?",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089411,
+                      "key": "cd7426da-87df-4901-a0a6-7261203b2baa",
+                      "title": "How Experts Approach Vulnerability Management",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089420,
+                      "key": "f0c74098-d0b4-4f15-ab20-94607f0c0c09",
+                      "title": "Vulnerability Scanning",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089424,
+                      "key": "e3b0ec77-b587-4f04-b7e8-55914648f7e7",
+                      "title": "Quizzes: Vulnerability Scanning ",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089428,
+                      "key": "ead9375b-60a3-4242-861d-98fa37f99de7",
+                      "title": "Exercise: Vulnerability Scanning",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": {
+                        "files": [
+                          {
+                            "name": "Policy_EH_C1_SN1.pdf",
+                            "uri": "https://video.udacity-data.com/topher/2020/November/5fa0491c_policy-eh-c1-sn1/policy-eh-c1-sn1.pdf"
+                          }
+                        ],
+                        "google_plus_link": null,
+                        "career_resource_center_link": null,
+                        "coaching_appointments_link": null,
+                        "office_hours_link": null,
+                        "aws_provisioning_link": null
+                      }
+                    },
+                    {
+                      "id": 1089433,
+                      "key": "f6314f26-4a4c-4d72-b0a9-2074d5e274cd",
+                      "title": "Solution: Vulnerability Scanning",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089442,
+                      "key": "81b354b7-b1cf-4b9a-9d9e-1a544cca2517",
+                      "title": "Prioritization & Response Management",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1126264,
+                      "key": "fca87e69-1d8d-427d-a61d-8c0fbe4dea57",
+                      "title": "Vulnerability Management With Faraday",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089446,
+                      "key": "8f2f64f3-a0ac-4ac1-b419-72a0e14b15d2",
+                      "title": "Quizzes: Prioritization & Response Management ",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089450,
+                      "key": "a023811c-40cf-4f65-bc8d-1511cc5b8283",
+                      "title": "Exercise: Prioritization & Response Management Task List",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089455,
+                      "key": "21528af4-9b9e-4862-88fa-63367a064d90",
+                      "title": "Solution: Prioritization & Response Management Task List",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089462,
+                      "key": "246c6ae9-9085-4fec-b90f-3b4d00692a9c",
+                      "title": "CVSS Vulnerability Scoring",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089466,
+                      "key": "075d7be0-5258-4891-9d3b-ff00af0c07d1",
+                      "title": "Quizzes: CVSS Vulnerability Scoring ",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089470,
+                      "key": "efd84574-ecfe-4a72-bbcb-a5857d7592d5",
+                      "title": "Exercise: Risk Score & Rating Calculation Using CVSS 3.0",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089475,
+                      "key": "0e26cc9e-d92d-4ef9-9b21-ea56855d4279",
+                      "title": "Solution: Risk Score & Rating Calculation Using CVSS 3.0",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089483,
+                      "key": "2e708663-1a6c-49f0-9989-b8975062b58f",
+                      "title": "The Game of False Results",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089498,
+                      "key": "32e786c0-8bd6-4896-89b0-c264df837a5b",
+                      "title": "Lesson Recap",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089501,
+                      "key": "8f3d0428-630a-4a9c-a242-650da35063cd",
+                      "title": "Glossary",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 1089645,
+                  "key": "d14c427d-b5bb-479f-8a6b-3de7c75b6918",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "Use test scopes to understand the context and objectives of an audit, gather information about our target, research vulnerabilities, execute exploits, and write effective reports on our findings",
+                  "title": "System Auditing",
+                  "duration": 180,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": null,
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2020/November/5fa453ac_noun-seo-audit-2592829-1/noun-seo-audit-2592829-1.png",
+                    "width": 512,
+                    "height": 512
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 1089507,
+                      "key": "1ca3dc50-ccc0-4765-863e-30288f50f511",
+                      "title": "Introduction",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089513,
+                      "key": "02614a04-37b1-402b-af2d-dbd22d4e3883",
+                      "title": "Why System Auditing?",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089520,
+                      "key": "5b6ea339-d1fb-4d67-9c20-c8917aea5583",
+                      "title": "Test Scopes",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": {
+                        "files": [
+                          {
+                            "name": "Example Test Scope",
+                            "uri": "https://video.udacity-data.com/topher/2021/January/60005652_bansalx-test-scope/bansalx-test-scope.pdf"
+                          }
+                        ],
+                        "google_plus_link": null,
+                        "career_resource_center_link": null,
+                        "coaching_appointments_link": null,
+                        "office_hours_link": null,
+                        "aws_provisioning_link": null
+                      }
+                    },
+                    {
+                      "id": 1089530,
+                      "key": "665dd21b-c823-432a-91a7-3b8d21d2c1a2",
+                      "title": "Quizzes: Test Scopes",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089545,
+                      "key": "ea2f41b7-33bc-44ae-a1d6-ae77d9fd3a55",
+                      "title": "Information Gathering",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1126563,
+                      "key": "c15e79b7-ee81-4f20-8d47-5d162677430f",
+                      "title": "Reconnaissance With Nmap",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1126564,
+                      "key": "fec3ec51-5fd8-476d-90da-901010cc118b",
+                      "title": "Metasploit Framework",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089549,
+                      "key": "81c911f6-c6fe-4bd3-b858-36ab850fc6a2",
+                      "title": "Quizzes: Information Gathering",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089553,
+                      "key": "d4f785ff-e78c-4240-aee2-803487069788",
+                      "title": "Exercise: Reconnaissance on TestLab",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089558,
+                      "key": "1dac9be2-a2b7-46b6-aebb-ef274dfd7ff6",
+                      "title": "Solution: Reconnaissance on TestLab",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089565,
+                      "key": "56c00371-8f1e-4153-8b70-01b31dd045c8",
+                      "title": "Researching Vulnerabilities and Exploits",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089569,
+                      "key": "df210c28-0d26-40d6-878b-0db7a63d53ae",
+                      "title": "Quizzes: Vulnerabilities and Exploits",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089573,
+                      "key": "d73f4e21-17ad-49f9-a142-6b980f1e4ffc",
+                      "title": "Exercise: Research Samba",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089578,
+                      "key": "a823765b-97f7-429b-942a-b02a004fe84a",
+                      "title": "Solution: Research Samba",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089585,
+                      "key": "d678d114-994f-44b2-a605-701ad7484525",
+                      "title": "Executing Exploits",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": {
+                        "files": [
+                          {
+                            "name": "exp.c",
+                            "uri": "https://video.udacity-data.com/topher/2021/January/60011f1b_exp/exp.c"
+                          }
+                        ],
+                        "google_plus_link": null,
+                        "career_resource_center_link": null,
+                        "coaching_appointments_link": null,
+                        "office_hours_link": null,
+                        "aws_provisioning_link": null
+                      }
+                    },
+                    {
+                      "id": 1126589,
+                      "key": "8fb9e34f-9903-40c1-b016-20a94552ca8c",
+                      "title": "Commercial Exploits",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089589,
+                      "key": "262b29bb-a4dd-4e6c-adeb-484bbc9a5992",
+                      "title": "Quizzes: Executing Exploits ",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089593,
+                      "key": "f68fd8ce-254b-4311-95bc-2f1b5b800056",
+                      "title": "Exercise: Exploiting CVE-2003-0201",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089598,
+                      "key": "8afcf24b-040e-47a1-b2f7-858806a5bb43",
+                      "title": "Solution: Exploiting CVE-2003-0201",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089605,
+                      "key": "8c418785-5cf0-493d-abdc-1dc906693937",
+                      "title": "Reporting Results",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1105952,
+                      "key": "c389083c-2a3b-4ef6-ba37-e438bca26e75",
+                      "title": "Quizzes: Reporting Results",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1105953,
+                      "key": "c69cb0f9-a986-4aea-bf45-83459004a4dd",
+                      "title": "Exercise: Technical Report",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": {
+                        "files": [
+                          {
+                            "name": "TestLab Technical Report Template",
+                            "uri": "https://video.udacity-data.com/topher/2021/January/6001a899_test-lab-report-template/test-lab-report-template.docx"
+                          }
+                        ],
+                        "google_plus_link": null,
+                        "career_resource_center_link": null,
+                        "coaching_appointments_link": null,
+                        "office_hours_link": null,
+                        "aws_provisioning_link": null
+                      }
+                    },
+                    {
+                      "id": 1105954,
+                      "key": "9504e29a-304b-48ac-8833-b9e6336bd353",
+                      "title": "Solution: Technical Report",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": {
+                        "files": [
+                          {
+                            "name": "Report on TestLab Solution",
+                            "uri": "https://video.udacity-data.com/topher/2021/January/6001a638_report-exercise-solution/report-exercise-solution.pdf"
+                          }
+                        ],
+                        "google_plus_link": null,
+                        "career_resource_center_link": null,
+                        "coaching_appointments_link": null,
+                        "office_hours_link": null,
+                        "aws_provisioning_link": null
+                      }
+                    },
+                    {
+                      "id": 1089626,
+                      "key": "fae32948-095b-49c8-9329-cacff0a6e36b",
+                      "title": "Buggy Exploits",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089641,
+                      "key": "1637ca6e-4eae-4e04-8480-7bd6d5e3c717",
+                      "title": "Lesson Recap",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089644,
+                      "key": "42afe765-efdd-4da5-a7c8-99253f91c1b3",
+                      "title": "Glossary",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 1089751,
+                  "key": "a25ee65c-5606-4006-8085-b1656a092846",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "Use OWASP WTG methodologies, create HTTP requests to access target systems and employ semi-automated and fully-automated tools in applications audits",
+                  "title": "Application Auditing",
+                  "duration": 180,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": null,
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2020/October/5f945b5b_noun-cyber-security-2466250/noun-cyber-security-2466250.png",
+                    "width": 512,
+                    "height": 512
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 1089650,
+                      "key": "4b5556cc-edbc-4f4f-b294-5e5286c7ad06",
+                      "title": "Introduction",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1122384,
+                      "key": "50249d6f-2e52-4075-9cbb-08b74ab54645",
+                      "title": "Intro to Application Auditing",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089671,
+                      "key": "db532dfc-f3ab-41e6-8c98-8ae0f5334f51",
+                      "title": "Request and Response",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089675,
+                      "key": "6fead372-0fea-4d2e-ab59-d49cc06b8106",
+                      "title": "Quizzes: Request and Response",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089679,
+                      "key": "11a9a6f9-02ff-486a-a0f8-ad4ae9a119f7",
+                      "title": "Exercise: Request And Response",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089684,
+                      "key": "a1fe3bc2-8216-4a02-a6fe-9d37a67278a6",
+                      "title": "Solution: Request And Response",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089691,
+                      "key": "f6176836-f4a3-4da8-b757-9b833ecd4d21",
+                      "title": "Using OWASP WSTG",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089695,
+                      "key": "3ce336f9-8e86-4b27-85a3-1aff5728e1fa",
+                      "title": "Quizzes: OWASP",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089699,
+                      "key": "849b5b87-90d4-4033-b654-8b344781c0d0",
+                      "title": "Exercise: Using OWASP WSTG",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089704,
+                      "key": "5bc645bc-26e9-4a70-8b22-1e111c6eabb4",
+                      "title": "Solution: Using OWASP WSTG",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089711,
+                      "key": "d82cfb9e-7391-4ce6-b567-3e72708f91d4",
+                      "title": "Using Semi-Automated Tools",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089715,
+                      "key": "927c1e08-1ccf-4303-bd0a-902f558795dc",
+                      "title": "Quizzes: Semi-Automated Tools",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089719,
+                      "key": "bdfcf2c5-de06-4509-a543-9ca86fcc14c5",
+                      "title": "Exercise: Test Upload of Malicious Files",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089724,
+                      "key": "63b8afc8-3d4a-45b4-a570-4852bd2db9fc",
+                      "title": "Solution: Test Upload of Malicious Files",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1122405,
+                      "key": "b3ee5e9c-cba4-44b3-b73a-f9b7c71e2da5",
+                      "title": "Fully Automated Tools",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1123165,
+                      "key": "c8377df9-c32c-49b5-9033-92c50eeba304",
+                      "title": "Quizzes: Fully Automated Tools",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1123164,
+                      "key": "c773313f-3a9d-4daf-8fe8-556001fc5c90",
+                      "title": "Exercise: Test a WordPress Blog",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1122418,
+                      "key": "5269a2c2-0975-4f1b-ac5d-bba80eb0e04e",
+                      "title": "Solution: Test a WordPress Blog",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089732,
+                      "key": "9a837eaf-2144-4db1-a684-d4ccf1dd4e5e",
+                      "title": "So Many Things To Hack",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089747,
+                      "key": "26e1a011-f5ad-439f-a412-143dc38db2ee",
+                      "title": "Lesson Recap",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089750,
+                      "key": "10de2e1f-cb4c-4971-b8f1-efa93b2986ff",
+                      "title": "Glossary",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 1089858,
+                  "key": "774c0ab9-077c-4666-8634-06cdb01cdb8f",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "Explore the tactics malicious hackers use to manipulate people to take specific actions, conduct a phishing simulation, create and deploy malware and design an effective landing page\n",
+                  "title": "Social Engineering",
+                  "duration": 180,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": null,
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2020/October/5f9459cd_noun-phishing-2466266/noun-phishing-2466266.png",
+                    "width": 512,
+                    "height": 512
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 1089756,
+                      "key": "d32f3806-9635-468f-a029-c841f0de84cf",
+                      "title": "Introduction",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089762,
+                      "key": "3f1beb46-4b8b-4b24-8837-d5a53b9d69b6",
+                      "title": "Why Social Engineering?",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089769,
+                      "key": "d18a1c2a-b57e-43f8-9370-3355067d1f41",
+                      "title": "How Experts Approach Social Engineering",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089778,
+                      "key": "99ed8229-754b-494b-a9d5-c256b7689819",
+                      "title": "Phishing Simulation",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1127866,
+                      "key": "ccd1bf20-46d7-49a9-b456-e3b5e7951d3a",
+                      "title": "Using GoPhish",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089782,
+                      "key": "7cacf3dc-facf-426a-aec8-d7fbfd31c098",
+                      "title": "Quizzes: Phishing Simulation ",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089786,
+                      "key": "24765875-44a7-4ade-9abe-f0a14549562d",
+                      "title": "Exercise: Phishing Simulation",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": {
+                        "files": [
+                          {
+                            "name": "employees.csv",
+                            "uri": "https://video.udacity-data.com/topher/2021/January/60086801_employees/employees.csv"
+                          }
+                        ],
+                        "google_plus_link": null,
+                        "career_resource_center_link": null,
+                        "coaching_appointments_link": null,
+                        "office_hours_link": null,
+                        "aws_provisioning_link": null
+                      }
+                    },
+                    {
+                      "id": 1089791,
+                      "key": "820a907c-3a03-40cc-93e6-5237af6e1a80",
+                      "title": "Solution: Phishing Simulation",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089798,
+                      "key": "f59d068a-e534-48eb-81f9-931511133ea6",
+                      "title": "Malware For Social Engineering",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089802,
+                      "key": "55ddf082-4e7c-4448-a1c9-f782f5eeaf01",
+                      "title": "Quizzes: Malware For Social Engineering ",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089806,
+                      "key": "cb373382-a298-4f44-9868-21a0103b1256",
+                      "title": "Exercise: Malware For Social Engineering",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089811,
+                      "key": "805f49ab-0046-43ce-9f52-fa89a55e96ef",
+                      "title": "Solution: Malware For Social Engineering",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089818,
+                      "key": "4d0d2925-dfed-4e11-8f8f-dec457766a15",
+                      "title": "Make A Website for SE",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": {
+                        "files": [
+                          {
+                            "name": "website_template.zip",
+                            "uri": "https://video.udacity-data.com/topher/2021/January/6008a13c_website-template/website-template.zip"
+                          }
+                        ],
+                        "google_plus_link": null,
+                        "career_resource_center_link": null,
+                        "coaching_appointments_link": null,
+                        "office_hours_link": null,
+                        "aws_provisioning_link": null
+                      }
+                    },
+                    {
+                      "id": 1089822,
+                      "key": "fb0821c9-16f1-41a0-b22f-5a5319396f40",
+                      "title": "Quizzes: Make A Website for SE ",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089826,
+                      "key": "d4b59e39-572c-402a-a0be-9e26bd21fb97",
+                      "title": "Exercise: Make A Website for SE",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": {
+                        "files": [
+                          {
+                            "name": "website_template.zip",
+                            "uri": "https://video.udacity-data.com/topher/2021/January/6008a13c_website-template/website-template.zip"
+                          }
+                        ],
+                        "google_plus_link": null,
+                        "career_resource_center_link": null,
+                        "coaching_appointments_link": null,
+                        "office_hours_link": null,
+                        "aws_provisioning_link": null
+                      }
+                    },
+                    {
+                      "id": 1089831,
+                      "key": "57e24111-c43c-4a0f-8e82-5d4a8329a123",
+                      "title": "Solution: Make A Website for SE",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089839,
+                      "key": "76504095-ca3c-4e59-9109-924a1889e203",
+                      "title": "Ethics of SE",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089854,
+                      "key": "f2c5f58b-40f5-4a08-8281-76d5dbf1ee8c",
+                      "title": "Lesson Recap",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089857,
+                      "key": "ae6054a0-f819-413e-b9c1-bf66464c6f26",
+                      "title": "Glossary",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 1089971,
+                  "key": "e5630ee6-cf86-42f8-826f-1dda4d12274e",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "Employ open-source intelligence techniques to uncover information leakage.  Use Exploratory Link Analysis techniques to mine data, establish links between the data and analyze the links",
+                  "title": "OSINT",
+                  "duration": 180,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": null,
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2020/October/5f945871_noun-spy-2470193/noun-spy-2470193.png",
+                    "width": 512,
+                    "height": 512
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 1089863,
+                      "key": "3d258fc5-7db2-4bb4-bc6b-bd31765657b8",
+                      "title": "Introduction",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089869,
+                      "key": "78a86103-bae4-4ac7-835f-042f5e043b9c",
+                      "title": "Why OSINT?",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089876,
+                      "key": "16233b3a-809c-4d4c-aa35-53b7644a7581",
+                      "title": "How Experts Approach OSINT",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089883,
+                      "key": "1afe5d2c-0da6-4d15-a3f6-d1687e53ba68",
+                      "title": "Data Mining For OSINT",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089887,
+                      "key": "3c51d25f-65a7-40d5-816b-f32c53a4e7fc",
+                      "title": "Quizzes: Data Mining",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089891,
+                      "key": "3c60daa6-7d40-4ccd-803f-36dc52c40337",
+                      "title": "Exercise: Gathering OSINT Data",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089896,
+                      "key": "85d029ee-f214-444c-a6e1-6991d589314f",
+                      "title": "Solution: Gathering OSINT Data",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089903,
+                      "key": "18976eef-8deb-440b-b398-4f1e1bc13bc7",
+                      "title": "Establishing Links ",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089907,
+                      "key": "fdae595c-5116-4943-82b0-d431169348e7",
+                      "title": "Quizzes: Links and Relations",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089911,
+                      "key": "e9adde4f-a4e5-43e7-b047-bbeba7b72018",
+                      "title": "Exercise: Establishing Links ",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089916,
+                      "key": "7231565d-d7ed-4fcd-814c-553e97565008",
+                      "title": "Solution: Establishing Links",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089923,
+                      "key": "866bd6b2-1191-4821-8080-9bb19f4e38d6",
+                      "title": "Analyzing Links For OSINT",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089927,
+                      "key": "975af081-d965-4c25-8230-860832686cbc",
+                      "title": "Quizzes: Analyzing Links For OSINT ",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089931,
+                      "key": "f837a930-ec7e-46bf-b55e-49d6ff73e7c7",
+                      "title": "Exercise: Analyzing Links For OSINT",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089936,
+                      "key": "da372e52-72fc-4531-bb16-c678ebec5675",
+                      "title": "Solution: Analyzing Links For OSINT",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089944,
+                      "key": "a996866e-d653-4cc1-be71-36c8294eea12",
+                      "title": "Offensive OSINT",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089959,
+                      "key": "195089a0-de9d-4765-b017-c6f3b5d00964",
+                      "title": "Lesson Recap",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089964,
+                      "key": "e3ecc323-04cd-4566-b87e-4dc39abc9bd9",
+                      "title": "Course Recap",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089967,
+                      "key": "8d23e48c-6b12-419d-b4ff-644b6e1726be",
+                      "title": "Congratulations",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1089970,
+                      "key": "ec599ef8-a6d0-4a13-8bb5-356254161856",
+                      "title": "Glossary",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 1085547,
+                  "key": "12c1f479-65d4-45d4-abf7-36301dc24461",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "Use the skills you have developed in this course to manage a full-fledged security audit of a fictitious company called ExampleCorp",
+                  "title": "Audit ExampleCorp",
+                  "duration": 45,
+                  "is_public": true,
+                  "is_project_lesson": true,
+                  "display_workspace_project_only": false,
+                  "lesson_type": null,
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2020/October/5f9457ea_noun-hacker-1949804/noun-hacker-1949804.png",
+                    "width": 512,
+                    "height": 512
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": {
+                    "key": "32077ccd-f9bb-41d1-973e-a15eba385548",
+                    "version": "1.0.0",
+                    "locale": "en-us",
+                    "duration": 40320,
+                    "semantic_type": "Project",
+                    "title": "Audit ExampleCorp",
+                    "description": "## Project Summary\n\nExample Corp. is a public relations and media firm that uses artificial intelligence-based marketing techniques to engage customers with interactive media.  A recent phishing assessment revealed the need for a complete vulnerability audit of the company. \n\nYour task is to perform the audit by completing:\n\n* An automated vulnerability scan\n* A manual assessment of the vulnerabilities\n* An audit web application(s)\n\nYou will prepare an assessment report that details all of your findings and share it as a `.pdf` file.\n\n## Submission Checklist\n\nBefore you submit, check if the following have been completed:  \n\n<div class=\"index-module--table-responsive--1zG6k\"><table class=\"index-module--table--8j68C index-module--table-striped--3HHC-\">\n<thead>\n<tr>\n<th></th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><input type=\"checkbox\"></td>\n<td><a target=\"_blank\" href=\"https://review.udacity.com/#!/rubrics/2969/view\">Project Rubric</a> has been reviewed.</td>\n</tr>\n<tr>\n<td><input type=\"checkbox\"></td>\n<td>Automated vulnerability scan is complete.</td>\n</tr>\n<tr>\n<td><input type=\"checkbox\"></td>\n<td>Manual assessment of the vulnerabilities is complete.</td>\n</tr>\n<tr>\n<td><input type=\"checkbox\"></td>\n<td>Audit of the web application(s) is complete.</td>\n</tr>\n<tr>\n<td><input type=\"checkbox\"></td>\n<td>All required findings are documented in the <strong>Report</strong>.</td>\n</tr>\n<tr>\n<td><input type=\"checkbox\"></td>\n<td><strong>Report</strong> has been saved as a <code>.pdf</code> file.</td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n</tr>\n</tbody>\n</table>\n</div>\n\n**Note**: The checklist above won't save your checkmarks so do this right before you plan to submit.\n\n## Ready to Submit?\n\nOnce you have all the items above completed, you can click the submit button. Follow the directions to submit your project as a single file.",
+                    "is_public": true,
+                    "summary": null,
+                    "forum_path": "",
+                    "rubric_id": "2969",
+                    "terminal_project_id": null,
+                    "resources": null,
+                    "image": null
+                  },
+                  "concepts": [
+                    {
+                      "id": 1087231,
+                      "key": "99015004-610a-4903-be92-4fe005f3b265",
+                      "title": "Overview",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1087232,
+                      "key": "6d42d755-e279-421a-b3cb-2861c8d8252f",
+                      "title": "Setting Up The Project",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1085549,
+                      "key": "880975d9-6c10-491f-8c28-0b13f6ecf1a8",
+                      "title": "Instructions",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 1078788,
+          "key": "71180866-a076-4b70-afb0-5632d4af2ccd",
+          "title": "Penetration Testing & Red Teaming",
+          "semantic_type": "Part",
+          "is_public": true,
+          "version": "1.0.0",
+          "locale": "en-us",
+          "summary": "",
+          "part_type": "Core",
+          "locked_reason": "not_locked",
+          "locked_until": null,
+          "content_ready_date_ms": null,
+          "resources": null,
+          "image": null,
+          "specialization": null,
+          "modules": [
+            {
+              "id": 1078789,
+              "key": "2355235e-cb76-42a4-91d7-247e5f8dc745",
+              "title": "Course 2",
+              "semantic_type": "Module",
+              "is_public": true,
+              "version": "1.0.0",
+              "locale": "en-us",
+              "is_project_module": null,
+              "forum_path": "",
+              "lessons": [
+                {
+                  "id": 1129220,
+                  "key": "8b3d2316-7e6c-429c-8962-428522495545",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "Brief introduction and foundational knowledge around penetration testing and red teaming. ",
+                  "title": "Intro to Penetration Testing & Red Team Operations",
+                  "duration": 30,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": null,
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2021/March/60591737_noun-testing-3635012/noun-testing-3635012.png",
+                    "width": 512,
+                    "height": 512
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 1129137,
+                      "key": "644d458d-b058-4d34-8128-b7e63f152fa5",
+                      "title": "Meet Your Instructor",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1129141,
+                      "key": "b5b8d681-d977-4504-941f-2ec63ae4862d",
+                      "title": "Course Prerequisites",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1129146,
+                      "key": "de57caff-f4ac-47af-abe4-a0ad5896be69",
+                      "title": "Course Outline",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1129156,
+                      "key": "e9260db9-85e0-4623-aabb-f5c4a8aba740",
+                      "title": "Intro to Penetration Testing & Red Teaming",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1129161,
+                      "key": "891ecca4-9fad-489a-8500-bdfe3bc79218",
+                      "title": "Penetration Testing & Red Teaming Is Important",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1129171,
+                      "key": "ac4b6751-432a-48b9-8054-8575e07cabb2",
+                      "title": "History of Penetration Testing & Red Teaming",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1129180,
+                      "key": "9c26b948-253d-4614-8f16-69c9a3e8a140",
+                      "title": "Roles & Responsibilities",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1129186,
+                      "key": "f1033b95-1d90-4e8a-b4e5-94d4577c9203",
+                      "title": "Meet the Teams",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1129191,
+                      "key": "dc58e748-d017-47d0-953b-e10d21f36dac",
+                      "title": "Establishing the Rules Of Engagement",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": {
+                        "files": [
+                          {
+                            "name": "PJ Bank ROE V2",
+                            "uri": "https://video.udacity-data.com/topher/2021/March/604a2989_pj-bank-roe-v2/pj-bank-roe-v2.docx"
+                          }
+                        ],
+                        "google_plus_link": null,
+                        "career_resource_center_link": null,
+                        "coaching_appointments_link": null,
+                        "office_hours_link": null,
+                        "aws_provisioning_link": null
+                      }
+                    },
+                    {
+                      "id": 1129196,
+                      "key": "c1b44821-643c-4f73-a377-61984ac6b82d",
+                      "title": "Penetration Testing Kick-off Meeting",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1129202,
+                      "key": "8d7ab75b-d6a5-4a28-9e0f-4c69b4123f48",
+                      "title": "Environment Setup",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": {
+                        "files": [
+                          {
+                            "name": "Local Lab Preparation Instructions",
+                            "uri": "https://video.udacity-data.com/topher/2021/March/604fb229_local-lab-preparation-instructions/local-lab-preparation-instructions.pdf"
+                          }
+                        ],
+                        "google_plus_link": null,
+                        "career_resource_center_link": null,
+                        "coaching_appointments_link": null,
+                        "office_hours_link": null,
+                        "aws_provisioning_link": null
+                      }
+                    },
+                    {
+                      "id": 1129207,
+                      "key": "a5efcf6a-9b7b-4854-b00b-a932df957397",
+                      "title": "Penetration Testing Team Plan of Action Meeting",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1129212,
+                      "key": "e59bd01e-6ce0-4499-adef-4fbf51bf1b65",
+                      "title": "Project: Red Teaming Operations",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1129216,
+                      "key": "6b793872-3498-410d-b788-86503cc9d7f6",
+                      "title": "Lesson Recap",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1131345,
+                      "key": "54352835-884f-45a2-8c48-e7b38f2ba52a",
+                      "title": "Good Luck!",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 1106280,
+                  "key": "7888db54-8d1c-4abb-9d91-43d320c6256d",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "In this lesson, we will dive into the first step of penetration testing which focusses on gathering information and data about the target, also known as Reconnaissance. ",
+                  "title": "Reconnaissance",
+                  "duration": 240,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": null,
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2021/March/60591dfd_noun-peeping-tom-38344/noun-peeping-tom-38344.png",
+                    "width": 512,
+                    "height": 512
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 1106174,
+                      "key": "fbdfe5fc-4a89-483b-9011-83d899da622b",
+                      "title": "Lesson Introduction to Reconnaissance",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": {
+                        "files": [],
+                        "google_plus_link": null,
+                        "career_resource_center_link": null,
+                        "coaching_appointments_link": null,
+                        "office_hours_link": null,
+                        "aws_provisioning_link": null
+                      }
+                    },
+                    {
+                      "id": 1106179,
+                      "key": "4b961411-b014-447a-b74e-766d22d8a129",
+                      "title": "Introduction to Reconnaissance",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1106186,
+                      "key": "725574a3-eb85-40e6-b9d0-2f759980bebc",
+                      "title": "Passive Recon Intro & Search Engines",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1120119,
+                      "key": "fbec27fd-2d31-4fab-92b8-5abdb5038020",
+                      "title": "Passive Recon Individuals, Geolocation, & OSINT",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1106188,
+                      "key": "b5332ebd-ad0e-42fa-998e-73ea6174b440",
+                      "title": "Quiz: Passive Reconnaissance",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1106190,
+                      "key": "2590019c-546b-4dab-b5fd-eed72a0678e6",
+                      "title": "Exercise: Passive Reconnaissance",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1106193,
+                      "key": "6029d14e-7830-412a-9625-b7b74ee79fb8",
+                      "title": "Passive Reconnaissance Exercise Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1106198,
+                      "key": "f4c453d6-97ec-4bb0-ba24-5c9a7f21865e",
+                      "title": "Active Reconnaissance",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1106200,
+                      "key": "402707fa-d399-4ca0-be6d-d8ef472d942f",
+                      "title": "Quiz: Active Reconnaissance",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1106202,
+                      "key": "ca0340bf-b081-4943-94e8-0daf65816a60",
+                      "title": "Exercise: Active Reconnaissance",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1106205,
+                      "key": "61bd5cfe-de79-4e33-9a37-326233dca138",
+                      "title": "Active Reconnaissance Exercise Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1106210,
+                      "key": "d61508ef-d25b-4983-b91d-d1a9e8051127",
+                      "title": "Physical Reconnaissance",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1106228,
+                      "key": "2af36776-782f-4d33-b249-860585367b04",
+                      "title": "Simulation: Meet & Discuss Recon Strategy with Team",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1106222,
+                      "key": "60bb12e7-fd8b-4e93-8203-c88e44020770",
+                      "title": "Simulation: Situational Awareness and Conducting Recon",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1120276,
+                      "key": "2d13b4e6-559a-4c53-ab00-501a08e69acc",
+                      "title": "Lab - Passive recon Using OSINT",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1120280,
+                      "key": "df458ac1-3e00-42d4-9373-77f4dc1470a7",
+                      "title": "Lab – Passive Recon using Web Apps",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1106233,
+                      "key": "96bc354b-0b2c-48b0-8fce-905032cca9d8",
+                      "title": "Domain Name System (DNS) Reconnaissance",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1120283,
+                      "key": "716575ad-cfb5-49a2-b383-731b244f0bce",
+                      "title": "Domain Name System (DNS) Reconnaissance",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1106235,
+                      "key": "d1db9117-85d9-4e0b-a207-bd6e542d65c0",
+                      "title": "Quiz: DNS Reconnaissance",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1106237,
+                      "key": "f9c5ffa5-885d-4706-8d5d-2df9800b0dd7",
+                      "title": "Exercise: DNS Reconnaissance",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1106240,
+                      "key": "fc4737fe-2e87-418f-b281-48de7d20c5b0",
+                      "title": "DNS Reconnaissance Exercise Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1106245,
+                      "key": "b18df0a9-eb59-4011-bd8c-1e7fe7ac2bf6",
+                      "title": "Content Management Discovery",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1120330,
+                      "key": "cc72e17a-862e-4cc9-abd8-2f6d6da1313f",
+                      "title": "Lab Content Management Discovery",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1106247,
+                      "key": "e0c41f26-1532-4c91-8fa7-2455c676cd4f",
+                      "title": "Quiz: Content Management Discovery",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1106257,
+                      "key": "f1bd1195-86a5-4fd7-adac-bcbb24b0038b",
+                      "title": "Deeper into Physical Reconnaissance",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1121161,
+                      "key": "76d0e85e-29bb-42f1-9763-ef614cf4b2ed",
+                      "title": "Deeper into Physical Reconnaissance",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1106270,
+                      "key": "6c4c3e0f-b775-418f-b6e1-c6df5e40d540",
+                      "title": "Update Your Report",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": {
+                        "files": [
+                          {
+                            "name": "Lesson 1 - Recon",
+                            "uri": "https://video.udacity-data.com/topher/2021/March/603d7aab_lesson-1-recon/lesson-1-recon.ctb"
+                          }
+                        ],
+                        "google_plus_link": null,
+                        "career_resource_center_link": null,
+                        "coaching_appointments_link": null,
+                        "office_hours_link": null,
+                        "aws_provisioning_link": null
+                      }
+                    },
+                    {
+                      "id": 1130090,
+                      "key": "45d76afe-1070-46d0-8036-28b0924bfeef",
+                      "title": "Pep Talk!",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1106279,
+                      "key": "e18d3286-21e6-4ea6-b57a-0217e4687b95",
+                      "title": "Reconnaissance Lesson Recap",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 1120028,
+                  "key": "ee368548-aff9-4d0c-8fc8-1161a328416c",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "In this lesson, we will use the information we obtained in reconnaissance to become informed and plan how to breach the target.",
+                  "title": "Scanning & Research",
+                  "duration": 210,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": null,
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2021/March/60591eed_noun-scan-2892765/noun-scan-2892765.png",
+                    "width": 512,
+                    "height": 512
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 1119957,
+                      "key": "f769c8be-e3f7-4dde-a57c-c2459afd014c",
+                      "title": "Introduction to Scanning & Researching",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1119959,
+                      "key": "a5d068a4-fa43-4c90-a935-3412d52d3d32",
+                      "title": "Quiz: Introduction to Scanning",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1123319,
+                      "key": "8b6f9cda-bcc7-4504-af98-8c3d52860b1c",
+                      "title": "Host Discovery and Port Scans",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1123325,
+                      "key": "fca54507-b676-4aa4-ac9b-8d22773e4b4e",
+                      "title": "Quiz: Host Discovery and Port Scans",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1123337,
+                      "key": "4c18195c-b598-46ff-8207-77eca4a17c5d",
+                      "title": "Vulnerability Scanning",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1123352,
+                      "key": "39132fa5-a540-43bd-a376-455cc7229da8",
+                      "title": "Quiz: Vulnerability Scans",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1119965,
+                      "key": "876696c0-54fb-4024-9066-70333709e208",
+                      "title": "Vulnerability Research",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1119967,
+                      "key": "810e2bda-9c28-4915-b10c-d92b34b9d8d5",
+                      "title": "Quiz: Vulnerability Research",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1119969,
+                      "key": "d106c0c6-e730-4519-ac5a-3658c658ddb3",
+                      "title": "Exercise: Vulnerability Research",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1119972,
+                      "key": "66154867-bfeb-4fe4-93ff-bc341c9352cf",
+                      "title": "Vulnerability Research Exercise Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1119978,
+                      "key": "79009c41-b692-4a5e-b9df-f9b6714bd252",
+                      "title": "Simulation - Reconnaissance Results and Scanning Strategy with Team",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1123368,
+                      "key": "4ae57f09-044f-40bc-8b15-eff506aec4bf",
+                      "title": "Updating the Lab Environment",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1119996,
+                      "key": "6a4dace6-2de6-4c8c-8822-978d01670c25",
+                      "title": "Lab - Network Scanning Part 1",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1123374,
+                      "key": "7cef7a04-cf9e-43bf-bdb2-7c1928c9e8ff",
+                      "title": "Lab - Network Scanning Part 2",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1120000,
+                      "key": "d2690959-13e5-45d5-a6db-e4d58a4f4d02",
+                      "title": "Exercise: Network Scanning",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1120003,
+                      "key": "a5b78f5b-d599-4158-be97-80395cd5ce8e",
+                      "title": "Network Scanning Exercise Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1123391,
+                      "key": "f268d3a9-b632-44f5-93fa-b3bf7a0056e2",
+                      "title": "Web Application Scanning Part 1",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1119984,
+                      "key": "85d3f8a9-b3ae-4928-98b4-f6aae085d6f4",
+                      "title": "Web Application Scanning Part 2",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1119988,
+                      "key": "a229d690-207f-47b0-8a65-24b424deee38",
+                      "title": "Exercise: Web Application Scanning",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1119991,
+                      "key": "2b701882-f5b1-4b47-9f21-c36832be5cd9",
+                      "title": "Web Application Scanning Exercise Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1120019,
+                      "key": "31d9927c-e6a0-461b-a7e6-007fe33ca8c1",
+                      "title": "Update Your Report",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": {
+                        "files": [
+                          {
+                            "name": "Lesson 2 - Scanning",
+                            "uri": "https://video.udacity-data.com/topher/2021/March/603d7dcc_lesson-2-scanning/lesson-2-scanning.ctb"
+                          }
+                        ],
+                        "google_plus_link": null,
+                        "career_resource_center_link": null,
+                        "coaching_appointments_link": null,
+                        "office_hours_link": null,
+                        "aws_provisioning_link": null
+                      }
+                    },
+                    {
+                      "id": 1120023,
+                      "key": "87a4c26d-8703-4ea7-96f3-145104a36f65",
+                      "title": "It's Not Over Til It's Over",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1120027,
+                      "key": "f40de2c6-cdba-4096-8280-b12f7ef7fb04",
+                      "title": "Scanning and Researching Lesson Recap",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 1121785,
+                  "key": "ddb8e4d7-e62e-40fd-a8f9-dadcad26f22f",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "In this lesson, we are will now execute on the information we have from reconnaissance, scanning, and research and will now execute on the plan of how to gain access on the target. ",
+                  "title": "Gaining Access",
+                  "duration": 180,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": null,
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2021/March/6059241a_noun-access-3407302/noun-access-3407302.png",
+                    "width": 512,
+                    "height": 512
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 1121714,
+                      "key": "ba11e7a1-ffa1-46f0-bfff-ceb0b34fca15",
+                      "title": "Introduction to Gaining Access",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1121718,
+                      "key": "5aab5f68-3612-4ba1-8915-53705f800977",
+                      "title": "Payloads Explained - Part 1",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1121720,
+                      "key": "f1a44a34-c0d0-4164-8246-5c4c5fb54997",
+                      "title": "Quiz: Payload Explained",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1121724,
+                      "key": "af1ff6a5-d80e-4d03-8def-bd93b87b19d9",
+                      "title": "Payload Explained - Part 2",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1121728,
+                      "key": "d72d2c9e-6f66-4583-8f16-0127b21bf7d7",
+                      "title": "Team Meeting!",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1121730,
+                      "key": "8ae0ee03-c809-4ec5-82ac-ec2899ff05d4",
+                      "title": "Creating a Backdoor Connection",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1121732,
+                      "key": "8ed06124-9bff-4b6d-ae5e-4c3cd6a79cf0",
+                      "title": "Exercise: Remote Connection ",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1121735,
+                      "key": "dd37fd12-bbc0-48df-85cf-5796da82c92b",
+                      "title": "Creating a Backdoor Connection Exercise Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1121739,
+                      "key": "7c43ee12-f1b1-423c-9a76-c25360ca33e7",
+                      "title": "Meterpreter Session Commands",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1121743,
+                      "key": "78a50c29-414b-451e-9298-df57aa95880a",
+                      "title": "Exercise: Data Exfiltration",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1121746,
+                      "key": "e9691e1e-703f-4ad9-a0c2-49889d7bd512",
+                      "title": "Web App & Database Attacks Exercise Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1121751,
+                      "key": "f65327a2-31a1-437c-9aa1-20d1a9152c66",
+                      "title": "Password Cracking",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1121753,
+                      "key": "94c607bc-6b6e-4486-8996-91af08afef1b",
+                      "title": "SQL injection Explained",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1121755,
+                      "key": "3337db0e-2086-43ec-845f-1f15bb072c2b",
+                      "title": "Different Types of SQL Injections",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1121758,
+                      "key": "87767cd2-e362-46f5-8a34-f83fffd9ab09",
+                      "title": "SQL injection",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1121741,
+                      "key": "d2a302b4-56ad-4e87-b6dd-1946b8f91b08",
+                      "title": "Directory Traversal",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1121763,
+                      "key": "8f86ce66-f813-431b-a628-0b407df0abfc",
+                      "title": "Exercise: Directory Traversal",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1121765,
+                      "key": "60ae4289-a9c1-4d65-82a6-28a4aa5ba97e",
+                      "title": "Directory Traversal - Exercise Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1121767,
+                      "key": "347ce456-32f3-4d1f-b564-384596407c43",
+                      "title": "Using Burp Suite to Capture Cookies",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1121780,
+                      "key": "c870a502-1fb2-4639-974a-8461fcb2c564",
+                      "title": "Update Your Report",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": {
+                        "files": [
+                          {
+                            "name": "Lesson 3 Gaining Access",
+                            "uri": "https://video.udacity-data.com/topher/2021/March/60400d38_lesson-3-gaining-access/lesson-3-gaining-access.ctb"
+                          }
+                        ],
+                        "google_plus_link": null,
+                        "career_resource_center_link": null,
+                        "coaching_appointments_link": null,
+                        "office_hours_link": null,
+                        "aws_provisioning_link": null
+                      }
+                    },
+                    {
+                      "id": 1124943,
+                      "key": "7553186d-4df5-4f6d-b44e-8050437fd38d",
+                      "title": "Be Flexible and Focused",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1121784,
+                      "key": "a5ce3a2d-c820-44eb-b10e-13979ce486c3",
+                      "title": "Gaining Access Lesson Recap",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 1124942,
+                  "key": "9ac3e412-3c90-4ced-8354-30596a2863af",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "In this lesson, we will learn how to maintain the access that we just go on the target. ",
+                  "title": "Maintaining Access",
+                  "duration": 300,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": null,
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2021/March/60592006_noun-access-484249/noun-access-484249.png",
+                    "width": 512,
+                    "height": 512
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 1124857,
+                      "key": "50d5027e-8e70-436d-97e4-9af23619e5f6",
+                      "title": "Introduction to Maintaining Access",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1124861,
+                      "key": "7770b103-745a-4eeb-9a95-0092a9cb93b5",
+                      "title": "Introduction to APTs Part 1",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1126694,
+                      "key": "7606d0c9-28e5-4705-903f-1744a10fc088",
+                      "title": "Introduction to APTs Part 2",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1124863,
+                      "key": "1fda2cb2-250d-421f-83d3-7e64e404f362",
+                      "title": "Quiz: Introduction to APTs ",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1124869,
+                      "key": "c0ff9d7a-621f-462f-86d7-4e92b7cfe990",
+                      "title": "Team Meeting!",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1124873,
+                      "key": "246ebb17-7ed8-4a52-8281-8d05e5cf5948",
+                      "title": "Post Exploitation Scans ",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1124876,
+                      "key": "399dc5a8-8735-4631-ac75-3045ab3427cf",
+                      "title": "Post Exploitation Routing",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1124881,
+                      "key": "5de3f672-3274-4b7b-b071-3d26cb5f84e4",
+                      "title": "Persistence Connection",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1124883,
+                      "key": "03ac4488-4961-4713-acf5-775ce55d568a",
+                      "title": "Quiz: Persistence ",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1124885,
+                      "key": "a3d4b2b0-2634-4bdd-b7c9-6b6c3b164fea",
+                      "title": "Exercise: Persistence Connection",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1124888,
+                      "key": "7a8e36c0-ab86-41ef-831c-1567f8a1ee10",
+                      "title": "Persistence Connection Exercise Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1124893,
+                      "key": "368c5859-81f7-42c0-a2ab-65f6d9f2bd49",
+                      "title": "Pivoting to Gain Access",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1124897,
+                      "key": "0731d448-15ca-4892-862b-951e11e59b5b",
+                      "title": "Exercise: Pivoting",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1124900,
+                      "key": "8b3d3562-27a7-4555-a42b-53ddb4cbc81b",
+                      "title": "Pivoting Exercise Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1124907,
+                      "key": "44dbbc73-a407-4378-97f8-4c0bfe80444f",
+                      "title": "Connecting via Wide Area Network (WAN)",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1124937,
+                      "key": "a46a24b8-b418-4515-97db-c4cffc7a632f",
+                      "title": "Update Your Report",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": {
+                        "files": [
+                          {
+                            "name": "Lesson 4 Maintaining Access",
+                            "uri": "https://video.udacity-data.com/topher/2021/March/60400df1_lesson-4-maintaining-access/lesson-4-maintaining-access.ctb"
+                          }
+                        ],
+                        "google_plus_link": null,
+                        "career_resource_center_link": null,
+                        "coaching_appointments_link": null,
+                        "office_hours_link": null,
+                        "aws_provisioning_link": null
+                      }
+                    },
+                    {
+                      "id": 1130091,
+                      "key": "a4617da0-1ac8-4afe-8d98-9dd175e8335c",
+                      "title": "Pep Talk!",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1124941,
+                      "key": "b6166480-ffaa-46de-bc40-acda231d8d4b",
+                      "title": "Maintaining Access Lesson Recap",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 1126858,
+                  "key": "d9330a8b-f15d-45a2-9b72-ab0b75d95bcb",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "In this lesson, we will learn how to stay under the radar of the target and not be noticed. And we will also organize all our thoughts in a final comprehensive report.",
+                  "title": "Covering Tracks & Reporting",
+                  "duration": 210,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": null,
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2021/March/605921db_noun-report-3426031/noun-report-3426031.png",
+                    "width": 512,
+                    "height": 512
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 1126757,
+                      "key": "554787bd-ac62-405b-aa26-5f226baacf56",
+                      "title": "Introduction to Covering Tracks & Reporting",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1126768,
+                      "key": "38bf49bf-e400-47bc-83e5-d800137ac670",
+                      "title": "Effective Methods for Covering Tracks",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1126759,
+                      "key": "65e562a5-6bcb-4b09-9bff-0f784935f1e8",
+                      "title": "Quiz: Introduction to Covering Tracks",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1126763,
+                      "key": "7d879e72-2c45-4bbb-afc9-307eec26aa17",
+                      "title": "Team Meeting!",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1126781,
+                      "key": "e30bee1d-b9cb-4296-bf08-2a523b79689a",
+                      "title": "Clearing Logs",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1126772,
+                      "key": "dadc17d0-f515-4845-834a-3a371e84f539",
+                      "title": "Exercise: Clearing Logs",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1126776,
+                      "key": "b57d348e-ce4c-43bf-a028-a9c0759a913b",
+                      "title": "Exercise Solution: Clearing Logs",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1126770,
+                      "key": "095070a5-787b-474b-bf84-fe6e00994125",
+                      "title": "Hiding Your Payload",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1126785,
+                      "key": "ceba3c53-4c95-44f6-aacf-13f7f28bf181",
+                      "title": "Removing Evidence",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1126789,
+                      "key": "589d8ebf-574f-41b3-970c-db143355bd3c",
+                      "title": "Exercise: Removing Evidence",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1126794,
+                      "key": "45b9c62e-5c14-4d70-988b-194fd4984265",
+                      "title": "Exercise Solution: Removing Evidence",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1126796,
+                      "key": "b8a23902-f895-44d5-90de-cbab5e36a638",
+                      "title": "Breaking the System",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1126822,
+                      "key": "5b819100-9a7e-47cb-bb78-e6180b22e983",
+                      "title": "Drafting Your Report - Part 1",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": {
+                        "files": [
+                          {
+                            "name": "Lesson 5 Covering Tracks",
+                            "uri": "https://video.udacity-data.com/topher/2021/March/60400e32_lesson-5-covering-tracks/lesson-5-covering-tracks.ctb"
+                          },
+                          {
+                            "name": "PJBank PenTest Report Draft",
+                            "uri": "https://video.udacity-data.com/topher/2021/March/60400e43_pjbank-pentest-report-draft/pjbank-pentest-report-draft.docx"
+                          }
+                        ],
+                        "google_plus_link": null,
+                        "career_resource_center_link": null,
+                        "coaching_appointments_link": null,
+                        "office_hours_link": null,
+                        "aws_provisioning_link": null
+                      }
+                    },
+                    {
+                      "id": 1126801,
+                      "key": "55ddc406-3ad7-418d-8ec9-9111bac20bbf",
+                      "title": "Drafting Your Report - Part 2",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": {
+                        "files": [
+                          {
+                            "name": "PJBank PenTest Report Draft",
+                            "uri": "https://video.udacity-data.com/topher/2021/March/60400e43_pjbank-pentest-report-draft/pjbank-pentest-report-draft.docx"
+                          }
+                        ],
+                        "google_plus_link": null,
+                        "career_resource_center_link": null,
+                        "coaching_appointments_link": null,
+                        "office_hours_link": null,
+                        "aws_provisioning_link": null
+                      }
+                    },
+                    {
+                      "id": 1126805,
+                      "key": "4b8cc0a1-d4da-4766-9f8a-a2995a71c59f",
+                      "title": "Exercise: Drafting Your Report",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": {
+                        "files": [
+                          {
+                            "name": "Drafting Report Template",
+                            "uri": "https://video.udacity-data.com/topher/2021/April/608825e5_pjbank-pentest-report-draft/pjbank-pentest-report-draft.docx"
+                          }
+                        ],
+                        "google_plus_link": null,
+                        "career_resource_center_link": null,
+                        "coaching_appointments_link": null,
+                        "office_hours_link": null,
+                        "aws_provisioning_link": null
+                      }
+                    },
+                    {
+                      "id": 1126809,
+                      "key": "ef4e8fcb-c195-4bf8-9286-a68bf1419486",
+                      "title": "Exercise Solution: Drafting Your Report",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": {
+                        "files": [
+                          {
+                            "name": "Drafting Report Exercise Solution",
+                            "uri": "https://video.udacity-data.com/topher/2021/April/60882615_pjbank-pentest-report-v1-20210317/pjbank-pentest-report-v1-20210317.pdf"
+                          }
+                        ],
+                        "google_plus_link": null,
+                        "career_resource_center_link": null,
+                        "coaching_appointments_link": null,
+                        "office_hours_link": null,
+                        "aws_provisioning_link": null
+                      }
+                    },
+                    {
+                      "id": 1130092,
+                      "key": "33880639-3a56-419a-9298-563abe3bfe08",
+                      "title": "Grand Finale",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1126849,
+                      "key": "2d21e6ab-c8ca-4387-93cb-88bcfc3f2a81",
+                      "title": "Lesson Recap",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1130085,
+                      "key": "560ce4ca-5a47-4b10-a9ed-a53278135fb3",
+                      "title": "Course Recap",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1130086,
+                      "key": "887a1bd0-1122-4d3f-800e-ebffc6d7285d",
+                      "title": "Congratulations",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 1051110,
+                  "key": "af94e7d5-4890-456d-8e30-365f3d2bddff",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "This project will have you go through modern penetration tester and red teamer methodologies. You will create a documentation and testing efforts to generate a report in a timely fashion.",
+                  "title": "Red Teaming Operations",
+                  "duration": 300,
+                  "is_public": true,
+                  "is_project_lesson": true,
+                  "display_workspace_project_only": false,
+                  "lesson_type": null,
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2021/March/605923eb_noun-operation-1945503/noun-operation-1945503.png",
+                    "width": 512,
+                    "height": 512
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": {
+                    "key": "95eb58e1-0f8c-421b-b5eb-90ad64299492",
+                    "version": "1.0.0",
+                    "locale": "en-us",
+                    "duration": 40320,
+                    "semantic_type": "Project",
+                    "title": "Red Teaming Operations",
+                    "description": "## Project Summary\nYou have gone on a journey through modern penetration tester and red teamer methodologies. You have performed a penetration test against PJBank CISO's virtual operations. And in doing so created a report that documents your procedures , including annotated screenshots, findings, and policy-specific recommendations for your submission.\n\n## Submission Checklist\nBefore you submit, check if the following have been completed:  \n\n|    | |\n|-------------------------|--------------------------------------------------------------------------------------------------------------|\n| <input type=\"checkbox\"> | Everything in the [Rubric](https://review.udacity.com/#!/rubrics/2891/view) is complete. |\n| <input type=\"checkbox\"> | A completed **RedTeamOperations.pdf** report.|\n| | | |\n\n**Note**: The checklist above won't save your checkmarks, so do this right before you plan to submit.\n\n## Ready to Submit?\nOnce you have all the items above completed, you can click the submit button. Follow the directions to submit your project as a single pdf file. ",
+                    "is_public": true,
+                    "summary": null,
+                    "forum_path": "",
+                    "rubric_id": "2891",
+                    "terminal_project_id": null,
+                    "resources": null,
+                    "image": null
+                  },
+                  "concepts": [
+                    {
+                      "id": 1051084,
+                      "key": "7d823ba3-1c5d-435e-b77c-165c11c27244",
+                      "title": "Red Teaming Operations",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1051103,
+                      "key": "a97121cc-7546-468d-a677-abe416bb42e1",
+                      "title": "Environment, Setup, and Templates",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": {
+                        "files": [
+                          {
+                            "name": "Local Lab Preparation Instructions For Projectv2",
+                            "uri": "https://video.udacity-data.com/topher/2021/March/605d2b66_local-lab-preparation-instructions-for-projectv2/local-lab-preparation-instructions-for-projectv2.pdf"
+                          }
+                        ],
+                        "google_plus_link": null,
+                        "career_resource_center_link": null,
+                        "coaching_appointments_link": null,
+                        "office_hours_link": null,
+                        "aws_provisioning_link": null
+                      }
+                    },
+                    {
+                      "id": 1051094,
+                      "key": "c6e89a07-2f35-45e7-984b-cc0a8ff85556",
+                      "title": "Instructions",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": {
+                        "files": [
+                          {
+                            "name": "WSTG - Latest   OWASP",
+                            "uri": "https://video.udacity-data.com/topher/2021/March/604ab269_wstg-latest-owasp/wstg-latest-owasp.html"
+                          },
+                          {
+                            "name": "GIT Source Code ExposurBlog",
+                            "uri": "https://video.udacity-data.com/topher/2021/March/604b7e16_git-source-code-exposurblog/git-source-code-exposurblog.html"
+                          }
+                        ],
+                        "google_plus_link": null,
+                        "career_resource_center_link": null,
+                        "coaching_appointments_link": null,
+                        "office_hours_link": null,
+                        "aws_provisioning_link": null
+                      }
+                    },
+                    {
+                      "id": 1163244,
+                      "key": "e43e50b1-a443-45c5-9e7f-8126a1c6cf96",
+                      "title": "Exploiting with XAMPP",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1051098,
+                      "key": "855b390e-8c1b-49b5-a554-27aed324f1bd",
+                      "title": "Quiz: Penetration and Red Teaming Operations",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1051106,
+                      "key": "e007642a-29e6-4ec9-85a7-7aa4a3e569b3",
+                      "title": "Project Workspace",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 1107718,
+          "key": "ff8c034c-213e-475f-80c0-cd1c4ce970f3",
+          "title": "Career Services",
+          "semantic_type": "Part",
+          "is_public": true,
+          "version": "1.0.0",
+          "locale": "en-us",
+          "summary": "",
+          "part_type": "Core",
+          "locked_reason": "not_locked",
+          "locked_until": null,
+          "content_ready_date_ms": null,
+          "resources": null,
+          "image": null,
+          "specialization": null,
+          "modules": [
+            {
+              "id": 1107719,
+              "key": "afaa9d52-748c-44af-8d62-9ba3c2f616bb",
+              "title": "Career Services",
+              "semantic_type": "Module",
+              "is_public": true,
+              "version": "1.0.0",
+              "locale": "en-us",
+              "is_project_module": null,
+              "forum_path": "",
+              "lessons": [
+                {
+                  "id": 631083,
+                  "key": "20707806-8f14-420f-b613-4196199a88c1",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "Find your next job or connect with industry peers on LinkedIn. Ensure your profile attracts relevant leads that will grow your professional network.",
+                  "title": "Take 30 Min to Improve your LinkedIn",
+                  "duration": 30,
+                  "is_public": true,
+                  "is_project_lesson": true,
+                  "display_workspace_project_only": false,
+                  "lesson_type": null,
+                  "image": {
+                    "url": "https://s3.amazonaws.com/video.udacity-data.com/topher/2018/February/5a8222c0_1-3-career-services-available-to-you2x/1-3-career-services-available-to-you2x.jpg",
+                    "width": 500,
+                    "height": 500
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": {
+                    "key": "0051a3da-930f-47a1-bd41-d7fe3bd324f4",
+                    "version": "1.0.0",
+                    "locale": "en-us",
+                    "duration": 1440,
+                    "semantic_type": "Project",
+                    "title": "Improve Your LinkedIn Profile",
+                    "description": "Have job opportunities come to you by optimizing your LinkedIn profile! Complete this simple process to get personalized tips from a career mentor. \n\nHere’s how to submit your LinkedIn profile for feedback now:\n* Check out this [checklist](https://docs.google.com/document/d/1BZMxuKnBNovOyMelEx7d8ktbsWGj0EJ9KaD81dVC1TE/pub?embedded=true) for tips on optimizing your LinkedIn profile (optional).\n* **Make sure your profile is in English.** If you do not have an English profile yet, check out LinkedIn's [advice](https://www.linkedin.com/help/linkedin/answer/1717/creating-or-deleting-a-profile-in-another-language?lang=en) on how to create a secondary language profile.\n* Make your profile publicly visible. Scroll down and set the profile section toggles to `Show` under the “Edit Visibility” section of  [your public profile edit page](https://www.linkedin.com/public-profile/settings?trk=nprofile-public-profile-settings-redirect).\n * ![Edit Visibility](http://lh3.googleusercontent.com/R0A5rnKYyzLPZJ8B_pkyxdKkvab5qQi2LnEpFq2L-F33TSgzmjduHuUyDi-Z_ka2L7oU50UYqQTeU1n8VcM=s0#w=400&h=333 \"Edit Visibility\")\n* Create a custom profile URL in the “Edit URL” section of [your public profile edit page](https://www.linkedin.com/public-profile/settings?trk=nprofile-public-profile-settings-redirect).\n * ![Edit URL](http://lh3.googleusercontent.com/SGdIHFzKav0QZmOSrrP69xch_F0Ufhu9pLy-nDXYDArHUyzAen7ewoLakVOKn3KvX_CVgJjBWkl_FmPTPqM=s0#w=250&h=120 \"Edit URL\")\n* Submit your public profile URL (such as `www.linkedin.com/in/udacitystudent`) for guidance from a career mentor by clicking “Submit Project” below.",
+                    "is_public": true,
+                    "summary": null,
+                    "forum_path": "",
+                    "rubric_id": "1910",
+                    "terminal_project_id": null,
+                    "resources": null,
+                    "image": null
+                  },
+                  "concepts": [
+                    {
+                      "id": 704348,
+                      "key": "c8c3fbd0-b7ba-471e-85b7-eb2b1c3820c0",
+                      "title": "Get Opportunities with LinkedIn",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 703862,
+                      "key": "20efad1e-c7b3-432d-86ad-0e798c795d49",
+                      "title": "Use Your Story to Stand Out",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 703860,
+                      "key": "a891296f-46ea-457c-89d9-f4ec96a40cae",
+                      "title": "Why Use an Elevator Pitch",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 703864,
+                      "key": "0c1acad0-cb41-4260-bd5c-6df07f1b2778",
+                      "title": "Create Your Elevator Pitch",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 708825,
+                      "key": "36e84f5b-204e-48c4-8071-293f49886a85",
+                      "title": "Use Your Elevator Pitch on LinkedIn",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 729380,
+                      "key": "a7deba78-27c8-4735-ad9c-7ab2b2b1ad91",
+                      "title": "Create Your Profile With SEO In Mind",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 728573,
+                      "key": "6ed9b5b0-43cf-4b65-b01d-345e44dfd765",
+                      "title": "Profile Essentials",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 728593,
+                      "key": "d3f369bb-78d7-478a-a909-c6e13683cc18",
+                      "title": "Work Experiences & Accomplishments",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 708828,
+                      "key": "eb90e45b-5d77-458b-af34-0f8eaecd45a8",
+                      "title": "Build and Strengthen Your Network",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 617430,
+                      "key": "64ed9954-b423-4a75-ad70-b2a1fbaa3a6d",
+                      "title": "Reaching Out on LinkedIn",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 728591,
+                      "key": "1d61fe7d-02e6-4376-a0c5-e01e26969d63",
+                      "title": "Boost Your Visibility",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 708834,
+                      "key": "2da1cc73-72cb-4678-b84d-1ab91798e8b3",
+                      "title": "Up Next",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 594372,
+                  "key": "de38d0de-afac-4d34-a339-25c2519cf9f9",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "Other professionals are collaborating on GitHub and growing their network. Submit your profile to ensure your profile is on par with leaders in your field.",
+                  "title": "Optimize Your GitHub Profile",
+                  "duration": 75,
+                  "is_public": true,
+                  "is_project_lesson": true,
+                  "display_workspace_project_only": false,
+                  "lesson_type": null,
+                  "image": {
+                    "url": "https://s3.amazonaws.com/video.udacity-data.com/topher/2018/August/5b7218b9_2-5-add-commits-to-a-repo2x-1/2-5-add-commits-to-a-repo2x-1.jpg",
+                    "width": 592,
+                    "height": 640
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": {
+                    "key": "4180859007",
+                    "version": "1.0.0",
+                    "locale": "en-us",
+                    "duration": 1440,
+                    "semantic_type": "Project",
+                    "title": "Optimize Your GitHub Profile",
+                    "description": "GitHub Profiles are a key piece of \"evidence\" to an employer that you'd be a good job candidate, because they can see the details of your work. Recruiters use GitHub as a way to find job candidates, and many Nanodegree alumni have received work opportunities from their activity on GitHub. In addition, using GitHub is a way for you to collaborate on projects with other programmers - this will show that you are able to work well with others on an engineering team on the job.\n\n## Submission Instructions\n1. Submit this project after you've done some continuous coding for two weeks, so the reviewer will be able to comment on trends.\n2. Submit your GitHub profile URL as your project.\n3. If you'd like to **opt-out** of this project, please read the instructions underneath the divider line, below.\n\n## Project Resources\n1. [Project Rubric](https://review.udacity.com/#!/rubrics/52/view). *Your project will be reviewed by a Udacity Career Reviewer against this rubric.*\n2. [Project checklist](https://docs.google.com/document/d/1a9AKnNyqfGgdQV5ohPCN5H9ntnEUhMptWMwVBWURCN0/pub?embedded=true). *Based on the project rubric, this is a handy checklist on GitHub best practices.*\n3. [Career Resource Center](https://career-resource-center.udacity.com/linkedin-github-profiles). *Find additional tips and guides on developing your GitHub Profile.*\n\n## Up Next\nContinue developing on GitHub! For project ideas, consider [contributing to open source](https://career-resource-center.udacity.com/contributing-to-open-source).\n\n---\n\n### *Career Review Requirement*\n\n*Your Nanodegree program was designed to ensure your long-term success in the field, and to pursue a successful career you must showcase the skills you’ve learned to employers effectively. **Therefore, this is a requirement for graduation, unless you opt-out.*** \n\n#### Opting Out\n\nIf improving your GitHub profile does not align with your Nanodegree goals, **you may opt-out of this graduation requirement**.\n\nWhen you opt-out:\n\n* *You will no longer be able to submit the GitHub Review from this Nanodegree program and all other Nanodegree programs.*\n* *Your decision to opt-out is final and future access to GitHub Review will need to be purchased separately.*\n\n*If you would like to opt-out, please click [here](https://forms.udacity.com/forms/career-opt-out).*",
+                    "is_public": true,
+                    "summary": "GitHub is a great way for employers to get a sense of how you code. Learn what your GitHub profile says about you and how to improve it to impress employers.",
+                    "forum_path": "c/careers-github-profile-review",
+                    "rubric_id": "52",
+                    "terminal_project_id": "",
+                    "resources": {
+                      "files": [],
+                      "google_plus_link": null,
+                      "career_resource_center_link": null,
+                      "coaching_appointments_link": null,
+                      "office_hours_link": null,
+                      "aws_provisioning_link": null
+                    },
+                    "image": null
+                  },
+                  "concepts": [
+                    {
+                      "id": 653724,
+                      "key": "00b53aa6-a4a0-4eee-a034-39915c379b68",
+                      "title": "Prove Your Skills With GitHub",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 25024,
+                      "key": "58316191600923",
+                      "title": "Introduction",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 41373,
+                      "key": "58492985590923",
+                      "title": "GitHub profile important items",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 19532,
+                      "key": "58315398190923",
+                      "title": "Good GitHub repository",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 21541,
+                      "key": "58503485550923",
+                      "title": "Interview with Art - Part 1",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 44395,
+                      "key": "58334298230923",
+                      "title": "Identify fixes for example “bad” profile",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 5637,
+                      "key": "64958716790923",
+                      "title": "Quick Fixes #1",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 23053,
+                      "key": "64786551490923",
+                      "title": "Quick Fixes #2",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 67965,
+                      "key": "65214390560923",
+                      "title": "Writing READMEs with Walter",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 16617,
+                      "key": "64423071120923",
+                      "title": "Interview with Art - Part 2",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 55196,
+                      "key": "65265285770923",
+                      "title": "Commit messages best practices",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 41944,
+                      "key": "64804050710923",
+                      "title": "Reflect on your commit messages",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 91571,
+                      "key": "65053008530923",
+                      "title": "Participating in open source projects",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 56941,
+                      "key": "64818045500923",
+                      "title": "Interview with Art - Part 3",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 5694,
+                      "key": "65019290470923",
+                      "title": "Participating in open source projects 2",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 22046,
+                      "key": "64858046490923",
+                      "title": "Starring interesting repositories",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 594373,
+                      "key": "156ac946-5ac9-45e8-9ca4-7523e6af7234",
+                      "title": "Next Steps",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": {
+                        "files": [],
+                        "google_plus_link": null,
+                        "career_resource_center_link": null,
+                        "coaching_appointments_link": null,
+                        "office_hours_link": null,
+                        "aws_provisioning_link": null
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 1124837,
+          "key": "b6d542d1-04a4-4f70-a7eb-46b3b4bd18f2",
+          "title": "Congratulations!",
+          "semantic_type": "Part",
+          "is_public": true,
+          "version": "1.0.0",
+          "locale": "en-us",
+          "summary": "",
+          "part_type": "Core",
+          "locked_reason": "not_locked",
+          "locked_until": null,
+          "content_ready_date_ms": null,
+          "resources": null,
+          "image": null,
+          "specialization": null,
+          "modules": [
+            {
+              "id": 1124838,
+              "key": "7a821319-6ffe-406d-956a-50ca0ae23fe7",
+              "title": "Congratulations!",
+              "semantic_type": "Module",
+              "is_public": true,
+              "version": "1.0.0",
+              "locale": "en-us",
+              "is_project_module": null,
+              "forum_path": "",
+              "lessons": [
+                {
+                  "id": 1121685,
+                  "key": "8606ae15-4e97-49dd-9440-1b8d9df85b0f",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "Congratulations on your graduation from this program! Please join us in celebrating your accomplishments.",
+                  "title": "Congratulations!",
+                  "duration": 10,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": null,
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2018/July/5b4d0560_graduation/graduation.jpg",
+                    "width": 500,
+                    "height": 500
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 1121686,
+                      "key": "9c14ab46-b276-4e4a-a508-02013e360c63",
+                      "title": "Let the Celebration Begin!",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1121689,
+                      "key": "ff264c0a-3682-4f49-9d0e-9cc49a768c66",
+                      "title": "Commencement Speech, Udacity Founder Sebastian Thrun",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1121691,
+                      "key": "95d9983c-1a1c-4e04-9dfa-275aaed5455c",
+                      "title": "Your Next Steps",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "content_ready_date_ms",
+      "reason": "no longer used"
+    },
+    {
+      "name": "content_ready_date_ms",
+      "reason": "no longer used"
+    },
+    {
+      "name": "content_ready_date_ms",
+      "reason": "no longer used"
+    },
+    {
+      "name": "content_ready_date_ms",
+      "reason": "no longer used"
+    },
+    {
+      "name": "content_ready_date_ms",
+      "reason": "no longer used"
+    },
+    {
+      "name": "lesson_type",
+      "reason": "Obsolete"
+    },
+    {
+      "name": "lesson_type",
+      "reason": "Obsolete"
+    },
+    {
+      "name": "lesson_type",
+      "reason": "Obsolete"
+    },
+    {
+      "name": "lesson_type",
+      "reason": "Obsolete"
+    },
+    {
+      "name": "lesson_type",
+      "reason": "Obsolete"
+    },
+    {
+      "name": "lesson_type",
+      "reason": "Obsolete"
+    },
+    {
+      "name": "lesson_type",
+      "reason": "Obsolete"
+    },
+    {
+      "name": "lesson_type",
+      "reason": "Obsolete"
+    },
+    {
+      "name": "lesson_type",
+      "reason": "Obsolete"
+    },
+    {
+      "name": "lesson_type",
+      "reason": "Obsolete"
+    },
+    {
+      "name": "lesson_type",
+      "reason": "Obsolete"
+    },
+    {
+      "name": "lesson_type",
+      "reason": "Obsolete"
+    },
+    {
+      "name": "lesson_type",
+      "reason": "Obsolete"
+    },
+    {
+      "name": "lesson_type",
+      "reason": "Obsolete"
+    },
+    {
+      "name": "lesson_type",
+      "reason": "Obsolete"
+    },
+    {
+      "name": "lesson_type",
+      "reason": "Obsolete"
+    },
+    {
+      "name": "lesson_type",
+      "reason": "Obsolete"
+    },
+    {
+      "name": "lesson_type",
+      "reason": "Obsolete"
+    },
+    {
+      "name": "lesson_type",
+      "reason": "Obsolete"
+    }
+  ]
+}

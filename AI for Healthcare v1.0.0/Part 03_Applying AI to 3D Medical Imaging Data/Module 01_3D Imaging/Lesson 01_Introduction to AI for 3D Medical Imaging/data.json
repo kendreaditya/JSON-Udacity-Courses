@@ -1,0 +1,506 @@
+{
+  "data": {
+    "lesson": {
+      "id": 1014242,
+      "key": "bfcee54c-56ee-401f-b31d-8756fbdcc710",
+      "title": "Introduction to AI for 3D Medical Imaging ",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "In this lesson, we will introduce the course and instructors. We will give you an overview of the context for AI in 3D medical imaging space, and cover the objectives of the course.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/bfcee54c-56ee-401f-b31d-8756fbdcc710/1014242/1590513930739/Introduction+to+AI+for+3D+Medical+Imaging++Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/bfcee54c-56ee-401f-b31d-8756fbdcc710/1014242/1590513928055/Introduction+to+AI+for+3D+Medical+Imaging++Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 1014235,
+          "key": "dad24bf9-b40e-4ea3-84f2-449846b91e9d",
+          "title": "Welcome to the Course",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "dad24bf9-b40e-4ea3-84f2-449846b91e9d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1014214,
+              "key": "4c2c471e-e825-4ca3-8bc3-7c0d09b040af",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Welcome to AI for 3D medical imaging!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014212,
+              "key": "bd172b69-faa6-40dd-93c3-a3f49a9fab8a",
+              "title": "ND320 C3 Course Intro",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "K_8FLF8bwho",
+                "china_cdn_id": "K_8FLF8bwho.mp4"
+              }
+            },
+            {
+              "id": 1014225,
+              "key": "0448e914-6508-4bb3-b876-6f8a2793ce11",
+              "title": "Recap of Introduction + Course Outline + Lesson Outline",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Course map\nThis course is going to introduce you to building AI algorithms for problems that involve 3D medical images, predominantly those produced by Computed Tomography (CT) and Magnetic Resonance Imaging (MRI) scanners. \n\nIn this lesson, we will provide some context, motivation for the content which we decided to include, and discuss the structure for this course. \n\n## Course Learning Objectives\n\nThese are the learning objective for this course:\n\n* Understand what 3D medical images are, who uses them, and for what purposes\n* Perform exploratory data analysis on 3D image datasets in common formats such as DICOM and NIFTI \n* Apply popular machine learning algorithms for both classification and segmentation tasks using real-world medical imaging datasets\n* Learn to integrate trained models into a clinical imaging environment and troubleshoot your deployments\n* Provide input into the algorithm validation process as required for field deployments\n\nWe believe that mastering those will help you get oriented in the field, and give you a great boost on the path of developing great AI systems.\n\n## Course Concepts\n\nWe will be touching upon many concepts throughout this course, that span multiple fields. Here is a diagram that may help you build a mental picture as we dive deeper into these concepts and how they play together.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014210,
+              "key": "762c15e1-d5da-4f33-adfe-63b27ddfb445",
+              "title": "Course Overview",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9bf448_l0-course-overview/l0-course-overview.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/762c15e1-d5da-4f33-adfe-63b27ddfb445",
+              "caption": "Main concepts mentioned in the course",
+              "alt": "Course overview concepts",
+              "width": 1158,
+              "height": 1030,
+              "instructor_notes": null
+            },
+            {
+              "id": 1014209,
+              "key": "96674399-77b7-4cfd-881b-b76fe8473c1b",
+              "title": "Concepts comments/outro",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "The dark blue color is used for those concepts which we spend more time on, while gray ones are mentioned and are relevant, but are not discussed in detail.  \n  \nSome of these may be familiar to you, and some may be new. We will try to provide links at the end of each lesson to help you explore these in further detail.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1014236,
+          "key": "65a51c88-7d1d-42e5-9a39-9376009b5f93",
+          "title": "What is AI for 3D medical imaging?",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "65a51c88-7d1d-42e5-9a39-9376009b5f93",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1014228,
+              "key": "a1e3de0a-de49-4aa7-9341-e2da456708fd",
+              "title": "heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# What is AI for 3D Medical Imaging? Who is it for?\n\nLet us share our thoughts on what we think of when we mention “AI” and “AI engineer”.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014213,
+              "key": "a80bc49d-5b09-4617-9836-b25bc5eaa437",
+              "title": "ND320 C3 L0 02 Who Is AI Engineer- What Is AI For 3D Med Imaging-",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "JgmyZSxsxbM",
+                "china_cdn_id": "JgmyZSxsxbM.mp4"
+              }
+            },
+            {
+              "id": 1014216,
+              "key": "1696c5a4-08c1-4d68-9ece-ed158e803bc9",
+              "title": "What is AI for 3D medical imaging?",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## “AI” and “AI Engineers”\n\n\nIn 1955 some of the fathers of modern information theory and what has become “AI” these days introduced the following definition of “artificial intelligence problem”:\n\n> An attempt will be made to find how to make machines use language, form abstractions and concepts, solve kinds of problems now reserved for humans, and improve themselves. … For the present purpose the artificial intelligence problem is taken to be that of making a machine behave in ways that would be called intelligent if a human were so behaving.  \n[McCarthy, Shannon, Minsky et al. A proposal for the Dartmouth summer research project on artificial intelligence, 1955](http://www-formal.stanford.edu/jmc/history/dartmouth/dartmouth.html)\n\nThe summer research project proposal, which introduced this definition, is thought to have laid the foundation of the field of artificial intelligence study. \n\nFor the purpose of this course, we think of AI as an: \n\n> Application of Machine Learning techniques to a real-world problem, improving human productivity and capability.\n\nWe would like to focus on the “real world” aspect of technology, and teach you the two sides of the implementation of AI for the purpose of 3D medical image analysis: \n- the thought processes of clinicians and radiologists and what kind of ML-powered technology would be most impactful to them\n- data, tools, and algorithms that need to come together to bring about a machine learning algorithm which could produce an analysis of a 3D medical volume\n\nOur vision is that firmly grasping of both sides makes someone a good AI engineer, that is someone who understands all of the following:\n- how data is produced and curated\n- what kinds of machine learning algorithms and statistical models can utilize this data to solve clinical problems, and in what way\n- how trained models need to be integrated into a clinical environment, and how some of the related fields apply; fields such as human-computer interaction, user experience design, regulatory frameworks, ethics, and data privacy\n\nIf you share these views and you want to get to know the field better, there is a good chance that you will find this course quite useful.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1014241,
+          "key": "84f5c748-1e48-402a-921c-bf1d1467b892",
+          "title": "What is the historical context for 3D medical imaging?",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "84f5c748-1e48-402a-921c-bf1d1467b892",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1014224,
+              "key": "e594166f-26ab-434f-84f1-7d6512faab99",
+              "title": "Historical context",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Historical context for AI and medical imaging\n\nLet us provide some perspective into where this is all coming from.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014221,
+              "key": "f0c79133-e265-4738-868a-65b2ef7d43b5",
+              "title": "ND320 C3 L0 04 Historical Context",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Xd2DpP7VKag",
+                "china_cdn_id": "Xd2DpP7VKag.mp4"
+              }
+            },
+            {
+              "id": 1014955,
+              "key": "92a63187-0df0-49c2-8c3d-7f43241209b3",
+              "title": "Summary -1",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Medical imaging has been around for quite a while now, but not until recently have automated analysis techniques seen a lot of success.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014954,
+              "key": "40fae83a-5103-47ff-ab60-e0c64c0f8440",
+              "title": "Med imaging timeline",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9bf43e_l1-medical-imaging-timeline/l1-medical-imaging-timeline.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/40fae83a-5103-47ff-ab60-e0c64c0f8440",
+              "caption": "Medical Imaging timeline",
+              "alt": "Medical imaging timeline\nmedical_imaging_timeline.png",
+              "width": 762,
+              "height": 285,
+              "instructor_notes": null
+            },
+            {
+              "id": 1014219,
+              "key": "94dfcab0-68ea-44c6-95d3-7bc4ccf46f0d",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "They hold a lot of promise to improve the lives of clinicians, but there is a lot to discover about the right fit within the status quo.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014211,
+              "key": "1782239e-610e-4bba-814a-18a82bb8eab3",
+              "title": "Check for understanding",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "1782239e-610e-4bba-814a-18a82bb8eab3",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "How long has radiological imaging been around?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "Since the '70s",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "More than 100 years",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "Since 2016",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1014237,
+          "key": "9b9845b9-d0c7-4417-bc0a-7a3020582e9a",
+          "title": "Why is AI for 3D med imaging important?",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "9b9845b9-d0c7-4417-bc0a-7a3020582e9a",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1014215,
+              "key": "f8ab90ff-ca94-4652-8ab4-8576dafa1d4f",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Why is AI for 3D Medical Imaging important and who is it relevant to?",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014220,
+              "key": "a115c8d9-fd78-4286-b1b5-badbde211d7e",
+              "title": "ND320 C3 L0 05 State Of AI For Med Imaging",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "TBkMWYPKv7Y",
+                "china_cdn_id": "TBkMWYPKv7Y.mp4"
+              }
+            },
+            {
+              "id": 1014230,
+              "key": "d10cdc38-e08b-435f-8042-55057607f5a8",
+              "title": "Intro",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "A telltale sign of growth in an area of medical technology is the amount of products getting submitted to the regulatory authorities. A good view of what has been happening with AI in medicine is this infographics. Note the recent growth of the share of imaging technologies.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014218,
+              "key": "a271f47f-a500-4c26-9d2c-9b54f3ccaea3",
+              "title": "State of AI for med imaging",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9bf44d_l0-fda-approvals-infographic/l0-fda-approvals-infographic.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/a271f47f-a500-4c26-9d2c-9b54f3ccaea3",
+              "caption": "FDA approvals for medical AI",
+              "alt": "Infographics on FDA approvals for AI tools in healthcare\n\nlesson_images/L0/FDA_approvals_infographic.png",
+              "width": 1999,
+              "height": 1470,
+              "instructor_notes": null
+            },
+            {
+              "id": 1014217,
+              "key": "c3e6536e-1300-4feb-a867-627d4ce00c47",
+              "title": "Hiring check",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "c3e6536e-1300-4feb-a867-627d4ce00c47",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Who would be interested in hiring an AI engineer with 3D medical imaging focus?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "A hospital system",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "A medical imaging startup",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "A big tech company like Microsoft or Facebook",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk4",
+                    "text": "A medical device company like GE or Siemens",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1014222,
+              "key": "f738e0d4-1b1d-42b2-84c5-a4a402428bb8",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "AI for 3D medical imaging is garnering a lot of attention recently because of all the advances in the deep learning space. Some of the early applications are very promising. \n\nTo get an idea of the growth of this industry, take a look at what the American College of Radiology (ACR) has been doing. The ACR is a US professional society that develops guidelines for the use of medical imaging technology. \n\nRecently the ACR has been actively working with clinicians and regulators to define the use cases for AI in radiology and help the FDA find the proper regulatory frameworks for various AI techniques. Two initiatives are worth taking a look now:\n\n* ACR has been developing a comprehensive list of use cases for AI in radiology: https://www.acrdsi.org/DSI-Services/Define-AI\n* the ACR has been keeping track of FDA cleared tools for radiological imaging: https://www.acrdsi.org/DSI-Services/FDA-Cleared-AI-Algorithms\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1014240,
+          "key": "59c3e7cd-b470-4231-a95a-37e37625b3ff",
+          "title": "Course Content",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "59c3e7cd-b470-4231-a95a-37e37625b3ff",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1014229,
+              "key": "ead83866-3fa6-4391-9f69-859fb8bdecaa",
+              "title": "Introduction",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Course Content",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014232,
+              "key": "602be48c-4aff-4873-bded-dcf94c5b4e3e",
+              "title": "ND320 C3 L0 03 Course Content",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "dGJpV_SPGts",
+                "china_cdn_id": "dGJpV_SPGts.mp4"
+              }
+            },
+            {
+              "id": 1014233,
+              "key": "76ca3ed5-3078-42f8-9768-4b392c476284",
+              "title": "Summary and descriptors of each",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# What’s included?\n\nThis course will focus on teaching you the following: \n\n* Basics of biomedical imaging for software engineers and data scientists, complete with clinical motivation \n* Application of machine learning techniques for 3D medical imaging data\n* Principles of end-to-end design of medical imaging AI systems\n\nThe course is structured around an intro lesson, four content lessons, and final project as follows:\n\n| Lesson \t| Content                                                                                                                                                                                                                                                                                                                                 \t|\n|:----------------:\t|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\t|\n|         1        \t| Introduction to 3D Medical Imaging (this lesson!)                                                                                                                                                                                                                                                                                                                                            \t|\n|         2        \t| Clinical Background and Physics of 3D Medical Imaging                                                                                                                                                                                                                                                                                     \t|\n|         3        \t| 3D medical imaging data formats and dataset analysis                                                                                                                                                                                                                                                                                      \t|\n|         4        \t| Machine Learning for 3D medical imaging and segmentation hands-on                                                                                                                                                                                                                                                                         \t|\n|         5        \t| Deploying machine learning algorithms in the real world                                                                                                                                                                                                                                                                                   \t|\n|   Final Project | **Quantifying Hippocampal Volume for Alzheimer's Progression** <br> You will clean up a 3D medical imaging dataset, train a segmentation model, and plug it into a functional medical imaging environment so that it automatically produces AI-powered reports for radiologists to reference. \t|\n\n\n# What’s not included?\n\nThis course will not focus on teaching the following:\n\n* **Deep Learning fundamentals** - there are plenty of very deep courses on the subject. If you feel like you need to get a deeper understanding of the subject, we recommend looking for some of the Udacity courses, like the [Deep Learning Nanodegree](https://www.udacity.com/course/deep-learning-nanodegree--nd101) or some of the free resources like Stanford’s [video lectures](https://www.youtube.com/playlist?list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv) and [tutorial](http://ufldl.stanford.edu/tutorial/supervised/LinearRegression/). Another good resource is the [fast.ai](https://www.fast.ai/) course which has been built by Jeremy Howard who has co-founded a medical imaging AI startup, Enlitic.\n* **PyTorch or any other specific libraries**. If you want to get a fundamental grasp of PyTorch specifically, we recommend PyTorch’s [tutorial](https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html) or the [free Udacity course](https://www.udacity.com/course/deep-learning-pytorch--ud188). We will also use NumPy quite a lot and if you need a quick intro into that, the [official tutorial](https://docs.scipy.org/doc/numpy/user/quickstart.html) gives you everything you need to understand the code in this course.\n* **High-performance/large-scale computing on massive medical imaging datasets**. Medical imaging datasets may become big (we are talking hundreds of gigabytes). Using them efficiently would tap into generic software architecture skills for building distributed systems, most likely using the major clouds. Every cloud provider offers a set of resources on the optimal use of their technologies. For example, you can take a look at [Microsoft’s design patterns for machine learning at scale](https://docs.microsoft.com/en-us/azure/architecture/data-guide/big-data/machine-learning-at-scale)\n* **Diagnostic medical imaging**. While you will hopefully gain some intuition required for an understanding of radiological images and clinicians' thought process better, it takes years of medical school and residency to become proficient with using 3D medical imaging for clinical purposes. [Radiopaedia](https://radiopaedia.org/) is a great resource to look at the variety of sample radiological cases and get familiar with how various conditions present in radiological studies.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1014239,
+          "key": "fd6406b7-7068-451d-b57d-e16e4306e8dc",
+          "title": "Relevant tools",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "fd6406b7-7068-451d-b57d-e16e4306e8dc",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1014226,
+              "key": "c7404f5b-47ec-40c9-9c86-6bb0b9006112",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Tools and Environments",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014234,
+              "key": "029ff936-a2bf-4d97-a139-6d402cf8dc09",
+              "title": "ND320 C3 L0 06 Tools Used In The Course",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "aF1htPzHlTQ",
+                "china_cdn_id": "aF1htPzHlTQ.mp4"
+              }
+            },
+            {
+              "id": 1014227,
+              "key": "a8cdd233-6b07-4873-b188-40f893219570",
+              "title": "Summary of each",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Tools and libraries\n\nIn this course, you will use standard data science/machine learning tools:\n- [PyTorch](https://pytorch.org/)\n- [NumPy](https://numpy.org/)\n- [Python](https://www.python.org/) \n- [Jupyter Notebook](https://jupyter.org/)\n\nWe will learn and use some of the libraries specific to medical imaging: \n- [PyDicom](https://pydicom.github.io/)\n- [NiBabel](https://nipy.org/nibabel/)\n\nAnd some of the interactive tools for working with images and debugging networks :\n- [3D Slicer](https://www.slicer.org/)\n- [Microdicom](http://www.microdicom.com/)\n- [Radiant](https://www.radiantviewer.com/)\n- [Dcmtk](https://dcmtk.org/)\n\n## Environments\nFor all the exercises and the final projects, all the tools and libraries will be available to you through Udacity Workspaces right here on this website, i.e., you do not have to worry about configuring anything locally or setting up some cloud-based infrastructure. \n\n### A. Udacity Environment\nEverything is set up, but here are some notes on how to use the different functionality enabled for this course. Most of the workspaces will be jupyter notebooks and are ready to go. Below is a list of the other types of workspaces you will encounter and how to use their functionality. \n\n#### JupyterGPU\nThis workspace is a jupyter notebook but has GPU as an option for you to use. At the bottom left of that workspace you will be able to enable/disable GPU. You will only be allocated a set amount for the course so while you are just coding you should disable the code. And when you want to run any machine learning then you can run the GPU to speed that process up. \n\n#### VNC\nThis workspace will include the ability to access a VNC or virtual desktop. These environments will use the GPU to access the VNC and the environment, medai. You can also disable this when you are coding (and not running the code) or writing an explanation in the starter files. You will also be able access a couple of different functions listed below when it is necessary for the exercise:\n\n- **Jupyter Notebooks** - In any terminal use the following command \n```bash launch_jupyter.sh```\nAnd from there you can find the URL contained in the box created by the asterisks(*) and paste this in the address bar of the web browser you are using to open a jupyter notebook with the relevant files in the `home` directory.\n- **Slicer** - You will need to enable the GPU as Slicer is already configured on the VNC. When you enter the VNC with the Desktop button at the bottom right hand corner, you can find a Slicer as a shortcut on the desktop.\n\n### B. Local Machine\nHowever, if you would like to run the exercises on your own local machines, below is a list of things you need to install on your local machine before running exercises.\n\nFirst, you would need a Python 3.7+ environment with the following libraries:\n\n* [PyTorch](https://pytorch.org/) (preferably with CUDA)\n* [nibabel](https://nipy.org/nibabel/)\n* [matplotlib](https://matplotlib.org/users/installing.html)\n* [numpy](https://numpy.org/)\n* [pydicom](https://pydicom.github.io/pydicom/stable/tutorials/installation.html)\n* [Pillow](https://pillow.readthedocs.io/en/stable/installation.html) (should be installed with pytorch)\n* [tensorboard](https://pypi.org/project/tensorboard/)\n\nIn the final lesson of the course, the exercises will have you work with some extra tools:\n* [3D Slicer](https://www.slicer.org/) for viewing and annotating 3D volumes\n* [DCMTK tools](https://dcmtk.org/) for testing and emulating a medical imaging device. Note that if you are running a Linux distribution, you might be able to install dcmtk directly from the package manager (e.g. `apt-get install dcmtk` in Ubuntu)\n\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1014238,
+          "key": "5fa2d824-fc11-47c9-9eef-1d26ecb5fe13",
+          "title": "Let’s get started!",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5fa2d824-fc11-47c9-9eef-1d26ecb5fe13",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1014223,
+              "key": "b608a006-d532-4e36-b556-a0539d41da1e",
+              "title": "ND320 C3 L0 07 Summary Of The Introduction",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "SMJwx5H2NfE",
+                "china_cdn_id": "SMJwx5H2NfE.mp4"
+              }
+            },
+            {
+              "id": 1014231,
+              "key": "6e9830c5-d5b7-49ae-991b-b451cafbdfc2",
+              "title": "Vocabulary Terms & Further Research",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this lesson, we have introduced basic concepts such as:\n* The problem of AI for medical imaging\n* Notion of 3D medical images\n* The definition of an “AI engineer”\n* Tools and environments used throughout the course\n\nNow on to hands-on learning!",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

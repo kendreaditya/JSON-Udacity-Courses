@@ -1,0 +1,1497 @@
+{
+  "data": {
+    "lesson": {
+      "id": 907726,
+      "key": "31c3741e-ea1c-48d5-a9bd-2d1d0bb33e5d",
+      "title": "Build a CRUD App with SQLAlchemy - Part 1",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Build out the ability to read and create todo items in our To-do app, handling changes from the database to the views.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/31c3741e-ea1c-48d5-a9bd-2d1d0bb33e5d/907726/1581172381817/Build+a+CRUD+App+with+SQLAlchemy+-+Part+1+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/31c3741e-ea1c-48d5-a9bd-2d1d0bb33e5d/907726/1581172376459/Build+a+CRUD+App+with+SQLAlchemy+-+Part+1+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 907716,
+          "key": "b72157ed-2cbd-424c-ab27-5d9c047ea8c8",
+          "title": "Introduction",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "b72157ed-2cbd-424c-ab27-5d9c047ea8c8",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 907675,
+              "key": "4cb5a362-5c06-4b88-a14f-0078344331e3",
+              "title": "CRUD App making Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Introduction\n\n## Building out a CRUD application\n\nSo far, we've built up a lot of the conceptual foundation we'd need to understand how to do real-world web development across the stack. In these next series of lessons from now until the end of this course, we'll pivot to becoming very hands-on, building a fully functional application from start to end.\n\nFollowing every screencast, an interactive workspace will be provided so you can **follow along in coding** the steps of building out this To-Do application. You'll be building out the same application from now until the end of this course across these next 3 lessons. Starter code is provided above every instance of your workspace, in case you make a mistake somewhere and want to start from a clean slate at any point.\n\nThese next 3 lessons represent the meat of this course, where you'll be gaining a lot of hands-on experience.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907690,
+              "key": "7b694787-32b5-4562-a3a5-d6b242200b85",
+              "title": "ND004 C01 L05 01 CRUD App Making",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "EKbYqJTP0CA",
+                "china_cdn_id": "EKbYqJTP0CA.mp4"
+              }
+            },
+            {
+              "id": 909425,
+              "key": "766010d8-fbdf-46ad-9a74-3d09e1e7d84d",
+              "title": "CRUD SQL Quiz ",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "766010d8-fbdf-46ad-9a74-3d09e1e7d84d",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "For each CRUD operation, can you identify the corresponding SQL command?"
+                },
+                "concepts_label": "CRUD operation",
+                "answers_label": "SQL command",
+                "concepts": [
+                  {
+                    "text": "Create",
+                    "correct_answer": {
+                      "id": "a1565470030445",
+                      "text": "`INSERT`"
+                    }
+                  },
+                  {
+                    "text": "Read",
+                    "correct_answer": {
+                      "id": "a1565470178603",
+                      "text": "`SELECT`"
+                    }
+                  },
+                  {
+                    "text": "Update",
+                    "correct_answer": {
+                      "id": "a1565470179341",
+                      "text": "`UPDATE`"
+                    }
+                  },
+                  {
+                    "text": "Delete",
+                    "correct_answer": {
+                      "id": "a1565470180080",
+                      "text": "`DELETE`"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1565470178603",
+                    "text": "`SELECT`"
+                  },
+                  {
+                    "id": "a1565470180080",
+                    "text": "`DELETE`"
+                  },
+                  {
+                    "id": "a1565470030445",
+                    "text": "`INSERT`"
+                  },
+                  {
+                    "id": "a1565470179341",
+                    "text": "`UPDATE`"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 909426,
+              "key": "522c2473-96a1-4a75-8c24-4bc0aa853b61",
+              "title": "CRUD SQLAlchemy Quiz ",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "522c2473-96a1-4a75-8c24-4bc0aa853b61",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "For each CRUD operation, there's also a corresponding command in the SQLAlchemy ORM. Can you match them as well?"
+                },
+                "concepts_label": "CRUD operation / SQL command",
+                "answers_label": "ORM command",
+                "concepts": [
+                  {
+                    "text": "Create / `INSERT`",
+                    "correct_answer": {
+                      "id": "a1565470377194",
+                      "text": "`db.session.add(user1)`"
+                    }
+                  },
+                  {
+                    "text": "Read / `SELECT`",
+                    "correct_answer": {
+                      "id": "a1565470521480",
+                      "text": "`User.query.all()`"
+                    }
+                  },
+                  {
+                    "text": "Update / `UPDATE`",
+                    "correct_answer": {
+                      "id": "a1565470522130",
+                      "text": "`user1.foo = 'new value'`"
+                    }
+                  },
+                  {
+                    "text": "Delete / `DELETE`",
+                    "correct_answer": {
+                      "id": "a1565470523921",
+                      "text": "`db.session.delete(user1)`"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1565470523921",
+                    "text": "`db.session.delete(user1)`"
+                  },
+                  {
+                    "id": "a1565470521480",
+                    "text": "`User.query.all()`"
+                  },
+                  {
+                    "id": "a1565470377194",
+                    "text": "`db.session.add(user1)`"
+                  },
+                  {
+                    "id": "a1565470522130",
+                    "text": "`user1.foo = 'new value'`"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 907680,
+              "key": "c6a0a8a5-e369-4d7f-8285-a9f3ba5a1a57",
+              "title": "CRUD App making Recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## What we'll build",
+              "instructor_notes": ""
+            },
+            {
+              "id": 916848,
+              "key": "11f1889b-5e55-4220-b58e-0b4237ea4bad",
+              "title": "ND004 C01 L05 01.1 CRUD App Making",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "MZ-4WZT_Qno",
+                "china_cdn_id": "MZ-4WZT_Qno.mp4"
+              }
+            },
+            {
+              "id": 916849,
+              "key": "82844f77-17b0-4169-a572-cf9b594d21a6",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Takeaways\n\nIn summary, here are the skills we'll master over these next 3 lesson as we build out this application:\n* Traversing across all layers of our backend stack, from our backend server in Flask to our database in Postgres, by understanding mappings between user operations, to the ORM, to the SQL executed on a database.\n* Developing using the MVC Model-View-Controller pattern, for architecting out our application\n* Handling changes to our data schema over time\n* Modeling relationships between objects in our web application\n* Implementing Search\n\nWe'll cover these skills through a hands-on approach by building out our to-do application across these next 3, final lessons of this course!\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 907714,
+          "key": "b42f2b13-2f89-4cdb-9844-b42d8ebd6ce5",
+          "title": "Create a Dummy ToDo App",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "b42f2b13-2f89-4cdb-9844-b42d8ebd6ce5",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 907678,
+              "key": "5e3202af-2f32-479e-98d9-73b62a9ea66a",
+              "title": "Create a Dummy ToDo App Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Create a Dummy ToDo App",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907687,
+              "key": "0f5e598a-159b-4312-9972-759b4e4e3c3d",
+              "title": "ND004 C01 L05 02 Create A Dummy ToDo App",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "wM4cUqAM-PE",
+                "china_cdn_id": "wM4cUqAM-PE.mp4"
+              }
+            },
+            {
+              "id": 918812,
+              "key": "842c2892-855d-4539-8dd8-ece771c4ca1c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Follow along!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 918819,
+              "key": "87de15d5-4c6d-4ba4-9d39-afa6123324e9",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r848940c907714xJUPYTERL1uvp3au1",
+              "pool_id": "flaskpostgres",
+              "view_id": "jupyter-lab-xg8fn",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "pageEnd": "",
+                    "pageStart": "",
+                    "allowSubmit": false,
+                    "defaultPath": "/",
+                    "actionButtonText": ""
+                  },
+                  "kind": "jupyter-lab"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 907725,
+          "key": "b91df17d-4b02-4949-97a6-948fd17d39c7",
+          "title": "Reading ToDo items: The “R” in CRUD",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "b91df17d-4b02-4949-97a6-948fd17d39c7",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 907677,
+              "key": "4973a10c-0db6-488c-88e4-871631105861",
+              "title": "Reading todo items: The “R” in CRUD Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Implementing Reads: The “R” in CRUD\n\nWe'll demonstrate how to implement read operations: querying the database to return data-backed views, replacing our dummy data with \"real\" data coming from our database.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907682,
+              "key": "4508c2aa-95cf-4abe-a08c-bfcdb6135cd8",
+              "title": "ND004 C01 L05 03 Reading Todo Items- The “R” In CRUD",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "FhSxO_NuvBk",
+                "china_cdn_id": "FhSxO_NuvBk.mp4"
+              }
+            },
+            {
+              "id": 907715,
+              "key": "a96b99aa-5e5a-4f08-b866-e42ca3d79e00",
+              "title": "Reading todo items: The “R” in CRUD Recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Follow along in the workspace below\n\n\n### Starter Code you can use\n\nThis code comes from following along the previous screencast and lets you start following along on this current screencast. You can use this as starter code if you'd like to reset your workspace code to a working state. \n\nSolution code to _this_ screencast are provided when you go to the next section.\n\n##### todoapp/app.py\n\n```python\nfrom flask import Flask, render_template\n\napp = Flask(__name__)\n\n@app.route('/')\ndef index():\n  return render_template('index.html', data=[{\n    'description': 'Todo 1'\n  }, {\n    'description': 'Todo 2'\n  }, {\n    'description': 'Todo 3'\n  }])\n```\n\n##### todoapp/templates/index.html\n\n```html\n<html>\n  <head>\n    <title>Todo App</title>\n  </head>\n  <body>\n    <ul>\n      {% for d in data %}\n      <li>{{ d.description }}</li>\n      {% endfor %}\n    </ul>\n  </body>\n</html>\n```\n\n## Reset your database anytime\n\nIf ever you corrupt your data schema or need to reset your database, remember you can do that in your terminal by using\n\n```bash\ndropdb todoapp && createdb todoapp\n```\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 918828,
+              "key": "d0bdbc20-f19e-465a-8db5-f38f42260cb7",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r848940c907714xJUPYTERL1uvp3au1",
+              "pool_id": "flaskpostgres",
+              "view_id": "jupyter-lab-bplya",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "pageEnd": "",
+                    "pageStart": "",
+                    "allowSubmit": false,
+                    "defaultPath": "/",
+                    "actionButtonText": ""
+                  },
+                  "kind": "jupyter-lab"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 907721,
+          "key": "f461c188-d146-4222-86cc-c5b02aa97c1e",
+          "title": "Model View Controller (MVC)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "f461c188-d146-4222-86cc-c5b02aa97c1e",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 918836,
+              "key": "40a72ddb-4c58-42f4-be2d-1a1b6cc1d50b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Solution Code to the previous section\n\n##### todoapp/app.py\n\n```python\nfrom flask import Flask, render_template\nfrom flask_sqlalchemy import SQLAlchemy\n\napp = Flask(__name__)\napp.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://udacitystudios@localhost:5432/todoapp'\ndb = SQLAlchemy(app)\n\nclass Todo(db.Model):\n  __tablename__ = 'todos'\n  id = db.Column(db.Integer, primary_key=True)\n  description = db.Column(db.String(), nullable=False)\n\n  def __repr__(self):\n    return f'<Todo {self.id} {self.description}>'\n\ndb.create_all()\n\n@app.route('/')\ndef index():\n  return render_template('index.html', data=Todo.query.all())\n```\n\n#### todoapp/templates/index.html\n\n```html\n<html>\n  <head>\n    <title>Todo App</title>\n  </head>\n  <body>\n    <ul>\n      {% for d in data %}\n      <li>{{ d.description }}</li>\n      {% endfor %}\n    </ul>\n  </body>\n</html>\n```\n\n#### terminal commands executed\n\n```sh\n$ create todoapp\n$ FLASK_APP=app.py FLASK_DEBUG=true flask run\n```\n\n```sh\npsql todoapp\n>>> \\dt\n>>> \\d todos\n>>> INSERT INTO todos (description) VALUES ('Do a thing 1');\n>>> INSERT INTO todos (description) VALUES ('Do a thing 2');\n>>> INSERT INTO todos (description) VALUES ('Do a thing 3');\n>>> INSERT INTO todos (description) VALUES ('Do a thing 4');\n>>> select * from todos;\n```\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907685,
+              "key": "e665ee89-87cc-424a-80fc-422c7c87a09c",
+              "title": "Model View Controller (MVC) Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Model View Controller (MVC)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907694,
+              "key": "9e3f77a2-3af5-4663-82e2-f67b977e237b",
+              "title": "ND004 C01 L05 04 Model View Controller (MVC)",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Dzvu8fj3ymo",
+                "china_cdn_id": "Dzvu8fj3ymo.mp4"
+              }
+            },
+            {
+              "id": 918838,
+              "key": "99134ac3-a76f-4fca-82e3-d77cc4417877",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Takeaways\n\n* **MVC** stands for Model-View-Controller, a common pattern for architecting web applications\n* Describes the 3 layers of the application we are developing\n\n#### Layers\n* **Models** manage _data_ and _business logic_ for us. What happens inside models and database, capturing logical relationships and properties across the web app objects\n* **Views** handles _display and representation logic_. What the user sees (HTML, CSS, JS from the user's perspective)\n* **Controllers**: routes commands to the models and views, containing _control logic_. Control how commands are sent to models and views, and how models and views wound up interacting with each other.\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 918840,
+              "key": "21418fb7-ac54-4ea5-aa61-4238c3753433",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2019/August/5d5dc48f_screen-shot-2019-08-21-at-3.23.56-pm/screen-shot-2019-08-21-at-3.23.56-pm.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/21418fb7-ac54-4ea5-aa61-4238c3753433",
+              "caption": "Model-View-Controller Diagram",
+              "alt": "MVC",
+              "width": 784,
+              "height": 396,
+              "instructor_notes": null
+            },
+            {
+              "id": 909438,
+              "key": "951a7eca-b244-4e95-b621-d07e875c9682",
+              "title": "MVC Quiz",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "951a7eca-b244-4e95-b621-d07e875c9682",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "See if you can match each MVC layer with its description."
+                },
+                "concepts_label": "Description",
+                "answers_label": "MVC layer",
+                "concepts": [
+                  {
+                    "text": "Handles display and representation logic",
+                    "correct_answer": {
+                      "id": "a1565474824014",
+                      "text": "The **Views** layer"
+                    }
+                  },
+                  {
+                    "text": "Manages data and business logic",
+                    "correct_answer": {
+                      "id": "a1565474893177",
+                      "text": "The **Models** layer"
+                    }
+                  },
+                  {
+                    "text": "Routes commands to models and views",
+                    "correct_answer": {
+                      "id": "a1565474894632",
+                      "text": "The **Controllers** layer"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1565474824014",
+                    "text": "The **Views** layer"
+                  },
+                  {
+                    "id": "a1565474893177",
+                    "text": "The **Models** layer"
+                  },
+                  {
+                    "id": "a1565474894632",
+                    "text": "The **Controllers** layer"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 907713,
+              "key": "735a2846-fe59-47ad-bd8a-202390de0e18",
+              "title": "Model View Controller (MVC) Quiz",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "735a2846-fe59-47ad-bd8a-202390de0e18",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Changes to the database schema are changes to which application layer?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "Models",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "Views",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566427009817",
+                    "text": "Controllers",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 918848,
+              "key": "2829aeef-9fdb-4108-8b73-1e1384fc9d3b",
+              "title": "Layers Quiz",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "2829aeef-9fdb-4108-8b73-1e1384fc9d3b",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "For each piece of code, match them to what application layer they correspond to"
+                },
+                "concepts_label": "Code",
+                "answers_label": "Layer",
+                "concepts": [
+                  {
+                    "text": "`<h1>My Todo App</h1>`",
+                    "correct_answer": {
+                      "id": "a1566427098414",
+                      "text": "Views"
+                    }
+                  },
+                  {
+                    "text": "`Todo.query.all()`",
+                    "correct_answer": {
+                      "id": "a1566427120613",
+                      "text": "Models"
+                    }
+                  },
+                  {
+                    "text": "`render_template('index.html', data=data)`",
+                    "correct_answer": {
+                      "id": "a1566427121373",
+                      "text": "Controllers"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1566427168510",
+                    "text": "Data"
+                  },
+                  {
+                    "id": "a1566427120613",
+                    "text": "Models"
+                  },
+                  {
+                    "id": "a1566427121373",
+                    "text": "Controllers"
+                  },
+                  {
+                    "id": "a1566427098414",
+                    "text": "Views"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 907718,
+          "key": "565c6e66-8bce-44da-aedb-3c5d277bba35",
+          "title": "Handling User Input",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "565c6e66-8bce-44da-aedb-3c5d277bba35",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 907712,
+              "key": "f894c89f-731d-4d4d-9622-636470d84198",
+              "title": "Intro to handling user input Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Handling User Input",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907697,
+              "key": "971ea1e4-7f35-48b3-8c84-852c3e9355de",
+              "title": "ND004 C01 L05 05 Intro To Handling User Input",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "vOHoBf2CEMM",
+                "china_cdn_id": "vOHoBf2CEMM.mp4"
+              }
+            },
+            {
+              "id": 918850,
+              "key": "6ad18142-f52b-4314-9abc-c26e6b244a7a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Takeaways\n\n* Creating, updating, and deleting information from a database requires handling user input on what is being created/updated/deleted. This will be the focus of the rest of this series.\n\n\n### MVC Development: How we'd add Create To-Do item functionality\n\n* On the view: implement an HTML form\n* On the controller: retrieve the user's input, and manipulate models\n* On the models: create a record in our database, and return the newly created to-do item to the controller\n* On the controller: take the newly created to-do item, and decide how to update the view with it.\n\n### What we'll learn in order\n\n1. **How we accept and get user data** in the context of a Flask app\n2. **Send data in controllers** using database sessions in a controller\n3. **Manipulating models** adding records in SQLAlchemy Models\n4. **Direct how the view should update** within the controller and views",
+              "instructor_notes": ""
+            },
+            {
+              "id": 918852,
+              "key": "aa1a4b59-bb9a-42de-885e-643dae2389cc",
+              "title": "Controller Quiz",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "aa1a4b59-bb9a-42de-885e-643dae2389cc",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "To add functionality for creating to-do items, what are the things we'd develop on the controller layer? Check all that apply.",
+                "answers": [
+                  {
+                    "id": "a1566427688273",
+                    "text": "Create a record in the todos database table",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566427721922",
+                    "text": "Implement an HTML form",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566427722463",
+                    "text": "Tell the Todo model to create a todo item",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1566427758282",
+                    "text": "Update what the user sees on the client",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566427774900",
+                    "text": "Direct how the view should update upon creating a new todo item",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1566427794047",
+                    "text": "Send a request to the server",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566427812005",
+                    "text": "Accept user input from a request",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 907723,
+          "key": "5424e14d-2fa8-41b8-83b7-8aece3b5359e",
+          "title": "Getting User Data in Flask — Part 1",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5424e14d-2fa8-41b8-83b7-8aece3b5359e",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 907695,
+              "key": "d976324a-7de5-4724-bf5c-11f5c839dc34",
+              "title": "Getting user data in Flask Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Getting User Data in Flask — Part 1",
+              "instructor_notes": ""
+            },
+            {
+              "id": 916851,
+              "key": "2bee76d4-9813-4c08-892d-58d65c2e0042",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Methods of getting user data from the view (in Flask)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907683,
+              "key": "6af7a2b8-2d0d-4469-a467-08cb9adb62d8",
+              "title": "ND004 C01 L05 06 Getting User Data In Flask",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "jq_mXDRzs5o",
+                "china_cdn_id": "jq_mXDRzs5o.mp4"
+              }
+            },
+            {
+              "id": 918855,
+              "key": "74ba3a24-b4eb-4b68-a1f6-aa63a745dbfc",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Takeaways\n\n* There are 3 methods of getting user data from a view to a controller. See the image below.\n  * URL query parameters\n  * Forms\n  * JSON\n\n#### URL query parameters\n* URL query parameters are listed as key-value pairs at the end of a URL, preceding a \"?\" question mark. E.g. `www.example.com/hello?my_key=my_value`.\n\n#### Form data\n* `request.form.get('<name>')` reads the `value` from a form input control (text input, number input, password input, etc) by the `name` attribute on the input HTML element.\n\n#### Note: defaults\n* `request.args.get`, `request.form.get` both accept an optional second parameter, e.g. `request.args.get('foo', 'my default')`, set to a default value, in case the result is empty.\n\n#### JSON\n\n* `request.data` retrieves JSON _as a string_. Then we'd take that string and turn it into python constructs by calling `json.loads` on the `request.data` string to turn it into lists and dictionaries in Python.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 918853,
+              "key": "6e5c6ef0-dd12-4b2b-98ba-b65b6881395d",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2019/August/5d5dcb03_screen-shot-2019-08-21-at-3.51.37-pm/screen-shot-2019-08-21-at-3.51.37-pm.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/6e5c6ef0-dd12-4b2b-98ba-b65b6881395d",
+              "caption": "Three methods of getting user data in Flask",
+              "alt": "",
+              "width": 534,
+              "height": 464,
+              "instructor_notes": null
+            },
+            {
+              "id": 918856,
+              "key": "06c3cac0-bced-45f1-aab9-f292d0df00a8",
+              "title": "Input data quiz",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "06c3cac0-bced-45f1-aab9-f292d0df00a8",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Match the flask method to the type of user data being handled"
+                },
+                "concepts_label": "Flask Method",
+                "answers_label": "User Input",
+                "concepts": [
+                  {
+                    "text": "`request.data`",
+                    "correct_answer": {
+                      "id": "a1566428420644",
+                      "text": "JSON"
+                    }
+                  },
+                  {
+                    "text": "`request.args.get`",
+                    "correct_answer": {
+                      "id": "a1566428431964",
+                      "text": "URL query parameters"
+                    }
+                  },
+                  {
+                    "text": "`request.form.get`",
+                    "correct_answer": {
+                      "id": "a1566428432618",
+                      "text": "Form input"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1566428432618",
+                    "text": "Form input"
+                  },
+                  {
+                    "id": "a1566428420644",
+                    "text": "JSON"
+                  },
+                  {
+                    "id": "a1566428470935",
+                    "text": "HTTP"
+                  },
+                  {
+                    "id": "a1566428431964",
+                    "text": "URL query parameters"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 907701,
+              "key": "39c3d0f6-5eb9-48bd-a10e-9db97bba1ff8",
+              "title": "Getting user data in Flask Recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Using HTML form submission to get the data",
+              "instructor_notes": ""
+            },
+            {
+              "id": 916852,
+              "key": "87ec9a6d-5965-4f3c-a596-e0ef8882bb62",
+              "title": "ND004 C01 L05 06.1 Getting User Data In Flask",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "fn_M1nXU0bI",
+                "china_cdn_id": "fn_M1nXU0bI.mp4"
+              }
+            },
+            {
+              "id": 918857,
+              "key": "2a769988-3eae-4313-909d-ce8cdee0370d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Takeaways\n\n* forms take an `action` (name of the route) and `method` (route method) to submit data to our server.\n* The `name` attribute on a form control element is the key used to retrieve data from `request.get(<key>)`.\n* All forms either define a submit button, or allow the user to hit ENTER on an input to submit the form.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 918858,
+              "key": "c34efbfe-7213-4725-b65c-a5a1c750c22a",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "c34efbfe-7213-4725-b65c-a5a1c750c22a",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What should the value of `<key>` by in `request.form.get('<key>')` in order to get the value \"foo2\" from the following HTML form?\n\n\n```html\n<form action=\"/foo1\" method=\"post\">\n   <label for=\"bar0\">Bar</label>\n  <input type=\"text\" value=\"foo2\" id=\"bar1\" name=\"bar2\" class=\"bar3\">\n  <input type=\"submit\" value=\"Submit\" />\n</form>\n``` ",
+                "answers": [
+                  {
+                    "id": "a1566428662782",
+                    "text": "bar0",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566428778023",
+                    "text": "bar1",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566428780752",
+                    "text": "bar2",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1566428782086",
+                    "text": "bar3",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 916853,
+              "key": "820d85d1-9aaa-4894-9fe8-82940ca841a4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Form methods `POST` vs `GET`",
+              "instructor_notes": ""
+            },
+            {
+              "id": 916854,
+              "key": "06c00ff7-4784-4b89-a74c-dc2425480b7e",
+              "title": "ND004 C01 L05 06.2 Getting User Data In Flask",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "o_uprLVX67M",
+                "china_cdn_id": "o_uprLVX67M.mp4"
+              }
+            },
+            {
+              "id": 918859,
+              "key": "ec824c51-af3a-4293-8964-5f57540abfcb",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### Video Correction Notes\n* \"Response Body\" should be corrected to \"Request Body\", throughout, since the client is sending off a _request_.\n\n## Takeaways\n\n* The way form data traverses from the client to server differs based on whether we are using a GET or a POST method on the form.\n\n##### The POST submission\n* On submit, we send off an HTTP POST request to the route `/create` with a **request body**\n* The request body stringifies the key-value pairs of fields from the form (as part of the `name` attribute) along with their values.\n\n##### The GET submission\n* Sends off a GET request with **URL query parameters** that appends the form data to the URL.\n* Ideal for smaller form submissions.\n\nPOSTs are ideal for longer form submissions, since URL query parameters can only be so long compared to request bodies (max 2048 characters).\nMoreover, forms can only send POST and GET requests, and nothing else.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 918860,
+              "key": "5b36af4e-8c5e-477c-bb86-e0129fcb6d8c",
+              "title": "Methods Quiz",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "5b36af4e-8c5e-477c-bb86-e0129fcb6d8c",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Match the HTTP request route to the type of form submission it was"
+                },
+                "concepts_label": "Request",
+                "answers_label": "Form Submission",
+                "concepts": [
+                  {
+                    "text": "Request to `/create` with request body `foo=bar`",
+                    "correct_answer": {
+                      "id": "a1566429235439",
+                      "text": "A POST form submission"
+                    }
+                  },
+                  {
+                    "text": "Request to `/create?foo=bar`",
+                    "correct_answer": {
+                      "id": "a1566429248683",
+                      "text": "A GET form submission"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1566429248683",
+                    "text": "A GET form submission"
+                  },
+                  {
+                    "id": "a1566429235439",
+                    "text": "A POST form submission"
+                  },
+                  {
+                    "id": "a1566429300417",
+                    "text": "A PUT form submission"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 909446,
+          "key": "8f100ee8-ab95-4b74-a1b7-63a56f0d49a0",
+          "title": "Getting User Data in Flask — Part 2",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "8f100ee8-ab95-4b74-a1b7-63a56f0d49a0",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 909447,
+              "key": "a7a927d5-c63b-4979-9a53-afa10001e776",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Getting User Data in Flask — Part 2\n\nIn this next series, let's begin implementing the Create To-Do Item functionality in our To-Do app. We'll preview conceptually how we'd use a form to send a POST request to our server to begin a request for to-do item creation, and then implement it in code.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 918862,
+              "key": "6c8087ae-221d-49ab-9c91-a2848a5894eb",
+              "title": "ND004 C01 L05 06.3 Getting User Data In Flask",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "PO-ILweiQwU",
+                "china_cdn_id": "PO-ILweiQwU.mp4"
+              }
+            },
+            {
+              "id": 918866,
+              "key": "a607112a-30b1-49cc-b392-bf7bb4bc2423",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### Video Correction Notes\n* Response Body should be changed to Request Body, throughout.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 918863,
+              "key": "b4488e5a-7a57-4878-a8fb-229dcad5f620",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Let's start coding!\n\nThese next videos walk through how to implement a form that successfully creates new todo items in our backend database.\n\n## Challenge yourself\nCan you implement the MVC layers of this create functionality without watching the walk-throughs? Try it out in the interactive workspace at the end of this page!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 909449,
+              "key": "d954ad9c-2a8a-4b7c-9a67-b9dc4b58c938",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Developing our view and running the app in debug mode",
+              "instructor_notes": ""
+            },
+            {
+              "id": 909448,
+              "key": "68cc2a0d-8265-4245-af15-fa0de2f56e5b",
+              "title": "ND004 C01 L05 07 Demo - Getting Form Data In Flask",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Idxfh3svV0E",
+                "china_cdn_id": "Idxfh3svV0E.mp4"
+              }
+            },
+            {
+              "id": 918868,
+              "key": "4b96aebb-a9d9-4b4e-a188-42fe21e52cce",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Code\n\n##### index.html\n```html\n<html>\n  <head>\n    <title>Todo App</title>\n  </head>\n  <body>\n    <form method=\"post\" action=\"/todos/create\">\n      <input type=\"text\" name=\"description\" />\n      <input type=\"submit\" value=\"Create\" />\n    </form>\n    <ul>\n      {% for d in data %}\n      <li>{{ d.description }}</li>\n      {% endfor %}\n    </ul>\n  </body>\n</html>\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 918867,
+              "key": "27db56fc-5662-44b2-8268-14c952063c08",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Try it now in the interactive workspace below.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 916857,
+              "key": "e3dff7dc-b5a7-42d7-9db2-e84401138cc4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Developing the controller",
+              "instructor_notes": ""
+            },
+            {
+              "id": 916859,
+              "key": "e1a85c49-3982-42f3-9761-6d3f359777ca",
+              "title": "ND004 C01 L05 07.1 Demo - Getting Form Data In Flask",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "fRvfHuVUI4w",
+                "china_cdn_id": "fRvfHuVUI4w.mp4"
+              }
+            },
+            {
+              "id": 918869,
+              "key": "ee1d6775-d7f8-4759-aaad-e5461044ed79",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Horray!\nWe have a fully working MVC flow capable of creating new todo items from the view, interacting with models to create those new records, and then updating our view to show them!\n\n### Code\n##### app.py\n```\n@app.route('/todos/create', method=['POST'])\ndef create_todo():\n  description = request.form.get('description', '')\n  todo = Todo(description=description)\n  db.session.add(todo)\n  db.session.commit()\n  return redirect(url_for('index'))\n```\n\n##### terminal commands\n```sh\n$ FLASK_APP=app.py FLASK_DEBUG=true flask run\n```\n```sh\n$ psql todoapp\n>>> select * from todos;\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 916858,
+              "key": "67feebb3-a1c8-4f48-87cf-b4c4bb7a95da",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Let's review how we implemented the flow of data in our app!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 916860,
+              "key": "38deccb3-295c-4969-b00a-b6aefa475743",
+              "title": "ND004 C01 L05 07.2 Demo - Getting Form Data In Flask",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "vu_sB6L_zqs",
+                "china_cdn_id": "vu_sB6L_zqs.mp4"
+              }
+            },
+            {
+              "id": 918864,
+              "key": "a2520cb2-98ab-460f-86b6-93725cd0dfb6",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Follow along!\n\nIn the interactive workspace below, practice implementing the ability to Create To-Do items.\n\n* The view (HTML form)\n* The controller (that receives the form submission)\n* The model interactions (within the controller)\n\n\n### Starter Code\n\nThe workspace below is based on prior work you may have done in previous practices. The starter code below is meant to help you start on a clean starting point if needed.\n\n##### app.py\n```py\nfrom flask import Flask, render_template\nfrom flask_sqlalchemy import SQLAlchemy\n\napp = Flask(__name__)\napp.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://udacitystudios@localhost:5432/todoapp'\ndb = SQLAlchemy(app)\n\nclass Todo(db.Model):\n  __tablename__ = 'todos'\n  id = db.Column(db.Integer, primary_key=True)\n  description = db.Column(db.String(), nullable=False)\n\n  def __repr__(self):\n    return f'<Todo {self.id} {self.description}>'\n\ndb.create_all()\n\n@app.route('/')\ndef index():\n  return render_template('index.html', data=Todo.query.all())\n```\n\n##### templates/index.html\n```html\n<html>\n  <head>\n    <title>Todo App</title>\n  </head>\n  <body>\n    <ul>\n      {% for d in data %}\n      <li>{{ d.description }}</li>\n      {% endfor %}\n    </ul>\n  </body>\n</html>\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 918865,
+              "key": "0d3214fc-7ba5-4e68-aae6-3dadd0a1dbf9",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r848940c907714xJUPYTERL1uvp3au1",
+              "pool_id": "flaskpostgres",
+              "view_id": "jupyter-lab-jl1e4",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "pageEnd": "",
+                    "pageStart": "",
+                    "allowSubmit": false,
+                    "defaultPath": "/",
+                    "actionButtonText": ""
+                  },
+                  "kind": "jupyter-lab"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 907724,
+          "key": "f8b0305f-1099-4f04-9ce6-bcdfcf01db93",
+          "title": "Using AJAX to send data to flask",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "f8b0305f-1099-4f04-9ce6-bcdfcf01db93",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 907717,
+              "key": "adae6406-d4c9-4a16-9a9f-fcb7b0d3ce5c",
+              "title": "Using AJAX to send data to flask Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Using AJAX to send data to flask",
+              "instructor_notes": ""
+            },
+            {
+              "id": 916861,
+              "key": "9529ccb1-4abe-4871-a6d1-b975e5a81e1f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Using AJAX to send data asynchronously",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907696,
+              "key": "cad22079-d5fc-46b0-a54d-a10285775d5f",
+              "title": "ND004 C01 L05 08 Using AJAX To Send Data To Flask",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "sgkzOCjg7uE",
+                "china_cdn_id": "sgkzOCjg7uE.mp4"
+              }
+            },
+            {
+              "id": 918870,
+              "key": "5ce17b5f-e4bd-4895-bef8-409cccdaf5be",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Takeaways\n* Data request are either synchronous or async (asynchronous)\n* Async data requests are requests that get sent to the server and back to the client without a page refresh.\n* Async requests (AJAX requests) use one of two methods:\n   * XMLHttpRequest\n   * Fetch (modern way)\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907704,
+              "key": "107e235d-e119-43ef-a91a-bec7bf922dd2",
+              "title": "Using AJAX to send data to flask Recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Using `XMLHttpRequest`",
+              "instructor_notes": ""
+            },
+            {
+              "id": 916862,
+              "key": "0e88e76d-9abd-4498-bf4a-6b232950931e",
+              "title": "ND004 C01 L05 08.1 Using AJAX To Send Data To Flask",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "-1AKXIkYwMw",
+                "china_cdn_id": "-1AKXIkYwMw.mp4"
+              }
+            },
+            {
+              "id": 918871,
+              "key": "2e052b6c-866f-40f4-b0e7-ead6e9e33c30",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Code\n```\nvar xhttp = new XMLHttpRequest();\n\ndescription = document.getElementById(\"description\").value;\n\nxhttp.open(\"GET\", \"/todos/create?description=\" + description);\n\nxhttp.send();\n\n```\n\n```\nxhttp.onreadystatechange = function() {\n    if (this.readyState === 4 && this.status === 200) { \n      // on successful response\n      console.log(xhttp.responseText);\n    }\n};\n\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 916863,
+              "key": "158827ad-4df7-449c-9376-71f3f212dd00",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Using `fetch`",
+              "instructor_notes": ""
+            },
+            {
+              "id": 916864,
+              "key": "d725948c-81b7-44b4-870b-688530c7559e",
+              "title": "ND004 C01 L05 08.2 Using AJAX To Send Data To Flask",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "vR5sn_XQ17Q",
+                "china_cdn_id": "vR5sn_XQ17Q.mp4"
+              }
+            },
+            {
+              "id": 918872,
+              "key": "0196d396-6afa-4df7-8ebc-56e50767f2fb",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Takeaways\n\n* fetch is another window object that lets you send HTTP requests\n* `fetch(<url-route>, <object of request parameters>)`\n\n\n### Code\n\n```\nfetch('/my/request', {\n  method: 'POST',\n  body: JSON.stringify({\n    'description': 'some description here'\n  }),\n  headers: {\n    'Content-Type': 'application/json'\n  }\n});\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 918926,
+              "key": "6fa2498c-690e-478e-973a-0797808e14f4",
+              "title": "ND004 C01 L05 09 Sending AJAX Requests Using Fetch",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "qrmmZTQHDgA",
+                "china_cdn_id": "qrmmZTQHDgA.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 907720,
+          "key": "17fed9cf-0461-405a-80d8-2e1cdb3da524",
+          "title": "Using sessions in controllers",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "17fed9cf-0461-405a-80d8-2e1cdb3da524",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 907698,
+              "key": "1f061929-ba8f-4f94-8ed0-ee76ea5052b1",
+              "title": "Using sessions in controllers Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Using sessions in controllers",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907710,
+              "key": "8b7d85cc-a9e7-40b4-986a-db3160c645a8",
+              "title": "ND004 C01 L05 10 Using Sessions In Controllers",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "kGOfBQiQ5wE",
+                "china_cdn_id": "kGOfBQiQ5wE.mp4"
+              }
+            },
+            {
+              "id": 918874,
+              "key": "0721fed5-8382-468a-977a-dd5d98de0400",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Takeaways\n* Commits can succeed or fail. On fail, we want to rollback the session to avoid potential implicit commits done by the database on closing a connection.\n* Good practice is to close connections at the end of every session used in a controller, to return the connection back to the connection pool.\n\n### Pattern (try-except-finally)\n```py\n import sys\n\n try:\n   todo = Todo(description=description)\n   db.session.add(todo)\n   db.session.commit()\n except:\n   db.session.rollback()\n   error=True\n   print(sys.exc_info())\n finally:\n   db.session.close()\n```\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 916865,
+              "key": "c9343686-257c-4606-a743-1ac0d8c2232a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Implementing `try` … `except` … `finally` in the app",
+              "instructor_notes": ""
+            },
+            {
+              "id": 916867,
+              "key": "89e0fa61-c391-4b75-86bc-706c6d4e24bd",
+              "title": "ND004 C01 L05 10.1 Using Sessions In Controllers",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "1inRXocQn_I",
+                "china_cdn_id": "1inRXocQn_I.mp4"
+              }
+            },
+            {
+              "id": 918875,
+              "key": "f24b2604-1273-4cb6-b1f5-686e904d41a1",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### Video Correction Notes\nThe route handler should always return something or raise an intentional exception, in the case of an error. To fix this with a simple solution, we can simply import [`abort`](https://flask.palletsprojects.com/en/1.0.x/api/?highlight=abort#flask.abort) from Flask:\n\n```\nfrom flask import abort\n```\n\nand we can call `abort(<status code>)`, e.g. with status code 500, `abort(500)` to rise an HTTPException for an Internal Server Error, in order to abort a request and prevent it from expecting a returned result. Since this is a course on web data modeling, we won't be going into errors in depth, but you can check out resources below.\n\n##### Resources on Error Handling\n\n* [Flask Docs on Application Errors](https://flask.palletsprojects.com/en/1.0.x/errorhandling/)\n* [Error Handling in Flask Tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-vii-error-handling)\n\n#### Code (with corrections)\n```\nfrom flask import Flask, render_template, abort\n\n# ...\n\n@app.route('/todos/create', method=['POST'])\ndef create_todo():\n  error = False\n  body = {}\n  try:\n    description = request.form.get_json()['description']\n    todo = Todo(description=description)\n    db.session.add(todo)\n    db.session.commit()\n    body['description'] = todo.description\n  except:\n    error = True\n    db.session.rollback()\n    print(sys.exc_info())\n  finally:\n    db.session.close()\n  if error:\n    abort (400)\n  else:\n    return jsonify(body)\n\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 916866,
+              "key": "7bbd8335-e325-4ee3-a791-a661a089d767",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Creating an error",
+              "instructor_notes": ""
+            },
+            {
+              "id": 916868,
+              "key": "bffa59d0-e5e6-4a6f-800f-9bd7f17b7a51",
+              "title": "ND004 C01 L05 10.2 Using Sessions In Controllers",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Zq4AbRKOQiM",
+                "china_cdn_id": "Zq4AbRKOQiM.mp4"
+              }
+            },
+            {
+              "id": 918876,
+              "key": "eb5c29f4-cdac-45ec-87c6-c318bdf97fcc",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Practice\n\nImplement this try-except-finally pattern in our create todo item route handler.\n\n\n### Starter Code\n\n##### app.py\n```py\nfrom flask import Flask, render_template\nfrom flask_sqlalchemy import SQLAlchemy\n\napp = Flask(__name__)\napp.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://udacitystudios@localhost:5432/todoapp'\ndb = SQLAlchemy(app)\n\nclass Todo(db.Model):\n  __tablename__ = 'todos'\n  id = db.Column(db.Integer, primary_key=True)\n  description = db.Column(db.String(), nullable=False)\n\n  def __repr__(self):\n    return f'<Todo {self.id} {self.description}>'\n\ndb.create_all()\n\n@app.route('/todos/create', method=['POST'])\ndef create_todo():\n  description = request.form.get_json()['description']\n  todo = Todo(description=description)\n  db.session.add(todo)\n  db.session.commit()\n  return jsonify({\n    'description': todo.description\n  })\n\n\n@app.route('/')\ndef index():\n  return render_template('index.html', data=Todo.query.all())\n```\n\n##### templates/index.html\n```html\n<html>\n  <head>\n    <title>Todo App</title>\n    <style>\n      #error {\n        display: none;\n      }\n    </style>\n  </head>\n  <body>\n    <div id=\"error\" class=\"hidden\">Something went wrong!</div>\n    <form id=\"form\" method=\"post\" action=\"/todos/create\">\n      <input type=\"text\" id=\"description\" name=\"description\" />\n      <input type=\"submit\" value=\"Create\" />\n    </form>\n    <ul id=\"todos\">\n      {% for d in data %}\n      <li>{{ d.description }}</li>\n      {% endfor %}\n    </ul>\n    <script>\n      const descInput = document.getElementById('description');\n      document.getElementById('form').onsubmit = function(e) {\n        e.preventDefault();\n        const desc = descInput.value;\n        descInput.value = '';\n        fetch('/todos/create', {\n          method: 'POST',\n          body: JSON.stringify({\n            'description': desc,\n          }),\n          headers: {\n            'Content-Type': 'application/json',\n          }\n        })\n        .then(response => response.json())\n        .then(jsonResponse => {\n          console.log('response', jsonResponse);\n          li = document.createElement('li');\n          li.innerText = desc;\n          document.getElementById('todos').appendChild(li);\n          document.getElementById('error').className = 'hidden';\n        })\n        .catch(function() {\n          document.getElementById('error').className = '';\n        })\n      }\n    </script>\n  </body>\n</html>\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 918877,
+              "key": "72e4f852-3bc1-4bb7-ab0b-405857834060",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r848940c907714xJUPYTERL1uvp3au1",
+              "pool_id": "flaskpostgres",
+              "view_id": "jupyter-lab-0wu6i",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "pageEnd": "",
+                    "pageStart": "",
+                    "allowSubmit": false,
+                    "defaultPath": "/",
+                    "actionButtonText": ""
+                  },
+                  "kind": "jupyter-lab"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 908221,
+          "key": "12fb8356-1165-42f9-96dc-6c60a2a45fe3",
+          "title": "Recap",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "12fb8356-1165-42f9-96dc-6c60a2a45fe3",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 908222,
+              "key": "f7cee848-eb2b-40cd-9863-2b5f5bf4034a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Recap",
+              "instructor_notes": ""
+            },
+            {
+              "id": 918878,
+              "key": "a6afcfc1-57e2-44e6-ab93-f7e378fa2ceb",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## ... Another lesson down! 🌈\n\nWoohoo!\n\nLet's recap what we learned and see what's coming up ahead.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 908223,
+              "key": "33b0ea34-6b9f-46a0-a3f8-b31bc15123e0",
+              "title": "ND004 C01 L05 11 Recap",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "gMuzY3SN634",
+                "china_cdn_id": "gMuzY3SN634.mp4"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

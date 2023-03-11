@@ -1,0 +1,182 @@
+{
+  "data": {
+    "lesson": {
+      "id": 689737,
+      "key": "2ced92c6-f377-4d29-b5aa-8e887f1e4a6f",
+      "title": "Project: Predicting Bike-Sharing Patterns",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "In this project, you'll build and train your own Neural Network from scratch to predict the number of bikeshare users on a given day. Good luck!",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/2ced92c6-f377-4d29-b5aa-8e887f1e4a6f/689737/1537219652321/Project%3A+Predicting+Bike-Sharing+Patterns+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/2ced92c6-f377-4d29-b5aa-8e887f1e4a6f/689737/1537219649461/Project%3A+Predicting+Bike-Sharing+Patterns+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": {
+        "key": "3877619b-52be-4555-9d2b-9d62a1e818f7",
+        "version": "1.0.0",
+        "locale": "en-us",
+        "duration": 20160,
+        "semantic_type": "Project",
+        "title": "Predicting Bike-Sharing Patterns",
+        "description": "# Predicting Bike-Sharing Data (Your First Neural Network)\n\n## A. Introduction\n\nIn this project, you'll get to build a neural network from scratch to carry out a prediction problem on a real dataset! By building a neural network from the ground up, you'll have a much better understanding of gradient descent, backpropagation, and other concepts that are important to know before we move to higher-level tools such as PyTorch. You'll also get to see how to apply these networks to solve real prediction problems!\n\nThe data comes from the [UCI Machine Learning Database](https://archive.ics.uci.edu/ml/datasets/Bike+Sharing+Dataset).\n\n## B. Instructions \n\n1. Download the project materials from [our GitHub repository](https://github.com/udacity/deep-learning-v2-pytorch). You can get download the repository with `git clone https://github.com/udacity/deep-learning-v2-pytorch.git`. Our files in the GitHub repo are the most up to date, so it's the best place to get the project files.\n2. cd into the `project-bikesharing` directory.\n3. Download anaconda or miniconda based on the instructions in the [Anaconda lesson](https://classroom.udacity.com/nanodegrees/nd101/parts/2a9dba0b-28eb-4b0e-acfa-bdcf35680d90/modules/aba54606-cf35-4a77-b643-efec6a90bfa1/lessons/9e9ed61d-20c3-4431-95aa-a1099f28d601/concepts/4cdc5a26-1e54-4a69-8eb4-f15e37aaab7b). These are also outlined in the repository [README](https://github.com/udacity/deep-learning-v2-pytorch/blob/master/README.md).\n4. Create a new conda environment:\n```bash\nconda create --name deep-learning python=3\n```\n5. Enter your new environment:\n   * Mac/Linux: `>> source activate deep-learning`\n   * Windows: `>> activate deep-learning`\n6. Ensure you have `numpy`, `matplotlib`, `pandas`, and `jupyter notebook` installed by doing the following:\n```bash\nconda install numpy matplotlib pandas jupyter notebook\n```\n7. Run the following to open up the notebook server:\n```bash\njupyter notebook\n```\n8. In your browser, open `Predicting_bike_sharing_data.ipynb`. Note that in the previous workspace this was called `Your_first_neural_network.ipynb` but the contents are the same, this is just a descriptive difference.\n9. Follow the instructions in the notebook; they will lead you through the project.  You'll ultimately be editing the `my_answers.py` python file, whose components are imported into the notebook at various places.\n10. Ensure you've passed the unit tests in the notebook and have taken a look at [the rubric](https://review.udacity.com/#!/rubrics/2148/view) before you submit the project!\n\nIf you need help running the notebook file, check out the [Jupyter notebook lesson](https://classroom.udacity.com/nanodegrees/nd101/parts/2a9dba0b-28eb-4b0e-acfa-bdcf35680d90/modules/aba54606-cf35-4a77-b643-efec6a90bfa1/lessons/13f4b7d6-92a9-468d-9008-084fc8b53a23/concepts/75e1eee0-5f81-4d5b-a1ca-eaebe3c91759).\n\n\n## C. Submission\n\nBefore submitting your solution to a reviewer, you are required to submit your project to Udacity's Project Assistant, which will provide some initial feedback.  It will give you feedback within a minute or two on whether your project will meet all specifications. It is possible to submit projects which do not pass all tests; you can expect to get feedback from your Udacity reviewer on these within 3-4 days.\n\nThe setup for the project assistant is simple. If you have not installed the client tool from a different Nanodegree program already, then you may do so with the command `pip install udacity-pa`.\n\nTo submit your code to the project assistant, run `udacity submit` from within the top-level directory of the project. You will be prompted for a username and password. If you log in using Google or Facebook, visit [this link](https://project-assistant.udacity.com/login) for alternate login instructions.\n\nThis process will create a zip file in your top-level directory named `first_neural_network-result-.zip`, where there will be a number between `result-` and `.zip`.  This is the file that you should submit to the Udacity reviews system.\n\nUpload that file into the system and hit Submit Project above!\n\nIf you run into any issues using the project assistant, please check [this page](https://knowledge.udacity.com/questions/6299) to troubleshoot; feel free to post your problem in [Knowledge](https://knowledge.udacity.com) if it isn't covered by one of the displayed cases!\n\n### Project Assistant - Specific Requirements to Check\nA student's submission gets checked against the following unit-test cases in the Project Assistant: \n1. The activation function should be a sigmoid\n1. The number of epochs should be between 50 and 15000\n1. The number of hidden nodes should be 5 and 100\n1. There should be exactly one output node\n1. The learning_rate should be between 0.05 and 5\n1. As already mentioned in the test-cases in `Your_first_neural_network.ipynb`, for the given `NeuralNetwork(3, 2, 1, 0.5)`, the forward pass implementation, backpropagation implementation, and update_weights implementation should be correct. <font color=\"red\">Expected updated weights are:</font>\n - Hidden to output = `[[0.37275328], [-0.03172939]]`\n - Input to hidden=`[[0.10562014, -0.20185996], [0.39775194, 0.50074398], [-0.29887597, 0.19962801]]`\n1. The run method should have an expected input as 0.09998924\n1. Produces good results when running the network on full data. Requirements are:\n - <font color=\"red\">Training loss should be less than 0.09</font>\n - <font color=\"red\">Validation loss should be less than 0.18</font>\n\n\n### What to do afterward\n\nIf you're waiting for new content or to get the review back, here's a great video from Frank Chen about the history of deep learning. It's a 45 minute video, sort of a short documentary, starting in the 1950s and bringing us to the current boom in deep learning and artificial intelligence.\n\n[![AI and Deep Learning](https://s3.amazonaws.com/content.udacity-data.com/nd101/Screen+Shot+2017-01-27+at+11.38.54+AM.png)](https://youtu.be/ht6fLrar91U)\n\n\n## D. Project Submission Checklist\n\n**Before submitting your project, please review and confirm the following items.** \n<input type=\"checkbox\"> I am confident all rubric items have been met and my project will pass as submitted. \n<input type=\"checkbox\"> Project builds correctly without errors and runs.\n<input type=\"checkbox\"> All required functionality exists and my project behaves as expected per the project's specifications.\n\n**Once you have checked all these items, you are ready to submit!**\n",
+        "is_public": true,
+        "summary": null,
+        "forum_path": "",
+        "rubric_id": "2148",
+        "terminal_project_id": null,
+        "resources": null,
+        "image": {
+          "url": "https://s3.amazonaws.com/video.udacity-data.com/topher/2017/January/588bccf2_project-page-dark-overlay/project-page-dark-overlay.jpg",
+          "width": 1200,
+          "height": 900
+        }
+      },
+      "lab": null,
+      "concepts": [
+        {
+          "id": 262262,
+          "key": "39304932-50c9-4560-80dc-3d5eeeb4c85d",
+          "title": "Introduction to the Project",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "39304932-50c9-4560-80dc-3d5eeeb4c85d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 262263,
+              "key": "93929692-2425-43c2-977d-f6a083d2754e",
+              "title": "Introduction to the Project",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "dOwEDeJp8yw",
+                "china_cdn_id": "dOwEDeJp8yw.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 951491,
+          "key": "d7f567be-7857-40c6-beaa-1c719ecb4e57",
+          "title": "Project Cheatsheet",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d7f567be-7857-40c6-beaa-1c719ecb4e57",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": {
+            "files": [
+              {
+                "name": "DLND P1 Lessons Cheat Sheet (1)",
+                "uri": "https://video.udacity-data.com/topher/2019/October/5da05a3f_dlnd-p1-lessons-cheat-sheet-1/dlnd-p1-lessons-cheat-sheet-1.pdf"
+              }
+            ],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 953150,
+              "key": "c3dbffcd-42e1-4ecb-96f4-3fb39b5f7c2a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<h1>Project Cheatsheet</h1>\nThis sheet would help you remember important formulas and have hints on how to tackle setting up hyperparameters.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 951492,
+              "key": "9d11170f-f8c5-4dce-bc68-98108c88e6cd",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2019/October/5da05a15_dlnd-p1-lessons-cheat-sheet-1/dlnd-p1-lessons-cheat-sheet-1.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/9d11170f-f8c5-4dce-bc68-98108c88e6cd",
+              "caption": "",
+              "alt": "",
+              "width": 200,
+              "height": 258,
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 570813,
+          "key": "20c33b8e-2ce5-4727-ac32-6d702ca04dc3",
+          "title": "Project Workspace",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "20c33b8e-2ce5-4727-ac32-6d702ca04dc3",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 571364,
+              "key": "82eca92c-da50-46af-87bb-22417c8c1cd8",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "viewd2c7923f",
+              "pool_id": "jupyterlab",
+              "view_id": "d2c7923f-36fd-485d-87ab-371541e68fe7",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowSubmit": false,
+                    "defaultPath": "/"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

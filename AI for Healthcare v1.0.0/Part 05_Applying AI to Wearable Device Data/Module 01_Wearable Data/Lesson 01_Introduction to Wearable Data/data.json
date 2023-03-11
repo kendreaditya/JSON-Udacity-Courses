@@ -1,0 +1,477 @@
+{
+  "data": {
+    "lesson": {
+      "id": 970119,
+      "key": "4417cb06-0a1d-4dad-9418-2e615308b2f6",
+      "title": "Introduction to Wearable Data",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "We’ll cover what wearables are and the scope of the class. Learn who your instructor is and his thoughts on the promise and caveats of wearables in medical research and decision making.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/4417cb06-0a1d-4dad-9418-2e615308b2f6/970119/1582025313471/Introduction+to+Wearable+Data+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/4417cb06-0a1d-4dad-9418-2e615308b2f6/970119/1582025310603/Introduction+to+Wearable+Data+Subtitles.zip"
+          },
+          {
+            "name": "AIHCND-Wearable-Data-Course-Glossary",
+            "uri": "https://video.udacity-data.com/topher/2020/May/5ebb2d0c_aihcnd-wearable-data-glossary-v2/aihcnd-wearable-data-glossary-v2.pdf"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 970111,
+          "key": "9b094b86-e348-49ef-856b-9bd030ffd939",
+          "title": "Introduction",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "9b094b86-e348-49ef-856b-9bd030ffd939",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 970096,
+              "key": "4814268f-0bce-41e6-bbe2-a63e0aa6c3c5",
+              "title": "Welcome",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Introduction",
+              "instructor_notes": ""
+            },
+            {
+              "id": 970090,
+              "key": "eee515c1-676c-4264-9a02-7cc4db7434a7",
+              "title": "ND320 C4 L0 01 Introduction",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "wZaRMpLq7H0",
+                "china_cdn_id": "wZaRMpLq7H0.mp4"
+              }
+            },
+            {
+              "id": 970092,
+              "key": "82e616d7-9ea8-4d1b-a9cd-9aa77baca07e",
+              "title": "Recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Welcome to the fourth course in the AI for Healthcare Nanodegree. In this course, we're going to talk about data that comes from wearable devices and techniques to process that data. \n\n## About Your Instructor\nMy name is Nikhil. I've spent the past five years working with wearables at Verily Life Sciences, a subsidiary of Alphabet Inc. I’ve worked across various healthcare domains from cardiovascular disease to neurodegenerative diseases and diabetes, and I’m really excited to be teaching this course. I hope you’re excited to be here too!\n\n## Why Wearables \nWearables have been around for a long time as fitness devices. Fitbit's first wrist wearable came out in 2009. But before that, there were chest straps for measuring your heart rate and hip devices for counting steps.\n\nMore recently, wearables are starting to be used in making medical decisions and for clinical research. For example, in this [ABC news article](https://www.abcactionnews.com/news/region-hillsborough/hillsborough-teen-apple-watch-saved-my-life), a young woman discovered she had kidney failure by following clues from her Apple Watch.\n\nThis story highlights all the advantages of wearable devices. They can monitor people continuously and unobtrusively and discover intermittent abnormalities that point to serious medical conditions before they progress. And in this case, they alerted this woman of her condition before she developed symptoms that might have put her in the hospital.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 970118,
+          "key": "f3e3a7b9-ae01-4cff-a970-969c5894f727",
+          "title": "Course Outline",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "f3e3a7b9-ae01-4cff-a970-969c5894f727",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 970091,
+              "key": "b572c855-390b-4f15-8ee9-40fa2f058d1d",
+              "title": "heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Course Outline",
+              "instructor_notes": ""
+            },
+            {
+              "id": 970114,
+              "key": "94d92703-58bb-4956-876e-a35368c4dfcb",
+              "title": "ND320 C4 L0 02 Why Are Wearable Algorithms Important--",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "DMKkC4l194Y",
+                "china_cdn_id": "DMKkC4l194Y.mp4"
+              }
+            },
+            {
+              "id": 970098,
+              "key": "814cbe06-baaf-4a01-8f59-21ae4459e7b9",
+              "title": "summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Wearable Devices \nToday the landscape of wearable devices is vast and only increasing. In part because of the miniaturization of electronics and sensors, they are much more capable than before. For example, the Apple Watch came out in 2015 and tried to track activity, heart rate, exercise, sleep. The newer model even has an ECG sensor on it for monitoring your heart rhythm.  There are shoe sensors, “underwearables” - things like compression shorts, and even wearables for your baby. Pampers has a smart diaper. \n\nBut these sensors don’t produce meaningful metrics automatically. For example, the sensors on a FitBit don’t produce a pulse rate or a step count. They sense some underlying signal, for step count, it’d be motion. Then, complex algorithms will process the raw motion data into various activity classifications or step counts. \n\n## What You Will Learn\nThis course will teach you how to build signal processing and machine learning algorithms to process raw wearable data and produce clinically meaningful metrics. We’ll talk about the healthcare aims that can be achieved with wearables. The skills you'll develop and the algorithms you’ll learn in this class will be transferable to a broad spectrum of devices and sensors.\n\nThe course focuses on three main sensors for a wrist-wearable: \n- the IMU sensor measures motion. \n- the PPG sensor measures blood flow at the wrist.\n- the ECG sensor measures the electrical activity of the heart. \n\nWe’ll begin with an introduction to how these sensors work. Then we will deep-dive into the IMU sensor and learn how to use it to do activity classification. This can help build useful context around how the wearer spends their time, how much exercise they get, how mobile they are, and so on. Next, we’ll look at the ECG sensor and learn how we can use it to detect some cardiovascular conditions. Finally, in the final project, you will use the PPG sensor to derive the pulse rate. And learn techniques to produce good results even while the wearer is exercising, which as you’ll soon learn causes all sorts of problems. You will be working intimately with time-series signals in this course, so before we jump in, we’ll do a quick review of basic time-series signal processing and learn some plotting tools to help us explore the data.\n\n## Key Topics",
+              "instructor_notes": ""
+            },
+            {
+              "id": 970110,
+              "key": "0c50c113-727a-45b4-afee-d263367ee77a",
+              "title": "Visual Model with Key Topics",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/March/5e7a3d4a_nd320-c4-l0-key-topics/nd320-c4-l0-key-topics.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/0c50c113-727a-45b4-afee-d263367ee77a",
+              "caption": "Key Topics in this Course",
+              "alt": "Course Overview",
+              "width": 1116,
+              "height": 734,
+              "instructor_notes": null
+            },
+            {
+              "id": 970106,
+              "key": "e690807f-9e68-4142-b49a-589cc46d4bd1",
+              "title": "Course Outline",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Course Outline\nLesson 1 - Introduction to Wearable Data\n- Welcome / Introduction\n- Wearables in a Medical Context  \n  \nLesson 2 - Introduction to Signal Processing\n- Sampling\n- Python plotting in time-domain\n- Resampling / Interpolation\n- Fourier Transform\n- Python plotting in the frequency domain\n- Harmonics  \n  \nLesson 3 - Introduction to Wearable Sensors\n- Wearable Demo\n- IMU Sensor\n- Accelerometer deep-dive\n- PPG Sensor\n- ECG Sensor\n  \nLesson 4 - Activity Classifier  \n- Introduction to Activity Classifiers\n- Feature Extraction\n- Model Building\n- Hyperparameter Tuning\n  \nLesson 5 - ECG Processing\n- About the ECG signal\n- Pan-Tompkins algorithm\n- Atrial Fibrillation detection algorithm\n  \nFinal Project\n- Motion Compensated Pulse Rate\n- Resting Heart Rate vs. Age and Sex in a Disease Population\n\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 970112,
+          "key": "154abf9a-5bc2-4d22-af03-9b31b83bf987",
+          "title": "Apple Heart Study",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "154abf9a-5bc2-4d22-af03-9b31b83bf987",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 970108,
+              "key": "ebe97ce6-5443-4ec8-8984-5c32e003b409",
+              "title": "Apple Heart Study - heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## The Apple Heart Study",
+              "instructor_notes": ""
+            },
+            {
+              "id": 970093,
+              "key": "ffaf1b25-b3e7-4385-b374-a07168cc5b2f",
+              "title": "ND320 C4 L0 03 Apple Heart Study",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "9Vf5Nvrqb8M",
+                "china_cdn_id": "9Vf5Nvrqb8M.mp4"
+              }
+            },
+            {
+              "id": 970095,
+              "key": "ddd6119d-19e0-452b-9174-e0e3189a4726",
+              "title": "summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Apple Heart Study Overview\nIf wearables are ever to be used in a medical context, research and clinical trials need to be done with wearable devices. We’re going to look into one such study, the Apple Heart Study (AHS). Apple, with Stanford University, recruited 419,000 individuals over 8 months to participate over the internet. Participants just had to download an app over the App Store, provided they already owned an Apple Watch and an iPhone. The goal of the study was to try to detect an abnormal heart rhythm called Atrial Fibrillation (AF). AF is one of the most common arrhythmias affecting up to 6 million people in the US and it’s significant because it’s associated with a 4 - 5x increase in the risk of stroke. \n\n## Study Procedure\nThe way the AHS worked was the watch would sometimes notify participants of an irregular pulse rhythm. Once notified, the researchers would send these participants a wearable ECG chest patch for 7 days that would confirm whether they were experiencing AF. 34% of the notified participants in this study were confirmed to have AF from the chest patch. AF can be intermittent, so even if someone has it, there’s no guarantee it would show up during the chest patch period. ",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 970113,
+          "key": "fd2dfaee-57d9-43a6-8791-87603e962db7",
+          "title": "Apple Heart Study Interpretation",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "fd2dfaee-57d9-43a6-8791-87603e962db7",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 970101,
+              "key": "96928d63-21d2-4881-9975-39b629539f1c",
+              "title": "ND320 C4 L0 04 Apple Heart Study Interpretation",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "HE5aFTEKwuE",
+                "china_cdn_id": "HE5aFTEKwuE.mp4"
+              }
+            },
+            {
+              "id": 970097,
+              "key": "598b9bce-e39f-4948-8f34-7b60dbf23f25",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\nI think this is a landmark study in the use of wearables for clinical research, but I don’t think we should overvalue that 34% of participants were confirmed to have AF or how the Apple Watch's use as a screening or diagnostic tool. The reason for this is because the study deviated from typical clinical trials that try to prove the effectiveness of devices or drugs in a few significant ways:\n - Not everyone received an ECG chest patch, so we don’t know the false-negative rate. \n - The inclusion criteria (Apple Watch and iPhone users) created a biased study population. \n\nIf wearable research is biased towards a more affluent population, the interventions or discoveries made may be more specifically tailored for this population and may be less effective on a less affluent population. This is similar to why researchers think long and hard about how to enroll minority populations in their clinical trials.\n\nDespite the caveats above, this study broke new ground in significant ways: \n- Recruited almost half a million people for the study in 8 months.\n- These types of studies lose a lot of participants to follow-up (e.g., over 2000 participants were notified of having irregular pulse rates but only collected data from 450 ECG chest patches.) \n- How participants would react to a smartwatch notifying them of an abnormal heart rhythm while it was happening. \n\nI think the study is super exciting in that it's a first attempt to use the capability of wearables to do long term monitoring in a medical context. There’s obviously a lot of hype around studies like this and I want us to be excited about the right things.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 970094,
+              "key": "18a3366b-1d0b-43a0-a40a-38360e5c5acf",
+              "title": "Check for understanding",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "18a3366b-1d0b-43a0-a40a-38360e5c5acf",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "The AHS enrolled 419,297 participants of which: \n- 2161 got “irregular pulse rhythm” notifications. \n- 450 returned ECG chest patch. \n- 153 confirmed to have AF.\nWhat % of patients in the AHS were used to compute the primary end point which was the  participants that got \"irregular pulse rhythm\" notification that actually had AF during the ECG patch monitoring phase?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "10%",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "1%",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "0.5%",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk4",
+                    "text": "0.1%",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk5",
+                    "text": "0.03%",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 970103,
+              "key": "ecd32ad2-de48-4711-a64c-9384170f2833",
+              "title": "Precision and Recall",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Classification Accuracy\nFrom activity classification to AF detection, many tasks in wearable healthcare involve classification. In the case of the AHS, participants were classified by the “irregular pulse” notification into AF and non-AF groups. One way of discussing **classification accuracy** in binary classification is by looking at precision and recall.  \n - **precision**: the proportion of all true positive cases that are detected positive by the classifier\n - **recall**: the proportion of all positives detected by the classifier that are true positives\n\nThis is demonstrated graphically below:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 970105,
+              "key": "7e6c3916-00e2-41af-84d2-23c0641e817b",
+              "title": "precision recall image",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/March/5e7a3d4b_nd320-c4-l0-precision-recall-wiki/nd320-c4-l0-precision-recall-wiki.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/7e6c3916-00e2-41af-84d2-23c0641e817b",
+              "caption": "Precision and Recall <br> Source: Walber. Precision and recall. Nov 2014. CC-BY-SA-4.0 [Link](https://commons.wikimedia.org/wiki/File:Precisionrecall.svg) ",
+              "alt": "Precision and Recall",
+              "width": 660,
+              "height": 1200,
+              "instructor_notes": null
+            },
+            {
+              "id": 970120,
+              "key": "b34309ec-3f9d-4802-ae78-9cf64874975e",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "b34309ec-3f9d-4802-ae78-9cf64874975e",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "In the AHS study, 404 participants got a new diagnosis of AF from 929 who had an irregular pulse notification. And 3070 participants got a new diagnosis of AF from 293,015 who didn't get an irregular pulse notification. If the irregular pulse notification is used to classify participants that will and will not receive an AF diagnosis, what is the precision and recall? (Round to the nearest %) "
+                },
+                "concepts_label": "Classification",
+                "answers_label": "Percentage",
+                "concepts": [
+                  {
+                    "text": "Precision",
+                    "correct_answer": {
+                      "id": "a1581373496070",
+                      "text": "43%"
+                    }
+                  },
+                  {
+                    "text": "Recall",
+                    "correct_answer": {
+                      "id": "a1581373513374",
+                      "text": "12%"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1581373540560",
+                    "text": "30%"
+                  },
+                  {
+                    "id": "a1581373530830",
+                    "text": "1%"
+                  },
+                  {
+                    "id": "a1581373536744",
+                    "text": "13%"
+                  },
+                  {
+                    "id": "a1581373513374",
+                    "text": "12%"
+                  },
+                  {
+                    "id": "a1581373496070",
+                    "text": "43%"
+                  },
+                  {
+                    "id": "a1581373533797",
+                    "text": "10%"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 970102,
+              "key": "5be9b86d-2735-495b-bf0d-4e2771958fee",
+              "title": "Further Research",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Further Research\n\nWearables are part of Digital Health, learn more about it [here](https://en.wikipedia.org/wiki/Digital_health).\n  \nThe wikipedia page for [precision and recall](https://en.wikipedia.org/wiki/Precision_and_recall) \n  \nThe Framingham Study is a landmark study in cardiovascular health. Many interesting papers came out of it, and I highly recommend exploring them. Start [here with the Wikipedia page](https://en.wikipedia.org/wiki/Framingham_Heart_Study)\n\nIf you would like to read up on the AHS on your own, you can find the clinical trial study record detail [here](https://clinicaltrials.gov/ct2/show/NCT03335800).\n\n### Relevant Papers\n- **Apple Heart Study** - Perez MV, Mahaffey KW, Hedlin H, et al. \"Large-scale assessment of a smartwatch to identify atrial fibrillation.\" *N Engl J Med* 2019;381:1909-1917. [Link](https://www.nejm.org/doi/full/10.1056/NEJMoa1901183).\n- **Apple Heart Study Response** - Campion Edward W., Jarcho John A.. (2019) \"Watched by Apple.\" *N Engl J Med* 381:20, 1964-1965. [Link](https://www.nejm.org/doi/full/10.1056/NEJMe1913980).\n- **Framingham Study** - Wolf PA, Abbott RD, Kannel WB. \"Atrial fibrillation as an independent risk factor for stroke: the Framingham Study.\" *Stroke* 1991;22:983-988. [Link](https://www.ahajournals.org/doi/10.1161/01.STR.22.8.983).\n- **Wearable Health** - \nMontgomery, K., Chester, J., & Kopp, K. (2018). \"Health Wearables: Ensuring Fairness, Preventing Discrimination, and Promoting Equity in an Emerging Internet-of-Things Environment.\" *Journal of Information Policy*, 8, 34-77. doi:10.5325/jinfopoli.8.2018.0034 [Link](https://www.jstor.org/stable/10.5325/jinfopoli.8.2018.0034#metadata_info_tab_contents)\n\n## New Vocabulary\n- **Inclusion Criteria**: Characteristics that potential study subjects must have for them to be included in the study.\n- **Exclusion Criteria**: Characteristics that disqualify potential study subjects from participating in a clinical study. e.g., Some common ones are being under 18 or pregnant.\n- **Classification Accuracy**: A metric for evaluating the performance of a classifier -- the fraction of classifications that are correct. For rare events (like atrial fibrillation), this metric is unsuitable. For example, a classifier that classifies every data point as healthy would have a classification accuracy of 99%, as around 1 percent of the population has atrial fibrillation, but would be relatively useless.\n- **Precision**: The fraction of positive classifications that are correct.\n- **Recall**: The fraction of positive elements that are classified correctly as positive.\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 970117,
+          "key": "8d29211f-c07b-4b52-8b5c-a26acd830f18",
+          "title": "Developer Workflow",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "8d29211f-c07b-4b52-8b5c-a26acd830f18",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 970115,
+              "key": "2b945d46-958a-41d8-b37a-25030ba14214",
+              "title": "heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Developer Workflow",
+              "instructor_notes": ""
+            },
+            {
+              "id": 970104,
+              "key": "0fb0e336-2308-4b12-b7a5-3ef5d52449bb",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Exercises and projects can be completed in Jupyter notebooks. You can either work on a virtual machine inside a Udacity Workspace or use your local machine.\n\n### Udacity Workspaces\n\nWorkspaces will open up in your browser as you navigate through the course. They will already be running with the required dependencies and will have access to the datasets and files you will need to accomplish your tasks. For most users, it will be easiest to operate inside a Udacity Workspace.\n\n### Local Workflow\n\nWorking locally allows you more flexibility and permanence. You can save your exercises and projects for further reference, and you can install and use libraries to add to them to advance your learning. Additionally, some plotting tools will not work inside a virtual environment as they pop open a new GUI window. As you encounter exercises and projects in this course, you can download the relevant starter notebooks and datasets from a git repository that will be linked for each exercise.\n  \nTo simplify python dependencies and avoid confusion caused by mismatched library versions, you can use [this Pipfile](https://github.com/udacity/nd320-c4-wearable-data-starter/blob/master/Pipfile).  \n  \nI use [pipenv](https://pipenv-fork.readthedocs.io/en/latest/index.html) to isolate my python dependencies from the rest of the system. Detailed instructions follow:\n1. [Install Python 3, pip, and pipenv](https://pipenv-fork.readthedocs.io/en/latest/install.html)\n2. `mkdir $HOME/ds_for_wearables`\n3. Download the above Pipfile to `$HOME/ds_for_wearables`\n4. `cd $HOME/ds_for_wearables`\n5. `pipenv install`  \n\nThis will install all the required dependencies to complete the exercises and projects. \n\nTo start a Jupyter notebook in this environment:\n1. `cd $HOME/ds_for_wearables`\n2. `pipenv run jupyter notebook`",
+              "instructor_notes": ""
+            },
+            {
+              "id": 970099,
+              "key": "f3a682f4-276b-44a7-9282-e8789c9eecf5",
+              "title": "offline, spyder IDE",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Spyder IDE\n\nMy favorite editor is Spyder IDE, which mimics a MATLAB environment where you have both an editor and an IPython console side by side. You can run sections of code in your editor using similar syntax to MATLAB and view plots, code, and the console side by side. It also has features to examine variables and maintain a history of commands.\n\n[Read the docs](https://docs.spyder-ide.org/)\n\n**Note:** On newer versions of macOS (macosx 10.14.6), I’ve encountered a bug where plotting causes the IPython kernel to significantly slow down. See [bug thread](https://github.com/matplotlib/matplotlib/issues/15314#issuecomment-533776844). If you encounter this, the workaround is to disable [AppNap](https://developer.apple.com/library/archive/documentation/Performance/Conceptual/power_efficiency_guidelines_osx/AppNap.html) using [appnope](https://pypi.org/project/appnope/).\n```\nimport appnope\nappnope.nope()\n```",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 970116,
+          "key": "025b900d-5afd-4a24-9781-928424781851",
+          "title": "Summary",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "025b900d-5afd-4a24-9781-928424781851",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 970100,
+              "key": "f07116d9-3fef-4bbc-ad74-0ab750629091",
+              "title": "ND320 C4 L0 05 Recap",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "weSsOqeV14E",
+                "china_cdn_id": "weSsOqeV14E.mp4"
+              }
+            },
+            {
+              "id": 970107,
+              "key": "aaf89973-20d7-40ff-a48b-d5614fde8f25",
+              "title": "Lesson Recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Recap\n\nIn this lesson, we introduced the course by providing two examples of how wearables aim to be more than just fitness devices. We started with an anecdote of when a wearable device alerted someone to a serious medical decision. And we followed that up with a discussion about the largest clinical study ever conducted with wearables, the AHS.\n\n\nWearable data science spans a few broad domains: \n- signal processing.\n- machine learning.\n- electronics.\n- sensors.\n- some clinical domain expertise. \n\nThis course assumes that you have some basic knowledge of machine learning. (However, if you don’t, you can always catch up by spending more time with the **Further Resources** sections at the end of each lesson!) \n\nIn this course, we begin with introductions to signal processing and sensors to provide you with some of the necessary background knowledge to be successful in this field. From there, we dive into a few case studies in biomedical time series algorithms that process wearable data. Each particular case study will begin with any of the clinical or physiological domain knowledge necessary to complete the exercises.\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 970109,
+              "key": "206c68b8-9127-4037-a97b-ae5967c9431c",
+              "title": "Further Research & Glossary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Glossary\n- **Inclusion Criteria**: Characteristics that potential study subjects must have for them to be included in the study.\n- **Exclusion Criteria**: Characteristics that disqualify potential study subjects from participating in a clinical study. e.g., Some common ones are being under 18 or pregnant.\n- **Classification Accuracy**: A metric for evaluating the performance of a classifier -- the fraction of classifications that are correct. For rare events (like atrial fibrillation), this metric is unsuitable. For example, a classifier that classifies every data point as healthy would have a classification accuracy of 99%, as around 1 percent of the population has atrial fibrillation, but would be relatively useless.\n- **Precision**: The fraction of positive classifications that are correct.\n- **Recall**: The fraction of positive elements that are classified correctly as positive.\n- **Primary Endpoint**: The metric being used to answer the question that the study seeks to ask. For drug trials, this would be markers of the disease the drug seeks to treat. For example, the primary endpoint for a study on the effectiveness of a new statin in preventing heart attacks would be the number of heart attacks in the test group compared to a control group. The number and types of participants enrolled in a study are designed with the primary endpoint in mind.\n\n",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

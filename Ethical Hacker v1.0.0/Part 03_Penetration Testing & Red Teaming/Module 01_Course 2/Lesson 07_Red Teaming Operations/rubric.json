@@ -1,0 +1,282 @@
+{
+  "id": 2891,
+  "project_id": 806,
+  "upload_types": [
+    "file"
+  ],
+  "file_filter_regex": "\\A(?!(((.*/)?(__MACOSX|\\.git|node_modules|bower_components|jspm_packages|\\.idea|build|.ipynb_checkpoints|\\.Trash-0|logs)(\\Z|/))))((.*\\.(js|css|py|html|htm|txt|md|markdown|sql|swift|java|ts|gradle|xml|rst|yml|yaml|rmd|pdf|docx|h|H|hh|hxx|h\\+\\+|c|C|cc|cpp|cxx|c\\+\\+)\\Z)|((.*/)?(README|Readme|readme|Makefile)\\Z))",
+  "nomination_eligible": false,
+  "stand_out": "1. Conduct post exploits After gaining access to any of the servers. This can include post exploitation scans and pivoting attacks.  \r\n2. Cover tracks by clearing logs and commands on both machines (DMZIServer, debianx64DMZOnCloudNew and Win10)\r\n3. Password spray and brute force attack against the root account. The student might make note that while this vulnerability was not identified during scanning efforts, the root account had a poor password that resulted in system compromise. If the student was able to guess the root account’s password, this should also result in an additional finding in the report related to password policies. \r\n4. Web Shell attack on the web server. The student can obtain a pre-built web shell code from GitHub in order to create a shell connection via the web app.",
+  "hide_criteria": false,
+  "created_at": "2020-08-05T21:03:39.470Z",
+  "updated_at": "2021-04-12T13:09:36.218Z",
+  "hashtag": "",
+  "max_upload_size_mb": 500,
+  "estimated_sla": null,
+  "project_assistant_enabled": false,
+  "available_for_cert_project": false,
+  "language": "en-us",
+  "ndkeys": [
+    "nd350-beta",
+    "nd350",
+    "nd350-ent"
+  ],
+  "coursekeys": [],
+  "is_career": false,
+  "sections": [
+    {
+      "id": 6067,
+      "name": "Targeting Organization Reconnaissance",
+      "created_at": "2020-04-20T15:26:28.004Z",
+      "updated_at": "2020-08-27T02:12:50.243Z",
+      "deleted_at": null,
+      "position": 0,
+      "rubric_id": 2891,
+      "rubric_items": [
+        {
+          "id": 17793,
+          "section_id": 6067,
+          "passed_description": "- Searched for \"Learn About Security\" on Shodan or other recon websites and provide a screenshot for evidence of discovery.\r\n- Searched and provided evidence of the DNS zone information for learnaboutsecurity.com.\r\n\r\n",
+          "exceeded_description": "",
+          "created_at": "2020-08-09T06:40:29.600Z",
+          "updated_at": "2021-03-28T17:37:17.439Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "Perform stealthy reconnaissance against organizations to avoid potential tripwires and discover open services. The service may include websites and development end-points.",
+          "exceedable": false
+        },
+        {
+          "id": 17400,
+          "section_id": 6067,
+          "passed_description": "- Identify the company websites, email provider, and spam service (if one exists).\r\n- Provide a list of names to IP mappings for \"Learn About Security\" websites and hosting services.",
+          "exceeded_description": "",
+          "created_at": "2020-04-20T15:26:52.314Z",
+          "updated_at": "2021-03-28T17:45:35.478Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 1,
+          "criteria": "Identify DNS Records for target organization.",
+          "exceedable": false
+        },
+        {
+          "id": 17401,
+          "section_id": 6067,
+          "passed_description": "- Identify the Content Management System in use for the target organization.",
+          "exceeded_description": "",
+          "created_at": "2020-04-20T15:26:53.009Z",
+          "updated_at": "2021-03-28T17:25:25.429Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 2,
+          "criteria": "Identify the technologies used by the organization for their website. ",
+          "exceedable": false
+        }
+      ]
+    },
+    {
+      "id": 6239,
+      "name": "Scanning for Vulnerabilities",
+      "created_at": "2020-08-27T02:11:30.267Z",
+      "updated_at": "2020-08-27T02:12:50.247Z",
+      "deleted_at": null,
+      "position": 1,
+      "rubric_id": 2891,
+      "rubric_items": [
+        {
+          "id": 17879,
+          "section_id": 6239,
+          "passed_description": "Provide commands or screenshots of scanning efforts.\r\n\r\nThis may include: \r\n- Copy / Pasted scanner's command usage\r\n  - Screenshot of results\r\n- Screenshot of scanner's command usage\r\n  - May include results here\r\n",
+          "exceeded_description": "",
+          "created_at": "2020-08-27T02:12:50.608Z",
+          "updated_at": "2021-03-28T17:38:18.298Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "Scanners like `nmap` will be used to map out the internal network.",
+          "exceedable": false
+        },
+        {
+          "id": 17880,
+          "section_id": 6239,
+          "passed_description": "Provide the commands used to scan the VM and evidence of vulnerable varnish application. ",
+          "exceeded_description": "",
+          "created_at": "2020-08-27T02:12:51.892Z",
+          "updated_at": "2021-03-28T17:25:25.446Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 1,
+          "criteria": "Scan the external web site and associated DNS server to identify vulnerable component(s).",
+          "exceedable": false
+        },
+        {
+          "id": 18482,
+          "section_id": 6239,
+          "passed_description": "Provide the commands used to scan the VM and evidence of vulnerable software (if any). ",
+          "exceeded_description": "",
+          "created_at": "2020-12-12T22:23:23.012Z",
+          "updated_at": "2021-03-28T17:49:52.041Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 2,
+          "criteria": "Scan the VM and identify vulnerable software.",
+          "exceedable": false
+        }
+      ]
+    },
+    {
+      "id": 6238,
+      "name": "Vulnerability Research and Identification",
+      "created_at": "2020-08-27T02:09:14.799Z",
+      "updated_at": "2020-08-27T02:12:50.251Z",
+      "deleted_at": null,
+      "position": 2,
+      "rubric_id": 2891,
+      "rubric_items": [
+        {
+          "id": 17877,
+          "section_id": 6238,
+          "passed_description": "Research the VM’s remote access software in a few ways:\r\n- If credentials are stored in plain text?\r\n- If there are any major security weaknesses that are often overlooked? \r\n- If there are any software, platform, or version vulnerabilities that are exploitable? \r\n",
+          "exceeded_description": "",
+          "created_at": "2020-08-27T02:09:49.498Z",
+          "updated_at": "2021-03-28T17:40:22.482Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "Confirm presence of sensitive data and gain access to stored credentials and sensitive data. ",
+          "exceedable": false
+        },
+        {
+          "id": 17878,
+          "section_id": 6238,
+          "passed_description": "Research GitHub source code vulnerabilities and Old Backup and Unreferenced Files for Sensitive Information. \r\n- Conduct a blind guessing using the organization naming scheme for published content\r\n- Filename filter bypass\r\n",
+          "exceeded_description": "",
+          "created_at": "2020-08-27T02:09:58.337Z",
+          "updated_at": "2021-03-28T17:47:13.656Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 1,
+          "criteria": "Research how to Review Old Backup and Unreferenced Files for Sensitive Information",
+          "exceedable": false
+        }
+      ]
+    },
+    {
+      "id": 6240,
+      "name": "Exploiting Vulnerable Services",
+      "created_at": "2020-08-27T02:14:55.545Z",
+      "updated_at": "2020-08-27T02:15:07.928Z",
+      "deleted_at": null,
+      "position": 3,
+      "rubric_id": 2891,
+      "rubric_items": [
+        {
+          "id": 17882,
+          "section_id": 6240,
+          "passed_description": "Demonstrate brute force attack by utilizing a password crack utility and wordlist:\r\n- The command used should be listed \r\n- A screenshot of the output is required to accomplish this step. \r\n- Once an exploit is performed and verified, note this as a finding in the report. \r\n- The finding should describe the condition that allowed the exploit (e.g., “not having complex password policy enabled”).\r\n\r\n",
+          "exceeded_description": "",
+          "created_at": "2020-08-27T02:15:18.743Z",
+          "updated_at": "2021-03-28T17:43:25.973Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "Run Brute force attack against the Security Training Server (debianx64DMZOnCloudNew)",
+          "exceedable": false
+        },
+        {
+          "id": 17884,
+          "section_id": 6240,
+          "passed_description": "Utilize Metasploit Framework (exploit module) to complete the following: \r\n- Search for exploits relating to the application manufacturer (Xampp)\r\n- Configure the settings for the exploit\r\n- Change the payload to one that functions if the default payload is not successful.\r\n- Run the exploit to gain a remote shell into the target device\r\n",
+          "exceeded_description": "",
+          "created_at": "2020-08-27T02:15:28.866Z",
+          "updated_at": "2021-03-28T17:56:55.679Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 2,
+          "criteria": "Gain remote access to the Win-10 Machine by exploiting an application on the device",
+          "exceedable": false
+        }
+      ]
+    },
+    {
+      "id": 6241,
+      "name": "Reporting Standards",
+      "created_at": "2020-08-27T02:15:08.120Z",
+      "updated_at": "2020-08-27T02:15:18.585Z",
+      "deleted_at": null,
+      "position": 4,
+      "rubric_id": 2891,
+      "rubric_items": [
+        {
+          "id": 17885,
+          "section_id": 6241,
+          "passed_description": "Discussions in the Executive Summary section should be policy and procedure oriented. Include recommendations for executives to improve the following:\r\n- Software maintenance and version policies\r\n- Sensitive data handling policies should be mentioned\r\n- Password policies may also be discussed by the student if they recovered the root password\r\n",
+          "exceeded_description": "",
+          "created_at": "2020-08-27T03:06:08.317Z",
+          "updated_at": "2021-03-28T17:25:25.491Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "Executive summary should be light on technical details. The findings section should describe the vulnerabilities in enough detail to be reproducible.",
+          "exceedable": false
+        },
+        {
+          "id": 17886,
+          "section_id": 6241,
+          "passed_description": "All images throughout the report should have a consistent style.\r\n- Bordered\r\n- Sensitive data redacted\r\n- Commands or other important details highlighted in some way\r\n- Captioned\r\n",
+          "exceeded_description": "",
+          "created_at": "2020-08-27T03:06:09.602Z",
+          "updated_at": "2021-03-28T17:25:25.495Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 1,
+          "criteria": "Center all images, border them, and add captions to all images. ",
+          "exceedable": false
+        },
+        {
+          "id": 18104,
+          "section_id": 6241,
+          "passed_description": "- The vulnerabilities that were found are prioritized and give an appropriate reason and source for the importance based on the audience.\r\n- The student should provide some initial notes to reduce risk of attack against the most vulnerable services by tier or rank.\r\n   - i.e. PII data leak, High Impact\r\n   - Outdated versions, High Risk\r\n",
+          "exceeded_description": "",
+          "created_at": "2020-10-14T21:24:12.332Z",
+          "updated_at": "2021-03-28T17:25:25.499Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 2,
+          "criteria": "Prioritized the vulnerabilities found. ",
+          "exceedable": false
+        },
+        {
+          "id": 17887,
+          "section_id": 6241,
+          "passed_description": "Methodology should be reproducible. \r\n- Commands should be documented\r\n  - Can they be copy-pasted directly into a terminal? \r\n  - Or were the commands simply demonstrated in a screenshot?\r\n- Exploit code source locations should be discoverable. \r\n- General scientific method based flow of methodology: \r\n  - The student performed some action.\r\n  - The action resulted in the identification of some evidence-based discovery.\r\n  - The discovery was researched and produced a probable finding.\r\n",
+          "exceeded_description": "",
+          "created_at": "2020-08-27T03:06:10.702Z",
+          "updated_at": "2021-03-28T17:25:25.504Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 3,
+          "criteria": "Methodology should be documented well enough to be reproducible. ",
+          "exceedable": false
+        }
+      ]
+    }
+  ],
+  "project": {
+    "id": 806,
+    "name": "Penetration Testing & Red Teaming",
+    "nanodegree_key": "nd350",
+    "is_cert_project": false,
+    "audit_project_id": null,
+    "hashtag": null,
+    "audit_rubric_id": 2899,
+    "entitlement_required": false,
+    "is_career": false,
+    "recruitment_family_id": null,
+    "created_at": "2020-12-22T06:59:31.730Z",
+    "updated_at": "2021-05-02T15:24:17.121Z",
+    "price": "12.0",
+    "ungradeable_price": "3.0",
+    "audit_price": "0.0"
+  }
+}

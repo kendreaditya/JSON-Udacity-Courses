@@ -1,0 +1,284 @@
+{
+  "id": 2260,
+  "project_id": 286,
+  "upload_types": [
+    "repo",
+    "zip"
+  ],
+  "file_filter_regex": "\\A(?!(((.*/)?(__MACOSX|\\.git|node_modules|bower_components|jspm_packages|\\.idea|build|.ipynb_checkpoints|\\.Trash-0|logs)(\\Z|/))))((.*\\.(css|docx|gradle|htm|html|java|js|markdown|md|pdf|py|rmd|rst|sql|swift|txt|xml|yaml|yml)\\Z)|((.*/)?(README|Readme|readme|Makefile)\\Z))",
+  "nomination_eligible": false,
+  "stand_out": "* Use validation data to choose the best model\n* Initialize your model weights, especially the weights of the embedded layer to encourage model convergence\n* Use topk sampling to generate new words\n* Check out the \"Advanced projects\" section in the project overview to take this work even further!",
+  "hide_criteria": false,
+  "created_at": "2018-08-23T22:43:57.479Z",
+  "updated_at": "2019-06-23T17:14:34.397Z",
+  "hashtag": "",
+  "max_upload_size_mb": 500,
+  "estimated_sla": null,
+  "project_assistant_enabled": false,
+  "checkmate_enabled": false,
+  "checkmate_metadata": null,
+  "available_for_cert_project": false,
+  "classroom_node_id": 696465,
+  "classroom_project_key": "03b3aefc-60c7-46f8-85d5-aa774a0ca0ec",
+  "language": "en-us",
+  "ndkeys": [
+    "nd101",
+    "nd101-mena-connect",
+    "nd101-ent"
+  ],
+  "coursekeys": [],
+  "sections": [
+    {
+      "id": 4994,
+      "name": "All Required Files and Tests",
+      "created_at": "2018-10-05T08:35:17.016Z",
+      "updated_at": "2018-10-05T08:35:39.922Z",
+      "deleted_at": null,
+      "position": 0,
+      "rubric_id": 2260,
+      "rubric_items": [
+        {
+          "id": 14473,
+          "section_id": 4994,
+          "passed_description": "The project submission contains the project notebook, called “dlnd_tv_script_generation.ipynb”.",
+          "exceeded_description": null,
+          "created_at": "2018-10-05T08:35:40.463Z",
+          "updated_at": "2018-10-05T08:36:39.110Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "All project files are included in the submission",
+          "exceedable": false
+        },
+        {
+          "id": 14474,
+          "section_id": 4994,
+          "passed_description": "All the unit tests in project have passed.",
+          "exceeded_description": null,
+          "created_at": "2018-10-05T08:36:39.290Z",
+          "updated_at": "2018-10-18T19:21:40.677Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 1,
+          "criteria": "All unit tests in the project have passed",
+          "exceedable": false
+        }
+      ]
+    },
+    {
+      "id": 4995,
+      "name": "Pre-processing Data",
+      "created_at": "2018-10-05T08:40:41.669Z",
+      "updated_at": "2018-10-05T08:40:58.225Z",
+      "deleted_at": null,
+      "position": 1,
+      "rubric_id": 2260,
+      "rubric_items": [
+        {
+          "id": 14475,
+          "section_id": 4995,
+          "passed_description": "The function `create_lookup_tables` create two dictionaries:\n- Dictionary to go from the words to an id, we'll call vocab_to_int\n- Dictionary to go from the id to word, we'll call int_to_vocab\n\nThe function `create_lookup_tables` return these dictionaries as a tuple (vocab_to_int, int_to_vocab).",
+          "exceeded_description": null,
+          "created_at": "2018-10-05T08:40:58.403Z",
+          "updated_at": "2018-10-15T23:37:09.004Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "The function `create_lookup_tables` is implemented",
+          "exceedable": false
+        },
+        {
+          "id": 14476,
+          "section_id": 4995,
+          "passed_description": "The function `token_lookup` returns a dict that can correctly tokenizes the provided symbols.",
+          "exceeded_description": null,
+          "created_at": "2018-10-05T08:41:42.738Z",
+          "updated_at": "2018-10-05T08:42:21.851Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 1,
+          "criteria": "A special token dictionary is created",
+          "exceedable": false
+        }
+      ]
+    },
+    {
+      "id": 4997,
+      "name": "Batching Data",
+      "created_at": "2018-10-05T08:44:55.092Z",
+      "updated_at": "2018-10-05T08:45:06.564Z",
+      "deleted_at": null,
+      "position": 2,
+      "rubric_id": 2260,
+      "rubric_items": [
+        {
+          "id": 14479,
+          "section_id": 4997,
+          "passed_description": "The function `batch_data` breaks up word id's into the appropriate sequence lengths, such that only complete sequence lengths are constructed.",
+          "exceeded_description": null,
+          "created_at": "2018-10-05T08:45:06.741Z",
+          "updated_at": "2018-10-05T08:48:46.777Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "Data is broken into sequences",
+          "exceedable": false
+        },
+        {
+          "id": 14480,
+          "section_id": 4997,
+          "passed_description": "In the function `batch_data`, data is converted into Tensors and formatted with TensorDataset.",
+          "exceeded_description": null,
+          "created_at": "2018-10-05T08:48:47.005Z",
+          "updated_at": "2018-10-18T19:22:22.876Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 1,
+          "criteria": "Data is created using TensorDataset",
+          "exceedable": false
+        },
+        {
+          "id": 14481,
+          "section_id": 4997,
+          "passed_description": "Finally, `batch_data` returns a DataLoader for the batched training data.",
+          "exceeded_description": null,
+          "created_at": "2018-10-05T08:50:02.114Z",
+          "updated_at": "2018-10-18T19:22:22.888Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 2,
+          "criteria": "Data is batched correctly.",
+          "exceedable": false
+        }
+      ]
+    },
+    {
+      "id": 4996,
+      "name": "Build the RNN",
+      "created_at": "2018-10-05T08:42:33.333Z",
+      "updated_at": "2018-10-05T08:45:06.579Z",
+      "deleted_at": null,
+      "position": 3,
+      "rubric_id": 2260,
+      "rubric_items": [
+        {
+          "id": 14477,
+          "section_id": 4996,
+          "passed_description": "The RNN class has complete `__init__`, `forward` , and `init_hidden` functions.",
+          "exceeded_description": null,
+          "created_at": "2018-10-05T08:42:50.300Z",
+          "updated_at": "2018-10-15T23:39:00.477Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "An RNN class has been defined",
+          "exceedable": false
+        },
+        {
+          "id": 14478,
+          "section_id": 4996,
+          "passed_description": "The RNN must include an LSTM or GRU and at least one fully-connected layer. The LSTM/GRU should be correctly initialized, where relevant.",
+          "exceeded_description": null,
+          "created_at": "2018-10-05T08:44:00.061Z",
+          "updated_at": "2018-10-15T23:39:00.487Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 1,
+          "criteria": "The RNN includes at least one LSTM (or GRU) and fully-connected layer.",
+          "exceedable": false
+        }
+      ]
+    },
+    {
+      "id": 4998,
+      "name": "RNN Training",
+      "created_at": "2018-10-05T08:58:42.645Z",
+      "updated_at": "2018-10-05T08:58:49.025Z",
+      "deleted_at": null,
+      "position": 4,
+      "rubric_id": 2260,
+      "rubric_items": [
+        {
+          "id": 14482,
+          "section_id": 4998,
+          "passed_description": "- Enough epochs to get near a minimum in the training loss, no real upper limit on this. Just need to make sure the training loss is low and not improving much with more training.\n- Batch size is large enough to train efficiently, but small enough to fit the data in memory. No real “best” value here, depends on GPU memory usually.\n- Embedding dimension, significantly smaller than the size of the vocabulary, if you choose to use word embeddings\n- Hidden dimension (number of units in the hidden layers of the RNN) is large enough to fit the data well. Again, no real “best” value.\n- n_layers (number of layers in a GRU/LSTM) is between 1-3. \n- The sequence length (seq_length) here should be about the size of the length of sentences you want to look at before you generate the next word. \n- The learning rate shouldn’t be too large because the training algorithm won’t converge. But needs to be large enough that training doesn’t take forever.",
+          "exceeded_description": null,
+          "created_at": "2018-10-05T08:58:49.214Z",
+          "updated_at": "2018-10-05T09:02:58.763Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "Reasonable hyperparameters are selected for training",
+          "exceedable": false
+        },
+        {
+          "id": 14483,
+          "section_id": 4998,
+          "passed_description": "The printed loss should decrease during training. The loss should reach a value lower than 3.5.",
+          "exceeded_description": null,
+          "created_at": "2018-10-05T09:02:58.976Z",
+          "updated_at": "2018-11-07T01:47:12.933Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 1,
+          "criteria": "The model shows improvement during training",
+          "exceedable": false
+        },
+        {
+          "id": 14854,
+          "section_id": 4998,
+          "passed_description": "There is a provided answer that justifies choices about model size, sequence length, and other parameters.",
+          "exceeded_description": null,
+          "created_at": "2018-10-15T23:44:45.708Z",
+          "updated_at": "2018-10-16T00:13:13.787Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 2,
+          "criteria": "Question about hyperparameter choices is answered.",
+          "exceedable": false
+        }
+      ]
+    },
+    {
+      "id": 4999,
+      "name": "Generate TV Script",
+      "created_at": "2018-10-05T09:03:45.316Z",
+      "updated_at": "2018-10-05T09:03:56.208Z",
+      "deleted_at": null,
+      "position": 5,
+      "rubric_id": 2260,
+      "rubric_items": [
+        {
+          "id": 14484,
+          "section_id": 4999,
+          "passed_description": "The generated script can vary in length, and should look structurally similar to the TV script in the dataset.\n\nIt doesn’t have to be grammatically correct or make sense.",
+          "exceeded_description": null,
+          "created_at": "2018-10-05T09:03:56.462Z",
+          "updated_at": "2018-10-05T09:05:26.274Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "The generator code generates a script",
+          "exceedable": false
+        }
+      ]
+    }
+  ],
+  "project": {
+    "id": 286,
+    "name": "Generate TV Scripts",
+    "nanodegree_key": "nd101",
+    "is_cert_project": false,
+    "audit_project_id": null,
+    "hashtag": null,
+    "audit_rubric_id": 1144,
+    "entitlement_required": null,
+    "is_career": null,
+    "recruitment_family_id": 1,
+    "created_at": "2017-03-06T20:09:19.818Z",
+    "updated_at": "2020-05-27T16:30:12.337Z",
+    "price": "7.0",
+    "ungradeable_price": "3.0",
+    "audit_price": null
+  }
+}

@@ -1,0 +1,727 @@
+{
+  "data": {
+    "lesson": {
+      "id": 1007527,
+      "key": "364112b5-942a-4276-9a61-5d8d767676fc",
+      "title": "Introduction to AI for 2D Medical Imaging",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "In this lesson, you will be given an introduction to this course about AI for 2D medical imaging, why AI is important and where AI fits in the space.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": null,
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 1007528,
+          "key": "8ba705c6-aece-42c8-865e-88ccde4edd0b",
+          "title": "Meet Your Instructor",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "8ba705c6-aece-42c8-865e-88ccde4edd0b",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007534,
+              "key": "51112367-fa77-4f21-97e0-212b92507a0b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Meet Your Instructor",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009493,
+              "key": "19134716-7b37-4532-8fb4-35ab5db54764",
+              "title": "ND320 C2 L0 01 Meet Your Instructor Video",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "TahECnjyX3c",
+                "china_cdn_id": "TahECnjyX3c.mp4"
+              }
+            },
+            {
+              "id": 1014730,
+              "key": "3c20ea72-757d-488f-b369-dadc06c1706f",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "3c20ea72-757d-488f-b369-dadc06c1706f",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Relax and have some fun. In the video, what picture did Emily show you?",
+                "answers": [
+                  {
+                    "id": "a1587173652919",
+                    "text": "Herself",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587173684706",
+                    "text": "Her baby",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587589357616",
+                    "text": "X ray of her arm",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1007535,
+          "key": "de55effd-0ab7-438d-8970-a2776f49e604",
+          "title": "Course Outline",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "de55effd-0ab7-438d-8970-a2776f49e604",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007536,
+              "key": "91889c6c-608d-46a9-812d-d5da7a12e89b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Course Outline",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009494,
+              "key": "8464f302-8e76-4600-b3ac-0861e9870335",
+              "title": "ND320 C2 L0 02 Course Outline Video",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "8F5Dd79HbYA",
+                "china_cdn_id": "8F5Dd79HbYA.mp4"
+              }
+            },
+            {
+              "id": 1009495,
+              "key": "05a25ee4-05c2-4550-979b-cbe3971316f1",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9a574b_l0-course/l0-course.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/05a25ee4-05c2-4550-979b-cbe3971316f1",
+              "caption": "",
+              "alt": "",
+              "width": 1062,
+              "height": 454,
+              "instructor_notes": null
+            },
+            {
+              "id": 1009489,
+              "key": "106bd092-e493-4930-9097-a5ea37bbcf60",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\nIn this course, you will learn what 2D medical image is, how it fits into medicine and the healthcare system today, how you can use AI to solve interesting 2D imaging problems, and how you can finally take that AI from bench to bedside to actually be used by doctors to improve patient lives. \n\nThis course is intended to give you a holistic understanding of how AI is applied in 2D medical imaging from both the technical aspects and the regulatory aspects.\n\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1007538,
+          "key": "a19583c4-f27e-45c6-83a4-f57227126f9a",
+          "title": "Lesson Outline",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a19583c4-f27e-45c6-83a4-f57227126f9a",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007539,
+              "key": "9e45cafc-ac9a-41fe-869f-354e41117f40",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Lesson Outline",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009496,
+              "key": "0db550ea-9b9a-40f5-862b-5bca644fe310",
+              "title": "ND320 C2 L0 03 Lesson Outline Video",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "HfjFBhtgQIc",
+                "china_cdn_id": "HfjFBhtgQIc.mp4"
+              }
+            },
+            {
+              "id": 1014729,
+              "key": "50090258-8e6b-4087-b9f8-39abefd92e71",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9a58e6_l0-lesson/l0-lesson.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/50090258-8e6b-4087-b9f8-39abefd92e71",
+              "caption": "",
+              "alt": "",
+              "width": 638,
+              "height": 216,
+              "instructor_notes": null
+            },
+            {
+              "id": 1009490,
+              "key": "b4b7ae95-34bf-467f-84cb-c9015d5529c1",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\nIn this lesson, we will first have a short introduction to AI for 2D medical imaging, then a little history lesson on how AI came to be in the medical imaging world. Next, you will learn about why AI for medical imaging is important, and when or when not to use AI in medical imaging. After that, we will talk about some of the key business stakeholders in this space. Finally, you will get a sneak peek into what your final project will be.\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1007540,
+          "key": "26f79bef-fdd2-43ef-91be-f3f8b0c9781f",
+          "title": "Introduction to AI for 2D Medical Imaging",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "26f79bef-fdd2-43ef-91be-f3f8b0c9781f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007541,
+              "key": "083e0cff-7627-4e40-bb3e-d895076caf9b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Introduction to AI for 2D Medical Imaging",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009498,
+              "key": "cf4ba929-4194-4d6a-b68d-ecc534ecf42d",
+              "title": "ND320 C2 L0 04 Introduction To AI For 2D Medical Imaging Video",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "zf1PxuzqT7E",
+                "china_cdn_id": "zf1PxuzqT7E.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 1007548,
+          "key": "ccea7c70-991f-4ab9-a6c1-f945f82d6ea6",
+          "title": "History",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "ccea7c70-991f-4ab9-a6c1-f945f82d6ea6",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007549,
+              "key": "12e1cd12-ab44-4f1e-bc00-e12e745cd9d7",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# History",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009513,
+              "key": "bc76b950-073a-41d5-a4ca-b444caa37dd2",
+              "title": "ND320 C2 L0 05 History Of AI For Medical Imaging Video",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "WsTuFTALAeo",
+                "china_cdn_id": "WsTuFTALAeo.mp4"
+              }
+            },
+            {
+              "id": 1020386,
+              "key": "cf44f2f8-31c6-437f-ab5d-33b11e7980bf",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Note: in the video, it should be \"Logistic and statistical pattern recognition\"",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1019662,
+              "key": "87eac922-c15a-40ad-891d-e24d347f4435",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\nLogistic and statistical pattern recognition were first applied in medicine in the 1960s, but not for medical imaging. In 1980s, computers became more prevalent and they changed how the doctor would approach medical imaging problems. MRI was first applied clinically in the 1980s as well. Many classic machine learning models like support vector machines and random forests were not even invented until the mid-to-late 90s, but they quickly made their way into healthcare, with some specific use cases for medical imaging. 2012 saw the real promise for deep learning in general imaging problems, however, with the win of deep learning on the ImageNet challenge from there, it only took 5 years for the first deep learning algorithm to be FDA cleared for medical imaging. Now, in 2020, we bring you the first Udacity course in AI for 2D imaging! \n\nFor more information about the history of AI for medical imaging, read this [article](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6268174/) and this [article](https://www.sciencedirect.com/science/article/pii/S1939865419305041)\n\n\n\n\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1007542,
+          "key": "998d30d1-62fe-405b-a706-5283bd0b5849",
+          "title": "Importance of AI",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "998d30d1-62fe-405b-a706-5283bd0b5849",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007543,
+              "key": "f202f159-2ca2-488f-a396-b3684768153e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Importance of AI",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009504,
+              "key": "e257040d-6fd0-417a-b529-43860b3a4e9b",
+              "title": "ND320 C2 L0 06 AI For Medical Imaging Is Important Video",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "8Pg-3b-Xj-w",
+                "china_cdn_id": "8Pg-3b-Xj-w.mp4"
+              }
+            },
+            {
+              "id": 1014731,
+              "key": "5102e6a1-f5ce-4b2c-a4fd-11de9e2bdbe3",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\nPhysician burnout is a major topic of conversation in healthcare these days, and much of the burnout is due to the increased data that physicians are required to both input and consume about their patients. However, it presents great opportunities for AI, because AI can enhance efficiency, reduce human errors, and achieve goals with minimal human operation.\n\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1007546,
+          "key": "37bdd012-b0c2-4155-9d9c-4e1eee1a5b1f",
+          "title": "When to Use AI",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "37bdd012-b0c2-4155-9d9c-4e1eee1a5b1f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007547,
+              "key": "e2dd093f-bc3f-494c-878f-6b499a070784",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# When to Use AI",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009510,
+              "key": "8fa1d1c0-3173-49de-9ce4-e84b530579bc",
+              "title": "ND320 C2 L0 07 When To Use Or Not Use AI In Medical Imaging Video",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "5WKhw_IijDI",
+                "china_cdn_id": "5WKhw_IijDI.mp4"
+              }
+            },
+            {
+              "id": 1009511,
+              "key": "4e1f5fbb-8bea-4b44-a338-3c18c3f68637",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\nThere's a time and a place for AI, and it should not be thrown at every problem that involves medical imaging. \n\nFor example, if the introduction of an AI algorithm is going to slow down a clinical workflow, this algorithm must significantly enhance another component of the clinical workflow (e.g. provide much higher accuracy than the current tools).",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014754,
+              "key": "f2439c7d-3b05-48ac-9f67-d423ff800874",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "f2439c7d-3b05-48ac-9f67-d423ff800874",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "In the following scenario, which ONE is NOT an appropriate situation to use AI?",
+                "answers": [
+                  {
+                    "id": "a1587235276632",
+                    "text": "A classification algorithm intended for diagnosing a brain tumor and that is used to replace radiologists",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587235373557",
+                    "text": "An algorithm that creates a bounding box around a suspicious area to draw a doctor's attention and reduces the image reading time",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587235430646",
+                    "text": "An algorithm that counts the number of blood cells in microscopy so pathologists have a more accurate assessment of the blood sample",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1007544,
+          "key": "3bc83c64-8d2b-4bf8-b2b9-266a886ef93a",
+          "title": "Business Stakeholders",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "3bc83c64-8d2b-4bf8-b2b9-266a886ef93a",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007545,
+              "key": "a66bb6d8-8b03-40bd-be48-4048d3f5ae3a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Business Stakeholders",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009506,
+              "key": "25f41e83-65aa-4b10-92f3-59863464cb21",
+              "title": "ND320 C2 L0 08 Business Stakeholders Video",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "xFXxo9rb2wQ",
+                "china_cdn_id": "xFXxo9rb2wQ.mp4"
+              }
+            },
+            {
+              "id": 1009507,
+              "key": "39b07c54-c838-49be-80e1-f8e7dfa1aec9",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9a5a96_l1-stakeholder/l1-stakeholder.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/39b07c54-c838-49be-80e1-f8e7dfa1aec9",
+              "caption": "",
+              "alt": "",
+              "width": 910,
+              "height": 418,
+              "instructor_notes": null
+            },
+            {
+              "id": 1009508,
+              "key": "cfd69c24-dca5-4307-af3e-81e321b3c3ef",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\nAcademics, particularly computer & data scientists, have been developing algorithms to analyze medical images for a long time. The major stakeholders in the space are:\n\n- Clinical stakeholders: radiologists, primary care physicians, ER doctors, patients \n- Industry stakeholders: healthcare companies (e.g. Watson Health), medical device companies (e.g. [Butterfly](https://www.butterflynetwork.com/), Siemens\n- Regulatory stakeholders: FDA\n\nMore information about the stakeholders will be covered later in the course.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1018183,
+              "key": "2af1b3b4-889c-4b70-b6e5-65d23b5fb9a0",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "2af1b3b4-889c-4b70-b6e5-65d23b5fb9a0",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Match the entity with the correct stakeholder."
+                },
+                "concepts_label": "Entity",
+                "answers_label": "Stakeholder",
+                "concepts": [
+                  {
+                    "text": "Radiologists ",
+                    "correct_answer": {
+                      "id": "a1588378467930",
+                      "text": "Clinical"
+                    }
+                  },
+                  {
+                    "text": "A deep learning software company",
+                    "correct_answer": {
+                      "id": "a1588378482608",
+                      "text": "Industry "
+                    }
+                  },
+                  {
+                    "text": "FDA",
+                    "correct_answer": {
+                      "id": "a1588378499440",
+                      "text": "Regulatory"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1588378499440",
+                    "text": "Regulatory"
+                  },
+                  {
+                    "id": "a1588378467930",
+                    "text": "Clinical"
+                  },
+                  {
+                    "id": "a1588378482608",
+                    "text": "Industry "
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1007552,
+          "key": "de238c3e-212a-4eb4-a445-eaabb1e8af71",
+          "title": "Project: Pneumonia Detection from X-Ray Images",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "de238c3e-212a-4eb4-a445-eaabb1e8af71",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007553,
+              "key": "28a50c91-f742-4aef-b55d-c641f3ab23c7",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Project: Pneumonia Detection from X-Ray Images",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009519,
+              "key": "f24aa0ba-7c5b-4498-93b5-744b256c7a9d",
+              "title": "ND320 C2 L0 10 Project- Pneumonia Detection From X-Ray Images Video",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "3W3YTPxL9KI",
+                "china_cdn_id": "3W3YTPxL9KI.mp4"
+              }
+            },
+            {
+              "id": 1009520,
+              "key": "396d7575-de2e-4871-9ab4-dbf9ca3ffe9e",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9a5ae0_l0-proj/l0-proj.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/396d7575-de2e-4871-9ab4-dbf9ca3ffe9e",
+              "caption": "",
+              "alt": "",
+              "width": 582,
+              "height": 326,
+              "instructor_notes": null
+            },
+            {
+              "id": 1009543,
+              "key": "40b37f56-9d93-4c88-8dab-8ce03df92e22",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\nIn this project, you will \n1. Distill data that are useful for training algorithms to detect pneumonia from a giant set of chest x-ray images taken from actual patients. \n2. Build a CNN model to detect the presence or absence of pneumonia. \n3. Build wrappers that read medical images from their real-world clinical formats (DICOM).  \n4. Write up a documentation & validation plan of your algorithm for FDA 510(k) submission.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1007554,
+          "key": "d015491d-9201-45f5-9012-b876b5d904d5",
+          "title": "Recap",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d015491d-9201-45f5-9012-b876b5d904d5",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007555,
+              "key": "c8a0618e-5e96-477c-94fc-1b2fc8275514",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Recap",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009544,
+              "key": "b46753a7-0ebe-4f8d-84c4-63a3631ae2ce",
+              "title": "ND320 C2 L0 11 Recap Video",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "9__L2yRyoM8",
+                "china_cdn_id": "9__L2yRyoM8.mp4"
+              }
+            },
+            {
+              "id": 1009545,
+              "key": "2e43e5df-ab44-442a-8653-db45273a4e37",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9a5b17_l0-lesson/l0-lesson.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/2e43e5df-ab44-442a-8653-db45273a4e37",
+              "caption": "",
+              "alt": "",
+              "width": 638,
+              "height": 216,
+              "instructor_notes": null
+            },
+            {
+              "id": 1009546,
+              "key": "078b7c34-c12b-4c95-9af0-e961b211ee06",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Lesson conclusion\nIn this lesson, we first briefly introduced what 2D medical mage is and how AI fits in. Then we talked a little bit of history about the development of AI in medical imaging. Next, we talked about how AI can increase efficiency and reduce errors in the medical imaging field, and how it is not ready to replace radiologists yet. We then discussed some of the key business stakeholders in clinics, industry and regulatory. Finally, we discussed the final project about detecting pneumonia you will work on at the end of this course.\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1014623,
+          "key": "9675918f-33ec-473c-8c48-40e66c713eb8",
+          "title": "Good Luck",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "9675918f-33ec-473c-8c48-40e66c713eb8",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1014624,
+              "key": "e61bd75a-033d-4d25-ae68-638cc17f5b82",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Good Luck",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014732,
+              "key": "54f3b0fd-f20a-4ce5-a9d8-1671fdda5391",
+              "title": "ND320 C2 L0 12 Good Luck",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "BxdlbI0TOs8",
+                "china_cdn_id": "BxdlbI0TOs8.mp4"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

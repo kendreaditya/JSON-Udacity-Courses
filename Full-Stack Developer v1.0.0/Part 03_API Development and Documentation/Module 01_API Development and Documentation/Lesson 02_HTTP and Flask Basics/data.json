@@ -1,0 +1,1310 @@
+{
+  "data": {
+    "lesson": {
+      "id": 899797,
+      "key": "d55c45a3-e2b2-4442-b74b-db4bc2286ee3",
+      "title": "HTTP and Flask Basics",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "In this lesson, you'll learn about HTTP—including methods, requests, responses and status codes— as well as how to set up a Flask app, and implement and test endpoints using Curl.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/d55c45a3-e2b2-4442-b74b-db4bc2286ee3/899797/1581172515443/HTTP+and+Flask+Basics+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/d55c45a3-e2b2-4442-b74b-db4bc2286ee3/899797/1581172511453/HTTP+and+Flask+Basics+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 899794,
+          "key": "3ce64cc3-a63f-4d87-8853-2f9ece6daa5d",
+          "title": "Overview",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "3ce64cc3-a63f-4d87-8853-2f9ece6daa5d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 899785,
+              "key": "2600829f-968a-4c36-98c3-da096cb7fc0f",
+              "title": "Lesson Intro Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Overview",
+              "instructor_notes": ""
+            },
+            {
+              "id": 899784,
+              "key": "09d3c991-491c-46e7-9d29-c9f66adf44d4",
+              "title": "FSND C2 L2 A01 Lesson Intro",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "UvZrpdovzVw",
+                "china_cdn_id": "UvZrpdovzVw.mp4"
+              }
+            },
+            {
+              "id": 909682,
+              "key": "554e3b4c-6417-42cb-a54b-dff6e382748d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Lesson Outline\nThis section will lay the foundation for the rest of the course. You'll learn more about the HTTP protocol and how to implement an API using the Flask microframework. Here's what we'll cover:\n- HTTP Basics\n    - Methods\n    - Requests\n    - Responses\n    - Status Codes\n- Flask Microframework Intro\n    - Creating your first basic endpoints\n    - Testing the response using Curl \n\n## Technologies\n\nIn this lesson the new technologies you'll use are:\n- Flask\n- Curl\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 899795,
+          "key": "00119ce2-9db7-4801-97f1-748c7cb6923d",
+          "title": "Introduction to HTTP",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "00119ce2-9db7-4801-97f1-748c7cb6923d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 899777,
+              "key": "1ac54a15-343c-40a7-9862-be70f6e69706",
+              "title": "Introduction to HTTP",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Introduction to HTTP ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 899791,
+              "key": "c38c8215-3604-4878-b369-2737ed489ab5",
+              "title": "FSND C2 L2 A02 Introduction To HTTP",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "rtYY2NvDMWE",
+                "china_cdn_id": "rtYY2NvDMWE.mp4"
+              }
+            },
+            {
+              "id": 909681,
+              "key": "910a0178-b053-40f8-b49a-301793cf69e3",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "**Hypertext Transfer Protocol (HTTP)** is a protocol that provides a standardized way for computers to communicate with each other. It has been the foundation for data communication over the internet since 1990 and is integral to understanding how client-server communication functions. \n\nIn this lesson, we'll discuss key features and elements of HTTP. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917240,
+              "key": "5f75f35e-9bd2-416d-8f21-9296767d514d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Features: \n- **Connectionless:**  When a request is sent, the client opens the connection; once a response is received, the client closes the connection. The client and server only  maintain a connection during the response and request. Future responses are made on a new connection.\n- **Stateless:** There is no dependency between successive requests. \n- **Not Sessionless:** Utilizing headers and cookies, sessions can be created to allow each HTTP request to share the same context. \n- **Media Independent:** Any type of data can be sent over HTTP as long as both the client and server know how to handle the data format. In our case, we'll use JSON. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917243,
+              "key": "f0e74ad2-ca4d-4fa6-9f54-a57c2128002b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Elements:\n- **Universal Resource Identifiers (URIs):** An example URI is `http://www.example.com/tasks/term=homework`. It has certain components:\n    - **Scheme:** specifies the protocol used to access the resource, HTTP or HTTPS. In our example `http`. \n    - **Host:** specifies the host that holds the resources. In our example `www.example.com`. \n    - **Path:** specifies the specific resource being requested. In our example, `/tasks`. \n    - **Query:** an optional component, the query string provides information the resource can use for some purpose such as a search parameter. In our example, `/term=homework`. \n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917245,
+              "key": "182f4dd5-5934-4068-8ee2-d69a1f70f878",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": ">## Side Note: URI vs URL\n>\n>You may be unsure what the difference is between a **URI** (**Universal Resource Identifier**) and a **URL** (**Universal Resource Locator**). These terms tend to get confused a lot, and are even frequently used interchangeably—but there is a distinction.\n>\n>The term *URI* can refer to any **identifier** for a resource—for example, it could be either the *name* of a resource or the *address* of a resource (since both the name and address are *identifiers* of that resource). In contrast, *URL* only refers to the *location* of a resource—in other words, it only ever refers to an *address*.\n>\n>So, \"URI\" could refer to a name or an address, while \"URL\" only refers to an address. Thus, **URLs are a specific type of URI** that is used to locate a resource on the internet when a client makes a request to a server.\n>\n>And if you really want to dive into the topic, here are some further readings (with examples and Venn diagrams):\n* [StackExchange: What is the difference between a URI and a URL?](https://webmasters.stackexchange.com/questions/19101/what-is-the-difference-between-a-uri-and-a-url)\n* [StackOverflow: What is the difference between a URI, a URL, and a URN?](https://stackoverflow.com/questions/176264/what-is-the-difference-between-a-uri-a-url-and-a-urn)\n* [RFC 3986](https://www.ietf.org/rfc/rfc3986.txt), published by the [Internet Engineering Taskforce](https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force) (this one is rather hefty and more of an official reference than a reader-friendly explanation)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917246,
+              "key": "7dcf535e-161d-4b68-bae2-65e7aa9e70e9",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "7dcf535e-161d-4b68-bae2-65e7aa9e70e9",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What is the entire URL of the resource being requested based on the following HTTP request? \n\n```\nPOST /stores/1/pastries HTTP/2.0\nHost: http://www.coffee-example.com\nAccept-Language: en\nBody: { 'name': 'croissant', 'price':3.99 }\n```",
+                "answers": [
+                  {
+                    "id": "a1566144855671",
+                    "text": "`http://www.coffee-example.com`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566144873455",
+                    "text": "`/stores/1/pastries`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566144874093",
+                    "text": "`http://www.coffee-example.com/pastries`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566144874639",
+                    "text": "`http://www.coffee-example.com/stores/1/pastries`",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 900390,
+              "key": "45e7daf9-0fe0-47f5-9690-0554e714b09f",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "45e7daf9-0fe0-47f5-9690-0554e714b09f",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Match the features of HTTP communication to their descriptions. "
+                },
+                "concepts_label": "HTTP Features",
+                "answers_label": "Descriptions",
+                "concepts": [
+                  {
+                    "text": "Client opens one connection for each request, which is closed once the server responds. ",
+                    "correct_answer": {
+                      "id": "a1563303595845",
+                      "text": "Connectionless"
+                    }
+                  },
+                  {
+                    "text": "No information is required from one request in order to process a subsequent request. ",
+                    "correct_answer": {
+                      "id": "a1563303621775",
+                      "text": "Stateless"
+                    }
+                  },
+                  {
+                    "text": "HTTP requests can share the same context using tools such as cookies. ",
+                    "correct_answer": {
+                      "id": "a1563303623916",
+                      "text": "NOT Sessionless"
+                    }
+                  },
+                  {
+                    "text": "HTTP requests can include any type of data as long as both the server and client know how to handle that data type.",
+                    "correct_answer": {
+                      "id": "a1563303630468",
+                      "text": "Media Independent"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1563303621775",
+                    "text": "Stateless"
+                  },
+                  {
+                    "id": "a1563303630468",
+                    "text": "Media Independent"
+                  },
+                  {
+                    "id": "a1563303623916",
+                    "text": "NOT Sessionless"
+                  },
+                  {
+                    "id": "a1563303595845",
+                    "text": "Connectionless"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 900391,
+              "key": "eff48fa8-3fd5-4482-b37f-2338ab877933",
+              "title": "",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "eff48fa8-3fd5-4482-b37f-2338ab877933",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of these are features of HTTP?\n(Select all that apply.)\n\n> **Note:** Read the options carefully!",
+                "answers": [
+                  {
+                    "id": "a1563304032224",
+                    "text": "Sessionless",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1563304045811",
+                    "text": "Stateless",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1563304049470",
+                    "text": "Connectionless ",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1563304055893",
+                    "text": "Media Dependent",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 900392,
+              "key": "188465d3-b6bd-40fa-b302-e682c01d842e",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "188465d3-b6bd-40fa-b302-e682c01d842e",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which feature of HTTP solves for the following problem?\n\nThe client makes a request and opens a connection over port 3000 to the server. When they receive the response, that port doesn't close. When a new request is sent, it fails because the port is occupied. ",
+                "answers": [
+                  {
+                    "id": "a1563304253782",
+                    "text": "Connectionless",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1563304292049",
+                    "text": "Stateless",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1563304295620",
+                    "text": "NOT Sessionless",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1563304301523",
+                    "text": "Media Independent",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 901224,
+          "key": "7d256852-593c-4daa-aeb0-07bdcefd84c6",
+          "title": "HTTP Requests",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "7d256852-593c-4daa-aeb0-07bdcefd84c6",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 901226,
+              "key": "026233bc-a9e1-43d1-ad0c-a2ecbbe1ede7",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# HTTP Requests",
+              "instructor_notes": ""
+            },
+            {
+              "id": 901228,
+              "key": "17dffc98-dc16-45a3-9e27-9e6dad868e36",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## HTTP request elements",
+              "instructor_notes": ""
+            },
+            {
+              "id": 901230,
+              "key": "09dccb28-6c4d-4633-8357-bc63710ed2cb",
+              "title": "FSND C2 L2 A03 HTTP Request Elements",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "5EUHUzia0bw",
+                "china_cdn_id": "5EUHUzia0bw.mp4"
+              }
+            },
+            {
+              "id": 901229,
+              "key": "99d7c768-3c36-40e8-a2de-bcac8e657b93",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## HTTP request methods",
+              "instructor_notes": ""
+            },
+            {
+              "id": 901231,
+              "key": "1a281cf2-8fbf-4940-b815-ab603834f6d4",
+              "title": "FSND C2 L2 A04 HTTP Request Methods",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "zuUwIf90dmU",
+                "china_cdn_id": "zuUwIf90dmU.mp4"
+              }
+            },
+            {
+              "id": 909672,
+              "key": "c7ec4b10-1386-417b-bb76-1d118493a762",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# HTTP Requests\nHTTP requests are sent from the client to the server to initiate some operation. In addition to the URL, HTTP requests have other elements to specify the requested resource. \n\n\n\n## Elements: \n- **Method:** Defines the operation to be performed\n- **Path:** The URL of the resource to be fetched, excluding the scheme and host\n- **HTTP Version**\n- **Headers:** optional information, success as Accept-Language\n- **Body:** optional information, usually for methods such as POST and PATCH, which contain the resource being sent to the server\n\n## Request Methods \nDifferent request methods indicate different operations to be performed. It's essential to attend to this to correctly format your requests and properly structure an API. \n- **GET:** ONLY retrieves information for the requested resource of the given URI\n- **POST:** Send data to the server to create a new resource. \n- **PUT:** Replaces all of the representation of the target resource with the request data\n- **PATCH:** Partially modifies the representation of the target resource with the request data\n- **DELETE:** Removes all of the representation of the resource specified by the URI\n- **OPTIONS:** Sends the communication options for the requested resource ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 909673,
+              "key": "48558b0b-9339-4f53-9b69-11ffdc585268",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "48558b0b-9339-4f53-9b69-11ffdc585268",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Here's an example request:\n\n```\nGET http://www.example.com/tasks?term=homework HTTP/2.0\nAccept-Language: en\n```\nSee if you can match each element of the example with the appropriate component."
+                },
+                "concepts_label": "Component",
+                "answers_label": "Example Element",
+                "concepts": [
+                  {
+                    "text": "Method",
+                    "correct_answer": {
+                      "id": "a1565666133645",
+                      "text": "GET"
+                    }
+                  },
+                  {
+                    "text": "Path",
+                    "correct_answer": {
+                      "id": "a1565666150158",
+                      "text": "http://www.example.com/tasks?term=homework"
+                    }
+                  },
+                  {
+                    "text": "HTTP Version",
+                    "correct_answer": {
+                      "id": "a1565666152126",
+                      "text": "HTTP/2.0"
+                    }
+                  },
+                  {
+                    "text": "Header",
+                    "correct_answer": {
+                      "id": "a1565666152768",
+                      "text": "Accept-Language"
+                    }
+                  },
+                  {
+                    "text": "Body",
+                    "correct_answer": {
+                      "id": "a1565666154256",
+                      "text": "Not Included"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1565666133645",
+                    "text": "GET"
+                  },
+                  {
+                    "id": "a1565666154256",
+                    "text": "Not Included"
+                  },
+                  {
+                    "id": "a1565666150158",
+                    "text": "http://www.example.com/tasks?term=homework"
+                  },
+                  {
+                    "id": "a1565666152768",
+                    "text": "Accept-Language"
+                  },
+                  {
+                    "id": "a1565666152126",
+                    "text": "HTTP/2.0"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 909674,
+              "key": "6bcdae2e-e28a-4e42-a78f-0f89ee2bc5e9",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "6bcdae2e-e28a-4e42-a78f-0f89ee2bc5e9",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "The client wants to modify just a part of the representation of a given resource. Which of the following request methods should they use? ",
+                "answers": [
+                  {
+                    "id": "a1565666279511",
+                    "text": "PATCH",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1565666291911",
+                    "text": "PUT",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1565666292422",
+                    "text": "POST",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1565666292957",
+                    "text": "GET",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 909675,
+              "key": "febc322d-8b74-4cc0-8b40-564c885bfafc",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "febc322d-8b74-4cc0-8b40-564c885bfafc",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Match the request method to its description. "
+                },
+                "concepts_label": "Description",
+                "answers_label": "Method",
+                "concepts": [
+                  {
+                    "text": "ONLY retrieves information for the requested resource of the given URI",
+                    "correct_answer": {
+                      "id": "a1565666896470",
+                      "text": "GET"
+                    }
+                  },
+                  {
+                    "text": "Sends data to the server to create a new resource",
+                    "correct_answer": {
+                      "id": "a1565667063726",
+                      "text": "POST"
+                    }
+                  },
+                  {
+                    "text": "Partially modifies the representation of the target resource with the request data",
+                    "correct_answer": {
+                      "id": "a1565667064525",
+                      "text": "PATCH"
+                    }
+                  },
+                  {
+                    "text": "Replaces all of the representation of the target resource with the request data",
+                    "correct_answer": {
+                      "id": "a1565667065800",
+                      "text": "PUT"
+                    }
+                  },
+                  {
+                    "text": "Removes all of the representation of the resource specified by the URI",
+                    "correct_answer": {
+                      "id": "a1565667066408",
+                      "text": "DELETE"
+                    }
+                  },
+                  {
+                    "text": "Sends the communication options for the requested resource ",
+                    "correct_answer": {
+                      "id": "a1565667083159",
+                      "text": "OPTIONS"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1565667083159",
+                    "text": "OPTIONS"
+                  },
+                  {
+                    "id": "a1565667066408",
+                    "text": "DELETE"
+                  },
+                  {
+                    "id": "a1565667063726",
+                    "text": "POST"
+                  },
+                  {
+                    "id": "a1565667065800",
+                    "text": "PUT"
+                  },
+                  {
+                    "id": "a1565666896470",
+                    "text": "GET"
+                  },
+                  {
+                    "id": "a1565667064525",
+                    "text": "PATCH"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 901225,
+          "key": "2ec90546-f995-4ebe-a753-d30ec77cd4f8",
+          "title": "HTTP Responses",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "2ec90546-f995-4ebe-a753-d30ec77cd4f8",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 901227,
+              "key": "5ba54b98-0483-41ba-bd65-ec271a717ace",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# HTTP Responses",
+              "instructor_notes": ""
+            },
+            {
+              "id": 901232,
+              "key": "60215cf3-9009-4a0e-ab3d-fef51fc45e97",
+              "title": "FSND C2 L2 A05 HTTP Responses (Status Codes)",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "sfDwGi8CF4Q",
+                "china_cdn_id": "sfDwGi8CF4Q.mp4"
+              }
+            },
+            {
+              "id": 909676,
+              "key": "27f69405-0bfa-4063-ada3-8c6966bd7fbc",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "After the request has been received by the server and processed, the server returns an HTTP response message to the client. The response informs the client of the outcome of the requested operation. \n\n## Elements:\n- **Status Code & Status Message**\n- **HTTP Version**\n- **Headers:** similar to the request headers, provides information about the response and resource representation. Some common headers include:\n    - **Date**\n    - **Content-Type:** the media type of the body of the request\n- **Body:** optional data containing the requested resource\n\n## Status Codes:\nAs an API developer, it's important to send the correct status code. As a developer using an API, the status codes—particularly the error codes—are important for understanding what caused an error and how to proceed.\n\n#### Codes fall into five categories:\n- `1xx` Informational\n- `2xx` Success\n- `3xx` Redirection\n- `4xx` Client Error\n- `5xx` Server Error\n\n#### Common Codes:\n- `200`: OK\n- `201`: Created\n- `304`: Not Modified\n- `400`: Bad Request\n- `401`: Unauthorized\n- `404`: Not Found\n- `405`: Method Not Allowed\n- `500`: Internal Server Error",
+              "instructor_notes": ""
+            },
+            {
+              "id": 909677,
+              "key": "a16a7802-b91e-4af3-8b44-541122bf73e1",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "a16a7802-b91e-4af3-8b44-541122bf73e1",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Match the response component with the element from the following example:\n\n```\nHTTP/2.0 200 OK\nDate: Fri, 21 June 2019 16:17:18 GMT\nContent-Type: text/html\nAccept-Ranges: bytes\nBody: {'success': True}\n```"
+                },
+                "concepts_label": "Component",
+                "answers_label": "Example Element",
+                "concepts": [
+                  {
+                    "text": "HTTP Version",
+                    "correct_answer": {
+                      "id": "a1565668130537",
+                      "text": "`HTTP/2.0`"
+                    }
+                  },
+                  {
+                    "text": "Status Code",
+                    "correct_answer": {
+                      "id": "a1565668148709",
+                      "text": "`200`"
+                    }
+                  },
+                  {
+                    "text": "Status Message",
+                    "correct_answer": {
+                      "id": "a1565668155806",
+                      "text": "`OK`"
+                    }
+                  },
+                  {
+                    "text": "Headers",
+                    "correct_answer": {
+                      "id": "a1565668156422",
+                      "text": "`Accept-Ranges, Content-Type`"
+                    }
+                  },
+                  {
+                    "text": "Body",
+                    "correct_answer": {
+                      "id": "a1565668157956",
+                      "text": "`{'success': True}`"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1565668148709",
+                    "text": "`200`"
+                  },
+                  {
+                    "id": "a1565668156422",
+                    "text": "`Accept-Ranges, Content-Type`"
+                  },
+                  {
+                    "id": "a1565668130537",
+                    "text": "`HTTP/2.0`"
+                  },
+                  {
+                    "id": "a1565668157956",
+                    "text": "`{'success': True}`"
+                  },
+                  {
+                    "id": "a1565668155806",
+                    "text": "`OK`"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 909678,
+              "key": "be05e0cd-32ad-43d8-9439-088ddbf4bf4e",
+              "title": "HTTP Basics Quiz",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "be05e0cd-32ad-43d8-9439-088ddbf4bf4e",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following request methods would receive a `201` status code after successful completion? ",
+                "answers": [
+                  {
+                    "id": "a1565668242998",
+                    "text": "DELETE",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1565668253484",
+                    "text": "GET",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1565668253999",
+                    "text": "OPTIONS",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1565668254469",
+                    "text": "POST",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 909679,
+              "key": "330887b8-7406-446f-a508-94731505e8d8",
+              "title": "HTTP Basics Quiz 2",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "330887b8-7406-446f-a508-94731505e8d8",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "If there were an error processing the request, which category (or categories) of methods should be part of the response message?\n(Select all that apply.)",
+                "answers": [
+                  {
+                    "id": "a1565668322409",
+                    "text": "2xx",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1565668359929",
+                    "text": "3xx",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1565668360410",
+                    "text": "4xx",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1565668360930",
+                    "text": "5xx",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 909680,
+              "key": "c78f16a7-9170-447d-b9c7-0f50ec2b1e4a",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "c78f16a7-9170-447d-b9c7-0f50ec2b1e4a",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "There are a lot of status codes and it doesn't make sense to try to memorize them all. Fortunately, they're easy to look up.\n\nThere are lots of resources out there that list status codes, including one of my favorites:\n[HTTP Dogs](https://httpstatusdogs.com/)\n\nUsing the above link (or a Google search), see if you can find out what a `405` status code means.",
+                "answers": [
+                  {
+                    "id": "a1565668487628",
+                    "text": "Moved Permanently",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1565668500332",
+                    "text": "Partial Content",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1565668500813",
+                    "text": "Use Proxy",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1565668501467",
+                    "text": "Permanent Redirect",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566147445233",
+                    "text": "Method Not Allowed",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 899796,
+          "key": "c0c79060-26d7-4363-8530-7da234a8c48c",
+          "title": "Intro to Flask",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c0c79060-26d7-4363-8530-7da234a8c48c",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 901233,
+              "key": "9142506a-dd0c-4b3a-b89a-a07969fc6b8e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Introduction to Flask\n[Flask](http://flask.pocoo.org/docs/1.0/) is the tool we'll use to create our api server.\n\nIt is a \"micro\" framework, which means that its core functionality is kept simple, but that there are numerous extensions to allow developers to add other functionality (such as authentication and database support).",
+              "instructor_notes": ""
+            },
+            {
+              "id": 899779,
+              "key": "3dc8f392-47ba-4a5d-bd2a-f321f313bd4e",
+              "title": "FSND C2 L2 A06 Introduction To Flask",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "W5LxATUf_KM",
+                "china_cdn_id": "W5LxATUf_KM.mp4"
+              }
+            },
+            {
+              "id": 917247,
+              "key": "193650ad-746a-4351-a47e-d845f16e0fd5",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this section we will cover:\n* Creating a basic Flask application\n* Writing a basic endpoint\n* Checking the response using Curl. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917250,
+              "key": "79a195b8-e9df-4a21-9e21-178f9f5f78fd",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Creating a basic Flask application",
+              "instructor_notes": ""
+            },
+            {
+              "id": 899780,
+              "key": "8e96e2cf-7387-42e0-9bf3-e38b05e6174e",
+              "title": "FSND C2 L2 A07 Flask Example Part 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "tXBk8FBtwwM",
+                "china_cdn_id": "tXBk8FBtwwM.mp4"
+              }
+            },
+            {
+              "id": 899793,
+              "key": "7ce7c1d1-3abb-401c-9923-32021cc14aa1",
+              "title": "Intro to Flask Example Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Flask Set Up Summary\nStarting any Flask app will follow the same general flow for a simple application. The steps below are the same steps as taken in the screencast and can be referenced if you get stuck during the exercise. \n\n## Directory & Virtualenv Set Up\n1. Create the project directory `mkdir [project_name]` and navigate into it\n2. Install flask using pip `pip3 install flask`\n3. Make the flaskr directory and `flaskr/__init__.py` file within it \n\nAt this point you're ready to start working on your app! \n \n## Create_app\nIn our setup, we will configure the basic Flask app. In these notes, I'll also include how to set up the application to handle specialized configuration. \n\n### Basic App \n1. Import your dependencies \n   - `from flask import Flask, jsonify`\n2. Define the `create_app` function with parameter `test_config` initially set to `None`. Then within the function:\n3. Define the application. Ensure you include the first parameter. `__name__`is the name of the current Python module. \n    - `app = Flask(__name__)`\n4. Return the app instance. \n    - `return app`\n\n### Configured Application\nThe below information is for your reference and related information can be found in the Flask documentation. You are expected to use the basic application set up for this course. However, as you build larger applications that utilize multiple environments and configurations (production, development, testing, etc) this knowledge will be helpful for streamlining your development process. \n\n1. Import additional dependencies. You'll need to import os in order to access the operating system and file structure \n```import os```\n\n2. Set up your default configuration. When working in development your `SECRET_KEY` can be hardcoded as shown but for production should come from a secret environment variable. `DATABASE` is the path for the database file. \n ``` \n app.config.from_mapping(\n    SECRET_KEY='dev',\n    DATABASE=os.path.join(app.instance_path, 'flaskr.sqlite')\n    )\n```\n\n3. If a `config.py` file is included in the instance folder, use its values to override the default configuration, for instance the `SECRET_KEY`. You can also enable a testing configuration if it was passed into the `create_app` function.\n\n  ```python\nif test_config is None:\n    # load the instance config, if it exists, when not testing\n    app.config.from_pyfile('config.py', silent=True)\nelse:\n    # load the test config if passed in\n    app.config.from_mapping(test_config)\n```\n6. Make the instance path directory. The app will create the database file within that directory so it needs to exist.\n\n  ```python\ntry:\n    os.makedirs(app.instance_path)\nexcept OSError:\n    pass\n```\n\n## First Endpoint with JSON\nBefore you return the app, use the @app.route decorator to create an endpoint to path `/` and define a function to handle that route. \n\n  ```python\n@app.route('/')\ndef hello_world():\n    return 'Hello, World!'\n\nreturn app\n  ```\n\nInstead of returning text, use jsonify to send an object containing the message\n```python\n return jsonify({'message':'Hello, World!'})\n```\n\n## Run your application \nIn the command line, you'll run three lines of code. The first two lines tell the terminal where to find your application and to run it in development mode, which allows you to keep it running while it hotloads any modifications. The third actually starts the application. If running your application on Windows \n```\nexport FLASK_APP=flaskr\nexport FLASK_ENV=development\nflask run\n```\n\nAfter you start the application you'll see output like will look like the following:\n```\n * Serving Flask app \"flaskr\" (lazy loading)\n * Environment: development\n * Debug mode: on\n * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)\n * Restarting with stat\n * Debugger is active!\n * Debugger PIN: 192-247-084\n```\n\nVisit the provided URL and you should see `{'message':'Hello, World!'}` displayed. You can try adding more endpoints or changing the response before moving forward. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 919407,
+              "key": "52e30ad3-5d46-4f37-82eb-b7e7d4bf8db1",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Practice Workspace\n\nYou can try the steps above locally on your own machine, or you can use the workspace below.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 919406,
+              "key": "5c24dd28-5175-4443-92cf-99f8ea9093e8",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r848940c899796xJUPYTERLy4cuii9c",
+              "pool_id": "flaskpostgres",
+              "view_id": "jupyter-lab-5g49p",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "pageEnd": "",
+                    "pageStart": "",
+                    "allowSubmit": false,
+                    "defaultPath": "/",
+                    "actionButtonText": ""
+                  },
+                  "kind": "jupyter-lab"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 899786,
+              "key": "52fb1095-e1ab-4afd-b51f-08dd9188a250",
+              "title": "FSND C2 L2 A08 Flask Example Part 2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "NAtUcUuduVs",
+                "china_cdn_id": "NAtUcUuduVs.mp4"
+              }
+            },
+            {
+              "id": 900400,
+              "key": "29936590-d335-4672-9e95-ccf4224cb45b",
+              "title": "",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "29936590-d335-4672-9e95-ccf4224cb45b",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What method(s) does the following app.route decorator respond to? \n\n```\n@app.route('/messages')\ndef read():\n    return jsonify({'messages': []})\n```",
+                "answers": [
+                  {
+                    "id": "a1563307741251",
+                    "text": "GET",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1563307879669",
+                    "text": "PUT",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1563307882520",
+                    "text": "POST",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1563307884817",
+                    "text": "DELETE",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 899867,
+          "key": "2b7dc7b5-3cd2-44b1-9375-69190e0fa448",
+          "title": "Introduction to Curl and Chrome Dev Tools",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "2b7dc7b5-3cd2-44b1-9375-69190e0fa448",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 909683,
+              "key": "975f2013-a598-41fd-92d9-818f4518ab44",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Introduction to Curl and Chrome Dev Tools",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917253,
+              "key": "e69703d3-9922-4242-bfa8-e193ce301337",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Chrome Dev Tools",
+              "instructor_notes": ""
+            },
+            {
+              "id": 899869,
+              "key": "14e556de-9b33-4231-8246-e15814635f20",
+              "title": "FSND C2 L2 A09 Introduction To Curl And Chrome Dev Tools Part 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "5MHAJcYQHZo",
+                "china_cdn_id": "5MHAJcYQHZo.mp4"
+              }
+            },
+            {
+              "id": 899868,
+              "key": "f967b0d6-6366-43a0-9265-3f17de48602c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "If you want to check how your requests are being sent, and what the responses are from the browser, you can do so using **Chrome Dev Tools**. There are numerous tools within it, but the key area you'll use is the **Network** tab. \n\nTo access the **Network** tab, open developer tools (**Cmd + Shift + C** or **Hamburger Menu → More Tools → Developer Tools**). Then select the *Network* tab. Any requests that are made after **Developer Tools** has been opened will show up on this tab.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917256,
+              "key": "a8f9b06c-7d1e-4a82-b85c-801a67512fc5",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Curl",
+              "instructor_notes": ""
+            },
+            {
+              "id": 901234,
+              "key": "19149574-3553-4737-b24e-29fda69cf9a1",
+              "title": "FSND C2 L2 A10 Introduction To Curl And Chrome Dev Tools Part 2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "jWEFlKA0ib4",
+                "china_cdn_id": "jWEFlKA0ib4.mp4"
+              }
+            },
+            {
+              "id": 917259,
+              "key": "1e6924bb-238e-4b42-9ce7-a197047dc69b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "**Curl** is a library and command line tool that completes IP transfers of data using URLs. One quick way to test your API while your API server is running is to run a curl command in another terminal window. \n\n### Curl Syntax\n```\ncurl -X POST http://www.example.com/tasks/\n```\nThe above is a sample curl request. Every request starts off with the command `curl` and needs to include a URL. Other parts you see added in are *options* that you can use to build your request. In the example the `-X` shortform option (also `--request`) specifies the request method. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 901235,
+              "key": "304903e2-70a2-416d-9d12-f15f1e2703c9",
+              "title": "FSND C2 L2 A11 Introduction To Curl And Chrome Dev Tools Part 3",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "VfdQXImHJlU",
+                "china_cdn_id": "VfdQXImHJlU.mp4"
+              }
+            },
+            {
+              "id": 917258,
+              "key": "08973de6-8eca-4914-949f-be6a8fe239a8",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Curl Options\nYou can find more options by entering `curl --help` in the terminal. Some frequently used options are: \n- `-X` or `--request COMMAND`\n- `-d` or `--data DATA`\n- `-F` or `--form CONTENT`\n- `-u` or `--user USER[:PASSWORD]`\n- `-H` or `--header LINE`",
+              "instructor_notes": ""
+            },
+            {
+              "id": 899870,
+              "key": "38ab35a6-4dc7-4120-87b8-39aea647b074",
+              "title": "Curl Quiz 1",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "38ab35a6-4dc7-4120-87b8-39aea647b074",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Using curl in your command line, make a get request to `https://pokeapi.co/api/v2/move/47` of the [PokeAPI](https://pokeapi.co/) . Which of the following is the accuracy value of the move? ",
+                "answers": [
+                  {
+                    "id": "a1562869090353",
+                    "text": "55",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1562869106522",
+                    "text": "47",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1562869107353",
+                    "text": "36",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1562869107988",
+                    "text": "99",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 900464,
+              "key": "6b5f62c7-3af4-491e-9b0b-9e95d15cb053",
+              "title": "",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "6b5f62c7-3af4-491e-9b0b-9e95d15cb053",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which endpoint(s) of the [PokeAPI](https://pokeapi.co/) should you use to get information about the Master Ball, which is an item in Pokemon. Review the documentation before attempting to answer",
+                "answers": [
+                  {
+                    "id": "a1563388675199",
+                    "text": "/api/v2/item/master-ball",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1563388798089",
+                    "text": "/api/v2/item/1",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1563388798774",
+                    "text": "/api/v2/item/master/ball",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1563388799414",
+                    "text": "/api/v2/item/47",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 900465,
+              "key": "cb5709e5-7063-4369-8617-1381a2fe14ac",
+              "title": "",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "cb5709e5-7063-4369-8617-1381a2fe14ac",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which elements of the sample curl request below are optional?\n\n`curl -X GET https://pokeapi.co/api/v2/move/47`",
+                "answers": [
+                  {
+                    "id": "a1563388978244",
+                    "text": "-X",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1563389020889",
+                    "text": "GET",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1563389021515",
+                    "text": "curl",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1563389022087",
+                    "text": "https://pokeapi.co/api/v2/move/47",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 901236,
+          "key": "e3b3fa89-52ef-40f3-8609-9a5c8e8ac9e7",
+          "title": "Review",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "e3b3fa89-52ef-40f3-8609-9a5c8e8ac9e7",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 901238,
+              "key": "32b9bc10-fd4f-4ab8-a8e0-edbd9e8cbbc7",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Review",
+              "instructor_notes": ""
+            },
+            {
+              "id": 901237,
+              "key": "1463d9d6-28b1-4712-9c01-caaa364850c2",
+              "title": "FSND C2 L2 A12 Lesson Review",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "ws25vN0_60o",
+                "china_cdn_id": "ws25vN0_60o.mp4"
+              }
+            },
+            {
+              "id": 917239,
+              "key": "2b82ea19-f671-4d9c-b879-583955d498ec",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this lesson, we went over the HTTP protocol and how to implement an API using the Flask microframework. Here's everything you should now be familiar with:\n- HTTP Basics\n    - Methods\n    - Requests\n    - Responses\n    - Status Codes\n- Flask Microframework Intro\n    - Creating your first basic endpoints\n    - Testing the response using Curl ",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

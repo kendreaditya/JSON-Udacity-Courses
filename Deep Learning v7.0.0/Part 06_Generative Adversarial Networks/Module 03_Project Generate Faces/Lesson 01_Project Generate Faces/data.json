@@ -1,0 +1,184 @@
+{
+  "data": {
+    "lesson": {
+      "id": 696468,
+      "key": "b2dc488f-9450-423c-9475-d9d28bbe8394",
+      "title": "Project: Generate Faces",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Define two adversarial networks, a generator and discriminator, and train them until you can generate realistic faces.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/b2dc488f-9450-423c-9475-d9d28bbe8394/696468/1546641997537/Project%3A+Generate+Faces+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/b2dc488f-9450-423c-9475-d9d28bbe8394/696468/1546641995517/Project%3A+Generate+Faces+Subtitles.zip"
+          },
+          {
+            "name": "preprocessed_celeba",
+            "uri": "https://video.udacity-data.com/topher/2018/November/5be7eb6f_processed-celeba-small/processed-celeba-small.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": {
+        "key": "16873774-738d-4eab-9694-a8285f0e17cf",
+        "version": "1.0.0",
+        "locale": "en-us",
+        "duration": 30240,
+        "semantic_type": "Project",
+        "title": "Generate Faces",
+        "description": "# Face Generation\n### Introduction\n\nIn this project, you'll use generative adversarial networks to generate new images of faces.\n\n### Getting the project files\nThe project files can be found in our [public GitHub repo](https://github.com/udacity/deep-learning-v2-pytorch/tree/master/), in the `project-face-generation` folder. \n\nYou can download the files from there, but it's better to clone the repository to your computer. This way you can stay up to date with any changes we make by pulling the changes to your local repository with `git pull`.\n\n### Submission\n1. Ensure you've passed all the unit tests in the notebook.\n2. Ensure you pass all points on [the rubric](https://review.udacity.com/#!/rubrics/2261/view).\n3. When you're done with the project, please save the notebook as an HTML file. You can do this by going to the **File** menu in the notebook and choosing \"Download as\" > HTML. ** Ensure you submit both the Jupyter Notebook and its HTML version together. **\n4. Package the \"dlnd_face_generation.ipynb\", \"problem_unittests.py\", and the HTML file into a zip archive, or push the files from your GitHub repo.\n5. Hit Submit Project below! \n\n## Project Submission Checklist\n\n**Before submitting your project, please review and confirm the following items.** \n<input type=\"checkbox\"> I am confident all rubric items have been met and my project will pass as submitted. \n<input type=\"checkbox\"> Project builds correctly without errors and runs.\n<input type=\"checkbox\"> All required functionality exists and my project behaves as expected per the project's specifications.\n\n**Once you have checked all these items, you are ready to submit!**\n",
+        "is_public": true,
+        "summary": null,
+        "forum_path": "",
+        "rubric_id": "2261",
+        "terminal_project_id": null,
+        "resources": null,
+        "image": {
+          "url": "https://s3.amazonaws.com/video.udacity-data.com/topher/2017/May/5913cd0c_hero-cropped/hero-cropped.jpg",
+          "width": 1200,
+          "height": 545
+        }
+      },
+      "lab": null,
+      "concepts": [
+        {
+          "id": 290312,
+          "key": "c074486b-a224-4189-988c-d7f305785f5a",
+          "title": "Project Introduction",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c074486b-a224-4189-988c-d7f305785f5a",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 806233,
+              "key": "81091752-b716-4b48-a7c6-0c710d399ff3",
+              "title": "项目简介",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "jvJtHYBX7sM",
+                "china_cdn_id": "jvJtHYBX7sM.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 782252,
+          "key": "e82fd904-f919-4ea9-bc67-12c196d8e986",
+          "title": "Project Instructions",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "e82fd904-f919-4ea9-bc67-12c196d8e986",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 782253,
+              "key": "1782e159-c3d1-4489-aba7-fc9594d88190",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Face Generation\n### Introduction\n\nIn this project, you'll use generative adversarial networks to generate new images of faces.\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 783208,
+              "key": "27c1e00a-2ff2-47eb-b84b-9723eb45264f",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2018/November/5beb234e_processed-face-data/processed-face-data.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/27c1e00a-2ff2-47eb-b84b-9723eb45264f",
+              "caption": "Processed CelebA face data.",
+              "alt": "",
+              "width": 500,
+              "height": 424,
+              "instructor_notes": null
+            },
+            {
+              "id": 782255,
+              "key": "f174f841-b0c2-4185-9f53-a90e1fac7bdb",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Getting the project files\nThe project files can be found in our [public GitHub repo](https://github.com/udacity/deep-learning-v2-pytorch/tree/master/), in the `project-face-generation` folder. \n\nYou can download the files from there, but it's better to clone the repository to your computer. This way you can stay up to date with any changes we make by pulling the changes to your local repository with `git pull`.\n\n### Submission\n1. Ensure you've passed all the unit tests in the notebook.\n2. Ensure you pass all points on [the rubric](https://review.udacity.com/#!/rubrics/2261/view).\n3. When you're done with the project, please save the notebook as an HTML file. You can do this by going to the **File** menu in the notebook and choosing \"Download as\" > HTML. ** Ensure you submit both the Jupyter Notebook and its HTML version together. **\n4. Follow the rest of the file submission instructions after clicking `Submit` on the last page of this lesson.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 779684,
+          "key": "de5849ea-35da-47ba-88f7-680d66cfa3a2",
+          "title": "Face Generation Workspace",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "de5849ea-35da-47ba-88f7-680d66cfa3a2",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 782322,
+              "key": "95afda9d-4aca-49a4-be04-df19de7c50d5",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r633452c779684xJUPYTER65x9r2hl",
+              "pool_id": "jupytergpu",
+              "view_id": "jupyter-vcl4z",
+              "gpu_capable": true,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

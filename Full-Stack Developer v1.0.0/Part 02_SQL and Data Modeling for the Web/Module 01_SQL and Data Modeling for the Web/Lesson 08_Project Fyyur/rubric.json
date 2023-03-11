@@ -1,0 +1,203 @@
+{
+  "id": 2653,
+  "project_id": 629,
+  "upload_types": [
+    "repo",
+    "zip"
+  ],
+  "file_filter_regex": "\\A(?!(((.*/)?(__MACOSX|\\.git|node_modules|bower_components|jspm_packages|\\.idea|build|.ipynb_checkpoints|\\.Trash-0|logs)(\\Z|/))))((.*\\.(js|css|py|html|htm|txt|md|markdown|sql|swift|java|gradle|xml|rst|yml|yaml|rmd|pdf|docx|h|H|hh|hxx|h\\+\\+|c|C|cc|cpp|cxx|c\\+\\+)\\Z)|((.*/)?(README|Readme|readme|Makefile)\\Z))",
+  "nomination_eligible": false,
+  "stand_out": "1. CHALLENGE: Implement time availability, so that an artist is only available to be booked at certain dates/times. Disable the ability to create book an artist for a show outside of their availability. \n\n2. Show Recent Listed Artists and Recently Listed Venues on the homepage, returning results for Artists and Venues sorting by newly created. Limit to the 10 most recently listed items.\n\n3. Showcase what albums and songs an artist has on the Artist’s page.",
+  "hide_criteria": false,
+  "created_at": "2019-07-03T18:54:40.159Z",
+  "updated_at": "2020-04-11T16:58:59.784Z",
+  "hashtag": "",
+  "max_upload_size_mb": 500,
+  "estimated_sla": null,
+  "project_assistant_enabled": false,
+  "checkmate_enabled": false,
+  "checkmate_metadata": null,
+  "available_for_cert_project": false,
+  "classroom_node_id": 898152,
+  "classroom_project_key": "65571c98-fc9d-41e9-8817-83f8ee564546",
+  "language": "en-us",
+  "ndkeys": [
+    "nd004",
+    "nd004-beta",
+    "nd0044",
+    "nd0044-cn",
+    "nd0044-ent",
+    "nd0044-connect",
+    "nd001-mena-nfp3"
+  ],
+  "coursekeys": [],
+  "sections": [
+    {
+      "id": 5653,
+      "name": "Data Models",
+      "created_at": "2019-07-03T21:01:34.699Z",
+      "updated_at": "2019-07-03T21:02:01.882Z",
+      "deleted_at": null,
+      "position": 0,
+      "rubric_id": 2653,
+      "rubric_items": [
+        {
+          "id": 16204,
+          "section_id": 5653,
+          "passed_description": "Correct data types are associated with each field.\n\nThe `Shows` object has a relationship that connects Artists and Venues, and this relationship is of the correct type. In other words, the project demonstrates the ability to appropriately select from the following types of relationships:\n* One-to-one\n* One-to-many\n* Many-to-many\n\n\n",
+          "exceeded_description": null,
+          "created_at": "2019-07-03T21:02:55.021Z",
+          "updated_at": "2019-07-04T15:48:45.527Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "Implement data models in relational, normalized form.",
+          "exceedable": false
+        },
+        {
+          "id": 16205,
+          "section_id": 5653,
+          "passed_description": "The code creates a local postgresql database connection.",
+          "exceeded_description": null,
+          "created_at": "2019-07-04T15:49:08.556Z",
+          "updated_at": "2019-07-04T16:00:40.144Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 1,
+          "criteria": "Connect data models to a database.",
+          "exceedable": false
+        },
+        {
+          "id": 16206,
+          "section_id": 5653,
+          "passed_description": "The `Shows` model has properly set up foreign keys.\n\nThe Artists and Venues models are in third normal form. \n",
+          "exceeded_description": null,
+          "created_at": "2019-07-04T15:50:17.686Z",
+          "updated_at": "2019-07-04T15:53:28.026Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 2,
+          "criteria": "Demonstrate a good grasp of database normalization.",
+          "exceedable": false
+        },
+        {
+          "id": 16207,
+          "section_id": 5653,
+          "passed_description": "The code uses SQLAlchemy syntax to completely define the models.\n\n The code has accurate SQL queries wrapped in SQLAlchemy commands per API endpoint, calling to define data models and serving expected responses per API endpoint.\n\nThe code only uses raw SQL where SQLAlchemy wrappers do not suffice, otherwise minimizing use of raw SQL.\n",
+          "exceeded_description": null,
+          "created_at": "2019-07-04T15:51:16.432Z",
+          "updated_at": "2019-07-04T16:00:40.152Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 3,
+          "criteria": "Demonstrate a good grasp of SQLAlchemy.",
+          "exceedable": false
+        }
+      ]
+    },
+    {
+      "id": 5654,
+      "name": "SQL",
+      "created_at": "2019-07-03T21:01:38.840Z",
+      "updated_at": "2019-07-03T21:02:01.887Z",
+      "deleted_at": null,
+      "position": 1,
+      "rubric_id": 2653,
+      "rubric_items": [
+        {
+          "id": 16208,
+          "section_id": 5654,
+          "passed_description": "The code successfully translates SQLAlchemy code for selecting records from the database into the equivalent PostgresSQL command(s) for selecting records from the database.\n\nThe code demonstrates correct use of `SELECT` and `WHERE` query statements to execute search successfully. \n",
+          "exceeded_description": null,
+          "created_at": "2019-07-04T15:53:41.059Z",
+          "updated_at": "2019-07-04T16:04:53.071Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "Use SQL syntax to select records from a database.",
+          "exceedable": false
+        },
+        {
+          "id": 16209,
+          "section_id": 5654,
+          "passed_description": "`JOIN` statements are used to correctly execute joined queries.\n\nThe code joins tables from existing models to select Artists by Venues where they previously performed, successfully filling out the Venues page with a “Past Performances” section.\n\nThe code joins tables from existing models to successfully fill out the Artists page with a “Venues Performed” section.\n\nhe code includes correct equivalents in SQL for all corresponding SQLAlchemy statements.\n",
+          "exceeded_description": null,
+          "created_at": "2019-07-04T15:54:22.518Z",
+          "updated_at": "2019-07-04T16:04:53.077Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 1,
+          "criteria": "Use SQL syntax and SQLAlchemy to join relational tables and conduct joined queries.",
+          "exceedable": false
+        },
+        {
+          "id": 16210,
+          "section_id": 5654,
+          "passed_description": "Code connects the New Artist and New Venue forms to a database by successfully using SQLAlchemy to insert new records into the database upon form submission.\n\nUnderstands the equivalent SQLAlchemy command in SQL syntax, using INSERT INTO.\n\nCode correctly uses SQL constraints to ensure fields that need to be unique, and fields that are required, are given these constraints on the database level, throwing an error if otherwise.\n",
+          "exceeded_description": null,
+          "created_at": "2019-07-04T16:04:53.210Z",
+          "updated_at": "2019-07-04T16:07:05.557Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 2,
+          "criteria": "Use SQL to create records with uniqueness constraints.",
+          "exceedable": false
+        }
+      ]
+    },
+    {
+      "id": 5655,
+      "name": "Application Quality & Deployment",
+      "created_at": "2019-07-03T21:02:02.070Z",
+      "updated_at": "2019-07-03T21:02:49.009Z",
+      "deleted_at": null,
+      "position": 2,
+      "rubric_id": 2653,
+      "rubric_items": [
+        {
+          "id": 16211,
+          "section_id": 5655,
+          "passed_description": "Code is decoupled into relevant parts across the files.\n\nThe code includes good use of comments where there is lack of clarity. Where comments are not provided, the code is self-documenting.\n\nEncapsulate querying code in proper places across Models and API endpoints.\n",
+          "exceeded_description": null,
+          "created_at": "2019-07-04T16:07:10.833Z",
+          "updated_at": "2019-07-04T16:14:24.034Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "Demonstrate the ability to construct a well-organized code base. ",
+          "exceedable": false
+        },
+        {
+          "id": 16212,
+          "section_id": 5655,
+          "passed_description": "* There are no build or compilation errors in running code and launching the web app.\n* A user can successfully execute a Search that queries the database.\n* A user can view a Venue Page with venue and artist information from the database.\n* A user can view an Artist Page with venue and artist information from the database.\n* A user can create new venue listing via the New Venue Page.\n* A user cannot submit an invalid form submission (e.g. using an invalid State enum, or with required fields missing; missing city, missing name, or missing genre is not required).\n* A user can create new artist listings via the New Artist Page.\n* A user cannot submit an invalid form submission (e.g. without required fields)\n* A user can search for an artist from the venue page, and choose them for a show, specifying a date-time.\n",
+          "exceeded_description": null,
+          "created_at": "2019-07-04T16:14:24.201Z",
+          "updated_at": "2019-08-29T21:38:50.146Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 1,
+          "criteria": "Create a web app that builds successfully and runs without errors",
+          "exceedable": false
+        }
+      ]
+    }
+  ],
+  "project": {
+    "id": 629,
+    "name": "Fyyur: Artist Booking Site",
+    "nanodegree_key": "nd004",
+    "is_cert_project": false,
+    "audit_project_id": null,
+    "hashtag": null,
+    "audit_rubric_id": null,
+    "entitlement_required": false,
+    "is_career": false,
+    "recruitment_family_id": 12,
+    "created_at": "2019-07-05T05:59:21.824Z",
+    "updated_at": "2020-06-01T00:12:11.317Z",
+    "price": "6.5",
+    "ungradeable_price": "3.0",
+    "audit_price": null
+  }
+}

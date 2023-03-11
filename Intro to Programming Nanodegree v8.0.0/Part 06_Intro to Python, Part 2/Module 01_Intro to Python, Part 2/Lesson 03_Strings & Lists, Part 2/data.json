@@ -1,0 +1,4170 @@
+{
+  "data": {
+    "lesson": {
+      "id": 817327,
+      "key": "d35bf43f-c6c0-4f5e-a91e-51010f5feb87",
+      "title": "Strings & Lists, Part 2",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Expand your understanding of strings and lists, and learning how to use a new kind of loop.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/d35bf43f-c6c0-4f5e-a91e-51010f5feb87/817327/1549164284550/Strings+%26+Lists%2C+Part+2+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/d35bf43f-c6c0-4f5e-a91e-51010f5feb87/817327/1549164281361/Strings+%26+Lists%2C+Part+2+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 518447,
+          "key": "3000e5f3-7a9b-4114-8e0a-c86094f303a8",
+          "title": "Operations on lists",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "3000e5f3-7a9b-4114-8e0a-c86094f303a8",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 784072,
+              "key": "04cc369d-7010-4465-ad87-f915dc533364",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Operations on lists\n\nSo far in this lesson, we've been focused on the different operations you can do on *strings*. As you'll see on this page, you can do a lot of the same thing with *lists*.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 552686,
+              "key": "4e0ebc3b-ef1f-4b2a-a089-4443d8336deb",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n### Strings and lists are **sequences**\n\nStrings and lists have something important in common: They are both **sequence types**. That is, they're both data types that represent a *sequence of values*, not just a single value.\n\nWith a string, the values are the individual characters; with a list, they can be just about anything. But in both cases, there's a set of items, and the items have index numbers to identify the sequence in which they're ordered.\n\nHere are some things that actually work on _all_ sequence types:\n* the **indexing** operation\n* the **slicing** operation\n* the **`len` function**",
+              "instructor_notes": ""
+            },
+            {
+              "id": 784074,
+              "key": "54deec5b-4fee-4d4b-b7ba-e848042f0264",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "54deec5b-4fee-4d4b-b7ba-e848042f0264",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "To get a feeling for how these operations work on lists, here are some examples you can try.\n\nFirst, define the following list:\n```python\n>>> my_list = [\"a\", \"b\", \"c\", \"d\"]\n```\n\nThen, see if you can predict what these will do:"
+                },
+                "concepts_label": "Code",
+                "answers_label": "Result",
+                "concepts": [
+                  {
+                    "text": "```python\n>>> my_list[1]\n```",
+                    "correct_answer": {
+                      "id": "a1542415677289",
+                      "text": "`'b'`"
+                    }
+                  },
+                  {
+                    "text": "```python\n>>> my_list[0:2]\n```",
+                    "correct_answer": {
+                      "id": "a1542415884533",
+                      "text": "`['a', 'b']`"
+                    }
+                  },
+                  {
+                    "text": "```python\n>>> len(my_list)\n```",
+                    "correct_answer": {
+                      "id": "a1542415918141",
+                      "text": "`4`"
+                    }
+                  },
+                  {
+                    "text": "```python\n>>> my_list[3] == \"d\"\n```",
+                    "correct_answer": {
+                      "id": "a1542415947395",
+                      "text": "`True`"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1542415677289",
+                    "text": "`'b'`"
+                  },
+                  {
+                    "id": "a1542416072278",
+                    "text": "`'c'`"
+                  },
+                  {
+                    "id": "a1542415918141",
+                    "text": "`4`"
+                  },
+                  {
+                    "id": "a1542415947395",
+                    "text": "`True`"
+                  },
+                  {
+                    "id": "a1542415884533",
+                    "text": "`['a', 'b']`"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 552694,
+              "key": "faa51eda-9a5e-49ea-b046-f86896579953",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "faa51eda-9a5e-49ea-b046-f86896579953",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What is the value of `len(['Queen', 'rules'])`?",
+                "answers": [
+                  {
+                    "id": "a1519422579893",
+                    "text": "`1`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1519422595487",
+                    "text": "`2`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1519422596178",
+                    "text": "`5`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1519422603899",
+                    "text": "`10`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1519422608281",
+                    "text": "No value; it is an error.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 552692,
+              "key": "1a60a5c0-10d0-4c28-9b88-e15b6cae4835",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Exercise: Total length\n\nWrite a function `total_length` that takes a list of strings and returns the sum of the lengths of all the strings in that list. For instance —\n\n```python\n>>> total_length(['Queen', 'rules'])   # two strings, five chars each\n10\n>>> total_length([])   # empty list\n0\n>>> total_length(['balloons'])   # one string, eight chars\n8\n>>> total_length([\"\", '', \"\", ''])   # four empty strings\n0\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 784109,
+              "key": "5e0f02db-bb42-4572-9d48-3fa32d084ddb",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "5e0f02db-bb42-4572-9d48-3fa32d084ddb",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Define a function called `total_length` that takes one parameter (a list of strings).",
+                "Inside the function, create a variable to keep track of the total. You can start by assigning it a value of `0`.",
+                "Loop over the items in the list; for each of them, add the length to the current total.",
+                "After the loop finishes, return the total.",
+                "Test your code! We've provided some print statements you can try out in the workspace."
+              ],
+              "positive_feedback": "**Nice work!**",
+              "video_feedback": null,
+              "description": "Suppose that you have a list of strings, such as `['foo', 'bar']`. If you do `len(['foo', 'bar'])`, you'll get `2` (because there are two items in the list).\n\nBut maybe what you're interested in is the total number of characters in all the strings in the list. Something like this:\n\n```python\n>>> total_length(['foo', 'bar'])  # There are six characters total (three in each string),.\n6\n```\nIn the workspace below, see if you can write a function called `total_length` that does exactly that."
+            },
+            {
+              "id": 784107,
+              "key": "352cfedc-83a9-4154-9b0e-25e183abcace",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r613901c518447xGENERICza3nubzk",
+              "pool_id": "webterminal",
+              "view_id": "generic-shwp6",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "userCode": "",
+                    "openFiles": [
+                      "/home/workspace/length.py"
+                    ],
+                    "showFiles": false,
+                    "allowClose": true,
+                    "showEditor": true,
+                    "allowSubmit": false,
+                    "terminalTitle": "BASH"
+                  },
+                  "kind": "generic"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 670933,
+              "key": "71feffdf-5dd3-41f0-86dd-8c83dd0a3d3a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n----\n<div style=\"background-color: #a4e4f5;\">\n## ⚠️ Spoiler alert!\n\n**Our solution is below.** You'll learn more effectively if you give the exercise a strong effort before comparing your code with ours!\n</div>\n----\n----",
+              "instructor_notes": ""
+            },
+            {
+              "id": 670957,
+              "key": "68c35d43-ecf3-4344-be2f-05837f643b88",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Total length, solution\n\nHere's one way to implement the `total_length` function —\n\n```python\ndef total_length(list_of_strings):\n    total = 0\n    for string in list_of_strings:\n        total = total + len(string)\n    return total\n```",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 518448,
+          "key": "e61a9ab9-f299-4404-8c13-0a45e898ecb9",
+          "title": "Methods on lists",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "e61a9ab9-f299-4404-8c13-0a45e898ecb9",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 533925,
+              "key": "2a0e8e7c-ec73-4da2-ab25-2cb447510fbf",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# `[].` Methods on lists\nA little earlier, we explored *string methods*. On this page, we'll explore several different **list methods**.\n\nTo start, create a list in your Python interpreter:\n\n```python\n>>> words = [\"echidna\", \"dingo\", \"crocodile\", \"bunyip\"]\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 559729,
+              "key": "d1a5bb84-fc6a-4f7b-af15-6ea44cfdf5ba",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "d1a5bb84-fc6a-4f7b-af15-6ea44cfdf5ba",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "After creating the `words` list above, try running this line of code:\n\n```python\nwords.append(\"platypus\")\n```\nAfter running this, check the value of `words` to see if it's changed. What happened?",
+                "answers": [
+                  {
+                    "id": "a1520552078411",
+                    "text": "Nothing happened.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1520552155852",
+                    "text": "The word `\"bunyip\"` is gone from the list and replaced with `\"platypus\"`.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1520552163107",
+                    "text": "The word `\"platypus\"` has been added to the end of the list, after `\"bunyip\"`.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1520552211654",
+                    "text": "The word `\"platypus\"` has been added to the beginning of the list, before `\"echidna\"`.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 559730,
+              "key": "f853ca9c-22d6-4a7a-b03c-43783b69f9bd",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "f853ca9c-22d6-4a7a-b03c-43783b69f9bd",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Now try this:\n```python\nwords.extend(\"abc\")\n```\nWhat happened? Again, check the value of `words`.",
+                "answers": [
+                  {
+                    "id": "a1520553972857",
+                    "text": "The string `\"abc\"` is now the last item of `words`.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1520554047893",
+                    "text": "Three strings, `'a'`, `'b'`, and `'c'`, are now at the end of `words`.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1520554094324",
+                    "text": "It's an error.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1520554095474",
+                    "text": "Nothing happened.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 559731,
+              "key": "be05a21c-8120-4238-82e5-d31b8aa93bbd",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "be05a21c-8120-4238-82e5-d31b8aa93bbd",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Now try calling the `extend` method with this list:\n```python\nwords.extend([\"kangaroo\", \"wallaby\"])\n```\nWhat does this do?",
+                "answers": [
+                  {
+                    "id": "a1520554204214",
+                    "text": "The list `words` now has the words `'kangaroo'` and `'wallaby'` added to the end.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1520554242485",
+                    "text": "The list `words` now has _only_ the items `'kangaroo'` and `'wallaby'` in it.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1520554244465",
+                    "text": "The list `words` now ends with the strings `'b'` and `'y'`.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1520554275355",
+                    "text": "Nothing happened.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 559736,
+              "key": "36349998-d13f-41a8-9d3f-a02f1805cd6e",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "36349998-d13f-41a8-9d3f-a02f1805cd6e",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Now that you've appended and extended, try this method call —\n\n```python\nwords.reverse()\n```\nAfter running this, what is the first item in `words`?",
+                "answers": [
+                  {
+                    "id": "a1520554692917",
+                    "text": "`'kangaroo'`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1520554781489",
+                    "text": "`'wallaby'`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1520554782265",
+                    "text": "`'echidna'`",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 559740,
+              "key": "e4df8b01-6033-44c6-a0ee-81a50d9e9dec",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "e4df8b01-6033-44c6-a0ee-81a50d9e9dec",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "One more list method! What does this one do?\n\n```python\nwords.sort()\n```",
+                "answers": [
+                  {
+                    "id": "a1520555243838",
+                    "text": "It doesn't do anything.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1520555266575",
+                    "text": "It's an error.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1520555267146",
+                    "text": "It adds the word `'sort'` to the end of the `words` list.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1520555277897",
+                    "text": "It changes `words` so that it's sorted in alphabetical order, starting with `'a'` and ending with `'wallaby'`.",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 559743,
+              "key": "b74973d6-51db-4bfb-93d4-af9b2a440e79",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "b74973d6-51db-4bfb-93d4-af9b2a440e79",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Now, see if you can match up these list methods with descriptions of what they do."
+                },
+                "concepts_label": "Description",
+                "answers_label": "List method",
+                "concepts": [
+                  {
+                    "text": "Add one item to the end of a list.",
+                    "correct_answer": {
+                      "id": "a1520555405150",
+                      "text": "`append`"
+                    }
+                  },
+                  {
+                    "text": "Add possibly several items to the end of a list.",
+                    "correct_answer": {
+                      "id": "a1520555444582",
+                      "text": "`extend`"
+                    }
+                  },
+                  {
+                    "text": "Change a list so it is in alphabetical (and numerical) order.",
+                    "correct_answer": {
+                      "id": "a1520555446556",
+                      "text": "`sort`"
+                    }
+                  },
+                  {
+                    "text": "Change a list so it is in the opposite order from how it was before.",
+                    "correct_answer": {
+                      "id": "a1520555447314",
+                      "text": "`reverse`"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1520555447314",
+                    "text": "`reverse`"
+                  },
+                  {
+                    "id": "a1520555446556",
+                    "text": "`sort`"
+                  },
+                  {
+                    "id": "a1520555578890",
+                    "text": "`pop`"
+                  },
+                  {
+                    "id": "a1520555574388",
+                    "text": "`add`"
+                  },
+                  {
+                    "id": "a1520555444582",
+                    "text": "`extend`"
+                  },
+                  {
+                    "id": "a1520555405150",
+                    "text": "`append`"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 674978,
+              "key": "e15e2288-f47e-48f3-8ac9-4a7dc4ac6bf7",
+              "title": "Python: Methods on lists",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "VzsVyIY49bA",
+                "china_cdn_id": "VzsVyIY49bA.mp4"
+              }
+            },
+            {
+              "id": 784116,
+              "key": "044b211e-0ab1-45d7-b9bc-32d0885fa81f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": " ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 784117,
+              "key": "c19796dd-86f6-43f6-9dc0-52a76d8244f3",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "c19796dd-86f6-43f6-9dc0-52a76d8244f3",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "It's common to get confused about the difference between `append` and `extend`, so let's make sure we have the distinction clear.\n\nGive these examples a try:"
+                },
+                "concepts_label": "Code",
+                "answers_label": "Result",
+                "concepts": [
+                  {
+                    "text": "```python\n>>> my_list = [1, 2, 3]\n>>> my_list.append([4, 5, 6])\n>>> my_list\n```",
+                    "correct_answer": {
+                      "id": "a1542469012799",
+                      "text": "`[1, 2, 3, [4, 5, 6]]`"
+                    }
+                  },
+                  {
+                    "text": "```python\n>>> my_list = [1, 2, 3]\n>>> my_list.extend([4, 5, 6])\n>>> my_list\n```",
+                    "correct_answer": {
+                      "id": "a1542469147561",
+                      "text": "`[1, 2, 3, 4, 5, 6]`"
+                    }
+                  },
+                  {
+                    "text": "```python\n>>> my_list = [1, 2, 3]\n>>> my_list.append(\"abc\")\n>>> my_list\n```",
+                    "correct_answer": {
+                      "id": "a1542469250312",
+                      "text": "`[1, 2, 3, 'abc']`"
+                    }
+                  },
+                  {
+                    "text": "```python\n>>> my_list = [1, 2, 3]\n>>> my_list.extend(\"abc\")\n>>> my_list\n```",
+                    "correct_answer": {
+                      "id": "a1542469343987",
+                      "text": "`[1, 2, 3, 'a', 'b', 'c']`"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1542469147561",
+                    "text": "`[1, 2, 3, 4, 5, 6]`"
+                  },
+                  {
+                    "id": "a1542469343987",
+                    "text": "`[1, 2, 3, 'a', 'b', 'c']`"
+                  },
+                  {
+                    "id": "a1542469250312",
+                    "text": "`[1, 2, 3, 'abc']`"
+                  },
+                  {
+                    "id": "a1542469012799",
+                    "text": "`[1, 2, 3, [4, 5, 6]]`"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 784118,
+              "key": "e52e292b-e6ee-492e-9489-aa1249d53cd2",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "e52e292b-e6ee-492e-9489-aa1249d53cd2",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Here's some code you can try—but first, try to think through what it will do:\n\n```python\n>>> first_list = [1, 2, 3]\n>>> second_list = [4, 5, 6]\n>>> for item in second_list:\n...     first_list.append(item)\n... \n>>> first_list\n```\nWhat result do you get?",
+                "answers": [
+                  {
+                    "id": "a1542469574303",
+                    "text": "`[1, 2, 3, 4, 5, 6]`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1542469663604",
+                    "text": "`[1, 2, 3, [4, 5, 6]]`",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 784119,
+              "key": "9ccdbe37-65e3-4d93-9ab7-618f361f2b36",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "9ccdbe37-65e3-4d93-9ab7-618f361f2b36",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Assume that we start with the same list again:\n\n```python\n>>> first_list = [1, 2, 3]\n```\n\nWhich of these would do the same thing as the above loop?",
+                "answers": [
+                  {
+                    "id": "a1542469790040",
+                    "text": "`>>> first_list.extend([4, 5, 6])`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1542469901581",
+                    "text": "`>>> first_list.append([4, 5, 6])`",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 784120,
+              "key": "3bfe2afb-e078-4ad8-a90e-10a7e3566870",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "3bfe2afb-e078-4ad8-a90e-10a7e3566870",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Here are descriptions of the `append` and `extend` methods. Based on what you just saw, can you identify which is which?"
+                },
+                "concepts_label": "Description",
+                "answers_label": "Which method is it?",
+                "concepts": [
+                  {
+                    "text": "Adds its argument as a **single item** to the end of the list. It only ever adds **one** item to a list.",
+                    "correct_answer": {
+                      "id": "a1542470209604",
+                      "text": "`append`"
+                    }
+                  },
+                  {
+                    "text": "Treats its argument as a sequence and **adds each item in the sequence to the end of the list**. In other words, it adds a **sequence** of items to a list.",
+                    "correct_answer": {
+                      "id": "a1542470240777",
+                      "text": "`extend`"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1542470209604",
+                    "text": "`append`"
+                  },
+                  {
+                    "id": "a1542470240777",
+                    "text": "`extend`"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 518450,
+          "key": "6ac884a5-2fe8-4d2a-a6c2-f99cc239cec3",
+          "title": "Mutable vs. immutable",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "6ac884a5-2fe8-4d2a-a6c2-f99cc239cec3",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 674944,
+              "key": "7f89fb79-abcc-4328-97fb-6fc319b1ae09",
+              "title": "Python: Mutability of lists",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "muukYAt3hRI",
+                "china_cdn_id": "muukYAt3hRI.mp4"
+              }
+            },
+            {
+              "id": 784121,
+              "key": "ef8151af-77e9-48dd-baba-396655602aaa",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "As Karl said in the video, lists are **mutable**. That means you can change the items in a list after it has been created.\n\nIn addition to adding new items with methods like `append` and `extend`, you can also *replace* current items with new ones. You do this using the index operator `[]`.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 784122,
+              "key": "b888d90f-600f-4854-9102-e25816e1b73b",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "b888d90f-600f-4854-9102-e25816e1b73b",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Create the following list in your interpreter:\n\n```python\n>>> breakfast = ['toast', 'bacon', 'eggs']\n```\n\nThen try the examples below, in the order shown—what results do you get?"
+                },
+                "concepts_label": "Code",
+                "answers_label": "Result",
+                "concepts": [
+                  {
+                    "text": "```python\n>>> breakfast\n```",
+                    "correct_answer": {
+                      "id": "a1542474691699",
+                      "text": "`['toast', 'bacon', 'eggs']`"
+                    }
+                  },
+                  {
+                    "text": "```python\n>>> breakfast[0] \n```",
+                    "correct_answer": {
+                      "id": "a1542474747923",
+                      "text": "`'toast'`"
+                    }
+                  },
+                  {
+                    "text": "```python\n>>> breakfast[0] = 'spam'\n>>> breakfast\n```",
+                    "correct_answer": {
+                      "id": "a1542474811743",
+                      "text": "`['spam', 'bacon', 'eggs']`"
+                    }
+                  },
+                  {
+                    "text": "```python\n>>> breakfast[1] = 'spam'\n>>> breakfast\n```",
+                    "correct_answer": {
+                      "id": "a1542474865229",
+                      "text": "`['spam', 'spam', 'eggs']`"
+                    }
+                  },
+                  {
+                    "text": "```python\n>>> breakfast[2] = 'spam'\n>>> breakfast\n```",
+                    "correct_answer": {
+                      "id": "a1542475091503",
+                      "text": "`['spam', 'spam', 'spam']`"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1542474811743",
+                    "text": "`['spam', 'bacon', 'eggs']`"
+                  },
+                  {
+                    "id": "a1542474747923",
+                    "text": "`'toast'`"
+                  },
+                  {
+                    "id": "a1542474691699",
+                    "text": "`['toast', 'bacon', 'eggs']`"
+                  },
+                  {
+                    "id": "a1542474865229",
+                    "text": "`['spam', 'spam', 'eggs']`"
+                  },
+                  {
+                    "id": "a1542475091503",
+                    "text": "`['spam', 'spam', 'spam']`"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 784123,
+              "key": "b23dceef-187f-4d1e-9fab-5913c1d992f2",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "b23dceef-187f-4d1e-9fab-5913c1d992f2",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Here's something similar you might want to do with a string:\n\n```python\n>>> breakfast = 'waffles'\n>>> breakfast[0] = 'b'\n```\n\nWhat result does this give?",
+                "answers": [
+                  {
+                    "id": "a1542476694812",
+                    "text": "`'baffles'`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1542476756869",
+                    "text": "`TypeError: 'str' object does not support item assignment`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1542476828669",
+                    "text": "`TypeError: 'list' object does not support item assignment`",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 784124,
+              "key": "287d6591-aa6f-4ba2-bc38-a18defe01832",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "So lists are mutable (they can be changed), but strings are immutable (they cannot be changed).\n\nBut wait, haven't we modified strings before? For example, we can do this:\n\n```python\n>>> breakfast = 'waffles'\n>>> new_breakfast = breakfast + ' and strawberries'\n>>> new_breakfast\n'waffles and strawberries'\n```\n\nIt may seem like we're modifying a string here, but what's actually happening in the computer's memory is that we are creating a *new* string. The old string is still exactly where it was, and hasn't been changed:\n\n```python\n>>> breakfast\n'waffles'\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 784125,
+              "key": "bee34242-ba35-4acb-a862-7ebac9806eac",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "bee34242-ba35-4acb-a862-7ebac9806eac",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "In contrast to the above example with strings, try this example with lists:\n\n(Make sure to run these bits of code in the order shown.)"
+                },
+                "concepts_label": "Code",
+                "answers_label": "Result",
+                "concepts": [
+                  {
+                    "text": "```python\n>>> first_list = [1, 2, 3]\n>>> second_list = first_list\n>>> second_list\n\n```",
+                    "correct_answer": {
+                      "id": "a1542477686200",
+                      "text": "`[1, 2, 3]`"
+                    }
+                  },
+                  {
+                    "text": "```python\n>>> first_list.append(4)\n>>> second_list\n```",
+                    "correct_answer": {
+                      "id": "a1542478022617",
+                      "text": "`[1, 2, 3, 4]`"
+                    }
+                  },
+                  {
+                    "text": "```python\n>>> second_list.append(5)\n>>> first_list\n[1, 2, 3, 4, 5]\n```",
+                    "correct_answer": {
+                      "id": "a1542478047872",
+                      "text": "`[1, 2, 3, 4, 5]`"
+                    }
+                  },
+                  {
+                    "text": "```python\n>>> second_list[0] = \"Woah!\"\n>>> first_list\n```",
+                    "correct_answer": {
+                      "id": "a1542478105067",
+                      "text": "`['Woah!', 2, 3, 4, 5]`"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1542477686200",
+                    "text": "`[1, 2, 3]`"
+                  },
+                  {
+                    "id": "a1542478022617",
+                    "text": "`[1, 2, 3, 4]`"
+                  },
+                  {
+                    "id": "a1542478105067",
+                    "text": "`['Woah!', 2, 3, 4, 5]`"
+                  },
+                  {
+                    "id": "a1542478047872",
+                    "text": "`[1, 2, 3, 4, 5]`"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 553238,
+              "key": "1bafa3b2-9472-4590-809d-3a8263898777",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "1bafa3b2-9472-4590-809d-3a8263898777",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "You just saw that when you changed the items in `first_list`, this also affected `second_list`. Why do you think that happens?",
+                "answers": [
+                  {
+                    "id": "a1519682904059",
+                    "text": "Because `first_list` and `second_list` don't actually refer to two separate lists. It's the same _one_ list, with two different names.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1519682971054",
+                    "text": "It's not possible in Python to have multiple lists in memory at the same time.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1519682999676",
+                    "text": "When you change something with `append`, it changes all lists that are currently in memory.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 784129,
+              "key": "56be25cb-df12-4d93-8f44-85523eb9357a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "For the most part, you won't have to worry too much about the kinds of weird behavior we saw with `first_list` and `second_list`. But it's important to be aware that this is the underlying behavior, so that when you do get a surprising result like this when you're working with a list, you'll know what's happening.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 518451,
+          "key": "5f8fc742-c0fb-48d0-a5e8-8b5f452744f4",
+          "title": "Augmented assignments",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5f8fc742-c0fb-48d0-a5e8-8b5f452744f4",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 784130,
+              "key": "65b3896f-fc68-4a13-8047-563c3f0edd60",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# `+=` Augmented assignments",
+              "instructor_notes": ""
+            },
+            {
+              "id": 784133,
+              "key": "c9391821-fcfe-4786-878c-697afbcce9da",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Updating the value in a variable",
+              "instructor_notes": ""
+            },
+            {
+              "id": 784131,
+              "key": "52adbcd7-a697-4568-9c48-dd66f2bba136",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "52adbcd7-a697-4568-9c48-dd66f2bba136",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Earlier in the lesson, we saw how we can increase the value that a variable refers to.\n\nHere's an example to refresh your memory:\n```python\n>>> n = 1\n>>> n = n + 2\n```\n\nWhat would the new value of `n` be?",
+                "answers": [
+                  {
+                    "id": "a1542484867893",
+                    "text": "`1`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1542484879325",
+                    "text": "`2`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1542484879820",
+                    "text": "`3`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1542484880500",
+                    "text": "`4`",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 784132,
+              "key": "42af8f72-3967-40e0-ab68-16c60c70c317",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "42af8f72-3967-40e0-ab68-16c60c70c317",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "This approach isn't limited to adding things—you can do something similar with the other arithmetic operators.\n\nSee if you can predict what each of these will do:"
+                },
+                "concepts_label": "Code",
+                "answers_label": "New value of n",
+                "concepts": [
+                  {
+                    "text": "```python\n>>> n = 2\n>>> n = n * 3\n>>> n\n```",
+                    "correct_answer": {
+                      "id": "a1542485707402",
+                      "text": "`6`"
+                    }
+                  },
+                  {
+                    "text": "```python\n>>> n = 5\n>>> n = n / 2\n>>> n\n```",
+                    "correct_answer": {
+                      "id": "a1542485837371",
+                      "text": "`2.5`"
+                    }
+                  },
+                  {
+                    "text": "```python\n>>> n = 10\n>>> n = n - 6\n>>> n\n```",
+                    "correct_answer": {
+                      "id": "a1542486269148",
+                      "text": "`4`"
+                    }
+                  },
+                  {
+                    "text": "```python\n>>> s = \"Hello\"\n>>> s = s + \" world!\"\n>>> s\n```",
+                    "correct_answer": {
+                      "id": "a1542487283475",
+                      "text": "`'Hello world!'`"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1542485707402",
+                    "text": "`6`"
+                  },
+                  {
+                    "id": "a1542487374420",
+                    "text": "`\" world!\"`"
+                  },
+                  {
+                    "id": "a1542487283475",
+                    "text": "`'Hello world!'`"
+                  },
+                  {
+                    "id": "a1542485837371",
+                    "text": "`2.5`"
+                  },
+                  {
+                    "id": "a1542486269148",
+                    "text": "`4`"
+                  },
+                  {
+                    "id": "a1542487401901",
+                    "text": "`8`"
+                  },
+                  {
+                    "id": "a1542487543000",
+                    "text": "`0`"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 531251,
+              "key": "625dc834-dfc1-44ba-a4dd-fb7fb2afdee8",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "It's really common in code to _update_ the value of a variable like this!\n\n>**Note:** Notice how we can update the value of a string using the same syntax as when we update a number: `s = s + \" hello!\"`.  Keep in mind that the `+` operator is really doing *concatenation* here, not addition. Python knows which one to do based on the context.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 784134,
+              "key": "32b803fc-105c-483b-b4b5-0114f9453361",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Augmented assignment\n\nIn Python, there's also an alternative, shorter way to update the value of a variable. Instead of this:\n```python\nn = n + 1\n```\n\nWe can simply write:\n```\nn += 1\n```\n\n_(Read this aloud as \"n plus equals 1\".)_\n\nThe effect of `n = n + 1` and `n += 1` is the same. The latter is called an **augmented assignment** statement, because it's an assignment statement but it _augments_ the existing value rather than replacing it.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 784136,
+              "key": "af901a17-4fe2-49cc-8e47-81208002ee15",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "af901a17-4fe2-49cc-8e47-81208002ee15",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Augmented assignment also works with all of the other arithmetic operators."
+                },
+                "concepts_label": "Code",
+                "answers_label": "New value of n",
+                "concepts": [
+                  {
+                    "text": "```python\n>>> n = 2\n>>> n *= 3\n>>> n\n```",
+                    "correct_answer": {
+                      "id": "a1542486859192",
+                      "text": "`6`"
+                    }
+                  },
+                  {
+                    "text": "```python\n>>> n = 5\n>>> n /= 2\n>>> n\n```",
+                    "correct_answer": {
+                      "id": "a1542487092163",
+                      "text": "`2.5`"
+                    }
+                  },
+                  {
+                    "text": "```python\n>>> n = 10\n>>> n -= 6\n>>> n\n```",
+                    "correct_answer": {
+                      "id": "a1542487093025",
+                      "text": "`4`"
+                    }
+                  },
+                  {
+                    "text": "```python\n>>> s = \"Hello\"\n>>> s += \" world!\"\n>>> s\n```",
+                    "correct_answer": {
+                      "id": "a1542487432896",
+                      "text": "`'Hello world!'`"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1542487511646",
+                    "text": "`8`"
+                  },
+                  {
+                    "id": "a1542487092163",
+                    "text": "`2.5`"
+                  },
+                  {
+                    "id": "a1542487432896",
+                    "text": "`'Hello world!'`"
+                  },
+                  {
+                    "id": "a1542487093025",
+                    "text": "`4`"
+                  },
+                  {
+                    "id": "a1542486859192",
+                    "text": "`6`"
+                  },
+                  {
+                    "id": "a1542487495029",
+                    "text": "`'helloworld'`"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 784137,
+              "key": "ec024348-66e2-4353-a512-6d72ebf93adb",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Again, notice that we can update a string here just like before: `s += \" world!\"`. Technically, Python really isn't updating the string itself. What it's doing is creating a new string, and then changing the variable `s` so that it refers to this new string. But either way, this is a handy tool for manipulating strings.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 552757,
+              "key": "1018a4ec-92c6-4b93-bc19-e88cf751298d",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "1018a4ec-92c6-4b93-bc19-e88cf751298d",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "When using augmented assignment with strings, you can also use the multiplication operator, as in:\n\n```python\n>>> dog = \"woof\"\n>>> dog *= 2\n```\nWhat do you think the new value of `dog` will be?",
+                "answers": [
+                  {
+                    "id": "a1519430961243",
+                    "text": "`2`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1519430974689",
+                    "text": "`'woof'`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1519430975777",
+                    "text": "`'woofwoof'`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1519431101155",
+                    "text": "`'woof2'`",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 784135,
+              "key": "e5a13778-4325-445a-ac8d-d82161972a48",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Why use augmented assignment?\n\nUsing an augmented assignment statement is slightly less typing, but there's another reason to consider using it.\n\nConsider this example. What's the value of `balloon` after these statements?\n\n```python\nballoon = 5\nbalioon = balloon + 10\n```\nThe value isn't `15` ... it's `5`, because the second line has a typo. (Look closely!) If we had made the same typo with an augmented assignment, Python could catch it and give us a `NameError`:\n\n```\nballoon = 5\nbalioon += 10   # causes NameError\n```\n\nSo augmented assignment is not only shorter, but also can catch some errors that otherwise might creep into the code.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 518452,
+          "key": "5ba7d05a-c6e2-4579-b082-efb794fa896c",
+          "title": "while loops (1/5)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5ba7d05a-c6e2-4579-b082-efb794fa896c",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 674945,
+              "key": "423918b5-13bf-4fd8-85d6-8f1b5ee53700",
+              "title": "Python: While loops",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Lo82OToBlEs",
+                "china_cdn_id": "Lo82OToBlEs.mp4"
+              }
+            },
+            {
+              "id": 784227,
+              "key": "43059169-fef4-4d17-88fa-3d735b6ea69c",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "43059169-fef4-4d17-88fa-3d735b6ea69c",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Go ahead and try this in your interpreter. Once you execute this code, it should repeatedly ask you for the password, over and over—and only return to the `>>>` prompt once you enter the correct password."
+              ],
+              "positive_feedback": "**Access granted!** 💻",
+              "video_feedback": null,
+              "description": "`while` loops  can be kind of confusing at first, so we'll go through a lot of examples. First, here's one that's similar to the password loop Kelly showed in the video:\n\n```python\n>>> password = ''\n>>> while password != 'fizzbuzz':\n...     password = input('Please enter the password: ')\n```"
+            },
+            {
+              "id": 784140,
+              "key": "490c170d-b2fb-4144-9f76-7751745262cd",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## How `while` loops work\nLike Kelly said in the video, a `while` loop will run *while* some condition is `True`. As soon as the condition is `False`, the loop will stop.\n\nHere's a classic example:\n\n```python\nn = 1\nwhile n < 3:\n    print(n)\n    n += 1\n```\n\nLet's walk through this line-by-line.\n\nBefore the loop, we set `n` to a starting number:\n\n```python\nn = 1\n```\n\nThen we check if `n` is less than `3`:\n\n```python\nwhile n < 3:\n```\n\nThe current value of `n` is `1`, so this means that `n < 3` evaluates to `True`. So the code inside the `while` loop will run.\n\nInside the loop, we first print the value of `n`, and then we increase `n` by 1:\n\n```python\nn += 1\n```\n\nThen, we go back to the top of the loop and do the whole thing over again. And we keep repeating this process until the value of `n` gets large enough that `n < 3` evaluates to `False`—at which point the loop stops running.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 784229,
+              "key": "453f3d44-83e1-4b26-b4d3-39693d04567b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## 🖥 Be the computer \n\nWhen you're trying to figure out how a loop works, one of the best things you can do is to go through the code *as if you were the computer*. Go through one line at a time, and ask: What does each variable refer to on this line? And what does each expression evaluate to?",
+              "instructor_notes": ""
+            },
+            {
+              "id": 784228,
+              "key": "68356d79-3c2e-4966-bc53-6a1d1b9c331c",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "68356d79-3c2e-4966-bc53-6a1d1b9c331c",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Here's a loop that's very similar to the one from above:\n\n```python\nn = 0\nwhile n < 3:\n    print(n)\n    n += 1\n```\n\nThe `while` loop will run repeatedly, and each time it will update the value of `n`. What will `n` be in each of the following cases?"
+                },
+                "concepts_label": "Question",
+                "answers_label": "Answer",
+                "concepts": [
+                  {
+                    "text": "The **first** time it runs, `while n < 3:` will be equivalent to...",
+                    "correct_answer": {
+                      "id": "a1542565350018",
+                      "text": "`while 0 < 3:`"
+                    }
+                  },
+                  {
+                    "text": "The **second** time it runs, `while n < 3:` will be equivalent to...",
+                    "correct_answer": {
+                      "id": "a1542565580165",
+                      "text": "`while 1 < 3:`"
+                    }
+                  },
+                  {
+                    "text": "The **third** time it runs, `while n < 3:` will be equivalent to...",
+                    "correct_answer": {
+                      "id": "a1542565621709",
+                      "text": "`while 2 < 3:`"
+                    }
+                  },
+                  {
+                    "text": "The **fourth** time it runs, `while n < 3:` will be equivalent to...",
+                    "correct_answer": {
+                      "id": "a1542566213919",
+                      "text": "`while 3 < 3:`"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1542565580165",
+                    "text": "`while 1 < 3:`"
+                  },
+                  {
+                    "id": "a1542565621709",
+                    "text": "`while 2 < 3:`"
+                  },
+                  {
+                    "id": "a1542565350018",
+                    "text": "`while 0 < 3:`"
+                  },
+                  {
+                    "id": "a1542566213919",
+                    "text": "`while 3 < 3:`"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 784230,
+              "key": "f2ff6948-a641-4e3b-85ed-6e8cc39ba4a1",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "f2ff6948-a641-4e3b-85ed-6e8cc39ba4a1",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Now, what will each of those evaluate to?"
+                },
+                "concepts_label": "This...",
+                "answers_label": "...evaluates to this:",
+                "concepts": [
+                  {
+                    "text": "`while 0 < 3:`",
+                    "correct_answer": {
+                      "id": "a1542566283690",
+                      "text": "`while True:`"
+                    }
+                  },
+                  {
+                    "text": "`while 1 < 3:`",
+                    "correct_answer": {
+                      "id": "a1542566307136",
+                      "text": "`while True:`"
+                    }
+                  },
+                  {
+                    "text": "`while 2 < 3:`",
+                    "correct_answer": {
+                      "id": "a1542566316839",
+                      "text": "`while True:`"
+                    }
+                  },
+                  {
+                    "text": "`while 3 < 3:`",
+                    "correct_answer": {
+                      "id": "a1542566325009",
+                      "text": "`while False:`"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1542566325009",
+                    "text": "`while False:`"
+                  },
+                  {
+                    "id": "a1542566307136",
+                    "text": "`while True:`"
+                  },
+                  {
+                    "id": "a1542566316839",
+                    "text": "`while True:`"
+                  },
+                  {
+                    "id": "a1542566283690",
+                    "text": "`while True:`"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 784231,
+              "key": "0ed8b0d6-7136-4062-b650-94f6cb03eaf5",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "0ed8b0d6-7136-4062-b650-94f6cb03eaf5",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Still looking at the same loop ...\n\n```python\nn = 0\nwhile n < 3:\n    print(n)\n    n += 1\n```\nHow many times will the code *inside* the loop get run? (How many times will it print out `n` before it stops?)",
+                "answers": [
+                  {
+                    "id": "a1542566465916",
+                    "text": "1 time",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1542566515417",
+                    "text": "2 times",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1542566516042",
+                    "text": "3 times",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1542566516658",
+                    "text": "4 times",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 784148,
+              "key": "acf14d76-e57a-46b3-b55d-72becab3dcfa",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "acf14d76-e57a-46b3-b55d-72becab3dcfa",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Here's another example you can try in your interpreter:\n\n```python\nn = 1\n>>> while n <= 3:\n...     print(n)\n...     n += 1\n```\n\nHow many times will this loop run?\n\n(Remember, `<=` means \"less than or equal to\".)",
+                "answers": [
+                  {
+                    "id": "a1542502678234",
+                    "text": "1 time",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1542502709591",
+                    "text": "2 times",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1542502718135",
+                    "text": "3 times",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 784139,
+              "key": "dcb5b071-a972-4d83-8043-1291525b99e4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Infinite loops\nIt's possible to write code that gets stuck in an **infinite loop**! This happens when the condition you set up can only ever be `True`. For example:\n\n```python\nwhile 2 == 2:\n    # Do something forever and ever without stopping\n```\n\nIf this happens while you're experimenting in the interpreter, you may have to stop the program. You can do this by pressing **Ctrl + C** (or in the absolute worst case, you can quit and re-open your terminal).\n\nWe'll talk more about infinite loops shortly.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 784150,
+              "key": "86f51204-2570-4c3b-a440-e462277f0525",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "86f51204-2570-4c3b-a440-e462277f0525",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Before the loop, create a new variable (we called ours `n`) to keep track of the countdown.",
+                "Write a `while` statement that checks the current value of `n`.",
+                "Inside the loop, `print` the current value of `n`.",
+                "Also inside the loop, update the value of `n`. (If you don't, it'll be an infinite loop!)",
+                "After the loop, add a statement to print `Blastoff!`"
+              ],
+              "positive_feedback": "Woohoo! 🚀",
+              "video_feedback": null,
+              "description": "In the workspace below, see if you can write a `while` loop that prints a countdown, like this:\n\n```text\n10\n9\n8\n7\n6\n5\n4\n3\n2\n1\nBlastoff!\n```"
+            },
+            {
+              "id": 784149,
+              "key": "2ed9ddac-084f-439d-a330-6aa32d47c894",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r613901c518452xGENERICazzatm61",
+              "pool_id": "webterminal",
+              "view_id": "generic-abc3m",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "userCode": "",
+                    "openFiles": [
+                      "/home/workspace/countdown.py"
+                    ],
+                    "showFiles": false,
+                    "allowClose": true,
+                    "showEditor": true,
+                    "allowSubmit": false,
+                    "terminalTitle": "BASH"
+                  },
+                  "kind": "generic"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 784152,
+              "key": "5fa5afc4-1338-409b-a6c6-5b390c89b238",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n----\n<div style=\"background-color: #a4e4f5;\">\n## ⚠️ Spoiler alert!\n\n**Our solution is below.** You'll learn more effectively if you give the exercise a strong effort before comparing your code with ours!\n</div>\n----\n----",
+              "instructor_notes": ""
+            },
+            {
+              "id": 784151,
+              "key": "7135d4db-effb-4840-8bfb-a8fcd4b5ca68",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Solution\n\nHere's our code:\n\n```python\nn = 10\nwhile n > 0:\n    print(n)\n    n -= 1\nprint(\"Blastoff!\")\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 784153,
+              "key": "34a94635-b840-4cc2-bb48-3e5573d50223",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "34a94635-b840-4cc2-bb48-3e5573d50223",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Import the module by adding `import time` at the top of the program.",
+                "Add the line `time.sleep(1)` to make Python pause for 1 second. (See if you can figure out where to add it!)"
+              ],
+              "positive_feedback": "**Great!** ⏰",
+              "video_feedback": null,
+              "description": "Our countdown isn't so great the way it is—the loop runs so fast that it pretty much looks like the numbers just appear on the screen at the same time. If we wanted to make it more like a real countdown, we would need to have Python pause between printing each number.\n\nWe can do that by using a module called the `time` module. To give it a try, go back up to the workspace and do the following:"
+            },
+            {
+              "id": 784155,
+              "key": "4c0a5db9-e109-43ab-8a45-cb8578259603",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n----\n<div style=\"background-color: #a4e4f5;\">\n## ⚠️ Spoiler alert!\n\n**Our solution is below.** You'll learn more effectively if you give the exercise a strong effort before comparing your code with ours!\n</div>\n----\n----",
+              "instructor_notes": ""
+            },
+            {
+              "id": 784154,
+              "key": "afbb4bc5-3589-4677-8201-d99a809e44d5",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Solution:\n\nHere's where we added those new bits of code:\n\n```python\nn = 10\nwhile n > 0:\n    print(n)\n    time.sleep(1)\n    n -= 1\nprint(\"Blastoff!\")\n```",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 784232,
+          "key": "ac775416-7188-40fc-97ff-40d82d5ac439",
+          "title": "while loops (2/5)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "ac775416-7188-40fc-97ff-40d82d5ac439",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 784233,
+              "key": "e487ac5d-e3e2-4ab3-a60c-8a060b42de66",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# `while` loops (2/5)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 784234,
+              "key": "516a3e4a-a06f-4464-83ee-55d4b4ff3968",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "516a3e4a-a06f-4464-83ee-55d4b4ff3968",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Here's another loop—give it a try in your own code editor and terminal:\n\n```python\ns = \"Tenochtitlan\"\nindex = 0 \nwhile index < len(s):\n    index += 1 \n    print(s[:index])\n```\n\nBelow are some bits of code from this loop. Can you match them with what they do?"
+                },
+                "concepts_label": "Code",
+                "answers_label": "What does it do?",
+                "concepts": [
+                  {
+                    "text": "Set the starting index number.",
+                    "correct_answer": {
+                      "id": "a1542568034182",
+                      "text": "`index = 0`"
+                    }
+                  },
+                  {
+                    "text": "Check if the current index has reached the end of the string.",
+                    "correct_answer": {
+                      "id": "a1542568138658",
+                      "text": "`index < len(s)`"
+                    }
+                  },
+                  {
+                    "text": "Update the current index.",
+                    "correct_answer": {
+                      "id": "a1542568193842",
+                      "text": "`index += 1`"
+                    }
+                  },
+                  {
+                    "text": "Get a slice of the string from the beginning up to the current index position.",
+                    "correct_answer": {
+                      "id": "a1542568238952",
+                      "text": "`s[:index]`"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1542568034182",
+                    "text": "`index = 0`"
+                  },
+                  {
+                    "id": "a1542568193842",
+                    "text": "`index += 1`"
+                  },
+                  {
+                    "id": "a1542568138658",
+                    "text": "`index < len(s)`"
+                  },
+                  {
+                    "id": "a1542568238952",
+                    "text": "`s[:index]`"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 784236,
+              "key": "a83e19dd-95dc-413e-8749-91543b852066",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Abracadabra (using `while`)\nEarlier in this lesson, you wrote a function that printed a word triangle by progressively printing less and less of the string, like this:\n\n```text\nabracadabra\nabracadabr\nabracadab\nabracada\nabracad\nabraca\nabrac\nabra\nabr\nab\na\n```\n\n(Notice that this is essentially the opposite of the loop we looked at above.)\n\nBefore, you did this with a `for` loop. Now, see if you can do it with a `while` loop!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 784235,
+              "key": "ee2a4be4-e6d7-4671-8ef6-e85a6200a9cb",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r613901c784232xGENERIC0qpu6afa",
+              "pool_id": "webterminal",
+              "view_id": "generic-xfr4g",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "userCode": "",
+                    "openFiles": [],
+                    "showFiles": false,
+                    "allowClose": false,
+                    "showEditor": true,
+                    "allowSubmit": false,
+                    "terminalTitle": "BASH"
+                  },
+                  "kind": "generic"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 784238,
+              "key": "27c027d8-1c1b-48c6-a170-e78e3de4b68e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n----\n<div style=\"background-color: #a4e4f5;\">\n## ⚠️ Spoiler alert!\n\n**Our solution is below.** You'll learn more effectively if you give the exercise a strong effort before comparing your code with ours!\n</div>\n----\n----",
+              "instructor_notes": ""
+            },
+            {
+              "id": 784237,
+              "key": "538eac4b-b5e9-420b-8812-dc3755c9bc2a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Solution\n\n```python\ns = \"abracadabra\"\nindex = len(s)\nwhile index > 0:\n    print(s[:index])\n    index -= 1\n```",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 784160,
+          "key": "5951d350-13fb-454e-a861-623864b4215e",
+          "title": "while loops (3/5)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5951d350-13fb-454e-a861-623864b4215e",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 784161,
+              "key": "085c0b8d-b834-4888-a19c-197e127f703f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# `while` loops (3/5)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 784163,
+              "key": "c7c2eb46-cdd3-4d79-a4ef-1eedf3b95054",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Loops can be confusing to begin with, and on top of that we now have *two* different kinds of loops to consider—`for` loops and `while` loops!\n\nAs you get more experienced, you'll start to see cases in which one kind of loop is much easier than the other for solving a particular problem. But the truth is that you can often solve a given problem with either kind of loop.\n\nOn this page, we'll compare and contrast the two kinds of loops, so that the differences (and similarities) are a little clearer.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 784162,
+              "key": "580479d4-174d-4a9f-aac1-fb94a91ba487",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "580479d4-174d-4a9f-aac1-fb94a91ba487",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Just to refresh your memory, here are some `for` loops that are similar to some you worked with earlier in this lesson.\n\nWhat would these print out?"
+                },
+                "concepts_label": "Code",
+                "answers_label": "Result",
+                "concepts": [
+                  {
+                    "text": "```text\n>>> word = \"cat\"\n>>> for index in range(len(word)):\n...     print(index)\n```",
+                    "correct_answer": {
+                      "id": "a1542508821056",
+                      "text": "0  \n1  \n2  "
+                    }
+                  },
+                  {
+                    "text": "```text\n>>> word = \"cat\"\n>>> for index in range(len(word)):\n...     print(word[index])\n```",
+                    "correct_answer": {
+                      "id": "a1542508856551",
+                      "text": "c  \na    \nt "
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1542508821056",
+                    "text": "0  \n1  \n2  "
+                  },
+                  {
+                    "id": "a1542508856551",
+                    "text": "c  \na    \nt "
+                  }
+                ]
+              }
+            },
+            {
+              "id": 784164,
+              "key": "b58affec-3020-486f-a2a4-cbaa55627702",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## `for` loops come with their own variable\n\nOne of the key things that makes a `for` loop different is that it always comes with its own variable. For example, if we look again at this code:\n\n```python\n>>> word = \"cat\"\n>>> for index in range(len(word)):\n...     print(index)\n```\n\nWe can see that the `for` loop has a variable that we called `index`. We could have called the variable something else, but we had to have *some* kind of variable there—the `for` loop requires it.\n\n## `for` loops automatically loop over a sequence\n\nOK, but *why* does a `for` loop always have to have that variable? The reason is because a `for` loop always loops over some sequence of items (such as a list). There's no visible assignment statement (like `index = 0`), but the `for` loop needs a variable so it can assign values to it each time the loop runs (in this case, the values are the numbers that we get from `range(len(word))`).\n\n## `while` loops don't necessarily do either of those things\nIn contrast, a `while` loop does not necessarily loop over a sequence, and it doesn't automatically come with a variable. If we want to do those things, we have to add lines to set them up.\n\nFor example, here's a `while` loop that does the same thing as the `for` loop from above:\n\n```\n>>> index = 0 # Notice this line\n>>> word = \"cat\"\n>>> while index < len(word): # And this one\n...     print(index)\n...     index += 1 # And this one!\n```\n\nNotice that if we want to have a variable for the loop, we must create one ourselves with the line `index = 0`. And then, if we want to increase this index (in order to \"loop over\" the word) we have to add the line `index += 1`.\n\nAnd finally, notice that a `for` loop stops automatically when it gets to the end of a sequence (like the end of a list). But a `while` loop only stops when its condition is met. In the above example, the condition is checking whether the current `index` has reached the end of the string: `index < len(word)`.\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 784214,
+              "key": "3da6aa36-dbe8-440a-bea3-c9651b471343",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "3da6aa36-dbe8-440a-bea3-c9651b471343",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Create a variable to keep track of the current `index`, starting at `0`.",
+                "Write a `while` statement that includes a condition to stop the loop once the `index` is at the end of the string.",
+                "Inside the loop, be sure to increment (increase) the `index`—otherwise you will end up in an infinite loop!"
+              ],
+              "positive_feedback": "**Nice work!**",
+              "video_feedback": null,
+              "description": "In the workspace below, you'll find the `for` loop that prints out:\n\n```text\nc\na\nt\n```\n\nYour task is to replace it with a `while` loop that does the same thing."
+            },
+            {
+              "id": 784213,
+              "key": "4a853ae7-7edd-4146-81ec-8e711fed049e",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r613901c784160xGENERICl42ijbun",
+              "pool_id": "webterminal",
+              "view_id": "generic-4b6o3",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "userCode": "",
+                    "openFiles": [
+                      "/home/workspace/loops.py"
+                    ],
+                    "showFiles": false,
+                    "allowClose": true,
+                    "showEditor": true,
+                    "allowSubmit": false,
+                    "terminalTitle": "BASH"
+                  },
+                  "kind": "generic"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 784216,
+              "key": "8ede3a7d-e3a0-455e-80e4-bbc8cf488716",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n----\n<div style=\"background-color: #a4e4f5;\">\n## ⚠️ Spoiler alert!\n\n**Our solution is below.** You'll learn more effectively if you give the exercise a strong effort before comparing your code with ours!\n</div>\n----\n----",
+              "instructor_notes": ""
+            },
+            {
+              "id": 784215,
+              "key": "1d010633-ea7d-4d61-8a71-51a2ba67721c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Solution\n\n```python\nindex = 0\nwhile index < len(word):\n    print(word[index])\n    index += 1\n```",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 784218,
+          "key": "2c95110e-22a2-4407-80ce-e16260158a49",
+          "title": "while loops (4/5)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "2c95110e-22a2-4407-80ce-e16260158a49",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 784219,
+              "key": "2aac0393-f445-47e4-a222-7762372a84b5",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# `while` loops (4/5)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 784221,
+              "key": "08ca45ca-676e-4035-9424-47c116ef9892",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Earlier in the lesson, you wrote a `count_character` function that takes a string and a target character, and counts the number of times the character occurs in the string. For example:\n\n```python\n>>> count_character(\"bonobos\", \"o\")\n3\n```\n\nYou'll find the original `count_character` function in the workspace below. For practice, see if you can modify the function to use a `while` loop instead of a `for` loop.\n\n>**Note:** If you forget to update the `index` variable inside the loop, the loop will run forever and not return anything—in which case the terminal will just seem to be stuck, doing nothing! Remember that you can stop the program by pressing **Ctrl + C**.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 784220,
+              "key": "89cb2dde-4dfc-46ac-86ef-11cc7a15ca9b",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r613901c784218xGENERIC81apani6",
+              "pool_id": "webterminal",
+              "view_id": "generic-jvf8c",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "userCode": "",
+                    "openFiles": [
+                      "/home/workspace/looping.py"
+                    ],
+                    "showFiles": false,
+                    "allowClose": true,
+                    "showEditor": true,
+                    "allowSubmit": false,
+                    "terminalTitle": "BASH"
+                  },
+                  "kind": "generic"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 784223,
+              "key": "546a8b48-a86f-4441-8e3a-8a4f54fa7806",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n----\n<div style=\"background-color: #a4e4f5;\">\n## ⚠️ Spoiler alert!\n\n**Our solution is below.** You'll learn more effectively if you give the exercise a strong effort before comparing your code with ours!\n</div>\n----\n----",
+              "instructor_notes": ""
+            },
+            {
+              "id": 784222,
+              "key": "cc9bc014-9db6-4fef-a490-78ce24019520",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Solution\n\n```python\ndef count_character(string, target):\n    index = 0\n    total = 0\n    while index < len(string):\n        if string[index] == target:\n            total += 1\n        index += 1\n    return total\n```",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 784141,
+          "key": "6c13a4a8-9dbb-4efc-bd9d-356f3cf9cdd1",
+          "title": "while loops (5/5)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "6c13a4a8-9dbb-4efc-bd9d-356f3cf9cdd1",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 784225,
+              "key": "106534c9-d89f-4329-8843-f2a6912780f6",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# `while` loops (5/5)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 784239,
+              "key": "9401c9fa-286c-4ad2-b003-522d9a3fcf82",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "9401c9fa-286c-4ad2-b003-522d9a3fcf82",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Have a look at this loop (but don't run it yet):\n\n```python\nindex = 0\ns = \"Mind the gap!\"\nwhile index < len(s) and s[index] != \" \":\n    index += 1\nprint(s[:index])\n```\n\nWithout running the loop, see if you can identify what each part does.\n\n(This is good mental practice in reading code!)"
+                },
+                "concepts_label": "Description",
+                "answers_label": "Code",
+                "concepts": [
+                  {
+                    "text": "Check if the index has reached the end of the string.",
+                    "correct_answer": {
+                      "id": "a1542570093936",
+                      "text": "```python\nindex < len(s)\n```"
+                    }
+                  },
+                  {
+                    "text": "Check that the character located at the current index position is *not* a space.",
+                    "correct_answer": {
+                      "id": "a1542570199803",
+                      "text": "```python\ns[index] != \" \"\n```"
+                    }
+                  },
+                  {
+                    "text": "Advance to the next index position.",
+                    "correct_answer": {
+                      "id": "a1542570266185",
+                      "text": "```python\nindex += 1\n```"
+                    }
+                  },
+                  {
+                    "text": "Get the characters in the string up until the current index position.",
+                    "correct_answer": {
+                      "id": "a1542570293002",
+                      "text": "```python\nprint(s[:index])\n```"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1542570093936",
+                    "text": "```python\nindex < len(s)\n```"
+                  },
+                  {
+                    "id": "a1542570266185",
+                    "text": "```python\nindex += 1\n```"
+                  },
+                  {
+                    "id": "a1542570199803",
+                    "text": "```python\ns[index] != \" \"\n```"
+                  },
+                  {
+                    "id": "a1542570293002",
+                    "text": "```python\nprint(s[:index])\n```"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 784240,
+              "key": "26c8c2e7-e90c-4178-b9bf-156c10465350",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "26c8c2e7-e90c-4178-b9bf-156c10465350",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Now, can you predict what the loop will print?\n\n(Go ahead and try running it too, if you like!)",
+                "answers": [
+                  {
+                    "id": "a1542570375366",
+                    "text": "`'gap!'`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1542570453292",
+                    "text": "`'the gap!'`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1542570463830",
+                    "text": "`'Mind'`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1542570477925",
+                    "text": "`' '`",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 784224,
+              "key": "e1dc824c-8b51-4ed1-b769-f3d9ee0b55be",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "e1dc824c-8b51-4ed1-b769-f3d9ee0b55be",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Before the loop, create a variable to keep track of the current index position.",
+                "The `while` statement will need to check if the current index position is less than the length of the string.",
+                "...and it will *also* need to check to make sure that the character at the current position is *not* a dot.",
+                "Finally, the function should return a slice, from the start of the string up to the index position of the first dot."
+              ],
+              "positive_feedback": "**Nice. Work.** 😁",
+              "video_feedback": null,
+              "description": "Write a function called `until_dot` that takes a string argument and returns the portion of that string before the first *dot* character `.` (a.k.a., a *period* or *full-stop*). For example:\n\n```python\n>>> until_dot(\"This is a sentence. This is another.\")\n'This is a sentence'\n>>> until_dot(\"192.168.200.2\")\n'192'\n```\n\n If there are no dots in the string, return the whole string:\n```python\n>>> until_dot(\"No dots here\")\n'No dots here'\n```\n\n(This is *very* similar to the example code we just went over!)"
+            },
+            {
+              "id": 784226,
+              "key": "37cc402d-98b8-4c0e-9a7c-9708d6bde2d2",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r613901c784141xGENERICh4gx47xn",
+              "pool_id": "webterminal",
+              "view_id": "generic-w44b1",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "userCode": "",
+                    "openFiles": [
+                      "/home/workspace/until.py"
+                    ],
+                    "showFiles": false,
+                    "allowClose": true,
+                    "showEditor": true,
+                    "allowSubmit": false,
+                    "terminalTitle": "BASH"
+                  },
+                  "kind": "generic"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 784144,
+              "key": "995e228b-0e3b-4655-a0a4-5a38b4d84b7a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n----\n<div style=\"background-color: #a4e4f5;\">\n## ⚠️ Spoiler alert!\n\n**Our solution is below.** You'll learn more effectively if you give the exercise a strong effort before comparing your code with ours!\n</div>\n----\n----",
+              "instructor_notes": ""
+            },
+            {
+              "id": 784145,
+              "key": "7fa63b0b-fee7-4798-aed9-a442b7811e00",
+              "title": "Python: until dot solution",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "WVL_XCVlJ9Q",
+                "china_cdn_id": "WVL_XCVlJ9Q.mp4"
+              }
+            },
+            {
+              "id": 784147,
+              "key": "91ae25b5-668d-4d65-b8a7-7890424c3365",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Until dot, solution\nHere's one way to write the `until_dot` function:\n```python\ndef until_dot(s):\n    index = 0\n    while index < len(s) and s[index] != '.':\n        # No dots yet, keep going.\n        index += 1\n    # We either found a dot or ran out of string.\n    return s[:index]\n```\n\nAnd here's another, using `for` instead of `while`:\n\n```python\ndef until_dot(s):\n    for index in range(len(s)):\n        if s[index] == '.':\n            # A dot! Return everything up to here.\n            return s[:index]\n    # We ran out of string without seeing any dots.\n    # Return the whole string.\n    return s\n```\n\nBoth of these are examples of a technique called **linear search**. In a linear search, we start at the beginning of a sequence and look at each item in the sequence until we find one that matches what we're looking for. When we either find it, or run out of items, we stop.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 518453,
+          "key": "fffaa0cf-62b9-4e9a-a63d-ec3630bf8b76",
+          "title": "Infinite loops and breaking out",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "fffaa0cf-62b9-4e9a-a63d-ec3630bf8b76",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 674950,
+              "key": "a17316b3-e248-4039-ad94-b9a3c4a5f479",
+              "title": "Python: Breaking out of infinite loops",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "pEcjVfDG-Jw",
+                "china_cdn_id": "pEcjVfDG-Jw.mp4"
+              }
+            },
+            {
+              "id": 542443,
+              "key": "abd27315-438b-42b4-8455-d3118f87fbc9",
+              "title": "Experiment with infinite loops",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "abd27315-438b-42b4-8455-d3118f87fbc9",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Write an infinite loop in Python on your own computer.",
+                "Run it!",
+                "Press Ctrl-C to exit the loop."
+              ],
+              "positive_feedback": "Now when your programs run away with themselves, you can stop them!",
+              "video_feedback": null,
+              "description": "Try experimenting with infinite loops on your own computer, either in the interactive interpreter, or in a program you write in your text editor."
+            },
+            {
+              "id": 552411,
+              "key": "4952d151-91a2-452f-b066-2919042e46eb",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### `break` on through\n\nThere's another way to exit from an infinite loop. Inside a `while` or `for` loop, you can use the `break` statement to immediately exit the loop —\n\n```python\ndef no_repeating():\n    words = []\n    while True:\n        word = input(\"Tell me a word: \")\n        if word in words:\n            print(\"You told me that word already!\")\n            break\n        words.append(word)\n    return words\n```\nWhen Python runs the `break` statement, it skips down to the line after the end of the `while` loop. Here, that's the `return` statement at the end of the function.\n\nA `break` statement will always skip to the end of the _innermost_ `while` or `for` loop. If you have a loop inside another loop, it will only exit the inside loop.\n\nHere's a piece of code that uses `break` **incorrectly**. This code is intended to find values of `x` and `y` that, when multiplied together, give the number 512. \n\n```\ndef find_512():\n    for x in range(100):\n        for y in range(100):\n            if x * y == 512:\n                 break   # does not do what we want!\n    return f\"{x} * {y} == 512\"\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 552418,
+              "key": "0fe69f05-c56d-41f6-988f-6799b52424f5",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "0fe69f05-c56d-41f6-988f-6799b52424f5",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Run the buggy `find_512` function on your computer. What does it return?",
+                "answers": [
+                  {
+                    "id": "a1519334375082",
+                    "text": "`'16 * 32 == 512'`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1519334416134",
+                    "text": "`'32 * 16 == 512'`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1519334421838",
+                    "text": "`'99 * 99 == 512'`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1519334428002",
+                    "text": "None of the above: it's buggy, so it just crashes.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 552422,
+              "key": "0172313f-c672-4e8d-9dac-448f107859c5",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "The answer this function returns is not correct, because the `break` statement only exits the inner loop. This means that after finding the correct answer, it still keeps running until both `range(100)` expresions run out!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 552419,
+              "key": "f7e77901-077a-443c-a043-cf3c23768ccb",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "f7e77901-077a-443c-a043-cf3c23768ccb",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of these approaches do you think would work to fix the bug?",
+                "answers": [
+                  {
+                    "id": "a1519334766589",
+                    "text": "Don't use `break` at all here. Just move the `return` statement to where the `break` is now.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1519334861500",
+                    "text": "Replace `break` with `break break`.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1519334939240",
+                    "text": "Look for a number different from `512`.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 518454,
+          "key": "5aad3752-5ddf-4051-a265-7aa1cb112f23",
+          "title": "Finding substrings (1/4)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5aad3752-5ddf-4051-a265-7aa1cb112f23",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 674956,
+              "key": "0a2d6d3d-3701-4b86-b762-8836a7194452",
+              "title": "Python: Finding substrings",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Oui-JrPMxUk",
+                "china_cdn_id": "Oui-JrPMxUk.mp4"
+              }
+            },
+            {
+              "id": 562068,
+              "key": "96d1c9ad-b6d3-4533-a642-2b6e3690d845",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Locating a substring\n\nWhen we search a string for substrings, we'll use index numbers to describe where the substring is found. For instance, if we search for `'ook'` in `'cookbook'`, we'll say that it's found at positions `1` and `5`. This means that if we take a **slice** of length 3 starting from one of these positions, we'll see that substring:\n\n```python\n>>> location = 5\n>>> size = 3\n>>> word[location : location+size]\nook\n```\n\n_(Test this for yourself! Also try it with `location = 1`.)_",
+              "instructor_notes": ""
+            },
+            {
+              "id": 784878,
+              "key": "c4baf3cb-d360-451b-a66b-bd60e2db5d1e",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "c4baf3cb-d360-451b-a66b-bd60e2db5d1e",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Suppose we define the follow variable:\n\n```python\n>>> word = \"fascinating\"\n```\n\nCan you predict the results for each of these bits of code?"
+                },
+                "concepts_label": "Code",
+                "answers_label": "Result",
+                "concepts": [
+                  {
+                    "text": "```python\n>>> location = 4 \n>>> size = 2\n>>> word[location : location + size]\n```",
+                    "correct_answer": {
+                      "id": "a1542809252334",
+                      "text": "`'in'`"
+                    }
+                  },
+                  {
+                    "text": "```python\n>>> location = 8 \n>>> size = 2\n>>> word[location : location + size]\n```",
+                    "correct_answer": {
+                      "id": "a1542813450370",
+                      "text": "`'in'`"
+                    }
+                  },
+                  {
+                    "text": "```python\n>>> location = 1\n>>> size = 3\n>>> word[location : location + size]\n```",
+                    "correct_answer": {
+                      "id": "a1542813485455",
+                      "text": "`'asc'`"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1542813485455",
+                    "text": "`'asc'`"
+                  },
+                  {
+                    "id": "a1542813539998",
+                    "text": "`'na'`"
+                  },
+                  {
+                    "id": "a1542813450370",
+                    "text": "`'in'`"
+                  },
+                  {
+                    "id": "a1542813534004",
+                    "text": "`'scin'`"
+                  },
+                  {
+                    "id": "a1542809252334",
+                    "text": "`'in'`"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 561791,
+              "key": "13f95b2b-81d5-4cc3-a676-137e80f77083",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "13f95b2b-81d5-4cc3-a676-137e80f77083",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "What **type** of value would be used to answer these questions?"
+                },
+                "concepts_label": "Question",
+                "answers_label": "Type",
+                "concepts": [
+                  {
+                    "text": "Is `'ook'` a substring of `'cookbook'`?",
+                    "correct_answer": {
+                      "id": "a1520887987127",
+                      "text": "boolean"
+                    }
+                  },
+                  {
+                    "text": "How many times does `'ook'` occur in `\"cookbook\"`?",
+                    "correct_answer": {
+                      "id": "a1520888016830",
+                      "text": "integer"
+                    }
+                  },
+                  {
+                    "text": "At what locations in the string `'cookbook'` does the substring `'ook'` occur?",
+                    "correct_answer": {
+                      "id": "a1520888030462",
+                      "text": "list of integers"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1520887987127",
+                    "text": "boolean"
+                  },
+                  {
+                    "id": "a1520888144298",
+                    "text": "string"
+                  },
+                  {
+                    "id": "a1520888016830",
+                    "text": "integer"
+                  },
+                  {
+                    "id": "a1520888030462",
+                    "text": "list of integers"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 562075,
+          "key": "99f59c38-efa2-4d4b-9f76-7a0668292852",
+          "title": "Finding substrings (2/4)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "99f59c38-efa2-4d4b-9f76-7a0668292852",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 565051,
+              "key": "61c6b72d-6f1c-42ea-adc5-34b6be243b28",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Writing an `is_substring` function\n\nOur first goal will be to write a function, `is_substring`, that simply checks whether one string is a substring of another. If the first string *is* a substring of the other, it should return `True`; otherwise, it should return `False`. Like this:\n\n```python\n>>> is_substring('oo', 'book')\nTrue\n>>> is_substring('pony', 'abracadabra')\nFalse\n>>> is_substring('dab', 'abracadabra')\nTrue\n```\nThis is very similar to the `starts_with` function we wrote earlier, except that it will check the whole string—not just the beginning of it.\n\nFor the rest of this page, we'll walk you through some of the ideas you'll need to build this function.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 784986,
+              "key": "82042050-b47b-4341-abf7-6fae127b0a34",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## If it's a substring, it's a slice\n\nOK, so how do we check if one string is a substring of another? Consider this:\n\n>If `'ff'` is a substring of `'waffles'`, then there's some slice we can take from `'waffles'` that will give us `'ff'`.\n\nWe will need to go through each position in the string looking for that slice...",
+              "instructor_notes": ""
+            },
+            {
+              "id": 784987,
+              "key": "37554e5e-5135-42ce-b4da-6c7dd6a7cd40",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "37554e5e-5135-42ce-b4da-6c7dd6a7cd40",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Suppose that we first define the string we want to search:\n```python\n>>> string = 'waffles'\n```\nWe can go through each position in this string, in order, looking for the slice that results in `'ff'`. Give it a try for yourself:"
+                },
+                "concepts_label": "Code",
+                "answers_label": "Result",
+                "concepts": [
+                  {
+                    "text": "```python\n>>> string[0:2]\n```",
+                    "correct_answer": {
+                      "id": "a1542832720967",
+                      "text": "`'wa'`"
+                    }
+                  },
+                  {
+                    "text": "```python\n>>> string[1:3]\n```",
+                    "correct_answer": {
+                      "id": "a1542832867841",
+                      "text": "`'af'`"
+                    }
+                  },
+                  {
+                    "text": "```python\n>>> string[2:4]\n```",
+                    "correct_answer": {
+                      "id": "a1542832873705",
+                      "text": "`'ff'`"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1542832720967",
+                    "text": "`'wa'`"
+                  },
+                  {
+                    "id": "a1542834272548",
+                    "text": "`le`"
+                  },
+                  {
+                    "id": "a1542834267859",
+                    "text": "`fl`"
+                  },
+                  {
+                    "id": "a1542832873705",
+                    "text": "`'ff'`"
+                  },
+                  {
+                    "id": "a1542832867841",
+                    "text": "`'af'`"
+                  },
+                  {
+                    "id": "a1542834276396",
+                    "text": "`es`"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 784988,
+              "key": "b03b1821-7fee-4d5a-b675-46732612672e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Found it! This is the slice we want:\n```python\n>>> string[2:4]\n'ff'\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 784989,
+              "key": "86ff5b08-866b-456e-9715-687c96d452c1",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "86ff5b08-866b-456e-9715-687c96d452c1",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Our function is supposed to return `True` or `False` depending on whether the substring can be found in the other string.\n\nWe can do that with expressions like those found below...\n\nAgain assume that we start with this variable:\n\n```python\nstring = 'waffles'\n```"
+                },
+                "concepts_label": "Code",
+                "answers_label": "Result",
+                "concepts": [
+                  {
+                    "text": "```python\n>>> string[0:2] == 'ff'\n```",
+                    "correct_answer": {
+                      "id": "a1542833090118",
+                      "text": "`False`"
+                    }
+                  },
+                  {
+                    "text": "```python\n>>> string[1:3] == 'ff'\n```",
+                    "correct_answer": {
+                      "id": "a1542833248614",
+                      "text": "`False`"
+                    }
+                  },
+                  {
+                    "text": "```python\n>>> string[2:4] == 'ff'\n```",
+                    "correct_answer": {
+                      "id": "a1542833261956",
+                      "text": "`True`"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1542833090118",
+                    "text": "`False`"
+                  },
+                  {
+                    "id": "a1542833248614",
+                    "text": "`False`"
+                  },
+                  {
+                    "id": "a1542833261956",
+                    "text": "`True`"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 784990,
+              "key": "65aaeff5-c406-465d-ab58-3ec8e0f6958e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Generalizing it\n\nNow, the code above works fine, but it only works for *this specific substring*, `'ff'`. If we are going to make a function that checks for *any* substring we give it, then we can't use values like `'ff'` and `2` and `0` directly in the code.\n\nLet's see if we can replace those specific values with some variables. That way, we can set their values when we call the function.\n\nOne specific value we can replace is `'ff'`. We can replace it with a variable, like this:\n\n```python\nsubstring = 'ff'\nstring[2:4] == substring\n```\n\nWhen we make this into a function, we can use `substring` as one of the function's parameters—meaning we'll assign a string to it when the function is called.\n\nBut what about the numbers in `[0:2]`, `[1:3]` and `[2:4]`? What can we replace those with?\n\nFirst, notice that the second number follows a pattern. These expressions we just looked at...\n\n```python\n>>> string[0 : 2]\n'wa'\n>>> string[1 : 3]\n'af'\n>>> string[2 : 4]\n'ff'\n```\n\nWill do exactly the same thing as these:\n\n```python\n>>> string[0 : 0 + 2]\n'wa'\n>>> string[1 : 1 + 2]\n'af'\n>>> string[2 : 2 + 2]\n'ff'\n```\n\nNotice how the end of the slice is always **two characters** later than the start of the slice. That number, `2`, is the length of the substring we're checking for: `'ff'`. So instead of having the `2` hardcoded in there, we can replace it with `'len(substring)'`!\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 784991,
+              "key": "e5089032-93d5-4b3e-9a36-4e2128b2a98a",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "e5089032-93d5-4b3e-9a36-4e2128b2a98a",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Let's make sure that idea is clear.\n\nSuppose you first define these variables:\n```python\n>>> string = 'waffles'\n>>> substring = 'ff'\n```\nWhat result do you get from each of the following?"
+                },
+                "concepts_label": "code",
+                "answers_label": "result",
+                "concepts": [
+                  {
+                    "text": "```python\n>>> string[2 : 4]\n```",
+                    "correct_answer": {
+                      "id": "a1542834796132",
+                      "text": "`'ff'`"
+                    }
+                  },
+                  {
+                    "text": "```python\n>>> string[2 : 2 + 2]\n```",
+                    "correct_answer": {
+                      "id": "a1542834850826",
+                      "text": "`'ff'`"
+                    }
+                  },
+                  {
+                    "text": "```python\n>>> string[2 : 2 + len(substring)]\n```",
+                    "correct_answer": {
+                      "id": "a1542834863962",
+                      "text": "`'ff'`"
+                    }
+                  },
+                  {
+                    "text": "```python\n>>> string[2 : 2 + len(substring)] == substring\n```",
+                    "correct_answer": {
+                      "id": "a1542835001084",
+                      "text": "`True`"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1542834850826",
+                    "text": "`'ff'`"
+                  },
+                  {
+                    "id": "a1542835001084",
+                    "text": "`True`"
+                  },
+                  {
+                    "id": "a1542834863962",
+                    "text": "`'ff'`"
+                  },
+                  {
+                    "id": "a1542834796132",
+                    "text": "`'ff'`"
+                  },
+                  {
+                    "id": "a1542835026027",
+                    "text": "`False`"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 784992,
+              "key": "9b37751c-3ff2-4dd4-a807-16ec82f64937",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## And now, put it inside a loop\nOK, so our function will go through each position in the string, and check if the slice starting at that position is equal to the substring:\n\n```python\n>>> string = 'waffles'\n>>> substring = 'ff'\n>>> string[0 : 0 + len(substring)] == substring\nFalse\n>>> string[1 : 1 + len(substring)] == substring\nFalse\n>>> string[2 : 2 + len(substring)] == substring\nTrue\n```\n\nNotice how we now have three lines of code that are *identical* except for some numbers—and the numbers are counting up. This kind of pattern should make you think about using a **loop**. In other words, we want to loop over each of the positions in the string, and look at the slice starting at that position.\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 784993,
+              "key": "ac1f8ed8-2f8b-46e4-a75e-49d925421754",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "ac1f8ed8-2f8b-46e4-a75e-49d925421754",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Just to refresh your memory, which of these will work if we want to loop over the index positions of a string?"
+                },
+                "concepts_label": "Loop",
+                "answers_label": "Loops over the index numbers?",
+                "concepts": [
+                  {
+                    "text": "```python\nindex = 0\nwhile index < len(string):\n    print(index)\n    index += 1\n```",
+                    "correct_answer": {
+                      "id": "a1542835113562",
+                      "text": "Yes"
+                    }
+                  },
+                  {
+                    "text": "```python\nindex = 0\nwhile index == len(string):\n    print(index)\n    index += 1\n```",
+                    "correct_answer": {
+                      "id": "a1542835166478",
+                      "text": "No"
+                    }
+                  },
+                  {
+                    "text": "```python\nfor index in range(len(string)):\n    print index\n```",
+                    "correct_answer": {
+                      "id": "a1542835182104",
+                      "text": "Yes"
+                    }
+                  },
+                  {
+                    "text": "```python\nfor index in len(string):\n    print index\n```",
+                    "correct_answer": {
+                      "id": "a1542835194238",
+                      "text": "No"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1542835182104",
+                    "text": "Yes"
+                  },
+                  {
+                    "id": "a1542835194238",
+                    "text": "No"
+                  },
+                  {
+                    "id": "a1542835113562",
+                    "text": "Yes"
+                  },
+                  {
+                    "id": "a1542835166478",
+                    "text": "No"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 784995,
+              "key": "dc156ced-08dd-4593-bb8a-a08e046146da",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "dc156ced-08dd-4593-bb8a-a08e046146da",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Define the function so it accepts two parameters. We called ours `substring` and `string`.",
+                "Loop over the index positions in the string.",
+                "At each position, check if the current slice is equal to the target substring. If it is, return `True`.",
+                "If the loop finishes and the substring hasn't been found, return `False`"
+              ],
+              "positive_feedback": "**Nice work!**",
+              "video_feedback": null,
+              "description": "OK, time to put it all together! In the workspace below, write a function, `is_substring`, that takes two strings and checks if the first is a substring of the second."
+            },
+            {
+              "id": 784994,
+              "key": "60d00214-dc68-4032-8da6-f85700057d84",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r613901c562075xGENERICovh70dhj",
+              "pool_id": "webterminal",
+              "view_id": "generic-kd8kf",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "userCode": "",
+                    "openFiles": [
+                      "/home/workspace/substrings.py"
+                    ],
+                    "showFiles": false,
+                    "allowClose": true,
+                    "showEditor": true,
+                    "allowSubmit": false,
+                    "terminalTitle": "BASH"
+                  },
+                  "kind": "generic"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 670943,
+              "key": "2f36482a-e979-42ab-9ca3-0198f68fb40b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n----\n<div style=\"background-color: #a4e4f5;\">\n## ⚠️ Spoiler alert!\n\n**Our solution is below.** You'll learn more effectively if you give the exercise a strong effort before comparing your code with ours!\n</div>\n----\n----",
+              "instructor_notes": ""
+            },
+            {
+              "id": 670965,
+              "key": "b1e18ce3-437d-4fee-b787-82097de4b0de",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Solution\n\nHere's one possible way to write the `is_substring` function —\n\n```python\ndef is_substring(substring, string):\n    index = 0\n    while index < len(string):\n        if string[index : index + len(substring)] == substring:\n            return True\n        index += 1\n    return False\n```",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 565598,
+          "key": "6b24e503-cc06-42d3-a4ac-cb61184c38f5",
+          "title": "Finding substrings (3/4)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "6b24e503-cc06-42d3-a4ac-cb61184c38f5",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 565601,
+              "key": "6f3b6c60-6df4-4036-8ab5-51bd487d1c9b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Counting substrings\n\nEarlier you wrote the `count_character` function, which counts the number of occurrences of a character in a string:\n\n```python\n>>> count_character(\"papa pony and the parcel post problem\", \"p\")\n6\n```\nBut it would be much more useful to be able to count _substrings_, not just characters. Like this:\n\n```python\n>>> count_substring('love, love, love, all you need is love', 'love')\n4\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785063,
+              "key": "8ae49b22-da71-44b0-920e-7351e3287da6",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "8ae49b22-da71-44b0-920e-7351e3287da6",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Change the name of the function.",
+                "Modify the `if` statement so that it uses slicing to look for a substring, rather than a single character."
+              ],
+              "positive_feedback": "**Great!**",
+              "video_feedback": null,
+              "description": "You'll find the code for the `count_character` function in the workspace below. See if you can modify it to create a `count_substring` function.\n\nIt's up to you to decide whether you want your function to avoid overlapping matches or not. Below, we'll present solutions for both cases."
+            },
+            {
+              "id": 784997,
+              "key": "26238a20-1eec-4b79-9653-c3cf242513a8",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r613901c565598xGENERICd8ejlm49",
+              "pool_id": "webterminal",
+              "view_id": "generic-q9h1t",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "userCode": "",
+                    "openFiles": [
+                      "/home/workspace/substrings.py"
+                    ],
+                    "showFiles": false,
+                    "allowClose": false,
+                    "showEditor": true,
+                    "allowSubmit": false,
+                    "terminalTitle": "BASH"
+                  },
+                  "kind": "generic"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 670944,
+              "key": "aa6a8731-dc96-4efe-8ed7-fa6fd695fc1e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n----\n<div style=\"background-color: #a4e4f5;\">\n## ⚠️ Spoiler alert!\n\n**Our solution is below.** You'll learn more effectively if you give the exercise a strong effort before comparing your code with ours!\n</div>\n----\n----",
+              "instructor_notes": ""
+            },
+            {
+              "id": 670966,
+              "key": "1ecacade-7807-4f6e-88c4-580739747305",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Solution\n\nHere's our code:\n\n```\ndef count_substring(string, target):\n    total = 0\n    index = 0\n    while index < len(string):\n        if string[index : index + len(target)] == target:\n            total += 1\n        index += 1 \n    return total\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785064,
+              "key": "f8818977-ac7f-47e0-84d0-43754fcbe047",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Overlapping matches\n\nOur solution above works, but it has a potential problem.  Here's an example—what should the value of this function call be?\n\n```python\n>>> count_substring('AAAA', 'AA')\n```\nHow many times does `'AA'` occur in `'AAAA'`? There's one sense in which the answer is `2`, and another sense in which it's `3`. It depends on whether matches are allowed to overlap!\n\nWith the solution above, the function counts overlapping matches—so it will count `3` instances of `AA`. If that's the behavior we want, great! But if not, how can we fix it?\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785066,
+              "key": "26861b88-7c05-4bab-876d-352f086f7c5e",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "26861b88-7c05-4bab-876d-352f086f7c5e",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "We can solve the problem by making some modifications inside the function's `while` loop. Here are two different attempts—which one of them works?\n\n(Which would count `AAAA` as only *two* instances of `AA` rather than *three*?)"
+                },
+                "concepts_label": "Code",
+                "answers_label": "Does it work?",
+                "concepts": [
+                  {
+                    "text": "```python\nif string[index : index + len(target)] == target:\n    total += 1\n    index += len(target)\nelse:\n    index += 1\n```",
+                    "correct_answer": {
+                      "id": "a1542916873779",
+                      "text": "Works"
+                    }
+                  },
+                  {
+                    "text": "```python\nif string[index : index + len(target)] == target:\n    total += 1\n    index += 1\nelse:\n    index += len(target)\n```",
+                    "correct_answer": {
+                      "id": "a1542917060564",
+                      "text": "Doesn't work"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1542916873779",
+                    "text": "Works"
+                  },
+                  {
+                    "id": "a1542917060564",
+                    "text": "Doesn't work"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 785065,
+              "key": "d6e9d481-645b-4f01-ad37-ac3773e87c2f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "So here's the new version of the function:\n\n```python\ndef count_substring(string, target):\n    total = 0\n    index = 0\n    while index < len(string):\n        if string[index : index + len(target)] == target:\n            total += 1\n            index += len(target)   # <- This is the key line\n        else:\n            index += 1\n    return total\n```\n\nDo you see how this works? The new code is saying that `if` we count a substring, we'll advance the `index` position forward by `len(target)` so that we skip over the rest of the characters in the substring.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785067,
+              "key": "2e9971a8-7bbf-4c9e-8f6a-ef45c91640c0",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "2e9971a8-7bbf-4c9e-8f6a-ef45c91640c0",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "The modified function correctly counts `2` instances of `AA`."
+              ],
+              "positive_feedback": "As it turns out, this technique—of skipping the `index` forward by the length of the substring—is going to come in handy several more times in this lesson. So keep it in mind!",
+              "video_feedback": null,
+              "description": "Just for a little extra practice, go back up to the workspace and make these changes to the code. You can test your new code with this line:\n\n```python\nprint(count_substring('AAAA'))\n```\nYou should get `2`."
+            }
+          ]
+        },
+        {
+          "id": 568965,
+          "key": "980cb94b-0757-43e8-91ca-53247c1b0866",
+          "title": "Finding substrings (4/4)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "980cb94b-0757-43e8-91ca-53247c1b0866",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 568991,
+              "key": "88c52f5b-cf36-43fe-9890-b3e6d79ef39c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Locating substrings\n\nWhen we started talking about finding substrings, a few pages ago, there was one more thing that we wanted to do: find the _position_ of a substring in a string.\n\nFor instance, if we look for the string `'ook'` in the string `'cookbook'`, we want to find out that it's located at positions `1` and `5`.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785072,
+              "key": "bf12562d-9732-4c56-bf60-97b85c2a76e8",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## A `locate_first` function\n\nLet's start off with a version that just gives the location of the **first** instance of the substring. We'll call it `locate_first`.\n\nThe function should find and return the first location of a substring. But if the substring is not present, it should return `-1` (you'll see why we chose `-1` soon).\n\n```python\n>>> locate_first('ook', 'cookbook')\n1\n>>> locate_first('base', 'all your bass are belong to us')\n-1\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785070,
+              "key": "74b2fe94-e0ef-433e-9d1c-27a05a19d3eb",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "74b2fe94-e0ef-433e-9d1c-27a05a19d3eb",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Change the name of the function.",
+                "You can get rid of the `total` variable—we're not counting anything in this function.",
+                "Instead of returning a total, you'll want to return the index number of the target string.",
+                "If the loop finishes and no target substring was found, then it should return `-1`.",
+                "When you're done, the function should return the index number for the location of the target string."
+              ],
+              "positive_feedback": "**Great!**",
+              "video_feedback": null,
+              "description": "You'll find the code for the `count_substring` function in the workspace below. See if you can make some changes and turn it into the `locate_first` function."
+            },
+            {
+              "id": 785071,
+              "key": "ad4f86f8-6213-406f-b772-10b31978b294",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r613901c568965xGENERICl3d16lui",
+              "pool_id": "webterminal",
+              "view_id": "generic-6v2pq",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "userCode": "",
+                    "openFiles": [
+                      "/home/workspace/substrings.py"
+                    ],
+                    "showFiles": false,
+                    "allowClose": false,
+                    "showEditor": true,
+                    "allowSubmit": false,
+                    "terminalTitle": "BASH"
+                  },
+                  "kind": "generic"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 670945,
+              "key": "e62dcf74-e88c-48cd-bddd-5928695090e6",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n----\n<div style=\"background-color: #a4e4f5;\">\n## ⚠️ Spoiler alert!\n\n**Our solution is below.** You'll learn more effectively if you give the exercise a strong effort before comparing your code with ours!\n</div>\n----\n----",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785073,
+              "key": "ecf566f6-b8ee-4870-af01-d4817014a99f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Solution — `locate_first`\n\nHere's one way to write the `locate_first` function. We've only had to change a few things from the `count_substring` function: instead of returning a total, we return the `index` on a successful match, or the value `-1` on no match.\n\n```python\ndef locate_first(string, sub): \n    index = 0\n    while index < len(string):\n        if string[index : index + len(sub)] == sub:\n            return index\n        else:\n            index += 1\n    return -1\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785075,
+              "key": "5082ac45-b5c9-4675-8e04-76b1254246b4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "##  A `locate_all` function\n\nNow let's take it one step further and see if we can make a function that locates *all* instance of a substring. \n\n\n```python\n>>> locate_all('cookbook', 'ook')\n[1, 5]\n>>> locate_all('yesyesyes', 'yes')\n[0, 3, 6]\n>>> locate_all('the upside down', 'barb')\n[]\n```\n\nTo do this, we'll need to create an empty list:\n\n```python\nmatches = []\n```\n\nAnd then `append` the locations of the substrings to the list each time we find one.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785074,
+              "key": "4b84a1ca-848e-4579-9993-61ac70262eab",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "4b84a1ca-848e-4579-9993-61ac70262eab",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Prior to the `while` loop, create an empty list.",
+                "If the target substring is detected, append the index position to the list.",
+                "When done, the function should return a **list** of all the locations where a substring occurs.",
+                "If the substring isn't there, `locate_all` should return an empty list."
+              ],
+              "positive_feedback": "**Nice work!**",
+              "video_feedback": null,
+              "description": "Go back up to the workspace above and see if you can write the `locate_all` function."
+            },
+            {
+              "id": 785076,
+              "key": "e9038dbe-ef2b-4ba7-90c6-aa7df14606f6",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n----\n<div style=\"background-color: #a4e4f5;\">\n## ⚠️ Spoiler alert!\n\n**Our solution is below.** You'll learn more effectively if you give the exercise a strong effort before comparing your code with ours!\n</div>\n----\n----",
+              "instructor_notes": ""
+            },
+            {
+              "id": 670968,
+              "key": "8368bbfe-03f4-4511-8c36-088b207a1d4b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Solution — `locate_all`\n\n```python\ndef locate_all(string, sub):\n    matches = []\n    index = 0\n    while index < len(string):\n        if string[index : index + len(sub)] == sub:\n            matches.append(index)\n            index += len(sub)\n        else:\n            index += 1\n    return matches\n```\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 518458,
+          "key": "5e01f90d-978f-47e8-832f-5a5c449ba5bd",
+          "title": "More methods on strings",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5e01f90d-978f-47e8-832f-5a5c449ba5bd",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 675867,
+              "key": "5511ed13-9071-4e83-be84-9d4c7af34b82",
+              "title": "Python: More methods on strings",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "DSVmkhuLN0w",
+                "china_cdn_id": "DSVmkhuLN0w.mp4"
+              }
+            },
+            {
+              "id": 569109,
+              "key": "8a3aaf3a-d93a-4287-b325-b91e5bb56070",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "8a3aaf3a-d93a-4287-b325-b91e5bb56070",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Here are three questions about searching for substrings in a large string variable. Which Python search feature should we use to answer these questions?\n\nAssume that we've got the entire text of the novel _A Tale of Two Cities_ in a string variable called `tale`."
+                },
+                "concepts_label": "Question",
+                "answers_label": "Search feature",
+                "concepts": [
+                  {
+                    "text": "How many times does the word \"chocolate\" occur in the novel?",
+                    "correct_answer": {
+                      "id": "a1521570449683",
+                      "text": "`tale.count(\"chocolate\")`"
+                    }
+                  },
+                  {
+                    "text": "Yes or no: Does the word \"chocolate\" occur in the novel?",
+                    "correct_answer": {
+                      "id": "a1521570568382",
+                      "text": "`\"chocolate\" in tale`"
+                    }
+                  },
+                  {
+                    "text": "How far into the novel is the first occurrence of the word \"chocolate\"?",
+                    "correct_answer": {
+                      "id": "a1521570608162",
+                      "text": "`tale.find(\"chocolate\")`"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1521570449683",
+                    "text": "`tale.count(\"chocolate\")`"
+                  },
+                  {
+                    "id": "a1521570652757",
+                    "text": "`\"chocolate\".find(tale)`"
+                  },
+                  {
+                    "id": "a1521570568382",
+                    "text": "`\"chocolate\" in tale`"
+                  },
+                  {
+                    "id": "a1521570640453",
+                    "text": "`tale in \"chocolate\"`"
+                  },
+                  {
+                    "id": "a1521570608162",
+                    "text": "`tale.find(\"chocolate\")`"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 518459,
+          "key": "b25f9b03-d6c3-4a6f-a042-c5c335010f51",
+          "title": "Joining",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "b25f9b03-d6c3-4a6f-a042-c5c335010f51",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 674959,
+              "key": "28ca7456-cc3f-48ac-ad8c-dba9ecd31b6a",
+              "title": "Python: Joining",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "-RmlqIYam48",
+                "china_cdn_id": "-RmlqIYam48.mp4"
+              }
+            },
+            {
+              "id": 533902,
+              "key": "d3b2e4f1-c382-48bd-8087-9e56e5a735c5",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "d3b2e4f1-c382-48bd-8087-9e56e5a735c5",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What do you think this expression will evaluate to?\n```python\n\"-\".join(\"cat\")\n```\nThink about it, then try it out in the Python interpreter!",
+                "answers": [
+                  {
+                    "id": "a1517867657553",
+                    "text": "`'c-a-t'`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1517867683865",
+                    "text": "`'cat-cat-cat'`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1517867690131",
+                    "text": "`'cat'`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1517867764036",
+                    "text": "Nothing; it's an error.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 533907,
+              "key": "0a5ff527-ce84-41f2-b554-ab4fb55ccf6a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Exercise: Line breaks\n\nHere is a list that contains some lines of poetry:\n\n```python\nlines = [\"Haiku frogs in snow\",\n         \"A limerick came from Nantucket\",\n         \"Tetrametric drum-beats thrumming, Hiawathianic rhythm.\"]\n```\nTo put these on a web page, we'd like to put an HTML `<br>` tag between each two lines.\n\nWrite a function `breakify` that takes a list of strings, and returns a single string with `<br>` inserted between each two strings in the list. For instance, testing it on the above list should produce this result:\n\n```python\n>>> breakify(lines)\n'Haiku frogs in snow<br>A limerick came from Nantucket<br>Tetrametric drum-beats thrumming, Hiawathianic rhythm.'\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 670946,
+              "key": "6ca21d64-a3a1-4fc9-aa98-e8a031051ffb",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n----\n<div style=\"background-color: #a4e4f5;\">\n## ⚠️ Spoiler alert!\n\n**Our solution is below.** You'll learn more effectively if you give the exercise a strong effort before comparing your code with ours!\n</div>\n----\n----",
+              "instructor_notes": ""
+            },
+            {
+              "id": 670969,
+              "key": "b2f9b1ab-fce9-4cf9-a235-c8df7d24cef6",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Line breaks, solution\n\nHere's one way to write `breakify`, the function that takes a list of strings and returns a single string with HTML line breaks:\n\n```python\ndef breakify(strings):\n    return \"<br>\".join(strings)\n```",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 785028,
+          "key": "868c857b-d9d3-4578-8b77-9df196f65e5b",
+          "title": "Find and replace (1/2)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "868c857b-d9d3-4578-8b77-9df196f65e5b",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 785029,
+              "key": "0481b9f3-4434-478b-a10b-323a26c92bb4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 🔎 Find and replace (1/2)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785032,
+              "key": "01b67319-6fa6-42a1-acc0-a15b68504c6b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Sometimes text has stuff in it that you don't want.\n\nFor example, suppose someone gives you some of their HTML code, and you find that it has `<br>` tags all over the place, even in places where `<p>` tags would clearly be a better choice. You might want to remove all of the `<br>` tags, and possibly replace them with `<p>` tags.\n\nOr maybe you realize that you've misspelled the same word dozens of times throughout a long paper, and you'd like to replace all of those instances with the correct spelling.\n\nIn fact, this is such a common need that most text editors have a *find-and-replace* tool that can be used to do such things.\n\nAt this point, we have all the pieces we need to be able to write our own find-and-replace function in Python, and that's what we'll work up to over the next few pages. \n\nThis will also give us the techniques we need to be able to solve the *silly strings* problem that was introduced way back at the beginning of this lesson.\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785033,
+              "key": "038281bc-b60b-4d74-af70-74f30e0bb85b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Modifying strings",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785034,
+              "key": "e42117f9-f577-4da4-a0ad-59dc1bcdbd60",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Generally speaking, what we want to be able to do is loop over a string, find the substring that we don't like, and replace it with a string that we do like!\n\nBut right away we run into a problem: *Strings are immutable*.\n\nWe cannot change a string once it has been created. But what we *can* do is take characters or slices from that string, and then use the `join` method to put them back together to form a new string.\n\nOne particularly useful technique is to use a *list* to collect the bits of the string that you want to keep. This next question shows a basic example of the approach:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785036,
+              "key": "5b04d52b-08ad-4537-acee-f26ccc8cfe75",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "5b04d52b-08ad-4537-acee-f26ccc8cfe75",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "```python\nstring = \"Hello world!\"\noutput = []\nindex = 0\nwhile index < len(string):\n    output.append(string[index])\n    index += 1\n\nprint(output)\n```\nBefore you try running this code for yourself, see if you can identify what some of the different parts of it do."
+                },
+                "concepts_label": "What does it do?",
+                "answers_label": "Code",
+                "concepts": [
+                  {
+                    "text": "Creates an empty list.",
+                    "correct_answer": {
+                      "id": "a1542895557003",
+                      "text": "`output = []`"
+                    }
+                  },
+                  {
+                    "text": "Uses the current index number to select a character from the string.",
+                    "correct_answer": {
+                      "id": "a1542895651538",
+                      "text": "`string[index]`"
+                    }
+                  },
+                  {
+                    "text": "Takes a character from the string and adds it to the end of the list.",
+                    "correct_answer": {
+                      "id": "a1542895652523",
+                      "text": "`output.append(string[index])`"
+                    }
+                  },
+                  {
+                    "text": "Moves on to the next index number.",
+                    "correct_answer": {
+                      "id": "a1542895878940",
+                      "text": "`index += 1`"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1542895878940",
+                    "text": "`index += 1`"
+                  },
+                  {
+                    "id": "a1542895652523",
+                    "text": "`output.append(string[index])`"
+                  },
+                  {
+                    "id": "a1542895651538",
+                    "text": "`string[index]`"
+                  },
+                  {
+                    "id": "a1542895557003",
+                    "text": "`output = []`"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 785035,
+              "key": "416ffe66-e0bf-4bc3-bfaf-c25d2dc19a12",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "416ffe66-e0bf-4bc3-bfaf-c25d2dc19a12",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Here's that same code again:\n\n```python\nstring = \"Hello world!\"\noutput = [] # Create empty list\nindex = 0\nwhile index < len(string):\n    output.append(string[index]) # Append current character\n    index += 1 # Move on to next character\n\nprint(output)\n```\n\nWhat would the `output` list look like when this code finishes running? (What would get printed out?)\n\n(Feel free to run the code now to see!)",
+                "answers": [
+                  {
+                    "id": "a1542894952449",
+                    "text": "`['Hello', 'world!']`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1542895136124",
+                    "text": "`['Hello', 'world', '!']`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1542895162478",
+                    "text": "`['H', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd', '!']`",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 785038,
+              "key": "0ca6e25e-96de-499d-ac20-bbbb529339ef",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## 🔎 ❌  Find and remove  \n\nWe're now ready to try our hand at finding and removing substrings that we don't want. And good thing, too—someone has taken my beautiful string...\n\n```python\n'Hello world!'\n```\n\n...and *spammed* it!\n\n```python\n'SPAM!HelloSPAM! worldSPAM!!'`\n```\n\nBelow is the `SPAM!` removal code that I came up with. It's similar to the code we just looked at (above), but with some additions to check for—and skip over—the `SPAM!` substring.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785039,
+              "key": "dfb7980c-9dff-41c9-b825-91b6ee13299e",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "dfb7980c-9dff-41c9-b825-91b6ee13299e",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "```python\nstring = 'SPAM!HelloSPAM! worldSPAM!!'\noutput = []\nindex = 0\nwhile index < len(string):\n    if string[index:index+5] == 'SPAM!':\n        index += 5\n    else:\n        output.append(string[index])\n        index += 1\nprint(\"\".join(output))\n```\n\nCan you identify what these parts of the code are for?"
+                },
+                "concepts_label": "Description",
+                "answers_label": "Code",
+                "concepts": [
+                  {
+                    "text": "Checks if the substring starting at the current index position is `'SPAM!'`.",
+                    "correct_answer": {
+                      "id": "a1542896635598",
+                      "text": "`string[index:index+5] == 'SPAM!'`"
+                    }
+                  },
+                  {
+                    "text": "Advances the `index` so that it skips over `SPAM!` substrings.",
+                    "correct_answer": {
+                      "id": "a1542896867550",
+                      "text": "`index += 5`"
+                    }
+                  },
+                  {
+                    "text": "Adds non-spam characters to the list.",
+                    "correct_answer": {
+                      "id": "a1542896932590",
+                      "text": "`output.append(string[index])`"
+                    }
+                  },
+                  {
+                    "text": "Puts the new spam-free string together.",
+                    "correct_answer": {
+                      "id": "a1542896957330",
+                      "text": "`\"\".join(output)`"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1542896957330",
+                    "text": "`\"\".join(output)`"
+                  },
+                  {
+                    "id": "a1542896635598",
+                    "text": "`string[index:index+5] == 'SPAM!'`"
+                  },
+                  {
+                    "id": "a1542896867550",
+                    "text": "`index += 5`"
+                  },
+                  {
+                    "id": "a1542896932590",
+                    "text": "`output.append(string[index])`"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 785040,
+              "key": "aa732e89-0f19-4bb0-aa1c-bcb3b0a8de2b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "The above code works, but—as usual—only for this specific example. It would be more useful if we made it into a reusable function that could remove any string (not just `'SPAM!'`). So let's do exactly that!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785041,
+              "key": "b56af824-9ca9-4d41-a5ec-a8dd51a776bd",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "b56af824-9ca9-4d41-a5ec-a8dd51a776bd",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Define the `remove_substring` function with two parameters (for the main string and the substring to be removed).",
+                "Create an empty list to hold the output.",
+                "Loop over the index numbers of the string.",
+                "Check `if` the substring starting at the current position is the target substring. If it is, jump the `index` forward to skip over it.",
+                "Otherwise, `append` the current character to the `output` list and advance the `index` by `1`.",
+                "Finally, `join` the parts of the list back together to form a new string—and `return` it."
+              ],
+              "positive_feedback": "`'I am learning to code.'`\n\nIndeed, you are!",
+              "video_feedback": null,
+              "description": "Create a function called `remove_substring` that takes a string and removes all instances of an undesirable substring.\n\nThis will work very much like the `SPAM!` removal code we just looked, so feel free to reference that code as needed."
+            },
+            {
+              "id": 785050,
+              "key": "7bb34ce4-2648-443b-ad76-62ba7dec6c7d",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r613901c785028xGENERICba9ugywm",
+              "pool_id": "webterminal",
+              "view_id": "generic-ykgdh",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "userCode": "",
+                    "openFiles": [
+                      "/home/workspace/remove.py"
+                    ],
+                    "showFiles": false,
+                    "allowClose": false,
+                    "showEditor": true,
+                    "allowSubmit": false,
+                    "terminalTitle": "BASH"
+                  },
+                  "kind": "generic"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 785052,
+              "key": "5316cf53-d2a0-4cb2-8126-5d10e2007874",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n----\n<div style=\"background-color: #a4e4f5;\">\n## ⚠️ Spoiler alert!\n\n**Our solution is below.** You'll learn more effectively if you give the exercise a strong effort before comparing your code with ours!\n</div>\n----\n----",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785051,
+              "key": "d52d9181-c9f1-4837-abe6-3d27af403713",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Solution\n\nHere's our code:\n\n```python\ndef remove_substring(string, substring):\n    output = []\n    index = 0\n    while index < len(string):\n        if string[index:index+len(substring)] == substring:\n            index += len(substring)\n        else:\n            output.append(string[index])\n            index += 1\n    return \"\".join(output)\n```",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 785053,
+          "key": "4312c86a-24f7-4d82-a0bb-c377347886f3",
+          "title": "Find and replace (2/2)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "4312c86a-24f7-4d82-a0bb-c377347886f3",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 785054,
+              "key": "b6389488-e6db-40a0-97ed-857209d934f0",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Find and replace (2/2)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785055,
+              "key": "86a1e741-f1ef-4da7-8f08-7817e7f69417",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "That prankster is back, and this time they've spammed my breakfast. I was going to have:\n\n```python\n'Scrambled eggs, bacon, and toast.'\n```\n\nBut instead, now I have:\n\n```python\n'Scrambled SPAM!s, bacon, and toast.'\n```\n\nIn fact, they seem to have replaced all of the `'egg'`s  with `'SPAM!'`. Instead of:\n\n`'Hot eggdrop soup, and curry with eggplant.'`\n\nWe now have:\n\n`'Hot SPAM!drop soup, and curry with SPAM!plant.'`\n\nIf we just run our `remove_substring` function on these strings, that won't really work:\n\n``'Hot drop soup, and curry with plant.'``\n\nWe really do need our find-and-replace function now!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785057,
+              "key": "acf6d589-a6d1-4491-a4a5-8233a551e200",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "acf6d589-a6d1-4491-a4a5-8233a551e200",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Change the function name and add a third parameter—for the `replacement` string.",
+                "When the target substring (to be removed) is located, `append` the replacement string to the list in its place."
+              ],
+              "positive_feedback": "**Nice work!**",
+              "video_feedback": null,
+              "description": "You'll find the code for the `remove_substring` function in the workspace. Your task is to change it into the `replace_substring` function. This will only require a few modifications."
+            },
+            {
+              "id": 785056,
+              "key": "7c2a0aff-0b17-4de0-a9b6-bb1623d61321",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r613901c785053xGENERICysgylh76",
+              "pool_id": "webterminal",
+              "view_id": "generic-4358q",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "userCode": "",
+                    "openFiles": [
+                      "/home/workspace/replace.py"
+                    ],
+                    "showFiles": false,
+                    "allowClose": false,
+                    "showEditor": true,
+                    "allowSubmit": false,
+                    "terminalTitle": "BASH"
+                  },
+                  "kind": "generic"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 785059,
+              "key": "62139674-d5fa-4ffd-bac5-1a662ff72fd9",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n----\n<div style=\"background-color: #a4e4f5;\">\n## ⚠️ Spoiler alert!\n\n**Our solution is below.** You'll learn more effectively if you give the exercise a strong effort before comparing your code with ours!\n</div>\n----\n----",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785058,
+              "key": "741641e8-92a3-405c-85cb-4be253d1f29a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Solution\n\n```python\ndef replace_substring(string, substring, replacement):\n    output = []\n    index = 0\n    while index < len(string):\n        if string[index:index+len(substring)] == substring:\n            output.append(replacement)\n            index += len(substring)\n        else:\n            output.append(string[index])\n            index += 1\n    return \"\".join(output)\n```",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 518461,
+          "key": "aeb6f716-d312-4e5f-881a-8b3e611f0b00",
+          "title": "Silly sentences",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "aeb6f716-d312-4e5f-881a-8b3e611f0b00",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 674960,
+              "key": "2eaef78d-f061-4f2d-aaa8-bd21f8d2eec5",
+              "title": "Python: Silly sentences",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "DnUBa-LUo3A",
+                "china_cdn_id": "DnUBa-LUo3A.mp4"
+              }
+            },
+            {
+              "id": 785061,
+              "key": "80d13a51-05ca-4d18-b5e8-80ecff994c80",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Whew, that sounds like a lot of different parts that all have to work together! But actually, the code you'll need to write here is *very* similar to what you just wrote for the *find-and-replace* exercises.\n\nThat said, it's not at all unusual to get a bit stuck on an exercise like this (sometimes one small thing isn't right and that causes the code to fail). So remember, the solution code is below if you need to reference it.\n\n(By the way, don't ever feel bad about needing to check solution code—this is tricky stuff! And the point is to **learn**, not to prove you can do the exercise without any mistakes.)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 785060,
+              "key": "310cd684-9985-4903-8d91-5b139acb6f24",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "310cd684-9985-4903-8d91-5b139acb6f24",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Add a `while` loop that loops over the index positions of the template.",
+                "Check `if` the slice that starts at the current position is `'{{noun}}'`. If it is, `append` a random noun and advance the index position.",
+                "Use `elif` to check if the slice that starts at the current position is `'{{verb}}'`. If it is, `append` a random verb and advance the index position.",
+                "Otherwise (`else`) simply append the current character to the list.",
+                "Join the list to form a new string, and `return` it."
+              ],
+              "positive_feedback": "**Excellent!**\n\nIf you mostly understand this code, you are doing very well—this was a significant exercise!",
+              "video_feedback": null,
+              "description": "You'll find the starter code below. On the second tab, you can see the `words` module where the templates, nouns, and verbs are coming from.\n\nHere are the main things you'll need to do to complete the program:"
+            },
+            {
+              "id": 663346,
+              "key": "c4bbc603-6857-431f-90dc-13463b9ed179",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "view2c921acd",
+              "pool_id": "webterminal",
+              "view_id": "2c921acd-b31c-4476-95b3-2ff0e42cf52c",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "userCode": "",
+                    "openFiles": [
+                      "/home/workspace/silly.py",
+                      "/home/workspace/words.py"
+                    ],
+                    "showFiles": true,
+                    "allowClose": true,
+                    "showEditor": true,
+                    "allowSubmit": false,
+                    "terminalTitle": "BASH"
+                  },
+                  "kind": "generic"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 670947,
+              "key": "4f36b477-3ffd-4e81-beec-257a38e80844",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n----\n<div style=\"background-color: #a4e4f5;\">\n## ⚠️ Spoiler alert!\n\n**Our solution is below.** You'll learn more effectively if you give the exercise a strong effort before comparing your code with ours!\n</div>\n----\n----",
+              "instructor_notes": ""
+            },
+            {
+              "id": 674961,
+              "key": "f71254ac-d6ac-4560-a811-d4fa5b41044f",
+              "title": "Python: Silly sentences solution",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "g2WQduWb2Pw",
+                "china_cdn_id": "g2WQduWb2Pw.mp4"
+              }
+            },
+            {
+              "id": 670949,
+              "key": "810d4361-fcad-467d-9851-ea769be42c73",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Here is the same code presented in the video:\n\n```python\nimport random\nimport words\n\n\ndef silly_string(nouns, verbs, templates):\n    # Choose a random template.\n    template = random.choice(templates)\n\n    # We'll append strings into this list for output.\n    output = []\n\n    # Keep track of where in the template string we are.\n    index = 0\n\n    while index < len(template):\n        if template[index:index+8] == '{{noun}}':\n            # Add a random noun to the output.\n            output.append(random.choice(nouns))\n            index += 8\n        elif template[index:index+8] == '{{verb}}':\n            # Add a random verb to the output.\n            output.append(random.choice(verbs))\n            index += 8\n        else:\n            # Copy a character to the output.\n            output.append(template[index])\n            index += 1\n\n    # Join the output into a single string.\n    output = ''.join(output)\n\n    return output\n\n\nif __name__ == '__main__':\n    print(silly_string(words.nouns, words.verbs,\n        words.templates))\n```",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 553545,
+          "key": "4b0a27d1-bb22-4e02-b787-df30b2dca15d",
+          "title": "Way to go!",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "4b0a27d1-bb22-4e02-b787-df30b2dca15d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 553546,
+              "key": "2c5191b4-437b-49ae-95fb-d2842eb67bd4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 🎉 Way to go! \n\nYou've completed this lesson—and the second part of *Intro to Python*!\n\nYou did a **lot** in this part of the course. You got Python set up on your own computer, and learned a ton of crazy things about strings and lists. You also learned how to use `while` loops, which you'll see quite a lot of in programming.\n\nLet's be clear: You've done some hard work and conquered some difficult concepts. 🏋️ Many people who decide that they want to be programmers get scared off by these concepts and never make it this far.\n\nAs always, we would love to know what you liked and—especially—did not like about this lesson. When you click **Next**, you'll get the feedback prompt. Please do leave us a message! We always love to hear from you and **we really do read all of your feedback!** 🙂",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

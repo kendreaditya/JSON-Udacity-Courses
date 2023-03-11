@@ -1,0 +1,139 @@
+{
+  "data": {
+    "lesson": {
+      "id": 859441,
+      "key": "f4f0df45-f58d-4a5e-8415-51f0045c839a",
+      "title": "Project: Trivia API",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "In this project, you'll use your new API and API documentation skills to build a trivia API.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/f4f0df45-f58d-4a5e-8415-51f0045c839a/859441/1581172452629/Project%3A+Trivia+API+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/f4f0df45-f58d-4a5e-8415-51f0045c839a/859441/1581172450433/Project%3A+Trivia+API+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": {
+        "key": "6c4321a9-5aad-403a-9663-fc9a93670a35",
+        "version": "1.0.0",
+        "locale": "en-us",
+        "duration": 30240,
+        "semantic_type": "Project",
+        "title": "Trivia API",
+        "description": "While working on the project, you should have created your own copy of the project repository. To submit the project, zip this entire repo and upload the zip file.\n\nBefore submitting, be sure to check out the [rubric](https://review.udacity.com/#!/rubrics/2634/view) to confirm that your project meets all the required specs. \n\nYou will get an email as soon as your reviewer has feedback for you! Due to the high volume of submissions we receive, please allow up to 7 business days for your evaluation to be returned (however, usually your project will be reviewed within 24 hours). ",
+        "is_public": true,
+        "summary": null,
+        "forum_path": "",
+        "rubric_id": "2634",
+        "terminal_project_id": null,
+        "resources": null,
+        "image": null
+      },
+      "lab": null,
+      "concepts": [
+        {
+          "id": 859443,
+          "key": "683aab00-f4e6-45d9-a869-04695bd85c6f",
+          "title": "Project Instructions",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "683aab00-f4e6-45d9-a869-04695bd85c6f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 898189,
+              "key": "11bdbc33-4dfa-4e0f-b6e4-1a143d03aeb1",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Trivia API",
+              "instructor_notes": ""
+            },
+            {
+              "id": 906267,
+              "key": "c373627f-d3c8-4f3c-b248-fb265574ca79",
+              "title": "FSND C2 L5 A08 Final Project Prep",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "0iadDWaC95c",
+                "china_cdn_id": "0iadDWaC95c.mp4"
+              }
+            },
+            {
+              "id": 898191,
+              "key": "c1132538-262e-4395-8d38-24705dd0c4f2",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# What will I build?\n\nUdacity is invested in creating bonding experiences for its employees and students. A bunch of team members got the idea to hold trivia on a regular basis and created a webpage to manage the trivia app and play the game, but their API experience is limited and still needs to be built out.\n\nThat's where you come in! Help them finish the trivia app so they can start holding trivia and seeing who's the most knowledgeable of the bunch.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 898192,
+              "key": "c6c6127a-2e02-40a3-b25d-3b225e6abfdd",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Instructions",
+              "instructor_notes": ""
+            },
+            {
+              "id": 898193,
+              "key": "6d818749-0f93-4128-9385-392fa338091a",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "6d818749-0f93-4128-9385-392fa338091a",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Make a copy of the repository on your own GitHub account, so that you can work on this copy.",
+                "Open the README files contained in the repo and follow the instructions; these contain details on exactly what to do to complete the project.",
+                "Check out the project [rubric](https://review.udacity.com/#!/rubrics/2634/view) to see exactly what your reviewer will be looking for when they grade your project.",
+                "Zip your entire project for submission."
+              ],
+              "positive_feedback": "**Woohoo!**\n\nTime to submit this thing!",
+              "video_feedback": null,
+              "description": "You can find all of the starter code, along with detailed instructions for how to carry out the project, at [this GitHub repository](https://github.com/udacity/FSND/tree/master/projects/02_trivia_api/starter).\n\nHere's how to get started:"
+            },
+            {
+              "id": 898194,
+              "key": "d78c55ba-e4e5-4547-9b12-495486afaf09",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Once you're ready, you can submit your project on the next page.",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

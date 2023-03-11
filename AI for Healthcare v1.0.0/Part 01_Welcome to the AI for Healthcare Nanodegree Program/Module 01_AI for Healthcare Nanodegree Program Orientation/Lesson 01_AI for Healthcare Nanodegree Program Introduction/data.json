@@ -1,0 +1,105 @@
+{
+  "data": {
+    "lesson": {
+      "id": 1017673,
+      "key": "0e9f1811-a098-4a36-971f-42611405166e",
+      "title": "AI for Healthcare Nanodegree Program Introduction",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": null,
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": null,
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 1017674,
+          "key": "81a6ea15-b2a7-4897-a862-13367a09a5e9",
+          "title": "Welcome to Udacity",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "81a6ea15-b2a7-4897-a862-13367a09a5e9",
+            "completed_at": "2020-06-01T01:04:19.365Z",
+            "last_viewed_at": "2020-06-01T01:04:19.864Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1017675,
+              "key": "9039e1c7-8aab-4c57-9c58-aa55c1d3ebac",
+              "title": "Welcome To Udacity V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "9QadFJRKrEA",
+                "china_cdn_id": "9QadFJRKrEA.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 1017676,
+          "key": "1002e01f-cca4-4925-9ef2-90e28585ac63",
+          "title": "Welcome to the Nanodegree Program Experience",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "1002e01f-cca4-4925-9ef2-90e28585ac63",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1017677,
+              "key": "ebf16072-de9d-41a2-ab30-78d79cc4643e",
+              "title": "Welcome To Your Nanodegree Experience V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "gd0Z0S58Y68",
+                "china_cdn_id": "gd0Z0S58Y68.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 1017681,
+          "key": "da04ace0-ef3e-4cf0-9901-8650dcef961f",
+          "title": "How to Succeed",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "da04ace0-ef3e-4cf0-9901-8650dcef961f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1017682,
+              "key": "e8f6060d-df36-4959-a467-8d9e7ce400db",
+              "title": "How To Succeed V3",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "1Vx31C1bw_o",
+                "china_cdn_id": "1Vx31C1bw_o.mp4"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

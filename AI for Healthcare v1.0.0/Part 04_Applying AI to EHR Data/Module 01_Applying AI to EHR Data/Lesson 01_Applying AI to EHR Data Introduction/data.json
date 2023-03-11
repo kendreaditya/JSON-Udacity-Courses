@@ -1,0 +1,755 @@
+{
+  "data": {
+    "lesson": {
+      "id": 1004960,
+      "key": "9c892405-c09a-4919-88e2-c772ddac8fe6",
+      "title": "Applying AI to EHR Data Introduction",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Introduction to the EHR Data course and the instructor.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "AI in EHR Course Glossary",
+            "uri": "https://video.udacity-data.com/topher/2020/April/5e9cf9ac_ai-ehr-course-glossary/ai-ehr-course-glossary.pdf"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 1009413,
+          "key": "53ca67da-380d-41a7-9baf-b7fdcb92781a",
+          "title": "Introduction to AI and EHR",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "53ca67da-380d-41a7-9baf-b7fdcb92781a",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1009414,
+              "key": "fb41d54c-8da3-497b-8e97-c42a7457d772",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Introduction to AI and EHR",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009415,
+              "key": "79a93de8-439f-4927-a7cc-fa61fb2f6134",
+              "title": "ND320 AIHCND C01 L00 A01 Introduction To AI And EHR V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "YKrdjcbsftc",
+                "china_cdn_id": "YKrdjcbsftc.mp4"
+              }
+            },
+            {
+              "id": 1013210,
+              "key": "6da43e26-afe6-483d-9798-cee6e79c898e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Introduction to AI in EHR and Instructor Michael D'Andrea\n\nMichael is currently a Principal Data Scientist at [Genentech](https://www.gene.com), which is part of the [Roche](https://www.roche.com/) Group, where his work primarily focuses on supporting clinical trials for the Pharma Development Informatics division.\n\nBefore that, he was a Lead Data Scientist on the AI Team for [McKesson’s](https://www.mckesson.com/)\n [Change Healthcare](https://www.changehealthcare.com/), one of the largest EHR data processors in the United States. A quarter of US healthcare data went through Change Healthcare's systems and this is where Michael worked with datasets with hundreds of millions to billions of rows of claims data.\n\n### Education\n- Two Master's degrees \n  - Columbia \n  - Cornell\n- Completed 3 Udacity Nanodegree programs!\n\n### Why does Michael work in this field?\n- Fighting to cure cancer\n- COVID 19 Pandemic\n- AI can bring better treatments diagnostics and with less bias \n- Create a less expensive, more accessible healthcare environment for patients\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015030,
+              "key": "aea47f9c-dc18-4fce-9c54-dfe820b42e7e",
+              "title": "Reflect",
+              "semantic_type": "ReflectAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "aea47f9c-dc18-4fce-9c54-dfe820b42e7e",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "title": null,
+                "semantic_type": "TextQuestion",
+                "evaluation_id": null,
+                "text": "Why are you interested in this field? Please provide your thoughts below."
+              },
+              "answer": {
+                "text": "Thank you for filling this out!\n\nWhatever your reasons are, I am happy to have you as part of this great endeavor. I believe that the impact that AI can bring to creating better treatments and diagnostics with less bias is immeasurable.  Reducing bias is something that can affect us all by making treatments that are more representative of different demographic groups. AI’s ability to reduce costs and improve access to healthcare is just in its infancy and there are so many opportunities to make improvements. Let's get started!!",
+                "video": null
+              }
+            }
+          ]
+        },
+        {
+          "id": 1013211,
+          "key": "21858a4e-f471-4e8d-8624-649b6899a577",
+          "title": "Historical Context of AI in EHR",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "21858a4e-f471-4e8d-8624-649b6899a577",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1013212,
+              "key": "7dc2c0d5-4914-4f15-8c1b-17c801388743",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Historical Context of AI in EHR",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1013213,
+              "key": "867be493-79cb-4fcf-a22f-5a878ac24d28",
+              "title": "ND320 AIHCND C01 L00 A02 What Is The Historical Content For EHR Data- V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "fZ0J_lTsEwU",
+                "china_cdn_id": "fZ0J_lTsEwU.mp4"
+              }
+            },
+            {
+              "id": 1016086,
+              "key": "acd9e578-23ba-424e-8422-55978b0da9b9",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "*Note at about 55 sec the slide should say EHR: Electronic Health Record. However, an Electronic Medical Record is the same thing as an electronic health record and the terms are interchangeable. *",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1013214,
+              "key": "1ff31030-bea3-4b89-a9b4-0c71479751b2",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Historical Perspective Key Points\nLet's begin with what a healthcare record is since this is the basis for what is stored electronically is: \n\n- **Health Record**: A patient's documentation of their healthcare encounters and the data created by the encounters across time\n- **EHR**: Electronic Health Record \n\nHealth Records have been around for a very long time.  As the need and capability arose to transition from paper to electronic medical records, EHR was born. There was even a law created to help this along. You might have heard of it. HIPAA, the Health Insurance Portability and Accountability Act, was passed in 1996 to address this. You'll learn more about this in the EHR Data Security section of the course. \n\n- **HIPAA**: Health Insurance Portability and Accountability Act\n\nEHR is also commonly referred to as \n- **EMR**: Electronic Medical Record\n\n\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015031,
+              "key": "6bfe6617-9318-478e-8be7-0fdfdddf32c9",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9c720c_l0-introduction-to-ai-ehr/l0-introduction-to-ai-ehr.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/6bfe6617-9318-478e-8be7-0fdfdddf32c9",
+              "caption": "Written to Electronic Records",
+              "alt": "Written to Electronic Records",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1015032,
+              "key": "c008939a-1600-4b9c-9d16-5078fe701b83",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Moving from Written Records to Electronic Records\nThe transition from paper to electronic records not only led to brand new systems for storing and collecting EHR data but also for the need to translate all of the old paper data into something usable by these new systems.\n\nThat's a particularly great job for AI! But there are many many other potential uses for AI with EHR.\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015033,
+              "key": "798836dd-78e2-42a1-a58c-b5994d15d5fa",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9c7291_l0-introduction-to-ai-ehr/l0-introduction-to-ai-ehr.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/798836dd-78e2-42a1-a58c-b5994d15d5fa",
+              "caption": "AI in EHR Opportunities",
+              "alt": "AI in EHR Opportunities",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1015034,
+              "key": "ba7dbf7c-b033-46d1-a34d-db1278439fd6",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## AI in EHR Opportunities\nA few other fantastic uses of AI in EHR Include:\n- Mapping of our genes in Genomics\n- Analyzing data from clinical trials\n- Predicting a diagnosis for patients\n\nThere are many others, but these are few that are seeing some of the most traction right now. \n\nThat's it for your history lesson on EHR. Now that you have a little background, we'll discuss the current landscape for EHR Data and AI.\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015048,
+              "key": "9c28da72-4edb-4652-9d97-bd29b6643014",
+              "title": "EHR Quiz",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "9c28da72-4edb-4652-9d97-bd29b6643014",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "EHR and EMR are not the same",
+                "answers": [
+                  {
+                    "id": "a1587313601834",
+                    "text": "False",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587313642034",
+                    "text": "True",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1013215,
+          "key": "b83093f7-8b3d-40f6-afb9-85f555cfe215",
+          "title": "Landscape of EHR Data",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "b83093f7-8b3d-40f6-afb9-85f555cfe215",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1013216,
+              "key": "6734e2ec-aeb3-43a1-bbfc-00f03a2f17ce",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Landscape of EHR Data",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1013217,
+              "key": "6fae3c9a-46f4-4361-b6c7-75e01e981baf",
+              "title": "ND320 AIHCND C01 L00 A03 Landscape For EHR Data V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "UOoHQsO-7ww",
+                "china_cdn_id": "UOoHQsO-7ww.mp4"
+              }
+            },
+            {
+              "id": 1013218,
+              "key": "e5e22eba-9991-4991-9ffd-e45a778f8411",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Importance of EHR Data Key Points",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015039,
+              "key": "f2998454-c789-4a13-9544-a3173dcd2f93",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9c7453_l0-introduction-to-ai-ehr-1/l0-introduction-to-ai-ehr-1.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/f2998454-c789-4a13-9544-a3173dcd2f93",
+              "caption": "EHR: Electronic Medical Record or EMR: Electronic Medical Record",
+              "alt": "EHR: Electronic Medical Record ",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1015038,
+              "key": "8929568c-df83-4c9c-b070-87b92f3e84a1",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### What does EHR stand for? \nAgain as a quick review from the last section, EHR stands for Electronic Health Records, which is synonymous with Electronic Medical Records, or EMR.\n\n### What is EHR data? \n**EHR Data** is the data being collected when we see a doctor, pick up a prescription at the pharmacy, or even from a visit to the dentist.  These are just a few of the examples where EHR data is collected. \n\nThis data is used for a variety of use-cases. From personalizing healthcare to discovering novel drugs and treatments to helping providers diagnose patients better and reduce medical errors.\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015040,
+              "key": "85888e2a-e83c-446e-931e-a6fbcc775d6d",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9c7707_l0-introduction-to-ai-ehr-2/l0-introduction-to-ai-ehr-2.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/85888e2a-e83c-446e-931e-a6fbcc775d6d",
+              "caption": "",
+              "alt": "",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1015041,
+              "key": "6aff17c7-46d6-4b57-9dc7-8e5b18b783b9",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Scale and Cost of EHR Data\nTo illustrate the scale of EHR data in the U.S. there are some estimates of about 30B healthcare claims just last year! Regardless of the exact amount, anything in this range shows the large volume of claims that are being processed. In addition and related to the access is the high cost of healthcare in the U.S. for 2019, Personal Healthcare Costs in the U.S. was projected to be $3.24T by [CMS](https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/NationalHealthExpendData/NationalHealthAccountsProjected). This is an enormous amount and to put that in perspective that 3T number is almost 15% of the U.S. GDP for 2019. You can learn more about all of this by looking through the links below.\n\n#### Additional Resources\n- [Health Affairs](https://www.healthaffairs.org/doi/abs/10.1377/hlthaff.2018.05499)\n- [CMS](https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/NationalHealthExpendData/NationalHealthAccountsProjected)\n- [50 Surprising Statistics Every Healthcare Stakeholder Must Know](https://www.osplabs.com/insights/50-surprising-statistics-every-healthcare-stakeholder-must-know/)\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015042,
+              "key": "3d8d644a-1bcb-4b09-b766-5e3826937aed",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/May/5ebabf26_circle-image/circle-image.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/3d8d644a-1bcb-4b09-b766-5e3826937aed",
+              "caption": "Importance of EHR Data",
+              "alt": "Importance of EHR Data",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1015043,
+              "key": "667a49b7-60c0-4db2-8d62-3da8c1fbf93b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Importance of EHR Data\nEHR Data can come from many different sources in today's world. Data such as:\n- Heart rate monitors\n- Xrays and other radiology scans\n- Fitness trackers\n- Other diagnostic tests\n\nAll this helps to provide a 360-degree view of a patient's health. Ensuring that this data is collected in an electronic health record is very valuable to the patient and their caregivers. This data becomes even more critical when you can get a longitudinal view of a patient's data and collect it in a way that allows healthcare professionals and data scientists to make meaningful and accurate predictions.\n\nTo make this data even more impactful and create better insights and predictions, we need to be able to aggregate the data of many to help address some of the most significant opportunities in healthcare. \n\nMany companies are doing great things with healthcare data including Google and Apple.\n- [Apple Healthcare Data]((https://www.apple.com/healthcare/health-records/)\n- [Google Cloud Healthcare API](https://cloud.google.com/healthcare/docs/concepts/projects-datasets-data-stores)\n- [Google Health](https://health.google/)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015044,
+              "key": "655aae94-e8d7-4973-9135-62a69ba0fdb7",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9c799d_l0-introduction-to-ai-ehr-5/l0-introduction-to-ai-ehr-5.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/655aae94-e8d7-4973-9135-62a69ba0fdb7",
+              "caption": "Opportunities",
+              "alt": "Opportunities ",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1015045,
+              "key": "a4d4924d-cfdc-48fc-8e75-c73fc21b4ed0",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Opportunities\nAs mentioned earlier, there is a major opportunity for impact and with the shift to electronic health records over the last decade. This has enabled totally new ways to analyze and use EHR data. In particular, EHR data and AI will enable increased healthcare access by lowering healthcare costs. One of the major challenges in the U.S. healthcare system is reducing administrative errors and with AI and streamlined technology, we might eliminate many manual error-prone processes.\n\nEHR data will also contribute to better diagnostics, companies are leveraging the large datasets on populations to find ways to predict diseases and conditions well before they occur by seeing trends that only these large datasets can provide.\n\nLastly, EHR will unlock more powerful treatments by combining EHR data with other data sources like genetics and imaging data to build even more powerful and personalized treatments. Companies are already using EHR data to identify patient cohorts and clinical trials more effectively and predicting risks for different drugs based on population data instead of only human expertise.\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015046,
+              "key": "4d63d1d5-fa0a-48fc-bd4e-74c78a738480",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/May/5ebac0fe_l0-introduction-to-ai-ehr-12/l0-introduction-to-ai-ehr-12.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/4d63d1d5-fa0a-48fc-bd4e-74c78a738480",
+              "caption": "Access to Healthcare",
+              "alt": "Access to Healthcare",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1015047,
+              "key": "7120a089-b8f9-482f-baf1-02616443df6a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Access to Healthcare\nDespite all of the advances in technology for healthcare, there are many challenges still to overcome. \n\nGlobally, a couple of years ago, the [WHO and World Bank](https://www.who.int/news-room/detail/13-12-2017-world-bank-and-who-half-the-world-lacks-access-to-essential-health-services-100-million-still-pushed-into-extreme-poverty-because-of-health-expenses) released a report that stated that “half the world lacks access to essential health services.”  This issue of access can also be seen in a report by the [NYU Commonwealth Fund](https://www.commonwealthfund.org/publications/issue-briefs/2019/feb/health-insurance-coverage-eight-years-after-aca) that found that in the U.S., 45% of U.S. adults between 19 - 64 are inadequately insured. While these statistics might be subject to multiple interpretations, there is a collective agreement that access to quality healthcare is an issue for many globally and also in the U.S.\n\nThese are only **some** of the many opportunities of using AI with EHR data in healthcare. Hopefully, after completing this course, you will be able to apply your new skills to make a huge breakthrough in the medical world. I'm excited to see what new things happen in the field. \n\n#### Additional Resources\n- [WHO and World Bank](https://www.who.int/news-room/detail/13-12-2017-world-bank-and-who-half-the-world-lacks-access-to-essential-health-services-100-million-still-pushed-into-extreme-poverty-because-of-health-expenses)\n- [NYU Commonwealth Fund](https://www.commonwealthfund.org/publications/issue-briefs/2019/feb/health-insurance-coverage-eight-years-after-aca)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015049,
+              "key": "e136c33e-5f6c-480e-bfa6-6a4587f03304",
+              "title": "Landscape Quiz",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "e136c33e-5f6c-480e-bfa6-6a4587f03304",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following are opportunities to use AI with EHR?",
+                "answers": [
+                  {
+                    "id": "a1587313746102",
+                    "text": "Increase Access",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587313797816",
+                    "text": "Reduce Bias",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587313811763",
+                    "text": "Create better predictions",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587313824030",
+                    "text": "Find new insights into diseases and treatments",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1013219,
+          "key": "9601531f-d773-4c26-8d30-9e649de467b8",
+          "title": "AI and EHR Course Preview",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "9601531f-d773-4c26-8d30-9e649de467b8",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1013220,
+              "key": "cd40cd1b-6dbe-4ab9-aa3b-e8376b880910",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# AI and EHR Course Preview",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1013221,
+              "key": "ef0e6c68-cf68-4056-a821-a244fde94ed0",
+              "title": "ND320 AIHCND C01 L00 A04 What Are The Sub-Topics That Lessons Are Organized Around- V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "BUMBZebewFY",
+                "china_cdn_id": "BUMBZebewFY.mp4"
+              }
+            },
+            {
+              "id": 1015050,
+              "key": "7955d631-6f91-43e6-8b2b-a9b6332f2241",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Course Overview\nNow that you have a little background into AI and EHR data, let's get a preview of what we will cover in this course.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015051,
+              "key": "30cabb4e-ca51-4bc8-be93-23e70c708998",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9c7e24_l0-introduction-to-ai-ehr-8/l0-introduction-to-ai-ehr-8.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/30cabb4e-ca51-4bc8-be93-23e70c708998",
+              "caption": "EHR Data Security & Analysis",
+              "alt": "EHR Data Security & Analysis",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1015052,
+              "key": "b8050e71-0d4f-4756-aa31-c3d69115edb0",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## EHR Data Security & Analysis\nIn the initial parts of this course, we will be reviewing EHR Data security and Analysis. \n\nThis Data Security section of the course may be a review for anyone who currently works in healthcare, but it is of vital importance in today's world to understand how to keep our patients' data safe and secure. We are the gatekeepers of that data and if we want to be able to do amazing things with this data, we need to ensure it's safe.  Of course, these rules also protect medical professionals as well. \n\nYou will learn about the different regulations around the world which you should be aware of to ensure your data practices meet these regulations. You'll also learn who generally takes care of making sure your data is compliant before it even gets to you. \n\nWe will be reviewing and completing some exploratory data analysis following the CRISP-DM framework to address some common issues with data before we begin using it to build and test our models. You will perform some data schema and demographic analysis as part of the section. This will enable you to explore your data and make sure it is representative of the population and that will allow the model you build later to be accurate.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015053,
+              "key": "3fef7f2f-4f10-40e0-b3a4-364a18b3fc3c",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9c7ed9_l0-introduction-to-ai-ehr-9/l0-introduction-to-ai-ehr-9.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/3fef7f2f-4f10-40e0-b3a4-364a18b3fc3c",
+              "caption": "EHR Code Sets",
+              "alt": "EHR Code Sets",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1015054,
+              "key": "9087a6b8-bedc-4d62-b7d8-432b8ce231c6",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## EHR Code Sets\nIn the EHR Code Sets section of this course, you will learn about all kinds of different code sets used in the medical industry.\nYou'll become familiar with medical Encounters and learn to interpret Diagnosis, Procedure, and Medication codes. \n\nDiagnosis codes are part of the ICD10-CM classification of diseases. \n\nThen you'll learn to break down procedure codes using CD10 PCS codes and CPT categories.\n\nFinally, we will look into using the Clinical Classifications Software or (CCS) system to more easily group and categorize these 77K+ codes when using them for our ML models.\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015055,
+              "key": "72e6d58d-3f63-4ceb-9b39-f9ff3e4a9fb2",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9c7f5c_l0-introduction-to-ai-ehr-10/l0-introduction-to-ai-ehr-10.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/72e6d58d-3f63-4ceb-9b39-f9ff3e4a9fb2",
+              "caption": "EHR Data Transformation and Feature Engineering",
+              "alt": "EHR Data Transformation and Feature Engineering",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1015056,
+              "key": "fa49a9d3-5846-4869-a830-27adba6b4c95",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## EHR Data Transformation and Feature Engineering\nFirst, you'll learn to differentiate between and choose the correct Dataset level for your modeling by choosing between line, Encounter and Longitudinal levels. \n\nThen you'll learn to apply testing and validation techniques to prevent data leakage and population misrepresentation during dataset splitting, which, if left unchecked, can lead to highly inaccurate models in production. And finally, you perform feature engineering use the TensorFlow Dataset API.\nThen it's time to get to the really fun part, Building, Evaluating and interpreting models! \n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015057,
+              "key": "707d0fb6-e74f-46e0-96f5-51727ce1095d",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5ea32276_l0-introduction-to-ai-ehr-7/l0-introduction-to-ai-ehr-7.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/707d0fb6-e74f-46e0-96f5-51727ce1095d",
+              "caption": "Building, Evaluating & Interpreting Models",
+              "alt": "Building, Evaluating & Interpreting Models",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1015058,
+              "key": "2ea893e3-3f14-4ffa-808e-a85bbf3380e4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Building, Evaluating & Interpreting Models\nIn the last part of the course, it's time to get to the really fun part, Building, Evaluating and interpreting models! \n\nYou'll start off by getting a quick review of TensorFlow DenseFeatures and implementing best practices with TF Feature columns.\nNext, you'll evaluate your models for Uncertainty and Bias while being introduced to Brier Scores for evaluation.\n\nAfter that, we'll head into a deep dive on demographic bais analysis of our models to remove bias.  Not only will you understand why unintended demographic bias is so important to address, but also how to address unintended biases using a project called Aequitas.\n\nThen, you'll get a review of uncertainty estimation and Bayesian probability before Training an Uncertainty Estimation Model with TF Probability. \n\nFinally, we'll use Shapely values to help interpret your model.\n\nWow, looking at this course, it might seem like a lot, but by the time you have finished, you will have gains some amazing skills you can put to use in the ever-growing and important industry of healthcare!\n\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1013223,
+          "key": "9b040cbf-2ccc-44e7-85e3-8bf5f06389fb",
+          "title": "Relevant Tools for AI and EHR",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "9b040cbf-2ccc-44e7-85e3-8bf5f06389fb",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1013224,
+              "key": "19586473-c85b-4334-b1ef-01acae721e8b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Relevant Tools for AI and EHR",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1013226,
+              "key": "8a69a166-c6e3-4920-bb0d-96e290de54ec",
+              "title": "ND320 AIHCND C01 L00 A05 What Are The Relevant Tools That Students Will Use-",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "iyuIS7ZtFs8",
+                "china_cdn_id": "iyuIS7ZtFs8.mp4"
+              }
+            },
+            {
+              "id": 1015059,
+              "key": "8e7e1f1e-f000-42c3-b853-0941e5b3e5a0",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Relevant Tools\nIn this course, you will be using Jupyter Notebooks throughout. We will be working with some fantastic libraries like: \n - Python\n - Numpy\n - Pandas\n - Seaborn\n - Matplotlib \n - TensorFlow\n - TensorFlow Probability\n - Aequitas\n - Shapley \n\nTo be able to complete this course, you need to have:\n- Intermediate Python\n- Basic understanding of machine learning\n\n**This is not an introductory course and you should have a solid foundation in these skills before taking this course.** \n\nLuckily, Udacity has many fantastic courses in these areas to get you up to speed if you need them!\n\nWhile this course focuses on Python and Tensorflow there are many other tools you might be exposed to working with AI and EHR. \n\nFirst, for really big data sets and more computing power, you might use one of the cloud providers like\n- Google Cloud Platform\n- Amazon AWS\n- Azure\n\nSome other popular languages for working with AI in healthcare might include:\n- R\n- Julia \n- SQL (on cloud query engines such as GCP Big Query and AWS Athena)\n\nFinally, other popular Machine Learning packages include:\n- PyTorch\n- Scikit-learn\n- PySpark\n\nWhile some of the features shown in this course are specific to TensorFlow, many of the important techniques you will learn will apply no matter where or how you create your models. \n\nFinally, you may encounter some EHR data systems. Below are only a few of them.\n- Cerner\n- Epic\n\nHowever, it is unlikely you would be working directly with these systems, but it's good to know about them. \n\n#### Additional Resources\n- [Python](https://www.python.org/)\n- [Numpy](https://numpy.org/)\n- [Pandas](https://pandas.pydata.org/docs/)\n- [Seaborn](https://seaborn.pydata.org/)\n- [MatPlotLIb](https://matplotlib.org/)\n- [TensorFlow 2.0/2.1](https://www.tensorflow.org/guide/effective_tf2)\n- [TensorFlow Feature Columns](https://www.tensorflow.org/api_docs/python/tf/feature_column)\n- [TensorFlow Probability](https://www.tensorflow.org/probability)\n- [TensorFlow `DenseFeatures`](https://www.tensorflow.org/api_docs/python/tf/keras/layers/DenseFeatures)\n- [Shapley](https://pypi.org/project/Shapely/)\n- [Aequitas](http://www.datasciencepublicpolicy.org/projects/aequitas/)\n- [Google Cloud Platform](https://cloud.google.com/)\n- [Amazon AWS](https://aws.amazon.com/)\n- [Microsoft Azure](https://azure.microsoft.com/en-us/)\n- [R](https://www.r-project.org/)\n- [Julia](https://julialang.org/)\n- [SQL](https://www.w3schools.com/sql/sql_intro.asp)\n- [Big Query](https://cloud.google.com/bigquery)\n- [AWS Athena](https://aws.amazon.com/athena/)\n- [Scikit Learn](https://scikit-learn.org/)\n- [PySpark](https://spark.apache.org/docs/latest/api/python/index.html)\n- [Cerner](https://www.cerner.com/)\n- [Epic](https://www.epic.com/)",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1013227,
+          "key": "c49c9f05-9824-49ef-bb02-52c006ea975e",
+          "title": "Course Project Preview",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c49c9f05-9824-49ef-bb02-52c006ea975e",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1013228,
+              "key": "92b129fc-9eb4-4f61-be8e-8bfddc94df65",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Course Project Preview",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1013229,
+              "key": "7c0a5a07-37cd-4976-8b84-95764c3bfdf9",
+              "title": "ND320 AIHCND C01 L00 A06 Project Introduction",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "qRlB7WtRV5Q",
+                "china_cdn_id": "qRlB7WtRV5Q.mp4"
+              }
+            },
+            {
+              "id": 1016087,
+              "key": "ef75e8be-5288-4b23-9f98-64d481f079b2",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "*Note: At about 2:15 there is a type it should say \"models\".*",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1013721,
+          "key": "4aac5415-70d4-44da-836f-676c64025676",
+          "title": "Course Introduction Wrap-up",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "4aac5415-70d4-44da-836f-676c64025676",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1013722,
+              "key": "07508380-34a0-48f5-80ef-287175cec63f",
+              "title": "ND320 AIHCND C01 L00 A07 Lesson Recap V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "FjdSkbu7kz4",
+                "china_cdn_id": "FjdSkbu7kz4.mp4"
+              }
+            },
+            {
+              "id": 1015060,
+              "key": "60d56dad-f667-4ac4-a81e-7ef6af7f55de",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Let's Get Started\n\nHopefully, this course will provide you with everything you need to get started in the growing and high impact field of AI in EHR!\n\nHead on to the next section to get started!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015061,
+              "key": "49b0fd1d-4b13-4465-b1fc-97f157b5ba0f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Introduction Key Terms\n| Key Term | Definition|\n| -------------- |-------------------------------------------------------|\n|Health Record | A patient's documentation of their healthcare encounters and the data created by the encounters across time\n|EHR | Electronic Health Record\n|EMR | Electronic Medical Record\n|HIPAA |Health Insurance Portability and Accountability Act",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

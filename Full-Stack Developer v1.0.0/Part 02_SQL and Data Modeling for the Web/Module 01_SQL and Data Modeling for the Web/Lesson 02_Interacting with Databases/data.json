@@ -1,0 +1,2703 @@
+{
+  "data": {
+    "lesson": {
+      "id": 907460,
+      "key": "e9a00338-ff0d-415b-b382-25d445e529a1",
+      "title": "Interacting with Databases",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Interact with relational databases. Review SQL and the Client-Server Model. Use Postgres, understand DBAPIs, and use psycopg2.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/e9a00338-ff0d-415b-b382-25d445e529a1/907460/1579646882547/Interacting+with+Databases+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/e9a00338-ff0d-415b-b382-25d445e529a1/907460/1579646876228/Interacting+with+Databases+Subtitles.zip"
+          },
+          {
+            "name": "Postgres Psql Cheat Sheet",
+            "uri": "https://video.udacity-data.com/topher/2019/August/5d5a1055_postgres-psql-cheat-sheet/postgres-psql-cheat-sheet.pdf"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 907446,
+          "key": "b9764a82-2998-4b66-a465-9a081a51c959",
+          "title": "Lesson Overview",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "b9764a82-2998-4b66-a465-9a081a51c959",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 907389,
+              "key": "bdf2cf5b-4058-4b70-8c43-e1741fddfa7f",
+              "title": "Lesson Overview Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Lesson Overview",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907391,
+              "key": "8da2aed9-ec96-4728-abbe-86b8b945cc7a",
+              "title": "ND004 C01 L02 01 Lesson Overview",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "4TnKy-9jNko",
+                "china_cdn_id": "4TnKy-9jNko.mp4"
+              }
+            },
+            {
+              "id": 917201,
+              "key": "4fabeace-ba11-442a-a656-80067c1389db",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Here are the three core topics we'll be covering in this lesson:\n\n### 1. Interacting with a (remote) database\nBackend developers need to interact with databases on a regular basis in order to manipulate and maintain the models behind their web applications. In this lesson, we'll build a foundational understanding of how those interactions work.\n\nThis foundational understanding will be essential in later lessons when we get into more advanced concepts related to database interactions.\n\nIn working with a database, we'll need to use a **Database Management System (DBMS)**.\n\n>A **Database Management System (DBMS)** is simply software that allows you to interact with a database (e.g., to access or modify the data in that database).\n\nThere are many different Database Management Systems out there, but the particular DBMS we'll be using is called [PostgreSQL](https://www.postgresql.org/) (or simply **Postgres**).\n\n### 2. Database Application Programming Interfaces (DBAPIs)\nOnce we've looked at the basics of interacting with a database, we'll need to understand how to interface with that database from another language or web server framework (such as Python, NodeJS, Ruby on Rails, etc.). This is where **DBAPIs** come in.\n\nIn this lesson, we'll go over the basics of **DBAPIs**, and how they are used to interact with a database from another language (like Python).\n\n### 3. psycopg2\nFinally, we'll get some experience working with the widely used [psycopg2](http://initd.org/psycopg/) library, which will allow us to interact with a database from Python.\n\n> **psycopg2** is a database adapter that allows us to interact with a Postgres database from Python.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 907445,
+          "key": "7f8d4f04-ecd4-40ed-b3cf-63e3439098dc",
+          "title": "Relational Databases",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "7f8d4f04-ecd4-40ed-b3cf-63e3439098dc",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 907396,
+              "key": "40069f8a-f93b-41a9-9a4b-4f914dc8f3ce",
+              "title": "Relational Databases Recap Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Relational Databases\n\nOver the next couple of pages, we'll briefly go over some of the fundamental concepts concerning **relational databases**. In general, we're assuming that you've had some experience with relational databases, and that these ideas are not entirely new to you.\n\nIf this *is* new to you, or if you feel shaky on this topic, don't worry—we'll provide some additional resources that you can use to learn (or review) the basics that you'll need for this course.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907390,
+              "key": "f48ab865-f2c6-4bc8-9329-514e14eb206f",
+              "title": "ND004 C01 L02 02 Relational Databases Recap",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "RDzMBlyLWvk",
+                "china_cdn_id": "RDzMBlyLWvk.mp4"
+              }
+            },
+            {
+              "id": 916554,
+              "key": "bd26e67f-f737-4b20-b6e6-463a6085b513",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Resources\n\nIf you'd like to spend some time going over the basic concepts of relational databases, you can check out Udacity's free course [_Intro to Relational Databases_](https://www.udacity.com/course/intro-to-relational-databases--ud197).\n\nI also recommend this video, [An Introduction to Relational Databases](https://www.youtube.com/watch?v=z2kbsG8zsLM), which introduces the thinking behind relational databases, how they resolve issues of inconsistent data entry, and how they allow different pieces of data to relate to one another using primary keys (we'll talk more about primary keys in a moment).",
+              "instructor_notes": ""
+            },
+            {
+              "id": 916552,
+              "key": "503ff493-f56e-41c5-b633-8ce4e20b5964",
+              "title": "Match qualities",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "503ff493-f56e-41c5-b633-8ce4e20b5964",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "We just talked about several key characteristics that databases have. Can you match each characteristic with the correct description?"
+                },
+                "concepts_label": "Description",
+                "answers_label": "Database Characteristic",
+                "concepts": [
+                  {
+                    "text": "Efficient storage of strings, numbers, booleans, etc.",
+                    "correct_answer": {
+                      "id": "a1565747537954",
+                      "text": "Ability to efficiently store many types of data"
+                    }
+                  },
+                  {
+                    "text": "Multiple users of a web application can write and read data at the same time, while the data is kept in a consistent and accurate state.",
+                    "correct_answer": {
+                      "id": "a1565803272266",
+                      "text": "Concurrency control"
+                    }
+                  },
+                  {
+                    "text": "You can access data later, after it was created.",
+                    "correct_answer": {
+                      "id": "a1565803282562",
+                      "text": "Persistence"
+                    }
+                  },
+                  {
+                    "text": "All the users of a web application can access the same data source",
+                    "correct_answer": {
+                      "id": "a1565803301586",
+                      "text": "Shared source of truth"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1565803301586",
+                    "text": "Shared source of truth"
+                  },
+                  {
+                    "id": "a1565803282562",
+                    "text": "Persistence"
+                  },
+                  {
+                    "id": "a1565747537954",
+                    "text": "Ability to efficiently store many types of data"
+                  },
+                  {
+                    "id": "a1565803272266",
+                    "text": "Concurrency control"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 916553,
+              "key": "0e35f415-5bc6-4502-a6d1-983b368f1ec0",
+              "title": "Qualities of relational databases",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "0e35f415-5bc6-4502-a6d1-983b368f1ec0",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Check off all the qualities of a relational database management system",
+                "answers": [
+                  {
+                    "id": "a1565803804521",
+                    "text": "All data is stored in tables",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1565803829184",
+                    "text": "All data is stored in nodes and edges",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1565803835149",
+                    "text": "Every column has a data type",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1565803838995",
+                    "text": "Every row has a data type",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1565803877037",
+                    "text": "It provides constraints and triggers to enforce data integrity",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 917209,
+          "key": "3b1f424f-0dbd-441c-8933-49495c37b52a",
+          "title": "Primary Keys & Foreign Keys",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "3b1f424f-0dbd-441c-8933-49495c37b52a",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 917210,
+              "key": "3e785a1e-24b7-4fa4-b064-c199bb31360f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Primary Keys & Foreign Keys",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917211,
+              "key": "e8423873-f101-4ae1-b70e-3cbb2539cd34",
+              "title": "ND004 C01 L02 03 Primary And Foreign Keys",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "f-xoT734mDw",
+                "china_cdn_id": "f-xoT734mDw.mp4"
+              }
+            },
+            {
+              "id": 917212,
+              "key": "ad8ab18d-0cff-4ee3-bc79-2f85963d06d8",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Takeaways\n\n#### Primary Key\n* The primary key is the unique identifier for the entire row, referring to one _or more_ columns.\n* If there are more multiple columns for the primary key, then the set of primary key columns is known as a **composite key**.\n\n#### Foreign Key\n* A primary key in another (foreign) table.\n* Foreign keys are used to map relationships between tables.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917224,
+              "key": "0494d09b-3d25-4863-b75a-ae07a2989e34",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "0494d09b-3d25-4863-b75a-ae07a2989e34",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Relationships between tables are encoded using…",
+                "answers": [
+                  {
+                    "id": "a1566089744673",
+                    "text": "Composite Keys",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566089767722",
+                    "text": "Primary Keys",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566089768291",
+                    "text": "Foreign Keys",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 917225,
+              "key": "44883ca8-cb8e-4963-9ef7-a8aefce62896",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "44883ca8-cb8e-4963-9ef7-a8aefce62896",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "When a primary key consists of more than 1 column, we call the set of primary key columns a…",
+                "answers": [
+                  {
+                    "id": "a1566089852440",
+                    "text": "Combo Key",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566089860888",
+                    "text": "Composite Key",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1566089861992",
+                    "text": "Collective Key",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566089862561",
+                    "text": "Primary Composition Key",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 917213,
+          "key": "0cda4d0e-91a8-4f43-b56a-72c1e3eabef3",
+          "title": "SQL",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "0cda4d0e-91a8-4f43-b56a-72c1e3eabef3",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 917214,
+              "key": "a97ab53b-44f0-49bb-8297-64b79ac6da16",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# SQL",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917215,
+              "key": "b432c74a-153a-41a6-8407-6842f3c9fc8a",
+              "title": "ND004 C01 L02 04 SQL",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "aIxknntvI4w",
+                "china_cdn_id": "aIxknntvI4w.mp4"
+              }
+            },
+            {
+              "id": 917216,
+              "key": "d70d170b-8fb4-4c07-be96-7870932a18ce",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## SQL Review\n\nYou should feel familiar and comfortable with each of the commands below. If you feel like you need a review or some practice with any of these, you can find an introduction to SQL in our free [_Intro to Relational Databases_](https://www.udacity.com/course/intro-to-relational-databases--ud197) course.\n\nYou can also click on any of the commands to check out the Postgres tutorial page on how that command works.\n\n#### Manipulating Data\n\n* [INSERT](http://www.postgresqltutorial.com/postgresql-insert/)\n* [UPDATE](http://www.postgresqltutorial.com/postgresql-update/)\n* [DELETE](http://www.postgresqltutorial.com/postgresql-delete/)\n\n#### Querying Data\n\n* [SELECT](http://www.postgresqltutorial.com/postgresql-select/)\n\n#### Structuring Data\n\n* [CREATE TABLE](http://www.postgresqltutorial.com/postgresql-create-table/)\n* [ALTER TABLE](http://www.postgresqltutorial.com/postgresql-alter-table/)\n* [DROP TABLE](http://www.postgresqltutorial.com/postgresql-drop-table/)\n* [ADD COLUMN](http://www.postgresqltutorial.com/postgresql-add-column/)\n* [DROP COLUMN](http://www.postgresqltutorial.com/postgresql-drop-column/)\n\n#### Joins & Groupings\n\n* [INNER JOIN, OUTER JOINS (LEFT, RIGHT)](http://www.postgresqltutorial.com/postgresql-joins/)\n\n* [GROUP BY, SUM, COUNT](http://www.postgresqltutorial.com/postgresql-group-by/)\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917226,
+              "key": "4e3a5703-071b-418d-af5c-a72e0206f643",
+              "title": "SQL Quiz 1",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "4e3a5703-071b-418d-af5c-a72e0206f643",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "True/False: Every relational database system has its own particular implementation of SQL.",
+                "answers": [
+                  {
+                    "id": "a1566090062442",
+                    "text": "True",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1566090074053",
+                    "text": "False",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 917229,
+              "key": "a9b702c0-848d-4fd6-96d3-a2d87516dd54",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "a9b702c0-848d-4fd6-96d3-a2d87516dd54",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Different relational database systems have different \"flavors\" of SQL; each of these varieties is referred to as a…",
+                "answers": [
+                  {
+                    "id": "a1566090356333",
+                    "text": "SQL Language",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566090360648",
+                    "text": "Dialect",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1566090361328",
+                    "text": "Dynamic Set",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566090362143",
+                    "text": "Database Implementation",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 917227,
+              "key": "2189c7c1-21e7-4130-9ff2-03d0d6482350",
+              "title": "SQL Quiz 2",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "2189c7c1-21e7-4130-9ff2-03d0d6482350",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of these commands is used to retrieve data from a SQL database?",
+                "answers": [
+                  {
+                    "id": "a1566090141352",
+                    "text": "QUERY",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566090152652",
+                    "text": "UPDATE",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566090153347",
+                    "text": "JOIN",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566090155238",
+                    "text": "SELECT",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1571936738174",
+                    "text": "GET_DATA",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 917217,
+              "key": "755e6ba9-ed1c-421a-b9eb-d24ac790e500",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### SQL Practice Exercises\n\nGo to [this SQLFiddle of drivers and vehicles](http://sqlfiddle.com/#!17/a114f/2), and try practicing SQL using the exercises below.\n\n#### Manipulating & Querying Data\n1. Insert a few records into both drivers and vehicles. Include 3 records of drivers who have vehicles, belonging in the vehicles table.\n1. Select all driver records; select all vehicle records; select only 3 vehicle records (using [LIMIT](http://www.postgresqltutorial.com/postgresql-limit/))\n1. Driver with ID 2 no longer owns any vehicles. Update the database to reflect this.\n1. Driver with ID 1 now owns a new vehicle in addition to the previous one they owned. Update the database to reflect this.\n\n#### Joins & Group Bys\n1. Select all vehicles owned by driver with ID 3.\n1. Select all vehicles owned by driver with name 'Sarah' (without knowing their ID).\n1. Show a table of the number of vehicles owned per driver.\n1. Show the number of drivers that own a Nissan model.\n\n#### Structuring Data\n1. Add information about vehicle color.\n1. Update all existing vehicle records to have a vehicle color.\n1. Add contact information (email, address) to the drivers table.\n\n#### Challenges\nUsing Timestamps [(see help here)](http://www.postgresqltutorial.com/postgresql-timestamp/),\n1. Update vehicles table to show date of registration information\n1. The DMV is looking to notify all drivers with a vehicle that needs their registration renewed in the next month. If vehicles need to renew their vehicles once every year after their date of registration, then write a query to fetch all drivers with at least 1 vehicle that has an _upcoming_ renewal in the next month, fetching their contact information as well as information about which vehicles need renewals. The DMV would like to run this query every time they need to contact all drivers that have an upcoming renewal in the next month.\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 917218,
+          "key": "47f10a00-75b2-43b3-b539-e1062babe52c",
+          "title": "Execution Plan",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "47f10a00-75b2-43b3-b539-e1062babe52c",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 917219,
+              "key": "4e5aeba7-42bb-4b53-b8bc-13769d713a4c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Execution Plan",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917220,
+              "key": "b23a5bf7-8a8f-4b83-9e11-43fdfd6fa047",
+              "title": "ND004 C01 L02 05 Execution Plan",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "f9NJpyB2Ezc",
+                "china_cdn_id": "f9NJpyB2Ezc.mp4"
+              }
+            },
+            {
+              "id": 917228,
+              "key": "197304d8-bf19-4755-9a55-d1da058b10d3",
+              "title": "Join Review",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "197304d8-bf19-4755-9a55-d1da058b10d3",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "On a joined select query that joins a `vehicles` table and a `drivers` table, the execution plan traverses the `vehicles` table and encounters a row with a `driver_id` that does not have a matching record in the foreign (`drivers`) table. If it is a/an **___________** join query, then the execution plan would skip that row and not add it to the query's output.\n\nFill in the blank above.",
+                "answers": [
+                  {
+                    "id": "a1566090226740",
+                    "text": "outer left",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566090271165",
+                    "text": "outer right",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566090271736",
+                    "text": "inner",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 917221,
+              "key": "0435c0ff-1ee5-4fa8-a654-4bb215145ee2",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Let's check out the execution plan!\n\nIn [SQLFiddle](http://sqlfiddle.com/#!17/93e03/22), you'll notice a link that says \"View Execution Plan\" after running a SQL command (see the green bar near the bottom).",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917222,
+              "key": "1ce088fe-e777-462c-9185-23506909cbbc",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2019/August/5d58a0ed_sql-fiddle-screenshot-fsnd-c1/sql-fiddle-screenshot-fsnd-c1.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/1ce088fe-e777-462c-9185-23506909cbbc",
+              "caption": "",
+              "alt": "Screenshot of SQL Fiddle showing the execution plan",
+              "width": 818,
+              "height": 726,
+              "instructor_notes": null
+            },
+            {
+              "id": 917223,
+              "key": "326fea1a-f24c-43ea-8dbd-649339c71212",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\nView the execution plan and generally be familiar with what is happening to the database under the hood. The execution plan gives important insight into the performance of the query. Since there can multiple ways of performing queries against a database with various performance tradeoffs, it's important to choose the one with the best execution plan for quickly and efficiently returning the results that you need.\n\nIn SQLFiddle, for a particular result, click on the \"View Execution Plan\" link, and under Query Plan, click on \"View on Depesz\".\n\nFor a `SELECT *` operation, the most basic operation is Seq Scan (\"Sequential Scan\"), [as explained here on depesz.com](https://www.depesz.com/2013/04/27/explaining-the-unexplainable-part-2/#seq-scan), where PostgreSQL opens the file storing the table, then reads each rows, one by one, returning them to user. We should generally know that this is what happens when we do a SELECT statement.\n\n\nLet's look at something more complicated. For running a join,\n\n```SQL\nSELECT make, model from vehicles\nJOIN drivers on vehicles.driver_id = drivers.id;\n```\n\n[The execution plan looks like this](https://explain.depesz.com/s/3QxE):\n\n1. [Hash Join](https://www.depesz.com/2013/05/09/explaining-the-unexplainable-part-3/#hash-join): joins two record sets. It is the most expensive part of the plan, as indicated by the 'cost', it is joining _every_ row! (Is that necessary? Can we accomplish finding out what we need while devising an execution plan that doesn't require this?) The hash join creates a hash in-memory that hashes based the driver_id column.\n2. [Seq Scan](https://www.depesz.com/2013/04/27/explaining-the-unexplainable-part-2/#seq-scan): a sequential scan is done across the entire vehicles table. This makes sense since we're looking to fetch _all_ make and model information across all records in the vehicles table.\n3. Hash with Seq Scan on drivers: as the sequential scan continues, the join key is checked in the Hash returned from Step 1, where if it does NOT exist, given that this is an Inner Join, we ignore that row, and if it _does_ exist (a record was found that _does_ intersect between the vehicles and drivers tables), then we fetch the row from the hash to generate the outputted, joined row.\n\n\nWe can always gain visibility over how performant a given SQL query is by looking at its execution plan.\n\n\n### On Performance\n\nLearning how to write efficient queries is practically its own field. There are [techniques for improving the performance of SQL queries](https://www.ibm.com/support/knowledgecenter/SSZLC2_9.0.0/com.ibm.commerce.developer.doc/refs/rsdperformanceworkspaces.htm) to consider, we can [use critical indexes to speed up information lookups](http://www.postgresqltutorial.com/postgresql-indexes/postgresql-create-index/), and there are helpful utilities like [SQL views](https://db.grussell.org/sql3.html#_myauto10) for splitting queries into subroutines.\n\nIt won't be necessary to understand how to optimize SQL queries to complete the rest of this course. However, you may want to look particularly into SQL Indexes and generally have a performance-oriented mindset with regards to writing efficient queries. I recommended reading and following the blog, [Use the Index, Luke!](https://use-the-index-luke.com/) as a highly in-depth guide to database performance for developers.\n\nHow important is it to know about the performance of your SQL queries? Well, would you want to visit a site that takes 4 seconds to load your results (_every_ time you do a search), or a half of a second? You tell me...\n\nKnowing and applying performance strategies to a SQL query can [wound up being really powerful](https://i.imgflip.com/3oakl8.jpg).\n\n----\n\n\nNow for some fun resources on Hashes:\n* [What is a HashTable Data Structure](https://www.youtube.com/watch?v=MfhjkfocRR0) video explanation by Paul Programming\n* [Intro to Hash tables](https://www.slideshare.net/AmyHua/intro-to-hash-tables)",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 907449,
+          "key": "44db44ef-8469-40db-85ca-62d448311533",
+          "title": "Client-Server Model",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "44db44ef-8469-40db-85ca-62d448311533",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 907395,
+              "key": "6b2c5f69-ffc6-4d32-a60d-a60ae931728c",
+              "title": "Client-Server Model Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Client-Server Model\n\nIn order to build database-backed web applications, we first need to understand how servers, clients, and databases interact.\n\nA major part of this is the **client-server model**, so let's look at that first. The basic idea is very simple, and looks something like this:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 953242,
+              "key": "b61c7ccb-5fb9-4cf2-800c-296a5d9eb6bd",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2019/October/5db32370_client-server-model/client-server-model.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/b61c7ccb-5fb9-4cf2-800c-296a5d9eb6bd",
+              "caption": "",
+              "alt": "A diagram showing the basic client-server model.",
+              "width": 389,
+              "height": 451,
+              "instructor_notes": null
+            },
+            {
+              "id": 953243,
+              "key": "cd4400a8-0648-4c90-b11c-1b830693ef92",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "A **server** is a centralized program that communicates over a network (such as the Internet) to serve *clients*.\n\nAnd a **client** is a program (like the web browser on your computer) that can request data from a server.\n\nWhen you go to a web page in your browser, your browser (the client) makes a request to the server—which then returns the data for that page.\n\n## Adding databases to the model\nSo that's the basic client-server model. But when you add in databases, this creates a little more complexity.\n\nIn this next video, we'll review the basic model and then see how databases fit into things.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907398,
+              "key": "61f8c297-b54e-408e-aec0-dbee104397a3",
+              "title": "ND004 C01 L02 06 Client-Server Model",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "jwVkp7bHvSY",
+                "china_cdn_id": "jwVkp7bHvSY.mp4"
+              }
+            },
+            {
+              "id": 907399,
+              "key": "e445d1d7-b0b9-4784-b1ed-697a6be9dd2d",
+              "title": "Client-Server Model Recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In summary, *relational database systems follow a client-server model*:\n\n#### Servers, Clients, Hosts\n* In a Client-Server Model, a **server** serves many **clients**. \n* Servers and clients are programs that run on *hosts*.\n* **Hosts** are computers connected over a network (like the internet!).\n\n#### Requests and Responses\n* A client sends a request to the server\n* The server's job is to fulfill the request with a response it sends back to the client.\n* Requests and responses are served via a **communication protocol**, which sets up the expectations and rules for how the communication occurs between servers and clients.\n\n#### Relational Database Clients\n\n* A database client is any program that sends requests to a database\n* In some cases, the database client is a web server! When your browser makes a request, the web server acts as a *server* (fulfilling that request), but when the web server requests data from the database, it is acting as a *client* to that database—and the database is the server (because it is fulfilling the request).\n\n>Don't let this confuse you. Basically, we call things **clients** when they are making a request and **servers** when they are fulfilling a request. Since a web server can do both, it sometimes acts as a server and sometimes acts as a client.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 953244,
+              "key": "f2cf75fb-78b4-48db-8c3b-b95ca0868b6d",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "f2cf75fb-78b4-48db-8c3b-b95ca0868b6d",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Let's review the basic vocabulary we've covered. See if you can match each term with the correct description."
+                },
+                "concepts_label": "Description",
+                "answers_label": "Term",
+                "concepts": [
+                  {
+                    "text": "A common language that the client and server use to communicate with each other.",
+                    "correct_answer": {
+                      "id": "a1572022139703",
+                      "text": "Communication protocol"
+                    }
+                  },
+                  {
+                    "text": "A centralized system that communicates over a network to serve many clients.",
+                    "correct_answer": {
+                      "id": "a1572022182117",
+                      "text": "Server"
+                    }
+                  },
+                  {
+                    "text": "A computer connected to the network (which could be running either a client or server program) .",
+                    "correct_answer": {
+                      "id": "a1572022182716",
+                      "text": "Host"
+                    }
+                  },
+                  {
+                    "text": "A program that can request data from a server.",
+                    "correct_answer": {
+                      "id": "a1572022183279",
+                      "text": "Client"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1572022182716",
+                    "text": "Host"
+                  },
+                  {
+                    "id": "a1572022182117",
+                    "text": "Server"
+                  },
+                  {
+                    "id": "a1572022183279",
+                    "text": "Client"
+                  },
+                  {
+                    "id": "a1572022139703",
+                    "text": "Communication protocol"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 916844,
+              "key": "be2e50c3-43fb-4678-ad4d-c11d20ffea74",
+              "title": "Client Quiz",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "be2e50c3-43fb-4678-ad4d-c11d20ffea74",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "A client is responsible for sending a...",
+                "answers": [
+                  {
+                    "id": "a1565822147851",
+                    "text": "Request to the client",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1565822162260",
+                    "text": "Response to the client",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1565822165100",
+                    "text": "Request to the server",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1565822168786",
+                    "text": "Response to the server",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 916845,
+              "key": "902f06f6-cb9b-473f-9fc4-8738e0ad9b71",
+              "title": "Server Quiz",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "902f06f6-cb9b-473f-9fc4-8738e0ad9b71",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "A server is responsible for sending a...",
+                "answers": [
+                  {
+                    "id": "a1565822217744",
+                    "text": "Request to another server",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1565822236267",
+                    "text": "Request to the client",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1565822239252",
+                    "text": "Response fulfilling a client's request",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1565822248485",
+                    "text": "Response from another server",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 916842,
+              "key": "6f89ab6f-a05a-4faf-9670-93cc11b7ce0f",
+              "title": "Client-Server",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "6f89ab6f-a05a-4faf-9670-93cc11b7ce0f",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "To a **database server**, a **web server** is a....",
+                "answers": [
+                  {
+                    "id": "a1565821939665",
+                    "text": "Client",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1565821951673",
+                    "text": "Server",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1565822009521",
+                    "text": "Both a Client and a Server",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 916843,
+              "key": "bff12dc2-d33a-428d-a7a6-ac0e5882b6c8",
+              "title": "Client-Server 2",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "bff12dc2-d33a-428d-a7a6-ac0e5882b6c8",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "To a web client, a web server is a...",
+                "answers": [
+                  {
+                    "id": "a1565822006160",
+                    "text": "Client",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1565822045497",
+                    "text": "Server",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1565822048167",
+                    "text": "Both a Client and a Server",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 953293,
+              "key": "3e9ea192-1df5-4814-8eb6-1abe39982913",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "3e9ea192-1df5-4814-8eb6-1abe39982913",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "See if you can fill in the blanks in the sentences below."
+                },
+                "concepts_label": "Sentence",
+                "answers_label": "Client / Server / Host",
+                "concepts": [
+                  {
+                    "text": "The ________ sends a request to the ________.",
+                    "correct_answer": {
+                      "id": "a1572048977185",
+                      "text": "client, server"
+                    }
+                  },
+                  {
+                    "text": "The ________ sends a response to the ________.",
+                    "correct_answer": {
+                      "id": "a1572048984508",
+                      "text": "server, client"
+                    }
+                  },
+                  {
+                    "text": "The client is run on a ________.",
+                    "correct_answer": {
+                      "id": "a1572048986410",
+                      "text": "host"
+                    }
+                  },
+                  {
+                    "text": "The server is run on a ________.",
+                    "correct_answer": {
+                      "id": "a1572048987037",
+                      "text": "host"
+                    }
+                  },
+                  {
+                    "text": "The database ________ treats the web ________ as a client.",
+                    "correct_answer": {
+                      "id": "a1572049001108",
+                      "text": "server, server"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1572048977185",
+                    "text": "client, server"
+                  },
+                  {
+                    "id": "a1572048984508",
+                    "text": "server, client"
+                  },
+                  {
+                    "id": "a1572048986410",
+                    "text": "host"
+                  },
+                  {
+                    "id": "a1572048987037",
+                    "text": "host"
+                  },
+                  {
+                    "id": "a1572049001108",
+                    "text": "server, server"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 907447,
+          "key": "e711f5f3-f9a6-47b7-be25-eafd4623929f",
+          "title": "Example: Jane's Store",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "e711f5f3-f9a6-47b7-be25-eafd4623929f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 907442,
+              "key": "05d5c8d9-0d27-4a13-a845-fcfc4fd126a8",
+              "title": "Connections, Sessions, and Transactions in TCP/IP Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Client-Server Model Example: Jane's Store\n\nIn this next series of videos, we'll walk through how client-server interactions would occur in an example of an online store. We'll see how traffic gets routed from a web client, to a web server, to a database, and eventually back to a web client.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907406,
+              "key": "fca4b50c-7592-454e-aa20-d87a91be04cc",
+              "title": "ND004 C01 L02 07 Example 1- Online Store",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "pr7lETmqEc8",
+                "china_cdn_id": "pr7lETmqEc8.mp4"
+              }
+            },
+            {
+              "id": 907844,
+              "key": "bfbd6dfb-e76d-4205-a8ce-9e3fd7c84967",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Takeaways\n\n* Clicking on the Polo product leads to a click event being registered by the browser, on the client computer.\n* A click handler in the view would send a request to the server (in Javascript) from the client browser.\n* A client could request more _data_ and a different _view_ to be rendered (with that data).\n* A server process listens to the request sent from the view. It fetches the data and chooses what to render next, using the fetched data.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907845,
+              "key": "e0901be3-113f-4bf0-95d4-13f3b56adb3f",
+              "title": "ND004 C01 L02 08 Example 1- Recap-Summary",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "2KbR7D_S9Oo",
+                "china_cdn_id": "2KbR7D_S9Oo.mp4"
+              }
+            },
+            {
+              "id": 917028,
+              "key": "f85414c0-3dee-4d27-a68e-1d6493e8c9f6",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Takeaways\n\n* The client sends a request to the server, including information about the request type and any user input data.\n* The server receives the request, and uses the user input data to determine how to shape its request to the database, and sends a request to the database.\n* The database processes this request, and sends a response back to the web server.\n* The server receives the response from the database, and uses it to determine the view + powers the view template with the fetched data, sending it back to the client's browser.\n* The client is responsible for rendering something to the user, that represents both the data and its representation.\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917029,
+              "key": "73d7285f-9bb1-4fda-beab-65d5370ed9f6",
+              "title": "Client-Server",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "73d7285f-9bb1-4fda-beab-65d5370ed9f6",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Match each party and its responsibility"
+                },
+                "concepts_label": "Responsibility",
+                "answers_label": "Party",
+                "concepts": [
+                  {
+                    "text": "Data representation and what the user sees",
+                    "correct_answer": {
+                      "id": "a1566017356081",
+                      "text": "Client"
+                    }
+                  },
+                  {
+                    "text": "Processing data requests from the web server",
+                    "correct_answer": {
+                      "id": "a1566017415074",
+                      "text": "Database"
+                    }
+                  },
+                  {
+                    "text": "Fulfilling client requests and updating the view",
+                    "correct_answer": {
+                      "id": "a1566017429826",
+                      "text": "Web Server"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1566017356081",
+                    "text": "Client"
+                  },
+                  {
+                    "id": "a1566017429826",
+                    "text": "Web Server"
+                  },
+                  {
+                    "id": "a1566017415074",
+                    "text": "Database"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 917030,
+              "key": "0a841167-b2f9-460d-bc97-de52c88916f3",
+              "title": "Client-Server-Database Flow",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "0a841167-b2f9-460d-bc97-de52c88916f3",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "In the left-hand column below, you'll find a sentence that describes what we just learned. See if you can fill in all the blanks to complete the sentence."
+                },
+                "concepts_label": "Sentence",
+                "answers_label": "Fill in the blank",
+                "concepts": [
+                  {
+                    "text": "The ______",
+                    "correct_answer": {
+                      "id": "a1566017527338",
+                      "text": "web server"
+                    }
+                  },
+                  {
+                    "text": "receives a request from the ______",
+                    "correct_answer": {
+                      "id": "a1566017549049",
+                      "text": "client"
+                    }
+                  },
+                  {
+                    "text": "and sends a request to the ______",
+                    "correct_answer": {
+                      "id": "a1566017556278",
+                      "text": "database"
+                    }
+                  },
+                  {
+                    "text": "which sends back a response to the ______",
+                    "correct_answer": {
+                      "id": "a1566017569301",
+                      "text": "web server"
+                    }
+                  },
+                  {
+                    "text": "which then sends back a response to the ______.",
+                    "correct_answer": {
+                      "id": "a1566017575365",
+                      "text": "client"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1566017575365",
+                    "text": "client"
+                  },
+                  {
+                    "id": "a1566017527338",
+                    "text": "web server"
+                  },
+                  {
+                    "id": "a1566017556278",
+                    "text": "database"
+                  },
+                  {
+                    "id": "a1566017549049",
+                    "text": "client"
+                  },
+                  {
+                    "id": "a1566017569301",
+                    "text": "web server"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 907459,
+          "key": "a4a60746-320c-4c9e-bfdc-81c87a44f1b6",
+          "title": "TCP/IP",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a4a60746-320c-4c9e-bfdc-81c87a44f1b6",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 907401,
+              "key": "954c53b6-25c5-440f-bbc8-aab2b087caf5",
+              "title": "TCP/IP Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# TCP/IP\n\nIn this section, we'll look at the suite of communication protocols that is used to transfer data over the Internet. These communication protocols are most often referred to as **TCP/IP**, which is an abbreviation that refers to the two main protocols involved—**Transmission Control Protocol** (**TCP**) and **Internet Protocol** (**IP**).",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907414,
+              "key": "e8de57dc-e878-4120-acbd-ae6a70d1845f",
+              "title": "ND004 C01 L02 12 TCP-IP",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "3mh7QdWTiZ4",
+                "china_cdn_id": "3mh7QdWTiZ4.mp4"
+              }
+            },
+            {
+              "id": 917024,
+              "key": "2e25f6c6-8929-49a7-8ca9-fcef374fa8e5",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Takeaways\n\nTCP/IP is a suite of communication protocols that is used to connect devices and transfer data over the Internet.\n\n**TCP/IP uses:**\n* **IP addresses**: An *IP address* identifies the location of a computer on a network.\n* **Ports**: A *port* is a location on the recipient computer, where data is received.\n\nWhile an IP address tells you where to find a particular computer, it doesn't tell you specifically *where* on that computer a particular connection should be made—that's what **port numbers** are for.\n\n**Some port numbers you should know:**\n  * **Port 80**: The port number most commonly used for *HTTP requests*. For example, when a client makes a request to a web server, this request is usually sent through port 80.\n  * **Port 5432**: The port number used by most database systems; default port for Postgres.\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907407,
+              "key": "b79e7961-ef37-4486-a3c0-b98fd3950e97",
+              "title": "TCP/IP Quiz - What is an IP Address?",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "b79e7961-ef37-4486-a3c0-b98fd3950e97",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What is an IP Address?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "A computer process for identifying the location of a device on a network",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "A unique identifier for the location of a computer on the network",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1572738721064",
+                    "text": "A unique identifier for a specific location on a computer",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 907411,
+              "key": "a3700b08-07b7-4f33-81df-739481db466f",
+              "title": "TCP/IP Quiz - What is the default port for most database interactions?",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "a3700b08-07b7-4f33-81df-739481db466f",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What is the default port for most database interactions?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "8080",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "80",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566014689325",
+                    "text": "5432",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1566014691255",
+                    "text": "5342",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566014696181",
+                    "text": "5243",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 907420,
+              "key": "28539746-9b47-421c-88f6-a29dcbc7a34e",
+              "title": "TCP/IP Quiz - Why are ports used?",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "28539746-9b47-421c-88f6-a29dcbc7a34e",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Why are ports used?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "Computers can be very complicated",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "Ports expedite the sending of information",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566015077637",
+                    "text": "Ports are a fallback location when IP addresses fail",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566015101687",
+                    "text": "A computer can receive multiple types of traffic at the same time, and ports allow them to be tracked and routed appropriately.",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 917026,
+              "key": "231ab7a5-f27f-4449-96dd-48655e8a8ec2",
+              "title": "Ports, IP Addresses",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "231ab7a5-f27f-4449-96dd-48655e8a8ec2",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "A/an ______ has many ______.",
+                "answers": [
+                  {
+                    "id": "a1566015285404",
+                    "text": "port, IP addresses",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566015316455",
+                    "text": "IP address, ports",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 917027,
+              "key": "cb7115cb-d221-46a2-9abe-bcfe65af1568",
+              "title": "Port Matching",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "cb7115cb-d221-46a2-9abe-bcfe65af1568",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Match the Port to its typical use:"
+                },
+                "concepts_label": "Port",
+                "answers_label": "Use",
+                "concepts": [
+                  {
+                    "text": "5432",
+                    "correct_answer": {
+                      "id": "a1566015355518",
+                      "text": "Database traffic"
+                    }
+                  },
+                  {
+                    "text": "80",
+                    "correct_answer": {
+                      "id": "a1566015383082",
+                      "text": "HTTP (web traffic)"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1566015383082",
+                    "text": "HTTP (web traffic)"
+                  },
+                  {
+                    "id": "a1566015355518",
+                    "text": "Database traffic"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 917032,
+              "key": "c4ef9ead-d2e3-411d-9f61-8e0db8630af0",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Additional Resources\n\n* In addition to *port 80* and *port 5432*, there are a number of other common ports you might want to get familiar with. Here's a list of [14 of the most common ports](https://opensource.com/article/18/10/common-network-ports).\n* If you're interested in going into much greater depth on computer networking,  you can check out the free [Udacity Course on Computer Networking offered by Georgia Tech](https://www.udacity.com/course/computer-networking--ud436).\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 908371,
+          "key": "1b3c8414-154d-4bab-9e1b-e3ff44ef8fd8",
+          "title": "Connections and Sessions in TCP/IP",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "1b3c8414-154d-4bab-9e1b-e3ff44ef8fd8",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 908372,
+              "key": "bd1f45cb-4d67-4608-80f1-12b51519fa8d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Connections and Sessions in TCP/IP",
+              "instructor_notes": ""
+            },
+            {
+              "id": 908374,
+              "key": "5793c8e2-2459-4873-aa77-b6e2693d139f",
+              "title": "ND004 C01 L02 13 Connections And Sessions",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "CC90KkIzR3o",
+                "china_cdn_id": "CC90KkIzR3o.mp4"
+              }
+            },
+            {
+              "id": 917163,
+              "key": "b1673854-5445-4105-8f59-8d57b5fe46c9",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Takeaways\n\n* TCP/IP is **connection-based**, meaning all communications between parties are arranged over a connection. A connection is established before any data transmission begins.\n* Over TCP/IP, we'll _always_ need to _establish a connection_ between clients and servers in order to enable communications.\n  Moreover:\n  * Deliveries over the connection are **error-checked**: if packets arrive damaged or lost, then they are resent (known as _retransmission_).\n* Connecting starts a **session**. Ending the connection ends the session.\n* In a database session, many **transactions** can occur during a given session. Each transaction does work to commit changes to the database (updating, inserting, or deleting records).\n\n---\n\n#### Aside: the UDP Protocol\n\nThe internet also offers the UDP protocol. UDP is much simpler than TCP: hosts on the network send data (in units called _datagrams_) without _any_ connections needing to be established.\n\n#### TCP vs UDP\nIf TCP is like building highways between houses before sending packages between them, then UDP is much like sending over a carrier pigeon from one house to another in order to deliver packages: you don't know whether the pigeon will head in the right way, drop your package along the way, or encounter an issue mid-travel. On the other hand, there is less overhead to use UDP than managing a connection over TCP / building a highway.\n\nWhen speed is more important than reliability, especially when applications need to stream very small amounts of information quickly (smaller packages of information means less issues with reliability), then UDP is preferred. A lot of real time streaming applications, (e.g. live TV streaming, Voice over IP (VoIP)) prefer UDP over TCP. Since UDP does not need to retransmit lost datagrams, nor does it do any connection setup, there are fewer delays over UDP than TCP. TCP's continuous connection is more reliable but has more latency.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917165,
+              "key": "02b487e1-6172-4e15-8673-6509c8a36fbc",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "02b487e1-6172-4e15-8673-6509c8a36fbc",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "A `____________` must be established to enable data transmission across a network using TCP/IP.",
+                "answers": [
+                  {
+                    "id": "a1566070649426",
+                    "text": "session",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566070680490",
+                    "text": "connection",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1566070716966",
+                    "text": "transaction",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 917292,
+              "key": "d7c16387-c9fa-4273-901f-3e596d4f788b",
+              "title": "Transaction Quiz",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "d7c16387-c9fa-4273-901f-3e596d4f788b",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Within a session, we encapsulate units of work that we commit as changes to a database in what we call `________`.",
+                "matchers": [
+                  {
+                    "expression": "^transaction"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 907853,
+          "key": "4b48ed67-9b70-4e9f-a385-1132e8810377",
+          "title": "Transactions",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "4b48ed67-9b70-4e9f-a385-1132e8810377",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 907854,
+              "key": "f50fe4e9-9518-4480-9779-79d5e6eb0076",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Transactions",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907855,
+              "key": "98f1de92-4b82-46e6-88ce-0accbbc3bc0e",
+              "title": "ND004 C01 L02 14 Transactions",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "ncBhrFzbI8w",
+                "china_cdn_id": "ncBhrFzbI8w.mp4"
+              }
+            },
+            {
+              "id": 917173,
+              "key": "52a02d72-ccfc-4c8f-832d-fa36532845e0",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Takeaways\n* Databases are interacted using client-server interactions, over a network\n* Postgres uses TCP/IP to be interacted with, which is connection-based\n* We interact with databases like Postgres during sessions\n* Sessions have transactions that commit work to the database\n\n##### Transactions capture logical bundles of work.\n\nWork is bundled into transactions, so that in case of system failures, data in your database is still kept in a valid state (by rolling back the entire transaction if any part of it fails). To ensure a database is consistent before and after work is done to it, databases uses atomic transactions, and actions like commits and rollbacks to handle failures appropriately. Transactions are, in other words, _ACID_.\n\n-----\n\n### Resource on ACID Properties\nSee: [ACID Properties in DBMS](https://www.geeksforgeeks.org/acid-properties-in-dbms/) on GeeksforGeeks.org",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917168,
+              "key": "43674bd3-c2b8-44b9-aced-0ac852f9c04c",
+              "title": "Transactions",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "43674bd3-c2b8-44b9-aced-0ac852f9c04c",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Transactions are:",
+                "answers": [
+                  {
+                    "id": "a1566071237453",
+                    "text": "channels that enable data transmission across a TCP/IP network",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566071252121",
+                    "text": "atomic units of work for the database to perform as a whole",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1566071280348",
+                    "text": "packets of information exchanged over a network",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 917169,
+              "key": "6b58f1b8-583a-4364-8ec6-047f8da9553e",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "6b58f1b8-583a-4364-8ec6-047f8da9553e",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "True/False: a transaction captures a single change done to a database",
+                "answers": [
+                  {
+                    "id": "a1566071328360",
+                    "text": "True",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566071368086",
+                    "text": "False",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 917170,
+              "key": "588dd417-67f5-409d-9adb-631d40fec461",
+              "title": "Transaction statements",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "588dd417-67f5-409d-9adb-631d40fec461",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which SQL statements can be added to a transaction?",
+                "answers": [
+                  {
+                    "id": "a1566071440744",
+                    "text": "SELECT",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566071455188",
+                    "text": "ALTER TABLE",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566071455795",
+                    "text": "UPDATE",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1566071456456",
+                    "text": "GROUP BY",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566071457192",
+                    "text": "INSERT",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1566071473021",
+                    "text": "DELETE",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 917171,
+              "key": "20048c65-8bf5-48ee-b2c1-05339cdcdee7",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "20048c65-8bf5-48ee-b2c1-05339cdcdee7",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "You can send off the set of changes to the database by `____` the transaction",
+                "answers": [
+                  {
+                    "id": "a1566071567827",
+                    "text": "adding to",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566071595890",
+                    "text": "commiting",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 917172,
+              "key": "be87e23f-0a29-40b7-9b93-3465865cbc0b",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "be87e23f-0a29-40b7-9b93-3465865cbc0b",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "A transaction can be cleared of commands using a `______`.",
+                "answers": [
+                  {
+                    "id": "a1566071746517",
+                    "text": "session",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566071755944",
+                    "text": "commit",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566071759264",
+                    "text": "UPDATE, INSERT, or DELETE statement",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566071765958",
+                    "text": "rollback",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 907457,
+          "key": "5211128a-28f0-4e57-b181-ec28afb84ae6",
+          "title": "Installing Postgres",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5211128a-28f0-4e57-b181-ec28afb84ae6",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 907439,
+              "key": "7971915f-6e8d-4ff1-9252-85a4842d4efa",
+              "title": "Installing Postgres Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Installing Postgres",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907430,
+              "key": "fd414d4b-02c6-49da-ab7f-651033ded30f",
+              "title": "ND004 C01 L02 15 Installing Postgres",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "7ntZs1_9Hco",
+                "china_cdn_id": "7ntZs1_9Hco.mp4"
+              }
+            },
+            {
+              "id": 908378,
+              "key": "b9a987de-9878-44b8-9a50-aa5fc1ca7e6b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Install Postgres\n\nBefore we can use Postgres, we'll need to install it. You may already have Postgres, for example if you're a MacOS user, it already comes installed on your machine. But just in case, here are some steps for downloading and installing it.\n\nGo to the [Postgres Download](https://www.postgresql.org/download/) page and download Postgres for your machine.\n\n* For MacOS, Postgres is already downloaded. [Homebrew](https://brew.sh/) is a popular route for installing Postgres. See this [gist on installing Postgres via Brew](https://gist.github.com/ibraheem4/ce5ccd3e4d7a65589ce84f2a3b7c23a3).\n* On Linux, you can run `apt-get install postgresql`\n\nYou should know that you successfully installed Postgres if you can run the following in your terminal, and see a path outputted:\n\n```s\n$ which postgres\n/usr/local/bin/postgres\n```\n\n### Next: Start a Postgres server on your local machine\n\n**For MacOS Users**:\n\nFrom the [Postgres.app](https://postgresapp.com/), it's as simply as hitting the \"Initialize\" button. Follow the instructions on the [Postgres.app homepage](https://postgresapp.com/) to configure and initialize a postgres server.\n\nFrom the command line:\n\nOn MacOS, to stop an already initialized postgres server\n\n```\n$ pg_ctl -D /usr/local/var/postgres stop\n```\n\nto start a postgres server\n\n```\n$ pg_ctl -D /usr/local/var/postgres start\n```\n\nSee [How to start, stop, and restart a postgresql server](https://tableplus.io/blog/2018/10/how-to-start-stop-restart-postgresql-server.html) to follow steps for your particular operating system.\n\n### Initial installation settings\n\nThe initial installation will:\n\n* create an initial database named \t`postgres`\n* create an initial user named `postgres`. Your `postgres` user will have no password set by default.\n* create initial databases called `template1` and `template0`. Any other database created after `template1` is a clone of `template1`, including its tables and rows. If you add rows (objects) to `template1`, they will be copied onto future created databases. `template0`, on the other hand, should stay \"pure\" and never be changed.\n* The default host machine that runs your postgres server, on your machine, is `localhost` (aka, `127.0.0.1`)\n* The default port traditionally used to host your server is port `5432`. There are very few reasons to use a different port than `5432`.\n\nDefault connection settings are:\n\n|  Field  | Default Value  |\n| ---- | ---- |\n| Host | localhost |\n| Port | 5432 |\n| Username | postgres |\n| Password | (left blank) |\n\n----\n\nAdditional References:\n\n* [Template Databases](https://www.postgresql.org/docs/9.5/manage-ag-templatedbs.html)\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917175,
+              "key": "3dd12b29-7c3d-43ec-88d3-a6765c8b823d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Let's deep dive into what Postgres is\n\n* Postgres is an open source, general purpose and **object-relational database management system**, considered by many to be the most advanced open source database system available. It's a relational database system extended with object-oriented features, that works across operating systems.\n\t* Object-relational support includes support for arrays (multiple valuesin a single column), and inheritance (child-parent relationships between tables).\n*  Built since 1977, it is lauded for being **highly stable**, requiring minimal effort to maintain compared to other systems.\n* **Widely used**, everywhere: by Apple, Cisco, Etsy, Microsoft, Yahoo, Reddit, Instagram, Uber,... and many others.\n* Comprehensive suport for the **SQL** standard.\n* **Transaction**-based: operations on the database are done through atomic transactions.\n* Has **multi-version concurrency control**, avoiding unnecessary locking when multiple writes are happening to the database at once (avoiding waiting times for access to the database)\n\t* Postgres lets you have _several_ databases available for reading from and writing to, at once.\n* Offers **great performance** and many **indexing** capabilities for optimizing query performance\n\n* PostgreSQL is also often just called Postgres, and we'll be using both terms interchangeably throughout this course.\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 907451,
+          "key": "ccea8ef8-218a-483e-af58-3a8a8e4aac0a",
+          "title": "Postgres Command Line Applications",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "ccea8ef8-218a-483e-af58-3a8a8e4aac0a",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 907405,
+              "key": "7319205d-9d25-4845-8cce-735757470bbc",
+              "title": "Postgres Command Line Applications Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Postgres Command Line Applications",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907413,
+              "key": "3b195a8c-f733-4c8b-a49b-8ec6741af38c",
+              "title": "ND004 C01 L02 16 Postgres Command Line Applications",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "epQ0uMqgaxU",
+                "china_cdn_id": "epQ0uMqgaxU.mp4"
+              }
+            },
+            {
+              "id": 917178,
+              "key": "7128aa59-4be0-4315-a06c-775c8c8c519a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Postgres CLI tools\n\nKeep this as a general reference. You'll be using these commands quite a lot if you are building web apps with Postgres.\n\n#### Log in as a particular user\nDefault installed user is called postgres\n```\nsudo -u <username> -i\n```\ne.g. `sudo -u bob -i`\n\n#### Create a new database\n```\ncreatedb <database_name>\n```\ne.g. `createdb mydb`\n\n#### Destroy a database\n```\ndropdb <database_name>\n```\ne.g. `dropdb mydb`\n\n#### Reset a database\n```\ndropdb <database_name> && createdb <database_name>\n```\ne.g. `dropdb mydb && createdb mydb`\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917188,
+              "key": "1d72a677-2f83-4a1a-af3b-bb572ae7b8c2",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Try it yourself!\n\nGain technical proficiency in managing postgres databases by practicing creating, dropping, and resetting databases. Do this in your terminal, if you successfully installed Postgres on your local computer, *or* interact with the terminal in this workspace below, which already has Postgres installed.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917189,
+              "key": "ca0e2bac-3220-42df-9ad6-8301ac323560",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r848940c907451xJUPYTERLp7vveyzk",
+              "pool_id": "flaskpostgres",
+              "view_id": "jupyter-lab-e54zn",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "pageEnd": "",
+                    "pageStart": "",
+                    "allowSubmit": false,
+                    "defaultPath": "/",
+                    "actionButtonText": ""
+                  },
+                  "kind": "jupyter-lab"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 907458,
+          "key": "a91d409b-0a00-4549-bcab-f1de7f1fa69f",
+          "title": "Intro to psql",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a91d409b-0a00-4549-bcab-f1de7f1fa69f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 907432,
+              "key": "e34f1954-d86c-4969-a431-d92ef7b9685d",
+              "title": "Using psql Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Intro to psql\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907438,
+              "key": "bf618ae5-fcc1-42ec-b510-22784aaa0030",
+              "title": "ND004 C01 L02 17 Using Psql - Create And Drop",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "1uK8RjZr8Bg",
+                "china_cdn_id": "1uK8RjZr8Bg.mp4"
+              }
+            },
+            {
+              "id": 917193,
+              "key": "f5a0d9dc-375a-4dd9-96f8-a039c190a243",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Takeaways\n\n* **psql** is an interactive terminal application for connecting and interacting with your _local_ postgres server on your machine.\n* Connect using `$ psql <dbname>`\n* psql lets you\n  * Directly type and execute SQL commands to your database\n  * Inspect and preview your database and database tables using psql meta-commands\n\n##### Protip: type `\\?` into psql to see a list of available commands",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917195,
+              "key": "e3dec28b-13c4-4401-a85c-95a22561e0f3",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Useful basic psql commands\n\n\n`psql <dbname> [<username>]`\n\nStarts psql with a connection to dbname. Optionally use another user than current user\n\nIn psql:\n\n`# \\l`\n\nList all databases on the server, their owners, and user access levels\n\n`# \\c <dbname>`\n\nConnect to a database named <dbname>\n\n`# \\dt`\n\nShow database tables\t\t\t\t\t\t\n\n`# \\d <tablename>`\n\nDescribe table schema\n\n`# \\q`\n\nQuit psql, return to the terminal\n\n`# \\?`\n\nGet help, see list of available commands",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917196,
+              "key": "66593d22-d793-47e7-a5c0-710e114d66c4",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r848940c907451xJUPYTERLp7vveyzk",
+              "pool_id": "flaskpostgres",
+              "view_id": "jupyter-lab-zrzt5",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "pageEnd": "",
+                    "pageStart": "",
+                    "allowSubmit": false,
+                    "defaultPath": "/",
+                    "actionButtonText": ""
+                  },
+                  "kind": "jupyter-lab"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 908389,
+          "key": "1c62a264-291e-4d3b-a3dd-8c1cf59b1aa0",
+          "title": "Using psql - SQL Commands",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "1c62a264-291e-4d3b-a3dd-8c1cf59b1aa0",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 908391,
+              "key": "bba75216-2166-448c-ab00-fb2cab692855",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Using psql - SQL Commands",
+              "instructor_notes": ""
+            },
+            {
+              "id": 908392,
+              "key": "167903d7-33bf-4244-bc0b-31528943c254",
+              "title": "ND004 C01 L02 18 Using Psql - Sql Commands",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "_GQV0twlQes",
+                "china_cdn_id": "_GQV0twlQes.mp4"
+              }
+            },
+            {
+              "id": 917202,
+              "key": "51992eca-3725-4f80-a44b-2967dcf28904",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r848940c907451xJUPYTERLp7vveyzk",
+              "pool_id": "flaskpostgres",
+              "view_id": "jupyter-lab-q2uk4",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "pageEnd": "",
+                    "pageStart": "",
+                    "allowSubmit": false,
+                    "defaultPath": "/",
+                    "actionButtonText": ""
+                  },
+                  "kind": "jupyter-lab"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 908390,
+          "key": "a30495c4-3cea-4a02-a4c7-7c23b74cdf9b",
+          "title": "Using psql - Final remarks",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a30495c4-3cea-4a02-a4c7-7c23b74cdf9b",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 908393,
+              "key": "f7ca959b-834f-4004-9a99-96c8a29bea5e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Using psql - final remarks",
+              "instructor_notes": ""
+            },
+            {
+              "id": 908394,
+              "key": "c85f5172-ec73-4c7f-9e8c-e32168af14a3",
+              "title": "ND004 C01 L02 19 Using Psql - Psql Meta-Commands",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "8DqVjuNFvRg",
+                "china_cdn_id": "8DqVjuNFvRg.mp4"
+              }
+            },
+            {
+              "id": 917293,
+              "key": "d355b270-6388-4620-9973-699bc10f1468",
+              "title": "start psql connection",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "d355b270-6388-4620-9973-699bc10f1468",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What is the command to start a psql connection to a database named `mydb` and with a username `jane`? Write it out.",
+                "matchers": [
+                  {
+                    "expression": "psql\\s+mydb\\s+jane"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 917294,
+              "key": "c59982c2-193f-4b86-b74f-dc96ae408f8f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Cheat Sheet\n[Click here to access a Cheat Sheet with postgres and psql commands](https://video.udacity-data.com/topher/2019/August/5d5a1055_postgres-psql-cheat-sheet/postgres-psql-cheat-sheet.pdf)\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 907452,
+          "key": "5920539b-545a-469e-b4d7-5a97e7ed5c38",
+          "title": "Other Postgres Clients",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5920539b-545a-469e-b4d7-5a97e7ed5c38",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 907410,
+              "key": "a54faaf5-ac77-4b70-b0fe-a798d1b0ef6c",
+              "title": "Other Postgres Clients Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Other Postgres Clients",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907443,
+              "key": "54c1648d-9b78-4027-b793-4f0f8ab135ec",
+              "title": "ND004 C01 L02 20 Other Postgres Clients",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "5if9yVzsI2g",
+                "china_cdn_id": "5if9yVzsI2g.mp4"
+              }
+            },
+            {
+              "id": 917203,
+              "key": "d264d6ec-8d68-45e1-a3e4-34b548ddf6df",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### So, do you need to use psql to do web development?\n\nNo. Other popular client alternatives for inspecting and interacting with your postgres server are:\n\n* [pgAdmin](https://pgadmin.org), available for every operating system\n* [PopSQL](https://popsql.com) available for MacOS\n\nThe course videos will heavily rely on using psql.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907416,
+              "key": "faa2c6c3-4dc4-4eb3-a2b8-71d1a53ab01c",
+              "title": "Other Postgres Clients Recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Part 2: database adapters, default connection settings",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907930,
+              "key": "0e01542e-c20f-4633-beae-8bf31db9a695",
+              "title": "ND004 C01 L02 21 Other Postgres Clients Part 2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "FoCnvMvdma0",
+                "china_cdn_id": "FoCnvMvdma0.mp4"
+              }
+            },
+            {
+              "id": 917295,
+              "key": "a7adbbe6-ab3d-42ad-b706-73f4f1ef5835",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Takeaways\n\nGenerally know the default connection settings that come with your Postgres installation. You'll need to set them for every connection you make (on pgAdmin, PopSQL, your web server, etc).\n\n| Connection Setting |  Default |\n| -- | --- |\n| Host | localhost (aka, 127.0.0.1) |\n| Port | 5432 |\n| Username | postgres |\n| Password | (None) |\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907425,
+              "key": "0ff824cd-b3da-4dbf-87f2-72a20a7a0145",
+              "title": "Other Postgres Clients Quiz",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "0ff824cd-b3da-4dbf-87f2-72a20a7a0145",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What is the name of the default Postres username?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "pg",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "user",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566076730862",
+                    "text": "postgres",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 917205,
+              "key": "257e3e18-4062-4534-9237-5d0b1661c79b",
+              "title": "True/False",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "257e3e18-4062-4534-9237-5d0b1661c79b",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "True/False: the default Postgres connection settings are the same no matter what client you use to connect to your Postgres server.",
+                "answers": [
+                  {
+                    "id": "a1566076921350",
+                    "text": "True",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1566076943628",
+                    "text": "False",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 917204,
+              "key": "9b30e1f1-8f6f-45dd-9153-25ca47b112fc",
+              "title": "Default host",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "9b30e1f1-8f6f-45dd-9153-25ca47b112fc",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What is the default host IP address in Postgres?",
+                "answers": [
+                  {
+                    "id": "a1566076760580",
+                    "text": "127.0.0.0.1",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1566076777200",
+                    "text": "127.0.0.1",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1566076777765",
+                    "text": "local",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 907456,
+          "key": "956635fe-381b-4d38-b648-e88e9459bf94",
+          "title": "DBAPIs and psycopg2",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "956635fe-381b-4d38-b648-e88e9459bf94",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 907415,
+              "key": "282a415f-4fb0-4c81-87cd-94084a33a0fc",
+              "title": "DBAPIs and psycopg2 Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# DBAPIs and psycopg2",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907427,
+              "key": "6fd93513-fdd1-450a-b1be-b7bacf690ba0",
+              "title": "ND004 C01 L02 22 DBAPIs And Psycopg2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "C2K4KBH3SYw",
+                "china_cdn_id": "C2K4KBH3SYw.mp4"
+              }
+            },
+            {
+              "id": 907417,
+              "key": "a339e826-8c56-4b10-8c36-6aac90357d25",
+              "title": "DBAPIs and psycopg2 Recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Takeaways\n\nWe will sometimes want to interact with our database and use its results in a specific programming language. E.g. to build web applications or data pipelines in a specific language (Ruby, Python, Javascript, etc.). That's where DBAPIs come in.\n\n* A DBAPI\n  * provides a standard interface for one programming language (like Python) to talk to a relational database server.\n  * Is a low level library for writing SQL statements that connect to a database\n  * is also known as database adapters\n* Different DBAPIs exist for every server framework or language + database system\n* Database adapters define a standard for using a database (with SQL) and using the results of database queries as input data in the given language.\n    * Turn a selected `SELECT * from some_table;` list of rows into an array of objects in Javascript for say a NodeJS adapter; or a list of tuples in Python for a Python adapter.\n\n\n#### Examples across languages and server frameworks\n\n* For Ruby (e.g. for Sinatra, Ruby on Rails): [pg](https://www.ruby-toolbox.com/projects/pg)\n* For NodeJS: [node-postgres](https://node-postgres.com/)\n* For Python (e.g. for Flask, Django): [pyscopg2](http://initd.org/psycopg/)\n\npsycopg2 is the focus of this course since we are using a Python stack.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917206,
+              "key": "5dbadb76-b7b8-4e46-ad3a-e1899b8f6686",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Install psycopg2\n\nWe will install `pysocpg2` and use it to establish a connection to our postgres server, and interact with it _in python_.\n\n#### `psycopg2` installation steps\n\n\nFollow the `psycopg2` install instructions found [here](http://initd.org/psycopg/docs/install.html).\n\nInstall Tips:\n\n* Make sure you have Python 3 version between 3.4 to 3.7. You can find out with\n\n\t```\n\t$ python --version\n\t```\n\n* Use the latest pip version: `$ pip3 install -U pip`\n\n* Replace `X.Y` in the `export PATH...` line with the version of Postgres you are using. Find out with `$ postgres -V`. E.g.:\n\n\t```\n\t$ postgres -V\n\tpostgres (PostgreSQL) 10.2\n\t```\n\tIf the version is `10.2`, then replace the `X.Y` in the `export PATH` line with `10.2`:\n\t\n\tIn ~/.bash_profile or ~/.bashrc, we should add:\n\n\t```\n\texport PATH=/usr/lib/postgresql/10.2/bin/:$PATH\n\t```\n\n* To export and add things to your `PATH`, add the `export PATH=....` line to either `~/.bashrc` or `~/.bash_profile` on your machine, e.g. with [vim](https://www.keycdn.com/blog/vim-commands):\n\n\t```\n\t$ vim ~/.bashrc`\n\t# or\n\t$ vim ~/.bash_profile\n\t\n\t```\n\t\n\twhere you can use `:w`, `:wq` vim commands to edit your bash file and add the `export PATH=...` line somewhere. (See also: [Vim tutorial](https://www.openvim.com/)\n\n* When you are done editing your bash profile, be sure to run `source ~./bash_profile` or `source ~/.bashrc` on your edited file, so your terminal session can grab the latest profile changes.\n\n* After editing your bash profile, you are ready to run the install step:\n\n\t```\n\t$ pip install pyscopg2\n\t```\n\t\n* A prerequisite for psycopg2 is OpenSSL. If you try installing and run into error `ld: library not found for -lssl`, then install openssl first.\n\t* On [homebrew](https://brew.sh/) (for macOS or Linux): run `brew install openssl` (or `sudo brew install openssl`)\n\t* Otherwise, you can visit the [OpenSSL Downloads page](https://www.openssl.org/source/) to download OpenSSL for your machine.\n\t* Add the LIBRARY_PATH to your bash profile:\n\n\t\t```\n\t\texport LIBRARY_PATH=$LIBRARY_PATH:/usr/local/opt/openssl/lib/\n\t\t```\n\t\t\n\t\tDon't forget to run `source ~/.bash_profile` or `source ~/.profile` when done.\n* If the regular install doesn't work, you can also just install the binary version instead:\n\n\t```\n\tpip install psycopg2-binary\n\t```\n\t\n\twhich replaces the need to run `pip install pyscopg2`\n\n* Install troubleshooting threads:\n\t* For error `Failed building wheel for psycopg2`: [https://stackoverflow.com/questions/34304833/failed-building-wheel-for-psycopg2-macosx-using-virtualenv-and-pip](https://stackoverflow.com/questions/34304833/failed-building-wheel-for-psycopg2-macosx-using-virtualenv-and-pip)\n\t* For error `pg_config executable not found`: [https://stackoverflow.com/questions/11618898/pg-config-executable-not-found](https://stackoverflow.com/questions/11618898/pg-config-executable-not-found)\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 907455,
+          "key": "30948869-9344-49f5-941c-1013fe3e224e",
+          "title": "psycopg2: basic usage",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "30948869-9344-49f5-941c-1013fe3e224e",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 907437,
+              "key": "1935950e-a2aa-4ed1-8668-d5a612571b17",
+              "title": "psycopg2 usage Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# psycopg2: basic usage",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907408,
+              "key": "f26be2ab-8459-41ac-aa52-3abc410a843a",
+              "title": "ND004 C01 L02 23 Psycopg2 Demo 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "x2M4D0jWvwo",
+                "china_cdn_id": "x2M4D0jWvwo.mp4"
+              }
+            },
+            {
+              "id": 917207,
+              "key": "a386bac3-66d9-4dcd-b24e-3bc72ae738e0",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Example code\n\n\n```\nimport psycopg2\n\nconn = psycopg2.connect('dbname=todoapp_development user=amy')\n\ncursor = conn.cursor()\n\n# Open a cursor to perform database operations\ncur = conn.cursor()\n\n# drop any existing todos table\ncur.execute(\"DROP TABLE IF EXISTS todos;\")\n\n# (re)create the todos table\n# (note: triple quotes allow multiline text in python)\ncur.execute(\"\"\"\n  CREATE TABLE todos (\n    id serial PRIMARY KEY,\n    description VARCHAR NOT NULL\n  );\n\"\"\")\n\n# commit, so it does the executions on the db and persists in the db\nconn.commit()\n\ncur.close()\nconn.close()\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917300,
+              "key": "97d16439-4fe6-40f3-8668-5490c315fd3a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Let's practice! Complete Exercise 1 (only) below.\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917208,
+              "key": "e2787885-8039-4a1b-aacd-d5f6140f3da9",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r848940c907451xJUPYTERLp7vveyzk",
+              "pool_id": "flaskpostgres",
+              "view_id": "jupyter-lab-f1v76",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "pageEnd": "",
+                    "pageStart": "",
+                    "allowSubmit": false,
+                    "defaultPath": "/",
+                    "actionButtonText": ""
+                  },
+                  "kind": "jupyter-lab"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 907453,
+          "key": "2ec7521f-51c3-4700-8f36-825a73e303d6",
+          "title": "psycopg2: string composition",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "2ec7521f-51c3-4700-8f36-825a73e303d6",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 907404,
+              "key": "4f258015-116d-4ead-90a9-3318f65d5b8e",
+              "title": "psycopg2 demo 2 Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# psycopg2 demo 2",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907428,
+              "key": "e91828ba-bc8f-4581-8f69-6a3e38a0301c",
+              "title": "ND004 C01 L02 25 Psycopg2 Demo 2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "x6Wn-4B28fM",
+                "china_cdn_id": "x6Wn-4B28fM.mp4"
+              }
+            },
+            {
+              "id": 917298,
+              "key": "43fc46fa-99c4-45fa-a473-c3f25a88d332",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Takeaways\n\nWe can use **string interpolation** to compose a SQL query using python strings.\nTwo methods for doing so include:\n\n1. Using  `%s`, passing in a tuple as the 2nd argument in `cursor.execute()`\n\n1. Using  named string parameters `%(foo)s`, passing in a dictionary instead.\n\n---\n\n### Additional Resources\n\n* [psycopg2 docs: Basic module usage](http://initd.org/psycopg/docs/usage.html)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917297,
+              "key": "c627a079-9bc8-462e-b679-ecc751128dbb",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Code\n\n```python\nimport psycopg2\n\nconnection = psycopg2.connect('dbname=example')\n\ncursor = connection.cursor()\n\ncursor.execute('DROP TABLE IF EXISTS table2;')\n\ncursor.execute('''\n  CREATE TABLE table2 (\n    id INTEGER PRIMARY KEY,\n    completed BOOLEAN NOT NULL DEFAULT False\n  );\n''')\n\ncursor.execute('INSERT INTO table2 (id, completed) VALUES (%s, %s);', (1, True))\n\nSQL = 'INSERT INTO table2 (id, completed) VALUES (%(id)s, %(completed)s);'\n\ndata = {\n  'id': 2,\n  'completed': False\n}\ncursor.execute(SQL, data)\n\nconnection.commit()\n\nconnection.close()\ncursor.close()\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917301,
+              "key": "51df9c50-235a-404d-9006-707645d6a29a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Let's practice! Now complete Exercise 2.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917299,
+              "key": "da216ca2-752f-455a-8f30-e6d33e2c4a46",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r848940c907451xJUPYTERLp7vveyzk",
+              "pool_id": "flaskpostgres",
+              "view_id": "jupyter-lab-1mivf",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "pageEnd": "",
+                    "pageStart": "",
+                    "allowSubmit": false,
+                    "defaultPath": "/",
+                    "actionButtonText": ""
+                  },
+                  "kind": "jupyter-lab"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 907450,
+          "key": "31adcd35-9d00-4d7a-8429-c184f05044fd",
+          "title": "psycopg2: fetching results",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "31adcd35-9d00-4d7a-8429-c184f05044fd",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 907422,
+              "key": "dc24e602-9b56-4a2b-a14a-c5e41b0a426a",
+              "title": "psycopg2 demo 3 Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# psycopg2: fetching results",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907436,
+              "key": "87856e5e-839d-4de1-b94d-e65a6e627776",
+              "title": "ND004 C01 L02 26 Psycopg2 Demo 3",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "NYQkwOkmq1k",
+                "china_cdn_id": "NYQkwOkmq1k.mp4"
+              }
+            },
+            {
+              "id": 917302,
+              "key": "9f929f64-bea5-48d2-b837-c207f7cdbf04",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Let's practice! Now complete Exercise 3.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917303,
+              "key": "039b6106-3f5b-4d4f-bb9a-54d8a31a9c75",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r848940c907451xJUPYTERLp7vveyzk",
+              "pool_id": "flaskpostgres",
+              "view_id": "jupyter-lab-4272x",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "pageEnd": "",
+                    "pageStart": "",
+                    "allowSubmit": false,
+                    "defaultPath": "/",
+                    "actionButtonText": ""
+                  },
+                  "kind": "jupyter-lab"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 917305,
+              "key": "fe61b394-b562-476f-bf1e-bb56b7ddd4f8",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## That marks the end of our lessons on psycopg2....\n\nNow there is time for a few final remarks.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917304,
+              "key": "fedb2e9b-603f-4df7-b795-c79fe3fd898a",
+              "title": "ND004 C01 L02 24 Psycopg2 Transition",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "YrWpoTGygd4",
+                "china_cdn_id": "YrWpoTGygd4.mp4"
+              }
+            },
+            {
+              "id": 917306,
+              "key": "ed238c1c-f212-4869-a48d-022b941e7d52",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## That's right.\n\nNow that you know Flask, Postgres, and psycopg2, you can now create a database-backed web application without learning anything else! You can just send SQL statements directly to the Postgres server from your web server, written in Python, and be set to go!\n\n## But should we...?\n\nWriting SQL directly is a fairly clunky way of doing web development. It's useful to learn some higher level libraries that let us interact with a database, using Python classes and expressions. Let's get to learn one of the most powerful Python libraries for interacting with databases: **SQLAlchemy**.\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 917307,
+              "key": "be9677a0-9541-4335-89a4-c141d663978d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Steps for getting a database-backed web application up and running\n\nHere is an overview of the list of tasks we'll need to do for a given web app to run with a database.\n\n\n##### 1. Create a database\nUsing `createdb` in Postgres.\n\n##### 2. Establish a connection to the database\nWe can connect to a Postgres server from a Python web server using pyscopg2 with `psycopg2.connect()`.\n\n##### 3. Define and create your data schema\nExecute CREATE TABLE commands to create the tables and define the schema (attributes, data types, etc) that will define what data gets housed for our web app.\n\n##### 4. Seed the database with initial data\n(Optional) Give the database some initial data, e.g. test data for doing local development.\n\n##### 5. Create routes and views\nCreate routes in our server that will serve pages (views) to the client. Write up our HTML, CSS, and Javascript in our views.\n\nThen finally, to get our web app running,\n\n##### 6. Run the server\nGet the web server running.\n\n##### 7. Deploy the server to the web.\n\n\n... and that is, generally, how we would build a web application backed by a database.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 907448,
+          "key": "7f493ea2-58a5-42eb-9031-1d4071884aa6",
+          "title": "Recap",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "7f493ea2-58a5-42eb-9031-1d4071884aa6",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 907435,
+              "key": "b9ae43d9-563c-4ae3-9c37-f629a45716d9",
+              "title": "Recap heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# We're done with this lesson! Time for a recap.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 907434,
+              "key": "97bac99b-ef34-4692-8660-92734ace7105",
+              "title": "ND004 C01 L02 27 Recap",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "GoP9auZLudA",
+                "china_cdn_id": "GoP9auZLudA.mp4"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

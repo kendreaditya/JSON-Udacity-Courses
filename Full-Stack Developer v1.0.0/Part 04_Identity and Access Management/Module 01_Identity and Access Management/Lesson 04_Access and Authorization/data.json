@@ -1,0 +1,557 @@
+{
+  "data": {
+    "lesson": {
+      "id": 850005,
+      "key": "2baeea23-aa82-4c96-aaf9-670855db2b70",
+      "title": "Access and Authorization",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Limit access to specific resources or actions by restricting requests only to authorized request to particular users and groups of users. Implement role-based access controls (RBAC) across the stack.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/2baeea23-aa82-4c96-aaf9-670855db2b70/850005/1579721492104/Access+and+Authorization+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/2baeea23-aa82-4c96-aaf9-670855db2b70/850005/1579721488701/Access+and+Authorization+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 857093,
+          "key": "d15654c1-799b-47ea-8935-5a430f356411",
+          "title": "Lesson Intro",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d15654c1-799b-47ea-8935-5a430f356411",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 898094,
+              "key": "2e0a4169-d100-4f3b-a9d9-06baa9a1dc12",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Access and Authorization\n## What can you do?",
+              "instructor_notes": ""
+            },
+            {
+              "id": 864355,
+              "key": "65b2858b-9af1-4dbc-86c0-2b5991f794ea",
+              "title": "ND005 C03 L04 A00 Lesson Intro 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "OBxxynGxLfo",
+                "china_cdn_id": "OBxxynGxLfo.mp4"
+              }
+            },
+            {
+              "id": 898095,
+              "key": "512977e7-a5d2-45a4-ba7d-3fa4e1c23525",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Authorization in the Digital World",
+              "instructor_notes": ""
+            },
+            {
+              "id": 864317,
+              "key": "c44610eb-a880-4720-8436-2a4a7d989108",
+              "title": "ND004 C03 L04 A01 Intro",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "r9k7yL4othg",
+                "china_cdn_id": "r9k7yL4othg.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 857094,
+          "key": "af6ab484-acbe-4934-bc3d-ac77a22355ab",
+          "title": "Role-Permission Based Access",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "af6ab484-acbe-4934-bc3d-ac77a22355ab",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 858887,
+              "key": "d2d1422f-c18b-4d74-9a00-d8bbb635deef",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Role-Permission Based Access\n## Defining our Permissions and Roles",
+              "instructor_notes": ""
+            },
+            {
+              "id": 864318,
+              "key": "a01d8725-9050-49d3-b4da-79f8d605f14a",
+              "title": "ND004 C03 L04 A02.1 RBAC 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "SMYSNbdVIcI",
+                "china_cdn_id": "SMYSNbdVIcI.mp4"
+              }
+            },
+            {
+              "id": 898096,
+              "key": "2ce125d4-3a8b-4be6-831a-fbbbcd0d2f31",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Authorization in our Digital Sequence",
+              "instructor_notes": ""
+            },
+            {
+              "id": 864319,
+              "key": "21914dd7-5dd7-4830-a851-a13ff963c1aa",
+              "title": "ND004 C03 L04 A02.2 RBAC 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "qMRhs57fMl8",
+                "china_cdn_id": "qMRhs57fMl8.mp4"
+              }
+            },
+            {
+              "id": 859046,
+              "key": "3eedbc66-16f5-453e-9db9-3647c23ea9e6",
+              "title": "Permissions in JWTs",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "3eedbc66-16f5-453e-9db9-3647c23ea9e6",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which permission is *not* included as a claim in the following JWT:\n```\neyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSm9obiBEb2UiLCJyb2xlIjoicGhvdG9ncmFwaGVyIiwicGVybWlzc2lvbnMiOlsicG9zdDppbWFnZSIsImVkaXQ6aW1hZ2UiLCJnZXQ6aW1hZ2UiXX0.JxxxdRl8_FIAr76njWQwB2UC48irjWvmBHcLVp81qdk\n```\n\n> Tip: use the [JWT.io](https://jwt.io/#debugger-io) debugger to decode the token!",
+                "answers": [
+                  {
+                    "id": "a1559848025389",
+                    "text": "`post:image`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1559848095156",
+                    "text": "`edit:image`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1559848110176",
+                    "text": "`delete:image`",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 858898,
+              "key": "d2a16d78-db90-4efd-979e-dd52671868ae",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Additional Resources\n- [StackExchange](https://softwareengineering.stackexchange.com/questions/299729/role-vs-permission-based-access-control) discussion on RBAC vs PBAC  ",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 857095,
+          "key": "56851141-a4be-4edc-adbb-7fa718c6d755",
+          "title": "Defining Roles in Auth0",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "56851141-a4be-4edc-adbb-7fa718c6d755",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 858900,
+              "key": "de3be9e4-8ad4-43cb-9617-4e74ce3f00fe",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Defining Roles in Auth0\n## Adding Role Configurations to our Auth0 Account",
+              "instructor_notes": ""
+            },
+            {
+              "id": 864320,
+              "key": "fc142378-1b53-446e-8e49-822fc93da3df",
+              "title": "ND004 C03 L04 A03 Defining Roles Auth0 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Rj4AAMjynj0",
+                "china_cdn_id": "Rj4AAMjynj0.mp4"
+              }
+            },
+            {
+              "id": 859793,
+              "key": "a808ed0f-e24f-4872-b2a0-a64c89dd5b86",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "> #### **Tip:** Don't forget to save the settings page after enabling RBAC in Auth0!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 858903,
+              "key": "c9b6e36b-2efa-47ab-be93-dadf8b8eb592",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Try it yourself\nIn a previous lesson, we covered the steps to create an Auth0 account and set up an API. Using the same account, add roles and permissions.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 864360,
+              "key": "ce42b51a-5c1e-4db7-9b9f-34246494e120",
+              "title": "Define Roles in Auth0",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "ce42b51a-5c1e-4db7-9b9f-34246494e120",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Open Auth0 Dashboard and Navigate to the API settings screen.",
+                "Create new permissions within the permissions tab",
+                "Navigate to the Roles screen and define a new role",
+                "Assign your newly created API permissions to the role",
+                "Navigate to the API Settings screen and turn on `enable RBAC` and `Add Permission in the Access Token` settings",
+                "Assign the role to a user in your auth system",
+                "Login through your hosted login screen and decode the token using [JWT.io](https://jwt.io)"
+              ],
+              "positive_feedback": "Well done.",
+              "video_feedback": null,
+              "description": "Create roles for your API and assign them to users!"
+            }
+          ]
+        },
+        {
+          "id": 857097,
+          "key": "413c0df9-3464-44e9-9d60-390609edc34f",
+          "title": "Using RBAC in Flask",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "413c0df9-3464-44e9-9d60-390609edc34f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 898097,
+              "key": "a25d2e87-2c47-4224-9959-59ea67e0cf9e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Using RBAC in Flask\n## Extending our `@requires_auth` Decorator",
+              "instructor_notes": ""
+            },
+            {
+              "id": 864321,
+              "key": "7ca5b397-e298-4951-abb9-5e908d7a8dc9",
+              "title": "ND004 C03 L04 A04 Using RBAC In Flask 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "oJTIraxK4UQ",
+                "china_cdn_id": "oJTIraxK4UQ.mp4"
+              }
+            },
+            {
+              "id": 864347,
+              "key": "4ee3080f-6ab1-4c68-82fd-ddc518e71e2d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "For clarity, here is the complete `check_permissions` method:\n```python\ndef check_permissions(permission, payload):\n    if 'permissions' not in payload:\n                        raise AuthError({\n                            'code': 'invalid_claims',\n                            'description': 'Permissions not included in JWT.'\n                        }, 400)\n\n    if permission not in payload['permissions']:\n        raise AuthError({\n            'code': 'unauthorized',\n            'description': 'Permission not found.'\n        }, 403)\n    return True\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 864337,
+              "key": "6f89ec2d-6402-4349-973f-d60c2a208779",
+              "title": "Try it Yourself!",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "6f89ec2d-6402-4349-973f-d60c2a208779",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Clone the **Basic Flask Auth** code: [https://github.com/udacity/FSND/tree/master/BasicFlaskAuth](https://github.com/udacity/FSND/tree/master/BasicFlaskAuth)",
+                "Replace all `@TODO` flags in the `app.py` file",
+                "Follow the instructions in the `README.md`",
+                "Extend the code using the video as a guide",
+                "Use Postman to test the `/headers` with and without your *newly issued* JWT as a bearer token"
+              ],
+              "positive_feedback": "Well done!",
+              "video_feedback": null,
+              "description": "Follow along and run the code on your local machine:"
+            }
+          ]
+        },
+        {
+          "id": 857098,
+          "key": "02439724-158d-4bc3-baf0-674ef2b2a81e",
+          "title": "Restricting Features in Frontend",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "02439724-158d-4bc3-baf0-674ef2b2a81e",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 859079,
+              "key": "21ea494c-5817-4cc8-8373-4940b9bf01c7",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Restricting Features in Frontend\n\n## Decoding JWTs using Javascript and Preventing Render in Ionic\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 864322,
+              "key": "dfa8a17c-36d4-4570-81be-c315df29fd7e",
+              "title": "ND004 C03 L04 A05 Decoding JWTs 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "VpOWuJ1lcSs",
+                "china_cdn_id": "VpOWuJ1lcSs.mp4"
+              }
+            },
+            {
+              "id": 859084,
+              "key": "17c27148-1c86-4849-b232-9102384b43a2",
+              "title": "Validating in Frontend",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "17c27148-1c86-4849-b232-9102384b43a2",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "In what parts of the system must we *always* validate JWTs?",
+                "answers": [
+                  {
+                    "id": "a1559916115300",
+                    "text": "API/Backend - Fulfilling of Requests",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1559916154445",
+                    "text": "Frontend - Limiting of Features",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 859083,
+              "key": "5408d0f5-665a-4646-9908-f37297731538",
+              "title": "Reasons for Frontend Permissions",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "5408d0f5-665a-4646-9908-f37297731538",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What are valid reasons to use permissions in Frontend:",
+                "answers": [
+                  {
+                    "id": "a1559915818114",
+                    "text": "Improved user experience by limiting interactions to only those which can be fulfiled",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1559915915768",
+                    "text": "Improved system security",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1559915923681",
+                    "text": "Reduced number of requests which cannot be fulfilled by server",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 898098,
+              "key": "65ca0182-bd6e-4383-8dd5-f85b7b516691",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Decoding JWTs in Javascript",
+              "instructor_notes": ""
+            },
+            {
+              "id": 864323,
+              "key": "3fbd52a9-074a-4467-ad6c-9feae89515f3",
+              "title": "ND004 C03 L04 A06 Decoding JWTs In Javascript 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "zIAfqP7A37E",
+                "china_cdn_id": "zIAfqP7A37E.mp4"
+              }
+            },
+            {
+              "id": 859757,
+              "key": "c28c6936-3ea2-4f95-a062-876acb121a1e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Try it yourself!\n\nAnswer the question below using the following JWT and Javascript function.\n\n> **TIP** use the developer tools console to execute the javascript\n\n```\neyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Imp1aWNlcHJvIiwicGVybWlzc2lvbnMiOlsicG9zdDpqdWljZSJdfQ.7m6ukD61G--xjWGIJJNBRwVJkSrnKwfHOU5KrYEvLW8\n```\n\n### Javascript to decode JWT:\n\n``` Javascript\nfunction parseJwt (token) {\n    // https://stackoverflow.com/questions/38552003/how-to-decode-jwt-token-in-javascript\n   var base64Url = token.split('.')[1];\n   var base64 = decodeURIComponent(atob(base64Url).split('').map((c)=>{\n       return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);\n   }).join(''));\n\n   return JSON.parse(base64);\n};\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 859758,
+              "key": "6a22cd5b-6cca-416e-b418-022a6f3e7401",
+              "title": "Decoding JWTs using Javascript",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "6a22cd5b-6cca-416e-b418-022a6f3e7401",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which action can the user perform?",
+                "answers": [
+                  {
+                    "id": "a1560520692480",
+                    "text": "get:soda",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1560520772067",
+                    "text": "update:soda",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1560521297688",
+                    "text": "post:juice",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 859078,
+              "key": "860d0010-e074-4abc-a012-19df84459e01",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Additional Resources\n- [StackOverflow: How to decode jwt token in javascript](https://stackoverflow.com/questions/38552003/how-to-decode-jwt-token-in-javascript)",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 857102,
+          "key": "04f12f03-b93b-4e66-93f3-0d5450d3cf52",
+          "title": "Recap",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "04f12f03-b93b-4e66-93f3-0d5450d3cf52",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 898099,
+              "key": "76b0d235-289b-4468-944b-8dbf2ed89582",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Access and Authorization",
+              "instructor_notes": ""
+            },
+            {
+              "id": 864324,
+              "key": "7c32f6ae-0b98-45f9-8257-bcd5be832007",
+              "title": "ND004 C03 L04 A07 Recap",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "-VOoRVilLlw",
+                "china_cdn_id": "-VOoRVilLlw.mp4"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

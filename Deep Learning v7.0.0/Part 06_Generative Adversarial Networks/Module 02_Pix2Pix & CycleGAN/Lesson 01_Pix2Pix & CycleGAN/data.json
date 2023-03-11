@@ -1,0 +1,474 @@
+{
+  "data": {
+    "lesson": {
+      "id": 778995,
+      "key": "68e102dc-d19b-4c44-b7e1-889bb75e41f0",
+      "title": "Pix2Pix & CycleGAN",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Jun-Yan Zhu, on of the creators of the CycleGAN, will lead you through Pix2Pix and CycleGAN formulations that learn to do image-to-image translation tasks!",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/68e102dc-d19b-4c44-b7e1-889bb75e41f0/778995/1546641942138/Pix2Pix+%26+CycleGAN+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/68e102dc-d19b-4c44-b7e1-889bb75e41f0/778995/1546641938417/Pix2Pix+%26+CycleGAN+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 780764,
+          "key": "a0e0e688-32d0-4026-ab83-1a7c0f1332e4",
+          "title": "Introducing Jun-Yan Zhu",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a0e0e688-32d0-4026-ab83-1a7c0f1332e4",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 783207,
+              "key": "1e8cbfe7-a935-4a8e-bfa8-7b81b3b6cbf8",
+              "title": "01 Introducing JunYan Zhu RENDER V1 V5",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "l8sCN1rMt6E",
+                "china_cdn_id": "l8sCN1rMt6E.mp4"
+              }
+            },
+            {
+              "id": 782279,
+              "key": "a0655a90-92bb-4c42-a598-319d010f7d73",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Check out [MIT CSAIL's website](https://www.csail.mit.edu/) to look at the variety of research that is happening in this lab.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 780765,
+          "key": "7b612d2b-dc5f-4266-bb7e-36d7f09d01f5",
+          "title": "Image to Image Translation",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "7b612d2b-dc5f-4266-bb7e-36d7f09d01f5",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 782986,
+              "key": "a92789d2-0d5a-4a38-8bd6-dff771c4fe4e",
+              "title": "02 Introduction To Image To Image Translation RENDER V1 V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "f-WnvKQd10k",
+                "china_cdn_id": "f-WnvKQd10k.mp4"
+              }
+            },
+            {
+              "id": 782282,
+              "key": "65d6bd9f-9672-4ea0-94ef-4ec12f3e6645",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Links to Related Work\n\n* Ian Goodfellow's [original paper on GANs](http://papers.nips.cc/paper/5423-generative-adversarial-nets.pdf )\n* Face swap with [CycleGAN Face-off](https://arxiv.org/pdf/1712.03451.pdf)",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 780766,
+          "key": "bc21b1e8-c730-4d8c-a910-468664318ed6",
+          "title": "Designing Loss Functions",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "bc21b1e8-c730-4d8c-a910-468664318ed6",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 782987,
+              "key": "019ba623-b920-454d-a461-6fa051a95d7a",
+              "title": "03 Designing Loss Functions RENDER V1 V3",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "YL1kKWHr7Gc",
+                "china_cdn_id": "YL1kKWHr7Gc.mp4"
+              }
+            },
+            {
+              "id": 782280,
+              "key": "3db9be1e-e07d-4500-bda5-a8ea9410bc6e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Objective Loss Functions\n\nAn objective function is typically a loss function that you seek to minimize (or in some cases maximize) during training a neural network. These are often expressed as a function that measures the difference between a prediction **y_hat** and a true target **y**.\n\n <div class=\"mathquill\"> \\mathcal{L} (y, \\hat{y}) </div>\n\nThe objective function we've used the most in this program is [cross entropy loss](https://ml-cheatsheet.readthedocs.io/en/latest/loss_functions.html), which is a negative log loss applied to the output of a softmax layer. For a binary classification problem, as in *real* or *fake* image data, we can calculate the **binary cross entropy loss** as:\n\n <div class=\"mathquill\"> -[y\\log(\\hat{y}) +(1-y) \\log (1-\\hat{y})]  </div>\n\nIn other words, a sum of two log losses!\n\n---\nIn the notation in the *next* video, you'll see that **y_hat** is the output of the discriminator; our predicted class.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 780767,
+          "key": "5a75d507-6e84-4c47-bfe8-9fc0b1298f31",
+          "title": "GANs, a Recap",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5a75d507-6e84-4c47-bfe8-9fc0b1298f31",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 782988,
+              "key": "102d59c7-b15c-4b59-89f4-82ae0ab40548",
+              "title": "04 GANs A Recap RENDER V1 V3",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "MEKTiR1Xkjg",
+                "china_cdn_id": "MEKTiR1Xkjg.mp4"
+              }
+            },
+            {
+              "id": 782283,
+              "key": "5b6e157a-951e-4359-b683-ff984dab5142",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Latent Space\n\nLatent means \"hidden\" or \"concealed\". In the context of neural networks, a latent space often means a feature space, and **a latent vector is just a compressed, feature-level representation of an image**!\n\nFor example, when you created a simple autoencoder, the outputs that connected the encoder and decoder portion of a network made up a compressed representation that could also be referred to as a latent vector.\n\nYou can read more about latent space in [this blog post] as well as an interesting property of this space: recall that we can mathematically operate on vectors in vector space and with latent vectors, we can perform a kind of feature-level transformation on an image! \n\n> This manipulation of latent space has even been used to create an [interactive GAN, iGAN](https://github.com/junyanz/iGAN/blob/master/README.md) for interactive image generation! I recommend reading the paper, linked in the Github readme.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 780768,
+          "key": "006f4399-855c-489a-a2c7-2514aec3876a",
+          "title": "Pix2Pix Generator",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "006f4399-855c-489a-a2c7-2514aec3876a",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 782989,
+              "key": "3b76a800-c161-44ab-acab-77f5d53c2c3d",
+              "title": "05 Pix2Pix GEnerator ARCHitecture RENDER V1 V1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "94Kml3ekrUI",
+                "china_cdn_id": "94Kml3ekrUI.mp4"
+              }
+            },
+            {
+              "id": 782284,
+              "key": "33d79eb7-137d-4d19-901c-013d2a76f1d3",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Pix2Pix resources \n\nIf you're interested in learning more, take a look at the [original Pix2Pix paper](https://arxiv.org/pdf/1611.07004.pdf). I'd also recommend this related work on creating high-res images:   [high resolution, conditional GANs](https://tcwang0509.github.io/pix2pixHD/).",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 780769,
+          "key": "e138aba5-5eb4-4398-9f4b-2674f1d23e9b",
+          "title": "Pix2Pix Discriminator",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "e138aba5-5eb4-4398-9f4b-2674f1d23e9b",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 782990,
+              "key": "a518c121-1080-4c77-a093-287f6f9b7bb0",
+              "title": "06 Pix2Pix DisCRIminator & Training RENDER V1 V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "3Khqf7WtCxY",
+                "china_cdn_id": "3Khqf7WtCxY.mp4"
+              }
+            },
+            {
+              "id": 782285,
+              "key": "e0e44690-c2aa-4d05-a506-b75d4d0b9f3c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Edges to Cats Demo\n\nTry out Christopher Hesse's [image-to-image demo](https://affinelayer.com/pixsrv/) to get some really interesting (and sometimes creepy) results!",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 780771,
+          "key": "902043bb-8bde-468c-9465-004a3582e6ba",
+          "title": "CycleGANs & Unpaired Data",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "902043bb-8bde-468c-9465-004a3582e6ba",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 782991,
+              "key": "3792ebb2-d89d-44ce-ac66-78f904635759",
+              "title": "07 CycleGANs & Unpaired Data RENDER V1 V4",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "-fbaRaXDqMY",
+                "china_cdn_id": "-fbaRaXDqMY.mp4"
+              }
+            },
+            {
+              "id": 782286,
+              "key": "93aea2b8-b422-476c-a92e-14faa7307f94",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Many of these image are collected in the [Pix2Pix and CycleGAN Github repo](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) developed by Jun-Yan.\n\nAnd you can read the [CycleGAN paper, here](https://arxiv.org/pdf/1703.10593.pdf).",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 780772,
+          "key": "d4370ce5-96e6-42d2-a2a3-a33f46ebcb7f",
+          "title": "Cycle Consistency Loss",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d4370ce5-96e6-42d2-a2a3-a33f46ebcb7f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 782992,
+              "key": "0b34b372-d903-4a78-a23c-812d7833dd4a",
+              "title": "08 Cycle Consistency Loss RENDER V4",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "pPbWXmVgY0k",
+                "china_cdn_id": "pPbWXmVgY0k.mp4"
+              }
+            },
+            {
+              "id": 782937,
+              "key": "45b7a890-cf6f-49e3-b24c-6978b241e107",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Importance of Cycle Consistency\n\nA really interesting place to check cycle consistency is in language translation. Ideally, when you translate one word or phrase from, say, English to Spanish, if you translate it _back_ (from Spanish to English) you will get the same thing!\n\nIn fact, if you are interested in natural language processing, I suggest you look into this as an area of research; even Google Translate has a tough time with this. In fact, as an exercise, I want you to see if Google Translate passes the following cycle consistency test.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 782938,
+              "key": "4a6c9afe-d39d-4edf-b49c-6ef8743db974",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2018/November/5bea15ac_screen-shot-2018-11-12-at-4.05.54-pm/screen-shot-2018-11-12-at-4.05.54-pm.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/4a6c9afe-d39d-4edf-b49c-6ef8743db974",
+              "caption": "aroma, english to spanish",
+              "alt": "",
+              "width": 300,
+              "height": 448,
+              "instructor_notes": null
+            },
+            {
+              "id": 782940,
+              "key": "b83b3223-4003-48c4-96b3-c2923fd1a24b",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "b83b3223-4003-48c4-96b3-c2923fd1a24b",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Using English to Spanish translate, type in **aroma**, which typically means _pleasant smell_. Then, click the back and forth arrows to switch domains and translate aroma from Spanish to English. Check out the result; is this translation **cycle consistent**?",
+                "answers": [
+                  {
+                    "id": "a1542067653649",
+                    "text": "Yes ",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1542067725270",
+                    "text": "No",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 780775,
+          "key": "7a421876-2894-400e-8950-fad540290dd5",
+          "title": "Why Does This Work?",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "7a421876-2894-400e-8950-fad540290dd5",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 782993,
+              "key": "61bea354-080e-4266-abcb-1f66964b88da",
+              "title": "09 Why Does This Work RENDER V1 V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "q7SP89u02L0",
+                "china_cdn_id": "q7SP89u02L0.mp4"
+              }
+            },
+            {
+              "id": 782291,
+              "key": "a3bf7a72-bf2f-4506-88c5-2987a0046953",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Model Shortcomings\n\nAs with any new formulation, it's important not only to learn about its strengths and capabilities, but also, its weaknesses. A CycleGAN has a few shortcomings:\n\n* It will only show one version of a transformed output even if there are multiple, possible outputs.\n* A simple CycleGAN produces low-resolution images, though there is some research around [high-resolution GANs](https://github.com/NVIDIA/pix2pixHD)\n* It occasionally fails! (One such case is pictured below.)\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 782292,
+              "key": "3da01e9e-0265-45f2-abb4-e2f568168ccd",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2018/November/5be7a5ec_screen-shot-2018-11-10-at-7.45.35-pm/screen-shot-2018-11-10-at-7.45.35-pm.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/3da01e9e-0265-45f2-abb4-e2f568168ccd",
+              "caption": "A horses to zebra transformation.",
+              "alt": "",
+              "width": 400,
+              "height": 908,
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 780777,
+          "key": "87c61b71-009a-46c9-886a-6e85591564a3",
+          "title": "Beyond CycleGANs",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "87c61b71-009a-46c9-886a-6e85591564a3",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 782994,
+              "key": "58b3c42a-4a03-4748-9739-75826732c653",
+              "title": "10 Beyond CycleGANs RENDER V1 V1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "jwbloZnZcv0",
+                "china_cdn_id": "jwbloZnZcv0.mp4"
+              }
+            },
+            {
+              "id": 782293,
+              "key": "32dfdc56-b27a-48e1-a6e8-27f20973a1e4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Resources\n* [Augmented CycleGAN](https://arxiv.org/abs/1802.10151)\n* Implementation of [StarGAN](https://github.com/yunjey/StarGAN)",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

@@ -1,0 +1,1682 @@
+{
+  "data": {
+    "lesson": {
+      "id": 970517,
+      "key": "27ab2378-4a93-47aa-8740-dc30fc7ced40",
+      "title": "Intro to Digital Sampling & Signal Processing",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "A brief tour through sampling theory, signal processing, the Fourier transform, and other related topics. We’ll briefly cover some plotting and visualization techniques here as well.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/27ab2378-4a93-47aa-8740-dc30fc7ced40/970517/1584000548903/Intro+to+Digital+Sampling+%26+Signal+Processing+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/27ab2378-4a93-47aa-8740-dc30fc7ced40/970517/1584000540735/Intro+to+Digital+Sampling+%26+Signal+Processing+Subtitles.zip"
+          },
+          {
+            "name": "AIHCND-Wearable-Data-Course-Glossary",
+            "uri": "https://video.udacity-data.com/topher/2020/May/5ebb2d0c_aihcnd-wearable-data-glossary-v2/aihcnd-wearable-data-glossary-v2.pdf"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 970504,
+          "key": "c7d2f97a-2f59-41c7-8933-faab2a3c6b7d",
+          "title": "Introduction",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c7d2f97a-2f59-41c7-8933-faab2a3c6b7d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 970432,
+              "key": "9a071e50-9017-4656-9598-b089f261780f",
+              "title": "Header",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Introduction",
+              "instructor_notes": ""
+            },
+            {
+              "id": 970451,
+              "key": "ca94a13f-f076-4780-8469-b92a80a4c9d6",
+              "title": "ND320 C4 L1 01 Intro To Digital Sampling & Signal Processing",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "ptQ7LQlmyVE",
+                "china_cdn_id": "ptQ7LQlmyVE.mp4"
+              }
+            },
+            {
+              "id": 970431,
+              "key": "f84f0edc-d99c-4f1e-a0b2-e48ed46d4bb9",
+              "title": "Conceptual Topics",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/May/5eb8ee68_l1-diagram-of-overarching-conceptsv2/l1-diagram-of-overarching-conceptsv2.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/f84f0edc-d99c-4f1e-a0b2-e48ed46d4bb9",
+              "caption": "We will be covering four major areas of signal processing theory in this lesson.",
+              "alt": "Signal Processing for this course will cover Sampling, Fourier Transform, Interpolation, and Harmonics. ",
+              "width": 728,
+              "height": 306,
+              "instructor_notes": null
+            },
+            {
+              "id": 970438,
+              "key": "b26aa2c6-ec63-4e56-ba0a-a52f63435540",
+              "title": "Intro to Digital Sampling & Signal Processing Recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\nThis lesson will be a whirlwind tour through sampling theory, signal processing, the Fourier transform, and related topics that you will need to know to complete this course. Along the way, we will learn how to plot and visualize our signals using basic python plotting functions. We will be using the following packages: \n- [numpy](https://numpy.org/)\n- [scipy](https://www.scipy.org/)\n- [matplotlib](https://matplotlib.org/)\n- [scikit-learn](https://scikit-learn.org/stable/)\n\nIf you are familiar with these libraries and concepts already, then this will be mostly a review. If this is all brand new to you, don’t worry, this lesson assumes zero prior knowledge and doesn’t overwhelm you with the theory. In fact, you won’t see a single equation in this lesson. You will, however, see a lot of code.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 970503,
+          "key": "e1e88d78-b8f6-4742-909c-50da547c5566",
+          "title": "Refresher on Signals",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "e1e88d78-b8f6-4742-909c-50da547c5566",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 970430,
+              "key": "18a9df9a-4869-42cc-b93c-3759e7ed4258",
+              "title": "heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Refresher on Signals",
+              "instructor_notes": ""
+            },
+            {
+              "id": 970429,
+              "key": "44323314-cae4-484c-9763-5272826e85cc",
+              "title": "ND320 C4 L1 02 What Is A Signal-",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "vMk-KIhyCbA",
+                "china_cdn_id": "vMk-KIhyCbA.mp4"
+              }
+            },
+            {
+              "id": 970433,
+              "key": "efb3ccce-8f21-4706-bad1-d133072a8a02",
+              "title": "Signals Review",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\n\nA signal is simply a series of numbers (e.g. [3, 4, 6, 2, 4] is a signal!). Typically these numbers represent a voltage that changes with respect to some physical phenomenon. When the voltage signal changes in time, it’s called a time series signal. Signal processing helps us analyze this sequence of numbers so we can learn more about the physical phenomenon it represents.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 970443,
+              "key": "3859e1a7-94d2-436d-a212-8eb5453d4e48",
+              "title": "image",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/March/5e7a3d4f_nd320-c4-l1-sinusoid-basics/nd320-c4-l1-sinusoid-basics.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/3859e1a7-94d2-436d-a212-8eb5453d4e48",
+              "caption": "Sinusoid Basics",
+              "alt": "Sinusoid Basics",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 970434,
+              "key": "622540c8-88e4-4d7e-8497-7fd7dc64ece1",
+              "title": "summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "We can use the figure above to explore some properties of signals. The time-invariant part of the signal is the DC level or mean value (black line), here it’s at 10 Volts. The AC component (blue line) is the part of the signal that varies with time. There are many ways to measure the AC component -- e.g., standard deviation, variance, or interquartile range. In this case, we measured the peak-to-peak amplitude, which is 6 volts.  \n   \nThis signal is also periodic, meaning that it repeats itself over and over again. The **period** is the amount of time it takes to make one repetition, which in this case is half a second. The **frequency** is the inverse of the period, or the number of repetitions per second, which is 2 **hertz (Hz)**.  ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 970435,
+              "key": "65b9a18d-98bb-4ea0-8807-ff8b76de2c93",
+              "title": "phase change",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/March/5e81dbec_phase-shift/phase-shift.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/65b9a18d-98bb-4ea0-8807-ff8b76de2c93",
+              "caption": "Phase Change",
+              "alt": "TODO",
+              "width": 1064,
+              "height": 698,
+              "instructor_notes": null
+            },
+            {
+              "id": 970448,
+              "key": "7cf1ae7e-c6bf-45d0-8a43-4d61fc64d858",
+              "title": "phase change and new vocab",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "The last property of a periodic signal is the **phase shift**, which is similar to a time shift. If two signals are time shifted by one full period, there is no difference between them. For this reason, we express this shift by the fraction of the period that they are shifted. If a signal is shifted by a quarter of a period, we can say the phase shift is 90 degrees (360 being a full period). You can also measure phase shift in radians and there are 2 pi radians in a full period. So this phase shift would be half pi radians.\n\n## New Vocabulary\n- **Period**: The amount of time it takes to make one repetition. \n- **Frequency**: The amount of repetitions in a given time period, usually 1 second is the time period. \n- **Hertz (Hz)**: The units of the sampling rate. 1Hz means 1 sample per second.  \n- **Phase Shift**: The shift between two similar periodic signals expressed in fractions of a period (multiplied by 2𝛑 radians or 360°).",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 970516,
+          "key": "26df90b7-2f41-423f-b945-b7c79e2b2b94",
+          "title": "Sampling Analog Signals",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "26df90b7-2f41-423f-b945-b7c79e2b2b94",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 970446,
+              "key": "79b4df4a-8af8-4058-8425-92f161030eea",
+              "title": "Sampling Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Digital Sampling",
+              "instructor_notes": ""
+            },
+            {
+              "id": 970450,
+              "key": "2b8f55ae-b6cf-457c-b5c3-68bf23bd987a",
+              "title": "ND320 C4 L1 03 Sampling Analog Signals",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "v1oWGJjWHso",
+                "china_cdn_id": "v1oWGJjWHso.mp4"
+              }
+            },
+            {
+              "id": 970449,
+              "key": "8f5799c6-5f99-495c-b150-105951f17fec",
+              "title": "Sampling Analog signals Recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\nThe goal of digital sampling is to take an analog continuous-time signal, typically a voltage, and to quantize it and discretize it in time so that we can store it in a finite amount of memory and use the magic of computers to process it. The component that does this is called an **analog-to-digital converter** or an ADC, this is an example of a **transducer, you will learn more about transducers in a future lesson. It is important to learn about the few fundamental ways the ADC changes the analog signal. In our head, it’s easy sometimes to pretend that we’re dealing with an ideal analog signal, but this can get us into trouble, and it’s important to know more detail about how signals are sampled to avoid pitfalls later on.\n\nAn ADC encodes a range of physical values to a set of discrete numbers. In this example, the analog signal varies over time between -3V and +3V and we are using a 4-bit ADC, which means that the ADC has 4 bits to encode the range from -3 to +3 (ie. the **bit-depth** of our sensor is 4). The 4 bits indicate that there are 16 discrete values and we can see the effect of this quantization in the digitized signal.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 970540,
+              "key": "798e7161-ca29-4fb2-a401-78138b317034",
+              "title": "Quantization Noise",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/March/5e7a3d4d_nd320-c4-l1-quant-noise/nd320-c4-l1-quant-noise.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/798e7161-ca29-4fb2-a401-78138b317034",
+              "caption": "Quantization Noise",
+              "alt": "Quantization Noise",
+              "width": 853,
+              "height": 259,
+              "instructor_notes": null
+            },
+            {
+              "id": 1008932,
+              "key": "043771c1-31f1-4f93-9c45-21fdb7c909b1",
+              "title": "quant to noise floor",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "But typically, ADCs have many more bits and you won’t see quantization noise because it will be overpowered by other noise sources. \n- Latent thermal energy in the system.\n- Electronic noise from within the sensor.\n- Electronic noise from the surroundings and the building itself. \nAll these types of noise contribute to what we call the **noise floor**. Even when the incoming signal is perfectly flat, you will see some noise in the output. If you ever see a flat line at 0 in the output, it’s because your sensor is broken.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 970542,
+              "key": "9920fe5e-9b4f-4714-80e3-bc316dd851c6",
+              "title": "Noise Floor",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/March/5e7a3d4c_nd320-c4-l1-noise-floor/nd320-c4-l1-noise-floor.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/9920fe5e-9b4f-4714-80e3-bc316dd851c6",
+              "caption": "Noise Floor",
+              "alt": "Noise Floor",
+              "width": 860,
+              "height": 256,
+              "instructor_notes": null
+            },
+            {
+              "id": 1008929,
+              "key": "ba5edef6-1ad5-42f2-b7ad-209d22a463e2",
+              "title": "Additive Noise",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "This noise is additive, so you’ll see it on top of whatever incoming signal you have.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1008931,
+              "key": "40f09267-1009-42f6-913d-191291e8df7b",
+              "title": "Additive Noise",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/March/5e7a3d4b_nd320-c4-l1-additive-noise/nd320-c4-l1-additive-noise.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/40f09267-1009-42f6-913d-191291e8df7b",
+              "caption": "Additive Noise",
+              "alt": "Additive Noise. When you combine the previous 2 signals, quantization and noise floor, you will get an additive signal.",
+              "width": 878,
+              "height": 262,
+              "instructor_notes": null
+            },
+            {
+              "id": 1008934,
+              "key": "c582cd69-df0f-4867-a9f2-a9f07519becf",
+              "title": "Signal Clipping",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "ADCs have a fixed range on the input. So for this example, our ADC was limited to -3V and +3V. This is known as the **dynamic range** of our sensor. When the input signal exceeds the dynamic range of the sensor, in this case from -4 to +4, everything greater than 3 will be clipped and set to 3 and everything smaller than -3 will be clipped to -3. We call this effect clipping, oversaturation, or undersaturation. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 970543,
+              "key": "42988970-b530-4a36-930d-4877a43201f1",
+              "title": "Signal Clipping",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/March/5e7a3d4e_nd320-c4-l1-signal-clipping/nd320-c4-l1-signal-clipping.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/42988970-b530-4a36-930d-4877a43201f1",
+              "caption": "Signal Clipping",
+              "alt": "Signal Clipping",
+              "width": 837,
+              "height": 275,
+              "instructor_notes": null
+            },
+            {
+              "id": 1008933,
+              "key": "8095636f-93bf-4568-b4f2-0dbac19bd18f",
+              "title": "Sampling Rate",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "And finally, it’s important to remember that digital signals are sampled periodically in time. We often plot them as these continuous signals by connecting the dots in between, but they are better represented as a sequence of individual points. In this example, there are 30 samples in this second, so we would say the **sampling rate** is 30 samples per second or 30 Hz.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 970541,
+              "key": "b4865621-afb1-41ac-8f95-c68f82f0ef91",
+              "title": "Sampling Rate",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/March/5e7a3d4e_nd320-c4-l1-sampling-rate/nd320-c4-l1-sampling-rate.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/b4865621-afb1-41ac-8f95-c68f82f0ef91",
+              "caption": "Sampling Rate",
+              "alt": "Sampling Rate",
+              "width": 857,
+              "height": 274,
+              "instructor_notes": null
+            },
+            {
+              "id": 970440,
+              "key": "b658fd91-aa81-46b5-b57f-2ce666607c34",
+              "title": "Given sampling rate, what is the distance between two successive samples in milliseconds",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "b658fd91-aa81-46b5-b57f-2ce666607c34",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "A sensor samples at 125 Hz. How many milliseconds separate each sample?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "125",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "12.5",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "80",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk4",
+                    "text": "8",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 970538,
+              "key": "da931387-13c6-4d3b-93de-62a821e14c32",
+              "title": "Two Data Streams",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "da931387-13c6-4d3b-93de-62a821e14c32",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Below are two signals represented in a table with their timestamps and the signal value. Match the signals with their sampling rates."
+                },
+                "concepts_label": "Signal Value Tables",
+                "answers_label": "Sampling Rate",
+                "concepts": [
+                  {
+                    "text": "| Timestamp (ms)| Value       |\n| -----------   | ----------- |\n| 1000          | 32.4        |\n| 1250          | 43.0        |\n| 1500          | 52.5        |\n",
+                    "correct_answer": {
+                      "id": "a1581627884907",
+                      "text": "4 Hz"
+                    }
+                  },
+                  {
+                    "text": "| Timestamp (ms)| Value       |\n| -----------   | ----------- |\n| 3             | -10         |\n| 19.67         | -100        |\n| 36.33         | -1000       |",
+                    "correct_answer": {
+                      "id": "a1581627927122",
+                      "text": "60 Hz"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1581627955729",
+                    "text": "250 Hz"
+                  },
+                  {
+                    "id": "a1581627952472",
+                    "text": "16 Hz"
+                  },
+                  {
+                    "id": "a1581627947924",
+                    "text": "10 Hz"
+                  },
+                  {
+                    "id": "a1581627927122",
+                    "text": "60 Hz"
+                  },
+                  {
+                    "id": "a1581627884907",
+                    "text": "4 Hz"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 970461,
+              "key": "72ec6dff-5d64-4843-905c-0d5ad15cc880",
+              "title": "Glossary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## New Vocabulary\n- **Transducer**: Part of a sensor that converts a physical phenomenon into an electrical one (e.g., voltage)  \n- **Analog-to-Digital Convert (ADC)**: A device (usually embedded in the sensor) that converts an analog voltage into an array of bits.  \n- **Bit depth**: The number of bits an ADC uses to create a sample. A 16-bit ADC produces a 16-bit number for each sample.  \n- **Noise floor**: The total amount of noise in the sensor, including electrical interference from the environment and other parts of the device, thermal noise, and quantization noise.  \n- **Dynamic range**: The physical range of the sensor. Values outside of this range will show up as clipping in the digital signal.  \n- **Sampling rate**: The frequency at which a sensor measures a signal.  \n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 970483,
+              "key": "7a70e733-3668-4d05-8d70-1060a5ea811a",
+              "title": "Sampling Further Research",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Further Research\n- Sampling Signal Processing [Wikipedia](https://en.wikipedia.org/wiki/Sampling_%28signal_processing%29)\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 970513,
+          "key": "1b518aae-4018-4e16-beb2-2397f4d675f6",
+          "title": "Plotting Signals In Time-domain",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "1b518aae-4018-4e16-beb2-2397f4d675f6",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 970467,
+              "key": "b6509cd2-571f-4779-954e-47eb2fa95194",
+              "title": "Plotting tools heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Time-domain Plotting",
+              "instructor_notes": ""
+            },
+            {
+              "id": 970452,
+              "key": "844f60e2-4fd2-4430-9d23-60daf1a0e79e",
+              "title": "ND320 C4 L1 04 Time-Domain Plotting",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "GGE6UtMIdGc",
+                "china_cdn_id": "GGE6UtMIdGc.mp4"
+              }
+            },
+            {
+              "id": 1020193,
+              "key": "b2e76974-649d-47cb-a1cc-e2b82be3ed71",
+              "title": "Time-Domain Plotting Intro Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "We just learned about how we can plot signals in Python and visually explore our data. We used the matplotlib library and IPython magic to plot a test signal. A test signal is a sum of various sinusoids at different frequencies, multiplied by an exponential decay function. And we can also use the package mpld3 to make it more interactive to better examine the signals and data. Next we will look at plotting specific events on top of a time series. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 970455,
+              "key": "fc8ddb12-81b6-40c6-8bce-6dd4bbf7c363",
+              "title": "ND320 C4 L1 05 Zero Crossing",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "utE-ELSINcw",
+                "china_cdn_id": "utE-ELSINcw.mp4"
+              }
+            },
+            {
+              "id": 1020199,
+              "key": "fdaf751c-6e43-4077-8613-f7f96da4e12b",
+              "title": "Zero Crossing Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "We just learned about zero crossings and plotting them over the time series we just created. A zero-crossing is the point in time that the signal changes sign. The zero-crossings we found aren't exactly at 0. This is because our original signal isn't continuous; it's digitally sampled! That means we didn't sample the signal exactly when it crossed zero and our zero-crossings are the closest point we have to a \"real\" zero-crossing.\n\nWe can visualize this by only plotting the signal points that we have and not connecting them with lines in between.\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1020203,
+          "key": "894f5ed5-f5e9-44ed-af22-f29b2a7d4f5e",
+          "title": "Time-domain Plotting Continued",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "894f5ed5-f5e9-44ed-af22-f29b2a7d4f5e",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1020196,
+              "key": "9e0513ca-3488-49f3-996f-15a9aeeb3c81",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Time-domain Plotting Continued",
+              "instructor_notes": ""
+            },
+            {
+              "id": 970464,
+              "key": "09fd4d34-8ccc-402c-a8fc-c8e5d381f4fc",
+              "title": "ND320 C4 L1 06 Comparing 2 Plots",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "MFNXivoCa7Q",
+                "china_cdn_id": "MFNXivoCa7Q.mp4"
+              }
+            },
+            {
+              "id": 970494,
+              "key": "0495b4c5-c9c2-4032-b508-2d188f2f9e8c",
+              "title": "Time-domain plotting Recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\n\nIn these videos, we cover interactive plotting using `matplotlib` of signals in the time-domain. Plotting a signal in the **time-domain** just means that the x-axis in our plots is time. This is probably the way you naturally visualize signals. This is in contrast to the frequency domain, which we will see later in this lesson.   \n  \nWe also practice more complicated visualizations like plotting event detections on top of a continuous signal as well as visually comparing two similar signals.\n\n## New Vocabulary\n- **Time-domain**:  The typical representation we are used to for signals where the signal is represented by values in time.\n\n## Notebook Review\nIf you wanted to interact with the notebook in the video, you can access it [here](https://github.com/udacity/nd320-c4-wearable-data-starter/tree/master/intro-to-dsp/walkthroughs/time-domain-plotting) in the repo `/intro-to-dsp/walkthroughs/time-domain-plotting/` or in the workspace below.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1020204,
+              "key": "c4b186b0-7001-4496-ad8e-4e043a16d7a1",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1020203xJUPYTERq2f63nnr",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-2yp26",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Time-domain Plotting.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 970468,
+              "key": "b111ff4a-b7d5-4f35-bea0-150f37119afa",
+              "title": "Plotting exercise intro",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Exercise 1: Plotting\n\n## Instructions\n1. Complete the **Offline** or **Online** instructions below.\n2. Read through the whole `.ipynb`.\n3. Complete all the code cells that contain `## Your Code Goes Here`.\n\n#### Offline\n1. In the repo which you can access [here](https://github.com/udacity/nd320-c4-wearable-data-starter/tree/master/intro-to-dsp/exercises/1-plotting) in the repo `intro-to-dsp/exercises/1-plotting/` you should find the following files:\n  - `1_plotting.ipynb`\n  - `exercise1.npz`\n  - `r_peaks.png`\n2. Open up the python notebook and associated files in your desired editor. \n\n**Note**: Instructions can be found in **Introduction to Wearable Data**'s Concept **Developer Workflow** for how to set up your local environment.\n\n#### Online\n1. Go to the next concept and the `1_plotting.ipynb` should be open and the workspace should already contain the appropriate `exercise1.npz` file. This one will also contain the `r_peaks.png` file for the instructions in markdown.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 970480,
+          "key": "f86e9029-4b56-4e63-943a-8e3112de35ce",
+          "title": "Exercise 1: Plotting",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "f86e9029-4b56-4e63-943a-8e3112de35ce",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 970518,
+              "key": "c11d245a-f7b9-4c9d-86b5-5fb1b710b8c6",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c970480xJUPYTER4salxhen",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-8sojo",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/1_plotting.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 970509,
+          "key": "8569ca86-8527-4c08-a230-44f9c7a10713",
+          "title": "Exercise 1: Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "8569ca86-8527-4c08-a230-44f9c7a10713",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 970486,
+              "key": "fe44e8e9-0f4a-4886-95f2-122b82a2ef8e",
+              "title": "ND320 C4 L1 07 Plotting Exercise Walkthrough",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "r8TUTSiA6vQ",
+                "china_cdn_id": "r8TUTSiA6vQ.mp4"
+              }
+            },
+            {
+              "id": 970496,
+              "key": "4d546da4-460e-4645-84cf-48e8f8b5cfc7",
+              "title": "Plotting tools heading Further Research",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Key Takeaways\n * Plotting your data is a great way to check your assumptions about the data you have.\n * Matplotilb makes it easy to plot time series signals and events in time together.\n\n## Further Resources\n\n### Physionet\nPhysionet is a great resource of freely available biomedical signals. You can try many of the techniques you learn in this class on datasets in [Physionet](https://physionet.org/). \nThis [European ST-T Database](https://physionet.org/content/edb/1.0.0/) from Physionet was used in the previous exercise.\n\n### Plotting\nListed below are the packages we will be using throughout to visualize our datasets.\n- [Matplotlib](https://matplotlib.org/) - the plotting library we use most in this course.\n- [Seaborn](https://seaborn.pydata.org/) - a wrapper around `matplotlib` that makes it easier to do higher level statistical visualization. We will use this a few times in the course.\n- [Altair](https://altair-viz.github.io/) - Another powerful visualization library in Python\n- [Plotly](https://plot.ly/) - You can use plotly to create and save visualization in HTML / javascript. This is especially useful when you want to make offline, shareable plots that you can interact with in the browser.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 970507,
+          "key": "614cc1c7-6dc2-41b7-88ef-861ad360df4c",
+          "title": "Interpolation",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "614cc1c7-6dc2-41b7-88ef-861ad360df4c",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 970471,
+              "key": "8c1af067-ba4c-4baa-b49e-630dda0cc92f",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Interpolation",
+              "instructor_notes": ""
+            },
+            {
+              "id": 970493,
+              "key": "f45b3e10-7cb6-4220-813c-bbb903d7c3ef",
+              "title": "ND320 C4 L1 08 Resampling - Interpolation",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "RfltUSOwWvE",
+                "china_cdn_id": "RfltUSOwWvE.mp4"
+              }
+            },
+            {
+              "id": 1020195,
+              "key": "118db217-54ac-4698-805e-97e60c0d9db2",
+              "title": "Resampling & Interpolation Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "We just learned about **interpolation** which is a technique that allows us to work with multiple signals that are sampled differently in time. We saw 2 signals that are both 1 Hz sine waves, but the one that is sampled at 60 Hz has many more data points than the one sampled at 25 Hz. After plotting and verifying the lengths of the signals, it might appear that `s2_interp` and `s1` are the same, but it is most certainly not! By plotting the original and the interpolated signal together we can see that linear interpolation estimates points in between existing points by using a weighted average of the original points.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 970500,
+              "key": "3b2fe2c2-8c88-4310-b686-e04c5da67f23",
+              "title": "ND320 C4 L1 09 Non-Uniform Sampling",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "-XDlFD5j4Rc",
+                "china_cdn_id": "-XDlFD5j4Rc.mp4"
+              }
+            },
+            {
+              "id": 970501,
+              "key": "96bbb800-ba61-4bdf-a615-85818f594ae8",
+              "title": "Resampling / Interpolation recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Previously we had only discussed uniformly sampled signals where the signal is sampled at fixed intervals in time, but sometimes we may encounter signals that are sampled haphazardly in time. This is troubling because a lot of signal processing techniques that we are about to learn require that the signal is sampled uniformly. We can fix this again with linear interpolation. When we compare the 2 signals, one uniformly and one not uniformly sampled, we can see that they follow the same continuous signal but the location of those samples are at different times. Using the np.interp function you can recover the signal in which the now non-uniformly sampled signal will have a signal point like the uniform signal. But you may notice artifacts at the edge of the resampled signal, and there is more error when the gap between existing samples is larger.\n\n## Notebook Review\nIf you wanted to interact with the notebook in the video, you can access it [here](https://github.com/udacity/nd320-c4-wearable-data-starter/tree/master/intro-to-dsp/walkthroughs/interpolation) in the repo `intro-to-dsp/walkthroughs/interpolation/` or in the workspace below.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 970546,
+              "key": "9c8b82b9-ffd3-424c-a83d-1a609bd9597b",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c970507xJUPYTERbhldfsok",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-9rlsf",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/interpolation.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1020201,
+          "key": "099765b9-c872-4ac0-97aa-2ed8c5c310cd",
+          "title": "Interpolation in Review",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "099765b9-c872-4ac0-97aa-2ed8c5c310cd",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1020194,
+              "key": "3cd555fe-af22-434b-8061-0b2b63cf965e",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Interpolation in Review\n**Interpolation** is a technique to estimate a signal at points in time between existing samples. We can use this technique to normalize a signal that was sampled non-uniformly. We can also use it to **resample** a signal when comparing signals that are sampled at different sampling rates. Resampling is the process of changing the sampling rate of a discrete signal.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 970454,
+              "key": "725d41ae-adc8-429f-8ccf-6e36bc1a777d",
+              "title": "Linear Interpolation",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "725d41ae-adc8-429f-8ccf-6e36bc1a777d",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "| Timestamp (ms)| Value       |\n| -----------   | ----------- |\n| 1000          | 30        |\n| 1250          | 40        |\n| 1500          | 42        |\nUsing linear interpolation, what would the value of the above time-series signal be at timestamp `1200`?",
+                "matchers": [
+                  {
+                    "expression": "\\s*38\\s*"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 970465,
+              "key": "f0c2fd12-4fca-414a-a25b-94e0b309214d",
+              "title": "vocab",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## New Vocabulary\n- **Interpolation**: A method for estimating new data points within a range of discrete known data points.\n- **Resampling**: The process of changing the sampling rate of a discrete signal to obtain a new discrete representation of the underlying continuous signal.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 970469,
+              "key": "d9e40019-6542-41ee-abad-c471a36d3011",
+              "title": "Resampling exercise intro",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Exercise 2: Interpolation\n\n## Instructions\n1. Complete the **Offline** or **Online** instructions below.\n2. Read through the whole `.ipynb`.\n3. Complete all the code cells that contain `## Your Code Goes Here`.\n\n#### Offline\n1. In the repo which you can access [here](https://github.com/udacity/nd320-c4-wearable-data-starter/tree/master/intro-to-dsp/exercises/2-interpolation) in the repo `/intro-to-dsp/exercises/2-interpolation/` you should find the following files:\n  - `2_interpolation.ipynb`\n  - `exercise2.npz`\n2. Open up the python notebook and associated files in your desired editor. \n\n**Note**: Instructions can be found in **Introduction to Wearable Data**'s Concept **Developer Workflow** for how to set up your local environment.\n\n#### Online\n1. Go to the next concept and the `2_interpolation.ipynb` should be open and the workspace should already contain the appropriate `exercise2.npz` file.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 970456,
+          "key": "4d72105c-f51c-49d9-afed-42e561173b0f",
+          "title": "Exercise 2: Interpolation",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "4d72105c-f51c-49d9-afed-42e561173b0f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 970519,
+              "key": "b9dd2d9e-9020-4e4a-ad51-dba1d324f3c9",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c970456xJUPYTERdzgk024i",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-6bwk9",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/2_interpolation.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 970505,
+          "key": "32881ad2-140a-432d-8acd-a4354d57a2a1",
+          "title": "Exercise 2: Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "32881ad2-140a-432d-8acd-a4354d57a2a1",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 970457,
+              "key": "cfd0e66f-1257-4d03-8f68-bcc915bcca51",
+              "title": "ND320 C4 L1 10 Resampling Exercise Solution",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "O49HkDz-DwQ",
+                "china_cdn_id": "O49HkDz-DwQ.mp4"
+              }
+            },
+            {
+              "id": 970488,
+              "key": "475b1c20-7b14-4661-b890-da7f7c2fb788",
+              "title": "Resampling / Interpolation Further Research",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Key Takeaways\n * Deriving instantaneous heart rate from R peak locations\n * Using interpolation to normalize a non-uniformly sampled signal\n * Using interpolation to align estimates with reference data streams\n\n## Further Resources\n- [Interpolation](https://en.wikipedia.org/wiki/Interpolation)\n- [Linear Interpolation](https://en.wikipedia.org/wiki/Linear_interpolation)",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 970511,
+          "key": "78f5f581-922b-46ca-96fb-40c3c907e840",
+          "title": "Fourier Transform",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "78f5f581-922b-46ca-96fb-40c3c907e840",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 970476,
+              "key": "e7215539-3625-434d-907c-6f236d9a53e4",
+              "title": "Fourier Transform Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Fourier Transform",
+              "instructor_notes": ""
+            },
+            {
+              "id": 970459,
+              "key": "09a6ef9f-8e5a-451c-82bb-6e95baee6e86",
+              "title": "ND320 C4 L1 11 Fourier Transform Intuition",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "zPLA6IgfQ_4",
+                "china_cdn_id": "zPLA6IgfQ_4.mp4"
+              }
+            },
+            {
+              "id": 1020198,
+              "key": "008e4ff3-fb8c-4b43-ab6a-b6be27967920",
+              "title": "Fourier Transform Intuition Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "We just learned a bit about fourier transform. The theory of fourier transform is that any signal can be represented as a sum of sinusoids. Then we saw how this theory can be put into action by recreating a real accelerometer signal using only the addition of sinusoids. The frequency of the specific sinusoids that make up a signal can tell us important information that we can use to build algorithms to process that signal.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 970477,
+              "key": "f497ceaa-99fc-4bd0-8a84-e44a045bca49",
+              "title": "ND320 C4 L1 12 Nyquist Frequency",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "YQdwnRBy6SE",
+                "china_cdn_id": "YQdwnRBy6SE.mp4"
+              }
+            },
+            {
+              "id": 970499,
+              "key": "81e93e13-6395-4609-b769-14bdc124887a",
+              "title": "Fourier Transform Recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Summary\n\nWe demonstrate the addition of sinusoids and demonstrate how the Fourier transform allows us to describe any signal as a summation of sinusoids.  The frequencies of the sinusoids that comprise a signal represent the signal’s **frequency components**. The range of frequency components for a signal is called its **bandwidth**.\n  \nWe then discuss the **Nyquist frequency** and the limits this imposes on the sampling rate and the **bandwidth** of the signals that we sample.\n\nIf we try to sample a signal that has higher frequency components than the Nyquist frequency, we will see **aliasing**, which means those high-frequency components will show up at mirrored lower frequencies.\n\n## Notebook Review\nIf you wanted to interact with the notebook in the video, you can access it [here](https://github.com/udacity/nd320-c4-wearable-data-starter/tree/master/intro-to-dsp/walkthroughs/fourier-transform-I) in the repo `/intro-to-dsp/walkthroughs/fourier-transform-I/` or in the workspace below.\n\n**Disclaimer**\nThe sections below are not fully functional in the following workspace as they are interactive plots:\n- `Fourier Transform Demo`\n- `Nyquist Frequency`  \n I'd suggest you either watch that part of the video again or view it on your local machine. You can follow the instructions found in **Introduction to Wearable Data**'s Concept **Developer Workflow** for how to set up your local environment to interact with the 2 sections. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1018613,
+              "key": "d92f6fc7-c28f-497f-833e-ff869b848223",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c970511xJUPYTER62pnpkv3",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-a47y2",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/fourier_transform_I.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 970544,
+              "key": "3b4c1711-25fb-40cc-8814-8e4d1578e1df",
+              "title": "Glossary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## New Vocabulary\n- **Frequency component**: The Fourier transform explains a signal as a sum of sinusoids. Each of these sinusoids is a frequency component of the signal.\n- **Nyquist frequency**: Half of the sampling frequency. Signal components above this frequency will get aliased in the sampled signal.\n- **Bandwidth**: A range of frequencies within a band.\n- **Aliasing**:  The effect that causes frequency components greater than the Nyquist frequency to become indistinguishable from frequencies below the Nyquist frequency.\n\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 970510,
+          "key": "d5c722de-f476-44e4-b2d7-b199a42106f0",
+          "title": "Fourier Transform In Practice",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d5c722de-f476-44e4-b2d7-b199a42106f0",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 970473,
+              "key": "6ba6e219-48d0-4124-81ae-093d7e6af7c6",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Fourier Transform In Practice",
+              "instructor_notes": ""
+            },
+            {
+              "id": 970470,
+              "key": "4a895080-7ce0-4754-95c6-1b0413632f2f",
+              "title": "ND320 C4 L1 13 Fourier Transform In Practice",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "3IWA8tMxxTA",
+                "china_cdn_id": "3IWA8tMxxTA.mp4"
+              }
+            },
+            {
+              "id": 1020197,
+              "key": "72d53772-7a80-4056-baf3-ce03597b166d",
+              "title": "Fourier Transform in Practice Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "We learned how to apply the theory and understanding of what a fourier transform is to actually solve some problems. \n\nLet's make a signal that is composed of two sine waves at 2 Hz and 3 Hz plus some random noise. We will be using the `np.fft`module to compute the Fourier transform with the two main functions below:\n- `rfft` - computes the actual Fourier transform coefficients\n- `rfftfreq` - tells us the frequencies for which we are computing the Fourier transform\n\nWe then examined `freqs` to see that the FFT samples the Fourier transform uniformly from 0 Hz to the Nyquist frequency, which in this case is 25 Hz because our sampling rate is 50 Hz. \nWe also saw the Fourier transform coefficients and only examined the magnitudes. \nPlotting the FFT, we see that the signal is composed primarily of two frequencies (2 and 3Hz) and a little bit of everything else (from the random noise).\n\nWe also saw how zero-padding could be used to visualize sinusoids with frequencies that are not present in `freqs`. To visualize at frequencies not in `freqs`, we need to sample twice as often and we can do this by adding 0s to the end of the signal. However, we also see this rippling, which is an artifact of padding the signal with 0s, which is the trade-off when doing zero-padding. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 970466,
+              "key": "cfcc658e-e862-44a7-82e7-8a0740283b8b",
+              "title": "ND320 C4 L1 14 Inverse FFT",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "W-5uoeNYFwM",
+                "china_cdn_id": "W-5uoeNYFwM.mp4"
+              }
+            },
+            {
+              "id": 970474,
+              "key": "4ffbbfb7-b1ab-4cb8-b784-ba155a9dda1f",
+              "title": "Fourier Transform recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "We just learned about inverse Fourier Transform in which we used the `np.fft` module to compute the inverse Fourier transform with the function `irfft`. \n\nWe started with a noisy signal and removed all the frequency components not in the range, in this case, 2Hz and 3Hz. And we saw a recovered signal that looked very close to the signal we saw in the previous video.\n\nBut we did the process again from 2.15Hz and 2.95Hz. The recovered signal looked a bit distorted and not what we'd expect. This is because zeroing out Fourier coefficients is not the best way to filter a signal.\n\nWe then used `scipy` to **bandpass filter** our signal for us. A bandpass filter will remove all frequency components outside of a given passband. Let's bandpass filter our signal with a passband from 1 Hz to 4 Hz. This way, our desired frequencies of 2.15 Hz and 2.95 Hz are well within the passband. And now, our recovered signal looks very similar to what we want.\n\nIn this course, we will always bandpass our signals before processing them.\n\n## Notebook Review\nIf you wanted to interact with the notebook in the video, you can access it [here](https://github.com/udacity/nd320-c4-wearable-data-starter/tree/master/intro-to-dsp/walkthroughs/fourier-tranform-II) in the repo `/intro-to-dsp/walkthroughs/fourier-transform-II/` or in the workspace below.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1018617,
+              "key": "454be5f2-e428-4eb2-8398-c14758dcd5b1",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c970510xJUPYTERam4gp55o",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-aroql",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/fourier_transform_II.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1020202,
+          "key": "ac2a6ff9-3312-4f78-962c-f1cef94d8206",
+          "title": "Fourier Transform in Review",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "ac2a6ff9-3312-4f78-962c-f1cef94d8206",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1020200,
+              "key": "c7870760-3048-4b16-b8cb-35ec58295efd",
+              "title": "heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Fourier Transform In Review\nIn this class we will be computing the Fourier transform by using a method called the [Fast Fourier Transform](https://en.wikipedia.org/wiki/Fast_Fourier_transform). This is a clever algorithm that is able to compute the Fourier transform in O(n*log(n)) time instead of quadratic time. We use `numpy`’s implementation of this algorithm with the functions: \n- `rfft`\n- `rfftfreq`\n- `irfft`\n  \nWe then saw how we could remove the noise by filtering out frequency components outside of the bandwidth of the signal.  The process of removing frequencies from a signal outside a specific band is known as **bandpass filtering**. The band of frequencies that we want to preserve is called the **passband**. -- or **bandpass filtering** our signal. We did this first by manipulating the signal in the frequency domain. After seeing the short-falls of this method, we explored using traditional bandpass filtering techniques that process the signal in the time-domain.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 970479,
+              "key": "2263d522-7e65-41d8-8f34-887e760b0958",
+              "title": "Quizzes",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "2263d522-7e65-41d8-8f34-887e760b0958",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "If we take the Fourier transform of a 50Hz signal that is 100 samples long using `np.fft.rfft`, what frequencies will the Fourier coefficients correspond to?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "0 - 50 Hz in intervals of 1 Hz",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "0 - 50 Hz in intervals of 0.5 Hz",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "0 - 25 Hz in intervals of 1 Hz",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk4",
+                    "text": "0 - 25 Hz in intervals of 0.5 Hz",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 970472,
+              "key": "b266ef83-e4a2-416b-9440-609094035faa",
+              "title": "Fourier Transform Further Research",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Further Resources\n\n[3Blue1Brown](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw/) is a great YouTube channel that explains mathematical concepts with beautiful animations that make intuitive understanding so much easier. He has a few videos on the Fourier transform, which are absolutely illuminating. I highly recommend exploring this channel, starting with this video, [But what is the Fourier Transform? A visual introduction](https://www.youtube.com/watch?v=spUNpyF58BY).\n\n## New Vocabulary\n- **Frequency-domain**: A representation of a signal over frequency instead of time. Instead of representing the signal as a series of numbers in time, the signal is represented by the frequency components that make it up.\n- **Bandpass filter**: A function that preserves frequency components of a signal within a band and suppresses the frequency components outside that band.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 970458,
+              "key": "2691c7ba-f02d-4977-8830-b3d43b638276",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": " # Exercise 3: Fourier Transform\n\n## Instructions\n1. Complete the **Offline** or **Online** instructions below.\n2. Read through the whole `.ipynb`.\n3. Complete all the code cells that contain `## Your Code Goes Here`.\n4. Complete all the markdown cells that contain **TODO**. \n\n#### Offline\n1. In the repo which you can access [here](https://github.com/udacity/nd320-c4-wearable-data-starter/tree/master/intro-to-dsp/exercises/3-fourier-transform) in the repo `/intro-to-dsp/exercises/3-fourier-transform/` you should find the following files\n  - `3_fourier_transform.ipynb`\n  - `exercise3.npz`\n2. Open up the python notebook and associated files in your desired editor. \n\n**Note**: Instructions can be found in **Introduction to Wearable Data**'s Concept **Developer Workflow** for how to set up your local environment.\n\n#### Online\n1. Go to the next concept and the `3_fourier_transform.ipynb` should be open and the workspace should already contain the appropriate `exercise3.npz` file.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 970462,
+          "key": "10e8edfe-a924-4552-bb3c-f20b1947569d",
+          "title": "Exercise 3: The Fourier Transform",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "10e8edfe-a924-4552-bb3c-f20b1947569d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 970534,
+              "key": "a1cc2c9f-acda-470a-a7ad-2faad0b06f69",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c970462xJUPYTERxajytxbs",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-3u538",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/3_fourier_transform.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 970502,
+          "key": "3344c442-c7ec-41cb-81be-e2a7785428c0",
+          "title": "Exercise 3: Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "3344c442-c7ec-41cb-81be-e2a7785428c0",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 970460,
+              "key": "5f5f45f7-1180-407b-bb1a-7c2630925065",
+              "title": "ND320 C4 L1 15 Exercise 3 Solution",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Vyp8TwbOi4E",
+                "china_cdn_id": "Vyp8TwbOi4E.mp4"
+              }
+            },
+            {
+              "id": 1008930,
+              "key": "f21a3050-daf7-4403-85b2-b8012e0172c8",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Key Takeaways\n * We can use the frequency domain to learn properties of a signal in ways that would be difficult in the time domain.\n * We use the Fourier transform to take a signal from the time domain to the frequency domain\n * We can use `numpy` and `matplotlib` to help us compute and plot a time series signal in the frequency domain.\n\n## Summary\nThe Fourier transform plays a pivotal role in signal processing. An intuitive understanding of what it does and how to use can help accomplish many tasks when processing wearable biosignals. Fundamentally, the Fourier transform gives information about what periodic components are present in the signal. And because many biomechanical processes are periodic, (eg. running or walking cadence, heart beats, breathing rate) finding this periodic information in our time series signal can be incredibly useful. \n\nIn the previous few concepts we tried to impart that intuitive understanding as well as practical information on how to use the Fourier transform in Python. As you progress through the course, you will see more examples of the Fourier transform in action and your intuitive understanding will grow.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 970508,
+          "key": "b336d6a9-300d-4a55-92ba-be7ca1a377ba",
+          "title": "Plotting Signals in Frequency Domain",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "b336d6a9-300d-4a55-92ba-be7ca1a377ba",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 970481,
+              "key": "6ada6459-f692-4b4c-bad4-77d129728122",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Plotting Signals in the Frequency Domain",
+              "instructor_notes": ""
+            },
+            {
+              "id": 970491,
+              "key": "833fcbdf-e834-4efe-ba31-11e1d8a1a8f5",
+              "title": "ND320 C4 L1 16 Frequency Domain",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Ic-wqdanMh0",
+                "china_cdn_id": "Ic-wqdanMh0.mp4"
+              }
+            },
+            {
+              "id": 970463,
+              "key": "b236c5b1-0639-4bf1-a59b-e5b62c8bc33e",
+              "title": "Frequency domain recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Summary\nWhen we look at signals in the frequency domain, we lose information about the time-domain. Previously this hadn’t been a problem because we were looking at signals whose frequency components did not change over time. They were **stationary**.  However, most signals we deal with will not be stationary. In this case, it is better to visualize the frequency components of a signal over time using either a: \n- [Short-Time Fourier Transform](https://en.wikipedia.org/wiki/Short-time_Fourier_transform)\n- [Spectrogram](https://en.wikipedia.org/wiki/Spectrogram)\n\n## Notebook Review\nIf you wanted to interact with the notebook in the video, you can access it [here](https://github.com/udacity/nd320-c4-wearable-data-starter/tree/master/intro-to-dsp/walkthroughs/frequency-domain-plotting) in the repo `/intro-to-dsp/walkthroughs/frequency-domain-plotting/` or in the workspace below.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1008918,
+              "key": "81c916b2-0824-46d1-bda3-fc6b50f9a925",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c970508xJUPYTERb4yio3se",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-ak3ek",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/frequency_domain_plotting.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 970498,
+              "key": "bc00a373-d990-417f-8949-d866d3224492",
+              "title": "Plotting exercise intro",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## New Vocabulary\n- **Frequency component**: The Fourier transform explains a signal as a sum of sinusoids. Each of these sinusoids is a frequency component of the signal.\n- **Stationarity**: A property of a signal where the statistics of a process generating a signal do not change in time. Generally, if the frequency components in a signal change in time, this signal is not stationary.\n\n# Exercise 4: Spectrograms\n\n## Instructions\n1. Complete the **Offline** or **Online** instructions below.\n2. Read through the whole `.ipynb`.\n3. Complete all the code cells that contain `## Your Code Goes Here`.\n4. Complete all the markdown cells that contain **TODO**. \n\n#### Offline\n1. In the repo which you can access [here](https://github.com/udacity/nd320-c4-wearable-data-starter/tree/master/intro-to-dsp/exercises/4-spectrograms) in the repo `/intro-to-dsp/exercises/4-spectrograms/` you should find the following files\n  - `4_spectrograms.ipynb`\n  - `exercise4.npz`\n2. Open up the python notebook and associated files in your desired editor. \n\n**Note**: Instructions can be found in **Introduction to Wearable Data**'s Concept **Developer Workflow** for how to set up your local environment.\n\n#### Online\n1. Go to the next concept and the `4_spectrograms.ipynb` should be open and the workspace should already contain the appropriate `exercise4.npz` file.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 970478,
+          "key": "565b64aa-561b-4a10-82b6-6a332a5d3432",
+          "title": "Exercise 4: Spectrograms",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "565b64aa-561b-4a10-82b6-6a332a5d3432",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 970536,
+              "key": "7c888b8e-6d75-4b4e-b6ce-b430e1caa1f6",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c970478xJUPYTER7lyil116",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-6lfez",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/4_spectrograms.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 970514,
+          "key": "b5ef49cd-7777-403e-9b84-734f778bc8c1",
+          "title": "Exercise 4: Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "b5ef49cd-7777-403e-9b84-734f778bc8c1",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 970497,
+              "key": "7eefa14a-2b71-4161-97ac-f0521b22f4b8",
+              "title": "ND320 C4 L1 17 Plotting Exercise Walkthrough",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "lhfTPWIkn28",
+                "china_cdn_id": "lhfTPWIkn28.mp4"
+              }
+            },
+            {
+              "id": 970495,
+              "key": "5241f84a-9af5-4a0f-a6ac-32fec5e6f812",
+              "title": "Plotting signals in frequency domain Further Research",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Key Takeaways\n * We need to use the STFT or spectrogram to visualize a non-stationary signal in the frequency domain effectively.\n * We can also use a spectrogram to visualize the effect of a bandpass filter on our signal.\n * Again, `matplotlib` and `numpy` are our friends here.\n\n## Further Resources\nPlotting a spectrogram or visualizing the short-time Fourier transform are ways of balancing the trade-off between time resolution and frequency resolution. \n\nSurprisingly, this trade-off is related to the quantum uncertainty principle. If you would like to know more about Quantum Uncertainty Principle, you can watch 3Blue1Brown's video [The more general uncertainty principle, beyond quantum](https://www.youtube.com/watch?v=MBnnXbOM5S4). \n\nThis tutorial is a great explanation of this trade-off as well as a description of the [wavelet transform](http://users.rowan.edu/~polikar/WTpart1.html), which is another solution to this problem.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 970506,
+          "key": "9ec36426-6512-4d79-9830-02d1bab95b53",
+          "title": "Harmonics",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "9ec36426-6512-4d79-9830-02d1bab95b53",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 970489,
+              "key": "2ea4f49d-7980-4187-bf95-b6fae4090c64",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Harmonics",
+              "instructor_notes": ""
+            },
+            {
+              "id": 970485,
+              "key": "be739035-72fa-498b-b3b4-882180f1fa10",
+              "title": "ND320 C4 L1 18 Harmonics",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "byUGEDUj-mE",
+                "china_cdn_id": "byUGEDUj-mE.mp4"
+              }
+            },
+            {
+              "id": 970490,
+              "key": "b9105b31-de41-4b29-a981-baaeb71ecf4a",
+              "title": "Harmonics recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\n\nReal periodic signals are rarely sinusoidal. Still, we like to use the Fourier transform to learn about the periodicity of these signals. All periodic signals are composed of a **fundamental frequency**, which is the lowest frequency of the periodic signal, and integer multiples of this frequency called **harmonics**. In this lesson, we see this for ourselves and how the fundamental frequency relates to the signal in time-domain.\n\n## Notebook Review\nIf you wanted to interact with the notebook in the video, you can access it [here](https://github.com/udacity/nd320-c4-wearable-data-starter/tree/master/intro-to-dsp/walkthroughs/harmonics) in the repo `/intro-to-dsp/walkthroughs/harmonics/` or in the workspace below.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1018618,
+              "key": "24aa1ab1-8388-4ca0-b19e-59a19bf7f008",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c970506xJUPYTER9ryrhofr",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-x2w92",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Harmonics.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 970453,
+              "key": "314d6b97-11b0-4f6e-b665-9b6d2d49c65a",
+              "title": "Harmonics Quiz",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "314d6b97-11b0-4f6e-b665-9b6d2d49c65a",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "An FFT reveals that a signal is comprised of the following frequency components (all in Hz):\n\n`[1.5, 2.1, 3.0, 4.3, 4.5, 6.0, 6.3]`\n\nWhat fundamental frequencies are present in this signal?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "1.5 Hz",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "2.1 Hz",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "1.5 Hz and 2.1 Hz",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk4",
+                    "text": "None of these",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 970484,
+              "key": "872e236f-00ed-4dbe-adfb-919cebfe8d7b",
+              "title": "Harmonics Further Research",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Further Resources\n\nHarmonics explain why different instruments sound different despite playing the same note. Check out 12tone's video on [Why Don't All Instruments Sound The Same?]((https://www.youtube.com/watch?v=Q8ITu0EASL4) for a more in-depth explanation.\nYou can also watch 3Blue1Brown's video [Music And Measure Theory](https://www.youtube.com/watch?v=cyW5z-M2yzw) explaining why certain notes sound good together by looking at multiples of their frequencies.\n\n## New Vocabulary\n- **Harmonics**: the fundamental frequency and integer multiples of the fundamental frequency of periodic signals.  ",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 970512,
+          "key": "5bdb3c75-4c8d-4e22-a1cd-b47a565a2c5d",
+          "title": "Recap: Intro to Digital Sampling & Signal Processing",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5bdb3c75-4c8d-4e22-a1cd-b47a565a2c5d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 970475,
+              "key": "175f5076-0a84-4093-a522-6f8baa46011e",
+              "title": "ND320 C4 L1 19 Recap- Intro To Digital Sampling & Signal Processing",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "8-3_S2weklg",
+                "china_cdn_id": "8-3_S2weklg.mp4"
+              }
+            },
+            {
+              "id": 970482,
+              "key": "ef4088ae-47ef-41e0-9f58-ed78dba58cb3",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary  \nWe covered a lot of material in this lesson. We started with the basics of what a signal is and how to digitally sample one. Then we covered techniques to process digital signals, including interpolation, the Fourier Transform, and harmonics. Along the way, we learned how to visualize signals using matplotlib, and how the spectrogram or STFT can help us more accurately see the Fourier coefficients of a signal as they change in time. The breadth of concepts that we went over could comprise full university classes. We did a lot of exercises to help you feel comfortable using these topics practically, but a lot of this material might be unlike other disciplines of math that you’ve seen before. Don’t hesitate to rewatch the videos and explore the further resources to build your intuition. And I’m hopeful that as we use these concepts in the upcoming lessons, things will start to click more.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 970492,
+              "key": "e1bbc962-9233-4eac-a3e5-d0bf50d37b3b",
+              "title": "Resources",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Further Resources\n\n### Physionet\nPhysionet is a great resource of freely available biomedical signals. You can try many of the techniques you learn in this class on datasets in [Physionet](https://physionet.org/).\nThis [European ST-T Database](https://physionet.org/content/edb/1.0.0/) from Physionet was used in the previous exercise.\n\n### Plotting\n- [Matplotlib](https://matplotlib.org/) - the plotting library we use most in this course.\n- [Seaborn](https://seaborn.pydata.org/) - a wrapper around `matplotlib` that makes it easier to do higher-level statistical visualization. We will use this a few times in the course.\n- [Altair](https://altair-viz.github.io/) - Another powerful visualization library in Python\n- [Plotly](https://plot.ly/) - You can use `plotly` to create and save visualization in HTML / javascript. This is especially useful when you want to make offline, shareable plots that you can interact with in the browser.\n\n### Interpolation\n - [Interpolation](https://en.wikipedia.org/wiki/Interpolation)\n - [Linear Interpolation](https://en.wikipedia.org/wiki/Linear_interpolation)\n\n### Fourier Transform\n[3Blue1Brown](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw/featured) is a great YouTube channel that explains mathematical concepts with beautiful animations that make intuitive understanding so much easier. He has a few videos on the Fourier transform, which are absolutely illuminating. I highly recommend exploring this channel, starting with [this video](https://www.youtube.com/watch?v=spUNpyF58BY).\n\n### Spectrograms\nPlotting a spectrogram or visualizing the short-time Fourier transform are ways of balancing the trade-off between time resolution and frequency resolution. Surprisingly, this trade-off is related to the quantum uncertainty principle (see [this 3Blue1Brown video](https://www.youtube.com/watch?v=MBnnXbOM5S4)). This tutorial is a great explanation of this trade-off as well as a description of the [wavelet transform](http://users.rowan.edu/~polikar/WTpart1.html), which is another solution to this problem.\n\n### Harmonics\nHarmonics explain why different instruments sound different despite playing the same note. Check out [this video](https://www.youtube.com/watch?v=Q8ITu0EASL4) from YouTube channel [12tone](https://www.youtube.com/channel/UCTUtqcDkzw7bisadh6AOx5w) for an explanation.\n\n[3Blue1Brown](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw) also has [a video](https://www.youtube.com/watch?v=cyW5z-M2yzw) explaining why certain notes sound good together by looking at multiples of their frequencies.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 970487,
+              "key": "9033fdb5-6d3a-4562-9818-e1d7e1543ae4",
+              "title": "Glossary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Glossary\n- **Transducer**: Part of a sensor that converts a physical phenomenon into an electrical one (e.g., voltage)  \n- **Analog-to-Digital Convert (ADC)**: A device (usually embedded in the sensor) that converts an analog voltage into an array of bits.  \n- **Bit depth**: The number of bits an ADC uses to create a sample. A 16-bit ADC produces a 16-bit number for each sample.  \n- **Noise floor**: The total amount of noise in the sensor, including electrical interference from the environment and other parts of the device, thermal noise, and quantization noise.  \n- **Dynamic range**: The physical range of the sensor. Values outside of this range will show up as clipping in the digital signal.  \n- **Sampling rate**: The frequency at which a sensor measures a signal.  \n- **Hz**: The units of the sampling rate. 1Hz means 1 sample per second.  \n- **Nyquist frequency**:  Half of the sampling frequency. Signal components above this frequency will get aliased in the sampled signal. \n- **Frequency component**:  The Fourier transform explains a signal as a sum of sinusoids. Each of these sinusoids is a frequency component of the signal.\n- **Aliasing**:  The effect that causes frequency components greater than the Nyquist frequency to become indistinguishable from frequencies below the Nyquist frequency.\n- **Bandwidth**:  A range of frequencies within a band.\n- **Interpolation**: A method for estimating new data points within a range of discrete known data points.\n- **Resampling**: The process of changing the sampling rate of a discrete signal to obtain a new discrete representation of the underlying continuous signal.\n- **Frequency domain**:  A representation of a signal over frequency instead of time. Instead of representing the signal as a series of numbers in time, the signal is represented by the frequency components that make it up.\n- **Time-domain**:  The typical representation we are used to for signals where the signal is represented by values in time.\n- **Bandpass filter**:  A function that preserves frequency components of a signal within a band and suppresses the frequency components outside that band.\n- **Passband**:  The band of a bandpass filter where frequency components will be preserved.\n- **Stationarity**:  A property of a signal where the statistics of a process generating a signal do not change in time. Generally, if the frequency components in a signal change in time, this signal is not stationary.",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

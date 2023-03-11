@@ -1,0 +1,1146 @@
+{
+  "data": {
+    "lesson": {
+      "id": 1008236,
+      "key": "048a9529-ee90-4e0f-bf00-413bb3e18983",
+      "title": "ECG Signal Processing",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "We deep dive into a fundamental algorithm for ECG processing and use that as the basis for an arrhythmia detection algorithm.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "AIHCND-Wearable-Data-Course-Glossary",
+            "uri": "https://video.udacity-data.com/topher/2020/May/5ebb2d0c_aihcnd-wearable-data-glossary-v2/aihcnd-wearable-data-glossary-v2.pdf"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 1008227,
+          "key": "3a10a13f-d928-433a-a654-6b54a821c9f1",
+          "title": "Intro to ECG Signal Processing",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "3a10a13f-d928-433a-a654-6b54a821c9f1",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1008183,
+              "key": "553fa29e-8bde-4acc-acc6-3a67f98abb82",
+              "title": "heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Introduction to ECG Processing",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1008202,
+              "key": "c3110e63-a5c4-45e7-81b4-f88bddb1268e",
+              "title": "ND320 C4 L4 01 Intro To ECG Signal Processing",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "7bGv86e09YA",
+                "china_cdn_id": "7bGv86e09YA.mp4"
+              }
+            },
+            {
+              "id": 1008177,
+              "key": "a70ac2b0-64df-40b3-a5de-f026237cab11",
+              "title": "Intro to ECG Signal Processing Recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\nIn this lesson, you will build an algorithm that processes the ECG signal to find the heartbeats. You will then build an algorithm that takes these heartbeat locations and detects atrial fibrillation. We will learn about the physiology of the heart during normal function as well as during atrial fibrillation. This will help us build better features for our algorithms.\n\n## Lesson Outline\n - Heart Physiology\n - QRS Complex Detection\n   - Pan-Tompkins Algorithm\n   - Extending Pan-Tompkins\n - Atrial Fibrillation Physiology\n - Arrhythmia Detection\n   - Computing in Cardiology Challenge 2017\n   - Data Exploration\n   - Feature Extraction\n   - Modelling\n\n\n## Lesson Concepts\n\nBelow is a diagram describing the concepts that we will cover in this lesson. Specifically, we will build a system where two algorithms are cascaded together. Each algorithm is capable of producing clinically meaningful results, but the QRS complex detection algorithm’s output is fed into the arrhythmia detector.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1008188,
+              "key": "5a74b5b6-6eed-4b1f-97e6-1c0d59c15b22",
+              "title": "overarching concepts",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/March/5e7a3d14_nd320-c4-l4-lesson-concepts/nd320-c4-l4-lesson-concepts.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/5a74b5b6-6eed-4b1f-97e6-1c0d59c15b22",
+              "caption": "Lesson Concepts",
+              "alt": "Lesson Concepts",
+              "width": 518,
+              "height": 484,
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1008226,
+          "key": "92cb3182-7877-420b-b916-6f96347b5c2c",
+          "title": "Heart Physiology",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "92cb3182-7877-420b-b916-6f96347b5c2c",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1008203,
+              "key": "44021c4e-8ba2-4506-bb4e-8a944e627b53",
+              "title": "heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Heart Physiology",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1008194,
+              "key": "3cb6f78d-8a21-4a2a-b0e7-830d912d4854",
+              "title": "ND320 C4 L4 02 Heart Physiology",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "BIkZwowLeRc",
+                "china_cdn_id": "BIkZwowLeRc.mp4"
+              }
+            },
+            {
+              "id": 1008179,
+              "key": "4b4656c9-4010-404e-b8c4-6d5beab04395",
+              "title": "Recap of ECGs+",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\nBefore we can understand all the parts of the ECG wave, we need to first learn more about how the heart works. The heart is made up of four chambers, two atria and two ventricles. The **atria** pump blood into the ventricles and then the **ventricles** pump blood throughout the body. Each heart cell is polarized, meaning there is a different electrical charge inside and outside of the cell. At rest, the inside of the cell is negatively charged compared to the outside. When the cell **depolarizes**, positive charges outside of the cell flow inside and makes the interior of the cell positively charged relative to the outside. This depolarization causes the cell to contract. The movement of charges across a heart cell’s membrane is the source of the electrical activity that gets measured by an ECG.\n\nThe conduction of electrical impulses through the heart follows a regular pattern orchestrated by the **cardiac conduction system**. Each heartbeat starts with an impulse in the sinus (SA) node. The **sinus node** is the natural pacemaker of the heart and is responsible for setting the heart’s natural rhythm. The impulse then propagates throughout the atria and causes the atria to contract. Then, the impulse enters the **atrioventricular (AV) node**, which delays the propagation of the signal to the ventricles. This gives the atria time to pump blood into the ventricles. After a brief pause, the signal passes through the AV node and into the ventricles, causing the ventricles to contract. This is the largest electrical disturbance in the cardiac cycle. After the ventricles contract, they **repolarize**, meaning the ions move back across the cell wall to their initial resting state.\n\nEach part of this sequence is responsible for creating a distinct marker-- or wave --in the ECG signal. The P-wave corresponds to the depolarization of the atria. The pause between the P-wave and the Q-wave is caused by the AV node delaying the electrical impulse to the ventricles. When the ventricles contract, we see the large QRS complex. And finally, after some time, the ventricles repolarize, causing the T-wave. The atria repolarize around the same time as the ventricles finish contracting so that activity is not visible in an ECG because it is obscured by the S-wave.\n\nThis cycle repeats every heartbeat and results in a very regular and uniform looking signal.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1008187,
+              "key": "ca421c79-9526-420b-a18b-136b54904f1e",
+              "title": "heart animation",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/March/5e7a3d13_nd320-c4-l4-cardiac-cycle-animation/nd320-c4-l4-cardiac-cycle-animation.gif",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/ca421c79-9526-420b-a18b-136b54904f1e",
+              "caption": "Cardiac cycle animation Source: By Kalumet - selbst erstellt = Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=438140",
+              "alt": "Cardiac cycle animation",
+              "width": 700,
+              "height": 800,
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1020256,
+          "key": "669aae61-507b-4841-b7ce-ac23428fc781",
+          "title": "Heart Physiology in Review",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "669aae61-507b-4841-b7ce-ac23428fc781",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1020254,
+              "key": "2988589d-229f-4c3b-892b-39807e983894",
+              "title": "heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Heart Physiology in Review",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1008193,
+              "key": "ca50913d-de22-4854-9f11-e5f293d9de35",
+              "title": "quiz",
+              "semantic_type": "ReflectAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "ca50913d-de22-4854-9f11-e5f293d9de35",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "title": "Reflect",
+                "semantic_type": "TextQuestion",
+                "evaluation_id": null,
+                "text": "What are the four chambers of the heart?"
+              },
+              "answer": {
+                "text": "The left and right atria and ventricles.",
+                "video": null
+              }
+            },
+            {
+              "id": 1020257,
+              "key": "c59b5a31-d82c-4dfd-a3e4-e7d78caf3492",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "c59b5a31-d82c-4dfd-a3e4-e7d78caf3492",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Order the steps of cardiac conduction."
+                },
+                "concepts_label": "Steps",
+                "answers_label": "Order",
+                "concepts": [
+                  {
+                    "text": "Impulse generation in the Sinus Node",
+                    "correct_answer": {
+                      "id": "a1589220988986",
+                      "text": "1"
+                    }
+                  },
+                  {
+                    "text": "Atrial depolarization",
+                    "correct_answer": {
+                      "id": "a1589221011173",
+                      "text": "2"
+                    }
+                  },
+                  {
+                    "text": "AV node impulse conduction",
+                    "correct_answer": {
+                      "id": "a1589221011941",
+                      "text": "3"
+                    }
+                  },
+                  {
+                    "text": "Ventricular depolarization begins",
+                    "correct_answer": {
+                      "id": "a1589221012614",
+                      "text": "4"
+                    }
+                  },
+                  {
+                    "text": "Atrial repolarization",
+                    "correct_answer": {
+                      "id": "a1589221014162",
+                      "text": "5"
+                    }
+                  },
+                  {
+                    "text": "Ventricular repolarization",
+                    "correct_answer": {
+                      "id": "a1589221015059",
+                      "text": "6"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1589220988986",
+                    "text": "1"
+                  },
+                  {
+                    "id": "a1589221014162",
+                    "text": "5"
+                  },
+                  {
+                    "id": "a1589221012614",
+                    "text": "4"
+                  },
+                  {
+                    "id": "a1589221011173",
+                    "text": "2"
+                  },
+                  {
+                    "id": "a1589221011941",
+                    "text": "3"
+                  },
+                  {
+                    "id": "a1589221015059",
+                    "text": "6"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1008178,
+              "key": "9a51b436-869c-4d06-b685-0db5c1988001",
+              "title": "Q: What is the carrier of the electric signal. (ion transfer across cardiac muscle cell wall)",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "9a51b436-869c-4d06-b685-0db5c1988001",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What phenomenon is responsible for carrying the electrical signal in the heart?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "Heart cell contraction.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "Electrons move along a heart cell.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "Neurons conduct the electrical signal through various parts of the heart.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk4",
+                    "text": "Ions moving across the heart cell membrane.",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1008186,
+              "key": "77c22638-3304-4b73-9885-ce0129d26811",
+              "title": "New Terms",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Glossary\n- **Atria**: The upper chambers of the heart that pass blood to the ventricles.\n- **Ventricles:** The main chambers of the heart that pump blood throughout the body\n- **Depolarization:** The movement of charges across a cell membrane that causes the inside of the cell to become less negatively charged.\n- **Repolarization:** The movement of charges across the cell membrane that restore the negative resting charge inside the cell.\n- **Cardiac conduction system:** A group of specialized cardiac cells that send signals to the heart, causing it to contract. The main components that we discussed in this course were the sinoatrial (SA) node and the atrioventricular (AV) node. Other components include the bundle of His, left and right bundle branches, and the Purkinje fibers, which propagate the signal from the AV node throughout the ventricles.\n- **Sinus node:** The natural pacemaker of the heart. Responsible for generating the impulse that causes the heart to beat.\n- **AV node:** Part of the cardiac conduction system that propagates the impulse from the atria to the ventricles after a delay.\n\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1008230,
+          "key": "2d1e49c3-de06-45af-9b4c-bca4cc6ec751",
+          "title": "Pan-Tompkins QRS Detection",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "2d1e49c3-de06-45af-9b4c-bca4cc6ec751",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1008195,
+              "key": "98dee6c2-4dc3-43f1-8aa1-c4ff63428bff",
+              "title": "heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Pan-Tompkins QRS Complex Detection",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1008200,
+              "key": "b427b37a-b795-426a-ac23-dc5ec74b76cb",
+              "title": "ND320 C4 L4 03 Pan-Tompkins Algorithm",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "8fb5IJjV-Yo",
+                "china_cdn_id": "8fb5IJjV-Yo.mp4"
+              }
+            },
+            {
+              "id": 1008184,
+              "key": "35451c62-048b-43fd-ab21-e6a36516eb84",
+              "title": "Algorithm recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Previously, we learned that ventricular contraction corresponds with the QRS complex. Finding these QRS complexes in the ECG signal is important for a number of algorithmic goals. It directly gives you information about the heart rate and heart rhythm and provides important context when doing more complex processing.\n  \nThe way we find these QRS complexes is by using an algorithm called the Pan-Tompkins algorithm.\n\nFor most event detection tasks like this, we start with preprocessing steps that will boost the signal and suppress the noise. For Pan-Tompkins, we start with the bandpass filter that selects for frequencies in the QRS complex and suppresses frequencies outside of that band. This is followed by a one-sample difference, which is analogous to a derivative operation. This will preserve the steep slopes of the QRS complex and attenuate shallower ones elsewhere in the waveform. Next, we do an element-wise square which non-linearly amplifies the larger portions of our signal and makes everything positive. Finally, we do a moving sum over a fixed window length. This takes advantage of the fact the QRS complex has a fixed width of 150ms. If we tune the moving sum window to 150ms, we can fully take advantage of all the energy in the QRS complex, while attenuating other spikes that are shorter or longer than 150ms.  \n  \nThe detection steps are fairly simple. We simply find the peaks in our pre-processed waveform and then threshold them to select for the QRS complexes.  \n\nNext, we take a look at the code for this algorithm, and we plot the output.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1020255,
+          "key": "a6049bd5-8931-4314-a171-7e0b255a453d",
+          "title": "Pan-Tompkins In Code",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a6049bd5-8931-4314-a171-7e0b255a453d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1020253,
+              "key": "a4a8c072-9d80-4cb8-b769-9262ac851d9d",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Pan-Tompkings In Code\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1008196,
+              "key": "67603f78-63df-4a46-b7c0-d5ef3818ea09",
+              "title": "ND320 C4 L4 04 Pan-Tompkins In Code",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "oNFyQT--irs",
+                "china_cdn_id": "oNFyQT--irs.mp4"
+              }
+            },
+            {
+              "id": 1008212,
+              "key": "daa7be9a-006a-4f4a-bc6c-c6ebd678dbc4",
+              "title": "recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Recap\n\nWe saw a basic implementation of the Pan-Tompkins algorithm and visualized how the pre-processing steps change the waveform. On noisy signals, with small QRS complexes, we saw just how well the pre-processing steps could improve our signal. Still, we saw that sometimes it would not be enough and more complex detection rules need to be implemented. \n  \nIn the following exercise, we implement more sophisticated detection rules for just this purpose. \n\nThe overall goal here isn’t necessarily to understand the Pan-Tompkins algorithm per se; it’s really to get to a place where we can solve this kind of problem in any domain where you have some knowledge of the underlying physiology and the signal characteristics and the noise characteristics and you can do for your task what Pan-Tompkins algorithm does for QRS complex detection. As you learn more about these tools and operations that can boost signal and suppress noise in your specific domain, you’ll be able to build a better intuition for designing your own algorithm on your own problem.\n\n## Notebook Review\nIf you wanted to interact with the notebook in the video, you can access it [here](https://github.com/udacity/nd320-c4-wearable-data-starter/tree/master/ecg-processing/walkthroughs/QRS-complex-detection/) in the repo `/ecg-processing/walkthroughs/QRS-complex-detection/` or in the workspace below. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1020258,
+              "key": "0b171c4c-1182-4139-9cac-9a430b1d4054",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1020255xJUPYTERlobwu2a4",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-2pekn",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/QRS%20Complex%20Detection.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 1008953,
+              "key": "edd6e174-0735-48a6-a831-894e3503c65a",
+              "title": "Exercise instructions",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Exercise 1: Extend Pan-Tompkins Algorithm\n\n## Instructions\n1. Complete the **Offline** or **Online** instructions below.\n2. Read through the whole `.ipynb`.\n3. Complete all the code cells that contain `## Your Code Goes Here`.\n\n#### Offline\n1. In the repo which you can access [here](https://github.com/udacity/nd320-c4-wearable-data-starter/tree/master/ecg-processing/exercises/1-pan-tompkins-algorithm/) in the repo `/ecg-processing/exercises/1-pan-tompkins-algorithm/)` you should find the following files:\n - `1_pan_tompkins_algorithm.ipynb`\n - `A00010.npz`\n - `A01593.npz`\n2. Open up the python notebook and associated files in your desired editor. \n\n**Note**: Instructions can be found in **Introduction to Wearable Data**'s Concept **Developer Workflow** for how to set up your local environment.\n\n#### Online\n1. Go to the next concept and the `1_pan_tompkins_algorithm.ipynb` should be open and the workspace should already contain the appropriate data files, `A00010.npz` and `A01593.npz`.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1008190,
+          "key": "cbb375f6-7786-4355-aea2-0597f405eb3b",
+          "title": "Exercise 1: Extend the Pan-Tompkins Algorithm",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "cbb375f6-7786-4355-aea2-0597f405eb3b",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1008264,
+              "key": "baf96dc7-74b3-416c-a767-9488dea283a8",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1008190xJUPYTERctirq1yx",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-p135y",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/aihcnd_projects",
+                          "dest": "/data/"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/1_pan_tompkins_algorithm.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1008225,
+          "key": "49b86dcf-298b-4764-b5e3-27796b96ef2e",
+          "title": "Exercise 1: Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "49b86dcf-298b-4764-b5e3-27796b96ef2e",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1008197,
+              "key": "20df336e-facf-49d7-9cf8-329950a2bdd3",
+              "title": "ND320 C4 L4 05 Exercise Walkthrough",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "-OOiZyOWmuU",
+                "china_cdn_id": "-OOiZyOWmuU.mp4"
+              }
+            },
+            {
+              "id": 1008192,
+              "key": "0b40ed97-cbe6-4da7-a359-722c181c6a5c",
+              "title": "Final Recap of Pan-Tompkins",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\n\nAfter improving the detection rules, we substantially improve the precision and recall of our detector substantially. Watch the video to see how we implement the three strategies for more robust detection:\n - Refractory Period Blanking\n - Adaptive Thresholding\n - T-Wave Rejection\n\nThe Pan-Tompkins algorithm is a great example of an event detection algorithm. This kind of algorithm is especially common in biomedical time series processing. By diving deep into this algorithm, you’ve seen how knowledge of the underlying physiology, the signal characteristics, and the noise characteristics can help in the algorithm design. As you learn more about the tools and operations that can boost the signal and suppress noise in a specific domain, you will have better intuition for designing algorithms to solve these types of problems.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1008232,
+          "key": "e9688285-adfe-4a03-9b13-a89aa07771f9",
+          "title": "Atrial Fibrillation",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "e9688285-adfe-4a03-9b13-a89aa07771f9",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1008201,
+              "key": "1b06666b-92bd-473f-8766-607cf43435ea",
+              "title": "Atrial Fibrillation Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Atrial Fibrillation",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1008198,
+              "key": "a99adea5-d476-4da5-9186-9fe9a5ebfde8",
+              "title": "ND320 C4 L4 06 Atrial Fibrillation Physiology",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "VGi988eAI0I",
+                "china_cdn_id": "VGi988eAI0I.mp4"
+              }
+            },
+            {
+              "id": 1008205,
+              "key": "d65df9d0-2065-445e-aecc-65047fb9bbe0",
+              "title": "Atrial Fibrillation Physiology Recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "We’ve discussed atrial fibrillation previously in the context of the Apple Heart Study and the Framingham Study. Now we’ll learn what atrial fibrillation actually is. Atrial Fibrillation is a type of **arrhythmia**, which is an irregular heart rhythm. \n\nRecall, in a normal heart rhythm, the sinus node generates the impulse that causes the atria to contract. This impulse is propagated to the AV node and then throughout ventricles, causing the ventricles to contract. This process results in a very regular rhythm called **sinus rhythm**.  \n\nIn **Atrial Fibrillation**, instead of the SA node being the sole location that begins the depolarization of the atria, there are multiple locations around the atria that will spontaneously and haphazardly generate an impulse. Each of these impulses causes a partial contraction of the atria, but no single impulse depolarizes the entire atria, so there is no coherent contraction of the atria. Occasionally, one of these impulses will reach the AV node, which will then cause a ventricular contraction. But this occurs at random times, so ventricular contractions occur irregularly.\n  \nWhen can we examine features of the ECG signal to detect atrial fibrillation? First, there is no P-wave because there is no coherent depolarization of the atria to cause an electrical disturbance large enough to create the P-wave. Instead, we see a fibrillating wave in the T-Q segment. Second, the QRS complexes are very irregular.   \n  \nWe mentioned earlier that atrial fibrillation is associated with an increased risk of stroke. Because the atria are not contracting completely, stagnant pools of blood will form in the atria. These pools can form blood clots that are then circulated through the bloodstream. As these clots pass through progressively smaller and smaller arteries, they may eventually obstruct blood flow to the brain and cause a stroke.  \n  \nNow we have seen how atrial fibrillation occurs physiologically and why it’s a potentially dangerous condition. Next, we will build an algorithm that automatically detects atrial fibrillation and other arrhythmias from the ECG signal.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1008209,
+              "key": "f6b3f13b-9545-4a17-8c60-21e47e2f0d80",
+              "title": "Q: some quiz questions",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "f6b3f13b-9545-4a17-8c60-21e47e2f0d80",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What is the normal heart rhythm called?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "Atrial defibrillation",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "Regular rhythm",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "Sinus rhythm",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk4",
+                    "text": "Ventricular rhythm",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1008206,
+              "key": "94045e8b-77e7-4d52-b1a7-cb0974399ad7",
+              "title": "quiz",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "94045e8b-77e7-4d52-b1a7-cb0974399ad7",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What phenomenon is responsible for atrial fibrillation?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "The sinus node generates spontaneous and haphazard impulses.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "The AV node generates spontaneous and haphazard impulses.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "Failure of the SA node to fire.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk4",
+                    "text": "Spontaneous and haphazard impulses arising from multiple locations around the atria.",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1008220,
+              "key": "bda13f4f-e7f5-46f2-be92-27326ee3222f",
+              "title": "new terms",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Glossary\n- **Arrhythmia:** An irregular heart rhythm.\n- **Sinus Rhythm:** The normal, regular heart rhythm, paced by the sinus node.\n- **Atrial fibrillation:** An irregular rhythm caused by multiple, haphazard depolarizations across the atria.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1008231,
+          "key": "49d930f8-a55e-43ba-b409-8d7bdacabbbd",
+          "title": "Arrhythmia Detection: Dataset",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "49d930f8-a55e-43ba-b409-8d7bdacabbbd",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1008213,
+              "key": "c8e568da-0af5-496d-a278-d81c49f9a1d1",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Arrhythmia Detection: Dataset",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1008211,
+              "key": "96eaa7ea-ffa6-4263-bd5a-166ec20403bc",
+              "title": "ND320 C4 L4 07 AF Detection - Physionet",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "_E8zA1VDgfM",
+                "china_cdn_id": "_E8zA1VDgfM.mp4"
+              }
+            },
+            {
+              "id": 1008204,
+              "key": "c890ad4a-f29f-4345-af55-6750e533dd60",
+              "title": "recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In the next few concepts, we’ll be building an arrhythmia classifier. The data we will use comes from the [Computing in Cardiology (CinC) Challenge 2017 dataset](https://physionet.org/content/challenge-2017/1.0.0/) hosted on Physionet.\n  \nThe dataset contains thousands of short ECG snippets (30s - 60s) from the AliveCor mobile ECG monitor. The original challenge was to build a 4-class classifier for sinus rhythm, atrial fibrillation, alternative rhythm, and noisy record. We will throw out the noisy records and build a two-class classifier distinguishing between sinus rhythm and another rhythm (atrial fibrillation included).  ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1008180,
+              "key": "fc5aea57-a3b3-4951-b978-f56ee390773d",
+              "title": "ND320 C4 L4 08 AF Detection - Data Exploration",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "DbC7fBVwfu4",
+                "china_cdn_id": "DbC7fBVwfu4.mp4"
+              }
+            },
+            {
+              "id": 1008207,
+              "key": "68bab8a3-f57b-4f06-9f6c-718b00d62958",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "From exploring our data, we see that we have 1.5x more sinus rhythm records than other rhythm records. Most of the records are 30 seconds long; some are 60 seconds long, and a few are somewhere in between.\n  \nWe plot the data and visualize the QRS complex detections provided in the dataset. The QRS complex detector still detects QRS complexes during periods of high noise, but these detections are suspect.  \n  \nDownload the notebook and play with the data for yourself!\n\n## Notebook Review\nIf you wanted to interact with the notebook in the video, you can access it [here](https://github.com/udacity/nd320-c4-wearable-data-starter/tree/master/ecg-processing/walkthroughs/af-data-exploration/) in the repo `/ecg-processing/walkthroughs/af-data-exploration/` or in the workspace below. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1008265,
+              "key": "1d305373-05ea-4512-b453-8d9b8643eb0a",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1008231xJUPYTEReo6smtnh",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-aa83j",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/aihcnd_projects",
+                          "dest": "/data/"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/AF%20Data%20Exploration.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1008228,
+          "key": "bdadac55-732e-4b63-a02b-30bafd313d95",
+          "title": "Arrhythmia Detection: Features",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "bdadac55-732e-4b63-a02b-30bafd313d95",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1008210,
+              "key": "4216cb92-4699-4def-ae32-bbb8e16919d7",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Arrhythmia Detection: Features",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1008182,
+              "key": "99c33921-d45f-445c-8cd3-449f034bfe93",
+              "title": "ND320 C4 L4 09 AF Detection - Features",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "cZlSn4Lylhg",
+                "china_cdn_id": "cZlSn4Lylhg.mp4"
+              }
+            },
+            {
+              "id": 1008181,
+              "key": "b906e9c5-56cc-41bd-b5f9-7eabe246a671",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\n\nAs with activity classification, we will featurize our raw signal and throw those features into a classifier to detect an abnormal heart rhythm. Our input signal will be the time between two QRS complexes, known as the RR interval (for the R-wave). This is also called the **inter-beat-interval**. Our input signal will be derived from the output of the Pan-Tompkins algorithm. We will include some of the features in \n>[Behar, Rosenberg, Yaniv, Oster. Rhythm and Quality Classification from Short ECGs Recorded Using a Mobile Device. Computing in Cardiology Challenge 2017.](https://www.google.com/url?q=http://www.cinc.org/archives/2017/pdf/165-056.pdf&sa=D&ust=1580267302117000&usg=AFQjCNEKkpmUb8YRX5AjMTMAbTxJRJbbCw)  \n  \nand  \n> [Bonizzi, Driessens, Karel. Detection of Atrial Fibrillation Episodes from Short Single Lead Recordings by Means of Ensemble Learning. Computing in Cardiology Challenge 2017.](https://www.google.com/url?q=http://www.cinc.org/archives/2017/pdf/169-313.pdf&sa=D&ust=1580267302117000&usg=AFQjCNHKpTlpKBK9593XqAV23YBN1lmO8Q)  \n\nwhich were entries in the CinC challenge. Recall that the RR interval time series is irregularly sampled heartbeat because we get a new measurement at each heartbeat, not at some fixed interval in time. As you’ll soon see, many of the features we want can be computed on an irregular time series, but some, especially frequency domain features, cannot. In that case, we’ll first have to make this uniform using interpolation before we can compute our frequency domain features.\n\nSo we can separate our features into time domain features and frequency domain features. The first few are summary statistics like min, max, median, mean, standard deviation. Then we want to compute the number of outliers. And we’ll say an outlier is an RR interval that is greater than 1.2 times the average RR interval in that record.\n\nNext, we want to compute the root-mean-square of the difference between adjacent RR intervals. And lastly, we want the percent of  RR interval differences that are greater than 50 milliseconds.\n\nBefore we compute our frequency domain features, we will need to regularize the RR interval time series so that we can take the FFT of it. We want to interpolate the RR interval time series onto a regular 4 Hz time grid. Then the features we want will be the largest FFT magnitude component between 0.04 Hz and 0.15 Hz. We also want to know at which frequency this occurs. And we want both of these values for the band between 0.15 Hz and 0.4 Hz as well.\n\nI will leave the feature computation code for you to do in the next exercise and in the next video we will pick this back up with the implementation.\n\n## Glossary\n- **inter-beat-interval:** The time between successive heart beats. Also called the RR interval.\n\n## Notebook Review\nIf you wanted to interact with the notebook in the video, you can access it [here](https://github.com/udacity/nd320-c4-wearable-data-starter/tree/master/ecg-processing/walkthroughs/af-features/) in the repo `/ecg-processing/walkthroughs/af-features/`. It won't be available below because this will be seen as the starter code for the next exercise.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1008191,
+              "key": "2a32605c-e2d9-4cf9-a7bf-67dfc3f9c3cc",
+              "title": "Exercise 2 Intro and Instructions",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Exercise 2: AF Features\n\n## Instructions\n1. Complete the **Offline** or **Online** instructions below.\n2. Read through the whole `.ipynb`.\n3. Complete all the code cells that contain `## Your Code Goes Here`.\n\n#### Offline\n1. In the repo which you can access [here](https://github.com/udacity/nd320-c4-wearable-data-starter/tree/master/ecg-processing/exercises/2-af-features/) in the repo `/ecg-processing/exercises/2-af-features/)` you should find the following files:\n - `2_af_features.ipynb`\n - `l4e1/*.npz`\n2. Open up the python notebook and associated files in your desired editor. \n\n**Note**: Instructions can be found in **Introduction to Wearable Data**'s Concept **Developer Workflow** for how to set up your local environment.\n\n#### Online\n1. Go to the next concept and the `2_af_features.ipynb` should be open and the workspace should already contain the appropriate data file, `l4e1/*.npz`.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1008214,
+          "key": "78a2a643-416b-42dd-a094-0cedcbd41083",
+          "title": "Exercise 2: Arrhythmia Features",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "78a2a643-416b-42dd-a094-0cedcbd41083",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1008267,
+              "key": "b097697f-5bb1-4835-875f-5b6a137ea029",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1008214xJUPYTERyz1gekh2",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-0rg02",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/aihcnd_projects",
+                          "dest": "/data/"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/AF Features.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1008229,
+          "key": "5fc15841-dcfc-4539-a065-ad17aae82d0d",
+          "title": "Exercise 2: Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5fc15841-dcfc-4539-a065-ad17aae82d0d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1008216,
+              "key": "df6f99fc-ad4f-4466-898e-78cbc10f4099",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Exercise 2: Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1008208,
+              "key": "22d2801f-6181-476a-94ae-545f033abb85",
+              "title": "ND320 C4 L4 10 AFib Detection Model",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Qr4Erwd5mXk",
+                "china_cdn_id": "Qr4Erwd5mXk.mp4"
+              }
+            },
+            {
+              "id": 1008199,
+              "key": "ba96871a-bcdb-4a4b-a2d0-c44af97061a2",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\n\nIn the video, we go over how the features are computed from the input signal. NumPy operations help us compute the summary statistics easily. We can use NumPy boolean arrays to count the number of outliers and the percent of RR interval differences greater than 50ms. For the frequency domain features, we first resample our RR interval time series to a regular grid using linear interpolation.\n\n### Exercise 3: Atrial Fibrillation\nAfter featurizing our signal, we need to classify these features. In the next exercise, you will do just this using any model that you are comfortable with. Feel free to use the same random forest model that we used for activity classification. Evaluate the performance of your classifier using cross validation.\n\n## Instructions\n1. Complete the **Offline** or **Online** instructions below.\n2. Read through the whole `.ipynb`.\n3. Complete all the code cells that contain `## Your Code Goes Here`.\n\n#### Offline\n1. In the repo which you can access [here](https://github.com/udacity/nd320-c4-wearable-data-starter/tree/master/ecg-processing/exercises/3-atrial-fibrillation/) in the repo `/ecg-processing/exercises/3-atrial-fibrillation/)` you should find the following files:\n - `3_atrial_fibrillation.ipynb`\n - `l4e1/*.npz`\n2. Open up the python notebook and associated files in your desired editor. \n\n**Note**: Instructions can be found in **Introduction to Wearable Data**'s Concept **Developer Workflow** for how to set up your local environment.\n\n#### Online\n1. Go to the next concept and the `2_af_features.ipynb` should be open and the workspace should already contain the appropriate data file, `l4e1/*.npz`.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1008189,
+          "key": "ef396671-2e09-4900-bcff-136bc5bbf7db",
+          "title": "Exercise 3: Atrial Fibrillation",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "ef396671-2e09-4900-bcff-136bc5bbf7db",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1008268,
+              "key": "df8b39e3-be82-4d71-8687-525eea1de0f0",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1008189xJUPYTER4pgbosj6",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-6ux0u",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/aihcnd_projects",
+                          "dest": "/data/"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/AF Model.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1008233,
+          "key": "0d2e765b-9e70-4dbf-8040-1f0f2fe85825",
+          "title": "Exercise 3: Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "0d2e765b-9e70-4dbf-8040-1f0f2fe85825",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1008218,
+              "key": "13e8b16f-e2fc-4319-8916-87c841f66745",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Exercise 3 Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1008221,
+              "key": "638001ed-5b5f-4817-abc0-0d6c0d13c5d9",
+              "title": "ND320 C4 L4 11 Solution",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "07-c7n6WdiM",
+                "china_cdn_id": "07-c7n6WdiM.mp4"
+              }
+            },
+            {
+              "id": 1008215,
+              "key": "bfb187fe-3fca-4e16-a498-aef1223583b2",
+              "title": "recap",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Summary\nI used a `RandomForestClassifier` with 100 trees and a max depth of 4. With these basic features, it achieved a precision of 73% and a recall of 81%. Further improvements can be made by using a more advanced technique for RR interval time series regularization, and by using more informative features. See the further resources sections for example of more advanced atrial fibrillation detection algorithms.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1008234,
+          "key": "245fbc3b-f223-46f0-89d0-8f8d0abe4dea",
+          "title": "Recap: ECG Signal Processing",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "245fbc3b-f223-46f0-89d0-8f8d0abe4dea",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1008185,
+              "key": "700addad-1eff-42c2-beb6-77f2379c16f3",
+              "title": "ND320 C4 L4 12 Recap- ECG Signal Processing",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "nEg2YpvHNAU",
+                "china_cdn_id": "nEg2YpvHNAU.mp4"
+              }
+            },
+            {
+              "id": 1008217,
+              "key": "c96fef8a-fd50-4ff3-ad45-f86a69ef5bf9",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\nIn this lesson, we saw a good example of how algorithms can be cascaded together. Lower level algorithms operate on the raw data and produce a set of more meaningful and versatile metrics. These metrics can then be inputs into various higher-level algorithms that are more informative about the underlying physiology of the wearer, their health, or their disease state. This allows us to independently iterate on different parts of this stack. Making the underlying algorithms more accurate will generally improve the higher-level algorithms, but this is not always the case. It’s important to remember that any change made in the lower level algorithms will have downstream effects.  \n\nWe also saw how having a solid understanding of the physiological processes that generate our signal can have a profound impact on how we design our algorithm. \n\n\n## Lesson Outline\n - Heart Physiology\n - QRS Complex Detection\n   - Pan-Tompkins Algorithm\n   - Extending Pan-Tompkins\n - Atrial Fibrillation Physiology\n - Arrhythmia Detection\n   - Computing in Cardiology Challenge 2017\n   - Data Exploration\n   - Feature Extraction\n   - Modelling",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1008219,
+              "key": "c171bba9-0b94-43bf-bcaa-2e9b54e0ba6c",
+              "title": "Resources",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Further Resources\n\n[Dale Dubin’s Rapid Interpretation of EKG’s](https://www.amazon.com/Rapid-Interpretation-EKGs-Sixth-Dubin/dp/0912912065/) is one of the best resources for quickly understanding the ECG signal.  \n\nThe original Pan-Tompkins algorithm paper.  \n[Pan J, Tompkins WJ. A real-time QRS detection algorithm. IEEE Trans Biomed Eng. 1985;32(3):230–236. doi:10.1109/TBME.1985.325532](https://ieeexplore.ieee.org/document/4122029)\n  \nThese two papers were the inspiration for the classifier that we built. They used a lot more features and included information from the raw ECG signal as well. See how they built 4-class classifiers and performance was evaluated in this challenge.  \n - [Behar, Rosenberg, Yaniv, Oster. Rhythm and Quality Classification from Short ECGs Recorded Using a Mobile Device. Computing in Cardiology Challenge 2017.](http://www.cinc.org/archives/2017/pdf/165-056.pdf)  \n  \n - [Bonizzi, Driessens, Karel. Detection of Atrial Fibrillation Episodes from Short Single Lead Recordings by Means of Ensemble Learning. Computing in Cardiology Challenge 2017.](http://www.cinc.org/archives/2017/pdf/169-313.pdf)\n  \nThis paper describes some important features that have been shown to be good for atrial fibrillation detection based on the irregularity of RR intervals.  \n[Sarkar S, Ritscher D, Mehra R. A detector for a chronic\nimplantable atrial tachyarrhythmia monitor. Biomedical Engineering IEEE Transactions on 2008;55(3):1219–1224.](https://ieeexplore.ieee.org/document/4360105)  \n\nOne of the most famous databases for ECG arrhythmia detection is the [MIT-BIH database](https://physionet.org/content/mitdb/1.0.0/). [This article](http://ecg.mit.edu/george/publications/mitdb-embs-2001.pdf) is a great overview of the database and its impact.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1008223,
+              "key": "453db2b9-6dc2-4361-979c-0e7fc628c81a",
+              "title": "Glossary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Glossary\n- **Atria**: The upper chambers of the heart that pass blood to the ventricles.\n- **Ventricles:** The main chambers of the heart that pump blood throughout the body\n- **Depolarization:** The movement of charges across a cell membrane that causes the inside of the cell to become less negatively charged.\n- **Repolarization:** The movement of charges across the cell membrane that restore the negative resting charge inside the cell.\n- **Cardiac conduction system:** A group of specialized cardiac cells that send signals to the heart, causing it to contract. The main components that we discussed in this course were the sinoatrial (SA) node and the atrioventricular (AV) node. Other components include the bundle of His, left and right bundle branches, and the Purkinje fibers, which propagate the signal from the AV node throughout the ventricles.\n- **Sinus node:** The natural pacemaker of the heart. Responsible for generating the impulse that causes the heart to beat.\n- **AV node:** Part of the cardiac conduction system that propagates the impulse from the atria to the ventricles after a delay.\n- **Refractory Period:** The period after depolarization where a cell cannot depolarize again.\n- **Sinus Rhythm:** The normal, regular heart rhythm, paced by the sinus node.\n- **Arrhythmia:** An irregular heart rhythm.\n- **Atrial fibrillation:** An irregular rhythm caused by multiple, haphazard depolarizations across the atria.\n- **inter-beat-interval:** The time between successive heartbeats. Also called the RR interval.\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1008235,
+          "key": "5b70fa80-af6e-42d7-90be-7be271fe4478",
+          "title": "Course Recap",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5b70fa80-af6e-42d7-90be-7be271fe4478",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1008222,
+              "key": "fd26b79a-fa01-43c0-86d5-63e2d467f1f9",
+              "title": "ND320 C4 L4 13 Course Recap - Wearable Data",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "SOnmTveoGhs",
+                "china_cdn_id": "SOnmTveoGhs.mp4"
+              }
+            },
+            {
+              "id": 1008224,
+              "key": "c9e07155-5739-441c-b824-4462213d9336",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Summary\nCongratulations on finishing the Data Science for Wearables Course! We’ve covered a lot in a very short amount of time.\n  \nThe material in the introduction to signal processing lesson can fill textbooks. Now you have enough practical knowledge with that material that you can use those techniques to build algorithms from scratch. We then covered the physics underpinning the sensors we worked with and learned about the typical signal characteristics in each of these domains. This is valuable information that is typically only gained with domain experience. With this head start, we went through three case studies of building real-world algorithms on real datasets. From activity classification with the IMU sensor, to QRS complex detection and atrial fibrillation on the ECG, you’ve gained valuable hands-on experience with the algorithm design and implementation process. Now you have enough practical knowledge to apply these skills on your own. \n\n## Final Project\nIn the final project, you will take your knowledge of the PPG and IMU signals and design an algorithm from scratch using the signal processing techniques we have learned in this course. After completing the final project, you will have the confidence to study this field on your own. The journey doesn’t stop here. Download more datasets from [Physionet](https://physionet.org/), look for papers that cite these datasets, and try to reproduce their results. Try exploring new ideas and new problems and you will gain depth in this field in no time. The tools you have learned in this course should provide you with a solid base for further study.",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

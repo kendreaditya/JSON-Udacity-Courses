@@ -1,0 +1,199 @@
+{
+  "id": 2788,
+  "project_id": 723,
+  "upload_types": [
+    "repo",
+    "zip"
+  ],
+  "file_filter_regex": "\\A(?!(((.*/)?(__MACOSX|\\.git|node_modules|bower_components|jspm_packages|\\.idea|build|.ipynb_checkpoints|\\.Trash-0|logs)(\\Z|/))))((.*\\.(js|css|py|html|htm|txt|md|markdown|sql|swift|java|ts|gradle|xml|rst|yml|yaml|rmd|pdf|docx|h|H|hh|hxx|h\\+\\+|c|C|cc|cpp|cxx|c\\+\\+)\\Z)|((.*/)?(README|Readme|readme|Makefile)\\Z))",
+  "nomination_eligible": false,
+  "stand_out": "1. Write an explanation of how the algorithm works for clinicians.\n2. Explain requirements for the training process (compute, memory), suggestions for making it more efficient (model architecture, data pipeline, loss functions, data augmentation). What kind of data augmentations would NOT add value?\n3. Implement additional metrics in testing reports - sensitivity, specificity, accuracy, etc. Include an explanation of those in the #1 writeup.\n4. Propose a better way of filtering study for the correct series.\n5. Can you think of what would make the report you generate from your inference better? What would be the relevant information that you could present which would help a clinician better reason about whether your model performed well or not? Can you make it look nicer by making it an RGB image (hint - lookup in [DICOM spec](http://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_C.7.6.3.1.1))?\n6. Try to construct a fully valid DICOM as your model output (per [DICOM PS3.3#A8](http://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.8)) with all relevant fields. Construction of valid DICOM has a very calming effect on the mind and body. \n7. Try constructing a DICOM image with your segmentation mask so that you can overlay it on the original image using the clinical image viewer.\n",
+  "hide_criteria": false,
+  "created_at": "2020-01-07T23:47:31.463Z",
+  "updated_at": "2020-05-17T09:35:04.235Z",
+  "hashtag": "",
+  "max_upload_size_mb": 500,
+  "estimated_sla": null,
+  "project_assistant_enabled": false,
+  "checkmate_enabled": false,
+  "checkmate_metadata": null,
+  "available_for_cert_project": false,
+  "classroom_node_id": 966818,
+  "classroom_project_key": "0a5f1abb-85d6-41ff-aa4e-25b9a628f4f6",
+  "language": "en-us",
+  "ndkeys": [
+    "nd320-beta",
+    "nd320",
+    "nd320-ent"
+  ],
+  "coursekeys": [],
+  "sections": [
+    {
+      "id": 5964,
+      "name": " Curating a Dataset of Brain MRIs",
+      "created_at": "2020-02-06T23:37:07.590Z",
+      "updated_at": "2020-02-06T23:38:26.892Z",
+      "deleted_at": null,
+      "position": 0,
+      "rubric_id": 2788,
+      "rubric_items": [
+        {
+          "id": 17318,
+          "section_id": 5964,
+          "passed_description": "Correctly identified and removed the irrelevant files from the given dataset through inspection of the dataset \n",
+          "exceeded_description": null,
+          "created_at": "2020-03-30T00:38:10.463Z",
+          "updated_at": "2020-05-08T08:40:12.779Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "Dataset has been cleaned and outliers have been removed\n",
+          "exceedable": false
+        },
+        {
+          "id": 17319,
+          "section_id": 5964,
+          "passed_description": "The Jupyter Notebook shows evidence of inspecting header file to find relation between voxel dimensions and physical size, and contains a plot of volume histograms of the dataset.",
+          "exceeded_description": null,
+          "created_at": "2020-03-30T00:38:41.166Z",
+          "updated_at": "2020-05-09T07:11:51.868Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 1,
+          "criteria": "The project shows an understanding of how to apply medical metadata inspection methods to discover the physical dimensions of anatomical structures.\n\n",
+          "exceedable": false
+        },
+        {
+          "id": 17320,
+          "section_id": 5964,
+          "passed_description": "Jupyter Notebook contains renderings of medical volume slices that help inspect dataset slices and validate assumptions that one might have about how pixel data is stored in the arrays read from disk.\n",
+          "exceeded_description": null,
+          "created_at": "2020-03-30T00:45:05.281Z",
+          "updated_at": "2020-05-09T07:13:51.097Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 2,
+          "criteria": "The project shows an understanding of how to extract pixel data for visualization\n\n",
+          "exceedable": false
+        }
+      ]
+    },
+    {
+      "id": 5965,
+      "name": "Training a Segmentation CNN",
+      "created_at": "2020-02-06T23:37:24.074Z",
+      "updated_at": "2020-02-06T23:38:26.898Z",
+      "deleted_at": null,
+      "position": 1,
+      "rubric_id": 2788,
+      "rubric_items": [
+        {
+          "id": 17321,
+          "section_id": 5965,
+          "passed_description": "There should be no `<YOUR CODE HERE>` blocks in the `.py` files of the project. All the TASK comments should be followed by blocks of code that perform the required actions or answers to questions.\n\nOut folder contains `model.pth` file, about ~100Mb in size",
+          "exceeded_description": null,
+          "created_at": "2020-03-30T00:46:11.245Z",
+          "updated_at": "2020-05-08T08:40:12.844Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "Machine learning scripts run without errors and perform training and validation of the machine learning model.\n\n",
+          "exceedable": false
+        },
+        {
+          "id": 17322,
+          "section_id": 5965,
+          "passed_description": "Script establishes proper logging of scalar and image data into Tensorboard folders, and monitoring is performed using Tensorboard server. \n\nOutput folder includes screenshots of train/validation loss plots.",
+          "exceeded_description": null,
+          "created_at": "2020-03-30T00:46:17.453Z",
+          "updated_at": "2020-05-09T07:09:45.513Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 1,
+          "criteria": "Project shows evidence that a system was established allowing the monitoring of progress via Tensorboard\n",
+          "exceedable": false
+        },
+        {
+          "id": 17323,
+          "section_id": 5965,
+          "passed_description": "Code in `utils/volume_stats.py/Jaccard3D` should contain no `<YOUR CODE HERE BLOCK>`, should contain implementation of the metric and return the computed score.\n\nOut folder contains results.json file that is a correct JSON and has at least Dice and Jaccard metrics.",
+          "exceeded_description": null,
+          "created_at": "2020-03-30T00:46:18.282Z",
+          "updated_at": "2020-05-08T08:40:12.851Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 2,
+          "criteria": "Create a test code that runs without errors and computes volumetric performance measurements.",
+          "exceedable": false
+        }
+      ]
+    },
+    {
+      "id": 5966,
+      "name": "Integrating into a Clinical Network",
+      "created_at": "2020-02-06T23:37:36.921Z",
+      "updated_at": "2020-02-06T23:38:26.903Z",
+      "deleted_at": null,
+      "position": 2,
+      "rubric_id": 2788,
+      "rubric_items": [
+        {
+          "id": 17324,
+          "section_id": 5966,
+          "passed_description": "All TASK items in inference_dcm.py should be addressed. A sample report file should be included along with a screenshot/png/jpg version of the said report.",
+          "exceeded_description": null,
+          "created_at": "2020-03-30T00:47:59.144Z",
+          "updated_at": "2020-05-09T07:08:59.059Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "The inferencing code for DICOM volumes is complete \n",
+          "exceedable": false
+        },
+        {
+          "id": 17325,
+          "section_id": 5966,
+          "passed_description": "Student’s report can be viewed in the OHIF image viewer solution. The report at least has numerical values of volume of the hippocampus structure. ",
+          "exceeded_description": null,
+          "created_at": "2020-03-30T00:47:59.984Z",
+          "updated_at": "2020-05-09T07:08:59.066Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 1,
+          "criteria": "Complete inferencing code for creating reports and pushing them back.",
+          "exceedable": false
+        },
+        {
+          "id": 17326,
+          "section_id": 5966,
+          "passed_description": "Out folder contains a validation plan. The plan should be in the freeform format, about 1-2 pages and should hit on topics:\n- What is the intended use of the product?\n- How was the training data collected?\n- How did you label your training data?\n- How was the training performance of the algorithm measured and how is the real-world performance going to be estimated?\n- What data will the algorithm perform well in the real world and what data it might not perform well on?",
+          "exceeded_description": null,
+          "created_at": "2020-03-30T00:48:00.784Z",
+          "updated_at": "2020-05-09T07:15:41.213Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 2,
+          "criteria": "Create a validation plan.",
+          "exceedable": false
+        }
+      ]
+    }
+  ],
+  "project": {
+    "id": 723,
+    "name": "Hippocampal Volume Quantification in Alzheimer's Progression",
+    "nanodegree_key": "nd320",
+    "is_cert_project": false,
+    "audit_project_id": null,
+    "hashtag": null,
+    "audit_rubric_id": null,
+    "entitlement_required": false,
+    "is_career": false,
+    "recruitment_family_id": 1,
+    "created_at": "2020-04-03T22:28:39.778Z",
+    "updated_at": "2020-05-31T19:59:29.282Z",
+    "price": "12.5",
+    "ungradeable_price": "3.0",
+    "audit_price": null
+  }
+}

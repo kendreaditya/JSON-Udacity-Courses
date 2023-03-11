@@ -1,0 +1,138 @@
+{
+  "id": 1955,
+  "project_id": 151,
+  "upload_types": [
+    "repo",
+    "zip"
+  ],
+  "file_filter_regex": "\\A(?!(((.*/)?(__MACOSX|\\.git|node_modules|bower_components|jspm_packages|\\.idea|build|.ipynb_checkpoints|\\.Trash-0|logs)(\\Z|/))))((.*\\.(css|docx|gradle|htm|html|java|js|markdown|md|pdf|py|rmd|rst|sql|swift|txt|xml|yaml|yml)\\Z)|((.*/)?(README|Readme|readme|Makefile)\\Z))",
+  "nomination_eligible": false,
+  "stand_out": "",
+  "hide_criteria": false,
+  "created_at": "2018-05-31T19:35:56.956Z",
+  "updated_at": "2019-03-26T16:11:17.935Z",
+  "hashtag": "",
+  "max_upload_size_mb": 500,
+  "estimated_sla": null,
+  "project_assistant_enabled": false,
+  "checkmate_enabled": false,
+  "checkmate_metadata": null,
+  "available_for_cert_project": false,
+  "classroom_node_id": 633742,
+  "classroom_project_key": "91350a4e-13b7-4e38-a2b8-a834a7b955ea",
+  "language": "en-us",
+  "ndkeys": [
+    "nd000-ent",
+    "nd000",
+    "nd000-cn-basic",
+    "nd000-alisports",
+    "nd000-connect"
+  ],
+  "coursekeys": [],
+  "sections": [
+    {
+      "id": 4284,
+      "name": "Design",
+      "created_at": "2018-07-10T19:57:24.838Z",
+      "updated_at": "2018-07-10T19:57:31.868Z",
+      "deleted_at": null,
+      "position": 0,
+      "rubric_id": 1955,
+      "rubric_items": [
+        {
+          "id": 12565,
+          "section_id": 4284,
+          "passed_description": "Page resembles card from design prototype.\n- The text is italicized for the animal’s interesting fact.\n- The labels are bolded for the animal’s list items.\n- The dots are removed from the animal's list items.\n- Uses border around animal’s name, image, and information (interesting fact, list items, and description).\n- Uses border around animal’s information.\n- Uses spacing between animal’s name, image, and information.\n- Card width should be fixed and include the spacing around the image (Since image is 300px wide, card should be 300px + spacing on either side. Card should not expand with the browser window).\n\nFeel free to customize your information and styles so long as you follow the above rules. For inspiration, you can try playing around with background colors or border radius!",
+          "exceeded_description": null,
+          "created_at": "2018-07-10T19:57:32.025Z",
+          "updated_at": "2018-07-10T19:58:02.039Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "Design Specifics",
+          "exceedable": false
+        },
+        {
+          "id": 12566,
+          "section_id": 4284,
+          "passed_description": "The placeholder image and information is replaced with favorite animal image and information.\n\nThe image is 300px wide or the image's width is set to 300px.\n\nThe image’s `alt` is relevant to the animal used.",
+          "exceeded_description": null,
+          "created_at": "2018-07-10T19:58:02.240Z",
+          "updated_at": "2018-07-10T19:59:12.993Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 1,
+          "criteria": "Custom Image and Text",
+          "exceedable": false
+        }
+      ]
+    },
+    {
+      "id": 4285,
+      "name": "Code Quality",
+      "created_at": "2018-07-10T19:59:23.914Z",
+      "updated_at": "2018-07-10T19:59:30.863Z",
+      "deleted_at": null,
+      "position": 1,
+      "rubric_id": 1955,
+      "rubric_items": [
+        {
+          "id": 12567,
+          "section_id": 4285,
+          "passed_description": "The `HTML` includes classes that are used for styling.\n\nClasses are given meaningful names.",
+          "exceeded_description": null,
+          "created_at": "2018-07-10T19:59:31.137Z",
+          "updated_at": "2018-07-10T19:59:57.860Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "CSS Classes",
+          "exceedable": false
+        },
+        {
+          "id": 12568,
+          "section_id": 4285,
+          "passed_description": "Student separates `HTML` from `CSS` by linking to stylesheet.\n\n`HTML` code does not include `<style>` elements or `style` attributes in the body.",
+          "exceeded_description": null,
+          "created_at": "2018-07-10T19:59:58.064Z",
+          "updated_at": "2018-07-10T20:02:04.522Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 1,
+          "criteria": "Separation of Concerns",
+          "exceedable": false
+        },
+        {
+          "id": 12569,
+          "section_id": 4285,
+          "passed_description": "Code is ready for review, meaning new lines and indentation are used for easy readability.",
+          "exceeded_description": null,
+          "created_at": "2018-07-10T20:02:04.741Z",
+          "updated_at": "2018-07-10T20:02:37.126Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 2,
+          "criteria": "Code Quality",
+          "exceedable": false
+        }
+      ]
+    }
+  ],
+  "project": {
+    "id": 151,
+    "name": "Animal Trading Cards",
+    "nanodegree_key": "nd001",
+    "is_cert_project": false,
+    "audit_project_id": 72,
+    "hashtag": "nanodegree,frontend",
+    "audit_rubric_id": 1144,
+    "entitlement_required": null,
+    "is_career": null,
+    "recruitment_family_id": 7,
+    "created_at": "2016-03-29T23:43:38.603Z",
+    "updated_at": "2020-06-11T16:17:53.898Z",
+    "price": "5.0",
+    "ungradeable_price": "3.0",
+    "audit_price": "7.0"
+  }
+}

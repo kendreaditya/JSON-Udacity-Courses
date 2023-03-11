@@ -1,0 +1,4209 @@
+{
+  "data": {
+    "nanodegree": {
+      "id": 956018,
+      "key": "nd320",
+      "title": "AI for Healthcare",
+      "semantic_type": "Degree",
+      "is_public": true,
+      "cohorts": [
+        {
+          "id": 16632,
+          "part_keys": [
+            "d9216498-0e30-480e-a917-1058d3be0a9a",
+            "ab2c5a8c-0e6e-4c4d-9fa8-4926db7f8e3c",
+            "a6145509-14a9-46fa-af69-bf02b4ae879f",
+            "f78c2e79-72c4-4445-9329-00be9f30076e",
+            "d6b66f11-363a-467b-8ca5-2bbb0d9747e6"
+          ],
+          "start_at": "2020-06-09T19:00:00.000Z",
+          "due_at": "2020-09-16T19:00:00.000Z",
+          "end_at": "2020-10-14T19:00:00.000Z"
+        }
+      ],
+      "version": "1.0.0",
+      "locale": "en-us",
+      "color_scheme": "color_scheme1",
+      "enrollment": {
+        "product_variant": "STANDARD",
+        "variant": "STANDARD",
+        "free_preview_status": "NONE",
+        "free_preview_expires_at": null,
+        "static_access": null
+      },
+      "nd_units": [
+        {
+          "id": 10348,
+          "part_keys": [
+            "d9216498-0e30-480e-a917-1058d3be0a9a",
+            "ab2c5a8c-0e6e-4c4d-9fa8-4926db7f8e3c",
+            "a6145509-14a9-46fa-af69-bf02b4ae879f",
+            "f78c2e79-72c4-4445-9329-00be9f30076e",
+            "d6b66f11-363a-467b-8ca5-2bbb0d9747e6"
+          ]
+        }
+      ],
+      "hero_image": null,
+      "forum_path": "",
+      "summary": "The course is focused on using AI technologies for practical applications in health care.",
+      "is_graduated": false,
+      "is_term_based": true,
+      "is_default": true,
+      "project_deadlines": [
+        {
+          "due_at": "2020-06-30T19:00:00.000Z",
+          "node_key": "9f8cd43f-9436-4f90-95aa-39cdcae7de03"
+        },
+        {
+          "due_at": "2020-07-21T19:00:00.000Z",
+          "node_key": "0a5f1abb-85d6-41ff-aa4e-25b9a628f4f6"
+        },
+        {
+          "due_at": "2020-08-11T19:00:00.000Z",
+          "node_key": "5a595df0-2bf6-4e67-97f9-7bf9b9ea4e92"
+        },
+        {
+          "due_at": "2020-09-01T19:00:00.000Z",
+          "node_key": "427edacc-8019-4db8-b818-8b1bb4591486"
+        },
+        {
+          "due_at": "2020-09-02T19:00:00.000Z",
+          "node_key": "0051a3da-930f-47a1-bd41-d7fe3bd324f4"
+        }
+      ],
+      "user_state": {
+        "node_key": "nd320",
+        "completed_at": "2020-06-01T00:57:11.430Z",
+        "last_viewed_at": "2020-06-01T01:04:27.147Z",
+        "unstructured": null
+      },
+      "aggregated_state": {
+        "node_key": "nd320",
+        "completion_amount": 0.041666666666666664,
+        "completed_count": 1,
+        "concept_count": 364,
+        "last_viewed_child_key": "d6b66f11-363a-467b-8ca5-2bbb0d9747e6",
+        "part_aggregated_states": [
+          {
+            "node_key": "d6b66f11-363a-467b-8ca5-2bbb0d9747e6",
+            "completed_at": null,
+            "completion_amount": 0.25,
+            "completed_count": 1,
+            "concept_count": 4,
+            "last_viewed_child_key": "f463ba9b-6af0-458c-b890-faf4f03e307b",
+            "module_aggregated_states": [
+              {
+                "node_key": "f463ba9b-6af0-458c-b890-faf4f03e307b",
+                "completed_at": null,
+                "completion_amount": 0.25,
+                "completed_count": 1,
+                "concept_count": 4,
+                "last_viewed_child_key": "0e9f1811-a098-4a36-971f-42611405166e",
+                "lesson_aggregated_states": [
+                  {
+                    "node_key": "0e9f1811-a098-4a36-971f-42611405166e",
+                    "completed_at": null,
+                    "completed_count": 1,
+                    "concept_count": 3,
+                    "completion_amount": 0.3333333333333333,
+                    "last_viewed_child_key": "81a6ea15-b2a7-4897-a862-13367a09a5e9"
+                  },
+                  {
+                    "node_key": "b19f40d7-8ac7-42b2-912c-5c146cfa777d",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 1,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "99232e4b-299c-40f5-a985-3162da96288e"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "node_key": "d9216498-0e30-480e-a917-1058d3be0a9a",
+            "completed_at": null,
+            "completion_amount": 0,
+            "completed_count": 0,
+            "concept_count": 108,
+            "last_viewed_child_key": "004715e8-0ef7-45d6-94b5-00b792a53bdd",
+            "module_aggregated_states": [
+              {
+                "node_key": "004715e8-0ef7-45d6-94b5-00b792a53bdd",
+                "completed_at": null,
+                "completion_amount": 0,
+                "completed_count": 0,
+                "concept_count": 108,
+                "last_viewed_child_key": "364112b5-942a-4276-9a61-5d8d767676fc",
+                "lesson_aggregated_states": [
+                  {
+                    "node_key": "364112b5-942a-4276-9a61-5d8d767676fc",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 11,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "8ba705c6-aece-42c8-865e-88ccde4edd0b"
+                  },
+                  {
+                    "node_key": "602d9c5b-4079-4738-b9dc-c82b5aa56fca",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 21,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "a6d2c87c-786e-4972-8a37-5380e9c3b474"
+                  },
+                  {
+                    "node_key": "6da8b250-4ac1-424f-a227-ba653850bef8",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 21,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "7ba0ef83-1e7c-46e6-a1be-2c41edc9e0c8"
+                  },
+                  {
+                    "node_key": "5f4b34f1-86c8-4be5-921c-2bb2578918b7",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 30,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "5a733ae3-13e8-48b8-b6d4-3e93bf6521f7"
+                  },
+                  {
+                    "node_key": "7d14ac87-b711-44a9-95b7-0c79ae6c8d25",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 21,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "73702ad4-da6c-4969-be54-a4ae439383e0"
+                  },
+                  {
+                    "node_key": "542b9604-b7a6-4970-83df-ccd4da06684c",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 4,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "e42894b3-8c2b-4b5c-aeac-31b118f59505"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "node_key": "a6145509-14a9-46fa-af69-bf02b4ae879f",
+            "completed_at": null,
+            "completion_amount": 0,
+            "completed_count": 0,
+            "concept_count": 85,
+            "last_viewed_child_key": "c2693991-fbab-4ea4-9ef2-a01b62b7a88e",
+            "module_aggregated_states": [
+              {
+                "node_key": "c2693991-fbab-4ea4-9ef2-a01b62b7a88e",
+                "completed_at": null,
+                "completion_amount": 0,
+                "completed_count": 0,
+                "concept_count": 85,
+                "last_viewed_child_key": "bfcee54c-56ee-401f-b31d-8756fbdcc710",
+                "lesson_aggregated_states": [
+                  {
+                    "node_key": "bfcee54c-56ee-401f-b31d-8756fbdcc710",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 7,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "dad24bf9-b40e-4ea3-84f2-449846b91e9d"
+                  },
+                  {
+                    "node_key": "d8617924-a6e1-4c49-9bdb-3388e95fc3b7",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 25,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "f48dcedb-0972-4ebd-bca5-7f190adce9c5"
+                  },
+                  {
+                    "node_key": "7a2cbbef-f80d-43ab-b586-fe1b62f39879",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 12,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "6360d4fd-89d7-490d-b58d-635ab2814b5b"
+                  },
+                  {
+                    "node_key": "bb342b71-8ca8-4e51-8309-6333cbea25a0",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 13,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "52bbcc3f-f2da-4c37-89b4-32a535a2c776"
+                  },
+                  {
+                    "node_key": "1d16d5f0-d96d-4e1d-b3bf-90fbf8590575",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 20,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "290697d3-ec68-4e6f-bce4-c3c03d122d10"
+                  },
+                  {
+                    "node_key": "7a995cd8-87f2-4ec2-a334-46a483e9a9f7",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 8,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "439f2d99-dc60-463a-955a-f7f180e783f9"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "node_key": "ab2c5a8c-0e6e-4c4d-9fa8-4926db7f8e3c",
+            "completed_at": null,
+            "completion_amount": 0,
+            "completed_count": 0,
+            "concept_count": 77,
+            "last_viewed_child_key": "1644460b-a828-4443-ad8c-bbcca3151a30",
+            "module_aggregated_states": [
+              {
+                "node_key": "1644460b-a828-4443-ad8c-bbcca3151a30",
+                "completed_at": null,
+                "completion_amount": 0,
+                "completed_count": 0,
+                "concept_count": 77,
+                "last_viewed_child_key": "9c892405-c09a-4919-88e2-c772ddac8fe6",
+                "lesson_aggregated_states": [
+                  {
+                    "node_key": "9c892405-c09a-4919-88e2-c772ddac8fe6",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 7,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "53ca67da-380d-41a7-9baf-b7fdcb92781a"
+                  },
+                  {
+                    "node_key": "eaf98312-bcfb-473d-abf1-0d78164a561f",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 16,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "9de53356-83ae-4052-bb8e-24604bab87fd"
+                  },
+                  {
+                    "node_key": "76f4c48c-a664-4750-8753-5811c854d02a",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 15,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "efcefe17-57d3-40dc-9820-89902489db95"
+                  },
+                  {
+                    "node_key": "e8ba701a-3efd-4d33-8e73-cbb55ab9a311",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 19,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "3306dae9-fbca-4e06-a00c-49bcdf9e6099"
+                  },
+                  {
+                    "node_key": "9f2a59cc-ed42-475d-abe6-fdb731927eff",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 17,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "097b1cd3-89ae-49f1-b1f0-723d438b9cbf"
+                  },
+                  {
+                    "node_key": "ba962d3d-be73-40fd-8b53-f474e530aec0",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 3,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "64fe4f0d-4fc6-48a1-a71d-ff9248f845c7"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "node_key": "f78c2e79-72c4-4445-9329-00be9f30076e",
+            "completed_at": null,
+            "completion_amount": 0,
+            "completed_count": 0,
+            "concept_count": 90,
+            "last_viewed_child_key": "b337aa97-ba0a-4a57-8ee6-e15ae15fc987",
+            "module_aggregated_states": [
+              {
+                "node_key": "b337aa97-ba0a-4a57-8ee6-e15ae15fc987",
+                "completed_at": null,
+                "completion_amount": 0,
+                "completed_count": 0,
+                "concept_count": 78,
+                "last_viewed_child_key": "4417cb06-0a1d-4dad-9418-2e615308b2f6",
+                "lesson_aggregated_states": [
+                  {
+                    "node_key": "4417cb06-0a1d-4dad-9418-2e615308b2f6",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 6,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "9b094b86-e348-49ef-856b-9bd030ffd939"
+                  },
+                  {
+                    "node_key": "27ab2378-4a93-47aa-8740-dc30fc7ced40",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 21,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "c7d2f97a-2f59-41c7-8933-faab2a3c6b7d"
+                  },
+                  {
+                    "node_key": "d7a821f4-d64c-402e-80b7-b293656119a8",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 14,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "5bc40cc9-b7e9-4fa2-bb91-b49376f945ff"
+                  },
+                  {
+                    "node_key": "889d707f-7014-4216-ac94-ab3c285ad0e0",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 14,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "b5a57872-8f44-4eaa-add9-2e173356ae37"
+                  },
+                  {
+                    "node_key": "048a9529-ee90-4e0f-bf00-413bb3e18983",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 16,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "3a10a13f-d928-433a-a654-6b54a821c9f1"
+                  },
+                  {
+                    "node_key": "f545e228-b2c3-4e2e-afb2-08890cddc494",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 7,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "4444565d-6a87-4a40-a657-f00cc8f18278"
+                  }
+                ]
+              },
+              {
+                "node_key": "57e3fc1a-40ca-4fbf-825e-dd3c82d52343",
+                "completed_at": null,
+                "completion_amount": 0,
+                "completed_count": 0,
+                "concept_count": 12,
+                "last_viewed_child_key": "20707806-8f14-420f-b613-4196199a88c1",
+                "lesson_aggregated_states": [
+                  {
+                    "node_key": "20707806-8f14-420f-b613-4196199a88c1",
+                    "completed_at": null,
+                    "completed_count": 0,
+                    "concept_count": 12,
+                    "completion_amount": 0,
+                    "last_viewed_child_key": "c8c3fbd0-b7ba-471e-85b7-eb2b1c3820c0"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "resources": null,
+      "specializations": [],
+      "parts": [
+        {
+          "id": 1015993,
+          "key": "d6b66f11-363a-467b-8ca5-2bbb0d9747e6",
+          "title": "Welcome to the AI for Healthcare Nanodegree Program",
+          "semantic_type": "Part",
+          "is_public": true,
+          "version": "1.0.0",
+          "locale": "en-us",
+          "summary": "",
+          "part_type": "Core",
+          "locked_reason": "not_locked",
+          "locked_until": null,
+          "content_ready_date_ms": 1589266800000,
+          "resources": null,
+          "image": null,
+          "specialization": null,
+          "modules": [
+            {
+              "id": 1017672,
+              "key": "f463ba9b-6af0-458c-b890-faf4f03e307b",
+              "title": "AI for Healthcare Nanodegree Program Orientation",
+              "semantic_type": "Module",
+              "is_public": true,
+              "version": "1.0.0",
+              "locale": "en-us",
+              "is_project_module": null,
+              "forum_path": "",
+              "lessons": [
+                {
+                  "id": 1017673,
+                  "key": "0e9f1811-a098-4a36-971f-42611405166e",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": null,
+                  "title": "AI for Healthcare Nanodegree Program Introduction",
+                  "duration": 30,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2020/May/5eb9a7fd_noun-medicine-ai-2830781/noun-medicine-ai-2830781.png",
+                    "width": 512,
+                    "height": 512
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 1017674,
+                      "key": "81a6ea15-b2a7-4897-a862-13367a09a5e9",
+                      "title": "Welcome to Udacity",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1017676,
+                      "key": "1002e01f-cca4-4925-9ef2-90e28585ac63",
+                      "title": "Welcome to the Nanodegree Program Experience",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1017681,
+                      "key": "da04ace0-ef3e-4cf0-9901-8650dcef961f",
+                      "title": "How to Succeed",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 728725,
+                  "key": "b19f40d7-8ac7-42b2-912c-5c146cfa777d",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "The Careers team at Udacity is here to help you move forward in your career - whether it's finding a new job, exploring a new career path, or applying new skills to your current job.",
+                  "title": "Nanodegree Career Services",
+                  "duration": 15,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": {
+                    "url": "https://s3.amazonaws.com/video.udacity-data.com/topher/2018/July/5b3a82a4_careers/careers.jpg",
+                    "width": 500,
+                    "height": 500
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 831981,
+                      "key": "99232e4b-299c-40f5-a985-3162da96288e",
+                      "title": "Access the Career Portal",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 1015994,
+          "key": "d9216498-0e30-480e-a917-1058d3be0a9a",
+          "title": "Applying AI to 2D Medical Imaging Data",
+          "semantic_type": "Part",
+          "is_public": true,
+          "version": "1.0.0",
+          "locale": "en-us",
+          "summary": "",
+          "part_type": "Core",
+          "locked_reason": "not_locked",
+          "locked_until": null,
+          "content_ready_date_ms": 1589310000000,
+          "resources": null,
+          "image": null,
+          "specialization": null,
+          "modules": [
+            {
+              "id": 971677,
+              "key": "004715e8-0ef7-45d6-94b5-00b792a53bdd",
+              "title": "2D Imaging",
+              "semantic_type": "Module",
+              "is_public": true,
+              "version": "1.0.0",
+              "locale": "en-us",
+              "is_project_module": null,
+              "forum_path": "",
+              "lessons": [
+                {
+                  "id": 1007527,
+                  "key": "364112b5-942a-4276-9a61-5d8d767676fc",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "In this lesson, you will be given an introduction to this course about AI for 2D medical imaging, why AI is important and where AI fits in the space.",
+                  "title": "Introduction to AI for 2D Medical Imaging",
+                  "duration": 15,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2020/April/5e9a6138_noun-machine-learning-2317745/noun-machine-learning-2317745.png",
+                    "width": 512,
+                    "height": 512
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 1007528,
+                      "key": "8ba705c6-aece-42c8-865e-88ccde4edd0b",
+                      "title": "Meet Your Instructor",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007535,
+                      "key": "de55effd-0ab7-438d-8970-a2776f49e604",
+                      "title": "Course Outline",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007538,
+                      "key": "a19583c4-f27e-45c6-83a4-f57227126f9a",
+                      "title": "Lesson Outline",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007540,
+                      "key": "26f79bef-fdd2-43ef-91be-f3f8b0c9781f",
+                      "title": "Introduction to AI for 2D Medical Imaging",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007548,
+                      "key": "ccea7c70-991f-4ab9-a6c1-f945f82d6ea6",
+                      "title": "History",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007542,
+                      "key": "998d30d1-62fe-405b-a706-5283bd0b5849",
+                      "title": "Importance of AI",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007546,
+                      "key": "37bdd012-b0c2-4155-9d9c-4e1eee1a5b1f",
+                      "title": "When to Use AI",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007544,
+                      "key": "3bc83c64-8d2b-4bf8-b2b9-266a886ef93a",
+                      "title": "Business Stakeholders",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007552,
+                      "key": "de238c3e-212a-4eb4-a445-eaabb1e8af71",
+                      "title": "Project: Pneumonia Detection from X-Ray Images",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007554,
+                      "key": "d015491d-9201-45f5-9012-b876b5d904d5",
+                      "title": "Recap",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1014623,
+                      "key": "9675918f-33ec-473c-8c48-40e66c713eb8",
+                      "title": "Good Luck",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 1007529,
+                  "key": "602d9c5b-4079-4738-b9dc-c82b5aa56fca",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "In this lesson, we will cover clinical foundations such as clinical workflows, applications of 2D imaging in clinical settings and how machine learning impacts clinics.",
+                  "title": "Clinical Foundations of 2D Medical Imaging",
+                  "duration": 300,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2020/April/5e9a5fbb_noun-health-insurance-396737/noun-health-insurance-396737.png",
+                    "width": 512,
+                    "height": 512
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 1007558,
+                      "key": "a6d2c87c-786e-4972-8a37-5380e9c3b474",
+                      "title": "Clinical Foundations",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007560,
+                      "key": "7807781d-a24c-4c18-8b8c-6e817eb55c44",
+                      "title": "Lesson Outline",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007564,
+                      "key": "18f0dadd-d7b4-44b0-ab7e-ce0fb1bf6197",
+                      "title": "Intuition About 2D Medical Images",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007566,
+                      "key": "61136280-a7a9-452d-a324-1d700d93f3c3",
+                      "title": "Clinical Applications",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007568,
+                      "key": "f48a062b-3b52-4541-9aba-32c2a86308b2",
+                      "title": "Clinical Applications Quizzes",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007570,
+                      "key": "447b7d26-f2d4-4ce7-af8e-dd3b310912db",
+                      "title": "Clinical Applications Exercise",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007572,
+                      "key": "ce28864c-09bd-409d-b46c-ccea6c5479c1",
+                      "title": "Clinical Applications Exercise Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007574,
+                      "key": "10f666bd-93d6-4510-88a9-8af51469a3e3",
+                      "title": "Apply Machine Learning ",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007576,
+                      "key": "48d141e3-0469-4f84-99a4-bada252b2942",
+                      "title": "Apply Machine Learning Quizzes",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007578,
+                      "key": "76ba6e00-507e-4db4-9384-50342006ad63",
+                      "title": "Apply Machine Learning Exercise",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007580,
+                      "key": "e552e845-6b2b-494e-9c59-acb3cbdd72c5",
+                      "title": "Apply Machine Learning Exercise Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007581,
+                      "key": "2ebe640e-ffea-4bc3-95f8-928db4ae5029",
+                      "title": "Performance of ML",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007583,
+                      "key": "c0ca013f-d268-4bfb-9b78-809e2c34ba41",
+                      "title": "Performance of ML Quizzes",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007585,
+                      "key": "164b5ea8-a619-4efa-9020-5ac7c9198112",
+                      "title": "Performance of ML Exercise",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007587,
+                      "key": "c19f4113-8187-48a5-9a64-8917efaa6719",
+                      "title": "Performance of ML Exercise Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007589,
+                      "key": "55370da0-f21b-4b74-9642-fa3f3c12d971",
+                      "title": "Regulatory Landscape",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007591,
+                      "key": "4f695c6b-2e0b-4fce-8338-05c5eb99e932",
+                      "title": "Regulatory Landscape Quizzes",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007593,
+                      "key": "2b526262-3f94-4a19-b551-f866c405071d",
+                      "title": "Regulatory Landscape Exercise",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007595,
+                      "key": "0f7ffae7-a507-445f-90de-332fdf2c95b3",
+                      "title": "Regulatory Landscape Exercise Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007599,
+                      "key": "33470c8a-3931-439c-b39f-0ae5620d05fa",
+                      "title": "Final Review",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007601,
+                      "key": "401788de-6bca-4f32-90c7-41db7e02cfde",
+                      "title": "Lesson Conclusion",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 1007530,
+                  "key": "6da8b250-4ac1-424f-a227-ba653850bef8",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "In this lesson, we will learn the DICOM standard in medical imaging, and how to explore medical imaging data and prepare it for machine learning applications. \n\n\n",
+                  "title": "2D Medical Imaging Exploratory Data Analysis",
+                  "duration": 360,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2020/April/5e9a6012_noun-data-1454481/noun-data-1454481.png",
+                    "width": 512,
+                    "height": 512
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 1007604,
+                      "key": "7ba0ef83-1e7c-46e6-a1be-2c41edc9e0c8",
+                      "title": "DICOM Standard and EDA",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007606,
+                      "key": "5bff94dd-ac1d-4c8d-a1fa-357c0c426994",
+                      "title": "Lesson Outline",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007612,
+                      "key": "2b884652-f656-49f3-a52d-fcd0ae6edb9f",
+                      "title": "DICOM Standard",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007614,
+                      "key": "98d37d6a-2922-4b87-83f1-ed55ed52b27d",
+                      "title": "DICOM Standard Quizzes",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007616,
+                      "key": "406b3d87-da51-46ab-ad62-af67940a23f4",
+                      "title": "DICOM Standard Exercise",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007618,
+                      "key": "448db5e5-932b-453c-bacb-ea2bc96b84b7",
+                      "title": "DICOM Standard Exercise Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007620,
+                      "key": "e633584d-6788-4e04-b541-92329bc53c98",
+                      "title": "Explore 2D Imaging Properties",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007622,
+                      "key": "cd836105-ea32-4d8b-8466-7181c8e8840f",
+                      "title": "Explore 2D Imaging Properties Quizzes",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007624,
+                      "key": "01d99b36-cbfc-4ddc-bf5c-87b9c3e98457",
+                      "title": "Explore 2D Imaging Properties Exercise",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007626,
+                      "key": "b01c92c0-29fb-42b6-b18f-1d3dbcddfce6",
+                      "title": "Explore 2D Imaging Properties Exercise Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007628,
+                      "key": "ece85b65-04b0-4c80-b7bc-1a6900e0729a",
+                      "title": "Prepare DICOM Images for ML",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007630,
+                      "key": "b2a34d66-62d1-447b-98b0-aa8c4523b294",
+                      "title": "Prepare DICOM Images for ML Quizzes",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007632,
+                      "key": "65669a81-78ce-401c-aa00-9306dd22d0da",
+                      "title": "Prepare DICOM Images for ML Exercise",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007634,
+                      "key": "d246dc08-6056-49c0-adf0-4b527d018f79",
+                      "title": "Prepare DICOM Images for ML Exercise Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007636,
+                      "key": "ab548f0b-9b51-4464-bc32-60baa11fbf59",
+                      "title": "Exploring Population Metadata",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007638,
+                      "key": "5d852441-a23a-4418-8fa0-cfae476071a0",
+                      "title": "Exploring Population Metadata Quizzes",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007640,
+                      "key": "27b353a0-1f5c-4dcd-8dc1-15d04aa0a3d9",
+                      "title": "Exploring Population Metadata Exercise",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007642,
+                      "key": "386543bd-2b39-459f-bf0c-6acfbedd01ca",
+                      "title": "Exploring Population Metadata Exercise Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007644,
+                      "key": "1c294438-ea23-48e4-8d01-bdb990caa9f3",
+                      "title": "Edge Case",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007646,
+                      "key": "96231dc3-1da4-4304-8989-2c16c2256822",
+                      "title": "Final Review",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007648,
+                      "key": "a7336932-3e6e-49c6-9906-5508da4c0275",
+                      "title": "Lesson Conclusion",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 1007531,
+                  "key": "5f4b34f1-86c8-4be5-921c-2bb2578918b7",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "In this lesson, we'll dive deep into classification tasks for 2D medical imaging using different machine learning models. and we will talk about pre-process data, train, test, and validate models.",
+                  "title": "Classification Models of 2D Medical Images",
+                  "duration": 480,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2020/April/5e9a6186_noun-machine-learning-1705417/noun-machine-learning-1705417.png",
+                    "width": 512,
+                    "height": 512
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 1007650,
+                      "key": "5a733ae3-13e8-48b8-b6d4-3e93bf6521f7",
+                      "title": "Models for Classification of 2D Medical Images",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007652,
+                      "key": "a0d24f1f-6d57-477f-a096-8e2d2b7a592a",
+                      "title": "Lesson Outline",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007654,
+                      "key": "4f04f9dc-8da1-49e8-80bb-8482a19e07ae",
+                      "title": "Big Picture",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007656,
+                      "key": "3357dd5b-0e3e-439b-bdd5-9eff8c275b04",
+                      "title": "Intuition about Classification Model Development",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007658,
+                      "key": "f767ea8b-cbf2-4e74-a0a8-ea87bffc9d23",
+                      "title": "Differentiate Between Models",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007660,
+                      "key": "78662d81-bcae-4109-bd47-cbcead313079",
+                      "title": "Differentiate Between Models Quizzes",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007662,
+                      "key": "e18c0906-de15-4ef7-a8de-fc5ff6f47535",
+                      "title": "Differentiate Between Models Exercise",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007664,
+                      "key": "635508cd-4eae-46b4-9b1f-1df35ce40d57",
+                      "title": "Differentiate Between Models Exercise Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007666,
+                      "key": "678c028b-f57a-49b4-9248-17b587234fd4",
+                      "title": "Split Dataset for Model Development",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007668,
+                      "key": "f2b5af5e-f767-4418-9ff3-c3a6c4e652fc",
+                      "title": "Split Dataset for Model Development Quizzes",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007670,
+                      "key": "0f4ad850-c9e1-4dfd-924c-0bf83635a03b",
+                      "title": "Split Dataset for Model Development Exercise",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007672,
+                      "key": "aeeb6199-ede6-4b7e-862c-8b8008ed9b7c",
+                      "title": "Split Dataset for Model Development Exercise Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007674,
+                      "key": "03acae42-a7da-465a-b5b7-037775a90fc8",
+                      "title": "Obtaining a Gold Standard",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007676,
+                      "key": "a30fd9d8-7659-4598-83e0-2337c9e52bea",
+                      "title": "Obtaining a Gold Standard Quizzes",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007678,
+                      "key": "f61d9300-415d-4248-bd58-729ef376b4aa",
+                      "title": "Obtaining a Gold Standard Exercise",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007680,
+                      "key": "cca13e15-23a5-407c-b419-b03af846f3cc",
+                      "title": "Obtaining a Gold Standard Exercise Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007682,
+                      "key": "93f5a8cb-0731-4074-b926-dbd4db994d2d",
+                      "title": "Image Pre-processing for Model Training",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007684,
+                      "key": "85e4c7a8-f87d-44a9-99bf-18fb0d3b37c3",
+                      "title": "Image Pre-processing for Model Training Quizzes",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007686,
+                      "key": "1cf2be64-514b-4162-b37c-945265c7ee43",
+                      "title": "Image Pre-processing for Model Training Exercise",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007688,
+                      "key": "abd238b9-cc03-47f0-89dd-e3dc1fc3b789",
+                      "title": "Image Pre-processing for Model Training Exercise Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007690,
+                      "key": "d4e2d085-266c-4646-b8fc-4a69b304358f",
+                      "title": "Fine-tuning CNNs for Classification",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007692,
+                      "key": "a8a483b5-5247-4766-817b-534c52a90e8e",
+                      "title": "Fine-tuning CNNs for Classification Quizzes",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007694,
+                      "key": "9de38d8b-08e9-4d25-9d63-5a7952a12945",
+                      "title": "Fine-tuning CNNs for Classification Exercise",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007696,
+                      "key": "ac2b714b-cef0-4e2e-b21d-4bc0278046c1",
+                      "title": "Fine-tuning CNNs for Classification Exercise Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007698,
+                      "key": "9398154b-2f8c-4701-8915-05e1980a4663",
+                      "title": "Evaluating Your Model",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007700,
+                      "key": "f50c1220-f2c2-48b4-a4e9-9374a43f91e6",
+                      "title": "Evaluating Your Model Quizzes",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007702,
+                      "key": "263d31de-4223-4c48-9d33-b5c14fe5a0e8",
+                      "title": "Evaluating Your Model Exercise",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007704,
+                      "key": "00205cc0-3857-4965-aead-06422552af5f",
+                      "title": "Evaluating Your Model Exercise Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007708,
+                      "key": "fcfb27d3-ece0-468c-9bff-5684fe8c9ab4",
+                      "title": "Final Review",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007710,
+                      "key": "6fdc8fd6-6187-406a-beaf-df9a8067924f",
+                      "title": "Lesson Conclusion",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 1007532,
+                  "key": "7d14ac87-b711-44a9-95b7-0c79ae6c8d25",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "In this lesson, you will learn about how your work fits into the bigger picture, and how it’s regulated by the FDA, which is an often-overlooked, but incredibly important.",
+                  "title": "Translating AI Algorithms for Clinical Settings with the FDA",
+                  "duration": 360,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2020/April/5e9a6243_noun-rules-3194290/noun-rules-3194290.png",
+                    "width": 512,
+                    "height": 512
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 1007712,
+                      "key": "73702ad4-da6c-4969-be54-a4ae439383e0",
+                      "title": "Translating Algorithm into a Clinical Setting with the FDA ",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007714,
+                      "key": "22e3e479-b45b-458d-b6a0-109d104c58da",
+                      "title": "Lesson Outline",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007716,
+                      "key": "a2d89af8-380e-4fb2-8f3c-5b173f41c8f7",
+                      "title": "Big Picture",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007720,
+                      "key": "c8caca94-2178-43af-97eb-5b63a131d2db",
+                      "title": "Intended Use and Indications for Use",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007722,
+                      "key": "9ad03b70-ed2a-4e8f-929f-d651f921fe82",
+                      "title": "Intended Use and Clinical Impact Quizzes",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007724,
+                      "key": "bb720e09-3065-4d3a-b444-36fb988b2cf5",
+                      "title": "Intended Use and Clinical Impact Exercise",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007726,
+                      "key": "c6b2299a-22ed-452e-b014-d85ca8ff73b7",
+                      "title": "Intended Use and Clinical Impact Exercise Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007728,
+                      "key": "df9c27c2-7b64-4f36-8e31-45d1c2999bbb",
+                      "title": "Algorithmic Limitations",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007730,
+                      "key": "4958d6be-46c5-4485-8dc2-34e1747fc832",
+                      "title": "Algorithmic Limitations Quizzes",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007732,
+                      "key": "01b38aff-985c-4dd2-961a-5378025b730d",
+                      "title": "Algorithmic Limitations Exercise",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007734,
+                      "key": "099f10a5-156d-44da-be46-def78ed97136",
+                      "title": "Algorithmic Limitations Exercise Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007736,
+                      "key": "453a4e07-8266-4c58-8ced-882a3cb9dd37",
+                      "title": "Translate Performance into Clinical Utility",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007738,
+                      "key": "a81c2c68-1736-4ec8-8e2e-9d19747d800c",
+                      "title": "Translate Performance into Clinical Utility Quizzes",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007740,
+                      "key": "9562602a-6ee8-42ac-9d57-02632db39595",
+                      "title": "Translate Performance into Clinical Utility Exercise",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007742,
+                      "key": "d7522cc3-6e34-493e-8a5f-d5d5ff0bd313",
+                      "title": "Translate Performance into Clinical Utility Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007744,
+                      "key": "f77a9787-4260-47e6-8aea-7071a4d10c3b",
+                      "title": "Designing an FDA Validation Plan",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007746,
+                      "key": "7756f2f8-9aaa-4eb5-a1e2-33e3c07cf32d",
+                      "title": "Designing an FDA Validation Plan Quizzes",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007748,
+                      "key": "25b37f67-eea3-48b6-9102-c4c80f2ac95f",
+                      "title": "Designing an FDA Validation Plan Exercise",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007750,
+                      "key": "b56dcc54-ca01-43f3-bed2-9f3f7f878012",
+                      "title": "Designing an FDA Validation Plan Exercise Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007754,
+                      "key": "43b3c65f-9cfb-4d5b-bce8-600aaa346508",
+                      "title": "Final Review",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007756,
+                      "key": "9bd04bd9-a6e8-4f98-b27e-6132d9987f5d",
+                      "title": "Lesson Conclusion",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 971678,
+                  "key": "542b9604-b7a6-4970-83df-ccd4da06684c",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": null,
+                  "title": "Project: Pneumonia Detection from Chest X-Rays",
+                  "duration": 600,
+                  "is_public": true,
+                  "is_project_lesson": true,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2020/April/5e9a6230_noun-project-3168379/noun-project-3168379.png",
+                    "width": 512,
+                    "height": 512
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": {
+                    "key": "9f8cd43f-9436-4f90-95aa-39cdcae7de03",
+                    "version": "1.0.0",
+                    "locale": "en-us",
+                    "duration": 30240,
+                    "semantic_type": "Project",
+                    "title": "Pneumonia Detection From Chest X-Rays",
+                    "description": "## Evaluation\nYour project will be reviewed by a Udacity reviewer against the [project rubric](https://review.udacity.com/#!/rubrics/2815/view). Be sure to review this rubric thoroughly and self-evaluate your project before submission. All criteria found in the rubric must be meeting specifications for you to pass.\n\n## Submission Files\nFollowing files would be needed for evaluation:\n- EDA.ipynb notebook file with all questions answered and all code cells executed and **_displaying output._**\n- Build and train model.ipynb notebook file with all questions answered and all code cells executed and **_displaying output._**\n- A .h5 or .json file contains your final model architecture.\n- A .h5 or .json file contains your final model weights.\n- Inference.ipynb notebook file with all questions answered and all code cells executed and **_displaying output._**\n- FDA_submission.pdf file with a report that describes the algorithm and performance.\n\nPlease upload the FDA_submission.pdf to the workspace and submit your project through the workspace.",
+                    "is_public": true,
+                    "summary": null,
+                    "forum_path": "",
+                    "rubric_id": "2815",
+                    "terminal_project_id": null,
+                    "resources": null,
+                    "image": null
+                  },
+                  "concepts": [
+                    {
+                      "id": 1006705,
+                      "key": "e42894b3-8c2b-4b5c-aeac-31b118f59505",
+                      "title": "Project Overview",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1006712,
+                      "key": "ba6f1df2-ffbb-4eac-8036-b18663c1c6c9",
+                      "title": "Starting the project",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1006719,
+                      "key": "88c9a38d-6736-4fe5-8122-c7102af96c64",
+                      "title": "Submitting the project",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 971682,
+                      "key": "37519700-6f21-4d2f-afe0-08ca90adffae",
+                      "title": "Jupyter GPU Workspace",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 1015995,
+          "key": "a6145509-14a9-46fa-af69-bf02b4ae879f",
+          "title": "Applying AI to 3D Medical Imaging Data",
+          "semantic_type": "Part",
+          "is_public": true,
+          "version": "1.0.0",
+          "locale": "en-us",
+          "summary": "",
+          "part_type": "Core",
+          "locked_reason": "not_locked",
+          "locked_until": null,
+          "content_ready_date_ms": 1589310000000,
+          "resources": null,
+          "image": null,
+          "specialization": null,
+          "modules": [
+            {
+              "id": 966816,
+              "key": "c2693991-fbab-4ea4-9ef2-a01b62b7a88e",
+              "title": "3D Imaging",
+              "semantic_type": "Module",
+              "is_public": true,
+              "version": "1.0.0",
+              "locale": "en-us",
+              "is_project_module": null,
+              "forum_path": "",
+              "lessons": [
+                {
+                  "id": 1014242,
+                  "key": "bfcee54c-56ee-401f-b31d-8756fbdcc710",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "In this lesson, we will introduce the course and instructors. We will give you an overview of the context for AI in 3D medical imaging space, and cover the objectives of the course.",
+                  "title": "Introduction to AI for 3D Medical Imaging ",
+                  "duration": 45,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": null,
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 1014235,
+                      "key": "dad24bf9-b40e-4ea3-84f2-449846b91e9d",
+                      "title": "Welcome to the Course",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1014236,
+                      "key": "65a51c88-7d1d-42e5-9a39-9376009b5f93",
+                      "title": "What is AI for 3D medical imaging?",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1014241,
+                      "key": "84f5c748-1e48-402a-921c-bf1d1467b892",
+                      "title": "What is the historical context for 3D medical imaging?",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1014237,
+                      "key": "9b9845b9-d0c7-4417-bc0a-7a3020582e9a",
+                      "title": "Why is AI for 3D med imaging important?",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1014240,
+                      "key": "59c3e7cd-b470-4231-a95a-37e37625b3ff",
+                      "title": "Course Content",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1014239,
+                      "key": "fd6406b7-7068-451d-b57d-e16e4306e8dc",
+                      "title": "Relevant tools",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1014238,
+                      "key": "5fa2d824-fc11-47c9-9eef-1d26ecb5fe13",
+                      "title": "Let’s get started!",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 1014921,
+                  "key": "d8617924-a6e1-4c49-9bdb-3388e95fc3b7",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "In this lesson, we cover the basic terminology and concepts related to 3D medical imaging. We will look at the problem space from a clinical standpoint and learn how CT and MR scanners produce images.",
+                  "title": "3D Medical Imaging - Clinical Fundamentals",
+                  "duration": 240,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": null,
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 1014899,
+                      "key": "f48dcedb-0972-4ebd-bca5-7f190adce9c5",
+                      "title": "Introduction",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1014901,
+                      "key": "391331c7-b016-4e59-ae15-f0221c9f8202",
+                      "title": "What are 3D Medical Images?",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1014902,
+                      "key": "34fba241-897f-4c22-bd14-22f1d7ba3148",
+                      "title": "Why use 3D Medical Images?",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1014910,
+                      "key": "caed5f9f-737d-4421-87a1-d540adfebc7a",
+                      "title": "Who uses 3D Medical Images?",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1014906,
+                      "key": "39b489c1-711a-4796-a8d6-64892ec4cd2b",
+                      "title": "Example Clinical Scenario",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1014903,
+                      "key": "b04e689b-b8af-43b5-b3cf-f8e1d959801e",
+                      "title": "Exercise 1: Choosing a Clinical Problem",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1014898,
+                      "key": "e545ef14-2d30-4223-be0d-cd24c9aa9847",
+                      "title": "Exercise 1: Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1020127,
+                      "key": "c00548ff-6543-4115-addf-b0296f453489",
+                      "title": "Clinical Section Outro",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1014900,
+                      "key": "23e69e45-ff28-439f-bf0c-4d142d5802f8",
+                      "title": "Physical Principles of CT Scanners",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1014905,
+                      "key": "af5ad06d-7049-489c-985a-b4ab9feadef3",
+                      "title": "Exercise 2: Computing a Sinogram",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1020126,
+                      "key": "417b48a2-8df3-4b12-b7dc-d11d94dd4200",
+                      "title": "Exercise 2: Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1014915,
+                      "key": "80c65406-5fd7-401b-8eab-13bf074a9a26",
+                      "title": "CT Scanners: Summary",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1014916,
+                      "key": "8c677220-8ade-45c0-a2fb-2c7e7d96764a",
+                      "title": "Physical Principles of MR Scanners",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1014920,
+                      "key": "0b3c6e1a-2ae1-435f-9764-78ab788ee614",
+                      "title": "MRI: Gradients & RF Pulses",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1014904,
+                      "key": "8ec4e145-f2b5-4fe3-9042-adcf41a69d94",
+                      "title": "MRI: K-space, Reconstruction, T1 and T2",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1014908,
+                      "key": "e52eed6f-5cac-47fb-9cfa-ab51dc1a211f",
+                      "title": "MR Scanners: Summary",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1014907,
+                      "key": "e3dd37af-1b43-43a2-b232-d56683587627",
+                      "title": "Common 3D imaging data tasks",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1014909,
+                      "key": "b1ccf8d6-155f-4cc4-8545-c85f92c6613e",
+                      "title": "3D Imaging Tasks: Windowing",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1014919,
+                      "key": "f969c989-1740-468b-8d14-753f864405a6",
+                      "title": "3D Imaging Tasks: MPR",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1014911,
+                      "key": "6d57f89f-87b2-472d-8d55-cab13d383781",
+                      "title": "3D Imaging Tasks: 3D Reconstruction",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1014918,
+                      "key": "ea1961c2-4c32-4d08-bff9-9de584145788",
+                      "title": "3D Imaging Tasks: Registration",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1014914,
+                      "key": "abbbe971-b69c-413c-a8a0-5456f2c36140",
+                      "title": "Exercise 3: Volumetric Rendering",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1014917,
+                      "key": "277664f8-3787-4c6b-b282-5f7e918890d0",
+                      "title": "Exercise 3: Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1014913,
+                      "key": "d0128e66-c2b5-4788-93e0-7ca1cda31c98",
+                      "title": "3D Imaging Tasks: Summary",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1014912,
+                      "key": "a957e006-98d8-4cec-a11a-1776a21bc741",
+                      "title": "Lesson Summary",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 1015129,
+                  "key": "7a2cbbef-f80d-43ab-b586-fe1b62f39879",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "In this lesson, we will dive deeper into medical imaging formats NIFTI and DICOM, how scanner data is represented, and how to read medical volumes stored in these files and analyze them. ",
+                  "title": "3D Imaging Exploratory Data Analysis",
+                  "duration": 180,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": null,
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 1015125,
+                      "key": "6360d4fd-89d7-490d-b58d-635ab2814b5b",
+                      "title": "Introduction",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1015117,
+                      "key": "17db975a-8a63-4adc-91bb-b8991f597d71",
+                      "title": "The DICOM Standard",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1015119,
+                      "key": "44c6bd20-0dbd-4924-be4f-d484de4e4f0f",
+                      "title": "Anatomy of DICOM Datasets",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1015121,
+                      "key": "a283978d-17c7-421c-9762-d702720e3be4",
+                      "title": "NIFTI File Format",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1015120,
+                      "key": "838daaae-ee01-42f0-b038-fc056480e9a1",
+                      "title": "Viewing 3D Medical Images",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1015124,
+                      "key": "5a8ac447-109e-4304-b217-01d4c333bfbf",
+                      "title": "Exercise 1: Load Image",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1015128,
+                      "key": "68f000c2-843b-4c40-92dd-25a7052b9e86",
+                      "title": "Important Parameters of 3D Medical Images",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1015126,
+                      "key": "a23aa446-3458-4646-bec3-2560b17fa853",
+                      "title": "Basic DICOM Volume EDA",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1015118,
+                      "key": "c9e7ceb5-5df9-4865-9101-b956f5c6efa9",
+                      "title": "Exercise 2: 3D Volume MPR",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1015123,
+                      "key": "a78ccd41-6784-4662-9945-cbc2fa309943",
+                      "title": "Basic 3D DICOM Dataset EDA",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1015122,
+                      "key": "3addb776-ecbe-441f-9340-29f6318fed88",
+                      "title": "Exercise 3: 3D Dataset EDA and Curation",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1015127,
+                      "key": "061e3845-d138-4263-802b-8e793c3ac30a",
+                      "title": "Lesson Summary",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 1015196,
+                  "key": "bb342b71-8ca8-4e51-8309-6333cbea25a0",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "In this lesson, we cover the basics of building deep neural networks for 3D medical imaging (mostly segmentation & classification) and performance evaluation from a software and clinical perspective.",
+                  "title": "3D Medical Imaging - End-to-End Deep Learning Applications",
+                  "duration": 180,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": null,
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 1015193,
+                      "key": "52bbcc3f-f2da-4c37-89b4-32a535a2c776",
+                      "title": "Introduction",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1015182,
+                      "key": "2e72adaf-8969-416d-982e-b4a121027865",
+                      "title": "Classification",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1015190,
+                      "key": "470859d7-57a1-4964-a7d9-152814f4fa99",
+                      "title": "Methods for Feature Extraction",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1015194,
+                      "key": "53d65a85-ef3f-4b9e-87cb-fd45dc92c72a",
+                      "title": "Exercise 1: Fun with Convolutions",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1015186,
+                      "key": "356678a9-1503-4d58-9152-d0508e513706",
+                      "title": "Classification: Summary",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1015185,
+                      "key": "af19efea-b1b1-42e8-b141-570c165a73fb",
+                      "title": "Segmentation",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1015187,
+                      "key": "5d627dcc-e108-4df8-8ab6-5758549edde5",
+                      "title": "Segmentation Methods",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1015184,
+                      "key": "bb6b6edf-6752-4bc8-9d09-49260a461d92",
+                      "title": "Exercise 2: Segmentation Hands On",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1015195,
+                      "key": "0db6ae97-fed1-44e2-91d8-c33e7717d572",
+                      "title": "Creating Ground Truth For Segmentation",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1015188,
+                      "key": "488f4d20-ebf1-4c9c-a9fb-8bb5e94b1fe4",
+                      "title": "Evaluating Performance as Data Scientist",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1015192,
+                      "key": "4749a17e-cff2-4899-816a-484f702dbf97",
+                      "title": "Evaluating Performance as a Clinician",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1015191,
+                      "key": "e8a976d7-06f1-4cb1-b8ef-44a6f8dd4ce2",
+                      "title": "Exercise 3: Measuring Performance",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1015189,
+                      "key": "6dad7075-0a9f-4b11-8fa0-5bb04d1403bd",
+                      "title": "Lesson Summary and Looking Beyond",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 1015280,
+                  "key": "1d16d5f0-d96d-4e1d-b3bf-90fbf8590575",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "In this lesson, we'll talk about clinical networks, architecture, and AI deployment, tools and their use by data scientists and clinicians, as well as medical device regulation and data privacy.",
+                  "title": "Deploying AI Algorithms in Real World Scenarios",
+                  "duration": 240,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": null,
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 1015279,
+                      "key": "290697d3-ec68-4e6f-bce4-c3c03d122d10",
+                      "title": "Introduction",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1015272,
+                      "key": "4a87a2e4-bbae-40b9-af9b-d03ed82aec61",
+                      "title": "DICOM Networking: Introduction",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1015263,
+                      "key": "2f98c279-8565-4558-9780-4994b6bfbf2f",
+                      "title": "DICOM Networking: Services",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1015264,
+                      "key": "06e2c3ef-5c08-4120-9a1f-a7b4d6f2d341",
+                      "title": "Clinical Networks",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1015267,
+                      "key": "292622b2-8e03-49fd-bc9e-8eae61b52cd8",
+                      "title": "Requirements for Integration",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1015270,
+                      "key": "0068a68f-26fb-48d9-9f33-3281ef0e323d",
+                      "title": "Clinical Network Architecture Summary",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1020132,
+                      "key": "a7678cdd-b19d-4122-b3ed-615f0eaaeb64",
+                      "title": "Tools of the Trade - Intro",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1015265,
+                      "key": "aad3b3ac-a019-4022-8a52-81a3810e6481",
+                      "title": "Tools of the Trade - Scripting",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1015262,
+                      "key": "d644fb8e-6c6e-4d08-a9cc-c77199811533",
+                      "title": "Exercise 1: Scripting for DICOM Networks",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1015260,
+                      "key": "1894213e-a22c-44d1-a52d-3800f15019fe",
+                      "title": "Tools of the Trade - A Radiologists in Action",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1015275,
+                      "key": "14b6f283-2104-45ca-a574-49a8b2ed05c2",
+                      "title": "Tools of the Trade - Viewers - OHIF",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1015273,
+                      "key": "a4adbee6-1689-4715-a719-45ba59447647",
+                      "title": "Tools of the Trade - Viewers - 3D Slicer",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1015271,
+                      "key": "4110a79d-f593-4ea7-87d3-5b07639a1e63",
+                      "title": "Exercise 2: Creating Ground Truth with Slicer",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1015276,
+                      "key": "438369f0-6f1d-44a9-a1fd-8c3c37819cb5",
+                      "title": "Tools of the Trade Summary",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1015268,
+                      "key": "ab2560a1-0494-49aa-8006-a750c067a266",
+                      "title": "Regulatory Landscape: Medical Devices",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1015261,
+                      "key": "4c81d20c-90b1-4623-8bef-5ae2b0c0264b",
+                      "title": "Regulatory Landscape: FDA Process",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1015274,
+                      "key": "9be5e506-6cb2-4508-9d51-3789bd3a7535",
+                      "title": "Regulatory landscape: HIPAA, Anonymization",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1015269,
+                      "key": "dd7d1e67-6662-447c-a77f-6c4cc6676b1a",
+                      "title": "Exercise 3: Anonymization",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1015278,
+                      "key": "1f66436f-a657-42fd-96e3-81dfd54df7bb",
+                      "title": "Lesson Summary",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1015277,
+                      "key": "dd4df0a8-27c0-4dc3-9639-eb21b22338d9",
+                      "title": "The End and Final Project",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 966817,
+                  "key": "7a995cd8-87f2-4ec2-a334-46a483e9a9f7",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "In this project, you will curate a dataset of brain MRIs, train a segmentation on a CNN, and integrate this into a clinical network to quantify hippocampal volume for Alzheimer's progression. ",
+                  "title": "Hippocampal Volume Quantification in Alzheimer's Progression",
+                  "duration": 600,
+                  "is_public": true,
+                  "is_project_lesson": true,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2020/May/5eb7a05c_l5-noun-brain-modelling-2752894/l5-noun-brain-modelling-2752894.png",
+                    "width": 512,
+                    "height": 512
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": {
+                    "key": "0a5f1abb-85d6-41ff-aa4e-25b9a628f4f6",
+                    "version": "1.0.0",
+                    "locale": "en-us",
+                    "duration": 30240,
+                    "semantic_type": "Project",
+                    "title": "Hippocampal Volume Quantification in Alzheimer's Progression",
+                    "description": "## Project Summary\nYou have worked with 3D Medical images to curate a dataset of brain MRIs, trained a segmentation on a convolutional neural network, and integrated all of this into a clinical network to quantify hippocampal volume for Alzheimer's progression detection or monitoring. \n\n## Submission Checklist\nBefore you submit, check if the following have been completed:  \n**Note**: The checklist above won't save your checkmarks so do this right before you plan to submit. \n\n| | |\n|-------------------------|--------------------------------------------------------------------------------------------------------------|\n| <input type=\"checkbox\"> | Everything in the [Rubric](https://review.udacity.com/#!/rubrics/2788/view) is complete. |\n| |The following are in **Section 1**'s `/section1/out/` folder/directory. |\n| <input type=\"checkbox\"> | Curated dataset with labels, as collection of NIFTI files.|\n| <input type=\"checkbox\"> | A Python Notebook or Python File with the results of your Exploratory Data Analysis.|\n| | The following are in **Section 2**'s `/section2/out/` folder/directory. |\n| <input type=\"checkbox\"> | Functional code that trains the segmentation model.|\n| <input type=\"checkbox\"> |Test report with Dice scores on test set (can be json file). |\n| <input type=\"checkbox\"> |Screenshots from your Tensorboard (or other visualization engine) output.|\n| <input type=\"checkbox\"> |Your trained model PyTorch parameter file (model.pth)|\n|| The following are in **Section 3**'s `/section3/out/` folder/directory. |\n| <input type=\"checkbox\"> | Code that runs inference on a DICOM volume and produces a DICOM report.|\n| <input type=\"checkbox\"> | A report.dcm file with a sample report.|\n| <input type=\"checkbox\"> | Screenshots of your report shown in the OHIF viewer. |\n| <input type=\"checkbox\"> | 1-2 page Validation Plan.|\n| | | |\n\n## Ready to Submit?\nOnce you have all the items above completed, you can click the submit button. Follow the directions to submit your project in one of the following ways:\n* Submit a zip file \n* Submit a Github repo\n\n**Note**: If you used the Workspace/Online option, you can download the folder or use your Github as a submission.",
+                    "is_public": true,
+                    "summary": null,
+                    "forum_path": "",
+                    "rubric_id": "2788",
+                    "terminal_project_id": null,
+                    "resources": null,
+                    "image": null
+                  },
+                  "concepts": [
+                    {
+                      "id": 968477,
+                      "key": "439f2d99-dc60-463a-955a-f7f180e783f9",
+                      "title": "Project Overview",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 970121,
+                      "key": "6d708d89-88c9-45be-9d01-dceb7171a91e",
+                      "title": "Section 1: Curating a Dataset of Brain MRIs",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1003639,
+                      "key": "7ac41333-ad64-43e8-98c3-2bae9572c4e6",
+                      "title": "Workspace for Section 1",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 970122,
+                      "key": "40e42897-cdc5-4608-8d74-777a2d0874c8",
+                      "title": "Section 2: Training a Segmentation CNN",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 966819,
+                      "key": "910ef641-ddea-42e5-bf97-26f19b0870d0",
+                      "title": "Workspace for Section 2",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 970123,
+                      "key": "1a98af0e-f5d8-4791-b5e2-6ca26795a87e",
+                      "title": "Section 3: Integrating into a Clinical Network",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 966822,
+                      "key": "8db8a89e-48e1-461c-b412-3131fbe214d5",
+                      "title": "Workspace  for Section 3",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 968849,
+                      "key": "44a82c77-ed18-468f-8c9b-68b00639dae9",
+                      "title": "Closing Remarks",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 1009561,
+          "key": "ab2c5a8c-0e6e-4c4d-9fa8-4926db7f8e3c",
+          "title": "Applying AI to EHR Data",
+          "semantic_type": "Part",
+          "is_public": true,
+          "version": "1.0.0",
+          "locale": "en-us",
+          "summary": "",
+          "part_type": "Core",
+          "locked_reason": "not_locked",
+          "locked_until": null,
+          "content_ready_date_ms": 1589266800000,
+          "resources": null,
+          "image": null,
+          "specialization": null,
+          "modules": [
+            {
+              "id": 970021,
+              "key": "1644460b-a828-4443-ad8c-bbcca3151a30",
+              "title": "Applying AI to EHR Data",
+              "semantic_type": "Module",
+              "is_public": true,
+              "version": "1.0.0",
+              "locale": "en-us",
+              "is_project_module": null,
+              "forum_path": "",
+              "lessons": [
+                {
+                  "id": 1004960,
+                  "key": "9c892405-c09a-4919-88e2-c772ddac8fe6",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "Introduction to the EHR Data course and the instructor.",
+                  "title": "Applying AI to EHR Data Introduction",
+                  "duration": 30,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2020/May/5eb9a76c_noun-electronic-health-record-2755456-1/noun-electronic-health-record-2755456-1.png",
+                    "width": 512,
+                    "height": 512
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 1009413,
+                      "key": "53ca67da-380d-41a7-9baf-b7fdcb92781a",
+                      "title": "Introduction to AI and EHR",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1013211,
+                      "key": "21858a4e-f471-4e8d-8624-649b6899a577",
+                      "title": "Historical Context of AI in EHR",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1013215,
+                      "key": "b83093f7-8b3d-40f6-afb9-85f555cfe215",
+                      "title": "Landscape of EHR Data",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1013219,
+                      "key": "9601531f-d773-4c26-8d30-9e649de467b8",
+                      "title": "AI and EHR Course Preview",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1013223,
+                      "key": "9b040cbf-2ccc-44e7-85e3-8bf5f06389fb",
+                      "title": "Relevant Tools for AI and EHR",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1013227,
+                      "key": "c49c9f05-9824-49ef-bb02-52c006ea975e",
+                      "title": "Course Project Preview",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1013721,
+                      "key": "4aac5415-70d4-44da-836f-676c64025676",
+                      "title": "Course Introduction Wrap-up",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 1004961,
+                  "key": "eaf98312-bcfb-473d-abf1-0d78164a561f",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "Learn about the importance of data security and the different standards that apply to EHR. Also, learn about analyzing EHR data.",
+                  "title": "EHR Data Security and Analysis",
+                  "duration": 240,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2018/April/5adeb180_womanml/womanml.png",
+                    "width": 500,
+                    "height": 500
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 1004968,
+                      "key": "9de53356-83ae-4052-bb8e-24604bab87fd",
+                      "title": "EHR Data Security and Analysis Overview",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1004986,
+                      "key": "964b75d9-2525-464d-898a-772dc684a31d",
+                      "title": "Importance of Data Privacy and Security",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1004993,
+                      "key": "ea8a3015-ff85-43e1-a84d-c1bf378f1d30",
+                      "title": "Key Healthcare Data Security and Privacy Standards",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1005000,
+                      "key": "72ed8303-9dc2-40a2-affc-fef2a546c0ee",
+                      "title": "Storing and Accessing PHI Data",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1005006,
+                      "key": "12bf96af-190c-487a-b1f2-53321444a013",
+                      "title": "PII Data Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1005009,
+                      "key": "83e54a91-ca83-495a-8a8d-364990a1cd9f",
+                      "title": "Importance of EDA",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1005020,
+                      "key": "c5ea11bb-6e40-4df8-b2f5-74093527738a",
+                      "title": "Dataset Schema Analysis",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1005026,
+                      "key": "4081fe09-1941-4b29-97eb-9e4ac1c8bb61",
+                      "title": "Value Distributions",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1005043,
+                      "key": "323ee5c9-dd14-47e0-aeb0-51f90ee82fc4",
+                      "title": "Missing Values and Outliers",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1009416,
+                      "key": "6e0473fd-2e20-4d42-bb1c-8dff00a97452",
+                      "title": "Analyzing Dataset for High Cardinality",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1005032,
+                      "key": "92bc4774-8436-431d-8f92-c66c16977971",
+                      "title": "Analyze Dataset Exercise",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1010817,
+                      "key": "c7ed972c-79fa-46ae-b292-5bcde57d4411",
+                      "title": "EDA Exercise Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1009420,
+                      "key": "2eb766af-8240-4bfa-9945-b5f53cf22c31",
+                      "title": "Demographic Analysis",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1009424,
+                      "key": "ddcb30c7-ab10-4cfe-b2c0-da41a9ff3650",
+                      "title": "Compare Demographics Exercise",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1009425,
+                      "key": "0aa1fe9a-cbb1-4164-b80f-f41b664c76a3",
+                      "title": "Exercise Compare Demographics Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1009427,
+                      "key": "d01eb930-3dd5-46a4-ac45-fa86f46b99b9",
+                      "title": "EHR Data Security and Analysis Lesson Recap",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 1004962,
+                  "key": "76f4c48c-a664-4750-8753-5811c854d02a",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "In this lesson you will learn how to work with different EHR codes and how to map them properly to records.",
+                  "title": "EHR Code Sets",
+                  "duration": 180,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2018/September/5ba9c622_autoencoders/autoencoders.jpg",
+                    "width": 500,
+                    "height": 500
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 1005431,
+                      "key": "efcefe17-57d3-40dc-9820-89902489db95",
+                      "title": "EHR Code Sets Overview",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1009645,
+                      "key": "f071590a-6eff-4b14-aa4d-c9c66a773363",
+                      "title": "Codes Sets Background",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1005436,
+                      "key": "66c28cbc-955d-4e50-9a78-6d06193e3d36",
+                      "title": "Diagnosis Codes Part 1",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1009657,
+                      "key": "3277cb18-1de1-49c3-b42e-3287aae3fde0",
+                      "title": "Diagnosis Codes Part 2",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1009634,
+                      "key": "dfb018f3-a0b3-48f0-8aeb-9e6c34fa913a",
+                      "title": "Grouping codes Walkthrough",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1009433,
+                      "key": "606729e5-b4a0-43fd-9766-62bfae1b991d",
+                      "title": "Diagnosis Code Grouping Exercise",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1009434,
+                      "key": "b8de2ac3-1833-4a7b-9775-bbc7a2e32571",
+                      "title": "Diagnosis Code Grouping Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1005445,
+                      "key": "9e9ef750-5450-48f6-8f34-1870cd460225",
+                      "title": "Procedure Codes",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1009436,
+                      "key": "c10ce7eb-6856-43ec-bafa-e48a1fd0c8ef",
+                      "title": "Procedure Code Grouping Exercise",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1009437,
+                      "key": "77df752c-3206-499a-a6e9-51dc6b112420",
+                      "title": "Procedure Code Grouping Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1005451,
+                      "key": "5d48e35a-a785-4642-bad7-631cc878ce9f",
+                      "title": "Medication Codes",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1005456,
+                      "key": "2e1be139-4d7d-4fce-ac3a-9f3b93aadb30",
+                      "title": "Grouping/Categorizing Systems",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1005463,
+                      "key": "50877dd7-1a63-4cbe-aa0d-ee8f49936dc8",
+                      "title": "Group or Categorize Procedures Exercise",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1009438,
+                      "key": "8c3840cb-27ce-4aaf-bf15-946bccf0b454",
+                      "title": "Group or Categorize Procedures Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1009440,
+                      "key": "36105657-a626-43d7-bed7-2c6fe2fa5f2d",
+                      "title": "EHR Code Sets Recap",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 1004963,
+                  "key": "e8ba701a-3efd-4d33-8e73-cbb55ab9a311",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "In this lesson, you'll gain skills in feature engineering and transformation of EHR.",
+                  "title": "EHR Transformations & Feature Engineering ",
+                  "duration": 180,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2018/May/5b062140_4-5-linear-transformations-and-matrices1x/4-5-linear-transformations-and-matrices1x.png",
+                    "width": 500,
+                    "height": 500
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 1005473,
+                      "key": "3306dae9-fbca-4e06-a00c-49bcdf9e6099",
+                      "title": "EHR Transformations & Feature Engineering Overview",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1005478,
+                      "key": "cfa9ae5d-50fc-45e0-9145-b158a80e6717",
+                      "title": "EHR Dataset Levels",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1005744,
+                      "key": "906a7254-1ef6-47c9-8442-a9982addf173",
+                      "title": "Encounter Representation",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1005759,
+                      "key": "c33cf4f5-e2f0-44aa-8c12-db17b80cf289",
+                      "title": "Longitudinal Representation",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1005763,
+                      "key": "840e71dd-7d9a-4800-a4f3-e366fdf16da5",
+                      "title": "How to Convert to Longitudinal Level",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1009449,
+                      "key": "4b95324f-95b2-4025-8e6b-8452122ed34d",
+                      "title": "Select Last Encounter Exercise",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1005765,
+                      "key": "92e54b18-2368-42d8-9ef5-5e3e6c3e9474",
+                      "title": "Select Last Encounter Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1005767,
+                      "key": "0054fbd5-5779-4a32-b10d-5fb066203aee",
+                      "title": "Dataset Splitting Without Data Leakage",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1009451,
+                      "key": "f5da4566-116d-40b6-89ab-19cfba7d7f04",
+                      "title": "How to Split Dataset at Patient Level",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1005770,
+                      "key": "5fe6adcf-67ed-4f6a-84d2-00042fc244c5",
+                      "title": "Data Splitting Exercise",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1009455,
+                      "key": "1e78d77d-4021-4f5e-bf3a-69d5d68b2a4e",
+                      "title": "Data Splitting Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1005772,
+                      "key": "c5ee1aa2-9532-468c-a214-fd626c851744",
+                      "title": "ETL with TensorFlow Dataset API",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1009457,
+                      "key": "94e8379b-64a9-4198-9975-90d0fd0d3d75",
+                      "title": "Numerical Features & Feature Column API",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1005786,
+                      "key": "569a81f9-6f8f-4683-87de-9c4cdc69c0f1",
+                      "title": "Numerical Feature Column API Exercise",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1005787,
+                      "key": "6298c51b-6734-4ded-85ff-d17d0efad783",
+                      "title": "Numerical Features Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1005789,
+                      "key": "c96753b9-ca70-453f-a155-fd72b7f7cbcf",
+                      "title": "Categorical Features & Feature Column API",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1009461,
+                      "key": "78b23140-9b6f-49d4-add5-f2490380be0d",
+                      "title": "Categorical Features Exercise",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1005793,
+                      "key": "0c2dc2b1-36ca-4623-b791-0fdf24031128",
+                      "title": "Categorical Features with Feature Column API Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1005795,
+                      "key": "982f9ac0-04b6-4fcd-98ab-204c8c636844",
+                      "title": "Transformations and Feature Engineering Recap",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 1004964,
+                  "key": "9f2a59cc-ed42-475d-abe6-fdb731927eff",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "In this final lesson, you'll be putting all of your skills together to build, evaluate and interpret ML models for Bias and Uncertainty. ",
+                  "title": "Building, Evaluating and Interpreting Models",
+                  "duration": 180,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2018/September/5ba90a64_model-evaluation-and-validation/model-evaluation-and-validation.jpg",
+                    "width": 1000,
+                    "height": 1000
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 1005797,
+                      "key": "097b1cd3-89ae-49f1-b1f0-723d438b9cbf",
+                      "title": "Building, Evaluating & Interpreting Models Overview",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1005799,
+                      "key": "c3d65858-313d-45b0-9ba1-97b55b19098c",
+                      "title": "Tensorflow Regression Model with DenseFeatures",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1009466,
+                      "key": "6d861991-ee4b-4cb0-a7eb-04992dbe08b0",
+                      "title": "TF DenseFeatures Walkthrough",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1005803,
+                      "key": "933a24af-3859-4a7f-b79a-1d227798758c",
+                      "title": "Common EHR Model Evaluation Metrics",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1005807,
+                      "key": "335f7168-8991-4079-abcc-2dbc6edc4497",
+                      "title": "Common EHR Model Evaluation Metrics Exercise",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1005808,
+                      "key": "d0a2f171-a8b0-4251-b899-55d18011bf18",
+                      "title": "Common EHR Model Evaluation Metrics Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1005820,
+                      "key": "4c00ff99-adf2-47f7-8d2d-e77b2c5ccfe4",
+                      "title": "Demographic Bias Analysis",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1009469,
+                      "key": "7eca53fd-67fe-4290-bc58-aacfbc0e16e0",
+                      "title": "Demographic Bias Analysis Walkthrough",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1005825,
+                      "key": "73f8b35a-878a-416c-b1ff-f4b3dbea0372",
+                      "title": "Demographic Bias Analysis Exercise",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1005826,
+                      "key": "391786dd-e922-4648-86a4-01e0749811f0",
+                      "title": "Demographic Bias Analysis Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1005828,
+                      "key": "8eb25552-df38-44ee-b290-444c13d9cb7c",
+                      "title": "Uncertainty Estimation",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1009472,
+                      "key": "f0871be2-0a4a-4897-b4c8-ce062f85b019",
+                      "title": "Train Uncertainty Estimation Model Walkthrough",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1005833,
+                      "key": "478ee8ee-a186-4265-9078-099cd326666a",
+                      "title": "Uncertainty Estimation Exercise",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1005834,
+                      "key": "ed083d90-537b-4e0d-a052-8f947045a3a4",
+                      "title": "Uncertainty Estimation Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1005810,
+                      "key": "41954345-44f0-4f8e-b3a4-52fcb38e823a",
+                      "title": "Model Interpretability with Shapley Values",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1005837,
+                      "key": "ffafb861-1f0b-4510-88b5-fa07c9f742cc",
+                      "title": "Building Models Recap",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1005838,
+                      "key": "c5b2e4ac-902f-4b9e-9d6f-0889fddcf2b1",
+                      "title": "AI and EHR Recap",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 970022,
+                  "key": "ba962d3d-be73-40fd-8b53-f474e530aec0",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "In this project students will use what they learn in the classroom to apply AI in healthcare for patient data.",
+                  "title": "Project: Patient Selection for Diabetes Drug Testing",
+                  "duration": 300,
+                  "is_public": true,
+                  "is_project_lesson": true,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2018/January/5a5e46b7_machine-learning-capstone-project-lesson-image/machine-learning-capstone-project-lesson-image.png",
+                    "width": 2084,
+                    "height": 2084
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": {
+                    "key": "5a595df0-2bf6-4e67-97f9-7bf9b9ea4e92",
+                    "version": "1.0.0",
+                    "locale": "en-us",
+                    "duration": 30240,
+                    "semantic_type": "Project",
+                    "title": "Patient Selection for Diabetes Drug Testing",
+                    "description": "# Project Submission\nWhen submitting this project, make sure to run all the cells before saving the notebook. Save the notebook file as \"student_project_submission.ipynb\" and save another copy as an HTML file by clicking \"File\" -> \"Download as..\"->\"html\". Include the \"utils.py\" and \"student_utils.py\" files in your submission. The student_utils.py should be where you put most of your code that you write and the summary and text explanations should be written inline in the notebook. Once you download these files, compress them into one zip file for submission in the Udacity Classroom.\n\n### Environment Setup\nFor step by step instructions on creating your environment, please go to https://github.com/udacity/nd320-c1-emr-data-starter/blob/master/README.md\n\nOnce you have completed your project please\n1. Make sure the project meets all of the specifications on the [Project Rubric](https://review.udacity.com/#!/rubrics/2795/view)\n2. If you are working in directly in our workspaces, you can submit your project directly there \n3. If you are working in your own environment or if you have issues submitting directly in the workspace, please zip up your flies and submit them that way.\n\nBest of Luck on the project. Remember that you can use the resources provided in the student hub or talk with you mentor if you have questions too.",
+                    "is_public": true,
+                    "summary": null,
+                    "forum_path": "",
+                    "rubric_id": "2795",
+                    "terminal_project_id": null,
+                    "resources": null,
+                    "image": null
+                  },
+                  "concepts": [
+                    {
+                      "id": 970036,
+                      "key": "64fe4f0d-4fc6-48a1-a71d-ff9248f845c7",
+                      "title": "Patient Selection for Diabetes Drug Testing Project",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 970034,
+                      "key": "3bb4d90e-88ab-4f52-ab0d-016e8d310495",
+                      "title": "Project Instructions",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 970038,
+                      "key": "cce988cf-b0e1-4fbb-90fb-fdcb771d6e17",
+                      "title": "Patient Selection for Diabetes Drug Testing Workspace",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 968876,
+          "key": "f78c2e79-72c4-4445-9329-00be9f30076e",
+          "title": "Applying AI to Wearable Device Data",
+          "semantic_type": "Part",
+          "is_public": true,
+          "version": "1.0.0",
+          "locale": "en-us",
+          "summary": "",
+          "part_type": "Core",
+          "locked_reason": "not_locked",
+          "locked_until": null,
+          "content_ready_date_ms": 1589266800000,
+          "resources": null,
+          "image": null,
+          "specialization": null,
+          "modules": [
+            {
+              "id": 956032,
+              "key": "b337aa97-ba0a-4a57-8ee6-e15ae15fc987",
+              "title": "Wearable Data",
+              "semantic_type": "Module",
+              "is_public": true,
+              "version": "1.0.0",
+              "locale": "en-us",
+              "is_project_module": null,
+              "forum_path": "",
+              "lessons": [
+                {
+                  "id": 970119,
+                  "key": "4417cb06-0a1d-4dad-9418-2e615308b2f6",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "We’ll cover what wearables are and the scope of the class. Learn who your instructor is and his thoughts on the promise and caveats of wearables in medical research and decision making.",
+                  "title": "Introduction to Wearable Data",
+                  "duration": 45,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2020/May/5eb8ee68_l0-noun-wearable-device-3189358/l0-noun-wearable-device-3189358.png",
+                    "width": 512,
+                    "height": 512
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 970111,
+                      "key": "9b094b86-e348-49ef-856b-9bd030ffd939",
+                      "title": "Introduction",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 970118,
+                      "key": "f3e3a7b9-ae01-4cff-a970-969c5894f727",
+                      "title": "Course Outline",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 970112,
+                      "key": "154abf9a-5bc2-4d22-af03-9b31b83bf987",
+                      "title": "Apple Heart Study",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 970113,
+                      "key": "fd2dfaee-57d9-43a6-8791-87603e962db7",
+                      "title": "Apple Heart Study Interpretation",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 970117,
+                      "key": "8d29211f-c07b-4b52-8b5c-a26acd830f18",
+                      "title": "Developer Workflow",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 970116,
+                      "key": "025b900d-5afd-4a24-9781-928424781851",
+                      "title": "Summary",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 970517,
+                  "key": "27ab2378-4a93-47aa-8740-dc30fc7ced40",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "A brief tour through sampling theory, signal processing, the Fourier transform, and other related topics. We’ll briefly cover some plotting and visualization techniques here as well.",
+                  "title": "Intro to Digital Sampling & Signal Processing",
+                  "duration": 180,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2020/May/5eb8ee69_l1-noun-didgital-signal-processing-2820940/l1-noun-didgital-signal-processing-2820940.png",
+                    "width": 512,
+                    "height": 512
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 970504,
+                      "key": "c7d2f97a-2f59-41c7-8933-faab2a3c6b7d",
+                      "title": "Introduction",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 970503,
+                      "key": "e1e88d78-b8f6-4742-909c-50da547c5566",
+                      "title": "Refresher on Signals",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 970516,
+                      "key": "26df90b7-2f41-423f-b945-b7c79e2b2b94",
+                      "title": "Sampling Analog Signals",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 970513,
+                      "key": "1b518aae-4018-4e16-beb2-2397f4d675f6",
+                      "title": "Plotting Signals In Time-domain",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1020203,
+                      "key": "894f5ed5-f5e9-44ed-af22-f29b2a7d4f5e",
+                      "title": "Time-domain Plotting Continued",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 970480,
+                      "key": "f86e9029-4b56-4e63-943a-8e3112de35ce",
+                      "title": "Exercise 1: Plotting",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 970509,
+                      "key": "8569ca86-8527-4c08-a230-44f9c7a10713",
+                      "title": "Exercise 1: Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 970507,
+                      "key": "614cc1c7-6dc2-41b7-88ef-861ad360df4c",
+                      "title": "Interpolation",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1020201,
+                      "key": "099765b9-c872-4ac0-97aa-2ed8c5c310cd",
+                      "title": "Interpolation in Review",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 970456,
+                      "key": "4d72105c-f51c-49d9-afed-42e561173b0f",
+                      "title": "Exercise 2: Interpolation",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 970505,
+                      "key": "32881ad2-140a-432d-8acd-a4354d57a2a1",
+                      "title": "Exercise 2: Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 970511,
+                      "key": "78f5f581-922b-46ca-96fb-40c3c907e840",
+                      "title": "Fourier Transform",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 970510,
+                      "key": "d5c722de-f476-44e4-b2d7-b199a42106f0",
+                      "title": "Fourier Transform In Practice",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1020202,
+                      "key": "ac2a6ff9-3312-4f78-962c-f1cef94d8206",
+                      "title": "Fourier Transform in Review",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 970462,
+                      "key": "10e8edfe-a924-4552-bb3c-f20b1947569d",
+                      "title": "Exercise 3: The Fourier Transform",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 970502,
+                      "key": "3344c442-c7ec-41cb-81be-e2a7785428c0",
+                      "title": "Exercise 3: Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 970508,
+                      "key": "b336d6a9-300d-4a55-92ba-be7ca1a377ba",
+                      "title": "Plotting Signals in Frequency Domain",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 970478,
+                      "key": "565b64aa-561b-4a10-82b6-6a332a5d3432",
+                      "title": "Exercise 4: Spectrograms",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 970514,
+                      "key": "b5ef49cd-7777-403e-9b84-734f778bc8c1",
+                      "title": "Exercise 4: Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 970506,
+                      "key": "9ec36426-6512-4d79-9830-02d1bab95b53",
+                      "title": "Harmonics",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 970512,
+                      "key": "5bdb3c75-4c8d-4e22-a1cd-b47a565a2c5d",
+                      "title": "Recap: Intro to Digital Sampling & Signal Processing",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 980567,
+                  "key": "d7a821f4-d64c-402e-80b7-b293656119a8",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "We cover the basics of the accelerometer, the PPG sensor, and the ECG sensor, as well as what these signals look like in typical environments and the types of noise that we will encounter.",
+                  "title": "Introduction to Sensors",
+                  "duration": 150,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2020/May/5eb8ee6a_l2-noun-wearable-tracker-2725326/l2-noun-wearable-tracker-2725326.png",
+                    "width": 512,
+                    "height": 512
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 980539,
+                      "key": "5bc40cc9-b7e9-4fa2-bb91-b49376f945ff",
+                      "title": "Introduction to Sensors",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 980543,
+                      "key": "03257003-8531-4961-b6d2-6707be4d6beb",
+                      "title": "Inertial Measurement Unit",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 980555,
+                      "key": "917364ba-762e-4f05-bb12-82e16c2092a3",
+                      "title": "Accelerometer Deep Dive",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 980512,
+                      "key": "6420e48b-59b5-4a96-9784-d891162c0006",
+                      "title": "Exercise 1: Step Cadence",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 980541,
+                      "key": "a7c67df0-64b2-4c1e-8504-03e279727580",
+                      "title": "Exercise 1: Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 980566,
+                      "key": "7ab1b6d5-a4e8-4c29-b36d-e3411c174959",
+                      "title": "PPG Sensor",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 980482,
+                      "key": "2a3a58b8-682b-48b0-8d41-8bd0247a34a6",
+                      "title": "Exercise 2: PPG Peaks",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 980538,
+                      "key": "38914898-b43a-4bad-8b63-c46a9edab987",
+                      "title": "Exercise 2: Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1006863,
+                      "key": "3e41ac7a-3ff9-42f7-8594-e15376d834b9",
+                      "title": "PPG SNR",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 980514,
+                      "key": "595c43a9-c3a6-4888-b156-1a88c5200a49",
+                      "title": "Exercise 3: PPG SNR",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 980540,
+                      "key": "677ab7d3-4f32-4090-b939-be5f969a69ee",
+                      "title": "Exercise 3: Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 980548,
+                      "key": "b8d60b91-ae4b-488b-8379-99e6fe33f2b5",
+                      "title": "ECG Sensor",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 980542,
+                      "key": "16198f5f-511e-41a1-9696-d92f7dacf4df",
+                      "title": "Apple Heart Study - Revisited",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 980549,
+                      "key": "0a947518-b664-4981-89ae-3ab1b8a93a0d",
+                      "title": "Recap: Introduction to Sensors",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 1008010,
+                  "key": "889d707f-7014-4216-ac94-ab3c285ad0e0",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "Build an activity classifier using a wrist-worn accelerometer!",
+                  "title": "Activity Classification",
+                  "duration": 120,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2020/May/5eb8ee6d_l3-activity-classifiery/l3-activity-classifiery.png",
+                    "width": 657,
+                    "height": 657
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 1007998,
+                      "key": "b5a57872-8f44-4eaa-add9-2e173356ae37",
+                      "title": "Intro to Activity Classifiers",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007997,
+                      "key": "39caeac4-d9d2-4f3b-a48c-bf8ef6986761",
+                      "title": "Data Exploration",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007953,
+                      "key": "91b74cd3-f85a-4e37-a0fc-4b75f1a14617",
+                      "title": "Exercise 1: Data Exploration",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007996,
+                      "key": "391a97cb-9a4f-490e-a9c9-554e557ba455",
+                      "title": "Exercise 1: Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1008003,
+                      "key": "0e80aaf9-4d8f-428d-a4c7-a7e5934af564",
+                      "title": "Feature Extraction I",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1007975,
+                      "key": "935b40e0-d656-4f82-acd7-c2dd6a05e54f",
+                      "title": "Exercise 2: Feature Extraction",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1008001,
+                      "key": "dc0aa8f9-67a2-431c-9a05-05f22ed30592",
+                      "title": "Feature Extraction Continued...",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1008009,
+                      "key": "1279d063-a181-43fb-a842-0d00a7e33bca",
+                      "title": "Activity Classification",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1008008,
+                      "key": "2a1cec52-d811-4480-8cca-756208d23db2",
+                      "title": "Hyperparameter Tuning & Regularization",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1020222,
+                      "key": "425e421e-feea-4479-84ee-9287fe59de70",
+                      "title": "Cross-Validation and Feature Importance",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1020223,
+                      "key": "0584dc61-7c6a-4794-9d96-3250e4702da6",
+                      "title": "Hyperparameter Tuning in Review",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1008005,
+                      "key": "4128c33e-47f2-4719-a33b-8a04ea34e347",
+                      "title": "Exercise 3: A Quirk in the Dataset",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1008000,
+                      "key": "3ba95e94-6bdc-4f2e-8a0f-35a163bc4650",
+                      "title": "Exercise 3: Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1008002,
+                      "key": "d740edbe-ebaf-45b4-b1c2-f87b19c5de35",
+                      "title": "Recap: Activity Classification",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 1008236,
+                  "key": "048a9529-ee90-4e0f-bf00-413bb3e18983",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "We deep dive into a fundamental algorithm for ECG processing and use that as the basis for an arrhythmia detection algorithm.",
+                  "title": "ECG Signal Processing",
+                  "duration": 150,
+                  "is_public": true,
+                  "is_project_lesson": false,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2020/May/5eb8ee6e_l4-noun-ecg-2441836/l4-noun-ecg-2441836.png",
+                    "width": 512,
+                    "height": 512
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": null,
+                  "concepts": [
+                    {
+                      "id": 1008227,
+                      "key": "3a10a13f-d928-433a-a654-6b54a821c9f1",
+                      "title": "Intro to ECG Signal Processing",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1008226,
+                      "key": "92cb3182-7877-420b-b916-6f96347b5c2c",
+                      "title": "Heart Physiology",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1020256,
+                      "key": "669aae61-507b-4841-b7ce-ac23428fc781",
+                      "title": "Heart Physiology in Review",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1008230,
+                      "key": "2d1e49c3-de06-45af-9b4c-bca4cc6ec751",
+                      "title": "Pan-Tompkins QRS Detection",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1020255,
+                      "key": "a6049bd5-8931-4314-a171-7e0b255a453d",
+                      "title": "Pan-Tompkins In Code",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1008190,
+                      "key": "cbb375f6-7786-4355-aea2-0597f405eb3b",
+                      "title": "Exercise 1: Extend the Pan-Tompkins Algorithm",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1008225,
+                      "key": "49b86dcf-298b-4764-b5e3-27796b96ef2e",
+                      "title": "Exercise 1: Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1008232,
+                      "key": "e9688285-adfe-4a03-9b13-a89aa07771f9",
+                      "title": "Atrial Fibrillation",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1008231,
+                      "key": "49d930f8-a55e-43ba-b409-8d7bdacabbbd",
+                      "title": "Arrhythmia Detection: Dataset",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1008228,
+                      "key": "bdadac55-732e-4b63-a02b-30bafd313d95",
+                      "title": "Arrhythmia Detection: Features",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1008214,
+                      "key": "78a2a643-416b-42dd-a094-0cedcbd41083",
+                      "title": "Exercise 2: Arrhythmia Features",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1008229,
+                      "key": "5fc15841-dcfc-4539-a065-ad17aae82d0d",
+                      "title": "Exercise 2: Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1008189,
+                      "key": "ef396671-2e09-4900-bcff-136bc5bbf7db",
+                      "title": "Exercise 3: Atrial Fibrillation",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1008233,
+                      "key": "0d2e765b-9e70-4dbf-8040-1f0f2fe85825",
+                      "title": "Exercise 3: Solution",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1008234,
+                      "key": "245fbc3b-f223-46f0-89d0-8f8d0abe4dea",
+                      "title": "Recap: ECG Signal Processing",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 1008235,
+                      "key": "5b70fa80-af6e-42d7-90be-7be271fe4478",
+                      "title": "Course Recap",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                },
+                {
+                  "id": 956033,
+                  "key": "f545e228-b2c3-4e2e-afb2-08890cddc494",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "In this project, you will create a pulse rate algorithm that takes into account activity and apply this algorithm to a new data set to determine clinically significant features. ",
+                  "title": "Motion Compensated Pulse Rate Estimation",
+                  "duration": 300,
+                  "is_public": true,
+                  "is_project_lesson": true,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": {
+                    "url": "https://video.udacity-data.com/topher/2020/May/5eb8ee6e_p-noun-heartbeat-1759922/p-noun-heartbeat-1759922.png",
+                    "width": 512,
+                    "height": 512
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": {
+                    "key": "427edacc-8019-4db8-b818-8b1bb4591486",
+                    "version": "1.0.0",
+                    "locale": "en-us",
+                    "duration": 30240,
+                    "semantic_type": "Project",
+                    "title": "Motion Compensated Pulse Rate Estimation",
+                    "description": "## Project Summary\nBuild a pulse rate algorithm from the given dataset containing PPG and IMU signals that is robust to motion and \"confidence metric\" that estimates the accuracy of their pulse rate estimate. Then apply your algorithm to a new dataset to find more clinically meaningful features.\n\n## Submission Checklist\nBefore you submit, check if the following have been completed:  \n**Note**: The checklist above won't save your checkmarks so do this right before you plan to submit. \n\n| | |\n|-------------------------|--------------------------------------------------------------------------------------------------------------|\n| <input type=\"checkbox\"> | Everything in the [Rubric](https://review.udacity.com/#!/rubrics/2723/view) is complete. |\n| <input type=\"checkbox\"> | Algorithm & Documentation for **Part 1: Pulse Rate Algorithm** <br> `pulse_rate.ipynb` |\n| <input type=\"checkbox\"> | Passing the Unit Test <br>`unit_test.ipynb`  |\n| <input type=\"checkbox\"> | Screenshot of the Unit Test passing with error metric <br> `passed.png`  |\n| <input type=\"checkbox\"> | Algorithm & Documentation for **Part 2: Clinical Application** <br> `clinical_app.ipynb`|\n| <input type=\"checkbox\"> | If you choose to work the project on your local <br> machine,  make sure you have **removed** all the datasets. |\n| | | |\n\n## Ready to Submit?\nOnce you have all the items above completed, you can click the submit button. Follow the directions to submit your project in one of the following ways:\n* Submit a zip file \n* Submit a Github repo\n\n**Note**: If you used the Workspace/Online option, you can download the folder or use your Github as a submission.",
+                    "is_public": true,
+                    "summary": null,
+                    "forum_path": "",
+                    "rubric_id": "2723",
+                    "terminal_project_id": null,
+                    "resources": null,
+                    "image": null
+                  },
+                  "concepts": [
+                    {
+                      "id": 958625,
+                      "key": "4444565d-6a87-4a40-a657-f00cc8f18278",
+                      "title": "Project Overview",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 958626,
+                      "key": "79839835-39f1-4eee-987c-5a413e181272",
+                      "title": "Part 1: Overview & Instructions",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 967580,
+                      "key": "fafd1a40-50bb-46fc-bbb4-ee6dbe09f538",
+                      "title": "Pulse Rate Algorithm",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 956925,
+                      "key": "a23e211f-646a-4387-be44-212381427315",
+                      "title": "Test Your Algorithm",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 969326,
+                      "key": "29e484c9-e03f-4160-b0e1-464948dd0b66",
+                      "title": "Part 2: Overview & Instructions",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 967578,
+                      "key": "2e70071e-3666-4182-9241-04611abff86e",
+                      "title": "Clinical Application",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 969328,
+                      "key": "8ff91d7b-df2a-437b-8dfb-dfa9ec8ab7dc",
+                      "title": "Conclusion",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": 1020242,
+              "key": "57e3fc1a-40ca-4fbf-825e-dd3c82d52343",
+              "title": "Career Services",
+              "semantic_type": "Module",
+              "is_public": true,
+              "version": "1.0.0",
+              "locale": "en-us",
+              "is_project_module": null,
+              "forum_path": "",
+              "lessons": [
+                {
+                  "id": 631083,
+                  "key": "20707806-8f14-420f-b613-4196199a88c1",
+                  "version": "1.0.0",
+                  "locale": "en-us",
+                  "semantic_type": "Lesson",
+                  "summary": "Find your next job or connect with industry peers on LinkedIn. Ensure your profile attracts relevant leads that will grow your professional network.",
+                  "title": "Take 30 Min to Improve your LinkedIn",
+                  "duration": 30,
+                  "is_public": true,
+                  "is_project_lesson": true,
+                  "display_workspace_project_only": false,
+                  "lesson_type": "Classroom",
+                  "image": {
+                    "url": "https://s3.amazonaws.com/video.udacity-data.com/topher/2018/February/5a8222c0_1-3-career-services-available-to-you2x/1-3-career-services-available-to-you2x.jpg",
+                    "width": 500,
+                    "height": 500
+                  },
+                  "video": null,
+                  "lab": null,
+                  "project": {
+                    "key": "0051a3da-930f-47a1-bd41-d7fe3bd324f4",
+                    "version": "1.0.0",
+                    "locale": "en-us",
+                    "duration": 1440,
+                    "semantic_type": "Project",
+                    "title": "Improve Your LinkedIn Profile",
+                    "description": "Have job opportunities come to you by optimizing your LinkedIn profile! Complete this simple process to get personalized tips from a career mentor. \n\nHere’s how to submit your LinkedIn profile for feedback now:\n* Check out this [checklist](https://docs.google.com/document/d/1BZMxuKnBNovOyMelEx7d8ktbsWGj0EJ9KaD81dVC1TE/pub?embedded=true) for tips on optimizing your LinkedIn profile (optional).\n* **Make sure your profile is in English.** If you do not have an English profile yet, check out LinkedIn's [advice](https://www.linkedin.com/help/linkedin/answer/1717/creating-or-deleting-a-profile-in-another-language?lang=en) on how to create a secondary language profile.\n* Make your profile publicly visible. Scroll down and set the profile section toggles to `Show` under the “Edit Visibility” section of  [your public profile edit page](https://www.linkedin.com/public-profile/settings?trk=nprofile-public-profile-settings-redirect).\n * ![Edit Visibility](http://lh3.googleusercontent.com/R0A5rnKYyzLPZJ8B_pkyxdKkvab5qQi2LnEpFq2L-F33TSgzmjduHuUyDi-Z_ka2L7oU50UYqQTeU1n8VcM=s0#w=400&h=333 \"Edit Visibility\")\n* Create a custom profile URL in the “Edit URL” section of [your public profile edit page](https://www.linkedin.com/public-profile/settings?trk=nprofile-public-profile-settings-redirect).\n * ![Edit URL](http://lh3.googleusercontent.com/SGdIHFzKav0QZmOSrrP69xch_F0Ufhu9pLy-nDXYDArHUyzAen7ewoLakVOKn3KvX_CVgJjBWkl_FmPTPqM=s0#w=250&h=120 \"Edit URL\")\n* Submit your public profile URL (such as `www.linkedin.com/in/udacitystudent`) for guidance from a career mentor by clicking “Submit Project” below.",
+                    "is_public": true,
+                    "summary": null,
+                    "forum_path": "",
+                    "rubric_id": "1910",
+                    "terminal_project_id": null,
+                    "resources": null,
+                    "image": null
+                  },
+                  "concepts": [
+                    {
+                      "id": 704348,
+                      "key": "c8c3fbd0-b7ba-471e-85b7-eb2b1c3820c0",
+                      "title": "Get Opportunities with LinkedIn",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 703862,
+                      "key": "20efad1e-c7b3-432d-86ad-0e798c795d49",
+                      "title": "Use Your Story to Stand Out",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 703860,
+                      "key": "a891296f-46ea-457c-89d9-f4ec96a40cae",
+                      "title": "Why Use an Elevator Pitch",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 703864,
+                      "key": "0c1acad0-cb41-4260-bd5c-6df07f1b2778",
+                      "title": "Create Your Elevator Pitch",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 708825,
+                      "key": "36e84f5b-204e-48c4-8071-293f49886a85",
+                      "title": "Use Your Elevator Pitch on LinkedIn",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 729380,
+                      "key": "a7deba78-27c8-4735-ad9c-7ab2b2b1ad91",
+                      "title": "Create Your Profile With SEO In Mind",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 728573,
+                      "key": "6ed9b5b0-43cf-4b65-b01d-345e44dfd765",
+                      "title": "Profile Essentials",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 728593,
+                      "key": "d3f369bb-78d7-478a-a909-c6e13683cc18",
+                      "title": "Work Experiences & Accomplishments",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 708828,
+                      "key": "eb90e45b-5d77-458b-af34-0f8eaecd45a8",
+                      "title": "Build and Strengthen Your Network",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 617430,
+                      "key": "64ed9954-b423-4a75-ad70-b2a1fbaa3a6d",
+                      "title": "Reaching Out on LinkedIn",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 728591,
+                      "key": "1d61fe7d-02e6-4376-a0c5-e01e26969d63",
+                      "title": "Boost Your Visibility",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    },
+                    {
+                      "id": 708834,
+                      "key": "2da1cc73-72cb-4678-b84d-1ab91798e8b3",
+                      "title": "Up Next",
+                      "semantic_type": "Concept",
+                      "is_public": true,
+                      "resources": null
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

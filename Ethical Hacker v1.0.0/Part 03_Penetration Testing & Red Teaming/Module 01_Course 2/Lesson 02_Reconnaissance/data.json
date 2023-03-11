@@ -1,0 +1,2072 @@
+{
+  "data": {
+    "lesson": {
+      "id": 1106280,
+      "key": "7888db54-8d1c-4abb-9d91-43d320c6256d",
+      "title": "Reconnaissance",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "In this lesson, we will dive into the first step of penetration testing which focusses on gathering information and data about the target, also known as Reconnaissance. ",
+      "lesson_type": null,
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/7888db54-8d1c-4abb-9d91-43d320c6256d/1106280/1619795598073/Reconnaissance+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/7888db54-8d1c-4abb-9d91-43d320c6256d/1106280/1619795590290/Reconnaissance+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 1106174,
+          "key": "fbdfe5fc-4a89-483b-9011-83d899da622b",
+          "title": "Lesson Introduction to Reconnaissance",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "fbdfe5fc-4a89-483b-9011-83d899da622b",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": {
+            "files": [],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 1106170,
+              "key": "26067e26-09e1-4868-bcd6-5a0413d4b534",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Reconnaissance",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1106171,
+              "key": "7f237583-a6a0-4acb-88eb-9caa4e4823d5",
+              "title": "ND350 C2 L1 A01 Introduction To Reconnaissance",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "KuTkLoo6Oqo",
+                "china_cdn_id": "KuTkLoo6Oqo.mp4"
+              }
+            },
+            {
+              "id": 1106172,
+              "key": "e61a61b9-86a6-44f1-ae06-e945594cc29d",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this lesson we will cover how to: \n\n* Distinguish between passive, active and physical recon\n* Discuss the appropriate tools that will be needed for reconnaissance \n* Gather useful information about our target machine that may help us gain access on the target network later\n* Conduct reconnaissance against the target domain name, personnel and internal network platform such as DNS, Operating systems and other software. \n* Begin our reporting methodology using Cherry Tree",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1106179,
+          "key": "4b961411-b014-447a-b74e-766d22d8a129",
+          "title": "Introduction to Reconnaissance",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "4b961411-b014-447a-b74e-766d22d8a129",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1106175,
+              "key": "a6e9f105-aa35-42ca-bbb5-9b84ad0e5890",
+              "title": "Introduction to Reconnaissance Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Introduction to Reconnaissance",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1106176,
+              "key": "a9f6f2e9-90bb-4fa7-a96d-6b76d1c2fa8b",
+              "title": "ND350 C2 L1 A02 Reconnaissance",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "oRCMfEygoTQ",
+                "china_cdn_id": "oRCMfEygoTQ.mp4"
+              }
+            },
+            {
+              "id": 1106177,
+              "key": "6234fb7e-df70-448c-bc1a-2ed43481aae7",
+              "title": "Introduction to Reconnaissance Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Reconnaissance, \"recon\" for short is the systematic attempt to locate, gather, identify and record information about the target. \n\nRecon is conducted by pen-tester so they can obtain useful information that can help them gain access later. \n\nUseful information to look for during Reconnaissance:  \n\n* What information is available about the company? \n* Has the company been involved in a previous breach? \n* Where is the company's website hosted?\n* What DNS records does the company maintain?\n* What are the employees behavior?",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1106178,
+              "key": "ad52226e-a96f-4289-a3f3-62b9bb4b512b",
+              "title": "Vocab & Further Research",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## New Terms\n\n* **Reconnaissance: **\"Recon\" for short is the systematic attempt to locate, gather, identify and record information about the target.\n* **Passive Recon**: Gathers data from open source information/ requires patience.\n* **Active Recon**: Gather information using tools that make direct contact with the target.\n* **Physical Recon**: Gather information through overt and covert means.\n* **Open Source intelligence (OSINT) tools: **Methods used for collecting publicly available data about your target. \n\n## Further Research\n\n* <a href=\"https://osintframework.com/\" target=\"_blank\">OSINTframework.com</a>: Take a look at this website for a complete list of OSINT tools/websites.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1106186,
+          "key": "725574a3-eb85-40e6-b9d0-2f759980bebc",
+          "title": "Passive Recon Intro & Search Engines",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "725574a3-eb85-40e6-b9d0-2f759980bebc",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1119916,
+              "key": "4fb08d87-4aa2-4184-99c1-4ea578528821",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Introduction to Passive Reconnaisance",
+              "instructor_notes": null
+            },
+            {
+              "id": 1119915,
+              "key": "d4617861-3160-4dfa-9cb2-0b882b6d8c77",
+              "title": "ND350 C2 L1 A03 Passive Reconnaissance",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "47vv43kRMSc",
+                "china_cdn_id": "47vv43kRMSc.mp4"
+              }
+            },
+            {
+              "id": 1106182,
+              "key": "ff7a891f-add3-4c47-8dac-32930bb176f1",
+              "title": "Passive Recon Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## How to Use Search Engines\n- Used to find information that is publicly accessible\n- Some information you may look for: \n    - Website Platform\n    - Job Postings\n    - Press Release Articles\n    - Videos \n\n\n\n## Search Engines",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1106183,
+              "key": "d9cfb027-c188-4e69-8ea5-cd48f89960e1",
+              "title": "ND350 C2 L1 A04 Passive Reconnaissance Walkthrough",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "aq1hvBNUDm0",
+                "china_cdn_id": "aq1hvBNUDm0.mp4"
+              }
+            },
+            {
+              "id": 1121703,
+              "key": "5fbddb69-9a74-4384-b98a-26c30afaa359",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary of Search Engines\n\nThis video reviewed the following search engine operators: \n\n* Site: Youtube.com\n   * Will only search for information on Youtube.com\n* Inurl:YouTube\n   * The search result will show web pages with the word “YouTube” inside its URL\n* Allintitle: YouTube courses\n   * Your search result will be limited to only those with YouTube and Courses in the title\n* Allinurl:Youtube.com\n   * Search result will only show when the url has “YouTube” and “courses” in it    \n* Cache: Youtube.com\n   * Show web pages that were cached. If YouTube website have changed, you can use this command to see what it looked like in the past. \n* Link: Youtube.com\n   * List webpages that contains Youtube.com as a link\n* Related: YouTube\n   * List out pages similar to YouTube\n* Define: Youtube.com\n   * Gives a definition of the word YouTube",
+              "instructor_notes": null
+            },
+            {
+              "id": 1106185,
+              "key": "416c33fb-b725-45c3-ac15-3afe739a8b94",
+              "title": "Vocab & Further Research",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## New Terms\n\n* **Dorks**: Another term for advance search operators\n* **Watering hole attack: **The attacker will identify a website the organization frequent and then compromise that website in order to compromise its true target.\n\n**Further Research**\n\n* <a href=\"https://osintframework.com/\" target=\"_blank\">OSINTframework.com</a>: Take a look at this website for a complete list of OSINT tools/websites.\n* <a href=\"https://www.exploit-db.com/\" target=\"_blank\">Exploit Database</a>: This site contains search engine operators that will reveal vulnerable information on the web. In addition, it can be used to discover Exploits, Shellcode, 0days, Remote Exploits, Local Exploits, Web Apps, Vulnerability Reports, Security Articles, Tutorials and more.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1120119,
+          "key": "fbec27fd-2d31-4fab-92b8-5abdb5038020",
+          "title": "Passive Recon Individuals, Geolocation, & OSINT",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "fbec27fd-2d31-4fab-92b8-5abdb5038020",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1120152,
+              "key": "f1cedec4-a2d8-49f0-91a9-21bb07a8afaf",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Recon on Individuals",
+              "instructor_notes": null
+            },
+            {
+              "id": 1120153,
+              "key": "8888df7b-cb82-48e3-9bb6-53334f32e88d",
+              "title": "ND350 C2 L1 A05 Passive Reconnaissance Pt2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "wN7ZEmeUaSU",
+                "china_cdn_id": "wN7ZEmeUaSU.mp4"
+              }
+            },
+            {
+              "id": 1121704,
+              "key": "43e6d04b-8fe5-40f0-8823-125cd40119e8",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Find out important information that is related to individuals that interact with the target organization. Here are some major questions we are trying to answer in this type of reconnaissance:\n- How many employees do they have?\n- Which employees have authorization to access certain systems?\n- Which employee can approve things?\n- Do the employees use their own personal device to gain access?\n- What are the work schedules?\n\nSocial media is also a great resource to turn to, individuals usually post more information then they think and that is valuable for us as penetration testers. \n\nEven looking at things like a Job posting can help you understand what framework, tools, languages that is valuable information to collect. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1120155,
+              "key": "63b80ebb-83e8-4500-a371-b06c8f833eb1",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Geolocation",
+              "instructor_notes": null
+            },
+            {
+              "id": 1120156,
+              "key": "73d704fc-560c-4a8e-9d9f-0e7f7e67e2de",
+              "title": "ND350 C2 L1 A06 Passive Reconnaisance OSINT Tools",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "stENe4NcD6E",
+                "china_cdn_id": "stENe4NcD6E.mp4"
+              }
+            },
+            {
+              "id": 1162753,
+              "key": "08d49c83-50c7-495c-ac01-0195eea237c4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Some basic information we are looking for in Geolocation are as follows:\n- Public vs. Private IP Addresses\n- Network Address Translation (NAT) translates Public into Private IPs\n- Subnets\n\nAlso we went over registry information and what geographical area those cover\n\n| **Registry**  \t| **Area Covered**                          \t|\n|-----------\t|------------------------------------------\t|\n| **AFRINIC**   \t| Africa                                   \t|\n| **APNIC**     \t| Canada, USA, and some Caribbean Islands  \t|\n| **LACNIC**    \t| Latin America and some Caribbean Islands \t|\n| **RIPE NCC**  \t| Europe, Middle East, and Central Asia    \t|",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1120157,
+              "key": "873c954d-56f4-477a-a51e-13c25df1f7d7",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# New Terms\n\n* **Network Address Translation (NAT)**: The mapping of Public IP address (issued by IANA) to Private IP Address (Internal)\n* **Subnets**: Subnetwork (segmentation) of a larger network. Subnets are pretty much the same a V-Lans.\n\n# Further Research\n\n* <a href=\"https://www.iana.org/assignments/ipv4-address-space\" target=\"_blank\"> IANA</a>: The Organization that controls Public IP address registration throughout the world. We can see which public IP address space belong to which regional registry\n* <a href=\"http://osintframework.com/\" target=\"_blank\">OSINTframework</a>: A complete list of OSINT tools/websites.\n* <a href=\"https://youtu.be/M-HdVodFZ3E\" target=\"_blank\">Subnetting for Beginners Part 1</a>: In this video I will educate you on the technical components of IP addresses and the concept of subnets.\n* <a href=\"https://youtu.be/vUHtvkT61Sw\" target=\"_blank\">Subnetting for Beginners Part 2</a>: In this video, we will bring all this knowledge together and use it to calculate our subnet range.\n* <a href=\"https://youtu.be/pTCI-VnMJi8\" target=\"_blank\">Network Address Translation (NAT) Explained</a>: In this video, I will explain Network Address Translation and Port Forwarding",
+              "instructor_notes": null
+            },
+            {
+              "id": 1120158,
+              "key": "8be71099-2572-46cd-8755-65251625e71c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Other OSINT Tools",
+              "instructor_notes": null
+            },
+            {
+              "id": 1121705,
+              "key": "e81cc428-7af1-4254-85eb-8a0f65ac3d12",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary of Other OSINT Tools\n\nIntroduced at a high level of the the following tools: \n\n* WHOIS\n* Shodan\n* Netcraft\n* Creepy\n* Archive.org",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1120160,
+              "key": "2d9f524b-cf0a-4477-a67e-30e7bcb07fb3",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Further Research\n\n- <a href=\"https://www.whois.com/\" target=\"_blank\">WHOIS</a>: This is a database that stores domain names and the individual to whom its registered\n- <a href=\"https://www.shodan.io/\" target=\"_blank\">Shodan</a>: This is a robust tool that can be used for passive recon and beyond… Shodan is a search engine for devices that are reachable from the internet.\n- <a href=\"https://www.netcraft.com/\" target=\"_blank\">Netcraft</a>: You can use Netcraft to find out more information about your targets network, SSL/TLS, hosting history, sender policy framework among to name a few\n- <a href=\"https://archive.org/\" target=\"_blank\">Archive.org</a>: Like a library it is a digital archive of the internet. Using this method you will be able to see how your target has evolved over time.\n- <a href=\"https://www.geocreepy.com/\" target=\"_blank\">Creepy</a>: This is a tool that gathers data from social networks like Twitter, Instagram and other online sources to give you geographical information of when people make their posts.",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1106188,
+          "key": "b5332ebd-ad0e-42fa-998e-73ea6174b440",
+          "title": "Quiz: Passive Reconnaissance",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "b5332ebd-ad0e-42fa-998e-73ea6174b440",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1119947,
+              "key": "83929ae6-84fb-4bb6-815f-8f6ef2b1a1cf",
+              "title": null,
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "83929ae6-84fb-4bb6-815f-8f6ef2b1a1cf",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What is the vulnerability Database: exploit-db.com?",
+                "answers": [
+                  {
+                    "id": "2d32d35b-a7df-4fd3-b5bd-94d515771dfa",
+                    "text": "A site where hackers exchange cooking recipes",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "3807af1b-12a1-4e4f-b104-853fc978a244",
+                    "text": "A site that list “interesting” search operator terms",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "d9430b94-22e6-4263-adeb-2368c1f5a2c2",
+                    "text": "A part of the dark web where illegal contrabands are sold",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "8f0aba50-1479-4137-bb13-9e0ccfbe891e",
+                    "text": "A database that search engines use to list hackers around the world",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1119949,
+              "key": "435dd552-2ad8-4e57-9343-40d9d72b20a1",
+              "title": null,
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "435dd552-2ad8-4e57-9343-40d9d72b20a1",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following is the BEST reason why I may want to look up job posting during passive recon?",
+                "answers": [
+                  {
+                    "id": "f337ae50-5eca-4012-8950-e4d5ee05cde9",
+                    "text": "To change career as a pen tester",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "263d85ec-186a-446c-be2a-f9cf37af5879",
+                    "text": "To identify the target organization chart",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "c98bf43f-dbcd-43fc-8bf9-5e622da735d1",
+                    "text": "To identify technology that the target organization uses",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "1ce662a2-6a52-451a-860e-cd45a25dcf48",
+                    "text": "To determine if the organization has websites",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1119950,
+              "key": "8599ea8c-ada0-4769-96c9-6c8a65ba330f",
+              "title": null,
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "8599ea8c-ada0-4769-96c9-6c8a65ba330f",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following is a reason for harvesting emails?",
+                "answers": [
+                  {
+                    "id": "805906fc-2659-4f4c-ab60-8593a402bb7e",
+                    "text": "To obtain email log in password",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "5af0c6d3-0f1f-4dfa-9cb1-7bddab2b9ba6",
+                    "text": "To conduct active recon against public email servers",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "d69a456a-de3f-41ef-a2af-0efaefeb9d4e",
+                    "text": "To collect email addresses of your target’s personnel",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "f325f823-e11d-47b8-a962-d51a7ab412fc",
+                    "text": "To collect crops after planting them in the field",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1106190,
+          "key": "2590019c-546b-4dab-b5fd-eed72a0678e6",
+          "title": "Exercise: Passive Reconnaissance",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "2590019c-546b-4dab-b5fd-eed72a0678e6",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1106189,
+              "key": "c17e363f-c6b5-41d9-989e-c1fdba8e674d",
+              "title": "Passive Recon Excercise",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Recon Yourself",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1162657,
+              "key": "c319c175-8a12-4e14-9b58-1afad499cef5",
+              "title": "ND350 C2 L1 A07 Passive Reconnaissance Exercise",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "U5G1j1r3rMY",
+                "china_cdn_id": "U5G1j1r3rMY.mp4"
+              }
+            },
+            {
+              "id": 1120163,
+              "key": "7d865aee-0a19-4e02-bfc5-fa2293bac7e8",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Using some of the passive recon techniques from the previous lesson and maybe some new techniques, I want you to conduct at least 3 Passive recon exercises on yourself. Explain what you can do to prevent others from revealing the sensitive information that you uncovered about yourself.",
+              "instructor_notes": null
+            },
+            {
+              "id": 1121706,
+              "key": "05f7790f-aed2-43e5-8c50-da37f34b1bfd",
+              "title": "Exercise: Reconnaissance on You",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "05f7790f-aed2-43e5-8c50-da37f34b1bfd",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "1. What information did you uncover about yourself when doing passive reconnaissance?\n2. What can you do to prevent others from revealing sensitive information that you uncovered?",
+                "matchers": [
+                  {
+                    "expression": "[^/s]+"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1106193,
+          "key": "6029d14e-7830-412a-9625-b7b74ee79fb8",
+          "title": "Passive Reconnaissance Exercise Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "6029d14e-7830-412a-9625-b7b74ee79fb8",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1106191,
+              "key": "9f728d0e-2272-4dc5-862d-4aa040409572",
+              "title": "Exercise: Passive Recon Solution Header",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Recon Yourself - Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1106192,
+              "key": "5a3e2dc2-5fa1-4a3b-af93-cccc69812d74",
+              "title": "ND350 C2 L1 A08 Passive Reconnaissance Exercise Solutions",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "vxczpjAvTsM",
+                "china_cdn_id": "vxczpjAvTsM.mp4"
+              }
+            },
+            {
+              "id": 1120200,
+              "key": "bdb0a782-aec9-4716-8a7c-4f8059d7d038",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "You should have conducted research from one of the following sites/tools listed on the cheat sheets below… other sites can be used as well.\n\nFor things to do to prevent being identified, you can do the following: \n\n* Use an encrypted email, for example, Proton Mail.\n* Use a VPN.\n* Use applications to block tracking websites, for example, AdBlock.\n* Encrypt files that will be shared.\n* Verify integrity by checking MD5, SHA256, etc.\n* Use of virus total to analyze files downloaded from internet.\n* Do not reuse passwords.\n* Do not register a phone number in any website that asks for.\n* Do not fill social media with real personal data. If possible, do not share any personal data including pictures.",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1106198,
+          "key": "f4c453d6-97ec-4bb0-ba24-5c9a7f21865e",
+          "title": "Active Reconnaissance",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "f4c453d6-97ec-4bb0-ba24-5c9a7f21865e",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1106194,
+              "key": "70d9dfd3-5ec8-40eb-a2eb-87c221687541",
+              "title": "Active Reconnaissance Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Know Your Target! Active Reconnaissance",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1106195,
+              "key": "0b2e71f4-617a-40e2-9d26-bd29a9011064",
+              "title": "ND350 C2 L1 A09 Active Reconnaissance",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "c12VJJJkVPU",
+                "china_cdn_id": "c12VJJJkVPU.mp4"
+              }
+            },
+            {
+              "id": 1106196,
+              "key": "cc2f280f-54b2-40e3-bdbf-3064534ae349",
+              "title": "Active Reconnaissance Text",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In active reconnaissance we will interact directly with our target in order to gain information about its vulnerabilities. Collecting this information will help us come up with an effective plan of attack.\n\nBelow is a list of tools you can use to perform active reconnaissance",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1106197,
+              "key": "40e7d70b-7725-48b6-a576-e9e85fccde45",
+              "title": "Vocab & Further Research",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## New Terms:\n\n* **DNS record: **The mapping of your IP address to its URL. \n* **Internal DNS:** DNS server(s) that hold server names and IP address for a domain. This server contains address resolution information for internal users in order to reach internal hosts or public IPs. This is a great resource to obtain information from during reconnaissance. \n* **MX records: **Details the address of the email server that provides email services on the behalf of the domain. \n* **Enumerating:** To list/number items in a collection.\n* **External DNS**: The public DNS server that resolves domain request from the internet. Some organization may have an external DNS server dedicated to resolving queries from the internet that may be inquiring about its public facing services (i.e. public website) \n\n## Reconnaissance Tools Discussed:\n\n* <a href=\"https://centralops.net/co/DomainDossier.aspx\" target=\"_blank\">**Domain Dossier:**</a>** **This is a tool that investigated domain names and IP addresses. Using this web application, you are able to collect your target’s who is record, DNS records, traceroute information and a service scan is performed\n* **Traceroute: **A popular network diagnostic tool that reveals the route that  is taken in order to reach your target. This information can prove to be valuable when you are trying to map out your target network.** **\n* <a href=\"https://centralops.net/co/emailDossier.aspx\" target=\"_blank\">**Email Dossier**</a>**: **Another tool that allows you to check if an email address is in use as well as the MX records that are associated with that email.\n* <a href=\"https://www.maltego.com/\" target=\"_blank\">**Maltego**</a>**: **This tool is used to enumerate the targets system. By enumerating we are able to list out the target assets by the numbers. Maltego is a powerful tool because it can enumerate your target assets and show the relationship between them\n* <a href=\"https://github.com/leebaird/discover\" target=\"_blank\">**Discover**</a>**: **In Kali Linux you can use the discover script to gather information using a single script.\n* <a href=\"https://mxtoolbox.com/\" target=\"_blank\">**MXToolBox**</a>**: **This site will list MX records for a domain. You can even paste and email header on this site and be able to track the sender’s location with the output provided.\n* <a href=\"https://github.com/lanmaster53/recon-ng\" target=\"_blank\">**Recon-ng**</a>**: **This is a free web reconnaissance tool. This tool automates the process of gathering information quickly from open source web information.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1106200,
+          "key": "402707fa-d399-4ca0-be6d-d8ef472d942f",
+          "title": "Quiz: Active Reconnaissance",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "402707fa-d399-4ca0-be6d-d8ef472d942f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1120235,
+              "key": "17f2c5bc-1b57-4ed2-8b99-049c950422ee",
+              "title": null,
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "17f2c5bc-1b57-4ed2-8b99-049c950422ee",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Why would you be interested in an internal DNS server during recon?",
+                "answers": [
+                  {
+                    "id": "31075c02-f61c-493e-b0d7-7ac90a01d577",
+                    "text": "In order to determine organization private IP address",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "130515d3-6c49-4329-bfb9-6d4992e5785a",
+                    "text": "In order to determine the organization public IP address",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "3bd6931e-44e2-442a-941a-9851e815bbaf",
+                    "text": "In order to find the Organization DHCP server",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "bff8b635-cd7a-40df-84b2-6afb165433dd",
+                    "text": "In order to create a backdoor connection via the DNS server",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1120237,
+              "key": "542c285e-b031-451e-8b13-99a27fde61e6",
+              "title": null,
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "542c285e-b031-451e-8b13-99a27fde61e6",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What requirement must be met for a reconnaissance to be considered active?",
+                "answers": [
+                  {
+                    "id": "7c95a95d-ea7b-416e-9505-4407a0c04e17",
+                    "text": "You must be on site with the target organization",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "027624db-aea0-4977-a7d2-bdd434ec2990",
+                    "text": "You are using a covert channel between yourself and the target",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "2828b0ff-34fd-42ca-9bb6-d17ae706d0f4",
+                    "text": "You meet the organization receptionist and give them passive aggressive attitude",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "d61b6f4a-796b-4983-ba85-6f9052c77bd6",
+                    "text": "You obtain information about the target through direct contact with the target asset",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1106202,
+          "key": "ca0340bf-b081-4943-94e8-0daf65816a60",
+          "title": "Exercise: Active Reconnaissance",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "ca0340bf-b081-4943-94e8-0daf65816a60",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1106201,
+              "key": "59a3d624-fdd5-4d14-9d5f-8f48d6db9665",
+              "title": "Active Reconnaissance Excercise",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Exercise Topic: Lab - Active Recon",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1120242,
+              "key": "a6a1083e-0adf-4a9a-ac9a-9e64a82936e3",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "We explained how traceroute can be used to map out your network in the previous lesson. It can also be used to uncover information about your target as well. Run a traceroute test on mypjbank.com your Kali Linux VM to determine the following: \n\n* How many hops does it take to get from your computer to the website?\n* What type of traceroute ping worked? Which did not and why?\n* What information are you able to decipher from the last hop?",
+              "instructor_notes": null
+            },
+            {
+              "id": 1142814,
+              "key": "1f31ce7d-9c8f-465c-9f26-d5f8bffa08aa",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "pmicrosoft3r0dyzx5",
+              "pool_id": "microsoft",
+              "view_id": "microsoft-21jeg",
+              "gpu_capable": null,
+              "configuration": {
+                "partner": "microsoft",
+                "blueprint": {
+                  "kind": "partner-workspace"
+                },
+                "iframe_url": "",
+                "nutanix_pool_id": "",
+                "nutanix_windows_config_id": ""
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1106205,
+          "key": "61bd5cfe-de79-4e33-9a37-326233dca138",
+          "title": "Active Reconnaissance Exercise Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "61bd5cfe-de79-4e33-9a37-326233dca138",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1106203,
+              "key": "f6718d26-07d8-4e54-b037-af2eeaff251a",
+              "title": "Exercise: Active Recon Solution Header",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Active Reconnaissance Exercise Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1106204,
+              "key": "67c2d3a2-e75d-42f0-93f3-9eb4ac562af2",
+              "title": "ND350 C2 L1 A11 Active Reconnaissance Exercise Solution",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "iHAABxNANro",
+                "china_cdn_id": "iHAABxNANro.mp4"
+              }
+            },
+            {
+              "id": 1120245,
+              "key": "8b668ded-929e-499b-9335-b1b1d5751990",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "The traceroute command will differ depending on if the student have a firewall/router blocking the traceroute information. More than likely the basic traceroute command will yield no result since most routers and firewalls are designed to not respond to UDP traffic. The traceroute `-I [IP Address]` command should work like the one shown in the solution video.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1106210,
+          "key": "d61508ef-d25b-4983-b91d-d1a9e8051127",
+          "title": "Physical Reconnaissance",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d61508ef-d25b-4983-b91d-d1a9e8051127",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1106206,
+              "key": "94db79b8-9c57-4487-964c-ef9d63532ec8",
+              "title": "Physical Reconnaissance Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Physical Reconnaissance",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1106207,
+              "key": "fb8778dc-f54b-43b9-ac80-0476ae971903",
+              "title": "ND350 C2 L1 A12 Physical Reconnaissance",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "V_umc0BRf-0",
+                "china_cdn_id": "V_umc0BRf-0.mp4"
+              }
+            },
+            {
+              "id": 1106208,
+              "key": "cef7c56e-717c-48b9-89f5-f5723bc64f47",
+              "title": "Physical Reconnaissance Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "With physical recon we can make physical contact with the facility and the people. Physical Recon can be divided into two methods:\n\n* **Covert Recon**: When you are hidden away from the target. You want to conduct this when you you want to observing something in a manner that it would draw suspicion. \n* **Overt Recon:** is you walking into the targets place of business, talking to the employees in disguise, checking out the cameras, employee behavior in order to gain as much information as you can. Overt recon is effective because you are not obvious in your observation. you are observing in plain sight. \n\nIt will be important for you to ensure that you are not violating the limitation set in your work contract and Rules of Engagement (RoE). The RoE is a document that list specifics of a Pen-test engagement. Within this document, the client and the pen-testers agree to what is being testing, when its being tested, and how it’s being tested.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1106228,
+          "key": "2af36776-782f-4d33-b249-860585367b04",
+          "title": "Simulation: Meet & Discuss Recon Strategy with Team",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "2af36776-782f-4d33-b249-860585367b04",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1106223,
+              "key": "c08f8ad0-1104-46dc-8a80-80c277e343b3",
+              "title": "Simulation: Meet & Discuss Recon Strategy with Team Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Meeting with the Team to Discuss our Recon Strategy",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1106224,
+              "key": "baf3d4f3-9989-43b0-a781-d214bbeadb9d",
+              "title": "Reconnaissance Simulation Pt1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "RGKJkPPYPKA",
+                "china_cdn_id": "RGKJkPPYPKA.mp4"
+              }
+            },
+            {
+              "id": 1106226,
+              "key": "e3df27c9-a68e-4b19-8300-c4051e73fcde",
+              "title": "Simulation: Meet & Discuss Recon Strategy with Team Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this video, we were able to split up the recon assignment for our project: \n\n* Json will cover physical Recon\n* Jackie will cover recon on internet accessible devices",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1106222,
+          "key": "60bb12e7-fd8b-4e93-8203-c88e44020770",
+          "title": "Simulation: Situational Awareness and Conducting Recon",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "60bb12e7-fd8b-4e93-8203-c88e44020770",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1106218,
+              "key": "ddbc464b-2804-4796-809e-a5d805c44999",
+              "title": "Simulation: Situational Awareness and Conducting Recon Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Simulation - Situational Awareness and Conducting Recon",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1106219,
+              "key": "0a02c4f3-12af-4648-9c19-88b6e69414f4",
+              "title": "Reconnaissance Simulation Pt2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "sj0_FRCz5Ok",
+                "china_cdn_id": "sj0_FRCz5Ok.mp4"
+              }
+            },
+            {
+              "id": 1106221,
+              "key": "ea8fc684-c39b-459d-9073-6f720d66b6a5",
+              "title": "Vocab & Further Research",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "**Situational Awareness (SA)** is being observant of certain information to be able to maximize time spent in physical reconnaissance, there are 3 main things we will be focused on looking at:\n* **SA States**: Work with the team to ensure everyone have read and understand the ROE.\n* **SA Systems**: Meet with the team to discuss the org. chart and the Pen test objective. \n* **SA Process**: Meet with the team to discuss what we can discern about the organization processes.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1162760,
+              "key": "c57c1405-bba4-46a6-816a-09c8112f9c88",
+              "title": null,
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "c57c1405-bba4-46a6-816a-09c8112f9c88",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "The team discussed A USB Drop attack during their meeting. We may deploy this tactic when we try to gain access. Do a web search on USB Drop Attacks and determine which of the following represents a USB drop attack?",
+                "answers": [
+                  {
+                    "id": "bdc34086-79eb-4852-8b2c-7c534a9a0ae3",
+                    "text": "leave USB devices for people to find and plug into their computers. ",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "51653b45-f33f-4d47-b099-6016d6c05906",
+                    "text": "Sending unsolicited messages over a USB drive",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "dd8df42d-1f76-4670-849a-32c063617d49",
+                    "text": "Sending Address Resolution Protocol messages onto a USB stick",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "2d86c56f-88e2-4a2b-b369-f649a41403af",
+                    "text": "Downloading sensitive information onto a USB stick",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1120276,
+          "key": "2d13b4e6-559a-4c53-ab00-501a08e69acc",
+          "title": "Lab - Passive recon Using OSINT",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "2d13b4e6-559a-4c53-ab00-501a08e69acc",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1120277,
+              "key": "20b54cc9-6ed1-4556-ae83-2a7f48c2e313",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Twitter Beaver and Creepy Lab",
+              "instructor_notes": null
+            },
+            {
+              "id": 1120278,
+              "key": "95ead9b5-0500-4068-8fe3-f60a10ec363a",
+              "title": "ND350 C2 L1 A16 Passive Reconnaissance Walkthrough Using OSINT",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "jqYcBN6NKjo",
+                "china_cdn_id": "jqYcBN6NKjo.mp4"
+              }
+            },
+            {
+              "id": 1120279,
+              "key": "34c3e2be-e807-4c98-8a34-97a7040d707f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "From this lab we were able to infer valuable information about the target's security process based on their personnel social media activities.",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1120280,
+          "key": "df458ac1-3e00-42d4-9373-77f4dc1470a7",
+          "title": "Lab – Passive Recon using Web Apps",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "df458ac1-3e00-42d4-9373-77f4dc1470a7",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1120281,
+              "key": "39eb70dc-a1b7-4b51-ae1c-a7d78190075a",
+              "title": "ND350 C2 L1 A17 Source Code Walkthrough",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "NcoKlgtz4PE",
+                "china_cdn_id": "NcoKlgtz4PE.mp4"
+              }
+            },
+            {
+              "id": 1120282,
+              "key": "498c7b1a-933b-452b-90c8-f240f95a1a2f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "From this lab we were able to discover: \n\n* The website platform by revealing the source code\n* Attempt to passively discover sensitive information that may have been made publicly available\n* use WHOIS to discover potential for typosquatting, web hosting provider\n* utilize Ultratools to identify DNS mapping of URL to IP\n* utilize Shodan to discover open ports\n* Attempt to view internet cache using the WayBack machine",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1106233,
+          "key": "96bc354b-0b2c-48b0-8fce-905032cca9d8",
+          "title": "Domain Name System (DNS) Reconnaissance",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "96bc354b-0b2c-48b0-8fce-905032cca9d8",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1106229,
+              "key": "370c634c-75ba-430b-8a0e-ee22b6c89482",
+              "title": "Domain Name System (DNS) Reconnaissance Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Introduction to DNS",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1106230,
+              "key": "79c2d4d0-0a9d-4fe8-9da0-5f8e1d020e37",
+              "title": "ND350 C2 L1 A18 Intro To DNS",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "ES0CnzzyC9k",
+                "china_cdn_id": "ES0CnzzyC9k.mp4"
+              }
+            },
+            {
+              "id": 1106231,
+              "key": "08d9e116-87dd-42b4-b7a1-e1edca4d4e93",
+              "title": "Domain Name System (DNS) Reconnaissance Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this video we were able to gain a general understanding of: \n\n* DNS primary purpose is to convert URL into IP addresses\n\n* If that mapping is not there, your client machine will look at a resolver server. This can be the DNS service provided by your Internet Service Provider (ISP) or it can be a DNS server that your organization developed and sometimes, some people will configure their network to use publicly available DNS IP. A very popular one is 8.8.8.8 which is hosted by Google. \n\n* If the resolver cannot map the URL to IP, it will send the query to a root server. There are approx.. 13 root servers around the world operated by 12 different organization. \n\n* The root server will direct the resolver to a Top Level Domain Server (TLD). The TLD servers are segregated by the type of domain it is. For example, we have a TLD server for .com, and separate TLD server services .org and etc.\n\n* The resolver ask the TLD for the IP address information. If the TLD does not know, it will direct the resolver to  the final level which is the authoritative name server\n\n* The authoritative name server is responsible for knowing everything about URL and IP address for all. This is a network of hundreds of servers in many countries around the world. The resolver upon receiving the information, it will store it in its cache memory. And your client machine will do the same when it receives the information from the resolver.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1183575,
+              "key": "7a1d7ce7-480e-4bfd-9907-bb911e48cbc6",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/April/60883147_l1-reconnaissance-/l1-reconnaissance-.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/7a1d7ce7-480e-4bfd-9907-bb911e48cbc6",
+              "caption": "How Does DNS Work?",
+              "alt": "How Does DNS Work?",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1106232,
+              "key": "98df0748-69e9-4cc8-84f7-32e0f46a083b",
+              "title": "Vocab & Further Research",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## New Terms\n\n* **DNS poisoning:** Compromising the integrity of a target IP to URL mappings.\n* **Resolver server**: The first DNS server that a client device would look for. This can be the DNS service provided by your Internet Service Provider (ISP) or it can be a DNS server that your organization developed. \n* **Root server:** If the resolver cannot find the mapping, it will send the query to this server. the root server will then direct the resolver to the TLD Server. \n* **Top Level Domain Server (TLD):** These DNS servers are segregated by the type of domain it is. For example, we have a TLD server for .com, and separate TLD server services .org and etc.\n* **Denial of Service (DoS) attack:** When an hacker intentionally send so much traffic to its target, the target is unable to service real traffic. \n* **Authoritative name server:** Responsible for knowing everything abut URL and IP address for all. This is a network of hundreds of servers in many countries around the world.\n* **Zone file: **Contain details of a domain and or subdomains. The files detail things like, IP address mapping, mx records, and more. \n* **Zone transfer: **Every domain name have a particular DNS server that is their designated Authoritative server. This server has the definitive version of the zone file and shares it with a secondary server. The secondary server can share the zone file among each other as well. This is how multiple DNS servers can share the same information \n\n## Further Research\n\n* Go to <a href=\"https://www.iana.org/domains/root/servers#:~:text=The%20authoritative%20name%20servers%20that,13%20named%20authorities%2C%20as%20follows.\" target=\"_blank\">IANA's Root Servers</a> for a list of the hundreds of Authoritative name servers around the world.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1120283,
+          "key": "716575ad-cfb5-49a2-b383-731b244f0bce",
+          "title": "Domain Name System (DNS) Reconnaissance",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "716575ad-cfb5-49a2-b383-731b244f0bce",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1120284,
+              "key": "192bcfc8-f919-48b7-ac60-af10634844fb",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# DNS Labs",
+              "instructor_notes": null
+            },
+            {
+              "id": 1120285,
+              "key": "b04348ca-2d26-482b-ad62-21d48d45fab3",
+              "title": "ND350 C2 L1 A19 DNS Walkthrough",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "lK7j0zAcXlk",
+                "china_cdn_id": "lK7j0zAcXlk.mp4"
+              }
+            },
+            {
+              "id": 1120286,
+              "key": "ccd380c6-30b6-4609-8651-8ef80c318d03",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this video, we were able to conduct DNS Recon using nslookup and dig commands.",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1106235,
+          "key": "d1db9117-85d9-4e0b-a207-bd6e542d65c0",
+          "title": "Quiz: DNS Reconnaissance",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d1db9117-85d9-4e0b-a207-bd6e542d65c0",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1120287,
+              "key": "aa7cd09b-3a7e-40a5-85d4-aad2ee483223",
+              "title": null,
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "aa7cd09b-3a7e-40a5-85d4-aad2ee483223",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What the nslookup command used for?",
+                "answers": [
+                  {
+                    "id": "8567c5a4-de0b-449c-9bd0-010af3c7d92b",
+                    "text": "Allows you to track information about your target personnel",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "e2ec120a-48a2-453d-92d6-c063db5ab9c5",
+                    "text": "Provide information about your target domain name",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "6633ec20-1b7c-43ba-841a-373eb34ca96e",
+                    "text": "Used to troubleshoot issues with system authentication",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "418e85e1-d6f2-42e1-b372-6da403532996",
+                    "text": "Associated with cloud systems, hence the name “lookup”",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1133395,
+              "key": "a98806d3-0716-49e2-b405-fba0c4c5ede2",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "a98806d3-0716-49e2-b405-fba0c4c5ede2",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Match the right definition with the appropriate DNS Attribute."
+                },
+                "concepts_label": "DNS Attribute",
+                "answers_label": "Definition",
+                "concepts": [
+                  {
+                    "text": "What is an DNS Zone file?",
+                    "correct_answer": {
+                      "id": "b75d3022-5f26-4c85-bfba-8cf9f061ed7e",
+                      "text": "Specifies the mapping between domain name and IP addresses and other Specifies the mapping between domain name and IP addresses and other information"
+                    }
+                  },
+                  {
+                    "text": "What is an MX Record?",
+                    "correct_answer": {
+                      "id": "025b0b98-6cfb-4b01-9c49-1f0b1d016a35",
+                      "text": "Specifies the associate email server"
+                    }
+                  },
+                  {
+                    "text": "What is a TXT Record?",
+                    "correct_answer": {
+                      "id": "87ba8de2-2663-4111-b880-de48f9d181e3",
+                      "text": "Specified information about sources outside your domain"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "87ba8de2-2663-4111-b880-de48f9d181e3",
+                    "text": "Specified information about sources outside your domain"
+                  },
+                  {
+                    "id": "025b0b98-6cfb-4b01-9c49-1f0b1d016a35",
+                    "text": "Specifies the associate email server"
+                  },
+                  {
+                    "id": "b75d3022-5f26-4c85-bfba-8cf9f061ed7e",
+                    "text": "Specifies the mapping between domain name and IP addresses and other Specifies the mapping between domain name and IP addresses and other information"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1120291,
+              "key": "27250831-9329-49d8-80eb-13980a2f4cf0",
+              "title": null,
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "27250831-9329-49d8-80eb-13980a2f4cf0",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What port does the DNS protocol utilize?",
+                "answers": [
+                  {
+                    "id": "3a01861b-39bc-4e30-bd66-2f9b0188c063",
+                    "text": "Port 53",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a03104df-1114-46cd-98da-31333a9a6d7e",
+                    "text": "Port 22",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "c2e1765d-ace0-4739-9ab8-b21eb944c123",
+                    "text": "Port 443",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "e20c626c-cc4d-4115-b556-04be3324206b",
+                    "text": "Port 123",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1106237,
+          "key": "f9c5ffa5-885d-4706-8d5d-2df9800b0dd7",
+          "title": "Exercise: DNS Reconnaissance",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "f9c5ffa5-885d-4706-8d5d-2df9800b0dd7",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1120324,
+              "key": "e639c90f-628e-4a4e-b015-c3389fc34f1d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Let's Dig in!",
+              "instructor_notes": null
+            },
+            {
+              "id": 1120323,
+              "key": "145950b3-be13-4d21-afa9-7dfd395627e1",
+              "title": "ND350 C2 L1 A20 DNS Lookup",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "-68TiYGoyF4",
+                "china_cdn_id": "-68TiYGoyF4.mp4"
+              }
+            },
+            {
+              "id": 1106236,
+              "key": "aeb0777c-438a-4687-ba42-dd9ffeca5c6c",
+              "title": "Domain Name System (DNS) Reconnaissance",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "We went over a good amount of Nslookup commands in the lab. However nslookup is not available on Linux. Let’s practice some additional commands using the dig command. \n\nLog on to the Kali Linux machine and run the following dig commands against <a href=\"https://www.mypjbank.com\" target=\"_blank\">mypjbank.com</a>. See if you can make sense of each command output.  \n\n* `dig mypjbank.com txt`\n* `dig mypjbank.com cname`\n* `dig mypjbank.com any`",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1142815,
+              "key": "9295edc3-8e70-4da4-bbef-9218ea6f2c86",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "pmicrosoftvqkbz0cx",
+              "pool_id": "microsoft",
+              "view_id": "microsoft-jj2wy",
+              "gpu_capable": null,
+              "configuration": {
+                "partner": "microsoft",
+                "blueprint": {
+                  "kind": "partner-workspace"
+                },
+                "iframe_url": "",
+                "nutanix_pool_id": "",
+                "nutanix_windows_config_id": ""
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1106240,
+          "key": "fc4737fe-2e87-418f-b281-48de7d20c5b0",
+          "title": "DNS Reconnaissance Exercise Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "fc4737fe-2e87-418f-b281-48de7d20c5b0",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1106238,
+              "key": "07af73a0-65eb-40d6-a91e-d5f1a452e69a",
+              "title": "Exercise: DNS Recon Solution Header",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Solution for let's dig in",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1106239,
+              "key": "1470f22f-b494-41ce-b0c0-a67d6b91e917",
+              "title": "ND350 C2 L1 A21 DNS Lookup Solution",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "XWAiAVBRfYE",
+                "china_cdn_id": "XWAiAVBRfYE.mp4"
+              }
+            },
+            {
+              "id": 1120325,
+              "key": "32130ebf-d04c-4f11-b36a-3367a2fb8543",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# dig mypjbank.com txt\n\n* Observe, we can see 1 authoritative server responded and provided us with TXT record. It would appear that there isn’t any currently. TXT is where the domain admin enter text. Sort of like a note. A domain can have many txt records. These records can be useful for humans and computers to read/verify information. More specifically TXT records can be used to prevent SPAM or verify domain ownership. \n* Here we can also see the SOA record. This reveals the RNAME from the SOA record. This is the DNS server admin’s email address (<a href=\"mailto:hostmaster@1und1.com\" target=\"_blank\">hostmaster@1und1.com</a>).",
+              "instructor_notes": null
+            },
+            {
+              "id": 1133398,
+              "key": "04a7ee21-5e75-4bb5-9a90-786ba46f9ddb",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/February/60216a79_screenshot-of-dig/screenshot-of-dig.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/04a7ee21-5e75-4bb5-9a90-786ba46f9ddb",
+              "caption": "DIG Command Output",
+              "alt": "DIG Command Output",
+              "width": 617,
+              "height": 344,
+              "instructor_notes": null
+            },
+            {
+              "id": 1120326,
+              "key": "3b0f4ff7-1f11-4c7c-b664-8d7b99daa2c4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# dig mypjbank.com cname\n\n* It would appear that the server does not have a CName. This record matches a domain name to another domain name, which can be used in a redirect.",
+              "instructor_notes": null
+            },
+            {
+              "id": 1133399,
+              "key": "ce1ec5bb-64fc-451b-91e2-341f70a603bc",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/February/60216abf_screenshot-of-dig-pt-2/screenshot-of-dig-pt-2.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/ce1ec5bb-64fc-451b-91e2-341f70a603bc",
+              "caption": "DIG Command to discover CNAME",
+              "alt": "DIG Command to discover CNAME",
+              "width": 612,
+              "height": 345,
+              "instructor_notes": null
+            },
+            {
+              "id": 1120328,
+              "key": "f06f615f-3127-4ca9-885e-2cdcd420d8b0",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# dig mypjbank.com any\n\n* Starting from the top, we can see the version of dig installed is 9.16.8\n* We can see the status of NOERROR which indicates a successful query. In addition we are given a statistic on if our response is from an authoritative name server\n* We can also see the A record, name server information, SOA, MX and AAAA recorddig",
+              "instructor_notes": null
+            },
+            {
+              "id": 1133401,
+              "key": "ec8731d0-b18b-4651-930c-78bd4cf81bbc",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/February/60216afb_screenshot-of-dig-pt-3/screenshot-of-dig-pt-3.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/ec8731d0-b18b-4651-930c-78bd4cf81bbc",
+              "caption": "DIG Command to find Any",
+              "alt": "DIG Command to find Any",
+              "width": 599,
+              "height": 366,
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1106245,
+          "key": "b18df0a9-eb59-4011-bd8c-1e7fe7ac2bf6",
+          "title": "Content Management Discovery",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "b18df0a9-eb59-4011-bd8c-1e7fe7ac2bf6",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1106241,
+              "key": "aa812535-9000-42d1-88b5-7b796a85cc9a",
+              "title": "Content Management Discovery Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## What are Content Management Systems",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1106242,
+              "key": "467492db-b017-4149-9574-2a5a6fdb142e",
+              "title": "ND350 C2 L1 A22 Intro To CMS",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Q5mR_xNE7eQ",
+                "china_cdn_id": "Q5mR_xNE7eQ.mp4"
+              }
+            },
+            {
+              "id": 1106243,
+              "key": "821e6710-b4d6-40af-a645-916dd503bdde",
+              "title": "Content Management Discovery Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "A Content management System (CMS) is a web application where users can have a web site/web application without having to create the site from scratch.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1106244,
+              "key": "84414bdf-7b9a-4e87-9e1e-86111a0ff80d",
+              "title": "Vocab & Further Research",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## New Terms\n\n* **Akismet: **A tool that provide SPAM protection\n* **BB Press:** A software for hosting forums. ",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1120330,
+          "key": "cc72e17a-862e-4cc9-abd8-2f6d6da1313f",
+          "title": "Lab Content Management Discovery",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "cc72e17a-862e-4cc9-abd8-2f6d6da1313f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1120331,
+              "key": "3b94b070-a19b-4e9f-a045-99597e82d44f",
+              "title": "ND350 C2 L1 A23 CMS Walkthrough",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Vf0NGPvxsxU",
+                "china_cdn_id": "Vf0NGPvxsxU.mp4"
+              }
+            },
+            {
+              "id": 1120333,
+              "key": "3bfe268a-68f8-48b0-87b3-a0c705ec4153",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this lab, you learned how to detect your target's: \n\n* Web server Operating system\n* programming language and communication protocols (PHP, XML, SSL, etc.) \n* IP address mapping\n* Email address\n* Web server location\n* Banner information\n* Cookies",
+              "instructor_notes": null
+            },
+            {
+              "id": 1121119,
+              "key": "a1716f3c-0b1a-4274-ab2c-c7191ff6a120",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Further Research\n\n* <a href=\"https://www.netcraft.com/\" target=\"_blank\">Netcraft</a>:  You can use Netcraft to find out more information about your targets network, SSL/TLS, hosting history,  sender policy framework among to name a few.\n* <a href=\"https://github.com/Tuhinshubhra/RED_HAWK\" target=\"_blank\">Red Hawk</a>: An All inclusive tool that can be used for Reverse IP lookup, WP Scan, Crawler, MX Lookup, SQL Scanner and more. \n* <a href=\"https://chrome.google.com/webstore/category/extensions\" target=\"_blank\">Wappalyzer</a>: A web browser extension that shows what a website is built with. You can discover website framework, programming language and software modules using this tool. \n* <a href=\"https://tools.kali.org/webapplications/whatweb\" target=\"_blank\">WhatWeb</a>: A CLI tool pre-built in Kali Linux. It is used to identify different web technologies.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1106247,
+          "key": "e0c41f26-1532-4c91-8fa7-2455c676cd4f",
+          "title": "Quiz: Content Management Discovery",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "e0c41f26-1532-4c91-8fa7-2455c676cd4f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1121120,
+              "key": "a95db632-4d71-40b2-9db4-528829a943ba",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "a95db632-4d71-40b2-9db4-528829a943ba",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following does WHOIS record provide?",
+                "answers": [
+                  {
+                    "id": "f7e451a6-1e3b-4e2c-8ce8-362c374edf3d",
+                    "text": "Domain name registration information",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "9da5dea7-19d1-40da-8d78-d30dc3b83edb",
+                    "text": "Personnel email address",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "17f7d9fa-3434-4949-a808-494896ddf2a8",
+                    "text": "Open ports ",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "9b1fcbeb-9736-4e03-aba0-78b075cd4ec4",
+                    "text": "Traceroute information",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1121121,
+              "key": "ebaaa7ec-00e0-468a-b8db-7e55c7ac205b",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "ebaaa7ec-00e0-468a-b8db-7e55c7ac205b",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following is NOT considered a CMS?",
+                "answers": [
+                  {
+                    "id": "793ff74c-f694-4c26-bb8c-61691b47e2bb",
+                    "text": "MS word",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "1ba86f6f-a78b-433b-88a1-3d492772feee",
+                    "text": "SharePoint",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "3a66165f-8884-43c9-9f12-9a1ee160ef12",
+                    "text": "Drupal",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "1ff66f36-d535-4a9d-969a-5711213fbe74",
+                    "text": "Wordpress",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1121122,
+              "key": "bf056eca-ba1b-429a-85b9-b40d14af00ff",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "bf056eca-ba1b-429a-85b9-b40d14af00ff",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What is the purpose of is the Wappalyzer tool used for?",
+                "answers": [
+                  {
+                    "id": "93a0408a-e482-4d49-b232-b5dd82d219ce",
+                    "text": "Discover the framework and platform for a website",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "1a5104e9-7831-4a07-8ecd-59f3bacca87c",
+                    "text": "Manage Google Chrome extensions",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "638fe17e-add5-4c8f-b44e-6e1c5d9921a1",
+                    "text": "Manage JavaScript libraries",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "f53e8cba-45cc-4708-baa5-01fe8252b0bb",
+                    "text": "Create malicious payloads",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1106257,
+          "key": "f1bd1195-86a5-4fd7-adac-bcbb24b0038b",
+          "title": "Deeper into Physical Reconnaissance",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "f1bd1195-86a5-4fd7-adac-bcbb24b0038b",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1106253,
+              "key": "717b7ee6-f3b2-4103-ba41-c16433820f5c",
+              "title": "Deeper into Physical Reconnaissance Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Physical Recon Options: Badges, Vendors and Employees",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1106254,
+              "key": "86adf43c-bbe5-4e45-801e-79649f9cdd61",
+              "title": "ND350 C2 L1 A24 Physical Recon Options",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "eiNtAfrucKc",
+                "china_cdn_id": "eiNtAfrucKc.mp4"
+              }
+            },
+            {
+              "id": 1106255,
+              "key": "2ad7af5d-2165-4a96-bd47-31363a4792f5",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this video, we were able to: \n\n* Discover weaknesses in work badges\n* Identify vulnerabilities between physical security and third party vendors\n* Identify vulnerabilities between physical security and employees",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1106256,
+              "key": "dc7995b1-dee9-4e26-8ced-2c69171d3680",
+              "title": "Vocab & Further Research",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## New Terms\n\n* **Radio-Frequency Identification  (RFID): **The technology use electromagnetic field to make contactless connection with a badge reader for physical access. An electromagnetic interrogation pulse from the reader would trigger the badge and cause it to transmit data. \n* **RFID skimmer:** A device that mimic the card reader. If successful, we can then transfer the data onto a blank card and create our own working badge.\n* **Near Field Communication (NFC).** A fairly new trend for shoppers to make contactless purchases. Just wave the card over the credit card machine and your purchase is made… well you people can easily copy your credit card data from credit cards that use this technology.\n* **Turnstile**: A type of gate that allow people to pass through one at a time. \n* **Tailgating**: When we enter a restricted area by following closely behind another person without the person knowledge.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1121161,
+          "key": "76d0e85e-29bb-42f1-9763-ef614cf4b2ed",
+          "title": "Deeper into Physical Reconnaissance",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "76d0e85e-29bb-42f1-9763-ef614cf4b2ed",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1121162,
+              "key": "3d3e4f93-9288-4405-b249-c6108cd5e9c4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Wifi SSID Discovery",
+              "instructor_notes": null
+            },
+            {
+              "id": 1121163,
+              "key": "9fb0516c-683e-4ab9-a173-ade497354377",
+              "title": "ND350 C2 L1 A28 Wifi SSID Walkthrough",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "GF0JUTSul48",
+                "china_cdn_id": "GF0JUTSul48.mp4"
+              }
+            },
+            {
+              "id": 1121164,
+              "key": "02fbcaf0-b103-4a92-8a20-f79fdd7a4c47",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this video we were able to: \n\n* Discover SSID that were broadcasted within our network environment\n* Identify lateral attack vectors that can be leveraged after SSID discovery",
+              "instructor_notes": null
+            },
+            {
+              "id": 1173841,
+              "key": "7fa367ca-da73-41ca-9abb-edf3d357eca8",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Note: Wi-Fi Recon can only be conducted via your local machine. In order to utilize the wifi adapter complete the following steps: \n\n* Download and Install Kali Linux onto your local machine. If you are not sure how to do so, follow my tutorial <a href=\"https://pjcourses.com/how-to-install-kali-linux-virtual-machine\" target=\"_blank\">here</a>.\n* Plug in your Wi-Fi Adapter and connect it to the host. If you are not sure how to do so, follow my tutorial <a href=\"https://pjcourses.com/course/ethical-hacking/lessons/hiddenssid\" target=\"_blank\">here</a>.",
+              "instructor_notes": null
+            },
+            {
+              "id": 1121166,
+              "key": "db4aeb1c-8a34-484b-914e-a592da71503f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "**Further Research**\n\n* <a href=\"https://www.amazon.com/gp/product/B0035APGP6/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&amp;psc=1\" target=\"_blank\">Alfa AWUSO36NH</a>: A wireless Adapter that is recommended for conducting your wireless hack labs\n* [Airmon-ng](https://www.aircrack-ng.org/doku.php?id=airmon-ng): A wireless detection tool pre-built inside Kali Linux. This tool is used to monitor Wireless Access Points (WAP) within your environment.",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1106270,
+          "key": "6c4c3e0f-b775-418f-b6e1-c6df5e40d540",
+          "title": "Update Your Report",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "6c4c3e0f-b775-418f-b6e1-c6df5e40d540",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": {
+            "files": [
+              {
+                "name": "Lesson 1 - Recon",
+                "uri": "https://video.udacity-data.com/topher/2021/March/603d7aab_lesson-1-recon/lesson-1-recon.ctb"
+              }
+            ],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 1106265,
+              "key": "63764d4b-ee6d-46ed-bf63-b419257053e1",
+              "title": "Reconnaisance Reporting Methodology Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Update Your Report",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1106266,
+              "key": "3b395024-cebb-42ac-859d-efa14e35326d",
+              "title": "ND350 C2 L1 A25 Updating Your Report",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "h-avgw6UfFA",
+                "china_cdn_id": "h-avgw6UfFA.mp4"
+              }
+            },
+            {
+              "id": 1106268,
+              "key": "3e02e8f0-6b1e-4167-9761-d6a5c01824e1",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this video, we were able to utilize Cherry Tree to document our findings so far. Note: The report illustrated below has been updated since the video recording.\n\nNote: A full copy of the cherry tree report is available below for download.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1162757,
+              "key": "c0df7454-557f-4492-84c4-8cc4a28bd02a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Outline of the Cherry Tree Up Until This Point\n- **Information Discovery - Recon**\n - Physical Recon\n   - HQ - Address 2440 W El Camino Rea, Mountain View CA\n   - Location Layout\n     - Front Possible rear entrance\n     - Data center is on the 2nd Floor\n     - High Traffic Lobby and Cafeteria Area\n   - **Physical Security**\n     - Low Swing Turnstyle\n     - Two Cameras\n - **Personnel Reconnaissance**\n   - Maintenance weekend ~15th of every month\n   - James McLovin and Janet Pierce socialize with one another on Twitter\n\n  - **Network Recon**\n   - Windows 10 are being used by employees\n   - **MYPJBank.com - 74.208.236.247**\n     - **Name Server**\n        - IP: 74.208.236.247\n       - DNS Information\n     - Open ports 80, 81, and 443\n     - Hosting Provider: IONOS (PaaS)\n     - Software Discovery\n\n\n- **Vulnerabilities Discovered**\n - Physical - On Premise\n   - RFID Badges can be easily cloned\n   - Fed-Ex truck driver gained access without ID\n   - Typosquatting: Domain Names with similar spelling",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1130090,
+          "key": "45d76afe-1070-46d0-8036-28b0924bfeef",
+          "title": "Pep Talk!",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "45d76afe-1070-46d0-8036-28b0924bfeef",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1130094,
+              "key": "536db683-186f-4bf0-ad6e-2d9a43239b37",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Pep Talk!",
+              "instructor_notes": null
+            },
+            {
+              "id": 1130096,
+              "key": "411626c4-1e65-4a48-97ce-307d16692516",
+              "title": "ND350 C2 L1 A26 Pep Talk!",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "_1Y5Yum_a3Q",
+                "china_cdn_id": "_1Y5Yum_a3Q.mp4"
+              }
+            },
+            {
+              "id": 1130097,
+              "key": "f7c61d48-8582-440a-b6ab-8422ee7d0620",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Hello, before we close out, I just want to have a quick pep talk with you. \n\n\n\nAs you heard me say earlier, Jackie is more of a specialist on web apps while Json’s strength is in physical engagements. Everyone sort of have their niche as a pen tester. An area that they are really good at. Some people’s area of expertise is in recon! \n\n\n\nIf you’re someone with a knack for discernment and are a critical thinker, then recon may be where your hacking super power lies. I know most people’s favorite section is gaining access, but I encourage you not to rush through this and the next lesson. Having a good recon specialist on your team could be a major factor on how successful your project is.  That’s all the pep talk I have for now, in the next video, we will summarize everything we’ve learned in this lesson.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1106279,
+          "key": "e18d3286-21e6-4ea6-b57a-0217e4687b95",
+          "title": "Reconnaissance Lesson Recap",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "e18d3286-21e6-4ea6-b57a-0217e4687b95",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1106275,
+              "key": "4e35a843-c247-4c55-b1a2-7faf0a94b6b1",
+              "title": "Reconnaissance Lesson Recap Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Reconnaissance Lesson Recap",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1106276,
+              "key": "aaad786f-c243-4538-a8e6-e825f5c9a473",
+              "title": "ND350 C2 L1 A27 Reconnaissance Lesson Recap",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "pmpVV8XAdH4",
+                "china_cdn_id": "pmpVV8XAdH4.mp4"
+              }
+            },
+            {
+              "id": 1106277,
+              "key": "d1f62376-1e78-4acb-9cc9-4fae4d920c2d",
+              "title": "Reconnaissance Lesson Recap Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this lesson we were able to: \n\n* Distinguish between passive, active, and physical recon\n* Discuss the appropriate tools that will be needed for physical and remote reconnaissance \n* Conduct passive recon on our target machines using OSINT tools such as search engines, the Google Hacking Database, Social Media accounts\n* Conduct Active Reconnaissance by obtaining DNS and platform information. This includes identifying the authoritative name server, the CMS type, programming languages, and software versions. \n* Conduct physical reconnaissance by scanning RFID badges and detecting Wi-Fi SSIDs\n* Begin our reporting methodology using Cherry Tree",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "lesson_type",
+      "reason": "Obsolete"
+    },
+    {
+      "name": "starter_files",
+      "reason": "prefer master_archive_id"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "starter_files",
+      "reason": "prefer master_archive_id"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

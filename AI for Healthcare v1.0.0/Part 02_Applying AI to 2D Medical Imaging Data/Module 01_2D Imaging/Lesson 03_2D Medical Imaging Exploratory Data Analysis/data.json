@@ -1,0 +1,1450 @@
+{
+  "data": {
+    "lesson": {
+      "id": 1007530,
+      "key": "6da8b250-4ac1-424f-a227-ba653850bef8",
+      "title": "2D Medical Imaging Exploratory Data Analysis",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "In this lesson, we will learn the DICOM standard in medical imaging, and how to explore medical imaging data and prepare it for machine learning applications. \n\n\n",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": null,
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 1007604,
+          "key": "7ba0ef83-1e7c-46e6-a1be-2c41edc9e0c8",
+          "title": "DICOM Standard and EDA",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "7ba0ef83-1e7c-46e6-a1be-2c41edc9e0c8",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007605,
+              "key": "47f01096-dbd7-43de-ab32-6c53f6a3467d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# DICOM Standard and EDA",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009678,
+              "key": "24419e94-a59a-4b9f-9043-a11e12b0576a",
+              "title": "ND320 C2 L2 01 The DICOM Standard And Exploratory Data Analysis Of 2D Medical Imaging",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "XqJXmNdZJ-Y",
+                "china_cdn_id": "XqJXmNdZJ-Y.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 1007606,
+          "key": "5bff94dd-ac1d-4c8d-a1fa-357c0c426994",
+          "title": "Lesson Outline",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5bff94dd-ac1d-4c8d-a1fa-357c0c426994",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007607,
+              "key": "c157e0ca-70ce-490f-8081-2ed94d3a95b2",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Lesson Outline",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009680,
+              "key": "8ca609a5-c1f9-4805-811a-7297498dcf5f",
+              "title": "ND320 C2 L2 02 Lesson Outline Video",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "zg6kATakghI",
+                "china_cdn_id": "zg6kATakghI.mp4"
+              }
+            },
+            {
+              "id": 1009681,
+              "key": "4946ac55-598a-4981-a4cf-2503531375ae",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9a448e_l2-outline/l2-outline.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/4946ac55-598a-4981-a4cf-2503531375ae",
+              "caption": "",
+              "alt": "",
+              "width": 926,
+              "height": 308,
+              "instructor_notes": null
+            },
+            {
+              "id": 1009682,
+              "key": "c64a6190-e9bb-4fc9-b008-71269c3e5a0d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\nIn this lesson, we will first learn what DICOM standard is. Then, we'll talk about how to read images and different image properties. Next, we'll talk about how to prepare non-image data and extract information for training machine learning models. Finally, we'll talk about exploring medical metadata. \n\nAt the end of this lesson, you'll be a pro at dissecting medical images, starting with the standard file formats that they are stored in, all the way down to the pixel-level data that comprises the image itself.  ",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1007612,
+          "key": "2b884652-f656-49f3-a52d-fcd0ae6edb9f",
+          "title": "DICOM Standard",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "2b884652-f656-49f3-a52d-fcd0ae6edb9f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007613,
+              "key": "8f940be0-9208-4fdb-8595-9e7c1ead34ef",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# DICOM Standard",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009692,
+              "key": "b7c74ebf-83f4-4624-817e-f32aad3e0cdb",
+              "title": "ND320 C2 L2 05 The DICOM Standard And 2D Imaging Video Pt 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "NWnnlPJZqJ8",
+                "china_cdn_id": "NWnnlPJZqJ8.mp4"
+              }
+            },
+            {
+              "id": 1015318,
+              "key": "eb1bbbd6-0aa4-4950-8fa8-16bc528c0479",
+              "title": "ND320 C2 L2 06 The DICOM Standard And 2D Imaging Video Pt 2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "yuIF6vo3Ok4",
+                "china_cdn_id": "yuIF6vo3Ok4.mp4"
+              }
+            },
+            {
+              "id": 1014722,
+              "key": "a60df509-7d4b-4150-be55-3fe6e3a885c8",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9a47ef_l2-study/l2-study.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/a60df509-7d4b-4150-be55-3fe6e3a885c8",
+              "caption": "",
+              "alt": "",
+              "width": 734,
+              "height": 352,
+              "instructor_notes": null
+            },
+            {
+              "id": 1009697,
+              "key": "650ff042-a82e-408b-bfd0-5b1657b2bf7d",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9a47e5_l2-dicom/l2-dicom.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/650ff042-a82e-408b-bfd0-5b1657b2bf7d",
+              "caption": "",
+              "alt": "",
+              "width": 674,
+              "height": 372,
+              "instructor_notes": null
+            },
+            {
+              "id": 1009696,
+              "key": "8fd134c3-a6cf-4f1c-a2b2-3c3bb2086d15",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\n#### DICOM \nDICOM is short for “Digital Imaging and Communications in Medicine”, which is the standard for the communication and management of medical imaging information and related data. \nDICOM files are a medical imaging file that is in the format that conforms to the DICOM standard.\n\nIt was developed by the American College of Radiologists in 1993 to allow for interoperability.\n\nA DICOM file contains information about the imaging acquisition method, the actual medical images, and patient information. It has a header component that contains information about the acquired image and an image component that is a set of pixel data representing the actual images\n\nProtected Health Information (PHI) is part of DICOM and\nclinical data and radiologist report are _not_ part of DICOM\n\n#### DICOM studies and series\nWith 2D imaging, a single 2D image is known as a single DICOM series. All image series combined comprise a study of the patient, known as a DICOM study. \n\n\n\n\n\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1007614,
+          "key": "98d37d6a-2922-4b87-83f1-ed55ed52b27d",
+          "title": "DICOM Standard Quizzes",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "98d37d6a-2922-4b87-83f1-ed55ed52b27d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007615,
+              "key": "22c65085-22cf-4d05-95f5-c9ed678062f6",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# DICOM Standard Quizzes",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014560,
+              "key": "1d73685a-25ee-4ba7-9e14-93ef26e83c4c",
+              "title": "DICOM Series v. Studies",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "1d73685a-25ee-4ba7-9e14-93ef26e83c4c",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "How many DICOM series are in a DICOM study that contains the following: \n\n* one frontal chest x-ray\n* one lateral chest x-ray\n* one pelvic x-ray ",
+                "matchers": [
+                  {
+                    "expression": "([0-9])"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1009701,
+              "key": "4600e41e-9540-4647-a5f1-f37bf5d34a83",
+              "title": "",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "4600e41e-9540-4647-a5f1-f37bf5d34a83",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following pieces of information would be stored in a DICOM representation of a medical image? ",
+                "answers": [
+                  {
+                    "id": "a1585869697562",
+                    "text": "Patient ID",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587122284049",
+                    "text": "Radiologists' interpretation",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587122284766",
+                    "text": "Body part examined",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587122285386",
+                    "text": "Type of imaging modality",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587122286045",
+                    "text": "Scanner manufacturer",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587122329019",
+                    "text": "Patient's biopsy results",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1007616,
+          "key": "406b3d87-da51-46ab-ad62-af67940a23f4",
+          "title": "DICOM Standard Exercise",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "406b3d87-da51-46ab-ad62-af67940a23f4",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007617,
+              "key": "9fdad1fb-a3ee-439f-84f3-750f984b5d27",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# DICOM Standard Exercise\n\nWe just learned about the DICOM standard, why it's important, and what it contains. Below, I am going to give you a real clinical scenario with some questions to answer. Write your best guesses in the free response section, and we'll go over the answers in the solution video. \n\n**Scenario:** Jerry is outside working in his yard and drops a heavy object on his left foot. He's pretty sure that's broken, so he has his wife rush him to the emergency room at Hospital A. The emergency room doctor orders a set of x-rays of both his left and right feet, ankles, and tibia. Turns out, there were also some rusty nails sticking out of that heavy object that gave Jerry some nasty cuts, so the ER doc also orders some blood work, gives Jerry a tetanus shot, and a few stitches. The ER doc asks Jerry if he's been having any other symptoms, and Jerry tells him that he's been feeling pretty light-headed all day, since he woke up in the morning, and that he has a history of fainting because of his low blood pressure. After a full physical examination, the ER doctor determines that there's nothing wrong with him other than his broken foot, but that he's just dehydrated and needs to take it easy. Unfortunately, he _also_ needs to see an orthopedic surgeon to reset his foot, and Hospital A doesn't have one on duty on the weekends, so they send him to Hospital B where there is an orthopedic doctor. While Jerry is in the car on his way to Hospital B, Hospital B receives his full DICOM study and Hospital A's radiology report, but nothing else. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1019325,
+              "key": "efc9b4dd-d599-4435-8cba-41a0cf6d8ce2",
+              "title": "Reflect",
+              "semantic_type": "ReflectAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "efc9b4dd-d599-4435-8cba-41a0cf6d8ce2",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "title": null,
+                "semantic_type": "TextQuestion",
+                "evaluation_id": null,
+                "text": "**Questions:**\nWhat does Hospital B know about Jerry before he arrives? Specifically:\n\n* Do they know that he has a broken foot? Why or why not?\n* Do they know what the results were of Jerry's blood work? Why or why not?\n* Do they know that he has a history of low blood pressure? Why or why not? "
+              },
+              "answer": {
+                "text": "See the solution video",
+                "video": null
+              }
+            }
+          ]
+        },
+        {
+          "id": 1007618,
+          "key": "448db5e5-932b-453c-bacb-ea2bc96b84b7",
+          "title": "DICOM Standard Exercise Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "448db5e5-932b-453c-bacb-ea2bc96b84b7",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007619,
+              "key": "f5002109-6f16-4f13-a55c-08af213dd1c7",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# DICOM Standard Exercise Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009704,
+              "key": "d80235ab-46ed-4434-93f7-95872f27be51",
+              "title": "ND320 C2 L2 08 The DICOM Standard And 2D Imaging Exercise Solution Video",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "FxWabMzwkYE",
+                "china_cdn_id": "FxWabMzwkYE.mp4"
+              }
+            },
+            {
+              "id": 1009705,
+              "key": "16008ee2-3a2d-4ffa-8b18-221032458162",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\n\nFirst, Hospital B will know that Jerry had a broken foot. A radiologist at Hospital B along with the orthopedic surgeon could look at his physical x-rays in the DICOM file and see the fracture. They could also read the interpretation section by the radiologist at Hospital A in the radiology report. \n\nSecond, Hospital B will NOT know the results of Jerry’s blood work. This information is considered to be lab work, which falls under the category of clinical data that is stored in the EMR, but not in the DICOM standard.\n\nFinally, Hospital B will NOT know about Jerry’s medical history. Jerry’s medical history is also stored separately in the EMR and is not part of the DICOM study. ",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1007620,
+          "key": "e633584d-6788-4e04-b541-92329bc53c98",
+          "title": "Explore 2D Imaging Properties",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "e633584d-6788-4e04-b541-92329bc53c98",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007621,
+              "key": "8dabadb9-35e8-4145-b65e-a14c8a030473",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Explore 2D Imaging Properties",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009707,
+              "key": "29104b03-c06a-4e52-9e3d-fc1a6c2bf16e",
+              "title": "ND320 C2 L2 09 Exploring 2D Imaging Properties Video Pt 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "hP7BaRiPd5M",
+                "china_cdn_id": "hP7BaRiPd5M.mp4"
+              }
+            },
+            {
+              "id": 1020334,
+              "key": "58193c0c-561b-42b9-be5c-1fd7a279c3ef",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "**Note**: In the video, it should be `my_dicom.pixel_array`, not `my_dicom.pixel_data`.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015319,
+              "key": "b3efc487-8647-42ed-ad08-6854d669ea09",
+              "title": "ND320 C2 L2 10 Exploring 2D Imaging Properties Video Pt 2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "VCn6mDmQreo",
+                "china_cdn_id": "VCn6mDmQreo.mp4"
+              }
+            },
+            {
+              "id": 1009709,
+              "key": "35a7c3ff-0725-4fbe-8513-a4676019a984",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\n\n#### Read DICOM files\nThe pydicom package allows us to extract all of the metadata from a set of DICOM files and store them in a way that is easy to access.\n\n```my_dicom = pydicom.dcmread(“MY_DICOM.dcm”)``` is used to read a DICOM file.\n\n```my_dicom_image = my_dicom.pixel_array``` is used to access the actual pixel data of the image.\n\n```matplotlib.pyplot.imshow(my_dicom_image, cmap = ‘gray’)\n``` is used to show the image.\n\nIt is worth noting that the data returned in ```my_dicom.pixel_array``` will be in the coordinate format ```[y,x].```\n\n#### Explore image data\nA good practice is to perform _random_ spot checks of your data by choosing several _random_ images and visualizing them. Then you can explore images in a pixel level by looking at intensity profiles of individual images.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1007622,
+          "key": "cd836105-ea32-4d8b-8466-7181c8e8840f",
+          "title": "Explore 2D Imaging Properties Quizzes",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "cd836105-ea32-4d8b-8466-7181c8e8840f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007623,
+              "key": "fcc7a8c2-3f21-4584-9597-7a7de31db89b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Explore 2D Imaging Properties Quizzes",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009713,
+              "key": "df32d995-db29-494e-b261-efd4e784f830",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "df32d995-db29-494e-b261-efd4e784f830",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "When you read a DICOM object into Python using pydicom.dcmread, what field of the DICOM object holds the actual image data? ",
+                "answers": [
+                  {
+                    "id": "a1585870576326",
+                    "text": "pixel_data",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587122585574",
+                    "text": "pixel_array",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587122590660",
+                    "text": "nRows",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587122596917",
+                    "text": "pixels",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587122601055",
+                    "text": "nColumns",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1014561,
+              "key": "fa8c5ca0-e884-4a8e-9222-31a870a3750f",
+              "title": "Inspecting your images",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "fa8c5ca0-e884-4a8e-9222-31a870a3750f",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following is _true_ about inspecting your images? ",
+                "answers": [
+                  {
+                    "id": "a1587122833786",
+                    "text": "You don't need to look at your images before machine learning, you can just look at the DICOM headers",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587122885055",
+                    "text": "Looking at the first ten images of your dataset for artifacts is sufficient",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587122913573",
+                    "text": "Pixel intensity value spikes at intensity = 0 are usually due to background pixels",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587122948717",
+                    "text": "Images with the same disease label will always have the same intensity distribution",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1007624,
+          "key": "01d99b36-cbfc-4ddc-bf5c-87b9c3e98457",
+          "title": "Explore 2D Imaging Properties Exercise",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "01d99b36-cbfc-4ddc-bf5c-87b9c3e98457",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1014728,
+              "key": "edb90134-6d68-4fdf-8a98-6af8dcfc6a0d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Explore 2D Imaging Properties Exercise",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1007625,
+              "key": "b0a773b8-23d9-4fe4-92a5-8255de7a68b2",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In the following exercise, you'll learn how to use the Python package pydicom to extract imaging data from a DICOM file. Similar to how you looked at images and their intensity distributions in Lesson 1, you'll do this again but also before and after _normalizing_ the image's intensity values. \n\nYou will be provided with a dataframe that contains bounding box coordinates for masses that have been identified by a radiologist in three separate DICOM images. The dataframe gives the starting X & Y coordinates of the bounding box around each mass, and the width and height of the mass. These four values should allow you to identify the specific rectangular section of each image that contains a suspicious mass. \n\nYour job here will be to extract the imaging data from each DICOM, visualize it, normalize it, and then visualize only the section of the image that contains the suspicious mass. Throughout this process, you should be drawing insights about whether or not intensity values are a particularly good characteristic of masses that might help a machine learning algorithm automatically identify them. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1007840,
+              "key": "99d419c0-33cc-4528-ad21-0e9ea086e32c",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1007624xJUPYTERh3pe0h0x",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-td2cj",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1007626,
+          "key": "b01c92c0-29fb-42b6-b18f-1d3dbcddfce6",
+          "title": "Explore 2D Imaging Properties Exercise Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "b01c92c0-29fb-42b6-b18f-1d3dbcddfce6",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1008300,
+              "key": "1170e4b7-89f3-477e-8f5f-3652f8568aa4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Explore 2D Imaging Properties Exercise Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1008301,
+              "key": "1ed04432-d481-4608-97d1-ed0a55bb3e98",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1007626xJUPYTERu99gv43n",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-035m8",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1007628,
+          "key": "ece85b65-04b0-4c80-b7bc-1a6900e0729a",
+          "title": "Prepare DICOM Images for ML",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "ece85b65-04b0-4c80-b7bc-1a6900e0729a",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007629,
+              "key": "c0108ec1-0b7b-4e88-954a-9caa5fb8b0af",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Prepare DICOM Images for ML",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009718,
+              "key": "f667f6de-9786-45da-be25-a18ba28f504a",
+              "title": "ND320 C2 L2 13 Preparing DICOM Images For Machine Learning Video",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "UDFKqT0w174",
+                "china_cdn_id": "UDFKqT0w174.mp4"
+              }
+            },
+            {
+              "id": 1009719,
+              "key": "678f44ff-047a-45ff-b35a-d442deb88f49",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\nFor efficient algorithm training, the best practice is to pre-extract all data from DICOM headers into a dataframe.\n\nDICOM header has some other applications besides training models. It can be used to mitigate the risks of the algorithm. It can also be used to optimize image processing workflow.\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1007630,
+          "key": "b2a34d66-62d1-447b-98b0-aa8c4523b294",
+          "title": "Prepare DICOM Images for ML Quizzes",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "b2a34d66-62d1-447b-98b0-aa8c4523b294",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007631,
+              "key": "33add6c5-8a13-41e2-bd99-150cbe69aa32",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Prepare DICOM Images for ML Quizzes",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014563,
+              "key": "7a19b9ea-62c7-4d52-b0fd-57ae04556ba3",
+              "title": "Using pydicom",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "7a19b9ea-62c7-4d52-b0fd-57ae04556ba3",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following can we use pydicom to extract? ",
+                "answers": [
+                  {
+                    "id": "a1587123516519",
+                    "text": "A patient's age",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587123536305",
+                    "text": "A patient's ID",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587123543366",
+                    "text": "A radiologist's findings",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587123558643",
+                    "text": "DICOM Study ID number",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1014562,
+              "key": "c65ef611-6944-44d0-9569-caba3feedb46",
+              "title": "Screening the DICOM Header",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "c65ef611-6944-44d0-9569-caba3feedb46",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Let's say you have an algorithm that detects bone fractures in the foot. You know that often, x-ray studies have multiple series in them and that each series shows an image of a different body part. Which part of the DICOM header could you use for pre-ML screening to make sure that your ML algorithm _only_ processes the relevant image? ",
+                "answers": [
+                  {
+                    "id": "a1587123182987",
+                    "text": "Imaging modality",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587123268170",
+                    "text": "Patient Age",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587123274377",
+                    "text": "Body Part Examined",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587123280354",
+                    "text": "Series ID",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1007632,
+          "key": "65669a81-78ce-401c-aa00-9306dd22d0da",
+          "title": "Prepare DICOM Images for ML Exercise",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "65669a81-78ce-401c-aa00-9306dd22d0da",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007633,
+              "key": "e31e9793-b4cb-4c7f-8c51-61de27781cb1",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Prepare DICOM Images for ML Exercise\nIn this exercise, you'll receive a small set of seven DICOM images. Here, rather than extracting the image itself from the DICOM file, we'll be extracting other attributes that tell us about the image and the patient who is represented in it. \n\nTo complete this exercise, create a single dataframe that has the following columns: \n* Patient ID\n* Patient Age (as an integer) \n* Patient Sex (M/F)\n* Imaging Modality\n* Type of finding in the image\n* Number of rows in the image\n* Number of columns in the image\n\nPrint the contents of this dataframe.\n\n**Note:** When you see an attribute listed like \"Patient's Age\" for a DICOM, this can usually be extracted with pydicom by removing the spaces and special characters, like dcm.PatientAge",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1007841,
+              "key": "63471e4a-8956-4f03-b4ca-a442d597a899",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1007632xJUPYTERp2ptswwt",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-et73x",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1007634,
+          "key": "d246dc08-6056-49c0-adf0-4b527d018f79",
+          "title": "Prepare DICOM Images for ML Exercise Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d246dc08-6056-49c0-adf0-4b527d018f79",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007635,
+              "key": "016e05eb-a103-4fea-abb0-fe6e7306d7ec",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Prepare DICOM Images for ML Exercise Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1008302,
+              "key": "5a6a7301-74df-44da-8beb-4e53078e110b",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1007634xJUPYTERkjivzu7k",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-20xcs",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1007636,
+          "key": "ab548f0b-9b51-4464-bc32-60baa11fbf59",
+          "title": "Exploring Population Metadata",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "ab548f0b-9b51-4464-bc32-60baa11fbf59",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007637,
+              "key": "bd55ba18-2b31-4e3b-be9d-b1ed07507c51",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Exploring Population Metadata",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009725,
+              "key": "2e7f9c1a-80ed-4520-80a3-721fd09b25d9",
+              "title": "ND320 C2 L2 16 Exploring Population Metadata Video",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "qitPZeqw_BM",
+                "china_cdn_id": "qitPZeqw_BM.mp4"
+              }
+            },
+            {
+              "id": 1009726,
+              "key": "632871dc-9351-4ac1-982f-c625faf5cb0a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\nSome metadata may come from the DICOM headers, patient history, and image labels. Once we have all of a dataset's metadata stored in a single place, we'll then want to explore data features.\n\n#### Histograms \nHistograms help us look at _distributions_ of _single variables_. Sometimes we only want to look at distributions within a _single class_ of our data. \n#### Scatterplots \nScatterplots are useful for assessing _relationships_ between _two variables_.\n#### Pearson Correlation Coefficient\nPearson Correlation Coefficient measures how two variables are linearly related. The value ranges from -1 to 1. A value of 1 or -1 means the two variables are perfectly linearly related. A value of 0 implies there is no linear relationship between the two variables.\n\n#### Co-Occurrence Matrices \nCo-Occurrence Matrices are useful for assessing how frequently different classifications co-occur together.\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1007638,
+          "key": "5d852441-a23a-4418-8fa0-cfae476071a0",
+          "title": "Exploring Population Metadata Quizzes",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5d852441-a23a-4418-8fa0-cfae476071a0",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007639,
+              "key": "7e448503-a03b-4abc-81ea-502dc36293a5",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Exploring Population Metadata Quizzes",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009727,
+              "key": "7d5c447b-ccf9-4879-812e-80e65c528b23",
+              "title": "Exploring population metadata",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "7d5c447b-ccf9-4879-812e-80e65c528b23",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following could you NOT assess if you had only the following information about your population: \n\n* Average age of the whole population\n* Each patient's gender\n* Each patient's race\n* Count of the number of DICOM series for each patient",
+                "answers": [
+                  {
+                    "id": "a1585873792659",
+                    "text": "Co-occurrence of race and gender across the population",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587231369499",
+                    "text": "Gender distribution across the population",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587231370314",
+                    "text": "Average number of DICOM series per patient",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587231371090",
+                    "text": "Relationship between age and number of DICOM series",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1014753,
+              "key": "f04414a9-25bf-49d6-9428-486634c8b2fe",
+              "title": "Data visualizations",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "f04414a9-25bf-49d6-9428-486634c8b2fe",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which type of data visualization tool would you use to see how often members of your population have both cancer and hypertension, compared to members who have both cancer and diabetes? ",
+                "answers": [
+                  {
+                    "id": "a1587231120288",
+                    "text": "Co-occurrence matrix",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587231168086",
+                    "text": "Scatterplot",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587231171595",
+                    "text": "Histogram",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587231175526",
+                    "text": "Dataframe",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1007640,
+          "key": "27b353a0-1f5c-4dcd-8dc1-15d04aa0a3d9",
+          "title": "Exploring Population Metadata Exercise",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "27b353a0-1f5c-4dcd-8dc1-15d04aa0a3d9",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007641,
+              "key": "3109b090-8d2d-481a-97da-a7ef71c7f7ec",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Exploring Population Metadata Exercise\n\nYou've now learned how to explore _individual_ images and their associated data as you prepare them for machine learning. The other important aspect of EDA is exploring your _population._ In this exercise, you'll be given a dataframe that describes a large dataset. Your goal is to perform EDA on the population in the dataset such that you can answer the following questions: \n\n* How are the different diseases distributed in my dataset in terms of frequency and co-occurrence with one another? (For the sake of time, just choose one of the diseases and assess its co-occurrence frequencies with all other diseases.)\n* How is age distributed across my dataset? Is it distributed differently for different diseases? \n* How is sex distributed across my dataset? Is it distributed differently for different diseases? \n* For findings that have a Mass_size (i.e. not just a binary classification of disease presence) is there a relationship between size and age, sex, or presence of other diseases? \n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1007842,
+              "key": "1dffc526-d1f5-4e6b-8c99-2b89a8102836",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1007640xJUPYTERq29cwo8p",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-a7slz",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1007642,
+          "key": "386543bd-2b39-459f-bf0c-6acfbedd01ca",
+          "title": "Exploring Population Metadata Exercise Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "386543bd-2b39-459f-bf0c-6acfbedd01ca",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007643,
+              "key": "f7ca67a1-5722-447f-98eb-ba4fb9a71c55",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Exploring Population Metadata Exercise Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1008303,
+              "key": "c2973349-9a13-49c7-bc3c-09f0c914fda7",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1007642xJUPYTER75n9baf3",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-m1jyy",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1007644,
+          "key": "1c294438-ea23-48e4-8d01-bdb990caa9f3",
+          "title": "Edge Case",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "1c294438-ea23-48e4-8d01-bdb990caa9f3",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007645,
+              "key": "3f623803-2df8-42a1-9d84-67fe5c2d617e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Edge Case",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009733,
+              "key": "a36c8ba3-b062-465a-b266-4e2f92fa0c3e",
+              "title": "ND320 C2 L2 18 Edge Case- Microscopy Data Video",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "KFiTvwderHw",
+                "china_cdn_id": "KFiTvwderHw.mp4"
+              }
+            },
+            {
+              "id": 1014726,
+              "key": "3b299635-f06f-423a-a320-5f7f28c0248a",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9a537c_l2-micro/l2-micro.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/3b299635-f06f-423a-a320-5f7f28c0248a",
+              "caption": "",
+              "alt": "",
+              "width": 716,
+              "height": 214,
+              "instructor_notes": null
+            },
+            {
+              "id": 1009734,
+              "key": "b2857272-b400-47a1-9df9-fcc0cb698e22",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\nNot all 2D medical images are stored as a DICOM. Microscopy images are not stored in DICOM since they do not come from a _digital_ machine. Instead, they are biological data and come from smeared physical cells from patients. \n\nThe first step of transforming microscopy into a digital image is to get the cell sample from a patient. Then cells are dyed into different colors based on their structure and viewed by a microscope. The microscopy data is then captured by a camera to form a digital image. This transformation technique is called _digital pathology_.\n\nOnce images are digitized, they can be processed with ML in the same way as you would with the pixel data extracted from DICOM.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009732,
+              "key": "d92da322-60a0-45fa-9b02-019a4aca9d2a",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "d92da322-60a0-45fa-9b02-019a4aca9d2a",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Why might microscopy data not fall under the DICOM standard? ",
+                "answers": [
+                  {
+                    "id": "a1585873913282",
+                    "text": "It is not acquired with a digital machine",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587231591168",
+                    "text": "It is clinically not as important as other types of medical imaging",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587231605095",
+                    "text": "It is impossible to standardize microscopy data",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1007646,
+          "key": "96231dc3-1da4-4304-8989-2c16c2256822",
+          "title": "Final Review",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "96231dc3-1da4-4304-8989-2c16c2256822",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007647,
+              "key": "ab30daf3-bb6b-486d-b022-58726787c8b9",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Final Review",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009738,
+              "key": "07707caa-a3a8-428f-9a3d-d4276734dbb6",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Glossary\n- **DICOM:** Digital Imaging and Communications in Medicine (DICOM) is the standard for the communication and management of medical imaging information and related data\n- **Image artifact:** An object or distortion in an image that reduces its quality\n- **Foreign body:** An object in a medical image that is not biological material from the patient, such as a pacemaker or wire\n- **Metadata:** A set of data that describes another set of data\n- **Pathologist:** A special type of clinician who reads and interprets microscopy and digital pathology data\n- **intensity profile:** the distribution of all pixels' intensity values that comprise an image\n- **PHI:** any individually identifiable health information, including demographic data, insurance information, and other information used to identify a patient",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1007648,
+          "key": "a7336932-3e6e-49c6-9906-5508da4c0275",
+          "title": "Lesson Conclusion",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a7336932-3e6e-49c6-9906-5508da4c0275",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007649,
+              "key": "11aa0af5-ad06-4d77-b7db-14875abc2460",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Lesson Conclusion",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009740,
+              "key": "442457e7-f70d-4339-bed3-4794553ee982",
+              "title": "ND320 C2 L2 19 Lesson Conclusion",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "JWyC76MBA_M",
+                "china_cdn_id": "JWyC76MBA_M.mp4"
+              }
+            },
+            {
+              "id": 1009741,
+              "key": "d4dcf674-e420-4c00-8085-7543e57ddda4",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9a54c8_l2-conclusion/l2-conclusion.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/d4dcf674-e420-4c00-8085-7543e57ddda4",
+              "caption": "",
+              "alt": "",
+              "width": 804,
+              "height": 320,
+              "instructor_notes": null
+            },
+            {
+              "id": 1009739,
+              "key": "381a39c6-a45b-4717-b8d7-640e6ac1d71a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Lesson conclusion\nWe first talked about the DICOM standard and what a DICOM file is. Then we talked about the patient study and series. After that, we learned that a DICOM file consists of attributes about patient information, patient study, series, and images. \n\nIn the second section, we talked about how to read and extract images using the pydicom package, what we should pay attention to when we look at an image, and how to explore image intensity profile at the pixel level. \n\nIn the third section, we discussed how to prepare non-image data for ML using the DICOM header. DICOM header has a wealth of information such as patient data, series, and study and we have to explore DICOM header carefully before developing the algorithm.\n\nIn the last section, we talked about metadata. Metadata can come from several sources: DICOM header, patient history, and image labels. We need to extract data features before we train the model. Some useful tools are histograms, scatterplots, Pearson correlation coefficient, and co-occurrence matrix.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009742,
+              "key": "fb5e13d4-15e9-4790-af32-44adde1934a3",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Further reading\n\n- [This website](https://www.dicomstandard.org/) will tell you pretty much everything you ever wanted to know about DICOM\n- The [github repo](https://pydicom.github.io/) for pydicom has lots of documentation, as well as examples of how to use pydicom with DICOM and some sample datasets\n- This [review article](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6289005/) provides a really thorough overview of digital pathology and its history",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

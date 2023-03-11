@@ -1,0 +1,1012 @@
+{
+  "data": {
+    "lesson": {
+      "id": 1129220,
+      "key": "8b3d2316-7e6c-429c-8962-428522495545",
+      "title": "Intro to Penetration Testing & Red Team Operations",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Brief introduction and foundational knowledge around penetration testing and red teaming. ",
+      "lesson_type": null,
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/8b3d2316-7e6c-429c-8962-428522495545/1129220/1619795532671/Intro+to+Penetration+Testing+%26+Red+Team+Operations+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/8b3d2316-7e6c-429c-8962-428522495545/1129220/1619795528034/Intro+to+Penetration+Testing+%26+Red+Team+Operations+Subtitles.zip"
+          },
+          {
+            "name": "PJ Bank ROE V2",
+            "uri": "https://video.udacity-data.com/topher/2021/March/604a2989_pj-bank-roe-v2/pj-bank-roe-v2.docx"
+          },
+          {
+            "name": "Local Lab Preparation Instructions",
+            "uri": "https://video.udacity-data.com/topher/2021/March/604fb229_local-lab-preparation-instructions/local-lab-preparation-instructions.pdf"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 1129137,
+          "key": "644d458d-b058-4d34-8128-b7e63f152fa5",
+          "title": "Meet Your Instructor",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "644d458d-b058-4d34-8128-b7e63f152fa5",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1129135,
+              "key": "d24ff881-1251-4048-8599-63a2041cdd73",
+              "title": "Meet Your Instructor Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Hello!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1129136,
+              "key": "87fb4325-3e22-42f5-a20d-793671f66ac3",
+              "title": "ND350 C2 L0 A00 Meet Your Instructor",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "ZqTyTks6xd8",
+                "china_cdn_id": "ZqTyTks6xd8.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 1129141,
+          "key": "b5b8d681-d977-4504-941f-2ec63ae4862d",
+          "title": "Course Prerequisites",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "b5b8d681-d977-4504-941f-2ec63ae4862d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1129138,
+              "key": "18bb53e5-78ba-45ea-aec0-5c5ee4125d6c",
+              "title": "Prerequisites Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Course Prerequisites",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1129139,
+              "key": "5370eb82-9717-4ee6-b896-a0fbe283469b",
+              "title": "ND350 C2 L0 A01 Prerequisites",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "QgJmfFvUOXs",
+                "china_cdn_id": "QgJmfFvUOXs.mp4"
+              }
+            },
+            {
+              "id": 1129140,
+              "key": "ffe18881-b393-46f3-9523-5639acb86d44",
+              "title": "Prerequisites Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Knowledge\n\n* OS Agnostic (Linux / Windows req'd)\n* CMD shell experience\n* Networking fundamentals\n* Background with IT support in some capacity\n* Some knowledge of vulnerability management\n* Basic understanding of client-server architecture and secure configurations.\n* IP Addressing and Sockets, DHCP, DNS, ARP and Access Control Lists (ACL)\n* Familiar with Log files (Operating System, application, firewall logs) and how to use effectively\nUse basic cloud technologies to deploy a web server, database, DNS; familiarity with virtual machines, containerization.\n* Bonus: Experience with incident response\n\n\n\n# Computer Requirement:\n\n* For Access to cloud environment: Any computer with decent internet connection and a web browser. 1 Core CPU, 3GB RAM\n\n\n\n# Optional Equipment that you may want to have:\n\n   * **IF you wish to build out your lab environment locally**, then your computer will require the following specs: 2 Core CPU, 8GB RAM (12-16 is even better!), Solid State Hard Drive\n\n   * **IF you plan to conduct a USB drop Attack:** <a href=\"https://shop.hak5.org/products/usb-rubber-ducky-deluxe\" target=\"_blank\">Rubber ducky from Hack5</a>\n\n   * **IF you plan to conduct wireless hacking**, you will need a wireless adapter. The recommended adapter is <a href=\"https://www.amazon.com/Alfa-AWUSO36NH-Wireless-Long-Rang-Network/dp/B0035APGP6/ref=sr_1_1_sspa?dchild=1&amp;keywords=Alfa+AWUSO36NH&amp;qid=1615474241&amp;sr=8-1-spons&amp;psc=1&amp;smid=A2LM6ZPY06LT1N&amp;spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFYR0c4SkpKTThSVjYmZW5jcnlwdGVkSWQ9QTAwOTE4NjJFUk1GRVVMN1BRV0wmZW5jcnlwdGVkQWRJZD1BMDYxNDE2N0NUSzdWN1RPT1NSNyZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=\" target=\"_blank\">Alfa AWUSO36NH</a>",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1129146,
+          "key": "de57caff-f4ac-47af-abe4-a0ad5896be69",
+          "title": "Course Outline",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "de57caff-f4ac-47af-abe4-a0ad5896be69",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1129142,
+              "key": "9abfd70e-664e-4460-8bab-c1028ee95661",
+              "title": "Course Outline Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Welcome to Pen Testing and Red Teaming",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1129143,
+              "key": "89d319a6-838a-4e9c-8a3b-c74bfdc13096",
+              "title": "ND350 C2 L0 A02 Course Outline",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "MPkIMROIDdc",
+                "china_cdn_id": "MPkIMROIDdc.mp4"
+              }
+            },
+            {
+              "id": 1129145,
+              "key": "b6956721-0bea-4687-81a3-875bfb176bbe",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### What You Will Learn By The End of This Course\n1. Introduction to Reconnaissance - learn about what is reconnaissance and the various ways we collect preliminary information.\n2. Scanning & Research - Diving deeper to understand how to use the preliminary information gathered in reconnaissance \n3. Gaining Access - Implement various techniques to penetrate areas of interest. \n4. Maintaining Access - Once you are in the system you want to make sure you can get back in for future needs. \n5. Cover Tracks & Reporting - Implement ways to not be noticed by anyone through gaining or maintaining access. Finally collecting all the information you found so that you have a comprehensive report as a final deliverable. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1129144,
+              "key": "04408f58-53f8-4458-9e0a-607a56f5dc6b",
+              "title": "Course Outline Image",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/March/6058d672_l0-intro-to-penetration-testing-red-team-ops/l0-intro-to-penetration-testing-red-team-ops.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/04408f58-53f8-4458-9e0a-607a56f5dc6b",
+              "caption": "Course Agenda",
+              "alt": "Course Agenda",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1129156,
+          "key": "e9260db9-85e0-4623-aabb-f5c4a8aba740",
+          "title": "Intro to Penetration Testing & Red Teaming",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "e9260db9-85e0-4623-aabb-f5c4a8aba740",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1129147,
+              "key": "315b14b4-2f57-4fef-9989-375edbfe36b6",
+              "title": "Intro to Penetration Testing & Red Teaming Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## What is Penetration Testing & Red Teaming",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1129148,
+              "key": "2d5f902d-95bc-411c-86a4-d9f6e9308b7b",
+              "title": "ND350 C2 L0 A03 Intro To Penetration Testing & Red Team Ops",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "BsT9UkC_fsk",
+                "china_cdn_id": "BsT9UkC_fsk.mp4"
+              }
+            },
+            {
+              "id": 1129149,
+              "key": "ed423413-522f-4a60-a91d-63999e4b0b2d",
+              "title": "Intro to Penetration Testing & Red Teaming Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\n\n* **Ethical Hacker - **A penetration tester that test only with the explicit permission from the system owner. \n* **Chief Information Security Officer (CISO) - **Responsible for organization Security\n* **Chief Information Officer (CIO)** - Responsible for the organization IT Operations",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1146773,
+              "key": "0faca8ca-9641-4a02-8210-998a94df381c",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/February/60395423_l0-chart/l0-chart.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/0faca8ca-9641-4a02-8210-998a94df381c",
+              "caption": "Penetration Testing vs. Red Teaming",
+              "alt": "Penetration Testing vs. Red Teaming",
+              "width": 1299,
+              "height": 731,
+              "instructor_notes": null
+            },
+            {
+              "id": 1130107,
+              "key": "b9d9aaf3-7239-441b-b22b-a0e10f4ab748",
+              "title": null,
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "b9d9aaf3-7239-441b-b22b-a0e10f4ab748",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following roles usually participate in short term Ethical Hacking exercises?",
+                "answers": [
+                  {
+                    "id": "6cfc6c73-74cf-4889-8c67-253840f22ede",
+                    "text": "Penetration Testers",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "f6b0940b-ea3e-4418-b3fa-53b7e7753a67",
+                    "text": "Ethical Hackers",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "f06130dd-5560-4e3e-a623-2b11742fcb1a",
+                    "text": "Red Teams",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "210ced31-059e-4367-be76-ad362cd01c9f",
+                    "text": "Vulnerability Assessors",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1130108,
+              "key": "44c2700a-334d-473e-b41b-c8e55d573fc8",
+              "title": null,
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "44c2700a-334d-473e-b41b-c8e55d573fc8",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following teams are usually internal?",
+                "answers": [
+                  {
+                    "id": "c66032d1-7cb0-4e61-9723-bcf13e17d46b",
+                    "text": "Penetration Testers",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "0e1e19f0-ae0b-4f3e-a8f0-2ec3f733dc08",
+                    "text": "Ethical Hackers",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "d7b2e980-d322-4eb5-aab4-d8349d7afa44",
+                    "text": "Red Teams",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "71e1014f-9758-40dc-a6be-094b93f4a955",
+                    "text": "Vulnerability Assessors",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1130109,
+              "key": "f586b8bc-cf26-412f-84eb-accc90e8d167",
+              "title": null,
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "f586b8bc-cf26-412f-84eb-accc90e8d167",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following roles would scan for vulnerabilities but does attempt to exploit those found vulnerabilities?",
+                "answers": [
+                  {
+                    "id": "7f0906b8-64ce-4642-9732-d7910a4191ff",
+                    "text": "Penetration Testers",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "e8b86b2e-5718-4378-bf67-432122b5da84",
+                    "text": "Ethical Hackers",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "8c84c0fe-b114-495f-b226-a2bf95ac58ba",
+                    "text": "Red Teams",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "6ee70962-fa6c-4d2f-b1f2-39cdc0da3b59",
+                    "text": "Vulnerability Assessors",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "0ecaca54-d5f3-4fc8-9cb6-5c70ef0b5118",
+                    "text": "Chief Information Security officer (CISO)",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1130111,
+              "key": "82cdf68d-f63b-4642-aaba-9faac5e4b2e8",
+              "title": null,
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "82cdf68d-f63b-4642-aaba-9faac5e4b2e8",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following roles usually hack in a production environment?",
+                "answers": [
+                  {
+                    "id": "233bea84-2cc7-4d21-b9fc-31eee59425f8",
+                    "text": "Penetration Testers",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "61fae62c-a3b0-418b-a9e7-9643e3f437e3",
+                    "text": "Ethical Hackers",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "814ecfc0-15cd-4a42-aa96-bbf65acc6824",
+                    "text": "Red Teams",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "ee70ebce-1dcc-42bb-bced-1e4abbec7662",
+                    "text": "Vulnerability Assessors",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "b1cf76fe-7363-433d-965f-fe45300e1433",
+                    "text": "Chief Information Security officer (CISO)",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1129161,
+          "key": "891ecca4-9fad-489a-8500-bdfe3bc79218",
+          "title": "Penetration Testing & Red Teaming Is Important",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "891ecca4-9fad-489a-8500-bdfe3bc79218",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1129157,
+              "key": "93d72c10-7183-4e90-a243-cf82ffba52ab",
+              "title": "Penetration Testing & Red Teaming Is Important Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## The Importance of Penetration Testing & Red Teaming",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1129158,
+              "key": "1d2e3c84-1c7c-4126-8de6-8b55e54a3fd2",
+              "title": "ND350 C2 L0 A04 Penetration Testing & Red Teaming Is Important",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "apl5AsYDG5I",
+                "china_cdn_id": "apl5AsYDG5I.mp4"
+              }
+            },
+            {
+              "id": 1129159,
+              "key": "3da34b01-8e8c-4485-bf2f-214137c45b75",
+              "title": "Penetration Testing & Red Teaming Is Important Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Reasons Why Penetration Testing is Important\n\n### Meeting Compliance\n In the payment card market, it was required to conform to the PCI-DSS Guidelines for the regular annual penetration test. A pen test helps businesses to reduce the actual network threats. NIST the organization that provide guidance for FISMA compliance also suggest some form of pen-testing to be conducted on networks. Best practice suggest a frequency of annual testing.  \n### Maintaining Confidentiality \nPen-test and red team discoveries are confidential between the testing team and the organization as they should be under some form of Non-Disclosure Agreement (NDA). By law, if a real adversary were to compromise a network, the findings in most industry have to be publicized. \n### Testing New Technology Implementation\nPen test can help validate technology before entering the development stage. The implementation of a penetration test of emerging technologies also saves time and resources as bugs and limitations can be quickly resolved before a system goes live.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1129171,
+          "key": "ac4b6751-432a-48b9-8054-8575e07cabb2",
+          "title": "History of Penetration Testing & Red Teaming",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "ac4b6751-432a-48b9-8054-8575e07cabb2",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1129167,
+              "key": "d57f3770-9555-41f5-8721-afaa17edaa11",
+              "title": "History of Penetration Testing & Red Teaming Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## History of Penetration Testing & Red Teaming",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1129168,
+              "key": "7bcf18a7-a354-4e15-9f2c-daf4be7e4ad8",
+              "title": "ND350 C2 L0 A05 History Of Penetration Testing & Red Teaming",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "xWX8BSs2LeE",
+                "china_cdn_id": "xWX8BSs2LeE.mp4"
+              }
+            },
+            {
+              "id": 1162717,
+              "key": "e5dad5e6-764e-43d7-8c15-6c861dc91517",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## History of Penetration Testing\n\n* **1960’s**: Pentesting formally began. The RAND Corporation came up with the idea to test the integrity of the information system. The corporation worked with the Advanced Research Projects Agency (ARPA) to publish authored a ground breaking report called The Willis Report. This report simply discussed the security problems and provided policy and technical considerations that motivated companies to conduct pen tests of their own.\n* **1970’s** James P. Anderson was hired by the USAF to Pentest their time sharing systems. These are computer system shared by multiple people.  In his 1972 report he identified a series of steps that first tiger teams needed to follow to effectively test systems to see if they could be penetrated and compromised. Andersons method is still used to this day. Eight years later Anderson developed another ground breaking method for people to find out how to monitor a computer system and how to identify hacker activity.\n* **1995** \n   * Security Administrator Tool for Analyzing Networks (SATAN/SANTA) became available for use. This is a Security Administrator Tool for Analyzing Networks. It also created a report that explains the issues that may arise. Now modern day tools like Nmap and Nessus have replaced it. \n   * The first bug bounty was launched by Netscape in October Bug bounty is where manufacturers and companies offer cash reward to freelance penetration testers to discover bugs in their system.\n\n* **2001** – The Open Web Application Security Project (OWASP) an online community that produces free tools and guidelines for web application security. OWASP today is probably one of the most well known and respected site for hackers in training to go. \n* **2006** - BackTrack, a Linux distribution that focused on security was released. This would become the most utilized pen test distribution. Backtrack was later rebuilt and released by Offensive security into Kali Linux on the 13th March 2013. Kali Linux is the machine that you will be using to conduct your penetration test.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1146779,
+              "key": "d5e3c67c-744f-4c8c-b9e4-43165d814a69",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/February/60395c97_timeline/timeline.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/d5e3c67c-744f-4c8c-b9e4-43165d814a69",
+              "caption": "Timeline of Penetration Testing",
+              "alt": "Timeline of Penetration Testing",
+              "width": 1197,
+              "height": 527,
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1129180,
+          "key": "9c26b948-253d-4614-8f16-69c9a3e8a140",
+          "title": "Roles & Responsibilities",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "9c26b948-253d-4614-8f16-69c9a3e8a140",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1129172,
+              "key": "7442fd57-afc1-4554-b63a-054b422c3d58",
+              "title": "Introduction to Simulation/ Call from the CISO",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Roles and Responsibilities",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1129173,
+              "key": "cf039506-58ec-4e2f-a35e-81c31f64c6f3",
+              "title": "ND350 C2 L0 A06 Roles And Responsibility",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "kZgiW0KQTz0",
+                "china_cdn_id": "kZgiW0KQTz0.mp4"
+              }
+            },
+            {
+              "id": 1162738,
+              "key": "d9d88db7-f700-4f2a-a347-740eb1251c7b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\n\n### Offensive Team\n- **Team Lead**: Plans, Schedules, and Budgets\n- **Red Team**: The offensive team that end up engage with the blue team during penetration testing activities\n- **Red Cell**: Simulate strategic and tactical offense\n- **Red Team Operator**: Operational executor - logs info\n- **Attack Group**: Attack within the required boundaries\n- **Support Group**: Maintain Red Team Systems\n\n### Defensive Team\n- **Team Lead**: Plans, Schedules, and Budgets\n- **Blue Team**: The defensive team that engage the red team during their pentesting activities\n- **The Blue Cell**: Defenders of the Organization\n- **Chief Information Security Officer (CISO)**: Responsible for Organization Security\n- **Security Operations Center (SOC) Analyst**: Monitor & Defend the system\n- **Information System Security Manager (ISSM)**: Manages the security Team\n\n\n### Defense and Offense\n- **Purple Team**: Enhance information sharing and effectiveness of the blue and red team \n- **White Cell**: referee between red and blue team\n- **Engagement Control Group (ECG)**: Responsible for activities conducted in tests\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1146780,
+              "key": "b4799bbd-d713-4a25-a92f-31d203023236",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/February/60395fb7_roles-and-responsibilities/roles-and-responsibilities.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/b4799bbd-d713-4a25-a92f-31d203023236",
+              "caption": "Roles for Red Teaming ",
+              "alt": "Roles for Red Teaming ",
+              "width": 1195,
+              "height": 621,
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1129186,
+          "key": "f1033b95-1d90-4e8a-b4e5-94d4577c9203",
+          "title": "Meet the Teams",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "f1033b95-1d90-4e8a-b4e5-94d4577c9203",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1129181,
+              "key": "d09aac57-f8fa-40b2-ac01-26873faee3eb",
+              "title": "Meet the Teams Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Meet the Teams",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1129182,
+              "key": "72ee5c12-d7e7-49c5-90e5-c590625ee93d",
+              "title": "ND350 C2 L0 A07 Meet The Team",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "eybCah7PD6s",
+                "china_cdn_id": "eybCah7PD6s.mp4"
+              }
+            },
+            {
+              "id": 1162739,
+              "key": "1bb56e2e-ccf0-466a-896c-ffe10b86f314",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## PJ Bank Security Team\n- Mindy Castel is the **CISO**\n- **Security Operation Center (SOC) Analysts**\n  - Janet Pierce\n  - James McLovin\n\n## PJ Pros Team\n- Paul Oyelakin is the **Team Lead**\n- **Penetration Tester**\n  - Jackie Wilson - specializes in testing web applications\n  - Json McGuire - specializes in physical penetration and social engineering\n- **You** as the intern to be part of the team!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1162932,
+              "key": "f7ce3aa7-8df6-46b1-a55a-53b669f5969c",
+              "title": "Introduction To Penetration Testing & Red Team Ops",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Jg-4qCRk4B0",
+                "china_cdn_id": "Jg-4qCRk4B0.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 1129191,
+          "key": "dc58e748-d017-47d0-953b-e10d21f36dac",
+          "title": "Establishing the Rules Of Engagement",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "dc58e748-d017-47d0-953b-e10d21f36dac",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": {
+            "files": [
+              {
+                "name": "PJ Bank ROE V2",
+                "uri": "https://video.udacity-data.com/topher/2021/March/604a2989_pj-bank-roe-v2/pj-bank-roe-v2.docx"
+              }
+            ],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 1129187,
+              "key": "5e500052-46fc-4187-89c2-6b0c5c4c477d",
+              "title": "Establishing the Rules Of Engagement Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": " ## Establishing the Rules Of Engagement",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1129188,
+              "key": "fc16dbbb-e5ec-4f8a-b7e7-ee04303be9fc",
+              "title": "ND350 C2 L0 A08 Establishing The Rules Of Engagement",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "-c7vtQo2pRc",
+                "china_cdn_id": "-c7vtQo2pRc.mp4"
+              }
+            },
+            {
+              "id": 1129189,
+              "key": "4daed87c-e454-41c4-89bc-152f60c045e0",
+              "title": "Establishing the Rules Of Engagement Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Sections of the Rules of Engagement (RoE)\n\n* **Introduction**: This is where you present a little background information\n* **Scope of work**: Define the major milestones required to successfully complete the project\n* **Risk and Limitation**: Define the limitation of testing and also establish risk likelihood. \n* **Personnel**: Identify project stakeholders (security team and red team)\n* **Schedule**: Provide estimated completion dates to complete each project milestone. Does not have to be detailed. Detailed schedule will be drafted in the project plan. \n* **Testing Tools**: List tools permitted by the system owner to be used on the network. \n* **Termination of Testing**: List condition(s) that may warrant termination of pen-testing. \n* **Data Handling**: Define the expectation of the pen-test team when they come into contact with sensitive data while pen-testing. \n* **Reporting**: List the sections that must be addressed when drafting the Pen-Test report. \n* **Warranty, Limitation of liability and Indemnification**: This section is very important for the pen-test team as it limits their liability in the event their testing negatively impact network performance. \n* **Signature page**: At minimum this should be signed by the project sponsor (authorizing official from both company)\n* **Test Plan**: This is where you list the actions that you know you will commit during the test. this section will have more details in a white box test. Since this is a black box test, we will not have much of a test plan until after we've gathered information (Reconnaissance)",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1129196,
+          "key": "c1b44821-643c-4f73-a377-61984ac6b82d",
+          "title": "Penetration Testing Kick-off Meeting",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c1b44821-643c-4f73-a377-61984ac6b82d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1129192,
+              "key": "fcd3f991-68fa-44be-8c0a-0b6b1fc621da",
+              "title": "Penetration Testing Kick-off Meeting Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Penetration Testing Kick Off Meeting",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1129193,
+              "key": "b72cccce-883f-45b2-9619-39f4c8bff4c6",
+              "title": "ND350 C2 L0 A10 Penetration Testing Kick-Off Meeting Highlights",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "P-pYrQ2aFjY",
+                "china_cdn_id": "P-pYrQ2aFjY.mp4"
+              }
+            },
+            {
+              "id": 1162740,
+              "key": "380ce445-7ede-4306-b88e-6e2fa0766388",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Highlights of the Kick-Off Meeting \n\n- Introduced the Team members\n- Determined this is a black box test\n- We are approved to penetration test personnel, network, and facility\n- This is an unannounced test\n- Reviewed our schedule\n    - 60 days to penetration test\n    - 10 days after to submit report\n- Reviewed testing tools to ensure they are all approved software that can be plugged into the network\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1129202,
+          "key": "8d7ab75b-d6a5-4a28-9e0f-4c69b4123f48",
+          "title": "Environment Setup",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "8d7ab75b-d6a5-4a28-9e0f-4c69b4123f48",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": {
+            "files": [
+              {
+                "name": "Local Lab Preparation Instructions",
+                "uri": "https://video.udacity-data.com/topher/2021/March/604fb229_local-lab-preparation-instructions/local-lab-preparation-instructions.pdf"
+              }
+            ],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 1129197,
+              "key": "cedd1e0b-ca48-499a-8bfb-e7a05c636ee6",
+              "title": "Lab Preparations - Part 1 Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Environment",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1129198,
+              "key": "8c170317-945d-45f9-bb5e-ec153bf168cd",
+              "title": "ND350 C2 L0 A11 Environment Setup",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "ELexP8RLdaI",
+                "china_cdn_id": "ELexP8RLdaI.mp4"
+              }
+            },
+            {
+              "id": 1129199,
+              "key": "8aa4af39-3232-4be7-aef6-7763161dc583",
+              "title": "Lab Preparations - Part 1 Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Here is what we know so far about the network:\n\n1. There is a publicly accessible website - <a href=\"https://mypjbank.com/\" target=\"_blank\">mypjbank.com</a>\n1. The organization has an Intranet (DMZ) that contains the payroll server and possibly other servers (we will discover those in later lesson)\n1. There is an internal subnet where employee workstation works. \n\n<div class=\"index-module--table-responsive--1zG6k\"><table class=\"index-module--table--8j68C index-module--table-striped--3HHC-\">\n<thead>\n<tr>\n<th style=\"text-align:center\"><strong>MZ</strong> <br> Subnet (TBD)</th>\n<th style=\"text-align:center\"> Connected by... </th>\n<th style=\"text-align:center\"><strong>Public</strong></th>\n<th style=\"text-align:center\"> Connected by... </th>\n<th style=\"text-align:center\"><strong>DMZ</strong> <br> Subnet (TBD)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align:center\">Windows 10 Device <br> IP Address (TBD)</td>\n<td style=\"text-align:center\">VPN</td>\n<td style=\"text-align:center\">mypjbank.com</td>\n<td style=\"text-align:center\">VPN</td>\n<td style=\"text-align:center\">1. Payroll Server <br> IP Address (TBD)<br> 2. Other Devices (TBD)</td>\n</tr>\n</tbody>\n</table>\n</div>",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1146871,
+              "key": "dd79ee45-27d2-4e05-b7b9-e3c24dce2c93",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/April/6077d46a_l0-intro-to-penetration-testing-red-team-ops-1/l0-intro-to-penetration-testing-red-team-ops-1.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/dd79ee45-27d2-4e05-b7b9-e3c24dce2c93",
+              "caption": "Network Environment Diagram",
+              "alt": "Network Environment Diagram",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1146872,
+              "key": "dad599cb-7020-4ba6-856a-87d933885a5b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Options for accessing your lab environment:\n\n## Option 1 (Preferred): Cloud Access\n\nDuring each exercise you are provided a workspace where you can gain access to the virtual machines in your lab environment. Instructions on navigating the environment will be provided to with each exercise. \n\n## Option 2: Local Environment (build this out)\n\n**THIS INSTRUCTION IS OPTIONAL AND COMPLIMENTARY WITH THE PENETRATION TESTING AND RED TEAMING NANODEGREE PROGRAM.**\n\nThis is an environment that we have designed for you to run your exercises locally. You have been provided with a cloud-lab environment, so you don’t have to worry about developing you lab locally or having a high performance physical machine with admin permissions. The local lab build out instruction is optional and only for those that wish to establish a lab environment their physical device. **We do not provide technical support for the local environment.**\n\n**Instructions for building your lab locally can be found below.**",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1129207,
+          "key": "a5efcf6a-9b7b-4854-b00b-a932df957397",
+          "title": "Penetration Testing Team Plan of Action Meeting",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a5efcf6a-9b7b-4854-b00b-a932df957397",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1129203,
+              "key": "7e11d9c9-9199-4ec8-9367-b5d4455e011f",
+              "title": "Penetration Testing Team Plan of Action Meeting Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Penetration Testing Team Plan of Action Meeting",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1129204,
+              "key": "5bbd4e79-ee13-4806-b0b3-c2e14d994c2d",
+              "title": "Penetration Testing Kickoff Meeting",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "ERvpShyLHFU",
+                "china_cdn_id": "ERvpShyLHFU.mp4"
+              }
+            },
+            {
+              "id": 1129205,
+              "key": "19199c56-0b43-41f7-a8ca-1a2d7f34bdeb",
+              "title": "Penetration Testing Team Plan of Action Meeting Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Meeting Notes: \n\n   * Introduce the new PJ Pros employee to the team\n   * It will be important for the team to follow the appropriate steps of pen testing: \n      * Recon\n      * Scanning\n      * Gaining access\n      * Maintaining Access\n      * Covering Tracks\n   * Identify Cherry Tree as the common platform to collect and share Pen-test notes\n      * After the project, the team will work together to draft a final report\n   * Follow up meeting tomorrow to discuss Game Plan for Reconnaissance: \n   *",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1129212,
+          "key": "e59bd01e-6ce0-4499-adef-4fbf51bf1b65",
+          "title": "Project: Red Teaming Operations",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "e59bd01e-6ce0-4499-adef-4fbf51bf1b65",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1129208,
+              "key": "a06e5beb-a77f-4a58-9e78-f8986db1c033",
+              "title": "Project: Red Teaming Operations Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Project: Red Teaming Operations",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1129211,
+              "key": "1fbcdd95-71a7-49e5-912d-019763dca29b",
+              "title": "Project: Red Teaming Operations Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "The CISO have been considering us for more work already! If we do well, I'm sure she will extend our contract. \n\nI hear they are looking to develop a website to train their employees and there is a backend server for access to internal services. You’re probably going to need to complete the following:  \n\n* Reconnaissance\n* Scanning\n* Gain Access\n* Exfiltrate data\n* Harvest credentials\n* Run SQLi\n\nDon’t worry, I’m going to go over everything with you in this course so be sure to take good notes throughout so you’re ready",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1129216,
+          "key": "6b793872-3498-410d-b788-86503cc9d7f6",
+          "title": "Lesson Recap",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "6b793872-3498-410d-b788-86503cc9d7f6",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1129213,
+              "key": "d7bc9f3a-3495-451a-b565-319fd1546336",
+              "title": "Lesson Recap Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Lesson Recap",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1129214,
+              "key": "dcae2e6d-622d-4d50-8f89-1fcd293d0f51",
+              "title": "ND350 C2 L0 A13 Lesson Recap",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "tbQq45j8dGo",
+                "china_cdn_id": "tbQq45j8dGo.mp4"
+              }
+            },
+            {
+              "id": 1129215,
+              "key": "8d8be1a3-da92-4d9e-9676-79f4f0318772",
+              "title": "Lesson Recap Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this lesson we were able to: \n- Differentiate between a Pentester and a Red Team member\n- Identify different roles involved in Pen Testing and Red Teaming Excercises\n- Learn the History of Pen testing and Red Teaming\n- Establish an effective method to retaining the information from your video lessons\n- Draft a Rules of Engagement and how to present it\n- Start the development of a lab environment\n- Meet with others to begin collaborative efforts for a pen test project",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1173036,
+              "key": "a6a78133-5f25-4d94-8535-efc85592d766",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Further Research\n\n## Articles:\n\n* <a href=\"https://pjcourses.com/different-areas-of-cyber-security-to-work-in\" target=\"_blank\">Different Areas Of Cyber-Security to Work In</a>\n* <a href=\"https://pjcourses.com/what-is-the-dark-web\" target=\"_blank\">What is the Dark Web</a>\n* <a href=\"https://pjcourses.com/busted-myth-associated-with-career-in-cyber-security\" target=\"_blank\">Busted: Myth Associated with Career in Cyber Security</a>\n* <a href=\"https://youtu.be/Z_qMzkzk-5w\" target=\"_blank\">Breaking into Cyber Security (Video Webinar)</a>\n\n## Free Tutorials that may help you with basic understanding of IT:\n\n* <a href=\"https://youtu.be/M-HdVodFZ3E\" target=\"_blank\">Subnetting Part 1</a>\n* <a href=\"https://youtu.be/vUHtvkT61Sw\" target=\"_blank\">Subnetting Part 2</a>\n* <a href=\"https://youtu.be/pTCI-VnMJi8\" target=\"_blank\">NAT for Beginners</a>",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1131345,
+          "key": "54352835-884f-45a2-8c48-e7b38f2ba52a",
+          "title": "Good Luck!",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "54352835-884f-45a2-8c48-e7b38f2ba52a",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1131346,
+              "key": "0f06f082-1bf1-4e0e-a12b-f507e5c3d630",
+              "title": "ND350 C2 L0 A14 Goodluck!",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "ZoasfezhAD0",
+                "china_cdn_id": "ZoasfezhAD0.mp4"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "lesson_type",
+      "reason": "Obsolete"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

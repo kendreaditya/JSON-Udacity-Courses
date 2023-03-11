@@ -1,0 +1,360 @@
+{
+  "id": 2259,
+  "project_id": 300,
+  "upload_types": [
+    "repo",
+    "zip"
+  ],
+  "file_filter_regex": "\\A(?!(((.*/)?(__MACOSX|\\.git|node_modules|bower_components|jspm_packages|\\.idea|build|.ipynb_checkpoints|\\.Trash-0|logs)(\\Z|/))))((.*\\.(css|docx|gradle|htm|html|java|js|markdown|md|pdf|py|rmd|rst|sql|swift|txt|xml|yaml|yml)\\Z)|((.*/)?(README|Readme|readme|Makefile)\\Z))",
+  "nomination_eligible": true,
+  "stand_out": "(Presented in no particular order ...)\n\n#### (1) Augment the Training Data \n\nAugmenting the training and/or validation set might help improve model performance. \n\n#### (2) Turn your Algorithm into a Web App\n\nTurn your code into a web app using [Flask](http://flask.pocoo.org/)!  \n\n#### (3) Overlay Dog Ears on Detected Human Heads\n\nOverlay a Snapchat-like filter with dog ears on detected human heads.  You can determine where to place the ears through the use of the OpenCV face detector, which returns a bounding box for the face.  If you would also like to overlay a dog nose filter, some nice tutorials for facial keypoints detection exist [here](https://www.kaggle.com/c/facial-keypoints-detection/details/deep-learning-tutorial).\n\n#### (4) Add Functionality for Dog Mutts\n\nCurrently, if a dog appears 51% German Shephard and 49% poodle, only the German Shephard breed is returned.  The algorithm is currently guaranteed to fail for every mixed breed dog.  Of course, if a dog is predicted as 99.5% Labrador, it is still worthwhile to round this to 100% and return a single breed; so, you will have to find a nice balance.  \n\n#### (5) Experiment with Multiple Dog/Human Detectors\n\nPerform a systematic evaluation of various methods for detecting humans and dogs in images.  Provide improved methodology for the `face_detector` and `dog_detector` functions.",
+  "hide_criteria": false,
+  "created_at": "2018-08-23T22:42:08.280Z",
+  "updated_at": "2019-06-21T21:53:10.802Z",
+  "hashtag": "",
+  "max_upload_size_mb": 500,
+  "estimated_sla": null,
+  "project_assistant_enabled": false,
+  "checkmate_enabled": false,
+  "checkmate_metadata": null,
+  "available_for_cert_project": false,
+  "classroom_node_id": 696462,
+  "classroom_project_key": "cc2aa43d-cca1-47b6-a9d0-5c7c49c85dfd",
+  "language": "en-us",
+  "ndkeys": [
+    "nd101",
+    "nd101-mena-connect",
+    "nd101-ent"
+  ],
+  "coursekeys": [],
+  "sections": [
+    {
+      "id": 4822,
+      "name": "Files Submitted",
+      "created_at": "2018-09-04T18:54:15.234Z",
+      "updated_at": "2018-09-04T18:54:23.256Z",
+      "deleted_at": null,
+      "position": 0,
+      "rubric_id": 2259,
+      "rubric_items": [
+        {
+          "id": 13972,
+          "section_id": 4822,
+          "passed_description": "The submission includes all required, complete notebook files.",
+          "exceeded_description": null,
+          "created_at": "2018-09-04T18:54:23.372Z",
+          "updated_at": "2018-09-04T21:24:27.569Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "Submission Files",
+          "exceedable": false
+        }
+      ]
+    },
+    {
+      "id": 4823,
+      "name": "Step 1: Detect Humans",
+      "created_at": "2018-09-04T18:55:38.959Z",
+      "updated_at": "2018-09-04T19:01:38.886Z",
+      "deleted_at": null,
+      "position": 1,
+      "rubric_id": 2259,
+      "rubric_items": [
+        {
+          "id": 13973,
+          "section_id": 4823,
+          "passed_description": "The submission returns the percentage of the first 100 images in the dog and human face datasets that include a detected, human face.",
+          "exceeded_description": null,
+          "created_at": "2018-09-04T18:55:43.792Z",
+          "updated_at": "2018-09-04T18:56:38.809Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "__Question 1:__ Assess the Human Face Detector",
+          "exceedable": false
+        }
+      ]
+    },
+    {
+      "id": 4824,
+      "name": "Step 2: Detect Dogs",
+      "created_at": "2018-09-04T18:57:36.774Z",
+      "updated_at": "2018-09-04T19:01:38.896Z",
+      "deleted_at": null,
+      "position": 2,
+      "rubric_id": 2259,
+      "rubric_items": [
+        {
+          "id": 13974,
+          "section_id": 4824,
+          "passed_description": "Use a pre-trained VGG16 Net to find the predicted class for a given image. Use this to complete a `dog_detector` function below that returns True if a dog is detected in an image (and False if not).",
+          "exceeded_description": null,
+          "created_at": "2018-09-04T18:57:42.657Z",
+          "updated_at": "2018-09-04T19:00:20.306Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "Implement a Dog Detector",
+          "exceedable": false
+        },
+        {
+          "id": 13975,
+          "section_id": 4824,
+          "passed_description": "The submission returns the percentage of the first 100 images in the dog and human face datasets that include a detected dog. ",
+          "exceeded_description": null,
+          "created_at": "2018-09-04T19:00:24.133Z",
+          "updated_at": "2018-09-04T19:01:00.847Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 1,
+          "criteria": "__Question 2:__ Assess the Dog Detector",
+          "exceedable": false
+        }
+      ]
+    },
+    {
+      "id": 4825,
+      "name": " Step 3: Create a CNN to Classify Dog Breeds (from Scratch)",
+      "created_at": "2018-09-04T19:01:39.006Z",
+      "updated_at": "2018-09-04T19:01:43.941Z",
+      "deleted_at": null,
+      "position": 3,
+      "rubric_id": 2259,
+      "rubric_items": [
+        {
+          "id": 13976,
+          "section_id": 4825,
+          "passed_description": "Write three separate data loaders for the training, validation, and test datasets of dog images. These images should be pre-processed to be of the correct size. ",
+          "exceeded_description": null,
+          "created_at": "2018-09-04T19:01:44.058Z",
+          "updated_at": "2018-09-04T19:08:14.712Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "Specify DataLoaders for the Dog Dataset",
+          "exceedable": false
+        },
+        {
+          "id": 13978,
+          "section_id": 4825,
+          "passed_description": "Answer describes how the images were pre-processed and/or augmented.",
+          "exceeded_description": null,
+          "created_at": "2018-09-04T19:10:01.246Z",
+          "updated_at": "2018-09-04T19:12:19.405Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 1,
+          "criteria": "__Question 3:__  Describe your chosen procedure for preprocessing the data.",
+          "exceedable": false
+        },
+        {
+          "id": 13977,
+          "section_id": 4825,
+          "passed_description": "The submission specifies a CNN architecture.",
+          "exceeded_description": null,
+          "created_at": "2018-09-04T19:08:37.712Z",
+          "updated_at": "2018-09-04T19:12:19.417Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 2,
+          "criteria": "Model Architecture",
+          "exceedable": false
+        },
+        {
+          "id": 13979,
+          "section_id": 4825,
+          "passed_description": "Answer describes the reasoning behind the selection of layer types.",
+          "exceeded_description": null,
+          "created_at": "2018-09-04T19:12:19.552Z",
+          "updated_at": "2018-09-04T19:18:20.233Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 3,
+          "criteria": "__Question 4:__  Outline the steps you took to get to your final CNN architecture and your reasoning at each step.",
+          "exceedable": false
+        },
+        {
+          "id": 13980,
+          "section_id": 4825,
+          "passed_description": "Choose appropriate loss and optimization functions for this classification task. Train the model for a number of epochs and save the \"best\" result.",
+          "exceeded_description": null,
+          "created_at": "2018-09-04T19:21:16.891Z",
+          "updated_at": "2018-09-04T19:45:14.549Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 4,
+          "criteria": "Train the Model",
+          "exceedable": false
+        },
+        {
+          "id": 13981,
+          "section_id": 4825,
+          "passed_description": "The trained model attains at least 10% accuracy on the test set.",
+          "exceeded_description": null,
+          "created_at": "2018-09-04T19:32:32.414Z",
+          "updated_at": "2018-09-04T19:34:14.878Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 5,
+          "criteria": "Test the Model",
+          "exceedable": false
+        }
+      ]
+    },
+    {
+      "id": 4826,
+      "name": "Step 4: Create a CNN Using Transfer Learning",
+      "created_at": "2018-09-04T19:37:30.044Z",
+      "updated_at": "2018-09-04T19:39:32.164Z",
+      "deleted_at": null,
+      "position": 4,
+      "rubric_id": 2259,
+      "rubric_items": [
+        {
+          "id": 13982,
+          "section_id": 4826,
+          "passed_description": "The submission specifies a model architecture that uses part of a pre-trained model.",
+          "exceeded_description": null,
+          "created_at": "2018-09-04T19:39:32.309Z",
+          "updated_at": "2018-09-04T19:41:41.204Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "Model Architecture",
+          "exceedable": false
+        },
+        {
+          "id": 13983,
+          "section_id": 4826,
+          "passed_description": "The submission details why the chosen architecture is suitable for this classification task.",
+          "exceeded_description": null,
+          "created_at": "2018-09-04T19:41:48.258Z",
+          "updated_at": "2018-09-04T19:43:48.198Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 1,
+          "criteria": "__Question 5__: Model Architecture",
+          "exceedable": false
+        },
+        {
+          "id": 13984,
+          "section_id": 4826,
+          "passed_description": "Train your model for a number of epochs and save the result wth the lowest validation loss.",
+          "exceeded_description": null,
+          "created_at": "2018-09-04T19:44:08.640Z",
+          "updated_at": "2018-09-04T19:47:34.901Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 2,
+          "criteria": "Train and Validate the Model",
+          "exceedable": false
+        },
+        {
+          "id": 13985,
+          "section_id": 4826,
+          "passed_description": "Accuracy on the test set is 60% or greater.",
+          "exceeded_description": null,
+          "created_at": "2018-09-04T19:47:35.045Z",
+          "updated_at": "2018-09-04T19:47:53.949Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 3,
+          "criteria": "Test the Model",
+          "exceedable": false
+        },
+        {
+          "id": 13986,
+          "section_id": 4826,
+          "passed_description": "The submission includes a function that takes a file path to an image as input and returns the dog breed that is predicted by the CNN.",
+          "exceeded_description": null,
+          "created_at": "2018-09-04T19:48:21.259Z",
+          "updated_at": "2018-09-04T19:48:38.634Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 4,
+          "criteria": "Predict Dog Breed with the Model",
+          "exceedable": false
+        }
+      ]
+    },
+    {
+      "id": 4827,
+      "name": "Step 5: Write Your Algorithm",
+      "created_at": "2018-09-04T19:50:07.573Z",
+      "updated_at": "2018-09-04T19:50:18.743Z",
+      "deleted_at": null,
+      "position": 5,
+      "rubric_id": 2259,
+      "rubric_items": [
+        {
+          "id": 13987,
+          "section_id": 4827,
+          "passed_description": "The submission uses the CNN from the previous step to detect dog breed.  The submission has different output for each detected image type (dog, human, other) and provides either predicted actual (or resembling) dog breed.",
+          "exceeded_description": null,
+          "created_at": "2018-09-04T19:50:18.900Z",
+          "updated_at": "2018-09-04T19:51:00.232Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "Write your Algorithm",
+          "exceedable": false
+        }
+      ]
+    },
+    {
+      "id": 4828,
+      "name": "Step 6: Test Your Algorithm",
+      "created_at": "2018-09-04T20:07:10.534Z",
+      "updated_at": "2018-09-04T20:07:16.489Z",
+      "deleted_at": null,
+      "position": 6,
+      "rubric_id": 2259,
+      "rubric_items": [
+        {
+          "id": 13988,
+          "section_id": 4828,
+          "passed_description": "The submission tests at least 6 images, including at least two human and two dog images.",
+          "exceeded_description": null,
+          "created_at": "2018-09-04T20:07:16.628Z",
+          "updated_at": "2018-09-04T20:07:52.119Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "Test Your Algorithm on Sample Images!",
+          "exceedable": false
+        },
+        {
+          "id": 13989,
+          "section_id": 4828,
+          "passed_description": "Submission provides at least three possible points of improvement for the classification algorithm.",
+          "exceeded_description": null,
+          "created_at": "2018-09-04T20:07:52.403Z",
+          "updated_at": "2018-09-04T20:10:33.554Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 1,
+          "criteria": "__Question 6__: Weaknesses and Improvements",
+          "exceedable": false
+        }
+      ]
+    }
+  ],
+  "project": {
+    "id": 300,
+    "name": "Dog Breed Classifier",
+    "nanodegree_key": "nd101",
+    "is_cert_project": false,
+    "audit_project_id": null,
+    "hashtag": null,
+    "audit_rubric_id": 1144,
+    "entitlement_required": false,
+    "is_career": false,
+    "recruitment_family_id": 1,
+    "created_at": "2017-04-27T17:30:41.365Z",
+    "updated_at": "2020-05-27T14:44:14.119Z",
+    "price": "9.5",
+    "ungradeable_price": "3.0",
+    "audit_price": null
+  }
+}

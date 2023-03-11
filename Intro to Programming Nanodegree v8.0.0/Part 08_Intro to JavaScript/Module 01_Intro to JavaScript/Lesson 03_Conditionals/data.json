@@ -1,0 +1,1681 @@
+{
+  "data": {
+    "lesson": {
+      "id": 817332,
+      "key": "805a6ae9-d557-4fa1-b5e7-efac632e9592",
+      "title": "Conditionals",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Learn how to add logic to your JavaScript programs using conditional statements.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/805a6ae9-d557-4fa1-b5e7-efac632e9592/817332/1549164994087/Conditionals+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/805a6ae9-d557-4fa1-b5e7-efac632e9592/817332/1549164990851/Conditionals+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 206540,
+          "key": "b13df814-a7c7-4b65-ac3f-112c56ee7726",
+          "title": "Intro to Conditionals",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "b13df814-a7c7-4b65-ac3f-112c56ee7726",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 232959,
+              "key": "e49bcb8c-92fa-479f-9d71-df402ca527dc",
+              "title": "Intro to Conditionals",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "ZFPd28PgqdU",
+                "china_cdn_id": "ZFPd28PgqdU.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 206543,
+          "key": "5884611b-3df7-46f8-9ab7-1dcae8a88e5c",
+          "title": "Quiz: Flowcharts (3-1)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5884611b-3df7-46f8-9ab7-1dcae8a88e5c",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": {
+            "files": [
+              {
+                "name": "Purchase-The-Item-Flowchart",
+                "uri": "http://video.udacity-data.com.s3.amazonaws.com/topher/2017/January/586e9791_purchase-the-item-flowchart/purchase-the-item-flowchart.jpg"
+              },
+              {
+                "name": "Approaching-The-Castle-Flowchart",
+                "uri": "http://video.udacity-data.com.s3.amazonaws.com/topher/2017/January/586e979e_approaching-the-castle-flowchart/approaching-the-castle-flowchart.jpg"
+              }
+            ],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 247641,
+              "key": "7154cd68-7076-49da-a136-b3e3420689a2",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "> **DEFINITION:** A **flowchart** is a visual diagram that outlines the solution to a problem through a series of logical statements. The order in which statements are evaluated and executed is called the **control flow**.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 206547,
+              "key": "f8a196b8-b452-4de5-afa3-366df3cba324",
+              "title": "Conditional Logic",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "f8a196b8-b452-4de5-afa3-366df3cba324",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "![buy the item flowchart](https://d17h27t6h515a5.cloudfront.net/topher/2016/December/584853f3_buy-the-item-cropped/buy-the-item-cropped.jpg)\n\nTake a look at the flowchart above. What data type would best represent (Yes/No) if you have enough money to purchase the item?\n",
+                "answers": [
+                  {
+                    "id": "a1479242197603",
+                    "text": "Number",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1479242225249",
+                    "text": "String",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1479242227557",
+                    "text": "Boolean",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1479242230505",
+                    "text": "undefined",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 206565,
+              "key": "b3903ac2-ce87-483e-92ec-58a134d8db32",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "---",
+              "instructor_notes": ""
+            },
+            {
+              "id": 206551,
+              "key": "1b7c4608-6aaf-45f5-ad37-f50277a625f9",
+              "title": "Storming the Castle",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "1b7c4608-6aaf-45f5-ad37-f50277a625f9",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "![storm the castle flowchart](https://d17h27t6h515a5.cloudfront.net/topher/2017/January/586e979e_approaching-the-castle-flowchart/approaching-the-castle-flowchart.jpg)\n\nHere’s a different flowchart for approaching the castle gates. If you decide to storm the castle, what is the immediate resulting outcome?\n",
+                "answers": [
+                  {
+                    "id": "a1479242378415",
+                    "text": "A dragon appears and attacks!",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1479242393172",
+                    "text": "You go back to town and prepare supplies",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1479242398728",
+                    "text": "You run away from the dragon in fear",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1479242402816",
+                    "text": "You lunge at the dragon with your broadsword",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 206552,
+          "key": "a9ef2a0f-b68f-4c96-8528-5556927aba63",
+          "title": "Flowchart to Code",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a9ef2a0f-b68f-4c96-8528-5556927aba63",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 252829,
+              "key": "260a9d13-bb2d-4fd5-a76a-27fd4545c7f6",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Flowchart to Code",
+              "instructor_notes": ""
+            },
+            {
+              "id": 230465,
+              "key": "ff14bffc-d5a5-4c7f-9ded-e06bbef289fe",
+              "title": "Flowchart to Code",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "RrYfMvAGKiY",
+                "china_cdn_id": "RrYfMvAGKiY.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 206555,
+          "key": "a904313c-0809-4f55-a1c6-cf7b7fcc49ef",
+          "title": "If...Else Statements",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a904313c-0809-4f55-a1c6-cf7b7fcc49ef",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 206556,
+              "key": "91fad761-a54c-4c4a-9ebb-e947c90064fc",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## If...else statements\n\n**If...else statements** allow you to execute certain pieces of code based on a condition, or set of conditions, being met.\n\n```js\nif (/* this expression is true */) {\n  // run this code\n} else {\n  // run this code\n}\n```\n\nThis is extremely helpful because it allows you to choose which piece of code you want to run based on the result of an expression. For example,\n\n```js\nvar a = 1;\nvar b = 2;\n\nif (a > b) {\n  console.log(\"a is greater than b\");\n} else {\n  console.log(\"a is less than or equal to b\");\n}\n```\n> **Prints:** \"a is less than or equal to b\"\n\nA couple of important things to notice about `if...else` statements.\n\nThe value inside the `if` statement is always _converted_ to true or false. Depending on the value, the code inside the `if` statement is run or the code inside the `else` statement is run, but not both. The code inside the `if` and `else` statements are surrounded by **curly braces** `{...}` to separate the conditions and indicate which code should be run.\n\n> **TIP:** When coding, sometimes you may _only_ want to use an `if` statement. However, if you try to use only  an `else` statement, then you will receive the error `SyntaxError: Unexpected token else`. You’ll see this error because `else` statements need an `if` statement in order to work. You can’t have an `else` statement without first having an `if` statement.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 206557,
+          "key": "7dc61050-9f21-4152-99c0-31a14da2b3b3",
+          "title": "Else If Statements",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "7dc61050-9f21-4152-99c0-31a14da2b3b3",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": {
+            "files": [
+              {
+                "name": "What-To-Wear-Flowchart",
+                "uri": "http://video.udacity-data.com.s3.amazonaws.com/topher/2017/January/586e9836_what-to-wear-flowchart/what-to-wear-flowchart.jpeg"
+              }
+            ],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 206558,
+              "key": "6904936c-e3cf-44a7-8647-2c4f62a95a99",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In some situations, two conditionals aren’t enough. Consider the following situation.\n\nYou're trying to decide what to wear tomorrow. If it is going to snow, then you’ll want to wear a coat. If it's not going to snow and it's going to rain, then you’ll want to wear a jacket. And if it's not going to snow or rain, then you’ll just wear what you have on.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 216469,
+              "key": "a934866d-416b-4d08-a82d-3aa2b012bc34",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/November/5834ac48_what-to-wear-cropped/what-to-wear-cropped.jpeg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/a934866d-416b-4d08-a82d-3aa2b012bc34",
+              "caption": "Flowchart for deciding what to wear tomorrow.",
+              "alt": "Flowchart for deciding what to wear tomorrow.",
+              "width": 898,
+              "height": 1028,
+              "instructor_notes": null
+            },
+            {
+              "id": 206560,
+              "key": "c72e01d8-4f7d-47fb-bd13-a5d8f615c1a1",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Else if statements\n\nIn JavaScript, you can represent this secondary check by using an extra if statement called an **else if statement**.\n\n```js\nvar weather = \"sunny\";\n\nif (weather === \"snow\") {\n  console.log(\"Bring a coat.\");\n} else if (weather === \"rain\") {\n  console.log(\"Bring a rain jacket.\");\n} else {\n  console.log(\"Wear what you have on.\");\n}\n```\n> **Prints:** Wear what you have on.\n\nBy adding the extra `else if` statement, you're adding an extra conditional statement.\n\nIf it’s not going to snow, then the code will jump to the `else if` statement to see if it’s going to rain.\nIf it’s not going to rain, then the code will jump to the `else` statement.\n\nThe `else` statement essentially acts as the \"default\" condition in case all the other `if` statements are false.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 206561,
+              "key": "58315c34-c3c1-42c3-bb4a-d21561c7c2b5",
+              "title": "Follow The Conditional Logic 1",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "58315c34-c3c1-42c3-bb4a-d21561c7c2b5",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What will be printed to the console if the following code is run?\n\n```js\nvar money = 100.50;\nvar price = 100.50;\n\nif (money > price) {\n  console.log(\"You paid extra, here's your change.\");\n} else if (money === price) {\n  console.log(\"You paid the exact amount, have a nice day!\");\n} else {\n  console.log(\"That's not enough, you still owe me money.\");\n}\n```",
+                "answers": [
+                  {
+                    "id": "a1479242717508",
+                    "text": "\"You paid extra, here's your change.\"",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1479242744351",
+                    "text": "\"You paid the exact amount, have a nice day!\"",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1479242754395",
+                    "text": "\"That's not enough, you still owe me money.\"",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1479242758876",
+                    "text": "None of the above",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 206562,
+              "key": "b1316e0a-7c74-4eb1-bf49-74365bfdcfc6",
+              "title": "Follow The Conditional Logic 2",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "b1316e0a-7c74-4eb1-bf49-74365bfdcfc6",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Looking at the following code, determine what medal Kendyll received.\n\n```js\nvar runner = \"Kendyll\";\nvar position = 2;\nvar medal;\n\nif(position === 1) {\n  medal = \"gold\";\n} else if(position === 2) {\n  medal = \"silver\";\n} else if(position === 3) {\n  medal = \"bronze\";\n} else {\n  medal = \"pat on the back\";\n}\n\nconsole.log(runner + \" received a \" + medal + \" medal.\");\n```",
+                "answers": [
+                  {
+                    "id": "a1479242791140",
+                    "text": "Kendyll received a gold medal.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1479242812446",
+                    "text": "Kendyll received a silver medal.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1479242819650",
+                    "text": "Kendyll received a bronze medal.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1479242824387",
+                    "text": "Kendyll received a pat on the back.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 206567,
+          "key": "d390c340-06f3-4da3-a202-3d38d671408b",
+          "title": "Quiz: Even or Odd (3-2)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d390c340-06f3-4da3-a202-3d38d671408b",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 216012,
+              "key": "f20c7b9c-f687-417c-841a-fbcc0d20720a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Directions:\n\nWrite an if...else statement that:\n\n- prints `\"even\"` if the number is an even number\n- prints `\"odd\"` if the number is an odd number\n\n> **Hint:** Use the `%` (<a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Remainder_()\" target=\"_blank\">modulo</a>) operator to determine if a number is even or odd. The modulo operater takes two numbers and returns the remainder when the first number is divided by the second one:\n> \n> ```js\nconsole.log(12 % 3);\nconsole.log(10 % 4);\n```\n> **Result**: <br>\n> 0 <br>\n> 2\n\n> The answer for `12 % 3` is `0` because twelve divided by three has no remainder. `10 % 4` is `2` because ten divided by 4 has a remainder of two.\n\nMake sure to test your code with different values. For example:\n\n* If `number` equals `1`, then `odd` should be printed to the console.\n* If `number` equals `12`, then `even` should be printed to the console.\n\n## Your Code:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 206568,
+              "key": "09ebfdf3-850e-4c7e-b447-ff914883d28e",
+              "title": "",
+              "semantic_type": "QuizAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "user_state": {
+                "node_key": "09ebfdf3-850e-4c7e-b447-ff914883d28e",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "instruction": null,
+              "question": {
+                "title": "",
+                "semantic_type": "ProgrammingQuestion",
+                "evaluation_id": "6735254347972608",
+                "initial_code_files": [
+                  {
+                    "text": "/*\n * Programming Quiz: Even or Odd (3-2)\n *\n * Write an if...else statement that prints `even` if the \n * number is even and prints `odd` if the number is odd.\n *\n * Note - make sure to print only the string \"even\" or the string \"odd\"\n */\n\n/*\n * QUIZ REQUIREMENTS\n * 1. Your code should have a variable `number`, and include an `if...else` statement\n * 2. Your conditional should use a strict comparison (`===` or `!==`), and use the modulo ( `%` ) operator\n * 3. Your code should produce the expected output - \"even\" or \"odd\" using console.log() method\n */\n \n \n// change the value of `number` to test your if...else statement\nvar number = 2;\n\nif (/* your conditional goes here */) {\n    \n} else {\n\n}\n",
+                    "name": "StudentMain.js"
+                  }
+                ]
+              },
+              "answer": null
+            },
+            {
+              "id": 1013414,
+              "key": "b1ab48eb-eff5-4e95-848b-48e79c55af45",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<font color=\"#000066\"> Note - We check your solution against a limited set of ***test-cases*** that check the minimum requirements, as mentioned in the quiz.</font>",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1013415,
+              "key": "38381fef-e1a0-439c-a2f7-0fa19d6ea575",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n<div id=\"spoiler_1\" style=\"display:none\">\n#### <font color=\"green\">Here is one of the possible solutions:</font>\n\n```Javascript\nvar number = 21;\n\n// Note that a strict equality operator === checks the equality of operands without type conversion.\nif (0 === number % 2) {\n    console.log(\"even\");\n} else {\n    console.log(\"odd\");\n}\n```\n</div>\n<button type=\"button\" id=\"myButton1\" onclick=\"if(document.getElementById('spoiler_1') .style.display=='none') {document.getElementById('spoiler_1') .style.display=''}else{document.getElementById('spoiler_1') .style.display='none'}if (document.getElementById('myButton1').innerHTML=='Show Solution') {document.getElementById('myButton1').innerHTML='Hide Solution';}else{document.getElementById('myButton1').innerHTML = 'Show Solution';}\">Show Solution</button>\n\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 206569,
+          "key": "5c45f6af-cdbb-42a9-a0a1-8e33dedbfc9f",
+          "title": "Quiz: Musical Groups (3-3)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5c45f6af-cdbb-42a9-a0a1-8e33dedbfc9f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 216402,
+              "key": "14cbf98f-bfad-437e-89c0-dad462e9db8c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Musical groups have special names based on the number of people in the group.\n\nFor example, a \"quartet\" is a musical group with four musicians. [Barbershop quartets](https://en.wikipedia.org/wiki/Barbershop_quartet) were a popular type of quartet in the early 1900s and featured four singers made up of a lead, tenor, baritone, and bass.\n\n## Directions:\n\nWrite a series of conditional statements that:\n\n- Prints `\"not a group\"` if `musicians` is less than or equal to `0`\n- Prints `\"solo\"` if `musicians` is equal to `1`\n- Prints `\"duet\"` if `musicians` is equal to `2`\n- Prints `\"trio\"` if `musicians` is equal to `3`\n- Prints `\"quartet\"` if `musicians` is equal to `4`\n- Prints `\"this is a large group\"` if `musicians` is greater than `4`\n\n> **TIP:** Test your code with different values. For example,<br><br>\nIf `musicians` equals `3`, then `\"trio\"` should be printed to the console.<br>\nIf `musicians` equals `20`, then `\"this is a large group\"` should be printed to the console.<br>\nIf `musicians` equals `-1`, then `\"not a group\"` should be printed to the console.\n\nBe sure to watch out for any extra or missing characters (including spaces or punctuation marks) in your output string as well!\n\n## Your Code:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 206570,
+              "key": "c9cdc288-7868-4e6c-92a5-bc75026cacae",
+              "title": "",
+              "semantic_type": "QuizAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "user_state": {
+                "node_key": "c9cdc288-7868-4e6c-92a5-bc75026cacae",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "instruction": null,
+              "question": {
+                "title": "",
+                "semantic_type": "ProgrammingQuestion",
+                "evaluation_id": "5673089071448064",
+                "initial_code_files": [
+                  {
+                    "text": "/*\n * Programming Quiz: Musical Groups (3-3)\n */\n/*\n * QUIZ REQUIREMENTS\n * 1. Your code should have a variable `musicians`, and include `if...else if...else` conditional statement\n * 2. Your code should produce the expected output, as mentioned above. Read each condition carefully. \n */\n \n// change the value of `musicians` to test your conditional statements\nvar musicians = 1;\n\n// your code goes here\n",
+                    "name": "StudentMain.js"
+                  }
+                ]
+              },
+              "answer": null
+            },
+            {
+              "id": 1013416,
+              "key": "a8bea2f5-a0e9-433a-853b-21d98b823e77",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<font color=\"#000066\"> Note - We check your solution against a limited set of ***test-cases*** that check the minimum requirements, as mentioned in the quiz.</font>",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1013417,
+              "key": "eb7c6053-54ed-49d5-94ff-5cea68c1aaa7",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n<div id=\"spoiler_1\" style=\"display:none\">\n#### <font color=\"green\">Here is one of the possible solutions:</font>\n\n```Javascript\n\n// change the value of `musicians` to test your conditional statements\nvar musicians = 0;\n\n// your code goes here\nif (musicians <= 0) {\n    console.log(\"not a group\");\n} else if (musicians === 1) {\n    console.log(\"solo\");\n} else if (musicians === 2) {\n    console.log(\"duet\");\n} else if (musicians === 3) {\n    console.log(\"trio\");\n} else if (musicians === 4) {\n    console.log(\"quartet\");\n} else if (musicians >= 5) {\n    console.log(\"this is a large group\");\n}\n```\n</div>\n<button type=\"button\" id=\"myButton1\" onclick=\"if(document.getElementById('spoiler_1') .style.display=='none') {document.getElementById('spoiler_1') .style.display=''}else{document.getElementById('spoiler_1') .style.display='none'}if (document.getElementById('myButton1').innerHTML=='Show Solution') {document.getElementById('myButton1').innerHTML='Hide Solution';}else{document.getElementById('myButton1').innerHTML = 'Show Solution';}\">Show Solution</button>\n\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 206574,
+          "key": "32773e9f-6361-4fca-8350-5b3d429ff14a",
+          "title": "More Complex Problems",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "32773e9f-6361-4fca-8350-5b3d429ff14a",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 252839,
+              "key": "09e616b1-b854-4279-819e-dd158958b1f5",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## More Complex Problems",
+              "instructor_notes": ""
+            },
+            {
+              "id": 232960,
+              "key": "16505774-4393-4b93-bc09-a4f0e17a1e7d",
+              "title": "More Complex Problems",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "ZQTLabOUzos",
+                "china_cdn_id": "ZQTLabOUzos.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 206577,
+          "key": "778d7735-d08c-4992-a3f1-493c109a1394",
+          "title": "Logical Operators",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "778d7735-d08c-4992-a3f1-493c109a1394",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 206580,
+              "key": "191e459d-e153-4a60-a42f-ffb3f83b6fc4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Here’s the logical expression used to represent Julia’s weekend plans:\n\n```js\nvar colt = \"not busy\";\nvar weather = \"nice\";\n\nif (colt === \"not busy\" && weather === \"nice\") {\n  console.log(\"go to the park\");\n}\n```\n> **Prints:** \"go to the park\"\n\nNotice the `&&` in the code above.\n\nThe `&&` symbol is the logical AND operator, and it is used to combine two logical expressions into one larger logical expression. If **both** smaller expressions are _true_, then the entire expression evaluates to _true_. If **either one** of the smaller expressions is _false_, then the whole logical expression is _false_.\n\nAnother way to think about it is when the `&&` operator is placed between the two statements, the code literally reads, \"if Colt is not busy _AND_ the weather is nice, then go to the park\". \n\n## Logical expressions\n\n**Logical expressions** are similar to mathematical expressions, except logical expressions evaluate to either _true_ or _false_.\n\n```js\n11 != 12\n```\n> **Returns:** true\n\nYou’ve already seen logical expressions when you write comparisons. A comparison is just a simple logical expression.\n\nSimilar to mathematical expressions that use `+`, `-`, `*`, `/` and `%`, there are logical operators `&&`, `||` and `!` that you can use to create more complex logical expressions.\n\n## Logical operators\n\n**Logical operators** can be used in conjunction with boolean values (`true` and `false`) to create complex logical expressions.\n\nBy combining two boolean values together with a logical operator, you create a _logical expression_ that returns another boolean value. Here’s a table describing the different logical operators:\n\n| **Operator** | **Meaning** | **Example**        | **How it works**                                                                    |\n|--------------|-------------|--------------------|-------------------------------------------------------------------------------------|\n| `&&`         | Logical AND | `value1 && value2` | Returns `true` if **both** `value1` **and** `value2` evaluate to `true`.                |\n| <code>&#124;&#124;</code>         | Logical OR  | <code>value1 &#124;&#124; value2</code> | Returns `true` if **either** `value1` **or** `value2` (**or even both!**) evaluates to `true`.             |\n| `!`          | Logical NOT | `!value1`          | Returns the **opposite** of `value1`. If `value1` is `true`, then `!value1` is `false`. |\n\nBy using logical operators, you can create more complex conditionals like Julia’s weekend example.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 206614,
+              "key": "75b3de06-c179-425b-b130-c9f760eda449",
+              "title": "Using Logical Operators",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "<div style=\"text-align: center;\"><font color=\"#000066\"> Note - This video does not have an audio. It was created as a visual to aid learning. </font> </div><div style=\"text-align: center; color: #afafaf; font-size: 14px; margin-top: 15px;\">Logical operators can be used to combine multiple conditional statements into a single statement.</div>",
+              "video": {
+                "youtube_id": "jF80MoQX3DE",
+                "china_cdn_id": "jF80MoQX3DE.mp4"
+              }
+            },
+            {
+              "id": 206612,
+              "key": "f7dbf9b7-5098-4309-9deb-56aaa824b4b2",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "> **TIP:** Logical expressions are evaluated from left to right. Similar to mathematical expressions, logical expressions can also use parentheses to signify parts of the expression that should be evaluated first.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 206609,
+              "key": "57ab5d2a-7a60-4876-bee6-7a2d075b6d04",
+              "title": "Logical Expression 1",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "57ab5d2a-7a60-4876-bee6-7a2d075b6d04",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What value of [BLANK] would make the following expression evaluate to `false`. Notice the `!` right at the beginning!\n\n```js\n!([BLANK] === 4) && \"STRing\" === \"STRing\"\n```\n> **Returns:** false",
+                "answers": [
+                  {
+                    "id": "a1479245706897",
+                    "text": "`-4`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1479245752910",
+                    "text": "`4`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1479245755514",
+                    "text": "`\"4\"`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1479245759974",
+                    "text": "`\"-4\"`",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 206610,
+              "key": "14cad010-75cd-406b-a3aa-08c723e6db1c",
+              "title": "Logical Expression 2",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "14cad010-75cd-406b-a3aa-08c723e6db1c",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Select the operator that would make the following expression evaluate to `true`.\n\n```js\n3 < -10 [BLANK] \"James\" !== \"james\"\n```\n> **Returns:** true",
+                "answers": [
+                  {
+                    "id": "a1479245849123",
+                    "text": "`!`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1479245864406",
+                    "text": "`||`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1479245867920",
+                    "text": "`&&`",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 252830,
+              "key": "7f2a80d6-a6cb-4fef-9bbf-a16523f73134",
+              "title": "More Complex Logical Expressions",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "7f2a80d6-a6cb-4fef-9bbf-a16523f73134",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Evaluate the following logical expressions. Check the ones that evaluate to `true`.\n",
+                "answers": [
+                  {
+                    "id": "a1484169650282",
+                    "text": "`true || false`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1484169698091",
+                    "text": "`false && false`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1484169737325",
+                    "text": "`!true`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1484169744313",
+                    "text": "`(13 > -7) || (false == 0)`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1484169752417",
+                    "text": "`(10 === \"10\") && (1 <= 2)`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1484169762401",
+                    "text": "`(3 != 6 % 3) && !(24 > 45) && (!false)`",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 206615,
+          "key": "39d374f9-d917-4038-94de-bf63323c51f0",
+          "title": "Logical AND and OR",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "39d374f9-d917-4038-94de-bf63323c51f0",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 259511,
+              "key": "3205ebab-220a-459e-aa0b-7e36b7bd2b5a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Truth tables",
+              "instructor_notes": ""
+            },
+            {
+              "id": 259510,
+              "key": "2c98fab9-ed5b-445d-a0ec-e846c2c6310d",
+              "title": "Logical AND and OR",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "HvxDxlN-sYk",
+                "china_cdn_id": "HvxDxlN-sYk.mp4"
+              }
+            },
+            {
+              "id": 206616,
+              "key": "d021bfc5-8784-4d97-912a-c142db580c2d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Before you advance any further in the lesson, here’s the truth tables for logical AND ( `&&` ) and logical OR ( `||` ).\n\n## && (AND)\n\n| **A**   | **B**   | **A && B** |\n|---------|---------|------------|\n| `true`  | `true`  | `true`     |\n| `true`  | `false` | `false`    |\n| `false` | `true`  | `false`    |\n| `false` | `false` | `false`    |\n\n## || (OR)\n\n| **A**   | **B**   | **A &#124;&#124; B** |\n|---------|---------|------------|\n| `true`  | `true`  | `true`     |\n| `true`  | `false` | `true`     |\n| `false` | `true`  | `true`     |\n| `false` | `false` | `false`    |\n\n**Truth tables** are used to represent the result of all the possible combinations of inputs in a logical expression. `A` represents the boolean value on the left-side of the expression and `B` represents the boolean value on the right-side of the expression.\n\nTruth tables can be helpful for visualizing the different outcomes from a logical expression. However, do you notice anything peculiar about the truth tables for logical AND and OR?\n\n## Short-circuiting",
+              "instructor_notes": ""
+            },
+            {
+              "id": 216479,
+              "key": "54533193-269e-451d-804c-ab2cb81715e1",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/November/5834b9be_short-circuiting/short-circuiting.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/54533193-269e-451d-804c-ab2cb81715e1",
+              "caption": "In some scenarios, the value of `B` in logical AND and OR doesn't matter.",
+              "alt": "Image depicting the && AND || OR truth table",
+              "width": 772,
+              "height": 488,
+              "instructor_notes": null
+            },
+            {
+              "id": 216480,
+              "key": "e49a0dd6-42d0-4606-b9bf-e90ce46088a6",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In both tables, there are specific scenarios where regardless of the value of `B`, the value of `A` is enough to satisfy the condition.\n\nFor example, if you look at `A AND B`, if `A` is _false_, then regardless of the value `B`, the total expression will always evaluate to `false` because both `A` _and_ `B` must be `true` in order for the entire expression to be `true`.\n\nThis behavior is called **short-circuiting** because it describes the event when later arguments in a logical expression are not considered because the first argument already satisfies the condition.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 206571,
+          "key": "e09da5d2-9a1e-40d6-bcd2-99078b263110",
+          "title": "Quiz: Murder Mystery (3-4)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "e09da5d2-9a1e-40d6-bcd2-99078b263110",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 216501,
+              "key": "df48e06f-6fdc-48fd-a454-3d170f611d19",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Directions:\n\nFor this quiz, you're going to help solve a fictitious [murder mystery](https://en.wikipedia.org/wiki/Murder_mystery_game) that happened here at Udacity! A murder mystery is a game typically played at parties wherein one of the partygoers is secretly, and unknowingly, playing a murderer, and the other attendees must determine who among them is the criminal. It's a classic case of [whodunnit](https://en.wikipedia.org/wiki/Whodunit).\n\nSince this might be your first time playing a murder mystery, we've simplified things quite a bit to make it easier. Here's what we know! In this murder mystery there are:\n\n- **four rooms**: the ballroom, gallery, billiards room, and dining room,\n- **four weapons**: poison, a trophy, a pool stick, and a knife,\n- and **four suspects**: Mr. Parkes, Ms. Van Cleve, Mrs. Sparr, and Mr. Kalehoff.\n\nWe also know that each weapon _corresponds_ to a particular room, so...\n\n- the `poison` belongs to the `ballroom`,\n- the `trophy` belongs to the `gallery`,\n- the `pool stick` belongs to the `billiards room`,\n- and the `knife` belongs to the `dining room`.\n\nAnd we know that each suspect was located in a specific room at the time of the murder.\n\n- `Mr. Parkes` was located in the `dining room`.\n- `Ms. Van Cleve` was located in the `gallery`.\n- `Mrs. Sparr` was located in the `billiards room`.\n- `Mr. Kalehoff` was located in the `ballroom`.\n\nTo help solve this mystery, write a combination of conditional statements that:\n\n1. sets the value of `weapon` based on the `room` and\n2. sets the value of `solved` to `true` if the value of `room` matches the `suspect`'s room\n\nAfterwards, use this template to print a message to the console if the mystery was solved:\n\n```text\n__________ did it in the __________ with the __________!\n``` \n\nWhat goes into the three blank spaces? You can fill in the blanks with the name of the suspect, the room, and the weapon! For example, an output string may look like:\n\n```text\nMr. Parkes did it in the dining room with the knife!\n```\n\nBe sure to watch out for any extra or missing characters (including spaces and punctuation marks) in your output string as well!\n\n> **TIP:** Test your code with different values. For example,<br><br>\nIf `room` equals `gallery` and `suspect` equals `Ms. Van Cleve`, then `Ms. Van Cleve did it in the gallery with the trophy!` should be printed to the console.\n\n## Your Code:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 206572,
+              "key": "32656fd1-672c-457b-bf80-5a5a8243dbc7",
+              "title": "",
+              "semantic_type": "QuizAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "user_state": {
+                "node_key": "32656fd1-672c-457b-bf80-5a5a8243dbc7",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "instruction": null,
+              "question": {
+                "title": "",
+                "semantic_type": "ProgrammingQuestion",
+                "evaluation_id": "6363591164952576",
+                "initial_code_files": [
+                  {
+                    "text": "/*\n * Programming Quiz: Murder Mystery (3-4)\n */\n\n/*\n * QUIZ REQUIREMENTS\n * 1. Your code should have a variables - `room`, `suspect`, `weapon`, and `solved`\n * 2. Your code should include a conditional statement\n * 3. The variable `suspect` should use one of the provided values\n * 4. The variable `weapon` should be based on the `room`\n * 5. Your code should produce the expected output: __________ did it in the __________ with the __________!\n * Example: Mr. Parkes did it in the dining room with the knife!\n *\n * 6. For unmatching combination of the suspect and the room, print nothing on the console\n */\n\n/* ****************************************** */\n/* TESTING LOGIC */ \n// Change the value of `room` and `suspect` to test your code\n\n// A room can be either of - dining room, gallery, ballroom, or billiards room\nvar room = \"billiards room\";\n\n// A suspect can be either of - Mr. Parkes, Ms. Van Cleve, Mrs. Sparr, or Mr. Kalehoff\n// Test your code by giving matching as well as unmatching names of the suspect\nvar suspect = \"Mr. Parkes\"; \n\n/* ****************************************** */\n\n/* IMPLEMENTATION LOGIC*/\n\n// Initial values\nvar weapon = \"\";\nvar solved = false;\n\n/*\n* To help solve this mystery, write a combination of conditional statements that:\n* 1. sets the value of weapon based on the room and\n* 2. sets the value of solved to true if the value of room matches the suspect's room\n*/\nif (/* your conditional goes here */) {\n    \n} else if (/* your conditional goes here */) {\n    \n} else if (/* your conditional goes here */) {\n    \n} else {\n    \n}\n/* ****************************************** */\n// The code below will run only when `solved` is true\nif (solved) {\n\tconsole.log(/* your message goes here*/);\n}\n/* ****************************************** */",
+                    "name": "StudentMain.js"
+                  }
+                ]
+              },
+              "answer": null
+            },
+            {
+              "id": 1013505,
+              "key": "4fbb6c8d-f29e-4ce8-99d4-07bd98db78ee",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<font color=\"#000066\"> Note - We check your solution against a limited set of ***test-cases*** that check the minimum requirements, as mentioned in the quiz.</font>",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1013476,
+              "key": "d2f41019-3a86-410f-9a4e-122466ec58b1",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n<div id=\"spoiler_1\" style=\"display:none\">\n#### <font color=\"green\">Here is one of the possible solutions:</font>\n\n```Javascript\n\n/* ****************************************** */\n/* TESTING LOGIC */\n// Change the value of `room` and `suspect` to test your code\n// A room can be either of - dining room, gallery, ballroom, or billiards room\nvar room = \"billiards room\";\n\n// A suspect can be either of - Mr. Parkes, Ms. Van Cleve, Mrs. Sparr, or Mr. Kalehoff\nvar suspect = \"Mr. Parkes\";\n\n/* ****************************************** */\n\n/* IMPLEMENTATION LOGIC*/\nvar weapon = \"\";  // Initial value\n\n// A boolean variable `solved` will tell us the status of mystery\n// true --> solved and false --> unsolved\nvar solved = false;\n\n\n/*\n* To help solve this mystery, write a combination of conditional statements that:\n* 1. sets the value of weapon based on the room and\n* 2. sets the value of solved to true if the value of room matches the suspect's room\n*/\nif (room === 'ballroom') {\n    weapon = 'poison';\n    // Mr. Kalehoff was present in the ballroom at the time of the murder\n    if(suspect===\"Mr. Kalehoff\") \n        solved = true;\n}\n/* ANOTHER WAY OF CHECKING THE CONDITION\nif (room === 'ballroom' && suspect===\"Mr. Kalehoff\") {\n    weapon = 'poison';\n    solved = true;\n}\nWe suggest you to try this way of checking the condition as well for an unsolved mystery.\n*/\nelse if (room === 'gallery') {\n    weapon = 'trophy';\n    // Ms. Van Cleve was present in the gallery at the time of the murder\n    if(suspect===\"Ms. Van Cleve\") \n        solved = true;\n}\nelse if (room === 'billiards room') {\n    weapon = 'pool stick';\n    // Mrs. Sparr was present in the billiards room at the time of the murder\n    if(suspect===\"Mrs. Sparr\") \n        solved = true;\n} \nelse if (room === 'dining room') {\n    weapon = 'knife';\n    // Mr. Parkes was present in the dining room at the time of the murder\n    if(suspect===\"Mr. Parkes\") \n        solved = true;\n}   \n\n/* ****************************************** */\n// The code below will run only when `solved` is true\nif (solved) {\n    console.log(suspect + \" did it in the \"+ room +\" with the \"+weapon+\"!\");\n}\n\n/* ****************************************** */\n```\n</div>\n<button type=\"button\" id=\"myButton1\" onclick=\"if(document.getElementById('spoiler_1') .style.display=='none') {document.getElementById('spoiler_1') .style.display=''}else{document.getElementById('spoiler_1') .style.display='none'}if (document.getElementById('myButton1').innerHTML=='Show Solution') {document.getElementById('myButton1').innerHTML='Hide Solution';}else{document.getElementById('myButton1').innerHTML = 'Show Solution';}\">Show Solution</button>\n\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 206625,
+          "key": "03d8062f-6e1f-4f79-86e5-f49cde75e36d",
+          "title": "Quiz: Checking your Balance (3-5)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "03d8062f-6e1f-4f79-86e5-f49cde75e36d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": {
+            "files": [
+              {
+                "name": "Check-Your-Balance-Flowchart",
+                "uri": "http://video.udacity-data.com.s3.amazonaws.com/topher/2017/January/586e98ac_check-your-balance-flowchart/check-your-balance-flowchart.jpeg"
+              }
+            ],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 206627,
+              "key": "3cc6ab72-9a7d-46e1-aecc-cc7b8e004b37",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Directions:\n\nUsing the flowchart below, write the code to represent checking your balance at the ATM. The yellow diamonds represent conditional statements and the blue rectangles with rounded corners represent what should be printed to the console.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 208338,
+              "key": "8d06c9cb-1cb9-45ec-9d5d-f6677378bb4e",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/November/582cc7b8_atm-check-balance-cropped/atm-check-balance-cropped.jpeg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/8d06c9cb-1cb9-45ec-9d5d-f6677378bb4e",
+              "caption": "Flowchart for checking your balance at the ATM (Click the image to enlarge the flowchart).",
+              "alt": "Flowchart for checking your balance at the ATM",
+              "width": 1681,
+              "height": 1050,
+              "instructor_notes": null
+            },
+            {
+              "id": 216404,
+              "key": "b14ca706-ca93-4507-a342-c5c04b2a2b5a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Use the following variables in your solution:\n\n- `balance` - the account balance\n- `isActive` - if account is active\n- `checkBalance` - if you want to check balance\n\n**Hint:** _The variable balance could be a value less than, greater than, or equal to 0. The variables isActive and checkBalance are booleans that can be set to true or false._\n\n> **TIP:** To print out the account balance with decimal points (i.e. 325.00), use the `.toFixed()` method and pass it the number of decimal points you want to use. For example, `balance.toFixed(2)` returns 325.00.\n\n---\n\n> **TIP:** Make sure to test your code with different values. For example,<br><br>\nIf `checkBalance` equals `true` and `isActive` equals `false`, then `Your account is no longer active.` should be printed to the console.\n\n## Your Code:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 206629,
+              "key": "3c33ed13-acbe-45ca-bded-4fc9172acc5c",
+              "title": "",
+              "semantic_type": "QuizAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "user_state": {
+                "node_key": "3c33ed13-acbe-45ca-bded-4fc9172acc5c",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "instruction": null,
+              "question": {
+                "title": "",
+                "semantic_type": "ProgrammingQuestion",
+                "evaluation_id": "6200641246593024",
+                "initial_code_files": [
+                  {
+                    "text": "/*\n * Programming Quiz - Checking Your Balance (3-5)\n */\n\n/*\n * QUIZ REQUIREMENTS\n * 1. Your code should have the variables `balance`, `checkBalance`, `isActive`\n * 2. Your code should include an `if...else` conditional statement\n * 3. Your code should produce the expected output\n * 4. Your code should not be empty\n * 5. BE CAREFUL ABOUT THE PUNCTUATION AND THE EXACT WORDS TO BE PRINTED. \n */\n \n// change the values of `balance`, `checkBalance`, and `isActive` to test your code\nvar balance = 325.00;\nvar checkBalance = true;\nvar isActive = false;\n\n// your code goes here\n",
+                    "name": "StudentMain.js"
+                  }
+                ]
+              },
+              "answer": null
+            },
+            {
+              "id": 1013855,
+              "key": "5610e5df-9fb6-471f-9957-208d15fdb1bd",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<font color=\"#000066\"> Note - We check your solution against a limited set of ***test-cases*** that check the minimum requirements, as mentioned in the quiz.</font>",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1013856,
+              "key": "e47764ad-4e3e-470a-b2c0-32c65f2ae00b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n<div id=\"spoiler_1\" style=\"display:none\">\n#### <font color=\"green\">Here is one of the possible solutions:</font>\n\n```Javascript\n// change the values of `balance`, `checkBalance`, and `isActive` to test your code\nvar balance = -325;\nvar checkBalance = true;\nvar isActive = true;\n\n// Start only if checkBalance === true\nif (checkBalance === true) {\n    // Cases when account is active. Now, the balance could be <, =, or > zero\n    if (isActive === true && balance > 0) {\n        console.log(\"Your balance is $\" + balance.toFixed(2) + \".\");\n    }\n    else if (isActive === true && balance === 0){\n        console.log(\"Your account is empty.\");\n    } \n    else if (isActive === true && balance < 0){\n        console.log(\"Your balance is negative. Please contact bank.\");\n    }\n    // Case when account is NOT active\n    else if (isActive === false) {\n        console.log(\"Your account is no longer active.\");\n    }  \n} \nelse {\n  console.log(\"Thank you. Have a nice day!\");\n}\n```\n</div>\n<button type=\"button\" id=\"myButton1\" onclick=\"if(document.getElementById('spoiler_1') .style.display=='none') {document.getElementById('spoiler_1') .style.display=''}else{document.getElementById('spoiler_1') .style.display='none'}if (document.getElementById('myButton1').innerHTML=='Show Solution') {document.getElementById('myButton1').innerHTML='Hide Solution';}else{document.getElementById('myButton1').innerHTML = 'Show Solution';}\">Show Solution</button>\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 208320,
+          "key": "b651694a-cfda-4965-be84-279387f32c44",
+          "title": "Quiz: Ice Cream (3-6)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "b651694a-cfda-4965-be84-279387f32c44",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 216426,
+              "key": "4836d5a3-0738-40ab-aa77-816a4d8cd934",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Directions:\n\nIce cream is one of the most versatile desserts on the planet because it can be done up so many different ways. Using logical operators, write a series of complex logical expressions that prints **only if** the following conditions are **true**:\n\n- if `flavor` is set to `vanilla` or `chocolate` and\n- if `vessel` is set to `cone` or `bowl` and\n- if `toppings` is set to `sprinkles` or `peanuts`\n\nIf the above conditions are `true`, then print out:\n\n```text\nI'd like two scoops of __________ ice cream in a __________ with __________.\n```\n\nFill in the blanks with the flavor of the ice cream, vessel, and toppings. For example,\n\n```text\nI'd like two scoops of vanilla ice cream in a cone with peanuts.\n```\n\n> **TIP:** Make sure to test your code with different values. For example,<br><br>\nIf `flavor` equals `\"chocolate\"`, `vessel` equals `\"cone\"` and `toppings` equals `\"sprinkles\"`, then `\"I'd like two scoops of chocolate ice cream in a cone with sprinkles.\"` should be printed to the console.\n\n## Your Code:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 215837,
+              "key": "ff355926-49ae-4b5d-b3f2-7e698128ac3b",
+              "title": "",
+              "semantic_type": "QuizAtom",
+              "is_public": true,
+              "instructor_notes": "\n",
+              "user_state": {
+                "node_key": "ff355926-49ae-4b5d-b3f2-7e698128ac3b",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "instruction": null,
+              "question": {
+                "title": "",
+                "semantic_type": "ProgrammingQuestion",
+                "evaluation_id": "6233793948155904",
+                "initial_code_files": [
+                  {
+                    "text": "/*\n * Programming Quiz: Ice Cream (3-6)\n *\n * Write a single if statement that logs out the message:\n * \n * \"I'd like two scoops of __________ ice cream in a __________ with __________.\"\n * \n * ...only if:\n *   - flavor is \"vanilla\" or \"chocolate\"\n *   - vessel is \"cone\" or \"bowl\"\n *   - toppings is \"sprinkles\" or \"peanuts\"\n *\n * We're only testing the if statement and your boolean operators. \n * It's okay if the output string doesn't match exactly.\n */\n\n/*\n * QUIZ REQUIREMENTS\n * 1. Your code should have the variables `flavor`, `vessel`, and `toppings`\n * 2. Your code should have an `if` statement\n * 3. Your code should use logical expressions\n * 4. Your code should work with \n *  - `flavor=vanilla`, `vessel=cone`, and `toppings=sprinkles`\n *  - `flavor=vanilla`, `vessel=cone`, and `toppings=peanuts`\n *  - `flavor=vanilla`, `vessel=bowl`, and `toppings=sprinkles`\n *  - `flavor=vanilla`, `vessel=bowl`, and `toppings=peanuts`\n * \n *  - `flavor=chocolate`, `vessel=cone`, and `toppings=sprinkles`\n *  - `flavor=chocolate`, `vessel=cone`, and `toppings=peanuts`\n *  - `flavor=chocolate`, `vessel=bowl`, and `toppings=sprinkles`\n *  - `flavor=chocolate`, `vessel=bowl`, and `toppings=peanuts`\n *   \n * 5. Your code should NOT log (print) anything when \n *  - the flavor is something other than \"vanilla\" or \"chocolate\"\n *  - the vessel is something other than \"cone\" or \"bowl\"\n *  - the toppings is something other than \"sprinkles\" or \"peanuts\"\n * \n * 6. Your code should not be empty\n */\n \n// change the values of `flavor`, `vessel`, and `toppings` to test your code\nvar flavor = \"strawberry\";\nvar vessel = \"cone\";\nvar toppings = \"cookies\";\n\n// Add your code here\n",
+                    "name": "StudentMain.js"
+                  }
+                ]
+              },
+              "answer": null
+            },
+            {
+              "id": 1013858,
+              "key": "3fced7b4-2f74-4344-a2ae-b5d110cd5364",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<font color=\"#000066\"> Note - We check your solution against a limited set of ***test-cases*** that check the minimum requirements, as mentioned in the quiz.</font>",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1013857,
+              "key": "150887eb-45e8-4646-86ea-ce5e272ac069",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n<div id=\"spoiler_1\" style=\"display:none\">\n#### <font color=\"green\">Here is one of the possible solutions:</font>\n\n```Javascript\n \n// change the values of `flavor`, `vessel`, and `toppings` to test your code\nvar flavor = \"strawberry\";\nvar vessel = \"cone\";\nvar toppings = \"cookies\";\n\n// Add your code here\nif ((flavor === \"vanilla\" || flavor === \"chocolate\") && (vessel === \"cone\" || vessel === \"bowl\") && (toppings === \"sprinkles\" || toppings === \"peanuts\")){\n        console.log (\"I'd like two scoops of \" + flavor + \"ice cream in a \" + vessel + \"with \" + toppings + \".\")\n}\n\n```\n</div>\n<button type=\"button\" id=\"myButton1\" onclick=\"if(document.getElementById('spoiler_1') .style.display=='none') {document.getElementById('spoiler_1') .style.display=''}else{document.getElementById('spoiler_1') .style.display='none'}if (document.getElementById('myButton1').innerHTML=='Show Solution') {document.getElementById('myButton1').innerHTML='Hide Solution';}else{document.getElementById('myButton1').innerHTML = 'Show Solution';}\">Show Solution</button>\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 208321,
+          "key": "1c7f869b-60fd-4746-a90e-5287f4a473dc",
+          "title": "Quiz: What do I Wear? (3-7)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "1c7f869b-60fd-4746-a90e-5287f4a473dc",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": {
+            "files": [
+              {
+                "name": "Tshirt-Guide",
+                "uri": "http://video.udacity-data.com.s3.amazonaws.com/topher/2017/January/586e969e_tshirt-guide/tshirt-guide.png"
+              }
+            ],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 216427,
+              "key": "51711758-bcd9-4817-a8df-54c44ebb1e57",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "If you're like me, finding the right size t-shirt can sometimes be a challenge. What size am I? What's the difference between S (small), M (medium), and L (large)? I usually wear L, but what if I need an XL (extra large)?\n\nThankfully, our friends at [Teespring](https://teespring.com/) have got us covered because they've created a sizing chart to make things a lot easier.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 673104,
+              "key": "66aad5d7-0699-4a35-b7af-807e9ee1e335",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "| **Size** | **Width** | **Length** | **Sleeve** |\n|----|----|----|----|\n| S | 18\" | 28\" | 8.13\" |\n| M | 20\" | 29\" | 8.38\" |\n| L | 22\" | 30\" | 8.63\" |\n| XL | 24\" | 31\" | 8.88\" |\n| 2XL | 26\" | 33\" | 9.63\" |\n| 3XL | 28\" | 34\" | 10.13\" |\n\n_T-Shirt Sizing Chart (Source: Teespring.com) _",
+              "instructor_notes": ""
+            },
+            {
+              "id": 230098,
+              "key": "9554c482-0e6d-4f30-bee6-4ececa9105fc",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Directions:\n\nUse the sizing chart above, create a series of logical expressions that prints the **size** of a t-shirt based on the measurements of `shirtWidth`, `shirtLength`, and `shirtSleeve`. Valid sizes include `S`, `M`, `L`, `XL`, `2XL`, and `3XL`.\n\nFor example, if...\n\n```js\nvar shirtWidth = 23; // size L (large)\nvar shirtLength = 30; // size L (large)\nvar shirtSleeve = 8.71; // size L (large)\n```\n\nThen print `L` to the console.\n\n**Hint:** _You will need to compare a range of values when checking for `shirtWidth`, `shirtLength`, and `shirtSleeve`. For example, if the shirt's **width** is at least **20\"**, but no more than **22\"**, then the t-shirt should be **medium (M)** — as long as the other values for the shirt's **length** and **sleeve** measurements match up._\n\n---\n\nIf `shirtWidth`, `shirtLength`, and `shirtSleeve` don't fit within the range of acceptable values for a specific **size**, then print `NA` to the console. For example, if...\n\n```js\nvar shirtWidth = 18; // size S (small)\nvar shirtLength = 29; // size M (medium)\nvar shirtSleeve = 8.47; // size M (medium)\n```\n\nThen print `N/A` to the console because the measurements don't all match up with one particular `size`.\n\n> **TIP:** Make sure to test your code with different values. For example,<br><br>\nIf `shirtWidth` equals `19`, `shirtLength` equals `28` and `shirtSleeve` equals `8.21`, then `S` should be printed to the console.<br>\nIf `shirtWidth` equals `26`, `shirtLength` equals `33` and `shirtSleeve` equals `9.63`, then `2XL` should be printed to the console.<br>\nIf `shirtWidth` equals `18`, `shirtLength` equals `29` and `shirtSleeve` equals `8.47`, then `NA` should be printed to the console.\n\n## Your Code:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 215838,
+              "key": "c39f1dcd-ccdc-4e6e-a26a-a02575fae765",
+              "title": "",
+              "semantic_type": "QuizAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "user_state": {
+                "node_key": "c39f1dcd-ccdc-4e6e-a26a-a02575fae765",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "instruction": null,
+              "question": {
+                "title": "",
+                "semantic_type": "ProgrammingQuestion",
+                "evaluation_id": "4681954349940736",
+                "initial_code_files": [
+                  {
+                    "text": "/*\n * Programming Quiz: What do I Wear? (3-7)\n *\n * Using if/else statements, create a series of logical expressions that logs the size of a t-shirt based on the measurements of:\n *   - shirtWidth\n *   - shirtLength\n *   - shirtSleeve\n *\n * Use the chart above to print out one of the following correct values:\n *   - S, M, L, XL, 2XL, or 3XL\n */\n\n/*\n * QUIZ REQUIREMENTS\n * 1. Your code should have the variables `shirtWidth`, `shirtLength`, and `shirtSleeve`\n * 2. Your code should include an `if...else` conditional statement\n * 3. Your code should use logical expressions\n * 4. Your code should produce the expected output\n * 6. Your code should not be empty\n * 7. BE CAREFUL ABOUT THE EXACT CHARACTERS TO BE PRINTED.\n */\n \n\n\n// change the values of `shirtWidth`, `shirtLength`, and `shirtSleeve` to test your code\nvar shirtWidth = 23;\nvar shirtLength = 30;\nvar shirtSleeve = 8.71;\n\n/*\n * To gain confidence, check your code for the following combination of [shirtWidth, shirtLength, shirtSleeve, expectedSize]:\n * [18, 28, 8.13, 'S']\n * [19.99, 28.99, 8.379, 'S']\n * [20, 29, 8.38, 'M']\n * [22, 30, 8.63, 'L']\n * [24, 31, 8.88, 'XL']\n * [26, 33, 9.63, '2XL']\n * [27.99, 33.99, 10.129, '2XL']\n * [28, 34, 10.13, '3XL']\n * [18, 29, 8.47, 'NA']\n*/\n\n// WRITE YOUR CODE HERE",
+                    "name": "StudentMain.js"
+                  }
+                ]
+              },
+              "answer": null
+            },
+            {
+              "id": 1013859,
+              "key": "112c6a0e-6f3e-46ba-a4d8-945809d18331",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<font color=\"#000066\"> Note - We check your solution against a limited set of ***test-cases*** that check the minimum requirements, as mentioned in the quiz.</font>",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1013860,
+              "key": "ca39b6a4-7a39-4b4b-82ca-1f807830505f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n<div id=\"spoiler_1\" style=\"display:none\">\n#### <font color=\"green\">Here is one of the possible solutions:</font>\n\n```Javascript\n \n// change the values of `shirtWidth`, `shirtLength`, and `shirtSleeve` to test your code\nvar shirtWidth = 21;\nvar shirtLength = 99;\nvar shirtSleeve = 8.40;\n\nvar size = \"NA\";\n\nif ((shirtWidth>=18 && shirtWidth<20) && (shirtLength>=28 && shirtLength<29) && (shirtSleeve>=8.13 && shirtSleeve<8.38) ) {\n    size = \"S\";\n}\nelse if ((shirtWidth>=20 && shirtWidth<22) && (shirtLength>=29 && shirtLength<30) && (shirtSleeve>=8.38 && shirtSleeve<8.63) ) {\n    size = \"M\";\n}\nelse if ((shirtWidth>=22 && shirtWidth<24) && (shirtLength>=30 && shirtLength<31) && (shirtSleeve>=8.63 && shirtSleeve<8.88) ) {\n    size = \"L\";\n}\nelse if ((shirtWidth>=24 && shirtWidth<26) && (shirtLength>=31 && shirtLength<33) && (shirtSleeve>=8.88 && shirtSleeve<9.63) ) {\n    size = \"XL\";\n}\nelse if ((shirtWidth>=26 && shirtWidth<28) && (shirtLength>=33 && shirtLength<34) && (shirtSleeve>=9.63 && shirtSleeve<10.13) ) {\n    size = \"2XL\";\n}\nelse if ((shirtWidth>=28) && (shirtLength>=34) && (shirtSleeve>=10.13) ) {\n    size = \"3XL\";\n}\nelse {\n    size = \"NA\";\n}\nconsole.log(size);\n```\n</div>\n<button type=\"button\" id=\"myButton1\" onclick=\"if(document.getElementById('spoiler_1') .style.display=='none') {document.getElementById('spoiler_1') .style.display=''}else{document.getElementById('spoiler_1') .style.display='none'}if (document.getElementById('myButton1').innerHTML=='Show Solution') {document.getElementById('myButton1').innerHTML='Hide Solution';}else{document.getElementById('myButton1').innerHTML = 'Show Solution';}\">Show Solution</button>\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 206631,
+          "key": "927f50ab-2f4c-44ae-ad06-950d4dd7e6ad",
+          "title": "Advanced Conditionals",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "927f50ab-2f4c-44ae-ad06-950d4dd7e6ad",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 252842,
+              "key": "18478177-3f6d-4d04-b791-b70fbd78487f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Advanced Conditionals",
+              "instructor_notes": ""
+            },
+            {
+              "id": 215880,
+              "key": "cb7d80f1-0a64-4346-b546-fce74bbea7dd",
+              "title": "Advanced Conditionals",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "9siyyDh3awM",
+                "china_cdn_id": "9siyyDh3awM.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 206633,
+          "key": "95fd8fab-2129-4a97-9844-527e602c78a8",
+          "title": "Truthy and Falsy",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "95fd8fab-2129-4a97-9844-527e602c78a8",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 206634,
+              "key": "8119bfb7-9a45-468f-be92-891aa5c1f068",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Truthy and Falsy\n\nEvery value in JavaScript has an inherent boolean value. When that value is evaluated in the context of a boolean expression, the value will be transformed into that inherent boolean value.\n\nThe paragraph above is pretty dense with information. You should probably re-read it again! ☝️\n\n## Falsy values\n\nA value is **falsy** if it converts to `false` when evaluated in a boolean context. For example, an empty String `\"\"` is falsy because, `\"\"` evaluates to `false`. You already know if...else statements, so let's use them to test the truthy-ness of `\"\"`.\n\n```js\nif (\"\") {\n    console.log(\"the value is truthy\");\n} else {\n    console.log(\"the value is falsy\");\n}\n```\n> **Returns:** \"the value is falsy\"\n\n### Here’s _the_ list of all of the falsy values:\n\n1. the Boolean value `false`\n* the `null` type\n* the `undefined` type\n* the number `0`\n* the empty string `\"\"`\n* the odd value `NaN` (stands for \"not a number\", check out the [`NaN` MDN article](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN))\n\nThat's right, there are only _six_ falsy values in all of JavaScript!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 206637,
+              "key": "81ee755b-557a-46fe-9505-64e0ecadfec9",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Truthy values\n\nA value is **truthy** if it converts to `true` when evaluated in a boolean context. For example, the number `1` is truthy because, `1` evaluates to `true`. Let's use an if...else statement again to test this out:\n\n```js\nif (1) {\n    console.log(\"the value is truthy\");\n} else {\n    console.log(\"the value is falsy\");\n}\n```\n> **Returns:** \"the value is truthy\"\n\nHere are some other examples of truthy values:\n\n```js\ntrue\n42\n\"pizza\"\n\"0\"\n\"null\"\n\"undefined\"\n{}\n[]\n```\n\n**Essentially, if it's not in the list of falsy values, then it's truthy!**",
+              "instructor_notes": ""
+            },
+            {
+              "id": 206641,
+              "key": "8bee0dfa-e860-438e-b1b1-93cf1edcc4ff",
+              "title": "Truthy Or Falsy",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "8bee0dfa-e860-438e-b1b1-93cf1edcc4ff",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Select the truthy values from the list of values.",
+                "answers": [
+                  {
+                    "id": "a1479247547322",
+                    "text": "`\"\"`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1479247566338",
+                    "text": "`\"null\"`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1479247570503",
+                    "text": "`-5`",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1479247573939",
+                    "text": "`0.0`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1479247577334",
+                    "text": "`undefined`",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1013954,
+              "key": "b2e30ef5-38f5-4071-9686-11d042104f2a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<font color=\"#000066\"> Open the developer console in your browser to test the output of options mention in the above quiz. </font> \n```Javascript\nif(< Write your condition here >)\n    console.log(\"This text will be printed if the condition above evaluates to true\");\n```",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 208304,
+          "key": "13bf22aa-272f-410f-b042-17972a217328",
+          "title": "Ternary Operator",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "13bf22aa-272f-410f-b042-17972a217328",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 208305,
+              "key": "774014ed-8576-48f6-b658-743972a7ee10",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Sometimes, you might find yourself with the following type of conditional.\n\n```js\nvar isGoing = true;\nvar color;\n\nif (isGoing) {\n  color = \"green\";\n} else {\n  color = \"red\";\n}\n\nconsole.log(color);\n```\n> **Prints:** \"green\"\n\nIn this example, the variable `color` is being assigned to either `\"green\"` or `\"red\"` based on the value of `isGoing`. This code works, but it’s a rather lengthy way for assigning a value to a variable. Thankfully, in JavaScript there’s another way.\n\n> **TIP:** Using `if(isGoing)` is the same as using `if(isGoing === true)`. Alternatively, using `if(!isGoing)` is the same as using `if(isGoing === false)`.\n\n## Ternary operator\n\nThe **ternary operator** provides you with a shortcut alternative for writing lengthy if...else statements. \n\n```text\nconditional ? (if condition is true) : (if condition is false)\n```\n\nTo use the ternary operator, first provide a conditional statement on the left-side of the `?`. Then, between the `?` and `:` write the code that would run if the condition is `true` and on the right-hand side of the `:` write the code that would run if the condition is `false`. For example, you can rewrite the example code above as:\n\n```js\nvar isGoing = true;\nvar color = isGoing ? \"green\" : \"red\";\nconsole.log(color);\n```\n> **Prints:** \"green\"\n\nThis code not only replaces the conditional, but it also handles the variable assignment for `color`.\n\nIf you breakdown the code, the condition `isGoing` is placed on the left side of the `?`. Then, the first expression, after the `?`, is what will be run if the condition is _true_ and the second expression after the, `:`, is what will be run if the condition is _false_.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 208307,
+              "key": "a5182ead-d0f3-46a3-a200-1f1233380f56",
+              "title": "Ternary Operator vs. If-Else Statement",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "<div style=\"text-align: center;\"><font color=\"#000066\"> Note - This video does not have an audio. It was created as a visual to aid learning. </font> </div><div style=\"text-align: center; color: #afafaf; font-size: 14px; margin-top: 15px;\">Here's a comparison of using an if...else statement vs. using a ternary operator.</div>",
+              "video": {
+                "youtube_id": "dj21ZwonMv0",
+                "china_cdn_id": "dj21ZwonMv0.mp4"
+              }
+            },
+            {
+              "id": 208310,
+              "key": "3dffcac6-43ec-472c-8a94-b487de83e4fc",
+              "title": "Nested Ternaries",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "3dffcac6-43ec-472c-8a94-b487de83e4fc",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What will be printed to the console if the following code is run?\n\n```js\nvar adult = true;\nvar preorder = true;\n\nconsole.log(\"It costs $\" + (adult ? \"40.00\" : \"20.00\") + \" to attend the concert. Pick up your tickets at the \" + (preorder ? \"will call\" : \"gate\") + \".\");\n```",
+                "answers": [
+                  {
+                    "id": "a1479324114102",
+                    "text": "It costs $20.00 to attend the concert. Pick up your tickets at the gate.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1479324211296",
+                    "text": "It costs $20.00 to attend the concert. Pick up your tickets at the will call.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1479324211799",
+                    "text": "It costs $40.00 to attend the concert. Pick up your tickets at the gate.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1479324212255",
+                    "text": "It costs $40.00 to attend the concert. Pick up your tickets at the will call.",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 208322,
+          "key": "736af213-7f05-411c-8e72-e26dd48a28fa",
+          "title": "Quiz: Navigating the Food Chain (3-8)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "736af213-7f05-411c-8e72-e26dd48a28fa",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 216428,
+              "key": "4fb74898-3a14-48be-b63f-4bc5d9c4b504",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "From the smallest of creatures to the largest of animals, inevitably every living, breathing thing must ingest other organisms to survive. This means that all animals will fall within one of the three consumer-based categories based on the types of food that they eat.\n\n- Animals that eat only plants are called **herbivores**\n- Animals that eat only other animals are called **carnivores**\n- Animals that eat both plants and animals are called **omnivores**\n\n## Directions:\n\nWrite a series of ternary statements that sets the variable `category` equal to:\n\n- `\"herbivore\"` if an animal eats plants\n- `\"carnivore\"` if an animal eats animals\n- `\"omnivore\"` if an animal eats plants and animals\n- `\"undefined\"` if an animal doesn't eat plants or animals \n\nUse the `eatsPlants` and `eatsAnimals` variables to test your code.\n\n> **TIP:** Make sure to test your code with different values. For example,<br><br>\nIf `eatsPlants` equals `true` and `eatsAnimals` equals `false`, then `herbivore` should be printed to the console.\n\n## Your Code:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 215839,
+              "key": "7cdae097-b44c-4a46-bc71-210d46d66c63",
+              "title": "",
+              "semantic_type": "QuizAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "user_state": {
+                "node_key": "7cdae097-b44c-4a46-bc71-210d46d66c63",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "instruction": null,
+              "question": {
+                "title": "",
+                "semantic_type": "ProgrammingQuestion",
+                "evaluation_id": "6054547783024640",
+                "initial_code_files": [
+                  {
+                    "text": "/*\n * Programming Quiz - Navigating the Food Chain (3-8)\n *\n * Use a series of ternary operator to set the category to one of the following:\n *   - \"herbivore\" if an animal eats plants\n *   - \"carnivore\" if an animal eats animals\n *   - \"omnivore\" if an animal eats plants and animals\n *   - undefined if an animal doesn't eat plants or animals\n *\n * Notes\n *   - use the variables `eatsPlants` and `eatsAnimals` in your ternary expressions\n *   - `if` statements aren't allowed ;-)\n */\n\n/*\n * QUIZ REQUIREMENTS\n * - Your code should have the variables `eatsPlants`, `eatsAnimals`\n * - Your code should include ternary statements. Do not use if....else statement. \n * - Your code should produce the expected output\n * - Your code should not be empty\n * - BE CAREFUL ABOUT THE PUNCTUATION AND THE EXACT WORDS TO BE PRINTED.\n */\n \n// change the values of `eatsPlants` and `eatsAnimals` to test your code\nvar eatsPlants = false;\nvar eatsAnimals = true;\n\n/*\n * Test your code agaist the followig possible input/output combinations of (`eatsPlants`, `eatsAnimals`, expected output):\n * - (true, true, omnivore)\n * - (false, true, carnivore)\n * - (true, false, herbivore)\n * - (false, false, undefined)\n */\n\nvar category = /* your code goes here */\n\nconsole.log(category);\n",
+                    "name": "StudentMain.js"
+                  }
+                ]
+              },
+              "answer": null
+            },
+            {
+              "id": 1013955,
+              "key": "17afcb11-dd66-4eca-b6d6-06d5a6059c22",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<font color=\"#000066\"> Note - We check your solution against a limited set of ***test-cases*** that check the minimum requirements, as mentioned in the quiz.</font>",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1013956,
+              "key": "dea65494-7eb0-4a19-bbd9-1821821d55c4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n<div id=\"spoiler_1\" style=\"display:none\">\n#### <font color=\"green\">Here is one of the possible solutions:</font>\n\n```Javascript\nvar category = eatsPlants ? (eatsAnimals ? \"omnivore\" : \"herbivore\") : (eatsAnimals ? \"carnivore\" : \"undefined\");\n```\n</div>\n<button type=\"button\" id=\"myButton1\" onclick=\"if(document.getElementById('spoiler_1') .style.display=='none') {document.getElementById('spoiler_1') .style.display=''}else{document.getElementById('spoiler_1') .style.display='none'}if (document.getElementById('myButton1').innerHTML=='Show Solution') {document.getElementById('myButton1').innerHTML='Hide Solution';}else{document.getElementById('myButton1').innerHTML = 'Show Solution';}\">Show Solution</button>\n\n\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 208311,
+          "key": "be7b6240-06af-4b0b-b800-6515466b03de",
+          "title": "Switch Statement",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "be7b6240-06af-4b0b-b800-6515466b03de",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 259512,
+              "key": "d59f2b4b-7555-4661-9f14-d3f6a7265940",
+              "title": "Switch Statement and Falling-through",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "oEDjfN6_--M",
+                "china_cdn_id": "oEDjfN6_--M.mp4"
+              }
+            },
+            {
+              "id": 208312,
+              "key": "65df0835-68d2-4a08-945c-def1bcef62b8",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "If you find yourself repeating `else if` statements in your code, where each condition is based on the same value, then it might be time to use a switch statement.\n\n```js\nif (option === 1) {\n  console.log(\"You selected option 1.\");\n} else if (option === 2) {\n  console.log(\"You selected option 2.\");\n} else if (option === 3) {\n  console.log(\"You selected option 3.\");\n} else if (option === 4) {\n  console.log(\"You selected option 4.\");\n} else if (option === 5) {\n  console.log(\"You selected option 5.\");\n} else if (option === 6) {\n  console.log(\"You selected option 6.\");\n}\n```\n\n## Switch statement\n\nA **switch statement** is an another way to chain multiple `else if` statements that are based on the same value **without using conditional statements**. Instead, you just _switch_ which piece of code is executed based on a value.\n\n```js\nswitch (option) {\n  case 1:\n    console.log(\"You selected option 1.\");\n  case 2:\n    console.log(\"You selected option 2.\");\n  case 3:\n    console.log(\"You selected option 3.\");\n  case 4:\n    console.log(\"You selected option 4.\");\n  case 5:\n    console.log(\"You selected option 5.\");\n  case 6:\n    console.log(\"You selected option 6.\");\n}\n```\n\nHere, each `else if` statement (`option === [value]`) has been replaced with a `case` clause (`case [value]:`) and those clauses have been wrapped inside the switch statement.\n\nWhen the switch statement first evaluates, it looks for the first `case` clause whose expression evaluates to the same value as the result of the expression passed to the switch statement. Then, it transfers control to that `case` clause, executing the associated statements.\n\nSo, if you set `option` equal to `3`...\n\n```js\nvar option = 3;\n\nswitch (option) {\n  ...\n}\n```\n> **Prints:**<br>\nYou selected option 3.<br>\nYou selected option 4.<br>\nYou selected option 5.<br>\nYou selected option 6.\n\n...then the switch statement prints out options 3, 4, 5, and 6.\n\nBut that’s not exactly like the original `if...else` code at the top? So what’s missing?\n\n## Break statement\n\nThe **break statement** can be used to terminate a switch statement and transfer control to the code following the terminated statement. By adding a `break` to each `case` clause, you fix the issue of the switch statement _falling-through_ to other case clauses.\n\n```js\nvar option = 3;\n\nswitch (option) {\n  case 1:\n    console.log(\"You selected option 1.\");\n    break;\n  case 2:\n    console.log(\"You selected option 2.\");\n    break;\n  case 3:\n    console.log(\"You selected option 3.\");\n    break;\n  case 4:\n    console.log(\"You selected option 4.\");\n    break;\n  case 5:\n    console.log(\"You selected option 5.\");\n    break;\n  case 6:\n    console.log(\"You selected option 6.\");\n    break; // technically, not needed\n}\n```\n> **Prints:** You selected option 3.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 208313,
+              "key": "9c51a5eb-9ede-472e-a8ea-5a3639e00ffc",
+              "title": "Using Switch Statements",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "9c51a5eb-9ede-472e-a8ea-5a3639e00ffc",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What will be the result from the following switch statement?\n\n```js\nvar month = 2;\n\nswitch(month) {\n  case 1:\n  case 3:\n  case 5:\n  case 7:\n  case 8:\n  case 10:\n  case 12:\n    days = 31;\n    break;\n  case 4:\n  case 6:\n  case 9:\n  case 11:\n    days = 30;\n    break;\n  case 2:\n    days = 28;\n}\n\nconsole.log(\"There are \" + days + \" days in this month.\");\n```",
+                "answers": [
+                  {
+                    "id": "a1479325422320",
+                    "text": "There are 31 days in this month.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1479325424901",
+                    "text": "There are 30 days in this month.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1479325425637",
+                    "text": "There are 28 days in this month.",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 208314,
+          "key": "33524084-1b79-4a28-9682-83a228fe5d3d",
+          "title": "Falling-through",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "33524084-1b79-4a28-9682-83a228fe5d3d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 208315,
+              "key": "440b52d5-f07b-49b0-914d-56419a2622f4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In some situations, you might want to leverage the \"falling-through\" behavior of switch statements to your advantage.\n\nFor example, when your code follows a hierarchical-type structure.\n\n```js\nvar tier = \"nsfw deck\";\nvar output = \"You’ll receive \"\n\nswitch (tier) {\n  case \"deck of legends\":\n    output += \"a custom card, \";\n  case \"collector's deck\":\n    output += \"a signed version of the Exploding Kittens deck, \";\n  case \"nsfw deck\":\n    output += \"one copy of the NSFW (Not Safe for Work) Exploding Kittens card game and \";\n  default:\n    output += \"one copy of the Exploding Kittens card game.\";\n}\n\nconsole.log(output);\n```\n> **Prints:** You’ll receive one copy of the NSFW (Not Safe for Work) Exploding Kittens card game and one copy of the Exploding Kittens card game.\n\nIn this example, based on the [successful Exploding Kittens Kickstarter campaign](https://www.kickstarter.com/projects/elanlee/exploding-kittens/description) (a hilarious card game created by Elan Lee), each successive tier builds on the next by adding more to the output. Without any break statements in the code, after the switch statement jumps to the `\"nsfw deck\"`, it continues to fall-through until reaching the end of the switch statement.\n\nAlso, notice the `default` case.\n\n```js\nvar tier = \"none\";\nvar output = \"You’ll receive \";\n\nswitch (tier) {\n  ... \n  default:\n    output += \"one copy of the Exploding Kittens card game.\";\n}\n\nconsole.log(output);\n```\n> **Prints:** You’ll receive one copy of the Exploding Kittens card game.\n\nYou can add a `default` case to a switch statement and it will be executed when none of the values match the value of the switch expression.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 208316,
+              "key": "a4b6d13c-e0fe-4073-b1a0-fbc2ef17daf8",
+              "title": "Falling-through Exploding Kittens Example",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "<div style=\"text-align: center;\"><font color=\"#000066\"> Note - This video does not have an audio. It was created as a visual to aid learning. </font> </div><div style=\"text-align: center; color: #afafaf; font-size: 14px; margin-top: 15px;\">By using the falling-through behavior of switch statements, you can represent hierarchical-type scenarios like the Kickstarter backer program.</div>",
+              "video": {
+                "youtube_id": "G_68JIkyDpk",
+                "china_cdn_id": "G_68JIkyDpk.mp4"
+              }
+            },
+            {
+              "id": 208317,
+              "key": "10ff69c0-a897-4375-8cdc-61817155a84a",
+              "title": "Falling-through the Prizes",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "10ff69c0-a897-4375-8cdc-61817155a84a",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "If `winner` is equal to 3, then what will be output to the console?\n\n```js\nvar prize = \"\";\n\nswitch (winner) {\n  case 1:\n    prize += \"a trip for two to the Bahamas and \";\n  case 2:\n    prize += \"a four piece furniture set.\";\n    break;\n  case 3:\n    prize += \"a smartwatch and \";\n  default:\n    prize += \"tickets to the circus.\";\n}\n\nconsole.log(\"You've won \" + prize);\n```",
+                "answers": [
+                  {
+                    "id": "a1479326289521",
+                    "text": "You've won a smartwatch and tickets to the circus.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1479326318743",
+                    "text": "You've won tickets to the circus.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1479326319359",
+                    "text": "You've won a four piece furniture set.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1479326319854",
+                    "text": "You've won a trip for two to the Bahamas and a four piece furniture set.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 229159,
+          "key": "0dccb26f-7a9e-465e-a2e7-5362c3e278e6",
+          "title": "Quiz: Back to School (3-9)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "0dccb26f-7a9e-465e-a2e7-5362c3e278e6",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 229160,
+              "key": "adecbcfb-92fb-43bd-bc66-c31d009a35fb",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In 2015, the U.S. Bureau of Labor Statistics [conducted research](http://www.bls.gov/emp/ep_chart_001.htm) to reveal how average salary is directly related to the number of years spent in school. In their findings, they found that people with:\n\n- `no high school diploma` earned an average of **$25,636/year**,\n- `a high school diploma` earned an average of **$35,256/year**,\n- `an Associate's degree` earned an average of **$41,496/year**,\n- `a Bachelor's degree` earned an average of **$59,124/year**,\n- `a Master's degree` earned an average of **$69,732/year**,\n- `a Professional degree` earned an average of **$89,960/year**,\n- and `a Doctoral degree` earned an average of **$84,396/year**.\n\n> **NOTE:** Wondering what the average salary would be for a person with a Nanodegree from Udacity? That's a hard question to answer, but that doesn't mean we haven't tried to quantify the value of our Nanodegrees. [Read more about Nanodegrees from resident Udacity writer, Chris Watkins, here](http://blog.udacity.com/2016/07/nanodegree-101.html)\n\n## Directions:\n\nWrite a switch statement to set the average `salary` of a person based on their type of completed education.\n\nAfterwards, print the following to the console.\n\n```text\nIn 2015, a person with __________ earned an average of __________/year.\n```\n\nFill in the blanks with the type of education and the expected average salary. Make sure to use correct grammar in your printed statement, **and watch out for any extra or missing characters** (including spaces and punctuation marks). For help, refer to the findings above.\n\n```text\nIn 2015, a person with a Bachelor's degree earned an average of $59,124/year.\n```\n\n> **TIP:** To print out the average salary with commas (i.e. 59,124), use the `toLocaleString()` method and pass it the locale \"en-US\". For example, `salary.toLocaleString(\"en-US\")`.\n\n---\n\n> **TIP:** Make sure to test your code with different values. For example,<br><br>\nIf `education` equals `\"an Associate's degree\"`, then the string`\"In 2015, a person with an Associate's degree earned an average of $41,496/year.\"` should be printed to the console.\n\n## Your Code:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 229164,
+              "key": "f6bc8f61-7fc5-47f4-a439-dbd12dc6448b",
+              "title": "",
+              "semantic_type": "QuizAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "user_state": {
+                "node_key": "f6bc8f61-7fc5-47f4-a439-dbd12dc6448b",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "instruction": null,
+              "question": {
+                "title": "",
+                "semantic_type": "ProgrammingQuestion",
+                "evaluation_id": "4664098529869824",
+                "initial_code_files": [
+                  {
+                    "text": "/*\n * Programming Quiz: Back to School (3-9)\n *\n * Write a switch statement to set the average salary of a person based on their type of completed education.\n *\n */\n\n/*\n * QUIZ REQUIREMENTS\n * - Your code should have the variables `education`, and `salary`\n * - Your code should include a switch statement\n * - Your code should produce the expected output\n * - Your code should not be empty\n * - BE CAREFUL ABOUT THE PUNCTUATION AND THE EXACT WORDS TO BE PRINTED.\n */\n \n// change the value of `education` to test your code\nvar education = 'no high school diploma';\n\n// set the value of this based on a person's education\nvar salary = 0;\n\n// your code goes here\n",
+                    "name": "StudentMain.js"
+                  }
+                ]
+              },
+              "answer": null
+            },
+            {
+              "id": 1014063,
+              "key": "5f076f9e-a53b-4610-9c58-a4a793607648",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<font color=\"#000066\"> Note - We check your solution against a limited set of ***test-cases*** that check the minimum requirements, as mentioned in the quiz.</font>",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014065,
+              "key": "58053fc3-e930-41bf-87af-6c4e5ddbb8ec",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n<div id=\"spoiler_1\" style=\"display:none\">\n#### <font color=\"green\">Here is one of the possible solutions:</font>\n\n```Javascript\n// your code goes here\nswitch (education) {\n    case \"no high school diploma\":\n        salary = 25636;\n        break;\n    case \"a high school diploma\":\n        salary = 35256;\n        break;\n    case \"an Associate's degree\":\n        salary = 41496;\n        break;\n    case \"a Bachelor's degree\":\n        salary = 59124;\n        break;\n    case \"a Master's degree\":\n        salary = 69732;\n        break;\n    case \"a Professional degree\":\n        salary = 89960;\n        break;\n    case \"a Doctoral degree\":\n        salary = 84396;\n        break;\n}\n\n\nconsole.log(\"In 2015, a person with \"+education+\" earned an average of $\"+salary.toLocaleString(\"en-US\")+\"/year.\");\n```\n</div>\n<button type=\"button\" id=\"myButton1\" onclick=\"if(document.getElementById('spoiler_1') .style.display=='none') {document.getElementById('spoiler_1') .style.display=''}else{document.getElementById('spoiler_1') .style.display='none'}if (document.getElementById('myButton1').innerHTML=='Show Solution') {document.getElementById('myButton1').innerHTML='Hide Solution';}else{document.getElementById('myButton1').innerHTML = 'Show Solution';}\">Show Solution</button>\n\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 208318,
+          "key": "d3a01a01-2d3d-4e83-9f16-613b29348994",
+          "title": "Lesson 3 Summary",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d3a01a01-2d3d-4e83-9f16-613b29348994",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 232961,
+              "key": "bb2b0492-4bc0-4de1-ae0f-19bce6aa10f7",
+              "title": "Lesson 3 Summary",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "zkrzbzUGmzI",
+                "china_cdn_id": "zkrzbzUGmzI.mp4"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

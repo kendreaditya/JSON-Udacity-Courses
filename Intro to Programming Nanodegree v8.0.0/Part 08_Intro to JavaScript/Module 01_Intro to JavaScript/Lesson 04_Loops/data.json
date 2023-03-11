@@ -1,0 +1,1118 @@
+{
+  "data": {
+    "lesson": {
+      "id": 817333,
+      "key": "4efa096e-b41e-4e41-9ab4-559965b9809b",
+      "title": "Loops",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Harness the power of JavaScript loops to reduce code duplication and automate repetitive tasks.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/4efa096e-b41e-4e41-9ab4-559965b9809b/817333/1549165057957/Loops+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/4efa096e-b41e-4e41-9ab4-559965b9809b/817333/1549165054886/Loops+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 208326,
+          "key": "5f8c5e63-b64d-4e00-b385-f8340e1f9da0",
+          "title": "Intro to Loops",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5f8c5e63-b64d-4e00-b385-f8340e1f9da0",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 232962,
+              "key": "be069648-f966-4cbd-af27-f75f36e16a55",
+              "title": "Intro to Loops",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Cz9ja42Djks",
+                "china_cdn_id": "Cz9ja42Djks.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 208328,
+          "key": "5e5375ce-0f31-4429-9a3f-5589742c21f7",
+          "title": "While Loops",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5e5375ce-0f31-4429-9a3f-5589742c21f7",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 252832,
+              "key": "a4a40604-9b1e-4c44-b8e4-e445d59dfdf6",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## While Loops",
+              "instructor_notes": ""
+            },
+            {
+              "id": 230463,
+              "key": "b4041cb2-984a-4589-8276-18909b13449c",
+              "title": "While Loops",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "c_RcxdzPhY0",
+                "china_cdn_id": "c_RcxdzPhY0.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 196216,
+          "key": "d229cfd4-2aaf-4da0-b074-732af0d795f7",
+          "title": "Parts of a While Loop",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d229cfd4-2aaf-4da0-b074-732af0d795f7",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 196217,
+              "key": "12d54218-18bc-4979-afac-6475f6e7be6d",
+              "title": "Test",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Parts of a While Loop\n\nThere are many different kinds of loops, but they all essentially do the same thing: they repeat an action some number of times.\n\nThree main pieces of information that any loop should have are:\n\n1. **When to start:** The code that sets up the loop — defining the starting value of a variable for instance.\n2. **When to stop:** The logical condition to test whether the loop should continue.\n3. **How to get to the next item:** The incrementing or decrementing step — for example, ` x = x * 3` or `x = x - 1`\n\nHere's a basic while loop example that includes all three parts.\n\n```js\nvar start = 0; // when to start\nwhile (start < 10) { // when to stop\n  console.log(start);\n  start = start + 2; // how to get to the next item\n}\n```\n> **Prints:**<br>\n0<br>\n2<br>\n4<br>\n6<br>\n8\n\nIf a loop is missing any of these three things, then you might find yourself in trouble. For instance, a missing stop condition can result in a loop that never ends!\n\n**Don't run this code!**\n\n```js\nwhile (true) {\n  console.log(\"true is never false, so I will never stop!\");\n}\n```\n\nIf you did try to run that code in the console, you probably crashed your browser tab.\n\n> **WARNING:** You’re probably reading this because you didn't heed our warnings about running that infinite loop in the console. If your browser tab has crashed or has become frozen/unresponsive, there are a couple ways to fix this. If you are using Firefox, the browser will popup a notification about your script being unresponsive, and will give you the option to kill the script (do that). If you're using Chrome, go to the taskbar and select Window > Task Manager. You can end the process for the particular tab you ran the script in through the task manager. If you’re not using Firefox or Chrome, download Firefox or Chrome ;).",
+              "instructor_notes": ""
+            },
+            {
+              "id": 220678,
+              "key": "4909f165-ddac-43a7-b4f9-ecc7d7233ffc",
+              "title": "Infinite Loop",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "<div style=\"text-align: center;\"><font color=\"#000066\"> Note - This video does not have an audio. It was created as a visual to aid learning. </font> </div><div style=\"text-align: center; color: #afafaf; font-size: 14px; margin-top: 15px;\">An infinite loop will run forever... until your browser crashes or you stop this video 😉  .</div>",
+              "video": {
+                "youtube_id": "lzKeKVHY3vc",
+                "china_cdn_id": "lzKeKVHY3vc.mp4"
+              }
+            },
+            {
+              "id": 213479,
+              "key": "ce3922fc-1164-49a7-b136-0b10888cbb76",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Here's an example where a loop is missing how to get to the next item; the variable `x` is never incremented. `x` will remain 0 throughout the program, so the loop will never end.\n\n*Don't run this code!*\n\n```js\nvar x = 0;\n\nwhile (x < 1) {\n  console.log('Oops! x is never incremented from 0, so it will ALWAYS be less than 1');\n}\n```\n\nThis code will also crash your browser tab, so we don't recommend running it.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 213481,
+              "key": "bb62e0c7-3ada-4a3a-97a1-f509f48b4a51",
+              "title": "How many times will this loop run?",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "bb62e0c7-3ada-4a3a-97a1-f509f48b4a51",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "How many times will the while loop run?\n\n```js\nvar x = 10;\nwhile (x <= 25) {\n  console.log('Printing out x = ' + x);\n  x = x + 2;\n}\n```",
+                "answers": [
+                  {
+                    "id": "a1479433092081",
+                    "text": "15",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1479433113094",
+                    "text": "16",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1479433115906",
+                    "text": "8",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1479433118126",
+                    "text": "9",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 213482,
+              "key": "d772ad26-75f5-442a-b667-b026c716fd8a",
+              "title": "Spot the Bug(s)",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "d772ad26-75f5-442a-b667-b026c716fd8a",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "\n\nHere's a while loop that is supposed to print out the values of `x` from 0 to 5, but there's a bug. What is missing?\n\n```\nwhile (x < 6) {\n  console.log('Printing out x = ' + x);\n}\n```",
+                "answers": [
+                  {
+                    "id": "a1479433195780",
+                    "text": "x never increments",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1479433292511",
+                    "text": "There's no condition to tell the loop when to stop",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1479433576247",
+                    "text": "x is never assigned a start value",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1479433580419",
+                    "text": "An if statement was used instead of a while loop",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 213483,
+          "key": "2a571380-d3dc-4acb-98a1-96766e6d5436",
+          "title": "Quiz: JuliaJames (4-1)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "2a571380-d3dc-4acb-98a1-96766e6d5436",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 213484,
+              "key": "38542c67-9f20-419e-8a04-9b5e2247073f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\"Fizzbuzz\" is a famous interview question used in programming interviews. It goes something like this:\n\n* Loop through the numbers 1 to 100\n* If the number is divisible by 3, print `\"Fizz\"`\n* If the number is divisible by 5, print `\"Buzz\"`\n* If the number is divisible by both 3 and 5, print `\"FizzBuzz\"`\n* If the number is **not** divisible by 3 or 5, print the number\n\n> **TIP:** A number `x` is divisible by a number `y` if the answer to `x / y` has a remainder of 0. For example, 10 is divisible by 2 because `10 / 2 = 5` with no remainder. You can check if a number is divisible by another number by checking if `x % y === 0`.\n\nWe're going to have you program your own version of FizzBuzz called \"JuliaJames\" (yes, imaginative, right?) Keep in mind that in an interview, you would want to write efficient code with very little duplication. We don't want you to worry about that for this question. Just focus on practicing using loops.\n\n## Directions:\n\nWrite a `while` loop that:\n\n* Loop through the numbers 1 to 20\n* If the number is divisible by 3, print `\"Julia\"`\n* If the number is divisible by 5, print `\"James\"`\n* If the number is divisible by 3 and 5, print `\"JuliaJames\"`\n* If the number is **not** divisible by 3 or 5, print the number\n\n## Your Code:\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 213485,
+              "key": "a574ec4c-c39e-4512-aa0f-fe0a59368bcd",
+              "title": "",
+              "semantic_type": "QuizAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "user_state": {
+                "node_key": "a574ec4c-c39e-4512-aa0f-fe0a59368bcd",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "instruction": null,
+              "question": {
+                "title": "",
+                "semantic_type": "ProgrammingQuestion",
+                "evaluation_id": "5320730340360192",
+                "initial_code_files": [
+                  {
+                    "text": "/*\n * Programming Quiz: JuliaJames (4-1)\n */\n/*\n * QUIZ REQUIREMENTS\n * - Your code should have a variable `x` with a starting value of `1`\n * - Your code should include a `while` loop\n * - Your `while` loop should have a stop condition\n * - Your code should use a conditional statement\n * - Your code should increment `x` by `1` each time the loop executes\n * - Your code should produce the expected output\n * - Your code should not be empty\n * - BE CAREFUL ABOUT THE PUNCTUATION AND THE EXACT WORDS TO BE PRINTED.\n */\n \nvar x = 1;\n\nwhile (/* your stop condition goes here */) {\n    // check divisibility\n    // print Julia, James, or JuliaJames\n    // increment x\n}\n",
+                    "name": "StudentMain.js"
+                  }
+                ]
+              },
+              "answer": null
+            },
+            {
+              "id": 1014203,
+              "key": "1f1dab6b-416e-489b-9858-7a38a560e1a7",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<font color=\"#000066\"> Note - We check your solution against a limited set of ***test-cases*** that check the minimum requirements, as mentioned in the quiz. Give the exercise a strong effort, trying to pass all test cases, before comparing your code with the solution. </font>",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014204,
+              "key": "efed57da-c788-480e-9055-14e13883334a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n<div id=\"spoiler_1\" style=\"display:none\">\n#### <font color=\"green\">Here is one of the possible solutions:</font>\n\n```Javascript\n\nvar x = 1;\n\n// while loop with a stop condition\nwhile (x <= 20) {\n    if (x % 3 === 0 && x % 5 === 0) {\n        console.log(\"JuliaJames\");\n    }else if (x % 5 === 0) {\n        console.log(\"James\");\n    }else if (x % 3 === 0) {\n        console.log(\"Julia\");\n    }\n    else {\n        console.log(x);\n    }\n    // increment x at the end of each loop\n    x = x + 1 ; \n}\n\n```\n</div>\n<button type=\"button\" id=\"myButton1\" onclick=\"if(document.getElementById('spoiler_1') .style.display=='none') {document.getElementById('spoiler_1') .style.display=''}else{document.getElementById('spoiler_1') .style.display='none'}if (document.getElementById('myButton1').innerHTML=='Show Solution') {document.getElementById('myButton1').innerHTML='Hide Solution';}else{document.getElementById('myButton1').innerHTML = 'Show Solution';}\">Show Solution</button>\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 213486,
+          "key": "d150e73c-6439-461e-b52b-87c6e5c1ea3a",
+          "title": "Quiz: 99 Bottles of Juice (4-2)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d150e73c-6439-461e-b52b-87c6e5c1ea3a",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 213487,
+              "key": "21383699-6a14-4bd9-8d4c-49cac7e25663",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Directions:\nWrite a loop that prints out the following song. Starting at 99, and ending at 1 bottle.\n\n```text\n99 bottles of juice on the wall! 99 bottles of juice! Take one down, pass it around... 98 bottles of juice on the wall!\n98 bottles of juice on the wall! 98 bottles of juice! Take one down, pass it around... 97 bottles of juice on the wall!\n...\n2 bottles of juice on the wall! 2 bottles of juice! Take one down, pass it around... 1 bottle of juice on the wall!\n1 bottle of juice on the wall! 1 bottle of juice! Take one down, pass it around... 0 bottles of juice on the wall!\n```\n**Some Notes:** \n\n1. Note the pluralization of the word \"bottle\" when you go from 2 bottles to 1 bottle.\n2. Your text editor may try to autocorrect your ellipses (`...`) to the ellipses _character_ (`…`). Do not use the ellipses _character_ for this quiz; use three consecutive periods instead.\n\n## Your Code:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 213488,
+              "key": "c79ff4d5-594a-469b-ba72-b689d20558c3",
+              "title": "",
+              "semantic_type": "QuizAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "user_state": {
+                "node_key": "c79ff4d5-594a-469b-ba72-b689d20558c3",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "instruction": null,
+              "question": {
+                "title": "",
+                "semantic_type": "ProgrammingQuestion",
+                "evaluation_id": "5428549320310784",
+                "initial_code_files": [
+                  {
+                    "text": "/*\n * Programming Quiz: 99 Bottles of Juice (4-2)\n *\n * Use the following `while` loop to write out the song \"99 bottles of juice\".\n * Log the your lyrics to the console.\n *\n * Note\n *   - Each line of the lyrics needs to be logged to the same line.\n *   - The pluralization of the word \"bottle\" changes from \"2 bottles\" to \"1 bottle\" to \"0 bottles\".\n */\n\n/*\n * QUIZ REQUIREMENTS\n * - Your code should have a variable `num` with a starting value of `99`\n * - Your code should include a `while` loop\n * - Your `while` loop should have a stop condition\n * - Your code should produce the expected output, as explained above\n * - Your code should not be empty\n * - BE CAREFUL ABOUT THE PUNCTUATION AND THE EXACT WORDS TO BE PRINTED.\n */\n\n\nvar num = 99;\n\nwhile (/* your stop condition goes here */) {\n    // check value of num\n    // print lyrics using num\n    // don't forget to check pluralization on the last line!\n    // decrement num\n}\n",
+                    "name": "StudentMain.js"
+                  }
+                ]
+              },
+              "answer": null
+            },
+            {
+              "id": 1014205,
+              "key": "bdf57107-c6b6-43f3-9b9f-e5158d20bfd5",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<font color=\"#000066\"> Note - We check your solution against a limited set of ***test-cases*** that check the minimum requirements, as mentioned in the quiz. Give the exercise a strong effort, trying to pass all test cases, before comparing your code with the solution. </font>",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014206,
+              "key": "48184af8-cf5b-4811-8e94-c7bf78fe8213",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n<div id=\"spoiler_1\" style=\"display:none\">\n#### <font color=\"green\">Here is one of the possible solutions:</font>\n\n```Javascript\nvar num = 99;\n\nwhile (num >=1) {\n    // Last iteration. Note occurances of bottle, bottle, bottleS\n    if (num === 1) {\n        console.log(num + \" bottle of juice on the wall! \"\n                    + num + \" bottle of juice! Take one down, pass it around... \"\n                    + (num-1) + \" bottles of juice on the wall!\");\n    }\n    // Second-last iteration. Note occurances of bottleS, bottleS, bottle\n    else if (num === 2){\n        console.log(num + \" bottles of juice on the wall! \"\n                    + num + \" bottles of juice! Take one down, pass it around... \"\n                    + (num-1) + \" bottle of juice on the wall!\");\n    }\n    // All other iterations. Note occurances of bottleS, bottleS, bottleS\n    else {\n        console.log(num + \" bottles of juice on the wall! \"\n                    + num + \" bottles of juice! Take one down, pass it around... \"\n                    + (num-1) + \" bottles of juice on the wall!\");\n    }\n    num = num - 1;\n}\n```\n</div>\n<button type=\"button\" id=\"myButton1\" onclick=\"if(document.getElementById('spoiler_1') .style.display=='none') {document.getElementById('spoiler_1') .style.display=''}else{document.getElementById('spoiler_1') .style.display='none'}if (document.getElementById('myButton1').innerHTML=='Show Solution') {document.getElementById('myButton1').innerHTML='Hide Solution';}else{document.getElementById('myButton1').innerHTML = 'Show Solution';}\">Show Solution</button>\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 213489,
+          "key": "e2383410-4647-455e-92aa-f495c2753a08",
+          "title": "Quiz: Countdown, Liftoff! (4-3)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "e2383410-4647-455e-92aa-f495c2753a08",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 213490,
+              "key": "291b2f61-8a44-40ed-8a09-2684516b9a98",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "NASA's countdown to launch [includes checkpoints](http://www.nasa.gov/mission_pages/shuttle/launch/countdown101.html) where NASA engineers complete certain technical tasks. During the final minute, NASA has 6 tasks to complete:\n\n* Orbiter transfers from ground to internal power (T-50 seconds)\n* Ground launch sequencer is go for auto sequence start (T-31 seconds)\n* Activate launch pad sound suppression system (T-16 seconds)\n* Activate main engine hydrogen burnoff system (T-10 seconds)\n* Main engine start (T-6 seconds)\n* Solid rocket booster ignition and liftoff! (T-0 seconds)\n\n> **NOTE:** \"T-50 seconds\" read as \"T-minus 50 seconds\".\n\n## Directions:\n\nWrite a `while` loop that counts down from 60 seconds and:\n\n* If there's a task being completed, it prints out the task\n* If there is no task being completed, it prints out the time as `T-x seconds`\n\nUse the task and time descriptions described above.\n\n## Your Code:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 264463,
+              "key": "41fac83d-57e3-4a0a-b84f-a941e35f2872",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Your output should look like the following:\n\n```text\nT-60 seconds\nT-59 seconds\nT-58 seconds\n...\nT-51 seconds\nOrbiter transfers from ground to internal power\nT-49 seconds\n...\nT-3 seconds\nT-2 seconds\nT-1 seconds\nSolid rocket booster ignition and liftoff!\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 213491,
+              "key": "048eea5f-c1dc-412f-a418-447032f984ed",
+              "title": "",
+              "semantic_type": "QuizAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "user_state": {
+                "node_key": "048eea5f-c1dc-412f-a418-447032f984ed",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "instruction": null,
+              "question": {
+                "title": "",
+                "semantic_type": "ProgrammingQuestion",
+                "evaluation_id": "5210562499837952",
+                "initial_code_files": [
+                  {
+                    "text": "/*\n * Programming Quiz: Countdown, Liftoff! (4-3)\n * \n * Using a while loop, print out the countdown output above.\n */\n\n/*\n * QUIZ REQUIREMENTS\n * - Your code should include a `while` loop\n * - Your `while` loop should have a stop condition\n * - Your code should produce the expected output, as explained above\n * - Your code should not be empty\n * - BE CAREFUL ABOUT THE PUNCTUATION AND THE EXACT WORDS TO BE PRINTED.\n */\n\n\n// your code goes here\n",
+                    "name": "StudentMain.js"
+                  }
+                ]
+              },
+              "answer": null
+            },
+            {
+              "id": 1014207,
+              "key": "c772f614-fa04-4e60-9e08-0de82ad6cda0",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<font color=\"#000066\"> Note - We check your solution against a limited set of ***test-cases*** that check the minimum requirements, as mentioned in the quiz. Give the exercise a strong effort, trying to pass all test cases, before comparing your code with the solution. </font>",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014208,
+              "key": "81eee046-93f3-46de-8b96-1e423d426e9a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n<div id=\"spoiler_1\" style=\"display:none\">\n#### <font color=\"green\">Here is one of the possible solutions:</font>\n\n```Javascript\n// Let us take an iteration variable, that represent the remaining Time in seconds\nn = 60\n\n// While loop with a stop condition\nwhile (n >= 0) {\n    if (n === 50) {\n        console.log(\"Orbiter transfers from ground to internal power\");\n    }\n    else if (n === 31) {\n        console.log(\"Ground launch sequencer is go for auto sequence start\");\n    }\n    else if (n === 16) {\n        console.log(\"Activate launch pad sound suppression system\");\n    }\n    else if (n === 10) {\n        console.log(\"Activate main engine hydrogen burnoff system\");\n    }\n    else if (n === 6) {\n        console.log(\"Main engine start\");\n    }\n    else if (n === 0) {\n        console.log(\"Solid rocket booster ignition and liftoff!\");\n    }\n    else{\n        console.log(\"T-\"+n+\" seconds\");\n    }\n    \n    //Never forget to decrement/increment the iteration variable in a while loop\n    // Otherwise, you loop will run infinite iterations\n    n = n-1;\n}\n```\n</div>\n<button type=\"button\" id=\"myButton1\" onclick=\"if(document.getElementById('spoiler_1') .style.display=='none') {document.getElementById('spoiler_1') .style.display=''}else{document.getElementById('spoiler_1') .style.display='none'}if (document.getElementById('myButton1').innerHTML=='Show Solution') {document.getElementById('myButton1').innerHTML='Hide Solution';}else{document.getElementById('myButton1').innerHTML = 'Show Solution';}\">Show Solution</button>\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 213492,
+          "key": "58817e15-1e53-4dab-b844-909b19610bc1",
+          "title": "For Loops",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "58817e15-1e53-4dab-b844-909b19610bc1",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 252835,
+              "key": "64071aba-e8e5-4be9-bdfc-6ba5727e075b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## For Loops",
+              "instructor_notes": ""
+            },
+            {
+              "id": 232963,
+              "key": "0bb963a9-da26-4464-ada8-94bdfbe8d32d",
+              "title": "For Loops",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "qsrDTZ7MVQw",
+                "china_cdn_id": "qsrDTZ7MVQw.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 213494,
+          "key": "30048775-f29e-4c64-9f3a-fe15b47270e1",
+          "title": "Parts of a For Loop",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "30048775-f29e-4c64-9f3a-fe15b47270e1",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 259514,
+              "key": "9ce297b7-4bb8-448f-a995-eca4b7775b6d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Parts of a For Loop",
+              "instructor_notes": ""
+            },
+            {
+              "id": 259513,
+              "key": "9a783948-7097-4fac-b35f-a6a521bae1cf",
+              "title": "Walking through a For Loop",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "LkRKVBzDFkE",
+                "china_cdn_id": "LkRKVBzDFkE.mp4"
+              }
+            },
+            {
+              "id": 213495,
+              "key": "ba159e8e-4b84-4b73-805a-367d8777950e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "The `for loop` explicitly forces you to define the start point, stop point, and each step of the loop. In fact, you'll get an `Uncaught SyntaxError: Unexpected token )` if you leave out  any of the three required pieces.\n\n```js\nfor ( start; stop; step ) {\n  // do this thing\n}\n```\n\nHere's an example of a for loop that prints out the values from 0 to 5. Notice the semicolons separating the different statements of the for loop: `var i = 0; i < 6; i = i + 1` \n\n```js\nfor (var i = 0; i < 6; i = i + 1) {\n  console.log(\"Printing out i = \" + i);\n}\n```\n> **Prints**:<br>\n> Printing out i = 0<br>\n> Printing out i = 1<br>\n> Printing out i = 2<br>\n> Printing out i = 3<br>\n> Printing out i = 4<br>\n> Printing out i = 5<br>\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 213497,
+          "key": "3d9bed17-9034-4d36-987d-d1722b17968a",
+          "title": "Nested Loops",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "3d9bed17-9034-4d36-987d-d1722b17968a",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 259515,
+              "key": "f4c3a704-7141-428b-9a2f-d326d0e0e908",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Nested Loops",
+              "instructor_notes": ""
+            },
+            {
+              "id": 259516,
+              "key": "77a79c25-1c17-4584-a698-05cb600423d1",
+              "title": "Walking through a Nested Loop",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "XyipDTdBuBw",
+                "china_cdn_id": "XyipDTdBuBw.mp4"
+              }
+            },
+            {
+              "id": 213498,
+              "key": "0b670437-3df8-4ec2-bf38-4aac5c78032a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Did you know you can also _nest_ loops inside of each other? Paste this nested loop in your browser and take a look at what it prints out:\n\n```js\nfor (var x = 0; x < 5; x = x + 1) {\n  for (var y = 0; y < 3; y = y + 1) {\n    console.log(x + \",\" + y);\n  }\n}\n```\n> **Prints**:<br>\n> 0, 0<br>\n> 0, 1<br>\n> 0, 2<br>\n> 1, 0<br>\n> 1, 1<br>\n> 1, 2<br>\n> 2, 0<br>\n> 2, 1<br>\n> 2, 2<br>\n> 3, 0<br>\n> 3, 1<br>\n> 3, 2<br>\n> 4, 0<br>\n> 4, 1<br>\n> 4, 2<br>\n\nNotice the order that the output is being displayed. \n\nFor each value of `x` in the outer loop, the inner for loop executes completely. The outer loop starts with `x = 0`, and then the inner loop completes its cycle with all values of `y`:\n\n```\nx = 0 and y = 0, 1, 2 // corresponds to (0, 0), (0, 1), and (0, 2)\n```\n\nOnce the inner loop is done iterating over `y`, then the outer loop continues to the next value, `x = 1`, and the whole process begins again.\n\n```\nx = 0 and y = 0, 1, 2 // (0, 0) (0, 1) and (0, 2)\nx = 1 and y = 0, 1, 2 // (1, 0) (1, 1) and (1, 2)\nx = 2 and y = 0, 1, 2 // (2, 0) (2, 1) and (2, 2)\netc.\n```\n\n> **NOTE:** Nested loops can be tricky at first. We will revisit them again in **Lesson 6: Arrays**.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 213500,
+              "key": "45b6a1a4-2b09-4e02-b679-424309a07f83",
+              "title": "What's the output?",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "45b6a1a4-2b09-4e02-b679-424309a07f83",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What will this loop print out?\n\n```js\nfor (var i = 0; i <= 6; i = i + 2) {\n  console.log(i);\n}\n```",
+                "answers": [
+                  {
+                    "id": "a1479434759683",
+                    "text": "1 2 3 4 5 6",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1479434779378",
+                    "text": "0 1 2 3 4 5 6",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1479434783017",
+                    "text": "1 3 5",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1479434789211",
+                    "text": "1 3 5 7",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1479434796767",
+                    "text": "0 2 4",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1479434800691",
+                    "text": "0 2 4 6",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 213501,
+          "key": "c1b223e7-d621-4c33-8cb4-5ec1c8fd8665",
+          "title": "Increment and Decrement",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c1b223e7-d621-4c33-8cb4-5ec1c8fd8665",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 252850,
+              "key": "ca1ac27d-19ea-4c55-b03f-bb99d6bf1170",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Increment and decrement",
+              "instructor_notes": ""
+            },
+            {
+              "id": 230464,
+              "key": "f1e571fc-f0d5-477e-91cf-87e52b5f457e",
+              "title": "Increment and Decrement",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "gHZqOOo4JVg",
+                "china_cdn_id": "gHZqOOo4JVg.mp4"
+              }
+            },
+            {
+              "id": 229659,
+              "key": "da37df39-5baf-4d6d-8760-21cee9bf3163",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Here is a summary of operators you've learned so far:\n\n```js\nx++ or ++x // same as x = x + 1 \nx-- or --x // same as x = x - 1\nx += 3 // same as x = x + 3\nx -= 6 // same as x = x - 6\nx *= 2 // same as x = x * 2\nx /= 5 // same as x = x / 5\n```",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 213503,
+          "key": "ed32a833-056e-48df-9523-2dd5f57b31b9",
+          "title": "Quiz: Changing the Loop (4-4)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "ed32a833-056e-48df-9523-2dd5f57b31b9",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 216473,
+              "key": "3f1b8861-8609-4a1d-ba24-57291e62bf21",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Directions:\nRewrite the following `while` loop as a `for` loop:\n\n```\nvar x = 9;\nwhile (x >= 1) {\n  console.log(\"hello \" + x);\n  x = x - 1;\n}\n```\n\n## Your Code:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 213504,
+              "key": "f8d66573-5aff-4d30-983b-0daa67bd83a0",
+              "title": "",
+              "semantic_type": "QuizAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "user_state": {
+                "node_key": "f8d66573-5aff-4d30-983b-0daa67bd83a0",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "instruction": null,
+              "question": {
+                "title": "",
+                "semantic_type": "ProgrammingQuestion",
+                "evaluation_id": "4779831504011264",
+                "initial_code_files": [
+                  {
+                    "text": "/*\n * Programming Quiz: Changing the Loop (4-4)\n */\n/*\n * QUIZ REQUIREMENTS\n * - Your code should use a `for` loop\n * - Your `for` loop should specify a starting condition `x` with the value of `9`\n * - Your `for` loop should have a stop condition for the value of `x`\n * - Your `for` loop should decrement `x` each time it executes\n * - Your code should produce the expected output, as explained above\n * - Your code should not be empty\n * - BE CAREFUL ABOUT THE PUNCTUATION AND THE EXACT WORDS TO BE PRINTED.\n */\n \n// rewrite the while loop as a for loop\nvar x = 9;\nwhile (x >= 1) {\n    console.log(\"hello \" + x);\n    x = x - 1;\n}\n",
+                    "name": "StudentMain.js"
+                  }
+                ]
+              },
+              "answer": null
+            },
+            {
+              "id": 1014243,
+              "key": "ed483c21-3708-4fa3-a015-13b5f8a1c628",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<font color=\"#000066\"> Note - We check your solution against a limited set of ***test-cases*** that check the minimum requirements, as mentioned in the quiz. Give the exercise a strong effort, trying to pass all test cases, before comparing your code with the solution. </font>\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014244,
+              "key": "c0805a24-8a8c-407f-90a6-7f147e9532ad",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n<div id=\"spoiler_1\" style=\"display:none\">\n#### <font color=\"green\">Here is one of the possible solutions:</font>\n\n```Javascript\nfor (var x = 9; x>=1; x--){\n    console.log(\"hello \" + x);\n}\n```\n</div>\n<button type=\"button\" id=\"myButton1\" onclick=\"if(document.getElementById('spoiler_1') .style.display=='none') {document.getElementById('spoiler_1') .style.display=''}else{document.getElementById('spoiler_1') .style.display='none'}if (document.getElementById('myButton1').innerHTML=='Show Solution') {document.getElementById('myButton1').innerHTML='Hide Solution';}else{document.getElementById('myButton1').innerHTML = 'Show Solution';}\">Show Solution</button>\n\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 213505,
+          "key": "54374289-dc31-4c28-bca5-a1d964e4b343",
+          "title": "Quiz: Fix the Error 1 (4-5)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "54374289-dc31-4c28-bca5-a1d964e4b343",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 216481,
+              "key": "4aa8fe82-64ed-4458-93f3-5325e11ef60d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Directions:\n\nHere is a `for` loop that's supposed to print the numbers 5 through 9. Fix the error!\n\n```js\nfor (x < 10; x++) {\n  console.log(x);\n}\n```\n\n## Your Code:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 213507,
+              "key": "3df99bf9-eacf-43f4-9710-7dcf0a81182d",
+              "title": "",
+              "semantic_type": "QuizAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "user_state": {
+                "node_key": "3df99bf9-eacf-43f4-9710-7dcf0a81182d",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "instruction": null,
+              "question": {
+                "title": "",
+                "semantic_type": "ProgrammingQuestion",
+                "evaluation_id": "6684207168487424",
+                "initial_code_files": [
+                  {
+                    "text": "/*\n * Programming Quiz: Fix the Error 1 (4-5)\n */\n\n/*\n * QUIZ REQUIREMENTS\n * - Your code should use a `for` loop\n * - Your `for` loop should specify a starting condition `x` with the value of `5`\n * - Your `for` loop should have a stop condition for the value of `x`\n * - Your `for` loop should increment `x` each time it executes\n * - Your code should produce the expected output, as explained above\n * - Your code should not be empty\n * - BE CAREFUL ABOUT THE PUNCTUATION AND THE EXACT WORDS TO BE PRINTED.\n */\n \n// fix the for loop\nfor (x < 10; x++) {\n    console.log(x);\n}\n",
+                    "name": "StudentMain.js"
+                  }
+                ]
+              },
+              "answer": null
+            },
+            {
+              "id": 1014246,
+              "key": "34e60f9d-16f4-4de7-a743-41c128eafc92",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<font color=\"#000066\"> Note - We check your solution against a limited set of ***test-cases*** that check the minimum requirements, as mentioned in the quiz. Give the exercise a strong effort, trying to pass all test cases, before comparing your code with the solution. </font>",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014245,
+              "key": "4ae05651-3d1d-462b-90a9-db97c193ba61",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n<div id=\"spoiler_1\" style=\"display:none\">\n#### <font color=\"green\">Here is one of the possible solutions:</font>\n\n```Javascript\nfor (var x = 5; x < 10; x++) {\n    console.log(x);\n}\n```\n</div>\n<button type=\"button\" id=\"myButton1\" onclick=\"if(document.getElementById('spoiler_1') .style.display=='none') {document.getElementById('spoiler_1') .style.display=''}else{document.getElementById('spoiler_1') .style.display='none'}if (document.getElementById('myButton1').innerHTML=='Show Solution') {document.getElementById('myButton1').innerHTML='Hide Solution';}else{document.getElementById('myButton1').innerHTML = 'Show Solution';}\">Show Solution</button>\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 213508,
+          "key": "dd074394-243a-4467-babf-14563c6b8c71",
+          "title": "Quiz: Fix the Error 2 (4-6)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "dd074394-243a-4467-babf-14563c6b8c71",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 216492,
+              "key": "01c808e0-1a16-427e-98b5-a38065062220",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Directions:\n\nThe `for` loop below has an error. Fix it!\n\n```\nfor (var k = 0 k < 200 k++) {\n  console.log(k);\n}\n```\n\n## Your Code:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 213509,
+              "key": "e9ffabeb-155f-461f-88bb-f71d41c5c002",
+              "title": "",
+              "semantic_type": "QuizAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "user_state": {
+                "node_key": "e9ffabeb-155f-461f-88bb-f71d41c5c002",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "instruction": null,
+              "question": {
+                "title": "",
+                "semantic_type": "ProgrammingQuestion",
+                "evaluation_id": "5451435858853888",
+                "initial_code_files": [
+                  {
+                    "text": "/*\n * Programming Quiz: Fix the Error 2 (4-6)\n */\n/*\n * QUIZ REQUIREMENTS\n * - Your code should use a `for` loop\n * - Your `for` loop should specify a starting condition `k` with the value of `0`\n * - Your `for` loop should have a stop condition for the value of `k`\n * - Your `for` loop should increment `k` each time it executes\n * - Your code should produce the expected output, as explained above\n * - Your code should not be empty\n * - BE CAREFUL ABOUT THE PUNCTUATION AND THE EXACT WORDS TO BE PRINTED.\n */\n \n// fix the for loop\nfor (var k = 0 k < 200 k++) {\n    console.log(k);\n}\n",
+                    "name": "StudentMain.js"
+                  }
+                ]
+              },
+              "answer": null
+            },
+            {
+              "id": 1014247,
+              "key": "f031d880-3302-488d-94ab-4970fe93124e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<font color=\"#000066\"> Note - We check your solution against a limited set of ***test-cases*** that check the minimum requirements, as mentioned in the quiz. Give the exercise a strong effort, trying to pass all test cases, before comparing your code with the solution. </font>",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014248,
+              "key": "a29166b5-392d-43d4-bf09-e972b11a256b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n<div id=\"spoiler_1\" style=\"display:none\">\n#### <font color=\"green\">Here is one of the possible solutions:</font>\n\n```Javascript\n\n// The semicolon was missing at two places\nfor (var k = 0; k < 200; k++) {\n    console.log(k);\n}\n\n```\n</div>\n<button type=\"button\" id=\"myButton1\" onclick=\"if(document.getElementById('spoiler_1') .style.display=='none') {document.getElementById('spoiler_1') .style.display=''}else{document.getElementById('spoiler_1') .style.display='none'}if (document.getElementById('myButton1').innerHTML=='Show Solution') {document.getElementById('myButton1').innerHTML='Hide Solution';}else{document.getElementById('myButton1').innerHTML = 'Show Solution';}\">Show Solution</button>\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 213510,
+          "key": "371cff31-42a7-4e5e-93e2-f0c3dd5cc7d0",
+          "title": "Quiz: Factorials! (4-7)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "371cff31-42a7-4e5e-93e2-f0c3dd5cc7d0",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 216494,
+              "key": "aaaebf6d-e0c3-409f-8c55-76ef084e2f7b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Directions:\n\nWrite a `for` (note: not a _function_) loop that prints out the factorial of the number 12:\n\nA **factorial** is calculated by multiplying a number by all the numbers below it. For instance, 3! or \"3 factorial\" is 3 \\* 2 \\* 1 = 6\n\n><span class=\"mathquill\">\n3! = 3 * 2 * 1 = 6\n</span><br>\n><span class=\"mathquill\">\n4! = 4 * 3 * 2 * 1 = 24\n</span><br>\n><span class=\"mathquill\">\n5! = 5 * 4 * 3 * 2 * 1 = 120\n</span>\n\nSave your final answer in a variable called `solution` and print it to the console.\n\n## Your Code:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 213513,
+              "key": "083b4ba7-2485-4177-978b-8488d12454c1",
+              "title": "",
+              "semantic_type": "QuizAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "user_state": {
+                "node_key": "083b4ba7-2485-4177-978b-8488d12454c1",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "instruction": null,
+              "question": {
+                "title": "",
+                "semantic_type": "ProgrammingQuestion",
+                "evaluation_id": "5437587005243392",
+                "initial_code_files": [
+                  {
+                    "text": "/*\n * Programming Quiz: Factorials (4-7)\n */\n\n// your code goes here\n",
+                    "name": "StudentMain.js"
+                  }
+                ]
+              },
+              "answer": null
+            },
+            {
+              "id": 778245,
+              "key": "8573d69f-23ac-4a3a-917a-0cc3a21159c9",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Solution\n\nDouble click to open up the file named `Solution.js` in the workspace below to see one possible solution:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 778243,
+              "key": "5bbf91a3-fbdf-4314-8c7e-223ad5040599",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r258971c213510xGENERICgv6e5zb9",
+              "pool_id": "webterminal",
+              "view_id": "generic-e503o",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "userCode": "",
+                    "openFiles": [
+                      "/home/workspace/Solution.js"
+                    ],
+                    "showFiles": true,
+                    "allowClose": true,
+                    "showEditor": true,
+                    "allowSubmit": false,
+                    "terminalTitle": "BASH"
+                  },
+                  "kind": "generic"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 1014249,
+              "key": "5f15e157-ce10-4c21-82e8-1a1e23256ce3",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "You may have noticed the usage of the keyword `let` in the solution shown above. In simple words, it's a new way to declare a variable. If you want to know more, read the section below. \n\n## More to Read - Scope and Variable Declaration \nAt this point, you need to understand that there are ways to declare a variable, by using `let`, `const` or `var`. To understand the difference between the three, first you need to understand the term *scope*. \n### What is a \"Scope\"?\nThe scope is defined as a specific portion of the code. There are three types of scope in Javascript\n1. Global scope - When a particular variable is visible (can be used) anywhere in the code. Such a variable is generally called as **Global variable**. \n2. Function scope - When a particular variable is visible (can be used) within ***a*** particular function only. Such a variable is generally called as **Local variable**. \n3. Block scope - When a particular variable is visible (can be used) within ***a*** pair of `{ . . . }` only. \n\nLet us see an example of each type of scope:\n```Javascript\n/*\n * Global scope. \n * This variable declared outside of any function is called Global variable. \n * Hence, you can use this anywhere in the code\n */\nvar opinion = \"This nanodegree is amazing\";\n\n// Function scope\nfunction showMessage() {\n\t// Local variable, visible within the function `showMessage`\n\tvar message = \"I am an Udacian!\"; \n\t\n\t// Block scope\n\t{\n  \t\tlet greet = \"How are you doing?\";\n\t\t/*\n\t\t * We have used the keyword `let` to declare a variable `greet` because variables declared with the `var` keyword can not have Block Scope. \n\t\t */\n\t} // block scope ends\n\n    console.log( message ); // OK\n    console.log( greet ); // ERROR. \n    // Variable greet can NOT be used outside the block\n\n    console.log( opinion ); // OK\tto use the gobal variable anywhere in the code\n\n} // function scope ends\n\n```\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014250,
+              "key": "5e2709e3-0bbf-4eac-bdc7-9344b1ef8ba0",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Variable Declaration \nThere are three ways to declare a variable:\n1. `let` - It a new way to declare a variable in any scope - Global, Local, or Block. The value of this variable can be changed or reassigned anytime within its scope. \n2. `const` - It is also a way to declare *constants* in any scope - Global, Local, or Block. Once you are assigned a value to a `const` variable, the value of this variable CANNOT be changed or reassigned throughout the code.\n3. `var` - This is the old way of declaring variables in only two scope - Global, or Local. Variables declared with the `var` keyword can not have Block Scope. The value of this variable can be changed or reassigned anytime within its scope. \n\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 213514,
+          "key": "4999de08-ae90-41d0-bbe4-526161faee74",
+          "title": "Quiz: Find my Seat (4-8)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "4999de08-ae90-41d0-bbe4-526161faee74",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 246634,
+              "key": "6b508c4e-a6f0-46cf-90ac-96305a755bcc",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Directions:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 213515,
+              "key": "bfdfdee6-b727-43f3-b119-2dcb0022fe59",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/November/582e647f_3213163359-a4952f4f18-o/3213163359-a4952f4f18-o.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/bfdfdee6-b727-43f3-b119-2dcb0022fe59",
+              "caption": "[Creative Commons - Jeffrey Smith - \"State Theater\"](https://www.flickr.com/photos/jmsmith000/3213163359/in/photolist-5TWiwg-iStFs3-7Kd26E-akdV3j-7Ztw-5TWh8r-p21Grd-aFhiYL-4ML3nd-9oAnEr-7fq5r-2gEdm-am7tRU-nqWwPT-3AUnJ-nGk8c5-6EgM7Q-qvJcXy-6pbGuK-4UU2vX-7CNEr6-vMfn-csCcoE-cLyWWs-3sfQK-aDpRGo-aDm2ga-7ds6oE-am4F34-n3qzJ-6vk83u-2wtiGY-8A6orG-aDpSSj-aDm18t-dY62f5-aDm1tB-aDm1iV-raEQ3i-aDpRQd-4DiPce-BXVP-6UMPFn-nC2m3-aDm1UR-cAMd8b-aDpSAb-aDpRLf-eo2M2-qNk33H)",
+              "alt": "Image of Red theatre seats",
+              "width": 2943,
+              "height": 1847,
+              "instructor_notes": null
+            },
+            {
+              "id": 213516,
+              "key": "bbdef2ec-0186-4b1f-9016-b3ded5f6c5a8",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Theater seats often display a row and seat number to help theatergoers find their seats. If there are 26 rows (0 to 25) and 100 seats (0 to 99) in each row, write a nested `for` loop to print out all of the different seat combinations in the theater.\n\n**Example output for row-seat information:**\n_output each row and seat number on a separate line_\n\n```text\n0-0\n0-1\n0-2\n...\n25-97\n25-98\n25-99\n```\n\n## Your Code:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 213517,
+              "key": "50e61178-c159-474c-911d-02d03dfe7769",
+              "title": "",
+              "semantic_type": "QuizAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "user_state": {
+                "node_key": "50e61178-c159-474c-911d-02d03dfe7769",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "instruction": null,
+              "question": {
+                "title": "",
+                "semantic_type": "ProgrammingQuestion",
+                "evaluation_id": "5691518893555712",
+                "initial_code_files": [
+                  {
+                    "text": "/*\n * Programming Quiz: Find my Seat (4-8)\n * \n * Write a nested for loop to print out all of the different seat combinations in the theater.\n * The first row-seat combination should be 0-0 \n * The last row-seat combination will be 25-99\n * \n * Things to note: \n *  - the row and seat numbers start at 0, not 1\n *  - the highest seat number is 99, not 100\n */\n\n/*\n * QUIZ REQUIREMENTS\n * - Your code should use a nested `for` loop'\n * - Your code should produce the expected output, as explained above\n */\n \n// Write your code here\n",
+                    "name": "StudentMain.js"
+                  }
+                ]
+              },
+              "answer": null
+            },
+            {
+              "id": 1014251,
+              "key": "5d167194-ddce-4085-8dbe-16f0f0bbf044",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<font color=\"#000066\"> Note - We check your solution against a limited set of ***test-cases*** that check the minimum requirements, as mentioned in the quiz. Give the exercise a strong effort, trying to pass all test cases, before comparing your code with the solution. </font>",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014252,
+              "key": "5658dfb1-b0bb-4cbe-9873-7bd9fc331a43",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n<div id=\"spoiler_1\" style=\"display:none\">\n#### <font color=\"green\">Here is one of the possible solutions:</font>\n\n```Javascript\n\nvar row = 0;  // initial value of the row\nvar seat = 0; // initial value of the seat within a row\n\n// One loop inside another is called Nested loop.\n// Outer `for` loop, to iterate over the rows\nfor (row = 0; row <= 25; row++){\n    \n    // Inner `for` loop, to iterate over the seats within a row\n    // In this loop, the value of `row` variable would change only after 100 iterations\n    for(seat = 0; seat <= 99; seat++){\n        console.log(row+\"-\"+seat);\n    }\n}\n```\n</div>\n<button type=\"button\" id=\"myButton1\" onclick=\"if(document.getElementById('spoiler_1') .style.display=='none') {document.getElementById('spoiler_1') .style.display=''}else{document.getElementById('spoiler_1') .style.display='none'}if (document.getElementById('myButton1').innerHTML=='Show Solution') {document.getElementById('myButton1').innerHTML='Hide Solution';}else{document.getElementById('myButton1').innerHTML = 'Show Solution';}\">Show Solution</button>\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 208339,
+          "key": "135f4fda-6254-4e5d-be98-3ff3d11f2813",
+          "title": "Lesson 4 Summary",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "135f4fda-6254-4e5d-be98-3ff3d11f2813",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 215884,
+              "key": "9e94aa4f-2909-45f3-9328-f1341dad5e91",
+              "title": "Lesson 4 Summary",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "3hENHd0VU5E",
+                "china_cdn_id": "3hENHd0VU5E.mp4"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

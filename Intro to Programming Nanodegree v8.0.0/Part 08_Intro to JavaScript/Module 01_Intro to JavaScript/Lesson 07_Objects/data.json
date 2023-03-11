@@ -1,0 +1,804 @@
+{
+  "data": {
+    "lesson": {
+      "id": 817336,
+      "key": "d64ff66b-ebee-451c-a28d-2107b606fb78",
+      "title": "Objects",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Meet the next JavaScript data structure: the Object. Learn to use it to store complex data alongside Arrays.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/d64ff66b-ebee-451c-a28d-2107b606fb78/817336/1549165118434/Objects+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/d64ff66b-ebee-451c-a28d-2107b606fb78/817336/1549165115618/Objects+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 217715,
+          "key": "698b4dbb-fc8a-40c1-ab90-5902f5714099",
+          "title": "Intro to Objects",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "698b4dbb-fc8a-40c1-ab90-5902f5714099",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 230450,
+              "key": "106dd63c-759e-4611-a507-c9220560e180",
+              "title": "Intro to Objects",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "SbB6XqzIRvA",
+                "china_cdn_id": "SbB6XqzIRvA.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 220532,
+          "key": "d0cf76c6-0ac9-4fdb-80c4-0a26814a459b",
+          "title": "Objects in Code",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d0cf76c6-0ac9-4fdb-80c4-0a26814a459b",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 253420,
+              "key": "ee3ec31f-4ed8-4bc2-9b22-32f773bb4093",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Objects in code",
+              "instructor_notes": ""
+            },
+            {
+              "id": 230459,
+              "key": "f6488be4-61df-4bdc-bab4-c85b3ec61894",
+              "title": "Objects in Code",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "SiQY5SpcvTA",
+                "china_cdn_id": "SiQY5SpcvTA.mp4"
+              }
+            },
+            {
+              "id": 229120,
+              "key": "00a2e596-4390-4655-ad59-f1a9f5bbeeb3",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "> **TIP:** It’s worth noting that while we can represent real-world objects as JavaScript objects, the analogy does not always hold. This is a good starting place for thinking about the structure and purpose of objects, but as you continue your career as a developer, you’ll find that JavaScript objects can behave wildly different than real objects.\n\n---\n\n> **NOTE:** `typeof` is an operator that returns the name of the data type that follows it:\n```\ntypeof \"hello\" // returns \"string\"\ntypeof true // returns \"boolean\"\ntypeof [1, 2, 3] // returns \"object\" (Arrays are a type of object)\ntypeof function hello() { } // returns \"function\"\n```",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 220542,
+          "key": "808f82c1-da3c-4e6d-ac94-76ce4193cbbb",
+          "title": "Quiz: Umbrella (7-1)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "808f82c1-da3c-4e6d-ac94-76ce4193cbbb",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 220609,
+              "key": "e8eb86e4-44c5-4d11-a4cb-f6bc7ae2a59a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Directions:\n\nUsing the umbrella example from the previous video, see if you can follow the example `open()` method and create the `close()` method. It's alright if you have trouble at first! We'll go into more detail later in this lesson.\n\n```\nvar umbrella = { \n  color: \"pink\",\n  isOpen: false,\n  open: function() { \n    if (umbrella.isOpen === true) {\n      return \"The umbrella is already opened!\";\n    } else {\n      umbrella.isOpen = true;\n      return \"Julia opens the umbrella!\";\n    }\n   }\n};\n```\n\n> **TIP:** Remember to put all of your object's properties and methods inside curly braces: `var myObject = { greeting: \"hello\", name: \"Julia\" };`. Also, remember that an object is just another data type. Just like how you would put a semicolon after a string variable declaration `var myString = \"hello\";`, don't forget to put a semi-colon at the end of your object's declaration.\n\n## Your Code:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 220612,
+              "key": "44e8ed4c-2f04-4aaa-acd4-fceecc05f716",
+              "title": "",
+              "semantic_type": "QuizAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "user_state": {
+                "node_key": "44e8ed4c-2f04-4aaa-acd4-fceecc05f716",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "instruction": null,
+              "question": {
+                "title": "",
+                "semantic_type": "ProgrammingQuestion",
+                "evaluation_id": "6751163259158528",
+                "initial_code_files": [
+                  {
+                    "text": "/*\n * Programming Quiz: Umbrella (7-1)\n */\n/*\n * QUIZ REQUIREMENTS\n * - Your code should have a variable `umbrella`\n * - The variable `umbrella` should be an object\n * - Your `umbrella` object should have the `color` and `isOpen` property\n * - Your `umbrella` object should have an `open()` method that toggles the value of `isOpen` property\n * - Your `umbrella` object should have an `close()` method that toggles the value of `isOpen`\n */\n\nvar umbrella = {\n    color: \"pink\",\n    isOpen: true,\n    open: function() {\n        if (umbrella.isOpen === true) {\n            return \"The umbrella is already opened!\";\n        } else {\n            umbrella.isOpen = true;\n            return \"Julia opens the umbrella!\";\n        }\n    },\n    // your code goes here\n};\n",
+                    "name": "StudentMain.js"
+                  }
+                ]
+              },
+              "answer": null
+            },
+            {
+              "id": 1014545,
+              "key": "21f92d43-3564-4486-af93-0e748876e09e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<font color=\"#000066\"> Note - We check your solution against a limited set of ***test-cases*** that check the minimum requirements, as mentioned in the quiz. Give the exercise a strong effort, trying to pass all test cases, before comparing your code with the solution. </font>",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014546,
+              "key": "336554fb-4574-4093-af23-1045db1736cf",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n<div id=\"spoiler_1\" style=\"display:none\">\n#### <font color=\"green\">Here is one of the possible solutions:</font>\n\n```Javascript\n    // your code goes here\n    // method definition within the object definition\n    close: function() {\n        if (umbrella.isOpen === true) {\n            umbrella.isOpen = false;\n            return \"Julia closes the umbrella!\";\n        } else {\n            return \"The umbrella is already closed!\";\n        }\n    }\n```\n</div>\n<button type=\"button\" id=\"myButton1\" onclick=\"if(document.getElementById('spoiler_1') .style.display=='none') {document.getElementById('spoiler_1') .style.display=''}else{document.getElementById('spoiler_1') .style.display='none'}if (document.getElementById('myButton1').innerHTML=='Show Solution') {document.getElementById('myButton1').innerHTML='Hide Solution';}else{document.getElementById('myButton1').innerHTML = 'Show Solution';}\">Show Solution</button>\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 220543,
+          "key": "fff0019a-3db5-4423-a34f-726b56c308a6",
+          "title": "Objects",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "fff0019a-3db5-4423-a34f-726b56c308a6",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 254779,
+              "key": "28ac1267-a62e-4fab-9b2c-441a62865c42",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Objects",
+              "instructor_notes": ""
+            },
+            {
+              "id": 230460,
+              "key": "ea136bf8-b548-4251-9541-6d720d0b2aaf",
+              "title": "Objects",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "RLtWehRgfxw",
+                "china_cdn_id": "RLtWehRgfxw.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 220547,
+          "key": "cf57262b-5e91-4607-8e42-27949f7283c7",
+          "title": "Object Literals",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "cf57262b-5e91-4607-8e42-27949f7283c7",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 229122,
+              "key": "1d0ed540-e535-401c-a6fa-2d041f91b18d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Object-literal notation\n\n```js\nvar sister = {\n  name: \"Sarah\", \n  age: 23,\n  parents: [ \"alice\", \"andy\" ],\n  siblings: [\"julia\"],\n  favoriteColor: \"purple\",\n  pets: true\n};\n```\n\nThe syntax you see above is called **object-literal notation**. There are some important things you need to remember when you're structuring an object literal:\n\n* The \"key\" (representing a **property** or **method** name) and its \"value\" are separated from each other by a **colon**\n* The `key: value` _pairs_ are separated from each other by **commas**\n* The entire object is wrapped inside curly braces `{ }`. \n\nAnd, kind of like how you can look up a word in the dictionary to find its definition, the `key` in a `key:value` pair allows you to look up a piece of information about an object. Here's are a couple examples of how you can retrieve information about my sister's parents using the object you created.\n\n```js\n// two equivalent ways to use the key to return its value\nsister[\"parents\"] // returns [ \"alice\", \"andy\" ]\nsister.parents // also returns [\"alice\", \"andy\"]\n```\n\nUsing `sister[\"parents\"]` is called **bracket notation** (because of the brackets!) and using `sister.parents` is called **dot notation** (because of the dot!).",
+              "instructor_notes": ""
+            },
+            {
+              "id": 229123,
+              "key": "770ba0b6-fc88-48a4-9664-146552178949",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/December/584eed0a_5510506796-e0aceddf28-o/5510506796-e0aceddf28-o.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/770ba0b6-fc88-48a4-9664-146552178949",
+              "caption": "<center>Dictionary - [Caleb Roenigk](https://www.flickr.com/photos/crdot/5510506796/in/photolist-9oWMFS-6mwLt2-6MpYQt-6bUfZa-7rTqj-8LVo5P-662Len-jQemaL-8xPfPp-7VHwy6-9zLxe-cywmx7-bZbDiy-8d1GNx-7vedzj-bwinBK-8Cxnmc-6bUiut-89pgc1-5nkeva-97tBaj-9Q74uJ-8X67Vx-a5okUi-vF2go-8sP2zd-9oLq73-7Chssi-6pLZoZ-8rR2E3-5EacGR-btHXgE-4WMBfS-ckMmcm-dqM1kk-bns32Q-cNEXES-9QznHQ-7UnEqR-7rTqi-5e5P7P-9TnBjv-8Ce2MH-2HFPiD-nZmwS-8jgD3D-hbdoo-8KdRLe-2HKZhd-8DTrVL) - [Creative Commons](https://creativecommons.org/licenses/by/2.0/)",
+              "alt": "A close-up image of an English dictionary",
+              "width": 425,
+              "height": 400,
+              "instructor_notes": null
+            },
+            {
+              "id": 229124,
+              "key": "6d70636a-f6e2-4891-a03e-45c0c2bfe822",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## What about methods?\n\nThe sister object above contains a bunch of properties about my sister, but doesn't really say what my sister _does_. For instance, let's say my sister likes to paint. You might have a `paintPicture()` method that returns \"Sarah paints a picture!\" whenever you call it. The syntax for this is pretty much exactly the same as how you defined the properties of the object. The only difference is, the `value` in the `key:value` pair will be a function.\n\n```js\nvar sister = {\n  name: \"Sarah\",\n  age: 23,\n  parents: [ \"alice\", \"andy\" ],\n  siblings: [\"julia\"],\n  favoriteColor: \"purple\",\n  pets: true,\n  paintPicture: function() { return \"Sarah paints!\"; }\n};\n\nsister.paintPicture();\n```\n> **Returns**: \"Sarah paints!\"\n\nand you can access the name of my sister by accessing the `name` property:\n\n```js\nsister.name\n```\n> **Returns**: \"Sarah\"",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 220548,
+          "key": "4b06adaf-f5ba-4d60-8366-6b97821d03f2",
+          "title": "Naming Conventions",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "4b06adaf-f5ba-4d60-8366-6b97821d03f2",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 254780,
+              "key": "0b9994dc-46f7-498f-b589-d8bfcf87d1b5",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Naming Conventions",
+              "instructor_notes": ""
+            },
+            {
+              "id": 230461,
+              "key": "c4891cea-b8f1-4bb2-9ff1-c9fa79f6e701",
+              "title": "Object Naming Conventions",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "k8f_pNJIeSg",
+                "china_cdn_id": "k8f_pNJIeSg.mp4"
+              }
+            },
+            {
+              "id": 229128,
+              "key": "56e756db-7059-4f3e-b463-d0b8c52ea86f",
+              "title": "User object",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "56e756db-7059-4f3e-b463-d0b8c52ea86f",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Given the following `user` object, what would you use to print the value of the `email` property?\n\n```js\nvar user = {\n  email: \"user@example.com\",\n  firstName: \"first\",\n  lastName: \"last\"\n};\n```",
+                "answers": [
+                  {
+                    "id": "a1481567697234",
+                    "text": "console.log(user[email]);",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1481567724195",
+                    "text": "console.log(email);",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1481567729259",
+                    "text": "console.log(user.email);",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1481567733991",
+                    "text": "console.log(user[\"email\"]);",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 229136,
+              "key": "d40fa214-f1fe-4410-8d4d-a9b012542e7a",
+              "title": "Car Object",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "d40fa214-f1fe-4410-8d4d-a9b012542e7a",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Select the piece(s) of code that creates an object that describes a red Honda Civic:",
+                "answers": [
+                  {
+                    "id": "a1481567785409",
+                    "text": "var car = { manufacturer: \"honda\", model: \"civic\", class: \"compact\", color: \"red\" };",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1481567822418",
+                    "text": "var manufacturer = \"honda\"; var model = \"civic\"; var class = \"compact\"; var color = \"red\";",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1481567826869",
+                    "text": "var car = { color: \"red\" , manufacturer: \"honda\", model: \"civic\", class: \"compact\" };",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1481567837886",
+                    "text": "var car =  [ \"red\", \"honda\", \"civic\", \"compact\" ];",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 220550,
+          "key": "8677bccd-b206-4de9-8da9-6eb4a33a3e17",
+          "title": "Summary of Objects",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "8677bccd-b206-4de9-8da9-6eb4a33a3e17",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 229137,
+              "key": "8a106ef1-5fe6-425c-b439-0a956f559713",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Objects are one of the most important data structures in JavaScript. Get ready to see them everywhere! \n\nThey have properties (information about the object) and methods (functions or capabilities the object has). Objects are an incredibly powerful data type and you will see them all over the place when working with JavaScript, or any other object-oriented programming language.\n\n## Object literals, methods, and properties\n\nYou can define objects using **object-literal notation**:\n\n```js\nvar myObj = { \n  color: \"orange\",\n  shape: \"sphere\",\n  type: \"food\",\n  eat: function() { return \"yummy\" }\n};\n\nmyObj.eat(); // method\nmyObj.color; // property\n```\n\n## Naming conventions\n\nFeel free to use upper and lowercase numbers and letters, but don't _start_ your property name with a number.\nYou don't need to wrap the string in quotes! If it's a multi-word property, use camel case.\nDon't use hyphens in your property names\n\n```js\nvar richard = {\n  \"1stSon\": true;\n  \"loves-snow\": true;\n};\n\nrichard.1stSon // error\nrichard.loves-snow // error\n```",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 220551,
+          "key": "89c6f0dc-60e9-45f8-ba79-24f8922c8216",
+          "title": "Quiz: Menu Items (7-2)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "89c6f0dc-60e9-45f8-ba79-24f8922c8216",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 220552,
+              "key": "05502c6e-552b-4d0f-acd5-e8c3bb66111e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Directions:\n\nCreate a `breakfast` object to represent the following menu item:\n\n```text\nThe Lumberjack - $9.95\neggs, sausage, toast, hashbrowns, pancakes\n```\n\nThe object should contain properties for the `name`, `price`, and `ingredients`.\n\n## Your Code:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 220641,
+              "key": "d7607584-10fa-4f4a-87cb-40cb6cb414e2",
+              "title": "",
+              "semantic_type": "QuizAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "user_state": {
+                "node_key": "d7607584-10fa-4f4a-87cb-40cb6cb414e2",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "instruction": null,
+              "question": {
+                "title": "",
+                "semantic_type": "ProgrammingQuestion",
+                "evaluation_id": "5659353581486080",
+                "initial_code_files": [
+                  {
+                    "text": "/*\n * Programming Quiz: Menu Items (7-2)\n * Create an object named `breakfast`. \n * The object should contain properties for the `name`, `price`, and `ingredients`.\n * Print the entire object on the console\n */\n\n// your code goes here\n",
+                    "name": "StudentMain.js"
+                  }
+                ]
+              },
+              "answer": null
+            },
+            {
+              "id": 1014547,
+              "key": "fffdc2e9-c8d5-4923-bf37-ff559d47cbf2",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<font color=\"#000066\"> Note - We check your solution against a limited set of ***test-cases*** that check the minimum requirements, as mentioned in the quiz. Give the exercise a strong effort, trying to pass all test cases, before comparing your code with the solution. </font>",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014548,
+              "key": "1dfe8c5c-d58a-4128-ab62-81c064c73539",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n<div id=\"spoiler_1\" style=\"display:none\">\n#### <font color=\"green\">Here is one of the possible solutions:</font>\n\n```Javascript\n// your code goes here\nvar breakfast = {\n    name: \"The Lumberjack\",\n    price: \"$9.95\",\n    ingredients: [\"eggs\", \"sausage\", \"toast\", \"hashbrowns\", \"pancakes\"]\n};\nconsole.log(breakfast);\n```\n</div>\n<button type=\"button\" id=\"myButton1\" onclick=\"if(document.getElementById('spoiler_1') .style.display=='none') {document.getElementById('spoiler_1') .style.display=''}else{document.getElementById('spoiler_1') .style.display='none'}if (document.getElementById('myButton1').innerHTML=='Show Solution') {document.getElementById('myButton1').innerHTML='Hide Solution';}else{document.getElementById('myButton1').innerHTML = 'Show Solution';}\">Show Solution</button>\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 220553,
+          "key": "a35ae1dd-3f00-4798-8983-a43b4b5ad589",
+          "title": "Quiz: Bank Accounts 1 (7-3)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a35ae1dd-3f00-4798-8983-a43b4b5ad589",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 220554,
+              "key": "4e7cd978-2cc4-4023-a2c8-08025c283c7c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Directions:\n\nUsing the given object:\n\n```js\nvar savingsAccount = {\n  balance: 1000,\n  interestRatePercent: 1,\n  deposit: function addMoney(amount) {\n    if (amount > 0) {\n      savingsAccount.balance += amount;\n    }\n  },\n  withdraw: function removeMoney(amount) {\n    var verifyBalance = savingsAccount.balance - amount;\n    if (amount > 0 && verifyBalance >= 0) {\n      savingsAccount.balance -= amount;\n    }\n  }\n};\n```\n\nadd a `printAccountSummary()` method that returns the following account message:\n\n```text\nWelcome!\nYour balance is currently $1000 and your interest rate is 1%.\n```\n\n## Your Code:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 220661,
+              "key": "c6fb6472-6706-44a9-b348-76b32a497b39",
+              "title": "",
+              "semantic_type": "QuizAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "user_state": {
+                "node_key": "c6fb6472-6706-44a9-b348-76b32a497b39",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "instruction": null,
+              "question": {
+                "title": "",
+                "semantic_type": "ProgrammingQuestion",
+                "evaluation_id": "5680434488934400",
+                "initial_code_files": [
+                  {
+                    "text": "/*\n * Programming Quiz: Bank Accounts 1 (7-3)\n */\n\n/*\n * QUIZ REQUIREMENTS\n * - Your code should have an object `savingsAccount` \n * - Your `savingsAccount` object should have the `balance` and `interestRatePercent` property\n * - Your `savingsAccount` object should have a `printAccountSummary()` method\n * - Your `printAccountSummary()` method should return the EXACT expected message\n * - BE CAREFUL ABOUT THE PUNCTUATION, SPACES, AND EXACT WORDS TO BE PRINTED.\n */\n\n\nvar savingsAccount = {\n    balance: 1000,\n    interestRatePercent: 1,\n    deposit: function addMoney(amount) {\n        if (amount > 0) {\n            savingsAccount.balance += amount;\n        }\n    },\n    withdraw: function removeMoney(amount) {\n        var verifyBalance = savingsAccount.balance - amount;\n        if (amount > 0 && verifyBalance >= 0) {\n            savingsAccount.balance -= amount;\n        }\n    },\n    // your code goes here\n};\n\nconsole.log(savingsAccount.printAccountSummary());\n",
+                    "name": "StudentMain.js"
+                  }
+                ]
+              },
+              "answer": null
+            },
+            {
+              "id": 1014549,
+              "key": "4912d19c-b0b2-4f66-ae5a-280ffd889100",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<font color=\"#000066\"> Note - We check your solution against a limited set of ***test-cases*** that check the minimum requirements, as mentioned in the quiz. Give the exercise a strong effort, trying to pass all test cases, before comparing your code with the solution. </font>",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014550,
+              "key": "cc82f5fd-47e3-4f50-8a76-962fd00f0dd8",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n<div id=\"spoiler_1\" style=\"display:none\">\n#### <font color=\"green\">Here is one of the possible solutions:</font>\n\n```Javascript\n    // your code goes here\n    printAccountSummary: function() {\n        return \"Welcome!\\nYour balance is currently $\" + savingsAccount.balance + \" and your interest rate is \" + savingsAccount.interestRatePercent + \"%.\"\n    }\n```\n</div>\n<button type=\"button\" id=\"myButton1\" onclick=\"if(document.getElementById('spoiler_1') .style.display=='none') {document.getElementById('spoiler_1') .style.display=''}else{document.getElementById('spoiler_1') .style.display='none'}if (document.getElementById('myButton1').innerHTML=='Show Solution') {document.getElementById('myButton1').innerHTML='Hide Solution';}else{document.getElementById('myButton1').innerHTML = 'Show Solution';}\">Show Solution</button>\n\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 220662,
+          "key": "c80dc57a-dbe8-49c2-b018-0435c4b7142b",
+          "title": "Quiz: Bank Accounts 2 (7-4)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c80dc57a-dbe8-49c2-b018-0435c4b7142b",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 220663,
+              "key": "4e949371-a818-41d2-a681-5a6e537274ce",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Directions:\n\nUsing the object from the previous quiz, answer the following quiz question:\n\n```js\nvar savingsAccount = {\n  balance: 1000,\n  interestRatePercent: 1,\n  deposit: function addMoney(amount) {\n    if (amount > 0) {\n      savingsAccount.balance += amount;\n    }\n  },\n  withdraw: function removeMoney(amount) {\n    var verifyBalance = savingsAccount.balance - amount;\n    if (amount > 0 && verifyBalance >= 0) {\n      savingsAccount.balance -= amount;\n    }\n  }\n};\n```\n\n## Your Code:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 220665,
+              "key": "b13135a7-e034-4da6-bbbf-5df7fa3d42c1",
+              "title": "Using Methods",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "b13135a7-e034-4da6-bbbf-5df7fa3d42c1",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following are valid ways to access properties and call methods from the `savingsAccount` object?",
+                "answers": [
+                  {
+                    "id": "a1481316340422",
+                    "text": "savingsAccount.balance;",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1481316388980",
+                    "text": "savingsAccount[balance];",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1481316403682",
+                    "text": "savingsAccount[\"balance\"];",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1481316458115",
+                    "text": "savingsAccount.\"balance\";",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1481316470191",
+                    "text": "savingsAccount.withdraw = 50;",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1481316496511",
+                    "text": "savingsAccount.removeMoney = 50;",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1481316506010",
+                    "text": "savingsAccount.withdraw(50);",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1481316511755",
+                    "text": "savingsAccount.removeMoney(50);",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 220555,
+          "key": "104ab221-418a-4e72-9086-9f9332cc2d05",
+          "title": "Quiz: Facebook Friends (7-5)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "104ab221-418a-4e72-9086-9f9332cc2d05",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 220556,
+              "key": "b8a9ce14-4373-45d6-9b24-ffa2fbf18e27",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Directions:\n\nCreate an object called `facebookProfile`. The object should have 3 properties:\n\n1. your `name`\n2. the number of `friends` you have, and\n3. an array of `messages` you've posted (as strings)\n\nThe object should also have 4 methods:\n\n1. `postMessage(message)` - adds a new message string to the array\n2. `deleteMessage(index)` - removes the message corresponding to the index provided\n3. `addFriend()` - increases the friend count by 1\n4. `removeFriend()` - decreases the friend count by 1\n\n## Your Code:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 220713,
+              "key": "d1d8aaf6-c496-4db2-a57a-fcdd0d92ce66",
+              "title": "",
+              "semantic_type": "QuizAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "user_state": {
+                "node_key": "d1d8aaf6-c496-4db2-a57a-fcdd0d92ce66",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "instruction": null,
+              "question": {
+                "title": "",
+                "semantic_type": "ProgrammingQuestion",
+                "evaluation_id": "6155717180522496",
+                "initial_code_files": [
+                  {
+                    "text": "/*\n * Programming Quiz: Facebook Friends (7-5)\n */\n\n/*\n * QUIZ REQUIREMENTS\n * - Your code should have an object `facebookProfile`\n * - The `facebookProfile` object should have the `name` (string), `friends` (number), and `messages` (array of strings) property\n * - Your `facebookProfile` object should have the `postMessage()`, `deleteMessage()`, `addFriend()` and `removeFriend()` method\n * - Carefully implement the desired functionality of each method, as decribed above\n */\n\n\n// TIP - \n// In an array, \n// - addition at the end is done using push() method\n// - addition at a specific index is done using splice() method\n// - deletion from the beginning is done using pop() method\n// - deletion from a specific index is done using splice() method\n\n// your code goes here\n",
+                    "name": "StudentMain.js"
+                  }
+                ]
+              },
+              "answer": null
+            },
+            {
+              "id": 1014554,
+              "key": "0ad69ca8-ff44-4ca9-9a5e-b17f60076634",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<font color=\"#000066\"> Note - We check your solution against a limited set of ***test-cases*** that check the minimum requirements, as mentioned in the quiz. Give the exercise a strong effort, trying to pass all test cases, before comparing your code with the solution. </font>",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014556,
+              "key": "73044ca0-2729-4998-b87d-781fa1eb66e4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n<div id=\"spoiler_1\" style=\"display:none\">\n#### <font color=\"green\">Here is one of the possible solutions:</font>\n\n```Javascript\nvar facebookProfile = {\n    name: \"Udacian\",\n    friends: 25,\n    messages: [\"Message 1\", \"Message 2\", \"Message 3\", \"Message 4\"],\n    postMessage: function(message){\n        facebookProfile.messages.push(message);\n    },\n    deleteMessage: function(index){\n        // In the following splice() method call,\n        // - argument 1 = index from where the element has to be deleted\n        // - argument 2 = count of elements to be deleted\n        facebookProfile.messages.splice(index, 1);\n    },\n    addFriend: function(){\n        facebookProfile.friends = facebookProfile.friends + 1;\n        //friends += 1; // this statement is equivalent to the above\n    },\n    removeFriend: function(){\n        if(facebookProfile.friends>0)\n            facebookProfile.friends = facebookProfile.friends - 1;\n    }\n};\n\n```\n</div>\n<button type=\"button\" id=\"myButton1\" onclick=\"if(document.getElementById('spoiler_1') .style.display=='none') {document.getElementById('spoiler_1') .style.display=''}else{document.getElementById('spoiler_1') .style.display='none'}if (document.getElementById('myButton1').innerHTML=='Show Solution') {document.getElementById('myButton1').innerHTML='Hide Solution';}else{document.getElementById('myButton1').innerHTML = 'Show Solution';}\">Show Solution</button>\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 220557,
+          "key": "27843aa3-2082-4f21-b465-d594f95af9e1",
+          "title": "Quiz: Donuts Revisited (7-6)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "27843aa3-2082-4f21-b465-d594f95af9e1",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 220570,
+              "key": "8eaa34fe-a092-4c55-96ea-96cab2d22257",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Here is an array of donut objects.\n\n```js\nvar donuts = [\n  { type: \"Jelly\", cost: 1.22 },\n  { type: \"Chocolate\", cost: 2.45 },\n  { type: \"Cider\", cost: 1.59 },\n  { type: \"Boston Cream\", cost: 5.99 }\n];\n```\n\n## Directions:\n\nUse the `forEach()` method to loop over the array and print out the following donut summaries using `console.log`.\n\n```text\nJelly donuts cost $1.22 each\nChocolate donuts cost $2.45 each\nCider donuts cost $1.59 each\nBoston Cream donuts cost $5.99 each\n```\n\n## Your Code:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 220725,
+              "key": "5e2cee98-ad1d-4b86-b5b6-82dd9682aaf6",
+              "title": "",
+              "semantic_type": "QuizAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "user_state": {
+                "node_key": "5e2cee98-ad1d-4b86-b5b6-82dd9682aaf6",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "instruction": null,
+              "question": {
+                "title": "",
+                "semantic_type": "ProgrammingQuestion",
+                "evaluation_id": "6043697319903232",
+                "initial_code_files": [
+                  {
+                    "text": "/*\n * Programming Quiz: Donuts Revisited (7-6)\n */\n\n/*\n * QUIZ REQUIREMENTS\n * - Your code sshould have an array named `donuts`\n * - Your `donuts` array should call the `forEach()` method\n * - Your `forEach()` loop should output the donut summaries\n * - BE CAREFUL ABOUT THE PUNCTUATION, SPACES, AND EXACT WORDS TO BE PRINTED.\n */\n\n// This is an array of objects. \nvar donuts = [\n    { type: \"Jelly\", cost: 1.22 },\n    { type: \"Chocolate\", cost: 2.45 },\n    { type: \"Cider\", cost: 1.59 },\n    { type: \"Boston Cream\", cost: 5.99 }\n];\n\n// your code goes here\n",
+                    "name": "StudentMain.js"
+                  }
+                ]
+              },
+              "answer": null
+            },
+            {
+              "id": 1014558,
+              "key": "b949bcb1-fa14-4a19-9393-7ffc6ec3d44a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<font color=\"#000066\"> Note - We check your solution against a limited set of ***test-cases*** that check the minimum requirements, as mentioned in the quiz. Give the exercise a strong effort, trying to pass all test cases, before comparing your code with the solution. </font>",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014559,
+              "key": "b8568122-c6e2-4890-a5a9-08ddf47f42be",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n<div id=\"spoiler_1\" style=\"display:none\">\n#### <font color=\"green\">Here is one of the possible solutions:</font>\n\n```Javascript\ndonuts.forEach(function(donut){\n    \n    // donut represents a single element of donuts array\n    // donut is an object, therefore you can access its properties using a dot notation\n    console.log(donut.type+\" donuts cost $\"+donut.cost+\" each\");\n});\n```\n</div>\n<button type=\"button\" id=\"myButton1\" onclick=\"if(document.getElementById('spoiler_1') .style.display=='none') {document.getElementById('spoiler_1') .style.display=''}else{document.getElementById('spoiler_1') .style.display='none'}if (document.getElementById('myButton1').innerHTML=='Show Solution') {document.getElementById('myButton1').innerHTML='Hide Solution';}else{document.getElementById('myButton1').innerHTML = 'Show Solution';}\">Show Solution</button>\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 217716,
+          "key": "204d4906-e8c0-4661-9c54-56d6ee561164",
+          "title": "Lesson 7 Summary",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "204d4906-e8c0-4661-9c54-56d6ee561164",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 230462,
+              "key": "bd4e5394-34a5-49ba-8b60-f0484a26010f",
+              "title": "Lesson 7 Summary & Course Outro",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "GNZMCS2dbag",
+                "china_cdn_id": "GNZMCS2dbag.mp4"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

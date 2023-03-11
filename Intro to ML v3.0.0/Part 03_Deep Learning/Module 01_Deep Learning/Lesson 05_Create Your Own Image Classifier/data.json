@@ -1,0 +1,362 @@
+{
+  "data": {
+    "lesson": {
+      "id": 1105274,
+      "key": "a0e149c7-6adf-4905-a03b-5b27bfd19309",
+      "title": "Create Your Own Image Classifier",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "In this project, you'll create your own image classifier and then train—and evaluate its performance—using one of the most classic and well-studied computer vision data sets, CIFAR-10.",
+      "lesson_type": null,
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/a0e149c7-6adf-4905-a03b-5b27bfd19309/1105274/1611275712136/Create+Your+Own+Image+Classifier+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/a0e149c7-6adf-4905-a03b-5b27bfd19309/1105274/1611275708843/Create+Your+Own+Image+Classifier+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": {
+        "key": "05fb3742-0a70-40e4-ab87-2e822c034486",
+        "version": "1.0.0",
+        "locale": "en-us",
+        "duration": 40320,
+        "semantic_type": "Project",
+        "title": "Create Your Own Image Classifier",
+        "description": "⚠️ **You only need to submit your project here if you worked on it locally on your own machine; if you have already submitted your project directly from the project workspace then you do not need to also submit it here.**\n\nOnce you submit your project, we'll review your work and give you feedback if there's anything that you need to work on. If you'd like to see the exact points that your reviewer will check for when looking at your work, you can have a look over the project [rubric](https://review.udacity.com/#!/rubrics/3077/view).\n\nOnce you're ready to submit, click the **SUBMIT PROJECT** button in the upper right and attach a zip file containing your notebook.",
+        "is_public": true,
+        "summary": null,
+        "forum_path": "",
+        "rubric_id": "3077",
+        "terminal_project_id": null,
+        "resources": null,
+        "image": null
+      },
+      "lab": null,
+      "concepts": [
+        {
+          "id": 1126350,
+          "key": "eb983093-511a-4526-b86f-7318749de0f8",
+          "title": "Meet Your Instructor",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "eb983093-511a-4526-b86f-7318749de0f8",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1126352,
+              "key": "bc4f265e-4b45-4d00-8925-e73c36cfb344",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Meet Your Instructor",
+              "instructor_notes": null
+            },
+            {
+              "id": 1126353,
+              "key": "87cd7ded-a611-43b1-9995-e5a1ff61ede4",
+              "title": "ND229 C3 Meet Your Instrutor",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "DfNyzbVvyTE",
+                "china_cdn_id": "DfNyzbVvyTE.mp4"
+              }
+            },
+            {
+              "id": 1126355,
+              "key": "82b43803-59af-41a1-b520-8087d9934202",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Your instructor for this project is **Erick Galinkin**. Erick is an ethical hacker and artificial intelligence researcher whose passion is in finding ways to both apply AI to security and apply security to AI. His experience spans the spectrum of information security, including threat intelligence, vulnerability discovery, data science, and malware analysis. Erick has presented his research at leading industry and academic conferences and actively writes papers for academic journals. He also conducts research on the interplay between game theory, AI, and information security.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1105370,
+          "key": "93fd3116-61fd-4bfc-b1c3-d27b951d5213",
+          "title": "Project Overview",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "93fd3116-61fd-4bfc-b1c3-d27b951d5213",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1105334,
+              "key": "10719b20-d2ed-474e-a096-a1cd2eed58fc",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Project Overview",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1105324,
+              "key": "b56c6ce8-9de2-4fe9-910e-2ae672442b65",
+              "title": "ND229 C3 Pt 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "soLOfmCAcCs",
+                "china_cdn_id": "soLOfmCAcCs.mp4"
+              }
+            },
+            {
+              "id": 1126382,
+              "key": "543c80d9-cf26-443b-a4a7-30a20ac6dc8e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this project, you'll demonstrate the skills you’ve developed in this course by building an image classifier and object detection system using PyTorch. To do this project, you'll need to pull together the new deep learning skills you've just learned, such as data augmentation and building neural networks in order to solve the problem presented in the scenario below. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1121344,
+              "key": "2a03eb8f-d61a-4c48-a8dd-d4e8d43d9df1",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Scenario\n\nYou are a new machine learning engineer at a self-driving car startup. Management is trying to decide whether to *build* or *buy* an object detection algorithm for objects that may be on the side of the road. They are considering buying a computer vision algorithm from a company called Detectocorp. Detectocorp’s algorithm claims a 70% accuracy rate on the *CIFAR-10* dataset, a benchmark used to evaluate the state of the art for computer vision systems.\n\nBut before making this purchase, management wants to explore whether you can build an in-house solution that performs well. They have asked you to try your hand at creating a neural network that can classify arbitrary objects and potentially be fine-tuned on a larger dataset using transfer learning.\n\nUsing the skills you’ve acquired building neural networks using PyTorch, your task is to build an image classifier using the CIFAR-10 dataset and evaluate its accuracy. Then you'll compare its performance to both Detectocorp’s algorithm (which achieved 70% accuracy) as well as the state of the art results detailed in the notebook—and make a recommendation to management about whether to *build* the solution in-house or *buy* the algorithm from Detectocorp.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1105319,
+              "key": "b372a32e-f5ae-47a3-bdc7-e032b17b0d07",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## CIFAR-10\nYour image classifier will be trained and evaluated on one of the most classic and well-studied computer vision data sets, **CIFAR-10**.\nThis dataset has spurred loads of innovation in neural network design and implementation. \nThe current state of the art is a 99% accuracy rate, achieved by <a href=\"https://arxiv.org/abs/1811.06965\" target=\"_blank\">GPipe</a>, which has 557 million parameters and was developed in late 2018.\nGPipe is an extremely large network with a lot of advanced techniques not introduced in this course, but feel free to use any architecture that suits your needs.\n\nYour classifier should be able to classify images like these:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1126351,
+              "key": "e9561bc4-673f-4969-902f-07e1e8f20cb9",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/January/60003e9d_screen-shot-2021-01-14-at-7.43.05-am/screen-shot-2021-01-14-at-7.43.05-am.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/e9561bc4-673f-4969-902f-07e1e8f20cb9",
+              "caption": "Example of CIFAR-10 images",
+              "alt": "A picture of all 10 images in CIFAR-10. A bird, a car, a cat, a deer, a dog, a frog, a horse, a plane, a ship, and a truck.",
+              "width": 2467,
+              "height": 949,
+              "instructor_notes": null
+            },
+            {
+              "id": 1126356,
+              "key": "bb624f45-2c7a-4d6b-b70e-96df6a27aff5",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Main Steps",
+              "instructor_notes": null
+            },
+            {
+              "id": 1126357,
+              "key": "5390f282-d34a-44e3-a819-1bcc345eae93",
+              "title": "ND229 C3 Pt 2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Ck2211lEm9U",
+                "china_cdn_id": "Ck2211lEm9U.mp4"
+              }
+            },
+            {
+              "id": 1105330,
+              "key": "3dcaeda3-65c8-484e-9edf-e3c2dc704c70",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "The following are the main steps of this project. \nThe notebook also contains instructions and hints that will guide you through this process:\n\n1. Explore and prepare the data for training and testing.\n1. Design and build your neural network.\n1. Train the neural network on the training set.\n1. Evaluate your network's performance on the test set.\n1. Make a recommendation on the build vs. buy business decision.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1105322,
+              "key": "033e1202-7011-4d18-9455-af4d27fbe4fb",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/January/60003ee1_screen-shot-2021-01-14-at-7.53.37-am/screen-shot-2021-01-14-at-7.53.37-am.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/033e1202-7011-4d18-9455-af4d27fbe4fb",
+              "caption": "Main steps of the project",
+              "alt": "5 panels. Prepare and explore data, build and train, test, compare, and recommend",
+              "width": 1760,
+              "height": 442,
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1105376,
+          "key": "bba2ffa1-6f75-4f74-bfa4-c8c515ab617d",
+          "title": "Working Locally",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "bba2ffa1-6f75-4f74-bfa4-c8c515ab617d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1105321,
+              "key": "325d3e03-d5cb-46c8-a9dd-c666d4d721d0",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Environment and Dependencies",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1105340,
+              "key": "45af1e4f-27f7-4e8f-a52f-7160ec625d38",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "For this project, you can either complete the work on your own local computer or you can complete it within a workspace right here in the Udacity classroom. If you're going to use the workspace, you can skip the rest of this page.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1105325,
+              "key": "019147b6-7341-4e51-947a-38c51e16bde6",
+              "title": "Environment and Dependencies",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "019147b6-7341-4e51-947a-38c51e16bde6",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "**Python version 3.6 or higher.** You can find [instructions for downloading and installing Python here](https://www.python.org/downloads/).",
+                "**Pytorch version 1.4 or higher.** You can install the current version of pytorch by running `pip install torch` at the command line.",
+                "**Torchvision version 0.8 or higher.** You can install the current version of torchvision by running `pip install torchvision` at the command line.",
+                "**Numpy version 1.16 or higher.** You can install the current version of numpy by running `pip install numpy` at the command line.",
+                "**Matplotlib version 3.0 or higher.** You can install the current version of matplotlib by running `pip install matplotlib` at the command line."
+              ],
+              "positive_feedback": "Nice work!",
+              "video_feedback": null,
+              "description": "If you're going to be working on your own machine, make sure you have everything listed below. If you've been following along during the course, you may already have all of these set up, but it's good to check. \n\n> An easy alternative to installing each of the individual packages below is to use the recommended settings and the Anaconda package manager, available [on the PyTorch website](https://pytorch.org/get-started/locally/)"
+            },
+            {
+              "id": 1121342,
+              "key": "dd2dccd7-3534-47ef-8a84-1dc8cb709566",
+              "title": "Instructions",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "dd2dccd7-3534-47ef-8a84-1dc8cb709566",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "[Click here to download a zip file containing the Jupyter notebook.](https://video.udacity-data.com/topher/2021/January/600087a6_cifar-10-image-classifier-starter/cifar-10-image-classifier-starter.zip)",
+                "Unzip the notebook and place it in a convenient location.",
+                "From the command line, navigate to the notebook's location and run `jupyter` followed by the name of the notebook (as in `jupyter CIFAR-10_Image_Classifier-STARTER.ipynb`). This should launch the Jupyter environment in your browser, with the notebook available.",
+                "Open the notebook and complete the cells as indicated.",
+                "When you're ready to submit your notebook, zip it up and go to the submission page at the very end of this lesson."
+              ],
+              "positive_feedback": "Nice work!",
+              "video_feedback": null,
+              "description": "As you saw in the video earlier, we've created a starter notebook for you to work with—so the first step will be to download the notebook and get it running in your local Jupyter environment. You'll then complete the entire project within this notebook and, once it is ready, zip it up and submit it for review."
+            }
+          ]
+        },
+        {
+          "id": 1126372,
+          "key": "995bad35-e9f0-4114-b7f6-6eecf219f2d9",
+          "title": "Workspace",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "995bad35-e9f0-4114-b7f6-6eecf219f2d9",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1126373,
+              "key": "7d82b9e4-eb78-4fc5-a8f8-d2a23f00bb08",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r1103199c1126372xJUPYTERkkw0ldg1",
+              "pool_id": "jupytergpu",
+              "view_id": "jupyter-ejq4v",
+              "gpu_capable": true,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": true,
+                    "defaultPath": "/notebooks/CIFAR-10_Image_Classifier-STARTER.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "lesson_type",
+      "reason": "Obsolete"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "starter_files",
+      "reason": "prefer master_archive_id"
+    }
+  ]
+}

@@ -1,0 +1,410 @@
+{
+  "data": {
+    "lesson": {
+      "id": 956033,
+      "key": "f545e228-b2c3-4e2e-afb2-08890cddc494",
+      "title": "Motion Compensated Pulse Rate Estimation",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "In this project, you will create a pulse rate algorithm that takes into account activity and apply this algorithm to a new data set to determine clinically significant features. ",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "AIHCND-Wearable-Data-Course-Glossary",
+            "uri": "https://video.udacity-data.com/topher/2020/May/5ebb2d0c_aihcnd-wearable-data-glossary-v2/aihcnd-wearable-data-glossary-v2.pdf"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": {
+        "key": "427edacc-8019-4db8-b818-8b1bb4591486",
+        "version": "1.0.0",
+        "locale": "en-us",
+        "duration": 30240,
+        "semantic_type": "Project",
+        "title": "Motion Compensated Pulse Rate Estimation",
+        "description": "## Project Summary\nBuild a pulse rate algorithm from the given dataset containing PPG and IMU signals that is robust to motion and \"confidence metric\" that estimates the accuracy of their pulse rate estimate. Then apply your algorithm to a new dataset to find more clinically meaningful features.\n\n## Submission Checklist\nBefore you submit, check if the following have been completed:  \n**Note**: The checklist above won't save your checkmarks so do this right before you plan to submit. \n\n| | |\n|-------------------------|--------------------------------------------------------------------------------------------------------------|\n| <input type=\"checkbox\"> | Everything in the [Rubric](https://review.udacity.com/#!/rubrics/2723/view) is complete. |\n| <input type=\"checkbox\"> | Algorithm & Documentation for **Part 1: Pulse Rate Algorithm** <br> `pulse_rate.ipynb` |\n| <input type=\"checkbox\"> | Passing the Unit Test <br>`unit_test.ipynb`  |\n| <input type=\"checkbox\"> | Screenshot of the Unit Test passing with error metric <br> `passed.png`  |\n| <input type=\"checkbox\"> | Algorithm & Documentation for **Part 2: Clinical Application** <br> `clinical_app.ipynb`|\n| <input type=\"checkbox\"> | If you choose to work the project on your local <br> machine,  make sure you have **removed** all the datasets. |\n| | | |\n\n## Ready to Submit?\nOnce you have all the items above completed, you can click the submit button. Follow the directions to submit your project in one of the following ways:\n* Submit a zip file \n* Submit a Github repo\n\n**Note**: If you used the Workspace/Online option, you can download the folder or use your Github as a submission.",
+        "is_public": true,
+        "summary": null,
+        "forum_path": "",
+        "rubric_id": "2723",
+        "terminal_project_id": null,
+        "resources": null,
+        "image": null
+      },
+      "lab": null,
+      "concepts": [
+        {
+          "id": 958625,
+          "key": "4444565d-6a87-4a40-a657-f00cc8f18278",
+          "title": "Project Overview",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "4444565d-6a87-4a40-a657-f00cc8f18278",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 967585,
+              "key": "e551797e-dc21-47ee-8585-b642fd20ad35",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Overview\n\nThis project has 2 main parts. \n1. Develop a **Pulse Rate Algorithm** on the given training data. Then **Test Your Algorithm** and see that it has met the success criteria. \n2. Apply the Pulse Rate Algorithm on a **Clinical Application** and compute more clinically meaningful features and discover healthcare trends.\n\n### Introduction\n\nA core feature that many users expect from their wearable devices is pulse rate estimation. Continuous pulse rate estimation can be informative for many aspects of a wearer's health. Pulse rate during exercise can be a measure of workout intensity and resting heart rate is sometimes used as an overall measure of cardiovascular fitness. In this project you will create a pulse rate estimation algorithm for a wrist-wearable device. Use the information in the **Physiological Mechanics of Pulse Rate Estimation** section below to inform the design of your algorithm. Make sure that your algorithm conforms to the given **Algorithm Specifications** in the following concept, **Part 1: Overview & Instructions**.\n\n### Background\n#### Physiological Mechanics of Pulse Rate Estimation\nPulse rate is typically estimated by using the PPG sensor. When the ventricles contract, the capillaries in the wrist fill with blood. The (typically green) light emitted by the PPG sensor is absorbed by red blood cells in these capillaries and the photodetector will see the drop in reflected light. When the blood returns to the heart, fewer red blood cells in the wrist absorb the light and the photodetector sees an increase in reflected light. The period of this oscillating waveform is the pulse rate.\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 967587,
+              "key": "ff901332-aa36-4b03-825b-2812acf93775",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/February/5e3c882a_ppg-mechanics/ppg-mechanics.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/ff901332-aa36-4b03-825b-2812acf93775",
+              "caption": "PPG Sensor on Blood Flow",
+              "alt": "",
+              "width": 686,
+              "height": 467,
+              "instructor_notes": null
+            },
+            {
+              "id": 967586,
+              "key": "f0218a57-0745-446b-8efd-d65d95b18da0",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "However, the heart beating is not the only phenomenon that modulates the PPG signal. Blood in the wrist is fluid, and arm movement will cause the blood to move correspondingly. During exercise, like walking or running, we see another periodic signal in the PPG due to this arm motion. Our pulse rate estimator  has to be careful not to confuse this periodic signal with the pulse rate.  \n  \nWe can use the accelerometer signal of our wearable device to help us keep track of which periodic signal is caused by motion. Because the accelerometer is only sensing arm motion, any periodic signal in the accelerometer is likely not due to the heart beating, and only due to the arm motion. If our pulse rate estimator is picking a frequency that's strong in the accelerometer, it may be making a mistake.  \n  \nAll estimators will have some amount of error. How much error is tolerable depends on the application. If we were using these pulse rate estimates to compute long term trends over months, then we may be more robust to higher error variance. However, if we wanted to give information back to the user about a specific workout or night of sleep, we would require a much lower error. \n\n#### Algorithm Confidence and Availability\nMany machine learning algorithms produce outputs that can be used to estimate their per-result error. For example, in logistic regression, you can use the predicted class probabilities to quantify trust in the classification. A classification where one class has a very high probability is probably more accurate than one where all classes have similar probabilities. Certainly, this method is not perfect and won't perfectly rank-order estimates based on error. But if accurate enough, it allows consumers of the algorithm more flexibility in how to use it. We call this estimation of the algorithm's error the *confidence*. \n\nIn pulse rate estimation, having a confidence value can be useful if a user wants just a handful of high-quality pulse rate estimate per night. They can use the confidence algorithm to select the 20 most confident estimates at night and ignore the rest of the outputs. Confidence estimates can also be used to set the point on the error curve that we want to operate at by sacrificing the number of estimates that are considered valid. There is a trade-off between *availability* and error. For example, if we want to operate at 10% availability, we look at our training dataset to determine the confidence threshold for which 10% of the estimates pass. Then if only if an estimate's confidence value is above that threshold, do we consider it valid. See the error vs. availability curve below.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 967588,
+              "key": "5c613ce0-ff0f-40bf-a2e3-b55b782222bd",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/February/5e3c8829_error-vs-availability/error-vs-availability.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/5c613ce0-ff0f-40bf-a2e3-b55b782222bd",
+              "caption": "",
+              "alt": "",
+              "width": 864,
+              "height": 576,
+              "instructor_notes": null
+            },
+            {
+              "id": 967589,
+              "key": "909cdb28-5a7f-4bf2-9286-3e273ac4fae4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "This plot is created by computing the mean absolute error at all -- or at least 100 of -- the confidence thresholds in the dataset.\n\nBuilding a confidence algorithm for pulse rate estimation is a little tricker than logistic regression because intuitively, there isn't some transformation of the algorithm output that can make a good confidence score. However, by understanding our algorithm behavior, we can come up with some general ideas that might create a good confidence algorithm. For example, if our algorithm is picking a strong frequency component that's not present in the accelerometer, we can be relatively confident in the estimate. Turn this idea into an algorithm by quantifying \"strong frequency component\".",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 958626,
+          "key": "79839835-39f1-4eee-987c-5a413e181272",
+          "title": "Part 1: Overview & Instructions",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "79839835-39f1-4eee-987c-5a413e181272",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 969327,
+              "key": "8e9d6fd5-7044-4945-92a3-9178dc578467",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Part 1: Pulse Rate Algorithm Project Overview\n\n### Algorithm Specifications\nYou must build an algorithm that:\n  * estimates pulse rate from the PPG signal and a 3-axis accelerometer.\n  * assumes pulse rate will be restricted between 40BPM (beats per minute) and 240BPM\n  * produces an estimation confidence. A higher confidence value means that this estimate should be more accurate than an estimate with a lower confidence value.\n  * produces an output at least every 2 seconds.  \n\n### Success Criteria\nYour algorithm performance success criteria are as follows: the mean absolute error at 90% availability must be less than 15 BPM on the test set.  Put another way, the best 90% of your estimates--according to your own confidence output-- must have a mean absolute error of less than 15 BPM. The evaluation function is included in the starter code.\n\nNote that you will not have access to the dataset that the unit test will call `AggregateErrorMetric` on the output of your `RunPulseRateAlgorithm` on a test dataset that you do not have access to. The result of this call must be less than 15 BPM for your algorithm's performance to pass. The test set should be easier than the training set, so as long as your algorithm is doing reasonably well on the training data set, it should pass this test.\n\n### Some Helpful Tips\n  1. Remember to bandpass filter all your signals. Use the 40-240BPM range to create your pass band.\n  2. Use `plt.specgram` to visualize your signals in the frequency domain. You can plot your estimates on top of the spectrogram to see where things are going wrong.\n  3. When the dominant accelerometer frequency is the same as the PPG, try picking the next strongest PPG frequency if there is another good candidate.\n  4. Sometimes the cadence of the arm swing is the same as the heartbeat. So if you can't find another good candidate pulse rate outside of the accelerometer peak, it may be the same as the accelerometer.\n  5. One option for a confidence algorithm is to answer the question, \"How much energy in the frequency spectrum is concentrated near the pulse rate estimate?\" You can answer this by summing the frequency spectrum near the pulse rate estimate and dividing it by the sum of the entire spectrum.\n  \n### Dataset\nYou will be using the Troika[1] dataset to build your algorithm. Find the dataset under `datasets/troika/training_data`. The `README` in that folder will tell you how to interpret the data. The starter code contains a function to help load these files.\n\n1. Zhilin Zhang, Zhouyue Pi, Benyuan Liu, ‘‘TROIKA: A General Framework for Heart Rate Monitoring Using Wrist-Type Photoplethysmographic Signals During Intensive Physical Exercise,’’IEEE Trans. on Biomedical Engineering, vol. 62, no. 2, pp. 522-531, February 2015. [Link](https://ieeexplore.ieee.org/document/6905737)\n\n### Getting Started\nThe starter code includes a few helpful functions. `TroikaDataset`, `AggregateErrorMetric`, and `Evaluate` do not need to be modified.  \n1. Use `TroikaDataset` to retrieve a list of .mat files containing reference and signal data. \n2. Use `scipy.io.loadmat` to the .mat file into a python object. \n3. The bulk of the code will be in the `RunPulseRateAlgorithm` function. You can and should break the code out into multiple functions. \n4. `RunPulseRateAlgorithm` will take in two filenames and return a tuple of two NumPy arrays--per-estimate pulse rate error and confidence values. \n**Note**: Remember to write docstrings for all functions that you write (including `RunPulseRateAlgorithm`)\n5. Finally, run the `Evaluate` function to call your algorithm on the Troika dataset and compute an aggregate error metric. \n**Hint**: While building the algorithm, you may want to inspect the algorithm errors in more detail.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 958634,
+              "key": "e6541002-07a9-48b7-90cf-d80a073449fd",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Instructions\n\n### Offline Instructions\n1. Clone the project starter repo [here](https://github.com/udacity/nd320-c4-wearable-data-project-starter).\n2. Open up the `pulse_rate_starter.ipynb` in a local program (e.g., spyder IDE, Jupyter Notebooks, etc. which you can find more detailed instructions in the **Introduction to Wearables** Lesson's **Developer's Workflow** Concept.) \n3. You are ready to begin Part 1 of the Final Project.\n\n**Notes**: It is good to confirm that the packages `scipy` is version **1.2.0**+. You can do this by opening a new terminal and typing `conda list` and confirm the versioning is appropriate.\n\n### Online Instructions\n\n1. You should head to the next Concept **Pulse Rate Algorithm**.  \n2. Confirm that the `pulse_rate_starter.ipynb`is open and you are ready to complete Part 1 of the Final Project.\n\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 967580,
+          "key": "fafd1a40-50bb-46fc-bbb4-ee6dbe09f538",
+          "title": "Pulse Rate Algorithm",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "fafd1a40-50bb-46fc-bbb4-ee6dbe09f538",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 967581,
+              "key": "68ae03b0-ab2b-4873-9206-131a66f52681",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c967580xJUPYTERwys4whqp",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-4zyl1",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/pulse_rate_starter.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 956925,
+          "key": "a23e211f-646a-4387-be44-212381427315",
+          "title": "Test Your Algorithm",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a23e211f-646a-4387-be44-212381427315",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 958604,
+              "key": "857ca9e3-8273-4a4d-8944-0911883762d6",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c956925xJUPYTERq7tmshgn",
+              "pool_id": "gradedjupyter",
+              "view_id": "jupyter-0r7oz",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": true,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/unit_test.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 969326,
+          "key": "29e484c9-e03f-4160-b0e1-464948dd0b66",
+          "title": "Part 2: Overview & Instructions",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "29e484c9-e03f-4160-b0e1-464948dd0b66",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 969443,
+              "key": "d5a98f6c-c740-43c2-9615-b7ca044d5692",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Part 2: Clinical Application\n\nNow that you have built your pulse rate algorithm and tested your algorithm to know it works, we can use it to compute more clinically meaningful features and discover healthcare trends.\n\nSpecifically, you will use 24 hours of heart rate data from 1500 samples to try to validate the well-known trend that average resting heart rate increases up until middle age and then decreases into old age. We'll also see if resting heart rates are higher for women than men. See the trend illustrated in this image:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 969444,
+              "key": "a2afe0e8-556c-49b5-bebe-3ebea44f2db9",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/February/5e3c882a_heart-rate-age-reference-chart/heart-rate-age-reference-chart.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/a2afe0e8-556c-49b5-bebe-3ebea44f2db9",
+              "caption": "",
+              "alt": "",
+              "width": 900,
+              "height": 531,
+              "instructor_notes": null
+            },
+            {
+              "id": 969445,
+              "key": "9c728b4e-9ae9-4bce-88f7-36cf7164d222",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Follow the steps in the notebook to reproduce this result!\n\n## Dataset (CAST)\n\nThe data from this project comes from the [Cardiac Arrhythmia Suppression Trial (CAST)](https://physionet.org/content/crisdb/1.0.0/),   which was sponsored by the National Heart, Lung, and Blood Institute (NHLBI). CAST collected 24 hours of heart rate data from ECGs from people who have had a myocardial infarction (MI) within the past two years.[1] This data has been smoothed and resampled to more closely resemble PPG-derived pulse rate data from a wrist wearable.[2]\n\n1. **CAST RR Interval Sub-Study Database Citation** - Stein PK, Domitrovich PP, Kleiger RE, Schechtman KB, Rottman JN. Clinical and demographic determinants of heart rate variability in patients post-myocardial infarction: insights from the Cardiac Arrhythmia Suppression Trial (CAST). Clin Cardiol 23(3):187-94; 2000 (Mar)\n2. **Physionet Citation** - Goldberger AL, Amaral LAN, Glass L, Hausdorff JM, Ivanov PCh, Mark RG, Mietus JE, Moody GB, Peng C-K, Stanley HE. PhysioBank, PhysioToolkit, and PhysioNet: Components of a New Research Resource for Complex Physiologic Signals (2003). Circulation. 101(23):e215-e220.\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 969486,
+              "key": "12627d5a-7e21-4665-b222-a5d9215916dd",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Instructions\n\n### Offline Instructions\n1. Clone the project starter repo [here](https://github.com/udacity/nd320-c4-wearable-data-project-starter). (**Note**: This is the same repo as Part 1 of the Final Project, you can skip this step if you already cloned this repo)\n3. Open up the `clinical_app_starter.ipynb` in a local program (e.g., spyder IDE, Jupyter Notebooks, etc. which you can find more detailed instructions in the **Introduction to Wearables** Lesson's **Developer's Workflow** Concept.) \n4. You are ready to complete Part 2 of the Final Project.\n\n**Note**: Confirm that the packages `scipy` is version **1.2.0**+ and `seaborn` is version **0.10.0**+. You can do this by opening a new terminal and typing `conda list` and confirm the versioning is appropriate. \n\n### Online Instructions\n\n1. You should head to the next Concept **Clinical Application**.  \n2. Confirm that the `clinical_app_starter.ipynb`is open and you are ready to complete Part 2 of the Final Project.\n\n#### Additional Project Reviewer Specific Instructions [REMOVE WHEN WORKSPACE IS UPDATED]\n**This following section of info is only if you, the project reviewer, are planning on completing the project in the provided workspaces.**\n1. You will have to click on the Jupyter Notebook Logo at the top left.\n2. Open a new terminal.\n3. Update the `seaborn` package.\n```\nconda install seaborn=0.10.0\nconda list seaborn\n```\nYou confirm that `seaborn` is **0.10.0**.\n4. Shutdown the `clinical_app_starter.ipynb` by clicking the checkbox next to the file. A tool bar will appear near the top with the option to **Shutdown** the notebook. Click the **Shutdown** button to proceed.\n5. Open up the `clinical_app_starter.ipynb`. \n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 967578,
+          "key": "2e70071e-3666-4182-9241-04611abff86e",
+          "title": "Clinical Application",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "2e70071e-3666-4182-9241-04611abff86e",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 967579,
+              "key": "dca9caed-b035-4bac-b136-1b64178a160d",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c967578xJUPYTER2aif1zbn",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-qwpyg",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/aihcnd_projects",
+                          "dest": "/data/"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/clinical_app_starter.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 969328,
+          "key": "8ff91d7b-df2a-437b-8dfb-dfa9ec8ab7dc",
+          "title": "Conclusion",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "8ff91d7b-df2a-437b-8dfb-dfa9ec8ab7dc",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 969329,
+              "key": "11fc95a3-166d-42e1-855f-45477f4ee332",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Fitbit performed the exact analysis you just completed in this project. They used 100+ billions of hours of data from their user population in 2018. Read more about it [here](https://investor.fitbit.com/press/press-releases/press-release-details/2018/Fitbits-100-Billion-Hours-of-Resting-Heart-RateUser-DataReveals-Resting-Heart-Rate-Decreases-After-Age-40/default.aspx).\n\n\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 969330,
+              "key": "3e13cfb0-477d-44de-b14a-6252328ebf2b",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/February/5e3c8829_fitbit-resting-heart-rate/fitbit-resting-heart-rate.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/3e13cfb0-477d-44de-b14a-6252328ebf2b",
+              "caption": "",
+              "alt": "",
+              "width": 430,
+              "height": 480,
+              "instructor_notes": null
+            },
+            {
+              "id": 969331,
+              "key": "fef5ef1b-120e-4a6c-ad02-40688d934be7",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "As wearables become more widespread in medical research, these kinds of analyses can play a large part in the discovery process. With large enough datasets and more informative clinical metadata (in this case, we only used age group), wearables can be used to discover previously unknown phenomena that may advance clinical science.\n\nBefore doing any analysis, however, engineers and data scientists will have to process the large amounts of raw data that wearables collect. By completing this course, you have taken a first step in this direction :)\n\n**Food for thought:**\n- Does the above graph look similar to any graph created in this project?\n- Remember, the dataset we used had only 36000 hours instead of 100+ billions of hours, how would this affect our results if we had 100+ billion hours of data?",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

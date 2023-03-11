@@ -1,0 +1,498 @@
+{
+  "data": {
+    "lesson": {
+      "id": 782272,
+      "key": "f5f47d94-6ed5-4adb-bf25-6d82601b0b8f",
+      "title": "Implementing a CycleGAN",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Cezanne will show you how to implement a CycleGAN in PyTorch and translate images from the summer to winter domains.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/f5f47d94-6ed5-4adb-bf25-6d82601b0b8f/782272/1546641945348/Implementing+a+CycleGAN+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/f5f47d94-6ed5-4adb-bf25-6d82601b0b8f/782272/1546641942020/Implementing+a+CycleGAN+Subtitles.zip"
+          },
+          {
+            "name": "Summer2winter Yosemite",
+            "uri": "https://video.udacity-data.com/topher/2018/November/5be66e78_summer2winter-yosemite/summer2winter-yosemite.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 780780,
+          "key": "67214faf-b394-4acb-97e7-364abf61700a",
+          "title": "CycleGAN Notebook & Data",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "67214faf-b394-4acb-97e7-364abf61700a",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 783242,
+              "key": "06522be8-25ab-40e6-b691-ee7d5a4e3aa1",
+              "title": "01 CycleGAN Notebook Data V1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "pVBu1aL8evA",
+                "china_cdn_id": "pVBu1aL8evA.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 780781,
+          "key": "c73b76e1-de2a-48aa-8775-65c07c25e914",
+          "title": "Pre-Notebook: CycleGAN",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c73b76e1-de2a-48aa-8775-65c07c25e914",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 782256,
+              "key": "a2d130bf-fccf-4757-a7da-8a28938ba813",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Notebook: DCGAN, SVHN\n\nNow you have all the information you need to implement a CycleGAN!\n\n**It's suggested that you open the notebook in a new, working tab and continue working on it as you go through the instructional videos in this tab.** This way you can toggle between learning new skills and coding/applying new skills.\n\nTo open this notebook, you have two options:\n>- Go to the next page in the classroom (recommended).\n- Clone the repo from [Github](https://github.com/udacity/deep-learning-v2-pytorch) and open the notebook **CycleGAN_Exercise.ipynb** in the **cycle-gan** folder.  You can either download the repository with `git clone https://github.com/udacity/deep-learning-v2-pytorch.git`, or download it as an archive file from [this link](https://github.com/udacity/deep-learning-v2-pytorch/archive/master.zip).\n\n# Instructions\n\n* Load in domain X and Y image data\n* Pre-process that data, scaling the pixel values to a desired range\n* Define four adversarial networks; two Discriminators and two Generator that utilize convolutional or transpose convolutional layers\n* Define adversarial and cycle consistency loss functions\n* Train the networks and generate new images\n\nThis is a self-assessed lab. If you need any help or want to check your answers, feel free to check out the solutions notebook in the same folder, or by clicking [here](https://github.com/udacity/deep-learning-v2-pytorch/blob/master/cycle-gan/CycleGAN_Solution.ipynb).",
+              "instructor_notes": ""
+            },
+            {
+              "id": 782257,
+              "key": "e825f8ce-312f-4ab0-a5a4-33c225ff5e7c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### GPU Workspaces\n\nThe next workspace is **GPU-enabled**, which means you can select to train on a GPU instance. The recommendation is this:\n* Load in data, test functions and models (checking parameters and doing a short training loop) while in CPU (non-enabled) mode\n* When you're ready to extensively train and test your model, **enable** GPU to quickly train the model!\n\nAll models and data they see as input will have to be moved to the GPU device, so take note of the relevant movement code in the model creation and training process.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 782241,
+          "key": "95118d2e-3129-42e8-8808-0ffacd907779",
+          "title": "Notebook: CycleGAN",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "95118d2e-3129-42e8-8808-0ffacd907779",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 782242,
+              "key": "3f3ccb8c-43c8-4ad8-b5dd-9fdd865bca69",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r633452c782241xJUPYTERl62ukvjl",
+              "pool_id": "jupytergpu",
+              "view_id": "jupyter-56ese",
+              "gpu_capable": true,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/CycleGAN_Exercise.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 782269,
+          "key": "eb14edb0-13d5-4595-abf6-7dd06e4218af",
+          "title": "DC Discriminator",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "eb14edb0-13d5-4595-abf6-7dd06e4218af",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 783243,
+              "key": "ac770a1b-4459-48d4-8c80-62a24218f914",
+              "title": "02 DC Discriminator V1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "93kh2l6C7Bw",
+                "china_cdn_id": "93kh2l6C7Bw.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 782270,
+          "key": "022e8b7a-6d04-4d1f-bc8c-bbbcbcfd5196",
+          "title": "DC Discriminator, Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "022e8b7a-6d04-4d1f-bc8c-bbbcbcfd5196",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 783244,
+              "key": "956a9572-3a29-46cc-b83e-06c9d8d898a7",
+              "title": "03 DC Discriminator Solution V1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "XaxOFzOpves",
+                "china_cdn_id": "XaxOFzOpves.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 782271,
+          "key": "d72cce72-6968-43ed-84a0-3e217b11b43a",
+          "title": "Generator & Residual Blocks",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d72cce72-6968-43ed-84a0-3e217b11b43a",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 783246,
+              "key": "23c9f408-b744-492c-b8fe-932eab3356fd",
+              "title": "04 Generator Residual Blocks V1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "AYIq7cUjLMs",
+                "china_cdn_id": "AYIq7cUjLMs.mp4"
+              }
+            },
+            {
+              "id": 782968,
+              "key": "46ffb2cd-c50c-4c69-85f5-f7e33d04c232",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Residual Blocks\n\nSo far, we've mostly been defining networks as layers that are connected, one-by-one, _in sequence_, but there are a few other types of connections we can make! The connection that **residual blocks** make is sometimes called a skip connection. By summing up the output of one layer with the input of a previous layer, we are effectively making a connection between layers that are _not_ in sequence; we are _skipping_ over at least one layer with such a connection, as is indicated by the loop arrow below.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 782969,
+              "key": "e4a44eff-0fb2-47c1-a387-fff0265f9cf7",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2018/November/5bea1ed4_resnet-block/resnet-block.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/e4a44eff-0fb2-47c1-a387-fff0265f9cf7",
+              "caption": "Residual block with a skip connection between an input x and an output.",
+              "alt": "",
+              "width": 400,
+              "height": 312,
+              "instructor_notes": null
+            },
+            {
+              "id": 782975,
+              "key": "6566b884-753b-4d6f-ab19-31f75ca497f9",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "If you'd like to learn more about residual blocks and especially their effect on ResNet image classification models, I suggest reading [this blog post](https://towardsdatascience.com/an-overview-of-resnet-and-its-variants-5281e2f56035), which details how ResNet (and its variants) work!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 782981,
+              "key": "153b0919-cff5-4c26-9c94-3490c594d3f0",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Skip Connections\n\nMore generally, skip connections can be made between _several_ layers to combine the inputs of, say, a _much_ earlier layer and a later layer. These connections have been shown to be especially important in image segmentation tasks, in which you need to preserve spatial information over time (even when your input has gone through strided convolutional or pooling layers). One such example, is in [this paper](https://arxiv.org/abs/1608.04117) on skip connections and their role in medical image segmentation.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 782273,
+          "key": "35284a15-2f18-4285-a8fa-43e0bff21e47",
+          "title": "CycleGAN Generator",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "35284a15-2f18-4285-a8fa-43e0bff21e47",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 783247,
+              "key": "da7631e8-13a2-42c1-9387-b6df11e7e4f9",
+              "title": "05 CycleGAN Generator V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "StfeBXCuaOI",
+                "china_cdn_id": "StfeBXCuaOI.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 782274,
+          "key": "22f79bcc-33e7-4530-8c4c-def2fc45ff8d",
+          "title": "Blocks & Generator, Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "22f79bcc-33e7-4530-8c4c-def2fc45ff8d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 783248,
+              "key": "e3b8846d-6ff1-4a8f-9ac5-ec10db7fac1f",
+              "title": "06 Blocks Generator Solution V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "IPKbiwLIcvA",
+                "china_cdn_id": "IPKbiwLIcvA.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 782275,
+          "key": "6d609168-3100-48a5-bddd-e10ba928c791",
+          "title": "Adversarial & Cycle Consistency Losses",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "6d609168-3100-48a5-bddd-e10ba928c791",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 783249,
+              "key": "52ce536b-0e3a-486c-83ea-2bf8227141e5",
+              "title": "07 Adversarial Cycle Consistency Loss V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "-OO9pb8EyJI",
+                "china_cdn_id": "-OO9pb8EyJI.mp4"
+              }
+            },
+            {
+              "id": 782288,
+              "key": "45e82703-9353-40a4-8613-11362ea13fb2",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## LSGANs\n\nLeast squares can partly address the vanishing gradient problem for training deep GANs. The problem is as follows: for negative log-likelihood loss, when an input x is quite big, the gradient can get close to zero and become meaningless for training purposes. However, with a squared loss term, the gradient will actually increase with a larger x, as shown below.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 782290,
+              "key": "e1948372-d4e5-44ed-9120-749b59bd56e7",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2018/November/5be7a428_screen-shot-2018-11-10-at-7.38.03-pm/screen-shot-2018-11-10-at-7.38.03-pm.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/e1948372-d4e5-44ed-9120-749b59bd56e7",
+              "caption": "Loss patterns for large `x` values. Image from the [LSGAN paper](https://arxiv.org/abs/1611.04076).",
+              "alt": "",
+              "width": 500,
+              "height": 644,
+              "instructor_notes": null
+            },
+            {
+              "id": 782289,
+              "key": "f1d0d2b3-cf53-4b74-bbd4-1bcf16b13e87",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Least square loss is just one variant of a GAN loss. There are many more variants such as a [Wasserstein GAN loss](https://arxiv.org/abs/1701.07875) and others. These loss variants sometimes can help stabilize training and produce better results. As you write your own code, you're encouraged to hypothesize, try out different loss functions, and see which works best in your case!",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 782276,
+          "key": "277fab34-ea3c-49fc-8120-2a3ff78a8f2a",
+          "title": "Loss & Optimization, Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "277fab34-ea3c-49fc-8120-2a3ff78a8f2a",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 783250,
+              "key": "f3337e3f-3d60-4ca9-8940-5421fbc5bb0e",
+              "title": "08 Loss Optim Solution V1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "0H86-nQ3qSE",
+                "china_cdn_id": "0H86-nQ3qSE.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 782277,
+          "key": "b4b4a07b-0dea-47e5-b1d9-99d6937d49c2",
+          "title": "Training Exercise",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "b4b4a07b-0dea-47e5-b1d9-99d6937d49c2",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 783251,
+              "key": "285387a1-2c76-4cc2-8c69-4df51a1c053b",
+              "title": "09 Training Exercise V1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "F5_tK9lo9y0",
+                "china_cdn_id": "F5_tK9lo9y0.mp4"
+              }
+            },
+            {
+              "id": 783754,
+              "key": "20fb07ba-16fa-40c5-a917-d429e3cb21e5",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Spinning up a GPU Instance\n\nIf you are interested in training this model on multiple GPUs and over a long period of time, I suggest you look back at the **Cloud Computing** lesson in the Convolutional Neural Networks section of this program. There you will find instructions on spinning up a GPU instance using AWS cloud services. Also, all students, enrolled in the complete program have access to **free AWS GPU hrs** and can redeem them using the instructions in that lesson.\n\nIn general, if you want to train your networks for a long time on GPU, spinning up an instance on a cloud provider is a good thing to do. It is also a useful skill to have!",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 782278,
+          "key": "a5e16e0a-4620-4c85-9135-b1669340826f",
+          "title": "Training Solution & Generated Samples",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a5e16e0a-4620-4c85-9135-b1669340826f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 783252,
+              "key": "d470b8cc-5cb5-49d1-8393-d93b5a2958f2",
+              "title": "10 Training Solution Samples V1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Cl3oSLG9dpA",
+                "china_cdn_id": "Cl3oSLG9dpA.mp4"
+              }
+            },
+            {
+              "id": 783309,
+              "key": "ebd2e68a-90bf-4ffc-8cd3-e187db4e8ff9",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Image Synthesis\n\nDigital image transformation (say from summer to winter transformation) is still the domain of highly-skilled programmers and special-effects artists. However, with technology like trained GANs, image transformation and creation could become a tool for any photographer! As in this example, GANs can be trained to produce realistic images on a vast scale, and it will be interesting to see how image synthesis evolves as an art form and in machine learning.",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

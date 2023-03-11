@@ -1,0 +1,1172 @@
+{
+  "data": {
+    "lesson": {
+      "id": 1015129,
+      "key": "7a2cbbef-f80d-43ab-b586-fe1b62f39879",
+      "title": "3D Imaging Exploratory Data Analysis",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "In this lesson, we will dive deeper into medical imaging formats NIFTI and DICOM, how scanner data is represented, and how to read medical volumes stored in these files and analyze them. ",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/7a2cbbef-f80d-43ab-b586-fe1b62f39879/1015129/1590513970312/3D+Imaging+Exploratory+Data+Analysis+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/7a2cbbef-f80d-43ab-b586-fe1b62f39879/1015129/1590513965743/3D+Imaging+Exploratory+Data+Analysis+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 1015125,
+          "key": "6360d4fd-89d7-490d-b58d-635ab2814b5b",
+          "title": "Introduction",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "6360d4fd-89d7-490d-b58d-635ab2814b5b",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1015111,
+              "key": "40244c44-2ffc-408c-aa3c-dd09df936bdd",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Introduction",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015069,
+              "key": "15a5a5c4-a2fa-41dc-a69c-18f31feae719",
+              "title": "ND320 C3 L2 01 Welcome To The Lesson & Overview",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "YgCkbjnoxzw",
+                "china_cdn_id": "YgCkbjnoxzw.mp4"
+              }
+            },
+            {
+              "id": 1015066,
+              "key": "fa8ffe0e-e9df-4e53-aa11-356f7a63e984",
+              "title": "Summary of Overview + Lesson Outline",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Conceptual map\n\nLet’s look at our conceptual map again, highlighting the areas that we will cover in this lesson.\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015073,
+              "key": "c9d5561f-68f2-4b52-a503-a34e731f84ce",
+              "title": "Conceptual Lesson Overview/Map",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9bf445_l2-course-overview/l2-course-overview.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/c9d5561f-68f2-4b52-a503-a34e731f84ce",
+              "caption": "Lesson Overview (focus areas are highlighted with dark-blue color)",
+              "alt": "3D Imaging EDA lesson conceptual map. Focus on: MRI, CT, NIFTI, DICOM",
+              "width": 1133,
+              "height": 1029,
+              "instructor_notes": null
+            },
+            {
+              "id": 1015070,
+              "key": "3f839191-a882-4f4a-85ee-5cd181619365",
+              "title": "Lesson Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Lesson Summary\nIn this lesson we will cover the following:\n\n* Basics of DICOM and NIFTI file formats\n* A short introduction into viewing 3D medical images and some of the tools that you can use for viewing. This will be followed by an **exercise** where you will be asked to load a 2D DICOM image and convert it into PNG, applying proper windowing transform. \n* Some important parameters to consider when analyzing datasets. This will be followed by an **exercise** where you will need to load a 3D volume and extract slices from it. \n* A walkthrough of a Notebook with an approach to doing exploratory data analysis on a single 3D CT volume, and then an EDA for a dataset of multiple volumes. After that, you will be asked to do another **exercise** by working out an approach to an EDA of your own, curating a “dirty” DICOM volume dataset.\n\nAs you progress through the material, you may be wondering at times as to why you would need to know the intricacies of DICOM and NIFTI standards. I assure you that understanding how the standard is organized is crucial to understanding the data that you are dealing with. DICOM standard defines not only how pixels are stored, but also how the metadata is stored. A trove of valuable information is contained in DICOM metadata and this information could be used for all sorts of AI tasks - curating dataset, doing rapid QA, routing images to proper models, ensuring confidentiality compliance, etc. Also, if the content still seems too far removed, you might want to jump right into the exercises, and if they become confusing, come back to the lecture material, and use that to put you through. \n\nSo rock on!\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1015117,
+          "key": "17db975a-8a63-4adc-91bb-b8991f597d71",
+          "title": "The DICOM Standard",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "17db975a-8a63-4adc-91bb-b8991f597d71",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1015072,
+              "key": "ec3b7706-8cab-443a-9862-07599cc7e92a",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# DICOM basics",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015081,
+              "key": "4b6feb16-a41f-4be2-9f2e-51b294a60614",
+              "title": "ND320 C3 L2 02 DICOM Basics",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "CEA1nxifMes",
+                "china_cdn_id": "CEA1nxifMes.mp4"
+              }
+            },
+            {
+              "id": 1015077,
+              "key": "a996609a-d99b-4d41-bd21-f5f0dae3f6fb",
+              "title": "Summary of DICOM Basics",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# The DICOM Standard\n\nDICOM stands for “Digital Imaging and Communications in Medicine”. It is a standard that defines how medical imaging (primarily) data is stored and moved over the network. It’s been around since the '80s and eventual adoption of this standard by all manufacturers of medical imaging equipment has been a huge enabler for medical data interoperability and clinical research in general.  \n\nIt is an open standard that is maintained by the National Electrical Manufacturers Association (NEMA) and is available at http://dicom.nema.org/. The standard is updated a few times per year, as we update our views on how medical imaging data needs to be stored, and all prior versions are also available. When referencing the DICOM standard in your documentation, it is important to be clear about whether you are referencing the current or past versions of the standard. In this course, I will be referencing version 2020a of the standard.  \n\nDICOM is a vast and quite complex standard, and you don’t need to know it all unless you are developing a medical imaging modality or storage software. However, since you are very likely to get data as DICOM, it is important to know what is there, and how to look up things.  \n\nIn this lesson, we will focus on the storage portion of the standard - the part that defines how the data acquired by the scanners is stored as files on filesystems, and what metadata accompanies these files.  ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015079,
+              "key": "9a369bc1-633f-4d03-9a89-79451d50524a",
+              "title": "DICOM is",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "9a369bc1-633f-4d03-9a89-79451d50524a",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What is DICOM?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "Software for viewing medical images",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "Standard that defines how medical imaging data is transmitted over networks",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "Library for reading medical images",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk4",
+                    "text": "A standard that defines a way to store medical images",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1015067,
+              "key": "9500b925-e644-423a-9b33-98d7f52c1e5b",
+              "title": "Entity-R model",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# DICOM Entity-Relationship Model\n\nDICOM standard defines Information Entities that represent various real-world entities and relationships between them. The cornerstone of the DICOM standard are the following objects and relationships:\n\n**Patient** is, naturally, the patient undergoing the imaging study. A patient object contains one or more *studies*.  \n\n**Study** - a representation of a “medical study” performed on a patient. You can think of a study as a single visit to a hospital for the purpose of taking one or more images, usually within. A Study contains one or more *series*.  \n\n**Series** - a representation of a single “acquisition sweep”. I.e., a CT scanner took multiple slices to compose a 3D image would be one image series. A set of MRI T1 images at different axial levels would also be called one image series. Series, among other things, consists of one or more *instances*.  \n\n**Instance** - (or Image Information Entity instance) is an entity that represents a single scan, like a 2D image that is a result of filtered backprojection from CT or reconstruction at a given level for MR. Instances contain pixel data and metadata (Data Elements in DICOM lingo). \n\nThere are many more entities defined by the DICOM standard, but we will focus on these for the purposes of this course. You can look up the comprehensive list in [Section A.1.2 of Part 3](http://dicom.nema.org/medical/dicom/2020a/output/html/part03.html#sect_A.1.2) of the standard.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015074,
+              "key": "32afc6df-bd83-4583-891a-e049bb133e82",
+              "title": "Medical image series is",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "32afc6df-bd83-4583-891a-e049bb133e82",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What is represented by a single “MRI series” according to the DICOM standard?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "A dataset of 3D images",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "A 3D volume resulting from one MR acquisition sweep",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "A chest X-ray",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk4",
+                    "text": "A collection of 2D images",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1015119,
+          "key": "44c6bd20-0dbd-4924-be4f-d484de4e4f0f",
+          "title": "Anatomy of DICOM Datasets",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "44c6bd20-0dbd-4924-be4f-d484de4e4f0f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1015068,
+              "key": "37a46946-7c4b-4874-a292-b75252e78ebc",
+              "title": "Anatomy of NIFTI and DICOM - header",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Anatomy of DICOM datasets",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015080,
+              "key": "81c5861e-0325-4c1f-99d9-974c429ff697",
+              "title": "ND320 C3 L2 03 Anatomy Of DICOM File",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "F1wMgUxwPbE",
+                "china_cdn_id": "F1wMgUxwPbE.mp4"
+              }
+            },
+            {
+              "id": 1015076,
+              "key": "f6086152-cb1e-4fea-84dd-bb7ff02c1a33",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Whew! That might have been a lot to take in. Don’t worry if some of this is not quite coming together just yet. We will keep returning to these concepts as digging through DICOM files is an indispensable part of analyzing medical imaging datasets. For now, it is important to remember that these concepts exist, and know where to find them. You might want to return to this section and re-watch the lecture once you start working with DICOM.  \n\nOne of the important things to capture here is that per the DICOM standard, 3D medical images are stored as files on a file system where each file represents an instance of Image DICOM Information Entity. In the case of 3D medical images, each such instance shares context with other instances that belong to the same series and same study. Thus, each DICOM file stores metadata that describes attributes of study and series that the respective instance is a part of, and this metadata is replicated across other instances that belong to the same study. DICOM files are usually stored with *.dcm* extension and are usually grouped in directories (but they don’t have to be) to represent data from series, studies and patients. Relationships between individual .dcm files are defined by the metadata stored within them.\n\n# New Vocabulary\n\n**SOP** - Service-Object Pair. DICOM standard defines the concept of an Information Object, which is the representation of a real-world persistent object, such as an MRI image (DICOM Information Objects consist of Information Entities). The standard also defines the concept of Services that could be performed on Information Objects. One such service is the Storage service (we will touch on others later in the course), and a DICOM image stored as a file on a file system is an instance of Storage service performed on an Image Information Object. Such Service-Object Pairs have unique identifiers that help unambiguously define what type of data we are dealing with. A list of SOP Classes can be found in [Part 4 of the Standard](http://dicom.nema.org/MEDICAL/DICOM/2020a/output/chtml/part04/sect_B.5.html). This list is a useful reference for all possible data types that could be stored per the DICOM standard.  \n\n**Data Element** - a DICOM metadata “field”, which is uniquely identified by a tuple of integer numbers called *group id* and *element id*. The convention is to write the element identifier as group id followed by the element id in parentheses like so: (0008,0020) - this one is the DICOM Element for Study Date. DICOM data elements are usually called “tags”. You can find the list of all possible DICOM tags in [Part 6, Chapter 6 of the standard](http://dicom.nema.org/medical/dicom/2020a/output/chtml/part06/chapter_6.html). \n\n**VR** - Value Representation. This is the data type of a DICOM data element. DICOM standard imposes some restrictions on what form the data can take. There are short strings, long strings, integers, floats, datetime types, and more. You can find the reference for DICOM data types in [Part 5, Section 6 of the standard](http://dicom.nema.org/medical/dicom/2020a/output/chtml/part05/sect_6.2.html)  \n\n**Data Element Type** - identifiers that are used by Information Object Definitions to specify if Data Elements are mandatory, conditional or optional. Data Element Type reference can be found in [Part 5, Section 7 of the standard](http://dicom.nema.org/medical/dicom/2020a/output/html/part05.html#sect_7.4)  \n\n**IOD** - Information Object Definition. Information Object Definition specifies what metadata fields have to be in place for a DICOM Information Object to be valid. Scanner manufacturers follow the relevant parts of the DICOM standard when saving the digital data acquired by the scanner. When parsing DICOM data, it is often useful to reference the relevant IODs to see what data elements could be expected in the particular class of information objects, and what they mean. For example, in Part 3 of the standard, you can find [MR Image IOD](http://dicom.nema.org/medical/dicom/2020a/output/chtml/part03/sect_A.4.3.html) and [CT Image IOD](http://dicom.nema.org/medical/dicom/2020a/output/chtml/part03/sect_A.3.3.html) which we will use in this course quite a bit. You might have noticed that the table with all DICOM data elements does not really provide any description of what these elements mean. The reason for that is that elements may mean slightly different things depending on what Information Object Definition uses them, therefore, to find the real meaning of the element you need to look them up in the respective IOD. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015075,
+              "key": "82572c94-94c9-471f-81e1-350453fec6c0",
+              "title": "Patient Age",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "82572c94-94c9-471f-81e1-350453fec6c0",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Using the DICOM standard reference for Data Elements and Value Representations, write a properly formatted string to specify a patient age of 25 years old to be stored in “Patient’s Age” (0010,1010) DICOM tag.",
+                "matchers": [
+                  {
+                    "expression": "^(025Y)$"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1015121,
+          "key": "a283978d-17c7-421c-9762-d702720e3be4",
+          "title": "NIFTI File Format",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a283978d-17c7-421c-9762-d702720e3be4",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1015071,
+              "key": "bff7f504-895d-467d-b40f-5e826f3a310d",
+              "title": "Introduction",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# NIFTI file format",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015078,
+              "key": "7a885a7c-6e24-42d6-bf3e-dd80d2dce76a",
+              "title": "ND320 C3 L2 04 Anatomy Of NIFTI File",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "j70WDviBTaw",
+                "china_cdn_id": "j70WDviBTaw.mp4"
+              }
+            },
+            {
+              "id": 1015065,
+              "key": "1762d161-4f33-44f5-9932-460e4fb219a1",
+              "title": "Summary of DICOM & NIFTI videos",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Like DICOM, NIFTI, which stands for Neuroimaging Informatics Technology Initiative, is an open standard that is available at https://nifti.nimh.nih.gov/nifti-2. The standard has started out as a format to store neurological imaging data and has slowly seen a larger adoption across other types of biomedical imaging fields.\n\nSome things that distinguish NIFTI from DICOM, though are:\n\n* NIFTI is optimized to store serial data and thus can store entire image series (and even study) in a single file.\n*  NIFTI is not generated by scanners; therefore, it does not define nearly as many data elements as DICOM does. Compared to DICOM, there are barely any, and mostly they have to do with geometric aspects of the image. Therefore, NIFTI files by themselves can not constitute a valid patient record but could be used to optimize storage, alongside some sort of patient info database.\n* NIFTI files have fields that define units of measurements and while DICOM files store all dimensions in mm, it’s always a good idea to check what units of measurement are used by NIFTI.\n* When addressing voxels, DICOM uses a *[right-handed coordinate system](https://en.wikipedia.org/wiki/Right-hand_rule)* for X, Y and Z axes, while NIFTI uses a *left-handed coordinate system*. Something to keep in mind, especially when mixing NIFTI and DICOM data. \n\n# Further Resources\n\n* Background and history of the NIFTI: https://nifti.nimh.nih.gov/background/ \n* The most “official” reference of NIFTI data fields could be found in this C header file, published on the standard page: https://nifti.nimh.nih.gov/pub/dist/src/niftilib/nifti1.h or on this, slightly better-organized page: https://nifti.nimh.nih.gov/nifti-1/documentation/nifti1fields\n* A great blog post on NIFTI file format: https://brainder.org/2012/09/23/the-nifti-file-format/",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015082,
+              "key": "4e07b55d-c5c7-47fd-9c1f-229f9aec3341",
+              "title": "Check for Understanding DICOM",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "4e07b55d-c5c7-47fd-9c1f-229f9aec3341",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "How is NIFTI different from DICOM?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "It can only store data for neurological imaging.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "It defines a way to store the entire series in a single file.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "It defines how both metadata and pixel data are stored in the same file.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk4",
+                    "text": "It uses a different orientation of the cartesian coordinate system.",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1015120,
+          "key": "838daaae-ee01-42f0-b038-fc056480e9a1",
+          "title": "Viewing 3D Medical Images",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "838daaae-ee01-42f0-b038-fc056480e9a1",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1015083,
+              "key": "1985c510-c07d-4395-989d-47775dcbef44",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Viewing 3D medical images\n\nIn this section, I will show you briefly two free tools that you could use to view medical images.\n\n## MicroDicom\nOne tool is called MicroDicom and is available for Windows OS. This tool is a lightweight DICOM image viewer and provides a very convenient way to explore the DICOM tags.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015102,
+              "key": "6757b223-39ed-4dbd-b2bc-a7bffe06bec8",
+              "title": "ND320 C3 L2 05 Viewing Images Pt 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "r3KFUtWvVco",
+                "china_cdn_id": "r3KFUtWvVco.mp4"
+              }
+            },
+            {
+              "id": 1015094,
+              "key": "301d1e61-5d76-4a68-bff8-09536756c9fc",
+              "title": "Slicer intro",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## 3D Slicer\nAnother tool is called 3D slicer and is available for Windows, Linux, and Mac.\n\nIt is an open-source modular 3D medical image viewer with a focus on a research community that can view both DICOM and NIFTI. It is quite complex and has a bit of a learning curve to it, but it is very powerful for a variety of tasks.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015086,
+              "key": "912675a5-19a2-4993-8fa2-7da357452cc5",
+              "title": "ND320 C3 L2 05.1 Viewing Images Pt 2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "vzHwJztSyt8",
+                "china_cdn_id": "vzHwJztSyt8.mp4"
+              }
+            },
+            {
+              "id": 1015084,
+              "key": "17eaac13-a19b-44fc-90ea-fd72ffc6c901",
+              "title": "Summary of viewing images video",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "We have seen a quick intro into a couple of tools that you could use for viewing DICOM images. There are many more, both free and commercial. Slicer is particularly powerful for more advanced scenarios and we will get into it in a later lesson. \n\nIf you want to play with these tools now, here are some links:\n\n- Microdicom (Windows only): http://www.microdicom.com/\n- 3D Slicer: https://www.slicer.org/\n\nAlso, here are some other tools that were not covered in the lesson, but could also come in handy:\n- Radiant - another medical image viewer: https://www.radiantviewer.com/\n- Osirix (Mac only): https://www.osirix-viewer.com/\n- ViewMyScans - a quick online viewer that doesn’t require a local installation: https://viewmyscans.com/viewer/",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1015124,
+          "key": "5a8ac447-109e-4304-b217-01d4c333bfbf",
+          "title": "Exercise 1: Load Image",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5a8ac447-109e-4304-b217-01d4c333bfbf",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1015085,
+              "key": "772c9bb0-bbcb-49df-912c-e9e1b2fefc08",
+              "title": "Summary & Exercise Instructions",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Exercise 1: Load and display an image\nIn this exercise, you will get introduced to a library called *pydicom*, which we will use throughout the course to manipulate DICOM images. You will load a single DICOM file representing a slice of a 3D volume, apply a window and level transform and save it as a png image. \n\nYou will need to try to match the WW/WL setting as close as possible to what you will see when you load this image into a viewer. \n\nYou can use the online viewer at [ViewMyScans](https://viewmyscans.com/viewer/) or you can install Microdicom and load the image locally. \n\nYou can use pydicom [library reference](https://pydicom.github.io/pydicom/stable/) to look up methods and parameters, but we will tell you what methods to use.\n\nPydicom loads the image into an object that intercepts calls to its fields and tries to look up this field in the list of DICOM tags that have been loaded. Tags can be either read by using semantic names as they are defined in the DICOM standard (collapsing spaces), e.g.:\n`image.SOPClassUID` or `image.SeriesDescription`\n\nOr by referencing the tag’s (Group ID, Element ID) format, e.g.:\n\n```\nImage.[0x0028,0x0030].value\n```\n\nYou can access pixel data of the image by calling on property `pixel_array` which returns a NumPy array with pixels.\n\nWe will use the library called PIL in order to save the image as PNG. To write an array using PIL, make sure to tell it to write it as 8bit grayscale by using `mode` attribute like so:\n\n```\nim = Image.fromarray(out, mode=\"L\")\n```\n\nRemember that L mode expects that your array contains 8bit unsigned integers!\n\nBonus points if you can apply the windowing process so that image appears **exactly** the same way as in your viewer. You would need to use Microdicom or Slicer for that as it will show you the exact window width and level values. If you are using Udacity Workspaces, you can switch to Desktop and find a link to 3D slicer there.\n\nThis workspace will include the ability to access a VNC or virtual desktop. These environments will use the GPU to access the VNC **and** the environment, medai. You can also disable this when you are coding (and not running the code) or writing an explanation in the starter files. You will also be able access a program for the exercise:\n\n- **Slicer** - You will need to enable the GPU as Slicer is already configured on the VNC. When you enter the VNC with the Desktop button at the bottom right hand corner, you can find a Slicer as a shortcut on the desktop.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1017952,
+              "key": "581f17b9-2057-400e-ad96-5abd79c6f7bb",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1015124xREACT0wh49rgg",
+              "pool_id": "autonomousgpu",
+              "view_id": "react-djczr",
+              "gpu_capable": true,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/applications",
+                          "dest": "/opt/aihcnd-applications"
+                        },
+                        {
+                          "src": "/AIHCND/conda-envs/medai",
+                          "dest": "/root/miniconda3/envs/medai"
+                        }
+                      ]
+                    },
+                    "port": "3000",
+                    "ports": [
+                      3001,
+                      3002
+                    ],
+                    "userCode": "/root/miniconda3/bin/conda init bash > /dev/null\ngrep -qxF \"conda activate medai\" /root/.bashrc || echo \"conda activate medai\" >> /root/.bashrc",
+                    "openFiles": [
+                      "/home/workspace/dicom_to_jpeg.py"
+                    ],
+                    "showFiles": true,
+                    "allowClose": true,
+                    "allowSubmit": false,
+                    "terminalTitle": "BASH",
+                    "actionButtonText": "Go to Desktop",
+                    "openTerminalOnStartup": true
+                  },
+                  "kind": "react"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 1015093,
+              "key": "f220905d-4caa-4f79-8c8a-6c2614b7ed99",
+              "title": "Exercise: quiz",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "f220905d-4caa-4f79-8c8a-6c2614b7ed99",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Based on the DICOM metadata, what was the imaging modality used to create the image?",
+                "matchers": [
+                  {
+                    "expression": "^(CT)$"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1015088,
+              "key": "0753c0ae-dae9-4c24-aeb6-6933afdd8ab0",
+              "title": "Exercise 1 Solution",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "You can find the solution [here](https://github.com/udacity/nd320-c3-3d-med-imaging/tree/master/3d-imaging-exploratory-data-analysis/exercises/1-load-file/solution).   \n\nFeel free to browse through it, and pay attention to how the windowing operation was applied and how Pillow library was used to convert the voxel array into an image.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1015128,
+          "key": "68f000c2-843b-4c40-92dd-25a7052b9e86",
+          "title": "Important Parameters of 3D Medical Images",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "68f000c2-843b-4c40-92dd-25a7052b9e86",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1015112,
+              "key": "0e25e6e5-3c0d-49df-8dc2-db5e227663b9",
+              "title": "Important parameters of 3D medical images Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Important Parameters of Medical Images",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015089,
+              "key": "b94adcf6-0698-4d99-b971-2de9321e52b8",
+              "title": "ND320 C3 L2 06 Important Parameters Of 3D Medical Images",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "-16DOQebcfY",
+                "china_cdn_id": "-16DOQebcfY.mp4"
+              }
+            },
+            {
+              "id": 1015095,
+              "key": "bb7e7e34-c05f-4d3e-a2f4-f5ff74f51140",
+              "title": "summary of video",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "We have learned about some of the important parameters that you should be on the lookout for when analyzing medical imaging datasets.\n\nThese are parameters that have to do with geometric and photometric aspects of medical images.\n\n## Orientation parameters\n\nFor DICOM two parameters that define the relative position of a 2D in the 3D space would be:  \n\n**(0020,0037) Image Orientation Patient** - a parameter that stores two vectors (directional cosines to be precise) that define the orientation of the first row and first column of the image.  \n\n**(0020,0032) Image Position Patient** - a parameter that stores x, y, and z coordinates of the upper left-hand corner of the image.  \n\nBoth of these are Type 1 (mandatory) parameters for MR and CT IODs, so it is generally safe to rely on them.\n\nFor NIFTI, the same purpose is served by srow_\\*, qoffset_\\* vectors.\n\n## Physical spacing parameters\n\n**(0028,0030) Pixel Spacing** - two values that store the physical distance between centers of pixels across x and y axes.\n\n**(0018,0050) Slice Thickness** - thickness of a single slice. Note that this one is a Type 2 (required, but can be zero) parameter for CT and MR data. If you find those unavailable, you can deduce slice thickness from IPP parameters. This can happen if your volume has non-uniform slice thickness.\n\n## Photometric parameters\n\nThere are quite a few of those, as DICOM can store both grayscale and color data, so lots of parameters deal with color palettes. CT and MR images usually have monochrome pixel representation (defined by tag *(0028,0004) Photometric Interpretation*).\n\nMost notable ones of this group are:\n\n**(0028,0100) Bits Allocated** - parameter that defines the number of bits allocated per pixel (since we have CPUs that operate in bytes, this parameter is always a multiple of 8).  \n\n**(0028,0101) Bits Stored** - parameter that defines the number of bits that are actually used - quite often, you could see Bits Allocated set to 16, but Bits Stored set to 12.  \n\n### Image size parameters\n\nOf worthy mention are parameters that define the size of the 3D volume. There are Type 1 parameters that define the width and height of each 2D slice:\n\n**(0020,0010) Rows** - this is the height of the slice, in voxels   \n\n**(0020,0011) Columns** - width of the slice, in voxels  \n\nBoth of these need to be consistent across all DICOM files that comprise a series.  \n\nNote that there isn’t really anything in DICOM metadata that has to tell you how many slices you have in the series. There are tags that can hint at this (like *(0054,0081) Number of Slices*, or *(0020,0013) Instance Number*), but none of them are mandatory, Type 1 tags for CT or MR data. The most reliable way to determine the number of slices in the DICOM series is to look at the number of files that you have, and ideally validate that they make up a correct volume by checking for the consistency of IPP values.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015090,
+              "key": "c7313cce-1e56-478d-9140-e141082cdbfc",
+              "title": "Dimensions of DICOM volume",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "c7313cce-1e56-478d-9140-e141082cdbfc",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Compute the dimensions of a DICOM volume where you have 120 files with the following metadata:  \n\n**(0028,0010) Rows** = 512  \n**(0028,0011) Columns** = 512  \n**(0028,0030) Pixel spacing** = 0.56\\0.75  \n**(0018,0050) Slice Thickness** = 5  \n\nSpecify the width, height, and depth of the image as voxels in the format *(W, H, D)*.",
+                "matchers": [
+                  {
+                    "expression": "^(\\(512,512,120\\))$"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1015113,
+              "key": "c5cffefe-2b3d-4385-8d35-d11d7cbfc952",
+              "title": "Physical dimensions",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "c5cffefe-2b3d-4385-8d35-d11d7cbfc952",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Compute the dimensions of a DICOM volume where you have 120 files with the following metadata:  \n\n**(0028,0010) Rows** = 500  \n**(0028,0011) Columns** = 600 \n**(0028,0030) Pixel spacing** = 0.56\\0.75  \n**(0018,0050) Slice Thickness** = 5  \n\nSpecify the width, height, and depth of the image as millimeters in the format *(W, H, D)*.",
+                "matchers": [
+                  {
+                    "expression": "^(\\(450,280,600\\))$"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1015101,
+              "key": "8f085f41-8d22-43ce-9ac9-57a2373680b6",
+              "title": "Summary, Further Research, New Vocab Terms",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Further Resources\n\nIf you want to dive deeper into the subjects of coordinate spaces for medical images, and parameters of DICOM files in general, some useful resources:\n\n* Section on IPP and IOP parameters in the DICOM standard: http://dicom.nema.org/medical/dicom/2020a/output/chtml/part03/sect_C.7.6.2.html\n* A solid explanation of how coordinate systems work in NIFTI: https://nipy.org/nibabel/coordinate_systems.html\n* A company called Innolitics (a vendor of various DICOM software) maintains a great reference of the DICOM standard which sometimes could be quite a bit more convenient than the official standard: https://dicom.innolitics.com/ciods",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1015126,
+          "key": "a23aa446-3458-4646-bec3-2560b17fa853",
+          "title": "Basic DICOM Volume EDA",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a23aa446-3458-4646-bec3-2560b17fa853",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1015096,
+              "key": "aa08165b-42d1-4618-92b4-ceb5f0d03f1f",
+              "title": "Basic DICOM volume EDA Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Exploratory Data Analysis of DICOM datasets\n\nNow let me walk you through a Python Notebook where I analyze a single 3D medical image volume. This notebook and the volume used by it are available among the course materials.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015103,
+              "key": "5f2f026c-b8ad-4f9a-b42c-27511892a676",
+              "title": "ND320 C3 L2 07 Basic DICOM Volume EDA",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "WArVyluv3kM",
+                "china_cdn_id": "WArVyluv3kM.mp4"
+              }
+            },
+            {
+              "id": 1015099,
+              "key": "084c281b-2090-43cc-ac52-d994d90fcbf2",
+              "title": "Video Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "We have just seen a few basic techniques for working with medical imaging volumes. We have hit on a few quite important things to remember when exploring your data and thinking of preparing volumes for downstream machine learning pipelines. You are welcome to explore the Notebook on your own at the bottom of the page.\n\n### Voxel spacing\n\nDICOM voxels do not have to be perfect cubes (as they are in many computer vision problems). There are DICOM Data Elements that will tell you what exactly are the dimensions of voxels. The most important ones are Pixel Spacing and Slice Thickness. However, there are others, and if your project involves measuring things, make sure you get the transformation right by closely inspecting the tags in your dataset and comparing them with the list of elements in the IOD table for the respective modality. \n\n### Data ranges\n\nWe have seen how with CT, you may have data in your dataset that will represent synthetic material or items artificially added by scanners. It is always a good idea to see if there is something outstanding in the image you are dealing with and if it represents something that you need to think about in your downstream processing. \n\nConversions between DICOM values and screen space are particularly important if you are planning to visualize slices for any kind of diagnostic use or overlay them on top of diagnostic information. We have not really touched the aspects of visualization other than being mindful of bit depth and doing our own windowing, but DICOM images contain quite a lot of information that defines how exactly you are expected to map the data to the screen colorspace. If you are interested in exploring this further or need to accurately represent the data, take a closer look at elements in DICOM’s [ImagePixel module](http://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.7.6.3.html#table_C.7-11c). Things like Pixel Representation, Photometric Interpretation, Rescale Slope, Rescale Intercept and many others define how values should be transformed for accurate representation. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015092,
+              "key": "b3bf5af2-4e22-482f-a5aa-242457df49d7",
+              "title": "Check for Understanding",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "b3bf5af2-4e22-482f-a5aa-242457df49d7",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What DICOM Data Elements of MR Image IOD are relevant to correctly mapping stored voxel intensity to grayscale values on a monitor?\n\nUse the [DICOM PS3.3 2020a - Information Object Definitions - A.4.3 MR Image IOD Module Table](http://dicom.nema.org/medical/dicom/2020a/output/chtml/part03/sect_A.4.3.html) for reference.",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "(0028,0030) Pixel Spacing",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "(0020,000E) SeriesInstanceUID",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "(0028,0101) Bits Stored",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk4",
+                    "text": "(0028,0004) Photometric Interpretation",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk5",
+                    "text": "(00081030) Study Description",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1015087,
+              "key": "04bcd511-1998-462b-9e91-0fbc041cdd7e",
+              "title": "Quiz - Axial CT Slice",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9bf444_l2-axial-ct/l2-axial-ct.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/04bcd511-1998-462b-9e91-0fbc041cdd7e",
+              "caption": "Axial CT slice",
+              "alt": "Axial CT slice\naxial_ct.png",
+              "width": 500,
+              "height": 499,
+              "instructor_notes": null
+            },
+            {
+              "id": 1015100,
+              "key": "a1c29386-7730-4abe-8348-64baf6249558",
+              "title": "Why is CT image round?",
+              "semantic_type": "ReflectAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "a1c29386-7730-4abe-8348-64baf6249558",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "title": "Reflect",
+                "semantic_type": "TextQuestion",
+                "evaluation_id": null,
+                "text": "In the image above, we can see an example of a rendering of an axial CT slice that we encountered in our EDA exercise.\n\nWe have talked about why pixels in the corners of this image are black. \n\nUse the textbox below to answer the following question: why are we seeing a distinct circular shape around the patient anatomy in this image?"
+              },
+              "answer": {
+                "text": "Thanks for your response. I hope you guessed quickly that the answer has to do with what we have discussed in Lesson 1. CT scanners acquire data by rotating the x-ray source inside the gantry - hence the circular shape of the acquired image.",
+                "video": null
+              }
+            },
+            {
+              "id": 1015116,
+              "key": "63f58700-9014-4b9c-8bb2-4e1d7b40d881",
+              "title": "WS intro",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Below you can find the Jupyter Notebook that was used in this walkthrough.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1017628,
+              "key": "2856602a-69b3-4897-a800-053e00959449",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1015126xJUPYTERz62vxigz",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-5u1i4",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/DICOM Volume EDA tutorial.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1015118,
+          "key": "c9e7ceb5-5df9-4865-9101-b956f5c6efa9",
+          "title": "Exercise 2: 3D Volume MPR",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c9e7ceb5-5df9-4865-9101-b956f5c6efa9",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1015098,
+              "key": "6d783eb0-6d91-4cde-b180-24aecf4fe192",
+              "title": "Intro",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Exercise 2: 3D Volume MPR\n\nBefore we jump into EDA for a DICOM dataset, I would like you to do another exercise and try your hand at extracting orthogonal slices from a full MRI volume. You know the drill - jump into the Python file, read the instructions and export your slices into .png files like we did with the previous exercise. \n\nThis workspace is essentially a basic coding environment with the folders on the left, editor on the top and terminal/BASH at the bottom. \n\nGood luck!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1019435,
+              "key": "21d6a797-72db-4507-a2f1-56f35b645ebc",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1015118xGENERIClr9oysd7",
+              "pool_id": "webterminal",
+              "view_id": "generic-hlxhu",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "port": 3000,
+                    "ports": [],
+                    "userCode": "",
+                    "openFiles": [
+                      "/home/workspace/dicom_mpr.py"
+                    ],
+                    "showFiles": true,
+                    "allowClose": true,
+                    "showEditor": true,
+                    "allowSubmit": false,
+                    "terminalTitle": "BASH",
+                    "openTerminalOnStartup": true
+                  },
+                  "kind": "generic"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 1015097,
+              "key": "7233b477-f4af-4274-add9-abe53661eaf6",
+              "title": "Solution/takeaways",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "You can find the solution to this exercise [here](https://github.com/udacity/nd320-c3-3d-med-imaging/tree/master/3d-imaging-exploratory-data-analysis/exercises/2-volume-mpr/solution).\n\nIf you want to inspect the solution, take note of how the aspect ratio for the rendered image was selected. The volume that we are dealing with has non-square voxels and the z-dimension of our voxels is much smaller than x and y dimensions. Note what DICOM tags I used to compute the proper dimensions.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1015123,
+          "key": "a78ccd41-6784-4662-9945-cbc2fa309943",
+          "title": "Basic 3D DICOM Dataset EDA",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a78ccd41-6784-4662-9945-cbc2fa309943",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1015091,
+              "key": "cfb585c0-b57f-4db8-a0d5-47e8669f1a2e",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# DICOM Volume Dataset EDA ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015110,
+              "key": "27362132-9959-45a1-89f0-28ff501e3c3e",
+              "title": "ND320 C3 L2 08 Volume Dataset EDA",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "U9Up7KUeNuw",
+                "china_cdn_id": "U9Up7KUeNuw.mp4"
+              }
+            },
+            {
+              "id": 1015108,
+              "key": "11b4d434-2c19-4385-ba9a-a4b1537011d2",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Methods for dataset analysis basically boil down to using the same tricks as you’d do for individual volume analysis and being on the lookout for inconsistencies in data. \n\nInconsistencies usually boil down to two classes:\n\n* **Clinical anomalies** - the things related to either anatomical anomalies like missing organs, pathologies like tumors or implants such as limb prosthesis, ports/cannulas, surgical implants, presence of contrast media, etc. Sometimes these things can result in artifacts in the images, so it’s good to be aware of them  \n\n* **Informatics anomalies**  - things related to specifics of data acquisition or variations in DICOM encoding coming from different scanners. These would be things like slice spacing consistency, image dimensions, variations in photometric encoding, etc\n\nBasic knowledge of DICOM and intuition for what things could go wrong are always useful when analyzing the datasets. I will post some examples of great dataset EDA at the end of this lesson as well. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015105,
+              "key": "1cc67999-c6e1-4dbf-a8bb-77474df9f54f",
+              "title": "Check for Understanding",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "1cc67999-c6e1-4dbf-a8bb-77474df9f54f",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What would be relevant things to look at when analyzing a medical volume dataset?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "Pixel spacing tag",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "File names",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk3",
+                    "text": "Image Orientation Patient and Image Position Patient tags",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk4",
+                    "text": "Photometric Interpretation tag",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk5",
+                    "text": "Series Description tag",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk6",
+                    "text": "Rows/Columns tags",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1015106,
+              "key": "59c67467-a58d-4030-a490-7ee7a44bfd55",
+              "title": "WS Intro",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Below you can find the Jupyter Notebook that has been used in this walkthrough.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1017670,
+              "key": "add4a551-f7f1-4f59-82b2-f85fa4ebdb34",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1015123xJUPYTER8hp8vn1h",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-oenlq",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/DICOM%20Dataset EDA tutorial.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1015122,
+          "key": "3addb776-ecbe-441f-9340-29f6318fed88",
+          "title": "Exercise 3: 3D Dataset EDA and Curation",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "3addb776-ecbe-441f-9340-29f6318fed88",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1015107,
+              "key": "5e8e140b-5df9-4d13-a313-7a2790e39457",
+              "title": "Intro",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Exercise 3: 3D Dataset EDA and Curation\n\nIn this exercise, I invite you to try your hand at sorting out a 3D medical imaging dataset by completing a Jupyter Notebook and answering a series of questions about this dataset. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1018227,
+              "key": "ea3c4b13-a19c-475d-a4b6-5fad3b0064ff",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1015122xJUPYTERd3tlnf46",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-9y6am",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Exercise. Volume Dataset Analysis.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 1015104,
+              "key": "a319c557-235c-4dd3-9f39-20c0f1ef9ac9",
+              "title": "Solution",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "You can find the solution to this exercise in the form of Jupyter Notebook, with some additional comments [here](https://github.com/udacity/nd320-c3-3d-med-imaging/blob/master/3d-imaging-exploratory-data-analysis/exercises/3-dataset-eda/solution/Exercise.%20Volume%20Dataset%20Analysis.ipynb).",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1015127,
+          "key": "061e3845-d138-4263-802b-8e793c3ac30a",
+          "title": "Lesson Summary",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "061e3845-d138-4263-802b-8e793c3ac30a",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1015115,
+              "key": "61cc3511-b4bd-4f5a-9719-1242fab2b859",
+              "title": "heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 3D imaging EDA recap\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015114,
+              "key": "a4c17fe1-85e4-4c09-b1e5-a4ff1dfa6fb3",
+              "title": "ND320 C3 L2 09 Summary Of The 3D Imaging EDA Lesson",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "6jhBwYM--Fc",
+                "china_cdn_id": "6jhBwYM--Fc.mp4"
+              }
+            },
+            {
+              "id": 1015109,
+              "key": "e87429ca-b1fd-4453-8ca8-267c99cd18c6",
+              "title": "Vocabulary Terms & Further Research",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Congrats! You’ve completed the lesson. I have introduced you to the DICOM standard and we got into some of the deep dark internals of the standard. Hopefully, now you have a good basis to start digging around datasets and are ready to try your hand at some machine learning techniques that we will discuss in the next lesson.\n\nIn this lesson we have covered the following topics:\n\n* Basics of DICOM and NIFTI file formats\n* We did a short introduction into viewing 3D medical images and some of the tools that you can use for viewing. This was followed by an exercise where you loaded a 2D DICOM image and converted it into PNG, applying proper windowing transform. \n* Some important parameters to consider when analyzing datasets. This was followed by an exercise where you loaded a 3D volume and extract slices from it. \n* A walkthrough of a Notebook with an approach to doing exploratory data analysis on a single 3D CT volume, and then an EDA for a dataset of multiple volumes. After that, you worked on another exercise and worked out an approach to an EDA of your own, curating a “dirty” DICOM volume dataset.\n\n# Further Resources\n\nSome great examples of EDA adventures could be found in the following competitions/challenges:\n\n- [The 2019 RSNA Intracranial Hemorrhage Detection Challenge](https://www.kaggle.com/c/rsna-intracranial-hemorrhage-detection)\n- [2018 RSNA Pneumonia Detection Challenge](https://www.kaggle.com/c/rsna-pneumonia-detection-challenge)\n- [2017 Data Science Bowl](https://www.kaggle.com/c/data-science-bowl-2017)\n- [Multimodal Brain Tumor Segmentation Challenge 2019](http://braintumorsegmentation.org/)\n\nAnd here are some notebooks presenting interesting tricks to try with DICOM data: \n- As mentioned in the previous lesson, now that you know some DICOM, take a look at some creating windowing approaches: https://www.kaggle.com/jhoward/don-t-see-like-a-radiologist-fastai  \n- This one provides a good basis for windowing responsibly https://www.kaggle.com/dcstang/see-like-a-radiologist-with-systematic-windowing \n- And this Notebook covers some useful tricks to keep handy as you are working through 3D imaging datasets: https://www.kaggle.com/jhoward/some-dicom-gotchas-to-be-aware-of-fastai",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

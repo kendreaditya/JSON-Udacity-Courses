@@ -1,0 +1,1985 @@
+{
+  "data": {
+    "lesson": {
+      "id": 817331,
+      "key": "aa55df59-326c-490b-be16-2d32f5250d88",
+      "title": "Data Types & Variables",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Learn to represent real-world data using JavaScript variables, and distinguish between the different data types in the language.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/aa55df59-326c-490b-be16-2d32f5250d88/817331/1549164856141/Data+Types+%26+Variables+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/aa55df59-326c-490b-be16-2d32f5250d88/817331/1549164853006/Data+Types+%26+Variables+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 195721,
+          "key": "673e1be5-6c85-4397-8318-192d95d48761",
+          "title": "Intro to Data Types",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "673e1be5-6c85-4397-8318-192d95d48761",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 232954,
+              "key": "2e521022-553b-48df-be29-391101ce79c2",
+              "title": "Intro to Data Types",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "y9ch4F_JovU",
+                "china_cdn_id": "y9ch4F_JovU.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 195722,
+          "key": "204ca302-0e26-4c18-8d55-553779f13db3",
+          "title": "Numbers",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "204ca302-0e26-4c18-8d55-553779f13db3",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 195730,
+              "key": "40d4e73f-2e2c-4a9f-8032-5c61c0ef67a4",
+              "title": "You can also perform calc",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Numbers\n\nDefining a number in JavaScript is actually pretty simple. The **Number** data type includes any positive or negative integer, as well as decimals. Entering a number into the console will return it right back to you.\n\n```js\n3 \n```\n> **Returns:** 3\n\nThere, you did it.\n\n## Arithmetic operations\n\nYou can also perform calculations with numbers pretty easily. Basically type out an expression the way you would type it in a calculator.\n\n```js\n3 + 2.1\n```\n> **Returns:** 5.1\n\nNow you try!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 230086,
+              "key": "ef62e2f6-fcf9-4ee5-a6b1-5bbe1aacfc7d",
+              "title": "Matching Expressions",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "ef62e2f6-fcf9-4ee5-a6b1-5bbe1aacfc7d",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Enter the expressions (one at a time) into the console and determine what each expression evaluates to.\n\n"
+                },
+                "concepts_label": "Expression",
+                "answers_label": "Solution",
+                "concepts": [
+                  {
+                    "text": "2 + 10 - 19 + 4 - 90 + 1",
+                    "correct_answer": {
+                      "id": "a1481767483498",
+                      "text": "-92"
+                    }
+                  },
+                  {
+                    "text": "-20 + -19 - (-10) - (-1) + 24",
+                    "correct_answer": {
+                      "id": "a1481767501311",
+                      "text": "-4"
+                    }
+                  },
+                  {
+                    "text": "(10/5) * 4 - 20",
+                    "correct_answer": {
+                      "id": "a1481767519916",
+                      "text": "-12"
+                    }
+                  },
+                  {
+                    "text": "4096 % 12",
+                    "correct_answer": {
+                      "id": "a1481767536109",
+                      "text": "4"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1481767519916",
+                    "text": "-12"
+                  },
+                  {
+                    "id": "a1481767705938",
+                    "text": "12"
+                  },
+                  {
+                    "id": "a1481767536109",
+                    "text": "4"
+                  },
+                  {
+                    "id": "a1481767501311",
+                    "text": "-4"
+                  },
+                  {
+                    "id": "a1481767715538",
+                    "text": "92"
+                  },
+                  {
+                    "id": "a1481767483498",
+                    "text": "-92"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 195737,
+              "key": "f032cad5-f3d7-4aaa-b533-bb66379c5725",
+              "title": "What about comparing Numbers",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Comparing numbers\n\nWhat about comparing numbers? Can you do that? Well of course you can!\n\nJust like in mathematics, you can compare two numbers to see if one’s greater than, less than, or equal to the other.\n\n```js\n5 > 10\n```\n> **Returns:** false\n\n```js\n5 < 10\n```\n> **Returns:** true\n\n```js\n5 == 10\n```\n> **Returns:** false\n\nComparisons between numbers will either evaluate to true or false. Here are some more examples, so you can try it out!\n\n\n| **Operator** | **Meaning**                  |\n|----------|--------------------------|\n| <        | Less than                |\n| >        | Greater than             |\n| <=       | Less than or Equal to    |\n| >=       | Greater than or Equal to |\n| ==       | Equal to                 |\n| !=       | Not Equal to             |\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 230087,
+              "key": "b8db9874-1a23-4606-ba32-a68d141f1ee1",
+              "title": "Comparison Practice",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "b8db9874-1a23-4606-ba32-a68d141f1ee1",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Enter the expressions (one at a time) into the console and determine what each expression evaluates to.\n"
+                },
+                "concepts_label": "Expression",
+                "answers_label": "Solution",
+                "concepts": [
+                  {
+                    "text": "43 > 47",
+                    "correct_answer": {
+                      "id": "a1481767879005",
+                      "text": "false"
+                    }
+                  },
+                  {
+                    "text": "12 == 17",
+                    "correct_answer": {
+                      "id": "a1481767929945",
+                      "text": "false"
+                    }
+                  },
+                  {
+                    "text": "3 <= 3",
+                    "correct_answer": {
+                      "id": "a1481767932804",
+                      "text": "true"
+                    }
+                  },
+                  {
+                    "text": "1 != 0",
+                    "correct_answer": {
+                      "id": "a1481767942905",
+                      "text": "true"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1481767879005",
+                    "text": "false"
+                  },
+                  {
+                    "id": "a1481767942905",
+                    "text": "true"
+                  },
+                  {
+                    "id": "a1481767929945",
+                    "text": "false"
+                  },
+                  {
+                    "id": "a1481767932804",
+                    "text": "true"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 195742,
+              "key": "e5af8c5e-b9d3-4535-bc89-36203ee77f52",
+              "title": "callout",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "> **TIP:** The values `true` and `false` have significant importance in JavaScript. These values are called **Booleans** and are another data type in JavaScript. Later in this lesson, you’ll learn more about why Booleans are so important in programming.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 215823,
+          "key": "6a4bec50-7caf-4b8b-9685-a4e24346cda0",
+          "title": "Comments",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "6a4bec50-7caf-4b8b-9685-a4e24346cda0",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 259509,
+              "key": "ef7de932-54f4-4589-be08-55a3435f0279",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Comments",
+              "instructor_notes": ""
+            },
+            {
+              "id": 259508,
+              "key": "bf7650ce-d2b8-4ce7-aaad-be5aa67261f0",
+              "title": "Comments",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "CJ4_-sEDaf8",
+                "china_cdn_id": "CJ4_-sEDaf8.mp4"
+              }
+            },
+            {
+              "id": 215824,
+              "key": "8ad7e897-5c10-46d6-9c99-a12eddb6c562",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "`// You're about to take your first programming quiz!`\n\nBefore you move onto the quiz, we want to talk about something you'll see quite often throughout this course: **comments**!\n\nYou can use **comments** to help explain your code and make things clearer. In JavaScript, comments are marked with a double forward-slash `//`. Anything written on the same line after the `//` will not be executed or displayed. To have the comment span multiple lines, mark the start of your comment with a forward-slash and star, and then enclose your comment inside a star and forward-slash `/* … */`.\n\n\n```js\n// this is a single-line comment\n\n/*\nthis is\na multi-line\ncomment\n*/\n```\n\nSome of the quizzes in this course might include comments that give you hints or instructions to complete the quiz. Comments are often used to clarify and document non-obvious code. It's good practice to include code comments to improve code readability.\n\nAlright, good luck!",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 206349,
+          "key": "0ea84522-b154-482c-a51f-c8d13e8dce63",
+          "title": "Quiz: First Expression (2-1)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "0ea84522-b154-482c-a51f-c8d13e8dce63",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 206494,
+              "key": "2796c4a3-71c7-4a6f-a25a-db73457e1938",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Directions:\n\nWrite an expression that uses at least 3 different arithmetic operators. \n\nThe expression should equal `42`.\n\n**Hint:** `+`, `-`, `*`, `/`, _and_ `%` _are possible arithmetic operators_\n\n## Your Code:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 206350,
+              "key": "59911de8-0542-40ac-9d6a-4413c4a7bf1b",
+              "title": "",
+              "semantic_type": "QuizAtom",
+              "is_public": true,
+              "instructor_notes": "\n\n",
+              "user_state": {
+                "node_key": "59911de8-0542-40ac-9d6a-4413c4a7bf1b",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "instruction": null,
+              "question": {
+                "title": "",
+                "semantic_type": "ProgrammingQuestion",
+                "evaluation_id": "5243481478004736",
+                "initial_code_files": [
+                  {
+                    "text": "/*\n * Programming Quiz: First Expression (2-1)\n * Write an expression that uses at least three, distinct, arithmetic operators\n * to log the number 42 to the console.\n */\n \n/*\n * QUIZ REQUIREMENTS\n * 1. Your code should print the value `42`\n * 2. You should use at least 3 distinct operators. (`+`, `-`, `*`, `/`, or `%`)\n * 3. Your code should not be empty\n */\n\n\n// this expression equals 4, change it to equal 42\nconsole.log(1 + 5 - 2);\n",
+                    "name": "StudentMain.js"
+                  }
+                ]
+              },
+              "answer": null
+            },
+            {
+              "id": 1013193,
+              "key": "9c4c5cd9-a04d-48f2-afc7-d6d31749a96a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<font color=\"#000066\"> Note - We check your solution against a limited set of ***test-cases*** that check the minimum requirements, as mentioned in the quiz.</font>",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1013194,
+              "key": "cfef2fd8-9d1e-42b5-b204-52d6d890d3cf",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n<div id=\"division_1\" style=\"display:none\">\n#### <font color=\"green\">Here is one of the possible solutions:</font>\n```Javascript\nconsole.log(10 * 4 + 4 - 2);\n```\n</div>\n<button type=\"button\" id=\"myButton1\" onclick=\"if(document.getElementById('division_1') .style.display=='none') \n{document.getElementById('division_1') .style.display=''}else{document.getElementById('division_1') .style.display='none'}\nif (document.getElementById('myButton1').innerHTML=='Show Solution') {document.getElementById('myButton1').innerHTML='Hide Solution';}\nelse{document.getElementById('myButton1').innerHTML = 'Show Solution';}\">Show Solution</button>\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 196057,
+          "key": "a7e05a9a-b9af-40c9-b917-541c93ebf414",
+          "title": "Strings",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a7e05a9a-b9af-40c9-b917-541c93ebf414",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 252822,
+              "key": "36fd7ad6-656f-44e9-be50-266a14e622d1",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Strings",
+              "instructor_notes": ""
+            },
+            {
+              "id": 216617,
+              "key": "d5138435-8493-44e4-929f-a9d6fe56a503",
+              "title": "Strings",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "IhLi-dz6Dzc",
+                "china_cdn_id": "IhLi-dz6Dzc.mp4"
+              }
+            },
+            {
+              "id": 252824,
+              "key": "0a0a1e82-2858-4e4b-a3f4-084903fdf164",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": ">**TIP:** It is correct to either use double `\"` or single `'` quotes with strings, as long as you're consistent. The [JavaScript Udacity style guide](http://udacity.github.io/frontend-nanodegree-styleguide/javascript.html) for labs and projects suggests using single quotes to define string literals.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 195724,
+          "key": "d9bc6507-bacd-42ba-b289-bfd2146eff1c",
+          "title": "String Concatenation",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d9bc6507-bacd-42ba-b289-bfd2146eff1c",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 195750,
+              "key": "d0a71b46-a7db-4fa9-9990-eddc299f4eeb",
+              "title": "string concatenation",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## String concatenation\n\n**Strings** are a collection of characters enclosed inside double or single quotes. You can use strings to represent data like sentences, names, addresses, and more. Did you know you can even add strings together? In JavaScript, this is called **concatenating**. Concatenating two strings together is actually pretty simple!\n\n```js\n\"Hello,\" + \" New York City\"\n```\n> **Returns:** \"Hello, New York City\"\n\nYou will see other ways to concatenate and do even more with strings later in this course. But for now, practice using the addition `+` operator.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 195752,
+              "key": "13598ed5-24ed-4b82-b30a-5817bc19100a",
+              "title": "What is the output?",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "13598ed5-24ed-4b82-b30a-5817bc19100a",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What's the result with `\"hello\" + \"world\"`?\n",
+                "answers": [
+                  {
+                    "id": "a1476148155336",
+                    "text": "\"hello world\"",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1476148187361",
+                    "text": "\"helloworld\"",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 195753,
+              "key": "c53e096b-f875-41c0-95a1-19029fb101a3",
+              "title": "What is the output?",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "c53e096b-f875-41c0-95a1-19029fb101a3",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What do you think will happen when you type `\"Hello + 5*10\"` into the JavaScript console?\n",
+                "answers": [
+                  {
+                    "id": "a1476148274565",
+                    "text": "\"Hello5*10\"",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1476148373665",
+                    "text": "\"Hello50\"",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1476148379396",
+                    "text": "\"Hello + 5*10\"",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1476148394346",
+                    "text": "An error!",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 195758,
+              "key": "a88e1b24-d1f9-457e-b71d-08cc404005b6",
+              "title": "What is the output?",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "a88e1b24-d1f9-457e-b71d-08cc404005b6",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What do you think will happen when you type `\"Hello\" + 5*10` into the console?\n",
+                "answers": [
+                  {
+                    "id": "a1476148522720",
+                    "text": "\"Hello5*10\"",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1476148551550",
+                    "text": "\"Hello50\"",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1476148556580",
+                    "text": "\"Hello + 5*10\"",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1476148561130",
+                    "text": "An error!",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 195727,
+          "key": "d38fbf76-c43a-47dd-b031-b20397d6c283",
+          "title": "Variables",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d38fbf76-c43a-47dd-b031-b20397d6c283",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 252827,
+              "key": "badb2645-18e8-4b4f-ab7e-0c4c2ceae7e3",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Variables",
+              "instructor_notes": ""
+            },
+            {
+              "id": 232958,
+              "key": "828590b3-1fe8-4d0f-80f3-65dedd73c185",
+              "title": "Variables",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "8XUAmpyFR-g",
+                "china_cdn_id": "8XUAmpyFR-g.mp4"
+              }
+            },
+            {
+              "id": 195803,
+              "key": "2da7ba0f-54a0-47c1-8763-defd1a672ee5",
+              "title": "title",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "With variables, you no longer need to work with one-time-use data.\n\nAt the beginning of this course, you declared the value of a string, but you didn't have a way to access or reuse the string later.\n\n```js\n\"Hello\"; // Here's a String \"Hello\"\n\"Hello\" + \" World\"; // Here's a new String (also with the value \"Hello\") concatenated with \" World\"\n```\n\nStoring the value of a string in a variable is like packing it away for later use.\n\n```js\nvar greeting = \"Hello\";\n```\n\nNow, if you want to use \"Hello\" in a variety of sentences, you don't need to duplicate \"Hello\" strings. You can just reuse the `greeting` variable. \n\n```js\ngreeting + \" World!\";\n```\n> **Returns:** Hello World!\n\n```js\ngreeting + \" Mike!\";\n```\n> **Returns:** Hello Mike!\n\nYou can also change the start of the greeting by _reassigning_ a new string value to the variable `greeting`.\n\n```js\ngreeting = \"Hola\";\ngreeting + \" World!\";\n```\n> **Returns:** Hola World!\n\n```js\ngreeting + \" Mike!\";\n```\n> **Returns:** Hola Mike!\n\n## Naming conventions\n\nWhen you create a variable, you write the name of the variable using camelCase (the first word is lowercase, and all following words are uppercase). Also try to use a variable name that accurately, but succinctly describes what the data is about.\n\n```js\nvar totalAfterTax = 53.03; // uses camelCase if the variable name is multiple words\nvar tip = 8; // uses lowercase if the variable name is one word\n```\n\nNot using camelCase for your variables names is not going to necessarily _break_ anything in JavaScript. But there are recommended style guides used in all programming languages that help keep code consistent, clean, and easy-to-read. This is especially important when working on larger projects that will be accessed by multiple developers. \n\nYou can read more about Google's JavaScript StyleGuide [here](https://google.github.io/styleguide/jsguide.html).",
+              "instructor_notes": ""
+            },
+            {
+              "id": 195806,
+              "key": "ae360a3a-b519-453d-b341-47be84f73810",
+              "title": "Naming Conventions",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "ae360a3a-b519-453d-b341-47be84f73810",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of these are good variable names?",
+                "answers": [
+                  {
+                    "id": "a1476151176105",
+                    "text": "var thingy = 1;",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1476151195605",
+                    "text": "var count = 1;",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1476151196135",
+                    "text": "var postLiked = false;",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1476151196625",
+                    "text": "var firstname = \"Richard\";",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 231909,
+          "key": "5f0a00eb-e0c7-4b3f-a24d-400cad12176e",
+          "title": "Quiz: Converting Temperatures (2-2)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5f0a00eb-e0c7-4b3f-a24d-400cad12176e",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 231910,
+              "key": "49ab36d7-583e-4448-a593-bee6068e5f4f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "To convert [Celsius](https://en.wikipedia.org/wiki/Celsius) to [Fahrenheit](https://en.wikipedia.org/wiki/Fahrenheit), you can use the following formula:<br>\n\n><span class=\"mathquill\">\nF=C\\times1.8+32\n</span>\n\n## Directions:\n\nUse this equation and the variables `fahrenheit` and `celsius` to print the Fahrenheit equivalent of 12°C.\n\n> **NOTE:** \"12°C\" reads as \"12 degrees Celsius\".\n\n## Your Code:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 231911,
+              "key": "2365859c-754f-4aff-a780-ac330fdaf35e",
+              "title": "",
+              "semantic_type": "QuizAtom",
+              "is_public": true,
+              "instructor_notes": "\n",
+              "user_state": {
+                "node_key": "2365859c-754f-4aff-a780-ac330fdaf35e",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "instruction": null,
+              "question": {
+                "title": "",
+                "semantic_type": "ProgrammingQuestion",
+                "evaluation_id": "5177749372272640",
+                "initial_code_files": [
+                  {
+                    "text": "/*\n * Programming Quiz: Converting Tempatures (2-2)\n *\n * The Celsius-to-Fahrenheit formula:\n *\n *    F = C x 1.8 + 32\n *\n * 1. Set the fahrenheit variable to the correct value using the celsius variable and the forumla above\n * 2. Log the fahrenheit variable to the console\n *\n */\n \n/*\n * QUIZ REQUIREMENTS\n * 1. Your code should have a variable `celsius`\n * 2. You code should have a variable `fahrenheit`\n * 3. Your variable `celsius` should equal `12`\n * 4. Your variable `fahrenheit` should produce the output equal `53.6`\n * 5. Your variable `fahrenheit` declaration should use the `celsius` variable\n * 6. Your variable `fahrenheit` should have the correct formula\n * 7. Your code should log the `fahrenheit` variable\n * 8. Your code should not be empty\n */\n \n\nvar celsius = 12;\nvar fahrenheit = /* convert celsius to fahrenheit here */\n\nconsole.log(/* print out result here */);\n",
+                    "name": "StudentMain.js"
+                  }
+                ]
+              },
+              "answer": null
+            },
+            {
+              "id": 1013195,
+              "key": "478d33d1-75bd-4187-a0e8-5755eb981561",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<font color=\"#000066\"> Note - We check your solution against a limited set of ***test-cases*** that check the minimum requirements, as mentioned in the quiz.</font>",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1013198,
+              "key": "e65c1174-488d-4964-8b18-9489100dda13",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<div id=\"spoiler_1\" style=\"display:none\">\n#### <font color=\"green\">Here is one of the possible solutions:</font>\n\n```Javascript\nvar celsius = 12;\nvar fahrenheit = (celsius * 1.8 + 32 );\nconsole.log(fahrenheit);\n```\n</div>\n<button type=\"button\" id=\"myButton1\" onclick=\"if(document.getElementById('spoiler_1') .style.display=='none') {document.getElementById('spoiler_1') .style.display=''}else{document.getElementById('spoiler_1') .style.display='none'}if (document.getElementById('myButton1').innerHTML=='Show Solution') {document.getElementById('myButton1').innerHTML='Hide Solution';}else{document.getElementById('myButton1').innerHTML = 'Show Solution';}\">Show Solution</button>\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 208294,
+          "key": "397a5635-43bd-42d1-b181-179b2c902f67",
+          "title": "String Index",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "397a5635-43bd-42d1-b181-179b2c902f67",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 208295,
+              "key": "c428951c-ba97-436b-bad3-2f7412cd30fe",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Indexing\n\nDid you know that you can access individual characters in a string? To access an individual character, you can use the character's location in the string, called its **index**. Just put the index of the character inside square brackets (starting with `[0]` as the first character) immediately after the string. For example: \n\n```js\n\"James\"[0];\n```\n> **Returns:** \"J\"\n\nor more commonly, you will see it like this, using a variable:\n\n```js\nvar name = \"James\";\nname[0];\n```\n> **Returns:** \"J\"",
+              "instructor_notes": ""
+            },
+            {
+              "id": 208296,
+              "key": "b426ea47-71aa-4d89-95db-a59c546c76c9",
+              "title": "String Index",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "<div style=\"text-align: center;\"><font color=\"#000066\"> Note - This video does not have an audio. It was created as a visual to aid learning. </font> </div><div style=\"text-align: center; color: #afafaf; font-size: 14px; margin-top: 15px;\">Characters within a string are indexed starting from 0, where the first character is at position 0, to n-1, where the last character is at position n-1 (n represents the total number of characters within a string).</div>",
+              "video": {
+                "youtube_id": "7jRLNkf2pBM",
+                "china_cdn_id": "7jRLNkf2pBM.mp4"
+              }
+            },
+            {
+              "id": 216527,
+              "key": "a58166b0-7eea-4c4a-aba6-bcd6532a4d9c",
+              "title": "Characters in a String",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "a58166b0-7eea-4c4a-aba6-bcd6532a4d9c",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What character will be printed to the JavaScript console after running the following lines of code.\n\n```js\nvar quote = \"Stay awhile and listen!\";\nconsole.log(quote[6]);\n```",
+                "answers": [
+                  {
+                    "id": "a1479870239382",
+                    "text": "a",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1479870864673",
+                    "text": "w",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1479870865415",
+                    "text": "!",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1479870865980",
+                    "text": "h",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 195766,
+          "key": "d8adc140-b9ae-4f24-9aa3-63abe7bdb586",
+          "title": "Escaping Strings",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d8adc140-b9ae-4f24-9aa3-63abe7bdb586",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 195775,
+              "key": "47463c9d-60fb-4ea2-aa82-07521f38e1bb",
+              "title": "There are some cases where escaped charac",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Escaping strings\n\nThere are some cases where you might want to create a string that contains more than just numbers and letters. For example, what if you want to use quotes in a string? \n\n```js\n\"The man whispered, \"please speak to me.\"\"\n```\n> **Uncaught SyntaxError:** Unexpected identifier\n\nIf you try to use quotes within a string, you will receive a `SyntaxError` like the one above.\n\nBecause you need to use quotes to denote the beginning and end of strings, the JavaScript engine misinterprets the meaning of your string by thinking `\"The man whispered, \"` is the string. Then, it sees the remaining `please speak to me.\"\"` and returns a `SyntaxError`.\n\nIf you want to use quotes _inside a string_, and have JavaScript not misunderstand your intentions, you’ll need a different way to write quotes. Thankfully, JavaScript has a way to do this using the backslash character ( `\\` ).",
+              "instructor_notes": ""
+            },
+            {
+              "id": 208278,
+              "key": "b0a7a5d4-7146-40b1-befa-f843cc49b787",
+              "title": "Escaping Characters Bad",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "<div style=\"text-align: center; color: #afafaf; font-size: 14px; margin-top: 15px;\">If you forget to use the backslash to escape characters, then the JavaScript engine can misinterpret your strings.</div>",
+              "video": {
+                "youtube_id": "BCIVwz6pypY",
+                "china_cdn_id": "BCIVwz6pypY.mp4"
+              }
+            },
+            {
+              "id": 206354,
+              "key": "7102a21e-5269-4d7e-81a0-d7a552b36416",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Escaping characters\n\nIn JavaScript, you use the backslash to **escape** other characters.\n\n_Escaping a character_ tells JavaScript to ignore the character's special meaning and just use the literal value of the character. This is helpful for characters that have special meanings like in our previous example with quotes `\"…\"`.\n\nBecause quotes are used to signify the beginning and end of a string, you can use the backslash character to escape the quotes in order to access the literal quote character.\n\n```js\n\"The man whispered, \\\"please speak to me.\\\"\"\n```\n> **Returns:** The man whispered, \"please speak to me.\"\n\nThis guarantees that the JavaScript engine doesn’t misinterpret the string and result in an error.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 208279,
+              "key": "6acbcb6c-47cd-4829-8e3a-0f45e394001a",
+              "title": "Escaping Characters Good",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "<div style=\"text-align: center;\"><font color=\"#000066\"> Note - This video does not have an audio. It was created as a visual to aid learning. </font> </div><div style=\"text-align: center; color: #afafaf; font-size: 14px; margin-top: 15px;\">By using the backslash to escape characters, the JavaScript engine can understand the meaning of your strings.</div>",
+              "video": {
+                "youtube_id": "OvhMwgbUTMQ",
+                "china_cdn_id": "OvhMwgbUTMQ.mp4"
+              }
+            },
+            {
+              "id": 195785,
+              "key": "b447bbd8-4962-4a2f-8533-643f12ca403c",
+              "title": "The last two special characte",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Special characters\n\nQuotes aren’t the only **special characters** that need to be escaped, there’s actually [quite a few](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Using_special_characters_in_strings). However, to keep it simple, here’s a list of some common special characters in JavaScript.\n\n| **Code** | **Character**     |\n|----------|-------------------|\n| \\\\\\\\       | \\ (backslash)     |\n| \\\"       | '' (double quote) |\n| \\'       | ' (single quote)  |\n| \\n       | newline           |\n| \\t       | tab               |\n\nThe last two characters listed in the table, newline `\\n` and tab `\\t`, are unique because they add additional **whitespace** to your Strings. A newline character will add a line break and a tab character will advance your line to the next [tab stop](https://en.wikipedia.org/wiki/Tab_stop).\n\n```js\n\"Up up\\n\\tdown down\"\n```\n> **Returns:**<br>\nUp up<br>\n&emsp;down down",
+              "instructor_notes": ""
+            },
+            {
+              "id": 206370,
+              "key": "bc40038a-0fe6-4ae5-8d10-e7e6e1ed54c1",
+              "title": "Select the string",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "bc40038a-0fe6-4ae5-8d10-e7e6e1ed54c1",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Select the string that returns the following output:\n```text\n\"The file located at \"C:\\\\Desktop\\My Documents\\Roster\\names.txt\" contains the names on the roster.\"\n```",
+                "answers": [
+                  {
+                    "id": "a1479191705190",
+                    "text": "`\"The file located at \"C:\\\\Desktop\\My Documents\\Roster\\names.txt\" contains the names on the roster.\"`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1479192429707",
+                    "text": "`\"The file located at \\\"C:\\\\Desktop\\My Documents\\Roster\\names.txt\\\" contains the names on the roster.\"`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1479192438320",
+                    "text": "`\"The file located at \\\"C:\\\\\\\\Desktop\\\\My Documents\\\\Roster\\\\names.txt\\\" contains the names on the roster.\"`",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 195791,
+          "key": "3c9feefc-71f8-4d03-97a2-97f9386a53fb",
+          "title": "Comparing Strings",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "3c9feefc-71f8-4d03-97a2-97f9386a53fb",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 195792,
+              "key": "91965adc-1ff0-44ff-ad3f-54c6eba43f94",
+              "title": " Comparing Strings",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Comparing strings\n\nAnother way to work with strings is by comparing them. You've seen the comparison operators `==` and `!=` when you compared numbers for equality. You can also use them with strings! For example, let’s compare the string `\"Yes\"` to `\"yes\"`.\n\n```js\n\"Yes\" == \"yes\"\n```\n> **Returns:** false\n\nWhen you run this in the console, it returns false. Why is that? `\"Yes\"` and `\"yes\"` are the same string, right? Well not quite.\n\n### A. Case-sensitive\n\nWhen you compare strings, case matters. While both string use the same letters (and those letters appear in the same order), the first letter in the first string is a capital `Y` while the first letter in the second string is a lowercase `y`.\n\n```js\n'Y' != 'y'\n```\n> **Returns:** true",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1013200,
+              "key": "3e5760f8-6a17-4f30-9591-0d9d23e2e92b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### B. Internal Working\nIn Javascript, strings are compared character-by-character in alphabetical order. Each character has a specific ***numeric*** value, coming from [ASCII value of Printable characters](https://en.wikipedia.org/wiki/ASCII#Printable_characters). For example, the character 'A'  has a value 65, and 'a' has a value 97. You can notice that a lowercase letter has a higher ASCII value than the uppercase character. If you want to know the ASCII value of a particular character, you can try running the code below:\n```Javascript\n// Pick a string. Your string can have any number of characters.\nvar my_string = \"a\";\n\n// Calculate the ASCII value of the first character, i.e. the character at the position 0. \nvar ASCII_value = my_string.charCodeAt(0);\n\n// Let us print\nconsole.log(ASCII_value);\n```\nIn the example above, if you wish to print ASCII values of all the characters in your string, you would have to use ***Loops*** that we will study in later part of this course. Just for reference, here is how you can use a loop to print the ASCII value of all characters in a string.  \n\n```Javascript\nvar my_string = \"Udacity\";\n\n// Iterate using a Loop\nfor (var i = 0; i < my_string.length; i++) {\n  console.log(my_string.charCodeAt(i));\n}\n\n```\nThe ASCII values of [A-Z] fall in the range [65-90], whereas, the ASCII values of [a-z] fall in the range [97-122]. \n**Therefore, when we compare strings, the comparison happens character-by-character for the ASCII values. **",
+              "instructor_notes": ""
+            },
+            {
+              "id": 195793,
+              "key": "8c17dea4-7629-4b2c-9b2e-1bbf780c99ef",
+              "title": "Which Comparisons Are True?",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "8c17dea4-7629-4b2c-9b2e-1bbf780c99ef",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Enter each expression into the console. Check the ones that evaluate to `true`.\n",
+                "answers": [
+                  {
+                    "id": "a1476149776337",
+                    "text": "\"green\" == \"blue\"",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1476149802651",
+                    "text": "\"green\" == \"green\"",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1476149808343",
+                    "text": "\"green\" == \"Green\"",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1476149813981",
+                    "text": "\"Green\" == \"green\"",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1476149818897",
+                    "text": "\"green\" > \"blue\"",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1476149824633",
+                    "text": "\"green\" > \"green\"",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1476149829370",
+                    "text": "\"green\" > \"Green\"",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1476149834370",
+                    "text": "\"Green\" > \"green\"",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 205358,
+          "key": "57b2d4f9-c79a-45dd-898f-ac62440d882b",
+          "title": "Quiz: Favorite Food (2-3)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "57b2d4f9-c79a-45dd-898f-ac62440d882b",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 215825,
+              "key": "c39c9633-d603-4f9b-978d-0049d23e43e2",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Directions:\n\nCreate a string with the name of your favorite food. The first letter of the string should be capitalized.\n\n## Your Code:\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 205382,
+              "key": "52b62d24-3476-4058-a20e-3cf15d48a69c",
+              "title": "",
+              "semantic_type": "QuizAtom",
+              "is_public": true,
+              "instructor_notes": "\n\n",
+              "user_state": {
+                "node_key": "52b62d24-3476-4058-a20e-3cf15d48a69c",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "instruction": null,
+              "question": {
+                "title": "",
+                "semantic_type": "ProgrammingQuestion",
+                "evaluation_id": "6306906656342016",
+                "initial_code_files": [
+                  {
+                    "text": "/*\n * Programming Quiz: Favorite Food (2-3)\n */\n\n/*\n * QUIZ REQUIREMENTS\n * 1. Your code should print a string with your favorite food\n * 2. Your code should have the first character capitalized\n * 3. Your code must have a `console.log()` function\n * 4. Your code should not be empty\n */\nconsole.log(/* replace this comment with your string */);\n",
+                    "name": "StudentMain.js"
+                  }
+                ]
+              },
+              "answer": null
+            },
+            {
+              "id": 1013201,
+              "key": "48adc48b-e67c-483b-89e3-801741c9cd2d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<font color=\"#000066\"> Note - We check your solution against a limited set of ***test-cases*** that check the minimum requirements, as mentioned in the quiz.</font>",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1013202,
+              "key": "24010b10-968f-4e3b-bf5d-ca119a1f5b2f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<div id=\"spoiler_1\" style=\"display:none\">\n#### <font color=\"green\">Here is one of the possible solutions:</font>\n\n```Javascript\nconsole.log(\"Pizza\");\n```\n</div>\n<button type=\"button\" id=\"myButton1\" onclick=\"if(document.getElementById('spoiler_1') .style.display=='none') {document.getElementById('spoiler_1') .style.display=''}else{document.getElementById('spoiler_1') .style.display='none'}if (document.getElementById('myButton1').innerHTML=='Show Solution') {document.getElementById('myButton1').innerHTML='Hide Solution';}else{document.getElementById('myButton1').innerHTML = 'Show Solution';}\">Show Solution</button>\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 205394,
+          "key": "1094e5d1-4986-42e5-9777-fa43d269ec81",
+          "title": "Quiz: String Equality for All (2-4)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "1094e5d1-4986-42e5-9777-fa43d269ec81",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 216066,
+              "key": "c2e37c0a-9c5e-4c08-b2ca-ddae3efc8a3c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Directions:\nFix the right side expression so it evaluates to `true`.\n\n```\n\"ALL Strings are CrEaTeD equal\" == \"All STRINGS are CrEaTED Equal\"\n```\n\n## Your Code:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 205395,
+              "key": "739049d1-58c5-458e-8a5c-1c041db31bb1",
+              "title": "",
+              "semantic_type": "QuizAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "user_state": {
+                "node_key": "739049d1-58c5-458e-8a5c-1c041db31bb1",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "instruction": null,
+              "question": {
+                "title": "",
+                "semantic_type": "ProgrammingQuestion",
+                "evaluation_id": "5666269334470656",
+                "initial_code_files": [
+                  {
+                    "text": "/*\n * Programming Quiz: String Equality for All (2-4)\n *\n * QUIZ REQUIREMENTS\n * 1. Your code should have a variable `answer`\n * 2. Your code should have \"ALL Strings are CrEaTeD equal\" on the left side\n * 3. Your code should use `==` comparison operator\n * 4. The comparison should evaluate to true\n * 5. The right side of your expression should match the left side\n */\n \n// fix the right side of the expression\nvar answer = \"ALL Strings are CrEaTeD equal\" == \"All STRINGS are CrEaTED Equal\";\nconsole.log(answer);\n",
+                    "name": "StudentMain.js"
+                  }
+                ]
+              },
+              "answer": null
+            },
+            {
+              "id": 1013203,
+              "key": "dd435746-62c9-4448-b899-ec71caea1a83",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<font color=\"#000066\"> Note - We check your solution against a limited set of ***test-cases*** that check the minimum requirements, as mentioned in the quiz.</font>",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1013204,
+              "key": "13745916-3398-492d-bcff-515e0aaaa597",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n<div id=\"spoiler_1\" style=\"display:none\">\n#### <font color=\"green\">Here is one of the possible solutions:</font>\n\n```Javascript\nvar answer = \"ALL Strings are CrEaTeD equal\" == \"ALL Strings are CrEaTeD equal\";\nconsole.log(answer);\n```\n</div>\n<button type=\"button\" id=\"myButton1\" onclick=\"if(document.getElementById('spoiler_1') .style.display=='none') {document.getElementById('spoiler_1') .style.display=''}else{document.getElementById('spoiler_1') .style.display='none'}if (document.getElementById('myButton1').innerHTML=='Show Solution') {document.getElementById('myButton1').innerHTML='Hide Solution';}else{document.getElementById('myButton1').innerHTML = 'Show Solution';}\">Show Solution</button>\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 205398,
+          "key": "5a82b56c-8c1e-40e4-acc9-cc396fbfb439",
+          "title": "Quiz: All Tied Up (2-5)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5a82b56c-8c1e-40e4-acc9-cc396fbfb439",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 216097,
+              "key": "55cf7abf-b2df-41f0-bb5f-ffc41a7a8965",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Directions:\n\nBuild a single string that resembles the following joke.\n\n```text\nWhy couldn't the shoes go out and play?\nThey were all \"tied\" up!\n```\n\nYour joke should take the format of a **question** and **answer**. The first line should be a question and the second line should be an answer.\n\n**Hint:** _You will need to use special characters to produce the following output._\n\n## Your Code:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 205399,
+              "key": "6e8f2491-1c76-4e97-a4e6-935abcf1380c",
+              "title": "",
+              "semantic_type": "QuizAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "user_state": {
+                "node_key": "6e8f2491-1c76-4e97-a4e6-935abcf1380c",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "instruction": null,
+              "question": {
+                "title": "",
+                "semantic_type": "ProgrammingQuestion",
+                "evaluation_id": "6203190074802176",
+                "initial_code_files": [
+                  {
+                    "text": "/*\n * Programming Quiz: All Tied Up (2-5)\n \n * Quiz Requirements\n * 1. Your code should have a variable joke\n * 2. Your joke should use only one string\n * 3. Your joke should match the expected format\n*/\nvar joke = /* write your joke here */\nconsole.log(joke);\n",
+                    "name": "StudentMain.js"
+                  }
+                ]
+              },
+              "answer": null
+            },
+            {
+              "id": 1012561,
+              "key": "09b56795-40a0-4be3-b5c3-36fcd503494a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<font color=\"#000066\"> Note - We check your solution against a limited set of ***test-cases*** that check the minimum requirements, as mentioned in the quiz.</font>",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1011973,
+              "key": "bf58e084-c82d-4150-8372-4c34a2f358dd",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<div id=\"spoiler_1\" style=\"display:none\">\n#### <font color=\"green\">Here is one of the possible solutions:</font>\n```Javascript\nvar joke = \"Why couldn't the shoes go out and play? \\n They were all \\\"tied\\\" up\\!\"\nconsole.log(joke);\n```\n</div>\n<button type=\"button\" id=\"myButton1\" onclick=\"if(document.getElementById('spoiler_1') .style.display=='none') {document.getElementById('spoiler_1') .style.display=''}else{document.getElementById('spoiler_1') .style.display='none'}if (document.getElementById('myButton1').innerHTML=='Show Solution') {document.getElementById('myButton1').innerHTML='Hide Solution';}else{document.getElementById('myButton1').innerHTML = 'Show Solution';}\">Show Solution</button>\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 206463,
+          "key": "69fa04db-4a01-443b-89f5-e60626379ef9",
+          "title": "Quiz: Yosa Buson (2-6)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "69fa04db-4a01-443b-89f5-e60626379ef9",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 215819,
+              "key": "eea3f14b-d2fb-478d-afba-6acb7efaf414",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Directions:\n\nBuild a string using concatenation by combining the lines from this famous haiku poem by [Yosa Buson](https://en.wikipedia.org/wiki/Yosa_Buson).\n\n```text\nBlowing from the west\nFallen leaves gather\nIn the east.\n```\n\nEach string should be printed on its own line. \n\n**Hint:** _You will need to use special characters to produce the following output. For a refresher, feel free to review the previous **Escaping Strings** topic in this lesson._\n\n## Your Code:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 215820,
+              "key": "ae5ba75c-d3a8-4201-b7e2-d1dc813bcb7b",
+              "title": "",
+              "semantic_type": "QuizAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "user_state": {
+                "node_key": "ae5ba75c-d3a8-4201-b7e2-d1dc813bcb7b",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "instruction": null,
+              "question": {
+                "title": "",
+                "semantic_type": "ProgrammingQuestion",
+                "evaluation_id": "4996765520625664",
+                "initial_code_files": [
+                  {
+                    "text": "/*\n * Programming Quiz: Yosa Buson (2-6)\n */\n \n/*\n * QUIZ REQUIREMENTS\n * 1. Your code should have a variable `haiku`\n * 2. Your code should use string concatenation\n * 3. Your poem should match the famous haiku poem\n */\n\nvar haiku = /* concatenate the strings here */\nconsole.log(haiku);\n",
+                    "name": "StudentMain.js"
+                  }
+                ]
+              },
+              "answer": null
+            },
+            {
+              "id": 1013205,
+              "key": "b582bfd4-1fba-4b96-af7e-d29bb415d2e2",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<font color=\"#000066\"> Note - We check your solution against a limited set of ***test-cases*** that check the minimum requirements, as mentioned in the quiz.</font>",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1013206,
+              "key": "ac56ceee-7740-458e-8e28-976523f6e03a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<div id=\"spoiler_1\" style=\"display:none\">\n#### <font color=\"green\">Here is one of the possible solutions:</font>\n\n```Javascript\nvar haiku = \"Blowing from the west\"+\"\\nFallen leaves gather\"+\"\\nIn the east.\"\nconsole.log(haiku);\n```\n</div>\n<button type=\"button\" id=\"myButton1\" onclick=\"if(document.getElementById('spoiler_1') .style.display=='none') {document.getElementById('spoiler_1') .style.display=''}else{document.getElementById('spoiler_1') .style.display='none'}if (document.getElementById('myButton1').innerHTML=='Show Solution') {document.getElementById('myButton1').innerHTML='Hide Solution';}else{document.getElementById('myButton1').innerHTML = 'Show Solution';}\">Show Solution</button>\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 196059,
+          "key": "de395b73-8bbc-4d13-85bb-9d3f75141ecd",
+          "title": "Booleans",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "de395b73-8bbc-4d13-85bb-9d3f75141ecd",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 254893,
+              "key": "2eedca3a-ae78-45b3-9a27-356874632145",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Booleans",
+              "instructor_notes": ""
+            },
+            {
+              "id": 232955,
+              "key": "a6bc4085-ff9e-4d4e-b767-35c5f2f0fd57",
+              "title": "Booleans",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "fevWjIsdnBg",
+                "china_cdn_id": "fevWjIsdnBg.mp4"
+              }
+            },
+            {
+              "id": 1015281,
+              "key": "84197cf7-23b6-4ef0-8f21-18ef3abe0219",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "A boolean variable can take either of two values - `true` or `false`. For example, \n```js\nvar studentName = \"John\";\nvar haveEnrolledInCourse = true;\nvar haveCompletedTheCourse = false;\n```\nA boolean variable is mainly essential in evaluating the outcome of conditionals (comparisons). ***The result of a comparison is always a boolean variable***. We'll study conditionals in our upcoming lesson, but let's look at our previous example to understand the role of boolean in conditional:\n```js\nif (haveEnrolledInCourse){ \n\tconsole.log(\"Welcome \"+studentName+\" to Udacity!\"); // Will run only if haveEnrolledInCourse is true\n}\n```\nLet's look at an example that will explain the role of a boolean variable in comparison.\n```js\nvar a = 10;\nvar b = 20;\n// a comparison - we will study this in detail in upcoming lesson\nif (a>b) // The outcome of a>b will be a boolean\n\tconsole.log(\"Variable `a` has higher value\"); // if a>b is true\nelse \n\tconsole.log(\"Variable `b` has higher value\"); // if a>b is false\n```\nIn general cases (regular equality check), a `true` corresponds to number 1, whereas `false` represents a number 0.  For example:\n```js\nif(1){\n\tconsole.log(\"This statement will always execute because conditional is set to 1 i.e., true\");\n}\n\nif(0){\n        console.log(\"This statement will NEVER execute because conditional is set to 0 i.e., false\");\n}\n```",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 220467,
+          "key": "071e3541-983b-4dae-9f60-cb89d362b640",
+          "title": "Quiz: Facebook Post (2-7)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "071e3541-983b-4dae-9f60-cb89d362b640",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 230084,
+              "key": "3ce3ca89-6277-472b-88a2-ce4983cf804b",
+              "title": "Facebook Post",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "3ce3ca89-6277-472b-88a2-ce4983cf804b",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Look at the picture below and identify which data type (Numbers, Strings, Booleans) would best represent the highlighted areas. \n\n**Hint:** They’re not all Strings.\n\n![udacity facebook post](https://d17h27t6h515a5.cloudfront.net/topher/2016/November/582b5e26_quiz-data-types/quiz-data-types.png)"
+                },
+                "concepts_label": "Letter",
+                "answers_label": "Type",
+                "concepts": [
+                  {
+                    "text": "**A** - Udacity",
+                    "correct_answer": {
+                      "id": "a1481766693019",
+                      "text": "String"
+                    }
+                  },
+                  {
+                    "text": "**B** - Meet Christian Plagemann, team lead for the new VR Developer Nanodegree program at Udacity! Here he is introducing and describing our latest offering",
+                    "correct_answer": {
+                      "id": "a1481766789827",
+                      "text": "String"
+                    }
+                  },
+                  {
+                    "text": "**C** - blog.udacity.com",
+                    "correct_answer": {
+                      "id": "a1481766811146",
+                      "text": "String"
+                    }
+                  },
+                  {
+                    "text": "**D** - Whether something was \"liked\" or not.",
+                    "correct_answer": {
+                      "id": "a1481766817988",
+                      "text": "Boolean"
+                    }
+                  },
+                  {
+                    "text": "**E** - 80",
+                    "correct_answer": {
+                      "id": "a1481766820977",
+                      "text": "Number"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1481766811146",
+                    "text": "String"
+                  },
+                  {
+                    "id": "a1481766789827",
+                    "text": "String"
+                  },
+                  {
+                    "id": "a1481766817988",
+                    "text": "Boolean"
+                  },
+                  {
+                    "id": "a1481766820977",
+                    "text": "Number"
+                  },
+                  {
+                    "id": "a1481766693019",
+                    "text": "String"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 195808,
+          "key": "cc46fa63-4710-45f8-9f88-dfa778cfb6d3",
+          "title": "Null, Undefined, and NaN",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "cc46fa63-4710-45f8-9f88-dfa778cfb6d3",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 252828,
+              "key": "a1017346-3bc4-4faf-acc9-e7afe0f695e2",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Null, Undefined, and NaN",
+              "instructor_notes": ""
+            },
+            {
+              "id": 216618,
+              "key": "60eb51fb-e177-42f3-b62f-408f79428d14",
+              "title": "Difference between Null and Undefined",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "<div style=\"text-align: center; color: #afafaf; font-size: 14px; margin-top: 15px;\">`null` refers to the \"value of nothing\", while `undefined` refers to the \"absence of value\".</div>",
+              "video": {
+                "youtube_id": "9q2OJf44fbo",
+                "china_cdn_id": "9q2OJf44fbo.mp4"
+              }
+            },
+            {
+              "id": 229968,
+              "key": "411e020a-abf8-4159-a92b-6dbdf32b3824",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## What is NaN?\n\n`NaN` stands for \"Not-A-Number\" and it's often returned indicating an error with number operations. For instance, if you wrote some code that performed a math calculation, and the calculation failed to produce a valid number, `NaN` might be returned.\n\n```\n// calculating the square root of a negative number will return NaN\nMath.sqrt(-10)\n\n// trying to divide a string by 5 will return NaN\n\"hello\"/5\n```\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 206507,
+              "key": "aa8e27d5-a4aa-48dc-856e-abec2fa5f744",
+              "title": "What will be printed out?",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "aa8e27d5-a4aa-48dc-856e-abec2fa5f744",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What will be printed out?\n\n```\nvar signedIn;\nconsole.log(signedIn);\n```",
+                "answers": [
+                  {
+                    "id": "a1479239598496",
+                    "text": "undefined",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1479239616790",
+                    "text": "null",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1479239624169",
+                    "text": "NaN",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1479239628418",
+                    "text": "error",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 195726,
+          "key": "94506cb0-bfd1-433e-9f33-7455bea885ed",
+          "title": "Equality",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "94506cb0-bfd1-433e-9f33-7455bea885ed",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 195797,
+              "key": "c87951ff-78ea-4b9f-9297-615d9adb55e3",
+              "title": "Implicit Type Coercion",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Equality\n\nSo far, you’ve seen how you can use `==` and `!=` to compare numbers and strings for equality. However, if you use `==` and `!=` in situations where the values that you're comparing have different data-types, it can lead to some interesting results. For example,\n\n```js\n\"1\" == 1\n```\n> **Returns:** true\n\nand\n\n```js\n0 == false\n```\n> **Returns:** true. The `== ` operator is unable to differentiate 0 from false.\n\n```js\n' ' == false\n```\n> **Returns:** true. Both the operands on either side of the `==` operator are first converted to zero, before comparison. \n\nAll of the above three evaluate to true. The reason for such interesting outcomes is ***Type Conversion***.  In the case of regular comparison,  the operands on either side of the `==` operator are first converted to numbers,  before comparison. Therefore, a `' '`, `false`, and `0` are all considered equal. Similarly, a `'1'` and `1` are also considered equal. If we don't want to convert the operands, before comparison, we have to use a **strict comparison** `=== `, that is explained below. \n\n## Implicit type coercion\n\nJavaScript is known as a _loosely typed language_.\n\nBasically, this means that when you’re writing JavaScript code, you do not need to specify data types. Instead, when your code is interpreted by the JavaScript engine it will automatically be converted into the \"appropriate\" data type. This is called *implicit type coercion* and you’ve already seen examples like this before when you tried to concatenate strings with numbers.\n\n```js\n\"julia\" + 1\n```\n> **Returns:** \"julia1\"\n\nIn this example, JavaScript takes the string `\"julia\"` and adds the number `1` to it resulting in the string `\"julia1\"`. In other programming languages, this code probably would have returned an error, but in JavaScript the number `1` is converted into the string `\"1\"` and then is concatenated to the string `\"julia\"`.\n\nIt’s behavior like this which makes JavaScript unique from other programming languages, but it can lead to some quirky behavior when doing operations and comparisons on mixed data types.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 206466,
+              "key": "15bb8e84-c432-4731-aa3a-cb416847b4b8",
+              "title": "Will this convert?",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "15bb8e84-c432-4731-aa3a-cb416847b4b8",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What value do you think the result of `\"Hello\" % 10` will be?",
+                "answers": [
+                  {
+                    "id": "a1479235628440",
+                    "text": "0",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1479235769782",
+                    "text": "\"Hello10\"",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1479235776675",
+                    "text": "10",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1479235781149",
+                    "text": " SyntaxError",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1479235785882",
+                    "text": " NaN",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 195798,
+              "key": "8118283d-94b9-4798-b36d-db31c1343276",
+              "title": "callout",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "> **DEFINITION:**  A **strongly typed language** is a programming language that is more likely to generate errors if data does not closely match an expected type. Because JavaScript is loosely typed, you don’t need to specify data types; however, this can lead to errors that are hard to diagnose due to implicit type coercion. \n\n**Example of strongly typed programming language code**\n```\nint count = 1;\nstring name = \"Julia\";\ndouble num = 1.2932;\nfloat price = 2.99;\n```\n**Equivalent code in JavaScript**\n```\n// equivalent code in JavaScript\nvar count = 1; \nvar name = \"Julia\";\nvar num = 1.2932;\nvar price = 2.99;\n```\n\nIn the example below, JavaScript takes the string `\"1\"`, converts it to `true`, and compares it to the boolean `true`.\n\n```js\n\"1\" == true\n```\n> **Returns:** true\n\nWhen you use the `==` or `!=` operators, JavaScript first converts each value to the same type (if they’re not already the same type); this is why it's called \"type coercion\"! This is often not the behavior you want, and **it’s actually considered bad practice to use the `==` and `!=` operators when comparing values for equality**. \n\n## Strict equality\n\nInstead, in JavaScript it’s better to use **strict equality** to see if numbers, strings, or booleans, etc. are identical in _type_ and _value_ without doing the type conversion first. To perform a strict comparison, simply add an additional equals sign `=` to the end of the `==` and `!=` operators.\n\n```js\n\"1\" === 1\n```\n> **Returns:** false\n\nThis returns false because the string `\"1\"` is not the same type _and_ value as the number `1`.\n\n```js\n0 === false\n```\n> **Returns:** false\n\nThis returns false because the number `0` is not the same type _and_ value as the boolean `false`. Just like strict equality operator, there is also a ***strict non-equality*** operator `!==` that can be used instead of `!=` if you don't want a type-conversion, before comparison. For example, \n```js\n0 !== true\n```\n> **Returns:** true\n\nand \n```js\n'1' !== 1\n```\n> **Returns:** true\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 195800,
+              "key": "15e6b695-262a-47a6-b4f8-8018c954eb75",
+              "title": "Identify the True Expressions",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "15e6b695-262a-47a6-b4f8-8018c954eb75",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Check the expressions that evaluate to `true`.\n",
+                "answers": [
+                  {
+                    "id": "a1476150322026",
+                    "text": "\"3\" > 1",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1476150349860",
+                    "text": "3 != \"3\"",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1476150350616",
+                    "text": "true >= 0",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1476150351168",
+                    "text": "1 !== false",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1476150351704",
+                    "text": "\"false\" === 0",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1476150352240",
+                    "text": "3 === 3",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 206485,
+          "key": "2c5e7a00-fdb9-4617-828f-5c870da31636",
+          "title": "Quiz: Semicolons! (2-8)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "2c5e7a00-fdb9-4617-828f-5c870da31636",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 206486,
+              "key": "03c6dd90-763f-49d2-b373-bba9e465244e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "One thing to take notice of in all the examples you've seen so far is the use of semicolons `;` at the end of each line. Semicolons make it clear where one statement ends and another begins. This is especially handy when multiple lines of code are written on the same line (which is valid JavaScript, but definitely not recommended!). For instance:\n\n```js\nvar totalAfterTax = 53.03 var tip = 8 // this is incorrect!\n```\n> **Uncaught SyntaxError:** Unexpected token var\n\nvs.\n\n```js\nvar totalAfterTax = 53.03; var tip = 8; // this is correct!\n```\n\nNot adding semicolons to the end of each line _can_ cause bugs and errors in your programs. JavaScript does have ways to _occasionally_ predict where semicolons _should_ be, but just like how type coercion can result in some unexpected quirky behavior in JavaScript, it's good practice to not depend on it.\n\n## Directions for the Quiz Below:\n\nDefine two variables called `thingOne` and `thingTwo` and assign them values. Print the values of both variables in **one** `console.log` statement using **concatenation**. For example,\n\n```text\nred blue\n```\n\nwhere `\"red\"` is the value of `thingOne` and `\"blue\"` is the value of `thingTwo`. **Don't forget to use semicolon at the end of each statement**!\n\n## Your Code:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 206504,
+              "key": "41c082ad-c4b7-4d53-b396-02ebac14ddf3",
+              "title": "",
+              "semantic_type": "QuizAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "user_state": {
+                "node_key": "41c082ad-c4b7-4d53-b396-02ebac14ddf3",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "instruction": null,
+              "question": {
+                "title": "Semicolon Quiz",
+                "semantic_type": "ProgrammingQuestion",
+                "evaluation_id": "4642564013686784",
+                "initial_code_files": [
+                  {
+                    "text": "/*\n * Programming Quiz: Semicolons! (2-8)\n */\n\n/*\n * QUIZ REQUIREMENTS\n * 1. Your code should have two variables -  `thingOne` and `thingTwo`\n * 2. Your code should only have one `console.log` statement\n * 3. Your code should print out the values of `thingOne` and `thingTwo` using concatenation\n * 4. Your code should contain semicolons at the end of each line\n */\n",
+                    "name": "StudentMain.js"
+                  }
+                ]
+              },
+              "answer": null
+            },
+            {
+              "id": 1013207,
+              "key": "141b0421-a5c1-49bf-97ae-10e389467ee3",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<font color=\"#000066\"> Note - We check your solution against a limited set of ***test-cases*** that check the minimum requirements, as mentioned in the quiz.</font>",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1013208,
+              "key": "faf717f3-14b9-4e98-a641-a8b44913bb72",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n<div id=\"spoiler_1\" style=\"display:none\">\n#### <font color=\"green\">Here is one of the possible solutions:</font>\n\n```Javascript\nvar thingOne = \"Text One\";\nvar thingTwo = \"Text Two\";\nconsole.log(thingOne + \" \" + thingTwo);\n```\n</div>\n<button type=\"button\" id=\"myButton1\" onclick=\"if(document.getElementById('spoiler_1') .style.display=='none') {document.getElementById('spoiler_1') .style.display=''}else{document.getElementById('spoiler_1') .style.display='none'}if (document.getElementById('myButton1').innerHTML=='Show Solution') {document.getElementById('myButton1').innerHTML='Hide Solution';}else{document.getElementById('myButton1').innerHTML = 'Show Solution';}\">Show Solution</button>\n\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 206508,
+          "key": "bbd404b6-2d49-4c9c-9606-e0bc5ca1e224",
+          "title": "Quiz: What's my Name? (2-9)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "bbd404b6-2d49-4c9c-9606-e0bc5ca1e224",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 216406,
+              "key": "7676b7e2-39ee-423b-9f09-2613f98706ef",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Directions:\n\nCreate a variable called `fullName` and assign it your full name as a string.\n\n## Your Code:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 206509,
+              "key": "8304a4c0-5eb6-4b19-8bff-a7808532de38",
+              "title": "",
+              "semantic_type": "QuizAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "user_state": {
+                "node_key": "8304a4c0-5eb6-4b19-8bff-a7808532de38",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "instruction": null,
+              "question": {
+                "title": "",
+                "semantic_type": "ProgrammingQuestion",
+                "evaluation_id": "6671455561580544",
+                "initial_code_files": [
+                  {
+                    "text": "/*\n * Programming Quiz: What's my Name? (2-9)\n */\n\n/*\n * QUIZ REQUIREMENTS\n * 1. Your code should have a variable `fullName`\n * 2. Your variable `fullName` should be declared using the `var` keyword\n * 3. Your variable `fullName` should be a non-empty string\n */\n \n// your code goes here\n",
+                    "name": "StudentMain.js"
+                  }
+                ]
+              },
+              "answer": null
+            },
+            {
+              "id": 1013393,
+              "key": "eadc6832-9d0c-4b32-afa9-855b92b6ac1e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<font color=\"#000066\"> Note - We check your solution against a limited set of ***test-cases*** that check the minimum requirements, as mentioned in the quiz.</font>",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1013394,
+              "key": "ed1d7dfa-3c68-4ceb-9dc1-2d40e1a58c75",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n<div id=\"spoiler_1\" style=\"display:none\">\n#### <font color=\"green\">Here is one of the possible solutions:</font>\n\n```Javascript\nvar fullName = \"Udacity Inc\";\n```\n</div>\n<button type=\"button\" id=\"myButton1\" onclick=\"if(document.getElementById('spoiler_1') .style.display=='none') {document.getElementById('spoiler_1') .style.display=''}else{document.getElementById('spoiler_1') .style.display='none'}if (document.getElementById('myButton1').innerHTML=='Show Solution') {document.getElementById('myButton1').innerHTML='Hide Solution';}else{document.getElementById('myButton1').innerHTML = 'Show Solution';}\">Show Solution</button>\n\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 206512,
+          "key": "fd9cb0be-5118-4855-ac43-d37a34be8709",
+          "title": "Quiz: Out to Dinner (2-10)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "fd9cb0be-5118-4855-ac43-d37a34be8709",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 216420,
+              "key": "0e828a74-dbff-44e7-a379-0288f4442621",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Directions:\nCreate a variable called `bill` and assign it the result of `10.25 + 3.99 + 7.15` (don't perform the calculation yourself, let JavaScript do it!). Next, create a variable called `tip` and assign it the result of multiplying `bill` by a 15% tip rate. Finally, add the `bill` and `tip` together and store it into a variable called `total`.\n\nPrint the `total` to the JavaScript console.\n\n**Hint:** _15% in decimal form is written as_ `0.15`_._\n\n> **TIP:** To print out the `total` with a dollar sign ( `$` ) use string concatenation. To round `total` up by two decimal points use the `toFixed()` method. To use `toFixed()` pass it the number of decimal points you want to use. For example, if `total` equals `3.9860`, then `total.toFixed(2)` would return `3.99`.\n\n## Your Code:\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 206513,
+              "key": "6e66f66b-cf48-4b54-8608-a2152cfda96e",
+              "title": "",
+              "semantic_type": "QuizAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "user_state": {
+                "node_key": "6e66f66b-cf48-4b54-8608-a2152cfda96e",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "instruction": null,
+              "question": {
+                "title": "",
+                "semantic_type": "ProgrammingQuestion",
+                "evaluation_id": "6646752520306688",
+                "initial_code_files": [
+                  {
+                    "text": "/*\n * Programming Quiz: Out to Dinner (2-10)\n */\n/*\n * QUIZ REQUIREMENTS\n * 1. Your code should have the variables - `bill`, `tip`, and `total`\n * 2. Your variables - `bill`, `tip`, and `total` should be declared using the `var` keyword\n * 3. Your variable `bill` should be a number, having a value equal to the result of `10.25 + 3.99 + 7.15`\n * 4. Your variable `tip` should be a number, having a value equal to 15% of the `bill`\n * 5. Your variabe `total` should be a number, having a value equal to the `bill` and `tip` added together\n * 6. Your code should print the total to the console\n */\n \n// your code goes here\n",
+                    "name": "StudentMain.js"
+                  }
+                ]
+              },
+              "answer": null
+            },
+            {
+              "id": 1013396,
+              "key": "746bea87-0053-44dc-8bb0-882a2015e10a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<font color=\"#000066\"> Note - We check your solution against a limited set of ***test-cases*** that check the minimum requirements, as mentioned in the quiz.</font>",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1013397,
+              "key": "4c2620a0-761f-4075-baf8-58d4134a8e62",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n<div id=\"spoiler_1\" style=\"display:none\">\n#### <font color=\"green\">Here is one of the possible solutions:</font>\n\n```Javascript\nvar bill = 10.25 + 3.99 + 7.15;\nvar tip = 0.15 * bill;\nvar total = bill + tip;\nconsole.log(\"$\"+total);\n// You can simply print the total, without the currency symbol \n// console.log(total);\n```\n</div>\n<button type=\"button\" id=\"myButton1\" onclick=\"if(document.getElementById('spoiler_1') .style.display=='none') {document.getElementById('spoiler_1') .style.display=''}else{document.getElementById('spoiler_1') .style.display='none'}if (document.getElementById('myButton1').innerHTML=='Show Solution') {document.getElementById('myButton1').innerHTML='Hide Solution';}else{document.getElementById('myButton1').innerHTML = 'Show Solution';}\">Show Solution</button>\n\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 206521,
+          "key": "03beabe9-bc85-4fab-9af2-909321e8e416",
+          "title": "Quiz: Mad Libs (2-11)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "03beabe9-bc85-4fab-9af2-909321e8e416",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 206522,
+              "key": "6f85a0ce-e26a-4a6e-8531-f4ac9d1372ad",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Directions:\n\n[Mad Libs](https://en.wikipedia.org/wiki/Mad_Libs) is a word game where players have fun substituting words for blanks in a story. For this exercise, use the adjective variables below to fill in the blanks and complete the following message.\n\n```js\n\"The Intro to JavaScript course is __________. James and Julia are so __________. I cannot wait to work through the rest of this __________ content!\"\n```\n\n```js\nvar adjective1 = \"amazing\";\nvar adjective2 = \"fun\";\nvar adjective3 = \"entertaining\";\n```\n\nAssign the resulting string to a variable called `madLib`.\n\n## Your Code:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 206523,
+              "key": "d841832c-9e34-47f4-9008-a1e00e5a4686",
+              "title": "",
+              "semantic_type": "QuizAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "user_state": {
+                "node_key": "d841832c-9e34-47f4-9008-a1e00e5a4686",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "instruction": null,
+              "question": {
+                "title": "",
+                "semantic_type": "ProgrammingQuestion",
+                "evaluation_id": "5536759561715712",
+                "initial_code_files": [
+                  {
+                    "text": "/*\n * Programming Quiz: MadLibs (2-11)\n * \n/*\n * QUIZ REQUIREMENTS\n * 1. Your code should have the variables - `adjective1`, `adjective2`, `adjective3`, and `madLib`.\n *\n * 2. Use the adjective1, adjective2, and adjective3 variables to set the madLib variable to the message:\n * 'The Intro to JavaScript course is amazing. James and Julia are so fun. I cannot wait to work through the rest of this entertaining content!'\n *\n * 3. Your madLib should match the given string\n * 4. The madLib variable should be printed to the console\n */\n \n // your code goes here\n",
+                    "name": "StudentMain.js"
+                  }
+                ]
+              },
+              "answer": null
+            },
+            {
+              "id": 1013401,
+              "key": "b67a0e19-d208-42dc-b038-2a31dcc21800",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<font color=\"#000066\"> Note - We check your solution against a limited set of ***test-cases*** that check the minimum requirements, as mentioned in the quiz.</font>",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1013402,
+              "key": "3d7b79bb-1232-4ddc-9d41-7f88d6c00b2c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n<div id=\"spoiler_1\" style=\"display:none\">\n#### <font color=\"green\">Here is one of the possible solutions:</font>\n\n```Javascript\nvar adjective1 = \"amazing\";\nvar adjective2 = \"fun\";\nvar adjective3 = \"entertaining\";\nvar madLib = \"The Intro to JavaScript course is \"+ adjective1 +\". James and Julia are so \"+ adjective2 +\". I cannot wait to work through the rest of this \"+ adjective3 +\" content!\";\nconsole.log(madLib);\n```\n</div>\n<button type=\"button\" id=\"myButton1\" onclick=\"if(document.getElementById('spoiler_1') .style.display=='none') {document.getElementById('spoiler_1') .style.display=''}else{document.getElementById('spoiler_1') .style.display='none'}if (document.getElementById('myButton1').innerHTML=='Show Solution') {document.getElementById('myButton1').innerHTML='Hide Solution';}else{document.getElementById('myButton1').innerHTML = 'Show Solution';}\">Show Solution</button>\n\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 206525,
+          "key": "3c43abc9-d9c6-4e55-bceb-08b119fff788",
+          "title": "Quiz: One Awesome Message (2-12)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "3c43abc9-d9c6-4e55-bceb-08b119fff788",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 206526,
+              "key": "67a06499-db6c-4ddd-9b26-24f6b5959379",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Directions:\n\nHere are two awesome messages:\n\n```text\nHi, my name is Julia. I love cats. In my spare time, I like to play video games.\nHi, my name is James. I love baseball. In my spare time, I like to read.\n```\n\nDeclare and assign values to three variables for each part of the sentence that changes (`firstName`, `interest`, and `hobby`).\n\nUse your variables and string concatenation to create your own awesome message and store it in an `awesomeMessage` variable. Finally, print your awesome message to the JavaScript console.\n\n## Your Code:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 206528,
+              "key": "5ced4227-54b5-4b67-af5c-57143fb0314b",
+              "title": "",
+              "semantic_type": "QuizAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "user_state": {
+                "node_key": "5ced4227-54b5-4b67-af5c-57143fb0314b",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "instruction": null,
+              "question": {
+                "title": "",
+                "semantic_type": "ProgrammingQuestion",
+                "evaluation_id": "5313427704774656",
+                "initial_code_files": [
+                  {
+                    "text": "/*\n * Programming Quiz: One Awesome Message (2-12)\n */\n\n/*\n * QUIZ REQUIREMENTS\n * 1. Create the following variables:\n *     - firstName\n *     - interest\n *     - hobby\n *\n * 2. Create `awesomeMessage` variable, and set it to a message using string concatenation and the variables above. The `awesomeMessage` variable should use `firstName`, `interest`, and `hobby`\n *\n * 3. The `awesomeMessage` variable should have the correct format, as shown below:\n * \"Hi, my name is _____. I love ______. In my spare time, I like to ______.\"\n *\n * 4. Print `awesomeMessage` variable to the console using log() method\n */\n \n /*\n * Example:\n * - Assuming, firstName would have been assigned to \"Julia\",\n *   interest to \"cats\", and hobby to \"play video games\" to produce the following message:\n * \n *   Hi, my name is Julia. I love cats. In my spare time, I like to play video games.\n *\n * - Be sure to include spaces and periods where necessary!\n */\n \n \n// Add your code here\n",
+                    "name": "StudentMain.js"
+                  }
+                ]
+              },
+              "answer": null
+            },
+            {
+              "id": 1013407,
+              "key": "589586c2-9bbb-4d02-8aa1-9607c285c227",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<font color=\"#000066\"> Note - We check your solution against a limited set of ***test-cases*** that check the minimum requirements, as mentioned in the quiz.</font>",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1013408,
+              "key": "eac2cb5f-47ae-4c83-b3e7-1d03ff2bbda0",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n<div id=\"spoiler_1\" style=\"display:none\">\n#### <font color=\"green\">Here is one of the possible solutions:</font>\n\n```Javascript\nvar firstName = \"Julia\";\nvar interest = \"cats\";\nvar hobby = \"play video games\";\nvar awesomeMessage = \"Hi, my name is \" + firstName + \". I love \" + interest + \". In my spare time, I like to \" + hobby + \".\";\nconsole.log(awesomeMessage);\n```\n</div>\n<button type=\"button\" id=\"myButton1\" onclick=\"if(document.getElementById('spoiler_1') .style.display=='none') {document.getElementById('spoiler_1') .style.display=''}else{document.getElementById('spoiler_1') .style.display='none'}if (document.getElementById('myButton1').innerHTML=='Show Solution') {document.getElementById('myButton1').innerHTML='Hide Solution';}else{document.getElementById('myButton1').innerHTML = 'Show Solution';}\">Show Solution</button>\n\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 206530,
+          "key": "cf3fff7a-8989-4d81-9801-c7b478ac1e2a",
+          "title": "Lesson 2 Summary",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "cf3fff7a-8989-4d81-9801-c7b478ac1e2a",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 232957,
+              "key": "b317f279-bf1c-4f8f-a81b-75d0c3f1295f",
+              "title": "Lesson 2 Summary",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "d-wAoqrpgGM",
+                "china_cdn_id": "d-wAoqrpgGM.mp4"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

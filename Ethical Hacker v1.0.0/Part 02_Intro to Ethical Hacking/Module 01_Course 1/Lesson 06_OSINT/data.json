@@ -1,0 +1,1971 @@
+{
+  "data": {
+    "lesson": {
+      "id": 1089971,
+      "key": "e5630ee6-cf86-42f8-826f-1dda4d12274e",
+      "title": "OSINT",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Employ open-source intelligence techniques to uncover information leakage.  Use Exploratory Link Analysis techniques to mine data, establish links between the data and analyze the links",
+      "lesson_type": null,
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/e5630ee6-cf86-42f8-826f-1dda4d12274e/1089971/1614205794839/OSINT+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/e5630ee6-cf86-42f8-826f-1dda4d12274e/1089971/1614205789972/OSINT+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 1089863,
+          "key": "3d258fc5-7db2-4bb4-bc6b-bd31765657b8",
+          "title": "Introduction",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "3d258fc5-7db2-4bb4-bc6b-bd31765657b8",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089859,
+              "key": "0e20c9c3-a067-42be-bcd4-11f3a5088e6f",
+              "title": "Introduction Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Open Souce Intelligence",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089860,
+              "key": "7096b7e9-d410-4c21-ace9-736df481cc6f",
+              "title": "ND350 EHND C1 L5 A01 Introduction V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "1sHhEbsqqTw",
+                "china_cdn_id": "1sHhEbsqqTw.mp4"
+              }
+            },
+            {
+              "id": 1089861,
+              "key": "1dbb025e-d9f8-41d5-9cda-e4fdfc9f1292",
+              "title": "Introduction Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this lesson, we will learn about OSINT, which stands for Open Source Intelligence. OSINT is a skill that defense, intelligence agencies, and the growing ethical hacking industry use to gather information about businesses. \n\nThere are four key areas of focus:\n\n1. Exploratory Link Analysis\n1. Data Mining\n1. Establishing Links\n1. Analyzing Links\n\nWe will finish this lesson with a small section on using OSINT in offensive operations and going after hackers to uncover their identities.\n\nBy the end of the lesson, you will be able to:\n\n* Mine and collect data about any target from sources including blogs, news media, social media posts, public records, and more\n* Establish links and relationships in the data you have collected \n* Analyze the links to discover new information and build conclusions about your target\n\nThat's what they do in the movies and, after this lesson, you'll know how to do it in real life.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1089869,
+          "key": "78a86103-bae4-4ac7-835f-042f5e043b9c",
+          "title": "Why OSINT?",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "78a86103-bae4-4ac7-835f-042f5e043b9c",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089864,
+              "key": "faa23d88-4c22-4b0b-9ba7-d8b22a846259",
+              "title": "Why OSINT? Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Why Does OSINT Matter?",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089865,
+              "key": "b3731864-9c40-4418-8464-5e045cf8c50c",
+              "title": "ND350 EHND C1 L5 A02 Why OSINT",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "R_bExkS9FiI",
+                "china_cdn_id": "R_bExkS9FiI.mp4"
+              }
+            },
+            {
+              "id": 1122118,
+              "key": "3f42f793-bbd6-431b-8ab8-32b1a0958279",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Open Source Intelligence (OSINT)\n\nOSINT includes any publicly available information.\n\n### Some OSINT Is Available for Free\n\n* DNS records\n* Server and host information for websites\n* Government records\n* Addresses\n* Phone numbers\n\n### Some OSINT Is Available from Paid Sources\n\n* Premium APIs like VirusTotal are not free but are available to anyone who is willing to pay for it.\n\nSince OSINT is available to everyone, the bad actors use this information too -- which is why an OSINT audit is critical for any organization.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089867,
+              "key": "cd909e10-30bc-4621-8413-127db95077b2",
+              "title": "Why OSINT? Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Information Leakage\n\nWe leak information all the time without even knowing it.  For example, if you post a picture of your team, you may inadvertently disclose information about the people you work with and your physical office building.  \n\n### OSINT can help us identify what we are leaking\n\nLook at all of the information we can discover about this organization, just by carefully examinining this photo.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1122116,
+              "key": "5ef84092-d70f-4d73-882f-b80852805763",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/December/5fe4cac3_3/3.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/5ef84092-d70f-4d73-882f-b80852805763",
+              "caption": "A Typical Office Image On Social Media",
+              "alt": "A Typical Office Image On Social Media",
+              "width": 694,
+              "height": 340,
+              "instructor_notes": null
+            },
+            {
+              "id": 1122117,
+              "key": "f01e984e-921a-4cb4-a662-a92b4c491d8e",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/December/5fe4caea_4/4.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/f01e984e-921a-4cb4-a662-a92b4c491d8e",
+              "caption": "Information Leakage",
+              "alt": "Information Leakage",
+              "width": 800,
+              "height": 430,
+              "instructor_notes": null
+            },
+            {
+              "id": 1092189,
+              "key": "26ce441a-bec9-48fb-b97d-dd071ac73b24",
+              "title": "Quiz",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "26ce441a-bec9-48fb-b97d-dd071ac73b24",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of these are good use cases for OSINT?",
+                "answers": [
+                  {
+                    "id": "a1603895422338",
+                    "text": "To prioritize targets",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1603895471960",
+                    "text": "To reduce the scope of an audit",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1603895482467",
+                    "text": "To prepare for a big product launch?",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1603895536244",
+                    "text": "To conduct an investigation that is not linked to a security audit",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1123115,
+              "key": "96615565-6ec6-4780-8c78-f2402439f294",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Further Reading\n\nThis article from EC-Council shares two other uses for OSINT -- penetration testing and identifying external threats by intercepting the “chatter” of cybercriminals:  <a href=\"https://blog.eccouncil.org/open-source-intelligence-makes-pentesting-very-easy/#:~:text=OSINT%20helps%20in%20identifying%20external,from%20different%20publicly%20available%20sources.\" target=\"_blank\">Open-Source Intelligence Makes Penetration Testing Easy</a>.",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1089876,
+          "key": "16233b3a-809c-4d4c-aa35-53b7644a7581",
+          "title": "How Experts Approach OSINT",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "16233b3a-809c-4d4c-aa35-53b7644a7581",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089870,
+              "key": "dcea8f26-c8e2-49d0-a722-6946818feb3f",
+              "title": "How Experts Approach OSINT Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## OSINT Is What Hackers Do In The Movies",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089871,
+              "key": "88bf0490-dec6-4700-9bf6-e9f6735276a0",
+              "title": "ND350 EHND C1 L5 A03 How Experts Approach OSINT V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "zo-09tKPzzU",
+                "china_cdn_id": "zo-09tKPzzU.mp4"
+              }
+            },
+            {
+              "id": 1089872,
+              "key": "94bf4227-7fbc-4401-9797-6ba02a594624",
+              "title": "How Experts Approach OSINT Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "If you have watched movies about hacking,  you may have seen hackers using the internet to find every bit of information they need to attack the target. \n\nIn the real world, we use the internet too, but it typically doesn't provide enough information to be useful.  So instead, we follow a more disciplined approach called **Exploratory Link Analysis**.\n\nExploratory Link Analysis is a three-step process: \n\n### 1. Mining\n\nReview the data and information we already have and try to gather more data based on what we have. This can include:\n\n* The digital and physical** infrastructure** of the organization\n* The **employees** and other people associated with the organization \n* Information on **operations**, including events and announcements.\n\n### 2. Build Links\n\nEstablish relationships between all the data gathered. We can create:\n\n* **Forward links** that tell us how old information is related to new information\n* **Backward links** that tell us how new information relates to the old source\n\n### 3. Analyze\n\nExamine the links and relationships we built\n\n* Look at the **importance** and **closeness** of elements\n* Create **new information** and **develop conclusions**",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1121930,
+              "key": "39763bdd-b331-4505-bfcd-6bb409ea1001",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/January/60000a9e_2/2.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/39763bdd-b331-4505-bfcd-6bb409ea1001",
+              "caption": "Exploratory Link  Analysis",
+              "alt": "Exploratory link analysis includes mining, linking and analyzing",
+              "width": 800,
+              "height": 198,
+              "instructor_notes": null
+            },
+            {
+              "id": 1128102,
+              "key": "f1192ba7-7850-4ac8-af10-1f6b9b544458",
+              "title": null,
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "f1192ba7-7850-4ac8-af10-1f6b9b544458",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Complete the statement: Exploratory Link Analysis cannot be used to...",
+                "answers": [
+                  {
+                    "id": "d96ab232-2900-4b10-ac17-41e73f5de0d1",
+                    "text": "discover unintentional information leakage which is sensitive in nature.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "28c23ca6-862e-419a-bb26-5a3b88921504",
+                    "text": "provide visibility on how various unrelated pieces of information may connect with each other and create new information.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "cbbc0555-b928-464e-8d46-bf5671409c19",
+                    "text": "improve policies, procedures and processes to secure our organization.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "0866b920-9b05-473c-a008-0be06e7c8417",
+                    "text": "None of the above",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1125363,
+              "key": "c71a708a-bb34-4cb7-9430-f5e2843d061d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## New Terms\n\n<div class=\"index-module--table-responsive--1zG6k\"><table class=\"index-module--table--8j68C index-module--table-striped--3HHC-\">\n<thead>\n<tr>\n<th>Term</th>\n<th>Definition</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Backward links</td>\n<td>Connections from new information to an existing information source</td>\n</tr>\n<tr>\n<td>Exploratory Link Analysis.</td>\n<td>A scientific approach to use OSINT to discover information leakage</td>\n</tr>\n<tr>\n<td>Forward links</td>\n<td>Connections from an existing information source to new information</td>\n</tr>\n<tr>\n<td>Mining</td>\n<td>The first step in Exploratory Link Analysis, which involves gathering information from various sources. Mining can be done on Infrastructure, Operations, and Employees.</td>\n</tr>\n</tbody>\n</table>\n</div>",
+              "instructor_notes": null
+            },
+            {
+              "id": 1123117,
+              "key": "dedd1fc3-d4bf-48d5-8dff-37eb4b90c9aa",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Further Reading\n\nThis article frem Secjuice shares another framework for thinking about OSINT:  <a href=\"https://www.secjuice.com/osint-engagement-101/\" target=\"_blank\">The Stoic Approach To OSINT</a>.",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1089883,
+          "key": "1afe5d2c-0da6-4d15-a3f6-d1687e53ba68",
+          "title": "Data Mining For OSINT",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "1afe5d2c-0da6-4d15-a3f6-d1687e53ba68",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089877,
+              "key": "db1dc91d-e2f1-4da2-951e-bac4e979a397",
+              "title": "OSINT On Employees Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Keep An Eye On Employees",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089878,
+              "key": "a6e49d90-391f-43e1-a802-57b47a8c5251",
+              "title": "ND350 EHND C1 L5 A04 Mining Data For OSINT V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "8DqUEztlGJg",
+                "china_cdn_id": "8DqUEztlGJg.mp4"
+              }
+            },
+            {
+              "id": 1089879,
+              "key": "63763c98-51b3-44d1-915c-28870023193b",
+              "title": "OSINT On Employees Notes",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Three Sources of OSINT Data\n\n### Infrastructure\n\nThere are two types of infrastructure: **physical** and **digital.**\n\nWhen looking at a physical infrastructure, we may want to find the organization's office location. Generally, you will find this on the organization’s website. You can look further by getting information about building entrances and exits using online maps and satellite imaging solutions like Google Street View.\n\nIn terms of digital infrastructure, we'll want to find the domain names and the IP addresses of the server owned by the organization. DNS records can tell us what email services the organization uses, and, we'll want to learn about the technologies used on their servers and applications.\n\n### Operations\n\nFor information on internal operations, we might look for the employee work shift schedule and the resource requirements in terms of people and technology. You can find this information on job posting sites, freelance websites, or the *Careers* page of the organization's website\n\nOn the external side, we might look for partner networks for sales communication or distribution. This information can be easy to find, especially if a company has a dedicated section of their website to promote their partnerships. We can also learn a lot from events hosted by the organization by looking at their social media profiles and event pages on their website. Often, we can find photographs from previous years that can contain sensitive information, such as the coordinators' emails and contact info.\n\n### Employees\n\nThe organization’s employees may leak information on social media and other websites. For example, LinkedIn is a good source to learn about an employee’s professional life, and you can learn personal information on sites like Facebook and Instagram. Social media is especially helpful because images often leak more information than text does. \n\nEmployees may also have personal websites for projects, such as blogs. These sites usually have a Contact, About, or Author page which can be a rich source of information. We can also use Caller ID and People Search databases to find physical addresses, email addresses, and phone numbers. \n\n## OSINT Framework\n\nOSINT Framework is an online directory listing of all the data sources categorized into 30+ subcategories of information that includes infrastructure, operations, and employees.\n\nThis framework can be found on <a href=\"https://osintframework.com\" target=\"_blank\">https://osintframework.com</a>",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089881,
+              "key": "dfe1b309-f3b2-4d87-bed1-1f55e5b8a1ba",
+              "title": "OSINT On Employees New Terms or Vocabulary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### New Terms\n\n<div class=\"index-module--table-responsive--1zG6k\"><table class=\"index-module--table--8j68C index-module--table-striped--3HHC-\">\n<thead>\n<tr>\n<th>Term</th>\n<th>Definition</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Digital Infrastructure</td>\n<td>Assets owned or leased by an organization to support digital operations, including email servers, websites, IP addresses, domain names, and software licenses</td>\n</tr>\n<tr>\n<td>External Operations</td>\n<td>An organization's operational activities related to its supply chain, distribution network and community partners</td>\n</tr>\n<tr>\n<td>Internal Operations</td>\n<td>An organization's operational activities related to internal systems, processes, events, and employees</td>\n</tr>\n<tr>\n<td>OSINT Framework</td>\n<td>An online directory containing sources of OSINT hosted at <a target=\"_blank\" href=\"https://osintframework.com\">https://osintframework.com</a></td>\n</tr>\n<tr>\n<td>Physical Infrastructure</td>\n<td>Assets owned or leased by an organization to support physical operations, including office buildings, security cameras, lighting, power supply units, furniture and fixtures, and computer systems </td>\n</tr>\n</tbody>\n</table>\n</div>",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1123118,
+              "key": "43e38a99-cf8f-46c7-9f0b-574bb28079a1",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Further Reading\n\nIf you want to learn more about the  OSINT Framework, read this article from SecurityTrails: <a href=\"https://securitytrails.com/blog/osint-framework\" target=\"_blank\">OSINT Framework: The Perfect Cybersecurity Intel Gathering Tool</a>  It walks through several OSINT examples.",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1089887,
+          "key": "3c51d25f-65a7-40d5-816b-f32c53a4e7fc",
+          "title": "Quizzes: Data Mining",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "3c51d25f-65a7-40d5-816b-f32c53a4e7fc",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089884,
+              "key": "3b7891f5-b823-4899-92fe-8b2da2d1e3bc",
+              "title": "OSINT On Employees Quizzes Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## OSINT On Employees",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089886,
+              "key": "22ed6673-2975-44da-8b7d-30f968aba4d8",
+              "title": "OSINT On Employees Easy Quiz",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "22ed6673-2975-44da-8b7d-30f968aba4d8",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of these would be valid OSINT searches?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "Checking photos on Instagram",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "Calling support numbers to extract information",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1603876614053",
+                    "text": "Reading posts and comments on LinkedIn",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1603876656066",
+                    "text": "Searching for a name in a public database",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1089885,
+              "key": "b1c63ae0-779d-4f6f-ad6a-f4fe7cc218bf",
+              "title": "OSINT On Employees Hard Quiz",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "b1c63ae0-779d-4f6f-ad6a-f4fe7cc218bf",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "An employee has a Facebook profile but image access is set to ***Friends Only***. You sent a request for access and the employee immediately accepted your request. You viewed the images and you found a picture where the organization's ID badge is clearly visible.\n\nIs the image you found an example of OSINT?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "Yes",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "No",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1089891,
+          "key": "3c60daa6-7d40-4ccd-803f-36dc52c40337",
+          "title": "Exercise: Gathering OSINT Data",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "3c60daa6-7d40-4ccd-803f-36dc52c40337",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089889,
+              "key": "aa29b7c8-adbb-4855-83b0-2a98a92aabe8",
+              "title": "Exercise: OSINT On Employees Instructions",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Your task is to choose an organization and perform OSINT on its infrastructure and operations.\n\n### OSINT on  Infrastructure\n\n1. Find any domain names associated with that organization\n1. Find any subdomains, if available\n1. Find any physical locations that might be associated with the organization or the domains you found\n\n### OSINT on Operations\n\n1. Find any hiring requirements \n1. Find the latest events of the organization\n1. Find the key employees who are recently active on social media about the organizational activities",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089890,
+              "key": "9561b31c-2e1f-4b8d-9218-29e4082e1a7d",
+              "title": "Let's Mine Some Data!",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "9561b31c-2e1f-4b8d-9218-29e4082e1a7d",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Associated domains",
+                "Subdomains",
+                "Physical locations",
+                "Hiring requirements",
+                "Latest events",
+                "Active key employees"
+              ],
+              "positive_feedback": "Great!\nNow let's see how I would do this",
+              "video_feedback": null,
+              "description": ""
+            }
+          ]
+        },
+        {
+          "id": 1089896,
+          "key": "85d029ee-f214-444c-a6e1-6991d589314f",
+          "title": "Solution: Gathering OSINT Data",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "85d029ee-f214-444c-a6e1-6991d589314f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089892,
+              "key": "7c7785b4-a5a1-4528-943c-65423b56a250",
+              "title": "Solution: OSINT On Employees Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## My Solution Part I",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089893,
+              "key": "ca30382b-98f7-43df-93c3-23e524378767",
+              "title": "ND350 EHND C1 L5 A05 Exercise Lets Mine Some Data Part 1 V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "FrNxAL1PicQ",
+                "china_cdn_id": "FrNxAL1PicQ.mp4"
+              }
+            },
+            {
+              "id": 1125450,
+              "key": "a9e04c3f-9a7f-4e4a-8e75-825a98cfc328",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Let's Mine Some Data!\n\nI chose to do this exercise on Maltego Technologies.\n\n### Step 1. Find Associated Domains\n\nTo find the associated domains I:\n\n1. Ran an internet search and the organization's website at **maltego.com** \n1. Used the **Find Associated Domains in One-Click** tool on Pentest-Tool.com but did not find anything\n1. Searched for the domain on **Censys.io** and found another domain - **paterva.com**\n1. Recorded my findings in a spreadsheet\n\n### Step 2. Find Subdomains and Physical Locations\n\nNext, I looked for any subdomains of maltego.com using **FindSubDomain** and added the listed subdomains to my spreadsheet.",
+              "instructor_notes": null
+            },
+            {
+              "id": 1127887,
+              "key": "82bf849f-2eb6-4639-a64c-3cfcd03cb7d0",
+              "title": "Solution: OSINT On Employees Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## My Solution Part II",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1125451,
+              "key": "0ec9dd0a-1718-46cd-8e8d-621cf99029f0",
+              "title": "ND350 EHND C1 L5 A05 Exercise Lets Mine Some Data Part 2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "GhAg9ZXqOlc",
+                "china_cdn_id": "GhAg9ZXqOlc.mp4"
+              }
+            },
+            {
+              "id": 1125429,
+              "key": "40f20c31-ae67-4d41-bf50-ea9781e36e95",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Step 3: Find Hiring Requirements\n\nI found information about job postings on the ***Careers*** page of maltego.com and added those to my spreadsheet. \n\n### Step 4: Find Events\n\nI checked for events on the Maltego website but did not find any.\n\nBut I did find some helpful event information on **LinkedIn** and added that to my spreadsheet. \n\n### Step 5: Find Key Employees\n\nLinkedIn was also a good source of information about key employees.",
+              "instructor_notes": null
+            },
+            {
+              "id": 1089895,
+              "key": "eb6f4643-d515-4b2a-b10f-05b7ab9aac1f",
+              "title": "Thinking Like an Ethical. Hacker",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "eb6f4643-d515-4b2a-b10f-05b7ab9aac1f",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "There is always a thin line on what's open-source and what's not. Sometimes we stretch that thin line. How can make sure that we do not invade someone's privacy?",
+                "matchers": [
+                  {
+                    "expression": "[^/s]+"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1089903,
+          "key": "18976eef-8deb-440b-b398-4f1e1bc13bc7",
+          "title": "Establishing Links ",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "18976eef-8deb-440b-b398-4f1e1bc13bc7",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089897,
+              "key": "0033bb8d-488e-487c-b4f5-ce549e473b6c",
+              "title": "OSINT on External Infrastructure Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Exploratory Analysis In The Real World",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089898,
+              "key": "e009eb0e-6391-4c7c-b008-515358a98101",
+              "title": "ND350 EHND C1 L5 A06a Establishing Links For OSINT Intro V3",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "1eVKAVLVQBg",
+                "china_cdn_id": "1eVKAVLVQBg.mp4"
+              }
+            },
+            {
+              "id": 1121481,
+              "key": "513bac91-d76e-45e4-843c-fb8c5dd1eb6b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In the real world, we often have large quantities of data and many different data types, making it difficult to see the relationships between items.\n\nFortunately, there are specialized tools we can use to manage this data, including Maltego.\n\nMaltego has two features that can help us collect and analyze our links. ***Collections*** allow us to group multiple elements, and ***Notes*** allow us to add additional information to an element.",
+              "instructor_notes": null
+            },
+            {
+              "id": 1125280,
+              "key": "8a324c11-96ad-431a-8675-9239dbdac7b2",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Setting Up Maltego on the Analyst Machine",
+              "instructor_notes": null
+            },
+            {
+              "id": 1089899,
+              "key": "06301948-ccbf-4d00-882a-29998d5db14a",
+              "title": "OSINT on External Infrastructure Notes",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "1. Download Maltego Debian package from <a href=\"https://www.maltego.com/downloads/Open\" target=\"_blank\">https://www.maltego.com/downloads/</a>\n1. Open a terminal and navigate to the downloads directory using `cd Downloads`\n1. Install the package using `dpkg -i filenamehere`\n1. Launch Maltego by typing `maltego` in terminal\n1. Choose Maltego CE edition\n1. Follow the activation procedure. \n\nNote: registration is required and is one-time only.\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1125289,
+              "key": "3a18d6a7-4e2e-4320-ab97-784d1e1d1171",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Using Maltego",
+              "instructor_notes": null
+            },
+            {
+              "id": 1125288,
+              "key": "e36fc4d4-851e-4dbb-99fd-d2b127c35cd0",
+              "title": "ND350 EHND C1 L5 A06c Use Maltego",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "AvYagmRTEuc",
+                "china_cdn_id": "AvYagmRTEuc.mp4"
+              }
+            },
+            {
+              "id": 1126661,
+              "key": "831aa6af-cf0b-46b5-82df-995a6932c453",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Example: Creating an Entity for Bob\n\n1. Open a blank graph in Maltego\n1. Add an entity with type as **Person **and data as `Bob`",
+              "instructor_notes": null
+            },
+            {
+              "id": 1126662,
+              "key": "3454bb13-08e1-4e6b-a4e8-66898ec4570b",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/January/60012dfa_13/13.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/3454bb13-08e1-4e6b-a4e8-66898ec4570b",
+              "caption": null,
+              "alt": null,
+              "width": 1820,
+              "height": 846,
+              "instructor_notes": null
+            },
+            {
+              "id": 1126663,
+              "key": "9876d450-ee50-4c85-b1ba-af9a19cd3bd3",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "3. Add a **Domain **entity -** **`example.com`\n\n4. Add an **Email** entity - <a href=\"mailto:bob@example.com\" target=\"_blank\">`bob@example.com`</a>\n\n5. Build a forward link from **bob** to **example.com** stating `Bob owns example.com`",
+              "instructor_notes": null
+            },
+            {
+              "id": 1126666,
+              "key": "81fca155-d2bf-48cd-b7fa-058e0e4bec2e",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/January/600134ca_14/14.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/81fca155-d2bf-48cd-b7fa-058e0e4bec2e",
+              "caption": "Linking Bob to example.com",
+              "alt": "Linking Bob to example.com",
+              "width": 800,
+              "height": 609,
+              "instructor_notes": null
+            },
+            {
+              "id": 1126667,
+              "key": "57b8a3a6-5181-40c9-bb47-65f3768b1314",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "6. Mine more data on example.com using Maltego inbuilt transforms by right-clicking on **example.com** and running **all transforms** with** **defaul**t **options \n\n7. Reduce the number of  entities using **collections** and set the value as **`3`**",
+              "instructor_notes": null
+            },
+            {
+              "id": 1126668,
+              "key": "ec401526-510e-433b-b1cd-ed3089a59791",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/January/60013582_15/15.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/ec401526-510e-433b-b1cd-ed3089a59791",
+              "caption": "Running Transforms on Maltego",
+              "alt": "Running Transforms on Maltego",
+              "width": 800,
+              "height": 622,
+              "instructor_notes": null
+            },
+            {
+              "id": 1126669,
+              "key": "36c424b7-de17-4d19-92d8-428a6cb7dc4d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "8. Create a forward link from **example.com** to <a href=\"mailto:**bob@example.com\" target=\"_blank\">bob@example.com</a> stating `This email is under example.com`\n\n9. Create a backward link from** **<a href=\"mailto:bob@example.com\" target=\"_blank\">**bob@example.com**</a> to **bob** stating `This email belongs to bob`\n\n10. Create a note on <a href=\"mailto:**bob@example.com\" target=\"_blank\">**bob@example.com**</a> stating `This email is important and we should try social engineering.`",
+              "instructor_notes": null
+            },
+            {
+              "id": 1126670,
+              "key": "6f5645b2-e0d8-4779-bdfb-c5aaca6d2c25",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/January/600136d9_16/16.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/6f5645b2-e0d8-4779-bdfb-c5aaca6d2c25",
+              "caption": "Creating a forward link on Maltego",
+              "alt": "Creating a forward link on Maltego",
+              "width": 600,
+              "height": 376,
+              "instructor_notes": null
+            },
+            {
+              "id": 1129386,
+              "key": "aef45953-1a4e-47ed-b178-b1666fde848f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## New Terms\n\n<div class=\"index-module--table-responsive--1zG6k\"><table class=\"index-module--table--8j68C index-module--table-striped--3HHC-\">\n<thead>\n<tr>\n<th>Term</th>\n<th>Definition</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Collections</td>\n<td>A link building function used to group similar data entities based on their types</td>\n</tr>\n<tr>\n<td>Entity</td>\n<td>A Maltego term used to denote a bit of information, including domain names,  physical locations, telephone numbers, IP addresses, and much more</td>\n</tr>\n<tr>\n<td>Notes</td>\n<td>Used to include additional information while building links in Maltego.</td>\n</tr>\n<tr>\n<td>Transforms</td>\n<td>An automated data mining process that uses prebuilt software scripts that return information related to existing information</td>\n</tr>\n</tbody>\n</table>\n</div>",
+              "instructor_notes": null
+            },
+            {
+              "id": 1123119,
+              "key": "c4536efc-b721-4317-a0d7-6dfad43f25e6",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Further Reading\n\nMaltego has a detailed post on creating links in their documentation: <a href=\"https://docs.maltego.com/support/solutions/articles/15000010433-creating-manual-links\" target=\"_blank\">Creating Manual Links</a>",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1089907,
+          "key": "fdae595c-5116-4943-82b0-d431169348e7",
+          "title": "Quizzes: Links and Relations",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "fdae595c-5116-4943-82b0-d431169348e7",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089904,
+              "key": "521ef553-ed13-4cfc-884f-8c6b6b615caf",
+              "title": "OSINT on External Infrastructure Quizzes Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## OSINT on Infrastructure",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089906,
+              "key": "a21cbd5b-69aa-4ac5-b467-8c4f62b63ae6",
+              "title": "OSINT on External Infrastructure Easy Quiz",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "a21cbd5b-69aa-4ac5-b467-8c4f62b63ae6",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of these are examples of OSINT related to digital infrastructure? *Hint: there may be more than one example*",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "Passwords of your organization's sales team, for sale on the dark web",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "A Google search revealing all the domains owned by your organization",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1603811846585",
+                    "text": "DNS records listed on a public facing web page",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1603811854524",
+                    "text": "A question on a support forum that includes a snippet of sensitive code",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1089905,
+              "key": "408561e0-a6e6-41a0-a6d1-bb4dae98c5b9",
+              "title": "OSINT on External Infrastructure Hard Quiz",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "408561e0-a6e6-41a0-a6d1-bb4dae98c5b9",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "When was Udacity.com first registered?",
+                "answers": [
+                  {
+                    "id": "rbk2",
+                    "text": "2011-01-16",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1603811222309",
+                    "text": "2007-08-25",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1603811228970",
+                    "text": "2012-01-17",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1603811241307",
+                    "text": "2019-12-16",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1089911,
+          "key": "e9adde4f-a4e5-43e7-b047-bbeba7b72018",
+          "title": "Exercise: Establishing Links ",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "e9adde4f-a4e5-43e7-b047-bbeba7b72018",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1123254,
+              "key": "063efb9b-4a09-4651-abb3-9bec776bf896",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this exercise, your goal is to establish links in the data you gathered during the Data Mining exercise.\n\nThis exercise will give you a lot of practice using Maltego to add, build links, use transforms, create collections, and add notes.",
+              "instructor_notes": null
+            },
+            {
+              "id": 1123255,
+              "key": "3b301461-a04f-46a2-98f8-335f87e8edca",
+              "title": "Exercise: Establishing Links and Relationships\n",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "3b301461-a04f-46a2-98f8-335f87e8edca",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Add entities in Maltego in your Analyst virtual machine\n",
+                "Build forward links based on where you found the data\n",
+                "Establish any backward links\n",
+                "Run additional transforms for further mining ",
+                "Use collections to reduce the number of elements to a useful size\n",
+                "Add notes to document any other important information\n"
+              ],
+              "positive_feedback": "Nice work!  You can see my solution on the next page.",
+              "video_feedback": null,
+              "description": ""
+            }
+          ]
+        },
+        {
+          "id": 1089916,
+          "key": "7231565d-d7ed-4fcd-814c-553e97565008",
+          "title": "Solution: Establishing Links",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "7231565d-d7ed-4fcd-814c-553e97565008",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089912,
+              "key": "570d4f77-1d98-4379-b778-c4ad1b82293f",
+              "title": "Solution: OSINT on External Infrastructure Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## My Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089913,
+              "key": "787cd450-bc60-4661-abef-9f52ee735724",
+              "title": "ND350 EHND C1 L5 A07a Exercise Adding Entities V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "M4dCBdRm6qI",
+                "china_cdn_id": "M4dCBdRm6qI.mp4"
+              }
+            },
+            {
+              "id": 1125271,
+              "key": "9acb16e9-b4ca-4ea9-9adf-dbe5aa5f683a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### 1. Add Entities in Maltego\n\nTo add the information I have gathered on Maltego, I opened Maltego on my Analyst machine and:\n\n1. Created a new graph\n1. Added a ***Company*** entity with a type of ***business organization*** that I named Maltego Technologies.  **NOTE:  **Maltego changes over time.  If you don't see ***Company*** as an entity try ***Organization*** \n1. Added **maltego.com** and **paterva.com** as a ***Domain ***entity\n1. Added the subdomain information: **courses.maltego.com**, **buy.maltego.com**, and **docs.maltego.com** under* *the*** Domain ***entity\n1. Added the location of the subdomains using a ***Location*** entity  \n1. Added ***URL*** entity for URL from where I found the information and named it ***Career Page***.\n1. Added a ***Company/Organization*** entity named** RiskIQ** \n1. Added a ***Person*** identity with the information we gathered about the individuals we found \n1. Added another ***URL*** entity with the URL where I found that information.",
+              "instructor_notes": null
+            },
+            {
+              "id": 1125277,
+              "key": "eec4c35f-34ec-400e-93f6-2099a78dfd74",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Building Links",
+              "instructor_notes": null
+            },
+            {
+              "id": 1125276,
+              "key": "a3e6c745-2091-4f1e-b6ab-ebf2ee35f6a0",
+              "title": "ND350 EHND C1 L5 A07b Exercise Building Links",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "oji3qRAOvm0",
+                "china_cdn_id": "oji3qRAOvm0.mp4"
+              }
+            },
+            {
+              "id": 1125275,
+              "key": "abde8690-f1fc-4722-bc09-2059c21cc6bd",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### 2. Build Forward Links\n\nI added the following by dragging my mouse between entities: \n\n1. A forward link from Maltego Technologies to maltego.com named ***Found by Searching on Google***\n1. A forward link from maltego.com to paterva.com named ***Shared SSL Certificate***\n1. A forward link from maltego.com to all the subdomains labeled ***Found by Subdomain Finder***\n1. Forward links from all the subdomains to their respective locations labeled ***Location of Server IP***\n1. A forward link from maltego.com to the Career Page domain labeled ***Found on the main website***\n1. A forward link from Career Page domain to the Munich location labeled ***Found this city on the job posts***\n1. A forward link from Maltego Technologies to the Recent Event on Linkedin labeled ***Searched on Linkedin***\n1. A forward link from Recent Event to the RiskIQ company named ***About Us section of the Event***\n1. Forward links from Recent Event to the two people labeled ***About Us section of the Event***\n\n### 3. Create Backward Links\n\nI used a similar process to create the following:\n\n1. Abackward Link from Brandon Dixon to RiskIQ named ***VP of RiskIQ***\n1. A backward link from Dirk Wagner to Maltego Technologies labeled ***Employee, SME***\n1. A backward link from Munich to Germany country labeled ***City in Germany***\n1. A backward link from Dirk Wagner to Germany labeled ***Lives in Germany***\n\n### 4. Run Transforms\n\nTo create more links, I used transforms:\n\n1. I right-clicked on the paterva.com entity to see all of the transforms available\n1. I ran transforms on DNS and Email addresses from the domain\n\n### 5. Create a Collection\n\nTo reduce the data to a more manageable amount, I created a collection by clicking on the Collections tab of Maltego and selecting \"3\"\n\n### 6. Add Notes\n\nTo remind myself what I did, I added a note on paterva.com stating ***\"Data has been mined using Transforms\"***\n\nI found a lot of data!  \n\nHow many links did you find?",
+              "instructor_notes": null
+            },
+            {
+              "id": 1089915,
+              "key": "275bce29-22c3-4dc2-b260-0a3a59f91ff6",
+              "title": "Thinking Like an Ethical Hacker",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "275bce29-22c3-4dc2-b260-0a3a59f91ff6",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "While creating links, it is often a difficult choice on whether to create a forward link or a backward link. This is especially true when we don't know which information was found earlier. <br> <br> Should  **\"bob @ example.com  is an email under \n example .com\"**  be a forward link or a backward link? ",
+                "matchers": [
+                  {
+                    "expression": "[^/s]+"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1089923,
+          "key": "866bd6b2-1191-4821-8080-9bb19f4e38d6",
+          "title": "Analyzing Links For OSINT",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "866bd6b2-1191-4821-8080-9bb19f4e38d6",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089917,
+              "key": "a4d028d9-9a9b-4979-89e3-4b08480e1d5a",
+              "title": "OSINT For Data Leakage Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Models For Analyzing Data",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089918,
+              "key": "c92bf10f-b6c3-41b1-b1d6-a64983c2eb6a",
+              "title": "ND350 EHND C1 L5 A08a Analyzing Links For OSINT Data Models V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "hJYNq7lmas0",
+                "china_cdn_id": "hJYNq7lmas0.mp4"
+              }
+            },
+            {
+              "id": 1125248,
+              "key": "35680a0f-347e-4817-8215-3acc913c2aac",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "After building links, we can analyze them to discover new information and develop conclusions about what we have discovered. There are three popular models to analyze the data:\n\n* **Tree** (also known as the ***Hierarchical*** model)\n* **Universe** (also known as the ***Circular*** model)\n* **Organic**\n\nLet’s go through them one by one:",
+              "instructor_notes": null
+            },
+            {
+              "id": 1125249,
+              "key": "d8e67a09-6782-4267-86fa-aecee1c5b0e2",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/January/5ffea48d_5/5.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/d8e67a09-6782-4267-86fa-aecee1c5b0e2",
+              "caption": "Tree ",
+              "alt": "Tree Model",
+              "width": 800,
+              "height": 532,
+              "instructor_notes": null
+            },
+            {
+              "id": 1089919,
+              "key": "ec437b01-c182-49c3-9e91-3aac2ab7d602",
+              "title": "OSINT For Data Leakage Notes",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Tree/Hierarchical\n\nA Tree Model is the simplest form of data analysis.\n\n* Useful when we have to do a small scale OSINT data analysis. \n* Connections are built from the top (the ***root***) towards the bottom (the ***leaves***). \n* The higher the element, the more important it is.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1125252,
+              "key": "0bf2cb2f-7765-4837-9a05-382572268217",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/January/5ffea4b1_6/6.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/0bf2cb2f-7765-4837-9a05-382572268217",
+              "caption": "Universe/Circular",
+              "alt": "Universe Model",
+              "width": 800,
+              "height": 538,
+              "instructor_notes": null
+            },
+            {
+              "id": 1125253,
+              "key": "e06808fb-d772-4190-9708-022da4fbd4e8",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Universe/Circular\n\nA Universe model is a concentration-based model\n\n* Entities form a group when they have things in common.\n* The closer the elements are, the more links they share.\n* Helpful for OSINT Analysis on the influence that elements have on each other.\n* The Universe and Cirucluar names can be used interchangeably",
+              "instructor_notes": null
+            },
+            {
+              "id": 1125251,
+              "key": "3c5a4344-987d-445d-9a82-c5e942c9f2ee",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/January/5ffea4c3_7/7.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/3c5a4344-987d-445d-9a82-c5e942c9f2ee",
+              "caption": "Organic",
+              "alt": "Organic model",
+              "width": 800,
+              "height": 519,
+              "instructor_notes": null
+            },
+            {
+              "id": 1125254,
+              "key": "5a6d275b-f64a-4955-adfe-17059e54830d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Organic\n\nThe Organic Model rearranges the Circular model to provide better visibility.\n\n* The most important elements are the center, wrapped by other elements.\n* The more links elements share between them, the closer they get.\n* The distance between the two groups depends on their common attributes.\n* Used when we have a lot of data.",
+              "instructor_notes": null
+            },
+            {
+              "id": 1125264,
+              "key": "94391740-05b6-44cd-93ec-51a8682310e8",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Creating Models in Maltego",
+              "instructor_notes": null
+            },
+            {
+              "id": 1125265,
+              "key": "53f0daf7-f357-4839-ab4a-6d4f49b9af82",
+              "title": "ND350 EHND C1 L5 A08b Maltego Demo",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "ocxtrPhxmcM",
+                "china_cdn_id": "ocxtrPhxmcM.mp4"
+              }
+            },
+            {
+              "id": 1122611,
+              "key": "b88ca5c4-64dd-426c-b557-bbd743f28843",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Example Graph Walkthrough\n\n1. Load the example graph by clicking on **Maltego Icon > Tools > Open Example Graph**",
+              "instructor_notes": null
+            },
+            {
+              "id": 1125460,
+              "key": "90914af9-ea75-4bcb-98be-73e1055c505d",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/January/5ffea63b_8/8.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/90914af9-ea75-4bcb-98be-73e1055c505d",
+              "caption": "Load the graph in Maltego",
+              "alt": "Load the graph in Maltego",
+              "width": 800,
+              "height": 567,
+              "instructor_notes": null
+            },
+            {
+              "id": 1125461,
+              "key": "a59093d9-a85d-4cbd-8d22-66c988c36143",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "2. Switch to** Hierarchical Layout** to analyze the graph using the Tree Model",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1125464,
+              "key": "82a07f04-5bde-48c5-9281-7328d1f96685",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/January/5ffea7dc_9/9.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/82a07f04-5bde-48c5-9281-7328d1f96685",
+              "caption": "Switch to Hierarchical Layout",
+              "alt": "Switch to Hierarchical Layout",
+              "width": 550,
+              "height": 744,
+              "instructor_notes": null
+            },
+            {
+              "id": 1125463,
+              "key": "b67fcdd3-54dd-494a-9367-8a9505b67436",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "3. Switch to** Circular Layout** to analyze the graph using the Universe Model",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1125465,
+              "key": "dfd800cf-45bc-4450-8110-342772b1f63f",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/January/5ffea80d_10/10.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/dfd800cf-45bc-4450-8110-342772b1f63f",
+              "caption": "Switch to Circular Layout",
+              "alt": "Switch to Circular Layout",
+              "width": 700,
+              "height": 468,
+              "instructor_notes": null
+            },
+            {
+              "id": 1125462,
+              "key": "cb3352a9-a37c-47aa-a700-a3654f95985d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "4. Switch to** Organic Layout** to analyze the graph using the Organic model",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1125467,
+              "key": "e4331e67-3642-4b6d-a147-be89338cd267",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/January/5ffea83d_11/11.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/e4331e67-3642-4b6d-a147-be89338cd267",
+              "caption": "Switch to Organic Layout",
+              "alt": "Switch to Organic Layout",
+              "width": 700,
+              "height": 430,
+              "instructor_notes": null
+            },
+            {
+              "id": 1125468,
+              "key": "0c296247-85b2-4c73-9431-e6158c058b32",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Tip: Use a mouse wheel or your fingers on a touchpad to zoom in and out to see more details in the chart. You can also use the **overview pane** to move and zoom in.",
+              "instructor_notes": null
+            },
+            {
+              "id": 1125466,
+              "key": "438611ba-e79c-4295-8b18-6c2ae377bb1b",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/January/5ffea830_12/12.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/438611ba-e79c-4295-8b18-6c2ae377bb1b",
+              "caption": "Use the Overview pane",
+              "alt": "Use the Overview pane",
+              "width": 1000,
+              "height": 854,
+              "instructor_notes": null
+            },
+            {
+              "id": 1125267,
+              "key": "840e8987-1482-422d-8c23-f7fd9fd6b993",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### New Terms\n\n<div class=\"index-module--table-responsive--1zG6k\"><table class=\"index-module--table--8j68C index-module--table-striped--3HHC-\">\n<thead>\n<tr>\n<th>Term</th>\n<th>Definition</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Leaf</td>\n<td>The last element in a Tree Model</td>\n</tr>\n<tr>\n<td>Organic Model</td>\n<td>An OSINT analysis model that uses both concentration and distance structures. The distance between two concentrated groups depends on their common interests.</td>\n</tr>\n<tr>\n<td>Root</td>\n<td>The top element in a Tree Model</td>\n</tr>\n<tr>\n<td>Tree Model</td>\n<td>An OSINT analysis model</td>\n</tr>\n<tr>\n<td>Universe/Circular Model</td>\n<td>An OSINT analysis model that uses a concentration structure -- the more links elements have in common, the closer they get.</td>\n</tr>\n</tbody>\n</table>\n</div>",
+              "instructor_notes": null
+            },
+            {
+              "id": 1123120,
+              "key": "2e7bfbe8-cee8-464e-8729-2bdf1b396105",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Further Reading\n\nIf you want to read more about the layouts supported by Maltego, read the Maltego documentation for the  <a href=\"https://docs.maltego.com/support/solutions/articles/15000009615-graph-sidebar#layouts-4-8--0-1\" target=\"_blank\">Graph Sidebar.</a> It also covers advanced options like freezing and refreshing the graph and other views.",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1089927,
+          "key": "975af081-d965-4c25-8230-860832686cbc",
+          "title": "Quizzes: Analyzing Links For OSINT ",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "975af081-d965-4c25-8230-860832686cbc",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089924,
+              "key": "b9787ccc-33a4-41c6-aa02-1fdbb8939f77",
+              "title": "OSINT For Data Leakage Quizzes Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Thinking About Data Leakage",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089925,
+              "key": "74263fcf-06a9-4a7e-9697-72829e3bb866",
+              "title": "OSINT For Data Leakage Easy Quiz",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "74263fcf-06a9-4a7e-9697-72829e3bb866",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "A developer is discussing his queries on an online support forum, and the conversation is being indexed by search engines. What is the threat here?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "The developer may leak some sensitive data",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "Anyone can search about this conversation on search engines",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1603813103632",
+                    "text": "Both of the above",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1603813138720",
+                    "text": "None of the above",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1089926,
+              "key": "59fd6a40-67e7-4f06-81ab-8b60d96f6ce1",
+              "title": "OSINT For Data Leakage Hard Quiz",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "59fd6a40-67e7-4f06-81ab-8b60d96f6ce1",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of these are examples of sensitive information leakage?",
+                "answers": [
+                  {
+                    "id": "rbk1",
+                    "text": "A job posting with a subject:  *Looking for a Business Analyst*",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "rbk2",
+                    "text": "A website error page showing a \"Powered by WordPress\" message",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1603812658818",
+                    "text": "A website contact page that includes phone numbers and emails for support staff",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1603812686502",
+                    "text": "Job posting with the subject:  *Looking for a CISCO Firewall Engineer*",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1089931,
+          "key": "f837a930-ec7e-46bf-b55e-49d6ff73e7c7",
+          "title": "Exercise: Analyzing Links For OSINT",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "f837a930-ec7e-46bf-b55e-49d6ff73e7c7",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089928,
+              "key": "1cd90e2b-2de8-41c2-9d9a-127175a0a821",
+              "title": "Exercise: OSINT For Data Leakage Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Applying OSINT For Data Leakage",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089929,
+              "key": "71372e69-1dc4-4918-8116-319e18b172bf",
+              "title": "Exercise: OSINT For Data Leakage Instructions",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "As we have seen, Maltego is a helpful tool for identifying and classifying relationships among entities. \n\nAs an Ethical Hacker, you'll use Maltego to help you understand the authority relationships between entities and understand which relationships are the most important.\n\nIn this exercise you'll take the graph you created in the **Establishing Links** exercise and learn more about what they mean. \n\nAfter importing the graph, take a look at the data.  What is your initial impression?  Do you need to do any more tranforms?  What happens when you move one of the entities?  Which of the layouts is more helpful for understanding authority and importance?",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089930,
+              "key": "b515fdef-5b76-463d-a82f-c28c8e5cdf37",
+              "title": "Exercise: Analysing Links For OSINT",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "b515fdef-5b76-463d-a82f-c28c8e5cdf37",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Import your graph file",
+                "Analyze the graph in Hierarchical Layout ",
+                "Analyze the graph in Circular Layout",
+                "Analyze the graph in Organic Layout "
+              ],
+              "positive_feedback": "Nice work!  See my solution on the next page.",
+              "video_feedback": null,
+              "description": "Use Maltego to analyze the relationships among the entities in your graph file from the previous exercise to find the key entities in terms of **authority** and **importance**."
+            }
+          ]
+        },
+        {
+          "id": 1089936,
+          "key": "da372e52-72fc-4531-bb16-c678ebec5675",
+          "title": "Solution: Analyzing Links For OSINT",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "da372e52-72fc-4531-bb16-c678ebec5675",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089932,
+              "key": "097c15d8-07ed-4488-8749-ab36eb25d31c",
+              "title": "Solution: OSINT For Data Leakage Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## My Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089933,
+              "key": "757badfe-7da3-43a2-b401-bb16e8e566b2",
+              "title": "ND350 EHND C1 L5 A09 Exercise Analyze Your Links",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "SWrANdBJABE",
+                "china_cdn_id": "SWrANdBJABE.mp4"
+              }
+            },
+            {
+              "id": 1089934,
+              "key": "248ba218-47b2-4d15-b6a4-2344199e949b",
+              "title": "Solution: OSINT For Data Leakage Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### How I Analyzed Links For OSINT\n\nHere are the steps I took:\n\n#### 1. Analyze data using the Hierarchical Layout\n\nWhen I click on **Bob Smith**\n\n* The right arrow to Bob takes us to **Paterva,** whose original creator is Maltego\n* The left arrow Bob takes us to **Event on LinkedIn** \n* The event is linked to another person **Alice Jones**, who is a VP at Example Corp and related to Maltego.com\n\nAnalyzing the graph in the hierarchical layout shows that the authoritative and important entities are: \n\n* Maltego.com\n* Alice Jones\n* Event on Linkedin\n* Bob Smith\n* Maltego Technologies\n* Paterva\n* Maltego Tools  \n\n#### 2. Analyze the data using the Circular Layout\n\nIn the middle circle, I found the same entities:\n\n* Maltego.com\n* Maltego Tools \n* Maltego Technologies\n* Event on Linkedin\n* Paterva.com\n* Paterva\n* Bob Smith\n\n#### 3. Analyze the data using the Organic Layout\n\nI found three concentrations\n\n* Paterva.com\n* Maltego.com\n* A star-like shape at Bob Smith\n\nI learned:\n\n* Maltego.com has shared an SSL certificate with Paterva.com\n* Paterva.com has an HTTP redirect to Maltego.com\n* Bob Smith is an employee of Maltego Technologies, and he was previously employed at Paterva\n* Paterva created the Maltego tool, but Maltego Technologies manages the Maltego tool\n* Maltego Technologies is in Germany, Bob Smith lives in Germany, and Paterva.com was also very active in Germany over the past few days\n\nAs a result of these observations, I concluded that either Paterva was bought by Maltego Technologies, or Paterva has been rebranded as Maltego Technologies.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089935,
+              "key": "61609d06-b548-42ce-98f8-85c175fb0a1e",
+              "title": "Thinking Like an Ethical Hacker",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "61609d06-b548-42ce-98f8-85c175fb0a1e",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Building conclusions can be tricky as it is easy to get it wrong. What can we do to improve the quality of our conclusions? ",
+                "matchers": [
+                  {
+                    "expression": "[^/s]+"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1089944,
+          "key": "a996866e-d653-4cc1-be71-36c8294eea12",
+          "title": "Offensive OSINT",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a996866e-d653-4cc1-be71-36c8294eea12",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089937,
+              "key": "b2df0c3b-43d7-4b70-92c5-7309913baa7c",
+              "title": "When Is It Critical? Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## The Criticality Issue",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1126368,
+              "key": "6104f9a0-272a-4189-93cf-e31baef29794",
+              "title": null,
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "6104f9a0-272a-4189-93cf-e31baef29794",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Ethical hackers only use OSINT for finding unintentional information leakage and using it in their attacks when allowed by the test scope  ",
+                "answers": [
+                  {
+                    "id": "e97d13f4-18f2-40d3-b8eb-3c8aef97ad71",
+                    "text": "True",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "9633842b-8b4a-43b0-8620-25c1135c486f",
+                    "text": "False",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1089939,
+              "key": "d9689ca0-5e4d-4f2f-af0e-99e83c446de6",
+              "title": "ND350 EHND C1 L5 A10 Offensive OSINT",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Bm9cWEOzcSQ",
+                "china_cdn_id": "Bm9cWEOzcSQ.mp4"
+              }
+            },
+            {
+              "id": 1089940,
+              "key": "201da502-df1e-412b-8af8-1992d976bc2d",
+              "title": "When Is It Critical? Text",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "OSINT can be used for offensive operations, including going after hackers to uncover their identities when an organization is under a denial of service or a ransomware attack. However, this can be extremely dangerous.\n\n### Guidelines For Offensive OSINT\n\nOffensive OSINT is always risky, but it will be more likely to succeed if you follow best practices.  You should use:\n\n* **Out-of-band communication: ** You should avoid regular communication channels that could be monitored or disrupted. Using a secret email address or emergency phone number makes it more difficult for the hacker to monitor communications.\n* **Fake social media profiles: ** Social media providers often send notifications when a profile is viewed, so if you use your own account, the target may know that you are looking for them.\n* **Passive information gathering channels**:  Avoid tools that send information like your IP address to the target. If you need to use a tool that doesn't support passive information gathering, use a VPN connection from another country to disguise your origin.\n* **Need-to-know**:  Do not tell anyone about the analysis except the people you need to get data from to complete the analysis.\n\n.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1126369,
+              "key": "bc694430-1c28-405e-bae3-7de29ba6f6eb",
+              "title": null,
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "bc694430-1c28-405e-bae3-7de29ba6f6eb",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Why is following best practices for Offensive OSINT important?",
+                "answers": [
+                  {
+                    "id": "ced65817-4725-4731-94d5-dab6c7d3eb3e",
+                    "text": "We may invade someone's privacy causing multiple legal issues ",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "8dc3efa0-1cd5-41ad-828f-a855e5bbc3c2",
+                    "text": "We may leak even more information that can make our existing situation worse",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "9e8b17c6-5396-49e5-ada9-eeb63ca26ba6",
+                    "text": "There is no methodology available for Offensive OSINT so it does not matter if we follow the best practices",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1089942,
+              "key": "26e93a33-d6af-41b9-9413-f7defc8d9cb8",
+              "title": "When Is It Critical? New Terms",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## New Terms\n\n<div class=\"index-module--table-responsive--1zG6k\"><table class=\"index-module--table--8j68C index-module--table-striped--3HHC-\">\n<thead>\n<tr>\n<th>Term</th>\n<th>Definition</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Need-to-know</td>\n<td>An information security principle where information is available to only those who need it. The existence of the information is often hidden from those who don't need the information.</td>\n</tr>\n<tr>\n<td>Out-of-band communication</td>\n<td>Communication done via covert, non-traditional, or unusual channels.</td>\n</tr>\n<tr>\n<td>Passive information gathering</td>\n<td>Information gathering where the analyst has no direct interaction with the target.</td>\n</tr>\n</tbody>\n</table>\n</div>",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1123121,
+              "key": "a8cadce1-b7e7-44bf-8aac-4d79ac5251e1",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Further Reading\n\nIf you want to learn more about Offensive OSINT, watch this video on <a href=\"https://www.youtube.com/watch?v=eHOMGUTi9yo\" target=\"_blank\">YouTube: SANS Webcast: OSINT for Pentesters Finding Targets and Enumerating Systems</a>. It covers Offensive OSINT from a perspective of penetration testing and offers many great insights.",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1089959,
+          "key": "195089a0-de9d-4765-b017-c6f3b5d00964",
+          "title": "Lesson Recap",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "195089a0-de9d-4765-b017-c6f3b5d00964",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089954,
+              "key": "21e80661-5fe0-4995-beb0-73d464144c0b",
+              "title": "Lesson Recap Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## What We Have Learned",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089955,
+              "key": "d95b9ffd-6bbf-4520-940b-d700b4bb14d9",
+              "title": "ND350 EHND C1 L5 A11 Lesson Recap V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "BA-De27K9hk",
+                "china_cdn_id": "BA-De27K9hk.mp4"
+              }
+            },
+            {
+              "id": 1089956,
+              "key": "2d6115f4-557d-4a32-b768-a24e753155c4",
+              "title": "Lesson Recap Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this lesson, we studied OSINT and focused on five topics:\n\n### Exploratory Link Analysis\n\nWe learned about the Exploratory Link Analysis process: about the **Mine** > **Link** > **Analyze**.\n\n### Data Mining\n\nWe looked at three categories of OSINT data:  infrastructure, operations, and employees and how to mine data using the OSINT Framework.\n\n### Building Links\n\nWe learned how to establish links between the data we find using Maltego. With Maltego, we can manage the process and use Arrows, Collections, and Notes to establish the relationships.\n\n### Analyzing Links\n\nWe also learned how to analyze links using Tree, Universe, and Organic models to discover new information and build conclusions about the data we  gathered.\n\n### Offensive OSINT\n\nWe ended this lesson with a discussion about using OSINT to target hackers to uncover their identities.\n\nI hope you had as much fun learning this as I did teaching it!",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1089964,
+          "key": "e3ecc323-04cd-4566-b87e-4dc39abc9bd9",
+          "title": "Course Recap",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "e3ecc323-04cd-4566-b87e-4dc39abc9bd9",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089960,
+              "key": "5da69f09-1ab2-480f-9d77-9a0d946e5574",
+              "title": "Course Recap Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## What We Covered In This Course",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089961,
+              "key": "2cadf6be-9d3d-4581-b239-fd8a0cdc8d7b",
+              "title": "ND350 EHND C1 L5 A11b Course Recap V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "rOzd0eimx_s",
+                "china_cdn_id": "rOzd0eimx_s.mp4"
+              }
+            },
+            {
+              "id": 1121945,
+              "key": "2499973b-d529-42e2-9792-0c0f8b7a5274",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Awesome!  You have finished all of the lessons in this course. Let’s review our journey.",
+              "instructor_notes": null
+            },
+            {
+              "id": 1121946,
+              "key": "f0cadb4b-93a8-4a21-9d10-4836c0266026",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/December/5fe39e59_1/1.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/f0cadb4b-93a8-4a21-9d10-4836c0266026",
+              "caption": "What We Covered In This Course",
+              "alt": "What We Covered In This Course",
+              "width": 1000,
+              "height": 335,
+              "instructor_notes": null
+            },
+            {
+              "id": 1089963,
+              "key": "a527837b-5dae-4e3b-a26d-9a1c92a98e53",
+              "title": "Course Recap Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Vulnerability Management\n\nIn this lesson we: \n\n* Learned how automated tools are used for vulnerability scanning. \n* Used Nessus to configure organizational policies and schedule scans.\n* Exported reports and exported data for processing by other tools.\n* Managed data to prioritize risk and manage response efforts using Faraday.\n* Calculated risk scores and assigned risk ratings manually using the CVSS common vulnerability scoring system.\n* Uses a CVSS vector to map the values on the NIST CVSS calculator.\n* Discussed false positives and false negatives and the limitations of automated scanning.\n\n### System Auditing\n\nIn this lesson we:\n\n* Used test scopes to understand the context and objective,  review the guidelines, and understand the limits of a specific test. \n* Learned how to gather information and organize information about our target using NMap and the Metasploit Framework. \n* Used the information we gathered to research existing vulnerabilities and find their exploits. \n* Explored CVE’s and exploit codes, including proof of concept, public exploits, and commercial exploits.\n* Validated vulnerabilities by executing exploits. \n* Learned about how to write an effective report to share our results \n* Explored why some dangerous exploits are intentionally bugged to make them more difficult to use.\n\n### Application Auditing\n\nIn this lesson we:\n\n* Learned about OWASP WSTG methodology, including how to use the guide and perform tests.\n* Sent an HTTP request to a web application and analyzed the response codes.\n* Used Burp Suite, a semi-automated tool to reduce our manual workload and increase testing speed. \n* Learned how to use fully automated tools to quickly test thousands of predefined test cases for us in a matter of minutes.\n* Discussed the importance of continuous learning and learned about how many things there are to hack and test! \n\n**Social Engineering**\n\nIn this lesson we: \n\n* Learned how malicious hackers take advantage of opportunities in human psychology to influence people to take actions that open vulnerabilities.\n* Conducted a phishing simulation campaign using the GoPhish Framework. \n* Learned about how to create and use malware using Metasploit.\n* Created a persuasive landing page to entice people to take a specific action.\n* Discussed the ethics of Social Engineering and how to use social engineering to protect an organization without hurting people. \n\n### OSINT\n\nIn this lesson we: \n\n* Used Exploratory Link Analysis to gather OSINT (open-source intelligence) \n* Mined data using the OSINT framework to find data sources.\n* Used Maltego to map our data,  build links, establish relationships, grouping data into collections, and take notes about the data.\n* Analyzed links using the Tree, Universe, and Organic models to discover new information and build conclusions.\n* Learned how OSINT can also be used to target hackers and uncover their identities.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1089967,
+          "key": "8d23e48c-6b12-419d-b4ff-644b6e1726be",
+          "title": "Congratulations",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "8d23e48c-6b12-419d-b4ff-644b6e1726be",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089965,
+              "key": "55246623-5c04-491f-a34c-67815c9598fc",
+              "title": "Congratulations Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Great Work Completing The Lessons!!!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1089966,
+              "key": "ae7dd716-3d44-4a35-a628-2a6df3076aaf",
+              "title": "ND350 EHND C1 L5 A12 Congratulations",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "9D2Bh2N7100",
+                "china_cdn_id": "9D2Bh2N7100.mp4"
+              }
+            },
+            {
+              "id": 1121483,
+              "key": "74dec613-4ba0-4980-b952-0b68264f9aae",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Congratulations on finishing the lessons in this course.  I have enjoyed sharing this information with you and getting you ready to complete your next task, an Audit of ExampleCorp.\n\nAlthough the lessons are finished, your learning has just begun.  Moving forward in your journey as an Ethical Hacker, you will uncover many new challenges due to the industry's wide-scale but be assured, you have a strong foundation and all the skills you need to learn and adapt quickly.\n\nYou can start to put all of the skills you have learned into action right now in the project, where you will audit a company's complete infrastructure. \n\nWith that, I wish you the best of luck in the future.\n\nEthical Hacking is an exciting field and I can not wait to hear about your success!",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1089970,
+          "key": "ec599ef8-a6d0-4a13-8bb5-356254161856",
+          "title": "Glossary",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "ec599ef8-a6d0-4a13-8bb5-356254161856",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1089968,
+              "key": "df4fd8ec-b0d4-4913-a202-86201ecdc4fb",
+              "title": "Glossary Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## New Terms In This Lesson",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1125373,
+              "key": "28fb72b8-e73a-4e72-96aa-1e2ba0c96f72",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<div class=\"index-module--table-responsive--1zG6k\"><table class=\"index-module--table--8j68C index-module--table-striped--3HHC-\">\n<thead>\n<tr>\n<th>Term</th>\n<th>Definition</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Backward links</td>\n<td>Connections from new information to an existing information source</td>\n</tr>\n<tr>\n<td>Collections</td>\n<td>A link building function used to group similar data entities based on their types</td>\n</tr>\n<tr>\n<td>Digital Infrastructure</td>\n<td>Assets owned or leased by an organization to support digital operations, including email servers, websites, IP addresses, domain names, and software licenses</td>\n</tr>\n<tr>\n<td>Entity</td>\n<td>A Maltego term used to denote a bit of information, including domain names,  physical locations, telephone numbers, IP addresses, and much more</td>\n</tr>\n<tr>\n<td>Exploratory Link Analysis.</td>\n<td>A scientific approach to use OSINT to discover information leakage</td>\n</tr>\n<tr>\n<td>External Operations</td>\n<td>An organization's operational activities related to its supply chain, distribution network and community partners</td>\n</tr>\n<tr>\n<td>Forward links</td>\n<td>Connections from an existing information source to new information</td>\n</tr>\n<tr>\n<td>Internal Operations</td>\n<td>An organization's operational activities related to internal systems, processes, events, and employees</td>\n</tr>\n<tr>\n<td>Leaf</td>\n<td>The last element in a Tree Model</td>\n</tr>\n<tr>\n<td>Mining</td>\n<td>The first step in Exploratory Link Analysis, which involves gathering information from various sources. Mining can be done on Infrastructure, Operations, and Employees.</td>\n</tr>\n<tr>\n<td>Need-to-know</td>\n<td>An information security principle where information is available to only those who need it. The existence of the information is often hidden from those who don't need the information.</td>\n</tr>\n<tr>\n<td>Notes</td>\n<td>Used to include additional information while building links in Maltego.</td>\n</tr>\n<tr>\n<td>Organic Model</td>\n<td>An OSINT analysis model that uses both concentration and distance structures. The distance between two concentrated groups depends on their common interests.</td>\n</tr>\n<tr>\n<td>OSINT Framework</td>\n<td>An online directory containing sources of OSINT hosted at <a target=\"_blank\" href=\"https://osintframework.com\">https://osintframework.com</a></td>\n</tr>\n<tr>\n<td>Out-of-band communication</td>\n<td>Communication done via covert, non-traditional, or unusual channels.</td>\n</tr>\n<tr>\n<td>Passive information gathering</td>\n<td>Information gathering where the analyst has no direct interaction with the target.</td>\n</tr>\n<tr>\n<td>Physical Infrastructure</td>\n<td>Assets owned or leased by an organization to support physical operations, including office buildings, security cameras, lighting, power supply units, furniture and fixtures, and computer systems</td>\n</tr>\n<tr>\n<td>Root</td>\n<td>The top element in a Tree Model</td>\n</tr>\n<tr>\n<td>Transforms</td>\n<td>An automated data mining process that uses prebuilt software scripts that return information related to existing information</td>\n</tr>\n<tr>\n<td>Tree Model</td>\n<td>An OSINT analysis model</td>\n</tr>\n<tr>\n<td>Universe/Circular Model</td>\n<td>An OSINT analysis model that uses a concentration structure -- the more links elements have in common, the closer they get.</td>\n</tr>\n</tbody>\n</table>\n</div>",
+              "instructor_notes": null
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "lesson_type",
+      "reason": "Obsolete"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

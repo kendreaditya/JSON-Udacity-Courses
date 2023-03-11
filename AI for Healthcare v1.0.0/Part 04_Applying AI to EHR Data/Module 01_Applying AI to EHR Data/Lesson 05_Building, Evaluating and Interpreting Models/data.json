@@ -1,0 +1,1968 @@
+{
+  "data": {
+    "lesson": {
+      "id": 1004964,
+      "key": "9f2a59cc-ed42-475d-abe6-fdb731927eff",
+      "title": "Building, Evaluating and Interpreting Models",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "In this final lesson, you'll be putting all of your skills together to build, evaluate and interpret ML models for Bias and Uncertainty. ",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "AI in EHR Course Glossary",
+            "uri": "https://video.udacity-data.com/topher/2020/April/5e9cfa93_ai-ehr-course-glossary/ai-ehr-course-glossary.pdf"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 1005797,
+          "key": "097b1cd3-89ae-49f1-b1f0-723d438b9cbf",
+          "title": "Building, Evaluating & Interpreting Models Overview",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "097b1cd3-89ae-49f1-b1f0-723d438b9cbf",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1005798,
+              "key": "fe18e6e6-d8a8-4200-854a-9314c82c33a7",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Building, Evaluating & Interpreting Models Overview",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1012263,
+              "key": "b1167aef-9fc2-4ea7-9e93-2fe1debb8a9d",
+              "title": "ND320 AIHCND C01 L04 A01 Building Models Overview V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "_UrS2i6hpHI",
+                "china_cdn_id": "_UrS2i6hpHI.mp4"
+              }
+            },
+            {
+              "id": 1012284,
+              "key": "cef4934b-6b16-423e-8738-f05d9a0189b9",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Building, Evaluating and Interpreting Models for Bias and Uncertainty Overview\nThis lesson contains some really fantastic tools for working with EHR data in AI. \n\n**Note**: At the time this material was created some of the TensorFlow features are in beta form and may change as they launch. That being said these are some bleeding-edge resources to help with many AI projects. \n\n- In the first part, you will get hands-on with using Tensorflow` DenseFeatures` for building a simple regression model.\n- Next, you will first review some common evaluation metrics for EHR models and then learn to implement brier scores for model evaluation\n- Then, you'll conduct a demographic bias analysis and become familiar with a  framework out of the University of Chicago called Aequitas. You will use this Aequitas for group bias and fairness disparity analysis. \n- Next, you will implement uncertainty estimation using the Tensorflow Probability API. You will also review some of the underlying concepts for Bayesian probability and types of uncertainty that very important in evaluating model performance.\n  - **Note**: TensorFlow Probability is still in beta at the time this course was published. Documentation is still being built out and some of the code may change.\n- Finally, you will interpret models with Shapley values. You will first review model interpretability and some model agnostic methods. Then you will use one of those methods,  Shapley values.\n  - **Note**: This section is included as a bonus and is not included in the project itself, but is highly useful. \n\nThere is so much to cover in this section. Head to the next section to get started.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1012285,
+              "key": "cfb2cb3b-d26b-44f3-80d3-e3f84f8ce47c",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e90dae4_l4-building-evaluating-and-interpreting-models-for-bias-and-uncertainty-1/l4-building-evaluating-and-interpreting-models-for-bias-and-uncertainty-1.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/cfb2cb3b-d26b-44f3-80d3-e3f84f8ce47c",
+              "caption": "Lesson Overview",
+              "alt": "Lesson Overview",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1005799,
+          "key": "c3d65858-313d-45b0-9ba1-97b55b19098c",
+          "title": "Tensorflow Regression Model with DenseFeatures",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c3d65858-313d-45b0-9ba1-97b55b19098c",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1005800,
+              "key": "a22a1b22-87b5-4710-b187-ea35cf451ebb",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Tensorflow Regression Model with DenseFeatures",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1005801,
+              "key": "b40603a8-324a-4abb-9c82-26fa3b52ab1c",
+              "title": "ND320 AIHCND C01 L04 A02 Build A Tensorflow Regression Model With DenseFeatures",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "zIttH5pj5hs",
+                "china_cdn_id": "zIttH5pj5hs.mp4"
+              }
+            },
+            {
+              "id": 1005802,
+              "key": "94a3ed95-3483-4edc-a30b-c89412bd0272",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Key Points",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1012286,
+              "key": "26890084-2a5e-420c-b2ec-364db403119a",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e90db09_l4-building-evaluating-and-interpreting-models-for-bias-and-uncertainty-2/l4-building-evaluating-and-interpreting-models-for-bias-and-uncertainty-2.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/26890084-2a5e-420c-b2ec-364db403119a",
+              "caption": "Build Model with TF `DenseFeatures`",
+              "alt": "Build Model with TF `DenseFeatures`",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1014395,
+              "key": "795903b0-2493-4ce3-9ddc-cb3ce67a4af6",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## TF DenseFeatures Key Points\nIn this section, we will focus on just building a simple Tensorflow regression model with TF `DenseFeatures`, but we realize that there are more advanced deep learning architectures. Please feel free to try different approaches to augment your features and architecture with the walkthroughs and exercises in this lesson. There are some additional links below to explore around with some AutoML offerings. These are not the focus of this course but are included in case this is interesting to you.\n\n### Build Model with TF DenseFeatures\nTensorflow DenseFeatures, combining features, like those from the TensorFlow Feature Columns API, into a dense representation for the model.\n\nYou can only use certain TF Feature Columns with `DenseFeatures`:\n- `numeric_column`\n- `embedding_column`\n- `bucketized_column`\n- `indicator_column`\n\n**Note**: \n- For the sake of simplicity, we will use the Sequential API for this course, but if you want to customize further, feel free to try to the Functional API. However, you might encounter some issues later with configuring some other parts with the TF Probability outputs.\n- As of writing, Tensorflow is experimenting with Sequence Features columns as well that can be combined with the `SequenceFeatures` function. This will not be covered in the course but wanted to share this for your info since it can be very useful.\n\n\n#### Additional Resources\n- [TF DenseFeatures](https://www.tensorflow.org/api_docs/python/tf/keras/layers/DenseFeatures)\n- [Functional API](https://www.tensorflow.org/guide/keras/functional)\n- [SequenceFeatures](https://www.tensorflow.org/api_docs/python/tf/keras/experimental/SequenceFeatures)\n- [GCP AutoML](https://cloud.google.com/automl/)\n- [AWS Autopilot](https://aws.amazon.com/sagemaker/autopilot/)\n- [AdaNet](https://ai.googleblog.com/2018/10/introducing-adanet-fast-and-flexible.html)\n- [AutoKeras](https://autokeras.com/)\n- [H20 Driverless AI](https://www.h2o.ai/products/h2o-driverless-ai/)\n- [AdaNet Additional](https://arxiv.org/abs/1607.01097)\n- [AutoKeras Titanic](https://autokeras.com/examples/titanic/)\n- [Evolved Transformer](https://arxiv.org/abs/1901.11117)\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014756,
+              "key": "4477aabd-f162-4763-bf13-7ce57d94d81c",
+              "title": "DenseFeatures",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "4477aabd-f162-4763-bf13-7ce57d94d81c",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What do you have to keep in mind when working with TensorFlow `DenseFeatures`?\n",
+                "answers": [
+                  {
+                    "id": "a1587237411416",
+                    "text": "You can only use the Sequential API.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587237486899",
+                    "text": "You are only able to work with Regression Models.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587237613989",
+                    "text": "You can use any TF Feature columns.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587237666763",
+                    "text": "You can also use the Functional API.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587237742260",
+                    "text": "You may only use numeric, embedding, bucketize or indicator columns from  the TF Feature Columns API.",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1009466,
+          "key": "6d861991-ee4b-4cb0-a7eb-04992dbe08b0",
+          "title": "TF DenseFeatures Walkthrough",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "6d861991-ee4b-4cb0-a7eb-04992dbe08b0",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1009467,
+              "key": "bbbc1b28-b49f-45b7-8221-8325f23603f7",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## TF DenseFeatures Walkthrough",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009468,
+              "key": "09f6c450-a668-4671-b0c4-17343ed983f3",
+              "title": "ND320 AIHCND C01 L04 A03 Build A Tensorflow Regression Model With DenseFeatures",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "UEo52_lMjKk",
+                "china_cdn_id": "UEo52_lMjKk.mp4"
+              }
+            },
+            {
+              "id": 1014772,
+              "key": "68c7e03f-ef32-47c5-8cbf-a7177da7a7e2",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Key Points\n\n### Tensorflow DenseFeatures Layer\nTensorflow provides the [DenseFeatures layer](https://www.tensorflow.org/api_docs/python/tf/keras/layers/DenseFeatures) as a way to combine some of the Tensorflow feature columns we learned earlier into a dense input tensor to your model.  For this example, we use the [Sequential API](https://www.tensorflow.org/api_docs/python/tf/keras/Sequential) but you could use the [Functional API](https://www.tensorflow.org/guide/keras/functional) as well with some adjustments. Hopefully, the Tensorflow Keras modeling functions should be familiar to you and for the walkthrough, we again used the architecture from the [Tensorflow regression tutorial](https://www.tensorflow.org/tutorials/keras/regression). \n\nOne key thing to note is that you can only use some Tensorflow Feature Column types with DenseFeatures so it is worth checking. At the time of writing this course, here are the features that you can use.\n- [Numeric Feature](https://www.tensorflow.org/api_docs/python/tf/feature_column/numeric_column)\n- [Embedding Feature](https://www.tensorflow.org/api_docs/python/tf/feature_column/embedding_column)\n- [Bucketized Feature](https://www.tensorflow.org/api_docs/python/tf/feature_column/bucketized_column)\n- [One hot encoded Feature](https://www.tensorflow.org/api_docs/python/tf/feature_column/indicator_column)\n\nBelow I will walk through the simple steps to use the DenseFeatures layer.\n\n- First, combine all of your Tensorflow feature columns into a list that can be passed to the DenseFeatures layer. Please note that this is not the column name but the Tensorflow feature column metadata that you will get when you create a Tensorflow feature.\n```python\nfeature_columns = tf_categorical_feature_list + tf_numerical_feature_list\ndense_feature_layer = tf.keras.layers.DenseFeatures(feature_columns)\n```\n- Next, we simply add this 'dense_feature_layer' as the first layer to the model and this will handle the combining of feature inputs to the model.\n```python\n    model = tf.keras.Sequential([\n    **dense_feature_layer**,\n    tf.keras.layers.Dense(64, activation='relu')\n   ... additional layers\n```\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1013685,
+              "key": "93d6365b-2666-40d6-8664-861bb7b748be",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1009466xJUPYTERx3qf6ukw",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-jzmt7",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Lesson_4_screencast.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1005803,
+          "key": "933a24af-3859-4a7f-b79a-1d227798758c",
+          "title": "Common EHR Model Evaluation Metrics",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "933a24af-3859-4a7f-b79a-1d227798758c",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1005804,
+              "key": "02408183-557e-4158-88f2-cd9355096ed5",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Common EHR Model Evaluation Metrics",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1013945,
+              "key": "fdd7b88f-81dd-47c2-91b2-225dfead8959",
+              "title": "ND320 AIHCND C01 L04 A04 Common EHR Model Evaluation Metrics",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "UkXmlSQHUvU",
+                "china_cdn_id": "UkXmlSQHUvU.mp4"
+              }
+            },
+            {
+              "id": 1014422,
+              "key": "9f0af1b7-3bca-42fd-ba67-273b9cca1c43",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Common EHR Metrics Key Points\nFor this course, we will assume some exposure to common evaluation metrics used for classification and regression. These terms should hopefully be familiar and we will not cover them fully, but here is a quick review.\n\n### Common Classification Metrics\n- [**ROC**](https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc): receiver operating characteristic curve or ROC curve that shows a graph of the performance of a classification model. It is the True Positive Rate Vs. False Positive Rate across different thresholds.\n- [**AUC**](https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc): Area under the ROC Curve measures the entire two-dimensional area underneath the entire ROC curve.\n- [**F1**](https://en.wikipedia.org/wiki/F1_score): Harmonic mean between precision and recall\n- [**Precision**](https://en.wikipedia.org/wiki/Precision_and_recall): the fraction of relevant instances among the retrieved instances\n- [**Recall**](https://en.wikipedia.org/wiki/Precision_and_recall): the fraction of the total amount of relevant instances that were actually retrieved.\n\n### Common Regression Metrics\n- [**RMSE**](https://en.wikipedia.org/wiki/Root-mean-square_deviation): Root Mean Square Error- a measure of the differences between values predicted by a model.\n- [**MAPE**](https://en.wikipedia.org/wiki/Mean_absolute_percentage_error): Mean Absolute Percentage  Error is a measure of quality for regression models loss.\n- [**MAE**](https://en.wikipedia.org/wiki/Mean_absolute_error): Mean Absolute Error is a measure of errors between paired observations. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1012287,
+              "key": "97b522af-8846-4c67-981b-6c8b1dfc99ba",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e90db6e_l4-building-evaluating-and-interpreting-models-for-bias-and-uncertainty-3/l4-building-evaluating-and-interpreting-models-for-bias-and-uncertainty-3.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/97b522af-8846-4c67-981b-6c8b1dfc99ba",
+              "caption": "Precision Recall Tradeoff",
+              "alt": "Precision Recall Tradeoff",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1014564,
+              "key": "ec677e8d-656d-491c-988f-070624fa272f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Precision-Recall Tradeoff\nAs a quick reminder, there is often some level of precision that you must align with and some capture rate or recall that you are trying to improve. This balance between the two is a necessary tradeoff and a key component that you must communicate with non-technical stakeholders who might have unrealistic views of the impact or capabilities of AI.\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014735,
+              "key": "d995bd2b-b3b5-4c10-bf8b-f72747ffe802",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Brier Scores\nOne metric that you might not be familiar with is a Brier score and it is often used in weather forecasting for estimating the probability certainty of a forecast.  It can be a useful metric for comparing the performance of algorithms based on the degree of confidence in a given prediction. This can be helpful because the confidence and measurement of uncertainty can yield vastly different interpretations. \n\nFor the actual definition, it is essentially the mean squared error of a given probability forecast and I walk through the formula step by step below. However, please note that you are not expected to know this formula or use it in this course because we are focusing on the predictions for a regression model. It is introduced as a relevant evaluation metric for if we had a binary classification problem with the associated prediction probabilities. \n\n\n\n\n\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014737,
+              "key": "f09a77df-a5fd-44b6-a333-fb8c6ac18c26",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Brier Score Breakdown Part 1",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014734,
+              "key": "c45c2148-1670-471a-9f61-51fc1c63383b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Basically you take the probability forecast on a 0 to 1 scale which is *f of t* and subtract that from *O of t* which is the actual value which is a binary 0 and 1 value. You then square the difference of this value.\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1012288,
+              "key": "47751a1f-a508-4524-96d9-17eae6c2b969",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e90db8c_l4-building-evaluating-and-interpreting-models-for-bias-and-uncertainty-4/l4-building-evaluating-and-interpreting-models-for-bias-and-uncertainty-4.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/47751a1f-a508-4524-96d9-17eae6c2b969",
+              "caption": "Brier Score Breakdown Part 2",
+              "alt": "Brier Score Breakdown Part 2",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1014574,
+              "key": "d1ba617f-479f-4872-b888-d22d317d876f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "2. Take the summation of these squared differences from t=1 to N, the total number of predictions.\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1012289,
+              "key": "7be22bdc-a212-4cfb-8cbd-153de42a8ddb",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e90dbe8_l4-building-evaluating-and-interpreting-models-for-bias-and-uncertainty-5/l4-building-evaluating-and-interpreting-models-for-bias-and-uncertainty-5.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/7be22bdc-a212-4cfb-8cbd-153de42a8ddb",
+              "caption": "Brier Score Breakdown Part 3",
+              "alt": "Brier Score Breakdown Part 3",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1014575,
+              "key": "c2924911-49e6-40fb-97eb-bb17dafc6ae2",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "3. Then divide by N the total number of predictions",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1012291,
+              "key": "b61f833e-37c5-4589-b172-a2f733aa7d14",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e90dc18_l4-building-evaluating-and-interpreting-models-for-bias-and-uncertainty-6/l4-building-evaluating-and-interpreting-models-for-bias-and-uncertainty-6.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/b61f833e-37c5-4589-b172-a2f733aa7d14",
+              "caption": "Brier Score Breakdown Part 4",
+              "alt": "Brier Score Breakdown Part 4",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1014576,
+              "key": "3d8c28af-917d-4365-addd-d61546f8bb32",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "The result is the Brier Score which ranges from 0 and 1.\n- Lower is better\n- 0 is the best score\n- 1 is the worst score.\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014736,
+              "key": "0d220fc1-72b7-470d-9945-41560a94a5ac",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### Additional Resources\n- [A Note on the Evaluation of Novel Biomarkers: Do Not Rely on Integrated Discrimination Improvement and Net Reclassification Index](https://pubmed.ncbi.nlm.nih.gov/23553436/)\n- [Brier Scores](https://en.wikipedia.org/wiki/Brier_score)\n- [Brier Score Limitations ](https://diagnprognres.biomedcentral.com/articles/10.1186/s41512-017-0020-3)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1013946,
+              "key": "f4fbac08-c954-4ae9-bca0-c49092870315",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1009466xJUPYTERx3qf6ukw",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-k90ce",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Lesson_4_screencast.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 1014759,
+              "key": "0360eedf-c3af-41e1-bef0-b8a31a0f1b61",
+              "title": "Common Model Evaluation Metrics",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "0360eedf-c3af-41e1-bef0-b8a31a0f1b61",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following are common Evaluation Metrics used in machine learning?",
+                "answers": [
+                  {
+                    "id": "a1587238794479",
+                    "text": "Receiver Operating Characteristic Curve",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587238909290",
+                    "text": "Precision",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587239025682",
+                    "text": "Recall",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587239030711",
+                    "text": "Brier Scores",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587239040793",
+                    "text": "RMSE",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1014761,
+              "key": "8bb844c9-1a30-4326-850b-9fcb7b835ce7",
+              "title": "Brier Scores",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "8bb844c9-1a30-4326-850b-9fcb7b835ce7",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following is important to know when working with Brier Scores?",
+                "answers": [
+                  {
+                    "id": "a1587239361526",
+                    "text": "Brier Scores are the only metric you need to use to evaluate your model.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587239390386",
+                    "text": "Brier scores are basically the mean squared error of probability forecast.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587239439354",
+                    "text": "You need to fully understand the math behind how the Brier Score works to use it.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587239444516",
+                    "text": "The Brier Score provides an estimate of the probability certainty of a prediction ",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587239636643",
+                    "text": "Brier Scores are only for use in weather forecast models.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1005807,
+          "key": "335f7168-8991-4079-abcc-2dbc6edc4497",
+          "title": "Common EHR Model Evaluation Metrics Exercise",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "335f7168-8991-4079-abcc-2dbc6edc4497",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1013688,
+              "key": "29cc6eaa-221d-49f1-b259-ec9e252bc602",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1005807xJUPYTEReipnik0h",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-1ba4d",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Lesson_Modeling_Exercise_1_Starter_Code.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1005808,
+          "key": "d0a2f171-a8b0-4251-b899-55d18011bf18",
+          "title": "Common EHR Model Evaluation Metrics Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d0a2f171-a8b0-4251-b899-55d18011bf18",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1005809,
+              "key": "5e1370ad-c044-43f4-9f64-1ee0af0d482e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Common EHR Model Evaluation Metrics Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1013235,
+              "key": "fc4cb3e2-f810-4590-8e8b-eb739f94684f",
+              "title": "ND320 AIHCND C01 L04 A05 Common EHR Model Evaluation Metrics Solution",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "vzpjojmD7F0",
+                "china_cdn_id": "vzpjojmD7F0.mp4"
+              }
+            },
+            {
+              "id": 1013689,
+              "key": "cd2245d0-75b8-46e2-9088-f9caa677a800",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1005808xJUPYTERicyviwnb",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-09iqt",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Lesson_Modeling_Exercises_Solutions.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1005820,
+          "key": "4c00ff99-adf2-47f7-8d2d-e77b2c5ccfe4",
+          "title": "Demographic Bias Analysis",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "4c00ff99-adf2-47f7-8d2d-e77b2c5ccfe4",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1005821,
+              "key": "9d5c2971-d1c9-41a0-80b4-a3a1a48046da",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Demographic Bias Analysis",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1005822,
+              "key": "d2898a6a-1428-483a-9991-137fb401d473",
+              "title": "ND320 AIHCND C01 L04 A06 Demographic Bias Analysis",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "xrELV6dnWuA",
+                "china_cdn_id": "xrELV6dnWuA.mp4"
+              }
+            },
+            {
+              "id": 1005823,
+              "key": "e3b842ab-641b-4bbd-9498-a6b8cf40f665",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Demographic Bias Analysis Key Points\n\n## Why is bias important to consider in your models?\nIt's important to note that bias within models can restrict or limit patient access to key medical benefits from government aid programs. \n\nPrograms using AI algorithms to help automate approvals of key government benefits are becoming more commonplace. However, it is just as important to consider how bias can unintentionally occur.\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1012292,
+              "key": "e83c6ed9-2f58-43af-8dcf-69fa4147a565",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e90dc4b_l4-building-evaluating-and-interpreting-models-for-bias-and-uncertainty-8/l4-building-evaluating-and-interpreting-models-for-bias-and-uncertainty-8.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/e83c6ed9-2f58-43af-8dcf-69fa4147a565",
+              "caption": "Why is bias in models important to consider?",
+              "alt": "Why is bias in models important to consider?",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1014577,
+              "key": "707d8bf5-c852-409a-b3df-af03e5cd7ce8",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Another reason that you want to consider bias in models is that in order to create better treatments for patients we need to find better ways to select and recruit patients that represent the wider population that a drug/treatment would be targeted for. \n\nIn many cases, there may be systemic biases for key groups and while this cannot always be prevented, bringing awareness of limitations and biases can give a more accurate picture of a treatment's effectiveness across different demographics. \n\nIn the example above, we can see that the purple parallelogram is representative of the population, while the blue circles and triangles are not and both are over-represented in the trial.\n\n### Unintended Bias\n**Unintended biases**: a bias that is not intentional and often is not even apparent to the creator of a model\n\nUnintended biases represent the unconscious or unintentional biases that come with the AI models that we are building. Becoming more aware of these biases and how they impact different groups is key.\n\n**Note**: We usually associate bias with a negative connotation, but biases can be a source of valuable prior information. The problem can be when we are not aware of our biases and do not account for those that have a significant impact on the populations these models serve. \n\n## Aequitas\n- Developed by University of Chicago Data Science for Social Good\n- Addresses concerns about unintended bias unfairly affecting certain groups\n- Definitions and metrics for unintended bias in predictive models\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014991,
+              "key": "f4bfeded-c994-4e46-a323-9e6462b089cd",
+              "title": "Demographic Bias Examples",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "f4bfeded-c994-4e46-a323-9e6462b089cd",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What are some examples of demographic bias in a model?",
+                "answers": [
+                  {
+                    "id": "a1587282984171",
+                    "text": "A diagnostic test has significantly higher false positive rate for one particular race.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587283025420",
+                    "text": "The gender and race fields have outliers when you measure the z-scores for values in these fields.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587283027994",
+                    "text": "Training data has a high number of missing values for the gender field.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587283029236",
+                    "text": "A model that determines government medical program eligibility benefits has a much higher true positive rate for a particular age group.",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1009469,
+          "key": "7eca53fd-67fe-4290-bc58-aacfbc0e16e0",
+          "title": "Demographic Bias Analysis Walkthrough",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "7eca53fd-67fe-4290-bc58-aacfbc0e16e0",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1009470,
+              "key": "34b15158-6f2f-4a49-be0e-fbbb219793fc",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Demographic Bias Analysis Walkthrough",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009471,
+              "key": "2f5d0cc9-bf9c-4249-8650-5147e7e6b654",
+              "title": "ND320 AIHCND C01 L04 A07 Demographic Bias Analysis",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "qafhOMwyd2k",
+                "china_cdn_id": "qafhOMwyd2k.mp4"
+              }
+            },
+            {
+              "id": 1012293,
+              "key": "cff12937-5791-420e-9166-3c3e02fbe682",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e90dc98_l4-building-evaluating-and-interpreting-models-for-bias-and-uncertainty-9/l4-building-evaluating-and-interpreting-models-for-bias-and-uncertainty-9.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/cff12937-5791-420e-9166-3c3e02fbe682",
+              "caption": "Group Bias Analysis",
+              "alt": "Group Bias Analysis",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1014578,
+              "key": "7851f44d-f7f8-4ddc-90d8-3c6efc6fae21",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Steps for Demographic Group Bias Analysis\n- **Select the groups we want to analyze**:  For this walkthrough, we selected the 'origin' field as a group to analyze and in this case it is for the country of origin for a car.\n- **Prepare the data:**  We use the boilerplate preprocessing code provided that takes a Pandas dataframe with the 'score' and 'label_value' fields.\n```\nfrom aequitas.preprocessing import preprocess_input_df\nfrom aequitas.group import Group\nfrom aequitas.plotting import Plot\nfrom aequitas.bias import Bias\nfrom aequitas.fairness import Fairness\nae_df, _ = preprocess_input_df(merged_binary_df)\ng = Group()\nxtab, _ = g.get_crosstabs(ae_df)\nabsolute_metrics = g.list_absolute_metrics(xtab)\nclean_xtab = xtab.fillna(-1)\naqp = Plot()\nb = Bias()\n```\n- **Analyze different metrics with the groups**: Then we can do different analyses such as TPR with the following function.\n```\ntpr = aqp.plot_group_metric(clean_xtab, 'tpr', min_group_size=0.05)\n```\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014786,
+              "key": "019514c2-4ff1-48d9-b02e-d22c12286e00",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9ba3e3_tpr-aequitas-walkthrough/tpr-aequitas-walkthrough.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/019514c2-4ff1-48d9-b02e-d22c12286e00",
+              "caption": "",
+              "alt": "",
+              "width": 1124,
+              "height": 338,
+              "instructor_notes": null
+            },
+            {
+              "id": 1013947,
+              "key": "ef744cc6-925c-4b64-ac79-3e53118b6a21",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1009466xJUPYTERx3qf6ukw",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-74v3q",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Lesson_4_screencast.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1005825,
+          "key": "73f8b35a-878a-416c-b1ff-f4b3dbea0372",
+          "title": "Demographic Bias Analysis Exercise",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "73f8b35a-878a-416c-b1ff-f4b3dbea0372",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1013948,
+              "key": "e40e1588-5f20-4783-9890-6d199bb69d47",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1005807xJUPYTEReipnik0h",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-wzm1c",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Lesson_Modeling_Exercise_2_Starter_Code.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1005826,
+          "key": "391786dd-e922-4648-86a4-01e0749811f0",
+          "title": "Demographic Bias Analysis Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "391786dd-e922-4648-86a4-01e0749811f0",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1005827,
+              "key": "71cc5a1a-f454-4c5e-999a-6b6e30608d0a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Demographic Bias Analysis Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1005832,
+              "key": "06ba8c3e-ae04-4dd4-a043-13b6752c38bf",
+              "title": "ND320 AIHCND C01 L04 A08 Demographic Bias Analysis Solution",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "E07jsC2ITrM",
+                "china_cdn_id": "E07jsC2ITrM.mp4"
+              }
+            },
+            {
+              "id": 1013949,
+              "key": "e9464ca3-9327-41c3-86b4-25e7a4838e83",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1005808xJUPYTERicyviwnb",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-9po82",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Lesson_Modeling_Exercises_Solutions.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1005828,
+          "key": "8eb25552-df38-44ee-b290-444c13d9cb7c",
+          "title": "Uncertainty Estimation",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "8eb25552-df38-44ee-b290-444c13d9cb7c",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1005829,
+              "key": "5f1a427f-71e3-4050-bbd0-d64886834bd1",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Uncertainty Estimation",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1005830,
+              "key": "01f23a48-c872-41c1-acef-b3170ea3d57d",
+              "title": "ND320 AIHCND C01 L04 A09 Uncertainty Estimation",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "rSpzX6xijQg",
+                "china_cdn_id": "rSpzX6xijQg.mp4"
+              }
+            },
+            {
+              "id": 1005831,
+              "key": "b47b7ef3-2bca-4251-964d-4f9630ced176",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Uncertainty Estimation Key Points\n### Why use Uncertainty Estimation?\nA typical classification problem provides predictions with relative weightings across the prediction classes and is different than the confidence in a given prediction. Uncertainty estimation helps us with this.\n\n# Class Probabilities != confidence in a prediction.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1012294,
+              "key": "db5c726c-3579-4d8f-8340-76340e07aad5",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e90dcb7_l4-building-evaluating-and-interpreting-models-for-bias-and-uncertainty-10/l4-building-evaluating-and-interpreting-models-for-bias-and-uncertainty-10.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/db5c726c-3579-4d8f-8340-76340e07aad5",
+              "caption": "Uncertainty Weather Example",
+              "alt": "Uncertainty Weather Example",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1014580,
+              "key": "54e429a5-f4af-43c9-8e28-cd6c424734a2",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Example:\nWhich is better?\n1. A weather forecast with a simple Yes or No prediction it will rain with some icons?\n2. A forecast that also provides the percent chance of rain or how certain the model is of its prediction?\n\nMost people would prefer the second one and in healthcare this even more important.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1012295,
+              "key": "fd61086f-d721-4529-9a08-807ef2e53fe6",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e90dcea_l4-building-evaluating-and-interpreting-models-for-bias-and-uncertainty-12/l4-building-evaluating-and-interpreting-models-for-bias-and-uncertainty-12.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/fd61086f-d721-4529-9a08-807ef2e53fe6",
+              "caption": "Review of Bayesian Probability",
+              "alt": "Review of Bayesian Probability",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1014579,
+              "key": "c59318db-1afb-44ca-8e28-e4bbb1427a01",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Bayesian Probability Review\n### Probabilistic Programming\nTo address uncertainty estimation we can use probabilistic programming, in particular, we can create Bayesian Neural Networks (BNN) using TensorFlow Probability. TF probability combines Bayesian probabilistic approaches with deep learning and since it is built on Tensorflow you can train with GPUs too. \n\nBayesian statistical approaches can be very helpful for situations where you can leverage deep domain knowledge and have small datasets. Healthcare is an industry where you might have small datasets on patient data for a new drug or rare conditions. Also, healthcare is a field where you can leverage deep domain knowledge from medical professionals and medical literature which can help provide positive “bias” in your model with pertinent domain knowledge. \n\n### Review of Bayesian Probability\n- Prior distribution - P(A)\n- P(A | Evidence) - Updating the prior with new evidence\n- P(B) - posterior probability\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1012296,
+              "key": "c2cab3b9-973e-4c3f-9103-3715ba020c82",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e90dd19_l4-building-evaluating-and-interpreting-models-for-bias-and-uncertainty-11/l4-building-evaluating-and-interpreting-models-for-bias-and-uncertainty-11.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/c2cab3b9-973e-4c3f-9103-3715ba020c82",
+              "caption": "Response Differences for Bayesian Probability",
+              "alt": "Response Differences for Bayesian Probability",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1014581,
+              "key": "4594ab66-923a-4da2-9a16-4b85c09250e5",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Example: \nLet’s say we want to assess whether a drug will pass a phase III clinical trial. The frequentist statistical response would be a yes or no response. However, the bayesian response would give a yes/no and the certainty/confidence in that prediction. This can be helpful when connecting it with metrics like Brier scores that can combine predictions from various models.\n\nIf you are only 51% certain that you will pass the clinical trial, how certain would you be?\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014998,
+              "key": "556d2c17-cfe3-4573-8caf-535d10f7223e",
+              "title": "",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "556d2c17-cfe3-4573-8caf-535d10f7223e",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following are true?",
+                "answers": [
+                  {
+                    "id": "a1587284315656",
+                    "text": "The posterior probability is updated with new evidence.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587284359837",
+                    "text": "Tensorflow Probability combines Bayesian probabilistic approaches with deep learning.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587284361058",
+                    "text": "Bayesian approaches can be useful when you have small datasets with deep domain knowledge.",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1009472,
+          "key": "f0871be2-0a4a-4897-b4c8-ce062f85b019",
+          "title": "Train Uncertainty Estimation Model Walkthrough",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "f0871be2-0a4a-4897-b4c8-ce062f85b019",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1009473,
+              "key": "9545200b-30ef-4790-a80a-5e26b90b6502",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Train Uncertainty Estimation Model Walkthrough",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009474,
+              "key": "1cb530f5-d458-46f2-92cb-8dcce1fc573a",
+              "title": "ND320 AIHCND C01 L04 A10 Train Uncertainty Estimation Model With TF Probability",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "8GQktML4aU4",
+                "china_cdn_id": "8GQktML4aU4.mp4"
+              }
+            },
+            {
+              "id": 1015940,
+              "key": "a52a70fb-7327-4b53-af01-160c5e7c722a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "*Typo: should say \"Government Aid\" at about 0:40.*",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014582,
+              "key": "3fd723f8-244e-4410-bdfd-b6a29eed8f55",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Types of Uncertainty\n- Aleatoric: \n - Statistical Uncertainty - a natural, random process\n - Known Unknowns\n\nAleatoric uncertainty is otherwise known as statistical uncertainty and is known unknowns. This type of uncertainty is inherent, and just a part of the stochasticity that naturally exists. An example is rolling a dice, which will have an element of randomness always to it.\n\n- Epistemic:\n - Systematic Uncertainty - lack of measurement, knowledge\n - Unknown Unknowns\n\nEpistemic uncertainty is also known as systemic uncertainty and is unknown unknowns. This type of uncertainty can be improved by adding parameters/features that might measure something in more detail or provide more knowledge.\n\n#### Additional Resources\n- [Uncertainty](https://en.wikipedia.org/wiki/Uncertainty_quantification)\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014791,
+              "key": "dcf16be0-53d7-4beb-996a-a148cadcba81",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Key Points\n\n### Building a Basic Uncertainty Estimation Model with Tensorflow Probability\n- Using the MPG model from earlier, create uncertainty estimation model with TF Probability.\n- In particular, we will focus on building a model that accounts for Aleatoric Uncertainty.\n\nNOTE: Before we go into the walkthrough I want to note that  TF Probability is not a v1 yet and documentation and standard patterns are evolving. That being said I wanted to expose you to a tool that might be good to have on your radar and this library can abstract away some of the challenging math behind the scenes.\n\n### Model with Aleatoric Uncertainty\n- Known Unknowns\n- 2 Main Model Changes\n    - Add a second unit to the last dense layer before passing it to Tensorflow Probability layer to model for the predictor y and the [heteroscedasticity](https://en.wikipedia.org/wiki/Heteroscedasticity) or unequal scattering of data\n```\n        tf.keras.layers.Dense(1 + 1)\n```\n\n - DistributionLambda is a special Keras layer that uses a Python lambda to construct a distribution based on the layer inputs and the output of the final layer of the model is passed into the loss function. This model will return a distribution for both mean and standard deviation. The 'loc' argument is the mean and is sampled across the normal distribution as well as the 'scale' argument which is the standard deviation and in this case, is a slightly increasing with a positive slope.   Important to note here is that we have prior knowledge that the relationship between the label and data is linear. However, for a more dynamic, flexible approach you can use the [VariationalGaussianProcess  Layer](https://www.tensorflow.org/probability/api_docs/python/tfp/distributions/VariationalGaussianProcess). This is beyond the scope of this course but as mentioned can add more flexibility.\n    ```        \ntfp.layers.DistributionLambda(  \n            lambda t:tfp.distributions.Normal(\n                loc=t[..., :1],\n                scale=1e-3 + tf.math.softplus(0.1 * t[...,1:])\n\n            )\n```\n- We can use different loss functions such as mean squared error(MSE) or negloglik. Note that if we decide to use the standard MSE metric that the scale or standard deviation will be fixed. Below is code from the regression tutorial for using negative log-likelihood loss, which through minimization is a way to maximize the probability of the continuous labels. \n```\n    negloglik = lambda y, rv_y: -rv_y.log_prob(y)\n    model.compile(optimizer='adam', loss=negloglik, metrics=[loss_metric])\n```\n\n- Extracting the mean and standard deviations for each prediction by passing the test dataset to the probability model. Then, we can call mean() or stddev() to extract these tensors.\n```\nyhat = prob_model(x_tst)\nm = yhat.mean()\ns = yhat.stddev()\n```\n\n### Model with Epistemic Uncertainty\n- Unknown Unknowns \n- Add [Tensorflow Probability DenseVariational Layer](https://www.tensorflow.org/probability/api_docs/python/tfp/layers/DenseVariational) with prior and posterior functions. Below are examples adapted from the [Tensorflow Probability Regression tutorial notebook](https://github.com/tensorflow/probability/blob/master/tensorflow_probability/examples/jupyter_notebooks/Probabilistic_Layers_Regression.ipynb).     \n```\ndef posterior_mean_field(kernel_size, bias_size=0, dtype=None):\n    n = kernel_size + bias_size\n    c = np.log(np.expm1(1.))\n    return tf.keras.Sequential([\n        tfp.layers.VariableLayer(2*n, dtype=dtype),\n        tfp.layers.DistributionLambda(lambda t: tfp.distributions.Independent(\n            tfp.distributions.Normal(loc=t[..., :n],\n                                     scale=1e-5 + tf.nn.softplus(c + t[..., n:])),\n            reinterpreted_batch_ndims=1)),\n    ])\ndef prior_trainable(kernel_size, bias_size=0, dtype=None):\n    n = kernel_size + bias_size\n    return tf.keras.Sequential([\n        tfp.layers.VariableLayer(n, dtype=dtype),\n        tfp.layers.DistributionLambda(lambda t: tfp.distributions.Independent(\n            tfp.distributions.Normal(loc=t, scale=1),\n            reinterpreted_batch_ndims=1)),\n    ])\n```\n- Here is how the 'posterior_mean_field' and 'prior_trainable' functions are added as arguments to the DenseVariational layer that precedes the DistributionLambda layer we covered earlier.\n```\ntf.keras.layers.Dense(75, activation='relu'),\n           tfp.layers.DenseVariational(1+1, posterior_mean_field, prior_trainable),        \n        tfp.layers.DistributionLambda( ....\n```\n\n### Additional Resources\n- [Tensorflow Regression with Probabilistic Layers Tutorial](https://blog.tensorflow.org/2019/03/regression-with-probabilistic-layers-in.html)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1013950,
+              "key": "07d46edf-98ef-4b21-b294-8b3ba05f75a9",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1009466xJUPYTERx3qf6ukw",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-zva8s",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Lesson_4_screencast.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 1015003,
+              "key": "97428d55-43ff-4cf1-a51b-05eddb961910",
+              "title": "Aleatoric Quiz",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "97428d55-43ff-4cf1-a51b-05eddb961910",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following are true about aleatoric uncertainty?",
+                "answers": [
+                  {
+                    "id": "a1587285483284",
+                    "text": "Flipping a coin with heads or tails is an example of this type of uncertainty.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587285531629",
+                    "text": "Adding more features can reduce uncertainty",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587285532840",
+                    "text": "It accounts for some natural, randomness in the process.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587285536470",
+                    "text": "Unknown unknown",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1015005,
+              "key": "629f497b-c22a-4152-a309-8e3f064a4e20",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "629f497b-c22a-4152-a309-8e3f064a4e20",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "How many units need to be added to the layer before the DistributionLambda layer?",
+                "answers": [
+                  {
+                    "id": "a1587285914919",
+                    "text": "1",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587285964786",
+                    "text": "2",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587285965896",
+                    "text": "3",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587285967806",
+                    "text": "Does not matter",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1015010,
+              "key": "b029945d-62f6-4747-a916-578cc465d66d",
+              "title": "",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "b029945d-62f6-4747-a916-578cc465d66d",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following are true?",
+                "answers": [
+                  {
+                    "id": "a1587286175998",
+                    "text": "The DenseVariational layer is a special Keras layer that uses a Python lambda to construct a distribution based on the layer inputs and the output of the final layer of the model is passed into the loss function",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587286184491",
+                    "text": "The VariableGaussianProcess layer can be used when you do not know the relationship between the label and the data.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587286185593",
+                    "text": " If we use MSE the scale or standard deviation will not be fixed.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587286186600",
+                    "text": "For epistemic uncertainty, the 'posterior_mean_field' and 'prior_trainable' functions are added as arguments to the DenseVariational layer.",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1005833,
+          "key": "478ee8ee-a186-4265-9078-099cd326666a",
+          "title": "Uncertainty Estimation Exercise",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "478ee8ee-a186-4265-9078-099cd326666a",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1013951,
+              "key": "bd5b776a-e7d5-45ef-beab-ba22b4c21e89",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1005807xJUPYTEReipnik0h",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-4pr9h",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Lesson_Modeling_Exercise_3_Starter_Code.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1005834,
+          "key": "ed083d90-537b-4e0d-a052-8f947045a3a4",
+          "title": "Uncertainty Estimation Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "ed083d90-537b-4e0d-a052-8f947045a3a4",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1005835,
+              "key": "cde63364-1292-4d7a-b40a-6ad367b67392",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Uncertainty Estimation Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1005836,
+              "key": "1316047c-b1a1-46e9-9774-212178571abe",
+              "title": "ND320 AIHCND C01 L04 A11 Uncertainty Estimation Solution",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "nC2E9LYcVIc",
+                "china_cdn_id": "nC2E9LYcVIc.mp4"
+              }
+            },
+            {
+              "id": 1013952,
+              "key": "57b3c177-f353-4164-a33b-6cf444be1dc1",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1005808xJUPYTERicyviwnb",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-faqqq",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Lesson_Modeling_Exercises_Solutions.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1005810,
+          "key": "41954345-44f0-4f8e-b3a4-52fcb38e823a",
+          "title": "Model Interpretability with Shapley Values",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "41954345-44f0-4f8e-b3a4-52fcb38e823a",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1005811,
+              "key": "ac5c56e6-44c1-484b-ae9e-561674ecdfaf",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Model Interpretability with Shapley Values",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1005812,
+              "key": "4945231e-da76-43c9-b08d-f10da7818c96",
+              "title": "ND320 AIHCND C01 L04 A12 Model Interpretability With Shapley Values",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "_FdcZkAGWRk",
+                "china_cdn_id": "_FdcZkAGWRk.mp4"
+              }
+            },
+            {
+              "id": 1005813,
+              "key": "c0a14016-ddda-4ab5-ae62-322ca966f991",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Model Interpretability Key Points\n**Note**: This section is included largely as a bonus and not required in the project, but it is very good to know about.\n\n## Why is Interpretability Important for EHR Datasets?\nIn general, as you would find for other industries you also want to be aware of biases in your model from key features and be able to identify bugs or issues that might occur. \n\nFor example, you might diagnose issues with your model where a feature like inpatient vs outpatient might have a greater weight than expected. This could be due to the nature of the type of problem you are dealing with as there are major distinctions with how inpatient and outpatient claims are handled.\n\nModel interpretability is an issue that is often brought up as being important in fields like healthcare because of the level of scrutiny on many decisions by regulators, the public, and the healthcare community. \n\nPeople want to understand how key decisions that can seriously impact lives are made and this is where practitioners often tend to use simpler models like linear models as they are easy to interpret. They want to avoid the proverbial **Black Box** model as it's important to have a clear idea of how a model is getting its predictions. \n\n**Black Box**: Term often used in software when inputs go in and outputs come out of an algorithm and it is not clear how the outputs were arrived at.\n\nHowever, these simpler linear models lack the complexity to handle more sophisticated cases that can have a bigger impact on society that deep learning models can potentially handle. That is why we need to use model interpretability to help remove the **Black Box** from our better, more complicated models.\n\n## Model Interpretability Methods\n **Model Agnostic**: methods that can be used on deep learning models or traditional ml models\nA few methods we can use for interpreting deep learning models that are also model agnostic include:\n- LIME or [Local Interpretable Model-Agnostic Explanations](https://arxiv.org/pdf/1602.04938.pdf ) \n  - Can scale to large datasets \n  - Can be difficult to find the right kernel \n  - Can have unstable interpretations\n- Shapley Values \n  - A method that measures the marginal contributions of features \n  - Can be computationally expensive\n\n### Shapley Values\nShapley values are based on game theory and provide the marginal contributions of features by taking the permutations of different features and then the differences between the prediction output. You can learn more about these in the links below. \n\n## Additional Resources\n - [Shapley Value Explanation](https://www.analyticsvidhya.com/blog/2019/11/shapley-value-machine-learning-interpretability-game-theory/)\n - [Integrated Gradients](http://proceedings.mlr.press/v70/sundararajan17a/sundararajan17a.pdf) - method that is specialized for deep learning models\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014795,
+              "key": "ccffe4f7-0a8e-4cf5-afe3-6cbb337a8ea1",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Shapley Value Walkthrough\n- Using Open Source Library Shap - https://github.com/slundberg/shap\n- The algorithms and visualizations used in this package came primarily out of research in Su-In Lee's lab at the University of Washington, and Microsoft Research. \n\nSteps\n- Train model without Tensorflow Probability layers, for this walkthrough we will call it 'shap_model'.\n- Use Kmeans clustering to summarize data. As we mentioned earlier the issue with Shapley can be the computation time and a way to reduce this is to cluster the features with Kmeans. In this example, we arbitrarily use 25 clusters but you could use a different number.  \n```\ndf_train_normed_summary = shap.kmeans(normed_train_data.values, 25)\n```\n\n- Use Shapley package's model agnostic KernelExplainer class and pass in the Shapley model and the summarized training data that has already been normalized in the previous walkthrough.\n```\nexplainer = shap.KernelExplainer(shap_model.predict, df_train_normed_summary)\n```\n- Extract Shapley values from the explainer.\n```\nshap_values = explainer.shap_values(normed_train_data.values)\n```\n- Summarize the Shapley values in a plot.\n```\nshap.summary_plot(shap_values[0], normed_train_data)\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014801,
+              "key": "c14b230b-d83c-4c42-b6e5-66795aca5aa6",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "###  Explanation of Feature Importance Visual\n- The y-axis shows the feature importance scale from top to bottom. The sorted order of features gives the relative importance ranking of features. So in our case, model year is the most important feature, and this shouldn't be surprising considering MPG standards increase each year. \n- Then, on the x-axis, you can see the Shapley values impact on model output. Feature values are either red, which stands for high values or blue which is for low values. Model year has red values that show a positive impact on model output, which in this case higher model year values yield higher MPG value output predictions.\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014798,
+              "key": "2895e26e-47db-4982-af5b-32fe5517af5c",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9bc0aa_shapley-summary-plot/shapley-summary-plot.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/2895e26e-47db-4982-af5b-32fe5517af5c",
+              "caption": "",
+              "alt": "",
+              "width": 554,
+              "height": 264,
+              "instructor_notes": null
+            },
+            {
+              "id": 1014799,
+              "key": "63830132-690e-41e7-99ad-caa45d661b02",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "- Single point visualization - Next, we will look at a single point in this visualization. This shows 5 features change the base value towards zero. The base value is the average model output over the training dataset. The features in red displacement, horsepower and weight are pushing the label to a higher value. Whereas model year and cylinder, in this case, are pushing lower.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014797,
+              "key": "a8c653cb-2801-48d6-a1af-2e5383ae6ee6",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9bc024_screen-shot-2020-04-18-at-8.04.22-pm/screen-shot-2020-04-18-at-8.04.22-pm.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/a8c653cb-2801-48d6-a1af-2e5383ae6ee6",
+              "caption": "",
+              "alt": "",
+              "width": 2020,
+              "height": 296,
+              "instructor_notes": null
+            },
+            {
+              "id": 1014800,
+              "key": "0d1604cd-0510-4d0d-a806-7ca87949eb07",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "- Larger Sample- Lastly let's take that last visual and expand it to a sample of 10 points. Hopefully, this better illustrates how certain features are pushing the value up or down relative to a base value.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1014796,
+              "key": "3c71b538-cff5-4f21-8f03-9629b1b363d7",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e9bc013_screen-shot-2020-04-18-at-8.04.33-pm/screen-shot-2020-04-18-at-8.04.33-pm.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/3c71b538-cff5-4f21-8f03-9629b1b363d7",
+              "caption": "",
+              "alt": "",
+              "width": 2028,
+              "height": 738,
+              "instructor_notes": null
+            },
+            {
+              "id": 1013953,
+              "key": "ccdccf59-f51e-483a-b2e4-7949f1abd266",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1009466xJUPYTERx3qf6ukw",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-rnvtf",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Lesson_4_screencast.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 1015013,
+              "key": "4eeda9c3-9bc6-499a-b62d-3ae48fb24af5",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "4eeda9c3-9bc6-499a-b62d-3ae48fb24af5",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What is one reason you might choose Shapley values over LIME?",
+                "answers": [
+                  {
+                    "id": "a1587286706182",
+                    "text": "It is easy to find the right kernel for LIME.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587286743983",
+                    "text": "Shapley scales well to large datasets.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587286745059",
+                    "text": "LIME can be subject to multiple interpretations",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1015018,
+              "key": "448d2e44-496d-4870-90af-ea9228dd1085",
+              "title": "",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "448d2e44-496d-4870-90af-ea9228dd1085",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following are true about the Shapley summary plot?",
+                "answers": [
+                  {
+                    "id": "a1587286940963",
+                    "text": " Feature values are either blue, which stands for high values or red which is for low values. ",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1587286950631",
+                    "text": "The x axis gives the impact of Shapley values on model output.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1587286951487",
+                    "text": "The y axis is the ranked list of features.",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1005837,
+          "key": "ffafb861-1f0b-4510-88b5-fa07c9f742cc",
+          "title": "Building Models Recap",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "ffafb861-1f0b-4510-88b5-fa07c9f742cc",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1005839,
+              "key": "be5abd8f-c3fc-4e14-8906-40ff5e33e9ce",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Lesson Recap",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1005840,
+              "key": "72f6fc1e-3767-4dc1-86ff-84b8cc884d0c",
+              "title": "ND320 AIHCND C01 L04 A13 Lesson Overview",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Mm0Q8D_F3qc",
+                "china_cdn_id": "Mm0Q8D_F3qc.mp4"
+              }
+            },
+            {
+              "id": 1005842,
+              "key": "947456e7-bf89-4ec6-ae27-dab4ace057f2",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Lesson Recap",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1005841,
+              "key": "8d43e00c-ae14-4d41-9700-c1793c495ee3",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e90dda5_l4-building-evaluating-and-interpreting-models-for-bias-and-uncertainty-14/l4-building-evaluating-and-interpreting-models-for-bias-and-uncertainty-14.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/8d43e00c-ae14-4d41-9700-c1793c495ee3",
+              "caption": "Lesson Recap",
+              "alt": "Lesson Recap",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1014613,
+              "key": "32796459-f709-4b1f-aba7-df640d10ffbd",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "That's it! You have completed the content for this course! Well done!  Let's recap what you learned in this lesson!\n\n-  You got hands-on using Tensorflow `DenseFeatures` for a model. You used `DenseFeatures` to build a simple regression model.\n- You reviewed some common evaluation metrics for EHR models and then implemented Brier Scores to help evaluate your models better!\n- You conducted a demographic bias analysis and used Aequitas for group bias and fairness disparity analysis to make sure that your models generalize better to real-world data.\n- You used uncertainty estimation and Tensorflow Probability to build a BNN and reviewed some of the underlying concepts for Bayesian probability and types of uncertainty.\n- You wrapped this lesson up by interpreting models with model agnostic methods like Shapley values. \n\nYou have learned so much in just this one lesson! Hopefully, it was both the most fun and most challenging part as well.\n\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1015064,
+              "key": "943dea2d-8d2a-456b-96de-d7d73ff35d81",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Lesson Key Terms\n|Key Term|Definition|\n|---------------------------|----------------------------------|\n|ROC| Receiver Operating Characteristic Curve or ROC curve that shows a graph of the performance of a classification model. It is the True Positive Rate Vs. False Positive Rate across different thresholds.\n|AUC| Area under the ROC Curve measures the entire two-dimensional area underneath the entire ROC curve.\n|Precision| The fraction of relevant instances among the retrieved instances\n|Recall| The fraction of the total amount of relevant instances that were actually retrieved.\n|F1| Harmonic mean between precision and recall\n|RMSE| Root Mean Square Error- a measure of the differences between values predicted by a model.\n|MAPE| Mean Absolute Percentage  Error is a measure of quality for regression model loss.\n|MAE:|Mean Absolute Error is a measure of errors between paired observations. \n|Unintended Biases:| A bias that is not intentional and often is not even apparent to the creator of a model\n|Prior distribution| P(A)\n|P(A ~ Evidence)| Updating the prior with new evidence\n|P(B)| Posterior probability\n|Aleatoric Uncertainty|  Otherwise known as statistical uncertainty and are known unknowns. This type of uncertainty is inherent and just a part of the stochasticity that naturally exists.\n|Epistemic Uncertainty| Also known as systemic uncertainty and are unknown unknowns. This type of uncertainty can be improved by adding parameters/features that might measure something in more detail or provide more knowledge.\n|Black Box|Term often used in software when inputs go in and outputs come out of an algorithm and it is not clear how the outputs were arrived at.\n|Model Agnostic|methods that can be used on deep learning models or traditional ml models",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1005838,
+          "key": "c5b2e4ac-902f-4b9e-9d6f-0889fddcf2b1",
+          "title": "AI and EHR Recap",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c5b2e4ac-902f-4b9e-9d6f-0889fddcf2b1",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1005843,
+              "key": "1ce70a71-d939-4e48-89ac-f022b61784fd",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Course Recap",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1005844,
+              "key": "c8ddc8b3-bf02-4219-bd02-d710a2b8808a",
+              "title": "ND320 AIHCND C01 L04 A14 Course Recap V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "OGMn4oFkcHc",
+                "china_cdn_id": "OGMn4oFkcHc.mp4"
+              }
+            },
+            {
+              "id": 1005846,
+              "key": "afb685c7-1aef-4b47-b4f9-035734786ab1",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Course Recap",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1005845,
+              "key": "0215a9dc-59d3-483a-820a-cd41a39c563c",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e90dd89_l4-building-evaluating-and-interpreting-models-for-bias-and-uncertainty-13/l4-building-evaluating-and-interpreting-models-for-bias-and-uncertainty-13.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/0215a9dc-59d3-483a-820a-cd41a39c563c",
+              "caption": "Course Recap",
+              "alt": "Course Recap",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1014615,
+              "key": "b6130439-1eea-4777-bc3c-6912b576ab15",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Congratulations on finishing the content portion of this course!\n\nLet's put everything you did into perspective!\n- In the EHR Data security and Analysis part of this course, you learned about Data Security and Privacy. Including the key terms and regulations, you need to be aware of when dealing with healthcare-related data. You also analyzed healthcare data through exploratory data analysis and evaluated how demographically representative your input data is before starting to build models.\n- You then dove into the deep end of the pool with EHR Code sets where you worked with Diagnosis, Procedure, and Medication codesets. You can now interpret and work with these types of codes in your healthcare-related projects. Further, you can categorize and group EHR dataset codes for further analysis and use in machine learning.\n- After code sets, you learned to address the different EHR dataset levels, at the Line, Encounter, and Longitudinal levels. You also used your Dataset splitting lumberjack skills to ensure that you don't leak data into your model training and give it features that might compromise the use of your model in production. You also use the TensorFlow Feature column API for Feature engineering.\n- We also eventually got to the fun stuff, Building, Evaluating, and Interpreting Models with a focus on Bias and Uncertainty. You used your Feature Engineering skills to build simple Tensorflow models using `DenseFeatures.` Then you used evaluation metrics like Brier Scores to evaluate your model. You can also now conduct a Demographic Bias Analysis using Aequitas to ensure your models are less negatively biased. Then, you used Uncertainty Estimation to estimate model predictions more accurately. Finally, you interpreted your models using model agnostic methods like Shapley Values. \n\nWorking with EHR data has never been more critical than it is today. So it's time to put the new skills you have learned into practice to help provide better insights, predictions, and healthcare for patients. \n\n### Best of Luck on the Project and Your Future!!",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

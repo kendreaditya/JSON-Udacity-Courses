@@ -1,0 +1,557 @@
+{
+  "data": {
+    "lesson": {
+      "id": 850008,
+      "key": "2de7e6db-25b4-42bd-b0a6-5a2ba119cff1",
+      "title": "Thinking Adversarially",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Stay one step ahead of attackers by implementing a secure development process and knowing how to keep informed on the cutting edge of security research.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/2de7e6db-25b4-42bd-b0a6-5a2ba119cff1/850008/1579723539314/Thinking+Adversarially+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/2de7e6db-25b4-42bd-b0a6-5a2ba119cff1/850008/1579723535498/Thinking+Adversarially+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 857104,
+          "key": "2f9a0323-bb7d-4688-ab47-f86c74cd122d",
+          "title": "Lesson Intro",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "2f9a0323-bb7d-4688-ab47-f86c74cd122d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 859184,
+              "key": "577b2b14-1ac8-4277-9011-962b6e314087",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Thinking Adversarially\n## Applying your Knowledge",
+              "instructor_notes": ""
+            },
+            {
+              "id": 864325,
+              "key": "2cff1cb1-ef3f-4b48-a70e-e497be729648",
+              "title": "ND004 C03 L05 A01.1 Intro",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "p0MivDrG-_c",
+                "china_cdn_id": "p0MivDrG-_c.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 859139,
+          "key": "05ac18a0-c9cf-4a03-a497-5f8729e6faa3",
+          "title": "Limiting Access to Code and Systems",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "05ac18a0-c9cf-4a03-a497-5f8729e6faa3",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 859148,
+              "key": "05c860fe-36ad-471c-b3f4-9a93adaad557",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Limiting Access to Code and Systems\n\n## Using Git Effectively",
+              "instructor_notes": ""
+            },
+            {
+              "id": 864326,
+              "key": "0d625afb-00e6-4c3c-b8fd-3d09468f50d8",
+              "title": "ND004 C03 L05 A02.1 Limiting Access",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "cBIWkoo0GMU",
+                "china_cdn_id": "cBIWkoo0GMU.mp4"
+              }
+            },
+            {
+              "id": 898100,
+              "key": "3ca40b7a-377a-4e15-a171-d3a61467f6a9",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Configuring GitHub with Restrictions",
+              "instructor_notes": ""
+            },
+            {
+              "id": 864327,
+              "key": "706e17b4-cfa1-438f-98da-89461a481670",
+              "title": "ND004 C03 L05 A02.2 Limiting Access",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "I2kwsX-B8go",
+                "china_cdn_id": "I2kwsX-B8go.mp4"
+              }
+            },
+            {
+              "id": 898101,
+              "key": "1b521acf-3796-40e3-9c44-0f98abfc9214",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Limiting Credentials\nThe principals learned in this course should also be applied to the systems you consume as a developer. You want to ensure that the systems you're building are secure and cannot be changed without trusted individuals vetting those changes. After all, code review is effectively useless if the individual requesting the review can simply bypass the check and push their code directly to the production server. Take a moment to reflect on how you would configure credentials for a new jr engineer: ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 859182,
+              "key": "7025cece-4ec2-46d5-b7b5-60ce57781d9d",
+              "title": "Onboarding",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "7025cece-4ec2-46d5-b7b5-60ce57781d9d",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "You're onboarding a new junior engineer to your team. How should you provision their credentials for servers and databases?",
+                "answers": [
+                  {
+                    "id": "a1560017453867",
+                    "text": "Share your root username and password which gives access to every system and all data",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1560017484637",
+                    "text": "Create a new account and provide a role for their team or project which contains required permissions",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1560017529275",
+                    "text": "Create a new account and manually add each required permission",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 906537,
+          "key": "cc01bd6a-fef0-44fc-a787-cc9c621baa11",
+          "title": "Code Review for Security",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "cc01bd6a-fef0-44fc-a787-cc9c621baa11",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 908158,
+              "key": "beaaa353-f08d-4016-a8ef-7058fc557f60",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Code Review for Security\n## Code Review as a Security Tool",
+              "instructor_notes": ""
+            },
+            {
+              "id": 908159,
+              "key": "2dc9dc14-58d2-42e3-b185-dc8743399e02",
+              "title": "ND004 C03 L05 A02.3 Limiting Access 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "VHh6Wkc6HGQ",
+                "china_cdn_id": "VHh6Wkc6HGQ.mp4"
+              }
+            },
+            {
+              "id": 908160,
+              "key": "1d91c9af-1b2a-4576-aea4-58ecce85ed30",
+              "title": "Security in Code Review",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "1d91c9af-1b2a-4576-aea4-58ecce85ed30",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What should you be looking for in code reviews that affect security?",
+                "answers": [
+                  {
+                    "id": "a1565220737703",
+                    "text": "Sending sensitive data over insecure network interfaces ",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1565220754701",
+                    "text": "Code style",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1565220755403",
+                    "text": "Checks for authentication",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1565220755932",
+                    "text": "Logging of passwords or sensitive information",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1565220756452",
+                    "text": "Confusing or unclear code",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1565220757053",
+                    "text": "Tests covering security principals",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1565220758452",
+                    "text": "Brand and style guide usage",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 908161,
+              "key": "023538f5-ce48-42e1-95ac-d5a2364d9e1e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Additional Reading:\n- [Palantir Blog on Code Review](https://medium.com/palantir/code-review-best-practices-19e02780015f)\n- [AWS IAM Best Practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 859090,
+          "key": "ef8a7356-63d8-4d36-9518-64d5bd2ececc",
+          "title": "Auth Validation Testing",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "ef8a7356-63d8-4d36-9518-64d5bd2ececc",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 859143,
+              "key": "b1542a47-b09f-43a5-9a1c-0246bb0b0477",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Auth Validation Testing\n## Postman Integration Testing",
+              "instructor_notes": ""
+            },
+            {
+              "id": 898135,
+              "key": "950101bd-d65e-4b5d-9dd8-8887910d4c10",
+              "title": "ND004 C03 L05 A02.4 Limiting Access 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "sfF9jXKjHiA",
+                "china_cdn_id": "sfF9jXKjHiA.mp4"
+              }
+            },
+            {
+              "id": 898154,
+              "key": "ecb80df3-bfb1-491c-acd7-99acef8da3f5",
+              "title": "Try it yourself!",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "ecb80df3-bfb1-491c-acd7-99acef8da3f5",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Load or clone the flask server, enter the virtual environment, and start the server",
+                "Open postman, make a few requests, and think about edge cases",
+                "Add your tests in Postman and observe the test results",
+                "Save your requests to a collection and run with the Postman collection runner"
+              ],
+              "positive_feedback": "Good job!",
+              "video_feedback": null,
+              "description": "Write some integration tests using Postman for the server we've been working on throughout the course. \n\n> **Tip**: The server has been extended off this [repo](https://github.com/udacity/FSND/blob/master/BasicFlaskAuth/app.py)"
+            },
+            {
+              "id": 859144,
+              "key": "466720d5-5b82-4fa9-bb02-8fa04a638771",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Penetration Testing",
+              "instructor_notes": ""
+            },
+            {
+              "id": 864332,
+              "key": "f438ab9c-815d-4ae2-ac44-4fe5c571173e",
+              "title": "ND004 C03 L05 A03 Auth Valid Testing",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Lb5fAf2nIbw",
+                "china_cdn_id": "Lb5fAf2nIbw.mp4"
+              }
+            },
+            {
+              "id": 859191,
+              "key": "6516fede-78fe-4be9-8b68-ddae9a286dd4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Additional Resources\n- [Postman Command Line Interface for Continuous Integration and Delivery](https://learning.getpostman.com/docs/postman/collection_runs/command_line_integration_with_newman/)\n- [I'll Let Myself In: Tactics of Physical Pen Testers - WildWest Hackin' Fest](https://www.youtube.com/watch?v=rnmcRTnTNC8)\n- [Lock Picking Lawyer](https://www.youtube.com/channel/UCm9K6rby98W8JigLoZOh6FQ) YouTuber dedicated to demonstrating security capabilities of common physical locks.\n- [Kitboga](https://www.youtube.com/channel/UCm22FAXZMw1BaWeFszZxUKw) A YouTuber who engages with social attacks.\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 859795,
+          "key": "c5659982-2551-4e7b-a584-986e3ea14b39",
+          "title": "Alternate Attack Vectors",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c5659982-2551-4e7b-a584-986e3ea14b39",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 898102,
+              "key": "6d08b16f-eab2-4cc2-91e7-4111941c6539",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Alternative Attack Vectors\n## Phishing ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 864334,
+              "key": "4c508cb2-19dd-4745-b219-4257896d77c8",
+              "title": "ND004 C03 L05 A04.1 Alternate Attack Vectors 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "6468qzutFOw",
+                "china_cdn_id": "6468qzutFOw.mp4"
+              }
+            },
+            {
+              "id": 898103,
+              "key": "29676e06-209a-4e00-a15e-457b12ac2482",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Social Engineering",
+              "instructor_notes": ""
+            },
+            {
+              "id": 864336,
+              "key": "03b9ef0c-1e35-40c9-806a-0420b346be2f",
+              "title": "ND004 C03 L05 A04.2 Alternate Attack Vectors",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "9iAaj4V48hs",
+                "china_cdn_id": "9iAaj4V48hs.mp4"
+              }
+            },
+            {
+              "id": 859866,
+              "key": "ff12fb74-0858-41da-9c8d-c0ea71678938",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Additional Reading:\n- [Phishing Malicious Apps to Bypass MFA](https://www.welivesecurity.com/2019/06/17/malware-google-permissions-2fa-bypass/)\n- [Wikipedia Article on Phishing](https://en.wikipedia.org/wiki/Phishing) - A great resource of history and some common attacks\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 859140,
+          "key": "5f252e42-521c-4385-92ed-93309c4e1345",
+          "title": "Staying Ahead of the Attackers",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5f252e42-521c-4385-92ed-93309c4e1345",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 859141,
+              "key": "6da36b93-6273-4250-badc-1b5c15d0dd20",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Staying Ahead of the Attackers\n## Reading the News",
+              "instructor_notes": ""
+            },
+            {
+              "id": 864338,
+              "key": "4831d348-11fa-436d-8965-59023a1a0050",
+              "title": "ND004 C03 L05 A05.1 Staying Ahead",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "WhZGSYykC6w",
+                "china_cdn_id": "WhZGSYykC6w.mp4"
+              }
+            },
+            {
+              "id": 898104,
+              "key": "588d7c8f-ed34-4899-8734-86cf2edd5f4e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# OWASP Top 10",
+              "instructor_notes": ""
+            },
+            {
+              "id": 864339,
+              "key": "dd5b137c-75c3-4b71-aa10-9f356ebe8487",
+              "title": "ND004 C03 L05 A05.2 Staying Ahead 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "JR5l_k6TEYQ",
+                "china_cdn_id": "JR5l_k6TEYQ.mp4"
+              }
+            },
+            {
+              "id": 898105,
+              "key": "3a8d0e18-9fdb-4f18-94c8-6b6ba923a77c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Subscribing to Vulnerability Monitoring",
+              "instructor_notes": ""
+            },
+            {
+              "id": 864340,
+              "key": "4b3bdb27-e80f-4972-9a45-40c36bb66291",
+              "title": "ND004 C03 L05 A05.3 Staying Ahead 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "fIVlNHJRGPc",
+                "china_cdn_id": "fIVlNHJRGPc.mp4"
+              }
+            },
+            {
+              "id": 859193,
+              "key": "72058486-05fe-4cb8-9264-3c3f28f2f716",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Additional Reading:\n- [OWASP Top 10 Report](https://www.owasp.org/images/7/72/OWASP_Top_10-2017_%28en%29.pdf.pdf)\n- [Wild West Hackin' Fest](https://www.youtube.com/watch?v=mG87meKVrzc)\n- [SOC 2 Compliance](https://en.wikipedia.org/wiki/SSAE_16)\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 859142,
+          "key": "04ae6c75-639d-4df1-8614-2bd1502406fe",
+          "title": "Course Recap",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "04ae6c75-639d-4df1-8614-2bd1502406fe",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 898106,
+              "key": "e2adc083-6b15-49a9-8949-1b654b57cb1c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Identity and Access Management!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 864341,
+              "key": "a8995111-8020-4874-9183-56738ef6522e",
+              "title": "ND004 C03 Z Course Outro",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "zl1C3WnfzF8",
+                "china_cdn_id": "zl1C3WnfzF8.mp4"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

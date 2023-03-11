@@ -1,0 +1,123 @@
+{
+  "data": {
+    "lesson": {
+      "id": 817353,
+      "key": "005a7a3c-b6ba-4e83-ac2c-92fc77eee068",
+      "title": "Rock, Paper, Scissors",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Apply your Python and Object-Oriented Programming knowledge to create a game of Rock Paper Scissors where a human can play against a computer player! This project is optional.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": null,
+      "project": {
+        "key": "b9a18fa0-2132-41e3-bbaa-e1950615b28b",
+        "version": "1.0.0",
+        "locale": "en-us",
+        "duration": 0,
+        "semantic_type": "Project",
+        "title": "Rock Paper Scissors",
+        "description": "To complete this project, submit a Python program that plays a game of Rock Paper Scissors between a human player and a computer player. Your work will be evaluated according to [the rubric linked here](https://review.udacity.com/#!/rubrics/1956/view). The only file you need to submit is your Python source code file. It will be assigned to a reviewer who will provide a detailed code review.\n\nBefore submitting your project, make sure to test it yourself!",
+        "is_public": true,
+        "summary": null,
+        "forum_path": "",
+        "rubric_id": "1956",
+        "terminal_project_id": null,
+        "resources": null,
+        "image": {
+          "url": "https://s3.amazonaws.com/video.udacity-data.com/topher/2019/January/5c534ff9_rock-paper-scissors/rock-paper-scissors.png",
+          "width": 1160,
+          "height": 384
+        }
+      },
+      "lab": null,
+      "concepts": [
+        {
+          "id": 633092,
+          "key": "947b71a3-47ea-4535-b456-0e47359c5e9b",
+          "title": "This project rocks!",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "947b71a3-47ea-4535-b456-0e47359c5e9b",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 633094,
+              "key": "04dcaf40-d29f-4e1e-ad41-23d8e27a6e35",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# This project rocks!\n\n_... except when it papers or scissors, that is._\n\nIn this project, you'll apply your Python and object-oriented programming skills to build a program that plays the game of Rock Paper Scissors. You'll build _classes_ that represent the game and its players. You'll write computer players that follow various different strategies, as well as a human player class that lets a human play the game against the computer.\n\n## About the game\n\nThe game of **Rock Paper Scissors** is played throughout the world. It dates back to the Han Dynasty of ancient China, contemporary with the Roman Empire. Today it is called *jian dao, shi tou, bu* in China, *pierre-papier-ciseaux* or *chifoumi* in France; *roshambo* in parts of the U.S., *taş kağıt makas* in Turkey, and *jan-ken-pon* in Japan. It is the distant ancestor of the type system in the immensely popular *Pokémon* games. The game is played competitively; there have been international *RPS* tournaments — however, it's more commonly used as a playful way of settling disputes, whether in the schoolyard or the barroom.\n\nThe game has two players. In a single round of the game, each player secretly chooses one of three moves, or \"throws\" — rock, paper, or scissors. Then, players reveal their moves at the same time. If both players picked the same move, there is no winner. Otherwise, rock beats scissors; paper beats rock; and scissors beat paper. Players can play a single round, or \"best of three\", or any number of other options.\n\n## Demonstration\n\nIn the terminal workspace below, you can play a demo of the Rock Paper Scissors game. Try entering different moves: type in `rock`, `paper`, or `scissors` to play a round against a computer player.\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 633093,
+              "key": "d78ff1eb-0980-4dea-9db3-2e7d888bf447",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "view721c2ba3",
+              "pool_id": "webterminal",
+              "view_id": "721c2ba3-b062-430b-ba30-54d0a5ef0f85",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "allowClose": false,
+                    "replCommand": "python3 /home/workspace/rps.pyc",
+                    "terminalTitle": "REPL"
+                  },
+                  "kind": "repl"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 653453,
+              "key": "10ddcc01-db43-47c2-8c62-7f34db75b728",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# How you will build it\n\nYou'll start this project with a piece of starter code that doesn't _quite_ know how to play Rock Paper Scissors yet. In fact, it contains a computer player class that only knows how to play rock.\n\n> _\"Good ol' rock, nothing beats that!\" — Bart Simpson_\n\nFrom that humble beginning, you will add classes and modify methods, expanding it into a full game. You'll use the `input` function to read the human player's moves from the keyboard, and `print` the results of each round. You'll use subclasses to build more intelligent computer players. And you'll test your code at every step by running your program, or by `import`ing it to test specific functions and methods.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 653254,
+          "key": "a180cdd8-6ab1-423a-8713-5382c7ebfc1a",
+          "title": "Getting started",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a180cdd8-6ab1-423a-8713-5382c7ebfc1a",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 653385,
+              "key": "ff6333f7-7a1a-46e5-a097-b0985a8d2df5",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 🌋📄✂️ Getting started\n\nHere are some steps to get you started in the Rock Paper Scissors project! As you work through the project, make sure to test your program by running it.\n\n### 1. Download the starter code\n\nClick [here](https://s3.amazonaws.com/video.udacity-data.com/topher/2018/November/5c002226_rps-starter-code/rps-starter-code.py) to download the starter code. \n\nThe starter code gives you a place to begin, with `Player` and `Game` classes that are mostly empty. Over the course of the project, you will be greatly expanding the classes and methods in this program.\n\n*Read* the starter code, and *run* it on your computer to see what it does.\n\nTry importing it into the Python interpreter and experimenting with the `Player` and `Game` objects.\n\n### 2. Create a player subclass that plays randomly\n\nThe starter `Player` class always plays `'rock'`. That's not a very good strategy!  Create a subclass called `RandomPlayer` that chooses its move at random. When you call the `move` method on a `RandomPlayer` object, it should return one of `'rock'`, `'paper'`, or `'scissors'` at random.\n\nChange the code so it plays a game between two `RandomPlayer` objects.\n\n### 3. Keep score\n\nThe starter `Game` class does not keep score. It doesn't even notice which player won each round. Update the `Game` class so that it displays the outcome of each round, and keeps score for both players. You can use the provided `beats` function, which tells whether one move beats another one.\n\nMake sure to handle ties — when both players make the same move!\n\n### 4. Create a subclass for a human player.\n\nThe game is a lot more interesting if you can actually play it, instead of just watching the computer play against itself. Create a `HumanPlayer` subclass, whose `move` method asks the human user what move to make. (Take another look back at the project demo to see what this can look like!)\n\nSet the program to play a game between `HumanPlayer` and `RandomPlayer`.\n\n### 5. Create player classes that remember\n\nAt the end of each game round, the `Game` class calls the `learn` method on each player object, to tell that player what the other player's move was. This means you can have computer players that change their moves depending on what has happened earlier in the game. To do this, you will need to implement `learn` methods that save information into instance variables.\n\nCreate a `ReflectPlayer` class that remembers what move the _opponent_ played last round, and plays that move _this_ round. (In other words, if you play `'paper'` on the first round, a `ReflectPlayer` will play `'paper'` on the second round.)\n\nCreate a `CyclePlayer` class that remembers what move *it* played last round, and cycles through the different moves. (If it played `'rock'` this round, it should play `'paper'` in the next round.)\n\n_(Something to think about: What should these classes do on the first move?)_\n\nTest each of these player classes versus `HumanPlayer`.\n\n### 6. Validate user input\n\nThe human player might sometimes make typos. If they enter <kbd>roxk</kbd> instead of  <kbd>rock</kbd>, the `HumanPlayer` code should let them try again. (See how this works in the demo if you type something in that isn't a valid move.)\n\n### 7. Announce the winner\n\nIt's up to you how long the game should run. The starter code always plays three rounds, but that's not the only way it could work. You could choose to continue until the player types `quit`, or you could have the game run until one player is ahead by three points, or any other rule that makes sense to you.\n\nAt the end of the game, have it print out which player won, and what the final scores are.\n\n### 8. Check your code formatting\n\nUse the `pycodestyle` tool to check the formatting of your code. Make the edits that it recommends, then re-run it to see fewer and fewer warnings. By the time you're done, it should display _no warnings or errors_ at all.",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

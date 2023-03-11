@@ -1,0 +1,1902 @@
+{
+  "data": {
+    "lesson": {
+      "id": 1004961,
+      "key": "eaf98312-bcfb-473d-abf1-0d78164a561f",
+      "title": "EHR Data Security and Analysis",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Learn about the importance of data security and the different standards that apply to EHR. Also, learn about analyzing EHR data.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/eaf98312-bcfb-473d-abf1-0d78164a561f/1004961/1584000536277/EHR+Data+Security+and+Analysis+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/eaf98312-bcfb-473d-abf1-0d78164a561f/1004961/1584000532497/EHR+Data+Security+and+Analysis+Subtitles.zip"
+          },
+          {
+            "name": "AI in EHR Course Glossary",
+            "uri": "https://video.udacity-data.com/topher/2020/April/5e9cfa4e_ai-ehr-course-glossary/ai-ehr-course-glossary.pdf"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 1004968,
+          "key": "9de53356-83ae-4052-bb8e-24604bab87fd",
+          "title": "EHR Data Security and Analysis Overview",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "9de53356-83ae-4052-bb8e-24604bab87fd",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1004969,
+              "key": "6da777f8-e6df-4971-a315-0ba885c58601",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# EHR Data Security and Analysis Lesson Overview",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1004970,
+              "key": "c7d8b463-6163-4e1c-9fd4-82a0b7d2a6cc",
+              "title": "ND320 AIHCND C01 L01 A01 Data Security Overview V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "7K2DAQamdtA",
+                "china_cdn_id": "7K2DAQamdtA.mp4"
+              }
+            },
+            {
+              "id": 1004971,
+              "key": "86193869-3035-4da6-bd97-533d45deab2e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Lesson Overview\n\nIn this lesson, you will cover \n- Data Security and Privacy, including some of the key standards and regulations. \n- Exploratory data analysis allowing you to gain a deeper understanding of your datasets, including:\n    - Dataset schemas\n    - Value distributions\n    - Missing values\n    - Cardinality of categorical features\n- Demographic dataset analysis to show how representative your dataset might be\n\nWith that let's get started on the journey towards AI and Electronic Healthcare Data (**EHR**)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1004972,
+              "key": "5e8748c3-497e-4629-9424-08f3f2d3b35f",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e8cc3b6_l1-ehr-data-security-analysis/l1-ehr-data-security-analysis.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/5e8748c3-497e-4629-9424-08f3f2d3b35f",
+              "caption": "EMR Data and Security Lesson Overview",
+              "alt": "EMR Data and Security Lesson Overview",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1004986,
+          "key": "964b75d9-2525-464d-898a-772dc684a31d",
+          "title": "Importance of Data Privacy and Security",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "964b75d9-2525-464d-898a-772dc684a31d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1004987,
+              "key": "5ddd4aae-9afb-4496-87cf-b7b8d5af8062",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Importance of Data Privacy and Security",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1004988,
+              "key": "6006d1b3-2d9a-4ed3-ab9d-e54e3a9a467e",
+              "title": "ND320 AIHCND C01 L00 A03 Landscape For EHR Data V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "UOoHQsO-7ww",
+                "china_cdn_id": "UOoHQsO-7ww.mp4"
+              }
+            },
+            {
+              "id": 1004989,
+              "key": "635fac29-29a2-44d9-837d-a670cac28b72",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Importance of Data Privacy and Security From a Patient, Provider and Data User Perspective",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1004990,
+              "key": "995ad93a-2fad-49fe-b40e-df44d0bfbcb7",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e8b8d0c_l1-ehr-data-security-analysis/l1-ehr-data-security-analysis.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/995ad93a-2fad-49fe-b40e-df44d0bfbcb7",
+              "caption": "Patient - Provider - Data User",
+              "alt": "Patient - Provider - Data User",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1010845,
+              "key": "aeaf8693-e462-4bb1-8c32-7b7efca96bb4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Patients, Providers & Data Users\nPatients are pretty obvious. They are the people seeking care. \n\n### What is a Provider? \n**Providers** : These are entities/groups/individuals that provide care for patients. Providers can range in size from entire hospital networks to individual doctors and medical professionals.\nSome examples are \n- healthcare professionals treating you at a hospital\n- in a doctor’s clinic\n- dentist office\n\nThis interaction between a patient and a provider results in the production of an **Electronic Health Record ** or **EHR**.\nElectronic health records can be used by data users, too. \n\n### Who are some data users? \n**Payers**: a group that consists of companies like healthcare insurance. Payers can also include entities such as the government for things\nlike Medicaid and Medicare in the United States.\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1010846,
+              "key": "4b3aa418-bd5c-4e13-ad01-2db960f9946e",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e8cc3a1_l1-ehr-data-security-analysis-1/l1-ehr-data-security-analysis-1.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/4b3aa418-bd5c-4e13-ad01-2db960f9946e",
+              "caption": "Medical Record Data is up to 1000 times more valuable to hackers than other data. ",
+              "alt": "Medical Record Value to Hackers",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1010960,
+              "key": "93b58e0d-fbaa-422a-bf5c-83d07a1d01f7",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Data Security From the Patient Perspective\nData security is crucially important for many different reasons in healthcare, but here are a couple of very important reasons:\n1. Patients have a right to privacy and may not want to share their conditions and treatments with others. \n2. Medical data is far more valuable to hackers. Because of the detail and complexity of data in EHR, hackers can very easily impersonate a patient. You can learn more about this in the links below. \n\n\n#### Additional Resources\n- [Value of Medical Data on the Dark web](https://www.experian.com/blogs/ask-experian/heres-how-much-your-personal-information-is-selling-for-on-the-dark-web/)\n- [Hacker Hone their Techniques](https://www.healthcareitnews.com/news/healthcare-data-big-risk-hackers-innovate-and-hone-their-techniques)\n\n## Data Security Importance Provider Perspective\nMedical professionals/organizations that are “providing” care to patients are under strict regulatory compliance laws. Your organization will handle the intricacies of how to interface with providers or if your organization is one, they have extensive training as part of the required HIPAA compliance.  You'll learn more about HIPAA in a bit.\nTo make sure organizations comply, there are some penalties and they can change periodically over time. Please check the HIPAA website to be up to date.\n\n[Examples from U.S. HIPAA fines](https://www.federalregister.gov/documents/2019/04/30/2019-08530/notification-of-enforcement-discretion-regarding-hipaa-civil-money-penalties)\n\n## Importance from a Data User Perspective\nData Privacy issues come up with disclosure from hackers but also from legitimate entities within a business or medical research purposes. For example, the issue of informed consent is an essential part of any scientific experiment. Remember our examples of [Deep Mind](https://www.theguardian.com/technology/2017/jul/03/google-deepmind-16m-patient-royal-free-deal-data-protection-act) in the UK and [Ascension](https://www.wsj.com/articles/google-s-secret-project-nightingale-gathers-personal-health-data-on-millions-of-americans-11573496790) in the U.S.\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1004991,
+              "key": "057e8f1b-697e-4105-9786-560ba0a6f97e",
+              "title": "Importance of Data Privacy and Security",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "057e8f1b-697e-4105-9786-560ba0a6f97e",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What are reasons why data security and privacy are important from a patient perspective? ",
+                "answers": [
+                  {
+                    "id": "a1583856003345",
+                    "text": "Regulatory fines can be costly. ",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1583856035360",
+                    "text": "Breaches can lead to identity fraud.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1583856036404",
+                    "text": "Encryption of mobile devices is important in the case of lost or stolen devices.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1583856037082",
+                    "text": "Unintended disclosure of diseases or other medical conditions",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1004993,
+          "key": "ea8a3015-ff85-43e1-a84d-c1bf378f1d30",
+          "title": "Key Healthcare Data Security and Privacy Standards",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "ea8a3015-ff85-43e1-a84d-c1bf378f1d30",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1004994,
+              "key": "ad710b65-48d2-4ae8-90d6-2072ee4c0696",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Key Healthcare Data Security and Privacy Standards",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1004995,
+              "key": "958ae365-b4e0-4c09-a83a-3b13ec4c02e0",
+              "title": "ND320 AIHCND C01 L01 A03 Key Healthcare Data Security And Privacy Standards And Terminology V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "iIYv5hhBE2o",
+                "china_cdn_id": "iIYv5hhBE2o.mp4"
+              }
+            },
+            {
+              "id": 1004996,
+              "key": "b19b0da2-36ab-480b-94fa-87e7707ad274",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Key Points",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1011112,
+              "key": "756122e5-14d7-4c88-a133-879eb55463dd",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e8cdc52_l1-ehr-data-security-analysis-2/l1-ehr-data-security-analysis-2.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/756122e5-14d7-4c88-a133-879eb55463dd",
+              "caption": "Key Industry Regulations",
+              "alt": "Key Industry Regulations",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1011113,
+              "key": "0d9885ec-0f74-4ac7-9d0a-398986139ad4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Key Industry Regulations\nHealthcare data security and privacy regulations are ubiquitous around the world. Most countries have regulations regarding data security and privacy around electronic health records with varying levels of complexity. However, for this course, we will focus on U.S. healthcare regulations.\n\n### United States:\n- **HIPAA**: The Health Insurance Portability and Accountability Act is the key industry regulation that you should be familiar within the U.S.\n- **HITECH**: The Health Information Technology for Economic and Clinical Health Act is also important to note and this is really just an update to HIPAA that accounts for technology.\n\nHIPAA was passed in 1996 and then updated in 2009 under the HITECH act to evolve for digital technologies. While it might seem like EHR has been around for a while, it was only a little over a decade ago when the foundational legislation really was put in place that made the healthcare community start moving towards digitizing and putting their records in electronic format. Even now many systems are legacy systems that are built off of transcribed handwritten notes and other unstructured formats that organizations are spending large amounts of time to normalize and aggregate this info.\n\n### **EU**: European Union\n- **GDPR**: The General Data Protection Regulation is generally considered more stringent than even HIPAA when it comes to protections for patients.\n\n### United Kingdom:\n- **DPA**: The Data Protection Act really builds off of and add to GDPR\n\n#### Additional Resources:\n- [ HIPAA](https://www.hhs.gov/hipaa/index.html)\n- [HITECH](https://www.hhs.gov/hipaa/for-professionals/special-topics/hitech-act-enforcement-interim-final-rule/index.html)\n- [GDPR](https://gdpr-info.eu/)\n- [DPA](https://www.gov.uk/data-protection)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1011114,
+              "key": "937b7228-c67f-4700-ab02-0dd284bdd6e1",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## PHI\n**PHI**: Protected Health Information\n\nProbably one of the most important terms that you should be familiar with is PHI, which stands for protected health information.\nPHI is a part of HIPAA that protects the transmission of certain types of personally identifiable information such as name, address, and other info. Certain information in an electronic medical record is considered PHI and must comply with HIPAA standards around data security and privacy. This informs not only how you transmit and store data but also data usage rights and restrictions around building models for other purposes than the original use.\n\nPHI by nature is identifiable information and can be used to easily identify a person. However, please note that **omitting this information does not ensure that a person can not be identified**.\n\n#### Additional Resources\n[PHI](https://www.hhs.gov/answers/hipaa/what-is-phi/index.html)\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1004997,
+              "key": "25065ba9-cf60-4849-9955-39478c7cadb3",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e8b8de9_l1-ehr-data-security-analysis/l1-ehr-data-security-analysis.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/25065ba9-cf60-4849-9955-39478c7cadb3",
+              "caption": "Covered Entities",
+              "alt": "Covered Entities",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1011115,
+              "key": "6bed26f9-cc95-489a-a6d7-f09e43ab0af9",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Covered Entities\n**Covered Entities**: are a group of industry organizations defined by HIPAA to be one of three groups: health insurance plans, providers, or clearinghouses. You can see from the table the types of entities in each category. \n\nThese groups transmit protected health information and are subject to HIPAA regulations regarding these transmissions.\n\nOther Covered Entities:\n- **Business Associates**: A business associate is a person or entity that performs certain functions or activities that involve the use or disclosure of protected health information on behalf of, or provides services to, a covered entity.\n\n    - Covered entities can disclose to BAs under Privacy Rule\n      - Only for a purpose allowed by the covered entity\n     - Safeguard data against misuse \n     - Comply with other requirements of the covered entity under HIPAA Privacy Rule\n\n\n- **Business Associates Agreement/Addendum (BAA)**:  this is the contract between a covered entity and BA\n\n#### Additional Resources\n[Covered Entites](https://www.hhs.gov/hipaa/for-professionals/covered-entities/index.html)\n[Sample Business Associate Agreement](https://www.hhs.gov/hipaa/for-professionals/covered-entities/sample-business-associate-agreement-provisions/index.html)\n[Business Associate Guidance](https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/business-associates/index.html)\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1004998,
+              "key": "d8f5d060-ae16-4b36-943b-851e8aaef671",
+              "title": "Key Healthcare Data",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "d8f5d060-ae16-4b36-943b-851e8aaef671",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What is not a covered entity defined by HIPAA?",
+                "answers": [
+                  {
+                    "id": "a1583856466190",
+                    "text": "Health insurance plans",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1583856495632",
+                    "text": "Providers",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1583856496416",
+                    "text": "Clearinghouses",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1583856497221",
+                    "text": "Government Agency",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1004999,
+              "key": "59194518-39cb-4177-86c7-c18d52cd6ca6",
+              "title": "PHI Quiz",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "59194518-39cb-4177-86c7-c18d52cd6ca6",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following are true about PHI?",
+                "answers": [
+                  {
+                    "id": "a1583856628088",
+                    "text": "Protecting PHI is important for maintaining patient privacy.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1583856651595",
+                    "text": "Removing PHI guarantees that you cannot identify a person.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1583856652410",
+                    "text": "According to HIPAA, PHI stands for protected health information.",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1005000,
+          "key": "72ed8303-9dc2-40a2-affc-fef2a546c0ee",
+          "title": "Storing and Accessing PHI Data",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "72ed8303-9dc2-40a2-affc-fef2a546c0ee",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1005001,
+              "key": "f4bd4c6f-cf91-4209-80da-b4e11e71502c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Storing and Accessing PHI Data",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1005002,
+              "key": "9704b573-5779-4ac5-a5e5-d249c818bd7a",
+              "title": "ND320 AIHCND C01 L01 A04 Storing And Accessing PHI Data",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "0-8HxpQYkGA",
+                "china_cdn_id": "0-8HxpQYkGA.mp4"
+              }
+            },
+            {
+              "id": 1005003,
+              "key": "6dc604ec-00a4-423f-9a1d-829944d3812b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### De-identifying a Dataset\n**De-identifying** a dataset refers to the removal of identifying fields like name, address from a dataset. De-Identification is done to reduce privacy risks to individuals and support the secondary use of data for research and such.\n\nThis is not something you should be doing on your own. HIPAA has two ways that you can use to de-identify a dataset. \n\nThe first method is the **Expert Determination Method** and this is done by a statistician that determines there is a small risk that an individual could be identified.\n\nThe second method is called **Safe Harbor** and it refers to the removal of 18 identifiers like name, zip code, etc. \n\n**Limited Latitude**: Very limited scope of work. EHR Data can only be used for the purpose granted.\n#### Additional Resources\n\n[De-Identification Rationale](https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html#rationale)\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1005004,
+              "key": "8f8bca58-6f0f-4925-a70c-00a6fcd167ab",
+              "title": "Scenario for compliant services",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "8f8bca58-6f0f-4925-a70c-00a6fcd167ab",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "A coworker is excited about a new cloud service that just came out and wants to build a model. What are some key things in regard to storing and accessing PHI data that you might ask them?",
+                "answers": [
+                  {
+                    "id": "a1583856960295",
+                    "text": "Ask about the cost of the cloud service and how it might be an example of medical fraud, waste, and abuse.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1583856985052",
+                    "text": "Ask about whether the cloud service is an approved BAA service",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1583856985887",
+                    "text": "Ask about if the data for the model is being stored in an encrypted storage location such as a cloud bucket.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1583856991047",
+                    "text": "Ask them to de-identify the dataset using the Safe Harbor method.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1005005,
+              "key": "d9719373-ae89-47c5-b6ec-6afcd2b528c5",
+              "title": "Reflect on PHI",
+              "semantic_type": "ReflectAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "d9719373-ae89-47c5-b6ec-6afcd2b528c5",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "title": null,
+                "semantic_type": "TextQuestion",
+                "evaluation_id": null,
+                "text": "Take a moment and reflect on what are the key takeaways that you have so far from the course and also think about what are areas that you would like to explore further. This first part is intended to give you a general context on the data security and privacy landscape surrounding EHR data and there is much more information to learn as you get deeper into the field. "
+              },
+              "answer": {
+                "text": "Thanks for your response and hopefully this moment to reflect helps you think deeper about how data privacy and security form an important foundation for allowing us to use EHR data.",
+                "video": null
+              }
+            }
+          ]
+        },
+        {
+          "id": 1005006,
+          "key": "12bf96af-190c-487a-b1f2-53321444a013",
+          "title": "PII Data Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "12bf96af-190c-487a-b1f2-53321444a013",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1005007,
+              "key": "f22e08ba-52f8-45ed-b7ae-2f097baeee1c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# PII Data Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1005008,
+              "key": "050f7635-5920-40d9-b307-c779e0c8d7c1",
+              "title": "ND320 AIHCND C01 L01 A05 PII Video Solution V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "qWIjLp7Vj8U",
+                "china_cdn_id": "qWIjLp7Vj8U.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 1005009,
+          "key": "83e54a91-ca83-495a-8a8d-364990a1cd9f",
+          "title": "Importance of EDA",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "83e54a91-ca83-495a-8a8d-364990a1cd9f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1005010,
+              "key": "aaae1b3e-4738-4891-a906-3c4a0f6579ee",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Importance of EDA",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1005011,
+              "key": "c204c07a-a015-48b1-9aab-83c0958a0dd5",
+              "title": "ND320 AIHCND C01 L01 A06 Importance Of EDA V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "QFFYldALaCI",
+                "china_cdn_id": "QFFYldALaCI.mp4"
+              }
+            },
+            {
+              "id": 1011256,
+              "key": "2dfea5e4-2011-46fb-84bd-02284fff42eb",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Key Points",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1011118,
+              "key": "ab2c3d05-3fd3-4b1c-b156-b6f5b769d9d0",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e8ce705_l1-ehr-data-security-analysis-5/l1-ehr-data-security-analysis-5.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/ab2c3d05-3fd3-4b1c-b156-b6f5b769d9d0",
+              "caption": "Where EDA fits into CRISP-DM",
+              "alt": "Where EDA fits into CRISP-DM",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1011116,
+              "key": "2fbc8ec3-ee0e-497d-8ac9-e7707be1bdd6",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Data Schema Analysis\n**EDA**: Exploratory Data Analysis\n\nEDA is a step in the data science process that is often overlooked for the modeling and evaluation phase that can be easier to quantify and benchmark. \n\n\n**CRISP-DM**: This stands for “cross-industry standard process for data mining” and is a common framework used for data science projects and includes a series of steps from business understanding to deployment. \n\n### EDA and CRISP-DM\nAs you can see from the image above EDA falls in the Data Understanding phase of CRISP-DM \n\n#### Additional Resources\n[CRISP-DM](https://en.wikipedia.org/wiki/Cross-industry_standard_process_for_data_mining)\n[What is Exploratory Data Analysis](https://towardsdatascience.com/exploratory-data-analysis-8fc1cb20fd15)\n[EDA in Python](https://towardsdatascience.com/exploratory-data-analysis-in-python-c9a77dfa39ce)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1011119,
+              "key": "3034371e-1198-4e86-951d-49f4caa1323a",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e8ce72c_l1-ehr-data-security-analysis-4/l1-ehr-data-security-analysis-4.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/3034371e-1198-4e86-951d-49f4caa1323a",
+              "caption": "",
+              "alt": "",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1011117,
+              "key": "a64c66d9-643e-42c6-b607-029fd7085f09",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Reasons EDA is important\n- EDA can enable you to discover features or data transformations/aggregations that might have data leakage. This can save a tremendous amount of time and prevent you from building a flawed model. \n- EDA can help you better translate and define modeling objectives and corresponding evaluation metrics from a machine learning/data science and business perspective.\n- EDA can help inform strategies for handling missing/null/zero valued data. This is a common issue that you will encounter with EHR data that you will have missing values and have to determine imputing strategies accordingly. \n- EDA can help to identify subsets of features to utilize for feature engineering and modeling along with appropriate feature transformations based off of type (e.g. categorical vs numerical features)\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1005018,
+              "key": "9c464d2b-f5c1-4461-ac97-2a4f1f65a2a1",
+              "title": "EDA Quiz 1",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "9c464d2b-f5c1-4461-ac97-2a4f1f65a2a1",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which part of the CRISP-DM cycle does EDA usually fall?",
+                "answers": [
+                  {
+                    "id": "a1583869501418",
+                    "text": "Modeling",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1583869524208",
+                    "text": "Deployment",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1583869524793",
+                    "text": "Evaluation",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1583869525341",
+                    "text": "Data Understanding",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1005019,
+              "key": "c81e5e1f-c0da-4c64-b52d-1fa5a1bab4c5",
+              "title": "EDA Quiz 2",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "c81e5e1f-c0da-4c64-b52d-1fa5a1bab4c5",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following is not a reason that EDA is important?",
+                "answers": [
+                  {
+                    "id": "a1583869652943",
+                    "text": "EDA can inform feature selection.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1583869750064",
+                    "text": "EDA is a way to leak data into a dataset.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1583869751101",
+                    "text": "EDA can help to identify missing/null/zero values and come up with strategies for dealing with them (imputing, dropping, etc).",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1583869751919",
+                    "text": "EDA can identify types of features(e.g. categorical, numerical) and the appropriate transformations.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1005020,
+          "key": "c5ea11bb-6e40-4df8-b2f5-74093527738a",
+          "title": "Dataset Schema Analysis",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c5ea11bb-6e40-4df8-b2f5-74093527738a",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1005021,
+              "key": "c082c830-3bfc-48fa-98f9-fd604721964f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Dataset Schema Analysis",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1005022,
+              "key": "243bca2c-7c57-4ab9-aec8-c90635627414",
+              "title": "ND320 AIHCND C01 L01 A07 Dataset Schema Analysis",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "hksgY-J4lWM",
+                "china_cdn_id": "hksgY-J4lWM.mp4"
+              }
+            },
+            {
+              "id": 1005023,
+              "key": "ea92ca79-89c0-4c35-ad5c-90f0a965a886",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Key Things to Consider:\n- Identify the predictor\n- Identify categorical, numerical features\n- Work with SMEs and Domain Experts \n- Domain knowledge is key to representing data correctly\n\nYou can find this dataset in the notebook on this page to inspect the dataset as well as use the link below to get more specific information for the different categories.\n\n[UCI Heart Disease Dataset](https://archive.ics.uci.edu/ml/datasets/Heart+Disease)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1011139,
+              "key": "4e931878-2def-4122-bc9d-8983faec2ae6",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1005032xJUPYTERpmqjsgte",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-9x8xd",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Lesson_EHR_Data_Security_and_Analysis_Screencast.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 1005024,
+              "key": "c0406f37-ccc5-49ee-bc31-f85e167ecab9",
+              "title": "Data Schema Quiz 1",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "c0406f37-ccc5-49ee-bc31-f85e167ecab9",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Match what is True or False when analyzing the schema of a dataset?"
+                },
+                "concepts_label": "Statement",
+                "answers_label": "True/False",
+                "concepts": [
+                  {
+                    "text": "Identify correlations between features",
+                    "correct_answer": {
+                      "id": "a1583870057997",
+                      "text": "False"
+                    }
+                  },
+                  {
+                    "text": "Domain expertise is not needed if you utilize recursive feature elimination.",
+                    "correct_answer": {
+                      "id": "a1583870176120",
+                      "text": "False"
+                    }
+                  },
+                  {
+                    "text": "Identify the predictor attribute/feature.",
+                    "correct_answer": {
+                      "id": "a1583870187464",
+                      "text": "True"
+                    }
+                  },
+                  {
+                    "text": "Identify possible categorical and numerical features.",
+                    "correct_answer": {
+                      "id": "a1583870206248",
+                      "text": "True"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1583870057997",
+                    "text": "False"
+                  },
+                  {
+                    "id": "a1583870176120",
+                    "text": "False"
+                  },
+                  {
+                    "id": "a1583870206248",
+                    "text": "True"
+                  },
+                  {
+                    "id": "a1583870223153",
+                    "text": "False"
+                  },
+                  {
+                    "id": "a1583870219594",
+                    "text": "True"
+                  },
+                  {
+                    "id": "a1583870187464",
+                    "text": "True"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1005025,
+              "key": "cb94b160-9293-4b66-afa4-83809b30e0c7",
+              "title": "Data Schema Quiz 2",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "cb94b160-9293-4b66-afa4-83809b30e0c7",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Which features are categorical and which are numerical? Please use the Notebook workspace above and the [UCI Heart Disease Dataset site](https://archive.ics.uci.edu/ml/datasets/Heart+Disease) to help you with this quiz. "
+                },
+                "concepts_label": "Feature",
+                "answers_label": "Type",
+                "concepts": [
+                  {
+                    "text": "sex",
+                    "correct_answer": {
+                      "id": "a1583873077980",
+                      "text": "Categorical"
+                    }
+                  },
+                  {
+                    "text": "slope",
+                    "correct_answer": {
+                      "id": "a1583873146640",
+                      "text": "Categorical"
+                    }
+                  },
+                  {
+                    "text": "thalach",
+                    "correct_answer": {
+                      "id": "a1583873148221",
+                      "text": "Numerical"
+                    }
+                  },
+                  {
+                    "text": "thal",
+                    "correct_answer": {
+                      "id": "a1583873149248",
+                      "text": "Categorical"
+                    }
+                  },
+                  {
+                    "text": "oldpeak",
+                    "correct_answer": {
+                      "id": "a1583873150412",
+                      "text": "Numerical"
+                    }
+                  },
+                  {
+                    "text": "cp",
+                    "correct_answer": {
+                      "id": "a1583873212344",
+                      "text": "Categorical"
+                    }
+                  },
+                  {
+                    "text": "trestbps",
+                    "correct_answer": {
+                      "id": "a1583873255791",
+                      "text": "Numerical"
+                    }
+                  },
+                  {
+                    "text": "ca",
+                    "correct_answer": {
+                      "id": "a1583873282826",
+                      "text": "Categorical"
+                    }
+                  },
+                  {
+                    "text": "fbs",
+                    "correct_answer": {
+                      "id": "a1583873359926",
+                      "text": "Categorical"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1583873146640",
+                    "text": "Categorical"
+                  },
+                  {
+                    "id": "a1583873212344",
+                    "text": "Categorical"
+                  },
+                  {
+                    "id": "a1583873077980",
+                    "text": "Categorical"
+                  },
+                  {
+                    "id": "a1583873149248",
+                    "text": "Categorical"
+                  },
+                  {
+                    "id": "a1583873359926",
+                    "text": "Categorical"
+                  },
+                  {
+                    "id": "a1583873255791",
+                    "text": "Numerical"
+                  },
+                  {
+                    "id": "a1583873148221",
+                    "text": "Numerical"
+                  },
+                  {
+                    "id": "a1583873282826",
+                    "text": "Categorical"
+                  },
+                  {
+                    "id": "a1583873150412",
+                    "text": "Numerical"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1005026,
+          "key": "4081fe09-1941-4b29-97eb-9e4ac1c8bb61",
+          "title": "Value Distributions",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "4081fe09-1941-4b29-97eb-9e4ac1c8bb61",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1005027,
+              "key": "43a5897f-a9db-44dd-8371-4f11c8f06480",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Value Distributions",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1005035,
+              "key": "11429ed3-c549-430a-8515-30edb75c8ff1",
+              "title": "ND320 AIHCND C01 L01 A08 Value Distributions",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "qs_YRednOEY",
+                "china_cdn_id": "qs_YRednOEY.mp4"
+              }
+            },
+            {
+              "id": 1011257,
+              "key": "3e65fa82-4477-4a1a-a238-6e011f2aac58",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": " ## Key Points",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1011130,
+              "key": "8f693c43-6109-41bd-a931-d063ace65844",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e8cea63_l1-ehr-data-security-analysis-6/l1-ehr-data-security-analysis-6.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/8f693c43-6109-41bd-a931-d063ace65844",
+              "caption": "Key Distributions",
+              "alt": "Key Distributions",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1005030,
+              "key": "921ef82f-cab8-44f0-a8fb-f656318282aa",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Value Distributions Review\n- Normal is the well-known bell-curve that most people are familiar with and is also referred to as a Gaussian distribution\n- The uniform distribution is where the unique values have almost the same frequency and this is important b/c this might indicate some issue with the data\n- Skewed/unbalanced data distributions as the name indicates are where a smaller subset of values or a single value dominates \n- Bimodal and Poisson but for the scope of this course we will not cover those",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1011140,
+              "key": "a2179a85-3333-4f88-819f-68d178452851",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1005032xJUPYTERpmqjsgte",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-cqn5t",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Lesson_EHR_Data_Security_and_Analysis_Screencast.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 1005031,
+              "key": "55d654ca-0fce-4eb9-80e2-31b1ca1c05cb",
+              "title": "Value Distributions Quiz",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "55d654ca-0fce-4eb9-80e2-31b1ca1c05cb",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following is true of a uniform distribution?",
+                "answers": [
+                  {
+                    "id": "a1583873808744",
+                    "text": "A uniform distribution is also called a Gaussian distribution.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1583873842220",
+                    "text": "A uniform distribution could be indicative of an issue with the data.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1583873843140",
+                    "text": "A uniform distribution is where it has skewed toward the right.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1005043,
+          "key": "323ee5c9-dd14-47e0-aeb0-51f90ee82fc4",
+          "title": "Missing Values and Outliers",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "323ee5c9-dd14-47e0-aeb0-51f90ee82fc4",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1005146,
+              "key": "f563aeb4-6326-4575-8e10-53e6bb30222c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Missing Values and Outliers",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1010600,
+              "key": "e654a203-0195-46c4-871a-04221c2016d9",
+              "title": "ND320 AIHCND C01 L01 A09 Analyzing Dataset For Missing Values And Imputing Methods",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "buYLp8uczcI",
+                "china_cdn_id": "buYLp8uczcI.mp4"
+              }
+            },
+            {
+              "id": 1011137,
+              "key": "5ed0e6ef-1af0-4828-aa72-211caf72e846",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Missing Values and Outliers\n\nMissing values are especially common in healthcare where you may have incomplete records or some fields are sparsely populated\n\n### Missing Data Classification\n**MCAR** which stands for Missing Completely at Random. This means that the data is missing due to something unrelated to the data and there is **no systematic reason** for the missing data. In other words, there is an equal probability that data is missing for all cases. This is often due to some instrumentation like a broken instrument or process issue where some of the data is randomly missing.\n\n**MAR** refers to Missing at Random and this is the opposite case where there **is some systematic relationship** between data and the probability of missing data. For example, there might be some missing demographics choices in surveys.\n\n**MNAR** is a Missing Not at Random and this usually means there is a relationship between a value in the dataset and the missing values. \n\nUnderstanding why data is missing help with choosing the best imputing method to fill or drop the values in your dataset.\n\n\n### Code Concepts\nCreate a function to check the percent of missing and zero values you have.\n``` Python\ndef check_for_missing_and_null(df):\n    null_df = pd.DataFrame({'columns': df.columns, \n                            'percent_null': df.isnull().sum() * 100 / len(df), \n                           'percent_zero': df.isin([0]).sum() * 100 / len(df)\n                           } )\n    return null_df \n```\n\nApply that function to the original dataframe\n`check_for_missing_and_null(dataframe)`\n\nView the results and see if there are any values that stand out. Again you may need to deal with different columns in different ways depending on their type and reason for missing or zero values.\n\n#### Additional Resources\n- [ Imputation Methods](https://towardsdatascience.com/6-different-ways-to-compensate-for-missing-values-data-imputation-with-examples-6022d9ca0779)\n- [Advanced Imputation Methods](https://www.sciencedirect.com/science/article/pii/S2352914819302783)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1011141,
+              "key": "16a7cd6b-227f-4fb3-8db2-119ed1e08265",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1005032xJUPYTERpmqjsgte",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-ds8a9",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Lesson_EHR_Data_Security_and_Analysis_Screencast.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 1013302,
+              "key": "bbefcfc5-c524-4508-83da-e3bfeda78134",
+              "title": "Missing and Zero Values",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "bbefcfc5-c524-4508-83da-e3bfeda78134",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following is true about missing and zero values in your data?",
+                "answers": [
+                  {
+                    "id": "a1586803964160",
+                    "text": "Use z-scores to detect which values are missing.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1586804278337",
+                    "text": "Finding the percentage of missing and zero values can help inform whether to impute or drop values or fields.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1586804465449",
+                    "text": "There is one best method for imputation.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1013304,
+              "key": "28c4043e-fb23-41e8-b710-f9f1901cdf41",
+              "title": "Missing Data Classification",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "28c4043e-fb23-41e8-b710-f9f1901cdf41",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Match the correct term to a description. "
+                },
+                "concepts_label": "Description",
+                "answers_label": "Term",
+                "concepts": [
+                  {
+                    "text": "Women could be less likely to give their weight on a survey.",
+                    "correct_answer": {
+                      "id": "a1586805718997",
+                      "text": "MAR"
+                    }
+                  },
+                  {
+                    "text": "White cell value Data is missing because a testing machine was improperly calibrated. ",
+                    "correct_answer": {
+                      "id": "a1586805799853",
+                      "text": "MCAR"
+                    }
+                  },
+                  {
+                    "text": "Those with low education are not accounted for in a study.",
+                    "correct_answer": {
+                      "id": "a1586805855128",
+                      "text": "MNAR"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1586805718997",
+                    "text": "MAR"
+                  },
+                  {
+                    "id": "a1586805799853",
+                    "text": "MCAR"
+                  },
+                  {
+                    "id": "a1586805855128",
+                    "text": "MNAR"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1009416,
+          "key": "6e0473fd-2e20-4d42-bb1c-8dff00a97452",
+          "title": "Analyzing Dataset for High Cardinality",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "6e0473fd-2e20-4d42-bb1c-8dff00a97452",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1009417,
+              "key": "97b4b98d-24fb-48e4-b20b-b65625429a0e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Analyzing Dataset for High Cardinality",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009418,
+              "key": "37d80dde-54c7-427a-adaa-1d6d89336bae",
+              "title": "ND320 AIHCND C01 L01 A10 Analyzing Dataset For High Cardinality",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "g2wPikiYyuM",
+                "china_cdn_id": "g2wPikiYyuM.mp4"
+              }
+            },
+            {
+              "id": 1009419,
+              "key": "f9d50c96-ad13-4b57-affc-232b34491125",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## High Cardinality\n**Cardinality**: refers to the number of unique values that a feature has and is relevant to EHR datasets because there are code sets such as diagnosis codes in the order of tens of thousands of unique codes. This only applies to **categorical features** and the reason this is a problem is that it can increase dimensionality and makes training models much more difficult and time-consuming.\n\n**How do we define a field with high cardinality?**\n- Determine if it is a categorical feature.\n- Determine if it has a high number of unique values. This can be a bit subjective but we can probably agree that for a field with 2 unique values would not have high cardinality whereas a field like diagnosis codes might have tens of thousands of unique values would have high cardinality.\n- Use the `nunique()` method to return the number of unique values for the categorical categories above.\n\n#### Additional Resources\n[Reducing Dimensionality](https://en.wikipedia.org/wiki/Dimensionality_reduction)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1013310,
+              "key": "70c6cdc7-dbb7-4b45-ab8a-d0f9c2645697",
+              "title": "High Cardinality Quiz",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "70c6cdc7-dbb7-4b45-ab8a-d0f9c2645697",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following might be considered to have high cardinality?",
+                "answers": [
+                  {
+                    "id": "a1586806934211",
+                    "text": "Blood Type",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1586807007219",
+                    "text": "Principal diagnosis code",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1586807038728",
+                    "text": "Zip Code",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1586807047202",
+                    "text": "Gender",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1011143,
+              "key": "1b939633-39e6-45bb-85d7-0d0620e470a5",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1005032xJUPYTERpmqjsgte",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-zy2hf",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Lesson_EHR_Data_Security_and_Analysis_Screencast.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1005032,
+          "key": "92bc4774-8436-431d-8f92-c66c16977971",
+          "title": "Analyze Dataset Exercise",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "92bc4774-8436-431d-8f92-c66c16977971",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1013662,
+              "key": "20207fef-6012-4b3f-aa4a-d72958096692",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1005032xJUPYTERno4acp9h",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-fi4by",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Lesson_Data_Analysis_Exercise_Starter_Code.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1010817,
+          "key": "c7ed972c-79fa-46ae-b292-5bcde57d4411",
+          "title": "EDA Exercise Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c7ed972c-79fa-46ae-b292-5bcde57d4411",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1010818,
+              "key": "a379a53b-ef4a-40ad-915a-637b76fdef96",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# EDA Exercise Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1010820,
+              "key": "45342829-6c42-4de0-bc38-7a8c24c5b899",
+              "title": "ND320 AIHCND C01 L01 A11 EDA Exercise",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Nwlb9H2pDEs",
+                "china_cdn_id": "Nwlb9H2pDEs.mp4"
+              }
+            },
+            {
+              "id": 1013663,
+              "key": "63895624-741a-4a3a-ab83-47cfa5604bcd",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1010817xJUPYTERiwddxmv9",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-c1qr6",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Lesson_EHR_Data_Security_and_Analysis_Exercise_Solutions.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1009420,
+          "key": "2eb766af-8240-4bfa-9945-b5f53cf22c31",
+          "title": "Demographic Analysis",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "2eb766af-8240-4bfa-9945-b5f53cf22c31",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1009421,
+              "key": "d7dd9b44-10c4-47f3-8628-2b0dc666e212",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Demographic Analysis",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009422,
+              "key": "076fc921-908f-4e2f-9e69-9c4007541ebe",
+              "title": "ND320 AIHCND C01 L01 A12 Demographic Analysis",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "FySSiOWg2UA",
+                "china_cdn_id": "FySSiOWg2UA.mp4"
+              }
+            },
+            {
+              "id": 1011258,
+              "key": "91c69513-b5b0-455e-995b-6cede1e547ff",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Key Points",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1011138,
+              "key": "81d80fe5-ccf4-403f-9226-b61b1469f27c",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e8cf13f_l1-ehr-data-security-analysis-7/l1-ehr-data-security-analysis-7.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/81d80fe5-ccf4-403f-9226-b61b1469f27c",
+              "caption": "Important of Representative Data",
+              "alt": "Important of Representative Data",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1009423,
+              "key": "6869fe76-fab0-4383-9b85-968c33c63f46",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Demographic Analysis\nThe reason that demographic analysis is so important, especially in healthcare, is that we need our clinical trials and machine learning models to be able to representative to general population. While this is not always completely possible given limited trials and very rare conditions it is something we need to strive for and identify as early as possible if there may be an issue. \n\nIf we don't have a properly representative demographic dataset, we wouldn't know how a drug or prediction might impact a certain age, race or gender which could lead to significant issues for those not represented.\n\nWhen completing a demographic analysis, it can be helpful to group data into buckets or bins. \n\nIn this walkthrough,  we used `np.arange()` to create the bucket ranges, then used them to create the applies with a `.join()` method, and finally used `pd.cut()` to create our new \"age_bins\" buckets. You can use whatever methods you would like to complete this task. We also took the opportunity to change the sex or gender column from 0,1 to \"male\" and \"female\" to further breakdown our categories and demographics using `replace()`. Again this should all be a review, but we are just including here to be clear.\n\nYou may also use different age buckets/bins and see how the value distribution looks for those bins. \n\n#### Additional Resources\n[Demographic Analysis](https://www.sciencedirect.com/topics/computer-science/demographic-data)\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1013316,
+              "key": "17ab16e0-f4d5-4406-9061-bc695dbc7ad4",
+              "title": "Reflect",
+              "semantic_type": "ReflectAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "17ab16e0-f4d5-4406-9061-bc695dbc7ad4",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "title": null,
+                "semantic_type": "TextQuestion",
+                "evaluation_id": null,
+                "text": "Why is it important to do a demographic analysis on your datasets?"
+              },
+              "answer": {
+                "text": "While there are many reasons for this you need to make sure that you datasets will be representative of the population you will be attempting serve. If it is not, the models created later will not generalize well in production. ",
+                "video": null
+              }
+            },
+            {
+              "id": 1011144,
+              "key": "2fdf0cbf-a60a-4e62-b053-17258fe57073",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1005032xJUPYTERpmqjsgte",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-fomb8",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Lesson_EHR_Data_Security_and_Analysis_Screencast.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1009424,
+          "key": "ddcb30c7-ab10-4cfe-b2c0-da41a9ff3650",
+          "title": "Compare Demographics Exercise",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "ddcb30c7-ab10-4cfe-b2c0-da41a9ff3650",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1013929,
+              "key": "dc00f8de-35f0-4859-975b-73581dbf086f",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1005032xJUPYTERno4acp9h",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-m2tkw",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Lesson_Data_Analysis_Exercise_Starter_Code.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1009425,
+          "key": "0aa1fe9a-cbb1-4164-b80f-f41b664c76a3",
+          "title": "Exercise Compare Demographics Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "0aa1fe9a-cbb1-4164-b80f-f41b664c76a3",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1009426,
+              "key": "5fecfafa-471d-4fc0-b134-6f123ed79dad",
+              "title": "ND320 AIHCND C01 L01 A13 Topic 5 Solution Demographic Analysis",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "UKJERWto6hQ",
+                "china_cdn_id": "UKJERWto6hQ.mp4"
+              }
+            },
+            {
+              "id": 1013930,
+              "key": "0add8aae-c1b0-4068-8b8a-1fd57d4b007f",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r956022c1010817xJUPYTERiwddxmv9",
+              "pool_id": "jupyterbyoc",
+              "view_id": "jupyter-p8szi",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": {
+                      "id": "mldatasets",
+                      "paths": [
+                        {
+                          "src": "/AIHCND/conda-envs/conda_tf2_tf_probability/conda",
+                          "dest": "/opt/conda"
+                        }
+                      ]
+                    },
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Lesson_EHR_Data_Security_and_Analysis_Exercise_Solutions.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1009427,
+          "key": "d01eb930-3dd5-46a4-ac45-fa86f46b99b9",
+          "title": "EHR Data Security and Analysis Lesson Recap",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d01eb930-3dd5-46a4-ac45-fa86f46b99b9",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1009428,
+              "key": "91a3ebe2-4ff4-425b-849e-38e820606406",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# EHR Data Security and Analysis Lesson Recap",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009429,
+              "key": "78dad9ec-be52-430d-9ff1-27322435fccb",
+              "title": "ND320 AIHCND C01 L01 A14 Lesson Recap V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "iouq2l-BUkY",
+                "china_cdn_id": "iouq2l-BUkY.mp4"
+              }
+            },
+            {
+              "id": 1009431,
+              "key": "a97491e4-f86e-490f-9141-3373c3839d5f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## EHR Data Security and Analysis\nYou have made it to the end of EHR Data Security & Analysis! Well done.\nYou now know about Data Security and Privacy including some of the key standards and regulations. You have gained key information that you need to know about working with EHR data that will protect your data and you.\n\nYou also explored your way through data allowing you to gain a deeper understanding of your datasets including analyzing a dataset schema, looking at value distributions, missing values, and the cardinality of categorical features. It was a great adventure, wasn't it? I hope you took some pictures! Oh, wait maybe that wouldn't be a great data security practice. \n\nAnd finally, you completed a demographic dataset analysis. You can now make sure that your dataset is representative before it would become a problem. \n\nOnce again, Congratulations!  You're be ready to work with real healthcare datasets. You are also able to ensure that your training and predictions of the model you build later are truly representative. The next lesson is filled with the intrigue and mysteries surrounding...EHR Code Sets. I bet you didn't guess that one. I'll see you in the next lesson where you'll learn all about dealing with Diagnosis, Procedure, and Medication Codes.\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1009430,
+              "key": "37455aca-440b-4b02-a5ec-619f62b171bc",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/April/5e8b8f92_l1-ehr-data-security-analysis/l1-ehr-data-security-analysis.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/37455aca-440b-4b02-a5ec-619f62b171bc",
+              "caption": "EHR Data Security and Analysis",
+              "alt": "EHR Data Security and Analysis",
+              "width": 960,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 1009432,
+              "key": "620af7a5-4d7d-4d36-a6b6-4f28a0e096ab",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Lesson Key Terms\n|**Key Term** | **Definition**|\n|------------------------|----------------------------------------|\n|Providers|These are entities/groups/individuals that provide care for patients. Providers can range in size from entire hospital networks to individual doctors and medical professionals.\n|Payers|a group that consists of companies like healthcare insurance. Payers can also include entities such as the government for things like Medicaid and Medicare in the United States.\n|HIPAA| The Health Insurance Portability and Accountability Act is the key industry regulation that you should be familiar within the U.S.\n|HITECH| The Health Information Technology for Economic and Clinical Health Act is also important to note and this is really just an update to HIPAA that accounts for technology.\n|EU|European Union\n|GDPR| The General Data Protection Regulation is generally considered more stringent than even HIPAA when it comes to protections for patients.\n|DPA| The Data Protection Act really builds off of and add to GDPR\n|PHI| Protected Health Information\n|Covered Entities| are a group of industry organizations defined by HIPAA to be one of three groups: health insurance plans, providers, or clearinghouses. You can see from the table the types of entities in each category. \n|Business Associates| A business associate is a person or entity that performs certain functions or activities that involve the use or disclosure of protected health information on behalf of or provides services to, a covered entity.\n|Business Associates Agreement/Addendum (BAA)| The contract between a covered entity and business associate.\n|De-identifying a Dataset| The removal of identifying fields like name, address from a dataset. De-Identification is done to reduce privacy risks to individuals and support the secondary use of data for research and such.\n|Expert Determination Method| Completed by a statistician to determines there is a small enough risk that an individual could be identified.\n|Safe Harbor|The removal of 18 identifiers like name, zip code, etc.\n|EDA| Exploratory Data Analysis\n|CRISP-DM| This stands for “cross-industry standard process for data mining” and is a common framework used for data science projects and includes a series of steps from business understanding to deployment. \n|MCAR|  Missing Completely at Random. This means that the data is missing due to something unrelated to the data and there is **no systematic reason** for the missing data. \n|MAR| Missing at Random and this is the opposite case where there **is some systematic relationship** between data and the probability of missing data.\n|MNAR| Missing Not at Random and this usually means there is a relationship between a value in the dataset and the missing values. \n|Cardinality| refers to the number of unique values that a feature has and is relevant to EHR datasets because there are code sets such as diagnosis codes in the order of tens of thousands of unique codes.",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

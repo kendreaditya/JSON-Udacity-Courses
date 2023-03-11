@@ -1,0 +1,517 @@
+{
+  "data": {
+    "lesson": {
+      "id": 728091,
+      "key": "4bc04af4-5ba3-4feb-a10b-fdd0f95d61cb",
+      "title": "Style Transfer",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Learn how to use a pre-trained network to extract content and style features from an image. Implement style transfer with your own images!",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/4bc04af4-5ba3-4feb-a10b-fdd0f95d61cb/728091/1546641904744/Style+Transfer+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/4bc04af4-5ba3-4feb-a10b-fdd0f95d61cb/728091/1546641901202/Style+Transfer+Subtitles.zip"
+          },
+          {
+            "name": "Style_Transfer_Gatys_etal",
+            "uri": "https://video.udacity-data.com/topher/2018/October/5bb2c62f_style-transfer-gatysetal/style-transfer-gatysetal.pdf"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 728092,
+          "key": "558e6218-96dc-47e2-85cd-9c779a263fb3",
+          "title": "Style Transfer",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "558e6218-96dc-47e2-85cd-9c779a263fb3",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 791781,
+              "key": "205633a0-faf5-411a-972a-fb9150313c58",
+              "title": "Style Transfer",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "_urN9BQ7RHM",
+                "china_cdn_id": "_urN9BQ7RHM.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 728093,
+          "key": "d6e0487f-69f1-44e7-a157-34bf420a9353",
+          "title": "Separating Style & Content",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d6e0487f-69f1-44e7-a157-34bf420a9353",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 791782,
+              "key": "43513f3f-2da5-4879-9ce9-b595d64962ef",
+              "title": "Separating Style and Content",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "PNFFAhymuHc",
+                "china_cdn_id": "PNFFAhymuHc.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 728094,
+          "key": "e9180da9-001a-426e-974a-0ef1e87846dc",
+          "title": "VGG19 & Content Loss",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "e9180da9-001a-426e-974a-0ef1e87846dc",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 791783,
+              "key": "c996ed4f-7000-48c8-8c8b-54ded5dda1f5",
+              "title": "VGG19 & Content Loss",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "PQ1UuzOIjCM",
+                "china_cdn_id": "PQ1UuzOIjCM.mp4"
+              }
+            },
+            {
+              "id": 813750,
+              "key": "272172b8-d1eb-4298-b107-69beed7be46f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Resources:\n- [Image Style Transfer Using Convolutional Neural Networks](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf)",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 728095,
+          "key": "ed63bb91-acc9-4e94-bd2a-732d8e4bcc55",
+          "title": "Gram Matrix",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "ed63bb91-acc9-4e94-bd2a-732d8e4bcc55",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 791784,
+              "key": "7e27ef83-53fa-40d1-a940-e0c533095b9d",
+              "title": "Gram Matrix",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "e718uVAW3KU",
+                "china_cdn_id": "e718uVAW3KU.mp4"
+              }
+            },
+            {
+              "id": 728313,
+              "key": "e927ec48-f2a2-402f-8782-99095fff333e",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "e927ec48-f2a2-402f-8782-99095fff333e",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Given a convolutional layer with dimensions `d x h x w = (20*8*8)`, what length will one row of the *vectorized* convolutional layer have? (Vectorized means that the spatial dimensions are flattened.)",
+                "answers": [
+                  {
+                    "id": "a1537912158212",
+                    "text": "16",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1537912225697",
+                    "text": "20",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1537912227572",
+                    "text": "32",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1537912230586",
+                    "text": "40",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1537912238175",
+                    "text": "64",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 728310,
+              "key": "95c32843-1f55-4b32-924a-e21364917919",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "95c32843-1f55-4b32-924a-e21364917919",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Given a convolutional layer with dimensions `d x h x w = (20*8*8)`, what dimensions (h x w) will the resultant Gram matrix have?",
+                "answers": [
+                  {
+                    "id": "a1537911971540",
+                    "text": "`(8 x 8)`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1537912051718",
+                    "text": "`(10 x 10)`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1537912063801",
+                    "text": "`(20 x 8)`",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1537912072907",
+                    "text": "`(20 x 20)`",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 728096,
+          "key": "98a39e06-3072-405a-9686-2b8622e2ab58",
+          "title": "Style Loss",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "98a39e06-3072-405a-9686-2b8622e2ab58",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 791785,
+              "key": "5ba8d9b3-a953-486f-986e-5d16a50ed153",
+              "title": "Style Loss",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "VazrQ7u-OHo",
+                "china_cdn_id": "VazrQ7u-OHo.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 728097,
+          "key": "554b0e44-4f7e-4b2a-8a0d-bd978995905f",
+          "title": "Loss Weights",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "554b0e44-4f7e-4b2a-8a0d-bd978995905f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 791786,
+              "key": "4b2e6846-3da9-4bea-a1c7-5f4794052427",
+              "title": "Loss Weights",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "qO8oiZBtG1I",
+                "china_cdn_id": "qO8oiZBtG1I.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 728098,
+          "key": "574fe33c-026c-42ac-ba5e-f0a1d02a9ce5",
+          "title": "VGG Features",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "574fe33c-026c-42ac-ba5e-f0a1d02a9ce5",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 791787,
+              "key": "79021aa4-07f4-4718-a93d-232d670ecab1",
+              "title": "VGG Features",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Q5N2NEv7ADc",
+                "china_cdn_id": "Q5N2NEv7ADc.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 728099,
+          "key": "b62e7379-1586-4cfd-abf9-d33da751de8a",
+          "title": "Pre-Notebook: Style Transfer",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "b62e7379-1586-4cfd-abf9-d33da751de8a",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 728241,
+              "key": "3c4564d2-b7ec-4a6c-9f12-c51a1cb5386f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Notebook: Style Transfer\n\nNow, you're ready to implement style transfer and apply it using your own images!\n\n**It's suggested that you open the notebook in a new, working tab and continue working on it as you go through the instructional videos in this tab.** This way you can toggle between learning new skills and coding/applying new skills.\n\nTo open this notebook, you have two options:\n>- Go to the next page in the classroom (recommended).\n- Clone the repo from [Github](https://github.com/udacity/deep-learning-v2-pytorch) and open the notebook **Style_Transfer_Exercise.ipynb** in the **style-transfer** folder.  You can either download the repository with `git clone https://github.com/udacity/deep-learning-v2-pytorch.git`, or download it as an archive file from [this link](https://github.com/udacity/deep-learning-v2-pytorch/archive/master.zip).\n\n# Instructions\n\n* Load in a pre-trained VGG Net\n* Freeze the weights in selected layers, so that the model can be used as a *fixed feature extractor*\n* Load in content and style images\n* Extract features from different layers of our model\n* Complete a function to calculate the gram matrix of a given convolutional layer\n* Define the content, style, and total loss for iteratively updating a target image\n\nThis is a self-assessed lab. If you need any help or want to check your answers, feel free to check out the solutions notebook in the same folder, or by clicking [here](https://github.com/udacity/deep-learning-v2-pytorch/blob/master/style-transfer/Style_Transfer_Solution.ipynb).",
+              "instructor_notes": ""
+            },
+            {
+              "id": 728242,
+              "key": "af33a08f-6bb8-4f8b-b478-c8c33f00a3f3",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### GPU Workspaces\n\nThe next workspace is **GPU-enabled**, which means you can select to train on a GPU instance. The recommendation is this:\n* Load in and test functions while in CPU (non-enabled) mode\n* When you're ready to generate a style-transferred  image, **enable** GPU to quickly iterate and generate this image!\n\nAll models and data they see as input will have to be moved to the GPU device, so take note of the relevant movement code in the model creation and training process.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 718930,
+          "key": "50cb5858-23be-4800-986b-71fd92afcb8a",
+          "title": "Notebook: Style Transfer",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "50cb5858-23be-4800-986b-71fd92afcb8a",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 718931,
+              "key": "e2ccc5dd-77f0-463a-8914-0e2eb9c03684",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "viewyu235k9jvyl",
+              "pool_id": "jupytergpu",
+              "view_id": "jupyter-yra74hzo9pq",
+              "gpu_capable": true,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Style_Transfer_Exercise.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 728101,
+          "key": "1df45183-763c-4068-b514-0314e54892d5",
+          "title": "Features & Gram Matrix",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "1df45183-763c-4068-b514-0314e54892d5",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 791788,
+              "key": "6085ce6c-bd26-4bf9-a4ed-61ef2214b710",
+              "title": "Features & Gram Matrix",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "f89x9oAh6X0",
+                "china_cdn_id": "f89x9oAh6X0.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 728102,
+          "key": "d128e199-c7e8-4765-a6b4-c4fad5405a72",
+          "title": "Gram Matrix Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d128e199-c7e8-4765-a6b4-c4fad5405a72",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 791789,
+              "key": "f36aa94f-f338-4452-a55a-75c5a4963dc2",
+              "title": "Gram Matrix Solution",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "uncCKMI5Yns",
+                "china_cdn_id": "uncCKMI5Yns.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 728103,
+          "key": "7c4cafaa-1ba2-430a-b8f8-e84e1ddea431",
+          "title": "Defining the Loss",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "7c4cafaa-1ba2-430a-b8f8-e84e1ddea431",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 791790,
+              "key": "fcb84791-548c-4bbe-814b-50b0b6162cf2",
+              "title": "Defining the Loss",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "lix8d3B2QcE",
+                "china_cdn_id": "lix8d3B2QcE.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 728104,
+          "key": "af47e232-fa44-4e5d-b976-95e00430d0cf",
+          "title": "Total Loss & Complete Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "af47e232-fa44-4e5d-b976-95e00430d0cf",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 791791,
+              "key": "78b74619-b743-42de-8106-7f631e1f955d",
+              "title": "Total Loss & Complete Solution",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "DzaQm9awcwY",
+                "china_cdn_id": "DzaQm9awcwY.mp4"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

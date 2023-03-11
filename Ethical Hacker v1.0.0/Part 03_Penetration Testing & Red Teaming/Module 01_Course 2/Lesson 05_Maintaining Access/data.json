@@ -1,0 +1,1238 @@
+{
+  "data": {
+    "lesson": {
+      "id": 1124942,
+      "key": "9ac3e412-3c90-4ced-8354-30596a2863af",
+      "title": "Maintaining Access",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "In this lesson, we will learn how to maintain the access that we just go on the target. ",
+      "lesson_type": null,
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/9ac3e412-3c90-4ced-8354-30596a2863af/1124942/1619795641923/Maintaining+Access+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/9ac3e412-3c90-4ced-8354-30596a2863af/1124942/1619795636620/Maintaining+Access+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 1124857,
+          "key": "50d5027e-8e70-436d-97e4-9af23619e5f6",
+          "title": "Introduction to Maintaining Access",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "50d5027e-8e70-436d-97e4-9af23619e5f6",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1124854,
+              "key": "5f143a3b-93d7-437c-b4cd-1142f642b00c",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Introduction to Maintaining Access",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1124855,
+              "key": "082da855-38d8-4346-9c38-e79296f4f3a8",
+              "title": "ND350 C2 L4 A01 Introduction To Maintaining Access V1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "9Un3aCzExds",
+                "china_cdn_id": "9Un3aCzExds.mp4"
+              }
+            },
+            {
+              "id": 1124856,
+              "key": "fce2cb26-a159-4a9c-8a25-c63deec84fcc",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this lesson we will:\n\n* Get an understanding of Advanced Persistent Threats\n\n* Gained access using a reverse TCP payload\n* Ran a scan from the compromised target using Ping Sweep\n* Created routing rules to exploit our target outside of the meterpreter session\n* Ran a persistence connection\n* Pivot to other machines via port forwarding\n* Pivot to other machines via proxy",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1124861,
+          "key": "7770b103-745a-4eeb-9a95-0092a9cb93b5",
+          "title": "Introduction to APTs Part 1",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "7770b103-745a-4eeb-9a95-0092a9cb93b5",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1124858,
+              "key": "8fb97557-294b-48fa-a757-31ddc678316b",
+              "title": "Methods for maintaining Access (APT) Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## The Deep Panda Attack",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1124859,
+              "key": "007cce41-e199-4caf-993c-c9241b000cb6",
+              "title": "ND350 C2 L4 A02 Introduction To Advanced Persistent Threat APT V1 Copy 01",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "kdJ0SLjnHcQ",
+                "china_cdn_id": "kdJ0SLjnHcQ.mp4"
+              }
+            },
+            {
+              "id": 1151917,
+              "key": "91d6ce21-2f03-46f6-a333-d4876b2caa4e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this video, we were able to learn about the characteristics of an Advanced Persistent Threat. The chart below summarizes that information.",
+              "instructor_notes": null
+            },
+            {
+              "id": 1126684,
+              "key": "1864105e-1a5c-4899-a637-8cce1a444af0",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/March/603da828_l4-intro-to-apt/l4-intro-to-apt.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/1864105e-1a5c-4899-a637-8cce1a444af0",
+              "caption": "Introduction to Advanced Persistent Threat (APT) Attacks ",
+              "alt": "Introduction to Advanced Persistent Threat (APT) Attacks with multiple actors in Advanced to Multiple Nations for Threats.",
+              "width": 1187,
+              "height": 622,
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1126694,
+          "key": "7606d0c9-28e5-4705-903f-1744a10fc088",
+          "title": "Introduction to APTs Part 2",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "7606d0c9-28e5-4705-903f-1744a10fc088",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1126695,
+              "key": "b0f292ee-233d-4285-9102-120551d63a14",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# How APTs Work",
+              "instructor_notes": null
+            },
+            {
+              "id": 1126696,
+              "key": "1b9af869-53d6-44e1-9fb4-5ab47e634742",
+              "title": "ND350 C2 L4 A03 How APT Works V1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "0cfaDb2xjjA",
+                "china_cdn_id": "0cfaDb2xjjA.mp4"
+              }
+            },
+            {
+              "id": 1151920,
+              "key": "34303b06-bdbf-4cf0-8dd3-cc9e8b43c836",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this video we reviewed the steps that Advance Persistent Threat (APT) actors look to take in order to be successful. A summary of those steps are listed in the charts below.",
+              "instructor_notes": null
+            },
+            {
+              "id": 1173829,
+              "key": "6e7c3a14-7252-4e01-b899-2477c2789e0f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "The steps for APT attacks is as follows: \n\n* Step 1 - Gather information \n* Step 2 - Gain Access \n* Step 3 - Establish Foothold\n* Step 4 - Internal Recon\n* Step 5 - Move Laterally\n* Step 6 - Maintain Persistency\n* Step 7 - Cover Your Tracks and Complete your Mission",
+              "instructor_notes": null
+            },
+            {
+              "id": 1126698,
+              "key": "fb30babb-4d29-44d1-95ca-1e2b95c473de",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/March/603da924_l4-apt-method/l4-apt-method.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/fb30babb-4d29-44d1-95ca-1e2b95c473de",
+              "caption": "APT Attack Methodology Steps",
+              "alt": "APT Attach Methodology Steps",
+              "width": 1190,
+              "height": 608,
+              "instructor_notes": null
+            },
+            {
+              "id": 1173836,
+              "key": "1dba3bc3-aca1-470e-aeb8-0f0cb27b4cc6",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Advance Persistent Threat (APT) actors are generally well funded working in teams. They utilize a robust Command Control System that comprise of a number of servers running through Anonymous Proxy services.",
+              "instructor_notes": null
+            },
+            {
+              "id": 1126699,
+              "key": "79d1def9-2fee-47e5-b16c-f5594dbea0e8",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/March/603da92a_l4-apt-method2/l4-apt-method2.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/79d1def9-2fee-47e5-b16c-f5594dbea0e8",
+              "caption": "APT Attack Methodology",
+              "alt": "APT Attach Methodology",
+              "width": 1169,
+              "height": 599,
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1124863,
+          "key": "1fda2cb2-250d-421f-83d3-7e64e404f362",
+          "title": "Quiz: Introduction to APTs ",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "1fda2cb2-250d-421f-83d3-7e64e404f362",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1126686,
+              "key": "a1d5fd7b-a36f-4152-86f9-29902a17b7e1",
+              "title": null,
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "a1d5fd7b-a36f-4152-86f9-29902a17b7e1",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following is **NOT** a quality of an APT according to NIST?\n",
+                "answers": [
+                  {
+                    "id": "59f3e19b-6ea2-4c07-8217-fa91fe6e4cd0",
+                    "text": "Robust attacks",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "257f6a33-1bdd-4d43-9dd8-3cdb75cf97c1",
+                    "text": "Vast attack vectors",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "7e80b5a8-264f-490d-a653-8e47f686d424",
+                    "text": "Extended presence",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "8b268911-0d6b-4874-ba48-61bee944f3bd",
+                    "text": "Fast and quick attacks",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1126687,
+              "key": "7e2774e8-bf44-447d-a69b-664846ad7565",
+              "title": null,
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "7e2774e8-bf44-447d-a69b-664846ad7565",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What APT quality helps make the deep panda attack so successful even though they were kicked out by the big bang?",
+                "answers": [
+                  {
+                    "id": "e94adacf-a6fe-4fff-a59c-b8bb9a70feed",
+                    "text": "They had established a foothold",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "fd1ebb25-aded-47ff-8474-22cecab60911",
+                    "text": "They conducted proper information gathering",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "e3d0304f-9bba-4285-8f65-41a7225170d1",
+                    "text": "They covered their tracks well  ",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1124869,
+          "key": "c0ff9d7a-621f-462f-86d7-4e92b7cfe990",
+          "title": "Team Meeting!",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c0ff9d7a-621f-462f-86d7-4e92b7cfe990",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1124864,
+              "key": "a6dd8d39-0723-4ace-b461-1b82463f8c59",
+              "title": "Gaining Access Results and Maintaining Access with Team  Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Team Meeting\n\n**Topic: **Review Gaining Access results and discuss strategy to maintain access",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1124865,
+              "key": "fad2bc12-1a08-4f7d-9dad-c1587d188794",
+              "title": "Maintaining Access Simulation",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "or_sOVlnlqo",
+                "china_cdn_id": "or_sOVlnlqo.mp4"
+              }
+            },
+            {
+              "id": 1124866,
+              "key": "f659d9b7-4566-43b3-a645-f2ad781cb542",
+              "title": "Course Outline Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Meeting with the team to discuss options\n\n* Persistence Connection\n* pivoting attack\n* privilege escalation\n* monitoring internal network \n\nStrategy:\n\n* Json discovered VPN file that will allow remote access into the MZ and DMZ from the internet.\n* Password cracked for Win-10 machine in the MZ\n* SQLI and directory traversal was successfully ran against the payroll server\n* OwnCloud application server was compromised - 10.1.0.12 (note, there is no walkthrough demonstration for this)",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1124873,
+          "key": "246ebb17-7ed8-4a52-8281-8d05e5cf5948",
+          "title": "Post Exploitation Scans ",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "246ebb17-7ed8-4a52-8281-8d05e5cf5948",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1124872,
+              "key": "96e90966-d30f-488d-8801-81d5973b5b21",
+              "title": "Exercise: Gaining Access Results and Maintaining Access with Team  Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Scanning with Ping Sweep",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1126702,
+              "key": "21ceb48f-a784-4755-adbd-4015205e3547",
+              "title": "ND350 C2 L4 A05 Post Exploitation Scan V1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "IDumJ8B3EC0",
+                "china_cdn_id": "IDumJ8B3EC0.mp4"
+              }
+            },
+            {
+              "id": 1151922,
+              "key": "68762352-ffc6-4a00-91e9-c4e4f911827b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this video we were able to run Ping Sweep after gaining access to the Win-10 machine. the ping sweep tool helped us to rediscover machines in the DMZ via our connection with the Win-10.",
+              "instructor_notes": null
+            },
+            {
+              "id": 1151924,
+              "key": "54536697-3e93-49a1-a55c-ff072136168b",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/March/603dada3_l4ping-sweep/l4ping-sweep.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/54536697-3e93-49a1-a55c-ff072136168b",
+              "caption": "Post Exploit Scan",
+              "alt": "Post Exploit Scan",
+              "width": 1026,
+              "height": 415,
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1124876,
+          "key": "399dc5a8-8735-4631-ac75-3045ab3427cf",
+          "title": "Post Exploitation Routing",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "399dc5a8-8735-4631-ac75-3045ab3427cf",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1124874,
+              "key": "35f70788-cb3d-4a86-8e41-c43278df71ea",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Routing Through a Meterpreter Session and Persistence",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1124875,
+              "key": "c0f8ee42-a0b0-4550-b67e-e1a6201eee57",
+              "title": "ND350 C2 L4 A06 Post Exploitation Routing V1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "hKBEopoe2DU",
+                "china_cdn_id": "hKBEopoe2DU.mp4"
+              }
+            },
+            {
+              "id": 1151923,
+              "key": "dd4a9722-c9d9-47db-90c1-5fc0ac6b40fd",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this video we were able to set up routing rules from the Kali Linux Vm to the DMZ via our meterpreter session with the Win-10 machine in the MZ",
+              "instructor_notes": null
+            },
+            {
+              "id": 1151925,
+              "key": "b16d7c4a-9d36-4a2d-8a26-c74a5e18085e",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/March/603daddc_l4routing-post/l4routing-post.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/b16d7c4a-9d36-4a2d-8a26-c74a5e18085e",
+              "caption": "Post Exploit Routing",
+              "alt": "Post Exploit Routing",
+              "width": 1020,
+              "height": 421,
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1124881,
+          "key": "5de3f672-3274-4b7b-b071-3d26cb5f84e4",
+          "title": "Persistence Connection",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5de3f672-3274-4b7b-b071-3d26cb5f84e4",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1124877,
+              "key": "fd3573a5-f58d-4149-aa28-a104ce93fb26",
+              "title": "Persistence Connection Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Persistence Connection",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1124878,
+              "key": "caacd10d-4a82-4320-9fa7-6d7c26cc32ac",
+              "title": "ND350 C2 L4 A07 Persistence V1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "tqHzPbS-l80",
+                "china_cdn_id": "tqHzPbS-l80.mp4"
+              }
+            },
+            {
+              "id": 1151926,
+              "key": "7ccbb1d1-4018-4396-a74e-761170b36f58",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this video, we were able to run persistent connection on the win-10 vm by injecting the target registry with a command to run the payload on start-up.",
+              "instructor_notes": null
+            },
+            {
+              "id": 1124879,
+              "key": "bf063e8c-6450-4672-b7d9-c37a5edfa496",
+              "title": "Persistence Connection Image",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/March/603dae75_l4-persistence-diagram/l4-persistence-diagram.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/bf063e8c-6450-4672-b7d9-c37a5edfa496",
+              "caption": "Persistence through Reverse TCP Connection",
+              "alt": "Persistence through Reverse TCP Connection",
+              "width": 1045,
+              "height": 427,
+              "instructor_notes": null
+            },
+            {
+              "id": 1172906,
+              "key": "bb2bf50b-ca8d-4e1c-9cd3-2e25f50700ce",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "The screenshot below shows a success persistence connection. Observe, the lines that says \"Installed payload to blob\" & \"Installed run key\"\n\nThese two outputs confirms that the payload is planted and the registry run key will execute it upon start up.",
+              "instructor_notes": null
+            },
+            {
+              "id": 1151928,
+              "key": "a1a939ca-5a7d-475f-afd7-83293220c508",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/March/603daea2_l4-persistence/l4-persistence.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/a1a939ca-5a7d-475f-afd7-83293220c508",
+              "caption": "Persistence command against the win-10 vm",
+              "alt": "Persistence command against the win-10 vm",
+              "width": 648,
+              "height": 234,
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1124883,
+          "key": "03ac4488-4961-4713-acf5-775ce55d568a",
+          "title": "Quiz: Persistence ",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "03ac4488-4961-4713-acf5-775ce55d568a",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1126717,
+              "key": "9bc9ebda-35d8-4d4d-92bf-b8463120fb12",
+              "title": null,
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "9bc9ebda-35d8-4d4d-92bf-b8463120fb12",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What is the difference between a persistence connection and a reverse TCP shell?",
+                "answers": [
+                  {
+                    "id": "e8dc124c-2ab8-4976-b654-c2dc95fde881",
+                    "text": "One can create a backdoor connection the other only create scans",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "02eda169-f466-4137-b079-b4cd6bfee180",
+                    "text": "Persistence is only one type while reverse TCP shell have many types",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "b5e65e83-72c7-4531-b09f-160c9b27903b",
+                    "text": "Persistence is stored on the hard disk while reverse TCP shell runs on memory",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "3fba8f4f-3dae-46ce-ad52-7e85dc22a1be",
+                    "text": "There are not difference, they both do the same things",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 1151929,
+              "key": "75ccd068-da4a-4012-b45b-820084d59493",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "75ccd068-da4a-4012-b45b-820084d59493",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Will the persistence connection module below work on the DMZIServer? Why or why not?\nwindows/local/registry_persistence",
+                "answers": [
+                  {
+                    "id": "436f2b81-4272-4780-9b8e-de270ebd4a52",
+                    "text": "No, because the DMZIServer is a Linux machine",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "63889df1-864a-4b42-88b5-81963b6810b5",
+                    "text": "Yes, because the DMZIServer is a Linux machine",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 1124885,
+          "key": "a3d4b2b0-2634-4bdd-b7c9-6b6c3b164fea",
+          "title": "Exercise: Persistence Connection",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a3d4b2b0-2634-4bdd-b7c9-6b6c3b164fea",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1124884,
+              "key": "44addb60-b544-4f02-9dfb-87e58f9f4292",
+              "title": "Exercise: Persistence Connection",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Are You Persistent Enough?",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1126718,
+              "key": "83e07a06-4c8c-4577-98da-0ebd73177fd7",
+              "title": "ND350 C2 L4 A08 Exercise Persistence V1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "CbumxN3Brg4",
+                "china_cdn_id": "CbumxN3Brg4.mp4"
+              }
+            },
+            {
+              "id": 1130079,
+              "key": "ff71def1-5528-4bf7-8e18-fced5d908405",
+              "title": "Exercise Requirement",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "ff71def1-5528-4bf7-8e18-fced5d908405",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "From the Kali-Internal machine set up a meterpreter session with the Win-10 vm",
+                "Background your session",
+                "Search persistence to see a list of options",
+                "Enter the use command and paste your post/persistence module of choice",
+                "Show options to see what settings you need to configure",
+                "Run the exploit. Did it work? If not try at least one more"
+              ],
+              "positive_feedback": null,
+              "video_feedback": null,
+              "description": ""
+            },
+            {
+              "id": 1142822,
+              "key": "8bd5fa23-9e29-4482-a83d-81af69089636",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "pmicrosoft4o42axql",
+              "pool_id": "microsoft",
+              "view_id": "microsoft-7qg9g",
+              "gpu_capable": null,
+              "configuration": {
+                "partner": "microsoft",
+                "blueprint": {
+                  "kind": "partner-workspace"
+                },
+                "iframe_url": "",
+                "nutanix_pool_id": "",
+                "nutanix_windows_config_id": ""
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1124888,
+          "key": "7a8e36c0-ab86-41ef-831c-1567f8a1ee10",
+          "title": "Persistence Connection Exercise Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "7a8e36c0-ab86-41ef-831c-1567f8a1ee10",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1124886,
+              "key": "1b7c9ee7-4534-4ed8-8bfb-bcc9e65f16ef",
+              "title": "Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Persistence Connection Exercise Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1124887,
+              "key": "75b12307-cce1-4e2b-a6c4-75a632f00b93",
+              "title": "ND350 C2 L4 A09 Persistent Exercise Solution V1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "FvcRCr7ARp8",
+                "china_cdn_id": "FvcRCr7ARp8.mp4"
+              }
+            },
+            {
+              "id": 1151930,
+              "key": "fac60ceb-ba7e-45fb-8121-861bf4cf69ff",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this solution, we were able to implement persistent connection by simply uploading the payload using the upload command into the startup folder (C:\\programdata\\microsoft\\windows\\start menu\\programs\\startup)",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1124893,
+          "key": "368c5859-81f7-42c0-a2ab-65f6d9f2bd49",
+          "title": "Pivoting to Gain Access",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "368c5859-81f7-42c0-a2ab-65f6d9f2bd49",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1124889,
+              "key": "268c77be-279b-4058-a7e1-54484f04e023",
+              "title": "Pivoting Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Reaching the DNS Server in the DMZ via a SOCKS proxy",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1124890,
+              "key": "835cbab4-7518-4801-9189-a240ca497819",
+              "title": "ND350 C2 L4 A10 Pivoting To Gain Access V1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "UspQyLDpgqo",
+                "china_cdn_id": "UspQyLDpgqo.mp4"
+              }
+            },
+            {
+              "id": 1124892,
+              "key": "9b8c853e-4178-4f56-85a3-78f6ca1f44b2",
+              "title": "Pivoting Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this video we were able to set up a socks proxy. and from there we were able to interact with the DNS server in the DMZ via out meterpreter session with the Win-10 machine in the MZ.\n\n## Game Plan\n1. Establish a meterpreter session with the win10 machine.\n2. Set up a socks job to listen on the Kali machine on a particular port.\n3. Setup autoroute to run DMZ traffic through the meterpreter session.\n4. Setup a Proxy server on the web browser to route web traffic to the sock job. Then, the sock job will follow the route rule established in Step 3 to run the DMZ traffic through the meterpreter session. \n5. Setup Proxychain. It is a proxy service that can be used by tools outside of msfconsole to route traffic to the sock server that will route DMZ packets through the meterpreter session. ",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1124897,
+          "key": "0731d448-15ca-4892-862b-951e11e59b5b",
+          "title": "Exercise: Pivoting",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "0731d448-15ca-4892-862b-951e11e59b5b",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1130083,
+              "key": "f6a2100d-0eab-43e0-9546-e9a13fe6407a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Exercise: Pivoting",
+              "instructor_notes": null
+            },
+            {
+              "id": 1151852,
+              "key": "68d8442b-a3f7-481f-bc1d-225b9a187d9c",
+              "title": "ND350 C2 L4 A11 Exercise Pivoting V1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "X46wykfoKLQ",
+                "china_cdn_id": "X46wykfoKLQ.mp4"
+              }
+            },
+            {
+              "id": 1130080,
+              "key": "e286b021-7771-43a8-ba8f-ffb920b249ac",
+              "title": "Exercise Requirement",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "e286b021-7771-43a8-ba8f-ffb920b249ac",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "From the Kali-Internal machine turn on your VPN service and set up a meterpreter session with the Win-10 vm",
+                "Background your session",
+                "Set up your socks job",
+                "Set up your route to the DMZ",
+                "Configure proxychains.conf",
+                "Start a second listening service",
+                "Log in to the DNS Server. Download and execute a reverse TCP shell. ",
+                "Connect a meterpreter session between the Kali VM and the DNS server in the DMZ",
+                "Kill the meterpreter session between the Kali-VM and Win-10 machine (use the -h command if you are not sure which command to use). Is the meterpreter connection with the DNS server dependent on the connection with the Win-10 vm? why or why not?"
+              ],
+              "positive_feedback": null,
+              "video_feedback": null,
+              "description": null
+            },
+            {
+              "id": 1142823,
+              "key": "0ab10183-ff1a-4787-8312-3572b3e0f98a",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "pmicrosoftvwh7b19k",
+              "pool_id": "microsoft",
+              "view_id": "microsoft-uwj1s",
+              "gpu_capable": null,
+              "configuration": {
+                "partner": "microsoft",
+                "blueprint": {
+                  "kind": "partner-workspace"
+                },
+                "iframe_url": "",
+                "nutanix_pool_id": "",
+                "nutanix_windows_config_id": ""
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1124900,
+          "key": "8b3d3562-27a7-4555-a42b-53ddb4cbc81b",
+          "title": "Pivoting Exercise Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "8b3d3562-27a7-4555-a42b-53ddb4cbc81b",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1124898,
+              "key": "b264e877-f433-4af6-833d-0716b723c8a9",
+              "title": "Pivoting Excercise",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Pivoting Exercise Solution",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1124899,
+              "key": "47ffccc9-dc5e-4c3b-9cce-880e96ae7bf6",
+              "title": "ND350 C2 L4 A12 Pivoting Exercise Solution V1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "kdiggsfBigc",
+                "china_cdn_id": "kdiggsfBigc.mp4"
+              }
+            },
+            {
+              "id": 1151933,
+              "key": "dda3d096-4909-49a4-8d73-743f31d3d388",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Steps for the Solution\n\n1. Create a meterpreter session on the mz-laptop. \n2. Use that connection to pivot to the DNS server.\n3. Set up a meterpreter session on the DNS server.\n4. See if your meterpreter session will live if your connection to the MZ laptop dies. Tell me why or why not?\n5. Exfiltrate a file from the documents folder.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1124907,
+          "key": "44dbbc73-a407-4378-97f8-4c0bfe80444f",
+          "title": "Connecting via Wide Area Network (WAN)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "44dbbc73-a407-4378-97f8-4c0bfe80444f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1124906,
+              "key": "d0b12f51-27a3-4e31-a4f3-a016d4a6b0d1",
+              "title": "(Obfuscation of ) Backdoors Quiz",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Remote connection through the internet",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1126721,
+              "key": "5be930e0-b5f3-4653-b68a-c699b450c560",
+              "title": "ND350 C2 L4 A13 Connecting Via Wide Area Network WAN V1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "_KvLSjbbGdc",
+                "china_cdn_id": "_KvLSjbbGdc.mp4"
+              }
+            },
+            {
+              "id": 1151934,
+              "key": "0b1d7940-6be7-4fd8-9506-ae212c3f9dfb",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this video, we reviewed (2) options that can be used to maintain a reverse TCP shell with your target via the internet: \n\n* NGROK\n* Port Forwarding on the router",
+              "instructor_notes": null
+            },
+            {
+              "id": 1151935,
+              "key": "f51c9bf4-5552-4ad4-a5be-ec4eda27d9d3",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2021/March/603db433_l4-ngrok/l4-ngrok.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/f51c9bf4-5552-4ad4-a5be-ec4eda27d9d3",
+              "caption": "Connecting to WAN",
+              "alt": "Connecting to WAN",
+              "width": 1005,
+              "height": 516,
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 1124937,
+          "key": "a46a24b8-b418-4515-97db-c4cffc7a632f",
+          "title": "Update Your Report",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a46a24b8-b418-4515-97db-c4cffc7a632f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": {
+            "files": [
+              {
+                "name": "Lesson 4 Maintaining Access",
+                "uri": "https://video.udacity-data.com/topher/2021/March/60400df1_lesson-4-maintaining-access/lesson-4-maintaining-access.ctb"
+              }
+            ],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 1124935,
+              "key": "992fa032-344e-43c4-8c9e-cc65c238a8b7",
+              "title": "Update Your Report Instructions",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Update Your Report",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1124936,
+              "key": "84035ee9-7ac9-489f-a593-972322d603ba",
+              "title": "ND350 C2 L4 A14 Updating Your Report V1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "NrqCPzNHGfw",
+                "china_cdn_id": "NrqCPzNHGfw.mp4"
+              }
+            },
+            {
+              "id": 1151936,
+              "key": "b893a92b-db3e-4416-9951-b1f552dc1805",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Below is a outline of our updated Cherry Tree Report. \n\nNote: A full copy of the cherry tree report is available below for download.",
+              "instructor_notes": null
+            },
+            {
+              "id": 1162995,
+              "key": "e0038437-b2bf-4604-9b74-f65089292fac",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Outline of the Cherry Tree Up Until This Point\n\n* **Information Discovery - Recon**\n   * Physical Recon\n      * HQ - Address 2440 W El Camino Rea, Mountain View CA\n      * Location Layout\n         * Front Possible rear entrance\n         * Data center is on the 2nd Floor\n         * High Traffic Lobby and Cafeteria Area\n      * **Physical Security**\n         * Low Swing Turnstyle\n         * Two Cameras\n   * **Personnel Reconnaissance**\n      * Maintenance weekend ~15th of every month\n      * James McLovin and Janet Pierce socialize with one another on Twitter\n   * **Network Recon**\n      * Windows 10 are being used by employees\n      * **MYPJBank.com - 74.208.236.247**\n         * **Name Server**\n            * IP: 74.208.236.247\n            * DNS Information\n         * Open ports 80, 81, and 443\n         * Hosting Provider: IONOS (PaaS)\n         * Software Discovery\n      * Network Layout - 5 Hosts Discovered\n         * Windows 10 are being used by Employees\n* **Vulnerabilities Discovered**\n   * Physical - On Premise\n      * RFID Badges can be easily cloned\n      * Fed-Ex truck driver gained access without ID\n      * Typosquatting: Domain Names with similar spelling\n   * **MYPJBank.com - 74.208.236.247**\n      * Contact-Form-7 5.3 - Critical Vulnerability (CV-E2020-25213)\n      * Paid Membership Pro < 2.5.3 - Unauthorized Order Information Disclosure Fixed in 2.5.3\n      * Elementor < 3.0.14 - SVG Upload Allowed by\n      * WP Google Map Plugin < 4.1.5 - Authenticated SQL Injection\n   * **Win 10 VM - 10.1.2.6**\n      * XAMPP - 1.7.3\n      * Apache 2.2.14\n      * Slow Loris DOS Attack - CVE: CVE-2007-6750\n      * SSL/TLS MITM Vulnerability (CCS Injection)\n      * SSL POODLE Information Leak - IDs: <br> BID: 70574 <br> CVE:VED-201403566\n      * Open Ports - 21, 22, 25, 79, 443, 445, 110, 106, 3389, 5357\n   * **DMZIServer - 10.1.0.7**\n      * Open Ports: 22 & 80\n      * Apache 2.4.38\n   * **Debianx64DMZwebC-MSCloud-10.1.0.11**\n      * Wordpress 4.8.15\n      * Apache 2.4.38\n   * **DNS Server -10.1.0.8**\n      * Open Ports - 80 & 53\n   * **Debianx64DMZOnCloudNew- 10.1.0.12**\n      * Open Ports - 20, 80, 139, 445, 111\n      * SAMBA 4.2.14\n      * Apache 2.4.10\n* Successful Exploits\n   * **DMZIServer - 10.1.0.7**\n      * Obtained SSH Keys: <br> username: Admin123 <br> Password: Password123!\n      * SQL Injection\n      * Directory Traversal\n   * **Win10 - 10.1.2.4**\n      * XAMPP - 1.7.2 - Remote Access\n      * Social Engineering w/ Rubber Ducky\n      * Data Exfiltration\n      * Password Cracking\n      * [NEW] Gained Access to Restricted Area\n      * [NEW] Persistence Connection\n      * [NEW] Remote Connection via WAN\n   * [NEW] **DNS - 10.1.0.8**\n      * Pivot Attack on DNS via Win-10",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1130091,
+          "key": "a4617da0-1ac8-4afe-8d98-9dd175e8335c",
+          "title": "Pep Talk!",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a4617da0-1ac8-4afe-8d98-9dd175e8335c",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1130098,
+              "key": "35aa9d27-4e7f-4d92-9dbb-23b1e3814c83",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Pep Talk!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1130099,
+              "key": "9e2c158e-1a40-498d-bd85-a137b7c7b22d",
+              "title": "ND350 C2 L4 A15 Pep Talk V1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Gfgyg09MW8s",
+                "china_cdn_id": "Gfgyg09MW8s.mp4"
+              }
+            },
+            {
+              "id": 1130100,
+              "key": "aa05303c-fe77-49fc-b286-532570d8a63b",
+              "title": "Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Thoughts discussed in this video: \n\nIf the security team aka the blue team is active and working effectively, then they should be taking actions to detect and/or block your offensive moves. You should be prepared to react to these blocks by having a strong foothold in different places on the network. This is why it is important to have people with different gifts on your team in order to find gain the best advantage. That way if one door closes, you can effectively try another... sometimes, you can use the closed door as a tool to get the second door open.   \n\n* Keep your option open\n* Be ready to change plans and attack vectors\n* Execute your plan A but have a plan B in mind before Plan A fails",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1124941,
+          "key": "b6166480-ffaa-46de-bc40-acda231d8d4b",
+          "title": "Maintaining Access Lesson Recap",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "b6166480-ffaa-46de-bc40-acda231d8d4b",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1124938,
+              "key": "ffcb93ca-5933-49d4-942a-fb81f0e20954",
+              "title": "Maintaining Access Lesson Recap Heading",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Maintaining Access Lesson Recap",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1124939,
+              "key": "eb09f6bd-0864-4b23-b7df-1c24d8a6341e",
+              "title": "ND350 C2 L4 A16 Maintaining Access Lesson Recap V1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "3HgdxOEnzOY",
+                "china_cdn_id": "3HgdxOEnzOY.mp4"
+              }
+            },
+            {
+              "id": 1124940,
+              "key": "b1749d0a-be41-40fa-8403-e36004fa07ca",
+              "title": "Maintaining Access Lesson Recap Summary",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "* Get an understanding of Advanced Persistent Threats\n* Gained access using a reverse TCP payload\n* Ran a scan from the compromised target using Ping Sweep\n* Created routing rules to exploit our target outside of the meterpreter session\n* Ran a persistence connection\n* Pivot to other machines via port forwarding\n* Pivot to other machines via proxy\n\n\n\n<lesson vocab=\"\" &=\"\" further=\"\" research=\"\"></lesson>",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1173121,
+              "key": "3866bd15-8ba3-4f88-b24d-c6734545c546",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Further Research:\n\n* <a href=\"https://www.kaspersky.com/resource-center/definitions/advanced-persistent-threats\" target=\"_blank\">What is APT?</a>\n* <a href=\"https://pjcourses.com/what-is-cyber-warfare\" target=\"_blank\">What is Cyber Warfare?</a>\n* <a href=\"https://pjcourses.com/9-signs-youve-been-hacked-and-what-to-do\" target=\"_blank\">9 Signs you've Benn Hacked and What to Do?</a>",
+              "instructor_notes": null
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "lesson_type",
+      "reason": "Obsolete"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "starter_files",
+      "reason": "prefer master_archive_id"
+    },
+    {
+      "name": "starter_files",
+      "reason": "prefer master_archive_id"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

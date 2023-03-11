@@ -1,0 +1,212 @@
+{
+  "id": 2815,
+  "project_id": 722,
+  "upload_types": [
+    "repo",
+    "zip"
+  ],
+  "file_filter_regex": "\\A(?!(((.*/)?(__MACOSX|\\.git|node_modules|bower_components|jspm_packages|\\.idea|build|.ipynb_checkpoints|\\.Trash-0|logs)(\\Z|/))))((.*\\.(js|css|py|html|htm|txt|md|markdown|sql|swift|java|ts|gradle|xml|rst|yml|yaml|rmd|pdf|docx|h|H|hh|hxx|h\\+\\+|c|C|cc|cpp|cxx|c\\+\\+)\\Z)|((.*/)?(README|Readme|readme|Makefile)\\Z))",
+  "nomination_eligible": false,
+  "stand_out": "- Create some of your own custom image augmentation (such as different image filtering techniques) rather than solely using those predefined by Keras’ ImageDataGenerator.\n- Try creating two ‘nested’ models to specifically predict pneumonia. One that predicts pneumonia and/or infiltrates at the top level, and then a second model that specifically predicts pneumonia from the positive cases returned by the first model. \n- Have your model output a class activation map in addition to a single binary prediction of pneumonia. This map will help a clinician to understand what the model is detecting as probable pneumonia in each image. ",
+  "hide_criteria": false,
+  "created_at": "2020-03-12T23:40:30.536Z",
+  "updated_at": "2020-05-16T13:25:33.465Z",
+  "hashtag": "",
+  "max_upload_size_mb": 500,
+  "estimated_sla": null,
+  "project_assistant_enabled": false,
+  "checkmate_enabled": false,
+  "checkmate_metadata": null,
+  "available_for_cert_project": false,
+  "classroom_node_id": 1005530,
+  "classroom_project_key": "9f8cd43f-9436-4f90-95aa-39cdcae7de03",
+  "language": "en-us",
+  "ndkeys": [
+    "nd320-beta",
+    "nd320",
+    "nd320-ent"
+  ],
+  "coursekeys": [],
+  "sections": [
+    {
+      "id": 6044,
+      "name": "Exploratory Data Analysis",
+      "created_at": "2020-03-23T20:31:07.316Z",
+      "updated_at": "2020-03-23T20:31:39.882Z",
+      "deleted_at": null,
+      "position": 0,
+      "rubric_id": 2815,
+      "rubric_items": [
+        {
+          "id": 17309,
+          "section_id": 6044,
+          "passed_description": "- Students create distributions of diseases and comorbidities in their dataset\n- Students create distributions of basic demographics of the patients who make up their datasets (such as age, gender, patient position,etc.)\n- Students can use the above distributions to draw conclusions about how they will need to set up their model training",
+          "exceeded_description": null,
+          "created_at": "2020-03-23T20:31:40.106Z",
+          "updated_at": "2020-05-08T20:01:24.528Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "The student can create visualizations of the metadata that inform model training",
+          "exceedable": false
+        },
+        {
+          "id": 17310,
+          "section_id": 6044,
+          "passed_description": "- Students use python’s imshow to visualize medical images during EDA \n- Students create distributions of intensity values of the pixel-level data within images and compare them both **within and across** diagnoses\n- Students use both of these methods of inspecting images to draw meaningful conclusions about what their model will train on",
+          "exceeded_description": null,
+          "created_at": "2020-03-23T20:33:00.979Z",
+          "updated_at": "2020-05-08T20:01:24.533Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 1,
+          "criteria": "The student can visualize relevant properties of pixel-level data",
+          "exceedable": false
+        }
+      ]
+    },
+    {
+      "id": 6045,
+      "name": "Model Building & Training",
+      "created_at": "2020-03-23T20:37:09.850Z",
+      "updated_at": "2020-03-23T20:37:20.562Z",
+      "deleted_at": null,
+      "position": 1,
+      "rubric_id": 2815,
+      "rubric_items": [
+        {
+          "id": 17311,
+          "section_id": 6045,
+          "passed_description": "- Students create a set of training data and a set of validation data that each have the appropriate proportions of positive and negative cases for their intended use (training and validation)",
+          "exceeded_description": null,
+          "created_at": "2020-03-23T20:37:20.862Z",
+          "updated_at": "2020-03-23T20:38:24.215Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "The student creates an appropriate train-test split of the data",
+          "exceedable": false
+        },
+        {
+          "id": 17312,
+          "section_id": 6045,
+          "passed_description": "- Student implements a class such as ImageDataGenerator from Keras to augment their training data only \n- Student **should not** augment testing/validation data\n- Student uses types of augmentation that are appropriate for medical imaging. There are no required types of augmentation\n- Students should normalize the imaging data so the model weights do not go to infinity.",
+          "exceeded_description": null,
+          "created_at": "2020-03-23T20:38:24.565Z",
+          "updated_at": "2020-03-23T20:41:24.967Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 1,
+          "criteria": "The student implements appropriate data augmentation to their training data",
+          "exceedable": false
+        },
+        {
+          "id": 17313,
+          "section_id": 6045,
+          "passed_description": "- Student monitors the training progress of their model using log loss\n- Student changes training parameters to avoid overfitting and compares performances of different training paradigms.\n- Student trains enough epochs until the loss is “stable”\n- After training, student uses precision, recall, and F1 score to actually evaluate the utility of their model.\n- Find a threshold to classify if an image is pneumonia or not.\n- Students should show precision-recall curve and a curve of F1-score vs. threshold",
+          "exceeded_description": null,
+          "created_at": "2020-03-23T20:41:36.613Z",
+          "updated_at": "2020-05-11T23:40:49.489Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 2,
+          "criteria": "The student evaluates the performance of their model using the appropriate statistics",
+          "exceedable": false
+        },
+        {
+          "id": 17314,
+          "section_id": 6045,
+          "passed_description": "- Student can check DICOM header for **image position, image type and body part** on ALL .dcm files to check validity for their model using the pydicom python package.\n- Student can read imaging data in from a .dcm file, preprocess the image and feed it into their model using the pydicom python package.",
+          "exceeded_description": null,
+          "created_at": "2020-03-23T20:41:38.681Z",
+          "updated_at": "2020-05-08T20:01:24.536Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 3,
+          "criteria": "The student can integrate their model with real-world medical imaging data",
+          "exceedable": false
+        }
+      ]
+    },
+    {
+      "id": 6046,
+      "name": "FDA Description and Validation Plan",
+      "created_at": "2020-03-23T20:45:26.198Z",
+      "updated_at": "2020-03-23T20:45:44.497Z",
+      "deleted_at": null,
+      "position": 2,
+      "rubric_id": 2815,
+      "rubric_items": [
+        {
+          "id": 17315,
+          "section_id": 6046,
+          "passed_description": "- Student should provide an intended use statement\n- Student should point to data from their EDA to describe who their algorithm is indicated for and what the clinical setting is in which their algorithm would be used \n- Student should describe limitations of their algorithm and how false positives or false negatives might affect a patient",
+          "exceeded_description": null,
+          "created_at": "2020-03-23T20:45:44.781Z",
+          "updated_at": "2020-04-19T22:59:53.873Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "The student can describe the intended population and the clinical impact of their model",
+          "exceedable": false
+        },
+        {
+          "id": 17316,
+          "section_id": 6046,
+          "passed_description": "- Students provide a flowchart or architecture diagram of their model\n- Students should describe the DICOM checks they use before sending an image through their algorithm\n- Students should describe the preprocessing steps they use.\n- Students  should describe the architecture of the classifier \n- Students should describe augmentation and its parameters used \n- Students describe the parameters used for training\n- Students should show the behavior of training and validating loss\n- Students should describe the performance statistics and threshold used in final validation",
+          "exceeded_description": null,
+          "created_at": "2020-03-23T20:45:45.937Z",
+          "updated_at": "2020-04-19T22:59:53.880Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 1,
+          "criteria": "The student can describe how their model was designed and trained",
+          "exceedable": false
+        },
+        {
+          "id": 17372,
+          "section_id": 6046,
+          "passed_description": "- Students should provide information for the training set\n- Students should provide information for the validating set\n- Students should describe how the ground truth of the NIH dataset is created, the benefit and limitations.",
+          "exceeded_description": null,
+          "created_at": "2020-04-19T22:59:54.127Z",
+          "updated_at": "2020-04-19T23:19:02.054Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 3,
+          "criteria": "The student can describe the dataset used to train the algorithm and how the ground truth was created",
+          "exceedable": false
+        },
+        {
+          "id": 17373,
+          "section_id": 6046,
+          "passed_description": "- Students should describe the **ideal** dataset that they would receive from a clinical partner for their FDA Validation Dataset\n- Students should describe how they would **ideally** create ground truth for this FDA Validation Dataset\n- Students should describe the performance metric and **the metic value** that they would hold their algorithm to, supported by literature",
+          "exceeded_description": null,
+          "created_at": "2020-04-19T23:16:32.023Z",
+          "updated_at": "2020-05-08T20:01:24.540Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 4,
+          "criteria": "The student describes how they would create a FDA Validation set, ground truth, and what performance metric they would hold their algorithm to for FDA validation of their model. ",
+          "exceedable": false
+        }
+      ]
+    }
+  ],
+  "project": {
+    "id": 722,
+    "name": "Pneumonia Detection from Chest X-Rays",
+    "nanodegree_key": "nd320",
+    "is_cert_project": false,
+    "audit_project_id": null,
+    "hashtag": null,
+    "audit_rubric_id": null,
+    "entitlement_required": false,
+    "is_career": false,
+    "recruitment_family_id": 1,
+    "created_at": "2020-03-24T22:43:43.865Z",
+    "updated_at": "2020-05-31T23:24:04.248Z",
+    "price": "12.5",
+    "ungradeable_price": "3.0",
+    "audit_price": null
+  }
+}

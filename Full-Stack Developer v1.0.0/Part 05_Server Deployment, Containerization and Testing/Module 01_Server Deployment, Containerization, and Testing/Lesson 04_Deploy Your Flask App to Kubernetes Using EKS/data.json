@@ -1,0 +1,572 @@
+{
+  "data": {
+    "lesson": {
+      "id": 859669,
+      "key": "becb2dac-c108-4143-8f6c-11b30413e28d",
+      "title": "Deploy Your Flask App to Kubernetes Using EKS",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": null,
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/becb2dac-c108-4143-8f6c-11b30413e28d/859669/1579728303018/Deploy+Your+Flask+App+to+Kubernetes+Using+EKS+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/becb2dac-c108-4143-8f6c-11b30413e28d/859669/1579728300546/Deploy+Your+Flask+App+to+Kubernetes+Using+EKS+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": {
+        "key": "cbbb1716-7c5d-44ee-bad1-ee0e51e0a13e",
+        "version": "1.0.0",
+        "locale": "en-us",
+        "duration": 30240,
+        "semantic_type": "Project",
+        "title": "Deploy Your Flask App to Kubernetes Using EKS",
+        "description": "# Project Submission\n\nYou should submit your project using your project's Github repo. \n\n**Please provide the IP address of your running application in the submission notes, as the reviewer will use the IP address to check that your application is running correctly.**\n\nYou should leave your application deployment up and running until you receive your project feedback. _To avoid incurring additional costs, please remember to tear down your application after you have received feedback._",
+        "is_public": true,
+        "summary": null,
+        "forum_path": "",
+        "rubric_id": "2637",
+        "terminal_project_id": null,
+        "resources": null,
+        "image": null
+      },
+      "lab": null,
+      "concepts": [
+        {
+          "id": 899019,
+          "key": "092cdb35-28f7-4145-b6e6-6278b8dd7527",
+          "title": "Final Project Overview",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "092cdb35-28f7-4145-b6e6-6278b8dd7527",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 899020,
+              "key": "bc1dccaa-2063-497e-a25d-7e74980847c0",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Containerize and Deploy using Continuous Delivery",
+              "instructor_notes": ""
+            },
+            {
+              "id": 899021,
+              "key": "37d00062-1e9c-4caa-aceb-af35defd18f4",
+              "title": "FSND C4 L3 A01 Final Project Overview",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "_Cfivy2dBSc",
+                "china_cdn_id": "_Cfivy2dBSc.mp4"
+              }
+            },
+            {
+              "id": 899022,
+              "key": "f2250b9e-13ce-41da-a631-22157f817b05",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Project Overview\nIn this project you will:\n- Write a Dockerfile for a simple Flask API\n- Build and test the container locally\n- Create an EKS cluster\n- Store a secret using parameter store\n- Create a CodePipeline pipeline triggered by GitHub checkins\n- Create a CodeBuild stage which will build, test, and deploy your code\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 899023,
+          "key": "f7d0c77d-5a90-4cfd-bff9-5f2f20be1018",
+          "title": "Intro to the Flask App",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "f7d0c77d-5a90-4cfd-bff9-5f2f20be1018",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 899026,
+              "key": "1377fc2c-6951-41e6-87ed-c6d5a4a041a5",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Intro to the Flask App",
+              "instructor_notes": ""
+            },
+            {
+              "id": 899025,
+              "key": "f786a1d7-9734-4714-be14-ced16cc01453",
+              "title": "FSND C4 L3 A02 Introduction To The Flask App",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "xDOvJyz7YtM",
+                "china_cdn_id": "xDOvJyz7YtM.mp4"
+              }
+            },
+            {
+              "id": 899024,
+              "key": "040c9b89-c5a3-46f4-a26d-732037a6ab92",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Overview\nThe Flask app that will be used for this project consists of a simple API with three endpoints:\n\n- `GET '/'`: This is a simple health check, which returns the response 'Healthy'. \n- `POST '/auth'`: This takes a email and password as json arguments and returns a JWT based on a custom secret.\n- `GET '/contents'`: This requires a valid JWT, and returns the un-encrpyted contents of that token. \n\nThe app relies on a secret set as the environment variable `JWT_SECRET` to produce a JWT. The built-in Flask server is adequate for local development, but not production, so you will be using the production-ready [Gunicorn](https://gunicorn.org/) server when deploying the app.\n\n## Initial setup\n1. Fork [this project](https://github.com/udacity/FSND-Deploy-Flask-App-to-Kubernetes-Using-EKS) to your Github account.\n2. Locally clone your forked version to begin working on the project.\n\n## Dependencies\n\n- Docker Engine\n  - Installation instructions for all OSes can be found [here](https://docs.docker.com/install/).\n    - For Mac users, if you have no previous Docker Toolbox installation, you can install Docker Desktop for Mac. If you already have a Docker Toolbox installation, please read [this](https://docs.docker.com/docker-for-mac/docker-toolbox/) before installing.\n - AWS Account\n   - You can create an AWS account by signing up [here](https://aws.amazon.com/#).\n\n## Steps to run the API locally using the Flask server (no containerization)\n\nThe following steps describe how to run the Flask API locally with the standard Flask server, so that you can test endpoints before you containerize the app:\n\n1. Install python dependencies. These dependencies are kept in a requirements.txt file. To install them, use pip:\n    ```bash\n    pip install -r requirements.txt\n    ```\n2. Set up the environment. You do not need to create an env_file to run locally but you do need the following two variables available in your terminal environment. The following environment variable is required:\n\n    **JWT_SECRET** - The secret used to make the JWT, for the purpose of  this course the secret can be any string.\n\n     The following environment variable is optional:\n\n     **LOG_LEVEL** - The level of logging. This will default to 'INFO', but when debugging an app locally, you may want to set it to 'DEBUG'.\n   To add these to your terminal environment, run the 2 lines below.\n    ```bash\n    export JWT_SECRET='myjwtsecret'\n    export LOG_LEVEL=DEBUG\n    ```\n\n3. Run the app using the Flask server, from the top directory, run:\n    ```bash\n    python main.py\n    ```\n\n4. To try the API endpoints, open a new shell and run the following commands, replacing `<EMAIL>` and `<PASSWORD>` with any values:\n\n    -  To try the `/auth` endpoint, use the following command:\n      ```bash\n      export TOKEN=`curl -d '{\"email\":\"<EMAIL>\",\"password\":\"<PASSWORD>\"}' -H \"Content-Type: application/json\" -X POST localhost:8080/auth  | jq -r '.token'`\n      ```\n\n     This calls the endpoint 'localhost:8080/auth' with the `{\"email\":\"<EMAIL>\",\"password\":\"<PASSWORD>\"}` as the message body. The return value is a JWT token based on the secret you supplied. We are assigning that secret to the environment variable 'TOKEN'. To see the JWT token, run:\n\n    ```bash\n    echo $TOKEN\n    ```\n    - To try the `/contents` endpoint which decrypts the token and returns its content, run:\n    ```bash\n    curl --request GET 'http://127.0.0.1:8080/contents' -H \"Authorization: Bearer ${TOKEN}\" | jq .\n    ```\n     You should see the email that you passed in as one of the values.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 906876,
+              "key": "01659840-d6e1-4d62-8b79-bb837e809845",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Concept Checklist",
+              "instructor_notes": ""
+            },
+            {
+              "id": 906857,
+              "key": "229d45cc-557c-4b5a-aa1c-bbf59a78d1ab",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "229d45cc-557c-4b5a-aa1c-bbf59a78d1ab",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "I have run the project Flask API locally.",
+                "I have tested the endpoints of the running Flask application."
+              ],
+              "positive_feedback": "Great work! Up next, you will Dockerize the Flask application.",
+              "video_feedback": null,
+              "description": ""
+            }
+          ]
+        },
+        {
+          "id": 906651,
+          "key": "16f36799-dea1-4aac-97c2-45cebe43e41d",
+          "title": "Containerizing and Running Locally",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "16f36799-dea1-4aac-97c2-45cebe43e41d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 906706,
+              "key": "49e46192-cb48-48a4-a6c2-1ed63f123f8f",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2019/July/5d40d29f_docker-logo/docker-logo.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/49e46192-cb48-48a4-a6c2-1ed63f123f8f",
+              "caption": "",
+              "alt": "",
+              "width": 336,
+              "height": 287,
+              "instructor_notes": null
+            },
+            {
+              "id": 906652,
+              "key": "91833589-7883-4f40-8656-7d1b2b219906",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n# Containerize the Flask App and Run Locally\n\nThe following steps describe how to complete the Dockerization part of the project. After you complete these steps, you should have the Flask application up and running in a Docker container.\n\n1. If you haven't installed Docker already, you should install now using [these installation instructions](https://docs.docker.com/install/).\n\n2. Create a Dockerfile named `Dockerfile` in the app repo. Your Dockerfile should:\n\t- Use the `python:stretch` image as a source image\n\t- Set up an app directory for your code\n\t- Install needed Python requirements\n\t- Define an entrypoint which will run the main app using the Gunicorn WSGI server\n\n  Gunicorn should be run with the arguments as follows: `gunicorn -b :8080 main:APP`.\n\n3. Create a file named `env_file` and use it to set the environment variables which will be run locally in your container. Here, we do not need the export command, just an equals sign:\n\n    ```\n     <VARIABLE_NAME>=<VARIABLE_VALUE>\n    ```\n  In this file, you should set both `JWT_SECRET` and `LOG_LEVEL`, similar to how they were set as environment variables when you ran the Flask app locally.  \n\n4. Build a local Docker image with the tag `jwt-api-test`.\n\n5. Run the image locally, using the Gunicorn server. \n  - You can pass the name of the env file using the flag `--env-file=<YOUR_ENV_FILENAME>`.\n  - You should expose the port 8080 of the container to the port 80 on your host machine.\n\n6. To use the endpoints, you can use the same curl commands as before, except using port 80 this time:\n\n    -  To try the `/auth` endpoint, use the following command:\n      ```bash\n      export TOKEN=`curl -d '{\"email\":\"<EMAIL>\",\"password\":\"<PASSWORD>\"}' -H \"Content-Type: application/json\" -X POST localhost:80/auth  | jq -r '.token'`\n      ```\n    - To try the `/contents` endpoint which decrypts the token and returns its content, run:\n    ```bash\n    curl --request GET 'http://127.0.0.1:80/contents' -H \"Authorization: Bearer ${TOKEN}\" | jq .\n    ```\n     You should see the email that you passed in as one of the values.\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 906875,
+              "key": "d4d61dd3-5f6a-4942-aeca-0b22cffdb840",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Concept Checklist",
+              "instructor_notes": ""
+            },
+            {
+              "id": 906870,
+              "key": "7da40453-b4da-4ce6-9354-6d72153a86d0",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "7da40453-b4da-4ce6-9354-6d72153a86d0",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "I have Dockerized the Flask application",
+                "I have tested the endpoints of the Docker container."
+              ],
+              "positive_feedback": "Excellent work! Next, you will create the CD pipeline for the application.",
+              "video_feedback": null,
+              "description": ""
+            }
+          ]
+        },
+        {
+          "id": 899028,
+          "key": "1c8c32de-2fcb-43e8-80b7-3b92a5112c76",
+          "title": "Overview of the CD Pipeline",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "1c8c32de-2fcb-43e8-80b7-3b92a5112c76",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 899029,
+              "key": "61c23f7a-f184-44a5-8fcc-cb207dd9ec2b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Overview of the CD Pipeline",
+              "instructor_notes": ""
+            },
+            {
+              "id": 899030,
+              "key": "8c556476-5c3e-4650-a7a4-b147236aa2a9",
+              "title": "FSND C4 L3 A03 Final Project Overview Example",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "JzgZfOJ8Fjo",
+                "china_cdn_id": "JzgZfOJ8Fjo.mp4"
+              }
+            },
+            {
+              "id": 899031,
+              "key": "74234296-f390-4660-9c6f-71bc8d4b442a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Summary\nIn the next section of the project you will:\n- Create an EKS cluster\n- Set a secret using AWS parameter store\n- Create a pipeline watching for commits to your Github repository\n- Build and deploy your image using CodeBuild\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 906725,
+          "key": "38e0de66-f2b2-4f74-a77b-245d12034432",
+          "title": "Create an EKS Cluster and IAM Role",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "38e0de66-f2b2-4f74-a77b-245d12034432",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 906726,
+              "key": "07a3edd0-a6ac-4e50-bfd1-e4216a5220ec",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Create an EKS Cluster and IAM Role",
+              "instructor_notes": ""
+            },
+            {
+              "id": 906781,
+              "key": "f6cd6e2f-65bc-45f0-87d3-10edb7564cf8",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Before you can deploy your application, you will need to create an EKS cluster and set up an IAM role that CodeBuild can use to interact with EKS. You can follow the steps below to do this from the command line.\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 906780,
+              "key": "63f96e8c-2077-42c9-904c-067cda56a546",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Create a Kubernetes (EKS) Cluster\n- Create an EKS cluster named `simple-jwt-api`.\n\n## Set Up an IAM Role for the Cluster\n\nThe next steps are provided to quickly set up an IAM role for your cluster. \n\n1. Create an IAM role that CodeBuild can use to interact with EKS. :\n\n    - Set an environment variable `ACCOUNT_ID` to the value of your AWS account id. You can do this with awscli:\n        ```bash\n        ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)\n        ```\n    - Create a role policy document that allows the actions \"eks:Describe*\" and \"ssm:GetParameters\". You can do this by setting an environment variable with the role policy:\n        ```bash\n        TRUST=\"{ \\\"Version\\\": \\\"2012-10-17\\\", \\\"Statement\\\": [ { \\\"Effect\\\": \\\"Allow\\\", \\\"Principal\\\": { \\\"AWS\\\": \\\"arn:aws:iam::${ACCOUNT_ID}:root\\\" }, \\\"Action\\\": \\\"sts:AssumeRole\\\" } ] }\"\n        ```\n    - Create a role named 'UdacityFlaskDeployCBKubectlRole' using the role policy document:\n        ```bash\n        aws iam create-role --role-name UdacityFlaskDeployCBKubectlRole --assume-role-policy-document \"$TRUST\" --output text --query 'Role.Arn'\n        ```\n    - Create a role policy document that also allows the actions \"eks:Describe*\" and \"ssm:GetParameters\". You can create the document in your tmp directory:\n        ```bash\n        echo '{ \"Version\": \"2012-10-17\", \"Statement\": [ { \"Effect\": \"Allow\", \"Action\": [ \"eks:Describe*\", \"ssm:GetParameters\" ], \"Resource\": \"*\" } ] }' > /tmp/iam-role-policy \n        ```\n    - Attach the policy to the 'UdacityFlaskDeployCBKubectlRole'. You can do this using awscli:\n        ```bash   \n        aws iam put-role-policy --role-name UdacityFlaskDeployCBKubectlRole --policy-name eks-describe --policy-document file:///tmp/iam-role-policy\n        ```\n    You have now created a role named 'UdacityFlaskDeployCBKubectlRole'\n\n2. Grant the role access to the cluster.\nThe 'aws-auth ConfigMap' is used to grant role based access control to your cluster. \n    - Get the current configmap and save it to a file:\n        ```bash\n        kubectl get -n kube-system configmap/aws-auth -o yaml > /tmp/aws-auth-patch.yml\n        ```\n    - In the data/mapRoles section of this document add, replacing `<ACCOUNT_ID>` with your account id:\n        ```yml\n        - rolearn: arn:aws:iam::<ACCOUNT_ID>:role/UdacityFlaskDeployCBKubectlRole\n          username: build\n          groups:\n            - system:masters\n        ```\n    - Now update your cluster's configmap:\n        ```bash\n        kubectl patch configmap/aws-auth -n kube-system --patch \"$(cat /tmp/aws-auth-patch.yml)\"\n        ```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 906873,
+              "key": "32517462-05e0-44a5-a060-4d988a78ea4d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Concept Checklist",
+              "instructor_notes": ""
+            },
+            {
+              "id": 906871,
+              "key": "127d5f83-0fd0-46ae-af2e-d486c6660eff",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "127d5f83-0fd0-46ae-af2e-d486c6660eff",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "I have created an EKS cluster named `simple-jwt-api` using `eksctl`.",
+                "I have followed instructions to create an IAM role for CodeBuild to interact with EKS."
+              ],
+              "positive_feedback": "Well done! You have almost finished the process of deploying your application. Up next, you will do exactly that, using CodePipeline and CodeBuild.",
+              "video_feedback": null,
+              "description": ""
+            }
+          ]
+        },
+        {
+          "id": 906782,
+          "key": "044acb09-a784-4af4-9383-a4b39c915915",
+          "title": "Deployment to Kubernetes using CodePipeline and CodeBuild",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "044acb09-a784-4af4-9383-a4b39c915915",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 906783,
+              "key": "f52890ac-bca4-4482-8a2c-451b5f5a81ce",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Deployment to Kubernetes using CodePipeline and CodeBuild",
+              "instructor_notes": ""
+            },
+            {
+              "id": 906786,
+              "key": "eeca1ff7-5784-430b-ba9d-a0c6ea101114",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "You should now be ready to deploy your application using CodePipeline and CodeBuild. Follow the steps below to complete your project.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 922145,
+              "key": "4b8f0dfa-9f2e-4efb-bb46-abc09fbe5b9b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Create the Pipeline\nYou will now create a pipeline which watches your Github. When changes are checked in, it will build a new image and deploy it to your cluster. \n\n\n1. Generate a GitHub access token.\n A Github acces token will allow CodePipeline to monitor when a repo is changed. A token can be generated [here](https://github.com/settings/tokens/). You should generate the token with full control of private repositories, as shown in the image below.  Be sure to save the token somewhere that is secure.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 922146,
+              "key": "f8a5da22-9049-4e3a-ab1e-442b520aa51a",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2019/September/5d6e8e1b_access-token/access-token.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/f8a5da22-9049-4e3a-ab1e-442b520aa51a",
+              "caption": "",
+              "alt": "",
+              "width": 1018,
+              "height": 501,
+              "instructor_notes": null
+            },
+            {
+              "id": 906784,
+              "key": "aafc9fdf-1e6e-426f-966c-97c924f12957",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "2. The file *buildspec.yml* instructs CodeBuild. We need a way to pass your jwt secret to the app in kubernetes securly. You will be using [AWS Parameter Store](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html) to do this. First add the following to your buildspec.yml file:\n\n   ```yaml\n   env:\n     parameter-store:         \n       JWT_SECRET: JWT_SECRET\n   ```\n    This lets CodeBuild know to set an evironment variable based on a value in the parameter-store.\n\n3.  Put secret into AWS Parameter Store \n\n   ```bash\n   aws ssm put-parameter --name JWT_SECRET --value \"YourJWTSecret\" --type SecureString\n   ```\n\n4. Modify CloudFormation template.\n\n   There is file named *ci-cd-codepipeline.cfn.yml*, this the the template file you will use to create your CodePipeline pipeline. Open this file and go to the 'Parameters' section. These are parameters that will accept values when you create a stack. Fill in the 'Default' value for the following:\n   - **EksClusterName** : use the name of the EKS cluster you created above\n   - **GitSourceRepo** : use the name of your project's github repo.\n   - **GitHubUser** : use your github user name\n   - **KubectlRoleName** : use the name of the role you created for kubectl above\n\n   Save this file.\n   \n5. Create a stack for CodePipeline\n    - Go the the [CloudFormation service](https://us-east-2.console.aws.amazon.com/cloudformation/) in the aws console. \n    - Press the 'Create Stack' button. \n    - Choose the 'Upload template to S3' option and upload the template file 'ci-cd-codepipeline.cfn.yml'\n    - Press 'Next'. Give the stack a name, fill in your GitHub login and the Github access token generated in step 1. \n    - Confirm the cluster name matches your cluster, the 'kubectl IAM role' matches the role you created above, and the repository matches the name of your forked repo.\n    - Create the stack.\n \n    You can check it's status in the [CloudFormation console](https://us-east-2.console.aws.amazon.com/cloudformation/).\n\n6. Check the pipeline works. Once the stack is successfully created, commit a change to the master branch of your github repo. Then, in the aws console go to the [CodePipeline UI](https://us-east-2.console.aws.amazon.com/codesuite/codepipeline). You should see that the build is running.\n\n7. To test your api endpoints, get the external ip for your service:\n\n   ``` bash\n   kubectl get services simple-jwt-api -o wide\n   ```\n\n   Now use the external ip url to test the app:\n\n   ```bash\n   export TOKEN=`curl -d '{\"email\":\"<EMAIL>\",\"password\":\"<PASSWORD>\"}' -H \"Content-Type: application/json\" -X POST <EXTERNAL-IP URL>/auth  | jq -r '.token'`\n   curl --request GET '<EXTERNAL-IP URL>/contents' -H \"Authorization: Bearer ${TOKEN}\" | jq \n   ```\n\n8. **Save the external IP from above to provide to the reviewer when you submit your project.**",
+              "instructor_notes": ""
+            },
+            {
+              "id": 906877,
+              "key": "190488c3-e3f3-47f5-84c5-5060231c04d7",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Concept Checklist",
+              "instructor_notes": ""
+            },
+            {
+              "id": 906882,
+              "key": "38b96835-1dd1-41ca-b834-3898611cf16b",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "38b96835-1dd1-41ca-b834-3898611cf16b",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "I have granted CodePipeline access to the Github repo.",
+                "I have provided CodeBuild with the JWT secret by modifying the CodeBuild .yml file and adding the JWT secret to the AWS Parameter Store.",
+                "I have created a CodePipeline stack by modifying the CloudFormation template and uploading the template, along with the Github token and other data, to the CloudFormation AWS console. the",
+                "I have checked that the pipeline works and tested the endpoints.",
+                "I have saved the IP address from the deployed application to provide to the reviewer when I submit."
+              ],
+              "positive_feedback": "Fantastic work! You just need to add tests to your build, and you will have completed your project!",
+              "video_feedback": null,
+              "description": ""
+            }
+          ]
+        },
+        {
+          "id": 906880,
+          "key": "af566d0b-cb8e-4045-8540-e428d5c6d9d2",
+          "title": "Adding Tests to the Build",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "af566d0b-cb8e-4045-8540-e428d5c6d9d2",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 906885,
+              "key": "1bc2888e-f588-4d31-b8a2-3d9436851853",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Adding Tests to the Build\n\nThe final part of this project involves adding tests to your deployment. You can follow the steps below to accomplish this.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 906881,
+              "key": "83f8c1be-5e37-43bc-a62e-337f25c112a4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "1. Add running tests as part of the build. \n\n    To require the unit tests to pass before our build will deploy new code to your cluster, you will add the tests to the build stage. Remember you installed the requirements and ran the unit tests locally at the beginning of this project. You will add the same commands to the *buildspec.yml*:\n\t- Open *buildspec.yml*\n\t- In the prebuild section, add a line to install the requirements and a line to run the tests. You may need to refer to 'pip' as 'pip3' and 'python' as 'python3'\n\t- save the file\n\n2. You can check the tests prevent a bad deployment by breaking the tests on purpose:\n\t- Open the *test_main.py* file\n\t- Add `assert False` to any of the tests\n\t- Commit your code and push it to Github\n\t- Check that the build fails in [CodePipeline](https://us-east-2.console.aws.amazon.com/codesuite/codepipeline)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 906886,
+              "key": "0cfe7a74-f4d7-4d11-b52e-7f841851214c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Concept Checklist",
+              "instructor_notes": ""
+            },
+            {
+              "id": 906887,
+              "key": "92461988-2a9f-42cd-8d1f-8f1b2a7b29dd",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "92461988-2a9f-42cd-8d1f-8f1b2a7b29dd",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "I have added running tests as part of the build.",
+                "I have verified that the tests prevent a bad deployment."
+              ],
+              "positive_feedback": "Great work! If you have completed the project tasks up to this point, you are ready to submit your project.",
+              "video_feedback": null,
+              "description": ""
+            }
+          ]
+        },
+        {
+          "id": 899033,
+          "key": "e440e7a8-f0b3-472e-b0ff-825b93fdbdfe",
+          "title": "Outro",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "e440e7a8-f0b3-472e-b0ff-825b93fdbdfe",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 899042,
+              "key": "687b4ef6-f470-40af-a126-bf5654aaf391",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Outro",
+              "instructor_notes": ""
+            },
+            {
+              "id": 899043,
+              "key": "eb1a0e3c-8287-4e0e-9963-08191a9c4c96",
+              "title": "FSND C4 L3 A04 Lesson Summary",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Z7HNCSH7W20",
+                "china_cdn_id": "Z7HNCSH7W20.mp4"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

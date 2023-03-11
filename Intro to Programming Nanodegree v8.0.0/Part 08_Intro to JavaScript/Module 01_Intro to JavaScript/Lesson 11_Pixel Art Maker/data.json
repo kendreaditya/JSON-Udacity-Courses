@@ -1,0 +1,192 @@
+{
+  "data": {
+    "lesson": {
+      "id": 817340,
+      "key": "03ab9590-9a37-4797-ab0a-b9313561fc99",
+      "title": "Pixel Art Maker",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Create a single-page app in JavaScript where the user can create artistic designs!",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/03ab9590-9a37-4797-ab0a-b9313561fc99/817340/1549165132089/Pixel+Art+Maker+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/03ab9590-9a37-4797-ab0a-b9313561fc99/817340/1549165129507/Pixel+Art+Maker+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": {
+        "key": "1c56030e-dc6e-46b3-8f04-18fecfad360e",
+        "version": "1.0.0",
+        "locale": "en-us",
+        "duration": 40320,
+        "semantic_type": "Project",
+        "title": "Pixel Art Maker",
+        "description": " ## How will this project be evaluated?\nYour project will be evaluated by a Udacity code reviewer according to the [Pixel Art Maker project rubric](https://review.udacity.com/#!/rubrics/1029/view). Be sure to review it _thoroughly_ before you submit. All criteria must \"meet specifications\" in order to pass.\n## Submission Instructions\nBefore submitting, make sure your code follows our style guidelines:\n* [CSS Style Guide](http://udacity.github.io/frontend-nanodegree-styleguide/css.html)\n* [HTML Style Guide](http://udacity.github.io/frontend-nanodegree-styleguide/index.html)\n* [JavaScript Style Guide](http://udacity.github.io/frontend-nanodegree-styleguide/javascript.html)\n* [Git Style Guide](https://udacity.github.io/git-styleguide/)\n\nCreate a new repository on GitHub and push your code up to it, making sure to push your `master` branch. Then, connect your GitHub account and select your Pixel Art Maker project's repository.",
+        "is_public": true,
+        "summary": null,
+        "forum_path": "",
+        "rubric_id": "1957",
+        "terminal_project_id": null,
+        "resources": null,
+        "image": {
+          "url": "https://s3.amazonaws.com/video.udacity-data.com/topher/2019/January/5c535019_pixel-art-maker/pixel-art-maker.png",
+          "width": 1160,
+          "height": 384
+        }
+      },
+      "lab": null,
+      "concepts": [
+        {
+          "id": 339965,
+          "key": "9c749ac2-1268-4e57-b2e4-6e8f5d77116d",
+          "title": "Project Overview",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "9c749ac2-1268-4e57-b2e4-6e8f5d77116d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 543629,
+              "key": "6b9ef469-6f25-4051-9679-b5a9413e39c0",
+              "title": "PixelArt V1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "umcBmuFsy44",
+                "china_cdn_id": "umcBmuFsy44.mp4"
+              }
+            },
+            {
+              "id": 383947,
+              "key": "f4e0b825-cd66-4b1d-b5c7-cbf8e8367682",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## What Will I Build?\nYou’ll build a single-page web app that allows users to draw pixel art on a customizable canvas! \nCheck out this example:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 383945,
+              "key": "b5b45b4a-5bd0-4425-af35-3520a2fd6355",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2017/August/59a4a997_screen-shot-2017-08-22-at-8.33.49-pm/screen-shot-2017-08-22-at-8.33.49-pm.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/b5b45b4a-5bd0-4425-af35-3520a2fd6355",
+              "caption": "",
+              "alt": "Pixel Art Image of Udacity Logo",
+              "width": 1442,
+              "height": 1336,
+              "instructor_notes": null
+            },
+            {
+              "id": 340066,
+              "key": "a10b8f9e-f1f2-4f7e-bc16-77e3b3f130da",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "You'll be given starter code, including HTML and CSS, to build the application. You'll write JavaScript code that lets the user create a grid of squares representing their design, and apply colors to those squares to create a digital masterpiece!\n\nYour users should be able to:\n\n1. Dynamically set the size of the table as an _N_ by _M_ grid.\n2. Choose a color.\n3. Click a cell in the grid to fill that cell with the chosen color.\n\nYour primary task is to implement the `makeGrid()` function, that dynamically creates a grid that the user can interact with.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 383948,
+              "key": "dbdd8892-0223-4d7b-8871-c596e2c42275",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## What Skills Do I Need?\n\nIn this project, you'll use your front-end programming skills including:\n\n* Defining variables with `const` and `let`\n* Accessing the DOM using methods of the `document` object\n* Declaring functions and attaching them to DOM objects as event listeners\n* Writing nested loops and using loop variables\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 383949,
+              "key": "7b1cb059-1a1e-4967-820e-9644d3fa362c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## How Does This Help My Career?\n\nInteracting with the DOM — the structure of a web page — is one of the most fundamental skills for a front-end web developer. Mastering event listeners is essential to creating user interfaces — and to quite a few other things.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 898108,
+          "key": "b42d2144-5a06-4687-b42c-3d859023ef6f",
+          "title": "Instructions",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "b42d2144-5a06-4687-b42c-3d859023ef6f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 898109,
+              "key": "70d9c33a-7b31-4f70-ac52-439861e39161",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Get the Starter Code\n\nIf you'd like to start from scratch without any files, feel free to do so! You learn the most by developing on your own! But, it can be a bit challenging having to start from scratch, so we do provide a starter project to use.\n\nYou can download the starter code through either:\n\n* [The Pixel Art Maker repository on GitHub](https://github.com/udacity/project-pixel-art-maker-starter)\n\n* [This zipped folder](https://github.com/udacity/project-pixel-art-maker-starter/archive/master.zip)\n\nThe starter code includes all required HTML input fields, as well as some basic styling. A skeleton of the `makeGrid()` function is provided as well.\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 898110,
+              "key": "49cd7315-d9f8-49bf-a9a3-5368eb6a00bf",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Project Rubric\n\nYour project will be evaluated by a Udacity code reviewer according to the [Pixel Art Maker project rubric](https://review.udacity.com/#!/rubrics/1957/view). Review the rubric carefully, and refer to it often while you build the project.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 898111,
+              "key": "689ed622-6713-40ef-97bc-9993c1a1a9c8",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Development Strategy\nBefore writing any code, try loading up `index.html` from the starter project to see how things look! Notice that the `design.js` file is implemented in the `<body>` tag in the `index.html` file. Your goal is to build out the `design.js` file to achieve all the interactive elements on the page!\n\nNow, open up `design.js`. As you start writing your code, keep these three tasks in mind:\n\n1. **Define your variables** by selecting the DOM elements that the user will interact with. This is where your **JavaScript variables** can come into play! For instance, the submit button, the table, and the color picker need to be accessed. The value of the color selected needs to be stored as well, since the clicked cell in the table needs to be set to the selected color.\n2. **Add event listeners** to the relevant DOM elements, so that user input can be color values and table sizes can be dynamically set by the user.\n3. **Set the size of the cross stitch canvas** as an _N_ by _M_ grid with the `makeGrid()` function. Use your knowledge of JavaScript loops to dynamically clear and create the table based on user input. Each cell should have an event listener that sets the background color of the cell to the selected color.\n\nNow test it! When you're done, you should be able to create a canvas of any size, choose a color using the color picker, and click on the canvas's table cells to set their color.\n\n**Note**: To complete Pixel Art Maker, you must be using the current version of [Edge](https://www.microsoft.com/en-us/download/details.aspx?id=48126), [Firefox](https://www.mozilla.org/en-US/firefox/new/), or [Chrome](https://support.google.com/chrome/answer/95346?hl=en).",
+              "instructor_notes": ""
+            },
+            {
+              "id": 898112,
+              "key": "1012ef65-e89c-4f21-ac64-fb26fe0b10e4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Udacity Style Guides\nThe starter contains basic styling, but feel free to style the app as you please! You should write your code and markup to meet the specifications provided in these style guides:\n\n* [CSS Style Guide](http://udacity.github.io/frontend-nanodegree-styleguide/css.html)\n* [HTML Style Guide](http://udacity.github.io/frontend-nanodegree-styleguide/index.html)\n* [JavaScript Style Guide](http://udacity.github.io/frontend-nanodegree-styleguide/javascript.html)\n* [Git Style Guide](https://udacity.github.io/git-styleguide/)",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

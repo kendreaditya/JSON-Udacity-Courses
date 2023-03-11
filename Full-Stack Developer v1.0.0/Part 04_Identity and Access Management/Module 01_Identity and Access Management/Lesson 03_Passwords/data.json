@@ -1,0 +1,1489 @@
+{
+  "data": {
+    "lesson": {
+      "id": 850003,
+      "key": "450352d6-5e7e-47e7-aa41-eae3dc4f3cea",
+      "title": "Passwords",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Understand and overcome common pitfalls of the ubiquitous password authentication design pattern.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/450352d6-5e7e-47e7-aa41-eae3dc4f3cea/850003/1579719431372/Passwords+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/450352d6-5e7e-47e7-aa41-eae3dc4f3cea/850003/1579719427399/Passwords+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 857011,
+          "key": "9a44db7a-9d01-4dc4-b3db-f20914f97931",
+          "title": "Lesson Intro",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "9a44db7a-9d01-4dc4-b3db-f20914f97931",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 857019,
+              "key": "6cc3178d-912a-4412-bb61-b5de9074e978",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Passwords are ubiquitous and ***the ABSOLUTE worst.***\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 864307,
+              "key": "061f384f-7c40-42bb-8f54-ffe4332193f0",
+              "title": "ND004 C03 L03 A00 Lesson Intro 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "kwCEwDPQcRg",
+                "china_cdn_id": "kwCEwDPQcRg.mp4"
+              }
+            },
+            {
+              "id": 858571,
+              "key": "b7df9d9d-79d5-4118-997b-1476d595c5eb",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Lists of common bad passwords\n- [WikiPedia List of Lists of Passwords](https://en.wikipedia.org/wiki/List_of_the_most_common_passwords)\n- [NIST List and Javascript Library on GitHub](https://github.com/cry/nbp)",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 857012,
+          "key": "f5e2c1a0-c5e6-4b93-8e11-95b859355051",
+          "title": "Problems with Plain Text",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "f5e2c1a0-c5e6-4b93-8e11-95b859355051",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 858573,
+              "key": "453b425c-da7d-41e1-a939-de9ff58635f0",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Problems with Plain Text",
+              "instructor_notes": ""
+            },
+            {
+              "id": 864310,
+              "key": "be4f6810-dde4-4a97-b03e-a69b14576991",
+              "title": "ND004 C03 L03 A02 Problems With Plain Text 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "LN5iiY6H8FU",
+                "china_cdn_id": "LN5iiY6H8FU.mp4"
+              }
+            },
+            {
+              "id": 859091,
+              "key": "8ab7573c-58d2-435d-9411-f739569d2573",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Additional Reading\n- *Facebook*. In March 2019, it was revealed that over 20,000 employees had access to plain text user passwords. Thankfully, it believed there was no malice resulting from this flub up. [Read More](https://www.theverge.com/2019/3/21/18275837/facebook-plain-text-password-storage-hundreds-millions-users).\n\n- *Large Power Utility*. Discovered in February 2019. They'll conveniently even email you the plain text password. [Read More](https://arstechnica.com/tech-policy/2019/02/plain-wrong-millions-of-utility-customers-passwords-stored-in-plain-text/)\n\n- The site [haveibeenpwned.com](https://haveibeenpwned.com/) has many other documented mistakes and is worth a skim.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 859661,
+              "key": "037c21f9-e8fe-4ba5-896d-b3449a0bbdac",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## User Table Vulnerability: SQL Injection",
+              "instructor_notes": ""
+            },
+            {
+              "id": 864311,
+              "key": "e2b57acc-8a61-4330-89bb-1bcbbb5f0d32",
+              "title": "ND004 C03 L03 A03 SQL Injections 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "RgxuNyeTq38",
+                "china_cdn_id": "RgxuNyeTq38.mp4"
+              }
+            },
+            {
+              "id": 898092,
+              "key": "ca77981c-c439-4f0a-af4a-5ef51dbe12cd",
+              "title": "Mitigation Against SQL Injection",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "ca77981c-c439-4f0a-af4a-5ef51dbe12cd",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What are some steps we might take to minimize the risk of compromising our user tables?",
+                "answers": [
+                  {
+                    "id": "a1562160980573",
+                    "text": "Choose complex admin passwords for our databases",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1562160997437",
+                    "text": "Use ORMs",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1562161003632",
+                    "text": "Use input validation and sanitize any user submitted data",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1562161007406",
+                    "text": "Use prepared or parameterized SQL statements",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1562161011300",
+                    "text": "Store our backups as securely as our production databases",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 858572,
+              "key": "cf9fdbbe-5ae7-4771-87ae-3e06ba17772e",
+              "title": "Plain Text Password Hypocratic Oath",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "cf9fdbbe-5ae7-4771-87ae-3e06ba17772e",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Type the following statement:\n`As a developer, it is my responsibility to take security seriously and not implement weak systems including storing plain text passwords.`",
+                "matchers": [
+                  {
+                    "expression": "As a developer, it is my responsibility to take security seriously and not implement weak systems including storing plain text passwords."
+                  }
+                ]
+              }
+            },
+            {
+              "id": 898091,
+              "key": "51cb4341-3b6a-4c62-bce6-e1bc8d51ab24",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Additional Resources\n- [Bandit CLI Wargame](https://overthewire.org/wargames/bandit/bandit0.html) - This wargame helps you learn CLI and security while you have fun!",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 859663,
+          "key": "e186fde6-0c0f-4d1d-8167-32b7012441ef",
+          "title": "Problems - Brute Force Attacks",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "e186fde6-0c0f-4d1d-8167-32b7012441ef",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 859769,
+              "key": "5943f6f5-0d3a-416a-961f-0d50c114e441",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Simple Problems with Passwords",
+              "instructor_notes": ""
+            },
+            {
+              "id": 859770,
+              "key": "dace60be-465f-42e8-b58e-d4fa554c9cdc",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Brute Force Attacks",
+              "instructor_notes": ""
+            },
+            {
+              "id": 898202,
+              "key": "35911c07-4cc8-46a5-bfdd-ab310159abe7",
+              "title": "ND004 C03 L03 A08.0 Serialization V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "SUFrhE_2s9A",
+                "china_cdn_id": "SUFrhE_2s9A.mp4"
+              }
+            },
+            {
+              "id": 859776,
+              "key": "248de32b-f616-4748-9470-4571998979a2",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### An Alternative to Rate-Limiting: CAPTCHAs\nSometimes, rate-limiting or rejecting multiple requests is not the solution. One unintended consequence, for example, would be locking a legitimate user's account because it is under attack. An alternative is something known as a [CAPTCHA](https://en.wikipedia.org/wiki/CAPTCHA) or \"**c**ompletely **a**utomated **p**ublic **T**uring test to tell **c**omputers and **h**umans apart\". A CAPTCHA is designed to be easy for a human but difficult for a machine. In this instance, a connection is flat out rejected if a \"bot\" or script is attempting to gain access through multiple attempts. \n\nUntil recently this was most commonly performed by asking a user to type some form of difficult to read text into an input. But, this problem is adversarial, and with advances in computer vision, these were defeated by scripts. One modern implementation of this system that can be added to your site is [Google reCAPTCHA](https://developers.google.com/recaptcha/docs/v3). This API produces a score from 0 to 1 of how likely the visitor is a bot based interactions with your site.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 859773,
+          "key": "9a1c6fb0-cbfb-482f-bbf6-937f1eed37a1",
+          "title": "Practice - Brute Force",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "9a1c6fb0-cbfb-482f-bbf6-937f1eed37a1",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 859883,
+              "key": "9e6fed6d-aaf9-42e4-8eb4-de7b3fa552c0",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Practice - Brute Force\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 861020,
+              "key": "9f8c7cb4-82c5-40c3-a154-fc20230a0571",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r848940c859773xJUPYTERLb5n8kexd",
+              "pool_id": "jupyterlab",
+              "view_id": "jupyter-lab-0qpnu",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "port": 3000,
+                    "ports": [],
+                    "pageEnd": "",
+                    "pageStart": "",
+                    "allowSubmit": false,
+                    "defaultPath": "/",
+                    "actionButtonText": ""
+                  },
+                  "kind": "jupyter-lab"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 861023,
+              "key": "ce4cc44e-1a30-4975-a0f0-7d1b71fe634a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Try it!\n### Use the workspace above to answer the following questions",
+              "instructor_notes": ""
+            },
+            {
+              "id": 861021,
+              "key": "ed250eb2-a2fd-4642-96e7-f542194aa4c2",
+              "title": "Brute Forcing a Password",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "ed250eb2-a2fd-4642-96e7-f542194aa4c2",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What was the password that granted access to the provided server?",
+                "answers": [
+                  {
+                    "id": "a1561649753715",
+                    "text": "chicken",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1561649789141",
+                    "text": "hotdog",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1561649790979",
+                    "text": "magic",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1561649818251",
+                    "text": "legend",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1561649821909",
+                    "text": "brooklyn",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 861022,
+              "key": "69c54eb5-5301-44f2-a921-dba8522dcfd5",
+              "title": "Mitigation Against Brute Force",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "69c54eb5-5301-44f2-a921-dba8522dcfd5",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What are some techniques to reduce the risk of brute force attacks?",
+                "answers": [
+                  {
+                    "id": "a1561649864261",
+                    "text": "Require sufficiently long passwords",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1561649889968",
+                    "text": "Prevent commonly used passwords from being used",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1561649890539",
+                    "text": "Require only short, easy to remember words in a dictionary",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1561649891105",
+                    "text": "Log invalid login request attempts",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1561649918777",
+                    "text": "Rate limit the number of incorrect attempts",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 861024,
+              "key": "0cd6ee62-b8ab-4941-8cff-4c8742dc0a80",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Bonus!\nIf you're feeling up to it, try modifying the flask server code in `app.py` to prevent multiple failed login attempts.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 906531,
+          "key": "c1eb762a-73dc-471e-87d0-b0b33c1215e6",
+          "title": "Problems - Data Handling and Logging",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c1eb762a-73dc-471e-87d0-b0b33c1215e6",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 908147,
+              "key": "c1f31444-d2d7-4224-b481-d67463301976",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Problems - Data Handling and Logging\n## Serialization of Models\n[Serialization](https://en.wikipedia.org/wiki/Serialization) is the process of transforming a data model into a more easily shared format. For example, this is commonly performed when sending information as a response from a server to the requesting client in the form of a JSON object.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 908148,
+              "key": "109209f3-721a-4a72-bf1c-ebe47375e90e",
+              "title": "ND004 C03 L03 A08.1 Serialization 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "h8lGBQ1rS4Q",
+                "china_cdn_id": "h8lGBQ1rS4Q.mp4"
+              }
+            },
+            {
+              "id": 908149,
+              "key": "0dbc9f22-6a33-4ce2-a496-dcef8a45cb0c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Logging Best Practices",
+              "instructor_notes": ""
+            },
+            {
+              "id": 908150,
+              "key": "3e682f6d-531e-4cdb-9dd9-cf54ed4a6827",
+              "title": "ND004 C03 L03 A08.2 Serialization 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "jKb-vdOT-6U",
+                "china_cdn_id": "jKb-vdOT-6U.mp4"
+              }
+            },
+            {
+              "id": 908151,
+              "key": "6c4afa6e-f86f-44c1-b97f-ad17c7b94584",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Additional Reading\n- [Facebook Logging Plain Text Passwords](https://www.theverge.com/2019/3/21/18275837/facebook-plain-text-password-storage-hundreds-millions-users)",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 857013,
+          "key": "4c999b32-9b33-44aa-9384-45b1bb46563c",
+          "title": "Introduction to Encryption",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "4c999b32-9b33-44aa-9384-45b1bb46563c",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 858555,
+              "key": "406ba1b5-0e9b-428e-b67b-32214bed1153",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Encryption\n## What is Symmetric Encryption?",
+              "instructor_notes": ""
+            },
+            {
+              "id": 864312,
+              "key": "c20b85de-7891-4dfd-9745-99c8ff4ebce6",
+              "title": "ND004 C03 L03 A04.1 Encryption 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "7ww-sOi05Zs",
+                "china_cdn_id": "7ww-sOi05Zs.mp4"
+              }
+            },
+            {
+              "id": 898093,
+              "key": "1eee22b7-7e8d-4f8a-a82b-0aaba82c8693",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Encryption in the Digital World",
+              "instructor_notes": ""
+            },
+            {
+              "id": 864313,
+              "key": "ad47fe28-72ce-4fb3-8203-1bd6b3487e25",
+              "title": "ND004 C03 L03 A04.2 Encryption 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "eDGtEvErlSY",
+                "china_cdn_id": "eDGtEvErlSY.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 906533,
+          "key": "7670ed22-fdc1-4607-b77e-70726b06ea71",
+          "title": "Using Encryption for User Tables",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "7670ed22-fdc1-4607-b77e-70726b06ea71",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 908152,
+              "key": "9cf19660-3f0e-40cf-ac76-a7b9f5f0b0a1",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Using Encryption for User Tables\n## Using Encryption to Secure User Tables\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 908153,
+              "key": "f0777b43-51f6-49c6-9ec8-feaa9d2ff083",
+              "title": "ND004 C03 L03 A04.3 Encryption V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "HXu4bnlRobY",
+                "china_cdn_id": "HXu4bnlRobY.mp4"
+              }
+            },
+            {
+              "id": 908154,
+              "key": "05feb494-a273-4a5b-925b-38d3d1e90a89",
+              "title": "Risks of Password Encryption",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "05feb494-a273-4a5b-925b-38d3d1e90a89",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of the following statements are true:  \n(Select all that apply.)",
+                "answers": [
+                  {
+                    "id": "a1565219683984",
+                    "text": "Data compromised from a database can be directly read",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1565219696379",
+                    "text": "Data compromised from a database would also require a compromised key to read",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1565219697010",
+                    "text": "A lost encryption key can be easily replaced",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1565219697595",
+                    "text": "Encryption keys should only be given to key people and key systems",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 858541,
+          "key": "5adc5ff8-1728-4163-9271-9db65ba1089c",
+          "title": "Practice - Using Cryptography",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5adc5ff8-1728-4163-9271-9db65ba1089c",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 858543,
+              "key": "10d554b2-0b22-43c6-ace6-5d2db8a7b12a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Using the Cryptography Python Package\nPython has a useful package called **Cryptography** that implements encryption for us. We've given you some example code in a notebook below and enough information to answer the questions following the notebook. If you get stuck, refer to the [package documentation](https://cryptography.io/en/latest/).",
+              "instructor_notes": ""
+            },
+            {
+              "id": 858542,
+              "key": "3a4c7c8b-918a-4c83-b89b-9464c545448b",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r848940c858541xJUPYTERqdhs1cm1",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-jzcfz",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Fernet_Encryption.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 859100,
+              "key": "d686eba6-feb5-463c-a787-99c3ab23579f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Try it Yourself!\n\nFor the following exercises you should use this key:\n```python\nkey=b'8cozhW9kSi5poZ6TWFuMCV123zg-9NORTs3gJq_J5Do='\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 858544,
+              "key": "cafa118c-e57d-497a-b3af-6846af4736df",
+              "title": "Decode the Following Message",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "cafa118c-e57d-497a-b3af-6846af4736df",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Use the included notebook and key above to decode this message:\n```python\nmessage = b'gAAAAABc8Wf3rxaime-363wbhCaIe1FoZUdnFeIXX_Nh9qKSDkpBFPqK8L2HbkM8NCQAxY8yOWbjxzMC4b5uCaeEpqDYCRNIhnqTK8jfzFYfPdozf7NPvGzNBwuuvIxK5NZYJbxQwfK72BNrZCKpfp6frL8m8pdgYbLNFcy6jCJBXATR3gHBb0Y='\n```",
+                "matchers": [
+                  {
+                    "expression": "great job! remember, encryption is only as good as your key secrecy!"
+                  },
+                  {
+                    "expression": "b'great job! remember, encryption is only as good as your key secrecy!'"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 858546,
+              "key": "4867a137-b365-437f-9cfb-eb09a338c481",
+              "title": "Encrypt a String",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "4867a137-b365-437f-9cfb-eb09a338c481",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Use the included notebook and key above to encrypt this message:\n```python\nmessage = b'encrypting is just as useful'\n```",
+                "matchers": [
+                  {
+                    "expression": "b'gAAAAABdHLKfL3PVHa5wYmHeA6GxFoCyPXSOXI0Ky9Bop-4zdCGpSwj7bHXIjKIdNUTpIkw876lY-QSX4l8jBkMx605l6MWydKnhtvPlwnvFCPF18r5K41w='"
+                  },
+                  {
+                    "expression": "gAAAAABdHLKfL3PVHa5wYmHeA6GxFoCyPXSOXI0Ky9Bop-4zdCGpSwj7bHXIjKIdNUTpIkw876lY-QSX4l8jBkMx605l6MWydKnhtvPlwnvFCPF18r5K41w="
+                  },
+                  {
+                    "expression": "gAAAAABdOdhtLoXzqM0lz3Lt2NWpS5pQoFfvVt6J8H7ISNC3AAyhGB_gmSHpCJaXct2oKeKQHkF9YBMe6yWT-z9yt5UIaAVKBiEmbir9B5VFNvHIcrEt2gs="
+                  },
+                  {
+                    "expression": "b'gAAAAABdOdhtLoXzqM0lz3Lt2NWpS5pQoFfvVt6J8H7ISNC3AAyhGB_gmSHpCJaXct2oKeKQHkF9YBMe6yWT-z9yt5UIaAVKBiEmbir9B5VFNvHIcrEt2gs='"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 906534,
+          "key": "26656da6-b2ac-41a3-913c-aaf5e5d3c5d0",
+          "title": "Asymmetric Encryption",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "26656da6-b2ac-41a3-913c-aaf5e5d3c5d0",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 908155,
+              "key": "3ef07ac3-eb42-4435-8a4d-82b437bcc28f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Asymmetric Encryption",
+              "instructor_notes": ""
+            },
+            {
+              "id": 908156,
+              "key": "9b9972fb-888a-446f-ac04-22e92de18093",
+              "title": "ND004 C03 L03 A05 Asymmetric Encryption (RESHOOT) V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "tRf2mE_ABjc",
+                "china_cdn_id": "tRf2mE_ABjc.mp4"
+              }
+            },
+            {
+              "id": 908157,
+              "key": "18831cdb-dc18-48a3-bc7b-98a9c24a260b",
+              "title": "Data in Flight",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "18831cdb-dc18-48a3-bc7b-98a9c24a260b",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which protocol is preferred when sending plain text passwords or other sensitive data between parts of the system (i.e. frontend to backend)?",
+                "answers": [
+                  {
+                    "id": "a1565219814906",
+                    "text": "HTTP",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1565219821926",
+                    "text": "HTTPS, TLS/SSL",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 857014,
+          "key": "a9f2df0f-14b7-4d6c-a672-61ac128f530e",
+          "title": "Hashing",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a9f2df0f-14b7-4d6c-a672-61ac128f530e",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 858554,
+              "key": "e2dde5c6-f078-4624-90a2-5013e448c437",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# What is Hashing?",
+              "instructor_notes": ""
+            },
+            {
+              "id": 864314,
+              "key": "b75e68f2-6ad3-44a4-a146-9ea53a4c59a3",
+              "title": "ND004 C03 L03 A06.1 Hash 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "SunuuBA97z8",
+                "china_cdn_id": "SunuuBA97z8.mp4"
+              }
+            },
+            {
+              "id": 859138,
+              "key": "d42bf703-34bc-424b-a3d8-dc75dcf9b0b5",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "d42bf703-34bc-424b-a3d8-dc75dcf9b0b5",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "See if you can correctly label each of the algorithms below as either **Hash** or **Encryption**."
+                },
+                "concepts_label": "Algorithm",
+                "answers_label": "Hash or encryption?",
+                "concepts": [
+                  {
+                    "text": "MD5",
+                    "correct_answer": {
+                      "id": "a1559938779349",
+                      "text": "Hash"
+                    }
+                  },
+                  {
+                    "text": "bcrypt",
+                    "correct_answer": {
+                      "id": "a1559938964471",
+                      "text": "Hash"
+                    }
+                  },
+                  {
+                    "text": "RSA",
+                    "correct_answer": {
+                      "id": "a1559938965221",
+                      "text": "Encryption"
+                    }
+                  },
+                  {
+                    "text": "scrypt",
+                    "correct_answer": {
+                      "id": "a1559938966045",
+                      "text": "Hash"
+                    }
+                  },
+                  {
+                    "text": "3DES",
+                    "correct_answer": {
+                      "id": "a1559939026064",
+                      "text": "Encryption"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1559938964471",
+                    "text": "Hash"
+                  },
+                  {
+                    "id": "a1559938779349",
+                    "text": "Hash"
+                  },
+                  {
+                    "id": "a1559938965221",
+                    "text": "Encryption"
+                  },
+                  {
+                    "id": "a1559939026064",
+                    "text": "Encryption"
+                  },
+                  {
+                    "id": "a1559938966045",
+                    "text": "Hash"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 859103,
+              "key": "1c3923b9-91bf-44e1-8c0c-2981e0412b2d",
+              "title": "Encryption vs Hashing",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "1c3923b9-91bf-44e1-8c0c-2981e0412b2d",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Assign the following characteristics to the correct function."
+                },
+                "concepts_label": "Function Type",
+                "answers_label": "Charicteristic",
+                "concepts": [
+                  {
+                    "text": "Hash Function",
+                    "correct_answer": {
+                      "id": "a1559931761435",
+                      "text": "One-way function that produces a unique message digest"
+                    }
+                  },
+                  {
+                    "text": "Encryption Function",
+                    "correct_answer": {
+                      "id": "a1559931783118",
+                      "text": "Scrambles text in a reversible way"
+                    }
+                  },
+                  {
+                    "text": "Neither",
+                    "correct_answer": {
+                      "id": "a1559931816056",
+                      "text": "Compresses the data to save space"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1559931783118",
+                    "text": "Scrambles text in a reversible way"
+                  },
+                  {
+                    "id": "a1559931816056",
+                    "text": "Compresses the data to save space"
+                  },
+                  {
+                    "id": "a1559931761435",
+                    "text": "One-way function that produces a unique message digest"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 858556,
+              "key": "da7d95b6-f64f-43b3-9ac9-1cac73a223fc",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Using Hashing to Secure Our User Tables",
+              "instructor_notes": ""
+            },
+            {
+              "id": 864315,
+              "key": "0adc4d0e-9fd2-40fd-af82-33ae0290ef39",
+              "title": "ND004 C03 L03 A06.2 Hash 1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "lXkHzOveQm4",
+                "china_cdn_id": "lXkHzOveQm4.mp4"
+              }
+            },
+            {
+              "id": 859109,
+              "key": "217cb1f9-f8b4-4a19-b084-1ae707b203cb",
+              "title": "Vulnerable Hash Functions",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "217cb1f9-f8b4-4a19-b084-1ae707b203cb",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which hash functions are too simple and should not be used to hash passwords?\n\nIf you want a refresher/reference, check out [this summary](https://en.wikipedia.org/wiki/Hash_function_security_summary).",
+                "answers": [
+                  {
+                    "id": "a1559933550995",
+                    "text": "MD5",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1559933602841",
+                    "text": "SHA-1",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1559933605055",
+                    "text": "bcrypt",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1559933609531",
+                    "text": "scrypt",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 859211,
+              "key": "d057a975-249e-4e1c-995e-e2e27cc09f92",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Additional Resources\n- [Wikipedia hash function security summary](https://en.wikipedia.org/wiki/Hash_function_security_summary).\n- [Making a Faster Cryptanalytic Time-Memory Trade-Of](https://lasec.epfl.ch/pub/lasec/doc/Oech03.pdf) - Original paper first describing and naming Rainbow Tables!",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 857082,
+          "key": "c24c53a6-4388-451d-aa1a-9a254a8b09bc",
+          "title": "Practice - Rainbow Tables",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c24c53a6-4388-451d-aa1a-9a254a8b09bc",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 858550,
+              "key": "b4ef492a-c5a2-4ee8-98af-a619270c874d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Generate Rainbow Tables using the hashlib MD5 Package\nPython has a useful package called **hashlib** that implements MD5 hashing for us. We've given you some example code in a notebook below and enough information to answer the questions following the notebook. If you get stuck, refer to the [package documentation](https://docs.python.org/3/library/hashlib.html).",
+              "instructor_notes": ""
+            },
+            {
+              "id": 858551,
+              "key": "ae37b010-19e7-470f-bbed-a17830494a1d",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r848940c858541xJUPYTERqdhs1cm1",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-4wv2u",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Rainbow_Tables.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 858552,
+              "key": "90fbdc69-3baa-4208-92eb-51aedbac9970",
+              "title": "Match the Password to the User",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "90fbdc69-3baa-4208-92eb-51aedbac9970",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Using the results from the notebook exercise, match the correct password with the correct user."
+                },
+                "concepts_label": "User",
+                "answers_label": "Password",
+                "concepts": [
+                  {
+                    "text": "jamie",
+                    "correct_answer": {
+                      "id": "a1559328340868",
+                      "text": "hello1"
+                    }
+                  },
+                  {
+                    "text": "amanda",
+                    "correct_answer": {
+                      "id": "a1559328417201",
+                      "text": "qweasdzxc"
+                    }
+                  },
+                  {
+                    "text": "chiaki",
+                    "correct_answer": {
+                      "id": "a1559328428064",
+                      "text": "`NO MATCH`"
+                    }
+                  },
+                  {
+                    "text": "viraj",
+                    "correct_answer": {
+                      "id": "a1559328433087",
+                      "text": "PASSWORD"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1559328433087",
+                    "text": "PASSWORD"
+                  },
+                  {
+                    "id": "a1559328417201",
+                    "text": "qweasdzxc"
+                  },
+                  {
+                    "id": "a1559328428064",
+                    "text": "`NO MATCH`"
+                  },
+                  {
+                    "id": "a1559328453917",
+                    "text": "hometownteam"
+                  },
+                  {
+                    "id": "a1559328340868",
+                    "text": "hello1"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 858796,
+              "key": "79ef2622-84f5-4c8e-a098-5ff03513b0c6",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Additional Reading:\n- [Special Publication 800-63 Digital Identity Guidelines\n](https://github.com/usnistgov/800-63-3)\n- [NIST Bad Passwords](Special Publication 800-63 Digital Identity Guidelines)",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 857015,
+          "key": "1c0b6535-137d-4e24-884e-a3591944fdfa",
+          "title": "Hashing with Salts",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "1c0b6535-137d-4e24-884e-a3591944fdfa",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 858559,
+              "key": "68a1ecd9-a6dd-4fdd-9df4-176798953455",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# What are Salted Hashes?",
+              "instructor_notes": ""
+            },
+            {
+              "id": 898179,
+              "key": "43c31cc5-a29b-4237-a129-110f23283387",
+              "title": "ND004 C03 L03 A07 Hashing With Salts (RESHOOT) V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "UOBe3JXQbwo",
+                "china_cdn_id": "UOBe3JXQbwo.mp4"
+              }
+            },
+            {
+              "id": 859768,
+              "key": "f111f76e-9d35-4fbf-8b8f-18626dad85ad",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In this concept we briefly mention **Salt Rounds**. This is a cost factor for how many times a password and salt should be re-hashed. In other words if you choose 10 salt rounds, the calculation is performed `2^10` or `1024` times. Each attempt takes the hash from the previous round as an input. The more rounds performed, the more computation is required to compute the hash. This will not cause significant time for a single attempt (i.e. checking a password at login), but will introduce significant time when attempting to brute force or generate rainbow tables. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 859110,
+              "key": "52d4149b-d82b-45ac-a261-ffe49668340c",
+              "title": "Why Salt?",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "52d4149b-d82b-45ac-a261-ffe49668340c",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What is the primary reason to salt passwords?",
+                "answers": [
+                  {
+                    "id": "a1559934704284",
+                    "text": "To make implementation more difficult for developers",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1559934727773",
+                    "text": "To add complexity to make it more time complex to generate hash tables",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1559934748228",
+                    "text": "To reduce size of passwords in the database",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 857081,
+          "key": "5b9c6032-b6e5-4030-aa20-188fd35caf52",
+          "title": "Practice - Salted, Hashed Passwords",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5b9c6032-b6e5-4030-aa20-188fd35caf52",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 858561,
+              "key": "017a7147-405a-46a0-8a94-6b2e5358763c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Practice - Using the BCrypt Python Package with Salts\nPython has a useful package called BCrypt that implements the BCrypt hashing algorithm as well as random salt generation for us. We've given you some example code in a notebook below and enough information to answer the questions following the notebook. If you get stuck, refer to the [package documentation](https://github.com/pyca/bcrypt/).",
+              "instructor_notes": ""
+            },
+            {
+              "id": 858565,
+              "key": "f3237239-2454-4c0e-91c5-46d925838c0a",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r848940c858541xJUPYTERqdhs1cm1",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-kp5hy",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Salted_Hashed_Passwords.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 859111,
+              "key": "366dea06-397f-4aa7-a11a-771ffc98015a",
+              "title": "Checking Salted Hashed Passwords",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "366dea06-397f-4aa7-a11a-771ffc98015a",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which password correctly matches the following salted digest?\n```\nhashed = b'$2b$14$EFOxm3q8UWH8ZzK1h.WTZeRcPyr8/X0vRfuL3/e9z7AKIMnocurBG'\n```",
+                "answers": [
+                  {
+                    "id": "a1559935323322",
+                    "text": "securepassword",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1559935412578",
+                    "text": "udacity",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1559935415821",
+                    "text": "learningisfun",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 857018,
+          "key": "7242a924-e2ce-4cd9-b924-7b735c3743a4",
+          "title": "Recap",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "7242a924-e2ce-4cd9-b924-7b735c3743a4",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 859115,
+              "key": "f8e5ab5e-0c53-402d-b2c9-ad0c58124c69",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Passwords are Ubiquitous and _the ABSOLUTE worst._",
+              "instructor_notes": ""
+            },
+            {
+              "id": 864316,
+              "key": "f760731f-7319-46c1-abaf-f1d09a68327d",
+              "title": "ND004 C03 L03 A09 Recap",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "3H0ccRHxPqA",
+                "china_cdn_id": "3H0ccRHxPqA.mp4"
+              }
+            },
+            {
+              "id": 858606,
+              "key": "dc93bfdf-9a17-4fc6-b3a3-86434868a37f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Additional Resources:\n\n### Security and Password Policies\n- [NPM Security Policy](https://www.npmjs.com/policies/security)\n- [Good blog post on password policies](https://blog.devolutions.net/2018/02/top-10-password-policies-and-best-practices-for-system-administrators)\n\n### Password Managers\n- [LastPass](https://www.lastpass.com/)\n- [Chrome Password Manager](https://support.google.com/chrome/answer/95606?co=GENIE.Platform%3DDesktop&hl=en) (better than a postit)\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 859113,
+              "key": "a764528a-c623-423f-9c23-757113971bb3",
+              "title": "Apply what you've learned",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "a764528a-c623-423f-9c23-757113971bb3",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Match some key tasks with areas of the stack to minimize risk"
+                },
+                "concepts_label": "Part of the Stack",
+                "answers_label": "What You Can Do",
+                "concepts": [
+                  {
+                    "text": "Data In Transit",
+                    "correct_answer": {
+                      "id": "a1559935638442",
+                      "text": "Send only over HTTPS, TLS/SSL"
+                    }
+                  },
+                  {
+                    "text": "Storing Passwords",
+                    "correct_answer": {
+                      "id": "a1559935689813",
+                      "text": "Salt and Hash Passwords before storing in database"
+                    }
+                  },
+                  {
+                    "text": "Password Checking on API",
+                    "correct_answer": {
+                      "id": "a1559935700338",
+                      "text": "Code Review to Ensure Not Logging Passwords"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1559935717073",
+                    "text": "Store Plain Text in Database"
+                  },
+                  {
+                    "id": "a1559935706742",
+                    "text": "Store Plain Text in Text File"
+                  },
+                  {
+                    "id": "a1559935817816",
+                    "text": "Never change your database password"
+                  },
+                  {
+                    "id": "a1559935700338",
+                    "text": "Code Review to Ensure Not Logging Passwords"
+                  },
+                  {
+                    "id": "a1559935689813",
+                    "text": "Salt and Hash Passwords before storing in database"
+                  },
+                  {
+                    "id": "a1559935791325",
+                    "text": "Give server admin password to junior engineers"
+                  },
+                  {
+                    "id": "a1559935638442",
+                    "text": "Send only over HTTPS, TLS/SSL"
+                  },
+                  {
+                    "id": "a1559935804535",
+                    "text": "Transmit over http (non-secure)"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
